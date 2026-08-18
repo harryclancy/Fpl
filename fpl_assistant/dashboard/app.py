@@ -16,6 +16,7 @@ from fpl_assistant import api
 from fpl_assistant.analysis import (
     captaincy,
     consensus,
+    explain,
     optimiser,
     form,
     fixtures as fixtures_analysis,
@@ -144,6 +145,94 @@ def render_consensus_panel(scored, squad) -> None:
             st.markdown("")
 
 
+def _player_picker_labels(scored) -> dict:
+    """Selectable labels -> player id, ordered so the players you'd actually
+    ask about are near the top rather than buried in 600 squad fillers."""
+    df = scored.sort_values("xp_horizon", ascending=False)
+    return {
+        f"{row['web_name']} ({row['team_short_name']}, £{row['price']:.1f}m)": row["id"]
+        for _, row in df.iterrows()
+    }
+
+
+def _render_answer(answer) -> None:
+    st.markdown(answer.headline)
+    for line in answer.detail:
+        st.markdown(line)
+
+    if answer.swaps:
+        for swap in answer.swaps:
+            st.markdown(
+                f"- **OUT** {swap.out_name} (£{swap.out_price:.1f}m) → "
+                f"**IN** {swap.in_name} (£{swap.in_price:.1f}m)"
+            )
+
+    if answer.consensus_case:
+        st.markdown(f"**What analysts say:** {answer.consensus_case}")
+    if answer.consensus_against:
+        st.markdown(f"**The case against:** {answer.consensus_against}")
+
+
+def render_question_box(scored, solution, next_event) -> None:
+    """Ask why a player is or isn't picked, and get a computed answer.
+
+    "Why not Bruno?" is answered by forcing him into the squad and solving
+    again, so the reply is the actual trade — who drops out and what it
+    costs — rather than an opinion about Bruno. A counterfactual you can
+    check beats a paragraph you can't.
+    """
+    section_header("Ask about a pick", "Why him, why not the other guy — answered against this week's numbers")
+
+    labels = _player_picker_labels(scored)
+    if not labels:
+        return
+
+    question_type = st.radio(
+        "What do you want to know?",
+        ["Why is / isn't a player picked?", "Compare two players"],
+        horizontal=True,
+        key="question_type",
+    )
+
+    if question_type == "Compare two players":
+        columns = st.columns(2)
+        left_label = columns[0].selectbox("Player", list(labels), key="compare_left")
+        right_label = columns[1].selectbox(
+            "…versus", list(labels), index=min(1, len(labels) - 1), key="compare_right"
+        )
+        if left_label == right_label:
+            st.caption("Pick two different players.")
+            return
+        if st.button("Compare", key="compare_go"):
+            _render_answer(explain.compare_players(scored, labels[left_label], labels[right_label]))
+        return
+
+    label = st.selectbox("Player", list(labels), key="explain_player")
+    if st.button("Explain this pick", key="explain_go"):
+        with st.spinner("Re-solving the squad around them…"):
+            answer = explain.explain_player(
+                scored, solution, labels[label], template_weight=rank_strategy_weight()
+            )
+        _render_answer(answer)
+
+    with st.expander("Ask something else"):
+        st.caption(
+            "Anything the numbers can't settle — team news, a hunch, a question about strategy — "
+            "goes to me directly. Paste this into our chat and I'll research it properly and fold "
+            "the answer into next week's file."
+        )
+        question = st.text_area(
+            "Your question", key="free_question", height=80,
+            placeholder="e.g. Is Bruno worth it if I go without a premium defender?",
+        )
+        if st.button("Prepare question", key="free_go"):
+            if question.strip():
+                st.code(f"FPL question (GW{next_event}): {question.strip()}", language=None)
+                st.caption("Copy this (tap the icon) and paste it into your chat with Claude.")
+            else:
+                st.caption("Type a question first.")
+
+
 def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=None):
     """One player's full case: photo + rationale text (which already
     surfaces qualitative research from the weekly report) inside an
@@ -266,6 +355,9 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
                 f"{row['xp_next']:.1f} pts projected"
             )
             render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=summary)
+
+    st.markdown("---")
+    render_question_box(scored, solution, next_event)
 
     with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
         bench_cols = ["web_name", "team_short_name", "position", "price"]
