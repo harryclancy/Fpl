@@ -55,6 +55,12 @@ def team_fixture_table(
 
     label_df = pd.DataFrame.from_dict(rows, orient="index")
     diff_df = pd.DataFrame.from_dict(diffs, orient="index")
+    # A gameweek with no fixtures for *any* team (e.g. the window runs past
+    # the season's last gameweek) leaves a column of all-None, which pandas
+    # infers as dtype=object -- and a mix of float64 + object columns makes
+    # .mean(axis=1) return object dtype too, breaking nsmallest/nlargest and
+    # the fdr_color styling downstream. Force every column numeric first.
+    diff_df = diff_df.apply(pd.to_numeric, errors="coerce")
 
     result = label_df.copy()
     result["team_name"] = teams.loc[result.index, "name"]

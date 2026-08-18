@@ -10,6 +10,8 @@ generic dark theme.
 import pandas as pd
 import streamlit as st
 
+from fpl_assistant.dashboard.htmlutil import render_html
+
 PURPLE = "#38003c"
 PINK = "#e90052"
 GREEN = "#00ff85"
@@ -120,19 +122,16 @@ HERO_HTML = f"""
 
 
 def inject_global_css() -> None:
-    st.markdown(GLOBAL_CSS, unsafe_allow_html=True)
+    render_html(GLOBAL_CSS)
 
 
 def hero_header() -> None:
-    st.markdown(HERO_HTML, unsafe_allow_html=True)
+    render_html(HERO_HTML)
 
 
 def section_header(title: str, subtitle: str = "") -> None:
     subtitle_html = f'<span class="subtitle">{subtitle}</span>' if subtitle else ""
-    st.markdown(
-        f'<div class="section-banner"><span class="title">{title}</span>{subtitle_html}</div>',
-        unsafe_allow_html=True,
-    )
+    render_html(f'<div class="section-banner"><span class="title">{title}</span>{subtitle_html}</div>')
 
 
 _FDR_STOPS = [(1, (0, 200, 90)), (3, (230, 200, 40)), (5, (220, 60, 60))]  # green -> amber -> red

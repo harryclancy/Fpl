@@ -1,10 +1,10 @@
 """Renders a squad as an actual football pitch, not just a table.
 
 Pure HTML/CSS injected via st.markdown — no JS, no external CSS/JS
-dependencies. Player photos are attempted from the Premier League's own
-CDN; if a given URL doesn't resolve (season-dependent path, missing
-photo, etc.) the `onerror` handler swaps in a clean initials avatar
-instead, so the page never shows a broken-image icon.
+dependencies. Player avatars are colored initials (see media.py for why:
+Streamlit strips the onerror handler a real-photo fallback would need,
+so a real photo attempt would risk showing a raw broken-image icon
+instead of degrading cleanly).
 """
 import pandas as pd
 
@@ -19,8 +19,6 @@ POSITION_ACCENT = {
     "MID": "#00ff87",
     "FWD": "#ff4d6d",
 }
-
-PHOTO_URL_TEMPLATE = "https://resources.premierleague.com/premierleague25/photos/players/110x140/{code}.png"
 
 PITCH_CSS = """
 <style>
@@ -152,8 +150,6 @@ def _initials(web_name: str) -> str:
 
 def _player_card_html(row: pd.Series, badge: str | None) -> str:
     accent = POSITION_ACCENT.get(row["position"], "#00ff87")
-    code = row.get("code")
-    photo_url = PHOTO_URL_TEMPLATE.format(code=code) if pd.notna(code) else ""
     initials = _initials(row["web_name"])
 
     badge_html = ""
@@ -162,18 +158,10 @@ def _player_card_html(row: pd.Series, badge: str | None) -> str:
     elif badge == "V":
         badge_html = '<div class="armband armband-v">V</div>'
 
-    img_html = (
-        f'<img src="{photo_url}" alt="" '
-        f'onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';">'
-        if photo_url
-        else ""
-    )
-
     return f"""
     <div class="player-card" style="--accent: {accent};">
       <div class="player-photo-box">
-        {img_html}
-        <div class="player-photo-fallback" style="{'display:flex;' if not photo_url else ''}">{initials}</div>
+        <div class="player-photo-fallback" style="display:flex;">{initials}</div>
         {badge_html}
       </div>
       <div class="player-name">{row['web_name']}</div>

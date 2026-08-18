@@ -6,7 +6,7 @@
 
 ## Big picture
 
-Arsenal enter the season as defending champions after ending a 22-year title drought, and open as bookmaker favourites again (~+125, ~44% implied win probability per one model), with Man City (~+333, ~20%), Liverpool (~13%), Chelsea (~12%) and Man Utd (~10%) as the chasing pack. Arsenal reportedly beat City comfortably in the Community Shield curtain-raiser — an early form signal, not a fixture result.
+Arsenal enter the season as defending champions after ending a 22-year title drought, and open as bookmaker favourites again (approx. +125, approx. 44% implied win probability per one model), with Man City (approx. +333, approx. 20%), Liverpool (approx. 13%), Chelsea (approx. 12%) and Man Utd (approx. 10%) as the chasing pack. Arsenal reportedly beat City comfortably in the Community Shield curtain-raiser — an early form signal, not a fixture result.
 
 ## Captaincy consensus
 

@@ -61,6 +61,20 @@ def test_fixture_table_handles_blank_and_normal():
     assert table.loc[1, 3] == "BUR (H)"
 
 
+def test_fixture_table_window_past_last_fixture_stays_numeric():
+    """A window running past the last available gameweek (e.g. near
+    season end) leaves a fully-blank column, which pandas infers as
+    object dtype -- and used to corrupt avg_difficulty's dtype too,
+    breaking nsmallest/nlargest downstream. Regression test for that.
+    """
+    players, teams = _players_and_teams()
+    fixtures = pd.DataFrame(FIXTURES)  # only has events 3 and 4
+    table = fixtures_analysis.team_fixture_table(fixtures, teams, from_event=3, n_gameweeks=4)
+    assert table["avg_difficulty"].dtype == float
+    fixtures_analysis.best_fixture_runs(table)
+    fixtures_analysis.worst_fixture_runs(table)
+
+
 def test_captaincy_excludes_blank_gameweek_teams():
     players, teams = _players_and_teams()
     fixtures = pd.DataFrame(FIXTURES)

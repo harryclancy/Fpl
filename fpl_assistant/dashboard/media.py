@@ -1,15 +1,25 @@
-"""Player photo / team crest URL construction, shared by every HTML card
-renderer in the dashboard (pitch view, captaincy cards, etc).
+"""Player/team avatar rendering.
 
-These CDN URLs can't be verified from this environment's sandbox (network
-egress to resources.premierleague.com is blocked here), so every use is
-paired with an `onerror` handler that swaps in a clean fallback badge
-rather than ever showing a broken-image icon.
+We tried real photos from the Premier League's photo CDN with a JS
+`onerror` fallback to an initials avatar — but Streamlit's markdown
+sanitizer strips inline event-handler attributes (`onerror` etc.) from
+HTML passed through st.markdown, even with unsafe_allow_html=True, so a
+failed image request just shows a browser-default broken-image icon with
+no way to catch it and swap in the fallback. Confirmed live: the request
+fails (naturalWidth stays 0) but the onerror handler never fires because
+the attribute isn't present in the rendered DOM at all.
+
+Rather than gamble on an unverifiable CDN URL pattern breaking silently
+in production, this renders colored initials avatars as the actual
+design — the same pattern Slack/Discord/Linear use for missing photos,
+not a degraded fallback. Zero risk of a broken-image icon, consistent
+look every time.
 """
 import pandas as pd
 
-PLAYER_PHOTO_URL = "https://resources.premierleague.com/premierleague25/photos/players/110x140/{code}.png"
-TEAM_CREST_URL = "https://resources.premierleague.com/premierleague25/badges/50/t{code}.png"
+AVATAR_PALETTE = [
+    "#e90052", "#04f5ff", "#00ff85", "#f5c518", "#4da3ff", "#ff4d6d", "#9b5de5", "#38003c",
+]
 
 
 def initials(name: str) -> str:
@@ -19,37 +29,28 @@ def initials(name: str) -> str:
     return str(name)[:2].upper()
 
 
+def _avatar_color(seed) -> str:
+    if pd.isna(seed):
+        return AVATAR_PALETTE[0]
+    return AVATAR_PALETTE[int(seed) % len(AVATAR_PALETTE)]
+
+
 def player_photo_html(code, web_name: str, size_px: int = 52) -> str:
-    """A circular player photo with an initials-avatar fallback if the
-    image 404s. Wrap in a container with position: relative for badges.
-    """
-    fallback = initials(web_name)
-    if pd.isna(code):
-        return f'<div class="photo-fallback" style="display:flex;">{fallback}</div>'
-    url = PLAYER_PHOTO_URL.format(code=int(code))
-    return (
-        f'<img class="photo-img" src="{url}" alt="" '
-        f"onerror=\"this.style.display='none'; this.nextElementSibling.style.display='flex';\">"
-        f'<div class="photo-fallback">{fallback}</div>'
-    )
+    """A colored circular initials avatar, sized to fill its container."""
+    color = _avatar_color(code if pd.notna(code) else hash(web_name))
+    return f'<div class="photo-fallback" style="display:flex; background:{color};">{initials(web_name)}</div>'
 
 
 def team_crest_html(code, short_name: str = "", size_px: int = 18) -> str:
-    """A small team crest icon with a text-badge fallback if it 404s.
+    """A small text badge for the team short name.
 
     Pass `short_name=""` when a team abbreviation is already shown right
-    next to this crest in the caller's markup, so the fallback doesn't
-    duplicate it — it'll just render nothing rather than a broken image.
+    next to this badge in the caller's markup, to avoid duplicating it —
+    it'll render nothing.
     """
-    fallback = short_name
-    if pd.isna(code):
-        return f'<span class="crest-fallback">{fallback}</span>' if fallback else ""
-    url = TEAM_CREST_URL.format(code=int(code))
-    return (
-        f'<img class="crest-img" src="{url}" alt="{fallback}" width="{size_px}" height="{size_px}" '
-        f"onerror=\"this.style.display='none'; this.nextElementSibling.style.display='inline';\">"
-        f'<span class="crest-fallback" style="display:none;">{fallback}</span>'
-    )
+    if not short_name:
+        return ""
+    return f'<span class="crest-fallback">{short_name}</span>'
 
 
 MEDIA_CSS = """
@@ -62,6 +63,7 @@ MEDIA_CSS = """
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    color: #0e0e1a;
 }
 .crest-img { vertical-align: middle; margin-right: 4px; }
 .crest-fallback {

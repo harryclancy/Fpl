@@ -25,6 +25,7 @@ from fpl_assistant.analysis import (
 from fpl_assistant.analysis.season_state import is_preseason
 from fpl_assistant.config import FPL_TEAM_ID
 from fpl_assistant.dashboard.cards import SCORE_BAD, SCORE_WARN, player_rank_card, render_rank_card_list
+from fpl_assistant.dashboard.htmlutil import render_html
 from fpl_assistant.dashboard.media import player_photo_html
 from fpl_assistant.dashboard.pitch import render_pitch_html
 from fpl_assistant.dashboard.styles import fdr_color, hero_header, inject_global_css, section_header
@@ -91,7 +92,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
         team_id=0, event=next_event, bank=0.0, team_value=squad15["price"].sum(),
         transfers_made=0, transfers_cost=0, picks=picks,
     )
-    st.markdown(render_pitch_html(squad15, fake_squad), unsafe_allow_html=True)
+    render_html(render_pitch_html(squad15, fake_squad))
 
     captain_row = squad15.loc[captain_id]
     vice_row = squad15.loc[vice_id]
@@ -107,11 +108,10 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
         with st.container(border=True):
             photo_col, text_col = st.columns([1, 6])
             with photo_col:
-                st.markdown(
+                render_html(
                     '<div style="width:56px;height:56px;border-radius:50%;overflow:hidden;">'
                     + player_photo_html(row.get("code"), row["web_name"], 56)
-                    + "</div>",
-                    unsafe_allow_html=True,
+                    + "</div>"
                 )
             with text_col:
                 st.markdown(rationale.player_rationale(row, report_text))
@@ -174,8 +174,13 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
     try:
         picks_response = api.get_entry_picks(team_id, next_event)
         entry = api.get_entry(team_id)
-    except requests.exceptions.HTTPError as e:
-        if e.response is not None and e.response.status_code == 404:
+    except Exception as e:
+        is_deadline_404 = (
+            isinstance(e, requests.exceptions.HTTPError)
+            and e.response is not None
+            and e.response.status_code == 404
+        )
+        if is_deadline_404:
             deadline = events.loc[next_event, "deadline_time"] if next_event in events.index else None
             when = f" (deadline: {deadline})" if deadline else ""
             st.info(
@@ -183,15 +188,13 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
                 "gameweek's squads once its deadline has passed (so managers can't copy each "
                 "other pre-deadline)."
             )
-            manual_squad = render_manual_squad_entry(players)
-            if manual_squad:
-                st.markdown(render_pitch_html(players, manual_squad), unsafe_allow_html=True)
-                return manual_squad
         else:
             st.error(f"Couldn't load team {team_id}: {e}")
-        return
-    except Exception as e:
-        st.error(f"Couldn't load team {team_id}: {e}")
+        # Whatever went wrong, manual entry still gets you a pitch view today.
+        manual_squad = render_manual_squad_entry(players)
+        if manual_squad:
+            render_html(render_pitch_html(players, manual_squad))
+            return manual_squad
         return
 
     squad = parse_squad(team_id, next_event, picks_response)
@@ -204,7 +207,7 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
 
     squad_players = players.loc[squad.player_ids].copy()
 
-    st.markdown(render_pitch_html(squad_players, squad), unsafe_allow_html=True)
+    render_html(render_pitch_html(squad_players, squad))
 
     squad_players["captain"] = squad_players["id"].apply(
         lambda pid: "C" if pid == squad.captain_id else ""
@@ -233,7 +236,7 @@ def render_captaincy_tab(players, fixtures, teams, next_event):
             meta = f"£{row['price']:.1f}m · form {row['form']:.1f} · {row['expected_goal_involvements']:.1f} xGI"
         meta += f" · vs {row['opponent']}"
         cards.append(player_rank_card(i, row, f"{row['captaincy_score']:.2f}", "score", meta))
-    st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
+    render_html(render_rank_card_list(cards))
 
     if preseason:
         st.caption(
@@ -284,7 +287,7 @@ def render_watchlist_tab(players):
             player_rank_card(i, row, score_fn(row), "price" if preseason else "form", meta_fn(row))
             for i, (_, row) in enumerate(df.iterrows(), start=1)
         ]
-        st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
+        render_html(render_rank_card_list(cards))
     with t2:
         df = form.best_value_players(players, position=position)
         cards = [
@@ -296,7 +299,7 @@ def render_watchlist_tab(players):
             )
             for i, (_, row) in enumerate(df.iterrows(), start=1)
         ]
-        st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
+        render_html(render_rank_card_list(cards))
     with t3:
         df = form.differentials(players)
         cards = [
@@ -308,7 +311,7 @@ def render_watchlist_tab(players):
             )
             for i, (_, row) in enumerate(df.iterrows(), start=1)
         ]
-        st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
+        render_html(render_rank_card_list(cards))
 
 
 def _injury_cards(df: pd.DataFrame) -> str:
@@ -331,15 +334,18 @@ def render_injuries_tab(players, owned_ids):
     section_header("Injury & availability news", "Straight from FPL's own editorial feed")
 
     st.markdown("**Your squad**")
-    own_flagged = injuries.flagged_players(players, owned_only_ids=owned_ids)
-    if own_flagged.empty:
-        st.success("Nobody in your squad is flagged." if owned_ids else "Enter your Team ID / squad to check your own players.")
+    if owned_ids is None:
+        st.info("Enter your FPL Team ID (or use manual squad entry in My Squad) to check your own players.")
     else:
-        st.markdown(_injury_cards(own_flagged), unsafe_allow_html=True)
+        own_flagged = injuries.flagged_players(players, owned_only_ids=owned_ids)
+        if own_flagged.empty:
+            st.success("Nobody in your squad is flagged.")
+        else:
+            render_html(_injury_cards(own_flagged))
 
     with st.expander("Everyone flagged this week"):
         all_flagged = injuries.flagged_players(players)
-        st.markdown(_injury_cards(all_flagged), unsafe_allow_html=True)
+        render_html(_injury_cards(all_flagged))
 
 
 def render_report_tab(next_event):
@@ -380,7 +386,7 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
         player_rank_card(i, row, f"£{row['price']:.1f}m", "price", row["reasons_text"], score_color=SCORE_WARN)
         for i, (_, row) in enumerate(weaknesses.iterrows(), start=1)
     ]
-    st.markdown(render_rank_card_list(weakness_cards), unsafe_allow_html=True)
+    render_html(render_rank_card_list(weakness_cards))
 
     weak_names = weaknesses["web_name"].tolist()
     chosen = st.selectbox("See replacement options for:", weak_names)
@@ -398,7 +404,7 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
                 )
                 for i, (_, row) in enumerate(replacements.iterrows(), start=1)
             ]
-            st.markdown(render_rank_card_list(replacement_cards), unsafe_allow_html=True)
+            render_html(render_rank_card_list(replacement_cards))
 
 
 def main():
@@ -449,9 +455,12 @@ def main():
     with tab_map["Odds & Expert Take"]:
         render_report_tab(next_event)
 
-    if team_id and squad:
+    if team_id:
         with tab_map["Transfers"]:
-            render_transfers_tab(players, fixtures, teams, next_event, squad)
+            if squad:
+                render_transfers_tab(players, fixtures, teams, next_event, squad)
+            else:
+                st.info("Transfer suggestions need your squad loaded first — see the My Squad tab.")
 
 
 if __name__ == "__main__":
