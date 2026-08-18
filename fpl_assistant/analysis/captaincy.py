@@ -19,7 +19,14 @@ from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.season_state import is_preseason
 
 WEIGHTS = {"form": 0.4, "fixture": 0.3, "threat": 0.3}
-PRESEASON_WEIGHTS = {"price": 0.4, "ownership": 0.25, "fixture": 0.35}
+# Price and ownership already encode the market's and the crowd's own
+# preseason homework -- a heavily-owned nailed-on premium (a Haaland-type
+# captaincy lock) stays a strong captaincy pick even across a moderately
+# tough single-gameweek fixture, in practice. Fixture difficulty is real
+# signal but noisier this early, so it should nudge close calls, not
+# outweigh price+ownership and drop a clear premium out of contention --
+# see squad_builder.score_players for the same reasoning applied there.
+PRESEASON_WEIGHTS = {"price": 0.5, "ownership": 0.3, "fixture": 0.2}
 
 
 def _normalise(series: pd.Series) -> pd.Series:

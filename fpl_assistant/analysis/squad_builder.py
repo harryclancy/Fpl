@@ -12,6 +12,14 @@ from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.season_state import is_preseason
 
 SQUAD_QUOTAS = {"GKP": 2, "DEF": 5, "MID": 5, "FWD": 3}
+# Real FPL squads aren't 15 independently-best players -- nobody spends big
+# on their bench. Split into a "stars" tier (picked by score, where a
+# premium price is the point) and a "bench" tier (picked by minimum price,
+# to free up budget for the stars) so a nailed-on premium like Haaland
+# doesn't get outcompeted for budget by 14 other players *all* trying to
+# be the best individually-scored option in their slot.
+STRONG_QUOTA = {"GKP": 1, "DEF": 4, "MID": 4, "FWD": 2}
+BENCH_QUOTA = {"GKP": 1, "DEF": 1, "MID": 1, "FWD": 1}
 MAX_PER_CLUB = 3
 DEFAULT_BUDGET = 100.0
 
@@ -50,8 +58,18 @@ def score_players(
     if is_preseason(players):
         df["price_norm"] = _normalise(df["price"])
         df["ownership_norm"] = _normalise(df["selected_by_percent"])
+        # Price and ownership together are the real signal here -- FPL's own
+        # pricing algorithm and tens of thousands of managers' preseason
+        # homework both already price in a player's expected explosiveness,
+        # which is exactly why a heavily-owned premium (a Haaland-type
+        # nailed-on captaincy pick) is "essentially undroppable" in
+        # practice even across a moderately tough fixture swing. Fixture
+        # difficulty is real but comparatively noisy this early (single
+        # early-season FDR ratings, not proven form), so it should break
+        # ties between similarly-priced/owned players -- not outweigh
+        # price+ownership and knock a clear premium out of the top tier.
         df["squad_score"] = (
-            0.45 * df["price_norm"] + 0.25 * df["ownership_norm"] + 0.30 * df["fixture_norm"]
+            0.55 * df["price_norm"] + 0.30 * df["ownership_norm"] + 0.15 * df["fixture_norm"]
         )
         df["scoring_basis"] = "preseason"
     else:
@@ -69,55 +87,60 @@ def score_players(
 def build_squad(
     scored: pd.DataFrame, budget: float = DEFAULT_BUDGET, max_per_club: int = MAX_PER_CLUB
 ) -> pd.DataFrame:
-    """Greedy budget-aware 15-man squad selection respecting position quotas
-    and the max-3-players-per-club rule.
+    """Budget-respecting 15-man squad selection: fills one slot at a time,
+    stars first (attacking positions, since that's where premiums matter
+    most), each pick constrained to what's actually affordable given how
+    many slots and how much minimum spend the rest of the squad still
+    needs -- not "pick the best 15 regardless of budget, then patch it
+    afterwards." That patch-it-after approach was tried first and failed
+    in a very concrete way: a nailed-on premium like Haaland would get cut
+    purely because *everyone* the naive top-score pass wanted was
+    similarly expensive, so cutting him looked as reasonable as cutting
+    anyone else. Buying stars while the budget is still full, before
+    cheaper depth eats into it, avoids ever reaching that situation.
     """
     selected_ids: list[int] = []
     club_counts: dict[int, int] = {}
+    remaining_budget = budget
+    # Per-position floors, not one global minimum -- goalkeepers, say,
+    # rarely go as cheap as the very cheapest player in the whole pool, so
+    # a single blanket floor understates what the remaining slots will
+    # actually cost and lets earlier picks overspend.
+    min_price_by_position = scored.groupby("position")["price"].min()
 
     def eligible(pool: pd.DataFrame) -> pd.DataFrame:
         return pool[~pool["id"].isin(selected_ids)]
 
-    # Phase 1: best score per position, budget be damned.
-    for pos, quota in SQUAD_QUOTAS.items():
-        pool = eligible(scored[scored["position"] == pos]).sort_values("squad_score", ascending=False)
-        picked = 0
-        for _, row in pool.iterrows():
-            if picked == quota:
-                break
-            if club_counts.get(row["team"], 0) >= max_per_club:
+    # Attacking positions first (premiums matter most there), stars before
+    # bench within each position.
+    slot_plan: list[tuple[str, bool]] = []  # (position, is_star_slot)
+    for pos in ["FWD", "MID", "DEF", "GKP"]:
+        slot_plan += [(pos, True)] * STRONG_QUOTA[pos]
+    for pos in ["FWD", "MID", "DEF", "GKP"]:
+        slot_plan += [(pos, False)] * BENCH_QUOTA[pos]
+
+    for i, (pos, is_star) in enumerate(slot_plan):
+        remaining_floor = sum(min_price_by_position[p] for p, _ in slot_plan[i + 1 :])
+        max_affordable = remaining_budget - remaining_floor
+
+        pool = eligible(scored[(scored["position"] == pos) & (scored["price"] <= max_affordable)])
+        pool = pool[pool["team"].map(lambda t: club_counts.get(t, 0)) < max_per_club]
+        if pool.empty:
+            # Affordability ceiling or club cap too tight for this slot --
+            # fall back to the cheapest legal option so the squad still
+            # completes, even if it means running slightly over budget.
+            pool = eligible(scored[scored["position"] == pos])
+            pool = pool[pool["team"].map(lambda t: club_counts.get(t, 0)) < max_per_club]
+            if pool.empty:
                 continue
-            selected_ids.append(row["id"])
-            club_counts[row["team"]] = club_counts.get(row["team"], 0) + 1
-            picked += 1
+            row = pool.sort_values("price").iloc[0]
+        else:
+            sort_col, ascending = ("squad_score", False) if is_star else ("price", True)
+            row = pool.sort_values(sort_col, ascending=ascending).iloc[0]
 
-    # Phase 2: if over budget, repeatedly swap the most expensive player for
-    # the cheapest same-position alternative not already in the squad,
-    # until it fits (or we give up after a bounded number of tries).
-    guard = 0
-    while True:
-        squad = scored[scored["id"].isin(selected_ids)]
-        if squad["price"].sum() <= budget or guard >= 30:
-            break
-        guard += 1
-
-        swapped = False
-        for _, row in squad.sort_values("price", ascending=False).iterrows():
-            alt_pool = eligible(scored[(scored["position"] == row["position"]) & (scored["price"] < row["price"])])
-            alt_pool = alt_pool[alt_pool["team"].map(lambda t: club_counts.get(t, 0)) < max_per_club]
-            if alt_pool.empty:
-                continue
-            alt = alt_pool.sort_values("price").iloc[0]
-
-            selected_ids.remove(row["id"])
-            club_counts[row["team"]] -= 1
-            selected_ids.append(alt["id"])
-            club_counts[alt["team"]] = club_counts.get(alt["team"], 0) + 1
-            swapped = True
-            break
-
-        if not swapped:
-            break  # can't get under budget with what's available -- return best effort
+        selected_ids.append(row["id"])
+        club_counts[row["team"]] = club_counts.get(row["team"], 0) + 1
+        remaining_budget -= row["price"]
 
     return scored[scored["id"].isin(selected_ids)].copy()
 
