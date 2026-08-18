@@ -76,6 +76,24 @@ h2, h3, h4 {{ margin-top: 0.4em; }}
 /* Hide the default Streamlit chrome that adds noise on mobile */
 #MainMenu {{ visibility: hidden; }}
 footer {{ visibility: hidden; }}
+
+/* Subtle interactive feel on card components, even though they're static */
+.rank-card, .player-card {{
+    transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}}
+.rank-card:hover {{
+    transform: translateY(-1px);
+    border-color: rgba(0,255,133,0.35);
+}}
+.player-card:hover {{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+}}
+
+/* Buttons/selects get the same rounded, branded treatment as everything else */
+.stButton button, .stSelectbox div[data-baseweb="select"] > div {{
+    border-radius: 10px !important;
+}}
 </style>
 """
 

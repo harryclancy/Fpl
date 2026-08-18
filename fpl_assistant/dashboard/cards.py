@@ -30,13 +30,19 @@ CARD_LIST_CSS = """
 .rank-name { font-weight: 700; color: #fff; font-size: 14px; }
 .rank-meta { font-size: 11.5px; color: #9a9ab0; margin-top: 1px; }
 .rank-score { text-align: right; flex-shrink: 0; padding-left: 4px; }
-.rank-score .value { font-size: 16px; font-weight: 800; color: #00ff85; }
+.rank-score .value { font-size: 16px; font-weight: 800; }
 .rank-score .label { font-size: 9px; color: #7d7d95; text-transform: uppercase; letter-spacing: 0.5px; }
 </style>
 """
 
+SCORE_GOOD = "#00ff85"
+SCORE_WARN = "#f5c518"
+SCORE_BAD = "#ff4d6d"
 
-def player_rank_card(rank: int, row: pd.Series, score_value: str, score_label: str, meta_line: str) -> str:
+
+def player_rank_card(
+    rank: int, row: pd.Series, score_value: str, score_label: str, meta_line: str, score_color: str = SCORE_GOOD
+) -> str:
     photo = player_photo_html(row.get("code"), row["web_name"], size_px=44)
     crest = team_crest_html(row.get("team_code"), "", size_px=12)
     return f"""
@@ -48,7 +54,7 @@ def player_rank_card(rank: int, row: pd.Series, score_value: str, score_label: s
         <div class="rank-meta">{crest}{row['team_short_name']} · {row['position']} — {meta_line}</div>
       </div>
       <div class="rank-score">
-        <div class="value">{score_value}</div>
+        <div class="value" style="color: {score_color};">{score_value}</div>
         <div class="label">{score_label}</div>
       </div>
     </div>

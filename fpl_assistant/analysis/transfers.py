@@ -82,7 +82,10 @@ def squad_weaknesses(scored_players: pd.DataFrame, squad: Squad) -> pd.DataFrame
     owned = owned[owned["reasons"].map(len) > 0]
     owned["reasons_text"] = owned["reasons"].map("; ".join)
 
-    cols = ["web_name", "team_short_name", "position", "price", "form", "reasons_text"]
+    cols = [
+        "id", "code", "web_name", "team_short_name", "team_code",
+        "position", "price", "form", "reasons_text",
+    ]
     return owned.sort_values("form")[cols]
 
 
@@ -122,8 +125,7 @@ def suggest_replacements(
     pool["replacement_score"] = (0.5 * pool["form_norm"] + 0.5 * pool["fixture_norm"]).round(3)
 
     cols = [
-        "web_name",
-        "team_short_name",
+        "id", "code", "web_name", "team_short_name", "team_code", "position",
         "price",
         "form",
         "fixture_run_difficulty",

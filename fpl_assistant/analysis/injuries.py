@@ -20,9 +20,13 @@ def flagged_players(players: pd.DataFrame, owned_only_ids: list[int] | None = No
         df = df[df["id"].isin(owned_only_ids)]
 
     cols = [
+        "id",
+        "code",
         "web_name",
         "team_short_name",
+        "team_code",
         "position",
+        "price",
         "status_label",
         "chance_of_playing_next_round",
         "news",

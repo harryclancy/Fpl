@@ -24,7 +24,7 @@ from fpl_assistant.analysis import (
 )
 from fpl_assistant.analysis.season_state import is_preseason
 from fpl_assistant.config import FPL_TEAM_ID
-from fpl_assistant.dashboard.cards import player_rank_card, render_rank_card_list
+from fpl_assistant.dashboard.cards import SCORE_BAD, SCORE_WARN, player_rank_card, render_rank_card_list
 from fpl_assistant.dashboard.media import player_photo_html
 from fpl_assistant.dashboard.pitch import render_pitch_html
 from fpl_assistant.dashboard.styles import fdr_color, hero_header, inject_global_css, section_header
@@ -311,12 +311,35 @@ def render_watchlist_tab(players):
         st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
 
 
+def _injury_cards(df: pd.DataFrame) -> str:
+    cards = []
+    for i, (_, row) in enumerate(df.iterrows(), start=1):
+        news = str(row.get("news") or "").strip() or "No further detail from FPL yet."
+        chance = row["chance_of_playing_next_round"]
+        color = SCORE_BAD if chance < 50 else SCORE_WARN
+        cards.append(
+            player_rank_card(
+                i, row, f"{chance:.0f}%", "fit",
+                f"£{row['price']:.1f}m · {row['status_label']} — {news}",
+                score_color=color,
+            )
+        )
+    return render_rank_card_list(cards)
+
+
 def render_injuries_tab(players, owned_ids):
-    section_header("Injury & availability news")
+    section_header("Injury & availability news", "Straight from FPL's own editorial feed")
+
     st.markdown("**Your squad**")
-    st.dataframe(injuries.flagged_players(players, owned_only_ids=owned_ids), use_container_width=True)
-    st.markdown("**Everyone flagged this week**")
-    st.dataframe(injuries.flagged_players(players), use_container_width=True)
+    own_flagged = injuries.flagged_players(players, owned_only_ids=owned_ids)
+    if own_flagged.empty:
+        st.success("Nobody in your squad is flagged." if owned_ids else "Enter your Team ID / squad to check your own players.")
+    else:
+        st.markdown(_injury_cards(own_flagged), unsafe_allow_html=True)
+
+    with st.expander("Everyone flagged this week"):
+        all_flagged = injuries.flagged_players(players)
+        st.markdown(_injury_cards(all_flagged), unsafe_allow_html=True)
 
 
 def render_report_tab(next_event):
@@ -353,22 +376,36 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
         return
 
     st.markdown("**Players worth reviewing**")
-    st.dataframe(weaknesses, use_container_width=True)
+    weakness_cards = [
+        player_rank_card(i, row, f"£{row['price']:.1f}m", "price", row["reasons_text"], score_color=SCORE_WARN)
+        for i, (_, row) in enumerate(weaknesses.iterrows(), start=1)
+    ]
+    st.markdown(render_rank_card_list(weakness_cards), unsafe_allow_html=True)
 
     weak_names = weaknesses["web_name"].tolist()
     chosen = st.selectbox("See replacement options for:", weak_names)
     if chosen:
         player_id = scored[scored["web_name"] == chosen]["id"].iloc[0]
         budget = st.slider("Extra budget available (£m, on top of selling price)", 0.0, 5.0, 0.0, 0.1)
-        st.dataframe(
-            transfers.suggest_replacements(scored, squad, player_id, budget), use_container_width=True
-        )
+        replacements = transfers.suggest_replacements(scored, squad, player_id, budget)
+        if replacements.empty:
+            st.caption("No affordable replacements found in that position/budget.")
+        else:
+            replacement_cards = [
+                player_rank_card(
+                    i, row, f"{row['replacement_score']:.2f}", "score",
+                    f"£{row['price']:.1f}m · form {row['form']:.1f} · {row['fixture_run_difficulty']:.1f} avg FDR",
+                )
+                for i, (_, row) in enumerate(replacements.iterrows(), start=1)
+            ]
+            st.markdown(render_rank_card_list(replacement_cards), unsafe_allow_html=True)
 
 
 def main():
     inject_global_css()
     hero_header()
-    players, teams, events, fixtures, next_event = load_core_data()
+    with st.spinner("Pulling the latest FPL data…"):
+        players, teams, events, fixtures, next_event = load_core_data()
 
     st.sidebar.header("Settings")
     team_id_input = st.sidebar.text_input("Your FPL Team ID", value=FPL_TEAM_ID or "")
