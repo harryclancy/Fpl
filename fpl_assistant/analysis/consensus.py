@@ -133,6 +133,8 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     df["consensus_tier"] = None
     df["consensus_bonus"] = 0.0
     df["consensus_reason"] = None
+    df["consensus_verdict"] = None
+    df["consensus_watch_out"] = None
 
     data = load_consensus(gameweek)
     if not data:
@@ -162,9 +164,14 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
             )
         chosen_id = candidates["id"].iloc[0]
 
-        df.loc[df["id"] == chosen_id, "consensus_tier"] = tier
-        df.loc[df["id"] == chosen_id, "consensus_bonus"] = TIER_BONUS[tier]
-        df.loc[df["id"] == chosen_id, "consensus_reason"] = entry.get("reason")
+        target = df["id"] == chosen_id
+        df.loc[target, "consensus_tier"] = tier
+        df.loc[target, "consensus_bonus"] = TIER_BONUS[tier]
+        # `case` is the written argument; `reason` is kept as a fallback so
+        # older hand-written consensus files still render.
+        df.loc[target, "consensus_reason"] = entry.get("case") or entry.get("reason")
+        df.loc[target, "consensus_verdict"] = entry.get("verdict")
+        df.loc[target, "consensus_watch_out"] = entry.get("watch_out")
 
     return df
 

@@ -51,8 +51,27 @@ def test_report_mention_none_when_no_match():
 def test_player_rationale_surfaces_mention_prominently():
     row = _row()
     text = player_rationale(row, REPORT_TEXT)
-    assert "What FPL managers & analysts are saying" in text
+    assert "What managers are saying" in text
     assert "fixture swing" in text
+
+
+def test_player_rationale_leads_with_the_argument_not_a_stat_dump():
+    """The writeup should read as a case for the pick. Numbers belong on
+    one supporting line at the end, not stacked up front -- an earlier
+    version opened with a projection, form, xGI, average FDR, minutes
+    percentage and transfer momentum before saying anything a manager
+    could act on."""
+    row = _row()
+    text = player_rationale(row, REPORT_TEXT)
+
+    first_paragraph = text.split("\n\n")[0]
+    assert "pts projected" not in first_paragraph
+    assert "avg FDR" not in first_paragraph
+
+    # Retired clutter should be gone entirely.
+    assert "ICT index" not in text
+    assert "net transfers" not in text
+    assert "No specific community/analyst commentary" not in text
 
 
 def test_captain_rationale_checks_both_captain_and_vice():

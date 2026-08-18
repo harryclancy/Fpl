@@ -161,7 +161,10 @@ def test_shipped_gw1_file_is_valid_and_names_a_must_have():
     assert entries
     for entry in entries:
         assert entry["tier"] in consensus.TIER_BONUS, entry
-        assert entry.get("reason"), f"{entry['name']} needs a stated reason"
+        # Every entry must carry a written argument, not just a tier -- the
+        # whole point is telling the manager why, not just what.
+        assert entry.get("case") or entry.get("reason"), f"{entry['name']} needs a written case"
+        assert entry.get("verdict"), f"{entry['name']} needs a one-line verdict"
 
     must_haves = [e["name"] for e in entries if e["tier"] == "must_have"]
     assert must_haves, "GW1 consensus should name at least one must-have"

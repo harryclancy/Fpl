@@ -217,110 +217,114 @@ def _report_mention(row: pd.Series, report_text: str | None) -> str | None:
     return None
 
 
+def _supporting_data(row: pd.Series) -> str:
+    """One tight line of numbers that back the argument up.
+
+    Deliberately one line. The writeups used to stack a projection, a form
+    reading, an xGI figure, an average FDR, a minutes percentage, transfer
+    momentum and an ICT score on top of each other, which buries the
+    actual reason to pick someone under a readout nobody asked for. The
+    case for a player is a sentence you could say out loud; the numbers
+    are there to check it, not to be it.
+    """
+    bits = [f"£{row['price']:.1f}m"]
+
+    xp_next = row.get("xp_next")
+    if xp_next is not None and pd.notna(xp_next):
+        bits.append(f"{xp_next:.1f} pts projected")
+
+    ownership = row.get("selected_by_percent")
+    if ownership is not None and pd.notna(ownership):
+        bits.append(f"{ownership:.0f}% owned")
+
+    difficulty = row.get("fixture_run_difficulty")
+    if difficulty is not None and pd.notna(difficulty):
+        bits.append(f"{_difficulty_label(difficulty)} fixtures")
+
+    if row.get("scoring_basis") != "preseason":
+        form = row.get("form")
+        if form is not None and pd.notna(form) and form > 0:
+            bits.append(f"form {form:.1f}")
+
+    return " · ".join(bits)
+
+
+def _numbers_only_case(row: pd.Series) -> str:
+    """The argument for a player nobody has written about this week.
+
+    Still framed as a case rather than a stat list -- most of the squad
+    won't appear in expert coverage, and those players still need a reason
+    attached to them, not an apology for the absence of one.
+    """
+    name = row["web_name"]
+    position = row.get("position")
+    difficulty = row.get("fixture_run_difficulty", 3.0)
+    attacking = position in ("MID", "FWD")
+
+    if row.get("scoring_basis") == "preseason":
+        return (
+            f"No analyst has singled {name} out this week, so this is the model's own call. The "
+            f"argument is that the market has already priced their expected role and quality, and "
+            f"the fixtures agree: {_fixture_clause(difficulty, attacking)}."
+        )
+
+    if attacking:
+        xgi = row.get("expected_goal_involvements", 0)
+        return (
+            f"No analyst has singled {name} out this week, so this is the model's own call. The "
+            f"case is that {xgi:.1f} expected goal involvements says the chances are being created "
+            f"repeatedly rather than fluked once, and {_fixture_clause(difficulty, True)}."
+        )
+
+    xgc = row.get("expected_goals_conceded", 0)
+    return (
+        f"No analyst has singled {name} out this week, so this is the model's own call. The case is "
+        f"that {xgc:.2f} expected goals conceded points to a side that limits chances by structure "
+        f"rather than luck, and {_fixture_clause(difficulty, False)}."
+    )
+
+
 def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
+    """The written case for picking this player.
+
+    Leads with what analysts actually said and why, because that is the
+    reasoning a manager can act on and argue with. Numbers support the
+    argument on a single line underneath rather than crowding it out.
+    """
     name = row["web_name"]
     team = row["team_short_name"]
-    price = row["price"]
-    difficulty = row["fixture_run_difficulty"]
-    difficulty_label = _difficulty_label(difficulty)
-    preseason = row.get("scoring_basis") == "preseason"
-
-    if preseason:
-        ownership = row["selected_by_percent"]
-        body = (
-            f"**{name}** ({team}, £{price:.1f}m) — no in-season form to judge yet, so this leans on what "
-            f"the price and the crowd already know. FPL's pricing algorithm and the transfer market both "
-            f"price in *expected* role and quality before a ball's kicked, so £{price:.1f}m is itself a "
-            f"signal, not just a cost — and {ownership:.1f}% ownership means a lot of other managers did "
-            f"the same homework and landed here too. On top of that, their opponents over the next "
-            f"{FIXTURE_WINDOW} gameweeks grade as **{difficulty_label}** ({difficulty:.1f} avg FDR) — "
-            f"{_fixture_clause(difficulty, row['position'] in ('MID', 'FWD'))}."
-        )
-    else:
-        form = row["form"]
-        xgi = row["expected_goal_involvements"]
-        xgc = row.get("expected_goals_conceded", 0)
-        form_label = _form_label(form)
-
-        if row["position"] in ("MID", "FWD"):
-            body = (
-                f"**{name}** ({team}, £{price:.1f}m) is in **{form_label} form** ({form:.1f} recent form). "
-                f"The reason that's trustworthy rather than a hot streak: {xgi:.1f} expected goal "
-                f"involvements means they're consistently getting into good scoring/passing positions, "
-                f"not just riding a few lucky finishes — underlying output like that tends to repeat. "
-                f"Ahead of them: a **{difficulty_label}** run of opponents over the next "
-                f"{FIXTURE_WINDOW} gameweeks ({difficulty:.1f} avg FDR) — "
-                f"{_fixture_clause(difficulty, attacking=True)}."
-            )
-        else:
-            body = (
-                f"**{name}** ({team}, £{price:.1f}m) is in **{form_label} form** ({form:.1f} recent form), "
-                f"backed by {xgc:.2f} expected goals conceded — a low number here means their side isn't "
-                f"just riding shutout luck, they're structurally not allowing much, which is the kind of "
-                f"defensive process clean sheets actually come from. Their next {FIXTURE_WINDOW} "
-                f"gameweeks grade as **{difficulty_label}** ({difficulty:.1f} avg FDR) — "
-                f"{_fixture_clause(difficulty, attacking=False)}."
-            )
-
     parts = []
 
-    # Lead with what analysts and the community are actually saying. This
-    # is the part that reads like a reason rather than a readout, and it's
-    # what the selection engine is now weighting most heavily -- so it
-    # belongs at the top, not buried under the stats that supported it.
+    verdict = row.get("consensus_verdict")
+    headline = f"**{name}** ({team}) — "
+    if verdict and pd.notna(verdict):
+        parts.append(headline + str(verdict))
+    else:
+        parts.append(headline.rstrip("— ").strip())
+
     consensus_note = consensus_verdict(row)
     if consensus_note:
         parts.append(consensus_note)
+    else:
+        # Fall back to this week's written report, then to the model's own
+        # reasoning -- in that order, because a human's sentence about a
+        # player beats a template every time.
+        mention = _report_mention(row, report_text)
+        parts.append(f"**What managers are saying:** {mention}" if mention else _numbers_only_case(row))
 
-    # Then the projection and the fixture direction behind it. This is
-    # the number the selection engine actually optimises, so the writeup
-    # should open on it rather than bury it under descriptive stats.
-    xp_next = row.get("xp_next")
-    if xp_next is not None and pd.notna(xp_next):
-        multiplier = row.get("fixture_multiplier")
-        swing = ""
-        if multiplier is not None and pd.notna(multiplier) and multiplier > 0:
-            if multiplier >= 1.08:
-                swing = (
-                    " — and the fixture helps: the opponents ahead are weak specifically in the "
-                    "area this player profits from, which is why the projection sits above their "
-                    "baseline rather than at it"
-                )
-            elif multiplier <= 0.93:
-                swing = (
-                    " — despite an unhelpful fixture run, which is what drags the projection below "
-                    "their underlying level"
-                )
-        parts.append(
-            f"**Projected {xp_next:.1f} points next gameweek** "
-            f"({row.get('xp_horizon', 0):.0f} across the next {FIXTURE_WINDOW} combined){swing}."
-        )
-
-    parts.append(body)
+    risk = row.get("consensus_watch_out")
+    if risk and pd.notna(risk):
+        parts.append(f"**The case against:** {risk}")
 
     set_pieces = set_piece_note(row)
     if set_pieces:
         parts.append(set_pieces)
 
-    minutes = _minutes_note(row)
-    if minutes:
-        parts.append(minutes)
+    availability = _risk_note(row)
+    if availability:
+        parts.append(availability)
 
-    mention = _report_mention(row, report_text)
-    if mention:
-        parts.append(f'**What FPL managers & analysts are saying:** {mention}')
-    else:
-        parts.append(
-            f"*No specific community/analyst commentary on {name} in this week's research — the case "
-            f"above is numbers only. Ask about them in the question box below and I'll dig deeper.*"
-        )
-
-    extra_lines = [_risk_note(row), _momentum_note(row)]
-    extra_lines = [line for line in extra_lines if line]
-    if extra_lines:
-        parts.append("  \n".join(extra_lines))
-    parts.append("*Full fixture list, form, and underlying stats in the dropdown below.*")
-
+    parts.append(f"*{_supporting_data(row)}*")
     return "\n\n".join(parts)
 
 
