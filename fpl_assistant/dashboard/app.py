@@ -9,6 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 import pandas as pd
+import requests
 import streamlit as st
 
 from fpl_assistant import api
@@ -34,10 +35,22 @@ def load_core_data():
     return players, teams, events, fixtures, next_event
 
 
-def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int):
+def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, events: pd.DataFrame):
     try:
         picks_response = api.get_entry_picks(team_id, next_event)
         entry = api.get_entry(team_id)
+    except requests.exceptions.HTTPError as e:
+        if e.response is not None and e.response.status_code == 404:
+            deadline = events.loc[next_event, "deadline_time"] if next_event in events.index else None
+            when = f" (deadline: {deadline})" if deadline else ""
+            st.info(
+                f"GW{next_event} picks aren't public yet{when} — the FPL API only exposes a "
+                "gameweek's squads once its deadline has passed (so managers can't copy each "
+                "other pre-deadline). Check back after the deadline."
+            )
+        else:
+            st.error(f"Couldn't load team {team_id}: {e}")
+        return
     except Exception as e:
         st.error(f"Couldn't load team {team_id}: {e}")
         return
@@ -178,7 +191,7 @@ def main():
 
     if team_id:
         with tab_map["My Squad"]:
-            squad = render_squad_tab(players, team_id, next_event)
+            squad = render_squad_tab(players, team_id, next_event, events)
 
     with tab_map["Captaincy"]:
         render_captaincy_tab(players, fixtures, teams, next_event)
