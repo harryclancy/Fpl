@@ -56,8 +56,8 @@ fpl_assistant/
   dashboard/
     app.py        # Streamlit UI
   reports.py      # finds/reads the weekly odds & expert-take report (see below)
-data/cache/        # on-disk API response cache (gitignored)
-data/reports/       # weekly odds/expert-take reports, gw{N}.md (gitignored)
+data/cache/        # on-disk API response cache (gitignored, rebuilds itself)
+data/reports/       # weekly odds/expert-take reports, gw{N}.md (committed — see Deploying)
 tests/              # sanity tests against synthetic data, no network needed
 ```
 
@@ -84,6 +84,32 @@ upgrade is a paid odds API (e.g. the-odds-api.com) — that's a separate
 decision since it costs money, and would live as a new module under
 `analysis/` producing a DataFrame keyed by player/team, the same shape as
 the existing ones.
+
+## Deploying (so you can use it from your phone)
+
+Streamlit Community Cloud hosts this for free and gives you a permanent
+URL — no need to keep a computer running:
+
+1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+2. **New app** → pick the `harryclancy/Fpl` repo → branch `claude/fpl-assistant-manager-fjcupn`
+   (or `main`, once this is merged) → main file path `fpl_assistant/dashboard/app.py`.
+3. Before/after deploying, open **Settings → Secrets** on the app and add:
+   ```toml
+   FPL_TEAM_ID = "5617068"
+   ```
+4. Mark the app **private** if you don't want it publicly visible (free tier
+   allows one private app); add your own email/Google account under
+   **Settings → Sharing** to be able to view it.
+5. Deploy. You'll get a URL like `https://your-app-name.streamlit.app` —
+   bookmark it on your phone, or add it to your home screen for an app-like
+   icon.
+
+The free tier sleeps an app after 12 hours of no visits and wakes it (a
+~30 second delay) on the next open — fine for a once-or-twice-a-week check-in.
+
+**To update the live app**: push a commit to the branch it's deployed from
+(e.g. after I regenerate `data/reports/gw{N}.md` for a new gameweek) —
+Streamlit Cloud redeploys automatically within a minute or two.
 
 ## Running tests
 
