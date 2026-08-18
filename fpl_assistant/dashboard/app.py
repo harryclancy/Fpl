@@ -309,6 +309,9 @@ def render_captaincy_tab(players, fixtures, teams, next_event):
         role = " · Captain pick" if player_id == picks.index[0] else ""
         summary = f"{row['web_name']}{role} — score {cap_row['captaincy_score']:.2f} · vs {cap_row['opponent']}"
         render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=summary)
+
+
+def render_fixtures_tab(fixtures, teams, next_event):
     section_header(f"Fixture runs — next {FIXTURE_WINDOW} gameweeks", "Lower FDR = easier run")
     st.caption(f"↔ Swipe the table sideways to see all {FIXTURE_WINDOW} gameweeks.")
     table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, FIXTURE_WINDOW)
