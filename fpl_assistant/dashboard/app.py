@@ -119,7 +119,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
         bench_cols = ["web_name", "team_short_name", "position", "price"]
         st.caption("Cheap enablers to free up budget for the starting XI — minimal impact on your bank.")
-        st.dataframe(squad15.loc[bench, bench_cols], use_container_width=True)
+        st.dataframe(squad15.loc[bench, bench_cols], width='stretch')
 
 
 def render_manual_squad_entry(players: pd.DataFrame):
@@ -211,7 +211,7 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
     )
     cols = ["web_name", "team_short_name", "position", "price", "form", "status_label", "captain"]
     with st.expander("Squad detail table"):
-        st.dataframe(squad_players[cols].sort_values(["position", "web_name"]), use_container_width=True)
+        st.dataframe(squad_players[cols].sort_values(["position", "web_name"]), width='stretch')
 
     return squad
 
@@ -253,17 +253,17 @@ def render_fixtures_tab(fixtures, teams, next_event):
     gw_cols = list(range(next_event, next_event + FIXTURE_WINDOW))
     display_cols = ["team_name"] + gw_cols + ["avg_difficulty", "blank_gameweeks", "double_gameweeks"]
     styled = table[display_cols].style.map(lambda v: fdr_color(v), subset=["avg_difficulty"])
-    st.dataframe(styled, use_container_width=True)
+    st.dataframe(styled, width='stretch')
 
     c1, c2 = st.columns(2)
     with c1:
         st.markdown("**Best runs (target these teams' players)**")
         best = fixtures_analysis.best_fixture_runs(table)
-        st.dataframe(best.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), use_container_width=True)
+        st.dataframe(best.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), width='stretch')
     with c2:
         st.markdown("**Worst runs (consider avoiding/selling)**")
         worst = fixtures_analysis.worst_fixture_runs(table)
-        st.dataframe(worst.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), use_container_width=True)
+        st.dataframe(worst.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), width='stretch')
 
 
 def render_watchlist_tab(players):
