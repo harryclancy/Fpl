@@ -98,25 +98,45 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     section_header(f"Recommended Starting XI — GW{next_event}", "Best 15 buildable from scratch, with the case for every starter")
 
     scored = squad_builder.score_players(players, fixtures, teams, next_event)
-    squad15 = squad_builder.build_squad(scored)
-    starters, bench, formation = squad_builder.best_starting_xi(squad15)
-    captain_id, vice_id = squad_builder.pick_captain(squad15, starters)
+    solution = squad_builder.recommend_squad(scored)
+    squad15 = scored[scored["id"].isin(solution.squad_ids)].copy()
+    starters, bench = solution.starting_ids, solution.bench_ids
+    formation = solution.formation
+    captain_id, vice_id = solution.captain_id, solution.vice_captain_id
 
     if is_preseason(players):
         st.info(
-            "No match data exists yet this season, so this XI is built from price, ownership, and "
-            "fixture difficulty rather than form — it's a 'who to pick from scratch' recommendation, "
-            "not tied to your actual squad. Once real form data exists, this switches over "
-            "automatically."
+            "No match data exists yet this season, so these projections lean on price, ownership, "
+            "set-piece duties and fixture difficulty rather than form — it's a 'who to pick from "
+            "scratch' recommendation, not tied to your actual squad. Once real minutes are played "
+            "it switches to underlying stats automatically."
         )
     else:
         st.caption(
-            "This is the strongest XI buildable from scratch within a £100m budget — not "
-            "necessarily who's currently in your squad. Once GW1 unlocks, use My Squad + Transfers "
-            "for advice tailored to what you actually own."
+            "This is the highest projected-points XI buildable from scratch within a £100m budget — "
+            "not necessarily who's currently in your squad. Once GW1 unlocks, use My Squad + "
+            "Transfers for advice tailored to what you actually own."
         )
 
-    st.caption(f"Formation **{formation}** · squad cost **£{squad15['price'].sum():.1f}m** of £100m budget")
+    xi_xp = squad15.loc[squad15["id"].isin(starters), "xp_next"].sum()
+    captain_bonus = squad15.loc[captain_id, "xp_next"]
+    cost = squad15["price"].sum()
+
+    metrics = st.columns(4)
+    metrics[0].metric("Projected GW points", f"{xi_xp + captain_bonus:.0f}", help="Starting XI plus the captain's doubled score.")
+    metrics[1].metric("Formation", formation)
+    metrics[2].metric("Squad cost", f"£{cost:.1f}m", delta=f"£{100.0 - cost:.1f}m spare", delta_color="off")
+    metrics[3].metric("Captain", squad15.loc[captain_id, "web_name"])
+
+    if solution.optimal:
+        st.caption(
+            "✅ **Provably optimal** — solved exactly, so no other legal 15 within the budget has a "
+            "higher projected score. Points are projected per player from expected goals/assists, "
+            "minutes, set-piece duty and opponent strength."
+        )
+    else:
+        for note in solution.notes:
+            st.warning(note)
 
     report_text, _ = load_report(next_event)
 
@@ -141,7 +161,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     position_labels = {"FWD": "Forwards", "MID": "Midfielders", "DEF": "Defenders", "GKP": "Goalkeeper"}
     starters_df = squad15.loc[starters].copy()
     starters_df["_order"] = starters_df["position"].map(position_reading_order)
-    starters_df = starters_df.sort_values(["_order", "squad_score"], ascending=[True, False])
+    starters_df = starters_df.sort_values(["_order", "xp_next"], ascending=[True, False])
 
     fixture_table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, rationale.FIXTURE_WINDOW)
     fixture_gws = list(range(next_event, next_event + rationale.FIXTURE_WINDOW))
@@ -153,12 +173,19 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
         st.markdown(f"**{position_labels[pos]}**")
         for pid, row in pos_rows.iterrows():
             role = " · Captain" if pid == captain_id else (" · Vice-captain" if pid == vice_id else "")
-            summary = f"{row['web_name']}{role} — {row['team_short_name']} · £{row['price']:.1f}m"
+            summary = (
+                f"{row['web_name']}{role} — {row['team_short_name']} · £{row['price']:.1f}m · "
+                f"{row['xp_next']:.1f} pts projected"
+            )
             render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=summary)
 
     with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
         bench_cols = ["web_name", "team_short_name", "position", "price"]
-        st.caption("Cheap enablers to free up budget for the starting XI — minimal impact on your bank.")
+        st.caption(
+            "Deliberately cheap: points come from the eleven who start, so the optimiser spends "
+            "the minimum here to free budget for the XI. Ordered by who comes on first if a "
+            "starter doesn't play."
+        )
         st.dataframe(squad15.loc[bench, bench_cols], width='stretch')
 
 

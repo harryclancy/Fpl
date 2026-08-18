@@ -1,20 +1,23 @@
 """Captaincy scoring: who to armband for the next gameweek.
 
-Combines three signals, each min-max normalised to 0-1 so no single one
-dominates just because of its raw scale:
-  - recent form (FPL's rolling per-gameweek average)
-  - fixture difficulty for the next gameweek (inverted: easier = better)
-  - underlying attacking threat (expected goal involvements)
-Weights are a starting point, not gospel — tune them as you see how well
-they track your own read of a gameweek.
+Ranks on `xp_captain` from the expected-points model -- the same
+projection that drives squad selection, so the two can't disagree. An app
+that puts a player in the recommended XI and then declines to captain him
+on unrelated reasoning leaves the user no way to tell which answer to
+believe.
 
-Before matches have actually been played (preseason, or GW1 before
-kickoff), form/xGI are zero for everyone, so this falls back to
-price/ownership instead — see squad_builder.score_players for the same
-pattern.
+`xp_captain` is the ceiling-adjusted variant rather than the raw mean,
+because the armband doubles a result: a defender and a forward projected
+identically are not equivalent bets once doubled, since the forward can
+return 15+ on a two-goal afternoon while the defender's realistic best is
+a clean sheet plus bonus.
+
+The older normalised form/fixture/threat blend is retained only as a
+fallback for the case where no projection can be produced at all.
 """
 import pandas as pd
 
+from fpl_assistant.analysis.expected_points import expected_points
 from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.season_state import is_preseason
 
@@ -63,22 +66,33 @@ def captaincy_candidates(
 
     df["fixture_score"] = _normalise(6 - df["fixture_difficulty"])  # invert: 5=hard -> low score
 
-    if preseason:
-        df["price_score"] = _normalise(df["price"])
-        df["ownership_score"] = _normalise(df["selected_by_percent"])
-        df["captaincy_score"] = (
-            PRESEASON_WEIGHTS["price"] * df["price_score"]
-            + PRESEASON_WEIGHTS["ownership"] * df["ownership_score"]
-            + PRESEASON_WEIGHTS["fixture"] * df["fixture_score"]
-        ).round(3)
-    else:
-        df["form_score"] = _normalise(df["form"])
-        df["threat_score"] = _normalise(df["expected_goal_involvements"])
-        df["captaincy_score"] = (
-            WEIGHTS["form"] * df["form_score"]
-            + WEIGHTS["fixture"] * df["fixture_score"]
-            + WEIGHTS["threat"] * df["threat_score"]
-        ).round(3)
+    # Rank on the same projection the selection engine uses, so the two
+    # tabs can't contradict each other -- an app that recommends a player
+    # into the XI and then declines to captain him for unrelated reasons
+    # gives the user no way to tell which answer to trust. `xp_captain` is
+    # the ceiling-adjusted variant: the armband doubles a result, so upside
+    # matters more than the average (see expected_points).
+    projected = expected_points(players, fixtures, teams, next_event, horizon=1)
+    df["expected_points"] = df["id"].map(projected["xp_next"])
+    df["captaincy_score"] = df["id"].map(projected["xp_captain"]).round(2)
+    df["expected_minutes"] = df["id"].map(projected["expected_minutes"])
+
+    # Fall back to the old normalised blend only if the projection couldn't
+    # be produced for anyone (e.g. every team blank in this gameweek).
+    if df["captaincy_score"].isna().all():
+        if preseason:
+            df["captaincy_score"] = (
+                PRESEASON_WEIGHTS["price"] * _normalise(df["price"])
+                + PRESEASON_WEIGHTS["ownership"] * _normalise(df["selected_by_percent"])
+                + PRESEASON_WEIGHTS["fixture"] * df["fixture_score"]
+            ).round(3)
+        else:
+            df["captaincy_score"] = (
+                WEIGHTS["form"] * _normalise(df["form"])
+                + WEIGHTS["fixture"] * df["fixture_score"]
+                + WEIGHTS["threat"] * _normalise(df["expected_goal_involvements"])
+            ).round(3)
+    df["captaincy_score"] = df["captaincy_score"].fillna(0.0)
 
     cols = [
         "id",
@@ -93,6 +107,8 @@ def captaincy_candidates(
         "fixture_difficulty",
         "expected_goal_involvements",
         "selected_by_percent",
+        "expected_points",
+        "expected_minutes",
         "captaincy_score",
     ]
     return df.sort_values("captaincy_score", ascending=False)[cols].head(top_n)

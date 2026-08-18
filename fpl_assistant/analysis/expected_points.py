@@ -44,6 +44,14 @@ CLEAN_SHEET_POINTS = {"GKP": 4, "DEF": 4, "MID": 1, "FWD": 0}
 ASSIST_POINTS = 3
 SAVES_PER_POINT = 3
 GOALS_CONCEDED_PER_MINUS_ONE = 2
+# Lowest credible expected goals-conceded per match. Calibrated against
+# reality rather than picked for convenience: the best Premier League
+# defences concede about 0.75 a game across a season (a title-winning side
+# lands near 29 goals in 38), and the league averages roughly 1.4. Poisson
+# P(0) turns those into clean-sheet rates of ~47% and ~25% respectively,
+# which is what actually happens. A floor much below this quietly hands
+# every defender a coin-flip clean sheet.
+MIN_EXPECTED_CONCEDED = 0.70
 # Defensive contributions (clearances/blocks/interceptions/tackles) award 2
 # points at a per-position threshold. The API reports the count a player has
 # already banked, so we model it as an empirical per-game rate rather than
@@ -363,7 +371,15 @@ def _component_points_per_match(
     # exp(-expected goals) is a good clean-sheet estimate. Dividing the
     # multiplier through reflects that a weak opponent attack lowers the
     # expected concession.
-    expected_conceded = (xgc90 / defence_mult.replace(0, 1.0)).clip(lower=0.05)
+    #
+    # The floor matters more than it looks. Even the best Premier League
+    # defences concede around 0.7 goals a game across a season, so an
+    # expected-concession near zero is never real -- it means the input was
+    # missing, mis-scaled, or drawn from too few matches. Without a
+    # realistic floor those cases produce clean-sheet probabilities above
+    # 90%, which inflates every defender and goalkeeper enough to push them
+    # past forwards in the projection (and, worse, into the captaincy pick).
+    expected_conceded = (xgc90 / defence_mult.replace(0, 1.0)).clip(lower=MIN_EXPECTED_CONCEDED)
     p_clean_sheet = np.exp(-expected_conceded)
 
     cs_value = position.map(CLEAN_SHEET_POINTS).fillna(0).astype(float)
@@ -518,8 +534,15 @@ def expected_points(
         # featured; for the rest it's zero for lack of chances, not lack of
         # ability, so lean fully on the component model there.
         has_record = df["minutes"].fillna(0) >= FULL_MATCH_MINUTES
+        # Points-per-game is points per game *they featured in*, so it has
+        # to be rescaled by how much they're expected to feature now.
+        # Applying it raw lets a player who starred in two games and then
+        # lost his place keep the full rate forever -- which is how a
+        # £13.0m player projected to play 15 minutes ended up with a
+        # starter's projection and a place in the recommended XI.
+        availability_scale = (xmins / STARTER_MINUTES).clip(0.0, 1.0)
         for gw in gameweeks:
-            anchor = ppg * (per_gw_points[gw] > 0).astype(float)
+            anchor = ppg * availability_scale * (per_gw_points[gw] > 0).astype(float)
             blended = POINTS_MODEL_WEIGHT * per_gw_points[gw] + (1 - POINTS_MODEL_WEIGHT) * anchor
             per_gw_points[gw] = blended.where(has_record, per_gw_points[gw])
 

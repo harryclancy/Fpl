@@ -142,6 +142,23 @@ def test_rotation_risk_scores_below_nailed_on_starter():
     assert xp.loc[2, "xp_next"] < xp.loc[1, "xp_next"]
 
 
+def test_high_scoring_rate_does_not_survive_losing_your_place():
+    """Points-per-game counts only games a player featured in, so it must
+    be rescaled by expected minutes. Left raw, a player who starred twice
+    and then lost his place keeps a starter's projection forever -- which
+    put a 15-minute-a-week player into the recommended XI."""
+    players = _frame(
+        [
+            # Same excellent scoring rate; one still starts, one doesn't.
+            _player(1, "MID", 1, points_per_game=7.0, starts=10, minutes=900),
+            _player(2, "MID", 1, points_per_game=7.0, starts=1, minutes=150),
+        ]
+    )
+    xp = expected_points(players, _fixtures(), _teams(), from_event=1, horizon=3)
+
+    assert xp.loc[2, "xp_next"] < xp.loc[1, "xp_next"] / 2
+
+
 def test_injured_player_projects_near_zero():
     players = _frame(
         [_player(1, "FWD", 1), _player(2, "FWD", 1, status="i", chance_of_playing_next_round=0)]
@@ -249,6 +266,35 @@ def test_defensive_contribution_cannot_exceed_one_per_match():
 
     # The absurd value is clamped, so the gap stays bounded rather than exploding.
     assert xp.loc[2, "xp_next"] - xp.loc[1, "xp_next"] < 3.0
+
+
+def test_clean_sheet_probability_stays_realistic_on_absurd_inputs():
+    """A near-zero expected-concession is always a data artefact, never a
+    real defence. Without a floor it yields a >90% clean-sheet chance,
+    which inflates defenders past forwards and hands them the armband."""
+    # A defender whose only case is the clean sheet, against a forward who
+    # actually scores. Zero attacking output on the defender isolates what
+    # this test is about.
+    players = _frame(
+        [
+            _player(
+                1, "DEF", 1,
+                expected_goals_conceded_per_90=0.0, expected_goals_conceded=0.0,
+                expected_goals_per_90=0.0, expected_assists_per_90=0.0,
+                defensive_contribution=0, bonus=0, points_per_game=0.0,
+            ),
+            _player(
+                2, "FWD", 1,
+                expected_goals_per_90=0.6, expected_assists_per_90=0.0,
+                defensive_contribution=0, bonus=0, points_per_game=0.0,
+            ),
+        ]
+    )
+    xp = expected_points(players, _fixtures(), _teams(), from_event=1, horizon=3)
+
+    # Clean-sheet points alone (max 4, and only on a coin-flip at best) must
+    # not carry a defender past a genuinely productive forward.
+    assert xp.loc[1, "xp_next"] < xp.loc[2, "xp_next"]
 
 
 def test_team_schedule_captures_doubles_and_blanks():

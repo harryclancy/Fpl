@@ -28,6 +28,35 @@ def _difficulty_label(avg_fdr: float) -> str:
     return "very tough"
 
 
+def _fixture_clause(avg_fdr: float, attacking: bool) -> str:
+    """Describes what the upcoming run means, honestly in both directions.
+
+    These sentences used to assert "weaker defences ahead" unconditionally,
+    which produced flat self-contradictions whenever the run was hard --
+    a player could be described as facing a "very tough" run of "weaker
+    defences" in the same clause. A tough run is a real argument against a
+    pick and the writeup has to be able to say so.
+    """
+    if avg_fdr <= 3.0:
+        return (
+            "weaker opposition defences ahead — more space and more shots"
+            if attacking
+            else "attacks that shouldn't test them much, so clean sheets are live"
+        )
+    if avg_fdr <= 3.5:
+        return (
+            "a mixed run — a couple of favourable matchups among tougher ones"
+            if attacking
+            else "a mixed run of attacks: some clean-sheet chances, some not"
+        )
+    return (
+        "a genuinely hard run, and the clearest argument *against* them; they're in this side on "
+        "underlying quality, not on the schedule"
+        if attacking
+        else "attacks that will test them, so the clean-sheet case is weaker than the rest"
+    )
+
+
 def _form_label(form: float) -> str:
     if form >= 7:
         return "excellent"
@@ -36,6 +65,66 @@ def _form_label(form: float) -> str:
     if form >= 3:
         return "decent"
     return "modest"
+
+
+def set_piece_note(row: pd.Series) -> str | None:
+    """Dead-ball duties, spelled out as the causal reason they are.
+
+    This is the single biggest swing in a player's ceiling that isn't
+    visible in their price or their form line: a penalty taker converts
+    roughly four-fifths of the spot-kicks his side wins, so the job is
+    worth most of an extra goal every handful of games on its own -- and
+    it transfers the moment a manager reassigns it, which is exactly the
+    kind of change a form-based model notices far too late.
+    """
+    notes = []
+    penalties = row.get("penalties_order")
+    corners = row.get("corners_and_indirect_freekicks_order")
+    freekicks = row.get("direct_freekicks_order")
+
+    if pd.notna(penalties) and penalties == 1:
+        notes.append(
+            "**on penalties** — first-choice taker, which is worth close to an extra goal every "
+            "few games before they've done anything in open play"
+        )
+    elif pd.notna(penalties) and penalties == 2:
+        notes.append("second in line for penalties (inherits the job if the taker is off the pitch)")
+
+    if pd.notna(freekicks) and freekicks == 1:
+        notes.append("takes **direct free-kicks**")
+    if pd.notna(corners) and corners == 1:
+        notes.append("**on corners** — repeatable assist source rather than a one-off")
+
+    if not notes:
+        return None
+    return f"🎯 Set-piece duty: {', '.join(notes)}."
+
+
+def _minutes_note(row: pd.Series) -> str | None:
+    """Starting certainty, framed as the risk it actually is."""
+    expected_minutes = row.get("expected_minutes")
+    p_start = row.get("p_start")
+    if expected_minutes is None or pd.isna(expected_minutes):
+        return None
+
+    if p_start is not None and pd.notna(p_start):
+        if p_start >= 0.85:
+            return (
+                f"⏱️ **Nailed on** — starts about {p_start * 100:.0f}% of the time "
+                f"({expected_minutes:.0f} mins projected). Minutes are the foundation everything "
+                f"else sits on: the best underlying numbers in the league score nothing from the bench."
+            )
+        if p_start >= 0.6:
+            return (
+                f"⏱️ Usually starts ({p_start * 100:.0f}% of games, {expected_minutes:.0f} mins "
+                f"projected) — some rotation risk, so worth a team-news check before the deadline."
+            )
+        return (
+            f"⚠️ **Rotation risk** — starts only {p_start * 100:.0f}% of the time "
+            f"({expected_minutes:.0f} mins projected). Their per-90 rate may look good, but they "
+            f"have to be on the pitch to use it."
+        )
+    return None
 
 
 def _momentum_note(row: pd.Series) -> str | None:
@@ -110,8 +199,7 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
             f"signal, not just a cost — and {ownership:.1f}% ownership means a lot of other managers did "
             f"the same homework and landed here too. On top of that, their opponents over the next "
             f"{FIXTURE_WINDOW} gameweeks grade as **{difficulty_label}** ({difficulty:.1f} avg FDR) — "
-            f"weaker opposition defences/attacks specifically, which is the tie-breaker that tipped them "
-            f"into this XI over a similarly-priced alternative."
+            f"{_fixture_clause(difficulty, row['position'] in ('MID', 'FWD'))}."
         )
     else:
         form = row["form"]
@@ -125,9 +213,9 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
                 f"The reason that's trustworthy rather than a hot streak: {xgi:.1f} expected goal "
                 f"involvements means they're consistently getting into good scoring/passing positions, "
                 f"not just riding a few lucky finishes — underlying output like that tends to repeat. "
-                f"Add in a **{difficulty_label}** run of opponents over the next {FIXTURE_WINDOW} "
-                f"gameweeks ({difficulty:.1f} avg FDR — weaker defences ahead), and both the process and "
-                f"the matchups point the same way."
+                f"Ahead of them: a **{difficulty_label}** run of opponents over the next "
+                f"{FIXTURE_WINDOW} gameweeks ({difficulty:.1f} avg FDR) — "
+                f"{_fixture_clause(difficulty, attacking=True)}."
             )
         else:
             body = (
@@ -135,11 +223,45 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
                 f"backed by {xgc:.2f} expected goals conceded — a low number here means their side isn't "
                 f"just riding shutout luck, they're structurally not allowing much, which is the kind of "
                 f"defensive process clean sheets actually come from. Their next {FIXTURE_WINDOW} "
-                f"gameweeks grade as **{difficulty_label}** ({difficulty:.1f} avg FDR) against attacks "
-                f"that aren't going to test that much."
+                f"gameweeks grade as **{difficulty_label}** ({difficulty:.1f} avg FDR) — "
+                f"{_fixture_clause(difficulty, attacking=False)}."
             )
 
-    parts = [body]
+    parts = []
+
+    # Lead with the projection and the fixture direction behind it. This is
+    # the number the selection engine actually optimises, so the writeup
+    # should open on it rather than bury it under descriptive stats.
+    xp_next = row.get("xp_next")
+    if xp_next is not None and pd.notna(xp_next):
+        multiplier = row.get("fixture_multiplier")
+        swing = ""
+        if multiplier is not None and pd.notna(multiplier) and multiplier > 0:
+            if multiplier >= 1.08:
+                swing = (
+                    " — and the fixture helps: the opponents ahead are weak specifically in the "
+                    "area this player profits from, which is why the projection sits above their "
+                    "baseline rather than at it"
+                )
+            elif multiplier <= 0.93:
+                swing = (
+                    " — despite an unhelpful fixture run, which is what drags the projection below "
+                    "their underlying level"
+                )
+        parts.append(
+            f"**Projected {xp_next:.1f} points next gameweek** "
+            f"({row.get('xp_horizon', 0):.0f} across the next {FIXTURE_WINDOW} combined){swing}."
+        )
+
+    parts.append(body)
+
+    set_pieces = set_piece_note(row)
+    if set_pieces:
+        parts.append(set_pieces)
+
+    minutes = _minutes_note(row)
+    if minutes:
+        parts.append(minutes)
 
     mention = _report_mention(row, report_text)
     if mention:
@@ -177,6 +299,21 @@ def captain_rationale(captain_row: pd.Series, vice_row: pd.Series, report_text: 
         )
 
     parts = [body]
+
+    xp_next = captain_row.get("xp_next")
+    if xp_next is not None and pd.notna(xp_next):
+        parts.append(
+            f"On the numbers: **{xp_next:.1f} projected points, doubled to "
+            f"{xp_next * 2:.1f}**. Note the armband is ranked on *ceiling*, not average — a "
+            f"defender and a forward projected the same aren't equal bets once you double them, "
+            f"because the forward can return 15+ on a two-goal afternoon and the defender's "
+            f"realistic best is a clean sheet plus bonus."
+        )
+
+    captain_set_pieces = set_piece_note(captain_row)
+    if captain_set_pieces:
+        parts.append(captain_set_pieces)
+
     captain_mention = _report_mention(captain_row, report_text)
     if captain_mention:
         parts.append(f'**What FPL managers & analysts are saying about {c_name}:** {captain_mention}')
