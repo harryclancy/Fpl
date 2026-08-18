@@ -15,6 +15,8 @@ import streamlit as st
 from fpl_assistant import api
 from fpl_assistant.analysis import captaincy, form, fixtures as fixtures_analysis, injuries, transfers
 from fpl_assistant.config import FPL_TEAM_ID
+from fpl_assistant.dashboard.pitch import render_pitch_html
+from fpl_assistant.dashboard.styles import hero_header, inject_global_css
 from fpl_assistant.models import attach_team_names, events_df, fixtures_df, parse_squad, players_df, teams_df
 from fpl_assistant.reports import load_report
 
@@ -64,11 +66,15 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
     c3.metric("Overall rank", f"{entry.get('summary_overall_rank', '—'):,}" if entry.get("summary_overall_rank") else "—")
 
     squad_players = players.loc[squad.player_ids].copy()
+
+    st.markdown(render_pitch_html(squad_players, squad), unsafe_allow_html=True)
+
     squad_players["captain"] = squad_players["id"].apply(
         lambda pid: "C" if pid == squad.captain_id else ""
     )
     cols = ["web_name", "team_short_name", "position", "price", "form", "status_label", "captain"]
-    st.dataframe(squad_players[cols].sort_values(["position", "web_name"]), use_container_width=True)
+    with st.expander("Squad detail table"):
+        st.dataframe(squad_players[cols].sort_values(["position", "web_name"]), use_container_width=True)
 
     return squad
 
@@ -167,7 +173,8 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
 
 
 def main():
-    st.title("⚽ FPL Assistant Manager")
+    inject_global_css()
+    hero_header()
     players, teams, events, fixtures, next_event = load_core_data()
 
     st.sidebar.header("Settings")
