@@ -15,6 +15,7 @@ import streamlit as st
 from fpl_assistant import api
 from fpl_assistant.analysis import (
     captaincy,
+    consensus,
     optimiser,
     form,
     fixtures as fixtures_analysis,
@@ -102,6 +103,47 @@ def render_rank_strategy_control() -> None:
     st.sidebar.caption(RANK_STRATEGIES[choice][1])
 
 
+CONSENSUS_LABELS = {
+    "must_have": ("✅ Must-have", "Locked into the squad"),
+    "strong": ("👍 Widely backed", "Heavily weighted in selection"),
+    "value": ("💡 Popular value pick", "Given a selection bonus"),
+    "avoid": ("🚫 Avoid", "Excluded from selection"),
+}
+
+
+def render_consensus_panel(scored, squad) -> None:
+    """Shows what the experts said and exactly what the app did about it.
+
+    The consensus now moves the selection, so it has to be visible and
+    auditable — otherwise the squad reads as arbitrary and there's no way
+    to tell whether the app actually acted on the research.
+    """
+    matched = consensus.summary(scored)
+    if matched.empty:
+        st.caption(
+            "No expert consensus file for this gameweek yet, so this squad is projection-only. "
+            "Ask in the sidebar and I'll research the week and fold it in."
+        )
+        return
+
+    in_squad = set(squad["id"])
+    with st.expander("🗣️ What the experts are saying — and what this squad did about it", expanded=True):
+        st.caption(
+            "Consensus is an input to the algorithm, not a footnote: must-haves are locked in, "
+            "and the rest carry a weighted bonus that competes directly against the projection."
+        )
+        for _, row in matched.iterrows():
+            label, effect = CONSENSUS_LABELS.get(row["consensus_tier"], ("—", ""))
+            picked = "**In your squad**" if row["id"] in in_squad else "not selected"
+            st.markdown(
+                f"{label} · **{row['web_name']}** (£{row['price']:.1f}m) — {picked}  \n"
+                f"<span style='opacity:0.75'>{row['consensus_reason']}</span>  \n"
+                f"<span style='opacity:0.55;font-size:0.85em'>Effect on selection: {effect}</span>",
+                unsafe_allow_html=True,
+            )
+            st.markdown("")
+
+
 def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=None):
     """One player's full case: photo + rationale text (which already
     surfaces qualitative research from the weekly report) inside an
@@ -181,6 +223,8 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     else:
         for note in solution.notes:
             st.warning(note)
+
+    render_consensus_panel(scored, squad15)
 
     report_text, _ = load_report(next_event)
 

@@ -116,10 +116,31 @@ CAPTAIN_CEILING_FACTOR = {"FWD": 1.00, "MID": 0.97, "DEF": 0.80, "GKP": 0.68}
 # Preseason, every rate stat is zero, so the model has nothing to chew on.
 # Price is the best available prior: FPL's pricing algorithm is itself a
 # points forecast, set by people with access to far more data than the
-# public API exposes. Calibrated so ~£4.0m maps to a fringe ~1.5 pts/game
-# and ~£15.0m to an elite ~7.0 pts/game.
-PRESEASON_PRICE_SLOPE = 0.50
-PRESEASON_PRICE_INTERCEPT = -0.50
+# public API exposes.
+#
+# The *shape* of that curve matters enormously, and getting it wrong is
+# not a small calibration error -- it breaks the optimiser outright. A
+# linear prior (points = a·price + b) makes the objective degenerate:
+# summed over a fixed number of slots, total points depend only on total
+# spend, not on how that spend is distributed. Every way of allocating
+# £84m across eleven players scores identically, so the solver becomes
+# indifferent between a squad built around a £15.0m striker and one
+# spreading the same money evenly, and the choice falls to whichever
+# tie-breaker happens to be largest. That is exactly how a near-unanimous
+# premium ends up excluded for no stateable reason.
+#
+# Real returns are concave -- each extra million buys less than the last --
+# which restores a genuine trade-off. Fitted logarithmically against how
+# FPL prices translate to points in practice:
+#   £4.0m -> ~2.0/game (fringe, often not starting)
+#   £7.0m -> ~4.0      £11.0m -> ~5.7
+#   £15.0m -> ~6.8     (elite, nailed on)
+# Premiums then earn their place through the captaincy term rather than
+# through a spurious linear value edge, which is the real-world argument
+# for them.
+PRESEASON_LOG_SLOPE = 3.63
+PRESEASON_LOG_INTERCEPT = -3.03
+PRESEASON_MIN_PRICE = 3.9  # guards log() against nonsense inputs
 # Ownership is a weaker but real second signal preseason -- it aggregates
 # the research of millions of managers, which is informative even though
 # it also carries herd behaviour.
@@ -300,7 +321,8 @@ def _preseason_base_points(players: pd.DataFrame) -> pd.Series:
     with better information than the public API carries, and nudged by
     ownership as a second opinion from the wider manager base.
     """
-    price_component = PRESEASON_PRICE_SLOPE * players["price"] + PRESEASON_PRICE_INTERCEPT
+    price = players["price"].clip(lower=PRESEASON_MIN_PRICE)
+    price_component = PRESEASON_LOG_INTERCEPT + PRESEASON_LOG_SLOPE * np.log(price)
     ownership = pd.to_numeric(players.get("selected_by_percent", 0), errors="coerce").fillna(0.0)
     ownership_component = PRESEASON_OWNERSHIP_BONUS * (ownership / 100.0)
     return (price_component + ownership_component).clip(lower=0.3)

@@ -18,7 +18,7 @@ now delegate to the new engine.
 """
 import pandas as pd
 
-from fpl_assistant.analysis import optimiser
+from fpl_assistant.analysis import consensus, optimiser
 from fpl_assistant.analysis.expected_points import DEFAULT_HORIZON, expected_points
 from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.optimiser import (
@@ -70,6 +70,19 @@ def score_players(
     available["fixture_run_difficulty"] = available["fixture_run_difficulty"].fillna(3.0)
 
     projected = expected_points(available, fixtures, teams, from_event, horizon=window)
+
+    # Fold in what analysts and the wider community are actually saying.
+    # This is not decoration on top of the projection -- it moves the
+    # numbers the optimiser maximises, because the reasoning that decides
+    # real FPL weeks (who just got penalties, who the manager confirmed
+    # starts, which "easy" fixture is a trap) is invisible to a model
+    # reading per-90 rates.
+    projected = consensus.annotate(projected, from_event)
+    projected["xp_pre_consensus"] = projected["xp_horizon"]
+    projected["xp_horizon"] = projected["xp_horizon"] + projected["consensus_bonus"]
+    projected["xp_next"] = projected["xp_next"] + projected["consensus_bonus"] / window
+    projected["xp_captain"] = projected["xp_captain"] + projected["consensus_bonus"] / window
+
     projected["squad_score"] = projected["xp_horizon"]
     projected["scoring_basis"] = projected["xp_basis"]
     return projected
@@ -94,31 +107,62 @@ def recommend_squad(
     its own CBC binary, but a locked-down host could still block it) so the
     deployed app degrades rather than breaking.
     """
-    try:
+    # Consensus must-haves are locked in, not merely favoured. When ~70% of
+    # managers and effectively every analyst have landed on the same
+    # player, "the model ranked him fourth" is evidence the model is
+    # missing something they can see -- not grounds to leave him out.
+    # Fading a near-universal pick is an active bet against the field, and
+    # that should be a human's call, never a side effect of a formula.
+    locked = list(locked_ids or []) + consensus.must_have_ids(scored)
+    banned = list(banned_ids or []) + consensus.avoid_ids(scored)
+
+    def solve(with_locks: bool) -> SquadSolution:
         return optimiser.optimise_squad(
             scored,
             budget=budget,
             max_per_club=max_per_club,
             template_weight=template_weight,
-            locked_ids=locked_ids,
-            banned_ids=banned_ids,
+            locked_ids=sorted(set(locked)) if with_locks else None,
+            banned_ids=sorted(set(banned)),
         )
-    except Exception as exc:  # solver missing, infeasible, or misbehaving
-        squad = _greedy_squad(scored, budget=budget, max_per_club=max_per_club)
-        starters, bench, formation = best_starting_xi(squad)
-        captain_id, vice_id = pick_captain(squad, starters)
-        return SquadSolution(
-            squad_ids=squad["id"].tolist(),
-            starting_ids=starters,
-            bench_ids=bench,
-            captain_id=captain_id,
-            vice_captain_id=vice_id,
-            formation=formation,
-            total_cost=round(float(squad["price"].sum()), 1),
-            expected_points=round(float(squad.loc[squad["id"].isin(starters), "squad_score"].sum()), 2),
-            optimal=False,
-            notes=[f"Exact optimiser unavailable ({exc}); used a greedy fallback."],
-        )
+
+    try:
+        return solve(with_locks=True)
+    except Exception as lock_error:
+        first_error = lock_error
+
+    # Too many locks can over-constrain the squad into infeasibility -- a
+    # consensus naming several expensive must-haves, or locks colliding
+    # with the three-per-club cap. Retry without them before abandoning
+    # exact optimisation: a provably optimal squad that merely *weights*
+    # the consensus is better than a heuristic one that honours it, and the
+    # bonuses are still in the projections either way.
+    if locked:
+        try:
+            solution = solve(with_locks=False)
+            solution.notes.append(
+                "Consensus must-haves couldn't all be locked in together within the budget and "
+                f"squad rules ({first_error}) — they're still weighted heavily in the projections."
+            )
+            return solution
+        except Exception as unlocked_error:
+            first_error = unlocked_error
+
+    squad = _greedy_squad(scored, budget=budget, max_per_club=max_per_club)
+    starters, bench, formation = best_starting_xi(squad)
+    captain_id, vice_id = pick_captain(squad, starters)
+    return SquadSolution(
+        squad_ids=squad["id"].tolist(),
+        starting_ids=starters,
+        bench_ids=bench,
+        captain_id=captain_id,
+        vice_captain_id=vice_id,
+        formation=formation,
+        total_cost=round(float(squad["price"].sum()), 1),
+        expected_points=round(float(squad.loc[squad["id"].isin(starters), "squad_score"].sum()), 2),
+        optimal=False,
+        notes=[f"Exact optimiser unavailable ({first_error}); used a greedy fallback."],
+    )
 
 
 def build_squad(

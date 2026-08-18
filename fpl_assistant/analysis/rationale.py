@@ -67,6 +67,41 @@ def _form_label(form: float) -> str:
     return "modest"
 
 
+CONSENSUS_HEADLINES = {
+    "must_have": "✅ **Consensus must-have.**",
+    "strong": "👍 **Widely backed by analysts.**",
+    "value": "💡 **A popular value pick.**",
+    "avoid": "🚫 **Analysts are steering clear.**",
+}
+
+
+def consensus_verdict(row: pd.Series) -> str | None:
+    """What the experts and the wider community actually said about this
+    player, and what the app did with it.
+
+    Stated plainly, including the consequence, because a verdict the
+    selection engine acts on should be visible to the person reading the
+    recommendation -- otherwise the squad looks arbitrary.
+    """
+    tier = row.get("consensus_tier")
+    if not tier or pd.isna(tier):
+        return None
+
+    headline = CONSENSUS_HEADLINES.get(tier)
+    if not headline:
+        return None
+
+    reason = row.get("consensus_reason")
+    text = f"{headline} {reason}" if reason and pd.notna(reason) else headline
+
+    if tier == "must_have":
+        text += (
+            " **This one is locked into the squad**, rather than left to the projection to argue "
+            "for — at this level of agreement, fading him is an active bet against the field."
+        )
+    return text
+
+
 def set_piece_note(row: pd.Series) -> str | None:
     """Dead-ball duties, spelled out as the causal reason they are.
 
@@ -229,7 +264,15 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
 
     parts = []
 
-    # Lead with the projection and the fixture direction behind it. This is
+    # Lead with what analysts and the community are actually saying. This
+    # is the part that reads like a reason rather than a readout, and it's
+    # what the selection engine is now weighting most heavily -- so it
+    # belongs at the top, not buried under the stats that supported it.
+    consensus_note = consensus_verdict(row)
+    if consensus_note:
+        parts.append(consensus_note)
+
+    # Then the projection and the fixture direction behind it. This is
     # the number the selection engine actually optimises, so the writeup
     # should open on it rather than bury it under descriptive stats.
     xp_next = row.get("xp_next")
@@ -299,6 +342,10 @@ def captain_rationale(captain_row: pd.Series, vice_row: pd.Series, report_text: 
         )
 
     parts = [body]
+
+    captain_consensus = consensus_verdict(captain_row)
+    if captain_consensus:
+        parts.append(captain_consensus)
 
     xp_next = captain_row.get("xp_next")
     if xp_next is not None and pd.notna(xp_next):
