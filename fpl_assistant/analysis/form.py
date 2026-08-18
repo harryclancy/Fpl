@@ -44,8 +44,11 @@ def in_form_players(
     df = df[df["status"] == "a"]  # available only — no point recommending injured players
 
     cols = [
+        "id",
+        "code",
         "web_name",
         "team_short_name",
+        "team_code",
         "position",
         "price",
         "form",
@@ -71,8 +74,11 @@ def best_value_players(
 
     df["points_per_million"] = (df["total_points"] / df["price"]).round(2)
     cols = [
+        "id",
+        "code",
         "web_name",
         "team_short_name",
+        "team_code",
         "position",
         "price",
         "total_points",
@@ -103,8 +109,11 @@ def differentials(
         & (players["status"] == "a")
     ].copy()
     cols = [
+        "id",
+        "code",
         "web_name",
         "team_short_name",
+        "team_code",
         "position",
         "price",
         "form",

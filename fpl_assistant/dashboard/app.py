@@ -24,8 +24,10 @@ from fpl_assistant.analysis import (
 )
 from fpl_assistant.analysis.season_state import is_preseason
 from fpl_assistant.config import FPL_TEAM_ID
+from fpl_assistant.dashboard.cards import player_rank_card, render_rank_card_list
+from fpl_assistant.dashboard.media import player_photo_html
 from fpl_assistant.dashboard.pitch import render_pitch_html
-from fpl_assistant.dashboard.styles import hero_header, inject_global_css
+from fpl_assistant.dashboard.styles import fdr_color, hero_header, inject_global_css, section_header
 from fpl_assistant.models import (
     Squad,
     SquadPick,
@@ -56,7 +58,7 @@ def load_core_data():
 
 
 def render_starting_xi_tab(players, fixtures, teams, next_event):
-    st.subheader(f"Recommended Starting XI — GW{next_event}")
+    section_header(f"Recommended Starting XI — GW{next_event}", "Best 15 buildable from scratch, with the case for every starter")
 
     scored = squad_builder.score_players(players, fixtures, teams, next_event)
     squad15 = squad_builder.build_squad(scored)
@@ -79,6 +81,8 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
 
     st.caption(f"Formation **{formation}** · squad cost **£{squad15['price'].sum():.1f}m** of £100m budget")
 
+    report_text, _ = load_report(next_event)
+
     picks = [
         SquadPick(pid, is_captain=(pid == captain_id), is_vice_captain=(pid == vice_id), multiplier=1, position_order=i + 1)
         for i, pid in enumerate(starters)
@@ -91,7 +95,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
 
     captain_row = squad15.loc[captain_id]
     vice_row = squad15.loc[vice_id]
-    st.markdown(rationale.captain_rationale(captain_row, vice_row))
+    st.markdown(rationale.captain_rationale(captain_row, vice_row, report_text))
 
     st.markdown("#### Why each starter")
     position_reading_order = {"FWD": 0, "MID": 1, "DEF": 2, "GKP": 3}
@@ -100,7 +104,17 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     starters_df = starters_df.sort_values(["_order", "squad_score"], ascending=[True, False])
 
     for pid, row in starters_df.iterrows():
-        st.markdown(rationale.player_rationale(row))
+        with st.container(border=True):
+            photo_col, text_col = st.columns([1, 6])
+            with photo_col:
+                st.markdown(
+                    '<div style="width:56px;height:56px;border-radius:50%;overflow:hidden;">'
+                    + player_photo_html(row.get("code"), row["web_name"], 56)
+                    + "</div>",
+                    unsafe_allow_html=True,
+                )
+            with text_col:
+                st.markdown(rationale.player_rationale(row, report_text))
 
     with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
         bench_cols = ["web_name", "team_short_name", "position", "price"]
@@ -181,7 +195,7 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
         return
 
     squad = parse_squad(team_id, next_event, picks_response)
-    st.subheader(f"{entry.get('name', 'Your team')} — GW{next_event}")
+    section_header(f"{entry.get('name', 'Your team')} — GW{next_event}")
 
     c1, c2, c3 = st.columns(3)
     c1.metric("Team value", f"£{squad.team_value:.1f}m")
@@ -203,46 +217,102 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
 
 
 def render_captaincy_tab(players, fixtures, teams, next_event):
-    st.subheader(f"Captaincy candidates — GW{next_event}")
+    section_header(f"Captaincy candidates — GW{next_event}", "Ranked, with photos and the reasoning behind each score")
     picks = captaincy.captaincy_candidates(players, fixtures, teams, next_event)
-    st.dataframe(picks, use_container_width=True)
-    st.caption(
-        "Score blends recent form (40%), next-fixture difficulty (30%), and expected goal "
-        "involvements (30%). Higher is better."
-    )
+
+    if picks.empty:
+        st.info("No candidates found — teams with a blank gameweek here are excluded.")
+        return
+
+    preseason = is_preseason(players)
+    cards = []
+    for i, (_, row) in enumerate(picks.iterrows(), start=1):
+        if preseason:
+            meta = f"£{row['price']:.1f}m · {row['selected_by_percent']:.1f}% owned"
+        else:
+            meta = f"£{row['price']:.1f}m · form {row['form']:.1f} · {row['expected_goal_involvements']:.1f} xGI"
+        meta += f" · vs {row['opponent']}"
+        cards.append(player_rank_card(i, row, f"{row['captaincy_score']:.2f}", "score", meta))
+    st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
+
+    if preseason:
+        st.caption(
+            "No form data yet this season — score blends price (40%), ownership (25%), and next-"
+            "fixture difficulty (35%) as a stand-in until real match data exists."
+        )
+    else:
+        st.caption(
+            "Score blends recent form (40%), next-fixture difficulty (30%), and expected goal "
+            "involvements (30%). Higher is better."
+        )
 
 
 def render_fixtures_tab(fixtures, teams, next_event):
-    st.subheader(f"Fixture runs — next {FIXTURE_WINDOW} gameweeks")
+    section_header(f"Fixture runs — next {FIXTURE_WINDOW} gameweeks", "Lower FDR = easier run")
     table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, FIXTURE_WINDOW)
     gw_cols = list(range(next_event, next_event + FIXTURE_WINDOW))
     display_cols = ["team_name"] + gw_cols + ["avg_difficulty", "blank_gameweeks", "double_gameweeks"]
-    st.dataframe(table[display_cols], use_container_width=True)
+    styled = table[display_cols].style.map(lambda v: fdr_color(v), subset=["avg_difficulty"])
+    st.dataframe(styled, use_container_width=True)
 
     c1, c2 = st.columns(2)
     with c1:
         st.markdown("**Best runs (target these teams' players)**")
-        st.dataframe(fixtures_analysis.best_fixture_runs(table), use_container_width=True)
+        best = fixtures_analysis.best_fixture_runs(table)
+        st.dataframe(best.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), use_container_width=True)
     with c2:
         st.markdown("**Worst runs (consider avoiding/selling)**")
-        st.dataframe(fixtures_analysis.worst_fixture_runs(table), use_container_width=True)
+        worst = fixtures_analysis.worst_fixture_runs(table)
+        st.dataframe(worst.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), use_container_width=True)
 
 
 def render_watchlist_tab(players):
-    st.subheader("Player watchlist")
+    section_header("Player watchlist", "Who's trending, who's a bargain, who's under the radar")
+    preseason = is_preseason(players)
     position = st.selectbox("Position", [None, "GKP", "DEF", "MID", "FWD"], format_func=lambda x: x or "All")
 
     t1, t2, t3 = st.tabs(["In form", "Best value", "Differentials"])
     with t1:
-        st.dataframe(form.in_form_players(players, position=position), use_container_width=True)
+        df = form.in_form_players(players, position=position)
+        meta_fn = (
+            (lambda r: f"{r['selected_by_percent']:.1f}% owned")
+            if preseason
+            else (lambda r: f"£{r['price']:.1f}m · {r['points_per_game']} pts/gw")
+        )
+        score_fn = (lambda r: f"£{r['price']:.1f}m") if preseason else (lambda r: f"{r['form']:.1f}")
+        cards = [
+            player_rank_card(i, row, score_fn(row), "price" if preseason else "form", meta_fn(row))
+            for i, (_, row) in enumerate(df.iterrows(), start=1)
+        ]
+        st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
     with t2:
-        st.dataframe(form.best_value_players(players, position=position), use_container_width=True)
+        df = form.best_value_players(players, position=position)
+        cards = [
+            player_rank_card(
+                i, row,
+                f"{row['selected_by_percent']:.1f}%" if preseason else f"{row['points_per_million']}",
+                "owned" if preseason else "pts/£m",
+                f"£{row['price']:.1f}m · {row['total_points']} pts",
+            )
+            for i, (_, row) in enumerate(df.iterrows(), start=1)
+        ]
+        st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
     with t3:
-        st.dataframe(form.differentials(players), use_container_width=True)
+        df = form.differentials(players)
+        cards = [
+            player_rank_card(
+                i, row, f"£{row['price']:.1f}m" if preseason else f"{row['form']:.1f}",
+                "price" if preseason else "form",
+                f"{row['selected_by_percent']:.1f}% owned"
+                + ("" if preseason else f" · £{row['price']:.1f}m"),
+            )
+            for i, (_, row) in enumerate(df.iterrows(), start=1)
+        ]
+        st.markdown(render_rank_card_list(cards), unsafe_allow_html=True)
 
 
 def render_injuries_tab(players, owned_ids):
-    st.subheader("Injury & availability news")
+    section_header("Injury & availability news")
     st.markdown("**Your squad**")
     st.dataframe(injuries.flagged_players(players, owned_only_ids=owned_ids), use_container_width=True)
     st.markdown("**Everyone flagged this week**")
@@ -250,7 +320,7 @@ def render_injuries_tab(players, owned_ids):
 
 
 def render_report_tab(next_event):
-    st.subheader(f"Odds & expert take — GW{next_event}")
+    section_header(f"Odds & expert take — GW{next_event}", "Live web research, not scraped data")
     text, filename = load_report(next_event)
     if text is None:
         st.info(
@@ -265,7 +335,7 @@ def render_report_tab(next_event):
 
 
 def render_transfers_tab(players, fixtures, teams, next_event, squad):
-    st.subheader("Transfer suggestions")
+    section_header("Transfer suggestions")
 
     try:
         history = api.get_entry_history(squad.team_id)

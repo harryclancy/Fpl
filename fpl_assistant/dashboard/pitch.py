@@ -8,6 +8,7 @@ instead, so the page never shows a broken-image icon.
 """
 import pandas as pd
 
+from fpl_assistant.dashboard.media import MEDIA_CSS, team_crest_html
 from fpl_assistant.models import Squad
 
 POSITION_ORDER = ["FWD", "MID", "DEF", "GKP"]  # top (attack) to bottom (keeper) on the pitch
@@ -176,7 +177,7 @@ def _player_card_html(row: pd.Series, badge: str | None) -> str:
         {badge_html}
       </div>
       <div class="player-name">{row['web_name']}</div>
-      <div class="player-meta">{row['team_short_name']} · £{row['price']:.1f}</div>
+      <div class="player-meta">{team_crest_html(row.get('team_code'), '', size_px=12)}{row['team_short_name']} · £{row['price']:.1f}</div>
     </div>
     """
 
@@ -205,6 +206,7 @@ def render_pitch_html(squad_players: pd.DataFrame, squad: Squad) -> str:
 
     html = f"""
     {PITCH_CSS}
+    {MEDIA_CSS}
     <div class="pitch-wrap">
       <div class="pitch-line-circle"></div>
       <div class="pitch-halfway"></div>

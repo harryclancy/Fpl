@@ -11,12 +11,12 @@ from fpl_assistant.models import Squad, SquadPick, attach_team_names, players_df
 
 BOOTSTRAP = {
     "teams": [
-        {"id": 1, "name": "Arsenal", "short_name": "ARS", "strength": 4},
-        {"id": 2, "name": "Burnley", "short_name": "BUR", "strength": 2},
+        {"id": 1, "name": "Arsenal", "short_name": "ARS", "strength": 4, "code": 3},
+        {"id": 2, "name": "Burnley", "short_name": "BUR", "strength": 2, "code": 90},
     ],
     "elements": [
         {
-            "id": 101, "web_name": "Saka", "team": 1, "element_type": 3,
+            "id": 101, "code": 111, "web_name": "Saka", "team": 1, "element_type": 3,
             "now_cost": 100, "total_points": 60, "points_per_game": "5.0",
             "form": "6.0", "selected_by_percent": "35.0", "minutes": 900,
             "status": "a", "news": "", "news_added": None,
@@ -24,7 +24,7 @@ BOOTSTRAP = {
             "expected_goals_conceded": "0", "value_form": "1.2", "value_season": "6.0",
         },
         {
-            "id": 102, "web_name": "Injured Guy", "team": 2, "element_type": 4,
+            "id": 102, "code": 222, "web_name": "Injured Guy", "team": 2, "element_type": 4,
             "now_cost": 55, "total_points": 10, "points_per_game": "1.0",
             "form": "0.5", "selected_by_percent": "1.0", "minutes": 90,
             "status": "i", "news": "Ankle injury", "news_added": "2026-08-10T10:00:00Z",

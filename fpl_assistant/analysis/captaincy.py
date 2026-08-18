@@ -74,10 +74,14 @@ def captaincy_candidates(
         ).round(3)
 
     cols = [
+        "id",
+        "code",
         "web_name",
         "team_short_name",
+        "team_code",
         "opponent",
         "position",
+        "price",
         "form",
         "fixture_difficulty",
         "expected_goal_involvements",

@@ -45,6 +45,10 @@ def players_df(bootstrap: dict) -> pd.DataFrame:
     df["value_form"] = pd.to_numeric(df.get("value_form", 0), errors="coerce")
     df["value_season"] = pd.to_numeric(df.get("value_season", 0), errors="coerce")
     df["chance_of_playing_next_round"] = df["chance_of_playing_next_round"].fillna(100)
+    for col in ("ict_index", "bonus", "transfers_in_event", "transfers_out_event"):
+        if col not in df.columns:
+            df[col] = 0
+        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
 
     return df.set_index("id", drop=False)
 
@@ -53,6 +57,7 @@ def attach_team_names(players: pd.DataFrame, teams: pd.DataFrame) -> pd.DataFram
     df = players.copy()
     df["team_name"] = df["team"].map(teams["name"])
     df["team_short_name"] = df["team"].map(teams["short_name"])
+    df["team_code"] = df["team"].map(teams["code"])
     return df
 
 
