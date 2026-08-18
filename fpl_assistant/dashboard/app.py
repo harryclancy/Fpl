@@ -58,6 +58,42 @@ def load_core_data():
     return players, teams, events, fixtures, next_event
 
 
+def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=None):
+    """One player's full case: photo + rationale text (which already
+    surfaces qualitative research from the weekly report) inside an
+    expander, with a nested 'Fixtures & form' dropdown for the quant
+    detail — shared by Starting XI and Captaincy so both get the same
+    depth of treatment.
+    """
+    summary = summary or f"{row['web_name']} — {row['team_short_name']} · £{row['price']:.1f}m"
+    with st.expander(summary):
+        photo_col, text_col = st.columns([1, 6])
+        with photo_col:
+            render_html(
+                '<div style="width:56px;height:56px;border-radius:50%;overflow:hidden;">'
+                + player_photo_html(row.get("code"), row["web_name"], 56)
+                + "</div>"
+            )
+        with text_col:
+            st.markdown(rationale.player_rationale(row, report_text))
+
+        with st.expander("📅 Fixtures & form"):
+            team_fixtures = fixture_table.loc[row["team"]]
+            fx_row = {f"GW{gw}": team_fixtures[gw] for gw in fixture_gws}
+            st.dataframe(pd.DataFrame([fx_row]), width='stretch', hide_index=True)
+            st.caption(f"Avg difficulty over the window: {team_fixtures['avg_difficulty']:.1f}/5")
+
+            stats = {"Price": f"£{row['price']:.1f}m", "Ownership": f"{row['selected_by_percent']:.1f}%"}
+            if row.get("scoring_basis") != "preseason":
+                stats["Form"] = f"{row['form']:.1f}"
+                stats["Points/game"] = f"{row.get('points_per_game', 0)}"
+                stats["xGI"] = f"{row.get('expected_goal_involvements', 0):.2f}"
+                stats["ICT index"] = f"{row.get('ict_index', 0):.1f}"
+                stats["Bonus pts"] = f"{row.get('bonus', 0):.0f}"
+            stats_df = pd.DataFrame(list(stats.items()), columns=["Stat", "Value"])
+            st.dataframe(stats_df, width='stretch', hide_index=True)
+
+
 def render_starting_xi_tab(players, fixtures, teams, next_event):
     section_header(f"Recommended Starting XI — GW{next_event}", "Best 15 buildable from scratch, with the case for every starter")
 
@@ -118,32 +154,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
         for pid, row in pos_rows.iterrows():
             role = " · Captain" if pid == captain_id else (" · Vice-captain" if pid == vice_id else "")
             summary = f"{row['web_name']}{role} — {row['team_short_name']} · £{row['price']:.1f}m"
-            with st.expander(summary):
-                photo_col, text_col = st.columns([1, 6])
-                with photo_col:
-                    render_html(
-                        '<div style="width:56px;height:56px;border-radius:50%;overflow:hidden;">'
-                        + player_photo_html(row.get("code"), row["web_name"], 56)
-                        + "</div>"
-                    )
-                with text_col:
-                    st.markdown(rationale.player_rationale(row, report_text))
-
-                with st.expander("📅 Fixtures & form"):
-                    team_fixtures = fixture_table.loc[row["team"]]
-                    fx_row = {f"GW{gw}": team_fixtures[gw] for gw in fixture_gws}
-                    st.dataframe(pd.DataFrame([fx_row]), width='stretch', hide_index=True)
-                    st.caption(f"Avg difficulty over the window: {team_fixtures['avg_difficulty']:.1f}/5")
-
-                    stats = {"Price": f"£{row['price']:.1f}m", "Ownership": f"{row['selected_by_percent']:.1f}%"}
-                    if row.get("scoring_basis") != "preseason":
-                        stats["Form"] = f"{row['form']:.1f}"
-                        stats["Points/game"] = f"{row.get('points_per_game', 0)}"
-                        stats["xGI"] = f"{row.get('expected_goal_involvements', 0):.2f}"
-                        stats["ICT index"] = f"{row.get('ict_index', 0):.1f}"
-                        stats["Bonus pts"] = f"{row.get('bonus', 0):.0f}"
-                    stats_df = pd.DataFrame(list(stats.items()), columns=["Stat", "Value"])
-                    st.dataframe(stats_df, width='stretch', hide_index=True)
+            render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=summary)
 
     with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
         bench_cols = ["web_name", "team_short_name", "position", "price"]
@@ -278,8 +289,26 @@ def render_captaincy_tab(players, fixtures, teams, next_event):
             "involvements (30%). Higher is better."
         )
 
+    st.markdown("#### Top picks in depth")
+    st.caption("The armband is the single biggest call of the week — full case, community research, and fixtures for the top 3.")
 
-def render_fixtures_tab(fixtures, teams, next_event):
+    report_text, _ = load_report(next_event)
+    scored = squad_builder.score_players(players, fixtures, teams, next_event)
+    fixture_table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, rationale.FIXTURE_WINDOW)
+    fixture_gws = list(range(next_event, next_event + rationale.FIXTURE_WINDOW))
+
+    for player_id, cap_row in picks.head(3).iterrows():
+        if player_id not in scored.index:
+            # squad_builder's scoring window is wider than captaincy's (which
+            # only needs next gameweek) -- a team with a blank later in that
+            # wider window gets excluded from `scored` even if this pick's
+            # very next fixture is fine. Rare, but don't crash on it.
+            st.caption(f"{cap_row['web_name']} — see the card above; a blank gameweek later in the window means we can't show the full deep-dive.")
+            continue
+        row = scored.loc[player_id]
+        role = " · Captain pick" if player_id == picks.index[0] else ""
+        summary = f"{row['web_name']}{role} — score {cap_row['captaincy_score']:.2f} · vs {cap_row['opponent']}"
+        render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=summary)
     section_header(f"Fixture runs — next {FIXTURE_WINDOW} gameweeks", "Lower FDR = easier run")
     st.caption(f"↔ Swipe the table sideways to see all {FIXTURE_WINDOW} gameweeks.")
     table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, FIXTURE_WINDOW)
