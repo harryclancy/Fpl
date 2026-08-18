@@ -178,6 +178,27 @@ def test_template_weight_pulls_a_highly_owned_player_in():
     assert int(target["id"]) in shadowed.squad_ids
 
 
+def test_chasing_rank_lowers_ownership_and_costs_projected_points():
+    """The differential strategy has to actually do something.
+
+    Measured as a mirror image of "protect" (penalising only ownership
+    above the template threshold), chasing was a silent no-op whenever the
+    squad held no template player -- which is the normal case.
+    """
+    pool = _pool()
+    balanced = optimise_squad(pool, budget=100.0, template_weight=0.05)
+    chasing = optimise_squad(pool, budget=100.0, template_weight=-0.15)
+
+    ownership = pool.set_index("id")["selected_by_percent"]
+    balanced_own = ownership.loc[balanced.squad_ids].mean()
+    chasing_own = ownership.loc[chasing.squad_ids].mean()
+
+    assert chasing_own < balanced_own
+    # ...and it pays for that in expected points, which is the whole trade.
+    points = pool.set_index("id")["xp_horizon"]
+    assert points.loc[chasing.starting_ids].sum() <= points.loc[balanced.starting_ids].sum() + 1e-6
+
+
 def test_bench_prefers_cheap_players_over_expensive_cover():
     """Points come from the XI, so budget belongs there -- an expensive
     bench is the classic beginner mistake the objective must avoid."""

@@ -15,6 +15,7 @@ import streamlit as st
 from fpl_assistant import api
 from fpl_assistant.analysis import (
     captaincy,
+    optimiser,
     form,
     fixtures as fixtures_analysis,
     injuries,
@@ -58,6 +59,49 @@ def load_core_data():
     return players, teams, events, fixtures, next_event
 
 
+RANK_STRATEGIES = {
+    "Balanced": (
+        optimiser.TEMPLATE_WEIGHT,
+        "Follows the projections, with a nudge toward near-universal picks so one big haul can't "
+        "quietly cost you thousands of ranks.",
+    ),
+    "Protect my rank": (
+        optimiser.TEMPLATE_WEIGHT * 4,
+        "Shadows the template. You'll rarely gain ground fast, but you also won't be the manager "
+        "who missed the 70%-owned captain's hat-trick.",
+    ),
+    "Chase rank (differentials)": (
+        -optimiser.TEMPLATE_WEIGHT * 3,
+        "Actively favours low-owned players. Higher variance both ways — the right approach if you "
+        "need to make up a lot of ground and a safe finish is worth nothing to you.",
+    ),
+}
+
+
+def rank_strategy_weight() -> float:
+    """Reads the sidebar's rank-strategy choice.
+
+    Maximising expected points and maximising rank aren't the same problem:
+    if a 70%-owned player hauls, everyone who faded him drops together,
+    even where fading him was the higher expected-points call. Which side
+    of that you want to be on depends on whether you're protecting a good
+    rank or chasing one, and only the user knows that — so it's a control,
+    not a constant.
+    """
+    choice = st.session_state.get("rank_strategy", "Balanced")
+    return RANK_STRATEGIES.get(choice, RANK_STRATEGIES["Balanced"])[0]
+
+
+def render_rank_strategy_control() -> None:
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("🎯 Rank strategy")
+    choice = st.sidebar.radio(
+        "How much risk do you want?", list(RANK_STRATEGIES), key="rank_strategy",
+        label_visibility="collapsed",
+    )
+    st.sidebar.caption(RANK_STRATEGIES[choice][1])
+
+
 def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=None):
     """One player's full case: photo + rationale text (which already
     surfaces qualitative research from the weekly report) inside an
@@ -98,7 +142,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     section_header(f"Recommended Starting XI — GW{next_event}", "Best 15 buildable from scratch, with the case for every starter")
 
     scored = squad_builder.score_players(players, fixtures, teams, next_event)
-    solution = squad_builder.recommend_squad(scored)
+    solution = squad_builder.recommend_squad(scored, template_weight=rank_strategy_weight())
     squad15 = scored[scored["id"].isin(solution.squad_ids)].copy()
     starters, bench = solution.starting_ids, solution.bench_ids
     formation = solution.formation
@@ -452,9 +496,75 @@ def render_report_tab(next_event):
     st.markdown(text)
 
 
+def render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers):
+    """The actual weekly decision: who to bring in, and whether a hit pays.
+
+    Solved rather than suggested — the 4-point hit is priced into the
+    objective, so a move only appears here if it earns more than it costs.
+    """
+    st.markdown("#### Recommended move")
+
+    projected = squad_builder.score_players(players, fixtures, teams, next_event)
+    owned_ids = [p.player_id for p in squad.picks]
+
+    bank = st.slider(
+        "Money in the bank (£m)", 0.0, 10.0, float(squad.bank or 0.0), 0.1,
+        help="From your official squad page. Sets what you can afford to spend.",
+    )
+    max_transfers = st.slider(
+        "Most transfers to consider", 1, 4, 2,
+        help="Each move beyond your free transfers costs 4 points, which is priced in below.",
+    )
+
+    try:
+        plan = optimiser.optimise_transfers(
+            projected, owned_ids, bank=bank,
+            free_transfers=free_transfers, max_transfers=max_transfers,
+            template_weight=rank_strategy_weight(),
+        )
+    except Exception as exc:
+        st.info(f"Couldn't solve a transfer plan this week ({exc}). The review list below still applies.")
+        return
+
+    if not plan.transfers:
+        st.success(
+            "**Hold.** No transfer gains enough to be worth making this week — including any that "
+            "would cost a hit. Rolling the transfer keeps your options open for next week."
+        )
+        return
+
+    columns = st.columns(3)
+    columns[0].metric("Transfers", plan.transfers)
+    columns[1].metric("Points hit", f"−{plan.points_cost}" if plan.points_cost else "None")
+    columns[2].metric(
+        "Net projected gain", f"+{plan.net_gain:.1f}",
+        help="Gain over fielding your best XI as things stand, after subtracting any hit.",
+    )
+
+    indexed = projected.set_index("id")
+    for out_id, in_id in zip(plan.out_ids, plan.in_ids):
+        out_row, in_row = indexed.loc[out_id], indexed.loc[in_id]
+        st.markdown(
+            f"**OUT** {out_row['web_name']} ({out_row['team_short_name']}, £{out_row['price']:.1f}m · "
+            f"{out_row['xp_next']:.1f} pts projected) → "
+            f"**IN** {in_row['web_name']} ({in_row['team_short_name']}, £{in_row['price']:.1f}m · "
+            f"{in_row['xp_next']:.1f} pts projected)"
+        )
+
+    if plan.points_cost:
+        st.caption(
+            f"This takes a −{plan.points_cost} hit and still comes out **{plan.net_gain:.1f} points "
+            f"ahead** over the next {rationale.FIXTURE_WINDOW} gameweeks — that's the only reason to "
+            f"take one. If the gap were smaller, holding would be the better play."
+        )
+    else:
+        st.caption("Within your free transfers, so no points hit.")
+
+
 def render_transfers_tab(players, fixtures, teams, next_event, squad):
     section_header("Transfer suggestions")
 
+    free_transfers = 1
     try:
         history = api.get_entry_history(squad.team_id)
         free_transfers = transfers.estimate_free_transfers(history["current"], history["chips"])
@@ -463,6 +573,9 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
     except Exception:
         pass  # not critical to the rest of the tab
 
+    render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers)
+
+    st.markdown("---")
     scored = transfers.squad_with_scores(players, fixtures, teams, next_event, FIXTURE_WINDOW)
     weaknesses = transfers.squad_weaknesses(scored, squad)
 
@@ -528,6 +641,7 @@ def main():
     team_id_input = st.sidebar.text_input("Your FPL Team ID", value=FPL_TEAM_ID or "")
     team_id = int(team_id_input) if team_id_input.strip().isdigit() else None
 
+    render_rank_strategy_control()
     render_ask_claude_box(next_event)
 
     if not team_id:

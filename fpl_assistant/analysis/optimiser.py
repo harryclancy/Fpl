@@ -81,6 +81,27 @@ TEMPLATE_WEIGHT = 0.035
 TEMPLATE_OWNERSHIP = 40.0
 
 
+def _ownership_edge(ownership: pd.Series, template_weight: float) -> pd.Series:
+    """Turns ownership into the quantity the objective rewards.
+
+    The two strategies are not mirror images, so they don't share a
+    measure. Protecting rank only requires covering the genuinely
+    near-universal picks -- a 38%-owned player carries almost no rank risk,
+    and rewarding ownership across the whole range would just drag the
+    squad toward the popular-but-mediocre. Chasing rank is the opposite
+    shape: it wants low ownership *everywhere*, since the upside comes from
+    owning what the field doesn't, not merely from avoiding the few players
+    everyone has.
+
+    Measured symmetrically (clipping above the threshold in both
+    directions), "chase" silently became a no-op whenever the squad held no
+    template player at all -- which is most of the time.
+    """
+    if template_weight >= 0:
+        return (ownership - TEMPLATE_OWNERSHIP).clip(lower=0.0)
+    return ownership
+
+
 @dataclass
 class SquadSolution:
     """Result of an optimisation run."""
@@ -147,11 +168,10 @@ def optimise_squad(
     position = dict(zip(ids, pool["position"]))
     club = dict(zip(ids, pool["team"]))
 
-    # Rank-risk term. Only ownership *above* the template threshold counts:
-    # below it, not owning someone costs you nothing relative to the field,
-    # so there's no rank asymmetry to price in.
+    # Rank-risk term; see _ownership_edge for why protecting and chasing
+    # rank use different measures rather than opposite signs of one.
     ownership = pd.to_numeric(pool.get("selected_by_percent", 0), errors="coerce").fillna(0.0)
-    template_edge = dict(zip(ids, (ownership - TEMPLATE_OWNERSHIP).clip(lower=0.0)))
+    template_edge = dict(zip(ids, _ownership_edge(ownership, template_weight)))
 
     problem = pulp.LpProblem("fpl_squad", pulp.LpMaximize)
     squad = pulp.LpVariable.dicts("squad", ids, cat="Binary")
@@ -226,6 +246,164 @@ def optimise_squad(
         total_cost=round(sum(price[i] for i in chosen), 1),
         expected_points=round(expected, 2),
         optimal=True,
+    )
+
+
+@dataclass
+class TransferPlan:
+    """A recommended set of transfers out of the squad you already own."""
+
+    out_ids: list[int]
+    in_ids: list[int]
+    transfers: int
+    hits: int
+    points_cost: int
+    gross_gain: float
+    net_gain: float
+    solution: SquadSolution
+    worth_it: bool
+
+    @property
+    def summary(self) -> str:
+        if not self.transfers:
+            return "Hold — no transfer improves the squad enough to be worth making."
+        label = f"{self.transfers} transfer{'s' if self.transfers > 1 else ''}"
+        if self.points_cost:
+            return f"{label} (−{self.points_cost} pts hit) for a net +{self.net_gain:.1f} projected"
+        return f"{label} for +{self.net_gain:.1f} projected points"
+
+
+def optimise_transfers(
+    scored: pd.DataFrame,
+    current_squad_ids: list[int],
+    bank: float = 0.0,
+    free_transfers: int = 1,
+    max_transfers: int = 3,
+    max_per_club: int = MAX_PER_CLUB,
+    points_column: str = "xp_horizon",
+    captain_column: str = "xp_captain",
+    template_weight: float = TEMPLATE_WEIGHT,
+    hit_cost: int = 4,
+) -> TransferPlan:
+    """Answers the actual weekly question: who should I bring in, and is it
+    worth taking a hit?
+
+    Building the best squad from scratch is the wrong tool once the season
+    starts -- you own fifteen players, you have a limited number of free
+    transfers, and every extra move costs 4 points. So the hit is priced
+    directly into the objective rather than judged afterwards: a transfer
+    is recommended only when it gains more than it costs, which is the
+    discipline that separates a good season from a churned one.
+
+    Budget is the squad's current value plus the bank. Note this values
+    players at their listed price; FPL actually applies a sell-on tax on
+    profit, so a squad sitting on large gains has slightly less to spend
+    than this assumes.
+    """
+    import pulp
+
+    pool = scored[scored["position"].isin(SQUAD_QUOTAS)].copy().drop_duplicates(subset="id")
+    ids = pool["id"].tolist()
+    owned = [i for i in current_squad_ids if i in set(ids)]
+    if not owned:
+        raise RuntimeError("None of the current squad appears in the scored player pool.")
+
+    points = dict(zip(ids, pool[points_column].astype(float)))
+    captain_points = dict(zip(ids, pool.get(captain_column, pool[points_column]).astype(float)))
+    price = dict(zip(ids, pool["price"].astype(float)))
+    position = dict(zip(ids, pool["position"]))
+    club = dict(zip(ids, pool["team"]))
+
+    ownership = pd.to_numeric(pool.get("selected_by_percent", 0), errors="coerce").fillna(0.0)
+    template_edge = dict(zip(ids, _ownership_edge(ownership, template_weight)))
+
+    budget = sum(price[i] for i in owned) + bank
+
+    problem = pulp.LpProblem("fpl_transfers", pulp.LpMaximize)
+    squad = pulp.LpVariable.dicts("squad", ids, cat="Binary")
+    start = pulp.LpVariable.dicts("start", ids, cat="Binary")
+    captain = pulp.LpVariable.dicts("captain", ids, cat="Binary")
+    # Hits taken beyond the free allowance. Continuous is safe: it only
+    # ever sits at its lower bound, which the transfer count pins to an
+    # integer, and it keeps the model easy for the solver.
+    hits = pulp.LpVariable("hits", lowBound=0)
+
+    transfers_made = len(owned) - pulp.lpSum(squad[i] for i in owned)
+
+    problem += (
+        pulp.lpSum(points[i] * start[i] for i in ids)
+        + pulp.lpSum(captain_points[i] * captain[i] for i in ids)
+        + pulp.lpSum(BENCH_WEIGHT * points[i] * (squad[i] - start[i]) for i in ids)
+        + pulp.lpSum(template_weight * template_edge[i] * squad[i] for i in ids)
+        - hit_cost * hits
+    )
+
+    problem += hits >= transfers_made - free_transfers
+    problem += transfers_made <= max_transfers
+
+    problem += pulp.lpSum(squad[i] for i in ids) == SQUAD_SIZE
+    problem += pulp.lpSum(start[i] for i in ids) == STARTING_SIZE
+    problem += pulp.lpSum(captain[i] for i in ids) == 1
+    for i in ids:
+        problem += start[i] <= squad[i]
+        problem += captain[i] <= start[i]
+    for pos, quota in SQUAD_QUOTAS.items():
+        problem += pulp.lpSum(squad[i] for i in ids if position[i] == pos) == quota
+    for pos, (low, high) in FORMATION_BOUNDS.items():
+        in_pos = [start[i] for i in ids if position[i] == pos]
+        problem += pulp.lpSum(in_pos) >= low
+        problem += pulp.lpSum(in_pos) <= high
+    problem += pulp.lpSum(price[i] * squad[i] for i in ids) <= budget
+    for club_id in set(club.values()):
+        problem += pulp.lpSum(squad[i] for i in ids if club[i] == club_id) <= max_per_club
+
+    status = problem.solve(pulp.PULP_CBC_CMD(msg=0))
+    if pulp.LpStatus[status] != "Optimal":
+        raise RuntimeError(f"Solver returned status {pulp.LpStatus[status]!r}.")
+
+    chosen = [i for i in ids if squad[i].value() and squad[i].value() > 0.5]
+    starting = [i for i in ids if start[i].value() and start[i].value() > 0.5]
+    captain_id = next(i for i in ids if captain[i].value() and captain[i].value() > 0.5)
+
+    out_ids = [i for i in owned if i not in chosen]
+    in_ids = [i for i in chosen if i not in owned]
+    transfers = len(out_ids)
+    hits_taken = max(0, transfers - free_transfers)
+    points_cost = hits_taken * hit_cost
+
+    # Gain is measured against fielding the best XI from the squad as it
+    # stands, which is the honest counterfactual -- not against the current
+    # XI, which might simply be badly picked.
+    held = pool[pool["id"].isin(owned)]
+    baseline_starters, _, _ = optimise_starting_xi(held, points_column=points_column)
+    baseline = sum(points[i] for i in baseline_starters)
+    gross = sum(points[i] for i in starting) - baseline
+
+    bench = [i for i in chosen if i not in starting]
+    bench.sort(key=lambda i: (position[i] == "GKP", -points[i]))
+    vice_id = max((i for i in starting if i != captain_id), key=lambda i: captain_points[i])
+
+    solution = SquadSolution(
+        squad_ids=chosen,
+        starting_ids=starting,
+        bench_ids=bench,
+        captain_id=captain_id,
+        vice_captain_id=vice_id,
+        formation=_formation_label(pool[pool["id"].isin(chosen)], starting),
+        total_cost=round(sum(price[i] for i in chosen), 1),
+        expected_points=round(sum(points[i] for i in starting) + captain_points[captain_id], 2),
+    )
+
+    return TransferPlan(
+        out_ids=out_ids,
+        in_ids=in_ids,
+        transfers=transfers,
+        hits=hits_taken,
+        points_cost=points_cost,
+        gross_gain=round(gross, 2),
+        net_gain=round(gross - points_cost, 2),
+        solution=solution,
+        worth_it=gross - points_cost > 0,
     )
 
 
