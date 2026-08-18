@@ -99,22 +99,32 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     st.markdown(rationale.captain_rationale(captain_row, vice_row, report_text))
 
     st.markdown("#### Why each starter")
+    st.caption("Grouped by position — tap a player to read the full case for starting them.")
+
     position_reading_order = {"FWD": 0, "MID": 1, "DEF": 2, "GKP": 3}
+    position_labels = {"FWD": "Forwards", "MID": "Midfielders", "DEF": "Defenders", "GKP": "Goalkeeper"}
     starters_df = squad15.loc[starters].copy()
     starters_df["_order"] = starters_df["position"].map(position_reading_order)
     starters_df = starters_df.sort_values(["_order", "squad_score"], ascending=[True, False])
 
-    for pid, row in starters_df.iterrows():
-        with st.container(border=True):
-            photo_col, text_col = st.columns([1, 6])
-            with photo_col:
-                render_html(
-                    '<div style="width:56px;height:56px;border-radius:50%;overflow:hidden;">'
-                    + player_photo_html(row.get("code"), row["web_name"], 56)
-                    + "</div>"
-                )
-            with text_col:
-                st.markdown(rationale.player_rationale(row, report_text))
+    for pos in ["FWD", "MID", "DEF", "GKP"]:
+        pos_rows = starters_df[starters_df["position"] == pos]
+        if pos_rows.empty:
+            continue
+        st.markdown(f"**{position_labels[pos]}**")
+        for pid, row in pos_rows.iterrows():
+            role = " · Captain" if pid == captain_id else (" · Vice-captain" if pid == vice_id else "")
+            summary = f"{row['web_name']}{role} — {row['team_short_name']} · £{row['price']:.1f}m"
+            with st.expander(summary):
+                photo_col, text_col = st.columns([1, 6])
+                with photo_col:
+                    render_html(
+                        '<div style="width:56px;height:56px;border-radius:50%;overflow:hidden;">'
+                        + player_photo_html(row.get("code"), row["web_name"], 56)
+                        + "</div>"
+                    )
+                with text_col:
+                    st.markdown(rationale.player_rationale(row, report_text))
 
     with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
         bench_cols = ["web_name", "team_short_name", "position", "price"]
