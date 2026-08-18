@@ -351,13 +351,16 @@ def render_captaincy_tab(players, fixtures, teams, next_event):
 
     if preseason:
         st.caption(
-            "No form data yet this season — score blends price (40%), ownership (25%), and next-"
-            "fixture difficulty (35%) as a stand-in until real match data exists."
+            "Score is **projected points for this gameweek**, adjusted for ceiling. No match data "
+            "exists yet, so the projection leans on price, ownership, set-piece duty and opponent "
+            "strength until real minutes are played."
         )
     else:
         st.caption(
-            "Score blends recent form (40%), next-fixture difficulty (30%), and expected goal "
-            "involvements (30%). Higher is better."
+            "Score is **projected points for this gameweek**, adjusted for ceiling — built from "
+            "expected goals and assists, expected minutes, set-piece duty and opponent strength. "
+            "Ceiling-adjusted because the armband doubles a result: a forward and a defender "
+            "projected the same aren't equal bets once doubled."
         )
 
     st.markdown("#### Top picks in depth")
