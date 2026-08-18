@@ -262,6 +262,7 @@ def render_captaincy_tab(players, fixtures, teams, next_event):
 
 def render_fixtures_tab(fixtures, teams, next_event):
     section_header(f"Fixture runs — next {FIXTURE_WINDOW} gameweeks", "Lower FDR = easier run")
+    st.caption(f"↔ Swipe the table sideways to see all {FIXTURE_WINDOW} gameweeks.")
     table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, FIXTURE_WINDOW)
     gw_cols = list(range(next_event, next_event + FIXTURE_WINDOW))
     display_cols = ["team_name"] + gw_cols + ["avg_difficulty", "blank_gameweeks", "double_gameweeks"]

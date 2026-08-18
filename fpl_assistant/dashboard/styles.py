@@ -30,10 +30,13 @@ div[data-testid="stMetric"] {{
 div[data-testid="stMetricLabel"] {{ opacity: 0.75; }}
 
 /* Tabs */
+.stTabs {{ position: relative; }}
 .stTabs [data-baseweb="tab-list"] {{
     gap: 4px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
+    scrollbar-width: none;
 }}
+.stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {{ display: none; }}
 .stTabs [data-baseweb="tab"] {{
     padding: 8px 16px;
     border-radius: 8px 8px 0 0;
@@ -43,6 +46,15 @@ div[data-testid="stMetricLabel"] {{ opacity: 0.75; }}
 }}
 .stTabs [data-baseweb="tab-highlight"] {{
     background-color: {GREEN} !important;
+}}
+/* Subtle fade on the right edge, hinting there are more tabs to scroll to */
+.stTabs::after {{
+    content: "";
+    position: absolute;
+    top: 0; right: 0;
+    width: 28px; height: 42px;
+    background: linear-gradient(to right, rgba(14,14,26,0), rgba(14,14,26,0.95));
+    pointer-events: none;
 }}
 
 /* Dataframes / tables */
