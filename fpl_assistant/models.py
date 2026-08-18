@@ -20,9 +20,61 @@ STATUS_LABELS = {
     "n": "Not in squad",
 }
 
+# Fields the FPL API exposes that the expected-points model consumes. All are
+# read defensively (missing -> 0/NA) because the API has added and renamed
+# stats between seasons -- notably the per-90 family and, more recently,
+# defensive contributions. A missing column should degrade the model, never
+# crash it.
+RATE_COLUMNS = (
+    "expected_goals_per_90",
+    "expected_assists_per_90",
+    "expected_goal_involvements_per_90",
+    "expected_goals_conceded_per_90",
+    "saves_per_90",
+    "starts_per_90",
+    "defensive_contribution_per_90",
+)
+COUNT_COLUMNS = (
+    "starts",
+    "saves",
+    "clean_sheets",
+    "goals_conceded",
+    "goals_scored",
+    "assists",
+    "bps",
+    "defensive_contribution",
+    "yellow_cards",
+    "red_cards",
+)
+SET_PIECE_COLUMNS = (
+    "penalties_order",
+    "direct_freekicks_order",
+    "corners_and_indirect_freekicks_order",
+)
+
+
+TEAM_STRENGTH_COLUMNS = (
+    "strength_attack_home",
+    "strength_attack_away",
+    "strength_defence_home",
+    "strength_defence_away",
+    "strength_overall_home",
+    "strength_overall_away",
+)
+
 
 def teams_df(bootstrap: dict) -> pd.DataFrame:
     df = pd.DataFrame(bootstrap["teams"])
+    # FPL's own per-team attack/defence ratings (~1000-1400 scale). These are
+    # far more granular than the 1-5 fixture difficulty rating, and crucially
+    # they're directional: what makes a fixture easy for a striker (a weak
+    # opponent *defence*) is not what makes it easy for a defender (a weak
+    # opponent *attack*). A single blunt FDR conflates the two, so a team
+    # that both leaks and scores freely looks equally "easy" to everyone.
+    for col in TEAM_STRENGTH_COLUMNS:
+        if col not in df.columns:
+            df[col] = pd.NA
+        df[col] = pd.to_numeric(df[col], errors="coerce")
     return df.set_index("id", drop=False)
 
 
@@ -49,6 +101,32 @@ def players_df(bootstrap: dict) -> pd.DataFrame:
         if col not in df.columns:
             df[col] = 0
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+
+    # Per-90 rates and appearance counts, used by the expected-points model.
+    # Rates matter more than the season cumulative totals above: a cumulative
+    # xGI rewards a player simply for having played more games, which
+    # conflates "good per minute" with "plays a lot". Keeping rate and
+    # volume separate lets the xP model multiply them deliberately
+    # (rate x expected minutes) instead of double-counting volume.
+    for col in RATE_COLUMNS:
+        if col not in df.columns:
+            df[col] = 0.0
+        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0.0)
+
+    for col in COUNT_COLUMNS:
+        if col not in df.columns:
+            df[col] = 0
+        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+
+    # Set-piece duties. These are ordinals (1 = first-choice taker) and are
+    # null for everyone who isn't on the list, so a missing/NaN value means
+    # "not a taker" rather than "unknown". Penalty duty in particular is one
+    # of the single largest swings in a player's points ceiling, and it's the
+    # kind of causal reason that belongs in the written rationale too.
+    for col in SET_PIECE_COLUMNS:
+        if col not in df.columns:
+            df[col] = pd.NA
+        df[col] = pd.to_numeric(df[col], errors="coerce")
 
     return df.set_index("id", drop=False)
 

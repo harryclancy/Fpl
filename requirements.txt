@@ -2,3 +2,7 @@ requests>=2.31
 pandas>=2.1
 streamlit>=1.35
 python-dotenv>=1.0
+# Pinned below 4.0 deliberately: PuLP 4 reworks the model-construction API
+# (LpVariable/LpProblem are being replaced by prob.add_variable*), so an
+# unpinned install would break the squad optimiser on a future deploy.
+pulp>=2.8,<4
