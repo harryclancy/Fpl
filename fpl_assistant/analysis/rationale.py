@@ -104,12 +104,14 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
     if preseason:
         ownership = row["selected_by_percent"]
         body = (
-            f"**{name}** ({team}, £{price:.1f}m) — no in-season form to go on yet, so this is a "
-            f"preseason call built on price, ownership, and fixtures. At £{price:.1f}m the market/FPL's "
-            f"own pricing already reflects expected quality, and {ownership:.1f}% ownership shows the "
-            f"community rates them too. Their run over the next {FIXTURE_WINDOW} gameweeks grades as "
-            f"**{difficulty_label}** ({difficulty:.1f} avg FDR), which is the deciding factor tipping "
-            f"them into this XI."
+            f"**{name}** ({team}, £{price:.1f}m) — no in-season form to judge yet, so this leans on what "
+            f"the price and the crowd already know. FPL's pricing algorithm and the transfer market both "
+            f"price in *expected* role and quality before a ball's kicked, so £{price:.1f}m is itself a "
+            f"signal, not just a cost — and {ownership:.1f}% ownership means a lot of other managers did "
+            f"the same homework and landed here too. On top of that, their opponents over the next "
+            f"{FIXTURE_WINDOW} gameweeks grade as **{difficulty_label}** ({difficulty:.1f} avg FDR) — "
+            f"weaker opposition defences/attacks specifically, which is the tie-breaker that tipped them "
+            f"into this XI over a similarly-priced alternative."
         )
     else:
         form = row["form"]
@@ -119,18 +121,22 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
 
         if row["position"] in ("MID", "FWD"):
             body = (
-                f"**{name}** ({team}, £{price:.1f}m) is in **{form_label} form** ({form:.1f} recent form) "
-                f"and has racked up {xgi:.1f} expected goal involvements — that's genuine underlying "
-                f"output, not just a points spike. Their fixture run over the next {FIXTURE_WINDOW} "
-                f"gameweeks grades as **{difficulty_label}** ({difficulty:.1f} avg FDR), which supports "
-                f"starting them now."
+                f"**{name}** ({team}, £{price:.1f}m) is in **{form_label} form** ({form:.1f} recent form). "
+                f"The reason that's trustworthy rather than a hot streak: {xgi:.1f} expected goal "
+                f"involvements means they're consistently getting into good scoring/passing positions, "
+                f"not just riding a few lucky finishes — underlying output like that tends to repeat. "
+                f"Add in a **{difficulty_label}** run of opponents over the next {FIXTURE_WINDOW} "
+                f"gameweeks ({difficulty:.1f} avg FDR — weaker defences ahead), and both the process and "
+                f"the matchups point the same way."
             )
         else:
             body = (
-                f"**{name}** ({team}, £{price:.1f}m) is in **{form_label} form** ({form:.1f} recent form) "
-                f"with {xgc:.2f} expected goals conceded, a solid defensive underlying number. Their run "
-                f"over the next {FIXTURE_WINDOW} gameweeks grades as **{difficulty_label}** "
-                f"({difficulty:.1f} avg FDR) — good conditions for clean-sheet points."
+                f"**{name}** ({team}, £{price:.1f}m) is in **{form_label} form** ({form:.1f} recent form), "
+                f"backed by {xgc:.2f} expected goals conceded — a low number here means their side isn't "
+                f"just riding shutout luck, they're structurally not allowing much, which is the kind of "
+                f"defensive process clean sheets actually come from. Their next {FIXTURE_WINDOW} "
+                f"gameweeks grade as **{difficulty_label}** ({difficulty:.1f} avg FDR) against attacks "
+                f"that aren't going to test that much."
             )
 
     parts = [body]
@@ -138,6 +144,11 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
     mention = _report_mention(row, report_text)
     if mention:
         parts.append(f'**What FPL managers & analysts are saying:** {mention}')
+    else:
+        parts.append(
+            f"*No specific community/analyst commentary on {name} in this week's research — the case "
+            f"above is numbers only. Ask about them in the question box below and I'll dig deeper.*"
+        )
 
     extra_lines = [_risk_note(row), _momentum_note(row)]
     extra_lines = [line for line in extra_lines if line]

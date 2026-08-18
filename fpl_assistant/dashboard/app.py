@@ -466,6 +466,28 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
             render_html(render_rank_card_list(replacement_cards))
 
 
+def render_ask_claude_box(next_event: int) -> None:
+    """The deployed app has no live LLM wired in (no API key, and adding
+    one means real per-query cost on someone's account) -- so this isn't
+    a fake instant-answer chatbot. It formats the question with context
+    and hands you a ready-to-paste block for your actual Claude
+    conversation, where I can do real research and fold the answer back
+    into next week's report.
+    """
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("💬 Ask Claude about a pick")
+    question = st.sidebar.text_area(
+        "e.g. \"What do you think of Isak this week?\"", key="ask_claude_question", height=80,
+    )
+    if st.sidebar.button("Prepare question"):
+        if question.strip():
+            formatted = f'FPL question (GW{next_event}): {question.strip()}'
+            st.sidebar.code(formatted, language=None)
+            st.sidebar.caption("Copy this (tap the icon) and paste it into your chat with Claude — I'll research it and can fold the answer into next week's report.")
+        else:
+            st.sidebar.caption("Type a question first.")
+
+
 def main():
     inject_global_css()
     hero_header()
@@ -475,6 +497,8 @@ def main():
     st.sidebar.header("Settings")
     team_id_input = st.sidebar.text_input("Your FPL Team ID", value=FPL_TEAM_ID or "")
     team_id = int(team_id_input) if team_id_input.strip().isdigit() else None
+
+    render_ask_claude_box(next_event)
 
     if not team_id:
         st.sidebar.info(
