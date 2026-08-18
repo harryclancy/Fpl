@@ -11,9 +11,12 @@ pip install -r requirements.txt
 ```
 
 Optionally set your FPL Team ID so the dashboard can pull your actual squad
-(bank, chips, personalised transfer suggestions). Find it in the URL when
-viewing your team on fantasy.premierleague.com — the number after `/entry/`,
-e.g. `fantasy.premierleague.com/entry/1234567/event/1` → `1234567`.
+(bank, chips, personalised transfer suggestions). To find it: sign in at
+fantasy.premierleague.com, open **Pick Team → Gameweek History**, and check
+the URL — it looks like `fantasy.premierleague.com/en/entry/1234567/history`.
+The number is your Team ID. (Verify by opening
+`fantasy.premierleague.com/api/entry/YOUR-ID/` — it should show your team
+name.)
 
 ```bash
 cp .env.example .env   # then edit FPL_TEAM_ID
@@ -35,6 +38,7 @@ Opens at http://localhost:8501. Tabs:
 - **Fixtures** — rolling fixture-difficulty ticker, best/worst runs over the next 6 gameweeks
 - **Watchlist** — in-form players, best value (points per million), differentials (low ownership)
 - **Injuries** — availability news for your squad and league-wide
+- **Odds & Expert Take** — this gameweek's betting-market context and pundit/community captaincy consensus (see below)
 - **Transfers** (if Team ID set) — flagged weak spots in your squad and affordable replacements
 
 ## Project layout
@@ -51,20 +55,35 @@ fpl_assistant/
     injuries.py   # availability flags
   dashboard/
     app.py        # Streamlit UI
+  reports.py      # finds/reads the weekly odds & expert-take report (see below)
 data/cache/        # on-disk API response cache (gitignored)
+data/reports/       # weekly odds/expert-take reports, gw{N}.md (gitignored)
 tests/              # sanity tests against synthetic data, no network needed
 ```
 
 ## Notes on data sources
 
-Everything here comes from the official `fantasy.premierleague.com/api`
-endpoints — fixtures, prices, form, ownership, and the editorially
-maintained injury/news/chance-of-playing fields. There's no betting-odds or
-third-party "expert opinion" integration yet; the fixture-difficulty and
-form/xG signals substitute for that for now. If you want to fold in odds or
-pundit takes later, the natural place is a new module under `analysis/`
-that produces a DataFrame keyed by player or team, the same shape as the
-existing ones, so it can slot into the captaincy/transfer scoring.
+Fixtures, prices, form, ownership, and the editorially maintained
+injury/news/chance-of-playing fields all come straight from the official
+`fantasy.premierleague.com/api` — free, no key needed, and reliable enough
+to run analysis code against directly.
+
+**Betting odds and expert/community sentiment work differently.** Bookmaker
+and forum sites are generally locked down against scraping (anti-bot
+protection, and often against their terms of service), so this repo doesn't
+scrape them. Instead, each gameweek, ask Claude to **"refresh the gameweek
+report"** — it runs live web searches for current odds and pundit/community
+captaincy takes, synthesises them with sources cited, and writes the result
+to `data/reports/gw{N}.md`, which the dashboard's "Odds & Expert Take" tab
+then displays. Treat that tab as directional sentiment, not verified stats —
+it's a research summary, not scraped raw data.
+
+If you later want structured odds numbers feeding directly into the
+captaincy/transfer scoring (not just a read-only summary tab), the natural
+upgrade is a paid odds API (e.g. the-odds-api.com) — that's a separate
+decision since it costs money, and would live as a new module under
+`analysis/` producing a DataFrame keyed by player/team, the same shape as
+the existing ones.
 
 ## Running tests
 

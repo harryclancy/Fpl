@@ -15,6 +15,7 @@ from fpl_assistant import api
 from fpl_assistant.analysis import captaincy, form, fixtures as fixtures_analysis, injuries, transfers
 from fpl_assistant.config import FPL_TEAM_ID
 from fpl_assistant.models import attach_team_names, events_df, fixtures_df, parse_squad, players_df, teams_df
+from fpl_assistant.reports import load_report
 
 st.set_page_config(page_title="FPL Assistant Manager", layout="wide")
 
@@ -106,6 +107,21 @@ def render_injuries_tab(players, owned_ids):
     st.dataframe(injuries.flagged_players(players), use_container_width=True)
 
 
+def render_report_tab(next_event):
+    st.subheader(f"Odds & expert take — GW{next_event}")
+    text, filename = load_report(next_event)
+    if text is None:
+        st.info(
+            "No report yet. Ask Claude to \"refresh the gameweek report\" — it runs live web "
+            "searches for current odds and expert/community sentiment and writes it here, since "
+            "direct scraping of bookmaker and forum sites isn't reliable or always allowed."
+        )
+        return
+    if filename != f"gw{next_event}.md":
+        st.warning(f"Showing the most recent report available ({filename}), not one for GW{next_event} specifically.")
+    st.markdown(text)
+
+
 def render_transfers_tab(players, fixtures, teams, next_event, squad):
     st.subheader("Transfer suggestions")
 
@@ -148,12 +164,12 @@ def main():
     if not team_id:
         st.sidebar.info(
             "Enter your FPL Team ID to see your squad and personalised transfer suggestions. "
-            "Find it in the URL when viewing your team on fantasy.premierleague.com "
-            "(the number after /entry/)."
+            "Sign in at fantasy.premierleague.com, open Pick Team → Gameweek History, and "
+            "check the URL: .../entry/1234567/history — that number is your Team ID."
         )
 
     squad = None
-    tab_names = ["Captaincy", "Fixtures", "Watchlist", "Injuries"]
+    tab_names = ["Captaincy", "Fixtures", "Watchlist", "Injuries", "Odds & Expert Take"]
     if team_id:
         tab_names = ["My Squad"] + tab_names + ["Transfers"]
 
@@ -176,6 +192,9 @@ def main():
     with tab_map["Injuries"]:
         owned_ids = squad.player_ids if squad else None
         render_injuries_tab(players, owned_ids)
+
+    with tab_map["Odds & Expert Take"]:
+        render_report_tab(next_event)
 
     if team_id and squad:
         with tab_map["Transfers"]:
