@@ -68,15 +68,33 @@ injury/news/chance-of-playing fields all come straight from the official
 `fantasy.premierleague.com/api` — free, no key needed, and reliable enough
 to run analysis code against directly.
 
-**Betting odds and expert/community sentiment work differently.** Bookmaker
-and forum sites are generally locked down against scraping (anti-bot
-protection, and often against their terms of service), so this repo doesn't
-scrape them. Instead, each gameweek, ask Claude to **"refresh the gameweek
-report"** — it runs live web searches for current odds and pundit/community
-captaincy takes, synthesises them with sources cited, and writes the result
-to `data/reports/gw{N}.md`, which the dashboard's "Odds & Expert Take" tab
-then displays. Treat that tab as directional sentiment, not verified stats —
-it's a research summary, not scraped raw data.
+**Betting odds and expert/community sentiment work differently.** Reddit,
+YouTube, and bookmaker sites are generally locked down against scraping
+(anti-bot protection, and often against their terms of service), so this
+repo doesn't scrape them directly. Instead, each gameweek, ask Claude to
+**"refresh the gameweek report"** — it runs live multi-source web research
+(major FPL content sites like Fantasy Football Scout, RotoWire, Fantasy
+Football Fix/Hub, which themselves aggregate Reddit/YouTube/cross-manager
+ownership sentiment) and writes two things to `data/reports/`:
+
+- `gw{N}.md` — the big-picture page shown in the "Odds & Expert Take" tab:
+  captaincy consensus, a **Player notes** section with per-player qualitative
+  reasoning (why managers/analysts are picking or avoiding them), fixture
+  notes, and sources.
+- The same file also feeds `analysis/rationale.py`, which cross-references
+  each Starting XI pick against the report by name (trying web_name, surname,
+  and full name, since FPL's compact `web_name` often won't literally match
+  how a report refers to a player) and surfaces the matching line as a
+  **"What FPL managers & analysts are saying"** paragraph directly under that
+  player's case — so the reasoning blends quantitative signals (price,
+  ownership, fixture difficulty, form once the season's under way) with real
+  qualitative research, not just one number. Each starter's card also has a
+  **"📅 Fixtures & form"** dropdown with their next 5 gameweeks and underlying
+  stats, kept separate from the main reasoning so that stays readable.
+
+Treat all of it as directional sentiment, not verified stats or literal
+scraped Reddit comments — it's real multi-source research, just relayed
+through publications rather than pulled straight from a subreddit thread.
 
 If you later want structured odds numbers feeding directly into the
 captaincy/transfer scoring (not just a read-only summary tab), the natural

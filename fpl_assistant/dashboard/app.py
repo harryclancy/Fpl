@@ -107,6 +107,9 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     starters_df["_order"] = starters_df["position"].map(position_reading_order)
     starters_df = starters_df.sort_values(["_order", "squad_score"], ascending=[True, False])
 
+    fixture_table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, rationale.FIXTURE_WINDOW)
+    fixture_gws = list(range(next_event, next_event + rationale.FIXTURE_WINDOW))
+
     for pos in ["FWD", "MID", "DEF", "GKP"]:
         pos_rows = starters_df[starters_df["position"] == pos]
         if pos_rows.empty:
@@ -125,6 +128,22 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
                     )
                 with text_col:
                     st.markdown(rationale.player_rationale(row, report_text))
+
+                with st.expander("📅 Fixtures & form"):
+                    team_fixtures = fixture_table.loc[row["team"]]
+                    fx_row = {f"GW{gw}": team_fixtures[gw] for gw in fixture_gws}
+                    st.dataframe(pd.DataFrame([fx_row]), width='stretch', hide_index=True)
+                    st.caption(f"Avg difficulty over the window: {team_fixtures['avg_difficulty']:.1f}/5")
+
+                    stats = {"Price": f"£{row['price']:.1f}m", "Ownership": f"{row['selected_by_percent']:.1f}%"}
+                    if row.get("scoring_basis") != "preseason":
+                        stats["Form"] = f"{row['form']:.1f}"
+                        stats["Points/game"] = f"{row.get('points_per_game', 0)}"
+                        stats["xGI"] = f"{row.get('expected_goal_involvements', 0):.2f}"
+                        stats["ICT index"] = f"{row.get('ict_index', 0):.1f}"
+                        stats["Bonus pts"] = f"{row.get('bonus', 0):.0f}"
+                    stats_df = pd.DataFrame(list(stats.items()), columns=["Stat", "Value"])
+                    st.dataframe(stats_df, width='stretch', hide_index=True)
 
     with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
         bench_cols = ["web_name", "team_short_name", "position", "price"]

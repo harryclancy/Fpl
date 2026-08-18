@@ -58,32 +58,39 @@ def _risk_note(row: pd.Series) -> str | None:
     return None
 
 
+def _name_candidates(row: pd.Series) -> list[str]:
+    """Every reasonable way this player might be referred to in prose.
+
+    FPL's compact `web_name` (often just a surname, sometimes styled
+    "B.Fernandes") frequently won't literally appear in a research report
+    written the way a human would — "Bruno Fernandes", not "B.Fernandes".
+    Try the surname and the full first+second name too, longest first so
+    a full-name match wins over a generic surname match when both hit.
+    """
+    candidates = {str(row["web_name"])}
+    second_name = row.get("second_name")
+    first_name = row.get("first_name")
+    if pd.notna(second_name) and second_name:
+        candidates.add(str(second_name))
+    if pd.notna(first_name) and pd.notna(second_name) and first_name and second_name:
+        candidates.add(f"{first_name} {second_name}")
+    return sorted((c for c in candidates if c), key=len, reverse=True)
+
+
 def _report_mention(row: pd.Series, report_text: str | None) -> str | None:
-    """If this week's Odds & Expert Take report mentions this player by
-    name, surface the line it appears in as corroborating (or
-    contradicting) evidence.
+    """If this week's Odds & Expert Take report mentions this player under
+    any of their name variants, surface the line/bullet it appears in as
+    corroborating (or contradicting) community/analyst evidence.
     """
     if not report_text:
         return None
-    name = str(row["web_name"])
-    for line in report_text.splitlines():
-        if re.search(rf"\b{re.escape(name)}\b", line, re.IGNORECASE):
-            snippet = line.strip().lstrip("-*# ").strip()
-            if snippet:
-                return f'📰 This week\'s report backs it up: "{snippet}"'
+    for name in _name_candidates(row):
+        for line in report_text.splitlines():
+            if re.search(rf"\b{re.escape(name)}\b", line, re.IGNORECASE):
+                snippet = line.strip().lstrip("-*# ").strip()
+                if snippet:
+                    return snippet
     return None
-
-
-def _key_stats_line(row: pd.Series, preseason: bool) -> str:
-    parts = [f"£{row['price']:.1f}m", f"{row['selected_by_percent']:.1f}% owned"]
-    if not preseason:
-        ict = row.get("ict_index")
-        bonus = row.get("bonus")
-        if ict is not None:
-            parts.append(f"ICT {ict:.1f}")
-        if bonus:
-            parts.append(f"{bonus:.0f} bonus pts banked")
-    return "Key stats: " + " · ".join(parts)
 
 
 def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
@@ -126,11 +133,19 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
                 f"({difficulty:.1f} avg FDR) — good conditions for clean-sheet points."
             )
 
-    extra_lines = [_risk_note(row), _momentum_note(row), _report_mention(row, report_text)]
-    extra_lines = [line for line in extra_lines if line]
-    extra_lines.append(_key_stats_line(row, preseason))
+    parts = [body]
 
-    return body + "\n\n" + "  \n".join(extra_lines)
+    mention = _report_mention(row, report_text)
+    if mention:
+        parts.append(f'**What FPL managers & analysts are saying:** {mention}')
+
+    extra_lines = [_risk_note(row), _momentum_note(row)]
+    extra_lines = [line for line in extra_lines if line]
+    if extra_lines:
+        parts.append("  \n".join(extra_lines))
+    parts.append("*Full fixture list, form, and underlying stats in the dropdown below.*")
+
+    return "\n\n".join(parts)
 
 
 def captain_rationale(captain_row: pd.Series, vice_row: pd.Series, report_text: str | None = None) -> str:
@@ -150,5 +165,11 @@ def captain_rationale(captain_row: pd.Series, vice_row: pd.Series, report_text: 
             f"armband if {c_name} doesn't play."
         )
 
-    mention = _report_mention(captain_row, report_text)
-    return body + ("\n\n" + mention if mention else "")
+    parts = [body]
+    captain_mention = _report_mention(captain_row, report_text)
+    if captain_mention:
+        parts.append(f'**What FPL managers & analysts are saying about {c_name}:** {captain_mention}')
+    vice_mention = _report_mention(vice_row, report_text)
+    if vice_mention:
+        parts.append(f'**On the vice, {v_name}:** {vice_mention}')
+    return "\n\n".join(parts)
