@@ -1,5 +1,13 @@
-"""Form and underlying-stats analysis on top of the bootstrap player table."""
+"""Form and underlying-stats analysis on top of the bootstrap player table.
+
+Preseason (or before GW1's matches are actually played), minutes/form/
+total_points are zero for everyone — the min-minutes filters and
+form/points sorting below would otherwise return an empty or meaningless
+table, so each function falls back to price/ownership in that case.
+"""
 import pandas as pd
+
+from fpl_assistant.analysis.season_state import is_preseason
 
 
 def minutes_reliability(players: pd.DataFrame, events_played: int) -> pd.Series:
@@ -24,7 +32,10 @@ def in_form_players(
     """Players ranked by recent form (FPL's own rolling metric), filtered to
     exclude nailed-off bench-warmers and, optionally, a position/budget.
     """
-    df = players[players["minutes"] >= min_minutes].copy()
+    preseason = is_preseason(players)
+    effective_min_minutes = 0 if preseason else min_minutes
+
+    df = players[players["minutes"] >= effective_min_minutes].copy()
     if position:
         df = df[df["position"] == position]
     if max_price is not None:
@@ -43,14 +54,18 @@ def in_form_players(
         "selected_by_percent",
         "expected_goal_involvements",
     ]
-    return df.sort_values("form", ascending=False)[cols].head(top_n)
+    sort_key = "price" if preseason else "form"
+    return df.sort_values(sort_key, ascending=False)[cols].head(top_n)
 
 
 def best_value_players(
     players: pd.DataFrame, position: str | None = None, min_minutes: int = 270, top_n: int = 15
 ) -> pd.DataFrame:
     """Points per million spent — who's overperforming their price tag."""
-    df = players[(players["minutes"] >= min_minutes) & (players["status"] == "a")].copy()
+    preseason = is_preseason(players)
+    effective_min_minutes = 0 if preseason else min_minutes
+
+    df = players[(players["minutes"] >= effective_min_minutes) & (players["status"] == "a")].copy()
     if position:
         df = df[df["position"] == position]
 
@@ -64,7 +79,10 @@ def best_value_players(
         "points_per_million",
         "selected_by_percent",
     ]
-    return df.sort_values("points_per_million", ascending=False)[cols].head(top_n)
+    # Preseason, points_per_million is 0/price = 0 for everyone — ownership
+    # (who the crowd already trusts) is the only informative signal left.
+    sort_key = "selected_by_percent" if preseason else "points_per_million"
+    return df.sort_values(sort_key, ascending=False)[cols].head(top_n)
 
 
 def differentials(
@@ -76,9 +94,12 @@ def differentials(
     """Low-ownership, in-form players — the classic 'differential' pick to
     gain rank on the rest of your mini-league.
     """
+    preseason = is_preseason(players)
+    effective_min_form = 0 if preseason else min_form
+
     df = players[
         (players["selected_by_percent"] <= max_ownership)
-        & (players["form"] >= min_form)
+        & (players["form"] >= effective_min_form)
         & (players["status"] == "a")
     ].copy()
     cols = [
@@ -90,4 +111,7 @@ def differentials(
         "selected_by_percent",
         "total_points",
     ]
-    return df.sort_values("form", ascending=False)[cols].head(top_n)
+    # Preseason, form is 0 for everyone — price stands in as a quality proxy
+    # for "good player nobody's picked yet".
+    sort_key = "price" if preseason else "form"
+    return df.sort_values(sort_key, ascending=False)[cols].head(top_n)

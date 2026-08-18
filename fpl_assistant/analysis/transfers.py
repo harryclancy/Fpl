@@ -7,6 +7,7 @@ replacements. The final call (and anything involving hits) is yours.
 import pandas as pd
 
 from fpl_assistant.analysis.fixtures import team_fixture_table
+from fpl_assistant.analysis.season_state import is_preseason
 from fpl_assistant.models import Squad
 
 WEAKNESS_FORM_THRESHOLD = 2.5
@@ -48,19 +49,26 @@ def squad_with_scores(
     df = players.copy()
     df["fixture_run_difficulty"] = df["team"].map(fixture_table["avg_difficulty"])
     df["upcoming_blanks"] = df["team"].map(fixture_table["blank_gameweeks"])
-    df["minutes_share"] = (df["minutes"] / max(1, from_event - 1) / 90).clip(upper=1.0)
+    if is_preseason(players):
+        # Nobody's played a minute yet -- a 0% minutes share would look like
+        # a rotation risk for literally every player, which is noise, not
+        # signal. Treat everyone as fully reliable until real data exists.
+        df["minutes_share"] = 1.0
+    else:
+        df["minutes_share"] = (df["minutes"] / max(1, from_event - 1) / 90).clip(upper=1.0)
     return df
 
 
 def squad_weaknesses(scored_players: pd.DataFrame, squad: Squad) -> pd.DataFrame:
     """Owned players worth considering moving on, with the reason(s) why."""
     owned = scored_players[scored_players["id"].isin(squad.player_ids)].copy()
+    preseason = is_preseason(scored_players)
 
     def reasons(row) -> list[str]:
         r = []
         if row["status"] != "a":
             r.append(f"status: {row['status_label']}")
-        if row["form"] < WEAKNESS_FORM_THRESHOLD:
+        if not preseason and row["form"] < WEAKNESS_FORM_THRESHOLD:
             r.append(f"poor form ({row['form']})")
         if pd.notna(row["fixture_run_difficulty"]) and row["fixture_run_difficulty"] > WEAKNESS_FIXTURE_THRESHOLD:
             r.append(f"tough fixture run ({row['fixture_run_difficulty']:.1f} avg FDR)")
@@ -91,13 +99,14 @@ def suggest_replacements(
     """
     outgoing = scored_players.loc[outgoing_player_id]
     max_price = outgoing["price"] + budget
+    effective_min_minutes = 0 if is_preseason(scored_players) else 180
 
     pool = scored_players[
         (scored_players["position"] == outgoing["position"])
         & (~scored_players["id"].isin(squad.player_ids))
         & (scored_players["status"] == "a")
         & (scored_players["price"] <= max_price)
-        & (scored_players["minutes"] >= 180)
+        & (scored_players["minutes"] >= effective_min_minutes)
     ].copy()
 
     lo, hi = pool["form"].min(), pool["form"].max()

@@ -13,11 +13,29 @@ import requests
 import streamlit as st
 
 from fpl_assistant import api
-from fpl_assistant.analysis import captaincy, form, fixtures as fixtures_analysis, injuries, transfers
+from fpl_assistant.analysis import (
+    captaincy,
+    form,
+    fixtures as fixtures_analysis,
+    injuries,
+    rationale,
+    squad_builder,
+    transfers,
+)
+from fpl_assistant.analysis.season_state import is_preseason
 from fpl_assistant.config import FPL_TEAM_ID
 from fpl_assistant.dashboard.pitch import render_pitch_html
 from fpl_assistant.dashboard.styles import hero_header, inject_global_css
-from fpl_assistant.models import attach_team_names, events_df, fixtures_df, parse_squad, players_df, teams_df
+from fpl_assistant.models import (
+    Squad,
+    SquadPick,
+    attach_team_names,
+    events_df,
+    fixtures_df,
+    parse_squad,
+    players_df,
+    teams_df,
+)
 from fpl_assistant.reports import load_report
 
 st.set_page_config(page_title="FPL Assistant Manager", layout="wide")
@@ -37,6 +55,107 @@ def load_core_data():
     return players, teams, events, fixtures, next_event
 
 
+def render_starting_xi_tab(players, fixtures, teams, next_event):
+    st.subheader(f"Recommended Starting XI — GW{next_event}")
+
+    scored = squad_builder.score_players(players, fixtures, teams, next_event)
+    squad15 = squad_builder.build_squad(scored)
+    starters, bench, formation = squad_builder.best_starting_xi(squad15)
+    captain_id, vice_id = squad_builder.pick_captain(squad15, starters)
+
+    if is_preseason(players):
+        st.info(
+            "No match data exists yet this season, so this XI is built from price, ownership, and "
+            "fixture difficulty rather than form — it's a 'who to pick from scratch' recommendation, "
+            "not tied to your actual squad. Once real form data exists, this switches over "
+            "automatically."
+        )
+    else:
+        st.caption(
+            "This is the strongest XI buildable from scratch within a £100m budget — not "
+            "necessarily who's currently in your squad. Once GW1 unlocks, use My Squad + Transfers "
+            "for advice tailored to what you actually own."
+        )
+
+    st.caption(f"Formation **{formation}** · squad cost **£{squad15['price'].sum():.1f}m** of £100m budget")
+
+    picks = [
+        SquadPick(pid, is_captain=(pid == captain_id), is_vice_captain=(pid == vice_id), multiplier=1, position_order=i + 1)
+        for i, pid in enumerate(starters)
+    ] + [SquadPick(pid, False, False, 1, 12 + i) for i, pid in enumerate(bench)]
+    fake_squad = Squad(
+        team_id=0, event=next_event, bank=0.0, team_value=squad15["price"].sum(),
+        transfers_made=0, transfers_cost=0, picks=picks,
+    )
+    st.markdown(render_pitch_html(squad15, fake_squad), unsafe_allow_html=True)
+
+    captain_row = squad15.loc[captain_id]
+    vice_row = squad15.loc[vice_id]
+    st.markdown(rationale.captain_rationale(captain_row, vice_row))
+
+    st.markdown("#### Why each starter")
+    position_reading_order = {"FWD": 0, "MID": 1, "DEF": 2, "GKP": 3}
+    starters_df = squad15.loc[starters].copy()
+    starters_df["_order"] = starters_df["position"].map(position_reading_order)
+    starters_df = starters_df.sort_values(["_order", "squad_score"], ascending=[True, False])
+
+    for pid, row in starters_df.iterrows():
+        st.markdown(rationale.player_rationale(row))
+
+    with st.expander(f"Bench ({', '.join(squad15.loc[bench, 'web_name'])})"):
+        bench_cols = ["web_name", "team_short_name", "position", "price"]
+        st.caption("Cheap enablers to free up budget for the starting XI — minimal impact on your bank.")
+        st.dataframe(squad15.loc[bench, bench_cols], use_container_width=True)
+
+
+def render_manual_squad_entry(players: pd.DataFrame):
+    """Lets the user tell us their squad directly when the API won't show it
+    yet (pre-deadline). Session-only — resets if the page fully reloads.
+    """
+    st.markdown("#### Enter your squad manually")
+    st.caption(
+        "You already know your picks from the official app — list them here to see the pitch view "
+        "today instead of waiting for the deadline."
+    )
+
+    df = players.copy()
+    df["label"] = df["web_name"] + " (" + df["team_short_name"] + ", £" + df["price"].round(1).astype(str) + "m)"
+    label_to_id = dict(zip(df["label"], df["id"]))
+
+    squad_labels = st.multiselect("Your 15-man squad", sorted(label_to_id), max_selections=15)
+    if len(squad_labels) != 15:
+        st.caption(f"{len(squad_labels)}/15 selected.")
+        return None
+
+    starting_labels = st.multiselect("Which 11 are starting?", squad_labels, max_selections=11)
+    if len(starting_labels) != 11:
+        st.caption(f"{len(starting_labels)}/11 starters selected.")
+        return None
+
+    captain_label = st.selectbox("Captain", starting_labels)
+    vice_options = [name for name in starting_labels if name != captain_label]
+    vice_label = st.selectbox("Vice-captain", vice_options) if vice_options else None
+
+    bench_labels = [name for name in squad_labels if name not in starting_labels]
+    picks = [
+        SquadPick(
+            label_to_id[name],
+            is_captain=(name == captain_label),
+            is_vice_captain=(name == vice_label),
+            multiplier=1,
+            position_order=i + 1,
+        )
+        for i, name in enumerate(starting_labels)
+    ] + [
+        SquadPick(label_to_id[name], False, False, 1, 12 + i) for i, name in enumerate(bench_labels)
+    ]
+    squad_player_ids = [label_to_id[name] for name in squad_labels]
+    return Squad(
+        team_id=0, event=0, bank=0.0, team_value=players.loc[squad_player_ids, "price"].sum(),
+        transfers_made=0, transfers_cost=0, picks=picks,
+    )
+
+
 def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, events: pd.DataFrame):
     try:
         picks_response = api.get_entry_picks(team_id, next_event)
@@ -48,8 +167,12 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
             st.info(
                 f"GW{next_event} picks aren't public yet{when} — the FPL API only exposes a "
                 "gameweek's squads once its deadline has passed (so managers can't copy each "
-                "other pre-deadline). Check back after the deadline."
+                "other pre-deadline)."
             )
+            manual_squad = render_manual_squad_entry(players)
+            if manual_squad:
+                st.markdown(render_pitch_html(players, manual_squad), unsafe_allow_html=True)
+                return manual_squad
         else:
             st.error(f"Couldn't load team {team_id}: {e}")
         return
@@ -189,12 +312,15 @@ def main():
         )
 
     squad = None
-    tab_names = ["Captaincy", "Fixtures", "Watchlist", "Injuries", "Odds & Expert Take"]
+    tab_names = ["Starting XI", "Captaincy", "Fixtures", "Watchlist", "Injuries", "Odds & Expert Take"]
     if team_id:
-        tab_names = ["My Squad"] + tab_names + ["Transfers"]
+        tab_names = [tab_names[0], "My Squad"] + tab_names[1:] + ["Transfers"]
 
     tabs = st.tabs(tab_names)
     tab_map = dict(zip(tab_names, tabs))
+
+    with tab_map["Starting XI"]:
+        render_starting_xi_tab(players, fixtures, teams, next_event)
 
     if team_id:
         with tab_map["My Squad"]:
