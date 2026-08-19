@@ -24,21 +24,24 @@ POSITION_ACCENT = {
 PITCH_CSS = """
 <style>
 .pitch-wrap {
+    /* A softer, lighter turf than the dark theme used. A saturated green
+       that looked right against near-black is garish surrounded by white,
+       and it fights the club colours it exists to showcase. */
     background:
         repeating-linear-gradient(
             to bottom,
-            #1e7a3d 0, #1e7a3d 60px,
-            #218844 60px, #218844 120px
+            #dff0e2 0, #dff0e2 62px,
+            #d6ebda 62px, #d6ebda 124px
         );
-    border-radius: 16px;
-    padding: 28px 12px 16px 12px;
+    border-radius: 18px;
+    padding: 30px 14px 20px 14px;
     position: relative;
-    border: 2px solid rgba(255,255,255,0.25);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    border: 1px solid #c6dfcc;
+    box-shadow: 0 2px 6px rgba(21,19,26,0.06);
 }
 .pitch-line-circle {
-    width: 130px; height: 130px;
-    border: 2px solid rgba(255,255,255,0.35);
+    width: 132px; height: 132px;
+    border: 2px solid rgba(255,255,255,0.85);
     border-radius: 50%;
     position: absolute;
     top: 50%; left: 50%;
@@ -48,7 +51,7 @@ PITCH_CSS = """
 .pitch-halfway {
     position: absolute;
     left: 0; right: 0; top: 50%;
-    border-top: 2px solid rgba(255,255,255,0.35);
+    border-top: 2px solid rgba(255,255,255,0.85);
     z-index: 0;
 }
 .pitch-row {
@@ -58,30 +61,45 @@ PITCH_CSS = """
     flex-wrap: wrap;
     position: relative;
     z-index: 1;
-    margin: 14px 0;
+    margin: 15px 0;
 }
 .player-card {
-    background: rgba(13, 13, 26, 0.82);
-    border-radius: 12px;
-    padding: 8px 8px 6px 8px;
-    width: 104px;
+    background: rgba(255,255,255,0.96);
+    border-radius: 13px;
+    padding: 9px 8px 7px 8px;
+    width: 106px;
     text-align: center;
-    border-top: 3px solid var(--accent, #00ff87);
-    backdrop-filter: blur(2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    border: 1px solid rgba(21,19,26,0.07);
+    border-top: 3px solid var(--accent, #38003c);
+    box-shadow: 0 2px 6px rgba(21,19,26,0.10);
 }
 .player-photo-box {
     position: relative;
     width: 52px; height: 52px;
-    margin: 0 auto 5px auto;
+    margin: 0 auto 6px auto;
     border-radius: 50%;
     /* Club-coloured ring: identity at a glance, and it reads as a badge
        rather than a cropped photo floating on the pitch. */
-    box-shadow: 0 0 0 2px var(--accent, #00ff87), 0 2px 8px rgba(0,0,0,0.45);
+    box-shadow: 0 0 0 2px var(--accent, #38003c), 0 1px 4px rgba(21,19,26,0.18);
+}
+.player-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #15131a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.01em;
+}
+.player-meta {
+    font-size: 10.5px;
+    color: #5f5a6b;
+    margin-top: 2px;
+    font-variant-numeric: tabular-nums;
 }
 .armband {
     position: absolute;
-    top: -4px; right: -4px;
+    top: -3px; right: -3px;
     width: 20px; height: 20px;
     border-radius: 50%;
     font-size: 11px;
@@ -89,42 +107,29 @@ PITCH_CSS = """
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0e0e1a;
-    border: 2px solid #0e0e1a;
+    z-index: 3;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 3px rgba(21,19,26,0.25);
 }
-.armband-c { background: #f5c518; }
-.armband-v { background: #d7d7de; }
-.player-name {
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.2;
-    margin-top: 2px;
-    overflow-wrap: break-word;
-}
-.player-meta {
-    font-size: 10.5px;
-    color: #cfd3dc;
-    margin-top: 1px;
-}
+.armband-c { background: #ffc93c; color: #3a2a00; }
+.armband-v { background: #ffffff; color: #38003c; }
 .bench-strip {
-    background: #23233a;
-    border-radius: 12px;
-    padding: 14px 12px 8px 12px;
-    margin-top: 4px;
-    border: 1px dashed rgba(255,255,255,0.18);
+    margin-top: 14px;
+    padding: 13px 14px 11px 14px;
+    background: #faf9fc;
+    border: 1px solid #e6e2ee;
+    border-radius: 14px;
 }
 .bench-label {
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #9a9ab0;
-    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+    color: #8b8598;
     font-weight: 700;
+    margin-bottom: 9px;
 }
 </style>
 """
-
 
 def _player_card_html(row: pd.Series, badge: str | None) -> str:
     # Accent by club rather than by position. Position is already obvious

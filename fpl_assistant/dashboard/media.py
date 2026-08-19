@@ -95,7 +95,7 @@ MEDIA_CSS = """
     font-weight: 700;
     font-size: 0.85em;
     letter-spacing: 0.02em;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16);
+    box-shadow: inset 0 0 0 1px rgba(21,19,26,0.10);
 }
 /* Initials sit underneath; the photo overlay covers them when it loads.
    A 404 paints nothing, so the initials remain visible. */

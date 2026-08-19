@@ -407,6 +407,85 @@ def optimise_transfers(
     )
 
 
+@dataclass
+class RollDecision:
+    """Whether to spend this week's free transfer or bank it."""
+
+    use_now_gain: float
+    roll_gain: float
+    recommendation: str
+    detail: str
+
+
+def should_roll_transfer(
+    scored: pd.DataFrame,
+    current_squad_ids: list[int],
+    bank: float = 0.0,
+    free_transfers: int = 1,
+    max_free_transfers: int = 5,
+    **kwargs,
+) -> RollDecision:
+    """Is this week's transfer better spent now or saved?
+
+    The question a one-week optimiser can't answer. Banking a transfer
+    isn't free — it's a bet that next week's best move beats this week's
+    by enough to justify waiting — but taking a marginal transfer every
+    week is how managers end up with no flexibility the moment an injury
+    lands.
+
+    Approximated by comparing the best single move available now against
+    the best pair of moves available with two free transfers. Two
+    transfers next week are worth more than one twice over, because they
+    can be chosen together — but only if the squad has two problems worth
+    fixing.
+    """
+    now = optimise_transfers(
+        scored, current_squad_ids, bank=bank, free_transfers=free_transfers,
+        max_transfers=max(1, free_transfers), **kwargs,
+    )
+    banked = min(free_transfers + 1, max_free_transfers)
+    later = optimise_transfers(
+        scored, current_squad_ids, bank=bank, free_transfers=banked,
+        max_transfers=banked, **kwargs,
+    )
+
+    # Next week's gain is discounted: it arrives a week later, and the
+    # squad/prices/news will have moved by then, so a projection of it is
+    # worth less than the same number available today.
+    roll_value = later.net_gain * 0.85
+
+    if now.transfers == 0 and later.transfers == 0:
+        return RollDecision(
+            use_now_gain=0.0, roll_gain=0.0,
+            recommendation="Roll it",
+            detail=(
+                "Nothing worth doing this week, and nothing obvious next week either. Banking the "
+                "transfer costs nothing and buys you flexibility for an injury."
+            ),
+        )
+
+    if roll_value > now.net_gain + 0.5:
+        return RollDecision(
+            use_now_gain=round(now.net_gain, 2), roll_gain=round(roll_value, 2),
+            recommendation="Roll it",
+            detail=(
+                f"This week's best move is worth about {now.net_gain:.1f} points. Banking it and "
+                f"making two moves together next week projects roughly {roll_value:.1f} — the pair "
+                f"can be chosen to fit each other, which one transfer at a time can't."
+            ),
+        )
+
+    return RollDecision(
+        use_now_gain=round(now.net_gain, 2), roll_gain=round(roll_value, 2),
+        recommendation="Use it now",
+        detail=(
+            f"This week's move is worth about {now.net_gain:.1f} points against roughly "
+            f"{roll_value:.1f} for waiting. Points now are worth more than points projected a week "
+            f"out, because the projection will have changed by then."
+        ),
+    )
+
+
 def optimise_starting_xi(
     squad: pd.DataFrame, points_column: str = "xp_next"
 ) -> tuple[list[int], list[int], str]:

@@ -1,7 +1,22 @@
 [theme]
-base = "dark"
-primaryColor = "#00ff85"
-backgroundColor = "#0e0e1a"
-secondaryBackgroundColor = "#171729"
-textColor = "#f0f0f5"
+base = "light"
+# Premier League purple as the primary action colour. The neon green that
+# worked on the old dark theme fails contrast badly on white, so the
+# accent role moves to purple and green is demoted to a positive-state
+# indicator only.
+primaryColor = "#38003c"
+backgroundColor = "#ffffff"
+# A barely-there warm grey for cards and the sidebar. Pure #f5f5f5 reads
+# as dirty next to true white; a hint of violet keeps it in the same
+# family as the purple.
+secondaryBackgroundColor = "#f7f6fa"
+textColor = "#15131a"
 font = "sans serif"
+
+[client]
+showErrorDetails = true
+
+[server]
+# Long solves (the ILP plus a re-solve for the counterfactual) can take a
+# few seconds; don't let the browser give up mid-answer.
+maxMessageSize = 300

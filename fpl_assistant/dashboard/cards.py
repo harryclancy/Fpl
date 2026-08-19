@@ -8,36 +8,40 @@ from fpl_assistant.dashboard.media import MEDIA_CSS, player_photo_html, team_cre
 
 CARD_LIST_CSS = """
 <style>
-.rank-card-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.rank-card-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
 .rank-card {
-    display: flex; align-items: center; gap: 12px;
-    background: linear-gradient(145deg, #171729, #1d1d36);
-    border: 1px solid rgba(255,255,255,0.08);
+    display: flex; align-items: center; gap: 13px;
+    background: #ffffff;
+    border: 1px solid #e6e2ee;
     border-radius: 12px;
-    padding: 10px 14px;
+    padding: 11px 15px;
+    box-shadow: 0 1px 2px rgba(21,19,26,0.04);
 }
 .rank-num {
-    font-size: 15px; font-weight: 800; color: #6b6b85;
-    width: 20px; text-align: center; flex-shrink: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px; font-weight: 700; color: #8b8598;
+    width: 22px; text-align: center; flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
 }
 .rank-photo { position: relative; width: 44px; height: 44px; flex-shrink: 0; }
-.rank-photo img, .rank-photo .photo-fallback {
-    width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
-    border: 2px solid rgba(255,255,255,0.35);
-}
-.rank-photo .photo-fallback { background: #2a2a3d; color: #fff; font-size: 13px; }
 .rank-info { flex: 1; min-width: 0; }
-.rank-name { font-weight: 700; color: #fff; font-size: 14px; }
-.rank-meta { font-size: 11.5px; color: #9a9ab0; margin-top: 1px; }
-.rank-score { text-align: right; flex-shrink: 0; padding-left: 4px; }
-.rank-score .value { font-size: 16px; font-weight: 800; }
-.rank-score .label { font-size: 9px; color: #7d7d95; text-transform: uppercase; letter-spacing: 0.5px; }
+.rank-name { font-weight: 600; color: #15131a; font-size: 14.5px; letter-spacing: -0.005em; }
+.rank-meta { font-size: 11.5px; color: #5f5a6b; margin-top: 2px; }
+.rank-score { text-align: right; flex-shrink: 0; padding-left: 6px; }
+.rank-score .value {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px; font-weight: 700; line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+}
+.rank-score .label {
+    font-size: 9px; color: #8b8598; text-transform: uppercase; letter-spacing: 0.07em;
+}
 </style>
 """
 
-SCORE_GOOD = "#00ff85"
-SCORE_WARN = "#f5c518"
-SCORE_BAD = "#ff4d6d"
+SCORE_GOOD = "#0a7d4f"
+SCORE_WARN = "#8a5a00"
+SCORE_BAD = "#b0203c"
 
 
 def player_rank_card(

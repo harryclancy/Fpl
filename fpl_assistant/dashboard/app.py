@@ -17,9 +17,11 @@ from fpl_assistant import api
 from fpl_assistant.analysis import (
     ask as ask_engine,
     captaincy,
+    chips,
     consensus,
     explain,
     optimiser,
+    price,
     form,
     fixtures as fixtures_analysis,
     injuries,
@@ -200,6 +202,103 @@ def render_factor_panel() -> None:
             "Known gaps, stated plainly: chip strategy (Wildcard, Bench Boost, Triple Captain, "
             "Free Hit) isn't modelled yet, price changes aren't tracked, and transfers are planned "
             "one gameweek at a time rather than several ahead."
+        )
+
+
+CHIP_ICONS = {
+    "Wildcard": "🃏", "Bench Boost": "🪑", "Triple Captain": "👑", "Free Hit": "⚡",
+}
+
+
+def render_chips_tab(players, fixtures, teams, next_event):
+    """Chip timing — the biggest points lever in the game.
+
+    Four chips a season, each worth 15-30 points played into the right
+    gameweek and close to nothing played into a random one, so the whole
+    decision is timing. Every recommendation here reads off the fixture
+    schedule rather than off form, because that's what actually decides it.
+    """
+    section_header(
+        f"Chip strategy — GW{next_event}",
+        "When to play each one, and — just as often — why to hold",
+    )
+
+    scored = squad_builder.score_players(players, fixtures, teams, next_event)
+    solution = squad_builder.recommend_squad(scored, template_weight=rank_strategy_weight())
+
+    st.caption(
+        "Based on the recommended squad. Chips are judged against the fixture schedule ahead — "
+        "doubles for Triple Captain and Bench Boost, blanks for Free Hit — and, for the Wildcard, "
+        "against how far your squad has drifted from the best one available."
+    )
+
+    advice = chips.advise_all(
+        scored, solution, fixtures, from_event=next_event,
+        template_weight=rank_strategy_weight(),
+    )
+
+    for item in advice:
+        icon = CHIP_ICONS.get(item.chip, "🎫")
+        badge = (
+            '<span class="pill pill-good">Act on this</span>' if item.urgent
+            else '<span class="pill pill-accent">Hold</span>'
+        )
+        render_html(
+            f'<div style="display:flex;align-items:center;gap:10px;margin:18px 0 6px 0;">'
+            f'<span style="font-size:20px">{icon}</span>'
+            f'<span style="font-size:17px;font-weight:700">{item.chip}</span>{badge}</div>'
+        )
+        st.markdown(item.recommendation)
+        for line in item.detail:
+            st.markdown(line)
+
+    st.markdown("---")
+    st.caption(
+        "Chips don't roll over between halves of the season, so an unplayed chip is worth zero. "
+        "But playing one early to avoid wasting it usually costs more than waiting — doubles and "
+        "blanks cluster later, and that's when these earn their keep."
+    )
+
+
+def render_price_panel(players) -> None:
+    """Price movement — not points, but it compounds into them.
+
+    Every £0.1m gained is budget for a better player later. The signal is
+    net transfers relative to how many people own the player, because a
+    1%-owned player needs far fewer transfers to move than a 40%-owned one.
+    """
+    rising, falling = price.movers(players)
+    if rising.empty and falling.empty:
+        return
+
+    with st.expander("💷 Price watch — who's about to rise or fall"):
+        st.caption(
+            "Ranked by transfer momentum relative to ownership, which is what actually drives FPL "
+            "price changes. Directional rather than a prediction of tonight — the thresholds aren't "
+            "published."
+        )
+        columns = st.columns(2)
+        with columns[0]:
+            st.markdown("**📈 Rising**")
+            if rising.empty:
+                st.caption("Nothing moving up sharply.")
+            for _, row in rising.iterrows():
+                st.markdown(
+                    f"- **{row['web_name']}** ({row['team_short_name']}, £{row['price']:.1f}m) — "
+                    f"+{row['net_transfers']:,.0f} net"
+                )
+        with columns[1]:
+            st.markdown("**📉 Falling**")
+            if falling.empty:
+                st.caption("Nothing dropping sharply.")
+            for _, row in falling.iterrows():
+                st.markdown(
+                    f"- **{row['web_name']}** ({row['team_short_name']}, £{row['price']:.1f}m) — "
+                    f"{row['net_transfers']:,.0f} net"
+                )
+        st.caption(
+            "Buy before a rise only if you wanted the player anyway. Chasing price is how people "
+            "end up with squads they didn't choose."
         )
 
 
@@ -639,6 +738,8 @@ def render_watchlist_tab(players):
     preseason = is_preseason(players)
     position = st.selectbox("Position", [None, "GKP", "DEF", "MID", "FWD"], format_func=lambda x: x or "All")
 
+    render_price_panel(players)
+
     t1, t2, t3 = st.tabs(["In form", "Best value", "Differentials"])
     with t1:
         df = form.in_form_players(players, position=position)
@@ -783,6 +884,16 @@ def render_transfer_plan(players, fixtures, teams, next_event, squad, free_trans
             f"{in_row['xp_next']:.1f} pts projected)"
         )
 
+    try:
+        roll = optimiser.should_roll_transfer(
+            projected, owned_ids, bank=bank, free_transfers=free_transfers,
+            template_weight=rank_strategy_weight(),
+        )
+        icon = "🏦" if roll.recommendation == "Roll it" else "✅"
+        st.markdown(f"{icon} **{roll.recommendation}** — {roll.detail}")
+    except Exception:
+        pass  # advisory only; the plan above still stands
+
     if plan.points_cost:
         st.caption(
             f"This takes a −{plan.points_cost} hit and still comes out **{plan.net_gain:.1f} points "
@@ -861,7 +972,7 @@ def main():
         )
 
     squad = None
-    tab_names = ["Starting XI", "Captaincy", "Fixtures", "Watchlist", "Injuries", "Odds & Expert Take"]
+    tab_names = ["Starting XI", "Captaincy", "Chips", "Fixtures", "Watchlist", "Injuries", "Odds & Expert Take"]
     if team_id:
         tab_names = [tab_names[0], "My Squad"] + tab_names[1:] + ["Transfers"]
 
@@ -877,6 +988,9 @@ def main():
 
     with tab_map["Captaincy"]:
         render_captaincy_tab(players, fixtures, teams, next_event)
+
+    with tab_map["Chips"]:
+        render_chips_tab(players, fixtures, teams, next_event)
 
     with tab_map["Fixtures"]:
         render_fixtures_tab(fixtures, teams, next_event)

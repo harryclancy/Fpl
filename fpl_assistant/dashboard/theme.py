@@ -17,17 +17,43 @@ PINK = "#e90052"
 GREEN = "#00ff85"
 CYAN = "#04f5ff"
 
-# Surface tones for the dark theme. Kept as a small ramp rather than
+# Surface ramp for the light theme. Kept as a deliberate scale rather than
 # ad-hoc hex values so panels, cards and the page background stay in a
-# deliberate relationship instead of drifting apart per component.
-INK_900 = "#0b0b14"
-INK_800 = "#12121f"
-INK_700 = "#181829"
-INK_600 = "#1f1f33"
-INK_500 = "#2a2a42"
-TEXT = "#f2f2f7"
-TEXT_MUTED = "rgba(242,242,247,0.62)"
-TEXT_FAINT = "rgba(242,242,247,0.40)"
+# fixed relationship instead of drifting apart per component.
+#
+# Note none of these is pure grey — each carries a trace of the brand
+# violet. Neutral greys next to a saturated purple read as dirty, and the
+# whole surface looks accidental rather than designed.
+PAPER = "#ffffff"
+SURFACE_50 = "#faf9fc"
+SURFACE_100 = "#f4f2f8"
+SURFACE_200 = "#ebe8f2"
+SURFACE_300 = "#ded9e8"
+BORDER = "#e6e2ee"
+BORDER_STRONG = "#d3cce0"
+
+TEXT = "#15131a"
+TEXT_MUTED = "#5f5a6b"
+TEXT_FAINT = "#8b8598"
+
+# Semantic colours, chosen to clear 4.5:1 on white rather than for
+# vividness. The neon green that carried the old dark theme is unreadable
+# here, so it survives only as a background tint behind darker text.
+POSITIVE = "#0a7d4f"
+POSITIVE_TINT = "#e6f7ef"
+WARNING = "#8a5a00"
+WARNING_TINT = "#fdf3e0"
+NEGATIVE = "#b0203c"
+NEGATIVE_TINT = "#fdeaee"
+ACCENT_TINT = "#f3ebf7"
+
+# Retained so any straggling reference keeps working while the light
+# theme beds in.
+INK_900 = TEXT
+INK_800 = SURFACE_100
+INK_700 = SURFACE_200
+INK_600 = SURFACE_300
+INK_500 = BORDER_STRONG
 
 # (primary, secondary) per club. Primary is the shirt colour people
 # picture; secondary is the trim, used for gradients and accents.
