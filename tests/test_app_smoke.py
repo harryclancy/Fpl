@@ -107,12 +107,21 @@ def patch_api(monkeypatch):
     since that name was already bound at a prior import and a fresh
     exec() rebinds it from config, not from the stale app module.
     """
-    def _apply(preseason: bool):
+    def _apply(preseason: bool, team_id=None):
         bootstrap = _synthetic_bootstrap(preseason)
         fixtures = _synthetic_fixtures()
         monkeypatch.setattr(api, "get_bootstrap_static", lambda: bootstrap)
         monkeypatch.setattr(api, "get_fixtures", lambda event=None: fixtures)
-        monkeypatch.setattr(config, "FPL_TEAM_ID", None)
+        monkeypatch.setattr(config, "FPL_TEAM_ID", team_id)
+        if team_id:
+            # Pre-deadline, the API won't serve a gameweek's picks. That's
+            # exactly when someone is building a squad, so the copy tool
+            # has to work on this path.
+            def _unavailable(*args, **kwargs):
+                raise RuntimeError("picks not public yet")
+
+            monkeypatch.setattr(api, "get_entry_picks", _unavailable)
+            monkeypatch.setattr(api, "get_entry", _unavailable)
 
     return _apply
 
@@ -253,3 +262,48 @@ def test_an_empty_search_offers_suggestions_rather_than_an_error(patch_api):
     at.run(timeout=90)
     assert not at.exception
     assert "Try:" in _all_markdown(at)
+
+
+def _veto_control(at):
+    return next((m for m in at.multiselect if m.key == "copy_squad_vetoes"), None)
+
+
+def test_the_copy_squad_tool_offers_all_fifteen_and_draws_a_pitch(patch_api):
+    patch_api(preseason=True, team_id=12345)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    control = _veto_control(at)
+    assert control is not None, "the copy-squad veto control is missing"
+    assert len(control.options) == 15
+
+    page = _all_markdown(at)
+    assert "pitch-wrap" in page, "the squad isn't drawn on the pitch layout"
+    assert "formation-badge" in page
+
+
+def test_vetoing_a_player_re_solves_and_reports_the_change(patch_api):
+    """The behaviour the feature exists for: removing someone re-solves
+    the squad rather than leaving a hole, and says what moved."""
+    patch_api(preseason=True, team_id=12345)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+
+    control = _veto_control(at)
+    victim = control.options[0]
+    control.set_value([victim]).run(timeout=120)
+    assert not at.exception, f"App raised on veto: {[str(e) for e in at.exception]}"
+
+    page = _all_markdown(at)
+    assert "What changed" in page
+    assert "**OUT**" in page and "**IN**" in page
+    # Same pitch layout, as asked.
+    assert "pitch-wrap" in page
+
+
+def test_the_veto_control_is_capped_at_two(patch_api):
+    patch_api(preseason=True, team_id=12345)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+    assert _veto_control(at).max_selections == 2

@@ -44,6 +44,34 @@ class Answer:
     voices: list[tuple[str, str]] = field(default_factory=list)
 
 
+def pair_swaps(scored: pd.DataFrame, dropped: list[int], added: list[int]) -> list[Swap]:
+    """Pair each departure with the arrival that replaced it.
+
+    Position-for-position, most expensive departure first. Zipping the two
+    lists in solver order reads as nonsense -- it happily reports a forward
+    being swapped for a midfielder, which never happened; squad quotas are
+    fixed, so every change is position-for-position.
+    """
+    indexed = scored.set_index("id") if "id" in scored.columns else scored
+    swaps: list[Swap] = []
+    remaining = list(added)
+    for out in sorted(dropped, key=lambda i: -float(indexed.loc[i, "price"])):
+        position = indexed.loc[out, "position"]
+        match = next((i for i in remaining if indexed.loc[i, "position"] == position), None)
+        if match is None:
+            continue
+        remaining.remove(match)
+        swaps.append(
+            Swap(
+                out_name=str(indexed.loc[out, "web_name"]),
+                out_price=float(indexed.loc[out, "price"]),
+                in_name=str(indexed.loc[match, "web_name"]),
+                in_price=float(indexed.loc[match, "price"]),
+            )
+        )
+    return swaps
+
+
 def _row(scored: pd.DataFrame, player_id: int) -> pd.Series:
     return scored.set_index("id").loc[player_id]
 
@@ -179,26 +207,7 @@ def explain_player(
 
     indexed = scored.set_index("id")
 
-    # Pair each departure with an arrival in the same position. Zipping the
-    # two lists in solver order reads as nonsense -- it happily reports a
-    # forward being swapped for a midfielder, which never happened; squad
-    # quotas are fixed, so every change is position-for-position.
-    swaps: list[Swap] = []
-    remaining = list(added)
-    for out in sorted(dropped, key=lambda i: -float(indexed.loc[i, "price"])):
-        position = indexed.loc[out, "position"]
-        match = next((i for i in remaining if indexed.loc[i, "position"] == position), None)
-        if match is None:
-            continue
-        remaining.remove(match)
-        swaps.append(
-            Swap(
-                out_name=str(indexed.loc[out, "web_name"]),
-                out_price=float(indexed.loc[out, "price"]),
-                in_name=str(indexed.loc[match, "web_name"]),
-                in_price=float(indexed.loc[match, "price"]),
-            )
-        )
+    swaps = pair_swaps(scored, dropped, added)
 
     # Lead with the swap that brings the asked-about player in. That's the
     # change the question was about; the rest are knock-on downgrades to

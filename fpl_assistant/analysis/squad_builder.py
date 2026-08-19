@@ -16,9 +16,11 @@ up being dropped from the recommended squad entirely.
 The old function names are kept so existing callers keep working, but they
 now delegate to the new engine.
 """
+from dataclasses import dataclass, field
+
 import pandas as pd
 
-from fpl_assistant.analysis import consensus, optimiser
+from fpl_assistant.analysis import consensus, explain, optimiser
 from fpl_assistant.analysis.expected_points import DEFAULT_HORIZON, expected_points
 from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.optimiser import (
@@ -29,6 +31,8 @@ from fpl_assistant.analysis.optimiser import (
 )
 
 __all__ = [
+    "RebuiltSquad",
+    "rebuild_without",
     "DEFAULT_BUDGET",
     "MAX_PER_CLUB",
     "SQUAD_QUOTAS",
@@ -177,6 +181,100 @@ def recommend_squad(
         expected_points=round(float(squad.loc[squad["id"].isin(starters), "squad_score"].sum()), 2),
         optimal=False,
         notes=[f"Exact optimiser unavailable ({first_error}); used a greedy fallback."],
+    )
+
+
+@dataclass
+class RebuiltSquad:
+    """The suggested squad, re-solved after dropping players you vetoed."""
+
+    solution: SquadSolution
+    removed_ids: list[int]
+    swaps: list = field(default_factory=list)
+    kept_ids: list[int] = field(default_factory=list)
+    notes: list[str] = field(default_factory=list)
+    points_delta: float = 0.0
+
+
+def rebuild_without(
+    scored: pd.DataFrame,
+    solution: SquadSolution,
+    remove_ids: list[int],
+    budget: float = DEFAULT_BUDGET,
+    max_per_club: int = MAX_PER_CLUB,
+    template_weight: float = optimiser.TEMPLATE_WEIGHT,
+) -> RebuiltSquad:
+    """The recommended squad minus players you don't want, re-solved.
+
+    Taking a suggested squad wholesale is rare -- there's nearly always one
+    player you won't own, whether because you've watched him play, you
+    already own an alternative, or you simply don't fancy it. Deleting him
+    from the list and leaving a hole is not the same as re-solving without
+    him: the money he freed changes what the rest of the squad should be,
+    and the best replacement is often not the next-best player in his
+    position.
+
+    So the vetoed players are banned and everyone else is locked, which
+    asks the solver the actual question: given that these thirteen stay
+    and he can't be picked, what's the best legal squad?
+
+    Locking that many players can over-constrain the solve -- the freed
+    budget may not buy a legal replacement inside the three-per-club cap.
+    Rather than fail, the constraints are relaxed in order: first release
+    the bench (which exists to be cheap and is the least costly thing to
+    rearrange), then release everything and simply ban the vetoed players.
+    Each fallback is reported, because a squad that quietly changed more
+    than you asked it to is worse than one that tells you it had to.
+    """
+    removed = [pid for pid in remove_ids if pid in set(solution.squad_ids)]
+    if not removed:
+        return RebuiltSquad(solution=solution, removed_ids=[], kept_ids=list(solution.squad_ids))
+
+    keep_all = [pid for pid in solution.squad_ids if pid not in set(removed)]
+    keep_starters = [pid for pid in solution.starting_ids if pid not in set(removed)]
+
+    attempts = [
+        (keep_all, None),
+        (
+            keep_starters,
+            "Couldn't keep the bench intact as well, so the bench was rebuilt too — it's the "
+            "cheapest part of the squad and the least costly thing to rearrange.",
+        ),
+        (
+            [],
+            "Keeping the rest of the squad locked left no legal fifteen, so it was re-solved "
+            "from scratch without your removals. More has changed than you asked for.",
+        ),
+    ]
+
+    last_error: Exception | None = None
+    for locked, note in attempts:
+        try:
+            rebuilt = optimiser.optimise_squad(
+                scored,
+                budget=budget,
+                max_per_club=max_per_club,
+                template_weight=template_weight,
+                locked_ids=locked or None,
+                banned_ids=removed,
+            )
+        except Exception as error:
+            last_error = error
+            continue
+
+        dropped = [pid for pid in solution.squad_ids if pid not in set(rebuilt.squad_ids)]
+        added = [pid for pid in rebuilt.squad_ids if pid not in set(solution.squad_ids)]
+        return RebuiltSquad(
+            solution=rebuilt,
+            removed_ids=removed,
+            swaps=explain.pair_swaps(scored, dropped, added),
+            kept_ids=[pid for pid in solution.squad_ids if pid in set(rebuilt.squad_ids)],
+            notes=[note] if note else [],
+            points_delta=round(rebuilt.expected_points - solution.expected_points, 2),
+        )
+
+    raise RuntimeError(
+        f"No legal squad can be built without those players ({last_error})."
     )
 
 

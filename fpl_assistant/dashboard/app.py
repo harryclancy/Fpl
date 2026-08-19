@@ -736,15 +736,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
 
     report_text, _ = load_report(next_event)
 
-    picks = [
-        SquadPick(pid, is_captain=(pid == captain_id), is_vice_captain=(pid == vice_id), multiplier=1, position_order=i + 1)
-        for i, pid in enumerate(starters)
-    ] + [SquadPick(pid, False, False, 1, 12 + i) for i, pid in enumerate(bench)]
-    fake_squad = Squad(
-        team_id=0, event=next_event, bank=0.0, team_value=squad15["price"].sum(),
-        transfers_made=0, transfers_cost=0, picks=picks,
-    )
-    render_html(render_pitch_html(squad15, fake_squad))
+    render_html(render_pitch_html(squad15, _squad_from_solution(solution, next_event)))
 
     captain_row = squad15.loc[captain_id]
     vice_row = squad15.loc[vice_id]
@@ -836,7 +828,152 @@ def render_manual_squad_entry(players: pd.DataFrame):
     )
 
 
-def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, events: pd.DataFrame):
+MAX_VETOES = 2
+
+
+def _squad_from_solution(solution, next_event) -> Squad:
+    """Wraps a solver result in the Squad shape the pitch renderer wants."""
+    picks = [
+        SquadPick(pid, is_captain=(pid == solution.captain_id),
+                  is_vice_captain=(pid == solution.vice_captain_id),
+                  multiplier=1, position_order=i + 1)
+        for i, pid in enumerate(solution.starting_ids)
+    ] + [SquadPick(pid, False, False, 1, 12 + i) for i, pid in enumerate(solution.bench_ids)]
+    return Squad(
+        team_id=0, event=next_event, bank=0.0, team_value=0.0,
+        transfers_made=0, transfers_cost=0, picks=picks,
+    )
+
+
+@st.cache_data(ttl=900, show_spinner=False)
+def cached_rebuild(scored, _solution, remove_ids, template_weight, cache_key):
+    return squad_builder.rebuild_without(
+        scored, _solution, list(remove_ids), template_weight=template_weight
+    )
+
+
+def render_copy_suggested_squad(players, fixtures, teams, next_event) -> None:
+    """Take the recommended squad, minus anyone you won't own.
+
+    Nobody copies a suggested squad wholesale — there's always one player
+    you won't have, whether you've watched him play, you already own the
+    alternative, or you just don't fancy it. Crossing him off the list and
+    leaving a hole isn't the same thing as re-solving without him: the
+    money he freed changes what the rest of the squad should be, and the
+    best replacement is often not the next-best player in his position.
+
+    So a veto re-runs the optimiser with him banned and everyone else
+    locked, which asks the question actually being asked.
+    """
+    scored = cached_scores(players, fixtures, teams, next_event)
+    solution = cached_solution(scored, rank_strategy_weight())
+    indexed = scored.set_index("id")
+
+    st.markdown("#### 📋 Copy the suggested squad")
+    st.caption(
+        "The recommended fifteen, ready to enter into FPL. Don't fancy one of them? Cross him "
+        "off and the squad is re-solved around the gap — the freed budget goes wherever it's "
+        "worth most, which usually isn't the next-best player in his position."
+    )
+
+    def _label(pid: int) -> str:
+        row = indexed.loc[pid]
+        where = "XI" if pid in set(solution.starting_ids) else "bench"
+        return (
+            f"{row['web_name']} ({row.get('team_short_name','')}, {row['position']}, "
+            f"£{row['price']:.1f}m — {where})"
+        )
+
+    vetoed = st.multiselect(
+        f"Remove anyone you don't want (up to {MAX_VETOES})",
+        options=list(solution.squad_ids),
+        format_func=_label,
+        max_selections=MAX_VETOES,
+        key="copy_squad_vetoes",
+        help="They'll be excluded and the rest of the squad re-optimised around the money freed.",
+    )
+
+    shown, swaps, notes, delta = solution, [], [], 0.0
+    if vetoed:
+        try:
+            rebuilt = cached_rebuild(
+                scored, solution, tuple(sorted(vetoed)), rank_strategy_weight(),
+                cache_key=(tuple(solution.squad_ids), tuple(sorted(vetoed))),
+            )
+            shown, swaps, notes, delta = (
+                rebuilt.solution, rebuilt.swaps, rebuilt.notes, rebuilt.points_delta
+            )
+        except Exception as exc:
+            st.error(
+                f"No legal fifteen can be built without those players ({exc}). "
+                "Try removing just one of them."
+            )
+            return
+
+    squad_players = scored[scored["id"].isin(shown.squad_ids)].copy()
+    cost = float(squad_players["price"].sum())
+
+    metrics = st.columns(4)
+    metrics[0].metric("Formation", shown.formation)
+    metrics[1].metric("Cost", f"£{cost:.1f}m", delta=f"£{100.0 - cost:.1f}m spare", delta_color="off")
+    metrics[2].metric("Captain", indexed.loc[shown.captain_id, "web_name"])
+    metrics[3].metric(
+        "Projected pts", f"{shown.expected_points:.0f}",
+        delta=f"{delta:+.1f} vs suggested" if vetoed else None,
+        delta_color="normal" if vetoed else "off",
+        help="Starting XI plus the captain's doubled score, over the projection window.",
+    )
+
+    for note in notes:
+        st.warning(note)
+
+    if swaps:
+        st.markdown("**What changed**")
+        for swap in swaps:
+            st.markdown(
+                f"- **OUT** {swap.out_name} (£{swap.out_price:.1f}m) → "
+                f"**IN** {swap.in_name} (£{swap.in_price:.1f}m)"
+            )
+        if delta < -0.05:
+            st.caption(
+                f"Costs {abs(delta):.1f} projected points against the unfiltered suggestion — "
+                f"the price of the veto, which is yours to judge."
+            )
+        elif delta > 0.05:
+            st.caption(
+                f"Worth {delta:+.1f} projected points, so the removal was free — the solver "
+                f"found a better shape once it had to look."
+            )
+
+    render_html(render_pitch_html(squad_players, _squad_from_solution(shown, next_event)))
+
+    with st.expander("As a list, for typing into FPL"):
+        listing = squad_players.assign(
+            Role=squad_players["id"].map(
+                lambda pid: "Captain" if pid == shown.captain_id
+                else "Vice" if pid == shown.vice_captain_id
+                else "XI" if pid in set(shown.starting_ids) else "Bench"
+            )
+        )
+        order = {"GKP": 0, "DEF": 1, "MID": 2, "FWD": 3}
+        listing = listing.assign(_o=listing["position"].map(order)).sort_values(
+            ["_o", "xp_next"], ascending=[True, False]
+        )
+        st.dataframe(
+            listing[["web_name", "team_short_name", "position", "price", "Role"]].rename(
+                columns={"web_name": "Player", "team_short_name": "Team",
+                         "position": "Pos", "price": "£m"}
+            ),
+            width="stretch", hide_index=True,
+        )
+
+
+def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, events: pd.DataFrame,
+                     fixtures: pd.DataFrame = None, teams: pd.DataFrame = None):
+    if fixtures is not None and teams is not None:
+        render_copy_suggested_squad(players, fixtures, teams, next_event)
+        st.divider()
+
     try:
         picks_response = api.get_entry_picks(team_id, next_event)
         entry = api.get_entry(team_id)
@@ -1579,7 +1716,7 @@ def main():
 
     if team_id:
         with tab_map["My Squad"]:
-            squad = render_squad_tab(players, team_id, next_event, events)
+            squad = render_squad_tab(players, team_id, next_event, events, fixtures, teams)
 
     with tab_map["Captaincy"]:
         render_captaincy_tab(players, fixtures, teams, next_event)
