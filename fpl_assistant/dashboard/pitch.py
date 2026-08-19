@@ -8,7 +8,8 @@ instead of degrading cleanly).
 """
 import pandas as pd
 
-from fpl_assistant.dashboard.media import MEDIA_CSS, team_crest_html
+from fpl_assistant.dashboard.media import MEDIA_CSS, player_photo_html, team_crest_html
+from fpl_assistant.dashboard.theme import club_colours
 from fpl_assistant.models import Squad
 
 POSITION_ORDER = ["FWD", "MID", "DEF", "GKP"]  # top (attack) to bottom (keeper) on the pitch
@@ -66,33 +67,17 @@ PITCH_CSS = """
     width: 104px;
     text-align: center;
     border-top: 3px solid var(--accent, #00ff87);
+    backdrop-filter: blur(2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 .player-photo-box {
     position: relative;
     width: 52px; height: 52px;
-    margin: 0 auto 4px auto;
-}
-.player-photo-box img {
-    width: 52px; height: 52px;
+    margin: 0 auto 5px auto;
     border-radius: 50%;
-    object-fit: cover;
-    background: #2a2a3d;
-    border: 2px solid rgba(255,255,255,0.5);
-    display: block;
-}
-.player-photo-fallback {
-    display: none;
-    width: 52px; height: 52px;
-    border-radius: 50%;
-    background: var(--accent, #00ff87);
-    color: #0e0e1a;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 15px;
-    border: 2px solid rgba(255,255,255,0.5);
-    margin: 0 auto;
+    /* Club-coloured ring: identity at a glance, and it reads as a badge
+       rather than a cropped photo floating on the pitch. */
+    box-shadow: 0 0 0 2px var(--accent, #00ff87), 0 2px 8px rgba(0,0,0,0.45);
 }
 .armband {
     position: absolute;
@@ -141,16 +126,15 @@ PITCH_CSS = """
 """
 
 
-def _initials(web_name: str) -> str:
-    parts = web_name.split()
-    if len(parts) >= 2:
-        return (parts[0][0] + parts[1][0]).upper()
-    return web_name[:2].upper()
-
-
 def _player_card_html(row: pd.Series, badge: str | None) -> str:
-    accent = POSITION_ACCENT.get(row["position"], "#00ff87")
-    initials = _initials(row["web_name"])
+    # Accent by club rather than by position. Position is already obvious
+    # from where the card sits on the pitch, so spending colour on it says
+    # nothing; club colour instead makes a triple-up on one team visible
+    # at a glance, which is the constraint people actually trip over.
+    accent, _ = club_colours(row.get("team_short_name"))
+    face = player_photo_html(
+        row.get("code"), row["web_name"], team_short_name=row.get("team_short_name")
+    )
 
     badge_html = ""
     if badge == "C":
@@ -161,7 +145,7 @@ def _player_card_html(row: pd.Series, badge: str | None) -> str:
     return f"""
     <div class="player-card" style="--accent: {accent};">
       <div class="player-photo-box">
-        <div class="player-photo-fallback" style="display:flex;">{initials}</div>
+        {face}
         {badge_html}
       </div>
       <div class="player-name">{row['web_name']}</div>

@@ -6,3 +6,4 @@ python-dotenv>=1.0
 # (LpVariable/LpProblem are being replaced by prob.add_variable*), so an
 # unpinned install would break the squad optimiser on a future deploy.
 pulp>=2.8,<4
+anthropic>=0.40

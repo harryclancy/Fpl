@@ -1,99 +1,167 @@
-"""Shared visual styling: official Premier League brand colors, a hero
-header, and small CSS tweaks layered on top of the dark theme set in
+"""Shared visual styling: typography, the Premier League brand palette,
+a hero header, and the component CSS layered over the dark base theme in
 .streamlit/config.toml.
 
-Colors are the Premier League's own published palette (Valentino purple,
-Razzmatazz pink, and the two FPL accent tones), not an approximation —
-consistency here is what makes the app read as "official" rather than a
-generic dark theme.
+Two things carry most of the visual weight here. Type: a condensed
+display face for headings against a neutral UI face for everything else,
+which is the pairing sports broadcasters use because it reads as
+editorial rather than as a spreadsheet. And club colour, applied to every
+player element (see theme.py) so the app looks like football rather than
+a dashboard that happens to be about football.
+
+Colours are the Premier League's published palette — Valentino purple,
+Razzmatazz pink and the two FPL accent tones — not approximations.
 """
 import pandas as pd
 import streamlit as st
 
 from fpl_assistant.dashboard.htmlutil import render_html
+from fpl_assistant.dashboard.theme import (
+    CYAN,
+    GREEN,
+    INK_500,
+    INK_600,
+    INK_700,
+    INK_800,
+    INK_900,
+    PINK,
+    PURPLE,
+    TEXT,
+    TEXT_FAINT,
+    TEXT_MUTED,
+)
 
-PURPLE = "#38003c"
-PINK = "#e90052"
-GREEN = "#00ff85"
-CYAN = "#04f5ff"
+# Barlow Condensed carries headings and numbers: condensed type is what
+# makes a scoreline or a price read as sport rather than as data, and it
+# lets long player names fit a card without shrinking to unreadable.
+# Inter handles body copy, where neutrality and legibility matter more.
+FONT_IMPORT = (
+    "@import url('https://fonts.googleapis.com/css2?"
+    "family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');"
+)
+FONT_DISPLAY = "'Barlow Condensed', 'Inter', system-ui, sans-serif"
+FONT_BODY = "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif"
 
 GLOBAL_CSS = f"""
 <style>
-/* Metric cards */
-div[data-testid="stMetric"] {{
-    background: linear-gradient(145deg, #171729, #1d1d36);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-left: 3px solid {GREEN};
-    border-radius: 12px;
-    padding: 14px 16px 10px 16px;
-}}
-div[data-testid="stMetricLabel"] {{ opacity: 0.75; }}
+{FONT_IMPORT}
 
-/* Tabs */
+/* --- Typography -------------------------------------------------- */
+html, body, [class*="css"], .stMarkdown, p, li, div[data-testid="stMetricValue"] {{
+    font-family: {FONT_BODY};
+}}
+h1, h2, h3, h4, .section-banner .title, .hero-title {{
+    font-family: {FONT_DISPLAY};
+    letter-spacing: 0.01em;
+}}
+.stMarkdown p {{ line-height: 1.62; }}
+/* Long-form rationale sits at a comfortable measure instead of running
+   the full width of a desktop window, which is where reading breaks down. */
+.stMarkdown p, .stMarkdown li {{ max-width: 78ch; }}
+
+/* --- Metric cards ------------------------------------------------- */
+div[data-testid="stMetric"] {{
+    background: linear-gradient(160deg, {INK_700}, {INK_800});
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    padding: 14px 16px 12px 16px;
+    position: relative;
+    overflow: hidden;
+}}
+div[data-testid="stMetric"]::before {{
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, {CYAN}, {GREEN});
+}}
+div[data-testid="stMetricLabel"] {{
+    font-size: 11px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: {TEXT_MUTED} !important;
+}}
+div[data-testid="stMetricValue"] {{
+    font-family: {FONT_DISPLAY};
+    font-size: 30px !important;
+    font-weight: 700;
+    /* Tabular figures stop numbers jittering as values change. */
+    font-variant-numeric: tabular-nums;
+}}
+
+/* --- Tabs ---------------------------------------------------------- */
 .stTabs {{ position: relative; }}
 .stTabs [data-baseweb="tab-list"] {{
-    gap: 4px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    gap: 2px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
     scrollbar-width: none;
 }}
 .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {{ display: none; }}
 .stTabs [data-baseweb="tab"] {{
-    padding: 8px 16px;
-    border-radius: 8px 8px 0 0;
+    padding: 9px 16px;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: {TEXT_MUTED};
 }}
 .stTabs [aria-selected="true"] {{
-    background: linear-gradient(90deg, rgba(4,245,255,0.10), rgba(233,0,82,0.10));
+    background: linear-gradient(180deg, rgba(4,245,255,0.10), rgba(4,245,255,0.02));
+    color: {TEXT};
 }}
-.stTabs [data-baseweb="tab-highlight"] {{
-    background-color: {GREEN} !important;
-}}
-/* Subtle fade on the right edge, hinting there are more tabs to scroll to */
+.stTabs [data-baseweb="tab-highlight"] {{ background-color: {GREEN} !important; }}
 .stTabs::after {{
     content: "";
-    position: absolute;
-    top: 0; right: 0;
+    position: absolute; top: 0; right: 0;
     width: 28px; height: 42px;
-    background: linear-gradient(to right, rgba(14,14,26,0), rgba(14,14,26,0.95));
+    background: linear-gradient(to right, rgba(11,11,20,0), rgba(11,11,20,0.95));
     pointer-events: none;
 }}
 
-/* Dataframes / tables */
+/* --- Surfaces ------------------------------------------------------ */
 div[data-testid="stDataFrame"] {{
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.07);
+}}
+div[data-testid="stExpander"] {{
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    background: {INK_800};
+    margin-bottom: 8px;
+}}
+div[data-testid="stExpander"] summary {{ font-weight: 600; }}
+div[data-testid="stExpander"] summary:hover {{ color: {CYAN}; }}
+
+section[data-testid="stSidebar"] {{
+    background: linear-gradient(180deg, {INK_800}, {INK_900});
+    border-right: 1px solid rgba(255,255,255,0.06);
 }}
 
-/* Section headers get a little breathing room */
-h2, h3, h4 {{ margin-top: 0.4em; }}
-
-/* Section banner (see section_header()) */
+/* --- Section banner ------------------------------------------------ */
 .section-banner {{
     display: flex;
     align-items: baseline;
     gap: 10px;
-    margin: 4px 0 14px 0;
+    flex-wrap: wrap;
+    margin: 18px 0 14px 0;
     padding-bottom: 8px;
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(90deg, {CYAN}, {PINK}) 1;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
 }}
 .section-banner .title {{
-    font-size: 20px;
-    font-weight: 800;
-    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    color: {TEXT};
+    letter-spacing: 0.005em;
 }}
 .section-banner .subtitle {{
     font-size: 12.5px;
-    color: #9a9ab0;
+    color: {TEXT_FAINT};
 }}
 
-/* Hide the default Streamlit chrome that adds noise on mobile */
+/* --- Chrome -------------------------------------------------------- */
 #MainMenu {{ visibility: hidden; }}
 footer {{ visibility: hidden; }}
 
-/* Subtle interactive feel on card components, even though they're static */
 .rank-card, .player-card {{
-    transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+    transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
 }}
 .rank-card:hover {{
     transform: translateY(-1px);
@@ -101,37 +169,75 @@ footer {{ visibility: hidden; }}
 }}
 .player-card:hover {{
     transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.55);
 }}
 
-/* Buttons/selects get the same rounded, branded treatment as everything else */
-.stButton button, .stSelectbox div[data-baseweb="select"] > div {{
+.stButton button {{
+    border-radius: 10px !important;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    transition: border-color 0.14s ease, transform 0.1s ease;
+}}
+.stButton button:hover {{
+    border-color: {CYAN} !important;
+    transform: translateY(-1px);
+}}
+.stSelectbox div[data-baseweb="select"] > div,
+.stTextArea textarea,
+.stTextInput input {{
     border-radius: 10px !important;
 }}
+
+/* Numbers in tables should line up column-to-column. */
+div[data-testid="stDataFrame"] td {{ font-variant-numeric: tabular-nums; }}
 </style>
 """
 
 HERO_HTML = f"""
-<div style="
-    background: linear-gradient(120deg, {PURPLE} 0%, #1d1d36 60%, #0e0e1a 100%);
-    border-radius: 16px;
-    padding: 22px 26px 20px 26px;
-    margin-bottom: 18px;
-    border: 1px solid rgba(4,245,255,0.25);
-    position: relative;
-    overflow: hidden;
-">
-  <div style="position:absolute; top:0; left:0; right:0; height:4px;
-              background: linear-gradient(90deg, {CYAN}, {GREEN}, {PINK});"></div>
-  <div style="font-size: 28px; font-weight: 800; color: #ffffff; display:flex; align-items:center; gap:10px;">
-    <span>⚽</span><span>FPL Assistant Manager</span>
-  </div>
-  <div style="font-size: 13.5px; color: #b9b9c9; margin-top: 4px;">
-    Fixtures · Form · Captaincy · Injuries · Odds &amp; Expert Take — one view per gameweek
+<div class="pl-hero">
+  <div class="pl-hero-bar"></div>
+  <div class="hero-title">FPL Assistant Manager</div>
+  <div class="pl-hero-sub">
+    Projections · Expert consensus · Captaincy · Transfers — one view per gameweek
   </div>
 </div>
+<style>
+.pl-hero {{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    padding: 26px 28px 22px 28px;
+    margin-bottom: 20px;
+    background:
+        radial-gradient(120% 140% at 0% 0%, rgba(233,0,82,0.20) 0%, transparent 55%),
+        radial-gradient(120% 140% at 100% 0%, rgba(4,245,255,0.16) 0%, transparent 55%),
+        linear-gradient(135deg, {PURPLE} 0%, {INK_700} 55%, {INK_900} 100%);
+    border: 1px solid rgba(255,255,255,0.09);
+}}
+.pl-hero-bar {{
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, {CYAN}, {GREEN}, {PINK});
+}}
+.pl-hero .hero-title {{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+}}
+.pl-hero-sub {{
+    font-size: 13px;
+    color: rgba(255,255,255,0.62);
+    margin-top: 6px;
+    letter-spacing: 0.01em;
+}}
+@media (max-width: 640px) {{
+    .pl-hero {{ padding: 20px 18px 16px 18px; }}
+    .pl-hero .hero-title {{ font-size: 30px; }}
+}}
+</style>
 """
-
 
 def inject_global_css() -> None:
     render_html(GLOBAL_CSS)

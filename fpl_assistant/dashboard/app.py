@@ -2,6 +2,7 @@
 
 Run with: streamlit run fpl_assistant/dashboard/app.py
 """
+import os
 import sys
 from pathlib import Path
 
@@ -14,6 +15,7 @@ import streamlit as st
 
 from fpl_assistant import api
 from fpl_assistant.analysis import (
+    ask as ask_engine,
     captaincy,
     consensus,
     explain,
@@ -155,6 +157,20 @@ def _player_picker_labels(scored) -> dict:
     }
 
 
+def _anthropic_key() -> str | None:
+    """Reads the optional Claude API key.
+
+    Optional on purpose: the free engine handles the common questions, so
+    the app is fully usable with no key and no cost. A key only widens
+    what can be asked.
+    """
+    try:
+        key = st.secrets.get("ANTHROPIC_API_KEY")
+    except Exception:
+        key = None
+    return key or os.environ.get("ANTHROPIC_API_KEY")
+
+
 def _render_answer(answer) -> None:
     st.markdown(answer.headline)
     for line in answer.detail:
@@ -215,22 +231,35 @@ def render_question_box(scored, solution, next_event) -> None:
             )
         _render_answer(answer)
 
-    with st.expander("Ask something else"):
-        st.caption(
-            "Anything the numbers can't settle — team news, a hunch, a question about strategy — "
-            "goes to me directly. Paste this into our chat and I'll research it properly and fold "
-            "the answer into next week's file."
-        )
-        question = st.text_area(
-            "Your question", key="free_question", height=80,
-            placeholder="e.g. Is Bruno worth it if I go without a premium defender?",
-        )
-        if st.button("Prepare question", key="free_go"):
-            if question.strip():
+    st.markdown("**Or just ask**")
+    st.caption(
+        "Type it however you'd say it — \"why no Bruno?\", \"Salah or Palmer?\", "
+        "\"who do I captain?\", \"best value defender\"."
+    )
+    question = st.text_input(
+        "Your question", key="free_question", label_visibility="collapsed",
+        placeholder="Why no Bruno?",
+    )
+    if st.button("Ask", key="free_go", type="primary"):
+        if not question.strip():
+            st.caption("Type a question first.")
+        else:
+            api_key = _anthropic_key()
+            with st.spinner("Working it out…"):
+                result = ask_engine.ask(
+                    question, scored, solution, next_event,
+                    api_key=api_key, template_weight=rank_strategy_weight(),
+                )
+            if result.source == "engine":
+                _render_answer(result.answer)
+                st.caption("Answered from this week's numbers — no guesswork, and free.")
+            elif result.source == "claude":
+                st.markdown(result.text)
+                st.caption("Answered by Claude, using your squad and this week's research as context.")
+            else:
+                st.info(result.note)
                 st.code(f"FPL question (GW{next_event}): {question.strip()}", language=None)
                 st.caption("Copy this (tap the icon) and paste it into your chat with Claude.")
-            else:
-                st.caption("Type a question first.")
 
 
 def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=None):
@@ -246,7 +275,10 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
         with photo_col:
             render_html(
                 '<div style="width:56px;height:56px;border-radius:50%;overflow:hidden;">'
-                + player_photo_html(row.get("code"), row["web_name"], 56)
+                + player_photo_html(
+                    row.get("code"), row["web_name"], 56,
+                    team_short_name=row.get("team_short_name"),
+                )
                 + "</div>"
             )
         with text_col:
@@ -748,28 +780,6 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
             render_html(render_rank_card_list(replacement_cards))
 
 
-def render_ask_claude_box(next_event: int) -> None:
-    """The deployed app has no live LLM wired in (no API key, and adding
-    one means real per-query cost on someone's account) -- so this isn't
-    a fake instant-answer chatbot. It formats the question with context
-    and hands you a ready-to-paste block for your actual Claude
-    conversation, where I can do real research and fold the answer back
-    into next week's report.
-    """
-    st.sidebar.markdown("---")
-    st.sidebar.subheader("💬 Ask Claude about a pick")
-    question = st.sidebar.text_area(
-        "e.g. \"What do you think of Isak this week?\"", key="ask_claude_question", height=80,
-    )
-    if st.sidebar.button("Prepare question"):
-        if question.strip():
-            formatted = f'FPL question (GW{next_event}): {question.strip()}'
-            st.sidebar.code(formatted, language=None)
-            st.sidebar.caption("Copy this (tap the icon) and paste it into your chat with Claude — I'll research it and can fold the answer into next week's report.")
-        else:
-            st.sidebar.caption("Type a question first.")
-
-
 def main():
     inject_global_css()
     hero_header()
@@ -781,7 +791,6 @@ def main():
     team_id = int(team_id_input) if team_id_input.strip().isdigit() else None
 
     render_rank_strategy_control()
-    render_ask_claude_box(next_event)
 
     if not team_id:
         st.sidebar.info(

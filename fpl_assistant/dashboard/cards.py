@@ -43,8 +43,11 @@ SCORE_BAD = "#ff4d6d"
 def player_rank_card(
     rank: int, row: pd.Series, score_value: str, score_label: str, meta_line: str, score_color: str = SCORE_GOOD
 ) -> str:
-    photo = player_photo_html(row.get("code"), row["web_name"], size_px=44)
-    crest = team_crest_html(row.get("team_code"), "", size_px=12)
+    photo = player_photo_html(
+        row.get("code"), row["web_name"], size_px=44,
+        team_short_name=row.get("team_short_name"),
+    )
+    crest = team_crest_html(row.get("team_code"), str(row.get("team_short_name") or ""), size_px=12)
     return f"""
     <div class="rank-card">
       <div class="rank-num">{rank}</div>
