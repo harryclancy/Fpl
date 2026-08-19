@@ -149,7 +149,7 @@ def _player_card_html(row: pd.Series, badge: str | None) -> str:
         {badge_html}
       </div>
       <div class="player-name">{row['web_name']}</div>
-      <div class="player-meta">{team_crest_html(row.get('team_code'), '', size_px=12)}{row['team_short_name']} · £{row['price']:.1f}</div>
+      <div class="player-meta">{team_crest_html(row.get('team_code'), str(row.get('team_short_name') or ''), size_px=11)} £{row['price']:.1f}m</div>
     </div>
     """
 

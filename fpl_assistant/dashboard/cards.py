@@ -54,7 +54,7 @@ def player_rank_card(
       <div class="rank-photo">{photo}</div>
       <div class="rank-info">
         <div class="rank-name">{row['web_name']}</div>
-        <div class="rank-meta">{crest}{row['team_short_name']} · {row['position']} — {meta_line}</div>
+        <div class="rank-meta">{crest}{row['position']} · {meta_line}</div>
       </div>
       <div class="rank-score">
         <div class="value" style="color: {score_color};">{score_value}</div>
