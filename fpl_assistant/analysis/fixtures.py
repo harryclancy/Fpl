@@ -70,7 +70,12 @@ def team_fixture_table(
     # blank gameweek is genuinely bad for planning purposes so we don't
     # let it quietly improve a team's average by being skipped entirely.
     result["avg_difficulty"] = diff_df.mean(axis=1, skipna=True).round(2)
-    result["blank_gameweeks"] = diff_df.isna().sum(axis=1)
+    # Count blanks only in gameweeks the fixture list actually reaches. A
+    # gameweek where *no* team has a fixture isn't a blank gameweek -- it's
+    # one that hasn't been scheduled yet, and counting it gave every team
+    # in the league an identical phantom blank.
+    scheduled_gameweeks = [gw for gw in diff_df.columns if diff_df[gw].notna().any()]
+    result["blank_gameweeks"] = diff_df[scheduled_gameweeks].isna().sum(axis=1)
     result["double_gameweeks"] = label_df.apply(
         lambda row: sum(1 for v in row if isinstance(v, str) and "+" in v), axis=1
     )

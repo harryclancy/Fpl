@@ -713,24 +713,67 @@ def render_captaincy_tab(players, fixtures, teams, next_event):
         render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=summary)
 
 
+FIXTURE_LABELS = {
+    "team_name": "Team",
+    "avg_difficulty": "Avg FDR",
+    "blank_gameweeks": "Blanks",
+    "double_gameweeks": "Doubles",
+}
+
+
+def _present_fixture_table(table, gw_cols):
+    """Turns the raw fixture frame into something readable.
+
+    Left alone, it renders the team id as an index, six decimal places on
+    the average, snake_case headers, and a column of dashes for any
+    gameweek the fixture list doesn't reach yet. All four are noise, and
+    together they make the most useful table in the app the least legible.
+    """
+    columns = ["team_name"] + gw_cols + ["avg_difficulty", "blank_gameweeks", "double_gameweeks"]
+    view = table[columns].copy()
+
+    # Drop gameweeks with no published fixtures rather than showing a
+    # column of dashes.
+    for gw in gw_cols:
+        if view[gw].astype(str).str.strip().isin(["-", "", "nan"]).all():
+            view = view.drop(columns=[gw])
+
+    view["avg_difficulty"] = pd.to_numeric(view["avg_difficulty"], errors="coerce").round(1)
+    labels = dict(FIXTURE_LABELS)
+    labels.update({gw: f"GW{gw}" for gw in gw_cols})
+    return view.rename(columns=labels).reset_index(drop=True)
+
+
 def render_fixtures_tab(fixtures, teams, next_event):
-    section_header(f"Fixture runs — next {FIXTURE_WINDOW} gameweeks", "Lower FDR = easier run")
-    st.caption(f"↔ Swipe the table sideways to see all {FIXTURE_WINDOW} gameweeks.")
+    section_header(
+        f"Fixture runs — next {FIXTURE_WINDOW} gameweeks",
+        "Green is an easier run. Target the top, fade the bottom.",
+    )
     table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, FIXTURE_WINDOW)
     gw_cols = list(range(next_event, next_event + FIXTURE_WINDOW))
-    display_cols = ["team_name"] + gw_cols + ["avg_difficulty", "blank_gameweeks", "double_gameweeks"]
-    styled = table[display_cols].style.map(lambda v: fdr_color(v), subset=["avg_difficulty"])
-    st.dataframe(styled, width='stretch')
+
+    view = _present_fixture_table(table, gw_cols)
+    st.dataframe(
+        view.style.map(fdr_color, subset=["Avg FDR"]).format({"Avg FDR": "{:.1f}"}),
+        width="stretch", hide_index=True,
+    )
+    st.caption("↔ Scroll the table sideways if your screen cuts off the later gameweeks.")
 
     c1, c2 = st.columns(2)
     with c1:
-        st.markdown("**Best runs (target these teams' players)**")
-        best = fixtures_analysis.best_fixture_runs(table)
-        st.dataframe(best.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), width='stretch')
+        st.markdown("**✅ Best runs** — target these teams' players")
+        best = _present_fixture_table(fixtures_analysis.best_fixture_runs(table), [])
+        st.dataframe(
+            best.style.map(fdr_color, subset=["Avg FDR"]).format({"Avg FDR": "{:.1f}"}),
+            width="stretch", hide_index=True,
+        )
     with c2:
-        st.markdown("**Worst runs (consider avoiding/selling)**")
-        worst = fixtures_analysis.worst_fixture_runs(table)
-        st.dataframe(worst.style.map(lambda v: fdr_color(v), subset=["avg_difficulty"]), width='stretch')
+        st.markdown("**⚠️ Worst runs** — think twice before buying here")
+        worst = _present_fixture_table(fixtures_analysis.worst_fixture_runs(table), [])
+        st.dataframe(
+            worst.style.map(fdr_color, subset=["Avg FDR"]).format({"Avg FDR": "{:.1f}"}),
+            width="stretch", hide_index=True,
+        )
 
 
 def render_watchlist_tab(players):

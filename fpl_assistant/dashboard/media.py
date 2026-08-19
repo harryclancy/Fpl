@@ -119,6 +119,7 @@ MEDIA_CSS = """
     letter-spacing: 0.04em;
     line-height: 1.5;
     vertical-align: middle;
+    margin-right: 5px;
 }
 </style>
 """
