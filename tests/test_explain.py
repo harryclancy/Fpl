@@ -176,3 +176,90 @@ def test_a_verdict_with_no_expiry_omits_the_gameweek():
     verdict = explain._club_verdict(_row_with(club_stance="caution", club_stance_case="Risky."))
     assert "GW" not in verdict
     assert "wary" in verdict
+
+
+# --- head-to-head detail ------------------------------------------------
+
+def _pair_frame(left_overrides=None, right_overrides=None):
+    import pandas as pd
+
+    base = {
+        "position": "FWD", "team_short_name": "AAA", "price": 6.0, "xp_next": 4.0,
+        "xp_horizon": 20.0, "xp_per_million": 3.3, "selected_by_percent": 10.0,
+        "expected_minutes": 80, "p_start": 0.9, "p_available": 1.0, "p_sixty": 0.85,
+        "xg_match": 0.4, "xa_match": 0.12, "p_clean_sheet": 0.3, "fixture_multiplier": 1.0,
+        "news": "", "consensus_reason": None, "consensus_watch_out": None,
+        "consensus_dissent": None, "consensus_stats": None, "consensus_voices": None,
+        "club_stance": None, "club_stance_case": None, "club_stance_until": pd.NA,
+    }
+    left = {**base, "id": 1, "web_name": "Left", **(left_overrides or {})}
+    right = {**base, "id": 2, "web_name": "Right", **(right_overrides or {})}
+    return pd.DataFrame([left, right]).set_index("id", drop=False)
+
+
+def _detail(frame):
+    from fpl_assistant.analysis import explain
+
+    return "\n".join(explain.compare_players(frame, 1, 2).detail)
+
+
+def test_a_comparison_says_where_the_gap_comes_from():
+    """The complaint this answers: a comparison that showed two players'
+    numbers and never said which lever separated them."""
+    text = _detail(_pair_frame(
+        {"expected_minutes": 85, "p_start": 0.95, "xp_horizon": 26.0},
+        {"expected_minutes": 55, "p_start": 0.62, "xp_horizon": 18.0},
+    ))
+    assert "Where the gap actually comes from" in text
+    assert "Minutes." in text
+    assert "85 minutes against 55" in text
+
+
+def test_causes_are_reported_before_consequences():
+    """Points per £m is a real reason to prefer someone and it is
+    downstream of the others — leading with it answers "which is better
+    value" when the question asked was "why is he ahead"."""
+    text = _detail(_pair_frame(
+        {"xg_match": 0.9, "xp_per_million": 5.0, "xp_horizon": 30.0},
+        {"xg_match": 0.2, "xp_per_million": 2.0, "xp_horizon": 14.0},
+    ))
+    assert text.index("Attacking threat.") < text.index("Value.")
+
+
+def test_a_comparison_says_what_could_happen_not_just_the_average():
+    text = _detail(_pair_frame())
+    assert "What could actually happen this week" in text
+    assert "chance of a goal or assist" in text
+    assert "chance of a blank" in text
+
+
+def test_a_comparison_ends_with_an_actual_recommendation():
+    """Laying out both sides and declining to pick is the easy half."""
+    text = _detail(_pair_frame({"xp_horizon": 30.0}, {"xp_horizon": 18.0}))
+    assert "The call" in text
+    assert "Left is the pick" in text
+
+
+def test_a_dead_heat_still_gives_a_tiebreaker_rather_than_a_shrug():
+    text = _detail(_pair_frame(
+        {"xp_horizon": 20.0, "price": 7.5}, {"xp_horizon": 20.2, "price": 6.0},
+    ))
+    assert "Too close to call" in text
+    # Same projection, cheaper player — that's a decision, not a hedge.
+    assert "Right" in text.split("The call")[1]
+
+
+def test_the_verdict_names_a_minutes_risk_that_reinforces_the_pick():
+    text = _detail(_pair_frame(
+        {"xp_horizon": 26.0}, {"xp_horizon": 18.0, "p_sixty": 0.4, "p_start": 0.5},
+    ))
+    call = text.split("The call")[1]
+    assert "chance of not playing" in call
+
+
+def test_levers_that_do_not_separate_them_are_not_mentioned():
+    """Reporting every metric regardless of whether it discriminates is
+    how these sections end up feeling generic."""
+    text = _detail(_pair_frame())
+    assert "Fixtures." not in text
+    assert "Minutes." not in text

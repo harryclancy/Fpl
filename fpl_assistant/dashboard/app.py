@@ -26,6 +26,7 @@ from fpl_assistant.analysis import (
     fixtures as fixtures_analysis,
     injuries,
     omissions,
+    scenarios,
     search as research_search,
     rationale,
     squad_builder,
@@ -639,6 +640,19 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
                     row, report_text, team_context=consensus.load_team_context()
                 )
             )
+
+        # What could actually happen, rather than only what the average
+        # is. The same 5.0 projection can be a steady five every week or a
+        # blank-blank-fifteen, and those are different players to own.
+        try:
+            render_html(
+                "<div style='margin:2px 0 8px 0;padding:9px 12px;background:#faf9fc;"
+                "border:1px solid #e6e2ee;border-radius:10px;font-size:.92em'>"
+                + scenarios.narrate(scenarios.outcome_for(row)).replace("**", "")
+                + "</div>"
+            )
+        except Exception:
+            pass
 
         # The researched evidence sits directly under the case it supports,
         # so the argument and the thing backing it up are read together

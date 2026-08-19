@@ -460,8 +460,18 @@ def _component_points_per_match(
     defence_mult: pd.Series,
     games: float,
     preseason: bool,
+    record: dict | None = None,
 ) -> pd.Series:
-    """The bottom-up expected points for one match, before blending."""
+    """The bottom-up expected points for one match, before blending.
+
+    `record`, if given, collects the per-match rates the projection is
+    built from -- expected goals, expected assists, clean-sheet
+    probability. The mean they roll up into is what the optimiser needs,
+    but it is not what a person asking "what could actually happen here"
+    is asking for: the same 5.0 mean can be a steady 5 every week or a
+    blank-blank-15, and those are different players to own. Keeping the
+    rates lets a distribution be reconstructed instead of guessed at.
+    """
     minutes_share = xmins / FULL_MATCH_MINUTES
     position = players["position"]
 
@@ -494,6 +504,11 @@ def _component_points_per_match(
     attacking = (
         xg90 * goal_value + xa90 * ASSIST_POINTS
     ) * minutes_share * attack_mult
+    if record is not None:
+        # Per *match*, not per 90: what he's expected to produce given the
+        # minutes he's actually expected to get, against this opponent.
+        record["xg_match"] = xg90 * minutes_share * attack_mult
+        record["xa_match"] = xa90 * minutes_share * attack_mult
 
     # --- Clean sheets and goals conceded ---
     xgc90 = _column(players, "expected_goals_conceded_per_90")
@@ -521,6 +536,8 @@ def _component_points_per_match(
     # past forwards in the projection (and, worse, into the captaincy pick).
     expected_conceded = (xgc90 / defence_mult.replace(0, 1.0)).clip(lower=MIN_EXPECTED_CONCEDED)
     p_clean_sheet = np.exp(-expected_conceded)
+    if record is not None:
+        record["p_clean_sheet"] = p_clean_sheet
 
     cs_value = position.map(CLEAN_SHEET_POINTS).fillna(0).astype(float)
     # Clean-sheet points require 60 minutes on the pitch.
@@ -629,6 +646,9 @@ def expected_points(
 
     gameweeks = list(range(from_event, from_event + horizon))
     per_gw_points: dict[int, pd.Series] = {}
+    # Scenario rates are a next-gameweek question ("what could happen this
+    # weekend"), so only the first gameweek's are kept.
+    next_gw_rates: dict[str, pd.Series] = {}
     per_gw_attack_mult: dict[int, pd.Series] = {}
 
     for gw in gameweeks:
@@ -662,9 +682,19 @@ def expected_points(
             _safe_div(defence_acc.to_numpy(), fixture_count.to_numpy(), default=1.0), index=df.index
         )
 
+        rates: dict[str, pd.Series] = {}
         gw_points = _component_points_per_match(
-            df, xmins, p_sixty, mean_attack, mean_defence, games, preseason
+            df, xmins, p_sixty, mean_attack, mean_defence, games, preseason,
+            record=rates,
         )
+        if gw == gameweeks[0]:
+            next_gw_rates = {key: value * fixture_count for key, value in rates.items()}
+            # A clean sheet in a double gameweek isn't "two clean sheets",
+            # it's two chances at one -- scaling it like a goal rate would
+            # push the probability above 1.
+            if "p_clean_sheet" in rates:
+                next_gw_rates["p_clean_sheet"] = rates["p_clean_sheet"].clip(0.0, 1.0)
+            next_gw_rates["played"] = played.astype(float)
         # ...then scale by how many fixtures they actually have. A double
         # gameweek is close to two independent chances to score; a blank is
         # zero, not "average".
@@ -722,5 +752,15 @@ def expected_points(
     # Value framing: points per million is what actually decides whether a
     # premium is worth its price tag once the budget constraint bites.
     df["xp_per_million"] = (df["xp_horizon"] / df["price"]).round(3)
+
+    # The rates behind next gameweek's projection, exposed so an outcome
+    # distribution can be reconstructed rather than guessed at. A 5.0 mean
+    # can be a steady five every week or a blank-blank-fifteen, and those
+    # are different players to own.
+    for column in ("xg_match", "xa_match", "p_clean_sheet"):
+        df[column] = (
+            next_gw_rates.get(column, pd.Series(0.0, index=df.index)).fillna(0.0).round(4)
+        )
+    df["p_sixty"] = p_sixty.round(3)
 
     return df
