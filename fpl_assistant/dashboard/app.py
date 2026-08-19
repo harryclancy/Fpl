@@ -26,8 +26,10 @@ from fpl_assistant.analysis import (
     fixtures as fixtures_analysis,
     injuries,
     omissions,
+    search as research_search,
     rationale,
     squad_builder,
+    team_brief,
     transfers,
 )
 from fpl_assistant.analysis.season_state import is_preseason
@@ -955,11 +957,143 @@ def _present_fixture_table(table, gw_cols):
     return view.rename(columns=labels).reset_index(drop=True)
 
 
-def render_fixtures_tab(fixtures, teams, next_event):
-    section_header(
-        f"Fixture runs — next {FIXTURE_WINDOW} gameweeks",
-        "Green is an easier run. Target the top, fade the bottom.",
+STANCE_CHIP = {
+    "avoid": ("#b3261e", "#fdeceb", "Analysts say avoid"),
+    "caution": ("#8a6100", "#fdf4e3", "Flagged as a risk"),
+    "target": ("#1a6b3c", "#e9f7ef", "Analysts recommend"),
+}
+RUN_CHIP = {
+    "easy": ("#1a6b3c", "#e9f7ef", "Kind run"),
+    "mixed": ("#5f5a6b", "#f4f2f8", "Mixed run"),
+    "hard": ("#b3261e", "#fdeceb", "Hard run"),
+}
+
+
+def _fixture_pills(brief) -> str:
+    """The run as coloured pills rather than a table row.
+
+    A row of five cells makes you read left to right and hold the numbers
+    in your head. Five coloured pills you take in at a glance, which is
+    the entire job of a fixture ticker.
+    """
+    pills = []
+    for label, difficulty in brief.fixtures:
+        background = fdr_color(difficulty) if difficulty is not None else ""
+        colour = background.replace("background-color:", "").strip(" ;") or "#f4f2f8"
+        pills.append(
+            f"<span style='display:inline-block;background:{colour};border:1px solid rgba(21,19,26,.08);"
+            f"border-radius:6px;padding:2px 8px;margin:0 5px 5px 0;font-size:.85em;"
+            f"font-variant-numeric:tabular-nums'>{label}</span>"
+        )
+    return "<div>" + "".join(pills) + "</div>"
+
+
+def _chip(text, fg, bg) -> str:
+    return (
+        f"<span style='display:inline-block;background:{bg};color:{fg};border-radius:999px;"
+        f"padding:1px 10px;font-size:.78em;font-weight:700;letter-spacing:.03em'>{text}</span>"
     )
+
+
+def render_team_briefs(scored, fixtures, teams, next_event) -> None:
+    """Club-by-club: the run, who to buy, and what to watch for.
+
+    The fixture table answers "which teams have easy games", which is half
+    a decision. It tells you nothing about which player at that club is
+    the way in, or that their best asset is carrying a knock. This closes
+    that gap so you don't have to go and look somewhere else.
+    """
+    table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, FIXTURE_WINDOW)
+    gameweeks = list(range(next_event, next_event + FIXTURE_WINDOW))
+    briefs = team_brief.build_briefs(scored, table, teams, gameweeks)
+    if not briefs:
+        return
+
+    st.markdown("#### Club by club")
+    st.caption(
+        "Ordered by how kind the next five look, so the teams worth shopping at are at the top. "
+        "Every line is derived from the live data and the researched verdicts — nothing here is "
+        "hand-written per club, so it stays true as the season moves."
+    )
+
+    lookup = {b.short_name: b for b in briefs}
+    picked = st.selectbox(
+        "Jump to a club",
+        options=[b.short_name for b in briefs],
+        format_func=lambda short: (
+            f"{lookup[short].name} — {lookup[short].headline}"
+            + (f" ({lookup[short].avg_difficulty:.1f} FDR)" if lookup[short].avg_difficulty else "")
+        ),
+        key="team_brief_pick",
+    )
+
+    for brief in briefs:
+        expanded = brief.short_name == picked
+        label = f"{brief.name} · {brief.headline}"
+        if brief.avg_difficulty is not None:
+            label += f" · {brief.avg_difficulty:.1f} FDR"
+        with st.expander(label, expanded=expanded):
+            chips = []
+            fg, bg, text = RUN_CHIP[brief.run_quality]
+            chips.append(_chip(text, fg, bg))
+            if brief.stance in STANCE_CHIP:
+                fg, bg, text = STANCE_CHIP[brief.stance]
+                chips.append(_chip(text, fg, bg))
+            render_html("<div style='margin-bottom:8px'>" + " ".join(chips) + "</div>")
+
+            render_html(_fixture_pills(brief))
+
+            if brief.stance_case:
+                st.markdown(f"**What the analysts say:** {brief.stance_case}")
+                if brief.stance_sources:
+                    st.markdown(
+                        f"<span style='opacity:0.45;font-size:0.8em'>Sources: {brief.stance_sources}</span>",
+                        unsafe_allow_html=True,
+                    )
+
+            left, right = st.columns(2)
+            with left:
+                st.markdown("**👍 In their favour**")
+                for line in brief.pros or ["Nothing standing out either way."]:
+                    st.markdown(f"- {line}")
+            with right:
+                st.markdown("**👎 Watch out for**")
+                for line in brief.cons or ["Nothing flagged."]:
+                    st.markdown(f"- {line}")
+
+            if brief.assets:
+                st.markdown("**Who to look at here**")
+                rows = []
+                for asset in brief.assets:
+                    rows.append({
+                        "Player": asset.name,
+                        "Pos": asset.position,
+                        "Price": f"£{asset.price:.1f}m",
+                        "Owned": f"{asset.ownership:.1f}%",
+                        "Next GW": round(asset.xp_next, 1),
+                        "Next 5": round(asset.xp_horizon, 1),
+                        "Note": ("⚠️ " if asset.flagged else "") + (asset.note or ""),
+                    })
+                st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True)
+
+
+def render_fixtures_tab(players, fixtures, teams, next_event):
+    section_header(
+        f"Fixtures & team guide — next {FIXTURE_WINDOW} gameweeks",
+        "Which clubs to shop at, and who to buy when you get there",
+    )
+    scored = cached_scores(players, fixtures, teams, next_event)
+
+    ticker_tab, teams_tab = st.tabs(["📊 The ticker", "🔍 Club by club"])
+    with teams_tab:
+        render_team_briefs(scored, fixtures, teams, next_event)
+
+    with ticker_tab:
+        _render_fixture_ticker(fixtures, teams, next_event)
+
+
+def _render_fixture_ticker(fixtures, teams, next_event):
+    st.caption("Green is an easier run. Target the top, fade the bottom.")
     table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, FIXTURE_WINDOW)
     gw_cols = list(range(next_event, next_event + FIXTURE_WINDOW))
 
@@ -1068,19 +1202,212 @@ def render_injuries_tab(players, owned_ids):
         render_html(_injury_cards(all_flagged))
 
 
-def render_report_tab(next_event):
-    section_header(f"Odds & expert take — GW{next_event}", "Live web research, not scraped data")
-    text, filename = load_report(next_event)
-    if text is None:
+HIT_STYLE = {
+    "player": ("👤", "Player"),
+    "club": ("🏟️", "Club verdict"),
+    "report": ("📰", "This week's report"),
+}
+TIER_CHIP = {
+    "must_have": ("#1a6b3c", "#e9f7ef", "Must have"),
+    "strong": ("#1a6b3c", "#e9f7ef", "Strong pick"),
+    "value": ("#2d5c9e", "#eaf1fb", "Value"),
+    "avoid": ("#b3261e", "#fdeceb", "Avoid"),
+}
+
+SEARCH_EXAMPLES = ["penalties", "World Cup fitness", "Bournemouth", "clean sheets", "set pieces"]
+
+
+def render_research_search(scored, report_text, teams) -> None:
+    """Search everything the app knows, in one box.
+
+    The research lives in four places -- the per-player consensus, the club
+    verdicts, the weekly odds report and the live player data -- and until
+    now you could only reach any of it by already knowing which tab it was
+    filed under. That's fine reading top to bottom and useless when you
+    have a specific question, which is most of the time.
+
+    Deliberately a local index rather than a model call: instant, works
+    with no API key, and it cannot invent a fact that isn't in the corpus.
+    Every hit shows the text that matched and who said it, so you can
+    judge it rather than take it.
+    """
+    st.markdown("#### 🔎 Search the research")
+    st.caption(
+        "Player names, clubs, or anything you want to know — penalties, set pieces, injuries, "
+        "fixture runs. Searches the expert verdicts, the club-level calls, this week's odds "
+        "report and the live player data at once."
+    )
+
+    query = st.text_input(
+        "Search",
+        key="research_search_query",
+        placeholder="e.g. who's on penalties, Haaland, World Cup fitness…",
+        label_visibility="collapsed",
+    )
+
+    if not query.strip():
+        chips = " ".join(
+            f"<span style='display:inline-block;background:#f4f2f8;border:1px solid #e6e2ee;"
+            f"border-radius:999px;padding:2px 11px;margin:0 6px 6px 0;font-size:.85em;"
+            f"opacity:.75'>{example}</span>"
+            for example in SEARCH_EXAMPLES
+        )
+        render_html(f"<div style='margin-top:-4px'>Try: {chips}</div>")
+        return
+
+    try:
+        hits = research_search.search(query, scored=scored, report_text=report_text, teams=teams)
+    except Exception as exc:
+        st.caption(f"Search failed ({exc}).")
+        return
+
+    if not hits:
         st.info(
-            "No report yet. Ask Claude to \"refresh the gameweek report\" — it runs live web "
-            "searches for current odds and expert/community sentiment and writes it here, since "
-            "direct scraping of bookmaker and forum sites isn't reliable or always allowed."
+            f"Nothing in the research mentions “{query}”. The research covers the players "
+            "analysts wrote about this week plus every club-level verdict — if you're after "
+            "reasoning rather than a lookup, ask it as a question on the Starting XI tab and "
+            "the squad gets re-solved to answer it."
         )
         return
-    if filename != f"gw{next_event}.md":
-        st.warning(f"Showing the most recent report available ({filename}), not one for GW{next_event} specifically.")
-    st.markdown(text)
+
+    st.caption(f"{len(hits)} result{'s' if len(hits) != 1 else ''} for “{query}”")
+    for hit in hits:
+        icon, kind_label = HIT_STYLE.get(hit.kind, ("•", hit.kind))
+        chips = []
+        if hit.tier in TIER_CHIP:
+            fg, bg, text = TIER_CHIP[hit.tier]
+            chips.append(_chip(text, fg, bg))
+
+        with st.container(border=True):
+            render_html(
+                f"<div style='display:flex;align-items:center;gap:8px;flex-wrap:wrap'>"
+                f"<span style='font-weight:700'>{icon} {hit.title}</span>"
+                + "".join(chips)
+                + f"<span style='opacity:.45;font-size:.8em'>{kind_label}</span></div>"
+            )
+            if hit.subtitle:
+                st.markdown(
+                    f"<span style='opacity:.75;font-size:.92em'>{hit.subtitle}</span>",
+                    unsafe_allow_html=True,
+                )
+            for label, text in hit.snippets:
+                st.markdown(
+                    f"<div style='margin:6px 0 0 0;padding-left:10px;border-left:2px solid #e3dff0'>"
+                    f"<span style='font-weight:600;font-size:.82em'>{label}</span><br>"
+                    f"<span style='opacity:.82;font-size:.9em'>{text}</span></div>",
+                    unsafe_allow_html=True,
+                )
+            if hit.sources:
+                st.markdown(
+                    f"<span style='opacity:.45;font-size:.78em'>Sources: {hit.sources}</span>",
+                    unsafe_allow_html=True,
+                )
+
+
+def render_report_tab(players, fixtures, teams, next_event):
+    section_header(
+        f"Odds & expert take — GW{next_event}",
+        "Everything the analysts are saying, searchable",
+    )
+    text, filename = load_report(next_event)
+    scored = cached_scores(players, fixtures, teams, next_event)
+
+    search_tab, verdicts_tab, report_tab = st.tabs(
+        ["🔎 Search", "🗣️ Expert verdicts", "📰 Odds report"]
+    )
+
+    with search_tab:
+        render_research_search(scored, text, teams)
+
+    with verdicts_tab:
+        render_expert_verdicts(scored, next_event)
+
+    with report_tab:
+        if text is None:
+            st.info(
+                "No odds report yet. Ask Claude to \"refresh the gameweek report\" — it runs live "
+                "web searches for current odds and expert/community sentiment and writes it here, "
+                "since direct scraping of bookmaker and forum sites isn't reliable or always "
+                "allowed. The expert verdicts tab works without it."
+            )
+        else:
+            if filename != f"gw{next_event}.md":
+                st.warning(
+                    f"Showing the most recent report available ({filename}), not one for "
+                    f"GW{next_event} specifically."
+                )
+            st.markdown(text)
+
+
+def render_expert_verdicts(scored, next_event) -> None:
+    """Every researched verdict, filterable, with the evidence attached.
+
+    The consensus panel on the Starting XI tab only shows what the app
+    acted on. This shows the whole research file — including the players
+    it decided against — because "what are people saying about X" is a
+    question you ask before you have a squad, not after.
+    """
+    matched = consensus.summary(scored)
+    if matched.empty:
+        st.caption("No expert research has been matched to this gameweek's player pool yet.")
+        return
+
+    freshness = _research_freshness(next_event)
+    if freshness:
+        st.caption(freshness.capitalize() + ".")
+
+    tiers = [t for t in ["must_have", "strong", "value", "avoid"]
+             if (matched["consensus_tier"] == t).any()]
+    labels = {
+        "must_have": "Must have", "strong": "Strong picks",
+        "value": "Value picks", "avoid": "Avoid",
+    }
+    chosen = st.multiselect(
+        "Filter",
+        options=tiers,
+        default=tiers,
+        format_func=lambda t: labels.get(t, t),
+        key="verdict_tier_filter",
+    )
+    positions = sorted(matched["position"].dropna().unique().tolist())
+    chosen_positions = st.multiselect(
+        "Position", options=positions, default=positions, key="verdict_position_filter"
+    )
+
+    view = matched[
+        matched["consensus_tier"].isin(chosen) & matched["position"].isin(chosen_positions)
+    ]
+    if view.empty:
+        st.caption("Nothing matches those filters.")
+        return
+
+    for _, row in view.iterrows():
+        chips = []
+        if row["consensus_tier"] in TIER_CHIP:
+            fg, bg, text = TIER_CHIP[row["consensus_tier"]]
+            chips.append(_chip(text, fg, bg))
+        if isinstance(row.get("consensus_dissent"), str):
+            chips.append(_chip("Experts disagree", "#8a6100", "#fdf4e3"))
+
+        header = (
+            f"{row['web_name']} — {row.get('team_short_name','')} · "
+            f"£{row['price']:.1f}m · {row.get('selected_by_percent', 0):.1f}% owned"
+        )
+        with st.expander(header, expanded=False):
+            render_html("<div style='margin-bottom:6px'>" + " ".join(chips) + "</div>")
+            if isinstance(row.get("consensus_verdict"), str):
+                st.markdown(f"**{row['consensus_verdict']}**")
+            if isinstance(row.get("consensus_reason"), str):
+                st.markdown(row["consensus_reason"])
+            render_evidence(
+                consensus.key_stats(row),
+                consensus.voices(row),
+                row.get("consensus_sources") if isinstance(row.get("consensus_sources"), str) else None,
+            )
+            if isinstance(row.get("consensus_watch_out"), str):
+                st.markdown(f"**The case against:** {row['consensus_watch_out']}")
+            if isinstance(row.get("consensus_dissent"), str):
+                st.markdown(f"**⚖️ Experts disagree here:** {row['consensus_dissent']}")
 
 
 def render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers):
@@ -1247,7 +1574,7 @@ def main():
         render_chips_tab(players, fixtures, teams, next_event)
 
     with tab_map["Fixtures"]:
-        render_fixtures_tab(fixtures, teams, next_event)
+        render_fixtures_tab(players, fixtures, teams, next_event)
 
     with tab_map["Watchlist"]:
         render_watchlist_tab(players)
@@ -1257,7 +1584,7 @@ def main():
         render_injuries_tab(players, owned_ids)
 
     with tab_map["Odds & Expert Take"]:
-        render_report_tab(next_event)
+        render_report_tab(players, fixtures, teams, next_event)
 
     if team_id:
         with tab_map["Transfers"]:

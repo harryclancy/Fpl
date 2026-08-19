@@ -211,3 +211,45 @@ def test_no_bournemouth_players_are_recommended_while_the_verdict_stands(patch_a
     at = AppTest.from_file(APP_PATH)
     at.run(timeout=60)
     assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+
+def test_the_club_by_club_briefs_render(patch_api):
+    """The team section on the Fixtures tab has to appear on the page,
+    with a real verdict per club rather than an empty shell."""
+    patch_api(preseason=True)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=90)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    briefs = [label for label in _expander_labels(at) if "FDR" in label]
+    assert len(briefs) >= 10, f"expected a brief per club, got {len(briefs)}"
+    # Ordered kindest run first, so the teams worth shopping at lead.
+    import re
+
+    fdrs = [float(re.search(r"([\d.]+) FDR", label).group(1)) for label in briefs]
+    assert fdrs == sorted(fdrs)
+
+
+def test_the_research_search_returns_results(patch_api):
+    """Drives the actual search box rather than the module underneath it,
+    because the wiring is the part that breaks."""
+    patch_api(preseason=True)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=90)
+
+    boxes = [box for box in at.text_input if box.key == "research_search_query"]
+    assert boxes, "the search box is missing from the expert section"
+
+    boxes[0].set_value("penalties").run(timeout=90)
+    assert not at.exception, f"App raised on search: {[str(e) for e in at.exception]}"
+
+    page = _all_markdown(at)
+    assert "result" in page.lower()
+
+
+def test_an_empty_search_offers_suggestions_rather_than_an_error(patch_api):
+    patch_api(preseason=True)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=90)
+    assert not at.exception
+    assert "Try:" in _all_markdown(at)

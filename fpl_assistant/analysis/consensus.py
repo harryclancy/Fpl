@@ -82,6 +82,27 @@ def load_consensus(gameweek: int) -> dict | None:
         return None
 
 
+def load_consensus_any() -> dict | None:
+    """The most recent researched gameweek, whichever that is.
+
+    Search shouldn't come back empty just because the current gameweek
+    hasn't been researched yet -- last week's verdict on a player is stale
+    but it is not nothing, and it's what someone typing a name is looking
+    for.
+    """
+    files = sorted(
+        CONSENSUS_DIR.glob("gw*.json"),
+        key=lambda path: int(re.sub(r"\D", "", path.stem) or 0),
+        reverse=True,
+    )
+    for path in files:
+        try:
+            return json.loads(path.read_text())
+        except (json.JSONDecodeError, OSError):
+            continue
+    return None
+
+
 def load_team_context() -> dict[str, dict]:
     """Club-level context keyed by FPL short name.
 
