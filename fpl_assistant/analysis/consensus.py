@@ -104,6 +104,20 @@ def load_team_context() -> dict[str, dict]:
     }
 
 
+def researched_on(gameweek: int) -> str | None:
+    """When this gameweek's research was actually done.
+
+    Every football claim in these files has a shelf life measured in days
+    -- an injury clears, a manager confirms a lineup, a price moves. The
+    date has to be visible next to the advice, because advice that looks
+    equally confident whether it was written this morning or three weeks
+    ago is the thing that gets someone to trust a stale fact.
+    """
+    data = load_consensus(gameweek) or {}
+    value = data.get("researched")
+    return str(value) if value else None
+
+
 def _name_variants(row: pd.Series) -> list[str]:
     """Every plausible way this player might be named in research prose.
 

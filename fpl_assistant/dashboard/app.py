@@ -138,7 +138,31 @@ CONSENSUS_LABELS = {
 }
 
 
-def render_consensus_panel(scored, squad) -> None:
+def _research_freshness(next_event) -> str | None:
+    """A plain-language age for the research, or None if undated."""
+    from datetime import date
+
+    stamp = consensus.researched_on(next_event)
+    if not stamp:
+        return None
+    try:
+        researched = date.fromisoformat(stamp)
+    except ValueError:
+        return None
+    days = (date.today() - researched).days
+    if days <= 0:
+        return "researched today"
+    if days == 1:
+        return "researched yesterday"
+    if days <= 4:
+        return f"researched {days} days ago"
+    return (
+        f"⚠️ researched {days} days ago — injuries, lineups and prices will have moved since, "
+        f"so re-check anything that looks decisive"
+    )
+
+
+def render_consensus_panel(scored, squad, next_event) -> None:
     """Shows what the experts said and exactly what the app did about it.
 
     The consensus now moves the selection, so it has to be visible and
@@ -155,9 +179,11 @@ def render_consensus_panel(scored, squad) -> None:
 
     in_squad = set(squad["id"])
     with st.expander("🗣️ What the experts are saying — and what this squad did about it", expanded=True):
+        freshness = _research_freshness(next_event)
         st.caption(
             "Consensus is an input to the algorithm, not a footnote: must-haves are locked in, "
             "and the rest carry a weighted bonus that competes directly against the projection."
+            + (f"  \n{freshness}." if freshness else "")
         )
         for _, row in matched.iterrows():
             label, effect = CONSENSUS_LABELS.get(row["consensus_tier"], ("—", ""))
@@ -639,7 +665,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
         for note in solution.notes:
             st.warning(note)
 
-    render_consensus_panel(scored, squad15)
+    render_consensus_panel(scored, squad15, next_event)
     render_omissions_panel(scored, solution)
     render_factor_panel()
 
