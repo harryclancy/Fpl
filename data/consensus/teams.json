@@ -1,33 +1,269 @@
 {
   "season": "2026/27",
-  "researched": "2026-08-18",
-  "note": "Club-level context that changes how much a player actually plays, which no per-90 rate can tell you. European football means midweek games and therefore rotation; a new manager means an unsettled XI. Both are minutes risks, and minutes are the foundation everything else in the projection sits on. `european_competition` is one of ucl/uel/uecl/none.",
+  "researched": "2026-08-19",
+  "note": "Club-level context and club-level expert verdicts.\n\nTwo different things live here.\n\n`european_competition` and `new_manager` are minutes risk: midweek football means rotation, an unsettled XI means uncertainty, and minutes are the foundation every projection sits on.\n\n`stances` is the part that was missing. When analysts say 'avoid Bournemouth assets until their schedule clears', that verdict applies to all twenty-odd players at the club, not to the one or two an article happened to name. Stored as prose on a single player it reached a single player, and the optimiser happily picked the other Bournemouth defenders instead -- the verdict was in the app but not in the algorithm. Each stance is machine-readable and applies to every player at the club in scope.\n\nEach stance carries `until_gameweek` so it expires on its own rather than rotting into a permanent hardcode, and the penalty is scaled by how much of the projection horizon it actually covers.\n\nThis file is a LOOKUP KEYED BY SHORT NAME, not a claim about who is in the league. Entries for clubs that aren't in the current Premier League are simply never matched, and a club missing from here just gets neutral context. That is deliberate: getting the promoted/relegated set wrong should cost nothing, because the live API is the authority on who is actually playing.",
+  "stance_legend": {
+    "avoid": "Analysts are actively steering managers away from this club's assets for now.",
+    "caution": "Not a hard no, but flagged as a risk that ownership doesn't reflect.",
+    "target": "Analysts are actively steering managers towards this club's assets."
+  },
   "teams": [
-    {"short_name": "ARS", "european_competition": "ucl", "new_manager": false},
-    {"short_name": "MCI", "european_competition": "ucl", "new_manager": false},
-    {"short_name": "MUN", "european_competition": "ucl", "new_manager": false},
-    {"short_name": "AVL", "european_competition": "ucl", "new_manager": false},
-    {"short_name": "LIV", "european_competition": "ucl", "new_manager": false},
-
-    {"short_name": "BOU", "european_competition": "uel", "new_manager": true,
-     "note": "Europa League from around GW4-5 under a new manager in Marco Rose, on top of the worst opening eight fixtures in the league. Rotation risk is compounded."},
-    {"short_name": "SUN", "european_competition": "uel", "new_manager": false},
-    {"short_name": "CRY", "european_competition": "uel", "new_manager": false},
-
-    {"short_name": "BHA", "european_competition": "uecl", "new_manager": false},
-
-    {"short_name": "CHE", "european_competition": "none", "new_manager": false,
-     "note": "No European football at all this season — a genuine FPL edge. One game a week means a settled, rested XI while rivals rotate for midweek travel."},
-
-    {"short_name": "NEW", "european_competition": "none", "new_manager": false},
-    {"short_name": "TOT", "european_competition": "none", "new_manager": false},
-    {"short_name": "EVE", "european_competition": "none", "new_manager": false},
-    {"short_name": "WHU", "european_competition": "none", "new_manager": false},
-    {"short_name": "BRE", "european_competition": "none", "new_manager": false},
-    {"short_name": "FUL", "european_competition": "none", "new_manager": false},
-    {"short_name": "WOL", "european_competition": "none", "new_manager": false},
-    {"short_name": "NFO", "european_competition": "none", "new_manager": false},
-    {"short_name": "COV", "european_competition": "none", "new_manager": false},
-    {"short_name": "HUL", "european_competition": "none", "new_manager": false}
+    {
+      "short_name": "BOU",
+      "european_competition": "uel",
+      "new_manager": true,
+      "note": "Europa League from around GW4-5 under a new manager in Marco Rose, on top of the worst opening eight fixtures in the league. Rotation risk is compounded.",
+      "stances": [
+        {
+          "stance": "avoid",
+          "scope": "all",
+          "until_gameweek": 9,
+          "case": "Bournemouth have arguably been handed the toughest start in the division. All six of their opening fixtures rate 3 or higher on the difficulty ticker, including trips to Manchester City and Chelsea and Liverpool at home. Analysts are broadly saying to avoid Bournemouth assets entirely until the schedule clears around GW9 -- not just the attackers. A defence facing that run is not keeping clean sheets, and an attack facing it is not being backed to score. On top of the fixtures they add Europa League football from around GW4-5 under a new manager, so the rotation risk lands in exactly the weeks you would be hoping the fixtures turn.",
+          "sources": [
+            "RotoWire",
+            "Fantasy Football Scout",
+            "AllAboutFPL",
+            "Premier League Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "COV",
+      "european_competition": "none",
+      "new_manager": false,
+      "promoted": true,
+      "stances": [
+        {
+          "stance": "avoid",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 6,
+          "case": "Frank Lampard's promoted side visit last season's top two inside the first three gameweeks -- Arsenal away in GW1 and Manchester City away in GW3 -- which is as hostile an opening stretch as a newly promoted side has been handed. Every Coventry defender is priced at £4.0m, which reads as value and is really a warning: the pricing reflects what the market expects them to concede. The specific advice is not to build a defence that needs two promoted centre-backs to start every week.",
+          "sources": [
+            "RotoWire",
+            "Beat FPL",
+            "OneFPL"
+          ]
+        },
+        {
+          "stance": "caution",
+          "scope": [
+            "MID",
+            "FWD"
+          ],
+          "until_gameweek": 4,
+          "case": "The one genuine opening is Hull at home in GW2, sitting between the two away days. A cheap Coventry midfielder is a Bench Boost body rather than a starter until the run breaks.",
+          "sources": [
+            "Beat FPL"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "HUL",
+      "european_competition": "none",
+      "new_manager": false,
+      "promoted": true,
+      "stances": [
+        {
+          "stance": "avoid",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 6,
+          "case": "Hull open against a Manchester United side sitting top of the fixture ticker, and are named alongside Coventry as a promoted defence best avoided early. A promoted defender is only worth owning if he plays and keeps clean sheets, and this run offers neither -- cheap defenders can hold squad structure from the bench without ever needing to start.",
+          "sources": [
+            "RotoWire",
+            "Beat FPL",
+            "OneFPL"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "IPS",
+      "european_competition": "none",
+      "new_manager": false,
+      "promoted": true,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 5,
+          "case": "The third promoted side, away to Manchester United in GW2 and at Manchester City inside the opening seven. The general warning against leaning on promoted defences applies here too, if slightly less severely than Coventry's opening.",
+          "sources": [
+            "RotoWire",
+            "Premier League Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "SUN",
+      "european_competition": "uel",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "Named among the sides to approach with caution until their schedule clears, with Europa League football adding midweek minutes on top.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Brentford FC / FFS season guide"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "MUN",
+      "european_competition": "ucl",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 8,
+          "case": "Manchester United top the fixture ticker for both their opening two gameweeks and their full opening six: Hull away in GW1 then Ipswich at home in GW2, back-to-back against promoted sides. Across the opening eight they face only one side rated above 3 on the ticker. This is the single most-recommended fixture run in the game.",
+          "sources": [
+            "RotoWire",
+            "Premier League Scout",
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "ARS",
+      "european_competition": "ucl",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 8,
+          "case": "Arsenal open at home to promoted Coventry and face just one of last season's top six across their first eight matches, away at Aston Villa in GW2. The soft opening is the reason their defensive assets are pushed up every published ranking.",
+          "sources": [
+            "RotoWire",
+            "Premier League Scout",
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "EVE",
+      "european_competition": "none",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "Named alongside Manchester United, Newcastle and Brentford as having an appealing opening six gameweeks, and with no European football to rotate for.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Premier League Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "NEW",
+      "european_competition": "none",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "One of four sides flagged for an appealing opening six.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Premier League Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "BRE",
+      "european_competition": "none",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "Flagged for an appealing opening six, with Igor Thiago and Kiernan Dewsbury-Hall singled out as the routes in.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Premier League Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "CHE",
+      "european_competition": "none",
+      "new_manager": false,
+      "note": "No European football at all this season — a genuine FPL edge. One game a week means a settled, rested XI while rivals rotate for midweek travel."
+    },
+    {
+      "short_name": "MCI",
+      "european_competition": "ucl",
+      "new_manager": false
+    },
+    {
+      "short_name": "AVL",
+      "european_competition": "ucl",
+      "new_manager": false
+    },
+    {
+      "short_name": "LIV",
+      "european_competition": "ucl",
+      "new_manager": false
+    },
+    {
+      "short_name": "CRY",
+      "european_competition": "uel",
+      "new_manager": false
+    },
+    {
+      "short_name": "BHA",
+      "european_competition": "uecl",
+      "new_manager": false
+    },
+    {
+      "short_name": "TOT",
+      "european_competition": "none",
+      "new_manager": false
+    },
+    {
+      "short_name": "FUL",
+      "european_competition": "none",
+      "new_manager": false
+    },
+    {
+      "short_name": "NFO",
+      "european_competition": "none",
+      "new_manager": false
+    },
+    {
+      "short_name": "LEE",
+      "european_competition": "none",
+      "new_manager": false
+    },
+    {
+      "short_name": "BUR",
+      "european_competition": "none",
+      "new_manager": false
+    }
   ]
 }

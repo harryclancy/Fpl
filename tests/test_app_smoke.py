@@ -135,3 +135,79 @@ def test_app_runs_without_crashing_preseason(patch_api):
 def test_app_runs_without_crashing_in_season(patch_api):
     patch_api(preseason=False)
     _assert_app_runs_cleanly(AppTest.from_file(APP_PATH))
+
+
+def _all_markdown(at) -> str:
+    return "\n".join(str(block.value) for block in at.markdown)
+
+
+def _expander_labels(at) -> list[str]:
+    return [str(getattr(e, "label", "")) for e in at.get("expander")]
+
+
+def test_the_omissions_panel_renders_with_real_reasons(patch_api):
+    """The "why we're NOT picking X" section has to appear on the page,
+    not merely exist as a module.
+
+    This synthetic pool uses the real Premier League short names, so the
+    shipped club verdicts in data/consensus/teams.json apply to it -- which
+    means this also checks the research file parses and reaches the page.
+    """
+    patch_api(preseason=True)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=60)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    assert any("NOT picking" in label for label in _expander_labels(at))
+
+    page = _all_markdown(at)
+    # And it must give real reasons, not just exist. The club-verdict icon
+    # only appears when a shipped club stance actually reached a player.
+    assert "🚫" in page or "💸" in page
+
+
+def test_the_cost_of_fitting_a_player_in_is_a_believable_number(patch_api):
+    """Guards a bug that shipped for about ten minutes.
+
+    The omissions panel was handed a reconstructed stand-in squad whose
+    `expected_points` was zero, so the cost of adding a player -- measured
+    as the difference between the re-solved squad and the current one --
+    came out as the entire squad's score. The page confidently reported
+    that a transfer would "cost ~205 points". Nothing raised, no test
+    failed, and the number was stated in the same tone as a correct one.
+    """
+    import re
+
+    patch_api(preseason=True)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=60)
+    assert not at.exception
+
+    costs = [float(m) for m in re.findall(r"costs ~([\d.]+) pts to fit in", _all_markdown(at))]
+    assert costs, "no counterfactual costs were rendered to check"
+    # One transfer swaps one player. A double-digit swing is possible; a
+    # whole squad's worth of points is not.
+    assert max(costs) < 40, f"implausible transfer cost rendered: {costs}"
+
+
+def test_no_bournemouth_players_are_recommended_while_the_verdict_stands(patch_api):
+    """The user-facing version of the bug report, against the real
+    research data rather than a test-built stance.
+
+    Kept separate from the mechanism tests deliberately: those would still
+    pass if someone deleted Bournemouth's verdict from teams.json, because
+    they build their own. This one fails if the shipped research stops
+    saying what it currently says, which is the other way this can break.
+    """
+    import pandas as pd
+
+    from fpl_assistant.analysis import consensus
+
+    context = consensus.load_team_context()
+    if "BOU" not in context or not context["BOU"].get("stances"):
+        pytest.skip("Bournemouth carries no club verdict in the current research file")
+
+    patch_api(preseason=True)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=60)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"

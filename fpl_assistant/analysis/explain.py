@@ -38,10 +38,21 @@ class Answer:
     points_delta: float | None = None
     consensus_case: str | None = None
     consensus_against: str | None = None
+    club_verdict: str | None = None
+    dissent: str | None = None
 
 
 def _row(scored: pd.DataFrame, player_id: int) -> pd.Series:
     return scored.set_index("id").loc[player_id]
+
+
+def _text(row: pd.Series, column: str) -> str | None:
+    """A non-empty string from a column, or None. NaN and missing columns
+    both come back as None rather than the string "nan"."""
+    value = row.get(column)
+    if not isinstance(value, str) or not value.strip():
+        return None
+    return value
 
 
 def _consensus_bits(row: pd.Series) -> tuple[str | None, str | None]:
@@ -51,6 +62,28 @@ def _consensus_bits(row: pd.Series) -> tuple[str | None, str | None]:
         str(case) if case is not None and pd.notna(case) else None,
         str(against) if against is not None and pd.notna(against) else None,
     )
+
+
+def _club_verdict(row: pd.Series) -> str | None:
+    """The club-level expert verdict, phrased for a direct question.
+
+    "Why not him?" is very often not about him at all -- it's that every
+    analyst is saying to avoid his club until the fixtures turn. Answering
+    that question with a points differential, while the actual reason sits
+    unmentioned in another column, is technically accurate and useless.
+    """
+    stance = _text(row, "club_stance")
+    if stance not in {"avoid", "caution"}:
+        return None
+    club = str(row.get("team_short_name") or "his club")
+    until = row.get("club_stance_until")
+    window = f" until GW{int(until)}" if pd.notna(until) else ""
+    lead = (
+        f"The analysts are steering clear of {club} assets{window}"
+        if stance == "avoid"
+        else f"The analysts are wary of {club} assets{window}"
+    )
+    return f"{lead}. {_text(row, 'club_stance_case') or ''}".strip()
 
 
 def explain_player(
@@ -70,6 +103,8 @@ def explain_player(
     row = _row(scored, player_id)
     name = str(row["web_name"])
     case, against = _consensus_bits(row)
+    club_verdict = _club_verdict(row)
+    dissent = _text(row, "consensus_dissent")
     in_squad = player_id in set(solution.squad_ids)
 
     if in_squad:
@@ -96,6 +131,8 @@ def explain_player(
             detail=detail,
             consensus_case=case,
             consensus_against=against,
+            club_verdict=club_verdict,
+            dissent=dissent,
         )
 
     # Not picked. Work out what including him would actually cost.
@@ -118,6 +155,8 @@ def explain_player(
             ],
             consensus_case=case,
             consensus_against=against,
+            club_verdict=club_verdict,
+            dissent=dissent,
         )
 
     delta = forced.expected_points - solution.expected_points
@@ -191,6 +230,8 @@ def explain_player(
         points_delta=round(delta, 2),
         consensus_case=case,
         consensus_against=against,
+        club_verdict=club_verdict,
+        dissent=dissent,
     )
 
 

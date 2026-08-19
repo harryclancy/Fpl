@@ -25,6 +25,7 @@ from fpl_assistant.analysis import (
     form,
     fixtures as fixtures_analysis,
     injuries,
+    omissions,
     rationale,
     squad_builder,
     transfers,
@@ -167,6 +168,99 @@ def render_consensus_panel(scored, squad) -> None:
                 f"<span style='opacity:0.55;font-size:0.85em'>Effect on selection: {effect}</span>",
                 unsafe_allow_html=True,
             )
+            dissent = row.get("consensus_dissent")
+            if dissent is not None and pd.notna(dissent):
+                # Shown rather than averaged away. A contested pick presented
+                # with the same confidence as a unanimous one is the app
+                # sounding surer than the evidence supports.
+                st.markdown(
+                    f"<span style='opacity:0.7;font-size:0.9em'>⚖️ <b>But not everyone agrees.</b> "
+                    f"{dissent}</span>  \n"
+                    f"<span style='opacity:0.5;font-size:0.8em'>Because this one is contested, his "
+                    f"weighting is damped rather than applied in full.</span>",
+                    unsafe_allow_html=True,
+                )
+            st.markdown("")
+
+
+OMISSION_STYLE = {
+    "club": ("🚫", "Club-wide expert verdict"),
+    "expert": ("🗣️", "Expert avoid"),
+    "disputed": ("⚖️", "Experts disagree"),
+    "unavailable": ("🏥", "Not available"),
+    "cost": ("💸", "Squeezed out by the budget"),
+}
+
+
+@st.cache_data(ttl=900, show_spinner=False)
+def cached_omissions(scored, _solution, template_weight, cache_key):
+    """Counterfactual solves are ILPs, so this is cached like the main one.
+
+    `_solution` is passed with a leading underscore so Streamlit skips
+    hashing it, and `cache_key` carries the identity instead. The real
+    solution has to go through rather than a reconstructed stand-in: the
+    cost of adding a player is measured as the difference between the
+    re-solved squad and this one, so a stand-in with a zeroed
+    `expected_points` reports the entire squad's score as the price of one
+    transfer -- "costs ~205 points to fit in", stated with total
+    confidence. A number that wrong is worse than no number.
+    """
+    return omissions.notable_omissions(scored, _solution, template_weight=template_weight)
+
+
+def render_omissions_panel(scored, solution) -> None:
+    """Why the players you expected to see aren't here.
+
+    A squad view answers "who?" and silently declines to answer "why not
+    him?". From the outside, a player the app weighed and rejected looks
+    exactly like a player it never considered, and that ambiguity is where
+    trust in the whole recommendation goes -- you spot a name half the
+    game owns, can't tell which happened, and stop believing the fifteen.
+    """
+    try:
+        found = cached_omissions(
+            scored, solution, rank_strategy_weight(),
+            cache_key=(tuple(solution.squad_ids), round(solution.expected_points, 3)),
+        )
+    except Exception as exc:  # a counterfactual failing must not take the page down
+        st.caption(f"Couldn't work out the notable omissions this week ({exc}).")
+        return
+    if not found:
+        return
+
+    with st.expander("🙅 Who we're NOT picking — and why", expanded=True):
+        st.caption(
+            "The popular and highly-rated players this squad leaves out, with the actual reason. "
+            "A player the algorithm weighed and rejected should never look the same as one it "
+            "never considered."
+        )
+        for item in found:
+            icon, label = OMISSION_STYLE.get(item.category, ("•", ""))
+            meta = f"{item.team} · {item.position} · £{item.price:.1f}m"
+            if item.ownership >= 1:
+                meta += f" · {item.ownership:.0f}% owned"
+            if item.points_cost is not None:
+                meta += f" · costs ~{item.points_cost:.1f} pts to fit in"
+
+            st.markdown(
+                f"{icon} **{item.headline}**  \n"
+                f"<span style='opacity:0.55;font-size:0.85em'>{label} · {meta}</span>  \n"
+                f"<span style='opacity:0.8'>{item.detail}</span>",
+                unsafe_allow_html=True,
+            )
+            if item.swaps:
+                swap = item.swaps[0]
+                st.markdown(
+                    f"<span style='opacity:0.55;font-size:0.85em'>To fit him: "
+                    f"{swap.out_name} (£{swap.out_price:.1f}m) → {swap.in_name} "
+                    f"(£{swap.in_price:.1f}m)</span>",
+                    unsafe_allow_html=True,
+                )
+            if item.sources:
+                st.markdown(
+                    f"<span style='opacity:0.45;font-size:0.8em'>Sources: {item.sources}</span>",
+                    unsafe_allow_html=True,
+                )
             st.markdown("")
 
 
@@ -201,6 +295,11 @@ FACTOR_GROUPS = {
         "Captaincy ranked on ceiling rather than average, since the armband doubles a result",
         "Ownership and rank risk, tunable in the sidebar",
         "Expert consensus, weighted directly into the objective",
+        "Club-wide expert verdicts — when analysts say to avoid a club until its fixtures turn, "
+        "that applies to every player at the club, not just the ones an article named, and it "
+        "expires on its own once the run it described has been played",
+        "Splits in expert opinion — where reputable analysts argue the opposite case, the pick's "
+        "weighting is damped rather than presented as settled",
         "Transfer hits priced in — a move only appears if it beats its own 4-point cost",
         "Roll vs use — this week's best move weighed against two moves next week",
         "Chip timing — doubles for Triple Captain and Bench Boost, blanks for Free Hit, and the "
@@ -227,7 +326,8 @@ def render_factor_panel() -> None:
         st.caption(
             "Known gaps, stated plainly: transfers are planned one or two gameweeks ahead rather "
             "than across a whole season, and the expert consensus is hand-researched each week — "
-            "the maths is tested, the football facts behind it aren't."
+            "the maths is tested, the football facts behind it aren't. If a verdict here looks "
+            "wrong to you, it's the research that's wrong, not the algorithm ignoring it."
         )
 
 
@@ -364,10 +464,19 @@ def _render_answer(answer) -> None:
                 f"**IN** {swap.in_name} (£{swap.in_price:.1f}m)"
             )
 
+    # The club verdict goes first when there is one. "Why not him?" is very
+    # often not about him at all -- it's that the analysts are avoiding his
+    # club until the fixtures turn -- and leading with a points
+    # differential while the real reason sits further down the page
+    # answers a question nobody asked.
+    if getattr(answer, "club_verdict", None):
+        st.markdown(f"**It's his club, not him:** {answer.club_verdict}")
     if answer.consensus_case:
         st.markdown(f"**What analysts say:** {answer.consensus_case}")
     if answer.consensus_against:
         st.markdown(f"**The case against:** {answer.consensus_against}")
+    if getattr(answer, "dissent", None):
+        st.markdown(f"**Experts disagree here:** {answer.dissent}")
 
 
 def render_question_box(scored, solution, next_event) -> None:
@@ -531,6 +640,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
             st.warning(note)
 
     render_consensus_panel(scored, squad15)
+    render_omissions_panel(scored, solution)
     render_factor_panel()
 
     report_text, _ = load_report(next_event)

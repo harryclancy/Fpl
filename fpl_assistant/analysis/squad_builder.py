@@ -69,9 +69,10 @@ def score_players(
     # but the rationale text still reads this column, so fill rather than drop.
     available["fixture_run_difficulty"] = available["fixture_run_difficulty"].fillna(3.0)
 
+    team_context = consensus.load_team_context()
     projected = expected_points(
         available, fixtures, teams, from_event, horizon=window,
-        team_context=consensus.load_team_context(),
+        team_context=team_context,
     )
 
     # Fold in what analysts and the wider community are actually saying.
@@ -81,10 +82,21 @@ def score_players(
     # starts, which "easy" fixture is a trap) is invisible to a model
     # reading per-90 rates.
     projected = consensus.annotate(projected, from_event)
+
+    # Club-level verdicts apply to every player at the club, which is the
+    # whole point: "avoid Bournemouth until the fixtures turn" is advice
+    # about the club, and the player it most needs to stop you buying is
+    # the cheap defender no analyst bothered to name. Previously that
+    # verdict lived only as prose on one player's card, so the optimiser
+    # never saw it and kept selecting the club's other defenders.
+    projected = consensus.annotate_clubs(projected, team_context, from_event, window)
+
+    expert_bonus = projected["consensus_bonus"] + projected["club_stance_bonus"]
+    projected["expert_bonus"] = expert_bonus
     projected["xp_pre_consensus"] = projected["xp_horizon"]
-    projected["xp_horizon"] = projected["xp_horizon"] + projected["consensus_bonus"]
-    projected["xp_next"] = projected["xp_next"] + projected["consensus_bonus"] / window
-    projected["xp_captain"] = projected["xp_captain"] + projected["consensus_bonus"] / window
+    projected["xp_horizon"] = projected["xp_horizon"] + expert_bonus
+    projected["xp_next"] = projected["xp_next"] + expert_bonus / window
+    projected["xp_captain"] = projected["xp_captain"] + expert_bonus / window
 
     projected["squad_score"] = projected["xp_horizon"]
     projected["scoring_basis"] = projected["xp_basis"]

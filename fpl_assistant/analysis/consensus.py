@@ -44,6 +44,32 @@ TIER_BONUS = {
 MUST_HAVE_TIER = "must_have"
 AVOID_TIER = "avoid"
 
+# --- Club-level verdicts -----------------------------------------------
+# The bug this exists to fix: analysts say "avoid Bournemouth assets until
+# the schedule clears", and that verdict was stored as a sentence inside
+# one player's write-up. So it reached exactly one player. The optimiser,
+# which only ever sees numbers, went on picking the club's other cheap
+# defenders -- the advice was in the app but not in the algorithm, which is
+# the worst kind of miss because the app looked like it knew.
+#
+# A club verdict applies to every player at the club. It is expressed in
+# the same points units as everything else so it trades honestly against
+# the projection rather than acting as a veto: an outright ban would drop
+# a genuinely elite player over a fixture run, and sometimes the elite
+# player is still right.
+CLUB_STANCE_BONUS = {
+    "avoid": -5.0,
+    "caution": -2.0,
+    "target": 1.5,
+}
+ALL_POSITIONS = ("GKP", "DEF", "MID", "FWD")
+
+# When analysts disagree about a player, the confident version of either
+# view is wrong. Damping the bonus is more honest than picking a side, and
+# the dissent is surfaced in the write-up so the disagreement is visible
+# rather than averaged away silently.
+DISSENT_DAMPING = 0.45
+
 
 def load_consensus(gameweek: int) -> dict | None:
     """Reads this gameweek's consensus file, if one has been researched."""
@@ -144,6 +170,91 @@ def match_score(player_row: pd.Series, entry: dict) -> int:
     return best
 
 
+def _stance_scope(stance: dict) -> tuple[str, ...]:
+    scope = stance.get("scope", "all")
+    if isinstance(scope, str):
+        return ALL_POSITIONS if scope == "all" else (scope.upper(),)
+    return tuple(str(p).upper() for p in scope) or ALL_POSITIONS
+
+
+def stance_coverage(stance: dict, from_event: int, horizon: int) -> float:
+    """What fraction of the projection window this verdict actually covers.
+
+    A club verdict is nearly always temporary -- "avoid them until the
+    fixtures turn around GW9" -- so it has to fade rather than switch off,
+    and it has to switch off eventually. Without this the file rots: a
+    fixture-run warning written in August silently keeps penalising the
+    club in December, long after the run it described has been played.
+
+    `until_gameweek` is exclusive, so a stance that runs until 9 applies
+    through GW8 and is gone by GW9.
+    """
+    until = stance.get("until_gameweek")
+    if until is None:
+        return 1.0
+    remaining = int(until) - int(from_event)
+    if remaining <= 0:
+        return 0.0
+    return min(remaining, max(horizon, 1)) / max(horizon, 1)
+
+
+def annotate_clubs(
+    players: pd.DataFrame,
+    team_context: dict[str, dict],
+    from_event: int,
+    horizon: int,
+) -> pd.DataFrame:
+    """Applies club-level expert verdicts to every player at that club.
+
+    This is the layer that was missing. Per-player consensus only covers
+    the handful of players analysts wrote about by name; a club verdict
+    covers the squad. When the advice is "avoid this club's assets", the
+    twentieth-choice £4.0m defender is precisely the player the optimiser
+    would otherwise reach for, because he looks cheap and the model can't
+    see why he's cheap.
+
+    Adds `club_stance`, `club_stance_bonus`, `club_stance_case` and
+    `club_stance_until`. Strongest-magnitude stance wins where a club has
+    several covering the same position.
+    """
+    df = players.copy()
+    df["club_stance"] = None
+    df["club_stance_bonus"] = 0.0
+    df["club_stance_case"] = None
+    df["club_stance_until"] = pd.NA
+
+    if not team_context or "team_short_name" not in df.columns:
+        return df
+
+    positions = df.get("position")
+    if positions is None:
+        return df
+
+    shorts = df["team_short_name"].astype("string").str.upper()
+
+    for short_name, entry in team_context.items():
+        for stance in entry.get("stances", []) or []:
+            label = stance.get("stance")
+            if label not in CLUB_STANCE_BONUS:
+                continue
+            coverage = stance_coverage(stance, from_event, horizon)
+            if coverage <= 0:
+                continue
+            bonus = CLUB_STANCE_BONUS[label] * coverage
+
+            target = (shorts == short_name) & positions.isin(_stance_scope(stance))
+            # Only overwrite where this stance is the more emphatic one, so
+            # a club carrying both an "avoid" for defenders and a milder
+            # "caution" for attackers doesn't have one clobber the other.
+            stronger = target & (df["club_stance_bonus"].abs() < abs(bonus))
+            df.loc[stronger, "club_stance"] = label
+            df.loc[stronger, "club_stance_bonus"] = bonus
+            df.loc[stronger, "club_stance_case"] = stance.get("case")
+            df.loc[stronger, "club_stance_until"] = stance.get("until_gameweek")
+
+    return df
+
+
 def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     """Adds `consensus_tier`, `consensus_bonus` and `consensus_reason`.
 
@@ -157,6 +268,8 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     df["consensus_reason"] = None
     df["consensus_verdict"] = None
     df["consensus_watch_out"] = None
+    df["consensus_dissent"] = None
+    df["consensus_sources"] = None
 
     data = load_consensus(gameweek)
     if not data:
@@ -187,8 +300,20 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
         chosen_id = candidates["id"].iloc[0]
 
         target = df["id"] == chosen_id
+        # Analysts do not always agree, and a file that records only the
+        # majority view presents a genuinely contested pick as a settled
+        # one. Where a dissent is recorded the bonus is damped towards
+        # neutral: the honest position on a disputed player is a weaker
+        # opinion, not a confident one in either direction.
+        dissent = entry.get("dissent")
+        bonus = TIER_BONUS[tier] * (DISSENT_DAMPING if dissent else 1.0)
+
         df.loc[target, "consensus_tier"] = tier
-        df.loc[target, "consensus_bonus"] = TIER_BONUS[tier]
+        df.loc[target, "consensus_bonus"] = bonus
+        df.loc[target, "consensus_dissent"] = (
+            dissent.get("case") if isinstance(dissent, dict) else dissent
+        )
+        df.loc[target, "consensus_sources"] = ", ".join(entry.get("sources", []) or []) or None
         # `case` is the written argument; `reason` is kept as a fallback so
         # older hand-written consensus files still render.
         df.loc[target, "consensus_reason"] = entry.get("case") or entry.get("reason")
@@ -207,6 +332,12 @@ def must_have_ids(scored: pd.DataFrame) -> list[int]:
     locked = scored[
         (scored["consensus_tier"] == MUST_HAVE_TIER) & (scored.get("status", "a") == "a")
     ]
+    # A must-have that analysts are actually arguing about is not a
+    # must-have. The lock exists for near-unanimity; applying it to a
+    # contested player would force in a pick the app itself is reporting
+    # doubt about, which is the opposite of what it is for.
+    if "consensus_dissent" in locked.columns:
+        locked = locked[locked["consensus_dissent"].isna()]
     return locked["id"].tolist()
 
 

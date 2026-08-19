@@ -53,6 +53,28 @@ DEFAULT_BUDGET = 100.0
 # most of the bench scores nothing for you.
 BENCH_WEIGHT = 0.12
 
+# Hard wall-clock cap on the solver.
+#
+# Branch-and-bound has no useful worst case: a pool with many players of
+# near-identical value is highly symmetric, and symmetric integer programs
+# can send CBC exploring an enormous number of equivalent optima. A real
+# FPL pool is not symmetric enough for that to bite, but "not usually" is
+# not a guarantee, and the failure mode is the worst one available -- the
+# deployed app hangs with a spinner rather than erroring. CBC returns the
+# best solution it has found when the limit hits, which for this problem
+# is essentially always the optimum long before the wall.
+SOLVER_TIME_LIMIT_SECONDS = 20
+
+
+def _solver():
+    # Imported here, not at module scope, to match the rest of this file:
+    # PuLP is an optional dependency and the app falls back to a heuristic
+    # build when it's unavailable, so importing it eagerly would turn a
+    # graceful degradation into an ImportError at startup.
+    import pulp
+
+    return pulp.PULP_CBC_CMD(msg=0, timeLimit=SOLVER_TIME_LIMIT_SECONDS)
+
 # --- Rank strategy ------------------------------------------------------
 # Maximising expected points and maximising *rank* are different problems,
 # and conflating them is the single most common way a technically correct
@@ -212,7 +234,7 @@ def optimise_squad(
         if locked in squad:
             problem += squad[locked] == 1
 
-    status = problem.solve(pulp.PULP_CBC_CMD(msg=0))
+    status = problem.solve(_solver())
     if pulp.LpStatus[status] != "Optimal":
         raise RuntimeError(f"Solver returned status {pulp.LpStatus[status]!r}.")
 
@@ -357,7 +379,7 @@ def optimise_transfers(
     for club_id in set(club.values()):
         problem += pulp.lpSum(squad[i] for i in ids if club[i] == club_id) <= max_per_club
 
-    status = problem.solve(pulp.PULP_CBC_CMD(msg=0))
+    status = problem.solve(_solver())
     if pulp.LpStatus[status] != "Optimal":
         raise RuntimeError(f"Solver returned status {pulp.LpStatus[status]!r}.")
 

@@ -134,3 +134,45 @@ def test_consensus_reasoning_is_carried_into_the_answer(pool_and_solution):
     answer = explain.explain_player(pool, solution, player_id)
     assert answer.consensus_case == "Analysts love him."
     assert answer.consensus_against == "But he is expensive."
+
+
+# --- club-level verdicts in a direct answer -----------------------------
+
+def _row_with(**extra):
+    import pandas as pd
+
+    base = {
+        "id": 1, "web_name": "Player", "team_short_name": "BOU", "position": "DEF",
+        "price": 5.0, "xp_next": 4.0, "xp_horizon": 20.0, "consensus_reason": None,
+        "consensus_watch_out": None, "consensus_dissent": None, "club_stance": None,
+        "club_stance_case": None, "club_stance_until": pd.NA,
+    }
+    base.update(extra)
+    return pd.Series(base)
+
+
+def test_a_club_verdict_is_phrased_as_being_about_the_club():
+    from fpl_assistant.analysis import explain
+
+    verdict = explain._club_verdict(
+        _row_with(club_stance="avoid", club_stance_until=9,
+                  club_stance_case="Worst opening run in the league.")
+    )
+    assert "BOU" in verdict
+    assert "GW9" in verdict
+    assert "Worst opening run" in verdict
+
+
+def test_a_player_with_no_club_verdict_gets_none():
+    from fpl_assistant.analysis import explain
+
+    assert explain._club_verdict(_row_with()) is None
+    assert explain._club_verdict(_row_with(club_stance="target")) is None
+
+
+def test_a_verdict_with_no_expiry_omits_the_gameweek():
+    from fpl_assistant.analysis import explain
+
+    verdict = explain._club_verdict(_row_with(club_stance="caution", club_stance_case="Risky."))
+    assert "GW" not in verdict
+    assert "wary" in verdict

@@ -184,6 +184,20 @@ def _column(players: pd.DataFrame, name: str, default: float = 0.0) -> pd.Series
     return pd.to_numeric(players[name], errors="coerce").fillna(default).astype(float)
 
 
+def _optional_column(players: pd.DataFrame, name: str) -> pd.Series:
+    """Like `_column`, but for columns where "absent" means "unknown"
+    rather than zero.
+
+    Set-piece and penalty orders are the case: an empty order means the
+    player isn't on that duty, and NaN carries that meaning through the
+    comparisons downstream, whereas a 0 default would read as "first
+    choice" and hand every player in the game penalty duty.
+    """
+    if name not in players.columns:
+        return pd.Series(pd.NA, index=players.index, dtype="Float64")
+    return pd.to_numeric(players[name], errors="coerce")
+
+
 def _safe_div(numerator, denominator, default=0.0):
     """Element-wise divide that yields `default` instead of inf/NaN."""
     result = np.divide(
@@ -405,7 +419,7 @@ def _penalty_uplift(players: pd.DataFrame, games: float, preseason: bool) -> pd.
     a taker who has just inherited the job -- it's the only thing carrying
     that information.
     """
-    order = pd.to_numeric(players.get("penalties_order", pd.NA), errors="coerce")
+    order = _optional_column(players, "penalties_order")
     uplift = order.map(PENALTY_XG_UPLIFT).fillna(0.0).astype(float)
     if preseason:
         return uplift
@@ -417,9 +431,9 @@ def _penalty_uplift(players: pd.DataFrame, games: float, preseason: bool) -> pd.
 def _set_piece_uplift(players: pd.DataFrame) -> pd.Series:
     """Extra expected assists per 90 for first-choice dead-ball delivery."""
     corners = pd.to_numeric(
-        players.get("corners_and_indirect_freekicks_order", pd.NA), errors="coerce"
+        _optional_column(players, "corners_and_indirect_freekicks_order"), errors="coerce"
     )
-    freekicks = pd.to_numeric(players.get("direct_freekicks_order", pd.NA), errors="coerce")
+    freekicks = _optional_column(players, "direct_freekicks_order")
     best = pd.concat([corners, freekicks], axis=1).min(axis=1)
     return best.map(SET_PIECE_XA_UPLIFT).fillna(0.0).astype(float)
 
@@ -662,7 +676,7 @@ def expected_points(
     # as a sanity anchor. Skipped preseason, where points-per-game is zero
     # for everyone and would just drag every projection toward nothing.
     if not preseason:
-        ppg = pd.to_numeric(df.get("points_per_game", 0), errors="coerce").fillna(0.0)
+        ppg = _column(df, "points_per_game")
         # Points-per-game is only meaningful for players who have actually
         # featured; for the rest it's zero for lack of chances, not lack of
         # ability, so lean fully on the component model there.
