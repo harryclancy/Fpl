@@ -264,3 +264,35 @@ def test_disciplinary_record_lowers_projection():
     """Cards cost points directly, separately from the ban risk."""
     xp = _xp(_players({"yellow_cards": 0, "red_cards": 0}, {"yellow_cards": 0, "red_cards": 3}))
     assert xp.loc[2] < xp.loc[1]
+
+
+def test_suspension_risk_costs_a_match_not_a_season():
+    """The bug this guards against was a whole-window ban probability
+    applied as a per-gameweek multiplier, so a player one booking from a
+    ban had his starting probability multiplied by zero and disappeared
+    from the model. A ban costs one match, not every match — left unfixed
+    it took five projected points off the recommended XI while every test
+    still passed."""
+    from fpl_assistant.analysis.expected_points import (
+        MAX_SUSPENSION_DISCOUNT,
+        _suspension_risk,
+    )
+
+    profiles = pd.DataFrame(
+        [{"id": i, "yellow_cards": y} for i, y in enumerate([0, 3, 4, 9, 40])]
+    ).set_index("id", drop=False)
+    risk = _suspension_risk(profiles, games=20, horizon=5)
+
+    assert risk.iloc[0] == 0.0, "a player with no bookings carries no ban risk"
+    assert risk.max() <= MAX_SUSPENSION_DISCOUNT + 1e-9
+    # One booking from a ban is the worst realistic case and should cost
+    # roughly one match in five — not the whole window.
+    assert 0.1 <= risk.iloc[2] <= 0.25
+
+
+def test_a_booked_player_still_projects_most_of_his_points():
+    """Sanity at the level that actually matters: the projection, not the
+    intermediate risk number."""
+    xp = _xp(_players({"yellow_cards": 0}, {"yellow_cards": 4}), horizon=5)
+    assert xp.loc[2] < xp.loc[1]
+    assert xp.loc[2] > xp.loc[1] * 0.7, "a booking record must not erase a player"

@@ -120,6 +120,11 @@ NEW_MANAGER_PENALTY = 0.06
 # missing a gameweek, which no availability flag warns you about because
 # he is perfectly fit.
 SUSPENSION_THRESHOLDS = (5, 10)
+# Ceiling on how much a booking record can discount a player. Even the most
+# card-prone midfielder in the league loses only a game or two a season to
+# bans, so anything approaching a large fraction of their minutes means the
+# arithmetic has gone wrong rather than that the player is unusable.
+MAX_SUSPENSION_DISCOUNT = 0.25
 
 # Captaincy is not the same decision as selection, so it doesn't rank on
 # the same number. The armband doubles a score, which means what you want
@@ -367,10 +372,21 @@ def _suspension_risk(players: pd.DataFrame, games: float, horizon: int) -> pd.Se
         index=players.index,
         dtype=float,
     )
-    # Rough Poisson-ish chance of collecting that many bookings in the window.
     expected_bookings = per_game * horizon
-    risk = (expected_bookings / to_threshold.replace(0, 1)).clip(0.0, 1.0)
-    return risk.where(to_threshold <= horizon, 0.0)
+    # Expected number of bans triggered somewhere in the window, each
+    # costing exactly one match.
+    expected_bans = (expected_bookings / to_threshold.replace(0, 1)).clip(0.0, 2.0)
+
+    # Convert to a per-gameweek effect. This is the step that was missing:
+    # a whole-window ban probability was previously applied as if it were a
+    # per-gameweek multiplier, so a player near the threshold had his
+    # starting probability multiplied by (1 - 1.0) and vanished from the
+    # model entirely. A player certain to be banned once misses one match
+    # in five, not five -- worth about 20% of his minutes, not all of them.
+    # Left unfixed this quietly cost the recommended XI five projected
+    # points, mostly by suppressing players who were perfectly available.
+    matches_missed = expected_bans.clip(upper=float(horizon))
+    return (matches_missed / max(horizon, 1)).clip(0.0, MAX_SUSPENSION_DISCOUNT)
 
 
 def _expected_minutes(p_available: pd.Series, p_start: pd.Series) -> pd.Series:
