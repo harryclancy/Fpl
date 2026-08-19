@@ -123,6 +123,48 @@ div[data-testid="stMetricValue"] {{
 }}
 div[data-testid="stMetricValue"] > div {{ overflow: visible; white-space: normal; }}
 
+/* On a phone Streamlit stacks columns full-width, so a four-metric row
+   becomes a four-screen scroll before you reach the actual squad. Two up
+   keeps the whole summary visible in one glance, which is the only reason
+   the row exists. */
+@media (max-width: 640px) {{
+    div[data-testid="stHorizontalBlock"] {{
+        flex-wrap: wrap;
+        gap: 8px;
+    }}
+    div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"] {{
+        flex: 1 1 calc(50% - 8px);
+        min-width: calc(50% - 8px);
+        width: auto;
+    }}
+    /* Long player names are the widest thing these cards ever hold, so
+       the mobile size is set by what fits a surname rather than by what
+       looks biggest. */
+    div[data-testid="stMetricValue"] {{ font-size: 22px !important; }}
+    div[data-testid="stMetricValue"] p {{ overflow-wrap: break-word; }}
+    .block-container {{ padding-top: 1.2rem; }}
+}}
+
+/* Streamlit truncates both the metric label and its value with an
+   ellipsis once the column is narrow — on a phone that produced
+   "Projected GW …" and "Haaland…", losing the only words that mattered.
+   The clipping lives on the inner <p>, not on the testid'd wrappers, so
+   overriding the wrappers alone (the obvious fix) changes nothing
+   visible: the DOM text reads in full while the screen still shows an
+   ellipsis. Every level has to be unset. */
+div[data-testid="stMetricValue"],
+div[data-testid="stMetricValue"] div,
+div[data-testid="stMetricValue"] p,
+div[data-testid="stMetricLabel"],
+div[data-testid="stMetricLabel"] div,
+div[data-testid="stMetricLabel"] p {{
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+}}
+div[data-testid="stMetricLabel"] p {{ line-height: 1.35; }}
+div[data-testid="stMetric"] {{ overflow: visible; }}
+
 /* --- Tabs ----------------------------------------------------------- */
 .stTabs {{ position: relative; }}
 .stTabs [data-baseweb="tab-list"] {{

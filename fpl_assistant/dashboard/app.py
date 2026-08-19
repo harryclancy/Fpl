@@ -202,6 +202,11 @@ FACTOR_GROUPS = {
         "Ownership and rank risk, tunable in the sidebar",
         "Expert consensus, weighted directly into the objective",
         "Transfer hits priced in — a move only appears if it beats its own 4-point cost",
+        "Roll vs use — this week's best move weighed against two moves next week",
+        "Chip timing — doubles for Triple Captain and Bench Boost, blanks for Free Hit, and the "
+        "Wildcard judged by re-solving and measuring the gap",
+        "Price pressure — net transfers relative to ownership, so team value compounds into "
+        "budget for better players later",
     ],
 }
 
@@ -220,9 +225,9 @@ def render_factor_panel() -> None:
             for factor in factors:
                 st.markdown(f"- {factor}")
         st.caption(
-            "Known gaps, stated plainly: chip strategy (Wildcard, Bench Boost, Triple Captain, "
-            "Free Hit) isn't modelled yet, price changes aren't tracked, and transfers are planned "
-            "one gameweek at a time rather than several ahead."
+            "Known gaps, stated plainly: transfers are planned one or two gameweeks ahead rather "
+            "than across a whole season, and the expert consensus is hand-researched each week — "
+            "the maths is tested, the football facts behind it aren't."
         )
 
 
@@ -510,9 +515,9 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
     cost = squad15["price"].sum()
 
     metrics = st.columns(4)
-    metrics[0].metric("Projected GW points", f"{xi_xp + captain_bonus:.0f}", help="Starting XI plus the captain's doubled score.")
+    metrics[0].metric("Projected pts", f"{xi_xp + captain_bonus:.0f}", help="Starting XI plus the captain's doubled score, for this gameweek.")
     metrics[1].metric("Formation", formation)
-    metrics[2].metric("Squad cost", f"£{cost:.1f}m", delta=f"£{100.0 - cost:.1f}m spare", delta_color="off")
+    metrics[2].metric("Cost", f"£{cost:.1f}m", delta=f"£{100.0 - cost:.1f}m spare", delta_color="off")
     metrics[3].metric("Captain", squad15.loc[captain_id, "web_name"])
 
     if solution.optimal:
