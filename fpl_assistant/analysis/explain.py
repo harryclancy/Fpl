@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 
 import pandas as pd
 
-from fpl_assistant.analysis import optimiser
+from fpl_assistant.analysis import consensus, optimiser
 
 
 @dataclass
@@ -40,6 +40,8 @@ class Answer:
     consensus_against: str | None = None
     club_verdict: str | None = None
     dissent: str | None = None
+    stats: list[str] = field(default_factory=list)
+    voices: list[tuple[str, str]] = field(default_factory=list)
 
 
 def _row(scored: pd.DataFrame, player_id: int) -> pd.Series:
@@ -105,6 +107,8 @@ def explain_player(
     case, against = _consensus_bits(row)
     club_verdict = _club_verdict(row)
     dissent = _text(row, "consensus_dissent")
+    stats = consensus.key_stats(row)
+    voices = consensus.voices(row)
     in_squad = player_id in set(solution.squad_ids)
 
     if in_squad:
@@ -133,6 +137,8 @@ def explain_player(
             consensus_against=against,
             club_verdict=club_verdict,
             dissent=dissent,
+            stats=stats,
+            voices=voices,
         )
 
     # Not picked. Work out what including him would actually cost.
@@ -157,6 +163,8 @@ def explain_player(
             consensus_against=against,
             club_verdict=club_verdict,
             dissent=dissent,
+            stats=stats,
+            voices=voices,
         )
 
     delta = forced.expected_points - solution.expected_points
@@ -232,6 +240,8 @@ def explain_player(
         consensus_against=against,
         club_verdict=club_verdict,
         dissent=dissent,
+        stats=stats,
+        voices=voices,
     )
 
 
@@ -275,6 +285,11 @@ def compare_players(scored: pd.DataFrame, left_id: int, right_id: int) -> Answer
             f"somewhere else in the squad — which is the real question, not which of them is better."
         )
 
+    for who, side in ((left_name, left), (right_name, right)):
+        facts = consensus.key_stats(side)
+        if facts:
+            detail.append(f"**{who} by the numbers:** " + " · ".join(facts[:5]))
+
     left_case, left_against = _consensus_bits(left)
     right_case, right_against = _consensus_bits(right)
     if left_case:
@@ -285,6 +300,10 @@ def compare_players(scored: pd.DataFrame, left_id: int, right_id: int) -> Answer
         detail.append(f"**On {right_name}:** {right_case}")
     if right_against:
         detail.append(f"**Against {right_name}:** {right_against}")
+
+    for who, side in ((left_name, left), (right_name, right)):
+        for source, take in consensus.voices(side)[:2]:
+            detail.append(f"**{source} on {who}:** {take}")
 
     return Answer(
         player_name=f"{left_name} vs {right_name}",

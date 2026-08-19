@@ -2,18 +2,47 @@
   "gameweek": 1,
   "season": "2026/27",
   "researched": "2026-08-19",
-  "note": "Expert and community consensus, synthesised from FPL analysis sites and the official Scout. Prices/ownership are as reported at research time and are context only -- the app matches players by name and uses live figures from the API.\n\n`case` is the argument for picking them; `watch_out` is the honest counter-argument, because a recommendation you can't argue against isn't advice.\n\n`dissent` records a genuine split in expert opinion, where reputable analysts are arguing the opposite of the headline tier. It is not the same as `watch_out`: a watch-out is a caveat the people recommending the player accept, a dissent is other people saying don't pick him at all. Where a dissent exists the player's bonus is damped towards neutral and the must-have lock is released, because presenting a contested pick with the same confidence as a unanimous one is how the app ends up sounding surer than the evidence.\n\nClub-wide verdicts do NOT belong here -- they live in teams.json as machine-readable stances. Advice like 'avoid this club's assets' written into one player's prose reaches one player and leaves the optimiser free to pick the club's other twenty.",
+  "note": "Expert and community consensus, synthesised from FPL analysis sites and the official Scout.\n\nFields, and why each exists separately:\n\n`case` -- the written argument for picking them.\n`watch_out` -- the honest counter-argument, because a recommendation you can't argue against isn't advice.\n`key_stats` -- the hard numbers, stored as discrete facts rather than buried in prose so they can be shown next to any decision the app makes about the player.\n`voices` -- what named outlets are actually SAYING, attributed. A synthesised paragraph loses who thinks what, and 'analysts say' is not a source. Where two outlets disagree you can see it.\n`dissent` -- a genuine split, where reputable analysts argue the opposite of the headline tier. Not the same as a watch_out: a watch-out is a caveat the people recommending the player accept, a dissent is other people saying don't pick him at all. Damps the weighting and releases the must-have lock.\n\nPrices and ownership are as reported at research time and are context only -- the app matches by name and uses live API figures. Club-wide verdicts do NOT belong here; they live in teams.json as machine-readable stances, because advice about a club written into one player's prose reaches one player.",
   "players": [
     {
       "name": "Haaland",
       "full_name": "Erling Haaland",
       "tier": "must_have",
-      "expert_ownership": 74,
-      "verdict": "The one genuinely non-negotiable pick, and the consensus captain.",
-      "case": "The single strongest pattern in FPL: Haaland has finished as the top-scoring player after the first six gameweeks in all four of his Manchester City seasons, averaging nine goals and 61.3 points across that opening stretch. That isn't a hot streak anyone is extrapolating, it's four out of four. He opens at home to Bournemouth, and City then face promoted Coventry and Ipswich at home inside the first seven gameweeks, which is why he's also the favourite to attract early Triple Captain chips. The underlying case is just as blunt: 0.86 expected goal involvements per 90 off a 25.5 xG platform, a level no other forward in the game approaches.",
-      "watch_out": "At around 72% ownership he is not a way to gain rank — he is the baseline everyone else is measured against. The genuine risk is that he costs £15.5m, roughly a sixth of your entire budget, so the rest of the squad has to be built efficiently around him.",
+      "expert_ownership": 71,
+      "price_at_research": 15.5,
+      "verdict": "The one genuinely non-negotiable pick, and the consensus captain for GW1.",
+      "case": "The strongest repeating pattern in the game. Haaland has finished as the top-scoring player after the first six gameweeks in all four of his Manchester City seasons, averaging nine goals and 61.3 points across that opening stretch — four from four, not a streak someone is extrapolating from one year. The underlying numbers say the same thing without needing the history: he led the entire league last season in shots per game, big chances per game and xG per game simultaneously, which is not a profile anyone else in the division has. Then the fixture: he opens at home to Bournemouth, a side he has scored against four times in their last four meetings, and City follow with Palace away, promoted Coventry at home, United away and Sunderland at home.",
+      "watch_out": "At 71% ownership he is not a route to rank — he is the baseline everyone else is measured against, and captaining him is the field's default rather than an edge. The real cost is structural: £15.5m is roughly a sixth of the budget, and pairing him with Bruno and Gabriel commits £35.5m to three players, up £6.5m on what the same trio cost a year ago. Everything else has to be built efficiently around that.",
+      "key_stats": [
+        "3.84 shots per game — highest in the Premier League",
+        "1.55 big chances per game — highest in the Premier League",
+        "0.78 xG per game — highest in the Premier League",
+        "Top-scoring FPL player after GW6 in all four of his Man City seasons",
+        "Averages 9 goals and 61.3 FPL points across those opening six-gameweek stretches",
+        "4 goals in his last 4 meetings with Bournemouth in all competitions",
+        "Opening run: BOU (H), CRY (A), COV (H), MUN (A), SUN (H)",
+        "£15.5m — 15.5% of the total budget"
+      ],
+      "voices": [
+        {
+          "source": "The Scout (Premier League)",
+          "take": "Names him on the official must-have list for the start of the campaign, noting 71% of managers had already selected him before the deadline."
+        },
+        {
+          "source": "RotoWire",
+          "take": "Has him as the highest-projected player on the board for GW1 and calls the armband 'just the correct pick to open the campaign'."
+        },
+        {
+          "source": "SI",
+          "take": "Calls him the obvious captain choice for the opening weekend."
+        },
+        {
+          "source": "AllAboutFPL",
+          "take": "Lists him among the five must-own players, on the strength of the six-gameweek pattern rather than any single projection."
+        }
+      ],
       "sources": [
-        "Premier League Scout",
+        "The Scout (Premier League)",
         "RotoWire",
         "SI",
         "AllAboutFPL"
@@ -24,13 +53,43 @@
       "full_name": "Bruno Fernandes",
       "tier": "strong",
       "expert_ownership": 48,
-      "verdict": "The safest premium midfielder, and your captaincy insurance.",
-      "case": "Analysts keep returning to the same three words: penalties, set pieces, volume. He takes both dead-ball duties and is a nailed-on starter who plays essentially every minute, which is what turns good underlying numbers into reliable returns rather than streaky ones — he doesn't have blank weeks caused by being rested. He's also the most-cited alternative armband when Haaland draws an awkward fixture, which makes him worth more than his raw projection suggests.",
-      "watch_out": "At £12.0m he's the second big commitment after Haaland, and pairing them leaves very little room elsewhere. Several published drafts deliberately go without him for exactly that reason.",
+      "price_at_research": 12.0,
+      "verdict": "The safest premium midfielder, on the best two-gameweek opening in the league.",
+      "case": "The argument is volume from several directions at once. He scored 9 and set up 24 last season — a record FPL assist haul — takes penalties, corners and direct free-kicks, and plays essentially every minute, which is what converts good underlying numbers into weekly returns rather than streaky ones. He crossed the 12-point defensive-contribution threshold in five matches last season too, so even a quiet attacking week has a floor under it. On top of that Manchester United have the best schedule of any side across the opening two gameweeks — Hull away then Ipswich at home, back-to-back against promoted sides — and only one fixture rated above 3 across their opening eight.",
+      "watch_out": "He missed another penalty in pre-season, and Fantasy Football Scout have been flagging the run of misses as a live question over whether he keeps the duty — that matters more than usual for a player whose case leans on dead balls. Separately, £12.0m is the second big commitment after Haaland, and several published drafts deliberately go without him for exactly that reason.",
+      "key_stats": [
+        "9 goals and 24 assists last season — a record FPL assist total",
+        "Hit the 12-point defensive-contribution threshold in 5 matches last season",
+        "On penalties, corners and direct free-kicks",
+        "Man Utd have the best opening two gameweeks in the league: Hull (A), Ipswich (H)",
+        "Only one opponent rated above 3 on the ticker across Man Utd's opening eight",
+        "Opening run: HUL (A), IPS (H), EVE (A)",
+        "£12.0m — the most expensive midfielder in the game"
+      ],
+      "voices": [
+        {
+          "source": "The Scout (Premier League)",
+          "take": "On the official must-have list, specifically because Man Utd have the best schedule of any side over the opening two gameweeks."
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Flagged 'another Bruno pen miss' in pre-season, raising the question of whether he retains penalty duty — the one real crack in the case."
+        },
+        {
+          "source": "Fantasy Football Fix",
+          "take": "Rates him the safest premium midfielder on the board and the most-cited alternative captain when Haaland draws an awkward fixture."
+        },
+        {
+          "source": "AllAboutFPL",
+          "take": "Among their five must-own players, citing penalties, set pieces and DefCon as three separate routes to points."
+        }
+      ],
       "sources": [
+        "The Scout (Premier League)",
+        "Fantasy Football Scout",
         "Fantasy Football Fix",
         "RotoWire",
-        "Fantasy Football Scout"
+        "AllAboutFPL"
       ]
     },
     {
@@ -38,13 +97,45 @@
       "full_name": "Gabriel Magalhaes",
       "tier": "strong",
       "expert_ownership": 25,
-      "verdict": "The best defender in the game, and the reason is volume across every category.",
-      "case": "Last season he posted 18 clean sheets — three more than any other defender — along with 30 bonus points, eleven clear of the next defender, plus three goals, five assists and 22 defensive-contribution points, for over 200 total. That's the rare defender who scores in every way the game rewards at once, which is why he's now the third-most-expensive defender in FPL history. With Saliba out for an extended spell, he's also the primary route into an Arsenal defence opening softly.",
-      "watch_out": "Those same injuries cut both ways. Saliba is out with a back problem and Timber is weeks away with a groin issue, so the defence in front of Raya is weakened exactly when the fixtures look easiest — the clean sheets may not come as freely as the price assumes.",
+      "price_at_research": 8.0,
+      "verdict": "An official Scout must-have, and the most efficient premium in the game per pound.",
+      "case": "He finished last season on 209 points — the third-highest total any defender has posted in FPL history — and the returns came from every category the game rewards at once. His 18 clean sheets were three more than any other defender. His 30 bonus points were eleven more than any other defender. He added three goals, five assists and 22 defensive-contribution points, and that DefCon figure is the revealing one: it is only eight short of what every other Arsenal defender managed combined. His 6.5 points per game led all defenders. The efficiency argument is the one that actually settles it, though: at £8.0m he returns 0.81 points per game per million, against 0.56 for Bruno Fernandes and 0.44 for Haaland. He is the most expensive defender in the game and still the best value premium in it. With Saliba out, he is also the primary route into an Arsenal defence facing just one top-six side in eight gameweeks.",
+      "watch_out": "The injuries cut both ways. Saliba is out with a back problem and Timber is weeks away with a groin issue, so the back line in front of Raya is weakened exactly when the fixtures look easiest, and the clean sheets may not come as freely as an £8.0m price assumes. There is also a cheaper way to buy the same fixture run: White and Mosquera together cost £11.0m, only £3.0m more than Gabriel alone.",
+      "key_stats": [
+        "209 points last season — top defender, 3rd-highest defender total in FPL history",
+        "18 clean sheets — 3 more than any other defender",
+        "30 bonus points — 11 more than any other defender",
+        "22 DefCon points — only 8 fewer than every other Arsenal defender combined",
+        "3 goals and 5 assists",
+        "6.5 points per game — best of any defender",
+        "0.81 points per game per £m, vs 0.56 for Bruno and 0.44 for Haaland",
+        "Arsenal face one top-six side in their opening eight (Villa away, GW2)",
+        "£8.0m — the most expensive defender in the game"
+      ],
+      "voices": [
+        {
+          "source": "The Scout (Premier League)",
+          "take": "One of four names on the official must-have list — Haaland, Fernandes, Gabriel and Joao Pedro — and the only defender on it."
+        },
+        {
+          "source": "DraftKings Network",
+          "take": "'He may be the priciest defenseman in the game, but make no mistake, Gabriel is worth the bankroll' — and points to the per-million efficiency beating both premium attackers."
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Heads their £5.5m+ defender rankings; highlights that his DefCon return nearly matched the rest of the Arsenal defence put together."
+        },
+        {
+          "source": "AllAboutFPL",
+          "take": "Rate him the top premium defender, but note White and Mosquera as the budget route into the same fixtures."
+        }
+      ],
       "sources": [
+        "The Scout (Premier League)",
         "Fantasy Football Scout",
-        "RotoWire",
-        "Premier League Scout"
+        "DraftKings Network",
+        "AllAboutFPL",
+        "RotoWire"
       ]
     },
     {
@@ -52,11 +143,34 @@
       "full_name": "David Raya",
       "tier": "strong",
       "expert_ownership": 30,
-      "verdict": "The consensus goalkeeper, and the only defensive asset the template has really settled on.",
-      "case": "Another Golden Glove last season and a £6.0m starting price, riding the same soft Arsenal opening that pushes their defenders up every ranking. He is the only defensive player in the game above 30% ownership, which tells you the market has made up its mind here even while the rest of the defensive picture stays unsettled.",
-      "watch_out": "Goalkeeper is the cheapest position to get wrong, and £6.0m is a real premium for one. If Arsenal's injuries bite, you're paying up for clean sheets that don't arrive.",
+      "price_at_research": 6.0,
+      "verdict": "Three straight Golden Gloves, and the only defensive asset the template has settled on.",
+      "case": "He has won the Golden Glove in three consecutive seasons, which is about as close to a settled question as goalkeeper gets, and he is behind the defence with the softest opening run in the league. He is also the only defensive player in the game above 30% ownership — the market has made its mind up here while the rest of the defensive picture is still unsettled. Draft analysts make the sharper version of the point: he is the only goalkeeper with a large enough edge over the position to justify paying up at all.",
+      "watch_out": "£6.0m makes him the most expensive goalkeeper in the game, and goalkeeper is the cheapest position to get wrong — the gap between a £6.0m keeper and a £4.5m one is usually a point a week. If Arsenal's defensive injuries bite, you are paying a premium for clean sheets that don't arrive.",
+      "key_stats": [
+        "Golden Glove winner in three consecutive seasons",
+        "£6.0m — the most expensive goalkeeper in the game",
+        "The only defensive player in FPL above 30% ownership",
+        "Behind the Arsenal defence, which faces one top-six side in eight gameweeks"
+      ],
+      "voices": [
+        {
+          "source": "Draft Fantasy",
+          "take": "'The best goalkeeper to draft for 2026/27 — the only goalkeeper with a large enough advantage over the rest of the position to justify an aggressive pick.'"
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "The consensus premium keeper, riding the same soft Arsenal opening that lifts their defenders up every ranking."
+        },
+        {
+          "source": "ChaseYourSport",
+          "take": "Rate him the safest premium goalkeeper available, with a fourth straight Golden Glove live if Arsenal hold their defensive level."
+        }
+      ],
       "sources": [
         "Fantasy Football Scout",
+        "Draft Fantasy",
+        "ChaseYourSport",
         "RotoWire"
       ]
     },
@@ -65,48 +179,164 @@
       "full_name": "Marc Guehi",
       "tier": "strong",
       "expert_ownership": 25,
-      "verdict": "The standout value defender — and the case is attacking output, not just clean sheets.",
-      "case": "The only defender other than Gabriel to finish in the game's overall top 10, on 179 points. What makes him unusual at this price is that the returns come from everywhere: six attacking returns in 20 matches in the first half of last season, alongside seven clean sheets, 16 defensive-contribution points and eight bonus, averaging 5.3 points a game — then more of the same after the winter. A defender who contributes at both ends is what makes the £6.0m bracket work.",
-      "watch_out": "Defensive-contribution points reward a style of play, and a move to a more dominant side can quietly reduce the defending he actually has to do. See the dissent below — this is the most argued-over pick in the current template.",
-      "sources": [
-        "Fantasy Football Scout",
-        "RotoWire",
-        "AllAboutFPL"
+      "price_at_research": 6.0,
+      "verdict": "The standout mid-price defender on paper — and the most argued-over pick in the template.",
+      "case": "He was the only defender other than Gabriel to finish in the game's overall top ten last season, on 179 points, and the returns came from both ends of the pitch. In the first half of the season at Crystal Palace he produced six attacking returns — two goals, four assists — in 20 matches alongside seven clean sheets, averaging 5.3 points a game. After his move to Manchester City he added another goal, another assist and seven more clean sheets. A defender contributing at both ends is the whole reason the £6.0m bracket works, and he now does it behind one of the best defences in the league.",
+      "watch_out": "Defensive-contribution points reward a style of play, not a player, and moving to a side that dominates possession quietly reduces the amount of defending he actually has to do — the exact mechanism that would undercut his DefCon returns at City. See the dissent below: this is the most contested pick in the current template.",
+      "key_stats": [
+        "179 points last season — the only defender besides Gabriel in the game's overall top 10",
+        "First half at Crystal Palace: 2 goals, 4 assists in 20 matches, 7 clean sheets, 5.3 points per game",
+        "After the move to Man City: 1 goal, 1 assist, 7 further clean sheets",
+        "16 DefCon points and 8 bonus across the season",
+        "~25% owned going into GW1",
+        "£6.0m"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Rank him the standout mid-price defender, on the strength of returns at both ends rather than clean sheets alone."
+        },
+        {
+          "source": "RotoWire",
+          "take": "Names him among the six highly-owned players to AVOID: 'no strong history of defensive contributions, has not had a full pre-season, and is far from a certainty to start'."
+        },
+        {
+          "source": "Fantasy Football Hub",
+          "take": "Also lists him as a player to avoid, arguing a quarter of the game owns him on reputation rather than current evidence."
+        }
       ],
       "dissent": {
-        "case": "This is a contested pick, not a settled one. RotoWire and Fantasy Football Hub both name him among the highly-owned players to avoid in GW1, and the objection is specific: he has no strong history of defensive contributions, so the DefCon points that make a £6.0m defender work are assumed rather than evidenced; he has not had a full pre-season; and he is 'far from a certainty to start'. Their reading is that close to a quarter of the game owns him on reputation rather than on current evidence, which is exactly the kind of ownership that unwinds in the first fortnight.",
+        "case": "This is a contested pick, not a settled one. RotoWire and Fantasy Football Hub both name him among the highly-owned players to avoid for GW1, and the objection is specific rather than vibes: he has no strong history of defensive contributions, so the DefCon points that make a £6.0m defender work are assumed rather than evidenced; he has not had a full pre-season; and he is 'far from a certainty to start' in a Manchester City side with real depth at centre-back. Their reading is that close to a quarter of the game owns him on reputation rather than on current evidence — the kind of ownership that unwinds inside a fortnight.",
         "sources": [
           "RotoWire",
           "Fantasy Football Hub"
         ]
-      }
+      },
+      "sources": [
+        "Fantasy Football Scout",
+        "RotoWire",
+        "Fantasy Football Hub",
+        "AllAboutFPL"
+      ]
+    },
+    {
+      "name": "Joao Pedro",
+      "full_name": "Joao Pedro",
+      "tier": "strong",
+      "expert_ownership": 48,
+      "price_at_research": 7.5,
+      "verdict": "An official Scout must-have, and the form player of pre-season by a distance.",
+      "case": "He is the leading goalscorer of any Premier League player across pre-season with seven goals in six appearances — a nine-minute hat-trick in a 6-4 win over Western Sydney Wanderers, a brace against AC Milan and two more against Real Sociedad. He also arrives fresher than almost anyone in the game, having been left out of the Brazil squad and therefore missing the World Cup entirely, which in an August where England, France, Argentina and Spain players were not back in training until around the 10th-12th is a genuine and short-lived edge. The Scout has him on the official must-have list at £7.5m, and he is expected to lead the Chelsea line.",
+      "watch_out": "Pre-season goals are the softest evidence in football. Analysts have been explicit about the split in his own record: the hat-trick came in nine minutes against Western Sydney Wanderers, a gulf in quality that proves very little, while the brace against AC Milan came against a side actually holding a defensive shape under pressure. Weight the second one and discount the first.",
+      "key_stats": [
+        "7 goals in 6 pre-season appearances — most of any Premier League player",
+        "Hat-trick in 9 minutes vs Western Sydney Wanderers (6-4)",
+        "Brace vs AC Milan; two more vs Real Sociedad",
+        "Missed the World Cup entirely — left out of the Brazil squad",
+        "World Cup participants from England, France, Argentina and Spain were not back in training until ~10-12 August",
+        "£7.5m"
+      ],
+      "voices": [
+        {
+          "source": "The Scout (Premier League)",
+          "take": "One of four names on the official must-have list, at £7.5m."
+        },
+        {
+          "source": "Sporting Tribune",
+          "take": "Lead him as the best pre-season performer in the league — seven goals in six, ahead of every other Premier League player."
+        },
+        {
+          "source": "Fantasy Football Fix",
+          "take": "Point to the missed World Cup as a real August edge while rivals are still catching up on fitness."
+        },
+        {
+          "source": "The Football Matrix",
+          "take": "Caution on the sample: 'a nine-minute hat-trick against Western Sydney Wanderers raises eyebrows — and rightly so' — but rate the AC Milan brace as meaningful evidence."
+        }
+      ],
+      "sources": [
+        "The Scout (Premier League)",
+        "Sporting Tribune",
+        "Fantasy Football Fix",
+        "The Football Matrix",
+        "AllAboutFPL"
+      ]
+    },
+    {
+      "name": "Szoboszlai",
+      "full_name": "Dominik Szoboszlai",
+      "tier": "strong",
+      "expert_ownership": 43,
+      "price_at_research": 7.0,
+      "verdict": "The fourth most-owned player in the game, and the cheapest route into the Liverpool attack.",
+      "case": "He posted 6 goals and 7 assists last season alongside 20 DefCon points and 78 chances created — a chance-creation figure behind only Bruno Fernandes in the entire league. That combination is what makes £7.0m work: an attacking return floor, a defensive-points floor, and set-piece involvement on top. He is nailed for minutes, and with Salah gone there is a live case that penalties come his way too. Ownership has climbed to around 43%, making him the fourth most-owned player in the game.",
+      "watch_out": "He played a deeper midfield role alongside Gravenberch through pre-season, and if that is his job in GW1 the attacking upside people are paying for is not there. Pre-season output was modest at one goal and two assists, which does nothing to settle the question either way. This is a pick whose case rests entirely on a role that has not yet been confirmed.",
+      "key_stats": [
+        "6 goals and 7 assists last season",
+        "78 chances created — second only to Bruno Fernandes across the league",
+        "20 DefCon points",
+        "~43% owned — the fourth most-owned player in the game",
+        "Pre-season: 1 goal, 2 assists",
+        "Played deeper alongside Gravenberch through pre-season",
+        "£7.0m"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Ran a dedicated 'Is Szoboszlai a must-have?' piece; the case is minutes security, set pieces and the opening schedule."
+        },
+        {
+          "source": "RotoWire",
+          "take": "Include him in the recommended GW1 starting XI as a value pick."
+        },
+        {
+          "source": "Fantasy Football Fix",
+          "take": "Note the deeper pre-season role next to Gravenberch as the material risk to the attacking case."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "RotoWire",
+        "Fantasy Football Fix",
+        "AllAboutFPL"
+      ]
     },
     {
       "name": "Semenyo",
       "full_name": "Antoine Semenyo",
       "tier": "strong",
       "expert_ownership": 30,
-      "verdict": "Last season's second-best midfielder, now at City and priced below the premiums.",
-      "case": "He finished second among all midfielders on 202 points, and does it at £8.5m rather than premium money. Since his £64m move from Bournemouth he is the way to take a share of Manchester City's goals without spending a second premium fee on top of Haaland — the same attack, a much cheaper entry point.",
-      "watch_out": "Two caveats, both openly flagged. He ended last season cold, scoring twice in his final nine league games, and minutes are not guaranteed given the depth of the City squad and rotation for Europe. This is the pick in this group most likely to need reviewing after a few weeks.",
+      "price_at_research": 8.5,
+      "verdict": "Last season's second-best midfielder, at City, priced below the premiums.",
+      "case": "He finished second among all midfielders on 202 points, and does it at £8.5m rather than premium money. Since his £64m move from Bournemouth he is the way to take a share of Manchester City's goals without paying a second premium fee on top of Haaland — the same attack, a much cheaper entry point. The 202-point season is 67 clear of teammate Cherki's 135, which is the cleanest available answer to 'which City midfielder?'. Pre-season has backed it up: five assists in three matches.",
+      "watch_out": "Two caveats, both openly flagged. He ended last season cold, scoring twice in his final nine league games, and minutes are never guaranteed in a City squad with this depth and midweek European football to rotate for. This is the pick in this group most likely to need reviewing after a few weeks.",
+      "key_stats": [
+        "202 points last season — 2nd among all midfielders",
+        "67 points clear of City teammate Cherki (135)",
+        "5 assists in 3 pre-season matches",
+        "Joined City from Bournemouth for £64m",
+        "2 goals in his final 9 league games last season",
+        "£8.5m"
+      ],
+      "voices": [
+        {
+          "source": "ChaseYourSport",
+          "take": "Head-to-head him against Cherki and call him 'the much safer pick' on the 67-point gap in last season's returns."
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Tracked his role change through pre-season and the assist run — five in three — as evidence the minutes are there."
+        },
+        {
+          "source": "AllAboutFPL",
+          "take": "Rate him the best value in the £8.0-12.0m midfield bracket."
+        }
+      ],
       "sources": [
-        "FPL Pulse",
+        "ChaseYourSport",
+        "Fantasy Football Scout",
         "AllAboutFPL",
-        "Fantasy Football Scout"
-      ]
-    },
-    {
-      "name": "Joao Pedro",
-      "full_name": "Joao Pedro",
-      "tier": "value",
-      "expert_ownership": 48,
-      "verdict": "In form right now, and fresher than almost anyone.",
-      "case": "He is the leading goalscorer of any Premier League player across this pre-season with seven goals, and he arrives without the World Cup in his legs after being left out of the Brazil squad — a genuine edge in August when other forwards are still catching up on fitness. He was heavily owned from the start of last season too, so this is a player the community already trusts to start fast.",
-      "watch_out": "Pre-season goals are the softest evidence in football, scored against mixed opposition in matches nobody is trying to win.",
-      "sources": [
-        "Fantasy Football Fix",
-        "AllAboutFPL",
-        "Premier League Scout"
+        "FPL Pulse"
       ]
     },
     {
@@ -114,27 +344,35 @@
       "full_name": "Dominic Calvert-Lewin",
       "tier": "value",
       "expert_ownership": 18,
+      "price_at_research": 6.0,
       "verdict": "The budget striker that makes a Haaland-led attack affordable.",
-      "case": "At £6.0m he is the enabler that lets the expensive picks coexist. He is completely nailed, expected to take penalties, and produced 16 attacking returns last season — serious volume for a cheap forward. He's added three pre-season goals and two assists against Augsburg, and analysts think he benefits specifically from James Trafford's long-ball distribution behind him, which suits how he plays.",
-      "watch_out": "Stated plainly by the people recommending him: he has a history of troll seasons, and experienced managers own him knowing it could go that way again. He is a means to an end, not a set-and-forget.",
+      "case": "At £6.0m he is the enabler that lets the expensive picks coexist. He is nailed, expected to take penalties, and produced 16 attacking returns last season — serious volume for a cheap forward. Pre-season has gone well at three goals and two assists, and analysts point to a specific tactical fit: James Trafford's long distribution behind him suits how he plays. AllAboutFPL project him to score the most points of any £6.0m forward across the opening six gameweeks.",
+      "watch_out": "Stated plainly by the people recommending him: he has a history of troll seasons, and experienced managers own him knowing it could go that way again. He is a means to an end — the money he frees up elsewhere — not a set-and-forget.",
+      "key_stats": [
+        "16 attacking returns last season",
+        "Pre-season: 3 goals, 2 assists",
+        "Expected to take penalties",
+        "Projected top scorer among £6.0m forwards over GW1-6",
+        "£6.0m"
+      ],
+      "voices": [
+        {
+          "source": "AllAboutFPL",
+          "take": "Their £6m forward comparison has him projected to score the most points in the opening six gameweeks, with set-piece threat the differentiator."
+        },
+        {
+          "source": "FPL Pulse",
+          "take": "Frame him as the enabler that makes a Haaland-and-Bruno structure affordable at all."
+        },
+        {
+          "source": "The Scout (Premier League)",
+          "take": "Flag the fit with Trafford's long-ball distribution as a specific reason the move suits him."
+        }
+      ],
       "sources": [
         "AllAboutFPL",
         "FPL Pulse",
-        "Premier League Scout"
-      ]
-    },
-    {
-      "name": "Szoboszlai",
-      "full_name": "Dominik Szoboszlai",
-      "tier": "value",
-      "expert_ownership": 43,
-      "verdict": "In almost every published draft — but with a caveat worth reading.",
-      "case": "A well-priced route into the Liverpool attack at £7.0m with genuine attacking upside and set-piece involvement, which is why he appears in nearly every preseason draft going. At this price he does the same budget-freeing job as Calvert-Lewin, one line further up the pitch.",
-      "watch_out": "He played a deeper midfield role alongside Gravenberch through pre-season, which dents the attacking case considerably. If that's his role in GW1, the upside people are paying for isn't there.",
-      "sources": [
-        "Fantasy Football Fix",
-        "Fantasy Football Scout",
-        "AllAboutFPL"
+        "The Scout (Premier League)"
       ]
     },
     {
@@ -142,12 +380,33 @@
       "full_name": "Ben White",
       "tier": "value",
       "expert_ownership": 15,
+      "price_at_research": 5.5,
       "verdict": "The cheap way into Arsenal's defence while the first choices are injured.",
-      "case": "With Saliba and Timber both out, White is set to start at £5.5m. The published maths is neat: White and Mosquera together cost £11.0m, only £3.0m more than Gabriel on his own, so you can take two starting Arsenal defenders on that soft opening run for close to the price of one premium.",
-      "watch_out": "He is playing because of injuries, which means his place disappears when they clear up. This is a short-term pick with a visible end date.",
+      "case": "With Saliba and Timber both out, White is set to start at £5.5m, and the published arithmetic is neat: White and Mosquera together cost £11.0m, only £3.0m more than Gabriel on his own. That buys two starting Arsenal defenders on the softest opening run in the league for close to the price of one premium — and Arsenal face just one top-six side across their opening eight.",
+      "watch_out": "He is playing because of injuries, which means his place disappears when they clear. This is a short-term pick with a visible end date, and the end date is not under your control — Timber is described as weeks away rather than months.",
+      "key_stats": [
+        "£5.5m",
+        "White + Mosquera = £11.0m, only £3.0m more than Gabriel alone",
+        "Starting because Saliba (back) and Timber (groin) are both out",
+        "Arsenal face one top-six side in their opening eight gameweeks"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Present the White-plus-Mosquera pairing as the value alternative to a single premium Arsenal defender."
+        },
+        {
+          "source": "The Scout (Premier League)",
+          "take": "Expect him to start while the first-choice centre-backs are unavailable."
+        },
+        {
+          "source": "RotoWire",
+          "take": "Rate the Arsenal defence the outstanding early target on fixtures, with White the cheapest way in."
+        }
+      ],
       "sources": [
         "Fantasy Football Scout",
-        "Premier League Scout",
+        "The Scout (Premier League)",
         "RotoWire"
       ]
     },
@@ -156,9 +415,25 @@
       "full_name": "Riccardo Calafiori",
       "tier": "value",
       "expert_ownership": 12,
+      "price_at_research": 5.5,
       "verdict": "The lower-owned route into the same Arsenal opening.",
-      "case": "Ranked just behind the leading Arsenal defenders and sharing the identical soft opening fixtures, at meaningfully lower ownership — the differential version of a pick the template has already validated.",
-      "watch_out": "Arsenal's defensive rotation is genuinely unsettled with two first-choice defenders injured, so start certainty is the weak point here.",
+      "case": "Ranked just behind the leading Arsenal defenders on the same soft opening fixtures, at meaningfully lower ownership — the differential version of a pick the template has already validated. If you want Arsenal's defence without buying what everyone else has bought, this is the shape of it.",
+      "watch_out": "Arsenal's defensive rotation is genuinely unsettled with two first-choice defenders injured, and Calafiori is the one whose starting place is least assured of the cheap options. Start certainty is the weak point, and it is the only thing that matters at this price.",
+      "key_stats": [
+        "£5.5m",
+        "~12% owned — the lowest-owned of the viable Arsenal defensive routes",
+        "Same opening fixtures as Gabriel and White"
+      ],
+      "voices": [
+        {
+          "source": "RotoWire",
+          "take": "Rank him just behind the leading Arsenal defenders, with ownership the main thing separating them."
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Flag the unsettled rotation as the reason he is a differential rather than a core pick."
+        }
+      ],
       "sources": [
         "RotoWire",
         "Fantasy Football Scout"
@@ -169,11 +444,27 @@
       "full_name": "William Saliba",
       "tier": "avoid",
       "expert_ownership": 5,
+      "price_at_research": 6.0,
       "verdict": "Out injured — every analyst is routing around him.",
-      "case": "Out for an extended period with a back problem. Coverage consistently redirects to Gabriel, White and Mosquera instead.",
-      "watch_out": "Worth tracking for a later return, but he cannot be picked now.",
+      "case": "In a normal August he would be a leading pick in the best defence in the league.",
+      "watch_out": "He is out for an extended period with a back problem. Coverage consistently redirects to Gabriel, White and Mosquera instead — he is the reason those picks are being recommended at all. Worth tracking for a later return, but he cannot be picked now.",
+      "key_stats": [
+        "Out with a back problem, extended absence",
+        "The reason White and Mosquera are startable"
+      ],
+      "voices": [
+        {
+          "source": "OneFPL",
+          "take": "List him first among the clearest avoids for GW1."
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Redirect all Arsenal defensive coverage to Gabriel, White and Mosquera in his absence."
+        }
+      ],
       "sources": [
         "Fantasy Football Scout",
+        "OneFPL",
         "RotoWire"
       ]
     },
@@ -182,26 +473,27 @@
       "full_name": "Jurrien Timber",
       "tier": "avoid",
       "expert_ownership": 4,
-      "verdict": "Groin injury, weeks away.",
-      "case": "Left Arsenal's training camp for a groin check and is reported as weeks from returning. Same situation as Saliba: the reason White and Mosquera are startable.",
-      "watch_out": "Return timing is vague, so re-check before the deadline rather than writing him off for the season.",
+      "price_at_research": 5.5,
+      "verdict": "Groin injury, reported as weeks away.",
+      "case": "A starter in this defence when fit, and on the same fixture run everyone is trying to buy.",
+      "watch_out": "He left Arsenal's training camp for a groin check and is reported as weeks from returning. Same situation as Saliba: his absence is why White and Mosquera are startable. Return timing is vague, so re-check before the deadline rather than writing him off for the season.",
+      "key_stats": [
+        "Groin injury, reported weeks away",
+        "Left the training camp for assessment"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Reported the training-camp departure and the weeks-away timeline."
+        },
+        {
+          "source": "The Scout (Premier League)",
+          "take": "Treat him as unavailable for the opening stretch when recommending Arsenal defenders."
+        }
+      ],
       "sources": [
         "Fantasy Football Scout",
-        "Premier League Scout"
-      ]
-    },
-    {
-      "name": "Tavernier",
-      "full_name": "Marcus Tavernier",
-      "tier": "avoid",
-      "expert_ownership": 6,
-      "verdict": "Good player, wrong eight weeks — Bournemouth's opening run is the worst in the league.",
-      "case": "Two goals and two assists last season and a share of penalty duty at £6.0m, so the player isn't the problem.",
-      "watch_out": "Bournemouth are bottom of the fixture ticker for the opening eight gameweeks: Man City away, Everton, Newcastle away, Brentford. They also have European football from around GW4-5 under a new manager, which adds rotation risk to a midfielder who isn't nailed to one role. Analysts are broadly saying to avoid Bournemouth assets entirely until their schedule clears around GW9.",
-      "sources": [
-        "Fantasy Football Scout",
-        "RotoWire",
-        "AllAboutFPL"
+        "The Scout (Premier League)"
       ]
     },
     {
@@ -209,9 +501,30 @@
       "full_name": "Declan Rice",
       "tier": "avoid",
       "expert_ownership": 21,
+      "price_at_research": 6.5,
       "verdict": "Over 20% owned on reputation, with no pre-season and a hamstring.",
-      "case": "Nobody disputes the player. The objection is timing.",
-      "watch_out": "He is coming back from a deep World Cup run — around 558 minutes — with no pre-season behind him, and has been carrying a hamstring problem. Availability for the opening gameweek is uncertain at best. Carrying a 20%-owned player who might not start is the worst shape of risk in FPL: you take the downside of the crowd without the upside of a differential.",
+      "case": "Nobody is disputing the player. In a normal August he is an obvious Arsenal pick on this run.",
+      "watch_out": "He is back from a deep World Cup run — around 558 minutes — with no pre-season behind him, and has been carrying a hamstring problem. Availability for the opening gameweek is uncertain at best. Carrying a 20%-owned player who might not start is the worst-shaped risk in FPL: you take the downside of the crowd without the upside of a differential.",
+      "key_stats": [
+        "~558 minutes at the World Cup",
+        "No pre-season",
+        "Carrying a hamstring issue",
+        "Over 20% owned going into GW1"
+      ],
+      "voices": [
+        {
+          "source": "RotoWire",
+          "take": "Name him among the six highly-owned players to avoid: 'availability for the opening gameweek is uncertain at best'."
+        },
+        {
+          "source": "Fantasy Football Hub",
+          "take": "Same call — at over 20% ownership they read it as a significant risk to be carrying."
+        },
+        {
+          "source": "OneFPL",
+          "take": "List late World Cup returns as the defining GW1 trap, with Rice a leading example."
+        }
+      ],
       "sources": [
         "RotoWire",
         "Fantasy Football Hub",
@@ -223,13 +536,60 @@
       "full_name": "Bukayo Saka",
       "tier": "avoid",
       "expert_ownership": 14,
+      "price_at_research": 9.5,
       "verdict": "Not a doubt about the player — a doubt about August.",
       "case": "On form and role he would be an automatic pick in an Arsenal side with this opening run.",
-      "watch_out": "He accumulated heavy World Cup minutes and has been managing an Achilles issue. Even if he starts in GW1, reduced or managed minutes are likely, and at £9.5m there is no room in the price for a player being eased back in. The analysts flagging him are explicit that this is a fitness-timing call, not a downgrade of the player — he is a buy once he has full minutes behind him.",
+      "watch_out": "He accumulated heavy World Cup minutes and has been managing an Achilles issue. Even if he starts in GW1, reduced or managed minutes are likely, and at £9.5m there is no room in the price for a player being eased back in. The analysts flagging him are explicit that this is a fitness-timing call rather than a downgrade of the player — he is a buy once he has full minutes behind him.",
+      "key_stats": [
+        "Heavy World Cup minutes",
+        "Managing an Achilles issue",
+        "£9.5m — no margin in the price for reduced minutes"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Hub",
+          "take": "'The concern is not his ability, but whether he will be ready to produce his best immediately.'"
+        },
+        {
+          "source": "RotoWire",
+          "take": "Among the highly-owned players to avoid, on managed minutes rather than form."
+        }
+      ],
       "sources": [
-        "RotoWire",
         "Fantasy Football Hub",
+        "RotoWire",
         "OneFPL"
+      ]
+    },
+    {
+      "name": "Tavernier",
+      "full_name": "Marcus Tavernier",
+      "tier": "avoid",
+      "expert_ownership": 6,
+      "price_at_research": 6.0,
+      "verdict": "Good player, wrong eight weeks.",
+      "case": "Two goals and two assists last season and a share of penalty duty at £6.0m — the player isn't the problem.",
+      "watch_out": "Bournemouth are bottom of the fixture ticker for the opening eight gameweeks, and he is not nailed to one role in a side that also picks up European football from around GW4-5 under a new manager. The club-wide verdict on Bournemouth is recorded in teams.json and applies to every Bournemouth asset, not just this one.",
+      "key_stats": [
+        "2 goals, 2 assists last season",
+        "Shares penalty duty",
+        "£6.0m",
+        "Bournemouth: all six opening fixtures rated 3 or higher on the ticker"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Covered Bournemouth's set-piece and penalty situation; the fixtures rather than the role are the objection."
+        },
+        {
+          "source": "RotoWire",
+          "take": "Rate Bournemouth's opening as arguably the toughest handed to any side this season."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "RotoWire",
+        "AllAboutFPL"
       ]
     }
   ]

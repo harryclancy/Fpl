@@ -164,6 +164,42 @@ def test_every_recommendation_carries_an_argument_and_a_counter_argument(path):
 
 
 @pytest.mark.parametrize("path", PLAYER_FILES, ids=lambda p: p.name)
+def test_every_entry_carries_hard_numbers(path):
+    """A verdict with no numbers attached is an assertion, not analysis.
+
+    `key_stats` is stored as discrete facts rather than left inside the
+    prose specifically so they can be surfaced next to any decision the
+    app makes about the player -- the squad panel, the omissions panel,
+    the deep dive and a direct question all read the same list.
+    """
+    for entry in _players(path):
+        stats = entry.get("key_stats")
+        assert stats, f"{entry['name']} has no key_stats — nothing to check the verdict against"
+        assert len(stats) >= 2, f"{entry['name']} has only one supporting number"
+        for stat in stats:
+            assert isinstance(stat, str) and stat.strip(), f"{entry['name']} has an empty stat"
+
+
+@pytest.mark.parametrize("path", PLAYER_FILES, ids=lambda p: p.name)
+def test_every_entry_records_who_said_what(path):
+    """"Analysts say" is not a source.
+
+    Attribution is what makes a claim checkable, and the lack of it is
+    exactly how a wrong fact sat in this file unchallenged: there was
+    nobody to check it against.
+    """
+    for entry in _players(path):
+        voices = entry.get("voices")
+        assert voices, f"{entry['name']} records no attributed takes"
+        for voice in voices:
+            assert isinstance(voice, dict), f"{entry['name']} has a malformed voice entry"
+            assert voice.get("source", "").strip(), f"{entry['name']} has an unattributed take"
+            assert len(voice.get("take", "")) > 30, (
+                f"{entry['name']}: take from {voice.get('source')} is too thin to be informative"
+            )
+
+
+@pytest.mark.parametrize("path", PLAYER_FILES, ids=lambda p: p.name)
 def test_a_recorded_dissent_is_structured_so_it_can_be_shown(path):
     for entry in _players(path):
         dissent = entry.get("dissent")

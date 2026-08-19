@@ -236,6 +236,7 @@ def annotate_clubs(
     df["club_stance_bonus"] = 0.0
     df["club_stance_case"] = None
     df["club_stance_until"] = pd.NA
+    df["club_stance_sources"] = None
 
     if not team_context or "team_short_name" not in df.columns:
         return df
@@ -265,6 +266,9 @@ def annotate_clubs(
             df.loc[stronger, "club_stance_bonus"] = bonus
             df.loc[stronger, "club_stance_case"] = stance.get("case")
             df.loc[stronger, "club_stance_until"] = stance.get("until_gameweek")
+            df.loc[stronger, "club_stance_sources"] = (
+                ", ".join(stance.get("sources", []) or []) or None
+            )
 
     return df
 
@@ -284,6 +288,12 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     df["consensus_watch_out"] = None
     df["consensus_dissent"] = None
     df["consensus_sources"] = None
+    # Stats and voices are lists of facts/attributed takes. They travel as
+    # JSON strings rather than as objects in DataFrame cells: assigning a
+    # list into a masked .loc treats it as an array to broadcast and either
+    # raises or silently scatters the elements across rows.
+    df["consensus_stats"] = None
+    df["consensus_voices"] = None
 
     data = load_consensus(gameweek)
     if not data:
@@ -328,6 +338,8 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
             dissent.get("case") if isinstance(dissent, dict) else dissent
         )
         df.loc[target, "consensus_sources"] = ", ".join(entry.get("sources", []) or []) or None
+        df.loc[target, "consensus_stats"] = _pack(entry.get("key_stats"))
+        df.loc[target, "consensus_voices"] = _pack(entry.get("voices"))
         # `case` is the written argument; `reason` is kept as a fallback so
         # older hand-written consensus files still render.
         df.loc[target, "consensus_reason"] = entry.get("case") or entry.get("reason")
@@ -335,6 +347,49 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
         df.loc[target, "consensus_watch_out"] = entry.get("watch_out")
 
     return df
+
+
+def _pack(value) -> str | None:
+    """JSON-encodes a list for storage in a DataFrame cell."""
+    return json.dumps(value) if value else None
+
+
+def unpack(value) -> list:
+    """Reads back a column packed by `_pack`, tolerating anything else.
+
+    Callers render this straight into the page, so a malformed cell has to
+    come back as "nothing to show" rather than as an exception on a tab the
+    user has already opened.
+    """
+    if isinstance(value, list):
+        return value
+    if not isinstance(value, str) or not value.strip():
+        return []
+    try:
+        decoded = json.loads(value)
+    except json.JSONDecodeError:
+        return []
+    return decoded if isinstance(decoded, list) else []
+
+
+def key_stats(row: pd.Series) -> list[str]:
+    """The hard numbers behind a player's verdict, as discrete facts."""
+    return [str(stat) for stat in unpack(row.get("consensus_stats"))]
+
+
+def voices(row: pd.Series) -> list[tuple[str, str]]:
+    """What named outlets are actually saying, as (source, take) pairs.
+
+    Attribution is the point. A synthesised paragraph loses who thinks
+    what, and "analysts say" is not a source -- it's the phrasing that let
+    a wrong fact sit in this file unchallenged, because there was nobody
+    to check it against.
+    """
+    pairs = []
+    for item in unpack(row.get("consensus_voices")):
+        if isinstance(item, dict) and item.get("take"):
+            pairs.append((str(item.get("source") or "Analyst"), str(item["take"])))
+    return pairs
 
 
 def must_have_ids(scored: pd.DataFrame) -> list[int]:

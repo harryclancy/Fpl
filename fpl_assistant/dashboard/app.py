@@ -194,6 +194,7 @@ def render_consensus_panel(scored, squad, next_event) -> None:
                 f"<span style='opacity:0.55;font-size:0.85em'>Effect on selection: {effect}</span>",
                 unsafe_allow_html=True,
             )
+            render_evidence(consensus.key_stats(row), consensus.voices(row))
             dissent = row.get("consensus_dissent")
             if dissent is not None and pd.notna(dissent):
                 # Shown rather than averaged away. A contested pick presented
@@ -207,6 +208,41 @@ def render_consensus_panel(scored, squad, next_event) -> None:
                     unsafe_allow_html=True,
                 )
             st.markdown("")
+
+
+def render_evidence(stats, voices, sources=None) -> None:
+    """The numbers and the quotes, shown as numbers and quotes.
+
+    Deliberately not folded into the surrounding prose. A paragraph that
+    says "strong underlying numbers and analysts are keen" is unarguable
+    in the bad sense -- you can't check it, you can't disagree with a
+    specific part of it, and you can't tell whether it was written from
+    evidence or from a template. Discrete facts with named sources can be
+    checked line by line, which is the only version of this worth reading.
+    """
+    if stats:
+        st.markdown(
+            "<div style='opacity:0.85;font-size:0.9em;line-height:1.75'>"
+            + "".join(
+                f"<span style='display:inline-block;background:#f2f0f7;border:1px solid #e3dff0;"
+                f"border-radius:6px;padding:1px 8px;margin:0 5px 5px 0'>{stat}</span>"
+                for stat in stats
+            )
+            + "</div>",
+            unsafe_allow_html=True,
+        )
+    for source, take in voices or []:
+        st.markdown(
+            f"<div style='margin:5px 0 0 0;padding-left:10px;border-left:2px solid #e3dff0'>"
+            f"<span style='font-weight:600;font-size:0.85em'>{source}</span><br>"
+            f"<span style='opacity:0.8;font-size:0.9em'>{take}</span></div>",
+            unsafe_allow_html=True,
+        )
+    if sources:
+        st.markdown(
+            f"<span style='opacity:0.45;font-size:0.8em'>Sources: {sources}</span>",
+            unsafe_allow_html=True,
+        )
 
 
 OMISSION_STYLE = {
@@ -282,11 +318,7 @@ def render_omissions_panel(scored, solution) -> None:
                     f"(£{swap.in_price:.1f}m)</span>",
                     unsafe_allow_html=True,
                 )
-            if item.sources:
-                st.markdown(
-                    f"<span style='opacity:0.45;font-size:0.8em'>Sources: {item.sources}</span>",
-                    unsafe_allow_html=True,
-                )
+            render_evidence(item.stats, item.voices, item.sources)
             st.markdown("")
 
 
@@ -495,6 +527,8 @@ def _render_answer(answer) -> None:
     # club until the fixtures turn -- and leading with a points
     # differential while the real reason sits further down the page
     # answers a question nobody asked.
+    render_evidence(getattr(answer, "stats", None), getattr(answer, "voices", None))
+
     if getattr(answer, "club_verdict", None):
         st.markdown(f"**It's his club, not him:** {answer.club_verdict}")
     if answer.consensus_case:
@@ -603,6 +637,21 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
                     row, report_text, team_context=consensus.load_team_context()
                 )
             )
+
+        # The researched evidence sits directly under the case it supports,
+        # so the argument and the thing backing it up are read together
+        # rather than the reader having to take the paragraph on trust.
+        render_evidence(
+            consensus.key_stats(row),
+            consensus.voices(row),
+            row.get("consensus_sources") if isinstance(row.get("consensus_sources"), str) else None,
+        )
+        watch_out = row.get("consensus_watch_out")
+        if isinstance(watch_out, str) and watch_out.strip():
+            st.markdown(f"**The case against:** {watch_out}")
+        dissent = row.get("consensus_dissent")
+        if isinstance(dissent, str) and dissent.strip():
+            st.markdown(f"**⚖️ Experts disagree here:** {dissent}")
 
         with st.expander("📅 Fixtures & form"):
             team_fixtures = fixture_table.loc[row["team"]]

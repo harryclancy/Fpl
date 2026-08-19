@@ -220,5 +220,87 @@ def test_a_player_is_still_listed_when_the_solve_budget_runs_out():
     assert [o.name for o in found] == ["Popular"]
     assert found[0].category == "cost"
     assert found[0].points_cost is None
-    # And it must not invent a precise-sounding number it never computed.
-    assert "pts" not in found[0].detail
+    # And it must not state a counterfactual cost it never computed. Real
+    # figures pulled from the data are fine and wanted -- an invented
+    # "costs about 3.2 points" is not.
+    assert "costs about" not in found[0].detail
+
+
+# --- evidence attached to every verdict ---------------------------------
+
+def test_every_omission_carries_numbers_to_check_it_against():
+    """The complaint this answers: reasons that were too generic to argue
+    with. A verdict with no evidence attached is an assertion."""
+    pool = _pool(
+        {"web_name": "InSquad", "position": "MID", "price": 8.0, "xp_next": 5.0},
+        {"web_name": "Popular", "selected_by_percent": 55.0, "price": 9.5,
+         "xp_next": 4.2, "xp_horizon": 21.0, "points_per_game": 5.1, "form": 6.0,
+         "minutes": 2400, "starts": 27, "expected_goals_per_90": 0.42,
+         "expected_assists_per_90": 0.21},
+    )
+    found = omissions.notable_omissions(pool, _solution([1]), max_resolves=0)
+
+    stats = found[0].stats
+    assert stats, "no supporting numbers attached"
+    blob = " ".join(stats)
+    assert "£9.5m" in blob
+    assert "55.0% owned" in blob
+    assert "expected goal involvements per 90" in blob
+    assert "2400 minutes played across 27 starts" in blob
+
+
+def test_researched_facts_are_preferred_over_derived_ones():
+    """Where the research file has real numbers they lead, because
+    "18 clean sheets, 3 more than any other defender" beats a restatement
+    of the model's own projection."""
+    import json
+
+    pool = _pool(
+        {"web_name": "InSquad"},
+        {"web_name": "Researched", "selected_by_percent": 30.0,
+         "consensus_stats": json.dumps(["209 points last season", "18 clean sheets"])},
+    )
+    found = omissions.notable_omissions(pool, _solution([1]), max_resolves=0)
+    assert found[0].stats[:2] == ["209 points last season", "18 clean sheets"]
+
+
+def test_attributed_takes_are_carried_through():
+    import json
+
+    pool = _pool(
+        {"web_name": "InSquad"},
+        {"web_name": "Talked About", "selected_by_percent": 30.0,
+         "consensus_voices": json.dumps([{"source": "RotoWire", "take": "They rate him highly."}])},
+    )
+    found = omissions.notable_omissions(pool, _solution([1]), max_resolves=0)
+    assert found[0].voices == [("RotoWire", "They rate him highly.")]
+
+
+def test_the_reason_names_who_holds_the_slot_instead():
+    """"Why not him?" is a comparison. Answering it without naming the
+    alternative leaves the reader to go and find it themselves."""
+    pool = _pool(
+        {"web_name": "Holder", "position": "MID", "price": 9.0, "xp_next": 5.5,
+         "team_short_name": "ARS"},
+        {"web_name": "Popular", "position": "MID", "price": 9.2, "xp_next": 4.1,
+         "selected_by_percent": 50.0},
+    )
+    found = omissions.notable_omissions(pool, _solution([1]), max_resolves=0)
+
+    assert found[0].instead is not None
+    assert "Holder" in found[0].instead
+    assert "5.5 projected pts" in found[0].instead
+    assert "Holder" in found[0].detail
+
+
+def test_malformed_packed_evidence_degrades_to_nothing():
+    """These columns are rendered straight into the page, so a bad cell
+    has to come back empty rather than raise on a tab already open."""
+    pool = _pool(
+        {"web_name": "InSquad"},
+        {"web_name": "Broken", "selected_by_percent": 30.0,
+         "consensus_stats": "{not json", "consensus_voices": "also not json"},
+    )
+    found = omissions.notable_omissions(pool, _solution([1]), max_resolves=0)
+    assert found[0].voices == []
+    assert found[0].stats  # derived stats still present
