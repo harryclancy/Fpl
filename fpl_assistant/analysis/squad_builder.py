@@ -69,7 +69,10 @@ def score_players(
     # but the rationale text still reads this column, so fill rather than drop.
     available["fixture_run_difficulty"] = available["fixture_run_difficulty"].fillna(3.0)
 
-    projected = expected_points(available, fixtures, teams, from_event, horizon=window)
+    projected = expected_points(
+        available, fixtures, teams, from_event, horizon=window,
+        team_context=consensus.load_team_context(),
+    )
 
     # Fold in what analysts and the wider community are actually saying.
     # This is not decoration on top of the projection -- it moves the

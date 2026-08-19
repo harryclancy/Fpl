@@ -1,0 +1,33 @@
+{
+  "season": "2026/27",
+  "researched": "2026-08-18",
+  "note": "Club-level context that changes how much a player actually plays, which no per-90 rate can tell you. European football means midweek games and therefore rotation; a new manager means an unsettled XI. Both are minutes risks, and minutes are the foundation everything else in the projection sits on. `european_competition` is one of ucl/uel/uecl/none.",
+  "teams": [
+    {"short_name": "ARS", "european_competition": "ucl", "new_manager": false},
+    {"short_name": "MCI", "european_competition": "ucl", "new_manager": false},
+    {"short_name": "MUN", "european_competition": "ucl", "new_manager": false},
+    {"short_name": "AVL", "european_competition": "ucl", "new_manager": false},
+    {"short_name": "LIV", "european_competition": "ucl", "new_manager": false},
+
+    {"short_name": "BOU", "european_competition": "uel", "new_manager": true,
+     "note": "Europa League from around GW4-5 under a new manager in Marco Rose, on top of the worst opening eight fixtures in the league. Rotation risk is compounded."},
+    {"short_name": "SUN", "european_competition": "uel", "new_manager": false},
+    {"short_name": "CRY", "european_competition": "uel", "new_manager": false},
+
+    {"short_name": "BHA", "european_competition": "uecl", "new_manager": false},
+
+    {"short_name": "CHE", "european_competition": "none", "new_manager": false,
+     "note": "No European football at all this season — a genuine FPL edge. One game a week means a settled, rested XI while rivals rotate for midweek travel."},
+
+    {"short_name": "NEW", "european_competition": "none", "new_manager": false},
+    {"short_name": "TOT", "european_competition": "none", "new_manager": false},
+    {"short_name": "EVE", "european_competition": "none", "new_manager": false},
+    {"short_name": "WHU", "european_competition": "none", "new_manager": false},
+    {"short_name": "BRE", "european_competition": "none", "new_manager": false},
+    {"short_name": "FUL", "european_competition": "none", "new_manager": false},
+    {"short_name": "WOL", "european_competition": "none", "new_manager": false},
+    {"short_name": "NFO", "european_competition": "none", "new_manager": false},
+    {"short_name": "COV", "european_competition": "none", "new_manager": false},
+    {"short_name": "HUL", "european_competition": "none", "new_manager": false}
+  ]
+}

@@ -135,6 +135,39 @@ def set_piece_note(row: pd.Series) -> str | None:
     return f"🎯 Set-piece duty: {', '.join(notes)}."
 
 
+EUROPEAN_COMPETITION_NAMES = {
+    "ucl": "Champions League",
+    "uel": "Europa League",
+    "uecl": "Conference League",
+}
+
+
+def congestion_note(row: pd.Series, team_context: dict | None = None) -> str | None:
+    """Midweek football and booking bans — the two minutes risks that carry
+    no injury flag and no warning in any per-90 rate."""
+    notes = []
+
+    context = (team_context or {}).get(str(row.get("team_short_name", "")).upper(), {})
+    competition = EUROPEAN_COMPETITION_NAMES.get(context.get("european_competition"))
+    if competition:
+        detail = " under a new manager, so the XI isn't settled either" if context.get("new_manager") else ""
+        notes.append(
+            f"plays **{competition}** football midweek{detail} — squad players get rested for it, "
+            f"though nailed-on starters mostly don't"
+        )
+
+    suspension = row.get("suspension_risk")
+    if suspension is not None and pd.notna(suspension) and suspension > 0.15:
+        notes.append(
+            f"is **near a booking ban** ({suspension * 100:.0f}% risk of missing a gameweek in this "
+            f"window) — no injury flag warns you, because he's perfectly fit right up to the yellow"
+        )
+
+    if not notes:
+        return None
+    return f"🔄 Rotation watch: {row['web_name']} {'; and '.join(notes)}."
+
+
 def _minutes_note(row: pd.Series) -> str | None:
     """Starting certainty, framed as the risk it actually is."""
     expected_minutes = row.get("expected_minutes")
@@ -284,7 +317,9 @@ def _numbers_only_case(row: pd.Series) -> str:
     )
 
 
-def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
+def player_rationale(
+    row: pd.Series, report_text: str | None = None, team_context: dict | None = None
+) -> str:
     """The written case for picking this player.
 
     Leads with what analysts actually said and why, because that is the
@@ -319,6 +354,10 @@ def player_rationale(row: pd.Series, report_text: str | None = None) -> str:
     set_pieces = set_piece_note(row)
     if set_pieces:
         parts.append(set_pieces)
+
+    congestion = congestion_note(row, team_context)
+    if congestion:
+        parts.append(congestion)
 
     availability = _risk_note(row)
     if availability:

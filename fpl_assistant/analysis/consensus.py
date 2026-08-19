@@ -56,6 +56,28 @@ def load_consensus(gameweek: int) -> dict | None:
         return None
 
 
+def load_team_context() -> dict[str, dict]:
+    """Club-level context keyed by FPL short name.
+
+    Separate from the per-player consensus because it changes rarely (a
+    European qualification lasts a season) while player verdicts change
+    weekly — and because it applies to every player at a club, not to the
+    handful analysts happened to write about.
+    """
+    path = CONSENSUS_DIR / "teams.json"
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+    return {
+        str(entry["short_name"]).upper(): entry
+        for entry in data.get("teams", [])
+        if entry.get("short_name")
+    }
+
+
 def _name_variants(row: pd.Series) -> list[str]:
     """Every plausible way this player might be named in research prose.
 

@@ -147,6 +147,62 @@ def render_consensus_panel(scored, squad) -> None:
             st.markdown("")
 
 
+FACTOR_GROUPS = {
+    "Attacking output": [
+        "Expected goals and assists per 90 — underlying rate, not goals already scored, because "
+        "finishing over a few games is mostly noise while shot volume persists",
+        "Penalty duty — the biggest ceiling swing that's invisible in price or form",
+        "Set-piece duty (corners, direct free-kicks) — a repeatable assist source",
+    ],
+    "Minutes — the foundation everything else sits on": [
+        "Start rate and minutes played — a brilliant rate off the bench scores nothing",
+        "Injury and availability flags, graded rather than binary",
+        "European football: midweek travel means rotation, and the Europa League costs more than "
+        "the Champions League because Thursday leaves two fewer recovery days",
+        "New managers — an unsettled XI shuffles squad players more",
+        "Yellow-card accumulation — a ban carries no injury flag, because the player is fit",
+    ],
+    "Defensive and other scoring": [
+        "Expected goals conceded → clean-sheet probability, floored at a realistic rate",
+        "Goalkeeper save rate, defensive contributions, bonus-point history, cards",
+    ],
+    "Fixtures": [
+        "Opponent strength applied directionally — a striker's fixture is easy when the opponent "
+        "defends badly, a defender's when the opponent attacks badly",
+        "Home advantage, double gameweeks counted twice, blanks counted as zero",
+        "Later gameweeks discounted, since you can transfer before they arrive",
+    ],
+    "Selection and strategy": [
+        "Budget, position quotas and the three-per-club cap as hard constraints, solved exactly",
+        "Bench weighted low — points come from the eleven who start",
+        "Captaincy ranked on ceiling rather than average, since the armband doubles a result",
+        "Ownership and rank risk, tunable in the sidebar",
+        "Expert consensus, weighted directly into the objective",
+        "Transfer hits priced in — a move only appears if it beats its own 4-point cost",
+    ],
+}
+
+
+def render_factor_panel() -> None:
+    """What the model actually weighs, stated so it can be argued with.
+
+    Every line here is covered by a sensitivity test that changes one
+    input and asserts the projection moves — a factor that's documented
+    but silently cancelled downstream is worse than one that's absent,
+    because it looks handled.
+    """
+    with st.expander("🧠 What this considers when picking a squad"):
+        for group, factors in FACTOR_GROUPS.items():
+            st.markdown(f"**{group}**")
+            for factor in factors:
+                st.markdown(f"- {factor}")
+        st.caption(
+            "Known gaps, stated plainly: chip strategy (Wildcard, Bench Boost, Triple Captain, "
+            "Free Hit) isn't modelled yet, price changes aren't tracked, and transfers are planned "
+            "one gameweek at a time rather than several ahead."
+        )
+
+
 def _player_picker_labels(scored) -> dict:
     """Selectable labels -> player id, ordered so the players you'd actually
     ask about are near the top rather than buried in 600 squad fillers."""
@@ -282,7 +338,11 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
                 + "</div>"
             )
         with text_col:
-            st.markdown(rationale.player_rationale(row, report_text))
+            st.markdown(
+                rationale.player_rationale(
+                    row, report_text, team_context=consensus.load_team_context()
+                )
+            )
 
         with st.expander("📅 Fixtures & form"):
             team_fixtures = fixture_table.loc[row["team"]]
@@ -346,6 +406,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event):
             st.warning(note)
 
     render_consensus_panel(scored, squad15)
+    render_factor_panel()
 
     report_text, _ = load_report(next_event)
 

@@ -17,6 +17,7 @@ fallback for the case where no projection can be produced at all.
 """
 import pandas as pd
 
+from fpl_assistant.analysis import consensus
 from fpl_assistant.analysis.expected_points import expected_points
 from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.season_state import is_preseason
@@ -72,7 +73,10 @@ def captaincy_candidates(
     # gives the user no way to tell which answer to trust. `xp_captain` is
     # the ceiling-adjusted variant: the armband doubles a result, so upside
     # matters more than the average (see expected_points).
-    projected = expected_points(players, fixtures, teams, next_event, horizon=1)
+    projected = expected_points(
+        players, fixtures, teams, next_event, horizon=1,
+        team_context=consensus.load_team_context(),
+    )
     df["expected_points"] = df["id"].map(projected["xp_next"])
     df["captaincy_score"] = df["id"].map(projected["xp_captain"]).round(2)
     df["expected_minutes"] = df["id"].map(projected["expected_minutes"])

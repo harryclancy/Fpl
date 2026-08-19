@@ -102,6 +102,25 @@ MAX_FIXTURE_MULTIPLIER = 1.45
 MIN_FIXTURE_MULTIPLIER = 0.60
 HOME_ADVANTAGE = 1.08
 
+# --- Rotation risk -----------------------------------------------------
+# Midweek European football is one of the largest influences on how much a
+# player actually plays, and it is invisible to every per-90 rate: the
+# stats say a player is excellent, the schedule says he'll be rested on
+# Saturday. Europa League carries the heaviest penalty despite being the
+# weaker competition, because a Thursday night away trip gives two fewer
+# recovery days before the weekend than a Tuesday/Wednesday Champions
+# League tie.
+ROTATION_PENALTY = {"ucl": 0.18, "uel": 0.20, "uecl": 0.12, "none": 0.0}
+# A new manager hasn't settled on an XI yet, so squad players are likelier
+# to be shuffled.
+NEW_MANAGER_PENALTY = 0.06
+
+# Yellow-card suspensions: five bookings triggers a one-match ban (ten
+# triggers a second). A player sitting on four is one tackle away from
+# missing a gameweek, which no availability flag warns you about because
+# he is perfectly fit.
+SUSPENSION_THRESHOLDS = (5, 10)
+
 # Captaincy is not the same decision as selection, so it doesn't rank on
 # the same number. The armband doubles a score, which means what you want
 # is the highest *ceiling*, not the highest mean -- and those come apart by
@@ -145,6 +164,19 @@ PRESEASON_MIN_PRICE = 3.9  # guards log() against nonsense inputs
 # the research of millions of managers, which is informative even though
 # it also carries herd behaviour.
 PRESEASON_OWNERSHIP_BONUS = 0.9
+
+
+def _column(players: pd.DataFrame, name: str, default: float = 0.0) -> pd.Series:
+    """A numeric column, or a full-length default column if it's absent.
+
+    `players.get(name, 0)` returns the bare scalar when the column is
+    missing, and every Series method applied to it afterwards raises. That
+    turns "the API didn't send this optional stat" into a crash, which is
+    exactly the failure the defensive reads were supposed to prevent.
+    """
+    if name not in players.columns:
+        return pd.Series(default, index=players.index, dtype=float)
+    return pd.to_numeric(players[name], errors="coerce").fillna(default).astype(float)
 
 
 def _safe_div(numerator, denominator, default=0.0):
@@ -249,7 +281,10 @@ def _availability(players: pd.DataFrame) -> pd.Series:
     """
     unavailable = players["status"].isin(["i", "s", "u", "n"])
     chance = pd.to_numeric(
-        players.get("chance_of_playing_next_round", 100), errors="coerce"
+        players["chance_of_playing_next_round"]
+        if "chance_of_playing_next_round" in players.columns
+        else pd.Series(100.0, index=players.index),
+        errors="coerce",
     ).fillna(100.0) / 100.0
     return chance.clip(0.0, 1.0).mask(unavailable, 0.0)
 
@@ -270,13 +305,72 @@ def _start_probability(players: pd.DataFrame, games: float, preseason: bool) -> 
         price_rank = players["price"].rank(pct=True)
         return (0.55 + 0.40 * price_rank).clip(0.0, 1.0)
 
-    starts = pd.to_numeric(players.get("starts", 0), errors="coerce").fillna(0)
+    starts = _column(players, "starts")
     start_rate = (starts / games).clip(0.0, 1.0)
 
     # Where `starts` is absent or zero for everyone, fall back to how much
     # of the available minutes they've actually played.
     minutes_share = (players["minutes"].fillna(0) / (games * FULL_MATCH_MINUTES)).clip(0.0, 1.0)
     return start_rate.where(start_rate > 0, minutes_share)
+
+
+def _rotation_adjusted_start(
+    p_start: pd.Series, players: pd.DataFrame, team_context: dict[str, dict] | None
+) -> pd.Series:
+    """Discounts starting probability for midweek congestion.
+
+    The shape matters as much as the size. The penalty peaks for players
+    around a 50% start rate and vanishes at both extremes, because that's
+    how rotation actually works: a manager with a Thursday night in his
+    legs rests the squad player, not the nailed-on star, and the player
+    who never starts can't be rested any further. A flat multiplier would
+    wrongly shave points off exactly the elite, always-plays assets the
+    squad is built around.
+    """
+    if not team_context:
+        return p_start
+
+    def penalty_for(short_name) -> float:
+        context = team_context.get(str(short_name).upper()) if short_name else None
+        if not context:
+            return 0.0
+        penalty = ROTATION_PENALTY.get(context.get("european_competition", "none"), 0.0)
+        if context.get("new_manager"):
+            penalty += NEW_MANAGER_PENALTY
+        return penalty
+
+    if "team_short_name" not in players.columns:
+        return p_start
+    penalties = players["team_short_name"].map(penalty_for).fillna(0.0).astype(float)
+
+    return (p_start - penalties * p_start * (1 - p_start) * 2).clip(0.0, 1.0)
+
+
+def _suspension_risk(players: pd.DataFrame, games: float, horizon: int) -> pd.Series:
+    """Chance of losing a gameweek to a booking ban over the horizon.
+
+    Unlike an injury this carries no availability flag — the player is
+    perfectly fit right up to the moment he's banned — so nothing else in
+    the model sees it coming.
+    """
+    yellows = _column(players, "yellow_cards")
+    if yellows.sum() == 0:
+        return pd.Series(0.0, index=players.index)
+
+    per_game = (yellows / max(games, 1.0)).clip(0.0, 1.0)
+    # Bookings still needed to reach the next ban threshold.
+    to_threshold = pd.Series(
+        [
+            min((t - y for t in SUSPENSION_THRESHOLDS if t > y), default=99)
+            for y in yellows
+        ],
+        index=players.index,
+        dtype=float,
+    )
+    # Rough Poisson-ish chance of collecting that many bookings in the window.
+    expected_bookings = per_game * horizon
+    risk = (expected_bookings / to_threshold.replace(0, 1)).clip(0.0, 1.0)
+    return risk.where(to_threshold <= horizon, 0.0)
 
 
 def _expected_minutes(p_available: pd.Series, p_start: pd.Series) -> pd.Series:
@@ -323,7 +417,7 @@ def _preseason_base_points(players: pd.DataFrame) -> pd.Series:
     """
     price = players["price"].clip(lower=PRESEASON_MIN_PRICE)
     price_component = PRESEASON_LOG_INTERCEPT + PRESEASON_LOG_SLOPE * np.log(price)
-    ownership = pd.to_numeric(players.get("selected_by_percent", 0), errors="coerce").fillna(0.0)
+    ownership = _column(players, "selected_by_percent")
     ownership_component = PRESEASON_OWNERSHIP_BONUS * (ownership / 100.0)
     return (price_component + ownership_component).clip(lower=0.3)
 
@@ -350,15 +444,13 @@ def _component_points_per_match(
         return base * multiplier
 
     # --- Attacking returns ---
-    xg90 = pd.to_numeric(players.get("expected_goals_per_90", 0), errors="coerce").fillna(0.0)
-    xa90 = pd.to_numeric(players.get("expected_assists_per_90", 0), errors="coerce").fillna(0.0)
+    xg90 = _column(players, "expected_goals_per_90")
+    xa90 = _column(players, "expected_assists_per_90")
 
     # Where per-90 columns are missing entirely, derive them from the season
     # cumulative involvement so the model still has an attacking signal.
     if xg90.sum() == 0 and xa90.sum() == 0:
-        xgi = pd.to_numeric(
-            players.get("expected_goal_involvements", 0), errors="coerce"
-        ).fillna(0.0)
+        xgi = _column(players, "expected_goal_involvements")
         per_90 = pd.Series(
             _safe_div(xgi.to_numpy(), (players["minutes"].fillna(0) / FULL_MATCH_MINUTES).to_numpy()),
             index=players.index,
@@ -374,13 +466,9 @@ def _component_points_per_match(
     ) * minutes_share * attack_mult
 
     # --- Clean sheets and goals conceded ---
-    xgc90 = pd.to_numeric(
-        players.get("expected_goals_conceded_per_90", 0), errors="coerce"
-    ).fillna(0.0)
+    xgc90 = _column(players, "expected_goals_conceded_per_90")
     if xgc90.sum() == 0:
-        xgc_total = pd.to_numeric(
-            players.get("expected_goals_conceded", 0), errors="coerce"
-        ).fillna(0.0)
+        xgc_total = _column(players, "expected_goals_conceded")
         xgc90 = pd.Series(
             _safe_div(
                 xgc_total.to_numpy(),
@@ -415,9 +503,9 @@ def _component_points_per_match(
     )
 
     # --- Saves (goalkeepers) ---
-    saves90 = pd.to_numeric(players.get("saves_per_90", 0), errors="coerce").fillna(0.0)
+    saves90 = _column(players, "saves_per_90")
     if saves90.sum() == 0:
-        saves_total = pd.to_numeric(players.get("saves", 0), errors="coerce").fillna(0.0)
+        saves_total = _column(players, "saves")
         saves90 = pd.Series(
             _safe_div(
                 saves_total.to_numpy(),
@@ -435,7 +523,7 @@ def _component_points_per_match(
     # raw-action count as threshold-hits would silently inflate every
     # defender by several points a game.
     defcon_rate = (
-        pd.to_numeric(players.get("defensive_contribution", 0), errors="coerce").fillna(0.0) / games
+        _column(players, "defensive_contribution") / games
     ).clip(upper=1.0)
     defensive_contribution = defcon_rate * minutes_share * DEFENSIVE_CONTRIBUTION_POINTS
 
@@ -444,12 +532,12 @@ def _component_points_per_match(
     # thresholds: who collects bonus is highly persistent (it tracks goals,
     # assists, clean sheets and defensive actions), so the realised rate is
     # a good forecast and avoids reimplementing the whole BPS table.
-    bonus_rate = pd.to_numeric(players.get("bonus", 0), errors="coerce").fillna(0.0) / games
+    bonus_rate = _column(players, "bonus") / games
     bonus = bonus_rate * minutes_share
 
     # --- Cards ---
-    yellows = pd.to_numeric(players.get("yellow_cards", 0), errors="coerce").fillna(0.0) / games
-    reds = pd.to_numeric(players.get("red_cards", 0), errors="coerce").fillna(0.0) / games
+    yellows = _column(players, "yellow_cards") / games
+    reds = _column(players, "red_cards") / games
     cards = (yellows + 3 * reds) * minutes_share
 
     # --- Appearance ---
@@ -473,6 +561,7 @@ def expected_points(
     teams: pd.DataFrame,
     from_event: int,
     horizon: int = DEFAULT_HORIZON,
+    team_context: dict[str, dict] | None = None,
 ) -> pd.DataFrame:
     """Projects expected FPL points per player.
 
@@ -494,12 +583,18 @@ def expected_points(
 
     p_available = _availability(df)
     p_start = _start_probability(df, games, preseason)
+    # Congestion and bookings both cost minutes, and neither is visible in
+    # a per-90 rate or an availability flag.
+    p_start = _rotation_adjusted_start(p_start, df, team_context)
+    suspension = _suspension_risk(df, games, horizon)
+    p_start = (p_start * (1 - suspension)).clip(0.0, 1.0)
     xmins = _expected_minutes(p_available, p_start)
     # Playing 60+ minutes is essentially "started and wasn't hooked early".
     p_sixty = (p_available * p_start * 0.88).clip(0.0, 1.0)
 
     df["p_available"] = p_available.round(3)
     df["p_start"] = p_start.round(3)
+    df["suspension_risk"] = suspension.round(3)
     df["expected_minutes"] = xmins.round(1)
 
     gameweeks = list(range(from_event, from_event + horizon))
