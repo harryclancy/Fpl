@@ -65,6 +65,27 @@ def load_core_data():
     return players, teams, events, fixtures, next_event
 
 
+@st.cache_data(ttl=600, show_spinner=False)
+def cached_scores(players, fixtures, teams, next_event):
+    """Projections, computed once per data refresh.
+
+    Streamlit re-executes the entire script on every interaction — every
+    tab click, every radio change, every keystroke that submits. Without
+    this, projecting the whole player pool and solving the squad ran four
+    separate times per interaction, about three seconds of identical work
+    for a result that hadn't changed. Caching is what makes the app feel
+    like an app rather than a form submission.
+    """
+    return squad_builder.score_players(players, fixtures, teams, next_event)
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def cached_solution(scored, template_weight):
+    """The solved squad. Keyed on the rank strategy, so moving that slider
+    re-solves — and nothing else does."""
+    return squad_builder.recommend_squad(scored, template_weight=template_weight)
+
+
 RANK_STRATEGIES = {
     "Balanced": (
         optimiser.TEMPLATE_WEIGHT,
@@ -223,8 +244,8 @@ def render_chips_tab(players, fixtures, teams, next_event):
         "When to play each one, and — just as often — why to hold",
     )
 
-    scored = squad_builder.score_players(players, fixtures, teams, next_event)
-    solution = squad_builder.recommend_squad(scored, template_weight=rank_strategy_weight())
+    scored = cached_scores(players, fixtures, teams, next_event)
+    solution = cached_solution(scored, rank_strategy_weight())
 
     st.caption(
         "Based on the recommended squad. Chips are judged against the fixture schedule ahead — "
@@ -463,8 +484,8 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
 def render_starting_xi_tab(players, fixtures, teams, next_event):
     section_header(f"Recommended Starting XI — GW{next_event}", "Best 15 buildable from scratch, with the case for every starter")
 
-    scored = squad_builder.score_players(players, fixtures, teams, next_event)
-    solution = squad_builder.recommend_squad(scored, template_weight=rank_strategy_weight())
+    scored = cached_scores(players, fixtures, teams, next_event)
+    solution = cached_solution(scored, rank_strategy_weight())
     squad15 = scored[scored["id"].isin(solution.squad_ids)].copy()
     starters, bench = solution.starting_ids, solution.bench_ids
     formation = solution.formation
@@ -695,7 +716,7 @@ def render_captaincy_tab(players, fixtures, teams, next_event):
     st.caption("The armband is the single biggest call of the week — full case, community research, and fixtures for the top 3.")
 
     report_text, _ = load_report(next_event)
-    scored = squad_builder.score_players(players, fixtures, teams, next_event)
+    scored = cached_scores(players, fixtures, teams, next_event)
     fixture_table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, rationale.FIXTURE_WINDOW)
     fixture_gws = list(range(next_event, next_event + rationale.FIXTURE_WINDOW))
 
@@ -880,7 +901,7 @@ def render_transfer_plan(players, fixtures, teams, next_event, squad, free_trans
     """
     st.markdown("#### Recommended move")
 
-    projected = squad_builder.score_players(players, fixtures, teams, next_event)
+    projected = cached_scores(players, fixtures, teams, next_event)
     owned_ids = [p.player_id for p in squad.picks]
 
     bank = st.slider(
