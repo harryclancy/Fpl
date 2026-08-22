@@ -132,3 +132,20 @@ def test_the_scheduled_writer_stays_quiet_when_the_deadline_is_far_off(monkeypat
 def test_the_scheduled_writer_refuses_after_the_deadline(monkeypatch):
     assert _run_script(monkeypatch, hours_to_deadline=-3) == 0
     assert snapshots.load(1) is None
+
+
+def test_the_repo_holds_no_snapshot_built_from_test_data():
+    """Regression: running the app smoke tests wrote a snapshot into the
+    real directory, and it got committed. The app would then have shown a
+    squad of synthetic fixture players as its genuine pre-deadline
+    recommendation — a fabricated record, which is worse than none.
+    """
+    import json
+
+    real_dir = Path(__file__).resolve().parent.parent / "data" / "snapshots"
+    for path in real_dir.glob("gw*.json"):
+        data = json.loads(path.read_text())
+        names = " ".join(data.get("player_names", {}).values())
+        assert "Adeyemi" not in names and "Okafor" not in names, (
+            f"{path.name} contains synthetic test players"
+        )

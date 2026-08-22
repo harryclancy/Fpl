@@ -92,6 +92,23 @@ def _synthetic_fixtures() -> list[dict]:
 
 
 @pytest.fixture(autouse=True)
+def _isolate_snapshots(tmp_path, monkeypatch):
+    """Keeps test runs out of the real snapshot directory.
+
+    These tests execute the actual app, which writes a pre-deadline
+    snapshot as a side effect. Pointed at the repo that means a run
+    commits a squad built from synthetic fixture data — and the app would
+    then serve that to a real user as "what we suggested before the
+    deadline", which is worse than having no snapshot at all.
+    """
+    from fpl_assistant.analysis import snapshots
+
+    directory = tmp_path / "snapshots"
+    directory.mkdir()
+    monkeypatch.setattr(snapshots, "SNAPSHOT_DIR", directory)
+
+
+@pytest.fixture(autouse=True)
 def _clear_streamlit_caches():
     """Streamlit's cache outlives an AppTest instance.
 
