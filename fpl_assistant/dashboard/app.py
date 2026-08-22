@@ -27,6 +27,8 @@ from fpl_assistant.analysis import (
     injuries,
     omissions,
     scenarios,
+    gameweek_state,
+    snapshots,
     search as research_search,
     rationale,
     squad_builder,
@@ -65,8 +67,14 @@ def load_core_data():
     teams = teams_df(bootstrap)
     events = events_df(bootstrap)
     fixtures = fixtures_df(fixtures_raw)
-    next_event = api.current_event(bootstrap)
-    return players, teams, events, fixtures, next_event
+    # NOT api.current_event: the API calls a gameweek "current" from its
+    # deadline until its last match finishes, so through the whole weekend
+    # it kept pointing at a gameweek nobody could still change their team
+    # for -- and the page recomputed that gameweek's advice against stats
+    # updating live. Deadlines decide what's plannable; results decide
+    # what's finished.
+    state = gameweek_state.resolve(events, fixtures)
+    return players, teams, events, fixtures, state
 
 
 @st.cache_data(ttl=600, show_spinner=False)
@@ -686,11 +694,81 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
             st.dataframe(stats_df, width='stretch', hide_index=True)
 
 
-def render_starting_xi_tab(players, fixtures, teams, next_event):
+def render_live_gameweek_notice(state, scored) -> None:
+    """What the app said before the deadline, while that gameweek is played.
+
+    Recomputing a gameweek's advice after kick-off doesn't refresh it, it
+    rewrites history: player stats update live, so by Sunday the model
+    knows who scored on Saturday and will cheerfully recommend captaining
+    a centre-back who already has a goal and a clean sheet. That advice was
+    impossible at the only moment it could have been used.
+
+    So during a live gameweek the page says so plainly, shows the frozen
+    pre-deadline pick if one was saved, and points every recommendation at
+    the gameweek you can still do something about.
+    """
+    if not state.is_live:
+        return
+
+    st.warning(
+        f"**GW{state.live_event} is under way** — {state.live_progress}. That deadline has "
+        f"gone, so nothing below is a GW{state.live_event} suggestion: everything targets "
+        f"**GW{state.planning_event}**, which is the next one you can still change your team "
+        f"for. This page will move on by itself once GW{state.live_event}'s last match ends."
+    )
+
+    frozen = snapshots.load(state.live_event)
+    with st.expander(f"What this app actually suggested before the GW{state.live_event} deadline"):
+        if frozen is None:
+            st.caption(
+                "No pre-deadline snapshot was saved for this gameweek, so there's nothing "
+                "honest to show here. It deliberately doesn't reconstruct one from today's "
+                "data — that would produce a squad informed by results already in, which is "
+                "exactly the problem this exists to avoid."
+            )
+            return
+
+        st.caption(
+            f"Frozen at {frozen.saved_at_display}, before a ball was kicked. Shown unchanged, "
+            f"right or wrong — it's the record you can hold this thing to account with."
+        )
+        names = {int(k): v for k, v in frozen.player_names.items()}
+
+        def _name(pid):
+            if pid in scored.index:
+                return str(scored.loc[pid, "web_name"])
+            return names.get(pid, f"#{pid}")
+
+        cols = st.columns(3)
+        cols[0].metric("Formation", frozen.formation)
+        cols[1].metric("Captain", _name(frozen.captain_id))
+        cols[2].metric("Cost", f"£{frozen.total_cost:.1f}m")
+        st.markdown(
+            "**XI:** " + ", ".join(_name(pid) for pid in frozen.starting_ids)
+            + "  \n**Bench:** " + ", ".join(_name(pid) for pid in frozen.bench_ids)
+        )
+
+
+def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
     section_header(f"Recommended Starting XI — GW{next_event}", "Best 15 buildable from scratch, with the case for every starter")
 
     scored = cached_scores(players, fixtures, teams, next_event)
     solution = cached_solution(scored, rank_strategy_weight())
+
+    if state is not None:
+        render_live_gameweek_notice(state, scored)
+        if not state.is_live:
+            # Freeze this gameweek's advice while its deadline is still in
+            # the future. The first save wins, so a later run can't quietly
+            # replace the real pre-deadline pick with a better-informed one.
+            try:
+                snapshots.save(
+                    next_event, solution,
+                    names={int(pid): str(scored.loc[pid, "web_name"])
+                           for pid in solution.squad_ids if pid in scored.index},
+                )
+            except Exception:
+                pass
     squad15 = scored[scored["id"].isin(solution.squad_ids)].copy()
     starters, bench = solution.starting_ids, solution.bench_ids
     formation = solution.formation
@@ -828,9 +906,6 @@ def render_manual_squad_entry(players: pd.DataFrame):
     )
 
 
-MAX_VETOES = 2
-
-
 def _squad_from_solution(solution, next_event) -> Squad:
     """Wraps a solver result in the Squad shape the pitch renderer wants."""
     picks = [
@@ -845,135 +920,8 @@ def _squad_from_solution(solution, next_event) -> Squad:
     )
 
 
-@st.cache_data(ttl=900, show_spinner=False)
-def cached_rebuild(scored, _solution, remove_ids, template_weight, cache_key):
-    return squad_builder.rebuild_without(
-        scored, _solution, list(remove_ids), template_weight=template_weight
-    )
-
-
-def render_copy_suggested_squad(players, fixtures, teams, next_event) -> None:
-    """Take the recommended squad, minus anyone you won't own.
-
-    Nobody copies a suggested squad wholesale — there's always one player
-    you won't have, whether you've watched him play, you already own the
-    alternative, or you just don't fancy it. Crossing him off the list and
-    leaving a hole isn't the same thing as re-solving without him: the
-    money he freed changes what the rest of the squad should be, and the
-    best replacement is often not the next-best player in his position.
-
-    So a veto re-runs the optimiser with him banned and everyone else
-    locked, which asks the question actually being asked.
-    """
-    scored = cached_scores(players, fixtures, teams, next_event)
-    solution = cached_solution(scored, rank_strategy_weight())
-    indexed = scored.set_index("id")
-
-    st.markdown("#### 📋 Copy the suggested squad")
-    st.caption(
-        "The recommended fifteen, ready to enter into FPL. Don't fancy one of them? Cross him "
-        "off and the squad is re-solved around the gap — the freed budget goes wherever it's "
-        "worth most, which usually isn't the next-best player in his position."
-    )
-
-    def _label(pid: int) -> str:
-        row = indexed.loc[pid]
-        where = "XI" if pid in set(solution.starting_ids) else "bench"
-        return (
-            f"{row['web_name']} ({row.get('team_short_name','')}, {row['position']}, "
-            f"£{row['price']:.1f}m — {where})"
-        )
-
-    vetoed = st.multiselect(
-        f"Remove anyone you don't want (up to {MAX_VETOES})",
-        options=list(solution.squad_ids),
-        format_func=_label,
-        max_selections=MAX_VETOES,
-        key="copy_squad_vetoes",
-        help="They'll be excluded and the rest of the squad re-optimised around the money freed.",
-    )
-
-    shown, swaps, notes, delta = solution, [], [], 0.0
-    if vetoed:
-        try:
-            rebuilt = cached_rebuild(
-                scored, solution, tuple(sorted(vetoed)), rank_strategy_weight(),
-                cache_key=(tuple(solution.squad_ids), tuple(sorted(vetoed))),
-            )
-            shown, swaps, notes, delta = (
-                rebuilt.solution, rebuilt.swaps, rebuilt.notes, rebuilt.points_delta
-            )
-        except Exception as exc:
-            st.error(
-                f"No legal fifteen can be built without those players ({exc}). "
-                "Try removing just one of them."
-            )
-            return
-
-    squad_players = scored[scored["id"].isin(shown.squad_ids)].copy()
-    cost = float(squad_players["price"].sum())
-
-    metrics = st.columns(4)
-    metrics[0].metric("Formation", shown.formation)
-    metrics[1].metric("Cost", f"£{cost:.1f}m", delta=f"£{100.0 - cost:.1f}m spare", delta_color="off")
-    metrics[2].metric("Captain", indexed.loc[shown.captain_id, "web_name"])
-    metrics[3].metric(
-        "Projected pts", f"{shown.expected_points:.0f}",
-        delta=f"{delta:+.1f} vs suggested" if vetoed else None,
-        delta_color="normal" if vetoed else "off",
-        help="Starting XI plus the captain's doubled score, over the projection window.",
-    )
-
-    for note in notes:
-        st.warning(note)
-
-    if swaps:
-        st.markdown("**What changed**")
-        for swap in swaps:
-            st.markdown(
-                f"- **OUT** {swap.out_name} (£{swap.out_price:.1f}m) → "
-                f"**IN** {swap.in_name} (£{swap.in_price:.1f}m)"
-            )
-        if delta < -0.05:
-            st.caption(
-                f"Costs {abs(delta):.1f} projected points against the unfiltered suggestion — "
-                f"the price of the veto, which is yours to judge."
-            )
-        elif delta > 0.05:
-            st.caption(
-                f"Worth {delta:+.1f} projected points, so the removal was free — the solver "
-                f"found a better shape once it had to look."
-            )
-
-    render_html(render_pitch_html(squad_players, _squad_from_solution(shown, next_event)))
-
-    with st.expander("As a list, for typing into FPL"):
-        listing = squad_players.assign(
-            Role=squad_players["id"].map(
-                lambda pid: "Captain" if pid == shown.captain_id
-                else "Vice" if pid == shown.vice_captain_id
-                else "XI" if pid in set(shown.starting_ids) else "Bench"
-            )
-        )
-        order = {"GKP": 0, "DEF": 1, "MID": 2, "FWD": 3}
-        listing = listing.assign(_o=listing["position"].map(order)).sort_values(
-            ["_o", "xp_next"], ascending=[True, False]
-        )
-        st.dataframe(
-            listing[["web_name", "team_short_name", "position", "price", "Role"]].rename(
-                columns={"web_name": "Player", "team_short_name": "Team",
-                         "position": "Pos", "price": "£m"}
-            ),
-            width="stretch", hide_index=True,
-        )
-
-
 def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, events: pd.DataFrame,
                      fixtures: pd.DataFrame = None, teams: pd.DataFrame = None):
-    if fixtures is not None and teams is not None:
-        render_copy_suggested_squad(players, fixtures, teams, next_event)
-        st.divider()
-
     try:
         picks_response = api.get_entry_picks(team_id, next_event)
         entry = api.get_entry(team_id)
@@ -1651,7 +1599,18 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
     render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers)
 
     st.markdown("---")
+    # The projection has to be attached here, not just the fixture columns.
+    # Without it the replacement ranking silently falls back to fixtures
+    # alone, and the whole point is that suggestions are forward-looking.
+    projected = cached_scores(players, fixtures, teams, next_event)
     scored = transfers.squad_with_scores(players, fixtures, teams, next_event, FIXTURE_WINDOW)
+    projection_columns = [
+        c for c in ("xp_horizon", "xp_next", "xp_captain", "expected_minutes", "p_start")
+        if c in projected.columns
+    ]
+    scored = scored.merge(
+        projected[["id"] + projection_columns], on="id", how="left", suffixes=("", "_proj")
+    ).set_index("id", drop=False)
     weaknesses = transfers.squad_weaknesses(scored, squad)
 
     if weaknesses.empty:
@@ -1674,10 +1633,18 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
         if replacements.empty:
             st.caption("No affordable replacements found in that position/budget.")
         else:
+            st.caption(
+                "Ranked by projected points over the next five gameweeks, not by what they "
+                "scored last week. Those disagree exactly when it matters — a defender fresh "
+                "off a goal and a clean sheet tops any form table, and is still the wrong buy "
+                "if his side face two of the best attacks next."
+            )
             replacement_cards = [
                 player_rank_card(
-                    i, row, f"{row['replacement_score']:.2f}", "score",
-                    f"£{row['price']:.1f}m · form {row['form']:.1f} · {row['fixture_run_difficulty']:.1f} avg FDR",
+                    i, row, f"{row['replacement_score']:.1f}", "pts next 5",
+                    f"£{row['price']:.1f}m · "
+                    + (f"**+{row['upgrade']:.1f} pts** on {chosen} · " if row.get("upgrade", 0) else "")
+                    + f"{row['fixture_run_difficulty']:.1f} avg FDR · form {row['form']:.1f}",
                 )
                 for i, (_, row) in enumerate(replacements.iterrows(), start=1)
             ]
@@ -1688,7 +1655,8 @@ def main():
     inject_global_css()
     hero_header()
     with st.spinner("Pulling the latest FPL data…"):
-        players, teams, events, fixtures, next_event = load_core_data()
+        players, teams, events, fixtures, state = load_core_data()
+    next_event = state.planning_event
 
     st.sidebar.header("Settings")
     team_id_input = st.sidebar.text_input("Your FPL Team ID", value=FPL_TEAM_ID or "")
@@ -1712,7 +1680,7 @@ def main():
     tab_map = dict(zip(tab_names, tabs))
 
     with tab_map["Starting XI"]:
-        render_starting_xi_tab(players, fixtures, teams, next_event)
+        render_starting_xi_tab(players, fixtures, teams, next_event, state)
 
     if team_id:
         with tab_map["My Squad"]:

@@ -91,6 +91,22 @@ def _synthetic_fixtures() -> list[dict]:
     return fixtures
 
 
+@pytest.fixture(autouse=True)
+def _clear_streamlit_caches():
+    """Streamlit's cache outlives an AppTest instance.
+
+    `load_core_data()` takes no arguments, so its cache key is constant and
+    the first test's bootstrap gets served to every test after it. That
+    doesn't just break tests that patch the API differently -- it means a
+    test can pass on data another test set up, which hides real failures.
+    """
+    import streamlit as st
+
+    st.cache_data.clear()
+    yield
+    st.cache_data.clear()
+
+
 @pytest.fixture
 def patch_api(monkeypatch):
     """Patches the API layer per-test so the app runs fully offline. Also
@@ -264,46 +280,75 @@ def test_an_empty_search_offers_suggestions_rather_than_an_error(patch_api):
     assert "Try:" in _all_markdown(at)
 
 
-def _veto_control(at):
-    return next((m for m in at.multiselect if m.key == "copy_squad_vetoes"), None)
+def _mid_gameweek_api(monkeypatch, preseason=True):
+    """Puts the app in the state that caused the bug: GW1 kicked off,
+    some matches played, the rest still to come."""
+    from datetime import datetime, timedelta, timezone
+
+    bootstrap = _synthetic_bootstrap(preseason)
+    now = datetime.now(timezone.utc)
+    for offset, event in enumerate(bootstrap["events"]):
+        # GW1's deadline two days ago, then weekly from there.
+        event["deadline_time"] = (
+            now + timedelta(days=-2 + offset * 7)
+        ).strftime("%Y-%m-%dT%H:%M:%SZ")
+        event["finished"] = False
+
+    fixtures = _synthetic_fixtures()
+    for i, fixture in enumerate(fixtures):
+        if fixture["event"] == 1:
+            fixture["finished"] = i % 2 == 0  # half of GW1 played
+        else:
+            fixture["finished"] = False
+
+    monkeypatch.setattr(api, "get_bootstrap_static", lambda: bootstrap)
+    monkeypatch.setattr(api, "get_fixtures", lambda event=None: fixtures)
+    monkeypatch.setattr(config, "FPL_TEAM_ID", None)
 
 
-def test_the_copy_squad_tool_offers_all_fifteen_and_draws_a_pitch(patch_api):
-    patch_api(preseason=True, team_id=12345)
+def test_mid_gameweek_the_page_targets_the_next_gameweek(monkeypatch):
+    """The reported bug: mid-GW1 the app kept presenting a GW1 squad,
+    recomputed against results already in. Nothing on the page should
+    claim to be advice for a deadline that has gone."""
+    _mid_gameweek_api(monkeypatch)
     at = AppTest.from_file(APP_PATH)
     at.run(timeout=120)
     assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
 
-    control = _veto_control(at)
-    assert control is not None, "the copy-squad veto control is missing"
-    assert len(control.options) == 15
-
-    page = _all_markdown(at)
-    assert "pitch-wrap" in page, "the squad isn't drawn on the pitch layout"
-    assert "formation-badge" in page
+    headers = " ".join(str(b.value) for b in at.markdown)
+    assert "Recommended Starting XI — GW2" in headers, (
+        "the page is still offering advice for the gameweek being played"
+    )
 
 
-def test_vetoing_a_player_re_solves_and_reports_the_change(patch_api):
-    """The behaviour the feature exists for: removing someone re-solves
-    the squad rather than leaving a hole, and says what moved."""
-    patch_api(preseason=True, team_id=12345)
+def test_mid_gameweek_the_live_gameweek_is_flagged(monkeypatch):
+    _mid_gameweek_api(monkeypatch)
     at = AppTest.from_file(APP_PATH)
     at.run(timeout=120)
 
-    control = _veto_control(at)
-    victim = control.options[0]
-    control.set_value([victim]).run(timeout=120)
-    assert not at.exception, f"App raised on veto: {[str(e) for e in at.exception]}"
-
-    page = _all_markdown(at)
-    assert "What changed" in page
-    assert "**OUT**" in page and "**IN**" in page
-    # Same pitch layout, as asked.
-    assert "pitch-wrap" in page
+    warnings = " ".join(str(w.value) for w in at.warning)
+    assert "GW1 is under way" in warnings
+    assert "matches played" in warnings
 
 
-def test_the_veto_control_is_capped_at_two(patch_api):
-    patch_api(preseason=True, team_id=12345)
+def test_before_the_deadline_nothing_is_flagged_as_live(monkeypatch):
+    from datetime import datetime, timedelta, timezone
+
+    bootstrap = _synthetic_bootstrap(True)
+    now = datetime.now(timezone.utc)
+    for offset, event in enumerate(bootstrap["events"]):
+        event["deadline_time"] = (now + timedelta(days=1 + offset * 7)).strftime(
+            "%Y-%m-%dT%H:%M:%SZ"
+        )
+        event["finished"] = False
+    monkeypatch.setattr(api, "get_bootstrap_static", lambda: bootstrap)
+    monkeypatch.setattr(api, "get_fixtures", lambda event=None: _synthetic_fixtures())
+    monkeypatch.setattr(config, "FPL_TEAM_ID", None)
+
     at = AppTest.from_file(APP_PATH)
     at.run(timeout=120)
-    assert _veto_control(at).max_selections == 2
+    assert not at.exception
+
+    warnings = " ".join(str(w.value) for w in at.warning)
+    assert "under way" not in warnings
+    assert "Recommended Starting XI — GW1" in " ".join(str(b.value) for b in at.markdown)

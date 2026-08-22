@@ -1,0 +1,4 @@
+# Snapshots are written at runtime and are specific to a deployment's own
+# history, so they aren't part of the repo -- but the directory has to
+# exist for the first write on a fresh container.
+*.json
