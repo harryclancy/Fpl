@@ -64,17 +64,27 @@ def load(gameweek: int) -> Snapshot | None:
         return None
 
 
-def save(gameweek: int, solution, names: dict[int, str] | None = None) -> Snapshot | None:
-    """Persists this gameweek's recommendation. Never overwrites.
+def save(
+    gameweek: int,
+    solution,
+    names: dict[int, str] | None = None,
+    deadline_passed: bool = False,
+) -> Snapshot | None:
+    """Persists this gameweek's recommendation, if the deadline is ahead.
 
-    The first save before a deadline is the one that counts. Overwriting
-    would let a later run -- possibly after kick-off -- quietly replace the
-    real pre-deadline advice with something informed by results, which is
-    the whole thing being guarded against.
+    The rule that matters is not "write once" -- it's "never write after
+    kick-off". Those are different, and the first version got it wrong by
+    refusing to overwrite: that locked in whatever the app happened to
+    compute days early and threw away every later, better-informed run.
+    Late team news is exactly when the advice improves, so a pre-deadline
+    rewrite is not a corruption of the record, it *is* the record.
+
+    Once the deadline passes, nothing may be written. That is the point of
+    the module: a post-kick-off save would quietly replace real advice
+    with something informed by results already in.
     """
-    existing = load(gameweek)
-    if existing is not None:
-        return existing
+    if deadline_passed:
+        return load(gameweek)
 
     snapshot = Snapshot(
         gameweek=int(gameweek),

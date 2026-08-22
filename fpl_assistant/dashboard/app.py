@@ -758,14 +758,16 @@ def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
     if state is not None:
         render_live_gameweek_notice(state, scored)
         if not state.is_live:
-            # Freeze this gameweek's advice while its deadline is still in
-            # the future. The first save wins, so a later run can't quietly
-            # replace the real pre-deadline pick with a better-informed one.
+            # Freeze this gameweek's advice while its deadline is ahead.
+            # Later pre-deadline runs are allowed to replace it -- late
+            # team news is when the advice gets better -- but nothing may
+            # be written once the gameweek kicks off.
             try:
                 snapshots.save(
                     next_event, solution,
                     names={int(pid): str(scored.loc[pid, "web_name"])
                            for pid in solution.squad_ids if pid in scored.index},
+                    deadline_passed=False,
                 )
             except Exception:
                 pass

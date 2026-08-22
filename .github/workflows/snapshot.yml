@@ -1,0 +1,54 @@
+name: Snapshot the pre-deadline squad
+
+# Freezes what the app recommends before each gameweek deadline and commits
+# it, so the record survives the app host restarting (its filesystem is
+# ephemeral, so a runtime-only snapshot is usually gone before anyone looks
+# at it). The script decides whether there's anything to do; most runs are
+# a no-op and exit quietly.
+
+on:
+  schedule:
+    # Every three hours. The script only writes inside a window before the
+    # deadline, so this cadence just guarantees it doesn't miss one --
+    # deadlines move around and a daily run could fall the wrong side.
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+# Least privilege: the job pushes a snapshot file and nothing else.
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Write the snapshot if a deadline is close
+        run: python scripts/snapshot_gameweek.py
+
+      - name: Commit it, if anything changed
+        run: |
+          if [ -z "$(git status --porcelain data/snapshots)" ]; then
+            echo "No new snapshot; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots
+          git commit -m "Snapshot the pre-deadline squad"
+          # The schedule can collide with a push; rebase rather than fail,
+          # since the snapshot is additive and never conflicts in practice.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
