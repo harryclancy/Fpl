@@ -25,6 +25,7 @@ from fpl_assistant.analysis import (
     form,
     fixtures as fixtures_analysis,
     injuries,
+    my_squad as my_squad_analysis,
     omissions,
     scenarios,
     gameweek_state,
@@ -747,6 +748,100 @@ def render_live_gameweek_notice(state, scored) -> None:
             "**XI:** " + ", ".join(_name(pid) for pid in frozen.starting_ids)
             + "  \n**Bench:** " + ", ".join(_name(pid) for pid in frozen.bench_ids)
         )
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def cached_confirmed_squad(team_id, planning_event):
+    return my_squad_analysis.latest_confirmed(team_id, planning_event, api.get_entry_picks)
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def cached_free_transfers(team_id) -> int:
+    try:
+        history = api.get_entry_history(team_id)
+        return transfers.estimate_free_transfers(history["current"], history["chips"])
+    except Exception:
+        return 1
+
+
+def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, state) -> None:
+    """The weekly decision, anchored on the squad you actually own.
+
+    From GW2 onward a from-scratch fifteen is not advice, it's a
+    description of a squad you can't have: you own fifteen players, you
+    have one free transfer, and every extra move costs four points. The
+    useful question is much narrower — given what you own, what is the one
+    move worth making, and who starts?
+    """
+    scored = cached_scores(players, fixtures, teams, next_event)
+    squad = confirmed.squad
+    owned_ids = [p.player_id for p in squad.picks]
+    owned = scored[scored["id"].isin(owned_ids)].copy()
+
+    section_header(
+        f"Your GW{next_event} plan",
+        f"Built from the squad you confirmed in GW{confirmed.event} — not from scratch",
+    )
+
+    if state is not None:
+        render_live_gameweek_notice(state, scored)
+
+    missing = [pid for pid in owned_ids if pid not in set(scored["id"])]
+    if missing:
+        st.caption(
+            f"{len(missing)} of your players aren't in the projection pool (usually because "
+            f"they're flagged unavailable). They're excluded from the XI below."
+        )
+
+    free_transfers = cached_free_transfers(squad.team_id)
+
+    metrics = st.columns(4)
+    metrics[0].metric("Squad value", f"£{squad.team_value:.1f}m")
+    metrics[1].metric("Bank", f"£{squad.bank:.1f}m")
+    metrics[2].metric("Free transfers", free_transfers, help="Estimated — check the official page before taking a hit.")
+    metrics[3].metric(
+        "Projected pts", f"{owned['xp_next'].nlargest(11).sum():.0f}",
+        help="Your best legal XI from the players you already own, this gameweek.",
+    )
+
+    st.divider()
+    render_transfer_plan(
+        players, fixtures, teams, next_event, squad, free_transfers, key_prefix="front"
+    )
+
+    st.divider()
+    st.markdown("#### Your best XI from what you own")
+    st.caption(
+        "The strongest legal eleven from your existing fifteen, before any transfer above. "
+        "Captaincy is a free decision every week — it's usually worth more than the transfer."
+    )
+
+    try:
+        starting, bench, formation = optimiser.optimise_starting_xi(owned, points_column="xp_next")
+        captain_id, vice_id = squad_builder.pick_captain(owned, starting)
+    except Exception as exc:
+        st.info(f"Couldn't work out an XI from your squad ({exc}).")
+        return
+
+    xi = optimiser.SquadSolution(
+        squad_ids=owned_ids, starting_ids=starting, bench_ids=bench,
+        captain_id=captain_id, vice_captain_id=vice_id, formation=formation,
+        total_cost=float(owned["price"].sum()),
+        expected_points=float(owned.loc[owned["id"].isin(starting), "xp_next"].sum()),
+    )
+
+    shape = st.columns(3)
+    shape[0].metric("Formation", formation)
+    shape[1].metric("Captain", owned.set_index("id").loc[captain_id, "web_name"])
+    shape[2].metric("Vice", owned.set_index("id").loc[vice_id, "web_name"])
+
+    render_html(render_pitch_html(owned.set_index("id", drop=False), _squad_from_solution(xi, next_event)))
+
+    report_text, _ = load_report(next_event)
+    indexed = owned.set_index("id", drop=False)
+    st.markdown(rationale.captain_rationale(indexed.loc[captain_id], indexed.loc[vice_id], report_text))
+
+    render_question_box(scored, xi, next_event)
 
 
 def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
@@ -1511,7 +1606,7 @@ def render_expert_verdicts(scored, next_event) -> None:
                 st.markdown(f"**⚖️ Experts disagree here:** {row['consensus_dissent']}")
 
 
-def render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers):
+def render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers, key_prefix="plan"):
     """The actual weekly decision: who to bring in, and whether a hit pays.
 
     Solved rather than suggested — the 4-point hit is priced into the
@@ -1522,13 +1617,19 @@ def render_transfer_plan(players, fixtures, teams, next_event, squad, free_trans
     projected = cached_scores(players, fixtures, teams, next_event)
     owned_ids = [p.player_id for p in squad.picks]
 
+    # Keyed, because this block now renders in two places -- the front page
+    # plan and the Transfers tab. Streamlit derives a widget's identity from
+    # its type and parameters, so two identical sliders collide and take the
+    # whole page down.
     bank = st.slider(
         "Money in the bank (£m)", 0.0, 10.0, float(squad.bank or 0.0), 0.1,
         help="From your official squad page. Sets what you can afford to spend.",
+        key=f"{key_prefix}_bank",
     )
     max_transfers = st.slider(
         "Most transfers to consider", 1, 4, 2,
         help="Each move beyond your free transfers costs 4 points, which is priced in below.",
+        key=f"{key_prefix}_max_transfers",
     )
 
     try:
@@ -1610,8 +1711,11 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
         c for c in ("xp_horizon", "xp_next", "xp_captain", "expected_minutes", "p_start")
         if c in projected.columns
     ]
-    scored = scored.merge(
-        projected[["id"] + projection_columns], on="id", how="left", suffixes=("", "_proj")
+    # reset_index first: these frames are indexed by id *and* carry an id
+    # column, which makes merging on the name ambiguous and raises.
+    scored = scored.reset_index(drop=True).merge(
+        projected.reset_index(drop=True)[["id"] + projection_columns],
+        on="id", how="left", suffixes=("", "_proj"),
     ).set_index("id", drop=False)
     weaknesses = transfers.squad_weaknesses(scored, squad)
 
@@ -1676,13 +1780,25 @@ def main():
     squad = None
     tab_names = ["Starting XI", "Captaincy", "Chips", "Fixtures", "Watchlist", "Injuries", "Odds & Expert Take"]
     if team_id:
-        tab_names = [tab_names[0], "My Squad"] + tab_names[1:] + ["Transfers"]
+        # Once there's a squad to work from, the front page is a weekly
+        # plan rather than a from-scratch build, and the name should say so.
+        tab_names = ["My Plan", "My Squad"] + tab_names[1:] + ["Transfers"]
 
     tabs = st.tabs(tab_names)
     tab_map = dict(zip(tab_names, tabs))
 
-    with tab_map["Starting XI"]:
-        render_starting_xi_tab(players, fixtures, teams, next_event, state)
+    confirmed = None
+    if team_id:
+        try:
+            confirmed = cached_confirmed_squad(team_id, next_event)
+        except Exception:
+            confirmed = None
+
+    with tab_map[tab_names[0]]:
+        if confirmed is not None:
+            render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, state)
+        else:
+            render_starting_xi_tab(players, fixtures, teams, next_event, state)
 
     if team_id:
         with tab_map["My Squad"]:

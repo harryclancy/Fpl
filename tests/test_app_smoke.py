@@ -369,3 +369,108 @@ def test_before_the_deadline_nothing_is_flagged_as_live(monkeypatch):
     warnings = " ".join(str(w.value) for w in at.warning)
     assert "under way" not in warnings
     assert "Recommended Starting XI — GW1" in " ".join(str(b.value) for b in at.markdown)
+
+
+def _with_confirmed_squad(monkeypatch, preseason=False):
+    """Puts the app in the GW2+ state: a squad already played, so a
+    from-scratch eleven would be advice you can't act on."""
+    from datetime import datetime, timedelta, timezone
+
+    bootstrap = _synthetic_bootstrap(preseason)
+    now = datetime.now(timezone.utc)
+    for offset, event in enumerate(bootstrap["events"]):
+        # GW1 finished; GW2's deadline still ahead.
+        event["deadline_time"] = (now + timedelta(days=-6 + offset * 7)).strftime(
+            "%Y-%m-%dT%H:%M:%SZ"
+        )
+        event["finished"] = offset == 0
+
+    fixtures = _synthetic_fixtures()
+    for fixture in fixtures:
+        fixture["finished"] = fixture["event"] == 1
+
+    # A legal fifteen out of the synthetic pool.
+    elements = bootstrap["elements"]
+    by_position = {t: [e["id"] for e in elements if e["element_type"] == t] for t in (1, 2, 3, 4)}
+    chosen = by_position[1][:2] + by_position[2][:5] + by_position[3][:5] + by_position[4][:3]
+    picks = {
+        "picks": [
+            {"element": pid, "position": i + 1, "is_captain": i == 0,
+             "is_vice_captain": i == 1, "multiplier": 1 if i < 11 else 0}
+            for i, pid in enumerate(chosen)
+        ],
+        "entry_history": {"bank": 5, "value": 1000, "event_transfers": 0,
+                          "event_transfers_cost": 0},
+    }
+
+    monkeypatch.setattr(api, "get_bootstrap_static", lambda: bootstrap)
+    monkeypatch.setattr(api, "get_fixtures", lambda event=None: fixtures)
+    monkeypatch.setattr(api, "get_entry_picks", lambda team_id, event: picks)
+    monkeypatch.setattr(api, "get_entry", lambda team_id: {"name": "Test FC",
+                                                           "summary_overall_rank": 100000})
+    monkeypatch.setattr(
+        api, "get_entry_history",
+        lambda team_id: {"current": [{"event": 1, "event_transfers": 0}], "chips": []},
+    )
+    monkeypatch.setattr(config, "FPL_TEAM_ID", 12345)
+    return chosen
+
+
+def test_with_a_confirmed_squad_the_front_page_is_a_plan_not_a_rebuild(monkeypatch):
+    """The reported complaint: from GW2 the front page asked for a whole
+    new starting eleven, which would cost a fortune in hits."""
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    page = _all_markdown(at)
+    assert "Your GW2 plan" in page
+    assert "not from scratch" in page
+    assert "Best 15 buildable from scratch" not in page
+
+
+def test_the_front_page_xi_only_contains_players_you_own(monkeypatch):
+    """The whole point of anchoring. An eleven drawn from the global pool
+    is a squad you'd have to buy."""
+    owned = set(_with_confirmed_squad(monkeypatch))
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+
+    bootstrap = api.get_bootstrap_static()
+    names_by_id = {e["id"]: e["web_name"] for e in bootstrap["elements"]}
+    owned_names = {names_by_id[pid] for pid in owned}
+
+    # Only the front page's pitch. Scanning the whole page picks up the My
+    # Squad tab and the captaincy cards too, which render on every script
+    # pass regardless of which tab is selected.
+    blocks = [str(b.value) for b in at.markdown if "pitch-wrap" in str(b.value)]
+    assert blocks, "no pitch was rendered"
+    pitch = blocks[0]
+    shown = {name for name in names_by_id.values() if f">{name}<" in pitch}
+
+    assert shown, "no players were rendered on the pitch"
+    assert shown <= owned_names, f"pitch shows players you don't own: {shown - owned_names}"
+
+
+def test_a_transfer_recommendation_is_offered_on_the_front_page(monkeypatch):
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+
+    page = _all_markdown(at)
+    assert "Recommended move" in page
+
+
+def test_without_a_team_id_it_still_builds_from_scratch(monkeypatch):
+    """Someone with no squad yet needs the original behaviour."""
+    patch = _synthetic_bootstrap(True)
+    monkeypatch.setattr(api, "get_bootstrap_static", lambda: patch)
+    monkeypatch.setattr(api, "get_fixtures", lambda event=None: _synthetic_fixtures())
+    monkeypatch.setattr(config, "FPL_TEAM_ID", None)
+
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+    assert not at.exception
+
+    assert "Best 15 buildable from scratch" in _all_markdown(at)
