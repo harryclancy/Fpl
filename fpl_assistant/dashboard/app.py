@@ -766,6 +766,50 @@ def cached_free_transfers(team_id) -> int:
         return 1
 
 
+def render_player_cases(
+    indexed, starting, bench, fixtures, teams, next_event,
+    report_text, captain_id=None, vice_id=None,
+) -> None:
+    """One expandable case per player, starters first.
+
+    Shared by both front-page modes so the from-scratch build and the
+    weekly plan can't drift apart on how much they explain.
+    """
+    fixture_table = fixtures_analysis.team_fixture_table(
+        fixtures, teams, next_event, rationale.FIXTURE_WINDOW
+    )
+    fixture_gws = list(range(next_event, next_event + rationale.FIXTURE_WINDOW))
+    next_gw = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, 1)
+
+    for group, players_in_group in (("Starting", starting), ("Bench", bench)):
+        if not players_in_group:
+            continue
+        if group == "Bench":
+            st.markdown("**Bench**")
+        for pid in players_in_group:
+            if pid not in indexed.index:
+                continue
+            row = indexed.loc[pid].copy()
+            # The opponent and the gameweek let the write-up name the
+            # fixture rather than describe it as a difficulty rating.
+            if row.get("team") in next_gw.index:
+                row["opponent"] = next_gw.loc[row["team"], next_event]
+            row["_gameweek"] = next_event
+
+            badge = ""
+            if pid == captain_id:
+                badge = " · 👑 Captain"
+            elif pid == vice_id:
+                badge = " · Vice"
+            summary = (
+                f"{row['web_name']} — {row.get('team_short_name','')} · {row['position']} · "
+                f"£{row['price']:.1f}m · {row.get('xp_next', 0):.1f} pts{badge}"
+            )
+            render_player_deep_dive(
+                row, report_text, fixture_table, fixture_gws, summary=summary
+            )
+
+
 def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, state) -> None:
     """The weekly decision, anchored on the squad you actually own.
 
@@ -818,26 +862,53 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
         "Captaincy is a free decision every week — it's usually worth more than the transfer."
     )
 
+    # A squad carrying injuries can't always field a legal eleven from the
+    # players still available, and when it can't, that must not blank the
+    # rest of the page. The captaincy call and the per-player cases are
+    # still exactly what someone in that position needs -- arguably more
+    # so, since they're about to make a transfer.
+    starting = bench = []
+    formation = None
+    captain_id = vice_id = None
     try:
         starting, bench, formation = optimiser.optimise_starting_xi(owned, points_column="xp_next")
         captain_id, vice_id = squad_builder.pick_captain(owned, starting)
-    except Exception as exc:
-        st.info(f"Couldn't work out an XI from your squad ({exc}).")
-        return
+    except Exception:
+        available = owned.sort_values("xp_next", ascending=False)
+        st.warning(
+            f"Only {len(owned)} of your fifteen are available and projectable, which isn't "
+            f"enough for a legal eleven — FPL will autosub around it. Everything below still "
+            f"applies, and the transfer above is the thing worth acting on."
+        )
+        starting = available["id"].head(11).tolist()
+        bench = available["id"].iloc[11:].tolist()
+        attackers = available[available["position"].isin(captain_call.ARMBAND_POSITIONS)]
+        if len(attackers) >= 2:
+            captain_id, vice_id = attackers["id"].iloc[0], attackers["id"].iloc[1]
 
     xi = optimiser.SquadSolution(
         squad_ids=owned_ids, starting_ids=starting, bench_ids=bench,
-        captain_id=captain_id, vice_captain_id=vice_id, formation=formation,
+        captain_id=captain_id or (starting[0] if starting else 0),
+        vice_captain_id=vice_id or (starting[1] if len(starting) > 1 else 0),
+        formation=formation or "",
         total_cost=float(owned["price"].sum()),
         expected_points=float(owned.loc[owned["id"].isin(starting), "xp_next"].sum()),
     )
 
+    lookup = owned.set_index("id")
     shape = st.columns(3)
-    shape[0].metric("Formation", formation)
-    shape[1].metric("Captain", owned.set_index("id").loc[captain_id, "web_name"])
-    shape[2].metric("Vice", owned.set_index("id").loc[vice_id, "web_name"])
+    shape[0].metric("Formation", formation or "—")
+    shape[1].metric(
+        "Captain", lookup.loc[captain_id, "web_name"] if captain_id in lookup.index else "—"
+    )
+    shape[2].metric(
+        "Vice", lookup.loc[vice_id, "web_name"] if vice_id in lookup.index else "—"
+    )
 
-    render_html(render_pitch_html(owned.set_index("id", drop=False), _squad_from_solution(xi, next_event)))
+    if captain_id is not None:
+        render_html(
+            render_pitch_html(owned.set_index("id", drop=False), _squad_from_solution(xi, next_event))
+        )
 
     st.divider()
     # Captaincy is judged over the players you own, since that's the only
@@ -846,7 +917,23 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
 
     report_text, _ = load_report(next_event)
     indexed = owned.set_index("id", drop=False)
-    st.markdown(rationale.captain_rationale(indexed.loc[captain_id], indexed.loc[vice_id], report_text))
+    if captain_id in indexed.index and vice_id in indexed.index:
+        st.markdown(
+            rationale.captain_rationale(
+                indexed.loc[captain_id], indexed.loc[vice_id], report_text
+            )
+        )
+
+    # The per-player case. This went missing when the front page became a
+    # plan rather than a build, and its absence left the page saying who
+    # to start without ever saying why — which is the only part a manager
+    # can actually argue with.
+    st.divider()
+    st.markdown("#### Why each of them")
+    render_player_cases(
+        indexed, starting, bench, fixtures, teams, next_event,
+        report_text, captain_id, vice_id,
+    )
 
     render_question_box(scored, xi, next_event)
 
@@ -935,21 +1022,10 @@ def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
     starters_df["_order"] = starters_df["position"].map(position_reading_order)
     starters_df = starters_df.sort_values(["_order", "xp_next"], ascending=[True, False])
 
-    fixture_table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, rationale.FIXTURE_WINDOW)
-    fixture_gws = list(range(next_event, next_event + rationale.FIXTURE_WINDOW))
-
-    for pos in ["FWD", "MID", "DEF", "GKP"]:
-        pos_rows = starters_df[starters_df["position"] == pos]
-        if pos_rows.empty:
-            continue
-        st.markdown(f"**{position_labels[pos]}**")
-        for pid, row in pos_rows.iterrows():
-            role = " · Captain" if pid == captain_id else (" · Vice-captain" if pid == vice_id else "")
-            summary = (
-                f"{row['web_name']}{role} — {row['team_short_name']} · £{row['price']:.1f}m · "
-                f"{row['xp_next']:.1f} pts projected"
-            )
-            render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=summary)
+    render_player_cases(
+        squad15.set_index("id", drop=False), starters, bench, fixtures, teams, next_event,
+        report_text, captain_id, vice_id,
+    )
 
     st.markdown("---")
     render_question_box(scored, solution, next_event)

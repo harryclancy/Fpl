@@ -12,6 +12,8 @@ import re
 
 import pandas as pd
 
+from fpl_assistant.analysis import odds
+
 FIXTURE_WINDOW = 5
 TRANSFER_MOMENTUM_THRESHOLD = 20_000
 
@@ -317,6 +319,98 @@ def _numbers_only_case(row: pd.Series) -> str:
     )
 
 
+def form_story(row: pd.Series) -> str | None:
+    """What he actually did lately, in words rather than as a number.
+
+    "Form 6.5" is a number a manager has to translate before it means
+    anything. "Scored last week" is the thing they'd say to a friend, and
+    it's the reason people reach for a player in the first place — so it
+    belongs at the top of the case, not buried in a stats line.
+    """
+    last = pd.to_numeric(row.get("event_points"), errors="coerce")
+    form = pd.to_numeric(row.get("form"), errors="coerce")
+    bits = []
+
+    if pd.notna(last):
+        points = int(last)
+        if points >= 10:
+            bits.append(f"**Hauled last week ({points} points)**")
+        elif points >= 6:
+            bits.append(f"**Returned last week ({points} points)**")
+        elif points >= 3:
+            bits.append(f"ticked over last week ({points} points)")
+        elif points > 0:
+            bits.append(f"blanked last week ({points} points)")
+        else:
+            bits.append("didn't score last week")
+
+    if pd.notna(form) and form > 0:
+        if form >= 6:
+            bits.append(f"and he's been in this vein all month — {form:.1f} form")
+        elif form >= 4:
+            bits.append(f"with steady returns behind it ({form:.1f} form)")
+        elif form <= 2:
+            bits.append(f"and the wider run is quiet too ({form:.1f} form)")
+
+    if not bits:
+        return None
+    return "**Recent form:** " + ", ".join(bits).replace("**Hauled", "hauled").replace(
+        "**Returned", "returned"
+    ).replace("**", "").capitalize() + "."
+
+
+def opponent_story(
+    row: pd.Series, opponent: str | None = None, difficulty: float | None = None,
+    gameweek: int | None = None,
+) -> str | None:
+    """Who he plays next, and why that matters.
+
+    The fixture is the single most common reason a manager picks someone,
+    and a difficulty number alone doesn't carry it. This says who, whether
+    it's home or away, how kind that is, and — where it's been researched
+    — what typically happens when these two meet, which is the thing a
+    per-90 rate can never express.
+    """
+    if difficulty is None:
+        difficulty = pd.to_numeric(row.get("fixture_run_difficulty"), errors="coerce")
+    if difficulty is not None and pd.isna(difficulty):
+        difficulty = None
+
+    parts = []
+    if opponent:
+        parts.append(f"Next up: **{opponent}**")
+    elif difficulty is None:
+        return None
+
+    if difficulty is not None:
+        if difficulty <= 2.2:
+            verdict = "about as kind as this gets"
+        elif difficulty <= 2.8:
+            verdict = "a favourable draw"
+        elif difficulty <= 3.4:
+            verdict = "a neutral one — not a reason to pick him or to drop him"
+        elif difficulty <= 4.0:
+            verdict = "on the tougher side"
+        else:
+            verdict = "one of the hardest fixtures on the board"
+        parts.append(f"{verdict} ({difficulty:.1f} on the difficulty ticker)")
+
+    line = ", ".join(parts) + "."
+
+    if gameweek is not None:
+        note = odds.matchup_note(gameweek, row.get("team_short_name"), opponent)
+        if note:
+            line += f" {note}"
+
+    market = row.get("p_goal_odds")
+    if market is not None and pd.notna(market):
+        line += (
+            f" Bookmakers make him about **{float(market) * 100:.0f}% to score** in it — the "
+            f"market's read on this specific fixture rather than a summary of his season."
+        )
+    return "**The fixture:** " + line
+
+
 def player_rationale(
     row: pd.Series, report_text: str | None = None, team_context: dict | None = None
 ) -> str:
@@ -336,6 +430,20 @@ def player_rationale(
         parts.append(headline + str(verdict))
     else:
         parts.append(headline.rstrip("— ").strip())
+
+    # Form and fixture first: these are the two things a manager actually
+    # says out loud when explaining a pick ("he scored last week and
+    # they've got Hull next"), and they were previously either absent or
+    # compressed into a stats line nobody reads.
+    story = form_story(row)
+    if story:
+        parts.append(story)
+
+    fixture = opponent_story(
+        row, opponent=row.get("opponent"), gameweek=row.get("_gameweek")
+    )
+    if fixture:
+        parts.append(fixture)
 
     consensus_note = consensus_verdict(row)
     if consensus_note:

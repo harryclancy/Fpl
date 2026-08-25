@@ -7,6 +7,7 @@ match falls back to first+second name too.
 """
 import pandas as pd
 
+from fpl_assistant.analysis import rationale
 from fpl_assistant.analysis.rationale import _report_mention, captain_rationale, player_rationale
 
 REPORT_TEXT = """
@@ -80,3 +81,107 @@ def test_captain_rationale_checks_both_captain_and_vice():
     text = captain_rationale(captain, vice, REPORT_TEXT)
     assert "fixture swing" in text
     assert "differential" in text
+
+
+# --- the qualitative case -----------------------------------------------
+# The complaint: "I need to know why you're picking them qualitatively.
+# Eg Pedro scored last week and next opponent are weak according to many
+# sources." Those two sentences are what a manager actually says out loud,
+# and both were either missing or compressed into a stats line.
+
+def _story_row(**overrides) -> pd.Series:
+    base = {
+        "web_name": "Pedro", "team_short_name": "CHE", "position": "FWD", "price": 7.5,
+        "event_points": 8, "form": 6.2, "fixture_run_difficulty": 2.1,
+        "selected_by_percent": 48.0, "status": "a", "news": "", "minutes": 900,
+        "xp_next": 5.1, "xp_horizon": 24.0, "points_per_game": 5.0, "bonus": 6,
+        "ict_index": 120.0, "expected_goal_involvements": 6.2,
+        "consensus_verdict": None, "consensus_reason": None, "consensus_watch_out": None,
+    }
+    base.update(overrides)
+    return pd.Series(base)
+
+
+def test_a_haul_last_week_is_stated_as_a_haul():
+    assert "Hauled last week" in rationale.form_story(_story_row(event_points=13))
+
+
+def test_a_return_last_week_is_stated_plainly():
+    story = rationale.form_story(_story_row(event_points=8))
+    assert "Returned last week (8 points)" in story
+
+
+def test_a_blank_last_week_is_not_dressed_up():
+    """A write-up that only ever sounds positive is useless."""
+    assert "didn't score last week" in rationale.form_story(
+        _story_row(event_points=0, form=1.5)
+    ).lower()
+
+
+def test_a_quiet_run_is_admitted():
+    assert "the wider run is quiet" in rationale.form_story(_story_row(event_points=1, form=1.2))
+
+
+def test_form_reads_as_words_not_as_a_bare_number():
+    story = rationale.form_story(_story_row())
+    assert "form" in story.lower()
+    # It must say what happened, not just print a metric.
+    assert "last week" in story
+
+
+def test_no_recent_data_produces_no_form_claim():
+    """Preseason. Inventing a form story from nothing is worse than
+    staying quiet."""
+    assert rationale.form_story(_story_row(event_points=None, form=0)) is None
+
+
+# --- the fixture --------------------------------------------------------
+
+def test_the_fixture_names_the_opponent():
+    line = rationale.opponent_story(_story_row(), opponent="FUL (H)")
+    assert "FUL (H)" in line
+
+
+def test_an_easy_fixture_is_called_easy():
+    line = rationale.opponent_story(_story_row(fixture_run_difficulty=2.0), opponent="COV (H)")
+    assert "about as kind as this gets" in line
+
+
+def test_a_hard_fixture_is_called_hard():
+    line = rationale.opponent_story(_story_row(fixture_run_difficulty=4.6), opponent="MCI (A)")
+    assert "hardest fixtures on the board" in line
+
+
+def test_a_neutral_fixture_is_not_spun_either_way():
+    """The failure mode of these write-ups is that everything sounds like
+    a reason to buy."""
+    line = rationale.opponent_story(_story_row(fixture_run_difficulty=3.1), opponent="EVE (A)")
+    assert "not a reason to pick him or to drop him" in line
+
+
+def test_the_market_view_is_included_when_priced():
+    line = rationale.opponent_story(_story_row(p_goal_odds=0.455), opponent="FUL (H)")
+    assert "46% to score" in line
+    assert "market's read on this specific fixture" in line
+
+
+def test_a_researched_matchup_note_is_surfaced():
+    """What typically happens when these two meet — the thing a per-90
+    rate cannot express."""
+    line = rationale.opponent_story(
+        _story_row(team_short_name="MCI"), opponent="BOU", gameweek=1,
+    )
+    assert "last four" in line
+
+
+def test_no_fixture_information_produces_no_fixture_claim():
+    assert rationale.opponent_story(_story_row(fixture_run_difficulty=None), opponent=None) is None
+
+
+# --- assembled ----------------------------------------------------------
+
+def test_the_full_write_up_leads_with_form_and_fixture():
+    text = rationale.player_rationale(_story_row(opponent="FUL (H)", _gameweek=1))
+    assert "Recent form:" in text
+    assert "The fixture:" in text
+    assert text.index("Recent form:") < text.index("The fixture:")

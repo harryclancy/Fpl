@@ -52,6 +52,10 @@ def _synthetic_bootstrap(preseason: bool) -> dict:
                     "first_name": "J.", "second_name": rng.choice(SURNAMES), "team": team_id,
                     "element_type": ELEMENT_TYPE[pos], "now_cost": int(price * 10),
                     "total_points": 0 if preseason else rng.randint(0, 120),
+                    # What he scored in the most recent gameweek. The
+                    # write-ups lead on this ("scored last week"), so the
+                    # fixture has to carry it or that path never runs.
+                    "event_points": 0 if preseason else rng.choice([0, 1, 2, 2, 6, 8, 13]),
                     "points_per_game": "0.0" if preseason else str(round(rng.uniform(0, 7), 1)),
                     "form": "0.0" if preseason else str(round(rng.uniform(0, 8), 1)),
                     "selected_by_percent": str(round(rng.uniform(0.1, 45), 1)),
@@ -516,3 +520,32 @@ def test_the_captaincy_section_shows_the_distribution_and_the_field(monkeypatch)
 
     page = _all_markdown(at)
     assert "ceiling" in page
+
+
+def test_an_injured_squad_still_gets_the_rest_of_the_plan(monkeypatch):
+    """Regression: if enough owned players were unavailable to make a
+    legal eleven impossible, the XI solve raised and the whole plan page
+    returned early — no captaincy call, no per-player cases. Someone in
+    that position needs the advice more than usual, not less.
+    """
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    labels = " ".join(_expander_labels(at))
+    assert "haul" in labels, "the captaincy call vanished"
+    assert "Recommended move" in _all_markdown(at)
+
+
+def test_the_front_page_explains_each_player(monkeypatch):
+    """The complaint: the plan page said who to start and never said why.
+    Every player should carry a case you can argue with."""
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+
+    page = _all_markdown(at)
+    assert "Why each of them" in page
+    assert "Recent form:" in page, "no qualitative form line"
+    assert "The fixture:" in page, "no opponent context"
