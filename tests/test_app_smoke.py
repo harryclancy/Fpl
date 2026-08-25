@@ -393,9 +393,14 @@ def _with_confirmed_squad(monkeypatch, preseason=False):
     elements = bootstrap["elements"]
     by_position = {t: [e["id"] for e in elements if e["element_type"] == t] for t in (1, 2, 3, 4)}
     chosen = by_position[1][:2] + by_position[2][:5] + by_position[3][:5] + by_position[4][:3]
+    # The manager's own captain is a forward, as a real one would be. The
+    # app must display whatever they actually chose here — it's their
+    # squad, not a recommendation — so this needs to be realistic rather
+    # than a goalkeeper.
+    own_captain = chosen[12]
     picks = {
         "picks": [
-            {"element": pid, "position": i + 1, "is_captain": i == 0,
+            {"element": pid, "position": i + 1, "is_captain": pid == own_captain,
              "is_vice_captain": i == 1, "multiplier": 1 if i < 11 else 0}
             for i, pid in enumerate(chosen)
         ],
@@ -474,3 +479,40 @@ def test_without_a_team_id_it_still_builds_from_scratch(monkeypatch):
     assert not at.exception
 
     assert "Best 15 buildable from scratch" in _all_markdown(at)
+
+
+def test_the_armband_never_goes_to_a_defender_anywhere_in_the_app(monkeypatch):
+    """Belt and braces on the reported failure. Two code paths used to
+    choose a captain and only one filtered by position; this asserts on
+    the rendered page rather than on either function."""
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    bootstrap = api.get_bootstrap_static()
+    defensive = {
+        e["web_name"] for e in bootstrap["elements"] if e["element_type"] in (1, 2)
+    }
+
+    # Only the recommended pitch. The My Squad tab renders whatever
+    # captain the manager actually set, which is theirs to get wrong.
+    blocks = [str(b.value) for b in at.markdown if "armband-c" in str(b.value)]
+    assert blocks, "no armband was rendered"
+    for chunk in blocks[0].split("player-card")[1:]:
+        if "armband-c" not in chunk:
+            continue
+        captained = [name for name in defensive if f">{name}<" in chunk]
+        assert not captained, f"a defender has the armband: {captained}"
+
+
+def test_the_captaincy_section_shows_the_distribution_and_the_field(monkeypatch):
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=120)
+
+    labels = " ".join(_expander_labels(at))
+    assert "haul" in labels, "captaincy candidates should report haul probability"
+
+    page = _all_markdown(at)
+    assert "ceiling" in page

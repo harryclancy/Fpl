@@ -17,6 +17,8 @@ from fpl_assistant import api
 from fpl_assistant.analysis import (
     ask as ask_engine,
     captaincy,
+    captain_call,
+    odds as odds_module,
     chips,
     consensus,
     explain,
@@ -837,6 +839,11 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
 
     render_html(render_pitch_html(owned.set_index("id", drop=False), _squad_from_solution(xi, next_event)))
 
+    st.divider()
+    # Captaincy is judged over the players you own, since that's the only
+    # armband you can actually give out.
+    render_captain_call(owned, next_event)
+
     report_text, _ = load_report(next_event)
     indexed = owned.set_index("id", drop=False)
     st.markdown(rationale.captain_rationale(indexed.loc[captain_id], indexed.loc[vice_id], report_text))
@@ -912,6 +919,8 @@ def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
     report_text, _ = load_report(next_event)
 
     render_html(render_pitch_html(squad15, _squad_from_solution(solution, next_event)))
+
+    render_captain_call(squad15, next_event)
 
     captain_row = squad15.loc[captain_id]
     vice_row = squad15.loc[vice_id]
@@ -1065,6 +1074,51 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
         st.dataframe(squad_players[cols].sort_values(["position", "web_name"]), width='stretch')
 
     return squad
+
+
+def render_captain_call(scored, next_event) -> None:
+    """The armband, with the case, the field, and the disagreement.
+
+    Three things this has to do that a ranked list doesn't: rank on the
+    ceiling rather than the mean (the armband doubles, and doubling
+    rewards the tail), account for what everyone else is doing (rank moves
+    on difference, not on score), and say out loud when the numbers and
+    the analysts disagree instead of quietly averaging them.
+    """
+    try:
+        annotated = odds_module.annotate(scored, next_event)
+        cases = captain_call.rank(annotated, next_event, strategy=rank_strategy_weight())
+    except Exception as exc:
+        st.caption(f"Couldn't assess captaincy this week ({exc}).")
+        return
+    if not cases:
+        return
+
+    st.markdown("#### 👑 The armband")
+    st.markdown(captain_call.verdict(cases, strategy=rank_strategy_weight()))
+    st.caption(
+        "Ranked on ceiling rather than average score — the armband doubles a result, so upside "
+        "matters more than the mean. Defenders and goalkeepers are excluded: even the "
+        "highest-scoring defender in FPL history is a 9/1 shot to score in a given week, which "
+        "is what a defensive captaincy ceiling actually looks like."
+    )
+
+    for index, case in enumerate(cases[:4]):
+        badge = "👑" if index == 0 else f"{index + 1}."
+        header = (
+            f"{badge} {case.name} ({case.team}) — {case.expected:.1f} projected · "
+            f"ceiling {case.ceiling} · {case.p_haul * 100:.0f}% haul"
+        )
+        with st.expander(header, expanded=index == 0):
+            for reason in case.reasons:
+                st.markdown(f"- {reason}")
+            if case.expert_take:
+                st.markdown(f"**What the analysts say:** {case.expert_take}")
+            if case.odds_note:
+                st.markdown(f"**The market:** {case.odds_note}")
+            disagreement = captain_call.adjudicate(case)
+            if disagreement:
+                st.markdown(disagreement)
 
 
 def render_captaincy_tab(players, fixtures, teams, next_event):

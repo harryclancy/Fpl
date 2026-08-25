@@ -20,7 +20,7 @@ from dataclasses import dataclass, field
 
 import pandas as pd
 
-from fpl_assistant.analysis import consensus, explain, optimiser
+from fpl_assistant.analysis import captain_call, consensus, explain, optimiser
 from fpl_assistant.analysis.expected_points import DEFAULT_HORIZON, expected_points
 from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.optimiser import (
@@ -299,17 +299,35 @@ def best_starting_xi(squad: pd.DataFrame) -> tuple[list[int], list[int], str]:
 def pick_captain(squad: pd.DataFrame, starting_ids: list[int]) -> tuple[int, int]:
     """Captain and vice from the starting XI.
 
-    Ranked on next-gameweek xP rather than the multi-week horizon: the
-    armband is a one-week decision, so a great fixture this weekend should
-    outweigh a good run four weeks out.
+    Restricted to attacking positions, which is not a stylistic preference
+    but a correction of a category error. The armband doubles a result,
+    and doubling rewards the tail of the distribution -- so ranking on a
+    mean projection treats a defender who collects a clean sheet and
+    appearance points most weeks as equivalent to a forward with a real
+    chance of fifteen. It isn't, and that equivalence is how a centre-back
+    ended up being recommended as captain.
+
+    The scenario model already ranks defenders below attackers on its own,
+    because their ceiling is capped and they blank more often. This guard
+    exists because "usually ranks lower" is not "never wins", and one odd
+    gameweek where a defender's projection spikes should not be able to
+    produce advice that reads as broken.
+
+    Falls back to the whole XI only if it contains no attacker at all,
+    which no legal formation allows -- but a caller passing a partial
+    squad shouldn't get an exception instead of an answer.
     """
     points_column = next(
         (c for c in ("xp_captain", "xp_next", "squad_score") if c in squad.columns), "squad_score"
     )
-    starters = squad[squad["id"].isin(starting_ids)].sort_values(points_column, ascending=False)
+    starters = squad[squad["id"].isin(starting_ids)]
     if len(starters) < 2:
         raise ValueError("Need at least two starters to pick a captain and vice.")
-    return starters["id"].iloc[0], starters["id"].iloc[1]
+
+    attackers = starters[starters["position"].isin(captain_call.ARMBAND_POSITIONS)]
+    eligible = attackers if len(attackers) >= 2 else starters
+    ranked = eligible.sort_values(points_column, ascending=False)
+    return ranked["id"].iloc[0], ranked["id"].iloc[1]
 
 
 # --- Fallback -----------------------------------------------------------

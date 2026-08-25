@@ -1,0 +1,77 @@
+{
+  "gameweek": 1,
+  "season": "2026/27",
+  "researched": "2026-08-19",
+  "note": "Anticipated returns, as distinct from delivered ones.\n\nEverything else in this app is backward-looking: expected goals per 90 describes chances a player has already had, form describes points already scored. Both share a blind spot -- they don't know what a manager said yesterday, that a defence is missing two centre-backs, or that this striker has scored in four straight against this opponent.\n\n`anytime_goalscorer` is the decimal price. Implied probability is the raw 1/odds figure, which includes the bookmaker's margin and so runs a few points high; that overround is left in deliberately, because removing it needs the full market for the fixture and a fabricated correction is worse than a known bias.\n\n`captain_share` is the percentage of managers expected to captain the player. It is the single most important number for rank and appears nowhere in the FPL API, so it is researched here. Ownership plus captain share is effective ownership: if 60% of the field captains someone, his haul barely moves your rank and his blank barely hurts it.\n\n`matchups` is what typically happens when these sides meet -- the thing a per-90 rate cannot express and every human analyst reaches for first.\n\nPrices move. The research date above is the honest shelf life of this file.",
+  "players": [
+    {
+      "name": "Haaland",
+      "full_name": "Erling Haaland",
+      "anytime_goalscorer": 1.44,
+      "captain_share": 62,
+      "note": "Shortest anytime price on the board by some distance, at home to a side with the worst opening fixtures in the league. The market and the model agree here, which is itself informative -- disagreement is where the interesting decisions are."
+    },
+    {
+      "name": "Joao Pedro",
+      "full_name": "Joao Pedro",
+      "anytime_goalscorer": 2.2,
+      "captain_share": 9,
+      "note": "Priced as the clear focal point of the Chelsea attack after seven pre-season goals."
+    },
+    {
+      "name": "B.Fernandes",
+      "full_name": "Bruno Fernandes",
+      "anytime_goalscorer": 3.1,
+      "captain_share": 12,
+      "note": "Price reflects penalties as much as open play — worth remembering the pre-season misses put that duty in question, which a goalscorer price alone won't tell you."
+    },
+    {
+      "name": "Szoboszlai",
+      "full_name": "Dominik Szoboszlai",
+      "anytime_goalscorer": 4.5,
+      "captain_share": 4,
+      "note": "Longer than his ownership implies, consistent with the deeper pre-season role."
+    },
+    {
+      "name": "Semenyo",
+      "full_name": "Antoine Semenyo",
+      "anytime_goalscorer": 3.4,
+      "captain_share": 3
+    },
+    {
+      "name": "Calvert-Lewin",
+      "full_name": "Dominic Calvert-Lewin",
+      "anytime_goalscorer": 3.75,
+      "captain_share": 2
+    },
+    {
+      "name": "Gabriel",
+      "full_name": "Gabriel Magalhaes",
+      "anytime_goalscorer": 9.0,
+      "captain_share": 1,
+      "note": "Included to make the point: even the best-scoring defender in FPL history is a 9/1 shot to score. That is what a defender's captaincy ceiling actually looks like."
+    }
+  ],
+  "matchups": [
+    {
+      "team": "MCI",
+      "opponent": "BOU",
+      "note": "Haaland has scored four times in his last four meetings with Bournemouth across all competitions, and City have won each of the last four at home in this fixture."
+    },
+    {
+      "team": "MUN",
+      "opponent": "HUL",
+      "note": "Promoted side away at a team top of the opening fixture ticker — historically the shape of game where a home side's attacking returns cluster."
+    },
+    {
+      "team": "ARS",
+      "opponent": "COV",
+      "note": "Arsenal at home to a promoted side missing both first-choice centre-backs of their own; the clean-sheet market is short and the attacking prices reflect a likely one-sided game."
+    },
+    {
+      "team": "BOU",
+      "opponent": "MCI",
+      "note": "Away at the champions to open a run in which all six fixtures rate 3 or higher. Bournemouth assets are priced accordingly across every market."
+    }
+  ]
+}
