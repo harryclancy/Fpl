@@ -1,0 +1,64 @@
+name: Refresh the weekly research
+
+# The app's advice is only as good as the research behind it, and research
+# entered by hand covers whichever players someone had time for and goes
+# stale the moment a manager gives a press conference. This runs the same
+# job automatically ahead of each deadline: search the web for what
+# analysts are saying, validate it, and commit it.
+#
+# Nothing is written unless the new research passes the same checks the
+# test suite enforces. A rejected refresh keeps last week's file, because
+# stale research known to be stale beats fresh research that is wrong.
+
+on:
+  schedule:
+    # Twice a day. The script only acts inside a window before the
+    # deadline, so most runs are a no-op; this cadence means it can't miss
+    # a deadline and still leaves room for a rejected run to be retried
+    # before kick-off.
+    - cron: "0 7,19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Research this gameweek
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/research_gameweek.py
+
+      - name: Check the committed files still pass the linter
+        # Belt and braces. The agent validates its own output before
+        # writing, but the repo's own rules are the authority on what is
+        # allowed to ship, and they run against what actually landed.
+        run: python -m pytest tests/test_research_data_quality.py -q
+
+      - name: Commit it, if anything changed
+        run: |
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "Research unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Refresh the gameweek research"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
