@@ -11,12 +11,20 @@ name: Refresh the weekly research
 # stale research known to be stale beats fresh research that is wrong.
 
 on:
-  schedule:
-    # Twice a day. The script only acts inside a window before the
-    # deadline, so most runs are a no-op; this cadence means it can't miss
-    # a deadline and still leaves room for a rejected run to be retried
-    # before kick-off.
-    - cron: "0 7,19 * * *"
+  # The schedule is DELIBERATELY OFF.
+  #
+  # A run costs real money — the first live runs came to roughly $2 each,
+  # not the pennies that were estimated when this was written. Twice a day
+  # would be about $30 a week, which is not a sane price for refreshing a
+  # research file. Nothing here should spend that without a human deciding
+  # to.
+  #
+  # Re-enable only once the cost per run is actually known and acceptable:
+  # uncomment the cron below, and prefer a weekly cadence (one run per
+  # gameweek, ahead of the deadline) over a daily one.
+  #
+  # schedule:
+  #   - cron: "0 7 * * 4"
   workflow_dispatch:
 
 permissions:
