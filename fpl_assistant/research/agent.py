@@ -185,6 +185,12 @@ Rules that matter more than completeness:
    opposite of the consensus, use the `dissent` field rather than averaging the
    two into a bland middle. A contested pick presented as settled is worse than
    no coverage.
+   BUT: `must_have` and `dissent` are mutually exclusive. `must_have` locks the
+   player into the squad with no way to override it, so it is only for genuine
+   near-unanimity. If you are recording a dissent about someone, he is by
+   definition not unanimous — tier him `strong` instead. A note that a popular
+   player is highly owned and therefore a poor route to rank is a dissent worth
+   recording; it just means `strong`, not `must_have`.
 4. Every player needs a real counter-argument in `watch_out`. A recommendation
    you cannot argue against is not advice. If you cannot find a genuine risk,
    you have not looked hard enough.

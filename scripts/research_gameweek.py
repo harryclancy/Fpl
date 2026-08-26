@@ -24,6 +24,11 @@ from fpl_assistant.research import agent
 
 CONSENSUS_DIR = Path(__file__).resolve().parent.parent / "data" / "consensus"
 ODDS_DIR = Path(__file__).resolve().parent.parent / "data" / "odds"
+# Rejected research is kept rather than discarded. A run costs real money,
+# and throwing the output away because one rule tripped means paying again
+# to find out whether the rest of it was fine. Nothing here is read by the
+# app -- it is for inspecting, and for salvaging by hand if it's worth it.
+REJECTED_DIR = Path(__file__).resolve().parent.parent / "data" / "rejected"
 
 # Only research inside this window before kick-off. Earlier than this and
 # team news hasn't landed, so the file would be refreshed with the same
@@ -110,7 +115,7 @@ def main() -> int:
             f"after {players.searches} searches."
         )
     else:
-        failures.append(("players", players.problems))
+        failures.append(("players", players.problems, players.data))
 
     odds = agent.research_odds(
         gameweek, today, fixtures=_fixture_summary(fixtures, teams, gameweek)
@@ -122,12 +127,20 @@ def main() -> int:
             f"{len(odds.data['matchups'])} matchups after {odds.searches} searches."
         )
     else:
-        failures.append(("odds", odds.problems))
+        failures.append(("odds", odds.problems, odds.data))
 
-    for kind, problems in failures:
+    for kind, problems, payload in failures:
         print(f"  {kind}: REJECTED, keeping the existing file. Reasons:")
         for problem in problems[:12]:
             print(f"    - {problem}")
+        if payload is not None:
+            REJECTED_DIR.mkdir(parents=True, exist_ok=True)
+            path = REJECTED_DIR / f"gw{gameweek}-{kind}.json"
+            path.write_text(json.dumps(
+                {"rejected_for": problems, "researched_at": today, "payload": payload},
+                indent=2, ensure_ascii=False,
+            ))
+            print(f"    (kept at {path.relative_to(path.parent.parent.parent)} for inspection)")
 
     return 1 if failures else 0
 

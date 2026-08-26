@@ -238,3 +238,36 @@ def test_an_unrecognised_error_is_passed_through_unchanged():
     from fpl_assistant.research import agent
 
     assert agent._readable(RuntimeError("something new")) == "something new"
+
+
+def test_rejected_research_is_kept_for_inspection(api_at, monkeypatch, sandbox, tmp_path):
+    """A run costs real money. Discarding the output because one rule
+    tripped means paying again to find out whether the rest was fine."""
+    rejected = tmp_path / "rejected"
+    monkeypatch.setattr(runner, "REJECTED_DIR", rejected)
+    api_at(24)
+
+    payload = {"gameweek": 1, "players": [{"name": "Haaland", "tier": "must_have"}]}
+    _stub(
+        monkeypatch,
+        ResearchResult("players", payload, ["Haaland: must-have with a recorded dissent"]),
+        _good_odds(),
+    )
+
+    assert runner.main() == 1
+    kept = json.loads((rejected / "gw1-players.json").read_text())
+    assert kept["payload"] == payload
+    assert "dissent" in kept["rejected_for"][0]
+    # And it must not have leaked into the live directory.
+    assert not (sandbox[0] / "gw1.json").exists()
+
+
+def test_nothing_is_kept_when_the_call_itself_failed(api_at, monkeypatch, sandbox, tmp_path):
+    """No payload means nothing to salvage — don't write an empty husk."""
+    rejected = tmp_path / "rejected"
+    monkeypatch.setattr(runner, "REJECTED_DIR", rejected)
+    api_at(24)
+    _stub(monkeypatch, ResearchResult("players", None, ["out of credit"]), _good_odds())
+
+    runner.main()
+    assert not rejected.exists() or not list(rejected.glob("*.json"))
