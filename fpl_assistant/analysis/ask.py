@@ -257,47 +257,19 @@ def squad_context(scored: pd.DataFrame, solution: optimiser.SquadSolution, next_
     )
 
 
-SYSTEM_PROMPT = (
-    "You are an FPL analyst embedded in the user's own Fantasy Premier League app. "
-    "Answer their question directly and concisely — a few short paragraphs at most.\n\n"
-    "The squad briefing you are given is the ground truth for what the app currently recommends. "
-    "Never contradict it about who is or isn't in the squad. If your football judgement differs "
-    "from the app's projection, say so plainly and explain why — the user values disagreement "
-    "more than agreement, as long as you give the reason.\n\n"
-    "Be concrete. Cite the specific factor driving your answer (a role, a fixture, a price, "
-    "penalty duty, a fitness doubt) rather than describing a player in general terms. If you are "
-    "not confident about current team news or an injury, say that explicitly instead of guessing "
-    "— the user would rather hear 'check before the deadline' than a confident invention."
-)
-
-
-def claude_available(api_key: str | None) -> bool:
-    if not api_key:
-        return False
-    try:
-        import anthropic  # noqa: F401
-    except ImportError:
-        return False
-    return True
-
-
-def answer_with_claude(
-    question: str,
-    context: str,
-    api_key: str,
-    model: str = MODEL,
-) -> str:
-    """Ask Claude, with the squad briefing as context."""
-    import anthropic
-
-    client = anthropic.Anthropic(api_key=api_key)
-    response = client.messages.create(
-        model=model,
-        max_tokens=MAX_TOKENS,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": f"{context}\n\n---\n\nQuestion: {question.strip()}"}],
-    )
-    return "\n\n".join(block.text for block in response.content if block.type == "text").strip()
+# There is deliberately NO paid API path here.
+#
+# There used to be: the free engine answered what it could and anything
+# else fell through to a metered Claude call whenever an API key happened
+# to be present. That is a bad shape for a personal app — the spend is
+# invisible, per-question, and triggered by a key set for some entirely
+# unrelated reason. It was removed at the owner's request after an
+# automated research job cost real money unexpectedly.
+#
+# What replaces it costs nothing and is barely worse: questions the engine
+# can't answer are handed back as a formatted prompt to paste into a chat.
+# The thinking still happens, just on the other side of a copy and paste,
+# where the person can see what it costs before they spend it.
 
 
 def ask(
@@ -305,30 +277,24 @@ def ask(
     scored: pd.DataFrame,
     solution: optimiser.SquadSolution,
     next_event: int,
-    api_key: str | None = None,
     template_weight: float = optimiser.TEMPLATE_WEIGHT,
 ) -> AskResult:
-    """Free engine first, Claude only if it can't answer."""
+    """Answers from this week's numbers, or hands the question back.
+
+    Nothing here calls a paid API. Where the engine can't answer, the
+    question comes back formatted with the squad briefing attached, ready
+    to paste into a chat — which costs nothing and keeps the decision to
+    spend with the person, not the app.
+    """
     local = answer_locally(question, scored, solution, template_weight=template_weight)
     if local is not None:
         return AskResult(source="engine", answer=local)
-
-    if claude_available(api_key):
-        try:
-            text = answer_with_claude(
-                question, squad_context(scored, solution, next_event), api_key
-            )
-            return AskResult(source="claude", text=text)
-        except Exception as exc:
-            return AskResult(
-                source="unanswered",
-                note=f"Couldn't reach Claude ({exc}). Copy the question below and paste it into chat.",
-            )
 
     return AskResult(
         source="unanswered",
         note=(
             "That one needs judgement rather than arithmetic — team news, a hunch, or a strategy "
-            "call. Copy it below and paste it into your chat with Claude."
+            "call. Copy the question and the briefing below into your chat with Claude."
         ),
+        text=squad_context(scored, solution, next_event),
     )

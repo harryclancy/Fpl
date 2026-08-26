@@ -510,20 +510,6 @@ def _player_picker_labels(scored) -> dict:
     }
 
 
-def _anthropic_key() -> str | None:
-    """Reads the optional Claude API key.
-
-    Optional on purpose: the free engine handles the common questions, so
-    the app is fully usable with no key and no cost. A key only widens
-    what can be asked.
-    """
-    try:
-        key = st.secrets.get("ANTHROPIC_API_KEY")
-    except Exception:
-        key = None
-    return key or os.environ.get("ANTHROPIC_API_KEY")
-
-
 def _render_answer(answer) -> None:
     st.markdown(answer.headline)
     for line in answer.detail:
@@ -608,21 +594,20 @@ def render_question_box(scored, solution, next_event) -> None:
         if not question.strip():
             st.caption("Type a question first.")
         else:
-            api_key = _anthropic_key()
             with st.spinner("Working it out…"):
                 result = ask_engine.ask(
                     question, scored, solution, next_event,
-                    api_key=api_key, template_weight=rank_strategy_weight(),
+                    template_weight=rank_strategy_weight(),
                 )
             if result.source == "engine":
                 _render_answer(result.answer)
                 st.caption("Answered from this week's numbers — no guesswork, and free.")
-            elif result.source == "claude":
-                st.markdown(result.text)
-                st.caption("Answered by Claude, using your squad and this week's research as context.")
             else:
                 st.info(result.note)
-                st.code(f"FPL question (GW{next_event}): {question.strip()}", language=None)
+                st.code(
+                    f"FPL question (GW{next_event}): {question.strip()}\n\n{result.text or ''}",
+                    language=None,
+                )
                 st.caption("Copy this (tap the icon) and paste it into your chat with Claude.")
 
 

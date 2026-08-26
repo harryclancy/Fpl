@@ -125,26 +125,40 @@ def test_unparseable_question_returns_none(pool_and_solution):
     assert ask.answer_locally("is the manager going to rotate after Europe?", pool, solution) is None
 
 
-def test_ask_falls_through_cleanly_with_no_api_key(pool_and_solution):
+def test_an_unanswerable_question_comes_back_with_the_briefing_attached(pool_and_solution):
+    """Nothing here calls a paid API. A question the engine can't handle
+    is handed back ready to paste into a chat, with the squad briefing
+    included so the answer on the other side isn't guessing about who is
+    actually in the team."""
     pool, solution = pool_and_solution
-    result = ask.ask("will there be a shock team announcement?", pool, solution, 1, api_key=None)
+    result = ask.ask("will there be a shock team announcement?", pool, solution, 1)
 
     assert result.source == "unanswered"
     assert result.note
+    assert result.text, "the briefing should travel with the question"
+    captain_name = pool.set_index("id").loc[solution.captain_id, "web_name"]
+    assert captain_name in result.text
 
 
-def test_ask_uses_the_free_engine_before_any_api(pool_and_solution):
-    """A recognised question must never reach the paid path."""
+def test_a_recognised_question_is_answered_from_the_numbers(pool_and_solution):
     pool, solution = pool_and_solution
-    result = ask.ask(
-        "who should I captain?", pool, solution, 1, api_key="sk-should-not-be-used"
-    )
-    assert result.source == "engine"
+    assert ask.ask("who should I captain?", pool, solution, 1).source == "engine"
 
 
-def test_claude_unavailable_without_a_key():
-    assert not ask.claude_available(None)
-    assert not ask.claude_available("")
+def test_there_is_no_paid_code_path_left():
+    """The guarantee the owner asked for: the app cannot spend money.
+
+    The metered fallback was removed rather than disabled, because a
+    disabled path is one config change away from being a live one — and
+    the spend it caused was invisible and per-question.
+    """
+    import inspect
+
+    source = inspect.getsource(ask)
+    assert "anthropic" not in source.lower()
+    assert "api_key" not in source
+    assert not hasattr(ask, "answer_with_claude")
+    assert not hasattr(ask, "claude_available")
 
 
 def test_squad_context_names_the_actual_squad(pool_and_solution):

@@ -11,17 +11,24 @@ Everything the app knows that isn't in the FPL API.
 
 ## How they're refreshed
 
-`.github/workflows/research.yml` runs twice a day. Inside a window before
-each deadline it searches the web via Claude, validates the result against
-`fpl_assistant/research/validation.py`, and commits it.
+By asking Claude in a chat session, before a deadline you care about:
 
-**Nothing is written unless it passes validation.** A rejected refresh
-keeps the previous file: stale research known to be stale beats fresh
-research that is wrong, because only one of those announces itself.
+> Refresh the research for GW*n* — search the web for what analysts are
+> saying and update `data/consensus/` and `data/odds/`.
 
-The workflow needs an `ANTHROPIC_API_KEY` repository secret. Without it
-the research step fails and the app runs on whatever is already committed
-— degraded, not broken.
+This costs nothing beyond the session itself. It replaced an automated
+workflow that called the Anthropic API on a schedule: that version worked,
+but each run cost around $2 and a twice-daily schedule would have been
+roughly $30 a week to refresh a JSON file. Not a sane price for what it
+does.
+
+Whoever writes these files — a person, or Claude in a session — the rules
+in `fpl_assistant/research/validation.py` still apply, and
+`tests/test_research_data_quality.py` enforces them against whatever is
+committed. Run the tests after any refresh.
+
+**Nothing in this app calls a paid API.** There is no key to set and no
+way for it to spend money on its own.
 
 ## Why the rules are strict
 

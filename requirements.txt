@@ -6,6 +6,3 @@ python-dotenv>=1.0
 # (LpVariable/LpProblem are being replaced by prob.add_variable*), so an
 # unpinned install would break the squad optimiser on a future deploy.
 pulp>=2.8,<4
-# 1.x is required: the research agent uses output_config (schema-constrained
-# responses) and the server-side web_search tool, neither of which exists on 0.x.
-anthropic>=1.0
