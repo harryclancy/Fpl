@@ -33,7 +33,15 @@ MODEL = "claude-opus-5"
 WEB_SEARCH_TOOL = {"type": "web_search_20260209", "name": "web_search", "max_uses": 18}
 # Research is a long turn — many searches, a large structured answer — so
 # it streams. A non-streaming call at this size risks an HTTP timeout.
-MAX_TOKENS = 32000
+#
+# Sized generously on purpose. The first live run asked for 12-20 players
+# with a case, a counter-argument, several stats and several attributed
+# takes each, and ran out of output tokens partway through a string at
+# around 46,000 characters of JSON — which surfaced as a parse error
+# rather than as "the answer was cut off". Opus 5 allows up to 128K output
+# when streaming, so the ceiling should not be the thing that decides how
+# much research fits.
+MAX_TOKENS = 64000
 
 SOURCES = [
     "Fantasy Football Scout", "RotoWire", "AllAboutFPL", "Fantasy Football Fix",
@@ -200,6 +208,28 @@ def _client():
     return anthropic.Anthropic()
 
 
+def _readable(error: Exception) -> str:
+    """Turns the failures that actually happen into something actionable.
+
+    A billing failure arriving as a raw error dict reads like a bug in the
+    request. It isn't, and the fix is somewhere else entirely.
+    """
+    text = str(error)
+    if "credit balance is too low" in text:
+        return (
+            "Out of Anthropic API credit — the research couldn't run. Top up at "
+            "console.anthropic.com under Plans & Billing; nothing else is wrong."
+        )
+    if "authentication" in text.lower() or "invalid x-api-key" in text.lower():
+        return (
+            "The Anthropic API key was rejected. Check the ANTHROPIC_API_KEY repository "
+            "secret — a trailing space or a revoked key both look like this."
+        )
+    if "rate_limit" in text.lower():
+        return "Rate limited by the Anthropic API. The next scheduled run will retry."
+    return text
+
+
 def _ask(prompt: str, schema: dict) -> tuple[dict, int]:
     """One research turn: search the web, answer in the given schema."""
     client = _client()
@@ -217,11 +247,28 @@ def _ask(prompt: str, schema: dict) -> tuple[dict, int]:
     if response.stop_reason == "refusal":
         raise RuntimeError(f"The model declined this research request: {response.stop_details}")
 
+    # Truncation has to be named, not left to surface as a parse error.
+    # A cut-off JSON document fails with "Unterminated string at column
+    # 45982", which sends you looking for a bug in the schema when the
+    # actual problem is that the answer didn't fit.
+    if response.stop_reason == "max_tokens":
+        raise RuntimeError(
+            f"The answer was cut off at the {MAX_TOKENS} token ceiling, so the JSON is "
+            f"incomplete. Ask for fewer players, or raise MAX_TOKENS."
+        )
+
     searches = sum(1 for block in response.content if block.type == "server_tool_use")
     text = next((b.text for b in response.content if b.type == "text"), None)
     if not text:
         raise RuntimeError("The research call returned no text to parse.")
-    return json.loads(text), searches
+
+    try:
+        return json.loads(text), searches
+    except json.JSONDecodeError as error:
+        raise RuntimeError(
+            f"The research came back as invalid JSON ({error}). stop_reason was "
+            f"{response.stop_reason!r}."
+        ) from error
 
 
 def research_players(gameweek: int, today: str) -> ResearchResult:
@@ -234,7 +281,7 @@ Search {', '.join(SOURCES[:5])} and similar for this week's coverage, then repor
 the players worth a verdict — the ones being widely recommended, the ones being
 widely warned against, and any the community is arguing about.
 
-Cover 12-20 players. For each: which tier, the argument for, the honest argument
+Cover 12-16 players. For each: which tier, the argument for, the honest argument
 against, at least three hard numbers, and what named outlets actually said.
 
 Pay particular attention to:
@@ -248,7 +295,7 @@ Set `researched` to {today} and `gameweek` to {gameweek}."""
     try:
         data, searches = _ask(prompt, PLAYER_SCHEMA)
     except Exception as error:
-        return ResearchResult("players", None, [str(error)])
+        return ResearchResult("players", None, [_readable(error)])
 
     problems = validation.validate_players(data, consensus.load_team_context())
     return ResearchResult("players", data, problems, searches)
@@ -280,7 +327,7 @@ Set `researched` to {today} and `gameweek` to {gameweek}."""
     try:
         data, searches = _ask(prompt, ODDS_SCHEMA)
     except Exception as error:
-        return ResearchResult("odds", None, [str(error)])
+        return ResearchResult("odds", None, [_readable(error)])
 
     problems = validation.validate_odds(data)
     return ResearchResult("odds", data, problems, searches)

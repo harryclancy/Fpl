@@ -173,3 +173,68 @@ def test_the_agent_is_told_which_matches_are_actually_being_played(api_at, monke
 
     assert "GW1 fixtures are" in captured["fixtures"]
     assert " v " in captured["fixtures"]
+
+
+# --- failures that actually happened ------------------------------------
+
+def test_a_truncated_answer_is_named_as_truncation():
+    """The first live run hit the output ceiling partway through a string
+    and surfaced as "Unterminated string at column 45982" — which sends
+    you hunting for a schema bug when the answer was simply cut off."""
+    from fpl_assistant.research import agent
+
+    class _Response:
+        stop_reason = "max_tokens"
+        content = []
+
+    class _Stream:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+        def get_final_message(self):
+            return _Response()
+
+    class _Client:
+        class messages:
+            @staticmethod
+            def stream(**kwargs):
+                return _Stream()
+
+    agent_client = agent._client
+    agent._client = lambda: _Client()
+    try:
+        with pytest.raises(RuntimeError, match="cut off"):
+            agent._ask("anything", {"type": "object"})
+    finally:
+        agent._client = agent_client
+
+
+def test_a_billing_failure_reads_as_a_billing_failure():
+    """It arrived as a raw error dict, which reads like a bug in the
+    request. It isn't, and the fix is somewhere else entirely."""
+    from fpl_assistant.research import agent
+
+    raw = (
+        "{'type': 'error', 'error': {'type': 'invalid_request_error', 'message': "
+        "'Your credit balance is too low to access the Anthropic API.'}}"
+    )
+    message = agent._readable(RuntimeError(raw))
+    assert "Out of Anthropic API credit" in message
+    assert "console.anthropic.com" in message
+
+
+def test_a_rejected_key_reads_as_a_key_problem():
+    from fpl_assistant.research import agent
+
+    message = agent._readable(RuntimeError("authentication_error: invalid x-api-key"))
+    assert "ANTHROPIC_API_KEY repository secret" in message
+
+
+def test_an_unrecognised_error_is_passed_through_unchanged():
+    """Don't dress up a failure we don't understand as one we do."""
+    from fpl_assistant.research import agent
+
+    assert agent._readable(RuntimeError("something new")) == "something new"
