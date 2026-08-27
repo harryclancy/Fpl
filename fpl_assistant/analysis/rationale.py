@@ -319,6 +319,43 @@ def _numbers_only_case(row: pd.Series) -> str:
     )
 
 
+START_NOTES = {
+    "nailed": "**Nailed on to start** — as close to certain as minutes get.",
+    "likely": "**Expected to start**, without being a lock.",
+    "rotation risk": "⚠️ **Rotation risk** — he may start, and that is the whole problem: "
+                     "a projection assumes minutes he might not get.",
+    "doubt": "⚠️ **A genuine doubt over starting.** Check the team news before the deadline.",
+    "out": "🚫 **Not expected to play.**",
+}
+
+
+def minutes_story(row: pd.Series) -> str | None:
+    """What the researchers say about him starting, and what he takes.
+
+    These two facts decide more gameweeks than any rate does, and the FPL
+    API is worst at both: availability only moves once a club confirms an
+    injury, and the set-piece order fields lag reality by weeks. So they
+    come from the research and they go near the top.
+    """
+    parts = []
+
+    start = row.get("predicted_start")
+    if isinstance(start, str) and start in START_NOTES:
+        parts.append(START_NOTES[start])
+
+    role = row.get("role_note")
+    if isinstance(role, str) and role.strip():
+        parts.append(f"Playing **{role.strip()}**.")
+
+    pieces = row.get("set_pieces")
+    if isinstance(pieces, str) and pieces.strip():
+        parts.append(
+            f"On **{pieces.strip()}** — repeatable returns that don't depend on him being in form."
+        )
+
+    return " ".join(parts) if parts else None
+
+
 def form_story(row: pd.Series) -> str | None:
     """What he actually did lately, in words rather than as a number.
 
@@ -435,6 +472,12 @@ def player_rationale(
     # says out loud when explaining a pick ("he scored last week and
     # they've got Hull next"), and they were previously either absent or
     # compressed into a stats line nobody reads.
+    # Minutes first of all. A brilliant rate off the bench scores nothing,
+    # so whether he starts outranks everything that follows it.
+    minutes = minutes_story(row)
+    if minutes:
+        parts.append(minutes)
+
     story = form_story(row)
     if story:
         parts.append(story)

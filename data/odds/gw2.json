@@ -1,0 +1,45 @@
+{
+  "gameweek": 2,
+  "season": "2026/27",
+  "researched": "2026-08-26",
+  "note": "Anticipated returns, researched from live web sources in a Claude Code session.\n\nNo `anytime_goalscorer` prices are recorded this week: the searches surfaced clean-sheet probabilities and a named captain preference, but not sourced decimal goalscorer odds. Those fields are left absent rather than filled with plausible guesses — a missing number is honest, an invented one is the failure this project exists to avoid.\n\n`captain_share` is likewise absent: no effective-ownership figures were published in what was found. That does mean the captaincy engine's rank term has nothing to work with this week, and the app will say so rather than quietly assume zero.\n\n`matchups` carries the clean-sheet market, which is the part that was well sourced.",
+  "players": [
+    {
+      "name": "B.Fernandes",
+      "full_name": "Bruno Fernandes",
+      "note": "RotoWire's model has him tied for the top overall score in the gameweek and names him the preferred captain, on a home tie against newly-promoted Ipswich. Notably this runs against the crowd, which has him among the most-sold players in the game."
+    },
+    {
+      "name": "Haaland",
+      "full_name": "Erling Haaland",
+      "note": "Manchester City are among five sides above 30% clean-sheet probability, away at Crystal Palace. He blanked in GW1 and remains the default armband for most of the field, which is why the alternative above is interesting rather than reckless."
+    }
+  ],
+  "matchups": [
+    {
+      "team": "MUN",
+      "opponent": "IPS",
+      "note": "Manchester United lead the entire league on clean-sheet probability this week at 48%, at home to newly-promoted Ipswich. The only other side to reach 40% is Coventry. This is the single best-priced defensive fixture on the board."
+    },
+    {
+      "team": "COV",
+      "opponent": "HUL",
+      "note": "Coventry host Hull and are the only side other than Manchester United above 40% clean-sheet probability — a striking reversal for a promoted defence that was priced as unownable pre-season, and the reason the club-level verdict on them has been softened for this week."
+    },
+    {
+      "team": "LIV",
+      "opponent": "NFO",
+      "note": "Liverpool are just behind the two leaders on clean-sheet probability, at home to Nottingham Forest."
+    },
+    {
+      "team": "ARS",
+      "opponent": "AVL",
+      "note": "Arsenal travel to an Aston Villa side described as toothless in Gameweek 1, and sit just behind the clean-sheet leaders despite being away from home."
+    },
+    {
+      "team": "CHE",
+      "opponent": "BHA",
+      "note": "Chelsea are among five sides above 30% clean-sheet probability. Brighton are the opponent, and they conceded zero shots on target in GW1 — a fixture where both defences are priced well and both attacks are being faded."
+    }
+  ]
+}

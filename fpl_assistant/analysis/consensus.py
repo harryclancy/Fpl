@@ -315,6 +315,15 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     # raises or silently scatters the elements across rows.
     df["consensus_stats"] = None
     df["consensus_voices"] = None
+    # Which gameweek's research this came from, so the app can say whether
+    # a write-up is current or left over from an earlier week.
+    df["consensus_gameweek"] = pd.NA
+    # Three facts the FPL API either lags badly or doesn't carry at all,
+    # and which decide more gameweeks than any rate does: whether he
+    # starts, what he takes, and where he actually plays.
+    df["predicted_start"] = None
+    df["set_pieces"] = None
+    df["role_note"] = None
 
     data = load_consensus(gameweek)
     if not data:
@@ -359,6 +368,10 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
             dissent.get("case") if isinstance(dissent, dict) else dissent
         )
         df.loc[target, "consensus_sources"] = ", ".join(entry.get("sources", []) or []) or None
+        df.loc[target, "consensus_gameweek"] = data.get("gameweek", gameweek)
+        df.loc[target, "predicted_start"] = entry.get("predicted_start")
+        df.loc[target, "set_pieces"] = entry.get("set_pieces")
+        df.loc[target, "role_note"] = entry.get("role")
         df.loc[target, "consensus_stats"] = _pack(entry.get("key_stats"))
         df.loc[target, "consensus_voices"] = _pack(entry.get("voices"))
         # `case` is the written argument; `reason` is kept as a fallback so

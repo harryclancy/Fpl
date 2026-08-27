@@ -21,6 +21,8 @@ from fpl_assistant.analysis import (
     odds as odds_module,
     chips,
     consensus,
+    decision_set as decision_set_analysis,
+    provenance,
     explain,
     optimiser,
     price,
@@ -222,6 +224,50 @@ def render_consensus_panel(scored, squad, next_event) -> None:
                     unsafe_allow_html=True,
                 )
             st.markdown("")
+
+
+def provenance_chip(row, next_event) -> str:
+    """A one-glance marker of what's actually behind this player."""
+    mark = provenance.for_player(row, next_event)
+    colours = {
+        provenance.FRESH: ("#1a6b3c", "#e9f7ef"),
+        provenance.STALE: ("#8a6100", "#fdf4e3"),
+        provenance.NUMBERS: ("#5f5a6b", "#f4f2f8"),
+    }
+    fg, bg = colours[mark.level]
+    return _chip(f"{mark.icon} {mark.label}", fg, bg)
+
+
+def render_coverage_panel(scored, player_ids, next_event) -> None:
+    """How much of what you're being told is researched, and what isn't.
+
+    The honest version of "how much should I trust this". A squad where
+    every pick has named sources behind it and one where half of it is
+    arithmetic look the same otherwise, and they shouldn't.
+    """
+    counts = provenance.summarise(scored, player_ids, next_event)
+    total = sum(counts.values()) or 1
+    fresh, stale, numbers = counts[provenance.FRESH], counts[provenance.STALE], counts[provenance.NUMBERS]
+
+    bar = "".join(
+        f"<span style='display:inline-block;height:8px;width:{count / total * 100:.1f}%;"
+        f"background:{colour}'></span>"
+        for count, colour in (
+            (fresh, "#3aa76d"), (stale, "#e0b23c"), (numbers, "#d8d4e2")
+        ) if count
+    )
+    render_html(
+        f"<div style='margin:2px 0 6px 0;border-radius:4px;overflow:hidden;line-height:0'>{bar}</div>"
+        f"<div style='font-size:.82em;opacity:.7'>"
+        f"<b>{fresh}</b> researched this week · <b>{stale}</b> from earlier · "
+        f"<b>{numbers}</b> on the numbers alone</div>"
+    )
+    if numbers > total / 2:
+        st.caption(
+            "More than half of this squad has no analyst coverage behind it. The projection is "
+            "still doing its job, but run `/refresh` in Claude Code before the deadline if you "
+            "want the reasoning to be as good as the arithmetic."
+        )
 
 
 def render_evidence(stats, voices, sources=None) -> None:
@@ -650,6 +696,8 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
         except Exception:
             pass
 
+        render_html(provenance_chip(row, int(row.get("_gameweek") or 1)))
+
         # The researched evidence sits directly under the case it supports,
         # so the argument and the thing backing it up are read together
         # rather than the reader having to take the paragraph on trust.
@@ -835,6 +883,9 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
         help="Your best legal XI from the players you already own, this gameweek.",
     )
 
+    st.markdown("**How much of this is researched**")
+    render_coverage_panel(scored, owned_ids, next_event)
+
     st.divider()
     render_transfer_plan(
         players, fixtures, teams, next_event, squad, free_transfers, key_prefix="front"
@@ -983,6 +1034,9 @@ def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
     else:
         for note in solution.notes:
             st.warning(note)
+
+    st.markdown("**How much of this is researched**")
+    render_coverage_panel(scored, solution.squad_ids, next_event)
 
     render_consensus_panel(scored, squad15, next_event)
     render_omissions_panel(scored, solution)

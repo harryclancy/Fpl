@@ -35,30 +35,16 @@
       "promoted": true,
       "stances": [
         {
-          "stance": "avoid",
+          "stance": "caution",
           "scope": [
             "GKP",
             "DEF"
           ],
-          "until_gameweek": 6,
-          "case": "Frank Lampard's promoted side visit last season's top two inside the first three gameweeks -- Arsenal away in GW1 and Manchester City away in GW3 -- which is as hostile an opening stretch as a newly promoted side has been handed. Every Coventry defender is priced at £4.0m, which reads as value and is really a warning: the pricing reflects what the market expects them to concede. The specific advice is not to build a defence that needs two promoted centre-backs to start every week. Gameweek 1 did nothing to soften this: they opened away at Arsenal, who kept a clean sheet and had a defender return an assist.",
-          "sources": [
-            "Beat FPL",
-            "Fantasy Football Scout",
-            "OneFPL",
-            "RotoWire"
-          ]
-        },
-        {
-          "stance": "caution",
-          "scope": [
-            "MID",
-            "FWD"
-          ],
           "until_gameweek": 4,
-          "case": "The one genuine opening is Hull at home in GW2, sitting between the two away days. A cheap Coventry midfielder is a Bench Boost body rather than a starter until the run breaks.",
+          "case": "Downgraded from avoid. Coventry host Hull in GW2 and are the only side other than Manchester United above 40% clean-sheet probability this week — a striking reversal for a promoted defence the pre-season consensus priced as unownable. The caution remains because the fixture list beyond this week still includes Manchester City away, and one favourable home tie against another promoted side is not a run. But a blanket avoid is no longer supportable on the evidence.",
           "sources": [
-            "Beat FPL"
+            "Fantasy Football Scout",
+            "RotoWire"
           ]
         }
       ]
@@ -76,10 +62,11 @@
             "DEF"
           ],
           "until_gameweek": 5,
-          "case": "Downgraded from avoid after Gameweek 1: Hull City won, which was among the biggest upsets of the opening weekend and directly contradicts the pre-season reading that their defence was unownable. The caution stands rather than the ban — one result does not undo a promoted side's fixture run, and the sample is a single match — but the evidence has moved and this verdict moves with it.",
+          "case": "Downgraded from avoid after Gameweek 1: Hull City won, one of the biggest upsets of the opening weekend, which directly contradicts the pre-season reading that their defence was unownable. The caution stands rather than the ban — they travel to a Coventry side with the second-best clean-sheet odds in the league this week, and one result is one result.",
           "sources": [
             "Fantasy Football Scout",
-            "AllAboutFPL"
+            "AllAboutFPL",
+            "RotoWire"
           ]
         }
       ]
@@ -130,12 +117,11 @@
         {
           "stance": "target",
           "scope": "all",
-          "until_gameweek": 8,
-          "case": "Manchester United top the fixture ticker for both their opening two gameweeks and their full opening six: Hull away in GW1 then Ipswich at home in GW2, back-to-back against promoted sides. Across the opening eight they face only one side rated above 3 on the ticker. This is the single most-recommended fixture run in the game.",
+          "until_gameweek": 5,
+          "case": "Manchester United lead the entire league on clean-sheet probability in GW2 at 48%, at home to newly-promoted Ipswich, having already played Hull away. Their assets are among the most-sold in the game after a poor opening result, which makes this the rare case where the fixtures and the crowd point in opposite directions — and the fixtures are the more reliable of the two over a single gameweek.",
           "sources": [
-            "RotoWire",
-            "Premier League Scout",
-            "Fantasy Football Scout"
+            "Fantasy Football Scout",
+            "RotoWire"
           ]
         }
       ]
@@ -228,7 +214,21 @@
     {
       "short_name": "LIV",
       "european_competition": "ucl",
-      "new_manager": false
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 4,
+          "case": "Liverpool sit just behind Manchester United and Coventry on clean-sheet probability this week, at home to Nottingham Forest. A defensive route into a side that is normally priced for its attack, on a week where the clean-sheet market rates them highly.",
+          "sources": [
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
     },
     {
       "short_name": "CRY",

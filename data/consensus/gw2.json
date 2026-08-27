@@ -33,7 +33,9 @@
         "AllAboutFPL",
         "Fantasy Football Scout",
         "Fantasy Football Fix"
-      ]
+      ],
+      "predicted_start": "likely",
+      "role": "left wing rather than left-back"
     },
     {
       "name": "Calafiori",
@@ -61,7 +63,9 @@
       "sources": [
         "Fantasy Football Scout",
         "AllAboutFPL"
-      ]
+      ],
+      "predicted_start": "likely",
+      "role": "left of the Arsenal back line"
     },
     {
       "name": "Haaland",
@@ -99,37 +103,55 @@
         "Fantasy Football Scout",
         "AllAboutFPL",
         "RotoWire"
-      ]
+      ],
+      "predicted_start": "nailed",
+      "role": "centre-forward"
     },
     {
       "name": "B.Fernandes",
       "full_name": "Bruno Fernandes",
       "tier": "strong",
       "expert_ownership": 38,
-      "verdict": "Among the most-sold in the game after a poor opening weekend — into the best fixture on the board.",
-      "case": "Manchester United host Ipswich in GW2, which alongside their GW1 trip to Hull was the best back-to-back opening any side was handed. He remains on penalties, corners and direct free-kicks, and last season produced 9 goals and a record 24 assists. The case for holding is that the fixture people bought him for has not been played yet.",
+      "verdict": "Among the most-sold in the game — and the projection models' preferred captain for this gameweek. Those two facts are the story.",
+      "case": "Manchester United host newly-promoted Ipswich, and lead the entire league on clean-sheet probability this week at 48% — the only side above 40% other than Coventry. RotoWire's model has him tied for the top overall score in the gameweek and names him the preferred captain. He remains on penalties, corners and direct free-kicks, and produced 9 goals and a record 24 assists last season. The crowd is selling him off one bad afternoon into the best home fixture on the board.",
       "watch_out": "United flopped in GW1 and he is among the most-sold players in the game as a result, so this is a hold that will feel worse before it feels better. The pre-season penalty misses that Fantasy Football Scout flagged remain unresolved, and his case leans on dead balls more than most.",
       "key_stats": [
+        "Man Utd lead the league on GW2 clean-sheet probability at 48%",
+        "RotoWire's model has him tied for the top overall score in GW2 and names him preferred captain",
         "9 goals and 24 assists last season — a record FPL assist total",
         "On penalties, corners and direct free-kicks",
         "Among the most-sold players ahead of GW2",
-        "GW2: Ipswich at home, after Hull away in GW1"
+        "GW2: Ipswich at home"
       ],
       "voices": [
         {
+          "source": "RotoWire",
+          "take": "Head their GW2 midfield rankings with him as the preferred captain, with the model tying him for the top overall score on a home date against a promoted side."
+        },
+        {
           "source": "Fantasy Football Scout",
-          "take": "List him among the most-sold players ahead of Gameweek 2, following Manchester United's poor opening result."
+          "take": "List him among the most-sold players ahead of Gameweek 2 following Manchester United's poor opening result, and separately rate Man Utd the best clean-sheet bet of the week at 48%."
         },
         {
           "source": "AllAboutFPL",
-          "take": "Frame selling him now as the archetypal kneejerk — moving off a premium one week before the fixture he was bought for."
+          "take": "Frame selling a premium the week before the fixture he was bought for as the archetypal post-GW1 kneejerk."
         }
       ],
       "sources": [
         "Fantasy Football Scout",
         "AllAboutFPL",
         "Fantasy Football Fix"
-      ]
+      ],
+      "predicted_start": "nailed",
+      "role": "attacking midfield",
+      "set_pieces": "penalties, corners and direct free-kicks",
+      "dissent": {
+        "case": "Worth being explicit that the crowd and the models are pointing opposite ways here. He is one of the most-sold players in the game after Manchester United flopped in GW1, and a large number of managers have concluded the side is the problem rather than the fixture. The models disagree and have him as the week's preferred captain. This app follows the models on this one — a home tie against a promoted side with the league's best clean-sheet odds is a fixture, and a fixture is a better basis for one week than a mood is — but it is a genuine split, not a settled call.",
+        "sources": [
+          "RotoWire",
+          "Fantasy Football Scout"
+        ]
+      }
     },
     {
       "name": "Sangare",
@@ -157,7 +179,9 @@
       "sources": [
         "Fantasy Football Scout",
         "AllAboutFPL"
-      ]
+      ],
+      "predicted_start": "likely",
+      "role": "central midfield"
     },
     {
       "name": "Palmer",
@@ -185,7 +209,10 @@
       "sources": [
         "Fantasy Football Fix",
         "AllAboutFPL"
-      ]
+      ],
+      "predicted_start": "nailed",
+      "role": "attacking midfield",
+      "set_pieces": "Chelsea set pieces"
     },
     {
       "name": "Joao Pedro",
@@ -214,7 +241,9 @@
       "sources": [
         "Fantasy Football Fix",
         "The Scout (Premier League)"
-      ]
+      ],
+      "predicted_start": "nailed",
+      "role": "leading the Chelsea line"
     },
     {
       "name": "Porro",
@@ -242,7 +271,9 @@
       "sources": [
         "Fantasy Football Scout",
         "RotoWire"
-      ]
+      ],
+      "predicted_start": "doubt",
+      "role": "right wing-back when fit"
     },
     {
       "name": "Maddison",
@@ -269,7 +300,8 @@
       "sources": [
         "Fantasy Football Scout",
         "RotoWire"
-      ]
+      ],
+      "predicted_start": "out"
     },
     {
       "name": "Kudus",
@@ -296,7 +328,8 @@
       "sources": [
         "Fantasy Football Scout",
         "RotoWire"
-      ]
+      ],
+      "predicted_start": "out"
     },
     {
       "name": "Watkins",
@@ -323,7 +356,9 @@
       "sources": [
         "Fantasy Football Scout",
         "AllAboutFPL"
-      ]
+      ],
+      "predicted_start": "likely",
+      "role": "centre-forward"
     },
     {
       "name": "Gyokeres",
@@ -350,7 +385,9 @@
       "sources": [
         "Fantasy Football Scout",
         "AllAboutFPL"
-      ]
+      ],
+      "predicted_start": "likely",
+      "role": "centre-forward"
     },
     {
       "name": "Konsa",
@@ -377,6 +414,66 @@
       "sources": [
         "Fantasy Football Scout",
         "AllAboutFPL"
+      ],
+      "predicted_start": "likely",
+      "role": "centre-back"
+    },
+    {
+      "name": "Fofana",
+      "full_name": "Wesley Fofana",
+      "tier": "avoid",
+      "expert_ownership": 3,
+      "predicted_start": "out",
+      "verdict": "Suspended — misses the first two gameweeks.",
+      "case": "A first-choice centre-back in a Chelsea defence that opened the season convincingly.",
+      "watch_out": "He is serving a suspension for a red card late last season and misses both of the opening two gameweeks, GW2 included. There is nothing to weigh until he is available, and anyone holding him has been fielding ten men.",
+      "key_stats": [
+        "Suspended for the opening two gameweeks after a red card last season",
+        "Chelsea are among five sides above 30% clean-sheet probability in GW2"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Report he misses the first two gameweeks through suspension following his red card late last season."
+        },
+        {
+          "source": "RotoWire",
+          "take": "Carry him in the Premier League suspensions tracker rather than in selection coverage."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "RotoWire"
+      ]
+    },
+    {
+      "name": "Bruno G.",
+      "full_name": "Bruno Guimaraes",
+      "tier": "avoid",
+      "expert_ownership": 8,
+      "predicted_start": "doubt",
+      "role": "central midfield",
+      "verdict": "A fitness doubt Arteta wouldn't confirm either way.",
+      "case": "A genuine quality midfielder with a role in a side facing a toothless-looking Aston Villa.",
+      "watch_out": "He came off at half-time in the Community Shield and was seen with an ice pack on his thigh. Arteta said he was 'evolving really well' without confirming his availability, which is manager-speak for a real doubt. A midfielder you cannot be sure will start is the worst shape of risk there is — you carry the price without the minutes.",
+      "key_stats": [
+        "Came off at half-time in the Community Shield with a thigh problem",
+        "Arteta declined to confirm his availability",
+        "Arsenal travel to an Aston Villa side that looked toothless in GW1"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Report the half-time substitution and the ice pack, and quote Arteta saying only that he was 'evolving really well' without confirming fitness."
+        },
+        {
+          "source": "RotoWire",
+          "take": "List him among the Arsenal availability doubts going into the weekend."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "RotoWire"
       ]
     }
   ]

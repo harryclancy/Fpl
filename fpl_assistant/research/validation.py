@@ -21,6 +21,11 @@ MIN_TAKE_CHARS = 30
 MIN_STATS = 2
 
 VALID_TIERS = ("must_have", "strong", "value", "avoid")
+# How likely he is to start, as a human would say it. Minutes decide more
+# gameweeks than any rate does, and the FPL API carries nothing about them
+# beyond a blunt availability flag that only moves once a club confirms an
+# injury -- by which point everyone knows.
+VALID_STARTS = ("nailed", "likely", "rotation risk", "doubt", "out")
 VALID_STANCES = ("avoid", "caution", "target")
 VALID_POSITIONS = ("GKP", "DEF", "MID", "FWD")
 
@@ -99,6 +104,18 @@ def validate_players(data: dict, team_context: dict | None = None) -> list[str]:
                     f"{name}: locked in as a must-have while the file records a dissent — the "
                     f"lock is for near-unanimity"
                 )
+
+        start = entry.get("predicted_start")
+        if start is not None and start not in VALID_STARTS:
+            problems.append(
+                f"{name}: predicted_start {start!r} is not one of {VALID_STARTS} — an unrecognised "
+                f"value is silently ignored, which is worse than an absent one"
+            )
+        if start == "out" and entry.get("tier") != "avoid":
+            problems.append(
+                f"{name}: reported as out but tiered {entry.get('tier')!r} — a player who isn't "
+                f"playing cannot be a recommendation"
+            )
 
         problems.extend(_club_wide_prose_problems(entry, team_context or {}))
 
