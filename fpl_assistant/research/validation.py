@@ -121,6 +121,37 @@ def validate_players(data: dict, team_context: dict | None = None) -> list[str]:
                     f"than output, mark the dissent \"kind\": \"rank\"."
                 )
 
+        # Talking points are the reasons people actually give, split into
+        # the two piles a manager weighs. They are the point of the file:
+        # a `case` paragraph is the app's synthesis, and a synthesis is
+        # exactly what gets lost when someone asks "but why?".
+        talking = entry.get("talking_points")
+        if talking is not None:
+            if not isinstance(talking, dict):
+                problems.append(f"{name}: talking_points must be an object with for/against")
+            else:
+                for side in ("for", "against"):
+                    items = talking.get(side) or []
+                    if not isinstance(items, list):
+                        problems.append(f"{name}: talking_points.{side} must be a list")
+                        continue
+                    for item in items:
+                        if not isinstance(item, dict) or not str(item.get("point", "")).strip():
+                            problems.append(f"{name}: a {side} talking point states nothing")
+                        elif not str(item.get("source", "")).strip():
+                            problems.append(
+                                f"{name}: a {side} talking point cites no source — "
+                                f"an unattributed claim is a guess"
+                            )
+                # A pile of reasons to buy with nothing on the other side is
+                # advocacy, not analysis. This is the same rule `watch_out`
+                # already enforces on the prose, applied to the arguments.
+                if talking.get("for") and not talking.get("against"):
+                    problems.append(
+                        f"{name}: reasons to pick him but none against — if you can't find an "
+                        f"objection, look harder"
+                    )
+
         start = entry.get("predicted_start")
         if start is not None and start not in VALID_STARTS:
             problems.append(

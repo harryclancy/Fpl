@@ -58,6 +58,11 @@ class Omission:
     # them into a paragraph.
     stats: list[str] = field(default_factory=list)
     voices: list[tuple[str, str]] = field(default_factory=list)
+    # The specific objections people are raising about him. This section
+    # asks "why isn't he in?" and the honest answer is usually not a
+    # points differential -- it's that the community has a concrete
+    # reason, and quoting it beats paraphrasing it.
+    against: list[tuple[str, str]] = field(default_factory=list)
     instead: str | None = None
 
     @property
@@ -290,6 +295,7 @@ def notable_omissions(
             ownership=float(row.get("_own", 0) or 0),
             stats=(researched + _derived_stats(row))[:9],
             voices=consensus.voices(row),
+            against=consensus.arguments_against(row),
             instead=_picked_instead(scored, squad_ids, row),
         )
 

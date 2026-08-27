@@ -349,6 +349,12 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     # raises or silently scatters the elements across rows.
     df["consensus_stats"] = None
     df["consensus_voices"] = None
+    # The individual arguments people make for and against picking him.
+    # These lead the write-up, because "he's been playing deeper in a
+    # double pivot" is the reasoning a manager can actually argue with,
+    # and a projection is not.
+    df["consensus_for"] = None
+    df["consensus_against"] = None
     # Which gameweek's research this came from, so the app can say whether
     # a write-up is current or left over from an earlier week.
     df["consensus_gameweek"] = pd.NA
@@ -411,6 +417,15 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
         df.loc[target, "role_note"] = entry.get("role")
         df.loc[target, "consensus_stats"] = _pack(entry.get("key_stats"))
         df.loc[target, "consensus_voices"] = _pack(entry.get("voices"))
+        # The reasons people actually give, split into the two piles a
+        # manager weighs against each other. Kept separate from `voices`
+        # because a voice is "what this outlet's overall take is" and a
+        # talking point is "one specific argument, for or against" -- and
+        # it's the second one people are looking for when they ask why a
+        # player is or isn't in the squad.
+        talking = entry.get("talking_points") or {}
+        df.loc[target, "consensus_for"] = _pack(talking.get("for"))
+        df.loc[target, "consensus_against"] = _pack(talking.get("against"))
         # `case` is the written argument; `reason` is kept as a fallback so
         # older hand-written consensus files still render.
         df.loc[target, "consensus_reason"] = entry.get("case") or entry.get("reason")
@@ -461,6 +476,32 @@ def voices(row: pd.Series) -> list[tuple[str, str]]:
         if isinstance(item, dict) and item.get("take"):
             pairs.append((str(item.get("source") or "Analyst"), str(item["take"])))
     return pairs
+
+
+def _points(value) -> list[tuple[str, str]]:
+    out = []
+    for item in unpack(value):
+        if isinstance(item, dict) and item.get("point"):
+            out.append((str(item["point"]), str(item.get("source") or "")))
+        elif isinstance(item, str) and item.strip():
+            out.append((item.strip(), ""))
+    return out
+
+
+def arguments_for(row: pd.Series) -> list[tuple[str, str]]:
+    """The specific reasons people give TO pick him, as (point, source)."""
+    return _points(row.get("consensus_for"))
+
+
+def arguments_against(row: pd.Series) -> list[tuple[str, str]]:
+    """The specific reasons people give NOT to, as (point, source).
+
+    Separate from `watch_out`, which is one summarising paragraph. These
+    are the individual objections -- "he's been playing deeper in a double
+    pivot", "the opposition have the third-best defence in the league" --
+    which is the level a manager actually argues at.
+    """
+    return _points(row.get("consensus_against"))
 
 
 def must_have_ids(scored: pd.DataFrame) -> list[int]:

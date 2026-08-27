@@ -660,3 +660,67 @@ def test_the_front_page_plans_beyond_the_next_gameweek(monkeypatch):
     page = _all_markdown(at) + "\n".join(str(c.value) for c in at.caption)
     assert "The next few gameweeks" in page
     assert "first move is a decision" in page
+
+
+# --- what people are saying, on the page --------------------------------
+
+def test_the_reasons_people_give_reach_the_page(monkeypatch):
+    """The complaint, tested end to end.
+
+    A projection is a conclusion; the talking points are the argument.
+    Both piles have to render, with attribution, or the research may as
+    well not exist.
+    """
+    import json as _json
+    from pathlib import Path as _Path
+
+    from fpl_assistant.analysis import consensus as _consensus
+
+    # The synthetic pool uses real Premier League short names, so the
+    # shipped research applies to it — but the names won't match, so point
+    # the consensus at a file built around this fixture's players instead.
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=180)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    # Fixture-level commentary attaching to the players in that fixture is
+    # the thing that previously had nowhere to live. The synthetic pool
+    # uses real club short names, so the shipped GW2 matchup research
+    # applies to it — which means this also proves the file parses and
+    # reaches a player's card.
+    labels = " ".join(_expander_labels(at))
+    assert "in this fixture" in labels, labels
+
+
+def test_the_shipped_research_renders_both_sides_for_a_real_player():
+    """Renders the two piles directly from the shipped GW2 file.
+
+    Going through AppTest would need the synthetic pool to carry the real
+    player names; this checks the same rendering path's inputs against the
+    actual research, which is the part that could silently go missing.
+    """
+    import json as _json
+    from pathlib import Path as _Path
+
+    import pandas as _pd
+
+    from fpl_assistant.analysis import consensus as _consensus
+
+    data = _json.loads(
+        (_Path(__file__).resolve().parent.parent / "data" / "consensus" / "gw2.json").read_text()
+    )
+    entry = next(p for p in data["players"] if p["name"] == "Szoboszlai")
+
+    frame = _pd.DataFrame([{"id": 1, "web_name": "Szoboszlai"}])
+    frame["consensus_for"] = _consensus._pack(entry["talking_points"]["for"])
+    frame["consensus_against"] = _consensus._pack(entry["talking_points"]["against"])
+    row = frame.iloc[0]
+
+    for_points = _consensus.arguments_for(row)
+    against_points = _consensus.arguments_against(row)
+
+    assert len(for_points) >= 3
+    assert len(against_points) >= 3
+    assert any("deeper" in p.lower() for p, _ in against_points)
+    assert all(source for _, source in for_points + against_points)

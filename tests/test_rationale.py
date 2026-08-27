@@ -214,3 +214,34 @@ def test_a_player_with_no_prior_seasons_is_written_up_without_one():
     row = pd.Series({"web_name": "Newboy", "team_short_name": "HUL", "price": 4.5})
     assert rationale.track_record_story(row) == ""
     assert "Over full seasons" not in rationale.player_rationale(row)
+
+
+def test_the_write_up_leads_with_the_argument_not_the_number():
+    """What people said comes before what the model computed.
+
+    A projection is a conclusion — a manager can only accept or reject it.
+    "He's been playing deeper in a double pivot" is reasoning they can
+    weigh, and it is what they asked for.
+    """
+    from fpl_assistant.analysis import consensus
+
+    frame = pd.DataFrame([{"web_name": "Szoboszlai", "team_short_name": "LIV", "price": 7.0}])
+    frame["consensus_for"] = consensus._pack(
+        [{"point": "He is on penalties, corners and free-kicks", "source": "RotoWire"}]
+    )
+    frame["consensus_against"] = consensus._pack(
+        [{"point": "He has been playing deeper in a double pivot", "source": "Scout"}]
+    )
+    text = rationale.player_rationale(frame.iloc[0])
+
+    assert "Why people like him" in text
+    assert "penalties" in text
+    assert "The worry" in text
+    assert "deeper" in text
+    assert "RotoWire" in text and "Scout" in text
+
+
+def test_a_player_nobody_has_written_about_gets_no_argument_line():
+    row = pd.Series({"web_name": "Anon", "team_short_name": "HUL", "price": 4.5})
+    assert rationale.headline_argument(row) == ""
+    assert "Why people like him" not in rationale.player_rationale(row)

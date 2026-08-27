@@ -448,6 +448,31 @@ def opponent_story(
     return "**The fixture:** " + line
 
 
+def headline_argument(row: pd.Series) -> str:
+    """The single loudest thing said for him, and the loudest against.
+
+    The full for/against lists render in the player card, but a compact
+    view still needs the argument rather than the number -- one line that
+    says why people like him and what they're worried about beats a
+    projection to one decimal place.
+    """
+    from fpl_assistant.analysis import consensus as consensus_module
+
+    favour = consensus_module.arguments_for(row)
+    against = consensus_module.arguments_against(row)
+    if not favour and not against:
+        return ""
+
+    parts = []
+    if favour:
+        point, source = favour[0]
+        parts.append(f"**Why people like him:** {point}" + (f" *({source})*" if source else ""))
+    if against:
+        point, source = against[0]
+        parts.append(f"**The worry:** {point}" + (f" *({source})*" if source else ""))
+    return "  \n".join(parts)
+
+
 def track_record_story(row: pd.Series) -> str:
     """What the player did across completed seasons.
 
@@ -492,6 +517,13 @@ def player_rationale(
     minutes = minutes_story(row)
     if minutes:
         parts.append(minutes)
+
+    # What people are saying, before any number. This is the reasoning a
+    # manager can argue with; a projection is a conclusion they can only
+    # accept or reject.
+    argument = headline_argument(row)
+    if argument:
+        parts.append(argument)
 
     # Before this season's form, because early on it outweighs it.
     record = track_record_story(row)

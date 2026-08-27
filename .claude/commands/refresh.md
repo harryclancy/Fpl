@@ -108,6 +108,42 @@ that is the honest measure of whether this refresh did its job.
 
 Commit and push to the current branch.
 
+## The most important thing this file does
+
+**Lead with what people are saying, and split it into the two piles a
+manager actually weighs.** Every researched player gets `talking_points`:
+
+```json
+"talking_points": {
+  "for":     [{"point": "...", "source": "Named Outlet"}],
+  "against": [{"point": "...", "source": "Named Outlet"}]
+}
+```
+
+These are individual arguments, not a synthesis. The register to aim for is
+tactical and observational, the way a pundit or a forum post talks:
+
+- *"He has been playing deeper, in a double pivot alongside Gravenberch — a
+  long way from the advanced role that produced his returns."*
+- *"Brighton conceded 46 last season, their best in five years; only City
+  and Arsenal were tighter."*
+- *"Palace are missing Riad and Sarr, so it's a reshuffled back three being
+  asked to handle Haaland."*
+
+Not: *"his xGI ranks 4th among midfielders"*. Numbers belong in `key_stats`,
+where they support the argument rather than replacing it.
+
+**Club-level commentary goes in `matchups_gw{N}.json`, not in a player's
+write-up.** "Brighton have a strong defence" is a fact about a fixture and
+is true for every attacker who faces them. Write it once against the
+fixture and it reaches all of them; write it into one player's prose and it
+reaches one. Each fixture records what people say about both clubs' attack
+and defence, attributed. An attacker is then shown the opposition's
+defence, a defender the opposition's attack.
+
+Aim for **at least three arguments on each side** for any player at `full`
+depth, and cover every fixture that a decision could turn on.
+
 ## The rules that matter most
 
 - **Attribute every opinion to a named outlet.** "Analysts say" is not a source;

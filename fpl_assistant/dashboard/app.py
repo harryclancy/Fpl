@@ -32,6 +32,7 @@ from fpl_assistant.analysis import (
     injuries,
     my_squad as my_squad_analysis,
     history,
+    matchups,
     omissions,
     planner,
     scenarios,
@@ -104,6 +105,12 @@ def cached_solution(scored, template_weight):
     """The solved squad. Keyed on the rank strategy, so moving that slider
     re-solves — and nothing else does."""
     return squad_builder.recommend_squad(scored, template_weight=template_weight)
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def cached_matchups(gameweek):
+    """This gameweek's fixture-level commentary, read once per refresh."""
+    return matchups.load(int(gameweek))
 
 
 @st.cache_data(ttl=600, show_spinner=False)
@@ -417,6 +424,13 @@ def render_omissions_panel(scored, solution) -> None:
                     f"(£{swap.in_price:.1f}m)</span>",
                     unsafe_allow_html=True,
                 )
+            # The objections in people's own words, before the numbers.
+            # "Why isn't he in the squad" is nearly always better answered
+            # by what the community is saying than by a points gap.
+            if item.against:
+                for point, source in item.against:
+                    attribution = f" *— {source}*" if source else ""
+                    st.markdown(f"  - {point}{attribution}")
             render_evidence(item.stats, item.voices, item.sources)
             st.markdown("")
 
@@ -696,6 +710,71 @@ def render_question_box(scored, solution, next_event) -> None:
                 st.caption("Copy this (tap the icon) and paste it into your chat with Claude.")
 
 
+def render_talking_points(row) -> None:
+    """The for-and-against, as people actually said it.
+
+    Two columns, both attributed, neither summarised into a bland middle.
+    The point is that a manager reads both piles and makes the call — not
+    that the app hands down a verdict and hides the argument behind it.
+    """
+    for_points = consensus.arguments_for(row)
+    against_points = consensus.arguments_against(row)
+    if not for_points and not against_points:
+        return
+
+    left, right = st.columns(2)
+    with left:
+        st.markdown("**✅ Why people say pick him**")
+        if not for_points:
+            st.caption("Nothing researched in favour this week.")
+        for point, source in for_points:
+            attribution = f" *— {source}*" if source else ""
+            st.markdown(f"- {point}{attribution}")
+    with right:
+        st.markdown("**⚠️ Why people say don't**")
+        if not against_points:
+            st.caption("Nothing researched against this week.")
+        for point, source in against_points:
+            attribution = f" *— {source}*" if source else ""
+            st.markdown(f"- {point}{attribution}")
+
+
+def render_matchup_notes(row, gameweek) -> None:
+    """What people say about the side he is playing, not about him.
+
+    Club-level commentary — "Brighton have the third-best defence in the
+    league and press high" — is a fact about every attacker in that
+    fixture. Attaching it to the fixture rather than to one write-up is
+    what stops the app recommending the other ten as though the
+    opposition were neutral.
+    """
+    club = row.get("team_short_name")
+    position = row.get("position")
+    if not isinstance(club, str) or not isinstance(position, str):
+        return
+    try:
+        fixtures = cached_matchups(int(gameweek))
+    except Exception:
+        return
+
+    opposition = matchups.opponent_notes(club, position, fixtures)
+    if not opposition:
+        return
+
+    fixture = matchups.fixture_for(club, fixtures)
+    opponent = fixture.opponent_of(club) if fixture else "the opposition"
+    half = "defence" if position in matchups.ATTACKING_POSITIONS else "attack"
+    st.markdown(f"**🆚 What people say about the {opponent} {half}**")
+    for note in opposition:
+        st.markdown(f"- {note.display}")
+
+    mine = matchups.own_notes(club, position, fixtures)
+    if mine:
+        with st.expander(f"…and about {club} in this fixture"):
+            for note in mine:
+                st.markdown(f"- {note.display}")
+
+
 def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summary=None):
     """One player's full case: photo + rationale text (which already
     surfaces qualitative research from the weekly report) inside an
@@ -721,6 +800,15 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
                     row, report_text, team_context=consensus.load_team_context()
                 )
             )
+
+        # The reasons people actually give, first and in full.
+        #
+        # This is the top of the expander on purpose. A projection is a
+        # conclusion; these are the arguments, and the arguments are what
+        # someone can weigh, disagree with, or act on. Burying them under
+        # a number was the single loudest complaint about this app.
+        render_talking_points(row)
+        render_matchup_notes(row, row.get("_gameweek") or 1)
 
         # What could actually happen, rather than only what the average
         # is. The same 5.0 projection can be a steady five every week or a
