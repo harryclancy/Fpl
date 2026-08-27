@@ -42,6 +42,7 @@ from fpl_assistant.analysis import (
     rationale,
     squad_builder,
     team_brief,
+    transfer_budget,
     transfer_case,
     transfers,
 )
@@ -995,6 +996,67 @@ def render_player_cases(
             )
 
 
+def render_owned_squad_cases(
+    scored, confirmed_ids, suggested_ids, fixtures, teams, next_event, report_text
+) -> None:
+    """Why you own each of the fifteen you actually own.
+
+    Separate from the suggested XI on purpose. The plan above answers
+    "what should I do this week"; a manager deciding whether to trust that
+    plan needs the other question answered too — "why am I holding these
+    players at all" — and that has to cover the squad as it stands,
+    including anyone the plan wants to sell. A page that only explains the
+    players it likes is arguing, not informing.
+    """
+    present = [pid for pid in confirmed_ids if pid in set(scored["id"])]
+    if not present:
+        return
+
+    indexed = scored.set_index("id", drop=False)
+    leaving = [pid for pid in present if pid not in suggested_ids]
+    keeping = [pid for pid in present if pid in suggested_ids]
+
+    researched = sum(
+        1 for pid in present
+        if consensus.arguments_for(indexed.loc[pid])
+        or consensus.arguments_against(indexed.loc[pid])
+    )
+
+    st.divider()
+    with st.expander(
+        f"🧾 Your current squad, player by player — {researched} of {len(present)} researched",
+        expanded=False,
+    ):
+        st.caption(
+            "The fifteen you own right now, whatever the plan above suggests doing with them. "
+            "Anyone the plan would sell is listed first, with the case against them, so you can "
+            "disagree with the sale rather than just accept it."
+        )
+        if leaving:
+            st.markdown("**The plan would move these on**")
+            render_player_cases(
+                indexed, leaving, [], fixtures, teams, next_event, report_text
+            )
+        if keeping:
+            st.markdown("**Staying in the squad**")
+            render_player_cases(
+                indexed, keeping, [], fixtures, teams, next_event, report_text
+            )
+
+        missing = [
+            str(indexed.loc[pid].get("web_name"))
+            for pid in present
+            if not consensus.arguments_for(indexed.loc[pid])
+            and not consensus.arguments_against(indexed.loc[pid])
+        ]
+        if missing:
+            st.warning(
+                "No researched reasoning yet for: "
+                + ", ".join(missing)
+                + ". Those write-ups fall back on the projection alone — run /refresh to fill them in."
+            )
+
+
 def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, state) -> None:
     """The weekly decision, anchored on the squad you actually own.
 
@@ -1062,6 +1124,7 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     # pre-transfer eleven under a recommended transfer asks the reader to
     # do the substitution in their head, which is exactly the work the
     # page exists to save them.
+    confirmed_ids = list(owned_ids)
     suggested_ids = list(owned_ids)
     if plan is not None and plan.transfers:
         suggested_ids = [i for i in owned_ids if i not in set(plan.out_ids)] + list(plan.in_ids)
@@ -1156,6 +1219,14 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     render_player_cases(
         indexed, starting, bench, fixtures, teams, next_event,
         report_text, captain_id, vice_id,
+    )
+
+    # The fifteen you actually own, explained, including anyone the plan
+    # above would move on. The suggested squad answers "what should I
+    # do"; this answers "why do I own what I own", which is the question
+    # you ask when you're deciding whether to trust the suggestion.
+    render_owned_squad_cases(
+        scored, confirmed_ids, set(suggested_ids), fixtures, teams, next_event, report_text
     )
 
     render_question_box(scored, xi, next_event)
@@ -2054,11 +2125,16 @@ def render_transfer_plan(players, fixtures, teams, next_event, squad, free_trans
         help="From your official squad page. Sets what you can afford to spend.",
         key=f"{key_prefix}_bank",
     )
-    max_transfers = st.slider(
-        "Most transfers to consider", 1, 4, 2,
-        help="Each move beyond your free transfers costs 4 points, which is priced in below.",
-        key=f"{key_prefix}_max_transfers",
-    )
+    # How many transfers to make is a judgement about how broken the squad
+    # is and what a hit is worth. That is the app's job, not a slider's --
+    # a control there was the app declining to decide and calling it
+    # flexibility. Two is the ceiling in a normal week; it rises only when
+    # enough of the fifteen is actually unavailable that patching isn't
+    # optional.
+    owned_now = projected[projected["id"].isin(owned_ids)]
+    budget = transfer_budget.decide(owned_now, free_transfers=free_transfers)
+    max_transfers = budget.limit
+    st.caption(f"**{budget.headline}** {budget.reason}")
 
     try:
         plan = optimiser.optimise_transfers(

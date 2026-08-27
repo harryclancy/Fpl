@@ -108,6 +108,51 @@ that is the honest measure of whether this refresh did its job.
 
 Commit and push to the current branch.
 
+## Where to research from
+
+`data/sources/weekly_sources.json` holds ~165 sources the user curated:
+FPL specialists, model sites, club team-news feeds, community threads,
+stats providers, podcasts. Work through them with:
+
+```bash
+python -c "import sys; sys.path.insert(0,'.'); from fpl_assistant.research import sources; \
+p=sources.plan(); print(sources.summary(p)); \
+[print(c,d) for c,d in p.groups]"
+```
+
+**Search them; do not try to fetch them.** Direct fetching is blocked in
+the hosted session — the egress proxy answers 403 to CONNECT for
+reddit.com, news.google.com, fantasy.premierleague.com and most of the
+rest, so every attempt is a wasted round trip. What works is a web search
+restricted to a handful of those domains at a time, which returns their
+actual article content. That is free, needs no key, and is where every
+quote in the research files comes from.
+
+Work the groups in the order `plan()` returns them. Team news comes first
+because it invalidates everything else — a tactical read on a player who
+has just been ruled out is wasted effort.
+
+65 of the sources are YouTube channels and X accounts. A search cannot
+read those. Do not imply you have. Say in the sign-off which sources you
+actually covered and which you could not.
+
+## Research the squad the user OWNS first
+
+Before anything else, get the owned fifteen and cover every one of them.
+The front page has a section explaining why the user holds each player
+they actually hold — including anyone the plan wants to sell, with the
+case against, so they can disagree with the sale rather than just accept
+it. That section falls back to a bare projection for anyone missing from
+the research, which is precisely the complaint this file exists to answer.
+
+Order of work:
+1. **Every player in the owned squad.** All fifteen, no exceptions.
+2. Players the plan wants to buy.
+3. The rest of the decision set (`analysis/decision_set.py`).
+
+A gameweek where all fifteen owned players are covered and only six
+candidates are is a better week's work than the reverse.
+
 ## The most important thing this file does
 
 **Lead with what people are saying, and split it into the two piles a
@@ -155,6 +200,14 @@ reason to buy him on its own"* is useful; silence is not.
 
 Aim for **at least three arguments on each side** for any player at `full`
 depth, and cover every fixture that a decision could turn on.
+
+## Transfers: the app decides how many, not the user
+
+`analysis/transfer_budget.py` sets the ceiling: **two in a normal week**,
+rising only when enough of the fifteen is genuinely unavailable that
+patching is not optional. Do not add a control that hands that choice
+back to the reader — a slider there is the app declining to do its job
+and calling it flexibility.
 
 ## Keep the season-history prior even across positions
 
