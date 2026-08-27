@@ -77,3 +77,63 @@ def test_the_summary_states_the_gap_not_just_the_reach():
     text = sources.summary()
     assert "searchable domains" in text
     assert "cannot read" in text
+
+
+# --- domains that block the crawler --------------------------------------
+
+def test_publishers_that_block_the_crawler_are_filtered_out():
+    """One rejected domain fails the WHOLE search it appears in.
+
+    So a blocked site in a group of six loses the other five as well. This
+    is why they are filtered up front rather than left to fail: the
+    difference between a research pass that works and one that returns
+    nothing for reasons nobody can see.
+    """
+    plan = sources.plan()
+    searchable = {d for _, group in plan.groups for d in group}
+
+    for blocked in ("football.london", "liverpoolecho.co.uk", "bbc.com", "theguardian.com"):
+        assert not any(blocked in d for d in searchable), f"{blocked} would break its search group"
+
+
+def test_a_blocked_publisher_is_reported_as_blocked_not_as_video():
+    """Two different reasons a source can't be read, reported apart: one
+    is a permanent property of the medium, the other is a policy that
+    could change."""
+    plan = sources.plan()
+    blocked = [s for s in plan.unreachable if s.blocks_crawler]
+
+    assert blocked, "no crawler-blocked sources identified"
+    assert all("blocks the search crawler" in s.why_unreadable for s in blocked)
+    assert any("youtube" in s.domain for s in plan.unreachable if not s.blocks_crawler)
+
+
+def test_the_summary_separates_the_two_kinds_of_gap():
+    text = sources.summary()
+    assert "video or social" in text
+    assert "block the crawler" in text
+
+
+# --- the club sites, which are the primary sources -----------------------
+
+def test_every_premier_league_club_site_is_in_the_list():
+    """A club's own site carries the manager's press conference verbatim,
+    and several publish their own FPL preview. This is a day ahead of the
+    aggregators."""
+    domains = {s.domain for s in sources.load()}
+    for club in ("arsenal.com", "mancity.com", "liverpoolfc.com", "cpfc.co.uk",
+                 "avfc.co.uk", "brentfordfc.com", "chelseafc.com", "manutd.com"):
+        assert any(club in d for d in domains), f"{club} missing from the source list"
+
+
+def test_official_club_news_is_researched_first():
+    categories = [category for category, _ in sources.plan().groups]
+    assert categories[0] == "Official club news"
+
+
+def test_verified_domains_lead_their_group():
+    """A search returns a limited number of results. A domain already known
+    to answer well is a better use of a slot than an untested one."""
+    for _, group in sources.plan().groups:
+        verified = [any(k in d for k in sources.VERIFIED_READABLE) for d in group]
+        assert verified == sorted(verified, reverse=True), group

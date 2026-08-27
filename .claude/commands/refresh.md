@@ -120,6 +120,14 @@ p=sources.plan(); print(sources.summary(p)); \
 [print(c,d) for c,d in p.groups]"
 ```
 
+**Start with the clubs' own sites.** They were the biggest find in testing
+and they are primary sources, not summaries: a club site carries the
+manager's press conference verbatim, and several publish their own FPL
+preview every week — Manchester City run an "FPL Scout Report" per
+gameweek, Liverpool publish "five players to watch", Aston Villa put out a
+pre-match FPL preview. All twenty are readable. This is where the sharpest
+team news comes from and it is a day ahead of the aggregators.
+
 **Search them; do not try to fetch them.** Direct fetching is blocked in
 the hosted session — the egress proxy answers 403 to CONNECT for
 reddit.com, news.google.com, fantasy.premierleague.com and most of the
@@ -132,9 +140,20 @@ Work the groups in the order `plan()` returns them. Team news comes first
 because it invalidates everything else — a tactical read on a player who
 has just been ruled out is wasted effort.
 
-65 of the sources are YouTube channels and X accounts. A search cannot
-read those. Do not imply you have. Say in the sign-off which sources you
-actually covered and which you could not.
+Two groups cannot be read, and `sources.plan()` filters both out so they
+never break a search:
+
+- **Video and social** (65 sources) — YouTube channels, X accounts. A
+  search cannot return a transcript.
+- **Publishers that block the crawler** (24 sources) — the UK regional
+  titles, plus the BBC and the Guardian. Every one was confirmed by the
+  search API rejecting it by name.
+
+This filtering is not tidiness. A rejected domain fails the WHOLE search it
+appears in, so one blocked site in a group of six loses the other five too.
+
+Do not imply you have read either group. Say in the sign-off which sources
+you actually covered and which you could not.
 
 ## Research the squad the user OWNS first
 

@@ -39,10 +39,74 @@ SOURCES_PATH = (
 # its transcript, so promising to have "read" it would be a lie.
 NOT_SEARCHABLE = ("youtube.com", "x.com", "twitter.com", "news.google.com")
 
+# Domains that actively block the search crawler. Every one of these was
+# confirmed by the search API rejecting it by name, not guessed at.
+#
+# Worth stating why this list exists rather than just letting the calls
+# fail: a rejected domain fails the WHOLE search it appears in, so one
+# blocked site in a group of six loses the other five as well. Filtering
+# them out up front is the difference between a research pass that works
+# and one that returns nothing for reasons nobody can see.
+#
+# The pattern is almost entirely UK regional publishers (Reach plc titles
+# and a few nationals). Their beat reporting is genuinely good and it is a
+# real loss, so they stay in the source list and get reported as
+# unreadable — a gap someone can choose to fill by hand.
+BLOCKS_CRAWLER = (
+    "football.london",
+    "manchestereveningnews.co.uk",
+    "birminghammail.co.uk",
+    "liverpoolecho.co.uk",
+    "chroniclelive.co.uk",
+    "nottinghampost.com",
+    "hulldailymail.co.uk",
+    "coventrytelegraph.net",
+    "theargus.co.uk",
+    "standard.co.uk",
+    "bbc.com",
+    "bbc.co.uk",
+    "theguardian.com",
+    "mylondon.news",
+    "yorkshireeveningpost.co.uk",
+    "sunderlandecho.com",
+    "bournemouthecho.co.uk",
+    "eadt.co.uk",
+    "dailymail.co.uk",
+    "thesun.co.uk",
+)
+
+# Confirmed working in testing, and the reason the club feeds are worth
+# reaching for at all: a club's own site carries the manager's press
+# conference verbatim, and several of them publish their own FPL preview.
+# Manchester City run a "FPL Scout Report" per gameweek; Liverpool publish
+# "five players to watch"; Aston Villa put out a pre-match FPL preview.
+# That is primary-source team news rather than somebody's summary of it.
+VERIFIED_READABLE = (
+    "mancity.com",
+    "arsenal.com",
+    "liverpoolfc.com",
+    "manutd.com",
+    "tottenhamhotspur.com",
+    "cpfc.co.uk",
+    "avfc.co.uk",
+    "brentfordfc.com",
+    "brightonandhovealbion.com",
+    "premierleague.com",
+    "fantasyfootballscout.co.uk",
+    "allaboutfpl.com",
+    "nevermanagealone.com",
+    "fantasyfootballhub.co.uk",
+    "rotowire.com",
+    "premierinjuries.com",
+    "whoscored.com",
+    "sportsmole.co.uk",
+)
+
 # Categories in the order they should be worked through in a weekly pass.
 # Team news first because it invalidates everything else: a tactical read
 # on a player who has just been ruled out is wasted effort.
 CATEGORY_ORDER = (
+    "Official club news",
     "Club team news RSS",
     "FPL specialist / rolling page",
     "Premier League news / stats",
@@ -73,7 +137,34 @@ class Source:
 
     @property
     def searchable(self) -> bool:
-        return not any(blocked in self.domain for blocked in NOT_SEARCHABLE)
+        """Whether a scoped web search can return this source's text.
+
+        Two separate reasons it might not: the format is wrong (video,
+        social), or the publisher blocks the crawler. Both end in the same
+        place — the source cannot be read — but they are reported apart,
+        because one is a permanent property of the medium and the other is
+        a policy that could change.
+        """
+        return not (
+            any(blocked in self.domain for blocked in NOT_SEARCHABLE)
+            or self.blocks_crawler
+        )
+
+    @property
+    def blocks_crawler(self) -> bool:
+        return any(blocked in self.domain for blocked in BLOCKS_CRAWLER)
+
+    @property
+    def verified(self) -> bool:
+        return any(known in self.domain for known in VERIFIED_READABLE)
+
+    @property
+    def why_unreadable(self) -> str:
+        if self.blocks_crawler:
+            return "publisher blocks the search crawler"
+        if any(blocked in self.domain for blocked in NOT_SEARCHABLE):
+            return "video or social — a search cannot read it"
+        return ""
 
 
 @dataclass
@@ -136,6 +227,12 @@ def plan(sources: list[Source] | None = None, per_search: int = DOMAINS_PER_SEAR
         seen.add(domain)
         by_category.setdefault(source.category, []).append(domain)
 
+    # Verified-readable domains lead their group. A search returns a
+    # limited number of results, and a domain already known to answer well
+    # is a better use of one of those slots than an untested one.
+    for domains in by_category.values():
+        domains.sort(key=lambda d: (not any(k in d for k in VERIFIED_READABLE), d))
+
     groups: list[tuple[str, list[str]]] = []
     ordered = list(CATEGORY_ORDER) + [
         c for c in by_category if c not in CATEGORY_ORDER
@@ -152,9 +249,12 @@ def plan(sources: list[Source] | None = None, per_search: int = DOMAINS_PER_SEAR
 
 def summary(source_plan: SourcePlan | None = None) -> str:
     source_plan = plan() if source_plan is None else source_plan
+    blocked = [s for s in source_plan.unreachable if s.blocks_crawler]
+    media = [s for s in source_plan.unreachable if not s.blocks_crawler]
     return (
         f"{source_plan.total_domains} searchable domains in "
-        f"{len(source_plan.groups)} search groups; "
-        f"{len(source_plan.unreachable)} sources (video and social) that a search "
-        f"cannot read and a person has to check by hand."
+        f"{len(source_plan.groups)} search groups. "
+        f"{len(media)} sources are video or social and a search cannot read them; "
+        f"{len(blocked)} are publishers that block the crawler. "
+        f"Both need checking by hand if you want them."
     )
