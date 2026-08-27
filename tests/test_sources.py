@@ -1,16 +1,14 @@
-"""The weekly source list, and what can actually be read from it.
+"""The 100 verified-readable sources.
 
-The user curated ~165 sources. The useful question is not what is on the
-list but what can be reached from where the research runs, and the answer
-is narrower than the list looks: direct fetching is blocked by the egress
-proxy, while a search scoped to a handful of domains returns their
-article text. So the list is a search allowlist, not a fetch queue.
-
-The thing these tests protect is honesty about the gap. A source that
-cannot be read must be reported as unread rather than quietly dropped,
-because "we checked 165 sources" is a much bigger claim than "we searched
-80 domains and could not read the video and social ones".
+Every domain here was tested by running a domain-scoped search and
+confirming it returned readable article text. The tests exist to keep that
+promise honest, because the failure mode is invisible from the outside: a
+domain the search API rejects fails the ENTIRE search it appears in, so
+one unverified entry in a group of six silently loses the other five. A
+research pass built on an unchecked list returns less than one built on a
+third as many verified domains, and gives no clue why.
 """
+import json
 import sys
 from pathlib import Path
 
@@ -20,120 +18,171 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from fpl_assistant.research import sources
 
-
-def test_the_curated_list_is_committed_and_loads():
-    loaded = sources.load()
-    assert len(loaded) >= 150, f"only {len(loaded)} sources committed"
-    assert all(s.url.startswith("http") for s in loaded)
+RAW = json.loads(
+    (Path(__file__).resolve().parent.parent / "data" / "sources" / "verified_sources.json").read_text()
+)
 
 
-def test_it_covers_the_categories_a_week_actually_needs():
-    categories = {s.category for s in sources.load()}
-    for needed in ("Club team news RSS", "FPL specialist / rolling page",
-                   "Premier League news / stats"):
-        assert needed in categories, f"no {needed} sources"
+def test_there_are_exactly_one_hundred():
+    assert len(sources.load()) == 100
 
 
-def test_video_and_social_are_reported_as_unreadable_not_dropped():
-    """A search cannot read a YouTube channel or an X profile. Claiming
-    to have covered them would be the same class of dishonesty as an
-    unattributed quote."""
+def test_every_single_one_is_flagged_verified():
+    assert all(entry["VERIFIED_READABLE"] is True for entry in RAW["sources"])
+
+
+def test_an_unverified_entry_is_refused_rather_than_loaded(tmp_path):
+    """The file's promise has to survive a careless edit."""
+    path = tmp_path / "s.json"
+    path.write_text(json.dumps({"sources": [
+        {"name": "Good", "domain": "a.com", "tier": 1, "VERIFIED_READABLE": True},
+        {"name": "Unchecked", "domain": "b.com", "tier": 1, "VERIFIED_READABLE": False},
+        {"name": "Silent", "domain": "c.com", "tier": 1},
+    ]}))
+    assert [s.domain for s in sources.load(path)] == ["a.com"]
+
+
+def test_no_domain_appears_twice():
+    """Roughly a hundred genuinely different sources, not one site listed
+    under several URLs to pad the count."""
+    domains = [s.domain for s in sources.load()]
+    assert len(domains) == len(set(domains))
+
+
+# --- the exclusions, which are capability limits not preferences ---------
+
+BANNED = ("youtube.com", "youtu.be", "x.com", "twitter.com", "reddit.com")
+
+CRAWLER_BLOCKED = (
+    "football.london", "manchestereveningnews.co.uk", "birminghammail.co.uk",
+    "liverpoolecho.co.uk", "chroniclelive.co.uk", "nottinghampost.com",
+    "hulldailymail.co.uk", "coventrytelegraph.net", "theargus.co.uk",
+    "sunderlandecho.com", "bournemouthecho.co.uk", "yorkshireeveningpost.co.uk",
+    "mylondon.news", "eadt.co.uk", "standard.co.uk", "dailymail.co.uk",
+    "thesun.co.uk", "talksport.com", "bbc.com", "bbc.co.uk", "theguardian.com",
+    "independent.co.uk", "metro.co.uk", "reuters.com", "transfermarkt.com",
+)
+
+
+def _is(domain: str, banned: str) -> bool:
+    """Whether a domain IS the banned host or a subdomain of it.
+
+    Substring matching would be wrong in a way that looks right:
+    "fantasyfootballfix.com" contains "x.com", and "fplbet.com" contains
+    "bet.com". Matching on the label boundary is the only correct test.
+    """
+    domain = domain.lower().lstrip(".")
+    banned = banned.lower().lstrip(".")
+    return domain == banned or domain.endswith("." + banned)
+
+
+def test_no_youtube_no_x_no_reddit():
+    for source in sources.load():
+        for banned in BANNED:
+            assert not _is(source.domain, banned), (
+                f"{source.domain} cannot be read by a search"
+            )
+
+
+def test_no_publisher_that_blocks_the_crawler():
+    """Each of these was confirmed by the search API rejecting it by name.
+    One of them in a search group takes the whole group down with it."""
+    for source in sources.load():
+        for blocked in CRAWLER_BLOCKED:
+            assert not _is(source.domain, blocked), (
+                f"{source.domain} would break its search group"
+            )
+
+
+def test_the_ban_matches_on_domain_boundaries_not_substrings():
+    """Guards the guard. A substring check would ban fantasyfootballfix.com
+    for containing "x.com", which is exactly the kind of quiet wrongness
+    these tests exist to catch."""
+    assert _is("x.com", "x.com")
+    assert _is("www.x.com", "x.com")
+    assert not _is("fantasyfootballfix.com", "x.com")
+    assert not _is("fplbet.com", "bet.com")
+
+
+def test_the_counts_the_file_advertises_are_true():
+    counts = RAW["counts"]
+    assert counts["verified_readable"] == 100
+    assert counts["blocked"] == 0
+    assert counts["youtube"] == 0
+    assert counts["x_twitter"] == 0
+    assert counts["inaccessible"] == 0
+
+
+# --- structure -----------------------------------------------------------
+
+def test_every_source_says_what_it_is_used_for():
+    """A source with no stated purpose is one nobody will think to search."""
+    for source in sources.load():
+        assert source.name.strip()
+        assert source.url.startswith("http")
+        assert source.used_for.strip(), f"{source.name} has no stated use"
+        assert source.tier in sources.TIER_NAMES
+
+
+def test_all_twenty_club_sites_are_present_in_tier_two():
+    clubs = {
+        "arsenal.com", "avfc.co.uk", "afcb.co.uk", "brentfordfc.com",
+        "brightonandhovealbion.com", "chelseafc.com", "ccfc.co.uk", "cpfc.co.uk",
+        "evertonfc.com", "fulhamfc.com", "wearehullcity.co.uk", "itfc.co.uk",
+        "leedsunited.com", "liverpoolfc.com", "mancity.com", "manutd.com",
+        "newcastleunited.com", "nottinghamforest.co.uk", "safc.com",
+        "tottenhamhotspur.com",
+    }
+    tier_two = {s.domain for s in sources.plan().by_tier(2)}
+    assert tier_two == clubs
+    assert len(tier_two) == 20
+
+
+def test_fpl_specialists_are_the_largest_tier():
     plan = sources.plan()
-
-    domains = {s.domain for s in plan.unreachable}
-    assert any("youtube.com" in d for d in domains)
-    assert any("x.com" in d for d in domains)
-    # And none of them leak into the searchable groups.
-    searchable = {d for _, group in plan.groups for d in group}
-    assert not any("youtube.com" in d for d in searchable)
+    assert len(plan.by_tier(1)) > len(plan.by_tier(3)) + len(plan.by_tier(4))
 
 
-def test_domains_are_deduplicated():
-    """The list carries twenty Google News RSS URLs on one host. Searching
-    that host twenty times returns the same results twenty times."""
-    plan = sources.plan()
-    flat = [d for _, group in plan.groups for d in group]
-    assert len(flat) == len(set(flat))
+# --- the research order --------------------------------------------------
+
+def test_availability_is_researched_before_anything_that_depends_on_it():
+    """A captaincy case for a player who has been ruled out is worse than
+    no case at all — it looks authoritative and it is void."""
+    steps = [step for step, _ in sources.RESEARCH_STEPS]
+
+    assert steps[0] == "Official club news and press conferences"
+    assert steps[1] == "Injury and expected-minutes information"
+    assert steps.index("Injury and expected-minutes information") < steps.index("Captaincy consensus")
+    assert steps.index("Injury and expected-minutes information") < steps.index("Underlying statistics")
 
 
-def test_searches_are_grouped_small_enough_to_be_useful():
-    for category, group in sources.plan().groups:
-        assert 1 <= len(group) <= sources.DOMAINS_PER_SEARCH
+def test_the_plan_starts_with_the_club_sites():
+    first = sources.plan().groups[0]
+    assert first.tier == 2
+    assert first.step == "Official club news and press conferences"
 
 
-def test_team_news_is_worked_before_tactical_reads():
-    """Team news invalidates everything else — a tactical read on a player
-    who has just been ruled out is wasted effort."""
-    categories = [category for category, _ in sources.plan().groups]
-    if "Club team news RSS" in categories and "Podcast / video" in categories:
-        assert categories.index("Club team news RSS") < categories.index("Podcast / video")
+def test_searches_are_grouped_small_enough_to_stay_targeted():
+    for group in sources.plan().groups:
+        assert 1 <= len(group.domains) <= sources.DOMAINS_PER_SEARCH
+
+
+def test_every_group_draws_only_on_verified_domains():
+    allowed = set(sources.allowlist())
+    for group in sources.plan().groups:
+        assert set(group.domains) <= allowed
+
+
+def test_the_allowlist_can_be_narrowed_to_one_tier():
+    assert set(sources.allowlist(2)) == {s.domain for s in sources.plan().by_tier(2)}
+    assert len(sources.allowlist()) == 100
+
+
+def test_the_summary_states_the_zeroes():
+    text = sources.summary()
+    assert "100 verified-readable domains" in text
+    assert "0 blocked, 0 YouTube, 0 X, 0 inaccessible" in text
 
 
 def test_a_missing_file_degrades_quietly(tmp_path):
     assert sources.load(tmp_path / "nope.json") == []
-
-
-def test_the_summary_states_the_gap_not_just_the_reach():
-    text = sources.summary()
-    assert "searchable domains" in text
-    assert "cannot read" in text
-
-
-# --- domains that block the crawler --------------------------------------
-
-def test_publishers_that_block_the_crawler_are_filtered_out():
-    """One rejected domain fails the WHOLE search it appears in.
-
-    So a blocked site in a group of six loses the other five as well. This
-    is why they are filtered up front rather than left to fail: the
-    difference between a research pass that works and one that returns
-    nothing for reasons nobody can see.
-    """
-    plan = sources.plan()
-    searchable = {d for _, group in plan.groups for d in group}
-
-    for blocked in ("football.london", "liverpoolecho.co.uk", "bbc.com", "theguardian.com"):
-        assert not any(blocked in d for d in searchable), f"{blocked} would break its search group"
-
-
-def test_a_blocked_publisher_is_reported_as_blocked_not_as_video():
-    """Two different reasons a source can't be read, reported apart: one
-    is a permanent property of the medium, the other is a policy that
-    could change."""
-    plan = sources.plan()
-    blocked = [s for s in plan.unreachable if s.blocks_crawler]
-
-    assert blocked, "no crawler-blocked sources identified"
-    assert all("blocks the search crawler" in s.why_unreadable for s in blocked)
-    assert any("youtube" in s.domain for s in plan.unreachable if not s.blocks_crawler)
-
-
-def test_the_summary_separates_the_two_kinds_of_gap():
-    text = sources.summary()
-    assert "video or social" in text
-    assert "block the crawler" in text
-
-
-# --- the club sites, which are the primary sources -----------------------
-
-def test_every_premier_league_club_site_is_in_the_list():
-    """A club's own site carries the manager's press conference verbatim,
-    and several publish their own FPL preview. This is a day ahead of the
-    aggregators."""
-    domains = {s.domain for s in sources.load()}
-    for club in ("arsenal.com", "mancity.com", "liverpoolfc.com", "cpfc.co.uk",
-                 "avfc.co.uk", "brentfordfc.com", "chelseafc.com", "manutd.com"):
-        assert any(club in d for d in domains), f"{club} missing from the source list"
-
-
-def test_official_club_news_is_researched_first():
-    categories = [category for category, _ in sources.plan().groups]
-    assert categories[0] == "Official club news"
-
-
-def test_verified_domains_lead_their_group():
-    """A search returns a limited number of results. A domain already known
-    to answer well is a better use of a slot than an untested one."""
-    for _, group in sources.plan().groups:
-        verified = [any(k in d for k in sources.VERIFIED_READABLE) for d in group]
-        assert verified == sorted(verified, reverse=True), group

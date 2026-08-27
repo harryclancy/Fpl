@@ -108,52 +108,64 @@ that is the honest measure of whether this refresh did its job.
 
 Commit and push to the current branch.
 
-## Where to research from
+## Where to research from — the 100 verified sources, and nothing else
 
-`data/sources/weekly_sources.json` holds ~165 sources the user curated:
-FPL specialists, model sites, club team-news feeds, community threads,
-stats providers, podcasts. Work through them with:
+`data/sources/verified_sources.json` holds exactly 100 domains. Every one
+was tested by running a domain-scoped search against it and confirming it
+returned readable article text. **Search only these.**
 
 ```bash
 python -c "import sys; sys.path.insert(0,'.'); from fpl_assistant.research import sources; \
 p=sources.plan(); print(sources.summary(p)); \
-[print(c,d) for c,d in p.groups]"
+[print(g.label, g.domains) for g in p.groups]"
 ```
 
-**Start with the clubs' own sites.** They were the biggest find in testing
-and they are primary sources, not summaries: a club site carries the
-manager's press conference verbatim, and several publish their own FPL
-preview every week — Manchester City run an "FPL Scout Report" per
+This is not a preference, it is a capability constraint. A domain the
+search API rejects fails the **entire search it appears in** — one blocked
+publisher in a group of six silently loses the other five as well. That is
+why the file exists and why nothing outside it may be searched.
+
+**Permanently excluded. Do not add them back:**
+
+- **YouTube, X** — a search cannot read a video transcript or a social
+  timeline.
+- **Reddit** — post text is not reliably retrievable.
+- **Crawler-blocked publishers** — football.london, Manchester Evening
+  News, Liverpool Echo, Birmingham Live, Chronicle Live, Nottingham Post,
+  Hull Live, Coventry Telegraph, The Argus, Sunderland Echo, Bournemouth
+  Echo, Yorkshire Evening Post, MyLondon, EADT, Evening Standard, Daily
+  Mail, The Sun, talkSPORT, BBC, Guardian, Independent, Metro, Reuters,
+  Transfermarkt. Each confirmed by the API rejecting it by name.
+
+**The clubs' own sites are the sharpest source and all twenty work.** They
+carry the manager's press conference verbatim, and several publish their
+own FPL content weekly: Manchester City run an "FPL Scout Report" per
 gameweek, Liverpool publish "five players to watch", Aston Villa put out a
-pre-match FPL preview. All twenty are readable. This is where the sharpest
-team news comes from and it is a day ahead of the aggregators.
+pre-match FPL preview. That is a day ahead of the aggregators.
 
-**Search them; do not try to fetch them.** Direct fetching is blocked in
-the hosted session — the egress proxy answers 403 to CONNECT for
-reddit.com, news.google.com, fantasy.premierleague.com and most of the
-rest, so every attempt is a wasted round trip. What works is a web search
-restricted to a handful of those domains at a time, which returns their
-actual article content. That is free, needs no key, and is where every
-quote in the research files comes from.
+## Work the gameweek in this order
 
-Work the groups in the order `plan()` returns them. Team news comes first
-because it invalidates everything else — a tactical read on a player who
-has just been ruled out is wasted effort.
+Availability first, because everything downstream is void for a player who
+is not playing — and a confident write-up on a player who has been ruled
+out is worse than no write-up.
 
-Two groups cannot be read, and `sources.plan()` filters both out so they
-never break a search:
+1. **Official club news and press conferences** (tier 2)
+2. **Injury and expected-minutes information** (tiers 2, 3)
+3. **FPL expert recommendations** (tier 1)
+4. **Captaincy consensus** (tier 1)
+5. **Transfer recommendations** (tier 1)
+6. **Differentials** (tier 1)
+7. **Underlying statistics** (tier 3)
+8. **Fixture analysis** (tiers 1, 4)
+9. **Price changes and ownership** (tier 1)
+10. **Conflicting opinions** (tiers 1, 4)
 
-- **Video and social** (65 sources) — YouTube channels, X accounts. A
-  search cannot return a transcript.
-- **Publishers that block the crawler** (24 sources) — the UK regional
-  titles, plus the BBC and the Guardian. Every one was confirmed by the
-  search API rejecting it by name.
+`sources.plan()` returns the scoped searches already in this order.
 
-This filtering is not tidiness. A rejected domain fails the WHOLE search it
-appears in, so one blocked site in a group of six loses the other five too.
-
-Do not imply you have read either group. Say in the sign-off which sources
-you actually covered and which you could not.
+**Never record a source as researched unless you actually retrieved
+readable information from it.** Listing a domain you searched but which
+returned nothing is the same failure as an unattributed quote. In the
+sign-off, say which sources produced content and which came back empty.
 
 ## Research the squad the user OWNS first
 

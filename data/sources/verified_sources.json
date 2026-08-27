@@ -1,0 +1,926 @@
+{
+ "note": "100 sources, every one individually tested by running a domain-scoped web search and confirming it returned readable article text. Nothing is listed because it is merely indexed.\n\nExcluded on purpose and permanently: YouTube and X (a search cannot read a video transcript or a social timeline), Reddit (post text is not reliably retrievable), and every publisher the search API rejects by name. That rejection list is why this file matters — a blocked domain fails the WHOLE search it appears in, so one bad entry in a group of six loses the other five too.\n\nConfirmed blocked and therefore absent: football.london, Manchester Evening News, Liverpool Echo, Birmingham Live, Chronicle Live, Nottingham Post, Hull Live, Coventry Telegraph, The Argus, Sunderland Echo, Bournemouth Echo, Yorkshire Evening Post, MyLondon, EADT, Evening Standard, Daily Mail, The Sun, talkSPORT, BBC, The Guardian, The Independent, Metro, Reuters, Transfermarkt.",
+ "verified": "2026-08-27",
+ "method": "Domain-scoped web search per domain; a source is listed only where results were actually returned.",
+ "counts": {
+  "verified_readable": 100,
+  "blocked": 0,
+  "youtube": 0,
+  "x_twitter": 0,
+  "inaccessible": 0
+ },
+ "research_order": [
+  "Official club news and press conferences",
+  "Injury and expected-minutes information",
+  "FPL expert recommendations",
+  "Captaincy consensus",
+  "Transfer recommendations",
+  "Differentials",
+  "Underlying statistics",
+  "Fixture analysis",
+  "Price changes and ownership",
+  "Conflicting opinions"
+ ],
+ "sources": [
+  {
+   "name": "Fantasy Football Scout",
+   "domain": "fantasyfootballscout.co.uk",
+   "url": "https://www.fantasyfootballscout.co.uk/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Team news blogs, Scout Picks, set-piece and penalty taker lists, buy/keep/sell, predicted line-ups",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Premier League Official Fantasy",
+   "domain": "premierleague.com",
+   "url": "https://www.premierleague.com/en/fantasy",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "The Scout's must-haves, official price and ownership news, gameweek lessons, rule changes",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fantasy Football Hub",
+   "domain": "fantasyfootballhub.co.uk",
+   "url": "https://www.fantasyfootballhub.co.uk/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Ultimate gameweek guide, buy/hold/sell, predicted line-ups",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fantasy Football Fix",
+   "domain": "fantasyfootballfix.com",
+   "url": "https://www.fantasyfootballfix.com/blog-index/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Captaincy rankings, transfer tips, AI team reveal, gameweek guides",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "All About FPL",
+   "domain": "allaboutfpl.com",
+   "url": "https://allaboutfpl.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Gameweek ultimate guide, transfer tips (buy/avoid/sell/hold), team reveals, price-point rankings",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Never Manage Alone",
+   "domain": "nevermanagealone.com",
+   "url": "https://www.nevermanagealone.com/playerpicks",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Captain picks, differentials, transfer stick-or-twist, £100m Scout squad, predicted line-ups",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "RotoWire Soccer",
+   "domain": "rotowire.com",
+   "url": "https://www.rotowire.com/soccer/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Gameweek rankings, captain picks, low-owned differentials, match previews and predicted line-ups",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Form",
+   "domain": "fplform.com",
+   "url": "https://fplform.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Transfer suggestions, predicted points, optimiser output",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Dashboard (fpl.page)",
+   "domain": "fpl.page",
+   "url": "https://fpl.page/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Expert transfer and captaincy consensus, chip strategy guides",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fantasy Football 247",
+   "domain": "fantasyfootball247.co.uk",
+   "url": "https://fantasyfootball247.co.uk/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Captain picks, team news posts, gameweek previews",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Review",
+   "domain": "fplreview.com",
+   "url": "https://fplreview.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Expected-value projections, planner and solver methodology",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Optimized",
+   "domain": "fploptimized.com",
+   "url": "https://fploptimized.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Expected points calculator, scenario modelling",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL360",
+   "domain": "fpl360.com",
+   "url": "https://fpl360.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Transfer strategy, chip strategy, season reviews and lessons",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "OneFPL",
+   "domain": "onefpl.com",
+   "url": "https://onefpl.com/blog",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Season tips, pre-season club lessons, chip strategy, captaincy calls",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fantasy Football Geek",
+   "domain": "fantasyfootballgeek.co.uk",
+   "url": "https://www.fantasyfootballgeek.co.uk/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Club-by-club pre-season analysis, strategy reviews, contributor drafts",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Captain",
+   "domain": "fplcaptain.com",
+   "url": "https://fplcaptain.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Captain picks, set-piece takers page, live points, price changes",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Central",
+   "domain": "fplcentral.co.uk",
+   "url": "https://fplcentral.co.uk/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "AI best team, expected points per player, captain picks, price-change predictions",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "LazyFPL",
+   "domain": "lazyfpl.com",
+   "url": "https://www.lazyfpl.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Gameweek cheat sheets, differential and template analysis by rank tier",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Pilot",
+   "domain": "fplpilot.com",
+   "url": "https://www.fplpilot.com/blog",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Season data reviews, points-per-million and differential efficiency analysis",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Chase Your Sport — Fantasy",
+   "domain": "chaseyoursport.com",
+   "url": "https://www.chaseyoursport.com/fantasy-football/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Player deep-dives, rule-change explainers, position scoring tables, team of the week",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FISO",
+   "domain": "fiso.co.uk",
+   "url": "https://www.fiso.co.uk/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Season reviews, highest scorers per club, long-running community analysis",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Statz.ai FPL",
+   "domain": "statz.ai",
+   "url": "https://statz.ai/fpl/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Head-to-head player comparison, goalkeeper and position value analysis",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Full90 FPL",
+   "domain": "full90fpl.com",
+   "url": "https://full90fpl.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Gameweek previews, transfer tips, captaincy corner, fixture focus",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Team",
+   "domain": "fpl.team",
+   "url": "https://fpl.team/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Predicted line-ups for all 20 clubs, transfer planner, rotation-risk flags",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Premier Fantasy Tools",
+   "domain": "premierfantasytools.com",
+   "url": "https://www.premierfantasytools.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Expected points across all 38 gameweeks, team analyser, start/bench calls",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Copilot",
+   "domain": "fplcopilot.com",
+   "url": "https://fplcopilot.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Expected points table, squad rating, captain optimality checks",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Draft Fantasy",
+   "domain": "draftfantasy.com",
+   "url": "https://www.draftfantasy.com/fpl",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Tiered rankings, cheat sheets, free FPL tools",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Onside Arena",
+   "domain": "onsidearena.com",
+   "url": "https://onsidearena.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "AI predictions, captain picks, FDR heatmaps, chip strategy, squad optimiser",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "LiveFPL",
+   "domain": "livefpl.net",
+   "url": "https://www.livefpl.net/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Live rank, effective ownership by rank tier, price-change predictor, template tracking",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fantasy Football Community",
+   "domain": "fantasyfootballcommunity.com",
+   "url": "https://fantasyfootballcommunity.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Best wildcard drafts, gameweek differentials, chip strategy",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fantasy Football Pundit",
+   "domain": "fantasyfootballpundit.com",
+   "url": "https://www.fantasyfootballpundit.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Chip strategy guides, gameweek transfer tips with odds",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Oracle",
+   "domain": "fploracle.team",
+   "url": "https://fploracle.team/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Captaincy decision framework, rule-change explainers, early fixture analysis",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "DraftKings Network Soccer",
+   "domain": "dknetwork.draftkings.com",
+   "url": "https://dknetwork.draftkings.com/fantasy-advice/soccer/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Captain picks ranked with reasoning, gameweek rankings, DFS targets",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Gameweek",
+   "domain": "fplgameweek.com",
+   "url": "https://www.fplgameweek.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Live manager dashboard, gameweek tracking",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "What The FPL",
+   "domain": "whatthef.pl",
+   "url": "https://www.whatthef.pl/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Price-change predictions, player projections",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Pulse",
+   "domain": "fplpulse.com",
+   "url": "https://www.fplpulse.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Player stats pages, gameweek reviews, tool round-ups, terminology",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Hive League",
+   "domain": "hiveleague.com",
+   "url": "https://www.hiveleague.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Crowd-sourced predicted line-ups",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Brief",
+   "domain": "fplbrief.com",
+   "url": "https://www.fplbrief.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Gameweek preview threads and summaries",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "The Fantasy Tool",
+   "domain": "thefantasytool.com",
+   "url": "https://thefantasytool.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Team planner, projected points per player per gameweek, optimal squad solver",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Strat",
+   "domain": "fplstrat.app",
+   "url": "https://fplstrat.app/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Transfer planner, xG-based fixture ticker, player statistics overview",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Draft FC",
+   "domain": "draftfc.co.uk",
+   "url": "https://draftfc.co.uk/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Weekly predicted line-ups, waiver tips, draft analytics",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "The Draft Society",
+   "domain": "thedraftsociety.com",
+   "url": "https://www.thedraftsociety.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Draft rankings, draft kit, team previews",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPLai",
+   "domain": "fplai.app",
+   "url": "https://fplai.app/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "AI transfer advice, captain picks, per-player price and ownership pages",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Ranker",
+   "domain": "fplranker.com",
+   "url": "https://fplranker.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Self-learning points projections, mini-league analytics",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Rotation Planner",
+   "domain": "fplrotationplanner.com",
+   "url": "https://www.fplrotationplanner.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Fixture swing tool, bookmaker-derived goal/assist/clean-sheet probabilities",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPLXI",
+   "domain": "fplxi.com",
+   "url": "https://fplxi.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Per-player five-gameweek predictions, transfer recommendations from your own squad",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Stats",
+   "domain": "fplstats.app",
+   "url": "https://fplstats.app/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Customisable player metrics, value analysis, form comparison",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FPL Bot",
+   "domain": "fplbot.app",
+   "url": "https://www.fplbot.app/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "FPL search and lookup",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fantasy Football Reports",
+   "domain": "fantasyfootballreports.com",
+   "url": "https://www.fantasyfootballreports.com/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Position watchlists with ratings, gameweek tips, clean-sheet probability tables",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "101 Great Goals — Fantasy",
+   "domain": "101greatgoals.com",
+   "url": "https://www.101greatgoals.com/football/fantasy/",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Weekly five-players-to-buy and players-to-avoid pieces, injury-doubt round-ups",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Sportskeeda FPL",
+   "domain": "sportskeeda.com",
+   "url": "https://www.sportskeeda.com/football/fantasy-premier-league-tips",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Gameweek tips, price changes, squad guidance",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Sports Illustrated FPL",
+   "domain": "si.com",
+   "url": "https://www.si.com/soccer/fpl",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Gameweek squads, team news round-ups, deadline reminders",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FourFourTwo FPL",
+   "domain": "fourfourtwo.com",
+   "url": "https://www.fourfourtwo.com/fpl",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "FPL news and features",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "NBC Sports Rotoworld PL",
+   "domain": "nbcsports.com",
+   "url": "https://www.nbcsports.com/fantasy/pl",
+   "category": "Tier 1 — FPL expert/advice",
+   "tier": 1,
+   "used_for": "Fantasy Premier League news, predictions, player notes",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Arsenal",
+   "domain": "arsenal.com",
+   "url": "https://www.arsenal.com/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Arteta press conferences, injury and availability updates, club FPL focus pieces",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Aston Villa",
+   "domain": "avfc.co.uk",
+   "url": "https://www.avfc.co.uk/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Pre-match FPL previews, manager press conferences, injury news",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "AFC Bournemouth",
+   "domain": "afcb.co.uk",
+   "url": "https://www.afcb.co.uk/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Injury news, squad availability, pre-match briefings",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Brentford",
+   "domain": "brentfordfc.com",
+   "url": "https://www.brentfordfc.com/en/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Team news, debutants, rotation plans, match reports",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Brighton & Hove Albion",
+   "domain": "brightonandhovealbion.com",
+   "url": "https://www.brightonandhovealbion.com/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Hürzeler interviews, Albion Analytics season previews, transfers and injuries",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Chelsea",
+   "domain": "chelseafc.com",
+   "url": "https://www.chelseafc.com/en/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Head coach team news ahead of each fixture, injury updates, official previews",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Coventry City",
+   "domain": "ccfc.co.uk",
+   "url": "https://www.ccfc.co.uk/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Squad news, signings, club-published FPL price guides",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Crystal Palace",
+   "domain": "cpfc.co.uk",
+   "url": "https://www.cpfc.co.uk/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Sage press conferences, named XIs, injury updates",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Everton",
+   "domain": "evertonfc.com",
+   "url": "https://www.evertonfc.com/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Manager press conferences (live blog and on-demand), team news",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Fulham",
+   "domain": "fulhamfc.com",
+   "url": "https://www.fulhamfc.com/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Team news posts, squad numbers, pre-match press conferences",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Hull City",
+   "domain": "wearehullcity.co.uk",
+   "url": "https://www.wearehullcity.co.uk/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Matchday guides, team news, match reports",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Ipswich Town",
+   "domain": "itfc.co.uk",
+   "url": "https://www.itfc.co.uk/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Team news per fixture, matchday guides, contract and squad news",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Leeds United",
+   "domain": "leedsunited.com",
+   "url": "https://www.leedsunited.com/en/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Manager fitness updates, injury detail and expected return timelines",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Liverpool",
+   "domain": "liverpoolfc.com",
+   "url": "https://www.liverpoolfc.com/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Club FPL previews (five players to watch), set-piece and penalty detail, injury news",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Manchester City",
+   "domain": "mancity.com",
+   "url": "https://www.mancity.com/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Club-published FPL Scout Report each gameweek, team news, kick-off info",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Manchester United",
+   "domain": "manutd.com",
+   "url": "https://www.manutd.com/en/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Team news, manager quotes, injury updates",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Newcastle United",
+   "domain": "newcastleunited.com",
+   "url": "https://www.newcastleunited.com/en/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Manager team-news updates with named injuries and return timelines",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Nottingham Forest",
+   "domain": "nottinghamforest.co.uk",
+   "url": "https://www.nottinghamforest.co.uk/news",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Team news, manager updates, match previews",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Sunderland",
+   "domain": "safc.com",
+   "url": "https://www.safc.com/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Manager injury updates with named players and recovery windows",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Tottenham Hotspur",
+   "domain": "tottenhamhotspur.com",
+   "url": "https://www.tottenhamhotspur.com/news/",
+   "category": "Tier 2 — Primary sources",
+   "tier": 2,
+   "used_for": "Club FPL previews, team news, injury updates",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Understat",
+   "domain": "understat.com",
+   "url": "https://understat.com/league/EPL",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Player and team xG, xA, shot data, expected points table",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FBref",
+   "domain": "fbref.com",
+   "url": "https://fbref.com/en/comps/9/Premier-League-Stats",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Full player stat tables: shooting, passing, defensive actions, per-90 rates",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FootyStats",
+   "domain": "footystats.org",
+   "url": "https://footystats.org/england/premier-league/xg",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Team xG/xGA per match, shots on target, over/under and clean-sheet trends",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FotMob",
+   "domain": "fotmob.com",
+   "url": "https://www.fotmob.com/leagues/47/overview/premier-league",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Player ratings, top scorers and assisters, predicted line-ups, per-match stats",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Sofascore",
+   "domain": "sofascore.com",
+   "url": "https://www.sofascore.com/tournament/football/england/premier-league/17",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Live stats, player ratings, heatmaps, expected line-ups",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "WhoScored",
+   "domain": "whoscored.com",
+   "url": "https://www.whoscored.com/Regions/252/Tournaments/2/England-Premier-League",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Predicted line-ups and team news articles, detailed statistical previews",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Opta Analyst",
+   "domain": "theanalyst.com",
+   "url": "https://theanalyst.com/",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "xG methodology, expected points tables, head-to-head records, supercomputer projections",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "StatMuse Football",
+   "domain": "statmuse.com",
+   "url": "https://www.statmuse.com/fc",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Direct queries on player records against specific opponents and career splits",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Squawka",
+   "domain": "squawka.com",
+   "url": "https://www.squawka.com/en/stats/competitions/premier-league-2025-2026/",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Season stat leaders, per-gameweek stat spotlights",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "WorldFootball",
+   "domain": "worldfootball.net",
+   "url": "https://www.worldfootball.net/competition/co91/england-premier-league/",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Fixture lists, results archive, tables by matchday",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Soccerway",
+   "domain": "soccerway.com",
+   "url": "https://www.soccerway.com/england/premier-league/",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Line-ups, goal scorers, cards, substitutions, possession and xG per match",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Flashscore",
+   "domain": "flashscore.com",
+   "url": "https://www.flashscore.com/football/england/premier-league/",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Live scores, results archive, fixtures and match detail",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "xG Stat",
+   "domain": "xgstat.com",
+   "url": "https://www.xgstat.com/",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "xG tables, shot maps, form analysis, real-standings comparison",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Premier Injuries",
+   "domain": "premierinjuries.com",
+   "url": "https://www.premierinjuries.com/injury-table.php",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "The injury and suspension table by club, with expected return dates",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "PhysioRoom",
+   "domain": "physioroom.com",
+   "url": "https://www.physioroom.com/advice/premier-league-injury-table/",
+   "category": "Tier 3 — Statistics/data",
+   "tier": 3,
+   "used_for": "Injury tables by club, injury type and frequency analysis",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Sports Mole",
+   "domain": "sportsmole.co.uk",
+   "url": "https://www.sportsmole.co.uk/football/premier-league/",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Match previews with team news and predicted XIs for every fixture",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Sky Sports Premier League",
+   "domain": "skysports.com",
+   "url": "https://www.skysports.com/premier-league",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Team news, season previews, transfer and injury reporting",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "ESPN Soccer",
+   "domain": "espn.com",
+   "url": "https://www.espn.com/soccer/league/_/name/eng.1",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Predicted starting XIs, weekend previews, team-by-team analysis",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "GOAL",
+   "domain": "goal.com",
+   "url": "https://www.goal.com/en/premier-league/2kwbbcootiqqgmrzs6o5inle5",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Match previews with H2H records, form and tactical context",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Football365",
+   "domain": "football365.com",
+   "url": "https://www.football365.com/premier-league",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Match previews with predicted line-ups and odds",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "CBS Sports Soccer",
+   "domain": "cbssports.com",
+   "url": "https://www.cbssports.com/soccer/premier-league/",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "News, scores, standings and fantasy projections",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "The Hard Tackle",
+   "domain": "thehardtackle.com",
+   "url": "https://thehardtackle.com/",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Match previews with formations and predicted XIs, FPL differential tips",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Tactical Football Analysis",
+   "domain": "tacticalfootballanalysis.com",
+   "url": "https://tacticalfootballanalysis.com/",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Manager tactics breakdowns, team shape, pressing and build-up analysis",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Racing Post Football Tips",
+   "domain": "racingpost.com",
+   "url": "https://www.racingpost.com/sport/football-tips/premier-league/",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Match predictions and betting angles including clean-sheet and scorer markets",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "Oddschecker",
+   "domain": "oddschecker.com",
+   "url": "https://www.oddschecker.com/football/english/premier-league",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Market odds for goalscorers, clean sheets and results",
+   "VERIFIED_READABLE": true
+  },
+  {
+   "name": "FreeTips",
+   "domain": "freetips.com",
+   "url": "https://www.freetips.com/football/english-premier-league/",
+   "category": "Tier 4 — Football analysis/news",
+   "tier": 4,
+   "used_for": "Per-fixture tips with anytime-scorer and clean-sheet reasoning",
+   "VERIFIED_READABLE": true
+  }
+ ]
+}
