@@ -34,4 +34,7 @@ CACHE_TTL_SECONDS = {
     "fixtures": 60 * 60 * 6,
     "entry": 60 * 10,
     "live": 60 * 5,
+    # Completed seasons never change, so this is only really a guard
+    # against refetching within a single run.
+    "element-summary": 60 * 60 * 24,
 }

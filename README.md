@@ -61,6 +61,38 @@ data/reports/       # weekly odds/expert-take reports, gw{N}.md (committed — s
 tests/              # sanity tests against synthetic data, no network needed
 ```
 
+## How much this season counts, and how much last season does
+
+Two gameweeks into a season, the model's biggest risk is believing what it
+can see. One match is not a sample, and treating it as one produced a real
+failure: after Gameweek 1 of 2026/27 the app sold Haaland, who had taken
+five shots without scoring — ignoring that he had just won the Golden Boot
+with 27 goals and has been the top-scoring player in the game after six
+gameweeks in all four of his seasons at Manchester City.
+
+The projection now carries a prior. Each player's last two completed
+seasons sit behind the current one, and how much this season's record is
+believed grows with how much of it exists:
+
+| Games played | This season | Last two seasons |
+|---|---|---|
+| 1  | 14% | 86% |
+| 3  | 33% | 67% |
+| 6  | 50% | 50% |
+| 12 | 67% | 33% |
+| 25 | 81% | 19% |
+
+A player with no Premier League record — promoted, newly signed, a
+teenager — gets **no prior rather than a prior of zero**. Unknown is not
+the same as bad, and scoring it as bad would be the same mistake pointing
+the other way.
+
+`data/history/seasons.json` holds the records, refreshed weekly from the
+official FPL API by `.github/workflows/history.yml` (free, no key).
+`data/history/trends.json` holds what the 2024/25 and 2025/26 seasons
+taught, with the concrete rule each lesson implies — the app shows it on
+the front page.
+
 ## Three words the app uses that don't explain themselves
 
 **Snapshot.** A file recording exactly what the app recommended for a

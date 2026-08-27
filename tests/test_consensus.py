@@ -168,3 +168,40 @@ def test_shipped_gw1_file_is_valid_and_names_a_must_have():
 
     must_haves = [e["name"] for e in entries if e["tier"] == "must_have"]
     assert must_haves, "GW1 consensus should name at least one must-have"
+
+
+# --- two different kinds of disagreement --------------------------------
+
+def test_a_disagreement_about_output_damps_the_weighting():
+    """When analysts disagree about whether a player will score, the
+    confident version of either view is wrong."""
+    assert consensus.dissent_kind({"case": "x", "kind": "output"}) == consensus.DISSENT_OUTPUT
+    assert consensus.dissent_kind({"case": "x"}) == consensus.DISSENT_OUTPUT
+
+
+def test_a_disagreement_about_rank_is_labelled_differently():
+    assert consensus.dissent_kind({"case": "x", "kind": "rank"}) == consensus.DISSENT_RANK
+
+
+def test_an_unrecognised_kind_falls_back_to_the_cautious_reading():
+    assert consensus.dissent_kind({"case": "x", "kind": "vibes"}) == consensus.DISSENT_OUTPUT
+    assert consensus.dissent_kind("just a string") == consensus.DISSENT_OUTPUT
+
+
+def test_a_rank_argument_does_not_mark_a_player_down_for_being_popular():
+    """The bug this split exists to fix.
+
+    Everyone agreed Haaland would score; they argued about whether owning
+    him at 71% ownership gained you anything. Treating that as a split on
+    the player halved his weighting — penalising the most-owned striker in
+    the game for being owned.
+    """
+    output_split = {"case": "half of them think he's finished", "kind": "output"}
+    rank_split = {"case": "he's 71% owned, you gain nothing", "kind": "rank"}
+
+    damped = consensus.TIER_BONUS["must_have"] * consensus.DISSENT_DAMPING
+    full = consensus.TIER_BONUS["must_have"]
+
+    assert consensus.dissent_kind(output_split) == consensus.DISSENT_OUTPUT
+    assert consensus.dissent_kind(rank_split) == consensus.DISSENT_RANK
+    assert damped < full  # an output split really does cost him

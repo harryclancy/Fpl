@@ -1,0 +1,52 @@
+name: Refresh completed-season history
+
+# Pulls each relevant player's previous-season record from the official FPL
+# API and commits it. That file is the prior the projection shrinks a small
+# in-season sample toward -- without it, one gameweek of data gets treated
+# as a season's worth, which is how the app talked itself into selling the
+# most-owned striker in the game after a single blank.
+#
+# Weekly is plenty: completed seasons never change. The only thing that
+# moves is which players are worth fetching, and that changes slowly.
+# No API key, no cost.
+
+on:
+  schedule:
+    - cron: "0 4 * * 2"  # Tuesdays, well clear of any deadline
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: history
+  cancel-in-progress: false
+
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Fetch previous-season records
+        run: python scripts/fetch_history.py
+
+      - name: Commit it, if anything changed
+        run: |
+          if [ -z "$(git status --porcelain data/history)" ]; then
+            echo "History unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history
+          git commit -m "Refresh completed-season history from the FPL API"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

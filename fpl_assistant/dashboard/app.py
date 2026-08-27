@@ -31,6 +31,7 @@ from fpl_assistant.analysis import (
     fixtures as fixtures_analysis,
     injuries,
     my_squad as my_squad_analysis,
+    history,
     omissions,
     planner,
     scenarios,
@@ -734,6 +735,18 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
         except Exception:
             pass
 
+        # What he did over full seasons, stated before any of this
+        # season's numbers. Two gameweeks in, this is the most informative
+        # thing on the page, and burying it under a projection is how the
+        # app talked itself into selling a Golden Boot winner.
+        prior_seasons = row.get("prior_seasons")
+        if isinstance(prior_seasons, str) and prior_seasons.strip():
+            render_html(
+                "<div style='margin:2px 0 8px 0;padding:9px 12px;background:#f4f7f4;"
+                "border:1px solid #dbe6db;border-radius:10px;font-size:.92em'>"
+                "<strong>Track record:</strong> " + prior_seasons + "</div>"
+            )
+
         render_html(provenance_chip(row, int(row.get("_gameweek") or 1)))
 
         # The researched evidence sits directly under the case it supports,
@@ -923,6 +936,7 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
 
     st.markdown("**How much of this is researched**")
     render_coverage_panel(scored, owned_ids, next_event)
+    render_season_trends()
 
     st.divider()
     render_transfer_plan(
@@ -1081,6 +1095,7 @@ def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
 
     st.markdown("**How much of this is researched**")
     render_coverage_panel(scored, solution.squad_ids, next_event)
+    render_season_trends()
 
     render_consensus_panel(scored, squad15, next_event)
     render_omissions_panel(scored, solution)
@@ -1964,6 +1979,44 @@ def render_multiweek_plan(scored, owned_ids, bank, free_transfers, key_prefix="m
         st.caption(note)
 
     return plan
+
+
+def render_season_trends() -> None:
+    """What the last two completed seasons taught, and the rules they imply.
+
+    Here because the app's biggest failure mode is treating the season it
+    can see as the whole of the evidence. Two gameweeks in, the last two
+    seasons are a far better guide to what a player will do than the two
+    gameweeks are, and the interface should say so rather than quietly
+    assuming it.
+    """
+    trends = history.load_trends()
+    if not trends.seasons:
+        return
+
+    with st.expander("📚 What the last two seasons actually taught", expanded=False):
+        if trends.carried:
+            st.markdown("**Carried into this season**")
+            for note in trends.carried:
+                st.markdown(f"- {note}")
+            st.markdown("---")
+
+        for review in trends.seasons:
+            st.markdown(f"#### {review.season} — {review.headline}")
+            if review.facts:
+                st.markdown("**What happened**")
+                for fact in review.facts:
+                    st.markdown(f"- {fact}")
+            for lesson in review.lessons:
+                st.markdown(f"**{lesson.lesson}**")
+                if lesson.detail:
+                    st.markdown(lesson.detail)
+                if lesson.rule:
+                    st.caption(f"→ {lesson.rule}")
+            st.markdown("")
+
+        if trends.sources:
+            st.caption("Sources: " + " · ".join(trends.sources))
 
 
 def render_track_record_tab(players, events):

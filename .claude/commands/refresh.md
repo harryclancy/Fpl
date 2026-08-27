@@ -115,8 +115,22 @@ Commit and push to the current branch.
 - **Every `full` player needs a genuine counter-argument.** A recommendation you
   can't argue against is not advice. If you can't find a risk, look harder.
 - **Record disagreement as disagreement** in `dissent` rather than averaging two
-  views into a bland middle. A `must_have` can never carry a dissent — that tier
-  locks a player in and is only for near-unanimity.
+  views into a bland middle, and say which *kind* of disagreement it is:
+  - `"kind": "output"` (the default) — they disagree about whether he'll score.
+    This damps the player's weighting and blocks the `must_have` tier.
+  - `"kind": "rank"` — they agree he'll score and argue about whether owning a
+    heavily-owned premium gains you anything. This is surfaced just as loudly but
+    does **not** touch the projection, because marking a player down for being
+    popular is backwards. Haaland at 71% ownership is the standing example.
+- **Weigh multi-season evidence above this season's, early on.** Two gameweeks in,
+  what a player did across the last two full seasons is far better evidence than
+  what he did last Saturday. A blank from a proven asset is noise; a haul from an
+  unproven one is a hypothesis. Lead the `case` with the durable record and treat
+  the recent week as context — the app dropped a Golden Boot winner on one blank,
+  and the research file made it easier by tiering him as merely "strong".
+- **Structural beats statistical in the first month.** A confirmed penalty or
+  set-piece appointment, a positional change, a starter out for two months — these
+  are worth more than any amount of one-week xG. Say which one you're relying on.
 - **Club-wide advice belongs in `teams.json`,** never in a player's prose.
   Written into one write-up it reaches one player, and the optimiser goes on
   picking the club's other twenty. This has actually happened.

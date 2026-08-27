@@ -14,6 +14,8 @@ wrong.
 """
 import re
 
+from fpl_assistant.analysis import consensus
+
 # What counts as substantial enough to be worth reading. Below these
 # lengths an entry is a placeholder rather than an argument.
 MIN_CASE_CHARS = 60
@@ -99,10 +101,24 @@ def validate_players(data: dict, team_context: dict | None = None) -> list[str]:
                 problems.append(f"{name}: dissent states no case")
             elif not dissent.get("sources"):
                 problems.append(f"{name}: dissent cites no sources")
-            if entry.get("tier") == "must_have":
+            kind = consensus.dissent_kind(dissent)
+            if isinstance(dissent, dict) and "kind" in dissent and kind != str(
+                dissent.get("kind", "")
+            ).lower():
                 problems.append(
-                    f"{name}: locked in as a must-have while the file records a dissent — the "
-                    f"lock is for near-unanimity"
+                    f"{name}: dissent kind {dissent.get('kind')!r} is not one of "
+                    f"{consensus.DISSENT_KINDS}"
+                )
+            # A must-have is a claim of near-unanimity about whether the
+            # player delivers. An argument about whether owning a 71%-owned
+            # premium gains you rank is not that -- everyone in it agrees
+            # he'll score. Blocking the lock for a rank argument marked a
+            # player down for being popular, which is backwards.
+            if entry.get("tier") == "must_have" and kind == consensus.DISSENT_OUTPUT:
+                problems.append(
+                    f"{name}: locked in as a must-have while analysts disagree about his output "
+                    f"— the lock is for near-unanimity. If the disagreement is about rank rather "
+                    f"than output, mark the dissent \"kind\": \"rank\"."
                 )
 
         start = entry.get("predicted_start")

@@ -44,6 +44,20 @@ def get_event_live(event: int) -> dict:
     )
 
 
+def get_element_summary(player_id: int) -> dict:
+    """One player's fixtures, this season's match log, and `history_past`.
+
+    `history_past` is the completed-season record the projection uses as
+    its prior. Cached hard: past seasons never change, so refetching them
+    is pure waste.
+    """
+    return cached_fetch(
+        f"element-summary-{player_id}",
+        CACHE_TTL_SECONDS.get("element-summary", 86400),
+        lambda: _get(f"/element-summary/{player_id}/"),
+    )
+
+
 def get_entry(team_id: int) -> dict:
     """Summary for a manager's team: name, overall rank, current bank/value."""
     return cached_fetch(

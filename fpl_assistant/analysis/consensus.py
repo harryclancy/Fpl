@@ -70,6 +70,40 @@ ALL_POSITIONS = ("GKP", "DEF", "MID", "FWD")
 # rather than averaged away silently.
 DISSENT_DAMPING = 0.45
 
+# Not every disagreement is about the same thing, and treating two very
+# different arguments as one was a real bug.
+#
+#   "output"  -- they disagree about whether he'll score. This is a genuine
+#               split on the player, and the confident version of either
+#               side is wrong, so the weighting gets damped.
+#
+#   "rank"    -- they agree he'll score, and argue about whether owning him
+#               at 71% ownership actually gains you anything. That is an
+#               argument about effective ownership, and it applies to every
+#               heavily-owned premium in the game. Damping the projection
+#               for it is a category error: it marks a player down for
+#               being popular, which is how the most-owned striker in the
+#               game got sold after one blank.
+#
+# A rank dissent is surfaced in the write-up exactly as loudly, and it is
+# what the rank-strategy control exists to act on. It just doesn't touch
+# the points.
+DISSENT_OUTPUT = "output"
+DISSENT_RANK = "rank"
+DISSENT_KINDS = (DISSENT_OUTPUT, DISSENT_RANK)
+
+
+def dissent_kind(dissent) -> str:
+    """What a recorded dissent is actually arguing about.
+
+    Defaults to "output", which is the conservative reading: an unlabelled
+    disagreement is treated as a disagreement about the player.
+    """
+    if not isinstance(dissent, dict):
+        return DISSENT_OUTPUT
+    kind = str(dissent.get("kind", DISSENT_OUTPUT)).lower()
+    return kind if kind in DISSENT_KINDS else DISSENT_OUTPUT
+
 
 def load_consensus(gameweek: int) -> dict | None:
     """Reads this gameweek's consensus file, if one has been researched."""
@@ -360,7 +394,10 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
         # neutral: the honest position on a disputed player is a weaker
         # opinion, not a confident one in either direction.
         dissent = entry.get("dissent")
-        bonus = TIER_BONUS[tier] * (DISSENT_DAMPING if dissent else 1.0)
+        # Only a disagreement about output damps the weighting. See
+        # DISSENT_KINDS above for why a rank argument must not.
+        damped = bool(dissent) and dissent_kind(dissent) == DISSENT_OUTPUT
+        bonus = TIER_BONUS[tier] * (DISSENT_DAMPING if damped else 1.0)
 
         df.loc[target, "consensus_tier"] = tier
         df.loc[target, "consensus_bonus"] = bonus

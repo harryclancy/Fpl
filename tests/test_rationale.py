@@ -185,3 +185,32 @@ def test_the_full_write_up_leads_with_form_and_fixture():
     assert "Recent form:" in text
     assert "The fixture:" in text
     assert text.index("Recent form:") < text.index("The fixture:")
+
+
+def test_the_write_up_leads_with_full_seasons_before_last_saturday():
+    """The user's complaint, in the write-up rather than the model.
+
+    Two gameweeks in, "27 goals last season" is better evidence than
+    "blanked on Saturday", and a case that opens with the blank is
+    leading with the least informative thing it knows.
+    """
+    row = pd.Series(
+        {
+            "web_name": "Haaland",
+            "team_short_name": "MCI",
+            "price": 15.5,
+            "prior_seasons": "2025/26: 27 goals, 8 assists in 35 games (239 pts)",
+            "event_points": 2,
+            "form": 2.0,
+        }
+    )
+    text = rationale.player_rationale(row)
+
+    assert "Over full seasons" in text
+    assert "27 goals" in text
+
+
+def test_a_player_with_no_prior_seasons_is_written_up_without_one():
+    row = pd.Series({"web_name": "Newboy", "team_short_name": "HUL", "price": 4.5})
+    assert rationale.track_record_story(row) == ""
+    assert "Over full seasons" not in rationale.player_rationale(row)

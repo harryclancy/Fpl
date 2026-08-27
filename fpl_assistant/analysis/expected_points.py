@@ -36,6 +36,8 @@ can't drag a demonstrably productive player down too far.
 import numpy as np
 import pandas as pd
 
+from fpl_assistant.analysis import history
+
 from fpl_assistant.analysis.season_state import is_preseason
 
 # --- FPL scoring rules -------------------------------------------------
@@ -718,9 +720,41 @@ def expected_points(
         # £13.0m player projected to play 15 minutes ended up with a
         # starter's projection and a place in the recommended XI.
         availability_scale = (xmins / STARTER_MINUTES).clip(0.0, 1.0)
+
+        # How much this season's record is worth believing.
+        #
+        # This used to be a constant, and the constant was the bug. After
+        # one gameweek, points-per-game is one match -- and weighting one
+        # match the same as thirty is how a striker who took five shots
+        # without scoring got marked down far enough to be sold. Shrinking
+        # by sample size is what "one week is not a sample" means in
+        # arithmetic.
+        season_trust = history.current_season_weight(games)
+        anchor_weight = (1 - POINTS_MODEL_WEIGHT) * season_trust
+
+        # What the anchor shrinks toward: last season, and the one before.
+        # Without a prior, distrusting the small sample would just mean
+        # falling back on the component model alone, which knows nothing
+        # about a player having won the Golden Boot.
+        prior = pd.to_numeric(
+            _optional_column(df, "prior_points_per_start"), errors="coerce"
+        ).fillna(0.0).astype(float)
+        has_prior = prior > 0
+        prior_weight = (1 - POINTS_MODEL_WEIGHT) * (1 - season_trust)
+
         for gw in gameweeks:
-            anchor = ppg * availability_scale * (per_gw_points[gw] > 0).astype(float)
-            blended = POINTS_MODEL_WEIGHT * per_gw_points[gw] + (1 - POINTS_MODEL_WEIGHT) * anchor
+            plays = (per_gw_points[gw] > 0).astype(float)
+            anchor = ppg * availability_scale * plays
+            prior_anchor = prior * availability_scale * plays
+            # A player with no prior (promoted, newly signed, a teenager)
+            # is unknown, not bad. His unused prior weight goes back to
+            # the component model rather than dragging him toward zero.
+            model_weight = POINTS_MODEL_WEIGHT + prior_weight * (~has_prior).astype(float)
+            blended = (
+                model_weight * per_gw_points[gw]
+                + anchor_weight * anchor
+                + prior_weight * has_prior.astype(float) * prior_anchor
+            )
             per_gw_points[gw] = blended.where(has_record, per_gw_points[gw])
 
     for offset, gw in enumerate(gameweeks):

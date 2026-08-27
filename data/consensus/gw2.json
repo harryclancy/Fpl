@@ -1,480 +1,610 @@
 {
-  "gameweek": 2,
-  "season": "2026/27",
-  "researched": "2026-08-26",
-  "note": "Researched from live web sources in a Claude Code session — no paid API, no key, no cost.\n\n`case` is the argument for picking them; `watch_out` is the honest counter-argument, because a recommendation you can't argue against isn't advice. `key_stats` holds the hard numbers as discrete facts so they can be shown next to any decision the app makes. `voices` records what named outlets actually said — 'analysts say' is not a source. `dissent` marks a genuine split, which damps the player's weighting rather than presenting a contested pick as settled.\n\nThis is the first gameweek researched against real results rather than pre-season expectation. The dominant theme in the coverage is kneejerk risk: Haaland blanked, Manchester United flopped, Tottenham were beaten heavily and Hull City won, and almost every outlet is warning against acting on one weekend. The entries below are weighted accordingly — a GW1 haul on its own is treated as thin evidence unless something structural sits behind it.\n\nClub-wide verdicts do NOT belong here; they live in teams.json.",
-  "players": [
+ "gameweek": 2,
+ "season": "2026/27",
+ "researched": "2026-08-27",
+ "note": "Researched from live web sources in a Claude Code session — no paid API, no key, no cost.\n\n`case` is the argument for picking them; `watch_out` is the honest counter-argument, because a recommendation you can't argue against isn't advice. `key_stats` holds the hard numbers as discrete facts. `voices` records what named outlets actually said — 'analysts say' is not a source. `dissent` marks a genuine split.\n\nREWRITTEN for GW2 after a specific failure: the model dropped Haaland on the back of a single blank. Every entry below is now weighted against multi-season evidence rather than one weekend, and the cases lead with what people are actually saying and why, not with a projection. A GW1 haul is treated as thin evidence unless something structural sits behind it; a GW1 blank from a proven asset is treated as noise.\n\nClub-wide verdicts do NOT belong here; they live in teams.json.",
+ "players": [
+  {
+   "name": "De Cuyper",
+   "full_name": "Maxim De Cuyper",
+   "tier": "strong",
+   "expert_ownership": 12,
+   "verdict": "The most-bought player in the game, and for once the bandwagon has a structural reason behind it.",
+   "case": "He was the highest-scoring player of Gameweek 1 on 17 points — four shots, three key passes, a goal and an assist — and his 1.68 expected goal involvements was the highest of any player in the round, not just any Brighton player. The reason that isn't simply a one-week spike is positional: he played as a left winger rather than a full-back, and with Minteh expected to be out for around two months there is a good chance he keeps the advanced role. That gives him a midfielder's attacking upside while FPL still classifies him as a defender, which is the single most valuable mispricing available in this game.",
+   "watch_out": "The whole case rests on a role that has been seen once. If Minteh returns early, or Brighton revert him to left-back, what remains is a full-back at an inflated price with none of the upside being paid for. Nearly 250,000 managers have already bought him, so the differential value is gone too — you are buying at the top of the bandwagon.",
+   "key_stats": [
+    "17 points in GW1 — the highest score of any player",
+    "1.68 xGI in GW1 — the highest of any player in the round",
+    "4 shots and 3 key passes from a defender-classified player",
+    "Played left wing, not left-back; Minteh out roughly two months",
+    "~250,000 transfers in ahead of GW2 — the most-bought player in the game"
+   ],
+   "voices": [
     {
-      "name": "De Cuyper",
-      "full_name": "Maxim De Cuyper",
-      "tier": "strong",
-      "expert_ownership": 12,
-      "verdict": "The most-bought player in the game, and for once the bandwagon has a structural reason behind it.",
-      "case": "He was the highest-scoring player of Gameweek 1 on 17 points — four shots, three key passes, a goal and an assist — and his 1.68 expected goal involvements was the highest of any player in the round, not just any Brighton player. The reason that isn't simply a one-week spike is positional: he played as a left winger rather than a full-back, and with Minteh expected to be out for around two months there is a good chance he keeps the advanced role. That gives him a midfielder's attacking upside while FPL still classifies him as a defender, which is the single most valuable mispricing available in this game.",
-      "watch_out": "The whole case rests on a role that has been seen once. If Minteh returns early, or Brighton revert him to left-back, what remains is a full-back at an inflated price with none of the upside being paid for. Nearly 250,000 managers have already bought him, so the differential value is gone too — you are buying at the top of the bandwagon.",
-      "key_stats": [
-        "17 points in GW1 — the highest score of any player",
-        "1.68 xGI in GW1 — the highest of any player in the round",
-        "4 shots and 3 key passes from a defender-classified player",
-        "Played left wing, not left-back; Minteh out roughly two months",
-        "~250,000 transfers in ahead of GW2 — the most-bought player in the game"
-      ],
-      "voices": [
-        {
-          "source": "AllAboutFPL",
-          "take": "Call him a perfectly reasonable transfer if you didn't start with him, and single out the positional change rather than the 17 points as the real reason."
-        },
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Ran a dedicated buy-keep-or-sell piece on him ahead of GW2, which is itself a signal of how much of the community is weighing this move."
-        }
-      ],
-      "sources": [
-        "AllAboutFPL",
-        "Fantasy Football Scout",
-        "Fantasy Football Fix"
-      ],
-      "predicted_start": "likely",
-      "role": "left wing rather than left-back"
+     "source": "AllAboutFPL",
+     "take": "Call him a perfectly reasonable transfer if you didn't start with him, and single out the positional change rather than the 17 points as the real reason."
     },
     {
-      "name": "Calafiori",
-      "full_name": "Riccardo Calafiori",
-      "tier": "strong",
-      "expert_ownership": 18,
-      "verdict": "Delivered exactly what the pre-season case said he would, and the fixtures haven't turned yet.",
-      "case": "He continued his Community Shield form into the opening weekend with an assist and a clean sheet, which is the specific combination that makes an attacking defender worth owning — the floor and the ceiling arriving in the same afternoon. He is one of three Arsenal players among the eight most-bought ahead of GW2, alongside Odegaard and Tzolis, so the market has moved to the same conclusion. Arsenal's opening run remains the softest in the league.",
-      "watch_out": "Arsenal's defensive rotation is still unsettled with first-choice centre-backs working back to fitness, and Calafiori is the one whose place is least assured when everyone is available. He was a differential a week ago and isn't now, so you are paying a higher price for a place in the side that is no more certain than it was.",
-      "key_stats": [
-        "Assist and a clean sheet in GW1",
-        "One of three Arsenal players in the eight most-bought ahead of GW2",
-        "Carried Community Shield form straight into the league season"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Group him with Odegaard and Tzolis as the Arsenal players the market moved to after the opening weekend."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Note he is receiving attention specifically for continuing his Community Shield form rather than for a single result."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "AllAboutFPL"
-      ],
-      "predicted_start": "likely",
-      "role": "left of the Arsenal back line"
-    },
-    {
-      "name": "Haaland",
-      "full_name": "Erling Haaland",
-      "tier": "strong",
-      "expert_ownership": 71,
-      "verdict": "Blanked in GW1 and is still not a player to sell — but the must-have framing has to go.",
-      "case": "The underlying case has not changed: he led the league last season in shots per game, big chances per game and expected goals per game simultaneously, and has finished as the top-scoring player after six gameweeks in all four of his Manchester City seasons. One blank against that pattern is noise. City travel to Crystal Palace in GW2.",
-      "watch_out": "He blanked in the opening round and costs £15.5m, so the opportunity cost of holding is real and immediate. At around 71% ownership he is also not a route to rank — see the dissent below, which is now the more interesting half of this entry.",
-      "key_stats": [
-        "Blanked in GW1",
-        "£15.5m — around a sixth of the total budget",
-        "~71% owned",
-        "Led the league in shots, big chances and xG per game last season",
-        "GW2: Crystal Palace away"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Led their Gameweek 1 review with the blank, alongside Manchester United flopping and Hull City winning, as the results that most upset the template."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Warn explicitly against kneejerk transfers after the opening weekend and to judge on underlying numbers rather than one scoreline."
-        }
-      ],
-      "dissent": {
-        "case": "At roughly 71% ownership his haul barely moves your rank and his blank barely hurts it — owning and captaining him is tracking the field rather than beating it. After a blanking opening weekend a meaningful minority are arguing the £15.5m is better spread across two players with better GW2 fixtures. That is a real argument about rank rather than about whether he is good.",
-        "sources": [
-          "Fantasy Football Scout",
-          "AllAboutFPL"
-        ]
-      },
-      "sources": [
-        "Fantasy Football Scout",
-        "AllAboutFPL",
-        "RotoWire"
-      ],
-      "predicted_start": "nailed",
-      "role": "centre-forward"
-    },
-    {
-      "name": "B.Fernandes",
-      "full_name": "Bruno Fernandes",
-      "tier": "strong",
-      "expert_ownership": 38,
-      "verdict": "Among the most-sold in the game — and the projection models' preferred captain for this gameweek. Those two facts are the story.",
-      "case": "Manchester United host newly-promoted Ipswich, and lead the entire league on clean-sheet probability this week at 48% — the only side above 40% other than Coventry. RotoWire's model has him tied for the top overall score in the gameweek and names him the preferred captain. He remains on penalties, corners and direct free-kicks, and produced 9 goals and a record 24 assists last season. The crowd is selling him off one bad afternoon into the best home fixture on the board.",
-      "watch_out": "United flopped in GW1 and he is among the most-sold players in the game as a result, so this is a hold that will feel worse before it feels better. The pre-season penalty misses that Fantasy Football Scout flagged remain unresolved, and his case leans on dead balls more than most.",
-      "key_stats": [
-        "Man Utd lead the league on GW2 clean-sheet probability at 48%",
-        "RotoWire's model has him tied for the top overall score in GW2 and names him preferred captain",
-        "9 goals and 24 assists last season — a record FPL assist total",
-        "On penalties, corners and direct free-kicks",
-        "Among the most-sold players ahead of GW2",
-        "GW2: Ipswich at home"
-      ],
-      "voices": [
-        {
-          "source": "RotoWire",
-          "take": "Head their GW2 midfield rankings with him as the preferred captain, with the model tying him for the top overall score on a home date against a promoted side."
-        },
-        {
-          "source": "Fantasy Football Scout",
-          "take": "List him among the most-sold players ahead of Gameweek 2 following Manchester United's poor opening result, and separately rate Man Utd the best clean-sheet bet of the week at 48%."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Frame selling a premium the week before the fixture he was bought for as the archetypal post-GW1 kneejerk."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "AllAboutFPL",
-        "Fantasy Football Fix"
-      ],
-      "predicted_start": "nailed",
-      "role": "attacking midfield",
-      "set_pieces": "penalties, corners and direct free-kicks",
-      "dissent": {
-        "case": "Worth being explicit that the crowd and the models are pointing opposite ways here. He is one of the most-sold players in the game after Manchester United flopped in GW1, and a large number of managers have concluded the side is the problem rather than the fixture. The models disagree and have him as the week's preferred captain. This app follows the models on this one — a home tie against a promoted side with the league's best clean-sheet odds is a fixture, and a fixture is a better basis for one week than a mood is — but it is a genuine split, not a settled call.",
-        "sources": [
-          "RotoWire",
-          "Fantasy Football Scout"
-        ]
-      }
-    },
-    {
-      "name": "Sangare",
-      "full_name": "Mamadou Sangare",
-      "tier": "value",
-      "expert_ownership": 6,
-      "verdict": "The week's second bandwagon, off a haul against Spurs.",
-      "case": "He hauled in the opening weekend against a Tottenham side that was comprehensively beaten, and has attracted almost 200,000 new owners as a result. At his price he is the kind of budget enabler that makes a premium-heavy structure affordable, which is the job most managers are actually trying to fill this week.",
-      "watch_out": "One haul against a team having a bad day is the thinnest evidence in this file. Nothing about the underlying numbers has been established, and the entire ownership move is built on a single afternoon — the exact pattern AllAboutFPL are warning against this week.",
-      "key_stats": [
-        "Hauled against Tottenham in GW1",
-        "~200,000 transfers in ahead of GW2",
-        "One of the two biggest bandwagons of the week"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Name him alongside De Cuyper as the early bandwagon of the week, having attracted almost 200,000 new owners."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Caution that a transfer should be for a player who stays in the team for several gameweeks, not one bought purely on a GW1 result."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "AllAboutFPL"
-      ],
-      "predicted_start": "likely",
-      "role": "central midfield"
-    },
-    {
-      "name": "Palmer",
-      "full_name": "Cole Palmer",
-      "tier": "avoid",
-      "expert_ownership": 22,
-      "verdict": "Right player, wrong week — Chelsea meet the defence that gave up nothing in GW1.",
-      "case": "Chelsea were excellent against Fulham on the opening weekend and he is the focal point of that attack.",
-      "watch_out": "Brighton are the opponent, and they are a different proposition to Fulham: among the best defences in the league last season, and they allowed their GW1 opponents zero shots on target. Analysts are explicitly saying to think twice about buying Chelsea attackers into this fixture. Buying an attacker for one week against a defence in that form is paying full price for the worst version of him.",
-      "key_stats": [
-        "Chelsea beat Fulham convincingly in GW1",
-        "Brighton allowed zero shots on target in GW1",
-        "Brighton were among the best defences in the league last season"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Fix",
-          "take": "Say managers should think twice about bringing in Chelsea's attackers this week specifically because Brighton are a different proposition to Fulham."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Advise buying players who hold their place for several gameweeks rather than chasing a single favourable-looking fixture."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Fix",
-        "AllAboutFPL"
-      ],
-      "predicted_start": "nailed",
-      "role": "attacking midfield",
-      "set_pieces": "Chelsea set pieces"
-    },
-    {
-      "name": "Joao Pedro",
-      "full_name": "Joao Pedro",
-      "tier": "avoid",
-      "expert_ownership": 44,
-      "verdict": "Same fixture problem as Palmer, and he is far more widely owned.",
-      "case": "He led the line in a Chelsea side that opened the season by taking Fulham apart, and arrived fresher than almost anyone after missing the World Cup.",
-      "watch_out": "Brighton in GW2 is the issue: zero shots on target conceded in the opening weekend and one of the meanest defensive records in the league last season. At around 44% ownership the downside is shared with much of the field, which softens the rank damage but does nothing for your actual score. This is a hold-and-wait rather than a buy.",
-      "key_stats": [
-        "~44% owned",
-        "Chelsea beat Fulham convincingly in GW1",
-        "Brighton conceded zero shots on target in GW1",
-        "7 goals in 6 pre-season appearances"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Fix",
-          "take": "Name him directly among the Chelsea attackers to think twice about this week, because of the Brighton fixture rather than his form."
-        },
-        {
-          "source": "The Scout (Premier League)",
-          "take": "Had him on the official must-have list pre-season, which is why the ownership is high enough for this fixture to matter to so many teams."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Fix",
-        "The Scout (Premier League)"
-      ],
-      "predicted_start": "nailed",
-      "role": "leading the Chelsea line"
-    },
-    {
-      "name": "Porro",
-      "full_name": "Pedro Porro",
-      "tier": "avoid",
-      "expert_ownership": 9,
-      "verdict": "A fitness doubt in a side that was taken apart in GW1.",
-      "case": "An attacking full-back with genuine set-piece involvement when fit and starting.",
-      "watch_out": "He is being eased back for match fitness and was named on the bench in a cup tie, so the minutes are not there yet. He is among the most-sold players in the game after the opening weekend, and Tottenham were comprehensively beaten. A defender you are not sure will start, in a defence that just shipped a bad result, is the easiest sell in this file.",
-      "key_stats": [
-        "Benched for match fitness in the cup",
-        "Among the most-sold players ahead of GW2",
-        "Tottenham were heavily beaten in GW1"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Report he is being eased into action for match-fitness reasons and list him among the most-sold ahead of Gameweek 2."
-        },
-        {
-          "source": "RotoWire",
-          "take": "Track him in the Premier League injuries and availability round-up rather than as a live selection option."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "RotoWire"
-      ],
-      "predicted_start": "doubt",
-      "role": "right wing-back when fit"
-    },
-    {
-      "name": "Maddison",
-      "full_name": "James Maddison",
-      "tier": "avoid",
-      "expert_ownership": 4,
-      "verdict": "Injured again — a shoulder problem, and not yet ready.",
-      "case": "On talent and set-piece duty he would be a live option in most weeks.",
-      "watch_out": "He is reported as injured again with a shoulder issue and not ready to feature. There is nothing to weigh until he is fit.",
-      "key_stats": [
-        "Shoulder injury, not yet ready to feature",
-        "Tottenham heavily beaten in GW1"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Report in their GW2 injury round-up that he is injured again with a shoulder problem and isn't yet ready to feature."
-        },
-        {
-          "source": "RotoWire",
-          "take": "Carry him in the Premier League injuries and suspensions tracker rather than in selection coverage."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "RotoWire"
-      ],
-      "predicted_start": "out"
-    },
-    {
-      "name": "Kudus",
-      "full_name": "Mohammed Kudus",
-      "tier": "avoid",
-      "expert_ownership": 5,
-      "verdict": "Thigh injury, not yet available.",
-      "case": "A genuine attacking threat with a real role when fit.",
-      "watch_out": "A thigh problem means he isn't ready to feature. Re-check before the deadline rather than writing him off for the season.",
-      "key_stats": [
-        "Thigh injury, not yet ready to feature",
-        "Flagged in the GW2 injury round-up"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "List him in the Gameweek 2 injury update as not yet ready to feature because of a thigh problem."
-        },
-        {
-          "source": "RotoWire",
-          "take": "Include him among the Premier League availability doubts going into the weekend."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "RotoWire"
-      ],
-      "predicted_start": "out"
-    },
-    {
-      "name": "Watkins",
-      "full_name": "Ollie Watkins",
-      "tier": "avoid",
-      "expert_ownership": 11,
-      "verdict": "Among the most-sold in the game after a blank opening weekend.",
-      "case": "An established Premier League forward with a long record of consistent returns.",
-      "watch_out": "He is among the most-sold players ahead of GW2 after failing to return in the opening round. That in itself is not a reason to follow, but nothing in this week's coverage makes a case for buying him either — he is being passed over rather than argued about.",
-      "key_stats": [
-        "Among the most-sold players ahead of GW2",
-        "No return in GW1"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "List him among the most-sold players ahead of Gameweek 2, alongside Porro, Konsa and Gyokeres."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Warn generally against kneejerk selling after one weekend, which applies to him as much as to anyone."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "AllAboutFPL"
-      ],
-      "predicted_start": "likely",
-      "role": "centre-forward"
-    },
-    {
-      "name": "Gyokeres",
-      "full_name": "Viktor Gyokeres",
-      "tier": "avoid",
-      "expert_ownership": 13,
-      "verdict": "Another of the week's heavily-sold forwards.",
-      "case": "A high-volume striker whose underlying numbers have travelled well in the past.",
-      "watch_out": "He is among the most-sold players in the game after the opening weekend produced nothing. As with the rest of that list, the honest read is that he is out of favour rather than demonstrably wrong — but there is no positive case being made for him anywhere this week.",
-      "key_stats": [
-        "Among the most-sold players ahead of GW2",
-        "No return in GW1"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Name him in the most-sold list ahead of Gameweek 2 following the opening weekend."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Frame the whole most-sold list as the classic post-GW1 kneejerk pattern to be wary of."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "AllAboutFPL"
-      ],
-      "predicted_start": "likely",
-      "role": "centre-forward"
-    },
-    {
-      "name": "Konsa",
-      "full_name": "Ezri Konsa",
-      "tier": "avoid",
-      "expert_ownership": 7,
-      "verdict": "Heavily sold, with no case being made to hold.",
-      "case": "A regular starter in a defence that has produced FPL clean sheets before.",
-      "watch_out": "Among the most-sold players ahead of GW2 after the opening weekend. Nothing in this week's coverage argues for holding, and the budget defensive slot has better-argued options in De Cuyper and Calafiori.",
-      "key_stats": [
-        "Among the most-sold players ahead of GW2",
-        "No clean sheet in GW1"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "List him among the most-sold players ahead of Gameweek 2 alongside Porro, Gyokeres and Watkins."
-        },
-        {
-          "source": "AllAboutFPL",
-          "take": "Advise judging defenders on the fixture run ahead rather than on a single opening result."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "AllAboutFPL"
-      ],
-      "predicted_start": "likely",
-      "role": "centre-back"
-    },
-    {
-      "name": "Fofana",
-      "full_name": "Wesley Fofana",
-      "tier": "avoid",
-      "expert_ownership": 3,
-      "predicted_start": "out",
-      "verdict": "Suspended — misses the first two gameweeks.",
-      "case": "A first-choice centre-back in a Chelsea defence that opened the season convincingly.",
-      "watch_out": "He is serving a suspension for a red card late last season and misses both of the opening two gameweeks, GW2 included. There is nothing to weigh until he is available, and anyone holding him has been fielding ten men.",
-      "key_stats": [
-        "Suspended for the opening two gameweeks after a red card last season",
-        "Chelsea are among five sides above 30% clean-sheet probability in GW2"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Report he misses the first two gameweeks through suspension following his red card late last season."
-        },
-        {
-          "source": "RotoWire",
-          "take": "Carry him in the Premier League suspensions tracker rather than in selection coverage."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "RotoWire"
-      ]
-    },
-    {
-      "name": "Bruno G.",
-      "full_name": "Bruno Guimaraes",
-      "tier": "avoid",
-      "expert_ownership": 8,
-      "predicted_start": "doubt",
-      "role": "central midfield",
-      "verdict": "A fitness doubt Arteta wouldn't confirm either way.",
-      "case": "A genuine quality midfielder with a role in a side facing a toothless-looking Aston Villa.",
-      "watch_out": "He came off at half-time in the Community Shield and was seen with an ice pack on his thigh. Arteta said he was 'evolving really well' without confirming his availability, which is manager-speak for a real doubt. A midfielder you cannot be sure will start is the worst shape of risk there is — you carry the price without the minutes.",
-      "key_stats": [
-        "Came off at half-time in the Community Shield with a thigh problem",
-        "Arteta declined to confirm his availability",
-        "Arsenal travel to an Aston Villa side that looked toothless in GW1"
-      ],
-      "voices": [
-        {
-          "source": "Fantasy Football Scout",
-          "take": "Report the half-time substitution and the ice pack, and quote Arteta saying only that he was 'evolving really well' without confirming fitness."
-        },
-        {
-          "source": "RotoWire",
-          "take": "List him among the Arsenal availability doubts going into the weekend."
-        }
-      ],
-      "sources": [
-        "Fantasy Football Scout",
-        "RotoWire"
-      ]
+     "source": "Fantasy Football Scout",
+     "take": "Ran a dedicated buy-keep-or-sell piece on him ahead of GW2, which is itself a signal of how much of the community is weighing this move."
     }
-  ]
+   ],
+   "sources": [
+    "AllAboutFPL",
+    "Fantasy Football Scout",
+    "Fantasy Football Fix"
+   ],
+   "predicted_start": "likely",
+   "role": "left wing rather than left-back"
+  },
+  {
+   "name": "Calafiori",
+   "full_name": "Riccardo Calafiori",
+   "tier": "strong",
+   "expert_ownership": 18,
+   "verdict": "Delivered exactly what the pre-season case said he would, and the fixtures haven't turned yet.",
+   "case": "He continued his Community Shield form into the opening weekend with an assist and a clean sheet, which is the specific combination that makes an attacking defender worth owning — the floor and the ceiling arriving in the same afternoon. He is one of three Arsenal players among the eight most-bought ahead of GW2, alongside Odegaard and Tzolis, so the market has moved to the same conclusion. Arsenal's opening run remains the softest in the league.",
+   "watch_out": "Arsenal's defensive rotation is still unsettled with first-choice centre-backs working back to fitness, and Calafiori is the one whose place is least assured when everyone is available. He was a differential a week ago and isn't now, so you are paying a higher price for a place in the side that is no more certain than it was.",
+   "key_stats": [
+    "Assist and a clean sheet in GW1",
+    "One of three Arsenal players in the eight most-bought ahead of GW2",
+    "Carried Community Shield form straight into the league season"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Group him with Odegaard and Tzolis as the Arsenal players the market moved to after the opening weekend."
+    },
+    {
+     "source": "AllAboutFPL",
+     "take": "Note he is receiving attention specifically for continuing his Community Shield form rather than for a single result."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "likely",
+   "role": "left of the Arsenal back line"
+  },
+  {
+   "name": "Haaland",
+   "full_name": "Erling Haaland",
+   "tier": "must_have",
+   "expert_ownership": 71,
+   "verdict": "The single biggest mistake available this week is selling him on one blank. Every outlet covering GW2 says the same thing, and the historical record is emphatic.",
+   "case": "He blanked in GW1 — five shots, two on target, and a first-half chance he missed the ball on entirely in City's 2-1 win at Bournemouth. That is the whole of the bear case, and it is one match. Set against it: he has been the top-scoring player in the game after the first six gameweeks in ALL FOUR of his seasons at Manchester City, averaging nine goals and 61.3 points across that opening window each time. Last season he ranked first in the entire league for goals (27), shots (126), shots on target (59), expected goals (27.68) AND big chances (51) — not first among strikers, first outright, in all five. He won the Golden Boot for the third time in four attempts and finished as the top-scoring outfield player in FPL on 239 points. The season before that, a December slump and a spring injury held him to 22 goals and 181 points, and that is his floor — a bad Haaland season is still a very good FPL forward. Opta's verdict is that going without him is a brave call at any point, and that the start of a season is when it carries the most risk of all. City then have four home games in the first seven gameweeks, two of them against promoted Coventry and Ipswich, which is where most managers are planning their first Triple Captain.",
+   "watch_out": "He is £15.5m — a record price — and that is a genuine structural cost, not a detail. Roughly a sixth of your entire budget sits in one player, and it is the reason a squad built around him has to be thinner everywhere else. The 24/25 season is the honest warning: 10 goals in his first six games, then three in the following thirteen as City fell away, and an injury in the spring. He is not immune to a slump. And at 71% ownership he buys you no rank when he hauls — he only protects you from losing rank when he does. GW2 is away at Crystal Palace, a genuinely awkward fixture, and Bournemouth was the first time in five seasons he has failed to score in City's opening game.",
+   "key_stats": [
+    "Top-scoring player in the game after the first 6 GWs in all 4 of his seasons at City",
+    "Averages 9 goals and 61.3 points across those opening six-gameweek windows",
+    "2025/26: 27 goals — and ranked 1st in the league for shots (126), shots on target (59), xG (27.68) and big chances (51)",
+    "2025/26: 239 FPL points, the top-scoring outfield player; 3rd Golden Boot in 4 seasons",
+    "2024/25 (his worst season): 22 goals, 3 assists, 181 points from 31 games",
+    "GW1 2026/27: 5 shots, 2 on target, no goal — his first ever blank in a City league opener",
+    "£15.5m, a record FPL price; 71% owned",
+    "City have 4 home games in the first 7 GWs, including promoted Coventry and Ipswich"
+   ],
+   "voices": [
+    {
+     "source": "Opta Analyst",
+     "take": "Going without Haaland is a brave choice at any stage of the season, and the data says the start of a campaign is when that decision carries the most risk."
+    },
+    {
+     "source": "Fantasy Football Fix",
+     "take": "Names Haaland the safer captain for GW2, with João Pedro, Mbeumo and Bruno Fernandes as the aggressive alternatives — i.e. he is the baseline you deviate from, not a pick you have to justify."
+    },
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Covered the GW1 blank explicitly in its notes and did not move him off the must-have list; flagged that he still generated five shots."
+    },
+    {
+     "source": "Premier League (The Scout)",
+     "take": "Listed him among the must-haves for the season start: 'his history shows it'll be a major risk to go without him in your opening squad'."
+    },
+    {
+     "source": "RotoWire",
+     "take": "Haaland's goal threat remains significant for the trip to Crystal Palace despite failing to score against Bournemouth."
+    }
+   ],
+   "dissent": {
+    "case": "At roughly 71% ownership his haul barely moves your rank and his blank barely hurts it — owning and captaining him is tracking the field rather than beating it. After a blanking opening weekend a meaningful minority are arguing the £15.5m is better spread across two players with better GW2 fixtures. Note what this argument is NOT: nobody in it is claiming he won't score. It is an argument about effective ownership and opportunity cost, which is what the rank-strategy control is for — it does not damp his projection.",
+    "sources": [
+     "Fantasy Football Scout",
+     "AllAboutFPL"
+    ],
+    "kind": "rank"
+   },
+   "sources": [
+    "Opta Analyst",
+    "Premier League / The Scout",
+    "Fantasy Football Scout",
+    "Fantasy Football Fix",
+    "RotoWire",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "nailed",
+   "role": "lone striker, penalties",
+   "set_pieces": "penalties"
+  },
+  {
+   "name": "B.Fernandes",
+   "full_name": "Bruno Fernandes",
+   "tier": "strong",
+   "expert_ownership": 38,
+   "verdict": "Among the most-sold in the game — and the projection models' preferred captain for this gameweek. Those two facts are the story.",
+   "case": "Manchester United host newly-promoted Ipswich, and lead the entire league on clean-sheet probability this week at 48% — the only side above 40% other than Coventry. RotoWire's model has him tied for the top overall score in the gameweek and names him the preferred captain. He remains on penalties, corners and direct free-kicks, and produced 9 goals and a record 24 assists last season. The crowd is selling him off one bad afternoon into the best home fixture on the board.",
+   "watch_out": "United flopped in GW1 and he is among the most-sold players in the game as a result, so this is a hold that will feel worse before it feels better. The pre-season penalty misses that Fantasy Football Scout flagged remain unresolved, and his case leans on dead balls more than most.",
+   "key_stats": [
+    "Man Utd lead the league on GW2 clean-sheet probability at 48%",
+    "RotoWire's model has him tied for the top overall score in GW2 and names him preferred captain",
+    "9 goals and 24 assists last season — a record FPL assist total",
+    "On penalties, corners and direct free-kicks",
+    "Among the most-sold players ahead of GW2",
+    "GW2: Ipswich at home"
+   ],
+   "voices": [
+    {
+     "source": "RotoWire",
+     "take": "Head their GW2 midfield rankings with him as the preferred captain, with the model tying him for the top overall score on a home date against a promoted side."
+    },
+    {
+     "source": "Fantasy Football Scout",
+     "take": "List him among the most-sold players ahead of Gameweek 2 following Manchester United's poor opening result, and separately rate Man Utd the best clean-sheet bet of the week at 48%."
+    },
+    {
+     "source": "AllAboutFPL",
+     "take": "Frame selling a premium the week before the fixture he was bought for as the archetypal post-GW1 kneejerk."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "AllAboutFPL",
+    "Fantasy Football Fix"
+   ],
+   "predicted_start": "nailed",
+   "role": "attacking midfield",
+   "set_pieces": "penalties, corners and direct free-kicks",
+   "dissent": {
+    "case": "Worth being explicit that the crowd and the models are pointing opposite ways here. He is one of the most-sold players in the game after Manchester United flopped in GW1, and a large number of managers have concluded the side is the problem rather than the fixture. The models disagree and have him as the week's preferred captain. This app follows the models on this one — a home tie against a promoted side with the league's best clean-sheet odds is a fixture, and a fixture is a better basis for one week than a mood is — but it is a genuine split, not a settled call.",
+    "sources": [
+     "RotoWire",
+     "Fantasy Football Scout"
+    ]
+   }
+  },
+  {
+   "name": "Sangare",
+   "full_name": "Mamadou Sangare",
+   "tier": "value",
+   "expert_ownership": 6,
+   "verdict": "The week's second bandwagon, off a haul against Spurs.",
+   "case": "He hauled in the opening weekend against a Tottenham side that was comprehensively beaten, and has attracted almost 200,000 new owners as a result. At his price he is the kind of budget enabler that makes a premium-heavy structure affordable, which is the job most managers are actually trying to fill this week.",
+   "watch_out": "One haul against a team having a bad day is the thinnest evidence in this file. Nothing about the underlying numbers has been established, and the entire ownership move is built on a single afternoon — the exact pattern AllAboutFPL are warning against this week.",
+   "key_stats": [
+    "Hauled against Tottenham in GW1",
+    "~200,000 transfers in ahead of GW2",
+    "One of the two biggest bandwagons of the week"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Name him alongside De Cuyper as the early bandwagon of the week, having attracted almost 200,000 new owners."
+    },
+    {
+     "source": "AllAboutFPL",
+     "take": "Caution that a transfer should be for a player who stays in the team for several gameweeks, not one bought purely on a GW1 result."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "likely",
+   "role": "central midfield"
+  },
+  {
+   "name": "Palmer",
+   "full_name": "Cole Palmer",
+   "tier": "avoid",
+   "expert_ownership": 22,
+   "verdict": "Right player, wrong week — Chelsea meet the defence that gave up nothing in GW1.",
+   "case": "Chelsea were excellent against Fulham on the opening weekend and he is the focal point of that attack.",
+   "watch_out": "Brighton are the opponent, and they are a different proposition to Fulham: among the best defences in the league last season, and they allowed their GW1 opponents zero shots on target. Analysts are explicitly saying to think twice about buying Chelsea attackers into this fixture. Buying an attacker for one week against a defence in that form is paying full price for the worst version of him.",
+   "key_stats": [
+    "Chelsea beat Fulham convincingly in GW1",
+    "Brighton allowed zero shots on target in GW1",
+    "Brighton were among the best defences in the league last season"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Fix",
+     "take": "Say managers should think twice about bringing in Chelsea's attackers this week specifically because Brighton are a different proposition to Fulham."
+    },
+    {
+     "source": "AllAboutFPL",
+     "take": "Advise buying players who hold their place for several gameweeks rather than chasing a single favourable-looking fixture."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Fix",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "nailed",
+   "role": "attacking midfield",
+   "set_pieces": "Chelsea set pieces"
+  },
+  {
+   "name": "Joao Pedro",
+   "full_name": "Joao Pedro",
+   "tier": "avoid",
+   "expert_ownership": 44,
+   "verdict": "Same fixture problem as Palmer, and he is far more widely owned.",
+   "case": "He led the line in a Chelsea side that opened the season by taking Fulham apart, and arrived fresher than almost anyone after missing the World Cup.",
+   "watch_out": "Brighton in GW2 is the issue: zero shots on target conceded in the opening weekend and one of the meanest defensive records in the league last season. At around 44% ownership the downside is shared with much of the field, which softens the rank damage but does nothing for your actual score. This is a hold-and-wait rather than a buy.",
+   "key_stats": [
+    "~44% owned",
+    "Chelsea beat Fulham convincingly in GW1",
+    "Brighton conceded zero shots on target in GW1",
+    "7 goals in 6 pre-season appearances"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Fix",
+     "take": "Name him directly among the Chelsea attackers to think twice about this week, because of the Brighton fixture rather than his form."
+    },
+    {
+     "source": "The Scout (Premier League)",
+     "take": "Had him on the official must-have list pre-season, which is why the ownership is high enough for this fixture to matter to so many teams."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Fix",
+    "The Scout (Premier League)"
+   ],
+   "predicted_start": "nailed",
+   "role": "leading the Chelsea line"
+  },
+  {
+   "name": "Porro",
+   "full_name": "Pedro Porro",
+   "tier": "avoid",
+   "expert_ownership": 9,
+   "verdict": "A fitness doubt in a side that was taken apart in GW1.",
+   "case": "An attacking full-back with genuine set-piece involvement when fit and starting.",
+   "watch_out": "He is being eased back for match fitness and was named on the bench in a cup tie, so the minutes are not there yet. He is among the most-sold players in the game after the opening weekend, and Tottenham were comprehensively beaten. A defender you are not sure will start, in a defence that just shipped a bad result, is the easiest sell in this file.",
+   "key_stats": [
+    "Benched for match fitness in the cup",
+    "Among the most-sold players ahead of GW2",
+    "Tottenham were heavily beaten in GW1"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Report he is being eased into action for match-fitness reasons and list him among the most-sold ahead of Gameweek 2."
+    },
+    {
+     "source": "RotoWire",
+     "take": "Track him in the Premier League injuries and availability round-up rather than as a live selection option."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "RotoWire"
+   ],
+   "predicted_start": "doubt",
+   "role": "right wing-back when fit"
+  },
+  {
+   "name": "Maddison",
+   "full_name": "James Maddison",
+   "tier": "avoid",
+   "expert_ownership": 4,
+   "verdict": "Injured again — a shoulder problem, and not yet ready.",
+   "case": "On talent and set-piece duty he would be a live option in most weeks.",
+   "watch_out": "He is reported as injured again with a shoulder issue and not ready to feature. There is nothing to weigh until he is fit.",
+   "key_stats": [
+    "Shoulder injury, not yet ready to feature",
+    "Tottenham heavily beaten in GW1"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Report in their GW2 injury round-up that he is injured again with a shoulder problem and isn't yet ready to feature."
+    },
+    {
+     "source": "RotoWire",
+     "take": "Carry him in the Premier League injuries and suspensions tracker rather than in selection coverage."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "RotoWire"
+   ],
+   "predicted_start": "out"
+  },
+  {
+   "name": "Kudus",
+   "full_name": "Mohammed Kudus",
+   "tier": "avoid",
+   "expert_ownership": 5,
+   "verdict": "Thigh injury, not yet available.",
+   "case": "A genuine attacking threat with a real role when fit.",
+   "watch_out": "A thigh problem means he isn't ready to feature. Re-check before the deadline rather than writing him off for the season.",
+   "key_stats": [
+    "Thigh injury, not yet ready to feature",
+    "Flagged in the GW2 injury round-up"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "List him in the Gameweek 2 injury update as not yet ready to feature because of a thigh problem."
+    },
+    {
+     "source": "RotoWire",
+     "take": "Include him among the Premier League availability doubts going into the weekend."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "RotoWire"
+   ],
+   "predicted_start": "out"
+  },
+  {
+   "name": "Watkins",
+   "full_name": "Ollie Watkins",
+   "tier": "avoid",
+   "expert_ownership": 11,
+   "verdict": "Among the most-sold in the game after a blank opening weekend.",
+   "case": "An established Premier League forward with a long record of consistent returns.",
+   "watch_out": "He is among the most-sold players ahead of GW2 after failing to return in the opening round. That in itself is not a reason to follow, but nothing in this week's coverage makes a case for buying him either — he is being passed over rather than argued about.",
+   "key_stats": [
+    "Among the most-sold players ahead of GW2",
+    "No return in GW1"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "List him among the most-sold players ahead of Gameweek 2, alongside Porro, Konsa and Gyokeres."
+    },
+    {
+     "source": "AllAboutFPL",
+     "take": "Warn generally against kneejerk selling after one weekend, which applies to him as much as to anyone."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "likely",
+   "role": "centre-forward"
+  },
+  {
+   "name": "Gyokeres",
+   "full_name": "Viktor Gyokeres",
+   "tier": "avoid",
+   "expert_ownership": 13,
+   "verdict": "Another of the week's heavily-sold forwards.",
+   "case": "A high-volume striker whose underlying numbers have travelled well in the past.",
+   "watch_out": "He is among the most-sold players in the game after the opening weekend produced nothing. As with the rest of that list, the honest read is that he is out of favour rather than demonstrably wrong — but there is no positive case being made for him anywhere this week.",
+   "key_stats": [
+    "Among the most-sold players ahead of GW2",
+    "No return in GW1"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Name him in the most-sold list ahead of Gameweek 2 following the opening weekend."
+    },
+    {
+     "source": "AllAboutFPL",
+     "take": "Frame the whole most-sold list as the classic post-GW1 kneejerk pattern to be wary of."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "likely",
+   "role": "centre-forward"
+  },
+  {
+   "name": "Konsa",
+   "full_name": "Ezri Konsa",
+   "tier": "avoid",
+   "expert_ownership": 7,
+   "verdict": "Heavily sold, with no case being made to hold.",
+   "case": "A regular starter in a defence that has produced FPL clean sheets before.",
+   "watch_out": "Among the most-sold players ahead of GW2 after the opening weekend. Nothing in this week's coverage argues for holding, and the budget defensive slot has better-argued options in De Cuyper and Calafiori.",
+   "key_stats": [
+    "Among the most-sold players ahead of GW2",
+    "No clean sheet in GW1"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "List him among the most-sold players ahead of Gameweek 2 alongside Porro, Gyokeres and Watkins."
+    },
+    {
+     "source": "AllAboutFPL",
+     "take": "Advise judging defenders on the fixture run ahead rather than on a single opening result."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "likely",
+   "role": "centre-back"
+  },
+  {
+   "name": "Fofana",
+   "full_name": "Wesley Fofana",
+   "tier": "avoid",
+   "expert_ownership": 3,
+   "predicted_start": "out",
+   "verdict": "Suspended — misses the first two gameweeks.",
+   "case": "A first-choice centre-back in a Chelsea defence that opened the season convincingly.",
+   "watch_out": "He is serving a suspension for a red card late last season and misses both of the opening two gameweeks, GW2 included. There is nothing to weigh until he is available, and anyone holding him has been fielding ten men.",
+   "key_stats": [
+    "Suspended for the opening two gameweeks after a red card last season",
+    "Chelsea are among five sides above 30% clean-sheet probability in GW2"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Report he misses the first two gameweeks through suspension following his red card late last season."
+    },
+    {
+     "source": "RotoWire",
+     "take": "Carry him in the Premier League suspensions tracker rather than in selection coverage."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "RotoWire"
+   ]
+  },
+  {
+   "name": "Bruno G.",
+   "full_name": "Bruno Guimaraes",
+   "tier": "avoid",
+   "expert_ownership": 8,
+   "predicted_start": "doubt",
+   "role": "central midfield",
+   "verdict": "A fitness doubt Arteta wouldn't confirm either way.",
+   "case": "A genuine quality midfielder with a role in a side facing a toothless-looking Aston Villa.",
+   "watch_out": "He came off at half-time in the Community Shield and was seen with an ice pack on his thigh. Arteta said he was 'evolving really well' without confirming his availability, which is manager-speak for a real doubt. A midfielder you cannot be sure will start is the worst shape of risk there is — you carry the price without the minutes.",
+   "key_stats": [
+    "Came off at half-time in the Community Shield with a thigh problem",
+    "Arteta declined to confirm his availability",
+    "Arsenal travel to an Aston Villa side that looked toothless in GW1"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Report the half-time substitution and the ice pack, and quote Arteta saying only that he was 'evolving really well' without confirming fitness."
+    },
+    {
+     "source": "RotoWire",
+     "take": "List him among the Arsenal availability doubts going into the weekend."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "RotoWire"
+   ]
+  },
+  {
+   "name": "Szoboszlai",
+   "full_name": "Dominik Szoboszlai",
+   "tier": "strong",
+   "expert_ownership": 14,
+   "verdict": "The set-piece and penalty route into a Liverpool side back at Anfield — bought for the role, not for last week's points.",
+   "case": "He scored Liverpool's stoppage-time penalty against Newcastle in GW1, which matters far less than the reason he was on it: he is involved in corners and free-kicks and is taking spot-kicks. Set-piece and penalty duty is the most persistent, least fixture-dependent source of FPL points there is — it survives bad form, bad matchups and tactical changes in a way that open-play output does not. Liverpool now return to Anfield to face Nottingham Forest. Multiple outlets have him as one of the strongest value picks in the game right now.",
+   "watch_out": "Penalty duty at Liverpool has moved around before, and one converted spot-kick is not a confirmed long-term appointment — watch who takes the next one. His open-play returns have historically been modest for a midfielder at his price, so if the penalties dry up the underlying case thins out fast.",
+   "key_stats": [
+    "Scored Liverpool's stoppage-time penalty vs Newcastle in GW1",
+    "On corners and free-kicks as well as penalties",
+    "Liverpool home to Nottingham Forest in GW2"
+   ],
+   "voices": [
+    {
+     "source": "RotoWire",
+     "take": "One of the strongest value picks, specifically citing the penalty plus corner and free-kick involvement rather than the GW1 score."
+    }
+   ],
+   "sources": [
+    "RotoWire",
+    "Fantasy Football Scout"
+   ],
+   "predicted_start": "nailed",
+   "role": "advanced central midfield",
+   "set_pieces": "penalties, corners, free-kicks"
+  },
+  {
+   "name": "Kayode",
+   "full_name": "Michael Kayode",
+   "tier": "value",
+   "expert_ownership": 6.5,
+   "verdict": "A £4.5m defender with a winger's shot count — the cheapest real differential on the board.",
+   "case": "Four shots in GW1 from a defender, and the fourth-best xGI of ANY defender in the round. At £4.5m and 6.5% ownership he is the definition of what a differential should be: low-owned with a credible route to points, rather than low-owned because nobody wants him. The 2025/26 defensive contributions rule makes cheap attacking full-backs materially better than they used to be — 10 clearances, blocks, interceptions and tackles is worth 2 points on its own, before any clean sheet.",
+   "watch_out": "One gameweek of shot volume from a full-back is exactly the kind of thing that regresses hard. Brentford are not a side you would bank clean sheets on, and at £4.5m he is priced as a bench defender for a reason. If the shots stop, there is very little underneath.",
+   "key_stats": [
+    "4 shots in GW1 — from a defender",
+    "4th-highest xGI of all defenders in GW1",
+    "£4.5m, 6.5% owned"
+   ],
+   "voices": [
+    {
+     "source": "RotoWire",
+     "take": "Listed among the ten low-owned players to target, explicitly on the shot volume and xGI rather than the points."
+    }
+   ],
+   "sources": [
+    "RotoWire",
+    "Never Manage Alone"
+   ],
+   "predicted_start": "likely",
+   "role": "attacking right-back"
+  },
+  {
+   "name": "Wissa",
+   "full_name": "Yoane Wissa",
+   "tier": "value",
+   "expert_ownership": 2.8,
+   "verdict": "The differential the community keeps pointing at: form, underlying numbers, fixture and 2.8% ownership all lining up at once.",
+   "case": "Described as the perfect combination of form, underlying numbers, fixture and differential potential. That combination is rare — most 3%-owned players are cheap for a reason. The broader 25/26 lesson applies directly here: mid-price forwards outscored every premium midfielder bar Bruno Fernandes last season, and the £7-8m forward bracket is now the strongest position group in the game.",
+   "watch_out": "Very low ownership means very little consensus support — you are early, or you are wrong, and there is no crowd to be wrong with. Brentford's attacking output has historically been volatile week to week.",
+   "key_stats": [
+    "2.8% owned",
+    "Cited for form + underlying numbers + fixture together, not one of them",
+    "25/26 trend: £7-8m forwards were the strongest bracket in the game"
+   ],
+   "voices": [
+    {
+     "source": "RotoWire",
+     "take": "At just 2.8% ownership, Wissa gives you the perfect combination of form, underlying numbers, fixture and differential potential."
+    }
+   ],
+   "sources": [
+    "RotoWire"
+   ],
+   "predicted_start": "likely",
+   "role": "forward"
+  },
+  {
+   "name": "Mbeumo",
+   "full_name": "Bryan Mbeumo",
+   "tier": "strong",
+   "expert_ownership": 21,
+   "verdict": "Home to Ipswich with a two-season record that says the GW1 defeat was about Manchester United, not about him.",
+   "case": "He finished second in the entire game on 236 points in 2024/25 — an improvement of 109 points on the season before — and was the top midfielder for expected goals in 2025/26. That is two consecutive seasons of elite underlying output, which is a very different thing from a player having one good week. Manchester United host Ipswich at Old Trafford in GW2, and a promoted side adjusting to the top flight is the softest fixture profile available. Multiple outlets flag him as a high-ceiling captaincy differential for anyone wanting to move off Haaland.",
+   "watch_out": "United lost 2-0 at home to promoted Hull in GW1, which is the kind of result that makes 'they're at home to Ipswich' a much less comfortable sentence than it looks. The attacking returns have to survive a team playing badly, and last week they did not.",
+   "key_stats": [
+    "2nd in the whole game in 2024/25 on 236 points (+109 on the prior season)",
+    "Top midfielder for xG in 2025/26",
+    "£8.0m; Man Utd host Ipswich at Old Trafford in GW2",
+    "Man Utd lost 2-0 at home to promoted Hull in GW1"
+   ],
+   "voices": [
+    {
+     "source": "Fantasy Football Fix",
+     "take": "Names Mbeumo among the aggressive captaincy alternatives to Haaland, citing significant potential against Ipswich."
+    },
+    {
+     "source": "RotoWire",
+     "take": "Standout mid-priced midfielder for GW2; a high-ceiling differential against an Ipswich defence adjusting to the top flight."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Fix",
+    "RotoWire",
+    "Fantasy Football Scout"
+   ],
+   "predicted_start": "nailed",
+   "role": "right-sided attacker"
+  }
+ ]
 }

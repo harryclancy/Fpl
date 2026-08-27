@@ -50,3 +50,56 @@ def test_there_is_research_to_ship_at_all():
     """A guard against the automation quietly emptying the directory."""
     assert PLAYER_FILES, "no per-player research is committed"
     assert TEAM_FILE.exists(), "no club stances are committed"
+
+
+# --- the Haaland failure, encoded in the research ------------------------
+
+def test_the_most_owned_player_in_the_game_is_not_filed_as_optional():
+    """The reported complaint: the app dropped Haaland after one blank.
+
+    Part of that was the model (fixed in analysis/history.py) and part was
+    the research file, which had a 71%-owned Golden Boot winner tiered the
+    same as a £4.6m bandwagon full-back. A player this widely owned is a
+    decision you deviate from, not one you have to justify.
+    """
+    import json
+    from pathlib import Path
+
+    path = Path(__file__).resolve().parent.parent / "data" / "consensus" / "gw2.json"
+    players = {p["name"]: p for p in json.loads(path.read_text())["players"]}
+    haaland = players.get("Haaland")
+
+    assert haaland is not None
+    assert haaland["tier"] == "must_have"
+    assert haaland["expert_ownership"] >= 50
+    # The case has to lead on the multi-season record, not the projection.
+    assert "Golden Boot" in haaland["case"] or "27" in haaland["case"]
+    assert len(haaland["key_stats"]) >= 5
+    assert len(haaland["voices"]) >= 3
+
+
+def test_every_researched_player_carries_a_case_and_a_counter_case():
+    """A recommendation you can't argue against isn't advice."""
+    import json
+    from pathlib import Path
+
+    path = Path(__file__).resolve().parent.parent / "data" / "consensus" / "gw2.json"
+    for player in json.loads(path.read_text())["players"]:
+        name = player["name"]
+        assert player.get("case", "").strip(), f"{name} has no case"
+        assert player.get("watch_out", "").strip(), f"{name} has no counter-case"
+        assert player.get("key_stats"), f"{name} has no supporting facts"
+        assert player.get("sources"), f"{name} cites no sources"
+
+
+def test_named_outlets_not_analysts_say():
+    """'Analysts say' is not a source. Every voice names who said it."""
+    import json
+    from pathlib import Path
+
+    path = Path(__file__).resolve().parent.parent / "data" / "consensus" / "gw2.json"
+    for player in json.loads(path.read_text())["players"]:
+        for voice in player.get("voices", []):
+            assert voice.get("source", "").strip(), f"{player['name']} has an unattributed voice"
+            assert voice.get("take", "").strip()
+            assert voice["source"].lower() not in {"analysts", "experts", "the community"}

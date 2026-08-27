@@ -21,6 +21,7 @@ from dataclasses import dataclass, field
 import pandas as pd
 
 from fpl_assistant.analysis import captain_call, consensus, explain, optimiser
+from fpl_assistant.analysis import history as history_analysis
 from fpl_assistant.analysis.expected_points import DEFAULT_HORIZON, expected_points
 from fpl_assistant.analysis.fixtures import team_fixture_table
 from fpl_assistant.analysis.optimiser import (
@@ -72,6 +73,12 @@ def score_players(
     # average difficulty; the xP model handles blanks properly per-gameweek,
     # but the rationale text still reads this column, so fill rather than drop.
     available["fixture_run_difficulty"] = available["fixture_run_difficulty"].fillna(3.0)
+
+    # Attach what each player did in previous seasons before projecting.
+    # Without it, the projection has nothing to fall back on when this
+    # season is one gameweek old -- which is how the most-owned striker in
+    # the game got sold on the back of a single blank.
+    available = history_analysis.attach(available)
 
     team_context = consensus.load_team_context()
     projected = expected_points(

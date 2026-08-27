@@ -448,6 +448,21 @@ def opponent_story(
     return "**The fixture:** " + line
 
 
+def track_record_story(row: pd.Series) -> str:
+    """What the player did across completed seasons.
+
+    Deliberately placed before this season's form in the write-up during
+    the opening weeks. Two gameweeks in, "he scored 27 last season" is
+    simply better evidence than "he blanked on Saturday", and a write-up
+    that leads with the blank is telling you the least informative thing
+    it knows.
+    """
+    seasons = row.get("prior_seasons")
+    if not isinstance(seasons, str) or not seasons.strip():
+        return ""
+    return f"**Over full seasons:** {seasons}."
+
+
 def player_rationale(
     row: pd.Series, report_text: str | None = None, team_context: dict | None = None
 ) -> str:
@@ -477,6 +492,11 @@ def player_rationale(
     minutes = minutes_story(row)
     if minutes:
         parts.append(minutes)
+
+    # Before this season's form, because early on it outweighs it.
+    record = track_record_story(row)
+    if record:
+        parts.append(record)
 
     story = form_story(row)
     if story:
