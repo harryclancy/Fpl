@@ -65,6 +65,21 @@ SEASON_WEIGHTS = (1.0, 0.45)
 MIN_APPEARANCES_FOR_PRIOR = 10
 MIN_MINUTES_FOR_PRIOR = 450
 
+# The minimum players per position before the prior is fair to use.
+#
+# This exists because of a real failure. The first seeded file held six
+# players and every one was an attacker. That is not a neutral gap: a
+# player WITH a prior gets a stable two-season signal while a player
+# WITHOUT one is left on a single gameweek, so covering only attackers
+# systematically advantages attackers. The app duly recommended selling
+# Gabriel -- the highest-scoring defender in the game the previous season
+# on 209 points -- to keep a striker who had just blanked.
+#
+# Four is low on purpose. It is not "enough data", it is "enough that no
+# position is being silently left out of the memory the others have".
+MIN_PLAYERS_PER_POSITION = 4
+ALL_POSITIONS = ("GKP", "DEF", "MID", "FWD")
+
 
 @dataclass
 class SeasonRecord:
@@ -118,6 +133,7 @@ class PlayerHistory:
 
     name: str
     team: str = ""
+    position: str = ""
     seasons: list[SeasonRecord] = field(default_factory=list)
 
     @property
@@ -201,6 +217,7 @@ def load(season_file: str = "seasons.json") -> dict[str, PlayerHistory]:
             history = PlayerHistory(
                 name=str(entry["name"]),
                 team=str(entry.get("team", "")),
+                position=str(entry.get("position", "")).upper(),
                 seasons=[
                     SeasonRecord(
                         season=str(season.get("season", "")),
@@ -364,4 +381,58 @@ def load_trends(filename: str = "trends.json") -> Trends:
         carried=[str(c) for c in payload.get("carried_into_2026_27", [])],
         sources=[str(s) for s in payload.get("sources", [])],
         researched=str(payload.get("researched", "")),
+    )
+
+
+# --- Is the prior fair to use? ------------------------------------------
+
+@dataclass
+class Coverage:
+    """How evenly the prior covers the pitch.
+
+    Reported rather than assumed, because the damage from a lopsided prior
+    is invisible from the outside: every projection looks reasonable, and
+    the only symptom is that one position keeps getting sold.
+    """
+
+    per_position: dict[str, int] = field(default_factory=dict)
+    total: int = 0
+
+    @property
+    def thin_positions(self) -> list[str]:
+        return [
+            position
+            for position in ALL_POSITIONS
+            if self.per_position.get(position, 0) < MIN_PLAYERS_PER_POSITION
+        ]
+
+    @property
+    def balanced(self) -> bool:
+        return not self.thin_positions
+
+    @property
+    def warning(self) -> str:
+        if self.balanced:
+            return ""
+        thin = ", ".join(self.thin_positions)
+        return (
+            f"The season-history prior covers {self.total} players but is thin at {thin}. "
+            f"A player with a prior is judged on two seasons and one without is judged on this "
+            f"gameweek alone, so an uneven prior quietly marks whole positions down. Run "
+            f"scripts/fetch_history.py to fill it from the official API."
+        )
+
+
+def coverage(histories: dict[str, PlayerHistory] | None = None) -> Coverage:
+    """Counts distinct players per position in the prior."""
+    histories = load() if histories is None else histories
+    seen: dict[str, set[str]] = {}
+    for record in histories.values():
+        if not record.usable:
+            continue
+        seen.setdefault(record.position or "?", set()).add(record.name)
+    per_position = {position: len(names) for position, names in seen.items()}
+    return Coverage(
+        per_position=per_position,
+        total=len({r.name for r in histories.values() if r.usable}),
     )

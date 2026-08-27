@@ -156,6 +156,20 @@ reason to buy him on its own"* is useful; silence is not.
 Aim for **at least three arguments on each side** for any player at `full`
 depth, and cover every fixture that a decision could turn on.
 
+## Keep the season-history prior even across positions
+
+`data/history/seasons.json` is the memory the projection falls back on when
+this season is only a few games old. It must cover **all four positions**,
+at least four players each — `history.coverage()` reports it and a test
+fails if it's thin.
+
+This is not tidiness. A player with a prior is judged on two seasons; a
+player without one is judged on a single gameweek. So a prior covering only
+attackers does not merely miss defenders, it actively marks them down — the
+app recommended selling Gabriel, the highest-scoring defender in the game
+the previous season on 209 points, purely because he had no memory and a
+striker did. If you add players here, add them across the pitch.
+
 ## The rules that matter most
 
 - **Attribute every opinion to a named outlet.** "Analysts say" is not a source;

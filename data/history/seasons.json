@@ -1,62 +1,422 @@
 {
-  "note": "Completed-season records, used as the prior a small in-season sample gets shrunk toward.\n\nThis exists because of a specific failure: after one gameweek of 2026/27 the model dropped Haaland, who had taken five shots against Bournemouth without scoring. No human would do that, because a human knows he scored 27 league goals last season and 22 the season before. The model had no way to know that. Now it does.\n\nSeeded by hand from published season reviews, and only where the figure was clearly and consistently reported -- `scripts/fetch_history.py` replaces this wholesale with the official `history_past` numbers straight from the FPL API, which is exact and free. Until that has run, a player absent from this file has no prior, which the model treats as 'unknown', never as 'bad'. A newly promoted striker with no Premier League record must not be scored as though he had a bad one.\n\n`minutes` is omitted where the published source didn't carry it. Per-90 rates are then unavailable and read as zero; points-per-appearance, which is what actually feeds the projection, works from totals alone.",
-  "sources": [
-    "premierleague.com — FPL records and stats from 2024/25; FPL 2025/26 Team of the Season",
-    "fantasyfootballscout.co.uk — 2024/25 and 2025/26 season reviews",
-    "theanalyst.com (Opta) — Haaland or no Haaland? The If, When and Why for FPL Managers",
-    "fiso.co.uk — FPL 2025/26 Review: highest scoring players from every club"
-  ],
-  "seeded": "2026-08-27",
-  "players": [
+ "note": "Completed-season records, used as the prior a small in-season sample is shrunk toward.\n\nTHE BIAS THIS FILE CAN CAUSE, stated plainly because it already happened: the first version held six players and every one of them was an attacker. That does not merely leave defenders uncovered — it actively disadvantages them, because a covered player gets a stable two-season signal while an uncovered one is left with a one-gameweek sample. The app duly recommended selling Gabriel, the highest-scoring defender in the game last season on 209 points, while keeping a striker who had blanked. A partial prior is not a neutral prior.\n\nSo coverage is now checked, not assumed: `history.coverage()` reports players per position and a test fails if any position is thin. Fixing the numbers without fixing the check would leave the same trap set for next time.\n\n`appearances_estimated: true` marks a season where the published source gave total points but not appearances. The estimate used is a FULL 38-game season, deliberately the maximum, so points-per-appearance comes out as a floor rather than a guess upward — an unsourced figure can only understate a player here, never inflate one. `scripts/fetch_history.py` replaces the whole file with exact official numbers from the FPL API, which carries appearances directly.",
+ "sources": [
+  "premierleague.com — Gabriel's price jumps to £8.0m for 2026/27 Fantasy; FPL 2025/26 Team of the Season; FPL records and stats from 2024/25",
+  "fantasyfootballscout.co.uk — best defenders for FPL 2026/27; 2024/25 and 2025/26 season reviews",
+  "chaseyoursport.com — highest scoring FPL defenders and goalkeepers 2025/26",
+  "statz.ai — best FPL goalkeepers 2025/26",
+  "theanalyst.com (Opta) — Haaland or no Haaland?",
+  "chaseyoursport.com — highest scoring FPL forwards 2025/26"
+ ],
+ "seeded": "2026-08-27",
+ "players": [
+  {
+   "name": "Haaland",
+   "aliases": [
+    "Erling Haaland"
+   ],
+   "team": "MCI",
+   "position": "FWD",
+   "seasons": [
     {
-      "name": "Haaland",
-      "aliases": ["Erling Haaland", "Erling Braut Haaland"],
-      "team": "MCI",
-      "seasons": [
-        {"season": "2025/26", "goals": 27, "assists": 8, "appearances": 35, "total_points": 239},
-        {"season": "2024/25", "goals": 22, "assists": 3, "appearances": 31, "total_points": 181}
-      ]
+     "season": "2025/26",
+     "goals": 27,
+     "assists": 8,
+     "appearances": 35,
+     "total_points": 239
     },
     {
-      "name": "Salah",
-      "aliases": ["Mohamed Salah", "M.Salah"],
-      "team": "LIV",
-      "seasons": [
-        {"season": "2025/26", "appearances": 34, "total_points": 116},
-        {"season": "2024/25", "goals": 29, "assists": 18, "appearances": 38, "total_points": 344}
-      ]
-    },
-    {
-      "name": "Mbeumo",
-      "aliases": ["Bryan Mbeumo"],
-      "team": "MUN",
-      "seasons": [
-        {"season": "2024/25", "appearances": 38, "total_points": 236}
-      ]
-    },
-    {
-      "name": "Isak",
-      "aliases": ["Alexander Isak"],
-      "team": "NEW",
-      "seasons": [
-        {"season": "2024/25", "appearances": 34, "total_points": 211}
-      ]
-    },
-    {
-      "name": "Palmer",
-      "aliases": ["Cole Palmer", "C.Palmer"],
-      "team": "CHE",
-      "seasons": [
-        {"season": "2025/26", "appearances": 34, "total_points": 102}
-      ]
-    },
-    {
-      "name": "Gibbs-White",
-      "aliases": ["Morgan Gibbs-White"],
-      "team": "NFO",
-      "seasons": [
-        {"season": "2025/26", "appearances": 36, "total_points": 188}
-      ]
+     "season": "2024/25",
+     "goals": 22,
+     "assists": 3,
+     "appearances": 31,
+     "total_points": 181
     }
-  ]
+   ]
+  },
+  {
+   "name": "Isak",
+   "aliases": [
+    "Alexander Isak"
+   ],
+   "team": "NEW",
+   "position": "FWD",
+   "seasons": [
+    {
+     "season": "2024/25",
+     "appearances": 34,
+     "total_points": 211
+    }
+   ]
+  },
+  {
+   "name": "Salah",
+   "aliases": [
+    "Mohamed Salah",
+    "M.Salah"
+   ],
+   "team": "LIV",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 34,
+     "total_points": 116
+    },
+    {
+     "season": "2024/25",
+     "goals": 29,
+     "assists": 18,
+     "appearances": 38,
+     "total_points": 344
+    }
+   ]
+  },
+  {
+   "name": "Mbeumo",
+   "aliases": [
+    "Bryan Mbeumo"
+   ],
+   "team": "MUN",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2024/25",
+     "appearances": 38,
+     "total_points": 236
+    }
+   ]
+  },
+  {
+   "name": "Palmer",
+   "aliases": [
+    "Cole Palmer",
+    "C.Palmer"
+   ],
+   "team": "CHE",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 34,
+     "total_points": 102
+    }
+   ]
+  },
+  {
+   "name": "Gibbs-White",
+   "aliases": [
+    "Morgan Gibbs-White"
+   ],
+   "team": "NFO",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 36,
+     "total_points": 188
+    }
+   ]
+  },
+  {
+   "name": "B.Fernandes",
+   "aliases": [
+    "Bruno Fernandes"
+   ],
+   "team": "MUN",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "assists": 21,
+     "appearances": 38,
+     "total_points": 196,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Semenyo",
+   "aliases": [
+    "Antoine Semenyo"
+   ],
+   "team": "MCI",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 180,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Rice",
+   "aliases": [
+    "Declan Rice"
+   ],
+   "team": "ARS",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 175,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Anderson",
+   "aliases": [
+    "Elliot Anderson"
+   ],
+   "team": "NFO",
+   "position": "MID",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 170,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Gabriel",
+   "aliases": [
+    "Gabriel Magalhaes",
+    "Gabriel Magalhães",
+    "Gabriel Dos Santos"
+   ],
+   "team": "ARS",
+   "position": "DEF",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "goals": 3,
+     "assists": 5,
+     "clean_sheets": 18,
+     "appearances": 30,
+     "total_points": 209
+    }
+   ]
+  },
+  {
+   "name": "Guehi",
+   "aliases": [
+    "Marc Guehi",
+    "Marc Guéhi"
+   ],
+   "team": "CRY",
+   "position": "DEF",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "clean_sheets": 14,
+     "appearances": 38,
+     "total_points": 179,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Van Dijk",
+   "aliases": [
+    "Virgil van Dijk",
+    "Virgil Van Dijk"
+   ],
+   "team": "LIV",
+   "position": "DEF",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "goals": 6,
+     "appearances": 38,
+     "total_points": 175,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Senesi",
+   "aliases": [
+    "Marcos Senesi"
+   ],
+   "team": "BOU",
+   "position": "DEF",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 175,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Raya",
+   "aliases": [
+    "David Raya"
+   ],
+   "team": "ARS",
+   "position": "GKP",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 162,
+     "appearances_estimated": true,
+     "clean_sheets": 19
+    }
+   ]
+  },
+  {
+   "name": "Kelleher",
+   "aliases": [
+    "Caoimhin Kelleher",
+    "Caoimhín Kelleher"
+   ],
+   "team": "BRE",
+   "position": "GKP",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 143,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Bowen",
+   "aliases": [
+    "Jarrod Bowen"
+   ],
+   "team": "WHU",
+   "position": "FWD",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 187,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Thiago",
+   "aliases": [
+    "Igor Thiago"
+   ],
+   "team": "BRE",
+   "position": "FWD",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 181,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Joao Pedro",
+   "aliases": [
+    "João Pedro",
+    "Joao Pedro Junqueira"
+   ],
+   "team": "CHE",
+   "position": "FWD",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 177,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Watkins",
+   "aliases": [
+    "Ollie Watkins"
+   ],
+   "team": "AVL",
+   "position": "FWD",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 167,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Roefs",
+   "aliases": [
+    "Robin Roefs"
+   ],
+   "team": "SUN",
+   "position": "GKP",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 136,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Pickford",
+   "aliases": [
+    "Jordan Pickford"
+   ],
+   "team": "EVE",
+   "position": "GKP",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 135,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Donnarumma",
+   "aliases": [
+    "Gianluigi Donnarumma"
+   ],
+   "team": "MCI",
+   "position": "GKP",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 135,
+     "appearances_estimated": true
+    }
+   ]
+  },
+  {
+   "name": "Verbruggen",
+   "aliases": [
+    "Bart Verbruggen"
+   ],
+   "team": "BHA",
+   "position": "GKP",
+   "seasons": [
+    {
+     "season": "2025/26",
+     "appearances": 38,
+     "total_points": 130,
+     "appearances_estimated": true
+    }
+   ]
+  }
+ ]
 }

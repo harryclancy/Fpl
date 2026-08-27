@@ -1038,6 +1038,16 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     st.markdown("**How much of this is researched**")
     render_coverage_panel(scored, owned_ids, next_event)
 
+    # An uneven season-history prior silently marks whole positions down,
+    # and the only visible symptom is that one position keeps getting
+    # sold. Say it out loud rather than letting it look like an opinion.
+    try:
+        prior_coverage = history.coverage()
+        if not prior_coverage.balanced:
+            st.warning(prior_coverage.warning)
+    except Exception:
+        pass
+
     st.divider()
     plan = render_transfer_plan(
         players, fixtures, teams, next_event, squad, free_transfers, key_prefix="front"

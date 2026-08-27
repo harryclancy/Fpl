@@ -229,3 +229,74 @@ def test_missing_trends_file_degrades_quietly(monkeypatch, tmp_path):
     trends = history.load_trends()
     assert trends.seasons == []
     assert trends.rules == []
+
+
+# --- a partial prior is a biased prior -----------------------------------
+
+def test_the_prior_covers_every_position():
+    """The Gabriel bug.
+
+    The first seeded history held six players and all six were attackers.
+    That is not a neutral gap. A player WITH a prior is judged on two
+    seasons; a player WITHOUT one is judged on a single gameweek. Covering
+    only attackers therefore marks every defender down, and the app duly
+    recommended selling Gabriel — the highest-scoring defender in the game
+    the previous season on 209 points — while keeping a striker who had
+    blanked.
+
+    Fixing the numbers without fixing this check would leave the same trap
+    set for the next person to seed the file.
+    """
+    report = history.coverage()
+
+    assert report.balanced, report.warning
+    for position in history.ALL_POSITIONS:
+        assert report.per_position.get(position, 0) >= history.MIN_PLAYERS_PER_POSITION, (
+            f"{position} has only {report.per_position.get(position, 0)} players in the prior"
+        )
+
+
+def test_a_lopsided_prior_is_reported_rather_than_used_silently():
+    attackers_only = {
+        "a": history.PlayerHistory(
+            name="A", position="FWD",
+            seasons=[history.SeasonRecord("2025/26", appearances=30, total_points=200)],
+        )
+    }
+    report = history.coverage(attackers_only)
+
+    assert not report.balanced
+    assert "DEF" in report.thin_positions
+    assert "GKP" in report.thin_positions
+    assert "quietly marks whole positions down" in report.warning
+
+
+def test_the_highest_scoring_defender_has_a_prior_worth_something():
+    """209 points across a season should read as an elite prior, not a gap."""
+    records = history.load()
+    gabriel = records.get("gabriel")
+
+    assert gabriel is not None, "Gabriel missing from data/history/seasons.json"
+    assert gabriel.points_per_start > 6.0
+    assert gabriel.position == "DEF"
+    # And on a par with the striker the app was happy to keep.
+    assert gabriel.points_per_start >= records["haaland"].points_per_start * 0.9
+
+
+def test_an_unsourced_appearance_count_understates_rather_than_inflates():
+    """Where a source gave points but not appearances, the file assumes a
+    full 38-game season — deliberately the maximum, so points-per-appearance
+    comes out as a floor. An unsourced figure can only understate a player."""
+    import json as _json
+    from pathlib import Path as _Path
+
+    payload = _json.loads(
+        (_Path(__file__).resolve().parent.parent / "data" / "history" / "seasons.json").read_text()
+    )
+    for player in payload["players"]:
+        for season in player["seasons"]:
+            if season.get("appearances_estimated"):
+                assert season["appearances"] == 38, (
+                    f"{player['name']}: an estimated appearance count must be a full season, "
+                    f"so the rate is a floor"
+                )
