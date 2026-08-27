@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "researched": "2026-08-19",
+  "researched": "2026-08-26",
   "note": "Club-level context and club-level expert verdicts.\n\nTwo different things live here.\n\n`european_competition` and `new_manager` are minutes risk: midweek football means rotation, an unsettled XI means uncertainty, and minutes are the foundation every projection sits on.\n\n`stances` is the part that was missing. When analysts say 'avoid Bournemouth assets until their schedule clears', that verdict applies to all twenty-odd players at the club, not to the one or two an article happened to name. Stored as prose on a single player it reached a single player, and the optimiser happily picked the other Bournemouth defenders instead -- the verdict was in the app but not in the algorithm. Each stance is machine-readable and applies to every player at the club in scope.\n\nEach stance carries `until_gameweek` so it expires on its own rather than rotting into a permanent hardcode, and the penalty is scaled by how much of the projection horizon it actually covers.\n\nThis file is a LOOKUP KEYED BY SHORT NAME, not a claim about who is in the league. Entries for clubs that aren't in the current Premier League are simply never matched, and a club missing from here just gets neutral context. That is deliberate: getting the promoted/relegated set wrong should cost nothing, because the live API is the authority on who is actually playing.",
   "stance_legend": {
     "avoid": "Analysts are actively steering managers away from this club's assets for now.",
@@ -41,11 +41,12 @@
             "DEF"
           ],
           "until_gameweek": 6,
-          "case": "Frank Lampard's promoted side visit last season's top two inside the first three gameweeks -- Arsenal away in GW1 and Manchester City away in GW3 -- which is as hostile an opening stretch as a newly promoted side has been handed. Every Coventry defender is priced at £4.0m, which reads as value and is really a warning: the pricing reflects what the market expects them to concede. The specific advice is not to build a defence that needs two promoted centre-backs to start every week.",
+          "case": "Frank Lampard's promoted side visit last season's top two inside the first three gameweeks -- Arsenal away in GW1 and Manchester City away in GW3 -- which is as hostile an opening stretch as a newly promoted side has been handed. Every Coventry defender is priced at £4.0m, which reads as value and is really a warning: the pricing reflects what the market expects them to concede. The specific advice is not to build a defence that needs two promoted centre-backs to start every week. Gameweek 1 did nothing to soften this: they opened away at Arsenal, who kept a clean sheet and had a defender return an assist.",
           "sources": [
-            "RotoWire",
             "Beat FPL",
-            "OneFPL"
+            "Fantasy Football Scout",
+            "OneFPL",
+            "RotoWire"
           ]
         },
         {
@@ -69,17 +70,16 @@
       "promoted": true,
       "stances": [
         {
-          "stance": "avoid",
+          "stance": "caution",
           "scope": [
             "GKP",
             "DEF"
           ],
-          "until_gameweek": 6,
-          "case": "Hull open against a Manchester United side sitting top of the fixture ticker, and are named alongside Coventry as a promoted defence best avoided early. A promoted defender is only worth owning if he plays and keeps clean sheets, and this run offers neither -- cheap defenders can hold squad structure from the bench without ever needing to start.",
+          "until_gameweek": 5,
+          "case": "Downgraded from avoid after Gameweek 1: Hull City won, which was among the biggest upsets of the opening weekend and directly contradicts the pre-season reading that their defence was unownable. The caution stands rather than the ban — one result does not undo a promoted side's fixture run, and the sample is a single match — but the evidence has moved and this verdict moves with it.",
           "sources": [
-            "RotoWire",
-            "Beat FPL",
-            "OneFPL"
+            "Fantasy Football Scout",
+            "AllAboutFPL"
           ]
         }
       ]
@@ -238,7 +238,22 @@
     {
       "short_name": "BHA",
       "european_competition": "uecl",
-      "new_manager": false
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 6,
+          "case": "Brighton allowed their opponents zero shots on target in Gameweek 1, and were among the best defences in the league last season — so this is a continuation rather than a one-off. Analysts are citing that defensive form as a reason to avoid opposing attackers, which is the same signal read from the other side. De Cuyper's advanced role adds attacking returns to a defence already worth owning for clean sheets.",
+          "sources": [
+            "Fantasy Football Fix",
+            "AllAboutFPL"
+          ]
+        }
+      ]
     },
     {
       "short_name": "TOT",

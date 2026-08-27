@@ -11,10 +11,10 @@ Everything the app knows that isn't in the FPL API.
 
 ## How they're refreshed
 
-By asking Claude in a chat session, before a deadline you care about:
-
-> Refresh the research for GW*n* — search the web for what analysts are
-> saying and update `data/consensus/` and `data/odds/`.
+Type `/refresh` in a Claude Code session on this repo, before a deadline
+you care about. That's the whole thing — the command in
+`.claude/commands/refresh.md` carries the full brief, so it does the same
+job the same way every week.
 
 This costs nothing beyond the session itself. It replaced an automated
 workflow that called the Anthropic API on a schedule: that version worked,
