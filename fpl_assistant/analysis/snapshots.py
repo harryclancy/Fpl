@@ -39,6 +39,11 @@ class Snapshot:
     total_cost: float
     expected_points: float
     player_names: dict[str, str] = field(default_factory=dict)
+    # What each player was projected to score, keyed by id. Without this a
+    # snapshot records the decision but not the reasoning, and the model
+    # can never be checked against what actually happened -- which is the
+    # difference between a record and an audit.
+    projected: dict[str, float] = field(default_factory=dict)
 
     @property
     def saved_at_display(self) -> str:
@@ -68,6 +73,7 @@ def save(
     gameweek: int,
     solution,
     names: dict[int, str] | None = None,
+    projected: dict[int, float] | None = None,
     deadline_passed: bool = False,
 ) -> Snapshot | None:
     """Persists this gameweek's recommendation, if the deadline is ahead.
@@ -98,6 +104,7 @@ def save(
         total_cost=float(solution.total_cost),
         expected_points=float(solution.expected_points),
         player_names={str(k): str(v) for k, v in (names or {}).items()},
+        projected={str(k): round(float(v), 2) for k, v in (projected or {}).items()},
     )
     try:
         SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)

@@ -17,6 +17,7 @@ from fpl_assistant import api
 from fpl_assistant.analysis import (
     ask as ask_engine,
     captaincy,
+    accuracy,
     captain_call,
     odds as odds_module,
     chips,
@@ -31,6 +32,7 @@ from fpl_assistant.analysis import (
     injuries,
     my_squad as my_squad_analysis,
     omissions,
+    planner,
     scenarios,
     gameweek_state,
     snapshots,
@@ -101,6 +103,42 @@ def cached_solution(scored, template_weight):
     """The solved squad. Keyed on the rank strategy, so moving that slider
     re-solves — and nothing else does."""
     return squad_builder.recommend_squad(scored, template_weight=template_weight)
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def cached_multiweek_plan(scored, owned_ids, bank, free_transfers, horizon):
+    """The multi-gameweek schedule.
+
+    Cached hard, and separately from the single-week plan, because it is
+    the most expensive thing the app does — a few seconds of branch and
+    bound rather than the fraction of a second the weekly solve takes.
+    Without this it would re-solve on every tab click.
+    """
+    names = dict(zip(scored["id"], scored["web_name"]))
+    return planner.plan_transfers(
+        scored,
+        list(owned_ids),
+        bank=bank,
+        free_transfers=free_transfers,
+        horizon=horizon,
+        names=names,
+    )
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def cached_track_record(positions, averages, gameweeks):
+    """Scores every finished gameweek that has a snapshot.
+
+    An hour's TTL rather than ten minutes: results stop changing once the
+    bonus points settle, and each gameweek costs a live-endpoint fetch.
+    """
+    scores = accuracy.score_history(
+        list(gameweeks),
+        api.get_event_live,
+        positions=dict(positions),
+        averages=dict(averages),
+    )
+    return scores, accuracy.calibrate(scores)
 
 
 RANK_STRATEGIES = {
@@ -890,6 +928,10 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     render_transfer_plan(
         players, fixtures, teams, next_event, squad, free_transfers, key_prefix="front"
     )
+    render_multiweek_plan(
+        scored, owned_ids, float(squad.bank or 0.0), free_transfers,
+        key_prefix="front_multi", players=players,
+    )
 
     st.divider()
     st.markdown("#### Your best XI from what you own")
@@ -992,6 +1034,8 @@ def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
                     next_event, solution,
                     names={int(pid): str(scored.loc[pid, "web_name"])
                            for pid in solution.squad_ids if pid in scored.index},
+                    projected={int(pid): float(scored.loc[pid, "xp_next"])
+                               for pid in solution.squad_ids if pid in scored.index},
                     deadline_passed=False,
                 )
             except Exception:
@@ -1856,6 +1900,217 @@ def render_transfer_plan(players, fixtures, teams, next_event, squad, free_trans
         st.caption("Within your free transfers, so no points hit.")
 
 
+def render_multiweek_plan(scored, owned_ids, bank, free_transfers, key_prefix="multi", players=None):
+    """The transfer schedule, several gameweeks at a time.
+
+    Shown alongside the weekly move rather than instead of it, because
+    they answer different questions and can honestly disagree. The weekly
+    solve says "this is the best move available now"; the planner says
+    "and here is why making it now is or isn't the right time". When the
+    planner recommends holding and the weekly solve finds an upgrade, the
+    planner is usually right — it can see the transfer being spent better
+    two weeks out, and the weekly solve cannot see two weeks out at all.
+    """
+    st.markdown("#### The next few gameweeks")
+
+    if players is not None:
+        # An injured player you own is dropped from the projection pool, and
+        # a planner that can't see him can't plan the transfer that moves
+        # him on -- which is the transfer you most need planned.
+        scored = planner.with_owned_players(scored, players, owned_ids)
+
+    horizon = st.slider(
+        "Gameweeks to plan over", 2, 5, planner.DEFAULT_HORIZON,
+        help=(
+            "Longer plans stage bigger moves, but every extra week rests on team news "
+            "that hasn't happened yet."
+        ),
+        key=f"{key_prefix}_horizon",
+    )
+
+    with st.spinner("Planning the next few gameweeks…"):
+        try:
+            plan = cached_multiweek_plan(
+                scored, tuple(int(i) for i in owned_ids), float(bank),
+                int(free_transfers), int(horizon),
+            )
+        except Exception as exc:
+            st.info(
+                f"Couldn't build a multi-gameweek plan ({exc}). The single-week "
+                "recommendation above still stands."
+            )
+            return None
+
+    if not plan.weeks:
+        return None
+
+    st.success(f"**{plan.headline}**")
+
+    columns = st.columns(3)
+    columns[0].metric(
+        "Projected over the plan", f"{plan.total_projected:.0f}",
+        help="Starting XI plus captain each week, minus any hits, discounted for distance.",
+    )
+    columns[1].metric(
+        "Versus holding", f"{plan.gain:+.1f}",
+        help="Against fielding the best XI from your current fifteen every week and making no transfers.",
+    )
+    columns[2].metric("Hits taken", plan.total_hits or "None")
+
+    for line in plan.schedule:
+        st.markdown(f"- {line}")
+
+    for note in plan.reasoning:
+        st.caption(note)
+
+    return plan
+
+
+def render_track_record_tab(players, events):
+    """Whether the app's advice has actually been any good.
+
+    Everything else here is a projection. This is the one page that can
+    tell you the projections are wrong, which makes it the only page worth
+    checking before you trust the rest.
+    """
+    section_header(
+        "Track record",
+        "Every recommendation this app froze before a deadline, marked against what happened",
+    )
+
+    with st.expander("What am I looking at?"):
+        st.markdown(
+            "**A snapshot** is a file recording exactly what this app recommended for a "
+            "gameweek, written *before* that gameweek's deadline and never touched "
+            "afterwards. It exists because player stats update live: by the Sunday of a "
+            "gameweek the model can see who scored on the Saturday and will happily "
+            "\"recommend\" them — advice that was impossible at the only moment you could "
+            "have used it. The snapshot is the version you could actually have acted on.\n\n"
+            "**The workflow** is a small job GitHub runs on its own computers every three "
+            "hours, for free. It checks whether a deadline is coming up and, if so, writes "
+            "and commits that gameweek's snapshot. That's the whole job — it just means "
+            "nobody has to remember to open the app at 11pm on a Friday.\n\n"
+            "**This page** marks one against the other. Nothing here is reconstructed: a "
+            "gameweek with no snapshot is skipped rather than scored, because advice graded "
+            "against results it could already see wouldn't mean anything."
+        )
+
+    finished = []
+    try:
+        for event_id, row in events.iterrows():
+            if bool(row.get("finished")):
+                finished.append(int(event_id))
+    except Exception:
+        finished = []
+
+    if not finished:
+        st.info("No gameweeks have finished yet this season — nothing to mark.")
+        return
+
+    averages = {}
+    for event_id in finished:
+        try:
+            average = events.loc[event_id, "average_entry_score"]
+            if pd.notna(average):
+                averages[event_id] = float(average)
+        except Exception:
+            continue
+
+    positions = {int(pid): pos for pid, pos in zip(players["id"], players["position"])}
+
+    with st.spinner("Marking past gameweeks…"):
+        try:
+            scores, report = cached_track_record(
+                tuple(sorted(positions.items())),
+                tuple(sorted(averages.items())),
+                tuple(finished),
+            )
+        except Exception as exc:
+            st.info(f"Couldn't load past results ({exc}).")
+            return
+
+    if not scores:
+        st.info(
+            "No saved recommendations to mark yet. A gameweek only gets scored if the app "
+            "wrote a snapshot before its deadline — advice judged against results it could "
+            "already see wouldn't mean anything, so gameweeks without one are skipped rather "
+            "than reconstructed."
+        )
+        return
+
+    total = sum(s.xi_points for s in scores)
+    beat = [s.vs_average for s in scores if s.vs_average is not None]
+    columns = st.columns(4)
+    columns[0].metric("Gameweeks marked", len(scores))
+    columns[1].metric("Points scored", total)
+    if beat:
+        columns[2].metric(
+            "Versus the average manager", f"{sum(beat):+.0f}",
+            help="Total difference against the FPL-wide average score for those gameweeks.",
+        )
+    columns[3].metric(
+        "Captain right", f"{sum(1 for s in scores if s.captain_was_best)}/{len(scores)}",
+        help="How often the armband went on the highest scorer in the recommended XI.",
+    )
+
+    st.markdown("#### How the projections are holding up")
+    st.markdown(report.verdict)
+    for note in report.position_notes:
+        st.markdown(f"- {note}")
+    st.caption(
+        "Bias is the average of actual minus projected. A model that is consistently high or "
+        "low is miscalibrated but still ranks players correctly, which is all the optimiser "
+        "needs. A model that is right on average while being wrong about *which* players is "
+        "the worse problem, and that is what the per-position split is for."
+    )
+
+    if report.worst_overrated or report.worst_underrated:
+        left, right = st.columns(2)
+        with left:
+            st.markdown("**Most overrated**")
+            for player in report.worst_overrated:
+                st.markdown(
+                    f"- {player.name} — projected {player.projected:.1f}, scored {player.actual}"
+                )
+            if not report.worst_overrated:
+                st.caption("Nothing badly overrated.")
+        with right:
+            st.markdown("**Most underrated**")
+            for player in report.worst_underrated:
+                st.markdown(
+                    f"- {player.name} — projected {player.projected:.1f}, scored {player.actual}"
+                )
+            if not report.worst_underrated:
+                st.caption("Nothing badly underrated.")
+
+    st.markdown("#### Gameweek by gameweek")
+    for score in sorted(scores, key=lambda s: -s.gameweek):
+        header = f"GW{score.gameweek} — {score.xi_points} points"
+        if score.vs_average is not None:
+            header += f" ({score.vs_average:+.0f} vs average)"
+        with st.expander(header, expanded=score.gameweek == max(s.gameweek for s in scores)):
+            st.markdown(score.verdict)
+            table = pd.DataFrame(
+                [
+                    {
+                        "Player": p.name,
+                        "Pos": p.position,
+                        "In XI": "✓" if p.started else "",
+                        "C": "👑" if p.captain else "",
+                        "Projected": p.projected,
+                        "Actual": p.actual,
+                        "Miss": p.error,
+                    }
+                    for p in sorted(score.players, key=lambda p: (not p.started, -p.actual))
+                ]
+            )
+            st.dataframe(table, width='stretch', hide_index=True)
+            st.caption(
+                f"The XI was projected to score {score.projected_xi:.1f} and scored "
+                f"{score.xi_points} ({score.projection_error:+.1f})."
+            )
+
+
 def render_transfers_tab(players, fixtures, teams, next_event, squad):
     section_header("Transfer suggestions")
 
@@ -1869,6 +2124,16 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
         pass  # not critical to the rest of the tab
 
     render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers)
+
+    st.markdown("---")
+    render_multiweek_plan(
+        cached_scores(players, fixtures, teams, next_event),
+        [p.player_id for p in squad.picks],
+        float(squad.bank or 0.0),
+        free_transfers,
+        key_prefix="transfers_tab",
+        players=players,
+    )
 
     st.markdown("---")
     # The projection has to be attached here, not just the fixture columns.
@@ -1952,6 +2217,9 @@ def main():
         # Once there's a squad to work from, the front page is a weekly
         # plan rather than a from-scratch build, and the name should say so.
         tab_names = ["My Plan", "My Squad"] + tab_names[1:] + ["Transfers"]
+    # Last, deliberately. It's the page that marks everything the others
+    # said, so it belongs at the end of the argument rather than the front.
+    tab_names = tab_names + ["Track record"]
 
     tabs = st.tabs(tab_names)
     tab_map = dict(zip(tab_names, tabs))
@@ -1991,6 +2259,9 @@ def main():
 
     with tab_map["Odds & Expert Take"]:
         render_report_tab(players, fixtures, teams, next_event)
+
+    with tab_map["Track record"]:
+        render_track_record_tab(players, events)
 
     if team_id:
         with tab_map["Transfers"]:

@@ -394,9 +394,36 @@ def _with_confirmed_squad(monkeypatch, preseason=False):
         fixture["finished"] = fixture["event"] == 1
 
     # A legal fifteen out of the synthetic pool.
+    #
+    # Spread across clubs on purpose. Taking the first five defenders in id
+    # order gives five players from the same team, which breaks FPL's
+    # three-per-club rule -- and an illegal squad makes every solver that
+    # starts from it infeasible, so the transfer and planning paths were
+    # silently never exercised by these tests at all.
     elements = bootstrap["elements"]
-    by_position = {t: [e["id"] for e in elements if e["element_type"] == t] for t in (1, 2, 3, 4)}
-    chosen = by_position[1][:2] + by_position[2][:5] + by_position[3][:5] + by_position[4][:3]
+    by_team: dict[int, dict[int, list[int]]] = {}
+    for element in elements:
+        by_team.setdefault(element["team"], {}).setdefault(
+            element["element_type"], []
+        ).append(element["id"])
+
+    per_club: dict[int, int] = {}
+
+    def _take(element_type: int, count: int) -> list[int]:
+        picked = []
+        for team in sorted(by_team):
+            if len(picked) == count:
+                break
+            if per_club.get(team, 0) >= 3:
+                continue
+            available = by_team[team].get(element_type, [])
+            if not available:
+                continue
+            picked.append(available.pop(0))
+            per_club[team] = per_club.get(team, 0) + 1
+        return picked
+
+    chosen = _take(1, 2) + _take(2, 5) + _take(3, 5) + _take(4, 3)
     # The manager's own captain is a forward, as a real one would be. The
     # app must display whatever they actually chose here — it's their
     # squad, not a recommendation — so this needs to be realistic rather
@@ -549,3 +576,87 @@ def test_the_front_page_explains_each_player(monkeypatch):
     assert "Why each of them" in page
     assert "Recent form:" in page, "no qualitative form line"
     assert "The fixture:" in page, "no opponent context"
+
+
+# --- marking the app's own homework -------------------------------------
+
+def test_the_track_record_tab_says_so_when_there_is_nothing_to_mark(patch_api):
+    """No snapshots means no marking, and it has to say that rather than
+    quietly reconstructing past advice from results it can already see."""
+    patch_api(preseason=False)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=60)
+
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+    text = _all_markdown(at) + "\n".join(str(i.value) for i in at.info)
+    assert "Track record" in text or any(
+        "nothing to mark" in str(i.value) or "No gameweeks have finished" in str(i.value)
+        for i in at.info
+    )
+
+
+def test_a_finished_gameweek_with_a_snapshot_is_actually_marked(monkeypatch, tmp_path):
+    """The end-to-end version of the feature.
+
+    A snapshot written before GW1's deadline, GW1 finished, live results
+    available — the app must lay one against the other and report a score,
+    including when the advice was bad.
+    """
+    from dataclasses import asdict
+
+    from fpl_assistant.analysis import snapshots
+
+    # The autouse `_isolate_snapshots` fixture has already pointed this at
+    # a temporary directory; writing into it is what makes the app find a
+    # snapshot without touching the real one.
+    directory = snapshots.SNAPSHOT_DIR
+
+    chosen = _with_confirmed_squad(monkeypatch)
+    snapshot = snapshots.Snapshot(
+        gameweek=1,
+        saved_at="2026-08-15T10:00:00+00:00",
+        squad_ids=chosen,
+        starting_ids=chosen[:11],
+        bench_ids=chosen[11:],
+        captain_id=chosen[12],
+        vice_captain_id=chosen[1],
+        formation="4-4-2",
+        total_cost=99.5,
+        expected_points=61.0,
+        player_names={str(pid): f"P{pid}" for pid in chosen},
+        projected={str(pid): 5.0 for pid in chosen},
+    )
+    (directory / "gw1.json").write_text(json.dumps(asdict(snapshot)))
+
+    monkeypatch.setattr(
+        api, "get_event_live",
+        lambda event: {
+            "elements": [
+                {"id": pid, "stats": {"total_points": 4, "minutes": 90}} for pid in chosen
+            ]
+        },
+    )
+
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=180)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    page = _all_markdown(at)
+    # Projected 5.0 across the board, scored 4 — the app must own that.
+    assert "1.00 points high" in page
+
+
+# --- planning more than one week ahead ----------------------------------
+
+def test_the_front_page_plans_beyond_the_next_gameweek(monkeypatch):
+    """A one-week optimiser can't bank a transfer or stage a two-part
+    move. The schedule is where those show up, so it has to reach the
+    page rather than just existing as a module."""
+    _with_confirmed_squad(monkeypatch)
+    at = AppTest.from_file(APP_PATH)
+    at.run(timeout=180)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
+
+    page = _all_markdown(at) + "\n".join(str(c.value) for c in at.caption)
+    assert "The next few gameweeks" in page
+    assert "first move is a decision" in page

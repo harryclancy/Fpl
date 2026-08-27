@@ -149,3 +149,37 @@ def test_the_repo_holds_no_snapshot_built_from_test_data():
         assert "Adeyemi" not in names and "Okafor" not in names, (
             f"{path.name} contains synthetic test players"
         )
+
+
+# --- the projections, kept alongside the decision ------------------------
+
+def test_a_snapshot_records_what_each_player_was_projected_to_score():
+    """Without this the snapshot is a record, not an audit.
+
+    Knowing the app picked a player tells you nothing about whether the
+    model was right — you need the number it committed to beforehand, or
+    there is no way to check the projections against what happened.
+    """
+    snapshots.save(
+        3, _solution(), names={1: "Haaland"}, projected={1: 7.4, 2: 5.128},
+    )
+    loaded = snapshots.load(3)
+
+    assert loaded.projected["1"] == 7.4
+    assert loaded.projected["2"] == 5.13  # rounded, not truncated
+
+
+def test_an_old_snapshot_without_projections_still_loads():
+    """Snapshots written before projections were recorded must not break
+    the app — a missing field means 'unknown', not 'corrupt file'."""
+    import json
+
+    snapshots.save(4, _solution())
+    path = snapshot_dir_path = snapshots.SNAPSHOT_DIR / "gw4.json"
+    data = json.loads(path.read_text())
+    del data["projected"]
+    path.write_text(json.dumps(data))
+
+    loaded = snapshots.load(4)
+    assert loaded is not None
+    assert loaded.projected == {}

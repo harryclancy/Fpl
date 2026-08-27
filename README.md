@@ -61,6 +61,36 @@ data/reports/       # weekly odds/expert-take reports, gw{N}.md (committed — s
 tests/              # sanity tests against synthetic data, no network needed
 ```
 
+## Three words the app uses that don't explain themselves
+
+**Snapshot.** A file recording exactly what the app recommended for a
+gameweek, written *before* that gameweek's deadline and never touched
+afterwards. It exists because player stats update live: on the Sunday of a
+gameweek the model can see who scored on the Saturday, and it will happily
+"recommend" them — advice that was impossible at the only moment it could
+have been used. The snapshot is the version you could actually have acted
+on. It gets rewritten as often as you like while the deadline is still
+ahead (late team news is exactly when the advice improves), and is frozen
+solid the second the first ball is kicked. It doubles as the receipt the
+Track record tab marks the app against.
+
+**Workflow.** A small job GitHub runs on a schedule, on GitHub's own
+computers, for free. This repo has one: every three hours it checks
+whether a gameweek deadline is coming up, and if so it writes that
+gameweek's snapshot and commits it. That's all it does. It matters because
+snapshots have to be written before a deadline, and nobody wants to
+remember to open the app at 11pm on a Friday to make that happen. It costs
+nothing and needs no API key.
+
+**Horizon decay.** Projections run five gameweeks ahead, but the further
+out you look the less those numbers are worth — fixtures get rearranged,
+players get injured, form turns, and crucially *you get to make the
+decision again* before that gameweek arrives. So each week further out is
+multiplied by 0.84: next week counts fully, the week after at 84%, the one
+after that at 71%, and so on. Without it the optimiser treats a projection
+for five weeks' time as being as reliable as one for Saturday, and starts
+making expensive moves today for gains that may never materialise.
+
 ## Notes on data sources
 
 Fixtures, prices, form, ownership, and the editorially maintained

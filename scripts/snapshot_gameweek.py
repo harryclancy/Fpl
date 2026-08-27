@@ -76,7 +76,14 @@ def main() -> int:
         if pid in scored.index
     }
 
-    saved = snapshots.save(gameweek, solution, names=names, deadline_passed=False)
+    projected = {
+        int(pid): float(scored.loc[pid, "xp_next"])
+        for pid in solution.squad_ids
+        if pid in scored.index
+    }
+    saved = snapshots.save(
+        gameweek, solution, names=names, projected=projected, deadline_passed=False
+    )
     if saved is None:
         print(f"Couldn't write the GW{gameweek} snapshot.")
         return 0
