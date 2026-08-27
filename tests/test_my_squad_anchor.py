@@ -120,3 +120,37 @@ def test_a_squad_from_a_previous_gameweek_is_not_current():
     confirmed = my_squad.latest_confirmed(123, planning_event=2, fetch_picks=fetch)
     assert not confirmed.is_current
     assert confirmed.planning_event == 2
+
+
+# --- My Squad shows the squad you actually own ---------------------------
+
+def test_the_squad_you_own_before_a_deadline_is_last_weeks():
+    """The tab used to ask the API for the gameweek being planned, get a
+    404, and explain the 404. That is correct and useless: FPL doesn't
+    publish a gameweek's picks until its deadline passes, so for most of
+    every week the tab showed an error instead of your fifteen. The squad
+    you own right now IS last gameweek's.
+    """
+    calls = []
+
+    def fetch(team_id, event):
+        calls.append(event)
+        if event >= 2:
+            raise RuntimeError("404 — picks not public yet")
+        return {
+            "picks": [
+                {"element": i, "position": i, "is_captain": i == 1,
+                 "is_vice_captain": i == 2, "multiplier": 1 if i <= 11 else 0}
+                for i in range(1, 16)
+            ],
+            "entry_history": {"bank": 5, "value": 1000},
+        }
+
+    confirmed = my_squad.latest_confirmed(123, planning_event=2, fetch_picks=fetch)
+
+    assert confirmed is not None
+    assert confirmed.event == 1
+    assert not confirmed.is_current
+    assert len(confirmed.squad.picks) == 15
+    # It asked for the planning gameweek first, then walked back.
+    assert calls[0] == 2

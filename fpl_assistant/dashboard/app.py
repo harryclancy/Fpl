@@ -42,6 +42,7 @@ from fpl_assistant.analysis import (
     rationale,
     squad_builder,
     team_brief,
+    transfer_case,
     transfers,
 )
 from fpl_assistant.analysis.season_state import is_preseason
@@ -808,6 +809,18 @@ def render_player_deep_dive(row, report_text, fixture_table, fixture_gws, summar
         # someone can weigh, disagree with, or act on. Burying them under
         # a number was the single loudest complaint about this app.
         render_talking_points(row)
+
+        # "He usually scores against them" — the first thing anyone says
+        # when arguing for a captain, and the thing the API knows nothing
+        # about, since it only carries this season and only in aggregate.
+        record = row.get("record_vs_opponent")
+        if isinstance(record, str) and record.strip():
+            render_html(
+                "<div style='margin:6px 0 10px 0;padding:10px 12px;background:#fff8e9;"
+                "border:1px solid #f0e2c0;border-radius:10px;font-size:.93em'>"
+                "<strong>📈 His record against this opponent:</strong> " + record + "</div>"
+            )
+
         render_matchup_notes(row, row.get("_gameweek") or 1)
 
         # What could actually happen, rather than only what the average
@@ -1024,10 +1037,9 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
 
     st.markdown("**How much of this is researched**")
     render_coverage_panel(scored, owned_ids, next_event)
-    render_season_trends()
 
     st.divider()
-    render_transfer_plan(
+    plan = render_transfer_plan(
         players, fixtures, teams, next_event, squad, free_transfers, key_prefix="front"
     )
     render_multiweek_plan(
@@ -1035,12 +1047,33 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
         key_prefix="front_multi", players=players,
     )
 
+    # The suggested squad is the confirmed one with the recommended
+    # transfers applied — not a fifteen built from scratch. Showing the
+    # pre-transfer eleven under a recommended transfer asks the reader to
+    # do the substitution in their head, which is exactly the work the
+    # page exists to save them.
+    suggested_ids = list(owned_ids)
+    if plan is not None and plan.transfers:
+        suggested_ids = [i for i in owned_ids if i not in set(plan.out_ids)] + list(plan.in_ids)
+    suggested = scored[scored["id"].isin(suggested_ids)].copy()
+    if len(suggested) < 11:
+        suggested, suggested_ids = owned, list(owned_ids)
+    owned, owned_ids = suggested, suggested_ids
+
     st.divider()
-    st.markdown("#### Your best XI from what you own")
-    st.caption(
-        "The strongest legal eleven from your existing fifteen, before any transfer above. "
-        "Captaincy is a free decision every week — it's usually worth more than the transfer."
-    )
+    if plan is not None and plan.transfers:
+        st.markdown(f"#### Your suggested XI for GW{next_event}")
+        st.caption(
+            f"Your confirmed GW{confirmed.event} squad with the transfer above applied — "
+            f"not a squad built from scratch. Captaincy is a free decision every week, and "
+            f"it's usually worth more than the transfer."
+        )
+    else:
+        st.markdown("#### Your best XI from what you own")
+        st.caption(
+            f"The strongest legal eleven from your confirmed GW{confirmed.event} fifteen. "
+            f"Captaincy is a free decision every week — it's usually worth more than the transfer."
+        )
 
     # A squad carrying injuries can't always field a legal eleven from the
     # players still available, and when it can't, that must not blank the
@@ -1183,7 +1216,6 @@ def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):
 
     st.markdown("**How much of this is researched**")
     render_coverage_panel(scored, solution.squad_ids, next_event)
-    render_season_trends()
 
     render_consensus_panel(scored, squad15, next_event)
     render_omissions_panel(scored, solution)
@@ -1290,41 +1322,61 @@ def _squad_from_solution(solution, next_event) -> Squad:
 
 def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, events: pd.DataFrame,
                      fixtures: pd.DataFrame = None, teams: pd.DataFrame = None):
+    """The squad you actually own — which, before a deadline, is last week's.
+
+    This used to ask the API for the gameweek being planned, get a 404,
+    explain the 404, and offer manual entry. That is technically correct
+    and practically useless: FPL doesn't publish a gameweek's squads until
+    its deadline passes, so for most of every week this tab showed an
+    error instead of the fifteen players you own. The squad you own right
+    now IS last gameweek's squad, and that is what belongs here.
+    """
+    confirmed = None
     try:
-        picks_response = api.get_entry_picks(team_id, next_event)
-        entry = api.get_entry(team_id)
-    except Exception as e:
-        is_deadline_404 = (
-            isinstance(e, requests.exceptions.HTTPError)
-            and e.response is not None
-            and e.response.status_code == 404
+        confirmed = cached_confirmed_squad(team_id, next_event)
+    except Exception as exc:
+        st.error(f"Couldn't load team {team_id}: {exc}")
+
+    if confirmed is None:
+        st.info(
+            "Couldn't find a confirmed squad for this team yet. FPL only publishes a "
+            "gameweek's picks once its deadline has passed, so if you've just started "
+            "there may be nothing to show until after your first deadline."
         )
-        if is_deadline_404:
-            deadline = events.loc[next_event, "deadline_time"] if next_event in events.index else None
-            when = f" (deadline: {deadline})" if deadline else ""
-            st.info(
-                f"GW{next_event} picks aren't public yet{when} — the FPL API only exposes a "
-                "gameweek's squads once its deadline has passed (so managers can't copy each "
-                "other pre-deadline)."
-            )
-        else:
-            st.error(f"Couldn't load team {team_id}: {e}")
-        # Whatever went wrong, manual entry still gets you a pitch view today.
         manual_squad = render_manual_squad_entry(players)
         if manual_squad:
             render_html(render_pitch_html(players, manual_squad))
             return manual_squad
         return
 
-    squad = parse_squad(team_id, next_event, picks_response)
-    section_header(f"{entry.get('name', 'Your team')} — GW{next_event}")
+    squad = confirmed.squad
+    try:
+        entry = api.get_entry(team_id)
+    except Exception:
+        entry = {}
+
+    if confirmed.is_current:
+        section_header(
+            f"{entry.get('name', 'Your team')} — GW{confirmed.event}",
+            "Confirmed for the gameweek being planned",
+        )
+    else:
+        section_header(
+            f"{entry.get('name', 'Your team')} — your GW{confirmed.event} squad",
+            f"The last squad FPL has confirmed. This is what you own going into GW{next_event}, "
+            f"and it's the base every suggestion on the front page is built from.",
+        )
 
     c1, c2, c3 = st.columns(3)
     c1.metric("Team value", f"£{squad.team_value:.1f}m")
     c2.metric("Bank", f"£{squad.bank:.1f}m")
-    c3.metric("Overall rank", f"{entry.get('summary_overall_rank', '—'):,}" if entry.get("summary_overall_rank") else "—")
+    c3.metric(
+        "Overall rank",
+        f"{entry.get('summary_overall_rank', 0):,}" if entry.get("summary_overall_rank") else "—",
+    )
 
-    squad_players = players.loc[squad.player_ids].copy()
+    available = [pid for pid in squad.player_ids if pid in players.index]
+    squad_players = players.loc[available].copy()
 
     render_html(render_pitch_html(squad_players, squad))
 
@@ -1332,8 +1384,9 @@ def render_squad_tab(players: pd.DataFrame, team_id: int, next_event: int, event
         lambda pid: "C" if pid == squad.captain_id else ""
     )
     cols = ["web_name", "team_short_name", "position", "price", "form", "status_label", "captain"]
+    shown = [c for c in cols if c in squad_players.columns]
     with st.expander("Squad detail table"):
-        st.dataframe(squad_players[cols].sort_values(["position", "web_name"]), width='stretch')
+        st.dataframe(squad_players[shown].sort_values(["position", "web_name"]), width='stretch')
 
     return squad
 
@@ -1922,6 +1975,55 @@ def render_expert_verdicts(scored, next_event) -> None:
                 st.markdown(f"**⚖️ Experts disagree here:** {row['consensus_dissent']}")
 
 
+def render_transfer_case(case) -> None:
+    """One swap, argued rather than asserted.
+
+    Out on the left with what people say is wrong; in on the right with
+    what people say is right. Asymmetric on purpose — the question is
+    "why this swap", not "rate these two players", and showing both sides
+    of both men would be balanced and useless.
+    """
+    st.markdown(f"#### {case.headline}")
+    st.markdown(case.summary)
+
+    left, right = st.columns(2)
+    with left:
+        st.markdown(f"**⬅️ OUT — {case.out.name}**")
+        if case.out.fixture:
+            st.caption(case.out.fixture)
+        if case.out.reasons:
+            for point, source in case.out.reasons:
+                st.markdown(f"- {point}" + (f" *— {source}*" if source else ""))
+        else:
+            st.caption("Nothing specific being said against him — he is the one the numbers can spare.")
+        if case.out.opposition:
+            st.markdown("*What people say about his opponent:*")
+            for note in case.out.opposition:
+                st.markdown(f"- {note}")
+
+    with right:
+        st.markdown(f"**➡️ IN — {case.into.name}**")
+        if case.into.fixture:
+            st.caption(case.into.fixture)
+        if case.into.reasons:
+            for point, source in case.into.reasons:
+                st.markdown(f"- {point}" + (f" *— {source}*" if source else ""))
+        else:
+            st.caption("Nothing researched in his favour this week beyond the projection.")
+        if case.into.record:
+            st.markdown(f"**📈 His record against them:** {case.into.record}")
+        if case.into.opposition:
+            st.markdown("*What people say about his opponent:*")
+            for note in case.into.opposition:
+                st.markdown(f"- {note}")
+
+    st.caption(
+        f"{case.into.name} projects {case.gain:+.1f} points on {case.out.name} this gameweek. "
+        f"The projection is the tiebreak, not the argument."
+    )
+    st.markdown("---")
+
+
 def render_transfer_plan(players, fixtures, teams, next_event, squad, free_transfers, key_prefix="plan"):
     """The actual weekly decision: who to bring in, and whether a hit pays.
 
@@ -1956,14 +2058,14 @@ def render_transfer_plan(players, fixtures, teams, next_event, squad, free_trans
         )
     except Exception as exc:
         st.info(f"Couldn't solve a transfer plan this week ({exc}). The review list below still applies.")
-        return
+        return None
 
     if not plan.transfers:
         st.success(
             "**Hold.** No transfer gains enough to be worth making this week — including any that "
             "would cost a hit. Rolling the transfer keeps your options open for next week."
         )
-        return
+        return plan
 
     columns = st.columns(3)
     columns[0].metric("Transfers", plan.transfers)
@@ -1973,15 +2075,30 @@ def render_transfer_plan(players, fixtures, teams, next_event, squad, free_trans
         help="Gain over fielding your best XI as things stand, after subtracting any hit.",
     )
 
-    indexed = projected.set_index("id")
-    for out_id, in_id in zip(plan.out_ids, plan.in_ids):
-        out_row, in_row = indexed.loc[out_id], indexed.loc[in_id]
-        st.markdown(
-            f"**OUT** {out_row['web_name']} ({out_row['team_short_name']}, £{out_row['price']:.1f}m · "
-            f"{out_row['xp_next']:.1f} pts projected) → "
-            f"**IN** {in_row['web_name']} ({in_row['team_short_name']}, £{in_row['price']:.1f}m · "
-            f"{in_row['xp_next']:.1f} pts projected)"
+    # The case for each swap, in words. A transfer line that reads
+    # "Smith → Jones, +2.3 projected" tells you what the solver concluded
+    # and nothing you can agree or disagree with. The reasons are what
+    # make it a recommendation rather than an instruction.
+    try:
+        cases = transfer_case.explain_plan(
+            projected, plan.out_ids, plan.in_ids, next_event
         )
+    except Exception:
+        cases = []
+
+    if cases:
+        for case in cases:
+            render_transfer_case(case)
+    else:
+        indexed = projected.set_index("id")
+        for out_id, in_id in zip(plan.out_ids, plan.in_ids):
+            out_row, in_row = indexed.loc[out_id], indexed.loc[in_id]
+            st.markdown(
+                f"**OUT** {out_row['web_name']} ({out_row['team_short_name']}, £{out_row['price']:.1f}m · "
+                f"{out_row['xp_next']:.1f} pts projected) → "
+                f"**IN** {in_row['web_name']} ({in_row['team_short_name']}, £{in_row['price']:.1f}m · "
+                f"{in_row['xp_next']:.1f} pts projected)"
+            )
 
     try:
         roll = optimiser.should_roll_transfer(
@@ -2067,44 +2184,6 @@ def render_multiweek_plan(scored, owned_ids, bank, free_transfers, key_prefix="m
         st.caption(note)
 
     return plan
-
-
-def render_season_trends() -> None:
-    """What the last two completed seasons taught, and the rules they imply.
-
-    Here because the app's biggest failure mode is treating the season it
-    can see as the whole of the evidence. Two gameweeks in, the last two
-    seasons are a far better guide to what a player will do than the two
-    gameweeks are, and the interface should say so rather than quietly
-    assuming it.
-    """
-    trends = history.load_trends()
-    if not trends.seasons:
-        return
-
-    with st.expander("📚 What the last two seasons actually taught", expanded=False):
-        if trends.carried:
-            st.markdown("**Carried into this season**")
-            for note in trends.carried:
-                st.markdown(f"- {note}")
-            st.markdown("---")
-
-        for review in trends.seasons:
-            st.markdown(f"#### {review.season} — {review.headline}")
-            if review.facts:
-                st.markdown("**What happened**")
-                for fact in review.facts:
-                    st.markdown(f"- {fact}")
-            for lesson in review.lessons:
-                st.markdown(f"**{lesson.lesson}**")
-                if lesson.detail:
-                    st.markdown(lesson.detail)
-                if lesson.rule:
-                    st.caption(f"→ {lesson.rule}")
-            st.markdown("")
-
-        if trends.sources:
-            st.caption("Sources: " + " · ".join(trends.sources))
 
 
 def render_track_record_tab(players, events):

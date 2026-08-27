@@ -355,6 +355,11 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     # and a projection is not.
     df["consensus_for"] = None
     df["consensus_against"] = None
+    # What this player has actually done against THIS week's opponent.
+    # "He usually scores against them" is one of the first things anyone
+    # says when arguing for a captain, and the API carries nothing like
+    # it -- it only knows this season, and only in aggregate.
+    df["record_vs_opponent"] = None
     # Which gameweek's research this came from, so the app can say whether
     # a write-up is current or left over from an earlier week.
     df["consensus_gameweek"] = pd.NA
@@ -426,6 +431,7 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
         talking = entry.get("talking_points") or {}
         df.loc[target, "consensus_for"] = _pack(talking.get("for"))
         df.loc[target, "consensus_against"] = _pack(talking.get("against"))
+        df.loc[target, "record_vs_opponent"] = entry.get("record_vs") or None
         # `case` is the written argument; `reason` is kept as a fallback so
         # older hand-written consensus files still render.
         df.loc[target, "consensus_reason"] = entry.get("case") or entry.get("reason")

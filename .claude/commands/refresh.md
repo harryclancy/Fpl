@@ -141,6 +141,18 @@ reaches one. Each fixture records what people say about both clubs' attack
 and defence, attributed. An attacker is then shown the opposition's
 defence, a defender the opposition's attack.
 
+**Record against this specific opponent** goes in `record_vs`, as prose.
+"He usually scores against them" is the first thing anyone says when
+arguing for a captain, and the FPL API knows nothing about it — it carries
+only this season, only in aggregate. Look it up:
+
+- *"Eight goals in five Premier League meetings with Crystal Palace — he has
+  scored in every one, including a hat-trick, and four were at Selhurst."*
+- *"Scored or assisted three of Forest's last six goals at Anfield."*
+
+If the record is thin, say so. *"One assist in two appearances — not a
+reason to buy him on its own"* is useful; silence is not.
+
 Aim for **at least three arguments on each side** for any player at `full`
 depth, and cover every fixture that a decision could turn on.
 
