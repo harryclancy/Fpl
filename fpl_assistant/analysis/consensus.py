@@ -360,6 +360,18 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
     # says when arguing for a captain, and the API carries nothing like
     # it -- it only knows this season, and only in aggregate.
     df["record_vs_opponent"] = None
+    # Football news that never appears in an FPL article but changes an
+    # expected-minutes picture: omissions, bids, position switches, a new
+    # signing in his position. Kept as structured events rather than prose
+    # so the model can act on them rather than only display them.
+    df["player_events"] = None
+    df["player_claims"] = None
+    df["transfer_status"] = None
+    df["transfer_detail"] = None
+    # How far the research had to escalate to reach an assessment, so the
+    # page can say whether a write-up rests on published tips or on our
+    # own reading of club news.
+    df["research_depth"] = None
     # Which gameweek's research this came from, so the app can say whether
     # a write-up is current or left over from an earlier week.
     df["consensus_gameweek"] = pd.NA
@@ -432,6 +444,12 @@ def annotate(players: pd.DataFrame, gameweek: int) -> pd.DataFrame:
         df.loc[target, "consensus_for"] = _pack(talking.get("for"))
         df.loc[target, "consensus_against"] = _pack(talking.get("against"))
         df.loc[target, "record_vs_opponent"] = entry.get("record_vs") or None
+        df.loc[target, "player_events"] = _pack(entry.get("events"))
+        df.loc[target, "player_claims"] = _pack(entry.get("claims"))
+        transfer = entry.get("transfer") or {}
+        df.loc[target, "transfer_status"] = transfer.get("status") or None
+        df.loc[target, "transfer_detail"] = transfer.get("detail") or None
+        df.loc[target, "research_depth"] = entry.get("research_depth") or None
         # `case` is the written argument; `reason` is kept as a fallback so
         # older hand-written consensus files still render.
         df.loc[target, "consensus_reason"] = entry.get("case") or entry.get("reason")

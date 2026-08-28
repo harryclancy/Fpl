@@ -700,10 +700,18 @@ def test_the_reasons_people_give_reach_the_page(monkeypatch):
     # uses real club short names, so the shipped GW2 matchup research
     # applies to it — which means this also proves the file parses and
     # reaches a player's card.
-    # Fixture commentary now feeds the player cards directly rather than a
-    # nested expander, so assert it reaches the prose.
+    # The guarantee is stronger than any one phrase: EVERY owned player
+    # gets the full dossier, whether or not anyone published an FPL
+    # article about him. These sections are unconditional.
     page = _all_markdown(at)
-    assert "On the opposition:" in page or "Sources used" in " ".join(_expander_labels(at))
+    for section in ("This gameweek.", "Why he's in our squad.", "Case for keeping.",
+                    "Case for selling.", "Latest developments.", "Expert view.",
+                    "Risks.", "Our verdict:"):
+        assert section in page, f"missing dossier section: {section}"
+    # And a player nobody wrote about says so rather than showing nothing.
+    assert "commentary on him was limited" in page or "Sources used" in " ".join(
+        _expander_labels(at)
+    ) or "weakest kind of case" in page
 
 
 def test_the_shipped_research_renders_both_sides_for_a_real_player():

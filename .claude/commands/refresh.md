@@ -82,22 +82,127 @@ for e in ds.entries:
 If the FPL API is unreachable, say so and ask which gameweek rather than
 guessing.
 
+## Research every player like a journalist — not like a tips aggregator
+
+**No owned player may end the week with an empty profile.** "No write-up
+found", "no expert opinion found", "insufficient research" describe ONE
+failed search. They are never the final output for a player in the squad.
+
+The question is not *"did one of our sources publish an FPL article about
+him?"* It is *"what is currently happening with this footballer, and what
+does that mean for Fantasy?"*
+
+**Football news IS Fantasy news.** Each of these changes an
+expected-minutes picture without any FPL writer mentioning it:
+
+- omitted from a matchday squad · manager declining to commit to him
+- a bid, active talks, a player asking to leave
+- 90 minutes in a cup tie · a full-back suddenly at left wing
+- losing corners · a new striker signed · a centre-back returning
+- a manager saying someone "needs minutes" · training away from the group
+
+### The escalation — research until resolved
+
+Run these in order and STOP when the picture is clear, not when the first
+search comes back empty.
+
+**Pass 1 — FPL specialists.** Recommendations, ownership, transfers,
+captaincy, fixtures, underlying data, sentiment.
+
+**Pass 2 — his official club site.** Squad news, press conference, injury
+update, manager comments, match preview, match report, interviews. All
+twenty club sites are readable and they are a day ahead of the aggregators.
+
+**Pass 3 — current football news.** Search HIS NAME, not "GW3 tips":
+`[player] latest` · `[player] injury` · `[player] team news` ·
+`[player] manager comments` · `[player] transfer` · `[player] expected to
+start` · `[player] lineup` · `[player] set pieces` · `[player] penalties`.
+Skip the redundant ones once a question is settled.
+
+**Pass 4 — match evidence.** Latest XI, bench, minutes, substitution
+timing, previous league appearance, cup appearance, formation, role.
+
+**Pass 5 — reasoned inference.** Best evidence-based assessment, with the
+three kinds of statement kept apart (below).
+
+The verified hundred remain the PRIMARY universe — but they are not a
+closed world. If a question about an owned player cannot be answered from
+them, search reputable readable sources beyond the list: national sports
+media, local football reporting, press agencies, club sites, match
+reports, team sheets, tactical analysis. Record anything that works:
+
+```bash
+python -c "import sys; sys.path.insert(0,'.'); from fpl_assistant.research import sources; \
+sources.record_discovered('NAME','domain.com','what it answered', GW)"
+```
+
+### Fact, inference, unconfirmed — never collapsed
+
+> **FACT** He was omitted from the squad. There is reported interest.
+> The manager has not guaranteed his next start.
+> **INFERENCE** His expected minutes are therefore less secure.
+> **NOT AN INFERENCE** "He definitely won't play."
+
+Grade it instead: `MINUTES: Significant concern`, `TRANSFER: Active talks`.
+
+### The Enzo Fernández standard
+
+Nobody publishes "Enzo Fernández FPL GW2 advice". That is not an absence
+of information. Omitted from the squad + active transfer talks + a manager
+calling it a selection decision without ruling him out = a **MONITOR**
+with an elevated minutes risk, written out in full. Not "no write-up".
+
+### Every player ends with
+
+STATUS · THIS GAMEWEEK · WHY HE'S IN OUR SQUAD · CASE FOR KEEPING · CASE
+FOR SELLING · NEXT 3-5 GWs · LATEST DEVELOPMENTS · EXPERT VIEW · RISKS ·
+OUR VERDICT (KEEP/SELL/MONITOR/BENCH/CAPTAIN/VICE-CAPTAIN) · CONFIDENCE ·
+SOURCES USED.
+
+`analysis/dossier.py` assembles all of it. Fill these fields per player:
+
+```json
+"events": [{"kind": "not in squad", "detail": "…", "source": "Chelsea", "when": "22 Aug"}],
+"transfer": {"status": "Active talks", "detail": "…"},
+"claims": [{"text": "…", "kind": "fact|inference|unconfirmed", "source": "…"}],
+"research_depth": "fpl|club news|football news|match evidence|inference"
+```
+
+Event kinds: not in squad, benched, started, substituted, injury, returned
+to training, suspension, red card, transfer bid, transfer talks, player
+wants move, club open to sale, manager quote, position change, set-piece
+change, penalty change, new competition for position, teammate injury,
+teammate return, new signing, cup minutes, european minutes.
+
+Transfer levels, in order: None · Low-level rumour · Credible interest ·
+Active talks · Bid expected · Bid made · Advanced · Transfer imminent ·
+Confirmed. Grade it — do not believe it or dismiss it.
+
+**Current news beats the model on minutes.** A statistical estimate
+summarises the past; an omission is the present.
+
+### Before publishing — the completeness gate
+
+```bash
+python -c "import sys; sys.path.insert(0,'.'); \
+from fpl_assistant.research import completeness; print(completeness.CHECKS)"
+```
+
+Fourteen checks per owned player: recent news, official club, availability,
+latest appearance, expected minutes, transfer situation, tactical role,
+this fixture, next 3-5 fixtures, statistics, expert opinion, risks,
+keep/sell reasoning, sources. **If a player fails, do not publish — go back
+and research him.** The gate names the exact searches that would close his
+gaps.
+
+### What changed since last week
+
+Do not regenerate the same profiles. For every player, compare against the
+previous gameweek's file and lead with what MOVED: an injury, a transfer
+link, an omission, a promotion to starter, a set-piece change, a fixture
+swing, a shift in sentiment.
+
 ## What to research, per player
-
-Availability and role first, because they void everything else:
-
-- injuries, doubts, suspensions, expected minutes, starting likelihood
-- manager press-conference quotes
-- tactical role, position on the pitch, recent starts and substitutions
-- set pieces: penalties, corners, free-kicks — separately, not as one field
-
-Then output and context:
-
-- form, xG, xA, xGI, shots, shots in the box, big chances, chances created
-- clean-sheet prospects, defensive-contribution potential, bonus potential
-- ownership, price, price-change risk, transfers in and out
-- fixture difficulty and the upcoming RUN, rotation and European rotation
-- who experts are buying, selling, captaining, and disagreeing about
 
 ## Verify before you publish
 

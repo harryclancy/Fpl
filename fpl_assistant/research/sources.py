@@ -281,3 +281,64 @@ def unverified_citations(*paths) -> list[str]:
         if path.exists():
             walk(_json.loads(path.read_text()))
     return sorted(found)
+
+
+# --- Sources found outside the hundred -----------------------------------
+
+DISCOVERED_PATH = SOURCES_PATH.parent / "discovered_sources.json"
+
+
+def record_discovered(name: str, domain: str, used_for: str, gameweek: int) -> None:
+    """Notes a source that answered a question the hundred could not.
+
+    The verified list is the primary research universe, not a closed
+    world. When a question about an owned player cannot be answered from
+    it — which happens most often for squad players nobody writes FPL
+    articles about — the search widens, and whatever worked is recorded
+    here rather than used once and forgotten.
+
+    Recorded, deliberately, not auto-promoted. A domain earns a place in
+    the hundred by proving readable and useful repeatedly, and that is a
+    judgement rather than a counter.
+    """
+    try:
+        payload = json.loads(DISCOVERED_PATH.read_text()) if DISCOVERED_PATH.exists() else {}
+    except (json.JSONDecodeError, OSError):
+        payload = {}
+    entries = payload.setdefault("sources", {})
+    entry = entries.setdefault(domain, {
+        "name": name, "domain": domain, "first_seen_gameweek": gameweek,
+        "times_useful": 0, "used_for": [],
+    })
+    entry["times_useful"] = int(entry.get("times_useful", 0)) + 1
+    if used_for and used_for not in entry["used_for"]:
+        entry["used_for"].append(used_for)
+    entry["last_seen_gameweek"] = gameweek
+    payload["note"] = (
+        "Sources discovered outside the verified hundred while answering a question about a "
+        "specific player. Candidates for promotion once they have proved readable and useful "
+        "more than once — promotion is a judgement, not a counter."
+    )
+    try:
+        DISCOVERED_PATH.parent.mkdir(parents=True, exist_ok=True)
+        DISCOVERED_PATH.write_text(json.dumps(payload, indent=1, ensure_ascii=False))
+    except OSError:
+        pass
+
+
+def discovered() -> list[dict]:
+    if not DISCOVERED_PATH.exists():
+        return []
+    try:
+        payload = json.loads(DISCOVERED_PATH.read_text())
+    except (json.JSONDecodeError, OSError):
+        return []
+    return sorted(
+        (payload.get("sources") or {}).values(),
+        key=lambda e: -int(e.get("times_useful", 0)),
+    )
+
+
+def promotion_candidates(threshold: int = 2) -> list[dict]:
+    """Discovered sources that have earned a look at joining the hundred."""
+    return [e for e in discovered() if int(e.get("times_useful", 0)) >= threshold]

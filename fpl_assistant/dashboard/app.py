@@ -31,6 +31,7 @@ from fpl_assistant.analysis import (
     fixtures as fixtures_analysis,
     injuries,
     my_squad as my_squad_analysis,
+    dossier,
     history,
     matchups,
     omissions,
@@ -1122,40 +1123,90 @@ def render_transfer_block(case, index: int) -> None:
     st.markdown("---")
 
 
-def render_player_card(case, fixture_table, next_event, alternative_case=None) -> None:
-    """One squad player, explained.
+VERDICT_STYLE = {
+    "KEEP": ("fpl-high", "Keep"),
+    "CAPTAIN": ("fpl-high", "Captain"),
+    "VICE-CAPTAIN": ("fpl-high", "Vice-captain"),
+    "BENCH": ("fpl-med", "Bench"),
+    "MONITOR": ("fpl-med", "Monitor"),
+    "SELL": ("fpl-low", "Sell"),
+}
 
-    Deliberately not a stat block. The numbers that matter are already
-    inside the sentences; the ones that aren't were never going to change
-    a decision.
+
+def render_player_card(d, alternative_case=None) -> None:
+    """One owned player's full dossier.
+
+    Every section is always present. Where the evidence is thin the
+    section says what is thin — a reader can act on "we could not confirm
+    his minutes", and cannot act on a missing card.
     """
     badge = ""
-    if case.captain:
+    if d.captain:
         badge = " &nbsp;<span class='fpl-pill fpl-high'>C</span>"
-    elif case.vice_captain:
+    elif d.vice_captain:
         badge = " &nbsp;<span class='fpl-pill fpl-med'>VC</span>"
-    where = "Starting XI" if case.starting else "Bench"
+    style, label = VERDICT_STYLE.get(d.verdict, ("fpl-med", d.verdict.title()))
 
     render_html(
         "<div class='fpl-card'>"
-        f"<h4>{case.header}{badge}</h4>"
-        f"<p class='fpl-meta'>{case.subtitle} · {where}</p>"
+        f"<h4>{d.name.upper()}{badge}</h4>"
+        f"<p class='fpl-meta'>{d.team} | {d.position} | £{d.price:.1f}m · "
+        f"{'Starting XI' if d.starting else 'Bench'}</p>"
+        f"<span class='fpl-pill {style}'>{label}</span> "
+        f"<span class='fpl-pill fpl-med'>{d.status}</span> "
+        f"<span class='fpl-pill fpl-med'>Minutes: {d.minutes_outlook}</span>"
         "</div>"
     )
-    st.markdown("**Why he's in our team**")
-    st.markdown(case.write_up())
 
-    if case.captain or case.vice_captain:
-        note = player_case.captaincy_reasoning(case, alternative_case)
-        if note:
-            st.markdown(note)
+    note = d.escalation_note()
+    if note:
+        st.caption(note)
 
-    if case.risk:
-        st.markdown(f"**Risk.** {case.risk}")
+    if d.major_events:
+        for event in d.major_events[:3]:
+            st.warning(event.display)
 
-    if case.sources:
-        with st.expander(f"Sources used: {case.source_count}"):
-            for source in case.sources:
+    st.markdown(f"**This gameweek.** {d.this_gameweek}")
+    st.markdown(f"**Why he's in our squad.** {d.why_in_squad}")
+    st.markdown(f"**Case for keeping.** {d.case_for_keeping}")
+    st.markdown(f"**Case for selling.** {d.case_for_selling}")
+    st.markdown(f"**Next {transfer_case.LOOKAHEAD_GAMEWEEKS} gameweeks.** {d.next_gameweeks}")
+    st.markdown(f"**Latest developments.** {d.latest_developments}")
+    st.markdown(f"**Expert view.** {d.expert_view}")
+    st.markdown(f"**Risks.** {d.risks}")
+
+    if d.claims:
+        for claim in d.claims:
+            st.markdown(f"- {claim.display}")
+
+    if d.captain or d.vice_captain:
+        which = "Captaincy" if d.captain else "Vice-captaincy"
+        armband = [f"**{which} reasoning.**"]
+        if d.case_for:
+            armband.append(d.case_for[0][0].rstrip(".") + f" ({d.case_for[0][1]}).")
+        if d.record_vs:
+            armband.append(f"Against this opponent: {d.record_vs}")
+        if d.ownership >= 40:
+            armband.append(
+                f"At {d.ownership:.0f}% owned this is the safe armband rather than the clever one — "
+                f"it protects rank more than it gains it."
+            )
+        else:
+            armband.append(
+                f"At {d.ownership:.0f}% owned this is a genuine differential armband. Take it "
+                f"deliberately rather than by accident."
+            )
+        if alternative_case is not None:
+            armband.append(f"The alternative is {alternative_case.name}.")
+        st.markdown(" ".join(armband))
+
+    st.markdown(
+        f"**Our verdict: {d.verdict}.** Confidence: {d.confidence}."
+    )
+
+    if d.sources:
+        with st.expander(f"Sources used: {len(d.sources)}"):
+            for source in d.sources:
                 st.markdown(f"- {source}")
     st.markdown("")
 
@@ -1320,7 +1371,7 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
         run, _ = transfer_case._fixture_run(
             row, fixture_table, next_event, transfer_case.LOOKAHEAD_GAMEWEEKS
         )
-        player_cases.append(player_case.build(
+        player_cases.append(dossier.build(
             row, next_event, fixtures=matchup_fixtures, fixture_run=run,
             starting=pid in starting, captain=pid == captain_id, vice_captain=pid == vice_id,
         ))
@@ -1329,11 +1380,16 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     vice_case = next((c for c in player_cases if c.vice_captain), None)
     for case in player_cases:
         alternative = vice_case if case.captain else (captain_case if case.vice_captain else None)
-        render_player_card(case, fixture_table, next_event, alternative)
+        render_player_card(case, alternative)
 
     # --- the footer: what was checked, and how much was read -----------
     st.markdown("---")
     try:
+        research = completeness.check(player_cases)
+        if not research.ready:
+            st.warning(
+                f"**Research incomplete.** {research.headline}"
+            )
         report = quality_control.run(
             confirmed_ids, scored, next_event,
             transfer_cases=cases, player_cases=player_cases,
@@ -1348,6 +1404,14 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
             for finding in report.blockers:
                 st.error(f"{finding.icon} **{finding.check}** — {finding.detail}")
         with st.expander("Quality checks and research coverage"):
+            st.markdown("**Research completeness, player by player**")
+            for player in research.worst_first:
+                st.markdown(player.line)
+                if not player.complete:
+                    todo = completeness.next_searches(player, player.name)
+                    if todo:
+                        st.caption("Still to search: " + " · ".join(f"`{q}`" for q in todo[:4]))
+            st.markdown("---")
             for finding in report.findings:
                 st.markdown(f"{finding.icon} **{finding.check}** — {finding.detail}")
             if report.passed and not report.warnings:

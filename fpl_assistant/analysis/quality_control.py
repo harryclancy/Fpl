@@ -158,10 +158,23 @@ def run(
 
     # --- every player is explained --------------------------------------
     for case in player_cases or []:
+        # A dossier is measured on its assembled sections; the older
+        # PlayerCase exposes a single write_up(). Both are supported so the
+        # gate does not care which layer the page is built from.
+        if hasattr(case, "write_up"):
+            body = case.write_up()
+        else:
+            body = " ".join([
+                case.this_gameweek, case.why_in_squad,
+                case.case_for_keeping, case.case_for_selling,
+            ])
         check(f"Write-up: {case.name}",
-              len(case.write_up()) >= MIN_WRITE_UP_CHARS, WARNING,
+              len(body) >= MIN_WRITE_UP_CHARS, WARNING,
               f"{case.name}'s explanation is too thin to be reasoning. He is in the squad without "
               f"a stated case.")
+        check(f"Verdict stated: {case.name}",
+              bool(getattr(case, "verdict", "KEEP")), WARNING,
+              f"No keep/sell/monitor call for {case.name}.")
 
     captains = [c for c in (player_cases or []) if c.captain]
     check("Exactly one captain", len(captains) == 1 if player_cases else True, BLOCKER,
@@ -171,8 +184,10 @@ def run(
               captains[0].position in ("MID", "FWD"), BLOCKER,
               f"The armband is on {captains[0].name}, a {captains[0].position}. Doubling a defender "
               f"is almost never the highest-ceiling call.")
+        supported = getattr(captains[0], "case_for", None) or getattr(
+            captains[0], "arguments_for", None)
         check("Captaincy is explained",
-              bool(captains[0].arguments_for or captains[0].record_vs), WARNING,
+              bool(supported or captains[0].record_vs), WARNING,
               f"No researched case for captaining {captains[0].name}.")
 
     return report

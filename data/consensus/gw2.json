@@ -78,7 +78,49 @@
       "source": "Never Manage Alone"
      }
     ]
-   }
+   },
+   "research_depth": "club news",
+   "transfer": {
+    "status": "None",
+    "detail": "No transfer situation."
+   },
+   "events": [
+    {
+     "kind": "position change",
+     "detail": "Played left WING rather than left-back, with Minteh out 2-3 months and no return date for Mitoma",
+     "source": "Fantasy Football Scout",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "started",
+     "detail": "17 points: a goal, an assist and a clean sheet in the 4-0 over Villa",
+     "source": "Fantasy Football Scout",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "teammate injury",
+     "detail": "Minteh out around two months and linked with a move away",
+     "source": "Fantasy Football Scout",
+     "when": "14 Aug"
+    }
+   ],
+   "claims": [
+    {
+     "text": "He played as a left winger and Brighton's attacks funnelled down his flank.",
+     "kind": "fact",
+     "source": "Fantasy Football Scout"
+    },
+    {
+     "text": "The role has a runway while Minteh and Mitoma are out.",
+     "kind": "inference",
+     "source": "Fantasy Football Scout"
+    },
+    {
+     "text": "Brighton could revert him to left-back once they are fit.",
+     "kind": "unconfirmed",
+     "source": "Fantasy Football Scout"
+    }
+   ]
   },
   {
    "name": "Calafiori",
@@ -149,7 +191,44 @@
      }
     ]
    },
-   "record_vs": "Arsenal lost 2-1 at Villa Park in December 2025 to a stoppage-time goal, then beat Villa 4-1 at the Emirates 24 days later. The venue has decided these fixtures more than the form has."
+   "record_vs": "Arsenal lost 2-1 at Villa Park in December 2025 to a stoppage-time goal, then beat Villa 4-1 at the Emirates 24 days later. The venue has decided these fixtures more than the form has.",
+   "research_depth": "club news",
+   "transfer": {
+    "status": "None",
+    "detail": "No transfer situation."
+   },
+   "events": [
+    {
+     "kind": "started",
+     "detail": "Assist and a clean sheet against Coventry; now the most-transferred-in player in the game",
+     "source": "Premier League Official Fantasy",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "manager quote",
+     "detail": "Arteta said he would assess Calafiori and Hincapié in the final training sessions",
+     "source": "Arsenal",
+     "when": "27 Aug"
+    },
+    {
+     "kind": "new competition for position",
+     "detail": "Konsa's arrival raises minutes risk for everyone in the back line outside Gabriel and Raya",
+     "source": "All About FPL",
+     "when": "20 Aug"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Arteta has not confirmed him as a starter for this fixture.",
+     "kind": "fact",
+     "source": "Arsenal"
+    },
+    {
+     "text": "His minutes are less secure than his ownership implies.",
+     "kind": "inference",
+     "source": "All About FPL"
+    }
+   ]
   },
   {
    "name": "Haaland",
@@ -266,7 +345,38 @@
      }
     ]
    },
-   "record_vs": "Eight goals in five Premier League meetings with Crystal Palace — and he has scored on ALL FOUR of his visits to Selhurst Park: a penalty in a 1-0, a goal in a 4-2, a header in a 2-2 and a brace last December. No Manchester City player has scored more against Palace. He is 10/11 to score again."
+   "record_vs": "Eight goals in five Premier League meetings with Crystal Palace — and he has scored on ALL FOUR of his visits to Selhurst Park: a penalty in a 1-0, a goal in a 4-2, a header in a 2-2 and a brace last December. No Manchester City player has scored more against Palace. He is 10/11 to score again.",
+   "research_depth": "fpl",
+   "transfer": {
+    "status": "None",
+    "detail": "No transfer situation."
+   },
+   "events": [
+    {
+     "kind": "started",
+     "detail": "Started at Bournemouth: five shots, two on target, no goal",
+     "source": "Fantasy Football Scout",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "teammate injury",
+     "detail": "Doku out two to three weeks with a calf problem; Matheus Nunes not yet 100%",
+     "source": "Manchester City",
+     "when": "27 Aug"
+    }
+   ],
+   "claims": [
+    {
+     "text": "He led all forwards for shots in the box (4) and big chances (2) in GW1.",
+     "kind": "fact",
+     "source": "DraftKings Network Soccer"
+    },
+    {
+     "text": "The chances are being created; the finish is the only thing missing.",
+     "kind": "inference",
+     "source": "Fantasy Football Scout"
+    }
+   ]
   },
   {
    "name": "B.Fernandes",
@@ -689,7 +799,44 @@
      }
     ]
    },
-   "record_vs": "Irrelevant now — he is not expected to feature for Villa again."
+   "record_vs": "Irrelevant now — he is not expected to feature for Villa again.",
+   "research_depth": "football news",
+   "transfer": {
+    "status": "Advanced",
+    "detail": "Villa accepted €58.4m plus €2m in bonuses from Al-Hilal; he travels to Saudi Arabia this week for a medical ahead of a three-year contract, with Nicolas Jackson lined up to replace him."
+   },
+   "events": [
+    {
+     "kind": "club open to sale",
+     "detail": "Villa accepted Al-Hilal's €58.4m + €2m bid",
+     "source": "GOAL",
+     "when": "27 Aug"
+    },
+    {
+     "kind": "transfer talks",
+     "detail": "Travelling to Saudi Arabia for a medical on a three-year deal",
+     "source": "GOAL",
+     "when": "27 Aug"
+    },
+    {
+     "kind": "new signing",
+     "detail": "Nicolas Jackson lined up from Chelsea as his replacement",
+     "source": "Sky Sports Premier League",
+     "when": "27 Aug"
+    }
+   ],
+   "claims": [
+    {
+     "text": "Villa have accepted a bid and he is travelling for a medical.",
+     "kind": "fact",
+     "source": "GOAL"
+    },
+    {
+     "text": "He is very unlikely to feature for Villa again.",
+     "kind": "inference",
+     "source": "GOAL"
+    }
+   ]
   },
   {
    "name": "Gyokeres",
@@ -928,7 +1075,55 @@
     "sources": [
      "Fantasy Football Scout"
     ]
-   }
+   },
+   "research_depth": "club news",
+   "transfer": {
+    "status": "None",
+    "detail": "No transfer situation."
+   },
+   "events": [
+    {
+     "kind": "started",
+     "detail": "Started at Newcastle and scored a 99th-minute penalty; 12 points, the most of any Liverpool player",
+     "source": "Liverpool",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "penalty change",
+     "detail": "Now Liverpool's first-choice penalty taker following Salah's departure",
+     "source": "Fantasy Football Scout",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "set-piece change",
+     "detail": "Took ALL of Liverpool's corners and free-kicks — the only PL player with a clean sweep in GW1",
+     "source": "Fantasy Football Scout",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "position change",
+     "detail": "Deployed deeper, in a double pivot alongside Gravenberch",
+     "source": "Fantasy Football Scout",
+     "when": "22 Aug"
+    }
+   ],
+   "claims": [
+    {
+     "text": "He took every Liverpool set piece and the penalty in GW1.",
+     "kind": "fact",
+     "source": "Fantasy Football Scout"
+    },
+    {
+     "text": "He reached the defensive-contribution threshold from the deeper role.",
+     "kind": "fact",
+     "source": "Liverpool"
+    },
+    {
+     "text": "The deeper position is adding a points stream rather than removing one.",
+     "kind": "inference",
+     "source": "Liverpool"
+    }
+   ]
   },
   {
    "name": "Kayode",
@@ -1231,7 +1426,38 @@
    ],
    "predicted_start": "nailed",
    "role": "left-sided centre-back, aerial threat from set pieces",
-   "set_pieces": "attacking set-piece target"
+   "set_pieces": "attacking set-piece target",
+   "research_depth": "fpl",
+   "transfer": {
+    "status": "None",
+    "detail": "No transfer situation."
+   },
+   "events": [
+    {
+     "kind": "started",
+     "detail": "Started the 3-0 win over Coventry; clean sheet",
+     "source": "Arsenal",
+     "when": "22 Aug"
+    },
+    {
+     "kind": "new competition for position",
+     "detail": "Konsa has signed, raising minutes risk across the Arsenal back line — though not for Gabriel or Raya",
+     "source": "All About FPL",
+     "when": "20 Aug"
+    }
+   ],
+   "claims": [
+    {
+     "text": "He took 22 defensive-contribution points last season, only eight fewer than all other Arsenal defenders combined.",
+     "kind": "fact",
+     "source": "Premier League Official Fantasy"
+    },
+    {
+     "text": "He and Raya are the two Arsenal defenders without minutes risk.",
+     "kind": "inference",
+     "source": "All About FPL"
+    }
+   ]
   },
   {
    "name": "White",
