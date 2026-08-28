@@ -47,6 +47,12 @@ FORMATION_BOUNDS = {"GKP": (1, 1), "DEF": (3, 5), "MID": (2, 5), "FWD": (1, 3)}
 MAX_PER_CLUB = 3
 DEFAULT_BUDGET = 100.0
 
+# Who may wear the armband. Kept here rather than imported from
+# captain_call so the solver has no dependency on the write-up layer, but
+# the two must agree -- and the whole point of this constant is that every
+# path which picks a captain reads the same one.
+ARMBAND_POSITIONS = ("MID", "FWD")
+
 # What a bench place is worth relative to a starting place. Not zero --
 # autosubs are real, and a bench that never plays is still insurance
 # against a late injury or a blank -- but well below 1, because most weeks
@@ -122,6 +128,33 @@ def _ownership_edge(ownership: pd.Series, template_weight: float) -> pd.Series:
     if template_weight >= 0:
         return (ownership - TEMPLATE_OWNERSHIP).clip(lower=0.0)
     return ownership
+
+
+def _restrict_armband(problem, captain, ids, position, pulp):
+    """Keeps the armband on a midfielder or forward.
+
+    The solver will otherwise hand it to whoever has the highest projected
+    score, and early in a season -- when a clean sheet plus a goal is a
+    perfectly ordinary defender's ceiling and nobody has a large attacking
+    sample yet -- that can be a centre-back. It has happened, it was
+    reported as ridiculous, and it was ridiculous.
+
+    The guard already existed in `squad_builder.pick_captain`, which is
+    exactly what made this hard to see: two code paths chose a captain and
+    only one of them filtered by position, so the answer depended on which
+    entry point you came through. The scheduled snapshot writer goes
+    through the solver, so the permanent record got the unguarded answer.
+
+    Relaxed rather than enforced when a squad somehow has fewer than two
+    eligible attackers, because an infeasible model helps nobody -- a bad
+    armband is recoverable, no recommendation at all is not.
+    """
+    eligible = [i for i in ids if position[i] in ARMBAND_POSITIONS]
+    if len(eligible) < 2:
+        return
+    for i in ids:
+        if position[i] not in ARMBAND_POSITIONS:
+            problem += captain[i] == 0
 
 
 @dataclass
@@ -212,6 +245,7 @@ def optimise_squad(
     problem += pulp.lpSum(squad[i] for i in ids) == SQUAD_SIZE
     problem += pulp.lpSum(start[i] for i in ids) == STARTING_SIZE
     problem += pulp.lpSum(captain[i] for i in ids) == 1
+    _restrict_armband(problem, captain, ids, position, pulp)
 
     for i in ids:
         problem += start[i] <= squad[i]
@@ -366,6 +400,7 @@ def optimise_transfers(
     problem += pulp.lpSum(squad[i] for i in ids) == SQUAD_SIZE
     problem += pulp.lpSum(start[i] for i in ids) == STARTING_SIZE
     problem += pulp.lpSum(captain[i] for i in ids) == 1
+    _restrict_armband(problem, captain, ids, position, pulp)
     for i in ids:
         problem += start[i] <= squad[i]
         problem += captain[i] <= start[i]

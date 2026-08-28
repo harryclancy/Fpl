@@ -243,3 +243,69 @@ def test_optimise_starting_xi_picks_the_best_legal_eleven():
         if starting.empty or benched.empty:
             continue
         assert starting["xp_next"].min() >= benched["xp_next"].max()
+
+
+# --- the armband, inside the solver --------------------------------------
+
+def test_the_solver_never_gives_the_armband_to_a_defender():
+    """The centre-back captain, found in the permanent record.
+
+    `squad_builder.pick_captain` already filtered by position — which is
+    exactly what made this hard to see. Two code paths chose a captain and
+    only one of them had the guard, so the answer depended on which entry
+    point you came through. The scheduled snapshot writer goes through the
+    solver, and it duly wrote a defender captain into the frozen GW2
+    record: the one file in the project that is never allowed to be
+    rewritten after kick-off.
+    """
+    pool = _pool()
+    solution = optimise_squad(pool, budget=100.0)
+    indexed = pool.set_index("id")
+
+    assert indexed.loc[solution.captain_id, "position"] in ("MID", "FWD")
+    assert indexed.loc[solution.vice_captain_id, "position"] in ("MID", "FWD")
+
+
+def test_the_transfer_solver_applies_the_same_guard():
+    """Both solvers, or the bug just moves house."""
+    from fpl_assistant.analysis.optimiser import optimise_transfers
+
+    pool = _pool()
+    owned = optimise_squad(pool, budget=95.0).squad_ids
+    plan = optimise_transfers(pool, owned, bank=5.0, free_transfers=1)
+    indexed = pool.set_index("id")
+
+    assert indexed.loc[plan.solution.captain_id, "position"] in ("MID", "FWD")
+
+
+def test_a_defender_who_outscores_every_attacker_still_does_not_get_it():
+    """The actual mechanism. Early in a season a clean sheet plus a goal is
+    an ordinary defender's ceiling and nobody has much attacking sample, so
+    the solver hands the armband to a centre-back on pure projection."""
+    pool = _pool()
+    best_defender = pool[pool["position"] == "DEF"]["id"].iloc[0]
+    pool.loc[best_defender, "xp_next"] = 99.0
+    pool.loc[best_defender, "xp_captain"] = 99.0
+    pool.loc[best_defender, "xp_horizon"] = 99.0
+
+    solution = optimise_squad(pool, budget=100.0)
+
+    assert solution.captain_id != best_defender
+    assert pool.set_index("id").loc[solution.captain_id, "position"] in ("MID", "FWD")
+
+
+def test_the_guard_relaxes_rather_than_making_the_model_infeasible():
+    """A bad armband is recoverable; no recommendation at all is not."""
+    import pulp
+
+    from fpl_assistant.analysis.optimiser import _restrict_armband
+
+    problem = pulp.LpProblem("t", pulp.LpMaximize)
+    ids = [1, 2]
+    captain = pulp.LpVariable.dicts("captain", ids, cat="Binary")
+    position = {1: "DEF", 2: "GKP"}   # no eligible attacker at all
+    before = len(problem.constraints)
+
+    _restrict_armband(problem, captain, ids, position, pulp)
+
+    assert len(problem.constraints) == before, "guard should stand down, not force infeasibility"
