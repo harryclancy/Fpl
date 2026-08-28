@@ -136,6 +136,77 @@ python -c "import sys; sys.path.insert(0,'.'); from fpl_assistant.research impor
 sources.record_discovered('NAME','domain.com','what it answered', GW)"
 ```
 
+### Security is EARNED, never assumed
+
+A player is **never** labelled "Secure starter" because a model expects 80
+minutes. The default is `Unknown — not yet checked`, and "Secure" has to be
+earned by positive evidence: a researched starting call, or a confirmed
+recent start.
+
+This exists because of a real failure. Enzo Fernández came on as a
+substitute rather than starting the opener, was then omitted from a cup
+squad entirely a day after his manager said he expected him to be
+involved, with Manchester City interest live — and the page called him a
+SECURE STARTER with an empty reasons list, because nothing in our files
+contradicted it. Absence of evidence was reading as evidence of security.
+
+Before assigning any minutes status, answer: did he start the last league
+game · did he make the latest matchday squad · has he been omitted · is
+there an injury · is there transfer speculation · has the manager
+discussed him · is there new competition · has his role changed · is
+reliable reporting questioning his involvement · is there a match near the
+transfer deadline.
+
+**Every minutes call carries a reason.** A label with nothing behind it is
+the bug.
+
+### Recency conflict
+
+When a stored expectation says "nailed" and fresh evidence says omitted,
+benched, injured, in transfer talks or a manager non-committal, the
+dossier raises a **recency conflict** and the fresh evidence wins. Do not
+publish the stored label over the top of it.
+
+### Sell urgency FIRST, then a replacement
+
+Transfer logic runs in this order and no other:
+
+1. Score all fifteen owned players 0-5 for sell urgency.
+2. Rank them. Identify where the squad genuinely needs improvement.
+3. Only then find the best replacement.
+
+Never: find an attractive target, then look for whoever the money works
+against. That is how a settled starter in an elite attack gets sold to
+fund another midfielder while a player in the middle of a transfer saga is
+kept.
+
+`0` no reason · `1` minor concern · `2` monitor · `3` genuine candidate ·
+`4` strong sell · `5` urgent. Deliberately blind to the projection — a
+projection cannot see an omission, a bid, or a manager declining to commit.
+
+**Protected assets.** A player who starts regularly, plays for a strong
+attack, has no injury or transfer concern and holds set-piece duty is
+capped at urgency 1. The bar for selling him is high, not average.
+
+**Every transfer must answer "why him and not the other one?"** The
+ranking produces that sentence. If the chosen player is not the most
+urgent sale, the page says so in writing and challenges the move. A
+transfer that cannot survive that sentence is not recommended.
+
+### "Nothing specific" is banned where specific news exists
+
+For each player's CASE FOR SELLING, search for things that WEAKEN him —
+not just for articles recommending a sale. Reduced starting certainty, a
+squad omission, a transfer situation, uncertainty before a deadline, the
+opportunity cost of the money. Those appear even when the verdict is KEEP.
+
+### The final sanity check
+
+Before publishing, ask: *would a knowledgeable FPL manager who read
+today's football news look at any label on this page and think it was
+obviously wrong?* If yes, research again. The page must never call a
+player a secure starter while very recent evidence questions it.
+
 ### Fact, inference, unconfirmed — never collapsed
 
 > **FACT** He was omitted from the squad. There is reported interest.

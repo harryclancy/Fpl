@@ -94,6 +94,10 @@ class TransferCase:
     free_transfers: int = 1
     alternative: str = ""
     bank_after: float | None = None
+    # Why this player is the one leaving, rather than someone else in the
+    # squad. Filled from the sell-urgency ranking. A transfer that cannot
+    # survive this sentence should not be recommended.
+    why_not_instead: str = ""
 
     @property
     def hit_required(self) -> bool:

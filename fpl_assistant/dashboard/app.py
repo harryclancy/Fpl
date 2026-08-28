@@ -1107,6 +1107,9 @@ def render_transfer_block(case, index: int) -> None:
     if case.into.record:
         st.markdown(f"**His record against them.** {case.into.record}")
     st.markdown(case.why_this_swap)
+    why_him = getattr(case, "why_not_instead", "")
+    if why_him:
+        st.markdown(f"**Why sell {case.out.name} rather than someone else?** {why_him}")
 
     st.markdown(f"**Short-term.** {case.short_term}")
     st.markdown(f"**Next {transfer_case.LOOKAHEAD_GAMEWEEKS} gameweeks.** {case.look_ahead}")
@@ -1238,7 +1241,30 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     free_transfers = cached_free_transfers(squad.team_id)
     bank = float(squad.bank or 0.0)
 
-    # --- the transfer decision, computed before either section renders --
+    # --- rank the squad by sell urgency BEFORE choosing a replacement ---
+    #
+    # The old order was backwards: find an attractive target, then look for
+    # whoever the money worked against. That is how a settled starter gets
+    # sold to fund another midfielder while a player in the middle of a
+    # transfer saga is kept.
+    matchup_fixtures = cached_matchups(int(next_event))
+    squad_dossiers = []
+    for pid in owned_ids:
+        if pid not in scored.index and pid not in set(scored["id"]):
+            continue
+        row = scored[scored["id"] == pid]
+        if row.empty:
+            continue
+        row = row.iloc[0].copy()
+        run, _ = transfer_case._fixture_run(
+            row, fixture_table, next_event, transfer_case.LOOKAHEAD_GAMEWEEKS
+        )
+        squad_dossiers.append(dossier.build(
+            row, next_event, fixtures=matchup_fixtures, fixture_run=run, starting=True,
+        ))
+    ranking = dossier.rank_by_sell_urgency(squad_dossiers)
+
+    # --- the transfer decision -----------------------------------------
     plan = None
     try:
         budget = transfer_budget.decide(owned, free_transfers=free_transfers)
@@ -1257,6 +1283,8 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
                 fixture_table=fixture_table, free_transfers=free_transfers,
                 bank_after=bank,
             )
+            for case in cases:
+                case.why_not_instead = ranking.why_this_one(case.out.player_id)
         except Exception:
             cases = []
 
@@ -1325,6 +1353,19 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
 
     # ================= SECTION 2 — SUGGESTED TRANSFERS ================
     _section("Suggested transfers", budget.headline if budget else "")
+
+    if ranking.entries:
+        with st.expander("Sell urgency across all fifteen — worked out before any target"):
+            st.caption(
+                "0 no reason to sell · 1 minor concern · 2 monitor · 3 genuine candidate · "
+                "4 strong sell · 5 urgent. Deliberately blind to the projection: a projection "
+                "cannot see an omission, a bid, or a manager declining to commit."
+            )
+            for d in ranking.ordered:
+                st.markdown(
+                    f"**{d.sell_urgency}/5 · {d.name}** ({d.sell_urgency_label}) — "
+                    f"{d.sell_urgency_reason}"
+                )
 
     if not acting:
         render_html(

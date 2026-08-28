@@ -138,9 +138,13 @@ def test_transfer_status_is_graded_not_believed_or_dismissed():
     serious = dossier.build(
         _frame(transfer={"status": "Bid made", "detail": "x"}).iloc[0], 2, fixtures=[])
 
-    assert quiet.minutes_outlook in ("Very secure", "Secure")
+    # A low-level rumour alone must not push him toward the exit — but it
+    # also must not earn him a "Secure" label he has no evidence for.
+    assert quiet.minutes_outlook == dossier.MINUTES_UNKNOWN
     assert quiet.verdict != "SELL"
+    assert quiet.sell_urgency <= 2
     assert serious.verdict == "SELL"
+    assert serious.sell_urgency == 5
 
 
 def test_an_unrecognised_transfer_status_falls_back_to_none():
@@ -296,3 +300,176 @@ def test_the_watkins_transfer_produces_a_sell_from_football_news_alone():
     assert watkins["transfer"]["status"] == "Advanced"
     assert any(e["kind"] == "club open to sale" for e in watkins["events"])
     assert watkins["research_depth"] == "football news"
+
+
+# --- security must be earned, never assumed ------------------------------
+
+def test_an_unresearched_player_is_never_called_a_secure_starter():
+    """The Enzo Fernández bug, at its root.
+
+    The first version started every player at "Secure" and escalated only
+    on contradicting evidence, so a player nobody had researched came out
+    as SECURE STARTER / MINUTES SECURE with an EMPTY reasons list. Absence
+    of evidence was reading as evidence of security — which is how the
+    page called a man a secure starter while his transfer was being
+    negotiated and he had just been left out of a cup squad.
+    """
+    d = dossier.build(_frame(web_name="Nobody").iloc[0], 2, fixtures=[], starting=True)
+
+    assert d.minutes_outlook == dossier.MINUTES_UNKNOWN
+    assert d.status == "Not yet researched"
+    assert d.minutes_reasons, "an unchecked player must still say WHY it is unchecked"
+    assert "unchecked rather than confirmed" in d.minutes_reasons[0]
+    assert "Secure" not in d.status
+
+
+def test_security_is_earned_by_positive_evidence():
+    nailed = _frame()
+    nailed["predicted_start"] = "nailed"
+    assert dossier.build(nailed.iloc[0], 2, fixtures=[]).minutes_outlook == "Very secure"
+
+    started = _frame(events=[{"kind": "started", "detail": "90 mins", "source": "Chelsea"}])
+    assert dossier.build(started.iloc[0], 2, fixtures=[]).minutes_outlook == "Secure"
+
+
+def test_an_unchecked_player_never_claims_nothing_specific_against_him():
+    d = dossier.build(_frame().iloc[0], 2, fixtures=[], starting=True)
+    assert "minutes have not been confirmed" in d.case_for_selling
+    assert d.case_for_selling != "Nothing specific."
+
+
+def test_every_minutes_call_carries_a_reason():
+    """A label with no reason behind it is the thing that went wrong."""
+    for events, predicted in (([], ""), ([], "nailed"),
+                              ([{"kind": "not in squad", "detail": "x", "source": "y"}], "nailed")):
+        frame = _frame(events=events)
+        if predicted:
+            frame["predicted_start"] = predicted
+        d = dossier.build(frame.iloc[0], 2, fixtures=[])
+        assert d.minutes_reasons, f"no reason for {d.minutes_outlook}"
+
+
+# --- recency conflict ----------------------------------------------------
+
+def test_a_stored_nailed_label_against_fresh_bad_news_is_flagged():
+    frame = _frame(events=[
+        {"kind": "not in squad", "detail": "Left out of the cup squad", "source": "ESPN"},
+    ])
+    frame["predicted_start"] = "nailed"
+    d = dossier.build(frame.iloc[0], 2, fixtures=[])
+
+    conflict = d.recency_conflict
+    assert "Recency conflict" in conflict
+    assert "Fresh evidence wins" in conflict
+    # And the fresh evidence actually won.
+    assert d.minutes_outlook == "Significant concern"
+
+
+def test_no_conflict_is_reported_when_the_evidence_agrees():
+    frame = _frame(events=[{"kind": "started", "detail": "90", "source": "Chelsea"}])
+    frame["predicted_start"] = "nailed"
+    assert dossier.build(frame.iloc[0], 2, fixtures=[]).recency_conflict == ""
+
+
+# --- sell urgency, and selling the right player --------------------------
+
+def test_the_enzo_profile_outranks_a_settled_starter_for_selling():
+    """The decision the engine got backwards.
+
+    Selling a settled starter in an elite attack to fund another
+    midfielder, while keeping a player who was substituted on, then
+    omitted from a squad, with active transfer interest, is exactly the
+    wrong way round.
+    """
+    enzo = _frame(
+        id=1, web_name="Enzo",
+        events=[
+            {"kind": "benched", "detail": "Came on as a sub in the opener", "source": "ESPN"},
+            {"kind": "not in squad", "detail": "Omitted from the cup squad", "source": "ESPN"},
+        ],
+        transfer={"status": "Credible interest", "detail": "City interested"},
+    )
+    settled = _frame(id=2, web_name="Semenyo",
+                     events=[{"kind": "started", "detail": "Starts wide left", "source": "MCFC"}])
+    settled["predicted_start"] = "nailed"
+    settled["set_pieces"] = "corners"
+
+    a = dossier.build(enzo.iloc[0], 2, fixtures=[], starting=True)
+    b = dossier.build(settled.iloc[0], 2, fixtures=[], starting=True)
+    ranking = dossier.rank_by_sell_urgency([a, b])
+
+    assert a.sell_urgency >= 4
+    assert b.sell_urgency <= 1
+    assert ranking.ordered[0].name == "Enzo"
+    assert b in ranking.protected
+
+
+def test_selling_the_wrong_player_is_challenged_in_writing():
+    """If the engine cannot answer "why him and not the other one?", the
+    transfer should not survive."""
+    enzo = _frame(id=1, web_name="Enzo",
+                  events=[{"kind": "not in squad", "detail": "Omitted", "source": "ESPN"}])
+    settled = _frame(id=2, web_name="Semenyo",
+                     events=[{"kind": "started", "detail": "Starts", "source": "MCFC"}])
+    settled["predicted_start"] = "nailed"
+    settled["set_pieces"] = "corners"
+
+    ranking = dossier.rank_by_sell_urgency([
+        dossier.build(enzo.iloc[0], 2, fixtures=[], starting=True),
+        dossier.build(settled.iloc[0], 2, fixtures=[], starting=True),
+    ])
+    challenge = ranking.why_this_one(2)     # selling Semenyo
+
+    assert "NOT the most urgent sale" in challenge
+    assert "Enzo" in challenge
+    assert "wrong move" in challenge
+
+
+def test_selling_the_most_urgent_player_is_justified_against_the_runner_up():
+    enzo = _frame(id=1, web_name="Enzo",
+                  events=[{"kind": "not in squad", "detail": "Omitted", "source": "ESPN"}])
+    settled = _frame(id=2, web_name="Semenyo",
+                     events=[{"kind": "started", "detail": "Starts", "source": "MCFC"}])
+    settled["predicted_start"] = "nailed"
+
+    ranking = dossier.rank_by_sell_urgency([
+        dossier.build(enzo.iloc[0], 2, fixtures=[], starting=True),
+        dossier.build(settled.iloc[0], 2, fixtures=[], starting=True),
+    ])
+    justification = ranking.why_this_one(1)
+
+    assert "most urgent sale" in justification
+    assert "Semenyo" in justification
+
+
+def test_a_strong_asset_is_protected_from_drifting_up_the_sell_list():
+    """Starting, no concern, on set pieces — the bar for selling him is
+    high, not average."""
+    frame = _frame(events=[{"kind": "started", "detail": "90", "source": "MCFC"}])
+    frame["predicted_start"] = "nailed"
+    frame["set_pieces"] = "corners and free-kicks"
+    frame["consensus_against"] = consensus._pack([{"point": "Tough run", "source": "GOAL"}])
+
+    d = dossier.build(frame.iloc[0], 2, fixtures=[], starting=True)
+    assert d.sell_urgency <= 1
+
+
+def test_the_shipped_research_ranks_enzo_above_semenyo():
+    """Against the real committed file, not a fixture."""
+    import pandas as _pd
+
+    frame = _pd.DataFrame([
+        {"id": 1, "web_name": "Enzo", "team_short_name": "CHE", "position": "MID",
+         "price": 7.0, "team": 1, "selected_by_percent": 6.0, "status": "a"},
+        {"id": 2, "web_name": "Semenyo", "team_short_name": "MCI", "position": "MID",
+         "price": 8.0, "team": 2, "selected_by_percent": 18.0, "status": "a"},
+    ]).set_index("id", drop=False)
+    annotated = consensus.annotate(frame, 2)
+
+    enzo = dossier.build(annotated.loc[1], 2, starting=True)
+    semenyo = dossier.build(annotated.loc[2], 2, starting=True)
+
+    assert enzo.sell_urgency > semenyo.sell_urgency
+    assert enzo.status != "Secure starter"
+    assert semenyo.status == "Secure starter"
+    assert "Omitted from the Carabao Cup squad" in enzo.case_for_selling

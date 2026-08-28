@@ -41,10 +41,30 @@ import pandas as pd
 MINUTES_LEVELS = (
     "Very secure",
     "Secure",
-    "Some concern",
+    "Slight concern",
     "Significant concern",
     "Major doubt",
 )
+
+# The default, and the fix for a real failure.
+#
+# The first version started every player at "Secure" and escalated only on
+# contradicting evidence. A player nobody had researched therefore came out
+# as SECURE STARTER / MINUTES SECURE with an empty reasons list — absence
+# of evidence read as evidence of security, which is exactly backwards.
+# Enzo Fernández had been substituted on rather than started, then left out
+# of a cup squad entirely, with active transfer interest, and the page
+# called him a secure starter because nothing in our files contradicted it.
+#
+# "Secure" must now be EARNED by positive evidence — a researched starting
+# call, or a recent start. Until then he is Unknown, and Unknown is treated
+# as a risk rather than as a clean bill of health.
+MINUTES_UNKNOWN = "Unknown — not yet checked"
+
+# Where an unchecked player sits when urgency is being ranked. Between
+# slight and significant concern: not assumed bad, definitely not assumed
+# fine, and never allowed to outrank a player we have actually confirmed.
+UNKNOWN_URGENCY = 2
 
 # --- How far a transfer story has actually got ---------------------------
 #
@@ -193,6 +213,7 @@ class Dossier:
     dissent: str = ""
     prior_seasons: str = ""
 
+    _predicted_start: str = ""           # stored expectation, for conflict detection
     research_depth: str = "fpl"          # how far the escalation had to go
     sources: list[str] = field(default_factory=list)
     enabler: bool = False
@@ -201,20 +222,138 @@ class Dossier:
 
     @property
     def status(self) -> str:
-        """The one-line status a reader scans before anything else."""
+        """The one-line status a reader scans before anything else.
+
+        "Secure starter" is only reachable with positive evidence. An
+        unchecked player reads as unchecked, which is the honest label and
+        the one that stops a page confidently mislabelling somebody whose
+        transfer is being negotiated.
+        """
         if self.minutes_outlook == "Major doubt":
             return "Major minutes concern"
         if self.transfer_index >= TRANSFER_MINUTES_THRESHOLD:
             return "Transfer risk"
         if self.minutes_outlook == "Significant concern":
             return "Major minutes concern"
-        if self.minutes_outlook == "Some concern":
+        if self.minutes_outlook == "Slight concern":
             return "Moderate minutes concern"
         if any(e.kind == "injury" for e in self.events):
             return "Injury doubt"
+        if self.minutes_unknown:
+            return "Not yet researched"
         if self.enabler:
             return "Budget enabler"
         return "Secure starter"
+
+    @property
+    def minutes_unknown(self) -> bool:
+        return self.minutes_outlook == MINUTES_UNKNOWN
+
+    @property
+    def recency_conflict(self) -> str:
+        """Where the stored expectation and the fresh evidence disagree.
+
+        The specific failure this catches: a file says "nailed", and then
+        the player is substituted on rather than starting, or left out of
+        a squad entirely, or a bid arrives. Publishing the stored label
+        over the top of that is how a page ends up calling a man a secure
+        starter on the morning his transfer is being negotiated.
+
+        Fresh evidence wins. This exists so the disagreement is stated
+        rather than silently resolved.
+        """
+        predicted = (self._predicted_start or "").lower()
+        if predicted not in ("nailed", "likely"):
+            return ""
+        contradicting = [
+            e for e in self.events
+            if e.kind in ("not in squad", "benched", "injury", "suspension",
+                          "transfer talks", "transfer bid", "club open to sale",
+                          "player wants move", "new signing")
+        ]
+        if not contradicting:
+            return ""
+        detail = "; ".join(f"{e.kind} — {e.detail}" for e in contradicting[:3])
+        return (
+            f"**Recency conflict.** The stored expectation is '{predicted}', but more recent "
+            f"evidence says otherwise: {detail}. Fresh evidence wins, so the minutes call above "
+            f"reflects the news rather than the stored label."
+        )
+
+    @property
+    def sell_urgency(self) -> int:
+        """0-5. How badly this player needs moving on, before any transfer.
+
+        Computed for all fifteen BEFORE a replacement is chosen, which is
+        the ordering the engine previously had backwards: it used to find
+        an attractive target and then look for whoever the money worked
+        against, which is how a starting winger gets sold to fund a
+        midfielder while a genuinely at-risk asset is kept.
+
+        Deliberately blind to the projection. A projection cannot see an
+        omission, a bid, or a manager declining to commit, and those are
+        precisely the things that make a player worth selling.
+        """
+        if self.minutes_outlook == "Major doubt":
+            return 5
+        if self.transfer_index >= TRANSFER_LEVELS.index("Bid made"):
+            return 5
+
+        score = 0
+        if self.minutes_outlook == "Significant concern":
+            score = max(score, 4)
+        elif self.minutes_outlook == "Slight concern":
+            score = max(score, 2)
+        elif self.minutes_unknown:
+            score = max(score, UNKNOWN_URGENCY)
+
+        if self.transfer_index >= TRANSFER_MINUTES_THRESHOLD:
+            score = max(score, 3)
+        elif self.transfer_index >= TRANSFER_LEVELS.index("Credible interest"):
+            score = max(score, 1)
+
+        if any(e.kind == "not in squad" for e in self.events):
+            score = max(score, 4)
+        if any(e.kind == "benched" for e in self.events):
+            score = max(score, 2)
+        if any(e.kind in ("new signing", "new competition for position") for e in self.events):
+            score = max(score, 2)
+        if self.case_against:
+            score = max(score, 1)
+
+        # Protection for a genuinely strong asset. A player who is
+        # starting, has no concern of any kind and carries dead-ball duty
+        # should not drift up the sell list on a thin argument — the bar
+        # for selling him has to be high, not average.
+        if (self.minutes_index <= 1 and not self.minutes_unknown
+                and self.transfer_index == 0 and self.set_pieces
+                and not any(e.negative for e in self.events)):
+            score = min(score, 1)
+        return min(score, 5)
+
+    @property
+    def sell_urgency_label(self) -> str:
+        return {
+            0: "No reason to sell",
+            1: "Minor concern",
+            2: "Monitor",
+            3: "Genuine sell candidate",
+            4: "Strong sell",
+            5: "Urgent sell",
+        }[self.sell_urgency]
+
+    @property
+    def sell_urgency_reason(self) -> str:
+        bits = []
+        if self.minutes_reasons:
+            bits.append(self.minutes_reasons[0])
+        if self.transfer_index >= TRANSFER_LEVELS.index("Credible interest"):
+            bits.append(f"transfer status '{self.transfer_status}'")
+        for event in self.negative_events[:2]:
+            bits.append(f"{event.kind}: {event.detail}")
+        if not bits:
+            bits.append("nothing adverse found")
+        return "; ".join(bits)
 
     @property
     def transfer_index(self) -> int:
@@ -289,9 +428,13 @@ class Dossier:
         minutes = {
             "Very secure": "He is a certainty to start.",
             "Secure": "He is expected to start.",
-            "Some concern": "He should start, but it is not guaranteed.",
+            "Slight concern": "He should start, but it is not guaranteed.",
             "Significant concern": "There is real doubt over whether he starts.",
             "Major doubt": "He may well not feature at all.",
+            MINUTES_UNKNOWN: (
+                "His involvement has not been confirmed either way — treat this as unchecked "
+                "rather than safe, and look at the late team news before the deadline."
+            ),
         }[self.minutes_outlook]
         parts.append(minutes)
         if self.minutes_reasons:
@@ -365,6 +508,12 @@ class Dossier:
             parts.append(
                 f"Expected minutes are the problem: **{self.minutes_outlook}**. A player who might "
                 f"not play is worth less than his projection says regardless of how good he is."
+            )
+        if self.minutes_unknown:
+            parts.append(
+                "His minutes have not been confirmed. Owning a player whose involvement is "
+                "unchecked is itself a risk, and the opportunity cost of the money is real "
+                "while that stays open."
             )
         if not parts:
             parts.append(
@@ -451,9 +600,13 @@ def minutes_from(row: pd.Series, events: list[Event], transfer_status: str) -> t
     from last week's squad is the present, and when they disagree the
     present wins — that is the entire point of researching a player rather
     than projecting him.
+
+    Returns `MINUTES_UNKNOWN` when there is no evidence either way.
+    Security is earned, never assumed: see MINUTES_UNKNOWN above for the
+    failure that rule exists to prevent.
     """
     reasons: list[str] = []
-    level = 1  # Secure
+    level: int | None = None
 
     predicted = _text(row, "predicted_start").lower()
     mapping = {"nailed": 0, "likely": 1, "rotation risk": 2, "doubt": 3, "out": 4}
@@ -461,37 +614,51 @@ def minutes_from(row: pd.Series, events: list[Event], transfer_status: str) -> t
         level = mapping[predicted]
         reasons.append(f"researched starting call is '{predicted}'")
 
+    # A recent start is the other way to earn security.
+    if any(e.kind == "started" for e in events):
+        started = next(e for e in events if e.kind == "started")
+        level = min(level, 1) if level is not None else 1
+        reasons.append(f"started the most recent match ({started.detail or 'confirmed'})")
+
+    def escalate(current, floor):
+        return floor if current is None else max(current, floor)
+
     status = str(row.get("status") or "a")
     if status != "a":
-        level = max(level, 4)
+        level = escalate(level, 4)
         reasons.append("flagged as unavailable by the official FPL data")
 
     chance = pd.to_numeric(pd.Series([row.get("chance_of_playing_next_round")]), errors="coerce").iloc[0]
     if pd.notna(chance) and chance <= 50:
-        level = max(level, 3)
+        level = escalate(level, 3)
         reasons.append(f"chance of playing given as {chance:.0f}%")
 
     for event in events:
         if event.kind == "not in squad":
-            level = max(level, 3)
+            level = escalate(level, 3)
             reasons.append("left out of the most recent matchday squad")
         elif event.kind in ("injury", "suspension", "red card"):
-            level = max(level, 4)
+            level = escalate(level, 4)
             reasons.append(f"{event.kind} reported")
         elif event.kind in ("new signing", "new competition for position"):
-            level = max(level, 2)
+            level = escalate(level, 2)
             reasons.append("new competition for his place")
         elif event.kind == "benched":
-            level = max(level, 2)
+            level = escalate(level, 2)
             reasons.append("started on the bench last time out")
 
     try:
         if TRANSFER_LEVELS.index(transfer_status) >= TRANSFER_MINUTES_THRESHOLD:
-            level = max(level, 2)
+            level = escalate(level, 2)
             reasons.append(f"transfer situation at '{transfer_status}'")
     except ValueError:
         pass
 
+    if level is None:
+        return MINUTES_UNKNOWN, [
+            "no starting call, recent appearance, injury or transfer information found — "
+            "this is unchecked rather than confirmed"
+        ]
     return MINUTES_LEVELS[min(level, len(MINUTES_LEVELS) - 1)], reasons
 
 
@@ -572,6 +739,7 @@ def build(
         vice_captain=vice_captain,
         minutes_outlook=outlook,
         minutes_reasons=reasons,
+        _predicted_start=_text(row, "predicted_start"),
         transfer_status=transfer_status,
         transfer_detail=_text(row, "transfer_detail"),
         transfer_checked=bool(recorded),
@@ -591,3 +759,80 @@ def build(
         sources=sources,
         enabler=price <= 4.5 and not starting,
     )
+
+
+@dataclass
+class SellRanking:
+    """The fifteen, ordered by how badly each needs moving on.
+
+    Computed BEFORE any replacement is considered, which is the ordering
+    the engine previously had backwards. The old logic found an attractive
+    target and then looked for whoever the money worked against — which is
+    how a settled starter in the best attack in the league gets sold to
+    fund another midfielder while a player in the middle of a transfer
+    saga is kept.
+    """
+
+    entries: list = field(default_factory=list)   # (dossier, urgency)
+
+    @property
+    def ordered(self) -> list:
+        return [d for d, _ in sorted(self.entries, key=lambda e: -e[1])]
+
+    @property
+    def candidates(self) -> list:
+        """Players with a genuine reason to go — urgency 3 or above."""
+        return [d for d, u in sorted(self.entries, key=lambda e: -e[1]) if u >= 3]
+
+    @property
+    def protected(self) -> list:
+        """Assets with a high bar for selling: settled, and nothing wrong."""
+        return [d for d, u in self.entries if u <= 1]
+
+    def urgency_of(self, player_id: int) -> int:
+        for d, u in self.entries:
+            if d.player_id == player_id:
+                return u
+        return 0
+
+    def why_this_one(self, chosen_id: int) -> str:
+        """Why we are selling him rather than somebody else in the squad.
+
+        The question the engine has to be able to answer before a transfer
+        is allowed out of the door. If the chosen player is not among the
+        most urgent, that is stated plainly rather than hidden — a transfer
+        that cannot survive this sentence should not be recommended.
+        """
+        ordered = sorted(self.entries, key=lambda e: -e[1])
+        if not ordered:
+            return ""
+        chosen = next((d for d, _ in ordered if d.player_id == chosen_id), None)
+        if chosen is None:
+            return ""
+        urgency = self.urgency_of(chosen_id)
+        top, top_urgency = ordered[0]
+
+        if top.player_id == chosen_id:
+            runner_up = ordered[1] if len(ordered) > 1 else None
+            line = (
+                f"He is the most urgent sale in the squad ({urgency}/5 — {chosen.sell_urgency_label}): "
+                f"{chosen.sell_urgency_reason}."
+            )
+            if runner_up is not None:
+                other, other_urgency = runner_up
+                line += (
+                    f" The next candidate is {other.name} at {other_urgency}/5, which is a weaker "
+                    f"case: {other.sell_urgency_reason}."
+                )
+            return line
+
+        return (
+            f"⚠️ **He is NOT the most urgent sale.** {chosen.name} rates {urgency}/5 "
+            f"({chosen.sell_urgency_label}), while {top.name} rates {top_urgency}/5 — "
+            f"{top.sell_urgency_reason}. Selling {chosen.name} while holding {top.name} needs a "
+            f"reason beyond the money working, and if there isn't one, this is the wrong move."
+        )
+
+
+def rank_by_sell_urgency(dossiers) -> SellRanking:
+    return SellRanking(entries=[(d, d.sell_urgency) for d in dossiers])
