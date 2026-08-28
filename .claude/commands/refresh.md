@@ -12,14 +12,56 @@ deliberately zero-cost — there is no paid code path anywhere in it, and a test
 enforces that. Web search inside a Claude Code session is covered by the
 subscription instead, so the research happens here and gets committed.
 
-## Step 1 — work out what actually needs researching
+## The principle
 
-Do NOT start by searching for "who are analysts talking about". That makes the
-media cycle decide your coverage, and it is why this file used to cover a dozen
-players out of a pool of seven hundred while a differential the model liked went
-unmentioned.
+This should read as though a hundred FPL experts worked on it — not as
+though an algorithm ranked a spreadsheet. The projection is ONE input. A
+recommendation resting on it alone is not finished work.
 
-Ask the app instead:
+Every pick must combine: data + fixtures + current news + tactical role +
+expected minutes + expert opinion + longer-term strategy.
+
+Not good enough:
+> "Haaland has the highest projected points."
+
+The standard:
+> "Palmer stays because he is still Chelsea's penalty taker, still playing
+> as the No.10, and several sources this week flagged his underlying
+> numbers despite the blank. Chelsea then face X and Y over the next
+> three, so selling after one quiet game likely means buying him back."
+
+## The twenty steps
+
+1. **Load the current squad.** The user's ACTUAL team — never a squad this
+   app recommended earlier. Confirm the gameweek it came from.
+2. Load bank, free transfers, chips available, current prices.
+3. Identify the gameweek and its deadline.
+4. Search the verified sources for material on this gameweek.
+5. Research every owned player. All fifteen, no exceptions.
+6. Research realistic transfer targets.
+7. Research injuries, suspensions and team news.
+8. Research manager press conferences.
+9. Update underlying statistics.
+10. Evaluate this gameweek.
+11. **Evaluate the next 3-5 gameweeks.**
+12. Determine transfers — or that rolling is better.
+13. Determine the XI.
+14. Determine bench order.
+15. Determine the captain.
+16. Determine the vice-captain.
+17. Write reasoning for every squad player.
+18. Write reasoning for every transfer.
+19. Run factual verification (below).
+20. Record the run:
+
+```bash
+python -c "import sys; sys.path.insert(0,'.'); \
+from fpl_assistant.research import research_log; \
+r = research_log.measure(GW); research_log.save(r); print(r.coverage_line)"
+```
+
+Step 1 is the one that has actually gone wrong: check what needs
+researching by asking the app, not by reading the headlines.
 
 ```
 python -c "
@@ -31,82 +73,115 @@ teams = teams_df(b); players = attach_team_names(players_df(b), teams)
 s = gameweek_state.resolve(events_df(b), fx)
 scored = squad_builder.score_players(players, fx, teams, s.planning_event)
 ds = decision_set.build(scored)
-print('GW', s.planning_event, '| live:', s.live_event, '|', len(ds), 'players in the decision set')
+print('GW', s.planning_event, '|', len(ds), 'players in the decision set')
 for e in ds.entries:
-    print(f\"  [{e.depth:7s}] {e.name:16s} {e.team:4s} {e.position:4s} £{e.price:4.1f}m {e.ownership:5.1f}%  {'; '.join(e.reasons)}\")
-print()
-print('coverage now:', decision_set.coverage(ds, scored))
+    print(f\"  [{e.depth:7s}] {e.name:16s} {e.team:4s} {e.position:4s} £{e.price:4.1f}m {e.ownership:5.1f}%\")
 "
 ```
 
-That prints the players any decision this week could touch — your squad, the
-realistic transfer targets at each position, the template, and anything the
-projection rates highly — each tagged `full` or `facts`.
-
 If the FPL API is unreachable, say so and ask which gameweek rather than
-guessing. Print that gameweek's fixtures too: research aimed at the wrong
-matches is worse than none.
+guessing.
 
-## Step 2 — research that list, at the depth it's tagged
+## What to research, per player
 
-**`full`** — needs a `case`, a real `watch_out`, at least two `key_stats`,
-`voices` attributed to named outlets, and `dissent` where opinion genuinely
-splits.
+Availability and role first, because they void everything else:
 
-**`facts`** — needs only `predicted_start`, `set_pieces` and `role`. Do not
-write a case for a squad filler nobody will start; effort spent where no
-decision is being made is effort not spent where one is.
+- injuries, doubts, suspensions, expected minutes, starting likelihood
+- manager press-conference quotes
+- tactical role, position on the pitch, recent starts and substitutions
+- set pieces: penalties, corners, free-kicks — separately, not as one field
 
-Work the list rather than the headlines. A player on it that nobody has written
-about this week is still worth a line saying so — "no coverage found, projection
-only" is information.
+Then output and context:
 
-### Prioritise, within that
+- form, xG, xA, xGI, shots, shots in the box, big chances, chances created
+- clean-sheet prospects, defensive-contribution potential, bonus potential
+- ownership, price, price-change risk, transfers in and out
+- fixture difficulty and the upcoming RUN, rotation and European rotation
+- who experts are buying, selling, captaining, and disagreeing about
 
-1. **Predicted line-ups and team news.** Minutes decide more gameweeks than any
-   rate does, and the FPL API carries nothing useful about them — availability
-   only moves once a club confirms an injury, by which point everyone knows.
-   `predicted_start` must be one of: `nailed`, `likely`, `rotation risk`,
-   `doubt`, `out`.
-2. **Set-piece and penalty order.** FPL's own order fields lag reality by weeks.
-   Dedicated trackers publish this properly.
-3. **Role changes.** A full-back playing as a winger is the most valuable
-   mispricing in the game, and no rate will tell you about it.
-4. **Highly owned players analysts are now warning against.**
-5. **Genuine splits in expert opinion.**
-6. **Club-wide verdicts**, for as many of the twenty as you can support.
-7. **Anytime-goalscorer odds and expected captain share** for the
-   most-captained attackers. Captain share governs rank and appears nowhere in
-   the FPL API, so if you find nothing else, find this.
-8. **Head-to-head history** for the notable fixtures.
+## Verify before you publish
 
-Cover at least six or seven distinct outlets: Fantasy Football Scout, RotoWire,
-AllAboutFPL, Fantasy Football Fix, Fantasy Football Hub, the official Scout,
-OneFPL, FPL Pulse. One outlet's view is a take; several agreeing is a consensus,
-and the difference is the whole point of the file.
+Claude has previously been wrong about roles, injuries, fixtures, set
+pieces, transfers and team status. Before writing any of these as fact:
 
-## Step 3 — write the files
+> "X takes penalties" · "X is injured" · "X has lost his place" ·
+> "X is playing deeper" · "X is suspended" · "X's next three are…"
 
-- `data/consensus/gw{n}.json` — the decision set, at tagged depth.
-- `data/consensus/teams.json` — club `stances`. Update where a verdict has
-  changed or expired, and move it when the evidence moves: a club that was an
-  avoid and then won deserves a downgrade to caution, not a silent hold.
-- `data/odds/gw{n}.json` — goalscorer prices, `captain_share`, `matchups`.
-  Write no file at all rather than an invented one.
+**find it stated, and for the important ones find it twice.** Minutes and
+set-piece claims are the two that change a decision on their own — the
+quality-control gate reports which of them rest on a single source.
 
-## Step 4 — validate, then commit
+When sources conflict, do NOT silently pick one:
 
-Non-negotiable:
-
-```
-python -m pytest tests/test_research_data_quality.py -q
+```json
+"dissent": {"kind": "output", "case": "Sources disagree here: A says…, B says…", "sources": [...]}
 ```
 
-If it fails, fix the data — never the rules. Each exists because it caught
-something real. Then re-run the coverage line from Step 1 and report the number:
-that is the honest measure of whether this refresh did its job.
+When something cannot be confirmed, write **"Unconfirmed"** rather than
+presenting it as fact. An honest gap is usable; a confident guess is not.
 
-Commit and push to the current branch.
+Never fabricate consensus. Two outlets in favour and eight against is not
+"analysts like him" — it is a split, and saying so is the useful part.
+
+## Freshness
+
+- **Team news:** last ~72 hours. Older is background, not evidence.
+- **Press conferences:** the latest one, not last week's.
+- **FPL advice:** pieces about THIS gameweek specifically.
+- **Statistics:** this season and recent matches.
+
+An evergreen article can give background but must never override current
+information. If an official club source contradicts an FPL blog, the club
+source normally wins.
+
+## Look ahead 3-5 gameweeks, always
+
+No transfer is judged on one Saturday. For each proposed move ask:
+
+- Does the incoming player have more than one good fixture?
+- Are we buying immediately before a hard run?
+- Will we want to sell him again next week?
+- Does the outgoing player have a good fixture coming?
+- Would rolling be better?
+- Does this block a more important move next week?
+- Does it leave enough money for the next one?
+- Is a hit genuinely justified?
+
+`analysis/transfer_case.py` computes the horizon comparison, the
+alternative and the roll verdict. `analysis/planner.py` does the
+multi-week ILP. Use them — but the words are yours.
+
+## Writing standard
+
+Numbers support the write-up; they never replace it.
+
+> ✅ "Watkins has not scored yet, but the underlying picture is better than
+> the returns suggest…"
+> ❌ "Watkins xGI = 1.37. Projection = 5.82."
+
+Attribute properly — "three of the sources reviewed this week", "Villa's
+manager confirmed in his press conference", "according to Liverpool's own
+preview". Never "analysts say".
+
+## The homepage has exactly three sections
+
+1. **This week's suggested team** — pitch, C and VC marked, bench beneath.
+2. **Suggested transfers** — SELL → BUY, then why-sell, why-buy,
+   why-this-swap, short-term, next 3-5 GWs, alternative, roll?, confidence.
+   If rolling is right, say ROLL THE TRANSFER and explain. Never invent a
+   move to fill the space.
+3. **Why each player is in the team** — all fifteen, own card, specific
+   prose, sources collapsed behind a quiet "Sources used: N".
+
+Nothing else goes above these. Everything else belongs on another tab.
+
+## Before publishing
+
+`analysis/quality_control.py` runs the checklist: squad size and vintage,
+availability, expected minutes, bank, free transfers, transfer reasoning,
+look-ahead, a write-up per player, one captain, and that the captain is a
+midfielder or forward. Blockers are shown to the reader rather than
+silently swallowed. **If a check fails, resolve it — do not publish over it.**
 
 ## Where to research from — the 100 verified sources, and nothing else
 

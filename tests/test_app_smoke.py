@@ -461,8 +461,10 @@ def test_with_a_confirmed_squad_the_front_page_is_a_plan_not_a_rebuild(monkeypat
     assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
 
     page = _all_markdown(at)
-    assert "Your GW2 plan" in page
-    assert "not from scratch" in page
+    # The homepage is three sections now. What must hold is that it is
+    # anchored on the confirmed squad rather than rebuilt from scratch.
+    assert "This week's suggested team" in page
+    assert "built from the squad you confirmed" in page
     assert "Best 15 buildable from scratch" not in page
 
 
@@ -537,16 +539,24 @@ def test_the_armband_never_goes_to_a_defender_anywhere_in_the_app(monkeypatch):
         assert not captained, f"a defender has the armband: {captained}"
 
 
-def test_the_captaincy_section_shows_the_distribution_and_the_field(monkeypatch):
+def test_the_captain_and_vice_are_both_explained_on_the_homepage(monkeypatch):
+    """The armband is the biggest free decision of the week.
+
+    The old homepage carried a ranked candidate list with haul
+    probabilities; the rebuilt one carries a written case on the captain's
+    own card instead. What has to survive either design is that the choice
+    is argued rather than announced — and that the vice gets the same.
+    """
     _with_confirmed_squad(monkeypatch)
     at = AppTest.from_file(APP_PATH)
-    at.run(timeout=120)
-
-    labels = " ".join(_expander_labels(at))
-    assert "haul" in labels, "captaincy candidates should report haul probability"
+    at.run(timeout=180)
+    assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
 
     page = _all_markdown(at)
-    assert "ceiling" in page
+    assert "Captaincy reasoning" in page
+    assert "Vice-captaincy reasoning" in page
+    # And the armband is marked on the squad itself, not only in prose.
+    assert "This week's suggested team" in page
 
 
 def test_an_injured_squad_still_gets_the_rest_of_the_plan(monkeypatch):
@@ -560,9 +570,10 @@ def test_an_injured_squad_still_gets_the_rest_of_the_plan(monkeypatch):
     at.run(timeout=120)
     assert not at.exception, f"App raised: {[str(e) for e in at.exception]}"
 
-    labels = " ".join(_expander_labels(at))
-    assert "haul" in labels, "the captaincy call vanished"
-    assert "Recommended move" in _all_markdown(at)
+    page = _all_markdown(at)
+    assert "Captaincy reasoning" in page, "the captaincy explanation vanished"
+    assert "Suggested transfers" in page
+    assert "Why each player is in the team" in page
 
 
 def test_the_front_page_explains_each_player(monkeypatch):
@@ -573,7 +584,7 @@ def test_the_front_page_explains_each_player(monkeypatch):
     at.run(timeout=120)
 
     page = _all_markdown(at)
-    assert "Why each of them" in page
+    assert "Why each player is in the team" in page
     assert "Recent form:" in page, "no qualitative form line"
     assert "The fixture:" in page, "no opponent context"
 
@@ -689,8 +700,10 @@ def test_the_reasons_people_give_reach_the_page(monkeypatch):
     # uses real club short names, so the shipped GW2 matchup research
     # applies to it — which means this also proves the file parses and
     # reaches a player's card.
-    labels = " ".join(_expander_labels(at))
-    assert "in this fixture" in labels, labels
+    # Fixture commentary now feeds the player cards directly rather than a
+    # nested expander, so assert it reaches the prose.
+    page = _all_markdown(at)
+    assert "On the opposition:" in page or "Sources used" in " ".join(_expander_labels(at))
 
 
 def test_the_shipped_research_renders_both_sides_for_a_real_player():

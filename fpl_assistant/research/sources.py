@@ -174,3 +174,110 @@ def summary(source_plan: SourcePlan | None = None) -> str:
         f"{len(source_plan.groups)} scoped searches across "
         f"{len(RESEARCH_STEPS)} research steps."
     )
+
+
+# --- Auditing what the research actually cited ---------------------------
+
+# Names that appear in research files but are not the canonical source
+# name. Kept explicit rather than fuzzy-matched: a near-miss matcher would
+# quietly accept a source that is not on the list, which is the exact
+# failure this whole module exists to prevent.
+CITATION_ALIASES = {
+    "premier league": "Premier League Official Fantasy",
+    "the scout": "Premier League Official Fantasy",
+    "premier league official fantasy": "Premier League Official Fantasy",
+    "allaboutfpl": "All About FPL",
+    "all about fpl": "All About FPL",
+    "albion analytics": "Brighton & Hove Albion",
+    "goal.com": "GOAL",
+    "opta": "Opta Analyst",
+    "opta analyst": "Opta Analyst",
+    "premier injuries": "Premier Injuries",
+    "brentford fc": "Brentford",
+    "sports illustrated": "Sports Illustrated FPL",
+    # Shortened forms of names that carry a qualifier in the source list.
+    "espn": "ESPN Soccer",
+    "rotowire": "RotoWire Soccer",
+    "sky sports": "Sky Sports Premier League",
+    "draftkings network": "DraftKings Network Soccer",
+    "liverpool fc": "Liverpool",
+}
+
+
+def canonical(citation: str) -> Source | None:
+    """Resolves a citation string in a research file to a verified source.
+
+    Returns None when it cannot, which is the answer that matters: a
+    citation that resolves to nothing is a claim sourced to a site outside
+    the verified hundred, and the point of the list is that those do not
+    get used. This is how the rule stays a rule instead of a promise.
+    """
+    text = (citation or "").split("—")[0].strip()
+    if not text:
+        return None
+    low = text.lower()
+    by_name = {s.name.lower(): s for s in load()}
+
+    if low in by_name:
+        return by_name[low]
+    alias = CITATION_ALIASES.get(low)
+    if alias and alias.lower() in by_name:
+        return by_name[alias.lower()]
+
+    # A club citation may carry an "official" suffix: "Liverpool official".
+    stripped = low.removesuffix(" official").strip()
+    if stripped in by_name:
+        return by_name[stripped]
+    if stripped in CITATION_ALIASES:
+        mapped = CITATION_ALIASES[stripped]
+        if mapped.lower() in by_name:
+            return by_name[mapped.lower()]
+
+    # Parenthetical qualifiers: "Fantasy Football Scout (five-time top-1k)".
+    base = low.split("(")[0].strip()
+    if base and base in by_name:
+        return by_name[base]
+    if base in CITATION_ALIASES and CITATION_ALIASES[base].lower() in by_name:
+        return by_name[CITATION_ALIASES[base].lower()]
+
+    # Trailing qualifiers with no separator: "Fantasy Football Scout
+    # captaincy poll". Matched by prefix against the longest source name
+    # that fits, which is exact rather than fuzzy -- the citation has to
+    # BEGIN with a verified source's full name, so a site not on the list
+    # can never satisfy it.
+    for name in sorted(by_name, key=len, reverse=True):
+        if low.startswith(name):
+            return by_name[name]
+    return None
+
+
+def unverified_citations(*paths) -> list[str]:
+    """Every citation in the given research files that is NOT on the list."""
+    import json as _json
+    from pathlib import Path as _Path
+
+    found: set[str] = set()
+
+    def walk(node):
+        if isinstance(node, dict):
+            for key, value in node.items():
+                if key in ("source", "sources") and value:
+                    items = [value] if isinstance(value, str) else value
+                    for item in items:
+                        if not isinstance(item, str):
+                            continue
+                        for part in item.split("/"):
+                            part = part.strip()
+                            if part and canonical(part) is None:
+                                found.add(part)
+                else:
+                    walk(value)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+
+    for path in paths:
+        path = _Path(path)
+        if path.exists():
+            walk(_json.loads(path.read_text()))
+    return sorted(found)

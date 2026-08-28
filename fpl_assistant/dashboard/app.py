@@ -34,6 +34,8 @@ from fpl_assistant.analysis import (
     history,
     matchups,
     omissions,
+    player_case,
+    quality_control,
     planner,
     scenarios,
     gameweek_state,
@@ -52,7 +54,10 @@ from fpl_assistant.dashboard.cards import SCORE_BAD, SCORE_WARN, player_rank_car
 from fpl_assistant.dashboard.htmlutil import render_html
 from fpl_assistant.dashboard.media import player_photo_html
 from fpl_assistant.dashboard.pitch import render_pitch_html
-from fpl_assistant.dashboard.styles import fdr_color, hero_header, inject_global_css, section_header
+from fpl_assistant.dashboard.styles import (
+    fdr_color, hero_header, inject_global_css, inject_homepage_css, section_header,
+)
+from fpl_assistant.research import research_log
 from fpl_assistant.models import (
     Squad,
     SquadPick,
@@ -1057,179 +1062,309 @@ def render_owned_squad_cases(
             )
 
 
-def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, state) -> None:
-    """The weekly decision, anchored on the squad you actually own.
+def _section(title: str, subtitle: str = "") -> None:
+    render_html(f"<div class='fpl-section'>{title}</div>")
+    if subtitle:
+        render_html(f"<p class='fpl-sub'>{subtitle}</p>")
 
-    From GW2 onward a from-scratch fifteen is not advice, it's a
-    description of a squad you can't have: you own fifteen players, you
-    have one free transfer, and every extra move costs four points. The
-    useful question is much narrower — given what you own, what is the one
-    move worth making, and who starts?
+
+def render_transfer_block(case, index: int) -> None:
+    """One suggested transfer, argued rather than announced.
+
+    Laid out vertically — SELL, arrow, BUY — because that is the shape
+    that survives a phone screen. A side-by-side comparison table is the
+    first thing that breaks at 390px wide, and it was never clearer than
+    the arrow anyway.
     """
-    scored = cached_scores(players, fixtures, teams, next_event)
-    squad = confirmed.squad
-    owned_ids = [p.player_id for p in squad.picks]
-    owned = scored[scored["id"].isin(owned_ids)].copy()
+    confidence = case.confidence
+    pill = {"High": "fpl-high", "Medium": "fpl-med", "Low": "fpl-low"}[confidence]
 
-    section_header(
-        f"Your GW{next_event} plan",
-        f"Built from the squad you confirmed in GW{confirmed.event} — not from scratch",
+    render_html(
+        "<div class='fpl-card'>"
+        "<div class='fpl-swap'>"
+        f"<div class='fpl-out'><div class='lab'>Sell</div>"
+        f"<div class='leg'>{case.out.name}</div>"
+        f"<div class='fpl-meta'>{case.out.team} · {case.out.position} · £{case.out.price:.1f}m</div></div>"
+        "<div class='arrow'>↓</div>"
+        f"<div class='fpl-in'><div class='lab'>Buy</div>"
+        f"<div class='leg'>{case.into.name}</div>"
+        f"<div class='fpl-meta'>{case.into.team} · {case.into.position} · £{case.into.price:.1f}m</div></div>"
+        "</div>"
+        f"<div style='text-align:center'><span class='fpl-pill {pill}'>Confidence: {confidence}</span></div>"
+        "</div>"
+    )
+
+    st.markdown("**Why this transfer?**")
+    st.markdown(f"**Selling {case.out.name}.** " + (
+        " ".join(f"{point} ({source})." for point, source in case.out.reasons)
+        or "Nothing specific is being said against him — he is simply the player the squad can most afford to lose."
+    ))
+    st.markdown(f"**Buying {case.into.name}.** " + (
+        " ".join(f"{point} ({source})." for point, source in case.into.reasons)
+        or "No researched case beyond the projection, which is thin ground for spending a transfer."
+    ))
+    if case.into.record:
+        st.markdown(f"**His record against them.** {case.into.record}")
+    st.markdown(case.why_this_swap)
+
+    st.markdown(f"**Short-term.** {case.short_term}")
+    st.markdown(f"**Next {transfer_case.LOOKAHEAD_GAMEWEEKS} gameweeks.** {case.look_ahead}")
+    if case.alternative:
+        st.markdown(f"**Alternative.** {case.alternative}")
+    st.markdown(f"**Roll the transfer?** {case.roll_verdict}")
+
+    everyone = case.out.reasons + case.into.reasons
+    named = list(dict.fromkeys(source for _, source in everyone if source))
+    if named:
+        with st.expander(f"Sources used: {len(named)}"):
+            for source in named:
+                st.markdown(f"- {source}")
+    st.markdown("---")
+
+
+def render_player_card(case, fixture_table, next_event, alternative_case=None) -> None:
+    """One squad player, explained.
+
+    Deliberately not a stat block. The numbers that matter are already
+    inside the sentences; the ones that aren't were never going to change
+    a decision.
+    """
+    badge = ""
+    if case.captain:
+        badge = " &nbsp;<span class='fpl-pill fpl-high'>C</span>"
+    elif case.vice_captain:
+        badge = " &nbsp;<span class='fpl-pill fpl-med'>VC</span>"
+    where = "Starting XI" if case.starting else "Bench"
+
+    render_html(
+        "<div class='fpl-card'>"
+        f"<h4>{case.header}{badge}</h4>"
+        f"<p class='fpl-meta'>{case.subtitle} · {where}</p>"
+        "</div>"
+    )
+    st.markdown("**Why he's in our team**")
+    st.markdown(case.write_up())
+
+    if case.captain or case.vice_captain:
+        note = player_case.captaincy_reasoning(case, alternative_case)
+        if note:
+            st.markdown(note)
+
+    if case.risk:
+        st.markdown(f"**Risk.** {case.risk}")
+
+    if case.sources:
+        with st.expander(f"Sources used: {case.source_count}"):
+            for source in case.sources:
+                st.markdown(f"- {source}")
+    st.markdown("")
+
+
+def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, state) -> None:
+    """The homepage: squad, transfers, and why every player is here.
+
+    Three sections and nothing else. Everything that used to sit on this
+    page — coverage meters, factor panels, omissions, the multi-week
+    planner, the question box — is still in the app, on its own tab. It was
+    all competing with the two things somebody actually opens this for
+    before a deadline: who plays, and what should I change.
+    """
+    inject_homepage_css()
+    render_html("<div class='fpl-home'>")
+
+    squad = confirmed.squad
+    scored = cached_scores(players, fixtures, teams, next_event)
+    owned_ids = [p.player_id for p in squad.picks]
+    confirmed_ids = list(owned_ids)
+    owned = scored[scored["id"].isin(owned_ids)].copy()
+    fixture_table = fixtures_analysis.team_fixture_table(
+        fixtures, teams, next_event, transfer_case.LOOKAHEAD_GAMEWEEKS
     )
 
     if state is not None:
         render_live_gameweek_notice(state, scored)
 
-    missing = [pid for pid in owned_ids if pid not in set(scored["id"])]
-    if missing:
-        st.caption(
-            f"{len(missing)} of your players aren't in the projection pool (usually because "
-            f"they're flagged unavailable). They're excluded from the XI below."
-        )
-
     free_transfers = cached_free_transfers(squad.team_id)
+    bank = float(squad.bank or 0.0)
 
-    metrics = st.columns(4)
-    metrics[0].metric("Squad value", f"£{squad.team_value:.1f}m")
-    metrics[1].metric("Bank", f"£{squad.bank:.1f}m")
-    metrics[2].metric("Free transfers", free_transfers, help="Estimated — check the official page before taking a hit.")
-    metrics[3].metric(
-        "Projected pts", f"{owned['xp_next'].nlargest(11).sum():.0f}",
-        help="Your best legal XI from the players you already own, this gameweek.",
-    )
-
-    st.markdown("**How much of this is researched**")
-    render_coverage_panel(scored, owned_ids, next_event)
-
-    # An uneven season-history prior silently marks whole positions down,
-    # and the only visible symptom is that one position keeps getting
-    # sold. Say it out loud rather than letting it look like an opinion.
+    # --- the transfer decision, computed before either section renders --
+    plan = None
     try:
-        prior_coverage = history.coverage()
-        if not prior_coverage.balanced:
-            st.warning(prior_coverage.warning)
+        budget = transfer_budget.decide(owned, free_transfers=free_transfers)
+        plan = optimiser.optimise_transfers(
+            scored, owned_ids, bank=bank, free_transfers=free_transfers,
+            max_transfers=budget.limit, template_weight=rank_strategy_weight(),
+        )
     except Exception:
-        pass
+        budget = None
 
-    st.divider()
-    plan = render_transfer_plan(
-        players, fixtures, teams, next_event, squad, free_transfers, key_prefix="front"
-    )
-    render_multiweek_plan(
-        scored, owned_ids, float(squad.bank or 0.0), free_transfers,
-        key_prefix="front_multi", players=players,
-    )
-
-    # The suggested squad is the confirmed one with the recommended
-    # transfers applied — not a fifteen built from scratch. Showing the
-    # pre-transfer eleven under a recommended transfer asks the reader to
-    # do the substitution in their head, which is exactly the work the
-    # page exists to save them.
-    confirmed_ids = list(owned_ids)
-    suggested_ids = list(owned_ids)
+    cases = []
     if plan is not None and plan.transfers:
-        suggested_ids = [i for i in owned_ids if i not in set(plan.out_ids)] + list(plan.in_ids)
+        try:
+            cases = transfer_case.explain_plan(
+                scored, plan.out_ids, plan.in_ids, next_event,
+                fixture_table=fixture_table, free_transfers=free_transfers,
+                bank_after=bank,
+            )
+        except Exception:
+            cases = []
+
+    # A transfer the reasoning itself advises against is not a
+    # recommendation. Rolling is a real answer and the page has to be
+    # willing to give it rather than inventing a move to fill the space.
+    acting = [c for c in cases if not c.roll_instead]
+    apply_ids = set()
+    for case in acting:
+        apply_ids.add(case.out.player_id)
+
+    suggested_ids = [i for i in owned_ids if i not in apply_ids] + [
+        c.into.player_id for c in acting
+    ]
     suggested = scored[scored["id"].isin(suggested_ids)].copy()
-    if len(suggested) < 11:
+    if len(suggested) < 15:
         suggested, suggested_ids = owned, list(owned_ids)
-    owned, owned_ids = suggested, suggested_ids
 
-    st.divider()
-    if plan is not None and plan.transfers:
-        st.markdown(f"#### Your suggested XI for GW{next_event}")
-        st.caption(
-            f"Your confirmed GW{confirmed.event} squad with the transfer above applied — "
-            f"not a squad built from scratch. Captaincy is a free decision every week, and "
-            f"it's usually worth more than the transfer."
-        )
-    else:
-        st.markdown("#### Your best XI from what you own")
-        st.caption(
-            f"The strongest legal eleven from your confirmed GW{confirmed.event} fifteen. "
-            f"Captaincy is a free decision every week — it's usually worth more than the transfer."
-        )
+    # ================= SECTION 1 — THIS WEEK'S SUGGESTED TEAM ==========
+    _section(
+        f"This week's suggested team",
+        f"Gameweek {next_event} · built from the squad you confirmed in GW{confirmed.event}",
+    )
 
-    # A squad carrying injuries can't always field a legal eleven from the
-    # players still available, and when it can't, that must not blank the
-    # rest of the page. The captaincy call and the per-player cases are
-    # still exactly what someone in that position needs -- arguably more
-    # so, since they're about to make a transfer.
-    starting = bench = []
-    formation = None
+    starting, bench, formation = [], [], None
     captain_id = vice_id = None
     try:
-        starting, bench, formation = optimiser.optimise_starting_xi(owned, points_column="xp_next")
-        captain_id, vice_id = squad_builder.pick_captain(owned, starting)
+        starting, bench, formation = optimiser.optimise_starting_xi(suggested, points_column="xp_next")
+        captain_id, vice_id = squad_builder.pick_captain(suggested, starting)
     except Exception:
-        available = owned.sort_values("xp_next", ascending=False)
-        st.warning(
-            f"Only {len(owned)} of your fifteen are available and projectable, which isn't "
-            f"enough for a legal eleven — FPL will autosub around it. Everything below still "
-            f"applies, and the transfer above is the thing worth acting on."
-        )
+        available = suggested.sort_values("xp_next", ascending=False)
         starting = available["id"].head(11).tolist()
         bench = available["id"].iloc[11:].tolist()
         attackers = available[available["position"].isin(captain_call.ARMBAND_POSITIONS)]
         if len(attackers) >= 2:
             captain_id, vice_id = attackers["id"].iloc[0], attackers["id"].iloc[1]
+        st.warning(
+            "Not enough of your squad is available to field a legal eleven, so FPL will autosub "
+            "around it. The reasoning below still applies."
+        )
 
     xi = optimiser.SquadSolution(
-        squad_ids=owned_ids, starting_ids=starting, bench_ids=bench,
+        squad_ids=suggested_ids, starting_ids=starting, bench_ids=bench,
         captain_id=captain_id or (starting[0] if starting else 0),
         vice_captain_id=vice_id or (starting[1] if len(starting) > 1 else 0),
         formation=formation or "",
-        total_cost=float(owned["price"].sum()),
-        expected_points=float(owned.loc[owned["id"].isin(starting), "xp_next"].sum()),
+        total_cost=float(suggested["price"].sum()),
+        expected_points=float(suggested.loc[suggested["id"].isin(starting), "xp_next"].sum()),
     )
-
-    lookup = owned.set_index("id")
-    shape = st.columns(3)
-    shape[0].metric("Formation", formation or "—")
-    shape[1].metric(
-        "Captain", lookup.loc[captain_id, "web_name"] if captain_id in lookup.index else "—"
-    )
-    shape[2].metric(
-        "Vice", lookup.loc[vice_id, "web_name"] if vice_id in lookup.index else "—"
-    )
-
     if captain_id is not None:
+        render_html(render_pitch_html(
+            suggested.set_index("id", drop=False), _squad_from_solution(xi, next_event)
+        ))
+
+    lookup = suggested.set_index("id")
+    if bench:
+        lines = []
+        for order, pid in enumerate(bench, start=1):
+            if pid in lookup.index:
+                row = lookup.loc[pid]
+                lines.append(f"**{order}.** {row['web_name']} · {row['team_short_name']} · {row['position']}")
+        if lines:
+            st.markdown("**Bench**")
+            for line in lines:
+                st.markdown(line)
+
+    # ================= SECTION 2 — SUGGESTED TRANSFERS ================
+    _section("Suggested transfers", budget.headline if budget else "")
+
+    if not acting:
         render_html(
-            render_pitch_html(owned.set_index("id", drop=False), _squad_from_solution(xi, next_event))
+            "<div class='fpl-card'><h4>Roll the transfer</h4>"
+            "<p class='fpl-meta'>No move clears the bar this week.</p></div>"
         )
-
-    st.divider()
-    # Captaincy is judged over the players you own, since that's the only
-    # armband you can actually give out.
-    render_captain_call(owned, next_event)
-
-    report_text, _ = load_report(next_event)
-    indexed = owned.set_index("id", drop=False)
-    if captain_id in indexed.index and vice_id in indexed.index:
-        st.markdown(
-            rationale.captain_rationale(
-                indexed.loc[captain_id], indexed.loc[vice_id], report_text
+        if cases:
+            st.markdown(cases[0].roll_verdict)
+            st.markdown(f"**Next {transfer_case.LOOKAHEAD_GAMEWEEKS} gameweeks.** {cases[0].look_ahead}")
+            if cases[0].alternative:
+                st.markdown(f"**The closest thing to a move.** {cases[0].alternative}")
+        else:
+            st.markdown(
+                "Nothing in the squad is injured, suspended or out of favour, and no available "
+                "upgrade pays for itself across the next few gameweeks. A banked transfer is worth "
+                "more than a marginal one — it buys the option to react to team news next week."
             )
+        if budget:
+            st.caption(budget.reason)
+    else:
+        for index, case in enumerate(acting):
+            render_transfer_block(case, index)
+        held = [c for c in cases if c.roll_instead]
+        for case in held:
+            st.caption(
+                f"Considered and rejected: {case.out.name} → {case.into.name}. {case.roll_verdict}"
+            )
+
+    # ================= SECTION 3 — WHY EACH PLAYER ====================
+    _section(
+        "Why each player is in the team",
+        "All fifteen, including anyone the plan above would move on.",
+    )
+
+    order = list(starting) + list(bench)
+    order += [i for i in suggested_ids if i not in order]
+    player_cases = []
+    matchup_fixtures = cached_matchups(int(next_event))
+    for pid in order:
+        if pid not in lookup.index:
+            continue
+        row = lookup.loc[pid].copy()
+        row["id"] = pid
+        run, _ = transfer_case._fixture_run(
+            row, fixture_table, next_event, transfer_case.LOOKAHEAD_GAMEWEEKS
         )
+        player_cases.append(player_case.build(
+            row, next_event, fixtures=matchup_fixtures, fixture_run=run,
+            starting=pid in starting, captain=pid == captain_id, vice_captain=pid == vice_id,
+        ))
 
-    # The per-player case. This went missing when the front page became a
-    # plan rather than a build, and its absence left the page saying who
-    # to start without ever saying why — which is the only part a manager
-    # can actually argue with.
-    st.divider()
-    st.markdown("#### Why each of them")
-    render_player_cases(
-        indexed, starting, bench, fixtures, teams, next_event,
-        report_text, captain_id, vice_id,
-    )
+    captain_case = next((c for c in player_cases if c.captain), None)
+    vice_case = next((c for c in player_cases if c.vice_captain), None)
+    for case in player_cases:
+        alternative = vice_case if case.captain else (captain_case if case.vice_captain else None)
+        render_player_card(case, fixture_table, next_event, alternative)
 
-    # The fifteen you actually own, explained, including anyone the plan
-    # above would move on. The suggested squad answers "what should I
-    # do"; this answers "why do I own what I own", which is the question
-    # you ask when you're deciding whether to trust the suggestion.
-    render_owned_squad_cases(
-        scored, confirmed_ids, set(suggested_ids), fixtures, teams, next_event, report_text
-    )
+    # --- the footer: what was checked, and how much was read -----------
+    st.markdown("---")
+    try:
+        report = quality_control.run(
+            confirmed_ids, scored, next_event,
+            transfer_cases=cases, player_cases=player_cases,
+            bank=bank, free_transfers=free_transfers,
+            confirmed_event=confirmed.event,
+        )
+        run = research_log.load(int(next_event)) or research_log.measure(int(next_event))
+        st.caption(
+            f"Last researched: {run.finished_display} · {run.coverage_line} · {report.headline}"
+        )
+        if not report.passed:
+            for finding in report.blockers:
+                st.error(f"{finding.icon} **{finding.check}** — {finding.detail}")
+        with st.expander("Quality checks and research coverage"):
+            for finding in report.findings:
+                st.markdown(f"{finding.icon} **{finding.check}** — {finding.detail}")
+            if report.passed and not report.warnings:
+                st.markdown("Every check passed.")
+            gaps = quality_control.corroboration_gaps(scored, confirmed_ids)
+            if gaps:
+                st.markdown("**Single-sourced claims** (true as far as we know, but only one outlet):")
+                for gap in gaps:
+                    st.markdown(f"- {gap}")
+            if run.unverified:
+                st.warning(
+                    "Citations outside the verified source list: " + ", ".join(run.unverified)
+                )
+    except Exception as exc:
+        st.caption(f"Couldn't run the pre-publish checks ({exc}).")
 
-    render_question_box(scored, xi, next_event)
+    render_html("</div>")
 
 
 def render_starting_xi_tab(players, fixtures, teams, next_event, state=None):

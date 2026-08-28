@@ -366,6 +366,78 @@ HERO_HTML = f"""
 """
 
 
+# Mobile-first overrides for the homepage.
+#
+# The site is read on a phone, standing up, shortly before a deadline. That
+# is a different reading situation from a desktop dashboard and it wants
+# different things: one column, big type, generous spacing, and the squad
+# visible without scrolling past anything else.
+#
+# Everything here is written as a widening rather than a shrinking — the
+# base layout IS the phone layout, and the desktop gets a max-width. Doing
+# it the other way round is how a dashboard ends up squeezed onto a screen
+# it was never designed for.
+HOMEPAGE_CSS = """
+<style>
+/* One column, always. Streamlit's horizontal columns become stacked
+   blocks below tablet width so nothing is ever a tiny side-by-side. */
+@media (max-width: 760px) {
+  div[data-testid="stHorizontalBlock"] { flex-direction: column; gap: 0.4rem; }
+  div[data-testid="stHorizontalBlock"] > div { width: 100% !important; flex: 1 1 100% !important; }
+  .block-container { padding-left: 0.9rem; padding-right: 0.9rem; padding-top: 1rem; }
+}
+
+/* Readable at arm's length. 17px is the smallest that stays comfortable
+   on a phone in daylight. */
+.fpl-home .stMarkdown p, .fpl-home .stMarkdown li {
+  font-size: 1.02rem; line-height: 1.62; max-width: 68ch;
+}
+
+/* Section headings that actually separate sections. */
+.fpl-section {
+  font-family: 'Barlow Condensed', system-ui, sans-serif;
+  font-size: 1.55rem; font-weight: 700; letter-spacing: .02em;
+  text-transform: uppercase; margin: 2.4rem 0 .2rem 0; color: #10121a;
+}
+.fpl-section:first-of-type { margin-top: .6rem; }
+.fpl-sub { color: #6b7280; font-size: .93rem; margin: 0 0 1rem 0; }
+
+/* Cards: rounded, roomy, one per row. */
+.fpl-card {
+  background: #fff; border: 1px solid #e8e6ef; border-radius: 16px;
+  padding: 1.05rem 1.15rem; margin: 0 0 .85rem 0;
+  box-shadow: 0 1px 2px rgba(16,18,26,.04);
+}
+.fpl-card h4 { margin: 0 0 .1rem 0; font-size: 1.12rem; letter-spacing: .01em; }
+.fpl-meta { color: #6b7280; font-size: .87rem; margin: 0 0 .6rem 0; }
+
+/* The transfer block: vertical, with the arrow doing the work. */
+.fpl-swap { text-align: center; margin: .2rem 0 .9rem 0; }
+.fpl-swap .leg { font-size: 1.24rem; font-weight: 700; }
+.fpl-swap .lab { font-size: .74rem; letter-spacing: .14em; color: #6b7280; text-transform: uppercase; }
+.fpl-swap .arrow { font-size: 1.5rem; color: #9aa0ac; line-height: 1.1; margin: .15rem 0; }
+.fpl-out .leg { color: #b4232a; }
+.fpl-in  .leg { color: #0f7b3f; }
+
+/* Confidence pill. */
+.fpl-pill {
+  display: inline-block; padding: .16rem .6rem; border-radius: 999px;
+  font-size: .76rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
+.fpl-high { background: #e6f4ec; color: #0f7b3f; }
+.fpl-med  { background: #fdf3e3; color: #9a6400; }
+.fpl-low  { background: #fdeaea; color: #b4232a; }
+
+/* Keep anything wide inside its own scroller so the page never does. */
+.fpl-home table, .fpl-home pre { display: block; overflow-x: auto; max-width: 100%; }
+</style>
+"""
+
+
+def inject_homepage_css() -> None:
+    render_html(HOMEPAGE_CSS)
+
+
 def inject_global_css() -> None:
     render_html(GLOBAL_CSS)
 
