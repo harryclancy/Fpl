@@ -33,7 +33,21 @@ The standard:
 ## The twenty steps
 
 1. **Load the current squad.** The user's ACTUAL team — never a squad this
-   app recommended earlier. Confirm the gameweek it came from.
+   app recommended earlier, and never "the decision set" as a substitute.
+
+   ```bash
+   python -c "import sys; sys.path.insert(0,'.'); \
+   from fpl_assistant.analysis import my_squad; s = my_squad.load_stored(); \
+   print(s.summary if s else 'NOT AVAILABLE'); \
+   print([f\"{p['name']} ({p['team']} {p['position']})\" for p in (s.players if s else [])])"
+   ```
+
+   `data/squad/current.json` is written by `scripts/fetch_squad.py` in the
+   snapshot workflow, because GitHub Actions can reach the FPL API and a
+   Claude Code session cannot — the egress proxy refuses
+   fantasy.premierleague.com. If the file is missing or stale, say so and
+   ask for the fifteen names rather than quietly researching something
+   else. Every player below means every player in THAT list.
 2. Load bank, free transfers, chips available, current prices.
 3. Identify the gameweek and its deadline.
 4. Search the verified sources for material on this gameweek.

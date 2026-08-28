@@ -35,19 +35,25 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Record the current squad
+        # Runs where the FPL API is actually reachable. A Claude Code
+        # research session cannot reach it, so without this the research
+        # never knows which fifteen players are owned.
+        run: python scripts/fetch_squad.py
+
       - name: Write the snapshot if a deadline is close
         run: python scripts/snapshot_gameweek.py
 
       - name: Commit it, if anything changed
         run: |
-          if [ -z "$(git status --porcelain data/snapshots)" ]; then
+          if [ -z "$(git status --porcelain data/snapshots data/squad)" ]; then
             echo "No new snapshot; nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/snapshots
-          git commit -m "Snapshot the pre-deadline squad"
+          git add data/snapshots data/squad
+          git commit -m "Snapshot the pre-deadline squad and record the current one"
           # The schedule can collide with a push; rebase rather than fail,
           # since the snapshot is additive and never conflicts in practice.
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}"

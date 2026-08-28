@@ -154,3 +154,60 @@ def test_the_squad_you_own_before_a_deadline_is_last_weeks():
     assert len(confirmed.squad.picks) == 15
     # It asked for the planning gameweek first, then walked back.
     assert calls[0] == 2
+
+
+# --- the squad, committed by CI so research can read it -----------------
+
+def test_the_stored_squad_round_trips():
+    """The gap this closes: the deployed app reaches the FPL API and a
+    Claude Code research session does not, so the app always knew which
+    fifteen were owned and the research never did."""
+    import json
+    from pathlib import Path
+    import tempfile
+
+    payload = {
+        "team_id": 5617068,
+        "confirmed_for_gameweek": 1,
+        "planning_gameweek": 2,
+        "fetched_at": "2026-08-28T09:00:00+00:00",
+        "bank": 0.5,
+        "team_value": 100.3,
+        "free_transfers": 1,
+        "chips_used": [],
+        "squad": [
+            {"id": i, "name": f"P{i}", "team": "CHE", "position": "MID",
+             "price": 6.0, "on_bench": i > 11}
+            for i in range(1, 16)
+        ],
+    }
+    with tempfile.TemporaryDirectory() as tmp:
+        path = Path(tmp) / "current.json"
+        path.write_text(json.dumps(payload))
+        stored = my_squad.load_stored(path)
+
+    assert stored is not None
+    assert stored.team_id == 5617068
+    assert len(stored.player_ids) == 15
+    assert stored.free_transfers == 1
+    assert "confirmed for GW1" in stored.summary
+
+
+def test_a_missing_stored_squad_is_none_rather_than_an_error(tmp_path):
+    assert my_squad.load_stored(tmp_path / "nope.json") is None
+
+
+def test_an_empty_squad_file_is_treated_as_absent(tmp_path):
+    import json
+    path = tmp_path / "current.json"
+    path.write_text(json.dumps({"team_id": 1, "squad": []}))
+    assert my_squad.load_stored(path) is None
+
+
+def test_a_squad_two_gameweeks_behind_is_reported_stale():
+    """Before a deadline the squad you own IS last gameweek's, which is
+    fine. Two behind means something has gone wrong with the fetch."""
+    stored = my_squad.StoredSquad(confirmed_for_gameweek=1, players=[{"id": 1}])
+
+    assert not stored.is_stale(planning_event=2)
+    assert stored.is_stale(planning_event=4)
