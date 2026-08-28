@@ -1,45 +1,222 @@
 {
-  "gameweek": 2,
-  "season": "2026/27",
-  "researched": "2026-08-26",
-  "note": "Anticipated returns, researched from live web sources in a Claude Code session.\n\nNo `anytime_goalscorer` prices are recorded this week: the searches surfaced clean-sheet probabilities and a named captain preference, but not sourced decimal goalscorer odds. Those fields are left absent rather than filled with plausible guesses — a missing number is honest, an invented one is the failure this project exists to avoid.\n\n`captain_share` is likewise absent: no effective-ownership figures were published in what was found. That does mean the captaincy engine's rank term has nothing to work with this week, and the app will say so rather than quietly assume zero.\n\n`matchups` carries the clean-sheet market, which is the part that was well sourced.",
-  "players": [
-    {
-      "name": "B.Fernandes",
-      "full_name": "Bruno Fernandes",
-      "note": "RotoWire's model has him tied for the top overall score in the gameweek and names him the preferred captain, on a home tie against newly-promoted Ipswich. Notably this runs against the crowd, which has him among the most-sold players in the game."
-    },
-    {
-      "name": "Haaland",
-      "full_name": "Erling Haaland",
-      "note": "Manchester City are among five sides above 30% clean-sheet probability, away at Crystal Palace. He blanked in GW1 and remains the default armband for most of the field, which is why the alternative above is interesting rather than reckless."
-    }
-  ],
-  "matchups": [
-    {
-      "team": "MUN",
-      "opponent": "IPS",
-      "note": "Manchester United lead the entire league on clean-sheet probability this week at 48%, at home to newly-promoted Ipswich. The only other side to reach 40% is Coventry. This is the single best-priced defensive fixture on the board."
-    },
-    {
-      "team": "COV",
-      "opponent": "HUL",
-      "note": "Coventry host Hull and are the only side other than Manchester United above 40% clean-sheet probability — a striking reversal for a promoted defence that was priced as unownable pre-season, and the reason the club-level verdict on them has been softened for this week."
-    },
-    {
-      "team": "LIV",
-      "opponent": "NFO",
-      "note": "Liverpool are just behind the two leaders on clean-sheet probability, at home to Nottingham Forest."
-    },
-    {
-      "team": "ARS",
-      "opponent": "AVL",
-      "note": "Arsenal travel to an Aston Villa side described as toothless in Gameweek 1, and sit just behind the clean-sheet leaders despite being away from home."
-    },
-    {
-      "team": "CHE",
-      "opponent": "BHA",
-      "note": "Chelsea are among five sides above 30% clean-sheet probability. Brighton are the opponent, and they conceded zero shots on target in GW1 — a fixture where both defences are priced well and both attacks are being faded."
-    }
-  ]
+ "gameweek": 2,
+ "season": "2026/27",
+ "researched": "2026-08-28",
+ "note": "Only figures that were actually published are here. No price is invented — a missing number is honest, a plausible fabricated one is the failure this project exists to avoid.\n\nCoverage this week is thin on goalscorer prices: ONE was retrievable from the verified sources (Haaland at 10/11 with Ladbrokes and Coral, via Oddschecker and FreeTips). Bruno Fernandes, Palmer and João Pedro are recorded with captain share only, and `anytime_goalscorer: null` means 'not found', never 'no chance'. The captaincy poll and the clean-sheet probabilities were well covered and are complete.",
+ "sources": [
+  "Fantasy Football Scout — GW2 best clean sheet odds; GW2 projected goals; captaincy poll",
+  "Premier League / The Scout — price changes and top transfers for Gameweek 2"
+ ],
+ "captain_share": [
+  {
+   "player": "B.Fernandes",
+   "share": 37,
+   "fixture": "IPS (H)",
+   "source": "Fantasy Football Scout captaincy poll"
+  },
+  {
+   "player": "Haaland",
+   "share": 26,
+   "fixture": "CRY (A)",
+   "source": "Fantasy Football Scout captaincy poll"
+  },
+  {
+   "player": "Palmer",
+   "share": null,
+   "fixture": "BHA (H)",
+   "note": "third in the poll; percentage not published",
+   "source": "Fantasy Football Scout captaincy poll"
+  },
+  {
+   "player": "Joao Pedro",
+   "share": 7,
+   "fixture": "BHA (H)",
+   "source": "Fantasy Football Scout captaincy poll"
+  }
+ ],
+ "clean_sheet_probability": [
+  {
+   "team": "MUN",
+   "probability": 48,
+   "band": "highest in the gameweek"
+  },
+  {
+   "team": "COV",
+   "probability": 40,
+   "band": "only other side at or above 40%"
+  },
+  {
+   "team": "LIV",
+   "probability": null,
+   "band": "just behind the top two"
+  },
+  {
+   "team": "ARS",
+   "probability": null,
+   "band": "just behind the top two"
+  },
+  {
+   "team": "CHE",
+   "probability": null,
+   "band": "above 30%"
+  },
+  {
+   "team": "MCI",
+   "probability": null,
+   "band": "above 30%"
+  },
+  {
+   "team": "SUN",
+   "probability": null,
+   "band": "above 30%"
+  },
+  {
+   "team": "TOT",
+   "probability": null,
+   "band": "above 30%"
+  },
+  {
+   "team": "BOU",
+   "probability": null,
+   "band": "above 30%"
+  },
+  {
+   "team": "IPS",
+   "probability": null,
+   "band": "below 20%"
+  },
+  {
+   "team": "NFO",
+   "probability": null,
+   "band": "below 20%"
+  },
+  {
+   "team": "BHA",
+   "probability": null,
+   "band": "below 20%"
+  },
+  {
+   "team": "NEW",
+   "probability": null,
+   "band": "below 20%"
+  },
+  {
+   "team": "CRY",
+   "probability": null,
+   "band": "below 20%"
+  }
+ ],
+ "projected_goals": [
+  {
+   "team": "MUN",
+   "goals": 2.24
+  },
+  {
+   "team": "ARS",
+   "goals": 1.62
+  },
+  {
+   "team": "COV",
+   "goals": 1.61
+  },
+  {
+   "team": "AVL",
+   "goals": 0.99
+  },
+  {
+   "team": "NFO",
+   "goals": 0.97
+  },
+  {
+   "team": "HUL",
+   "goals": 0.91
+  },
+  {
+   "team": "IPS",
+   "goals": 0.74
+  }
+ ],
+ "price_changes": [
+  {
+   "player": "Calafiori",
+   "to": 5.6,
+   "direction": "rise"
+  },
+  {
+   "player": "Kayode",
+   "to": 4.6,
+   "direction": "rise"
+  },
+  {
+   "player": "Joao Pedro",
+   "to": 7.6,
+   "direction": "rise"
+  },
+  {
+   "player": "Amad Diallo",
+   "to": 5.9,
+   "direction": "fall",
+   "reason": "injury-enforced no-show"
+  }
+ ],
+ "transfer_market": [
+  {
+   "player": "Joao Pedro",
+   "transfers_in": 288000,
+   "note": "most-bought forward, nearly twice any other"
+  },
+  {
+   "player": "De Cuyper",
+   "transfers_in": 343000,
+   "note": "biggest bandwagon in the game"
+  },
+  {
+   "player": "Sangare",
+   "transfers_in": 105000,
+   "note": "most-bought midfielder"
+  },
+  {
+   "player": "Watkins",
+   "transfers_out": 182000,
+   "note": "most-sold forward — leaving for Al-Hilal"
+  }
+ ],
+ "players": [
+  {
+   "name": "Haaland",
+   "team": "MCI",
+   "fixture": "CRY (A)",
+   "anytime_goalscorer": 1.91,
+   "captain_share": 26,
+   "source": "Oddschecker / FreeTips — 10/11 with Ladbrokes and Coral",
+   "note": "Eight goals in five PL meetings with Palace, and he has scored on ALL FOUR visits to Selhurst Park. Averaging close to four shots a game with 2.1 on target."
+  },
+  {
+   "name": "B.Fernandes",
+   "team": "MUN",
+   "fixture": "IPS (H)",
+   "anytime_goalscorer": null,
+   "captain_share": 37,
+   "source": "Fantasy Football Scout captaincy poll",
+   "note": "No goalscorer price retrievable from the verified sources this week. Most-captained player in the game."
+  },
+  {
+   "name": "Joao Pedro",
+   "team": "CHE",
+   "fixture": "BHA (H)",
+   "anytime_goalscorer": null,
+   "captain_share": 7,
+   "source": "Fantasy Football Scout captaincy poll",
+   "note": "No goalscorer price retrievable this week."
+  },
+  {
+   "name": "Palmer",
+   "team": "CHE",
+   "fixture": "BHA (H)",
+   "anytime_goalscorer": null,
+   "captain_share": null,
+   "source": "Fantasy Football Scout captaincy poll",
+   "note": "Third in the captaincy poll; the percentage was not published, so none is recorded."
+  }
+ ]
 }

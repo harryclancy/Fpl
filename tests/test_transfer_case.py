@@ -168,3 +168,31 @@ def test_the_shipped_research_produces_a_real_argument():
     assert "Palace" in case.into.record
     # And the fixture-level commentary comes along with it.
     assert case.into.opposition or case.out.opposition
+
+
+def test_fixture_commentary_alone_does_not_count_as_researching_the_players():
+    """Caught by the suite when GW2 matchup coverage was extended.
+
+    Two unknown Hull players started reporting as "researched" purely
+    because the Coventry v Hull fixture had been written up. Knowing that
+    Coventry keep clean sheets tells you nothing about whether to buy a
+    particular Hull midfielder — and the summary this flag controls says
+    in plain words that nobody has written about either player, so letting
+    matchup notes satisfy it makes that sentence false.
+    """
+    frame = pd.DataFrame(
+        [
+            {"id": 1, "web_name": "UnknownA", "team_short_name": "HUL", "position": "MID",
+             "price": 4.5, "xp_next": 2.0, "selected_by_percent": 0.2},
+            {"id": 2, "web_name": "UnknownB", "team_short_name": "COV", "position": "MID",
+             "price": 5.0, "xp_next": 3.0, "selected_by_percent": 0.3},
+        ]
+    ).set_index("id", drop=False)
+
+    case = transfer_case.explain(frame, out_id=1, in_id=2, gameweek=2)
+
+    assert not case.researched
+    assert "model's opinion alone" in case.summary
+    # The fixture commentary is still attached and shown — it just doesn't
+    # get to claim the players were researched.
+    assert case.into.opposition or case.out.opposition

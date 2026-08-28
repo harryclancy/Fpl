@@ -1,8 +1,8 @@
 {
  "gameweek": 2,
  "season": "2026/27",
- "researched": "2026-08-27",
- "note": "Researched from live web sources in a Claude Code session — no paid API, no key, no cost.\n\n`case` is the argument for picking them; `watch_out` is the honest counter-argument, because a recommendation you can't argue against isn't advice. `key_stats` holds the hard numbers as discrete facts. `voices` records what named outlets actually said — 'analysts say' is not a source. `dissent` marks a genuine split.\n\nREWRITTEN for GW2 after a specific failure: the model dropped Haaland on the back of a single blank. Every entry below is now weighted against multi-season evidence rather than one weekend, and the cases lead with what people are actually saying and why, not with a projection. A GW1 haul is treated as thin evidence unless something structural sits behind it; a GW1 blank from a proven asset is treated as noise.\n\nClub-wide verdicts do NOT belong here; they live in teams.json.",
+ "researched": "2026-08-28",
+ "note": "Researched from live web sources in a Claude Code session — no paid API, no key, no cost.\n\n`case` is the argument for picking them; `watch_out` is the honest counter-argument, because a recommendation you can't argue against isn't advice. `key_stats` holds the hard numbers as discrete facts. `voices` records what named outlets actually said — 'analysts say' is not a source. `dissent` marks a genuine split.\n\nREFRESHED on deadline day (28 Aug, 18:30 BST). REWRITTEN for GW2 after a specific failure: the model dropped Haaland on the back of a single blank. Every entry below is now weighted against multi-season evidence rather than one weekend, and the cases lead with what people are actually saying and why, not with a projection. A GW1 haul is treated as thin evidence unless something structural sits behind it; a GW1 blank from a proven asset is treated as noise.\n\nClub-wide verdicts do NOT belong here; they live in teams.json.",
  "players": [
   {
    "name": "De Cuyper",
@@ -92,7 +92,8 @@
     "Assist and a clean sheet in GW1",
     "One of three Arsenal players in the eight most-bought ahead of GW2",
     "Carried Community Shield form straight into the league season",
-    "The most-transferred-in player in the game ahead of GW2 — an assist and a clean sheet in GW1"
+    "The most-transferred-in player in the game ahead of GW2 — an assist and a clean sheet in GW1",
+    "Price risen to £5.6m; Arteta will assess him in the final session"
    ],
    "voices": [
     {
@@ -141,6 +142,10 @@
      {
       "point": "Saliba and Timber were unavailable on the opening day, which puts early pressure on that back line precisely as Villa arrives.",
       "source": "Sports Mole"
+     },
+     {
+      "point": "Arteta said he would assess Calafiori and Hincapié in the final training sessions before deciding. That is not the language used about a nailed starter.",
+      "source": "Arsenal official / Sports Mole"
      }
     ]
    },
@@ -155,6 +160,7 @@
    "case": "He blanked in GW1 — five shots, two on target, and a first-half chance he missed the ball on entirely in City's 2-1 win at Bournemouth. That is the whole of the bear case, and it is one match. Set against it: he has been the top-scoring player in the game after the first six gameweeks in ALL FOUR of his seasons at Manchester City, averaging nine goals and 61.3 points across that opening window each time. Last season he ranked first in the entire league for goals (27), shots (126), shots on target (59), expected goals (27.68) AND big chances (51) — not first among strikers, first outright, in all five. He won the Golden Boot for the third time in four attempts and finished as the top-scoring outfield player in FPL on 239 points. The season before that, a December slump and a spring injury held him to 22 goals and 181 points, and that is his floor — a bad Haaland season is still a very good FPL forward. Opta's verdict is that going without him is a brave call at any point, and that the start of a season is when it carries the most risk of all. City then have four home games in the first seven gameweeks, two of them against promoted Coventry and Ipswich, which is where most managers are planning their first Triple Captain.",
    "watch_out": "He is £15.5m — a record price — and that is a genuine structural cost, not a detail. Roughly a sixth of your entire budget sits in one player, and it is the reason a squad built around him has to be thinner everywhere else. The 24/25 season is the honest warning: 10 goals in his first six games, then three in the following thirteen as City fell away, and an injury in the spring. He is not immune to a slump. And at 71% ownership he buys you no rank when he hauls — he only protects you from losing rank when he does. GW2 is away at Crystal Palace, a genuinely awkward fixture, and Bournemouth was the first time in five seasons he has failed to score in City's opening game.",
    "key_stats": [
+    "Led ALL forwards in GW1 for shots in the box (4) and big chances (2) despite not scoring",
     "Top-scoring player in the game after the first 6 GWs in all 4 of his seasons at City",
     "Averages 9 goals and 61.3 points across those opening six-gameweek windows",
     "2025/26: 27 goals — and ranked 1st in the league for shots (126), shots on target (59), xG (27.68) and big chances (51)",
@@ -162,7 +168,8 @@
     "2024/25 (his worst season): 22 goals, 3 assists, 181 points from 31 games",
     "GW1 2026/27: 5 shots, 2 on target, no goal — his first ever blank in a City league opener",
     "£15.5m, a record FPL price; 71% owned",
-    "City have 4 home games in the first 7 GWs, including promoted Coventry and Ipswich"
+    "City have 4 home games in the first 7 GWs, including promoted Coventry and Ipswich",
+    "26% of the captaincy poll — second behind Bruno Fernandes on 37%"
    ],
    "voices": [
     {
@@ -208,6 +215,10 @@
    "talking_points": {
     "for": [
      {
+      "point": "He led every forward in the game for shots in the box (four) and big chances (two) in Gameweek 1. The chances were there; the finish wasn't.",
+      "source": "DraftKings Network"
+     },
+     {
       "point": "Palace are missing Chadi Riad (knee) and Ismaïla Sarr (groin). It is a RESHUFFLED back three — Canvot, Richards, Tomiyasu — being asked to handle him, with Cherki working the space between the lines behind.",
       "source": "Sports Mole / RotoWire"
      },
@@ -226,6 +237,10 @@
      {
       "point": "Opta's line: going without him is brave at any stage, and the start of a season is when that decision carries the most risk.",
       "source": "Opta Analyst"
+     },
+     {
+      "point": "He is 10/11 with Ladbrokes and Coral to score, has found the net on all four visits to Selhurst, and Palace are playing on short rest after European football.",
+      "source": "Oddschecker / FreeTips"
      }
     ],
     "against": [
@@ -244,10 +259,14 @@
      {
       "point": "£15.5m is a sixth of your budget in one player, and at 71% ownership his haul barely moves your rank — it only protects it.",
       "source": "Fantasy Football Scout"
+     },
+     {
+      "point": "Doku is out for two to three weeks with a calf problem and Matheus Nunes is not yet 100 per cent — City's supply line is thinner than it looks.",
+      "source": "Sports Mole / Manchester City"
      }
     ]
    },
-   "record_vs": "Eight goals in five Premier League meetings with Crystal Palace — he has scored in every single one, including a hat-trick, and four of those were at Selhurst Park (a penalty in a 1-0, a goal in a 4-2, a header in a 2-2, and a brace last December). No Manchester City player has scored more against Palace."
+   "record_vs": "Eight goals in five Premier League meetings with Crystal Palace — and he has scored on ALL FOUR of his visits to Selhurst Park: a penalty in a 1-0, a goal in a 4-2, a header in a 2-2 and a brace last December. No Manchester City player has scored more against Palace. He is 10/11 to score again."
   },
   {
    "name": "B.Fernandes",
@@ -263,7 +282,9 @@
     "9 goals and 24 assists last season — a record FPL assist total",
     "On penalties, corners and direct free-kicks",
     "Among the most-sold players ahead of GW2",
-    "GW2: Ipswich at home"
+    "GW2: Ipswich at home",
+    "Tops the GW2 captaincy poll with 37% of votes — the most-captained player in the game this week",
+    "Man Utd lead GW2 projections for BOTH goals (2.24, highest in the league) and clean sheets (48%)"
    ],
    "voices": [
     {
@@ -297,6 +318,10 @@
    "talking_points": {
     "for": [
      {
+      "point": "Manchester United top the Gameweek 2 projections for goals at 2.24 — the highest of any side — and for clean sheets at 48%. No other team is above 40% except Coventry.",
+      "source": "Fantasy Football Scout"
+     },
+     {
       "point": "Manchester United are top of the projections for BOTH goals and clean sheets in Gameweek 2 — home to a promoted side.",
       "source": "Fantasy Football Fix"
      },
@@ -325,6 +350,10 @@
      {
       "point": "Ipswich are not turning up beaten — they won 2-1 at Portman Road against Sunderland with a 90th-minute Jack Clarke winner.",
       "source": "Goal.com"
+     },
+     {
+      "point": "His ownership is falling after the Gameweek 1 blank, and at 37% of the captaincy poll he is now the most-captained player in the game — you gain nothing by owning him and lose a lot by not.",
+      "source": "Fantasy Football Scout"
      }
     ]
    },
@@ -334,14 +363,14 @@
    "name": "Sangare",
    "full_name": "Mamadou Sangare",
    "tier": "value",
-   "expert_ownership": 6,
+   "expert_ownership": 8,
    "verdict": "The week's second bandwagon, off a haul against Spurs.",
    "case": "He hauled in the opening weekend against a Tottenham side that was comprehensively beaten, and has attracted almost 200,000 new owners as a result. At his price he is the kind of budget enabler that makes a premium-heavy structure affordable, which is the job most managers are actually trying to fill this week.",
    "watch_out": "One haul against a team having a bad day is the thinnest evidence in this file. Nothing about the underlying numbers has been established, and the entire ownership move is built on a single afternoon — the exact pattern AllAboutFPL are warning against this week.",
    "key_stats": [
-    "Hauled against Tottenham in GW1",
-    "~200,000 transfers in ahead of GW2",
-    "One of the two biggest bandwagons of the week"
+    "14 points on his Premier League debut for Brentford against Tottenham",
+    "The most-bought midfielder in the game for GW2 — 105,000+ new owners",
+    "£5.5m"
    ],
    "voices": [
     {
@@ -372,6 +401,10 @@
      {
       "point": "At £5.6m he frees up money elsewhere in a way a £9m midfielder cannot.",
       "source": "RotoWire"
+     },
+     {
+      "point": "Most-bought midfielder in the game this week at over 105,000 transfers in, on the back of an all-action debut against Tottenham.",
+      "source": "Premier League / The Scout"
      }
     ],
     "against": [
@@ -597,47 +630,66 @@
    "full_name": "Ollie Watkins",
    "tier": "avoid",
    "expert_ownership": 11,
-   "verdict": "Among the most-sold in the game after a blank opening weekend.",
-   "case": "An established Premier League forward with a long record of consistent returns.",
-   "watch_out": "He is among the most-sold players ahead of GW2 after failing to return in the opening round. That in itself is not a reason to follow, but nothing in this week's coverage makes a case for buying him either — he is being passed over rather than argued about.",
+   "verdict": "He is on a plane to Saudi Arabia. This is not a form call any more — sell.",
+   "case": "Nothing to argue. Any case for him died with the transfer.",
+   "watch_out": "Aston Villa have accepted €58.4m plus €2m in bonuses from Al-Hilal and Fabrizio Romano has called it done. He travels to Saudi Arabia this week for a medical ahead of a three-year contract, and Villa have all but lined up Nicolas Jackson from Chelsea as the replacement. He is already the most-sold forward of the week at 182,000 and counting. If he is still in your squad after the deadline he is a £7.9m non-playing asset.",
    "key_stats": [
-    "Among the most-sold players ahead of GW2",
-    "No return in GW1"
+    "Villa accepted €58.4m + €2m bonuses from Al-Hilal; deal reported as done",
+    "Travelling to Saudi Arabia this week for a medical, three-year contract",
+    "Nicolas Jackson lined up as his replacement",
+    "Most-sold forward of the week — 182,000 transfers out",
+    "108 goals and 47 assists in 278 appearances for Villa since 2020"
    ],
    "voices": [
     {
-     "source": "Fantasy Football Scout",
-     "take": "List him among the most-sold players ahead of Gameweek 2, alongside Porro, Konsa and Gyokeres."
+     "source": "Sky Sports",
+     "take": "Reported Villa in talks with Al-Hilal and Villa expected to approach Nicolas Jackson if Watkins is sold."
     },
     {
-     "source": "AllAboutFPL",
-     "take": "Warn generally against kneejerk selling after one weekend, which applies to him as much as to anyone."
+     "source": "Goal.com",
+     "take": "Villa accepted €58.4m plus €2m in bonuses; Watkins travels to Saudi Arabia to complete the move on a three-year deal."
+    },
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Names him most-sold forward of the week on 182,000 transfers out."
     }
    ],
    "sources": [
-    "Fantasy Football Scout",
-    "AllAboutFPL"
+    "Goal.com",
+    "Sky Sports",
+    "ESPN",
+    "Sports Mole",
+    "Fantasy Football Scout"
    ],
-   "predicted_start": "likely",
+   "predicted_start": "out",
    "role": "centre-forward",
    "talking_points": {
     "for": [
      {
-      "point": "Villa Park at home, where Villa have made themselves one of the hardest visits in the division.",
-      "source": "Sports Mole"
+      "point": "None. The only argument left is that the deal could still collapse, and nobody is making it.",
+      "source": "Goal.com"
      }
     ],
     "against": [
      {
-      "point": "Villa were taken apart 4-0 by Brighton on the opening weekend — the attack did not function at all.",
-      "source": "Fantasy Football Scout"
+      "point": "Villa have accepted Al-Hilal's bid and Romano has published the 'here we go'. He travels for his medical this week.",
+      "source": "Goal.com"
      },
      {
-      "point": "They now face an Arsenal side that kept a clean sheet in a 3-0 opening win, and are without the suspended João Gomes in midfield.",
-      "source": "Sports Mole"
+      "point": "Unai Emery publicly admitted Villa had received offers and that Watkins could leave — that was before the fee was agreed.",
+      "source": "Goal.com / ESPN"
+     },
+     {
+      "point": "Villa have all but lined up Nicolas Jackson from Chelsea as the replacement, which is what a club does when a sale is settled.",
+      "source": "Sky Sports"
+     },
+     {
+      "point": "182,000 managers have already sold him — the market has resolved this one.",
+      "source": "Fantasy Football Scout"
      }
     ]
-   }
+   },
+   "record_vs": "Irrelevant now — he is not expected to feature for Villa again."
   },
   {
    "name": "Gyokeres",
@@ -792,7 +844,9 @@
     "Hit the defensive-contribution threshold in GW1 — the deep role is generating points, not costing them",
     "11 goal involvements in his last 16 league appearances (5 goals, 6 assists)",
     "160 points last season with 15 big chances created — 4th most of any midfielder",
-    "41% owned"
+    "41% owned",
+    "Seven defensive contributions in GW1 — the DefCon route is not theoretical",
+    "Liverpool racked up 27 shots and 2.98 xG in GW1, and top the projected-goals table over the next three, four and five gameweeks"
    ],
    "voices": [
     {
@@ -835,6 +889,10 @@
      {
       "point": "Since 24 January only Bruno Fernandes (16), Gibbs-White (13), Bowen (13) and João Pedro (12) have more league goal involvements than his 11 in 16 appearances.",
       "source": "Opta Analyst"
+     },
+     {
+      "point": "Liverpool put up 27 shots and 2.98 xG in Gameweek 1 and top the projected-goals table on three, four and five-gameweek lookaheads. The volume is there behind him.",
+      "source": "Fantasy Football Scout"
      }
     ],
     "against": [
@@ -857,6 +915,10 @@
      {
       "point": "One converted penalty is not a permanent appointment. Liverpool's spot-kick duty has moved before; watch who takes the next one.",
       "source": "Fantasy Football Scout"
+     },
+     {
+      "point": "Iraola himself rates the opponent: 'you can see straight away the shape, they don't concede a lot of chances… they defensively are very solid'. That is the home manager talking down his own clean sheet and his own attack's afternoon.",
+      "source": "Liverpool FC official"
      }
     ]
    },
@@ -880,7 +942,8 @@
    "key_stats": [
     "4 shots in GW1 — from a defender",
     "4th-highest xGI of all defenders in GW1",
-    "£4.5m, 6.5% owned"
+    "£4.5m, 6.5% owned",
+    "Price has already risen to £4.6m on transfer volume"
    ],
    "voices": [
     {
@@ -1233,6 +1296,200 @@
    ],
    "predicted_start": "likely",
    "role": "right-back"
+  },
+  {
+   "name": "Stach",
+   "full_name": "Anton Stach",
+   "tier": "value",
+   "expert_ownership": 1.4,
+   "verdict": "The best-argued differential in the game this week: set pieces, DefCon and a fixture run, at 1.4% ownership.",
+   "case": "He scored the winner at Nottingham Forest with a direct free-kick, took maximum bonus, and registered SIXTEEN defensive contributions in the same match. That combination — dead-ball duty plus a DefCon threshold he clears comfortably — is the profile the 2025/26 rule change created, and at £6.0m and 1.4% ownership almost nobody has acted on it. Leeds have a favourable run from here.",
+   "watch_out": "One gameweek, and the goal was a free-kick — the least repeatable way for a midfielder to score. Leeds are a newly promoted side who will spend most weeks defending, which is what generates the defensive contributions but also caps the attacking ceiling. At 1.4% owned there is no crowd to be wrong with.",
+   "record_vs": "No meaningful Premier League record against this week's opponent yet — he is in his first season at this level with Leeds.",
+   "key_stats": [
+    "Scored the winning goal at Nottingham Forest with a direct free-kick in GW1",
+    "16 defensive contributions in that match",
+    "Maximum bonus points",
+    "£6.0m and 1.4% owned — a genuine differential",
+    "On Leeds set pieces"
+   ],
+   "talking_points": {
+    "for": [
+     {
+      "point": "Sixteen defensive contributions in one match. The DefCon threshold is 12 for a midfielder — he did not scrape it, he cleared it by a third.",
+      "source": "Never Manage Alone"
+     },
+     {
+      "point": "He is on Leeds' set pieces and scored the winner from a direct free-kick. Dead-ball duty is the most fixture-proof points source there is.",
+      "source": "Never Manage Alone"
+     },
+     {
+      "point": "1.4% ownership with a credible route to points is what a differential is supposed to be — most 1%-owned players are cheap for a reason.",
+      "source": "Never Manage Alone"
+     },
+     {
+      "point": "Leeds have a favourable fixture run from here.",
+      "source": "Never Manage Alone"
+     }
+    ],
+    "against": [
+     {
+      "point": "The goal was a direct free-kick, which is the least repeatable way a midfielder scores. Strip it out and the attacking case is thin.",
+      "source": "Fantasy Football Scout"
+     },
+     {
+      "point": "Leeds are newly promoted and will spend most weeks without the ball — that is what generates the defensive contributions, and it is also what caps the ceiling.",
+      "source": "Fantasy Football Scout"
+     },
+     {
+      "point": "At 1.4% owned you are early or you are simply wrong, with nobody to be wrong alongside.",
+      "source": "RotoWire"
+     }
+    ]
+   },
+   "voices": [
+    {
+     "source": "Never Manage Alone",
+     "take": "Names him a genuine rank-chasing option, citing set-piece duty, defensive-contribution potential and the Leeds fixture run as 'more substance than the typical one-week differential'."
+    }
+   ],
+   "sources": [
+    "Never Manage Alone",
+    "RotoWire",
+    "Fantasy Football Scout"
+   ],
+   "predicted_start": "nailed",
+   "role": "deep-lying midfielder on set pieces",
+   "set_pieces": "free-kicks"
+  },
+  {
+   "name": "Odegaard",
+   "full_name": "Martin Ødegaard",
+   "tier": "strong",
+   "expert_ownership": 12,
+   "verdict": "Eleven points and maximum bonus in Gameweek 1, and still cheap enough at £6.5m to be a differential.",
+   "case": "He scored and took maximum bonus in Arsenal's 3-0 win over Coventry, from three shots and three attempted assists — volume at both ends of the chance, not a single lucky finish. At £6.5m he is priced as a mid-price midfielder while playing as the creative fulcrum of the side with the second-highest projected goals in Gameweek 2 (1.62). He is hurtling towards a price rise.",
+   "watch_out": "Gameweek 2 is at Villa Park, one of the hardest away trips in the division against a side that finished fourth and won the Europa League last season. Arsenal's midfield is crowded — Havertz has been used there, Rice is established, and Arteta rotates. And an 11-point opener against newly promoted Coventry is exactly the kind of return every outlet is warning against chasing this week.",
+   "record_vs": "Arsenal lost 2-1 at Villa Park in December 2025 to a stoppage-time goal, then beat Villa 4-1 at the Emirates 24 days later. The venue has decided this fixture more than the form has.",
+   "key_stats": [
+    "11 points in GW1: a goal plus maximum bonus",
+    "3 shots and 3 attempted assists in that match",
+    "£6.5m and approaching a price rise",
+    "Arsenal projected to score 1.62 goals in GW2, second only to Man Utd"
+   ],
+   "talking_points": {
+    "for": [
+     {
+      "point": "Eleven points with maximum bonus, from three shots AND three attempted assists — he was involved at both ends of the chance, not just on the end of one.",
+      "source": "RotoWire"
+     },
+     {
+      "point": "At £6.5m he is priced like a mid-price option while playing as Arsenal's creative fulcrum. He is hurtling towards a price rise.",
+      "source": "Premier League / The Scout"
+     },
+     {
+      "point": "Arsenal have the second-highest projected goals in the gameweek at 1.62, behind only Manchester United.",
+      "source": "Fantasy Football Scout"
+     }
+    ],
+    "against": [
+     {
+      "point": "It was against newly promoted Coventry at home. Chasing a Gameweek 1 haul off that fixture is the specific thing every outlet is warning against.",
+      "source": "Fantasy Football Scout"
+     },
+     {
+      "point": "This one is at Villa Park, one of the most difficult away trips in the division, against a side that finished fourth and won the Europa League.",
+      "source": "Sports Mole"
+     },
+     {
+      "point": "Arsenal's midfield is crowded — Havertz has been played there, Rice is established, and Arteta rotates.",
+      "source": "AllAboutFPL"
+     }
+    ]
+   },
+   "voices": [
+    {
+     "source": "RotoWire",
+     "take": "Puts him on the differential radar on the strength of the 11-point haul, the maximum bonus and the underlying shot and chance-creation volume."
+    },
+    {
+     "source": "Premier League / The Scout",
+     "take": "Flags him alongside Palmer as hurtling towards a price rise."
+    }
+   ],
+   "sources": [
+    "RotoWire",
+    "Premier League / The Scout",
+    "Fantasy Football Scout",
+    "Sports Mole",
+    "AllAboutFPL"
+   ],
+   "predicted_start": "nailed",
+   "role": "attacking midfield, Arsenal's creative fulcrum"
+  },
+  {
+   "name": "Van Dijk",
+   "full_name": "Virgil van Dijk",
+   "tier": "strong",
+   "expert_ownership": 15,
+   "verdict": "In the Scout Squad's premium defender mix, but Iraola has just spent his press conference explaining why the clean sheet is hard.",
+   "case": "He scored more goals (six) than any defender in the league last season and finished joint-third among FPL defenders on 175 points. He is the aerial target on a Liverpool side that generated 27 shots and 2.98 xG in Gameweek 1 and tops the projected-goals table on three, four and five-gameweek lookaheads. Fantasy Football Scout have him in the premium defender mix at £6.5m.",
+   "watch_out": "Liverpool conceded twice at Newcastle and needed a 99th-minute penalty to draw. They have lost their last two league games against Forest at Anfield — more than in the previous thirty meetings there — and Iraola is missing five first-team players. His own manager called Forest 'very solid' defensively with 'good threats in the counter', which is not a clean-sheet forecast.",
+   "record_vs": "Liverpool have lost their last two league meetings with Forest at Anfield, including a 3-0 last November. That is more home defeats to Forest in two years than in the previous thirty meetings combined.",
+   "key_stats": [
+    "Six goals last season — more than any other defender in the league",
+    "175 FPL points, joint-third among defenders",
+    "Liverpool: 27 shots and 2.98 xG in GW1",
+    "£6.5m"
+   ],
+   "talking_points": {
+    "for": [
+     {
+      "point": "Fantasy Football Scout put him in the premium defender mix for this gameweek alongside Nico O'Reilly.",
+      "source": "Fantasy Football Scout"
+     },
+     {
+      "point": "He scored six goals last season, more than any other defender in the league, and is the aerial target from Liverpool's set pieces — which Szoboszlai now takes all of.",
+      "source": "Fantasy Football Scout"
+     },
+     {
+      "point": "Liverpool generated 27 shots and 2.98 xG in Gameweek 1 and top the projected-goals table on three, four and five-gameweek lookaheads.",
+      "source": "Fantasy Football Scout"
+     }
+    ],
+    "against": [
+     {
+      "point": "Iraola on Forest: 'you can see straight away the shape, they don't concede a lot of chances… they defensively are very solid… good threats in the counter.' His own manager is describing a hard afternoon.",
+      "source": "Liverpool FC official"
+     },
+     {
+      "point": "Liverpool have lost their last two league games against Forest at Anfield, and conceded twice at Newcastle in GW1.",
+      "source": "Opta Analyst"
+     },
+     {
+      "point": "Iraola is without five first-team players, and Chiesa is unavailable with a muscle injury.",
+      "source": "LiveScore / Fantasy Football Scout"
+     }
+    ]
+   },
+   "voices": [
+    {
+     "source": "Fantasy Football Scout",
+     "take": "Names him in the Scout Squad premium defender mix for Gameweek 2 at £6.5m."
+    },
+    {
+     "source": "Liverpool FC official",
+     "take": "Iraola's own press conference rates Forest as defensively very solid with good counter-attacking threats."
+    }
+   ],
+   "sources": [
+    "Fantasy Football Scout",
+    "Liverpool FC official",
+    "Opta Analyst",
+    "LiveScore"
+   ],
+   "predicted_start": "nailed",
+   "role": "centre-back, aerial set-piece target"
   }
  ]
 }

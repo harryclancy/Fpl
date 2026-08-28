@@ -143,10 +143,15 @@ def explain(
         out=out_side,
         into=in_side,
         gain=round(in_side.projected - out_side.projected, 2),
-        # "Researched" means somebody actually wrote something about at
-        # least one of them. Without that the case is a points gap wearing
-        # a paragraph, and saying so is more useful than pretending.
-        researched=bool(out_side.reasons or in_side.reasons or in_side.opposition),
+        # "Researched" means somebody wrote about at least one of these
+        # PLAYERS. Fixture-level commentary deliberately does not count,
+        # even though it is attached and shown: knowing that Brighton
+        # defend well tells you nothing about whether to buy a particular
+        # Brighton midfielder, and the summary this flag controls says in
+        # plain words that "nobody has written about either of them".
+        # Letting matchup notes satisfy it would make that sentence false
+        # every week the fixture happened to be covered.
+        researched=bool(out_side.reasons or in_side.reasons),
     )
 
 
