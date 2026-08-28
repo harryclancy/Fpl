@@ -13,7 +13,7 @@ import pandas as pd
 import requests
 import streamlit as st
 
-from fpl_assistant import api
+from fpl_assistant import api, version
 from fpl_assistant.analysis import (
     ask as ask_engine,
     captaincy,
@@ -32,6 +32,7 @@ from fpl_assistant.analysis import (
     injuries,
     my_squad as my_squad_analysis,
     dossier,
+    freshness,
     history,
     matchups,
     omissions,
@@ -116,8 +117,15 @@ def cached_solution(scored, template_weight):
 
 
 @st.cache_data(ttl=1800, show_spinner=False)
-def cached_matchups(gameweek):
-    """This gameweek's fixture-level commentary, read once per refresh."""
+def cached_matchups(gameweek, _version=""):
+    """This gameweek's fixture-level commentary, read once per refresh.
+
+    `_version` is part of the cache key on purpose: it carries the
+    deployed commit, so a push that changes the research files produces a
+    different key and the new data appears without anyone rebooting
+    anything. Streamlit's TTL alone would leave up to half an hour of
+    stale reading after a deploy.
+    """
     return matchups.load(int(gameweek))
 
 
@@ -761,7 +769,7 @@ def render_matchup_notes(row, gameweek) -> None:
     if not isinstance(club, str) or not isinstance(position, str):
         return
     try:
-        fixtures = cached_matchups(int(gameweek))
+        fixtures = cached_matchups(int(gameweek), _build_id())
     except Exception:
         return
 
@@ -1063,6 +1071,52 @@ def render_owned_squad_cases(
             )
 
 
+def _build_id() -> str:
+    """The deployed commit, used as a cache key component.
+
+    Research lives in the repository, so new research arrives as a new
+    commit. Keying the caches on the commit means a deploy invalidates
+    exactly the data the deploy changed — which is what "press Reboot"
+    was being used for.
+    """
+    try:
+        return version.current().commit
+    except Exception:
+        return ""
+
+
+def render_freshness_bar(gameweek: int, deadline: str = "") -> None:
+    """The small status line, and the only refresh control anyone needs.
+
+    Deliberately one line and one button. The homepage is three sections
+    and this is not a fourth — it is the footer of the first, telling you
+    which gameweek the reasoning belongs to and letting you pull the
+    newest committed data without leaving the app.
+    """
+    try:
+        payload = consensus.load_consensus(int(gameweek)) or {}
+    except Exception:
+        payload = {}
+    state = freshness.from_files(int(gameweek), payload, deadline)
+
+    left, right = st.columns([3, 1])
+    with left:
+        build = version.current()
+        st.caption(
+            f"**Gameweek {gameweek}** · {state.label}"
+            + (f" · {build.display}" if build.known else "")
+        )
+    with right:
+        if st.button("↻ Refresh data", use_container_width=True,
+                     help="Pulls the latest committed research and re-fetches live FPL data. Free — "
+                          "it clears the in-app caches, nothing more."):
+            st.cache_data.clear()
+            st.rerun()
+
+    if state.message:
+        (st.warning if state.stale else st.info)(state.message)
+
+
 def _section(title: str, subtitle: str = "") -> None:
     render_html(f"<div class='fpl-section'>{title}</div>")
     if subtitle:
@@ -1238,6 +1292,8 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     if state is not None:
         render_live_gameweek_notice(state, scored)
 
+    render_freshness_bar(next_event)
+
     free_transfers = cached_free_transfers(squad.team_id)
     bank = float(squad.bank or 0.0)
 
@@ -1247,7 +1303,7 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     # whoever the money worked against. That is how a settled starter gets
     # sold to fund another midfielder while a player in the middle of a
     # transfer saga is kept.
-    matchup_fixtures = cached_matchups(int(next_event))
+    matchup_fixtures = cached_matchups(int(next_event), _build_id())
     squad_dossiers = []
     for pid in owned_ids:
         if pid not in scored.index and pid not in set(scored["id"]):
