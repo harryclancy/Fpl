@@ -39,12 +39,25 @@ jobs:
         # Runs where the FPL API is actually reachable. A Claude Code
         # research session cannot reach it, so without this the research
         # never knows which fifteen players are owned.
+        #
+        # The team ID comes from a repository variable because .env is
+        # gitignored and must stay that way. Without it this step fails
+        # loudly rather than going green having done nothing.
+        env:
+          FPL_TEAM_ID: ${{ vars.FPL_TEAM_ID }}
         run: python scripts/fetch_squad.py
 
       - name: Write the snapshot if a deadline is close
+        # `always()` so a missing team ID doesn't also stop the snapshot.
+        # The fetch step failing already turns the job red; there is no
+        # reason for it to take the unrelated work down with it.
+        if: always()
+        env:
+          FPL_TEAM_ID: ${{ vars.FPL_TEAM_ID }}
         run: python scripts/snapshot_gameweek.py
 
       - name: Commit it, if anything changed
+        if: always()
         run: |
           if [ -z "$(git status --porcelain data/snapshots data/squad)" ]; then
             echo "No new snapshot; nothing to commit."

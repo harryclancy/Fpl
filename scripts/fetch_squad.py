@@ -38,14 +38,24 @@ SQUAD_PATH = Path(__file__).resolve().parent.parent / "data" / "squad" / "curren
 
 def main() -> int:
     if not FPL_TEAM_ID:
-        print("No FPL_TEAM_ID configured; nothing to fetch.")
-        return 0
+        # Loudly, not quietly. `.env` is gitignored — correctly, it should
+        # never be committed — so GitHub Actions has no team ID unless one
+        # is configured there separately. The first version printed a note
+        # and exited 0, which meant the job went green while doing nothing
+        # at all, thirty times over. An automation that cannot do its job
+        # must say so where someone will see it.
+        print("::error title=No FPL_TEAM_ID::The squad cannot be fetched without a team ID. "
+              "Add FPL_TEAM_ID as a repository variable "
+              "(Settings -> Secrets and variables -> Actions -> Variables), then this step "
+              "will start recording the squad. It is free and a team ID is not sensitive — "
+              "it appears in your own public FPL profile URL.")
+        return 1
 
     try:
         bootstrap = api.get_bootstrap_static()
         fixtures = fixtures_df(api.get_fixtures())
     except Exception as exc:
-        print(f"Couldn't reach the FPL API ({exc}); leaving the stored squad alone.")
+        print(f"::warning title=FPL API unreachable::{exc}. Leaving the stored squad alone.")
         return 0
 
     teams = teams_df(bootstrap)
@@ -56,7 +66,7 @@ def main() -> int:
         int(FPL_TEAM_ID), state.planning_event, api.get_entry_picks
     )
     if confirmed is None:
-        print("No confirmed squad found yet.")
+        print("::warning title=No confirmed squad::FPL has not published picks for this team yet.")
         return 0
 
     try:

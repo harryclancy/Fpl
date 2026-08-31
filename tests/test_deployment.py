@@ -118,14 +118,27 @@ def test_an_unparseable_timestamp_does_not_raise():
     assert state.state == freshness.FRESH
 
 
-def test_the_shipped_gw2_research_reads_as_current_for_gw2():
+def test_the_shipped_research_files_carry_the_stamps_the_check_needs():
+    """Reads a real committed file rather than a fixture, because the bug
+    this guards against is a research file that forgets to say which
+    gameweek it is for — at which point the app cannot tell last week's
+    reasoning from this week's.
+
+    Note what is *not* asserted: that the file is FRESH. Freshness decays
+    with the wall clock, so asserting it would turn a passing suite into a
+    failing one every 36 hours with no code change. The gameweek-relative
+    half is the part that is actually a property of the file.
+    """
     import json
 
     payload = json.loads(
         (Path(__file__).resolve().parent.parent / "data" / "consensus" / "gw2.json").read_text()
     )
-    assert freshness.from_files(2, payload).state == freshness.FRESH
-    assert freshness.from_files(3, payload).stale
+    assert payload.get("gameweek") == 2, "the file must say which deadline it is for"
+    assert payload.get("researched"), "the file must say when it was written"
+
+    assert not freshness.from_files(2, payload).stale, "right gameweek is never stale"
+    assert freshness.from_files(3, payload).stale, "a gameweek behind is stale"
 
 
 # --- the deployment contract --------------------------------------------
@@ -158,3 +171,36 @@ def test_the_preflight_gate_exists_and_covers_the_deploy_risks():
     assert "Critical imports" in labels
     assert "Requirements complete" in labels
     assert "App smoke test" in labels
+
+
+# --- the automation must never go green having done nothing --------------
+
+def test_the_squad_fetcher_fails_loudly_without_a_team_id(monkeypatch, capsys):
+    """The bug this guards: `.env` is gitignored, so GitHub Actions had no
+    team ID, and the fetch step printed a note and exited 0. Thirty-odd
+    scheduled runs went green in a row while `data/squad/` was never once
+    written, and nothing anywhere said so. A job that cannot do its work
+    must fail, not succeed quietly."""
+    from fpl_assistant import config
+    from scripts import fetch_squad
+
+    monkeypatch.setattr(fetch_squad, "FPL_TEAM_ID", None)
+    monkeypatch.setattr(config, "FPL_TEAM_ID", None)
+
+    assert fetch_squad.main() == 1, "a missing team ID must be a failure, not a no-op"
+    out = capsys.readouterr().out
+    assert "::error" in out, "GitHub Actions only surfaces ::error annotations"
+    assert "FPL_TEAM_ID" in out, "the message must name the thing to configure"
+
+
+def test_the_workflow_passes_the_team_id_to_both_scripts():
+    """A repository variable only reaches a step that asks for it. The
+    fetcher went unconfigured because the workflow never passed one."""
+    text = (Path(__file__).resolve().parent.parent
+            / ".github" / "workflows" / "snapshot.yml").read_text()
+    assert text.count("FPL_TEAM_ID: ${{ vars.FPL_TEAM_ID }}") == 2, (
+        "both the squad fetch and the snapshot step need the team ID"
+    )
+    assert "if: always()" in text, (
+        "a missing team ID must not also stop the unrelated snapshot step"
+    )
