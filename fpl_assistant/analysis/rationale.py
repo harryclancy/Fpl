@@ -73,6 +73,7 @@ CONSENSUS_HEADLINES = {
     "must_have": "✅ **Consensus must-have.**",
     "strong": "👍 **Widely backed by analysts.**",
     "value": "💡 **A popular value pick.**",
+    "neutral": "➖ **Covered, but nobody is making a case either way this week.**",
     "avoid": "🚫 **Analysts are steering clear.**",
 }
 

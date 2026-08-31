@@ -1,0 +1,2200 @@
+{
+  "gameweek": 3,
+  "season": "2026/27",
+  "researched": "2026-08-31",
+  "note": "Researched from live web sources in a Claude Code session — no paid API, no key, no cost.\n\n`case` is the argument for picking them; `watch_out` is the honest counter-argument, because a recommendation you can't argue against isn't advice. `key_stats` holds the hard numbers as discrete facts. `voices` records what named outlets actually said — 'analysts say' is not a source. `dissent` marks a genuine split.\n\nWRITTEN 31 AUGUST, four days before the Gameweek 3 deadline (18:30 BST, Friday 4 September). That timing is recorded honestly throughout rather than hidden: the Friday press conferences have NOT happened, Fantasy Football Scout's Gameweek 3 Scout Picks are an early draft the site says it will revise, no Gameweek 3 captaincy poll or clean-sheet odds have been published yet, and the summer transfer window does not close until 1 September. Anything depending on those is labelled `unconfirmed` rather than dressed up as settled. THIS FILE SHOULD BE REFRESHED AGAIN ON DEADLINE DAY.\n\nThree things shape the week and none of them is a projection:\n  1. Manchester City host Coventry. Every source that has published on Gameweek 3 leads with it, and the question being asked is not \"captain Haaland?\" but \"Triple Captain Haaland?\".\n  2. The transfer window shuts on 1 September, three days before the deadline. Enzo Fernández is unresolved and Omar Marmoush has just arrived at Spurs. A squad decision taken now can be overtaken by a Monday-night announcement.\n  3. The market has piled into the cheap Newcastle assets — Wissa, Elanga, Hall — while Scout point out that Isak, the premium in the same team with the same fixture, is on 16.2% ownership and outside the top twenty transfers in.\n\nOne entry, De Cuyper, is tiered `neutral` and says plainly that no verified source covered him for Gameweek 3. That is a gap being reported as a gap. It is not the same thing as an assessment, and it must not be read as one.\n\nClub-wide verdicts do NOT belong here; they live in teams.json.",
+  "players": [
+    {
+      "name": "Haaland",
+      "full_name": "Erling Haaland",
+      "tier": "must_have",
+      "expert_ownership": 71,
+      "verdict": "Home to a promoted side, four days after a brace, in the week the chip conversation opens. There is no argument on the other side of this one.",
+      "case": "Manchester City host Coventry City, and Fantasy Football Scout's early Scout Picks are built around that one fixture — the piece is literally titled 'Piling up on Man City'. Their framing of the armband is not whether Haaland is the captain but whether this is the week to Triple Captain him. The supporting number they use is blunt: only Palace and Spurs sit below Coventry for goal difference and points. He also comes into it having scored twice in Gameweek 2 off five attempts while, in Scout's own words, barely touching the ball — which is the version of Haaland that wins gameweeks, because it means the blank risk is not a performance risk, it is a variance risk. He was heavily sold after the Gameweek 1 blank. Those managers have now paid for it twice.",
+      "watch_out": "The only real question is chip timing, not selection. If you fire the Triple Captain here you cannot fire it at a double gameweek later, and City have played two competitive games and conceded in both, so the match could be more open than a home tie with a promoted side suggests. There is also a genuine pattern worth naming: Scout's own Gameweek 2 notes had him scoring twice from five shots having 'barely touched the ball', which is a polite way of saying City are not funnelling everything through him under Maresca the way they did under Guardiola. Foden topped the expected-goal-involvement table that week, not Haaland.",
+      "key_stats": [
+        "Brace in Gameweek 2 from five goal attempts",
+        "Man City host Coventry, who are 18th or lower for both goal difference and points",
+        "Only Palace and Spurs are below Coventry on both measures",
+        "£15.5m — the most expensive player in the game",
+        "City have won both games under Maresca"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Built their entire early Gameweek 3 Scout Picks around the Man City fixture and treat his captaincy as settled — the open question they pose is Triple Captain, not armband."
+        },
+        {
+          "source": "All About FPL",
+          "take": "List him as a priority buy for anyone who does not already own him."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "All About FPL"
+      ],
+      "predicted_start": "nailed",
+      "role": "lone striker",
+      "talking_points": {
+        "for": [
+          {
+            "point": "Erling Haaland surely dominates the armband discussion for a home fixture against Coventry City.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "The main questions this week are whether it is time to activate the Triple Captain, and which Man City colleagues should complete a triple-up.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Only Palace and Spurs are below Coventry for goal difference and points tally — exactly the kind of fixture where you want exposure to a Man City attacker.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Haaland is assumed to be a priority buy if you do not already own him.",
+            "source": "All About FPL"
+          },
+          {
+            "point": "The Triple Captain conversation is not a fringe view this week; it is the headline on the Scout Picks piece.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Two wins from two under Maresca, with Cherki and Foden both creating at volume behind him.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "He scored two goals despite barely touching the ball. City are not routing everything through him.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Foden topped the game's xGI table in Gameweek 2, not Haaland — the two assists were his.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Spending the Triple Captain in Gameweek 3 means not having it for a double gameweek later in the season.",
+            "source": "All About FPL"
+          }
+        ]
+      },
+      "record_vs": "No Premier League history against Coventry — they are newly promoted. The relevant record is his record against promoted sides generally, which is why nobody is arguing the other side.",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "goal",
+          "detail": "Brace in Gameweek 2 from five attempts",
+          "source": "Fantasy Football Scout",
+          "when": "29 Aug"
+        },
+        {
+          "kind": "fixture swing",
+          "detail": "Home to newly promoted Coventry in GW3",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Man City host Coventry City in Gameweek 3.",
+          "kind": "fact",
+          "source": "Premier League"
+        },
+        {
+          "text": "He scored twice in Gameweek 2.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "This is the strongest Triple Captain window available so far this season.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ]
+    },
+    {
+      "name": "Cherki",
+      "full_name": "Rayan Cherki",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "The most clearly argued buy of the week — and the one place where the sources openly contradict each other about whether he is actually any good.",
+      "case": "Four attacking returns in two matches, including two solo goals at Selhurst Park on Friday, and an underlying rate that Scout summarises as a chance created every sixteen minutes. All About FPL put the same case in different numbers: four goal involvements, two assists and 0.86 xA, plus the bonus-point behaviour they look for in a midfielder. At £7.6m he is the cheap route into the Coventry fixture, and Scout name him and Foden as the two City players managers are weighing to complete a triple-up alongside Haaland.",
+      "watch_out": "Two separate warnings, both from the same site that recommends him. First, the fixtures immediately turn: Scout point out he faces Manchester United and Liverpool away in the three gameweeks that follow, so this is a buy with a short runway unless you are happy holding through that. Second, and more awkwardly, their Gameweek 2 notes ran under the headline calling his first-half display 's**t' — he was quiet before the interval and, in their words, did not sound far from being substituted at half-time. He also did not start Gameweek 1. The second-half masterclass is real; so is the fact that he has been a second-half player.",
+      "key_stats": [
+        "4 attacking returns in 2 matches",
+        "2 solo goals at Selhurst Park in GW2",
+        "A chance created every 16 minutes this season",
+        "4 goal involvements, 2 assists, 0.86 xA",
+        "£7.6m; did not start Gameweek 1"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "BUY in their Gameweek 3 buy/keep/sell — while the same site's Gameweek 2 match notes called his first-half display 's**t'. Both verdicts are theirs, four days apart."
+        },
+        {
+          "source": "All About FPL",
+          "take": "Praise the breadth of his contribution rather than the goals: creativity, involvement and BPS behaviour all ticking over."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "All About FPL"
+      ],
+      "predicted_start": "rotation risk",
+      "role": "attacking midfield, between the lines",
+      "talking_points": {
+        "for": [
+          {
+            "point": "Given the home match against Coventry City, plus Cherki's haul potential, he looks like a great pickup for Gameweek 3 — BUY.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "He can contribute in multiple ways rather than relying on one-off goals; the creativity numbers and the BPS behaviour both tick the boxes.",
+            "source": "All About FPL"
+          },
+          {
+            "point": "A second-half masterclass as Manchester City made it two wins from two under Maresca.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "The cheapest credible way to double up on the Coventry fixture.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "He faces Manchester United and Liverpool away in the three gameweeks that follow.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "He was fairly quiet in the first half and did not sound far off being subbed at the interval.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Caution is warranted — he did not start in Gameweek 1.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "A start is not guaranteed. He was a substitute in Gameweek 1 and was close to being withdrawn in Gameweek 2.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      },
+      "record_vs": "No history against Coventry. The case is entirely about form and fixture.",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "goal",
+          "detail": "Two solo goals at Selhurst Park",
+          "source": "Fantasy Football Scout",
+          "when": "28 Aug"
+        },
+        {
+          "kind": "benched",
+          "detail": "Did not start Gameweek 1",
+          "source": "Fantasy Football Scout",
+          "when": "22 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Four attacking returns in two matches.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "He starts against Coventry.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The half-time substitution talk means his starting place is not settled.",
+          "kind": "unconfirmed",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "dissent": {
+        "kind": "output",
+        "case": "Fantasy Football Scout published both the strongest buy case for Cherki and the harshest assessment of him, four days apart. Their Gameweek 3 piece calls him a great pickup off a chance created every sixteen minutes; their Gameweek 2 notes headline his first half as 's**t' and report he was close to being hooked at the interval. Both are true of the same player: he is a high-variance second-half game-changer, not a metronome. Buy him for haul potential, not for floor.",
+        "sources": [
+          "Fantasy Football Scout"
+        ]
+      }
+    },
+    {
+      "name": "Foden",
+      "full_name": "Phil Foden",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "Topped the expected-goal-involvement table in Gameweek 2 and finished with two assists rather than the hat-trick the chances deserved. At £7.0m that gap is the buy.",
+      "case": "Scout's Gameweek 2 notes have him top of the whole game's xGI table, with two assists — one for Cherki, one for Haaland. He is named alongside Cherki as the cheaper Manchester City option managers are considering to complete a triple-up for the Coventry fixture, and at £7.0m he is the same price as Szoboszlai and Marmoush for a starting place in the best attack in the division.",
+      "watch_out": "The reason he only has assists is the same reason to be careful: Scout describe him being 'too hesitant to pounce on a loose ball', skying a close-range effort and miscuing a header from four yards. Two big chances missed in one match. Operating from the right wing he is getting into the positions, but the finishing has not followed, and Manchester City have enough attacking options that a bad run costs minutes.",
+      "key_stats": [
+        "Topped the game's xGI table in Gameweek 2",
+        "Two assists in GW2 — for Cherki and for Haaland",
+        "Missed two big chances in the same match",
+        "£7.0m",
+        "Playing from the right wing"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Name him and Cherki as the two cheaper City routes into the Coventry fixture, while recording that he missed two big chances in Gameweek 2."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "right wing",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "assist",
+          "detail": "Two assists in GW2; top of the xGI table",
+          "source": "Fantasy Football Scout",
+          "when": "29 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He led the gameweek for expected goal involvement.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The finishing regresses towards the chances he is getting.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Foden topped the game's xGI table, with his returns coming courtesy of two assists.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Foden (£7.0m) and Cherki (£7.6m) are the cheaper Man City options managers are considering to accompany Haaland.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "He was too hesitant to pounce on a loose ball, skied a close-range effort and miscued a header from four yards.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Semenyo",
+      "full_name": "Antoine Semenyo",
+      "tier": "strong",
+      "expert_ownership": 18,
+      "verdict": "Still starting, still creating, and now with the Coventry fixture. Nothing has happened to change the Gameweek 2 verdict, which was to protect him rather than sell him.",
+      "case": "Scout's Gameweek 2 report has him crossing for Haaland's headed opener, causing problems with driving runs into the box, creating three chances and getting two efforts away from narrow angles. That is a settled starter with a defined role in the best attack in the league, and the fixture now turns to a home game with a promoted side. He joined City from Bournemouth in January for £64m, so the investment behind the shirt is not in doubt either.",
+      "watch_out": "He is the third or fourth name in the Manchester City conversation this week, not the first. Scout name Foden and Cherki as the players to pair with Haaland, not him, and with Cherki in this form the minutes are genuinely competitive. He is also creating rather than finishing — three chances made, no goal.",
+      "key_stats": [
+        "Crossed for Haaland's headed opener in GW2",
+        "Created three chances in that match",
+        "Two efforts from narrow angles",
+        "Joined Man City from Bournemouth for £64m in January 2026",
+        "18% owned"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Credit him with the assist, the driving runs and three chances created in Gameweek 2, but do not name him among the City players to buy this week."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "Sky Sports Premier League",
+        "Manchester City"
+      ],
+      "predicted_start": "likely",
+      "role": "wide forward",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "Signed for Manchester City in January 2026; settled."
+      },
+      "events": [
+        {
+          "kind": "assist",
+          "detail": "Assisted Haaland's opener; three chances created",
+          "source": "Fantasy Football Scout",
+          "when": "29 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He assisted Haaland's opening goal in Gameweek 2.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "His starting place is secure while City rotate the other wide roles.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Semenyo crossed for Haaland's headed opener, caused problems with his driving runs into the box, created three chances and had two efforts from narrow angles.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "The Man City players named for a triple-up this week are Foden and Cherki, not Semenyo.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Isak",
+      "full_name": "Alexander Isak",
+      "tier": "strong",
+      "expert_ownership": 16.2,
+      "verdict": "Scout's phrase, not mine: the cheat code this week. Premium forward numbers, the best attacking fixture on the board, and almost nobody buying him.",
+      "case": "Fantasy Football Scout say he has all the underlying numbers you want from a premium forward and now gets arguably the best possible fixture for an attacking asset, at home to Bournemouth. The part that makes him interesting rather than merely good is the ownership: 16.2% selected, and he is not in the top twenty most-transferred-in players this gameweek. Everyone is buying Wissa, Elanga and Hall — the Newcastle players around him — and skipping the forward. Newcastle also have what Scout call a great run of fixtures until Gameweek 10 with no European football, so this is not a one-week punt.",
+      "watch_out": "Newcastle have not won any of their last eight league meetings with Bournemouth. That is a real record against exactly the fixture the case rests on, and it is the reason the crowd is buying the £5-6m Newcastle players instead of the premium. He is also expensive, so owning him and Haaland together squeezes the rest of the squad.",
+      "key_stats": [
+        "16.2% owned — not in the top 20 most-transferred-in this gameweek",
+        "Home to Bournemouth",
+        "Newcastle have a strong fixture run to GW10 with no European football",
+        "Newcastle have not won any of their last eight league meetings with Bournemouth"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Call him the cheat code this week — premium underlying numbers, the best attacking fixture of the round and an ownership level nobody has moved on."
+        },
+        {
+          "source": "Sports Mole",
+          "take": "Flag the record that cuts against it: Newcastle without a win in eight league meetings with Bournemouth."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "Sports Mole"
+      ],
+      "predicted_start": "nailed",
+      "role": "centre forward",
+      "record_vs": "Newcastle without a win in eight league meetings with Bournemouth — the one number that cuts against an otherwise clean case.",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "fixture swing",
+          "detail": "Home to Bournemouth, described as the best attacking fixture of the round",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He is owned by 16.2% and outside the top 20 transfers in.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The low ownership makes him the highest-leverage Newcastle pick, not the safest.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Isak has all the underlying numbers you want from a premium forward and now gets arguably the best possible fixture for an attacking asset — the cheat code this week.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Newcastle have a great run of fixtures till GW10 and no Europe.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Newcastle haven't won any of their last eight league meetings with Bournemouth.",
+            "source": "Sports Mole"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wissa",
+      "full_name": "Yoane Wissa",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "Scout's words: an immediate buy. Near the top of the transfers-in column, and the underlying numbers behind the move are real rather than a reaction to one goal.",
+      "case": "He scored his first goal of the season on Saturday having already supplied an assist against Liverpool, and across those two matches he has taken six shots including three big chances. Scout describe him as an immediate buy and note he is near the top of the transfers-in column alongside Elanga and Lewis Hall. Newcastle host Bournemouth and then have a fixture run to Gameweek 10 with no European football to rotate around.",
+      "watch_out": "He is now the crowd's pick, which removes the differential edge that made him attractive in Gameweek 2 when he was on 2.8% ownership. Scout themselves point out that Isak, the man ahead of him, is the one nobody is buying — so if you want Newcastle exposure the more interesting question is whether Wissa is the right Newcastle player rather than whether Newcastle players are right. The eight-game winless record against Bournemouth applies to him too.",
+      "key_stats": [
+        "First goal of the season in GW2",
+        "Assist against Liverpool in GW1",
+        "6 shots across two matches, including 3 big chances",
+        "Near the top of the transfers-in column",
+        "£6.1m"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "An immediate buy, and one of the three Newcastle players at the top of the transfers-in column."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "Sports Mole"
+      ],
+      "predicted_start": "likely",
+      "role": "wide forward / support striker",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "goal",
+          "detail": "First goal of the season in GW2, after a GW1 assist against Liverpool",
+          "source": "Fantasy Football Scout",
+          "when": "29 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Six shots and three big chances in two matches.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "He keeps his place through the good run.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Wissa looks like an immediate buy, having netted his first goal of the season on Saturday and previously supplied an assist against Liverpool, with six shots taken in those two matches including three big chances.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Wissa, Elanga, Hall and Dedic all look like excellent picks given the run to GW10.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Newcastle haven't won any of their last eight league meetings with Bournemouth.",
+            "source": "Sports Mole"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Elanga",
+      "full_name": "Anthony Elanga",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "Two goals from four attempts, and the site recommending him still calls him the trickier buy of the Newcastle group.",
+      "case": "Two goals from four shots under Matthias Jaissle is a striking conversion rate for a £6.0m midfielder, and he sits near the top of the transfers-in column with Wissa and Lewis Hall. The Newcastle fixture run to Gameweek 10 with no European commitments is the structural reason people are buying the whole club, and he is one of the cheap ways in.",
+      "watch_out": "Scout are explicit that he 'feels like a trickier buy', and they name the alternatives they would rather have at similar money: Pascal Gross (£5.5m), Mamadou Sangaré (£5.6m) and Anton Stach (£6.0m). Two goals from four attempts is also, arithmetically, a conversion rate that will not last.",
+      "key_stats": [
+        "2 goals from 4 attempts under Jaissle",
+        "£6.0m",
+        "Near the top of the transfers-in column",
+        "Named as a trickier buy than Gross (£5.5m), Sangaré (£5.6m) and Stach (£6.0m)"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Recommend the Newcastle run but call him specifically the trickier buy, naming three alternatives at similar money."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "wide midfield",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "goal",
+          "detail": "Two goals from four attempts in the opening two rounds",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Two goals from four shots.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The conversion rate regresses.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Elanga already has two goals from four attempts under Matthias Jaissle.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "He feels like a trickier buy, particularly compared to Gross, Sangaré and Stach.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lewis Hall",
+      "full_name": "Lewis Hall",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "A £5.0m attacking full-back in the club with the best fixture run in the game and no European football. The cheap end of the Newcastle trade.",
+      "case": "Scout list him alongside Wissa and Elanga near the top of the transfers-in column, and name him with Dedic as one of the Newcastle picks that look excellent given a run of fixtures to Gameweek 10 with no Europe. At £5.0m he is priced as a squad defender and plays as an attacking left-back.",
+      "watch_out": "The clean sheet is doing a lot of the work in a £5.0m defender's case, and Newcastle's opponents this week are a side they have not beaten in eight league attempts. Scout have not published Gameweek 3 clean-sheet odds yet, so the defensive half of the argument is currently unquantified.",
+      "key_stats": [
+        "£5.0m",
+        "Near the top of the transfers-in column",
+        "Newcastle: strong run to GW10, no European football"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Group him with Wissa and Dedic as excellent picks on the strength of the fixture run to Gameweek 10 with no European football."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "Sports Mole"
+      ],
+      "predicted_start": "likely",
+      "role": "attacking left-back",
+      "research_depth": "club news",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "He is among the most-bought defenders this week.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Wissa, Elanga (£6.0m) and Lewis Hall (£5.0m) are all near the top of the transfers in column for Gameweek 3.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Newcastle haven't won any of their last eight league meetings with Bournemouth.",
+            "source": "Sports Mole"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Szoboszlai",
+      "full_name": "Dominik Szoboszlai",
+      "tier": "must_have",
+      "expert_ownership": 41,
+      "verdict": "Being sold in volume by managers who did not look at what he actually did. Two sources independently say hold, and the fixture is Ipswich away.",
+      "case": "All About FPL point out he has the second-highest FPL points total and the second-highest xGI of any Liverpool player, and is nonetheless one of the most transferred-out players in the game — against Ipswich, who conceded five in their last match. Scout add the detail that explains the apparent blank: he had no attacking return in Gameweek 2 but banked defensive contribution points, because a shift to right-back helped him clear the DefCon threshold. That is the classic hold — the scoring route changed, the scoring did not stop. He also took every set piece for Liverpool in Gameweek 1, and scored a late penalty to rescue a draw, so he is on spot kicks in a Salah-less side.",
+      "watch_out": "The deeper and now wider role is the counter-argument and it is a fair one: a midfielder playing at right-back is scoring 2-point DefCon returns rather than goals and assists, and DefCon points have a hard ceiling. If Iraola keeps using him there, the £7.0m is buying a floor rather than a ceiling. Liverpool also remain short in attack — Ekitike is out with an Achilles injury and Scout note Salah has not been truly replaced — so the chances he is feeding may not be finished.",
+      "key_stats": [
+        "2nd-highest FPL points total among Liverpool players",
+        "2nd-highest xGI among Liverpool players",
+        "Banked DefCon points in GW2 after a shift to right-back",
+        "Took every Liverpool set piece in GW1; scored a late penalty",
+        "£7.0m; Ipswich conceded five in their last match"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "HOLD. They explain the Gameweek 2 blank as a role change rather than a decline — the DefCon points came from a shift to right-back."
+        },
+        {
+          "source": "All About FPL",
+          "take": "Point out he is among the most transferred-out players in the game while sitting second at Liverpool for both points and xGI."
+        }
+      ],
+      "sources": [
+        "All About FPL",
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "deployed at right-back in GW2 after starting the season in midfield — the role is genuinely in flux",
+      "record_vs": "No meaningful record against Ipswich. The relevant number is Ipswich's, and it is five conceded in their last match.",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "position change",
+          "detail": "Shifted to right-back in GW2, which is how he hit the DefCon threshold",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        },
+        {
+          "kind": "penalty duty",
+          "detail": "Scored a late penalty to rescue a draw; took every Liverpool set piece in GW1",
+          "source": "Fantasy Football Scout",
+          "when": "24 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He scored DefCon points in Gameweek 2 from right-back.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "He is Liverpool's penalty taker with Salah gone.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "He returns to central midfield once the defence is fit.",
+          "kind": "unconfirmed",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "set_pieces": "Took every Liverpool set piece in Gameweek 1 and has since scored a penalty.",
+      "talking_points": {
+        "for": [
+          {
+            "point": "Szoboszlai has the 2nd-highest FPL points total and 2nd-highest xGI among Liverpool players despite being heavily transferred out — and Liverpool play Ipswich, who conceded five goals in their last match.",
+            "source": "All About FPL"
+          },
+          {
+            "point": "Despite no attacking return in Gameweek 2 he did bank defensive contribution points, as a shift to right-back helped him hit the threshold. A classic hold.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "A steal at £7.0m — 10+ goal involvements last season and 20 DefCon points, and with Salah gone he could even be on penalties.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Iraola is undoubtedly short in the forward line considering Salah is yet to truly be replaced.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Ekitike (Achilles), Bradley (knee), Leoni (knee) and Gomez (muscle) all remain out.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Van Dijk",
+      "full_name": "Virgil van Dijk",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "Ipswich away is the clean-sheet fixture of the round on paper, but Liverpool's defence is being held together with the fit players Iraola has left.",
+      "case": "Liverpool travel to Ipswich, who All About FPL note conceded five in their last match, in a run Sports Mole describe as three winnable fixtures in Ipswich, Sunderland and Fulham. Van Dijk is the premium defender in that back line and carries the set-piece goal threat that separates him from the cheaper options.",
+      "watch_out": "The defensive personnel are thin: Conor Bradley (knee), Giovanni Leoni (knee) and Joe Gomez (muscle) are all out, and Szoboszlai was being used at right-back in Gameweek 2 — which tells you how short they are. Scout's Gameweek 2 coverage had Iraola spending his press conference explaining why the clean sheet is hard, and Liverpool have not kept one yet.",
+      "key_stats": [
+        "Ipswich conceded five in their last match",
+        "Bradley (knee), Leoni (knee) and Gomez (muscle) all out",
+        "Szoboszlai deployed at right-back in GW2 — a midfielder filling a defensive gap",
+        "Liverpool yet to keep a clean sheet this season"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Have covered Liverpool's defensive injury list at length and Iraola's own explanation of why clean sheets are hard right now."
+        },
+        {
+          "source": "All About FPL",
+          "take": "Note the opponent conceded five in their last match."
+        }
+      ],
+      "sources": [
+        "Sports Mole",
+        "All About FPL",
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "centre-back, set-piece target",
+      "research_depth": "club news",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "teammate injury",
+          "detail": "Bradley, Leoni and Gomez all out; a midfielder covering right-back",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Three of Liverpool's defenders are unavailable.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "Ipswich away is still the best clean-sheet fixture Liverpool have had this season.",
+          "kind": "inference",
+          "source": "All About FPL"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "The opening run contains three winnable fixtures in Ipswich, Sunderland and Fulham.",
+            "source": "Sports Mole"
+          },
+          {
+            "point": "Ipswich conceded five goals in their last match.",
+            "source": "All About FPL"
+          }
+        ],
+        "against": [
+          {
+            "point": "Hugo Ekitike (Achilles), Conor Bradley (knee), Giovanni Leoni (knee) and Joe Gomez (muscle) remain out for the Reds.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Iraola spent his press conference explaining why the clean sheet is hard.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "B.Fernandes",
+      "full_name": "Bruno Fernandes",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "The cautionary tale of the season so far. 144,000 managers sold him after the Gameweek 1 blank and watched Sunday's haul from the outside.",
+      "case": "All About FPL use him as the worked example of the mistake they are warning against: more than 144,000 managers transferred him out after he blanked against Hull in Gameweek 1, and missed the returns that followed. Scout say he 'has to be considered' after Sunday's haul. The fixture is Everton away, which looks awkward until you read the number Scout attach to it: Everton have conceded a league-second-worst ten big chances in the opening two gameweeks. He is on penalties and set pieces at £12.0m.",
+      "watch_out": "Scout call the Everton trip 'trickier' for a reason — it is an away derby-adjacent fixture against a side that will sit deep, and Manchester United have not been convincing. At £12.0m he and Haaland together take £27.5m of the budget, which is the real constraint in a week when the Newcastle and Man City cheap options are the ones everybody wants.",
+      "key_stats": [
+        "144,000+ managers sold him after the GW1 blank against Hull",
+        "Hauled on Sunday in GW2",
+        "Everton have conceded a league-second-worst 10 big chances in two gameweeks",
+        "£12.0m; on penalties"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Say he has to be considered after the Gameweek 2 haul, and supply the Everton number that makes the away trip less awkward than it looks."
+        },
+        {
+          "source": "All About FPL",
+          "take": "Use him as the season's cautionary tale against knee-jerk selling."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "All About FPL"
+      ],
+      "predicted_start": "nailed",
+      "role": "attacking midfield, on penalties and set pieces",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "goal",
+          "detail": "Hauled in GW2 after being sold by 144,000 managers",
+          "source": "All About FPL",
+          "when": "30 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Everton have conceded the league's second-most big chances.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The Everton fixture is better than its difficulty rating looks.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "set_pieces": "Penalties and direct free kicks.",
+      "talking_points": {
+        "for": [
+          {
+            "point": "Bruno Fernandes has to be considered after Sunday's epic haul.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Everton have conceded a league-second-worst 10 big chances in the first two Gameweeks, which is in Bruno's favour.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "144,000+ managers who transferred out Bruno after his GW1 blank against Hull missed out on his returns. Don't make emotional, knee-jerk transfers.",
+            "source": "All About FPL"
+          }
+        ],
+        "against": [
+          {
+            "point": "He has a trickier fixture away at Everton.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Amad will miss out and de Ligt and Mount are only just returning — United are not at full strength.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mbeumo",
+      "full_name": "Bryan Mbeumo",
+      "tier": "strong",
+      "expert_ownership": 21,
+      "verdict": "On a lot of chopping blocks. Fantasy Football Scout's verdict is one word: keep.",
+      "case": "Scout's buy/keep/sell piece puts him in the KEEP column and says explicitly that he is probably worth keeping this week provided you have not already moved him on — the advice is to hold rather than panic sell. He plays in the same side as Bruno Fernandes, who has just hauled, against an Everton defence that has given up the second-most big chances in the league.",
+      "watch_out": "He is on the chopping block for many managers for a reason: the returns have not come, and unlike Szoboszlai there is no DefCon consolation underneath. This is a hold recommendation, not a buy recommendation, and Scout do not make a positive case for him beyond not selling at the bottom.",
+      "key_stats": [
+        "£8.0m",
+        "21% owned",
+        "Named on many managers' chopping blocks",
+        "Everton away — 10 big chances conceded in two rounds"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "KEEP. A hold verdict rather than a buy case — their argument is against selling at the bottom, not for buying in."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "wide forward",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Scout's published verdict on him for GW3 is KEEP.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Mbeumo is probably worth keeping this week, provided you haven't transferred him out already — hold rather than panic sell.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "He is on the chopping block for many Fantasy managers.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Enzo",
+      "full_name": "Enzo Fernández",
+      "tier": "avoid",
+      "expert_ownership": 6,
+      "verdict": "Unresolved four days before the deadline, and the window shuts three days before it. Do not carry an unresolved transfer saga into a gameweek you cannot change.",
+      "case": "The case for holding is narrower than it was but it exists. Sky Sports reported Manchester City missed Chelsea's 5pm Friday deadline without bidding, and that Chelsea now expect Fernández to be with them for the entire 2026/27 season. Fantasy Football Scout's early predicted line-up for the Arsenal fixture has him starting in the 4-2-3-1 behind João Pedro, which is the first positive minutes evidence he has had this season. Chelsea are also depleted — Cucurella, Gittens and Estêvão are all out with hamstring injuries and Fofana is suspended — which argues for using the senior players available.",
+      "watch_out": "Everything else. The reporting has not settled: Sky Sports also report City remain interested despite missing the deadline and will decide before the window closes on 1 September, and that Chelsea are prepared to sell at the right price against a £120m valuation. GOAL report he has verbally agreed personal terms with City. Sports Mole report City expect to finalise the deal despite a price hike. Football365 report a formal bid and City accelerating 'in the next few days', with the move said to depend on whether Rodri leaves for Barcelona. He came off the bench rather than starting the opener and was then left out of a Carabao Cup squad entirely. A predicted line-up published on 31 August cannot know what happens on 1 September.",
+      "key_stats": [
+        "Transfer window closes 1 September — three days before the GW3 deadline",
+        "City missed Chelsea's 5pm Friday bid deadline",
+        "Chelsea valuation: £120m; six years left on his contract",
+        "Reported to have verbally agreed personal terms with Manchester City",
+        "Came on as a substitute in the opener; omitted from the Carabao Cup squad",
+        "£7.0m, 6% owned"
+      ],
+      "voices": [
+        {
+          "source": "Sky Sports Premier League",
+          "take": "Reported both that City missed Chelsea's bid deadline and that Chelsea would sell at the right price — their own coverage does not settle it."
+        },
+        {
+          "source": "GOAL",
+          "take": "Report personal terms verbally agreed with Manchester City."
+        },
+        {
+          "source": "Sports Mole",
+          "take": "Report City expect to finalise the deal despite Chelsea raising the asking price."
+        },
+        {
+          "source": "Football365",
+          "take": "Report a formal bid and City accelerating within days, contingent on Rodri leaving for Barcelona."
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Include him in an early predicted Chelsea XI — published before the window closes."
+        }
+      ],
+      "sources": [
+        "Sky Sports Premier League",
+        "GOAL",
+        "Sports Mole",
+        "Football365",
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "rotation risk",
+      "role": "central midfield in a 4-2-3-1 — if he is still a Chelsea player on Friday",
+      "record_vs": "Not the useful question. The question is which club he plays for on 4 September.",
+      "research_depth": "football news",
+      "transfer": {
+        "status": "Advanced",
+        "detail": "Manchester City missed Chelsea's own Friday bid deadline, and Sky report Chelsea now expect him to stay all season. Since then: GOAL report personal terms verbally agreed with City, Sports Mole report City expect to finalise despite a price hike, and Football365 report a formal bid with City accelerating in the next few days, contingent on Rodri leaving for Barcelona. Sky separately report Chelsea would sell at the right price against a £120m valuation. The window closes on 1 September."
+      },
+      "events": [
+        {
+          "kind": "transfer link",
+          "detail": "Personal terms reported verbally agreed with Manchester City",
+          "source": "GOAL",
+          "when": "31 Aug"
+        },
+        {
+          "kind": "transfer link",
+          "detail": "City missed Chelsea's 5pm Friday deadline; Chelsea expect him to stay the season",
+          "source": "Sky Sports Premier League",
+          "when": "29 Aug"
+        },
+        {
+          "kind": "omitted",
+          "detail": "Left out of the Carabao Cup squad entirely",
+          "source": "ESPN",
+          "when": "26 Aug"
+        },
+        {
+          "kind": "benched",
+          "detail": "Substitute rather than starter in the Premier League opener",
+          "source": "ESPN",
+          "when": "22 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "The transfer window closes on 1 September, before the GW3 deadline.",
+          "kind": "fact",
+          "source": "Sky Sports Premier League"
+        },
+        {
+          "text": "He appears in Fantasy Football Scout's early predicted XI for the Arsenal fixture.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The predicted XI is provisional and pre-dates the window closing.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "He is a Chelsea player on 4 September.",
+          "kind": "unconfirmed",
+          "source": "Sky Sports Premier League"
+        }
+      ],
+      "dissent": {
+        "kind": "output",
+        "case": "This is the sharpest source conflict of the week and it should not be smoothed over. Sky Sports report City missed the bid deadline and Chelsea now expect him for the whole season. GOAL report personal terms verbally agreed with City. Sports Mole report City expect to finalise despite a price hike. Football365 report a formal bid and acceleration within days, tied to Rodri leaving for Barcelona. Sky also report Chelsea willing to sell at the right price. These cannot all be true simultaneously, and the window shuts on 1 September. The honest position is that it is unresolved, and an unresolved transfer three days before a deadline is a reason to be somewhere else, not a reason to guess.",
+        "sources": [
+          "Sky Sports Premier League",
+          "GOAL",
+          "Sports Mole",
+          "Football365"
+        ]
+      },
+      "talking_points": {
+        "for": [
+          {
+            "point": "Man City missed Chelsea's 5pm Friday deadline to bid; Chelsea now expect Fernández to be with them for the entire 2026/27 season.",
+            "source": "Sky Sports Premier League"
+          },
+          {
+            "point": "Chelsea are expected to line up 4-2-3-1 with Palmer, Fernandez and Neto behind João Pedro.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Man City remain interested despite missing the deadline and will decide whether to sign him before the window closes on 1 September.",
+            "source": "Sky Sports Premier League"
+          },
+          {
+            "point": "Chelsea are prepared to sell the Argentina midfielder to Manchester City for the right price.",
+            "source": "Sky Sports Premier League"
+          },
+          {
+            "point": "Enzo Fernández has verbally agreed personal terms with Manchester City, with club-to-club negotiations expected shortly.",
+            "source": "GOAL"
+          },
+          {
+            "point": "Manchester City expect to finalise a deal this week despite Chelsea increasing the asking price.",
+            "source": "Sports Mole"
+          },
+          {
+            "point": "City are to accelerate the transfer in the next few days, with the move dependent on whether Rodri leaves for Barcelona.",
+            "source": "Football365"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fofana",
+      "full_name": "Wesley Fofana",
+      "tier": "avoid",
+      "expert_ownership": null,
+      "verdict": "Suspended for Gameweek 3. Not a judgement call — he cannot play.",
+      "case": "None available for this gameweek.",
+      "watch_out": "Sports Mole and Fantasy Football Scout both have him suspended for the Arsenal fixture following his red card, and Scout's Gameweek 3 preview lists him alongside Chelsea's hamstring absentees as unavailable. This is the third consecutive gameweek he has been unavailable — he already missed the opening two rounds through the same disciplinary carry-over. If he is in your squad he has scored nothing all season and cannot score this week either.",
+      "key_stats": [
+        "Suspended for Gameweek 3 (Arsenal away)",
+        "Also missed Gameweeks 1 and 2 through suspension",
+        "Zero minutes played this season"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "List him among Chelsea's unavailable players for the Arsenal fixture."
+        },
+        {
+          "source": "Sports Mole",
+          "take": "Describe the suspension as costing him a massive fixture away at Arsenal."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "Sports Mole"
+      ],
+      "predicted_start": "out",
+      "role": "centre-back",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "suspension",
+          "detail": "Suspended for the Arsenal fixture; a third consecutive gameweek unavailable",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He is suspended for Gameweek 3.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [],
+        "against": [
+          {
+            "point": "Wesley Fofana is suspended for this game following his red card.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "The match he will miss is a massive one away to Arsenal.",
+            "source": "Sports Mole"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Joao Pedro",
+      "full_name": "João Pedro",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "A goal and an assist in both matches. Scout say he is hard to bench even with the Emirates as the fixture.",
+      "case": "Fantasy Football Scout include him in the early Scout Picks and their reasoning is simply the record: he has bagged a goal and an assist in both matches, and at high ownership he is hard to bench. He leads the line in their predicted 4-2-3-1 with Palmer, Fernández and Neto behind him.",
+      "watch_out": "Arsenal away. Scout themselves recommend Arsenal defenders in the same article, which is the same fixture viewed from the other end — they are backing both sides of it, and the honest reading is that they rate him highly enough to pick despite the fixture, not because of it. Chelsea are also without Cucurella, Gittens and Estêvão with hamstring injuries, and Fofana is suspended, so the supply line is weakened.",
+      "key_stats": [
+        "A goal and an assist in each of the first two matches",
+        "£7.6m",
+        "Arsenal away at the Emirates",
+        "Chelsea without Cucurella, Gittens, Estêvão (hamstrings) and Fofana (suspended)"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Pick him despite the fixture — their reasoning is that a goal and an assist in both games makes him hard to bench."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "centre forward",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "goal",
+          "detail": "A goal and an assist in each of the opening two rounds",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He has returned a goal and an assist in both games.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "He starts at the Emirates.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "João Pedro has bagged a goal and an assist in both matches, and the Brazilian is hard to bench with such a high ownership.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Arsenal have kept clean sheets in the Community Shield and Gameweek 1, and the underlying clean-sheet projections are extremely strong.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Palmer",
+      "full_name": "Cole Palmer",
+      "tier": "neutral",
+      "expert_ownership": null,
+      "verdict": "Named in Scout's predicted Chelsea XI and nowhere in their Scout Picks. The fixture is the whole story again.",
+      "case": "He starts — Scout's predicted 4-2-3-1 has him wide right of the three behind João Pedro — and Chelsea have scored seven goals in two matches, a figure Scout cite when arguing about Arsenal's defence rather than against it. A Chelsea attack in that form at the Emirates will get chances.",
+      "watch_out": "Scout's Gameweek 3 picks contain Arsenal's goalkeeper and defenders and Chelsea's striker, and not Palmer. Arsenal have kept clean sheets in the Community Shield and Gameweek 1 and Scout describe their underlying clean-sheet projections as extremely strong. Chelsea are also missing Cucurella, Gittens and Estêvão to hamstring problems, which thins the creative support around him.",
+      "key_stats": [
+        "In Scout's predicted Chelsea XI, wide right of a 4-2-3-1",
+        "Chelsea have scored seven times in two matches",
+        "Not named in the early Scout Picks",
+        "Arsenal have clean sheets in both competitive games so far"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Start him in their predicted Chelsea XI and leave him out of their Scout Picks in the same article. That combination is the verdict."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "right of a three behind the striker",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "He is in the published predicted Chelsea XI.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The Emirates is the wrong week for a Chelsea attacker other than João Pedro.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Chelsea are expected to line up with Palmer, Fernandez and Neto behind João Pedro.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Arsenal defenders are worth considering — they have kept clean sheets in both the Community Shield and Gameweek 1, and the underlying clean-sheet projections are extremely strong.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gyokeres",
+      "full_name": "Viktor Gyökeres",
+      "tier": "strong",
+      "expert_ownership": 13,
+      "verdict": "A straight reversal of last week. He was one of the most-sold forwards in the game seven days ago; Scout now describe him as in excellent form.",
+      "case": "Fantasy Football Scout's Gameweek 3 write-up has him with eight goals in his last twelve matches, and Football365's match preview for Arsenal v Chelsea is headlined on him scoring again in a comfortable Arsenal win. He leads the line in Scout's predicted 4-3-3 with Saka and Trossard either side. Home to a Chelsea side missing Cucurella, Gittens and Estêvão to hamstring injuries and with Fofana suspended.",
+      "watch_out": "This is a reversal, and reversals deserve suspicion. Last week the same research had him in the avoid column as one of the week's heavily-sold forwards with no case being made to hold. Nothing in his own performance changed that fast — what changed is the fixture and the opposition team sheet. Chelsea have still scored seven goals in two games, so this is not a walkover.",
+      "key_stats": [
+        "8 goals in his last 12 matches",
+        "Leads the line in the predicted Arsenal 4-3-3",
+        "Chelsea without Cucurella, Gittens and Estêvão (hamstrings); Fofana suspended",
+        "13% owned"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Describe him as in excellent form on eight goals in twelve — a reversal of their Gameweek 2 framing of him as a heavily-sold forward."
+        },
+        {
+          "source": "Football365",
+          "take": "Predict he scores again in a comfortable Arsenal win."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "Football365"
+      ],
+      "predicted_start": "nailed",
+      "role": "centre forward in a 4-3-3",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "form change",
+          "detail": "Reframed from heavily-sold to excellent form on the strength of a home fixture and Chelsea's absentees",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Eight goals in his last twelve matches.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "Chelsea's injuries and suspension make this the softest home fixture Arsenal have had.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Viktor Gyökeres is in excellent form, having netted eight goals in his last 12 matches.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Gyökeres to strike again in a comfortable Arsenal win.",
+            "source": "Football365"
+          }
+        ],
+        "against": [
+          {
+            "point": "He was among the most heavily-sold forwards in the game a week ago.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Chelsea have netted seven times in two matches.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Saka",
+      "full_name": "Bukayo Saka",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "Named as a late charge for the Scout Picks rather than a confirmed inclusion. Right side of a 4-3-3 against a depleted Chelsea back line.",
+      "case": "Scout say Saka (£9.5m) 'could make a late charge for the Picks' and have him starting on the right of the predicted 4-3-3. Chelsea are without Cucurella, Gittens and Estêvão with hamstring injuries and Fofana is suspended, so the defence in front of him is patched together.",
+      "watch_out": "'Could make a late charge' is not an endorsement — it is a note that the Picks are provisional and he is on the bubble. Scout's early draft this week is built on Manchester City and the Coventry fixture, and Saka is competing for a place in it against players with easier games.",
+      "key_stats": [
+        "£9.5m",
+        "Right wing in the predicted Arsenal 4-3-3",
+        "Named as a possible late addition to the Scout Picks"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Flag him as a possible late addition to the Scout Picks rather than a current selection."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "right wing",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "He starts on the right of the predicted XI.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Bukayo Saka (£9.5m) could make a late charge for the Picks.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "The early Scout Picks this week are built around piling up on Man City, not Arsenal.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gabriel",
+      "full_name": "Gabriel Magalhães",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "Starts at centre-back in the predicted XI for a home game Scout describe as backed by extremely strong clean-sheet projections.",
+      "case": "Scout name Raya, Calafiori and Konsa as the Arsenal defenders worth contemplating and give the reason behind all of them: clean sheets in both the Community Shield and Gameweek 1, with underlying clean-sheet projections they call extremely strong, and Arsenal riding high in the clean-sheet odds. Gabriel is in their predicted back four alongside Timber, Saliba and Hincapié, and carries the set-piece goal threat that made him the highest-scoring defender in the game last season.",
+      "watch_out": "Scout attach one qualifier to the whole Arsenal defensive case and it is the opponent: Chelsea have netted seven times in two matches. This is the strongest attack Arsenal have faced. Scout also single out Raya, Calafiori and Konsa by name rather than Gabriel, so if you are adding one Arsenal defender they are pointing at the cheaper routes.",
+      "key_stats": [
+        "Clean sheets in the Community Shield and Gameweek 1",
+        "Arsenal riding high in the clean-sheet odds",
+        "Chelsea have scored seven goals in two matches",
+        "In the predicted back four: Timber, Saliba, Gabriel, Hincapié"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Make the Arsenal clean-sheet case strongly, while naming Raya, Calafiori and Konsa rather than Gabriel as the routes in."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "centre-back, set-piece target",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Arsenal have kept clean sheets in both competitive fixtures so far.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "set_pieces": "Aerial target from corners.",
+      "talking_points": {
+        "for": [
+          {
+            "point": "Arsenal defenders are worth considering — clean sheets in both the Community Shield and Gameweek 1, and the underlying clean-sheet projections are extremely strong.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Arsenal continue to ride high in the clean sheet odds.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Chelsea have netted seven times.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Calafiori",
+      "full_name": "Riccardo Calafiori",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "Named by Scout, at £5.6m, as one of the three ways into the Arsenal defence this week.",
+      "case": "Scout list Raya (£6.0m), Calafiori (£5.6m) and Konsa (£4.4m) as the Arsenal defensive options worth contemplating for Gameweek 3, on clean sheets in both competitive games so far and projections they describe as extremely strong. He starts in their predicted 4-3-3.",
+      "watch_out": "Chelsea have scored seven in two. Scout raise that themselves and pick the Arsenal defenders anyway, but it is the reason this is not a free clean sheet. Arsenal's predicted back four also has Hincapié at left side, which is worth watching for anyone assuming Calafiori's role is fixed.",
+      "key_stats": [
+        "£5.6m",
+        "Named as one of three Arsenal defensive options",
+        "Arsenal clean sheets in both competitive games",
+        "Chelsea have scored seven in two"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Name him explicitly as one of three Arsenal defensive options for Gameweek 3."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "left-sided defender",
+      "research_depth": "club news",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Scout name him as an Arsenal defender to consider for GW3.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "David Raya (£6.0m), Riccardo Calafiori (£5.6m) or Ezri Konsa (£4.4m) are worth contemplating.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Chelsea have netted seven times in the opening two rounds.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Raya",
+      "full_name": "David Raya",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "The goalkeeper behind the best clean-sheet projection in the game, at home, in a week when the most-bought keeper is a £4.5m punt.",
+      "case": "Scout name Raya (£6.0m) first among the Arsenal defensive assets to contemplate, on clean sheets in the Community Shield and Gameweek 1 and clean-sheet projections they call extremely strong. Arsenal continue to ride high in the clean-sheet odds.",
+      "watch_out": "£6.0m is a lot for a goalkeeper, and Chelsea's seven goals in two matches means the save points may end up doing the work instead of the clean sheet. The market is going the other way this week: Scout report Tzolakis as the most-transferred-in keeper at £4.5m.",
+      "key_stats": [
+        "£6.0m",
+        "Arsenal clean sheets in both competitive games",
+        "High in the clean-sheet odds",
+        "Chelsea have scored seven in two"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Name him first among the Arsenal defensive assets, on clean sheets in both competitive games and projections they call extremely strong."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "goalkeeper",
+      "research_depth": "club news",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Scout name him as a Gameweek 3 option despite the fixture.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "David Raya (£6.0m) is worth contemplating even though Chelsea have netted seven times.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Tzolakis is the most-transferred-in goalkeeper this gameweek at £4.5m.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thiago",
+      "full_name": "Igor Thiago",
+      "tier": "strong",
+      "expert_ownership": null,
+      "verdict": "Two independent sources say hold. He is underperforming his expected goals at home to Sunderland, which is the definition of a bad time to sell.",
+      "case": "All About FPL are explicit: the underlying numbers are good, the fixture is good, and there is no reason to chase points elsewhere just because goals have not arrived yet — HOLD. Scout separately describe him as a notable expected-goals underachiever in a Brentford side hosting Sunderland, a fixture they say has the second-highest clean-sheet odds of the round.",
+      "watch_out": "The returns still are not there, and 'the xG says it is coming' is the argument every manager has talked themselves into at some point. Sunderland also have their own reasons for optimism, and Brentford's attacking output has been shared around — Scout single out Kevin Schade's eight shots inside the box, not Thiago's.",
+      "key_stats": [
+        "A notable expected-goals underachiever",
+        "Home to Sunderland",
+        "Brentford have the second-highest clean-sheet odds for GW3",
+        "Faced Sunderland at home with three goals across the last two meetings"
+      ],
+      "voices": [
+        {
+          "source": "All About FPL",
+          "take": "HOLD, in as many words: good numbers, good fixture, no reason to chase points elsewhere."
+        },
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Call him a notable expected-goals underachiever in a fixture they rate highly for Brentford."
+        }
+      ],
+      "sources": [
+        "All About FPL",
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "centre forward",
+      "record_vs": "Three goals across the last two meetings with Sunderland.",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Both sources published a hold verdict for GW3.",
+          "kind": "fact",
+          "source": "All About FPL"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "The underlying numbers are good, the fixture is good and there is no reason to chase points elsewhere — HOLD.",
+            "source": "All About FPL"
+          },
+          {
+            "point": "Igor Thiago is a notable expected goals underachiever.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Kevin Schade already boasts eight shots inside the box.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ajer",
+      "full_name": "Kristoffer Ajer",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "One of only four defenders in the game to have banked defensive contribution points in both gameweeks, at £4.5m, in the fixture with the second-best clean-sheet odds.",
+      "case": "Scout name him for the Sunderland fixture and give the number that matters for a cheap defender under the new scoring: he is one of four defenders to have achieved DefCon success in both Gameweeks. Brentford have the second-highest clean-sheet odds of the round. At £4.5m he is a bench-to-starter upgrade rather than a squad decision.",
+      "watch_out": "Two gameweeks is two gameweeks. DefCon consistency at this sample size is a signal, not a settled fact, and Brentford's fixtures after this one have not been assessed in the sources yet.",
+      "key_stats": [
+        "£4.5m",
+        "One of four defenders with DefCon points in both GW1 and GW2",
+        "Brentford: second-highest clean-sheet odds for GW3",
+        "Home to Sunderland"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Single him out as one of only four defenders in the game with DefCon points in both gameweeks."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "defender",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "started",
+          "detail": "DefCon points in both opening gameweeks",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He has hit the DefCon threshold in both gameweeks.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Kristoffer Ajer is one of four defenders to have achieved DefCon success in both Gameweeks.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Dayann Methalie serves a one-match ban for Sunderland — the visitors will set up differently.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Schade",
+      "full_name": "Kevin Schade",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "Eight shots inside the box in two matches, at £6.0m, at home to Sunderland. The shot volume is the case.",
+      "case": "Scout highlight him for the Sunderland fixture on a single number: eight shots inside the box already. That is premium-forward shot volume from a £6.0m midfielder-priced asset, in a home game Scout rate as one of the better attacking fixtures of the round.",
+      "watch_out": "Eight shots and no mention of returns is the flip side of the same number. He is also sharing the Brentford attack with Thiago, who the same source calls an expected-goals underachiever — two players waiting on the same regression.",
+      "key_stats": [
+        "8 shots inside the box in two matches",
+        "£6.0m",
+        "Home to Sunderland"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Lead with the shot volume — eight inside the box already."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "wide forward",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Eight shots inside the box across two matches.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Kevin Schade already boasts eight shots inside the box.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "The shots have not yet become returns.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gibbs-White",
+      "full_name": "Morgan Gibbs-White",
+      "tier": "strong",
+      "expert_ownership": 9,
+      "verdict": "Hauled at Anfield on Saturday, takes the penalties, and now gets Spurs at the City Ground.",
+      "case": "Scout's Gameweek 3 write-up has him hauling at Anfield in Gameweek 2 and frames it as a continuation rather than a spike: seven goals in his final seven starts of last season. He is on penalties at £7.9m. Forest host Tottenham, and Scout's own Gameweek 3 notes have Spurs sitting alongside Palace as one of the two clubs below Coventry for goal difference and points.",
+      "watch_out": "One haul at Anfield is one haul, and 9% ownership means the market has not moved on him the way it has on the Newcastle and Manchester City assets. Spurs have also just added Marmoush and Savinho in the window, so the side that turns up at the City Ground may not be the one the form guide describes.",
+      "key_stats": [
+        "Hauled at Anfield in GW2",
+        "Seven goals in his final seven starts of last season",
+        "£7.9m, on penalties",
+        "9% owned",
+        "Home to Spurs, who sit below Coventry for both goal difference and points"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Frame the Anfield haul as a continuation of last season's finish rather than a one-off."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "nailed",
+      "role": "attacking midfield, on penalties",
+      "record_vs": "Scored at Anfield again in Gameweek 2 — he has a habit of it.",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "goal",
+          "detail": "Hauled at Anfield",
+          "source": "Fantasy Football Scout",
+          "when": "29 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He hauled at Anfield in Gameweek 2 and takes Forest's penalties.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The City Ground against a rebuilt Spurs is a favourable follow-up.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "set_pieces": "Penalties.",
+      "talking_points": {
+        "for": [
+          {
+            "point": "Penalty-taking Morgan Gibbs-White hauled at Anfield, continuing the late-season form that brought seven goals in his final seven starts.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Only Palace and Spurs are below Coventry for goal difference and points — but Spurs have just signed Marmoush and Savinho.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Marmoush",
+      "full_name": "Omar Marmoush",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "A deadline-day arrival at £7.0m whose manager has already said he sees him as a central striker. Real upside, zero minutes evidence.",
+      "case": "Sky Sports and GOAL both confirm the loan from Manchester City with a £60m obligation to buy. Scout's piece asks whether he is back on the FPL radar and answers with the number that makes him interesting: last season, as a Fantasy midfielder, he had the best rate of shots per 90 among his positional peers at 3.49 — and among forwards only Haaland bettered it. De Zerbi has indicated he sees him as a central striker, and with Richarlison reported to be leaving, Solanke is his only real competition.",
+      "watch_out": "He has not kicked a ball for Tottenham. A quiet 2025/26 as Haaland's backup is the actual recent record, and the shots-per-90 figure comes from a small minutes sample precisely because he was a substitute. Spurs also signed Savinho for £85m in the same window, so the attacking hierarchy is being rebuilt from scratch, away at Forest, four days after the window shuts. Scout's own framing is a question, not a recommendation.",
+      "key_stats": [
+        "Loan from Man City with a £60m obligation to buy",
+        "£7.0m in FPL",
+        "3.49 shots per 90 last season — best among Fantasy midfielders; only Haaland better among forwards",
+        "Solanke his only real competition up top; Richarlison reported leaving",
+        "Spurs also signed Savinho for £85m"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Ask whether he is back on the FPL radar and answer with the shots-per-90 record rather than with a recommendation."
+        },
+        {
+          "source": "Sky Sports Premier League",
+          "take": "Confirm the loan with a £60m obligation, in a window where Spurs were pursuing three forwards."
+        },
+        {
+          "source": "GOAL",
+          "take": "Confirmed the deal officially on deadline day, reporting the initial loan carries an obligation to become permanent for up to £60m next summer — so the commitment behind his minutes is real rather than a short-term look."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout",
+        "Sky Sports Premier League",
+        "GOAL"
+      ],
+      "predicted_start": "rotation risk",
+      "role": "central striker, per the manager's stated intention",
+      "research_depth": "football news",
+      "transfer": {
+        "status": "Confirmed",
+        "detail": "Joined Tottenham on loan from Manchester City with a £60m obligation to buy. Deal confirmed."
+      },
+      "events": [
+        {
+          "kind": "transfer completed",
+          "detail": "Joined Spurs on deadline day; De Zerbi has said he sees him as a central striker",
+          "source": "Sky Sports Premier League",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "The move to Tottenham is confirmed.",
+          "kind": "fact",
+          "source": "Sky Sports Premier League"
+        },
+        {
+          "text": "He starts against Forest.",
+          "kind": "unconfirmed",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "De Zerbi has indicated he sees Marmoush as a central striker, which could translate to increased playing time and FPL points.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "He was a Fantasy midfielder last season with the best rate of shots per 90 among his positional peers (3.49); even compared to forwards, only Haaland had a better figure.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Tottenham agreed a deal to sign the Man City forward on loan with a £60m obligation.",
+            "source": "Sky Sports Premier League"
+          }
+        ],
+        "against": [
+          {
+            "point": "A quiet 2025/26 saw him essentially be Haaland's backup at Manchester City.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Spurs were signing three new forwards in this window — Savinho arrived for £85m in the same days.",
+            "source": "Sky Sports Premier League"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mateta",
+      "full_name": "Jean-Philippe Mateta",
+      "tier": "avoid",
+      "expert_ownership": null,
+      "verdict": "Out for at least a month with a muscular injury. If he is in your squad he is the first name on the transfer list.",
+      "case": "None available. He cannot play.",
+      "watch_out": "Scout report a month-long absence beckoning after he was injured in a session, with at least four weeks expected for a muscular issue. Their Gameweek 3 injury round-up has him ruled out. A four-week absence is longer than most managers can carry a squad place through, and Palace travel to Fulham without him.",
+      "key_stats": [
+        "Muscular injury sustained in training",
+        "At least four weeks out",
+        "Ruled out for Gameweek 3"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Report a month-long absence beckoning and list him as ruled out for Gameweek 3."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "out",
+      "role": "centre forward",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "injury",
+          "detail": "Muscular injury in training; at least four weeks out",
+          "source": "Fantasy Football Scout",
+          "when": "29 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He is out for at least four weeks.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [],
+        "against": [
+          {
+            "point": "Mateta missed out through injury, with a month-long absence beckoning — at least four weeks with a muscular issue.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Crystal Palace's Mateta is ruled out.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Watkins",
+      "full_name": "Ollie Watkins",
+      "tier": "avoid",
+      "expert_ownership": null,
+      "verdict": "Leaving for Saudi Arabia. This stopped being a form question a week ago.",
+      "case": "None available.",
+      "watch_out": "He was the most-sold forward in Gameweek 2 at 182,000 transfers out, on a move to Al-Hilal. Nothing in the Gameweek 3 coverage from any verified source revisits him, which is itself the answer: nobody is writing about a player who is leaving the league.",
+      "key_stats": [
+        "182,000 transfers out in GW2 — the most-sold forward",
+        "Reported move to Al-Hilal"
+      ],
+      "voices": [
+        {
+          "source": "Premier League / The Scout",
+          "take": "Recorded him as the most-transferred-out forward of Gameweek 2 on a move to Al-Hilal. No verified source has revisited it since."
+        }
+      ],
+      "sources": [
+        "Premier League / The Scout"
+      ],
+      "predicted_start": "out",
+      "role": "centre forward",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "Advanced",
+        "detail": "Reported move to Al-Hilal; carried over from the Gameweek 2 research with no contradicting report since."
+      },
+      "events": [
+        {
+          "kind": "transfer link",
+          "detail": "Reported move to Al-Hilal; most-sold forward of GW2",
+          "source": "Premier League / The Scout",
+          "when": "28 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "He was the most-transferred-out forward of Gameweek 2.",
+          "kind": "fact",
+          "source": "Premier League / The Scout"
+        },
+        {
+          "text": "He is still leaving. No verified source revisited it this week.",
+          "kind": "unconfirmed",
+          "source": "Premier League / The Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [],
+        "against": [
+          {
+            "point": "Most-sold forward — leaving for Al-Hilal.",
+            "source": "Premier League / The Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stach",
+      "full_name": "Anton Stach",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "Still named by Scout as one of the £6.0m midfielders they would rather have than Elanga. Away at Brighton is the catch.",
+      "case": "Scout's Gameweek 3 buy/keep/sell names Gross (£5.5m), Sangaré (£5.6m) and Stach (£6.0m) as the players making Elanga a trickier buy at similar money — that is a direct, current, comparative endorsement rather than a leftover from last week's differential case. He was already argued as the best-value differential in the game on set pieces, DefCon and fixtures.",
+      "watch_out": "Leeds travel to Brighton, which is a considerably harder fixture than the ones the Newcastle and Brentford cheap midfielders get this week. Brighton have injuries — Ferguson, Hinshelwood and Minteh out, Rutter questionable — but they are still the stronger side at home.",
+      "key_stats": [
+        "£6.0m",
+        "Named by Scout above Elanga at similar money",
+        "Away at Brighton",
+        "Set pieces and DefCon are the scoring routes"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Name him among the £5.5m-£6.0m midfielders they would rather own than Elanga."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "central midfield, set-piece taker",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Scout rank him above Elanga at comparable money.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "set_pieces": "Set-piece taker.",
+      "talking_points": {
+        "for": [
+          {
+            "point": "Elanga feels like a trickier buy, particularly compared with Gross (£5.5m), Sangaré (£5.6m) and Stach (£6.0m).",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "Brighton at home, with Rutter questionable and Ferguson, Hinshelwood and Minteh out — but still the better side.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sangare",
+      "full_name": "Mamadou Sangaré",
+      "tier": "value",
+      "expert_ownership": null,
+      "verdict": "Named twice in the same week's coverage: once as a defensive-contribution pick for the Brentford–Sunderland fixture, once as a midfielder Scout prefer to Elanga.",
+      "case": "Scout name him at £5.6m among the players who make Elanga a trickier buy, and separately highlight him alongside Ajer for defensive contributions in the Brentford v Sunderland fixture. Two mentions in one gameweek's coverage from the same source, for two different reasons, is a stronger signal than one enthusiastic write-up.",
+      "watch_out": "He was the week's second bandwagon in Gameweek 2 off a haul against Spurs, so some of the price is already paid. DefCon points also have a hard ceiling — this is a floor pick, not a haul pick.",
+      "key_stats": [
+        "£5.6m",
+        "Named as a DefCon option for the Brentford–Sunderland fixture",
+        "Preferred to Elanga at similar money",
+        "Was the second-biggest bandwagon of GW2"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Name him twice in one gameweek's coverage — once as a DefCon pick, once as a preferred alternative to Elanga."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "central midfield with defensive contribution value",
+      "research_depth": "player level",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [],
+      "claims": [
+        {
+          "text": "Scout name him twice in their Gameweek 3 coverage.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Ajer and Sangaré are highlighted for defensive contributions in Brentford against Sunderland.",
+            "source": "Fantasy Football Scout"
+          },
+          {
+            "point": "Gross, Sangaré and Stach make Elanga a trickier buy.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "He was the second bandwagon of Gameweek 2, off a haul against Spurs.",
+            "source": "Fantasy Football Scout"
+          }
+        ]
+      }
+    },
+    {
+      "name": "De Cuyper",
+      "full_name": "Maxim De Cuyper",
+      "tier": "neutral",
+      "expert_ownership": null,
+      "verdict": "Nobody wrote about him this week. That is not a verdict — it is a gap, and it is recorded as one.",
+      "case": "The Gameweek 2 case still stands on its own terms: he was the highest-scoring player of Gameweek 1 with the round's highest expected goal involvement, playing as a left winger rather than a left-back with Minteh out. Scout's Gameweek 3 injury notes confirm Minteh remains out, alongside Ferguson and Hinshelwood, with Rutter questionable — so the vacancy that created the advanced role has not closed. Brighton host Leeds.",
+      "watch_out": "No verified source published anything on him for Gameweek 3 in this research pass. Every claim above is either carried over from last week or inferred from a team-news line about other players. He is a hold by default rather than by argument, and if he is in your squad this is the player to check again on Friday when the press conferences land. Bought by roughly 343,000 managers in Gameweek 2, so the differential edge is long gone.",
+      "key_stats": [
+        "Highest-scoring player of Gameweek 1 (17 points)",
+        "Minteh still out; Ferguson and Hinshelwood out, Rutter questionable",
+        "Brighton host Leeds",
+        "No Gameweek 3 coverage found in the verified sources"
+      ],
+      "voices": [
+        {
+          "source": "Fantasy Football Scout",
+          "take": "Published Brighton team news for Gameweek 3 that keeps Minteh out, but nothing on De Cuyper himself. The absence of coverage is the finding."
+        }
+      ],
+      "sources": [
+        "Fantasy Football Scout"
+      ],
+      "predicted_start": "likely",
+      "role": "left wing or left-back — the Gameweek 1 role has not been re-confirmed for Gameweek 3",
+      "research_depth": "club news",
+      "transfer": {
+        "status": "None",
+        "detail": "No transfer situation."
+      },
+      "events": [
+        {
+          "kind": "teammate injury",
+          "detail": "Minteh, Ferguson and Hinshelwood all out for GW3; Rutter questionable",
+          "source": "Fantasy Football Scout",
+          "when": "31 Aug"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Minteh, Ferguson and Hinshelwood are out for Gameweek 3.",
+          "kind": "fact",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "The advanced role therefore continues.",
+          "kind": "inference",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "text": "He starts as a left winger against Leeds.",
+          "kind": "unconfirmed",
+          "source": "Fantasy Football Scout"
+        }
+      ],
+      "talking_points": {
+        "for": [
+          {
+            "point": "Brighton's injury list for Gameweek 3 still has Minteh out — the absence that moved him forward.",
+            "source": "Fantasy Football Scout"
+          }
+        ],
+        "against": [
+          {
+            "point": "No verified source published a Gameweek 3 assessment of him in this research pass.",
+            "source": "Research completeness check"
+          }
+        ]
+      }
+    }
+  ]
+}

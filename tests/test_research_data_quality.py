@@ -103,3 +103,56 @@ def test_named_outlets_not_analysts_say():
             assert voice.get("source", "").strip(), f"{player['name']} has an unattributed voice"
             assert voice.get("take", "").strip()
             assert voice["source"].lower() not in {"analysts", "experts", "the community"}
+
+
+# --- the reference data must describe the league that exists -------------
+
+def test_the_club_list_is_the_twenty_clubs_in_the_league():
+    """teams.json carried a 21st club — Burnley — who are not in the
+    2026/27 Premier League. It was an empty placeholder, which is why
+    nothing broke and why nothing flagged it either: a club stance file
+    that quietly describes a league with 21 teams in it is wrong in a way
+    no player-level check can see."""
+    clubs = {t["short_name"] for t in _load(TEAM_FILE)["teams"]}
+    assert len(clubs) == 20, f"{len(clubs)} clubs listed: {sorted(clubs)}"
+
+
+MATCHUP_FILES = sorted((DATA / "consensus").glob("matchups_gw*.json"))
+
+
+@pytest.mark.parametrize("path", MATCHUP_FILES, ids=lambda p: p.name)
+def test_a_matchup_file_covers_a_full_round_of_real_clubs(path):
+    """Ten fixtures, twenty distinct clubs, every one of them a club the
+    stance file knows about. A typo'd or stale club code here means the
+    fixture commentary silently never reaches the player it was written
+    about."""
+    payload = _load(path)
+    fixtures = payload["fixtures"]
+    known = {t["short_name"] for t in _load(TEAM_FILE)["teams"]}
+
+    sides = [side for f in fixtures for side in (f["home"], f["away"])]
+    unknown = sorted(set(sides) - known)
+    assert not unknown, f"{path.name} references clubs not in teams.json: {unknown}"
+
+    assert len(sides) == len(set(sides)), (
+        f"{path.name}: a club appears twice in the same round"
+    )
+    if len(fixtures) == 10:
+        assert len(set(sides)) == 20, f"{path.name}: a full round must cover all 20 clubs"
+
+
+@pytest.mark.parametrize("path", MATCHUP_FILES, ids=lambda p: p.name)
+def test_a_matchup_file_is_for_the_gameweek_its_name_claims(path):
+    """A file called matchups_gw3 holding gameweek 2 research would be
+    served as current with nothing to reveal the swap."""
+    claimed = int(path.stem.replace("matchups_gw", ""))
+    assert _load(path)["gameweek"] == claimed
+
+
+def test_the_player_research_and_the_matchups_agree_on_the_gameweek():
+    for path in MATCHUP_FILES:
+        gw = _load(path)["gameweek"]
+        players = DATA / "consensus" / f"gw{gw}.json"
+        if not players.exists():
+            continue
+        assert _load(players)["gameweek"] == gw

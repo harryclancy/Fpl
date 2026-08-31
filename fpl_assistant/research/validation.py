@@ -22,7 +22,7 @@ MIN_CASE_CHARS = 60
 MIN_TAKE_CHARS = 30
 MIN_STATS = 2
 
-VALID_TIERS = ("must_have", "strong", "value", "avoid")
+VALID_TIERS = ("must_have", "strong", "value", "neutral", "avoid")
 # How likely he is to start, as a human would say it. Minutes decide more
 # gameweeks than any rate does, and the FPL API carries nothing about them
 # beyond a blunt availability flag that only moves once a club confirms an

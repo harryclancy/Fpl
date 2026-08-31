@@ -139,6 +139,44 @@ def test_avoid_tier_is_penalised_and_excluded(consensus_file):
     assert consensus.avoid_ids(annotated) == [1]
 
 
+def test_a_neutral_verdict_reaches_the_player_without_moving_the_projection(consensus_file):
+    """The bug this closes: `annotate` SKIPS any entry whose tier it does
+    not recognise. So a researcher writing an honest "he starts, but this
+    is the wrong week to buy him" verdict under any label other than the
+    four known tiers had the whole write-up silently deleted -- the
+    "no write-up found" failure wearing a different hat.
+
+    `neutral` is a real tier: it carries the words to the page and applies
+    a bonus of exactly zero, so the projection decides on the numbers while
+    the reader still gets the reasoning.
+    """
+    consensus_file([{"name": "Palmer", "full_name": "Cole Palmer", "tier": "neutral",
+                     "reason": "Starts, but the fixture is the wrong one to buy into."}])
+    players = _players([
+        {"id": 1, "web_name": "Palmer", "first_name": "Cole", "second_name": "Palmer",
+         "status": "a"},
+    ])
+
+    annotated = consensus.annotate(players, gameweek=1)
+    assert annotated.loc[1, "consensus_tier"] == "neutral", "the entry must not be dropped"
+    assert annotated.loc[1, "consensus_bonus"] == 0.0
+    assert annotated.loc[1, "consensus_reason"]
+
+
+def test_every_tier_the_research_may_use_can_be_displayed():
+    """A tier the validator accepts but the UI cannot label is a write-up
+    that reaches the app and then renders as nothing."""
+    from fpl_assistant.analysis import rationale, team_brief  # noqa: F401
+    from fpl_assistant.dashboard import app
+    from fpl_assistant.research import validation
+
+    for tier in validation.VALID_TIERS:
+        assert tier in consensus.TIER_BONUS, f"{tier} would be skipped by annotate()"
+        assert tier in rationale.CONSENSUS_HEADLINES, f"{tier} has no verdict headline"
+        assert tier in app.CONSENSUS_LABELS, f"{tier} has no sidebar label"
+        assert tier in app.TIER_CHIP, f"{tier} has no chip"
+
+
 def test_missing_consensus_file_is_harmless(tmp_path, monkeypatch):
     """No research for a gameweek must degrade to projection-only, not
     penalise every player."""

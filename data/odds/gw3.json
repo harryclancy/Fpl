@@ -1,0 +1,121 @@
+{
+  "gameweek": 3,
+  "season": "2026/27",
+  "researched": "2026-08-31",
+  "note": "Only figures that were actually published are here. No price is invented — a missing number is honest, a plausible fabricated one is the failure this project exists to avoid.\n\nCOVERAGE IS THIN THIS WEEK AND THAT IS A TIMING PROBLEM, NOT A SOURCING ONE. This file was written on 31 August, four days before the deadline. Fantasy Football Scout publish their captaincy poll, their clean-sheet odds and their projected-goals table on or near deadline day, and none of the three exists for Gameweek 3 yet — their Gameweek 3 clean-sheet piece is listed as coming soon. So `captain_share` is empty, `clean_sheet_probability` carries bands rather than percentages, and `projected_goals` is empty. Every one of those should be filled on the deadline-day refresh.\n\n`anytime_goalscorer: null` means \"not found\", never \"no chance\".",
+  "sources": [
+    "Fantasy Football Scout — GW3 early Scout Picks; GW3 buy/keep/sell; fixture ticker commentary",
+    "All About FPL — GW3 transfer tips"
+  ],
+  "captain_share": [],
+  "clean_sheet_probability": [
+    {
+      "team": "ARS",
+      "probability": null,
+      "band": "highest in the gameweek — riding high in the clean sheet odds, clean sheets in both competitive games so far"
+    },
+    {
+      "team": "BRE",
+      "probability": null,
+      "band": "second-highest clean sheet odds for Gameweek 3"
+    },
+    {
+      "team": "MCI",
+      "probability": null,
+      "band": "not published; at home to the side with the joint-worst goal difference in the league"
+    },
+    {
+      "team": "LIV",
+      "probability": null,
+      "band": "not published; Iraola has said clean sheets are hard with three defenders out"
+    },
+    {
+      "team": "NEW",
+      "probability": null,
+      "band": "not published; no Gameweek 3 odds available for the 12:30 fixture"
+    }
+  ],
+  "projected_goals": [],
+  "price_changes": [],
+  "transfer_market": [
+    {
+      "player": "Wissa",
+      "note": "near the top of the transfers-in column; described as an immediate buy"
+    },
+    {
+      "player": "Elanga",
+      "note": "near the top of the transfers-in column at £6.0m; called the trickier buy of the Newcastle group"
+    },
+    {
+      "player": "Lewis Hall",
+      "note": "near the top of the transfers-in column at £5.0m"
+    },
+    {
+      "player": "Cherki",
+      "note": "the week's headline buy at £7.6m — four attacking returns in two matches"
+    },
+    {
+      "player": "Tzolakis",
+      "note": "the most-transferred-in goalkeeper of the gameweek at £4.5m"
+    },
+    {
+      "player": "Isak",
+      "note": "NOT in the top twenty most-transferred-in, on 16.2% ownership, with what Scout call the best attacking fixture of the round"
+    },
+    {
+      "player": "Mbeumo",
+      "note": "on many managers' chopping blocks; the published verdict is KEEP"
+    },
+    {
+      "player": "Szoboszlai",
+      "note": "heavily transferred out despite sitting second at Liverpool for both points and xGI"
+    }
+  ],
+  "players": [
+    {
+      "name": "Haaland",
+      "team": "MCI",
+      "fixture": "COV (H)",
+      "anytime_goalscorer": null,
+      "captain_share": null,
+      "source": "Fantasy Football Scout — GW3 early Scout Picks",
+      "note": "No goalscorer price and no captaincy poll published this far out. Scout state he dominates the armband discussion and frame the open question as whether to activate the Triple Captain."
+    },
+    {
+      "name": "Isak",
+      "team": "NEW",
+      "fixture": "BOU (H)",
+      "anytime_goalscorer": null,
+      "captain_share": null,
+      "source": "Fantasy Football Scout — GW3 buy/keep/sell",
+      "note": "16.2% owned and outside the top twenty transfers in, with what Scout call arguably the best possible fixture for an attacking asset. Newcastle have not beaten Bournemouth in eight league meetings."
+    },
+    {
+      "name": "Cherki",
+      "team": "MCI",
+      "fixture": "COV (H)",
+      "anytime_goalscorer": null,
+      "captain_share": null,
+      "source": "Fantasy Football Scout — GW3 buy/keep/sell; All About FPL",
+      "note": "Four attacking returns in two matches; a chance created every sixteen minutes; 0.86 xA. Faces Man Utd and Liverpool away within the following three gameweeks."
+    },
+    {
+      "name": "B.Fernandes",
+      "team": "MUN",
+      "fixture": "EVE (A)",
+      "anytime_goalscorer": null,
+      "captain_share": null,
+      "source": "Fantasy Football Scout — GW3 early Scout Picks",
+      "note": "Everton have conceded a league-second-worst ten big chances in two gameweeks. 144,000+ managers sold him after the Gameweek 1 blank and missed the Gameweek 2 haul."
+    },
+    {
+      "name": "Gyokeres",
+      "team": "ARS",
+      "fixture": "CHE (H)",
+      "anytime_goalscorer": null,
+      "captain_share": null,
+      "source": "Fantasy Football Scout; Football365 match preview",
+      "note": "Eight goals in his last twelve matches. Football365 predict he scores again in a comfortable Arsenal win. Chelsea are without Cucurella, Gittens and Estêvão, with Fofana suspended."
+    }
+  ]
+}

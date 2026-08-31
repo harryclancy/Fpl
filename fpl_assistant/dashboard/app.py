@@ -212,6 +212,7 @@ CONSENSUS_LABELS = {
     "must_have": ("✅ Must-have", "Locked into the squad"),
     "strong": ("👍 Widely backed", "Heavily weighted in selection"),
     "value": ("💡 Popular value pick", "Given a selection bonus"),
+    "neutral": ("➖ No strong view", "Researched, but the projection decides"),
     "avoid": ("🚫 Avoid", "Excluded from selection"),
 }
 
@@ -2153,6 +2154,7 @@ TIER_CHIP = {
     "must_have": ("#1a6b3c", "#e9f7ef", "Must have"),
     "strong": ("#1a6b3c", "#e9f7ef", "Strong pick"),
     "value": ("#2d5c9e", "#eaf1fb", "Value"),
+    "neutral": ("#5a5a5a", "#f0f0f0", "No strong view"),
     "avoid": ("#b3261e", "#fdeceb", "Avoid"),
 }
 
@@ -2298,11 +2300,11 @@ def render_expert_verdicts(scored, next_event) -> None:
     if freshness:
         st.caption(freshness.capitalize() + ".")
 
-    tiers = [t for t in ["must_have", "strong", "value", "avoid"]
+    tiers = [t for t in ["must_have", "strong", "value", "neutral", "avoid"]
              if (matched["consensus_tier"] == t).any()]
     labels = {
         "must_have": "Must have", "strong": "Strong picks",
-        "value": "Value picks", "avoid": "Avoid",
+        "value": "Value picks", "neutral": "No strong view", "avoid": "Avoid",
     }
     chosen = st.multiselect(
         "Filter",

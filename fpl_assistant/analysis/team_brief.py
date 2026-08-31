@@ -135,6 +135,7 @@ def _assets(scored: pd.DataFrame, team_id: int) -> list[Asset]:
                 "must_have": "Consensus must-have",
                 "strong": "Analysts rate him",
                 "value": "Value pick",
+                "neutral": "Researched, no strong view",
                 "avoid": "Analysts say avoid",
             }.get(tier)
         news = row.get("news")

@@ -1,285 +1,324 @@
 {
- "season": "2026/27",
- "researched": "2026-08-28",
- "note": "Club-level context and club-level expert verdicts.\n\nTwo different things live here.\n\n`european_competition` and `new_manager` are minutes risk: midweek football means rotation, an unsettled XI means uncertainty, and minutes are the foundation every projection sits on.\n\n`stances` is the part that was missing. When analysts say 'avoid Bournemouth assets until their schedule clears', that verdict applies to all twenty-odd players at the club, not to the one or two an article happened to name. Stored as prose on a single player it reached a single player, and the optimiser happily picked the other Bournemouth defenders instead -- the verdict was in the app but not in the algorithm. Each stance is machine-readable and applies to every player at the club in scope.\n\nEach stance carries `until_gameweek` so it expires on its own rather than rotting into a permanent hardcode, and the penalty is scaled by how much of the projection horizon it actually covers.\n\nThis file is a LOOKUP KEYED BY SHORT NAME, not a claim about who is in the league. Entries for clubs that aren't in the current Premier League are simply never matched, and a club missing from here just gets neutral context. That is deliberate: getting the promoted/relegated set wrong should cost nothing, because the live API is the authority on who is actually playing.",
- "stance_legend": {
-  "avoid": "Analysts are actively steering managers away from this club's assets for now.",
-  "caution": "Not a hard no, but flagged as a risk that ownership doesn't reflect.",
-  "target": "Analysts are actively steering managers towards this club's assets."
- },
- "teams": [
-  {
-   "short_name": "BOU",
-   "european_competition": "uel",
-   "new_manager": true,
-   "note": "Europa League from around GW4-5 under a new manager in Marco Rose, on top of the worst opening eight fixtures in the league — and now without Eli Kroupi, who scored 13 in his debut season, for three months after July foot surgery.",
-   "stances": [
+  "season": "2026/27",
+  "researched": "2026-08-31",
+  "note": "Club-level context and club-level expert verdicts.\n\nTwo different things live here.\n\n`european_competition` and `new_manager` are minutes risk: midweek football means rotation, an unsettled XI means uncertainty, and minutes are the foundation every projection sits on.\n\n`stances` is the part that was missing. When analysts say 'avoid Bournemouth assets until their schedule clears', that verdict applies to all twenty-odd players at the club, not to the one or two an article happened to name. Stored as prose on a single player it reached a single player, and the optimiser happily picked the other Bournemouth defenders instead -- the verdict was in the app but not in the algorithm. Each stance is machine-readable and applies to every player at the club in scope.\n\nEach stance carries `until_gameweek` so it expires on its own rather than rotting into a permanent hardcode, and the penalty is scaled by how much of the projection horizon it actually covers.\n\nThis file is a LOOKUP KEYED BY SHORT NAME, not a claim about who is in the league. Entries for clubs that aren't in the current Premier League are simply never matched, and a club missing from here just gets neutral context. That is deliberate: getting the promoted/relegated set wrong should cost nothing, because the live API is the authority on who is actually playing.\n\nUPDATED 31 August for Gameweek 3. Burnley were removed: they are not in the 2026/27 Premier League and none of the ten Gameweek 3 fixtures involves them. Newcastle's target window was extended from Gameweek 6 to Gameweek 10 on Fantasy Football Scout's revised read of the run. Manchester City, Coventry, Crystal Palace and Tottenham gained stances they did not previously have.",
+  "stance_legend": {
+    "avoid": "Analysts are actively steering managers away from this club's assets for now.",
+    "caution": "Not a hard no, but flagged as a risk that ownership doesn't reflect.",
+    "target": "Analysts are actively steering managers towards this club's assets."
+  },
+  "teams": [
     {
-     "stance": "avoid",
-     "scope": "all",
-     "until_gameweek": 9,
-     "case": "Bournemouth have arguably been handed the toughest start in the division. All six of their opening fixtures rate 3 or higher on the difficulty ticker, including trips to Manchester City and Chelsea and Liverpool at home. Analysts are broadly saying to avoid Bournemouth assets entirely until the schedule clears around GW9 -- not just the attackers. A defence facing that run is not keeping clean sheets, and an attack facing it is not being backed to score. On top of the fixtures they add Europa League football from around GW4-5 under a new manager, so the rotation risk lands in exactly the weeks you would be hoping the fixtures turn. CONFIRMED WORSE on 28 August: Eli Kroupi, who scored 13 Premier League goals last season — more than any other Bournemouth player — had foot surgery in July and is out for three months. Adli (calf), Milosavljevic (knee) and Araujo (thigh) are also medium-term absentees. The one number in their favour is a clean-sheet probability above 30% at home to Everton this week, so the avoid is about the attack more than the defence.",
-     "sources": [
-      "AFC Bournemouth official",
-      "All About FPL",
-      "Fantasy Football Scout",
-      "Premier League Official Fantasy",
-      "RotoWire"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "COV",
-   "european_competition": "none",
-   "new_manager": false,
-   "promoted": true,
-   "stances": [
+      "short_name": "BOU",
+      "european_competition": "uel",
+      "new_manager": true,
+      "note": "Europa League from around GW4-5 under a new manager in Marco Rose, on top of the worst opening eight fixtures in the league — and now without Eli Kroupi, who scored 13 in his debut season, for three months after July foot surgery.",
+      "stances": [
+        {
+          "stance": "avoid",
+          "scope": "all",
+          "until_gameweek": 9,
+          "case": "Bournemouth have arguably been handed the toughest start in the division. All six of their opening fixtures rate 3 or higher on the difficulty ticker, including trips to Manchester City and Chelsea and Liverpool at home. Analysts are broadly saying to avoid Bournemouth assets entirely until the schedule clears around GW9 -- not just the attackers. A defence facing that run is not keeping clean sheets, and an attack facing it is not being backed to score. On top of the fixtures they add Europa League football from around GW4-5 under a new manager, so the rotation risk lands in exactly the weeks you would be hoping the fixtures turn. CONFIRMED WORSE on 28 August: Eli Kroupi, who scored 13 Premier League goals last season — more than any other Bournemouth player — had foot surgery in July and is out for three months. Adli (calf), Milosavljevic (knee) and Araujo (thigh) are also medium-term absentees. The one number in their favour is a clean-sheet probability above 30% at home to Everton this week, so the avoid is about the attack more than the defence.",
+          "sources": [
+            "AFC Bournemouth official",
+            "All About FPL",
+            "Fantasy Football Scout",
+            "Premier League Official Fantasy",
+            "RotoWire"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "caution",
-     "scope": [
-      "GKP",
-      "DEF"
-     ],
-     "until_gameweek": 4,
-     "case": "Downgraded from avoid. Coventry host Hull in GW2 and are the only side other than Manchester United above 40% clean-sheet probability this week — a striking reversal for a promoted defence the pre-season consensus priced as unownable. The caution remains because the fixture list beyond this week still includes Manchester City away, and one favourable home tie against another promoted side is not a run. But a blanket avoid is no longer supportable on the evidence.",
-     "sources": [
-      "Fantasy Football Scout",
-      "RotoWire"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "HUL",
-   "european_competition": "none",
-   "new_manager": false,
-   "promoted": true,
-   "stances": [
+      "short_name": "COV",
+      "european_competition": "none",
+      "new_manager": false,
+      "promoted": true,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 4,
+          "case": "Downgraded from avoid. Coventry host Hull in GW2 and are the only side other than Manchester United above 40% clean-sheet probability this week — a striking reversal for a promoted defence the pre-season consensus priced as unownable. The caution remains because the fixture list beyond this week still includes Manchester City away, and one favourable home tie against another promoted side is not a run. But a blanket avoid is no longer supportable on the evidence.",
+          "sources": [
+            "Fantasy Football Scout",
+            "RotoWire"
+          ]
+        },
+        {
+          "stance": "avoid",
+          "scope": "all",
+          "until_gameweek": 3,
+          "case": "Away at Manchester City in the fixture the entire gameweek's coverage is built around. Fantasy Football Scout note that only Palace and Spurs are below Coventry for goal difference and points tally. The Gameweek 2 caution on their goalkeeper and defence was based on hosting Hull; this week is the opposite fixture in every respect.",
+          "sources": [
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "caution",
-     "scope": [
-      "GKP",
-      "DEF"
-     ],
-     "until_gameweek": 5,
-     "case": "Downgraded from avoid after Gameweek 1: Hull City won, one of the biggest upsets of the opening weekend, which directly contradicts the pre-season reading that their defence was unownable. The caution stands rather than the ban — they travel to a Coventry side with the second-best clean-sheet odds in the league this week, and one result is one result.",
-     "sources": [
-      "Fantasy Football Scout",
-      "All About FPL",
-      "RotoWire"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "IPS",
-   "european_competition": "none",
-   "new_manager": false,
-   "promoted": true,
-   "stances": [
+      "short_name": "HUL",
+      "european_competition": "none",
+      "new_manager": false,
+      "promoted": true,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 5,
+          "case": "Downgraded from avoid after Gameweek 1: Hull City won, one of the biggest upsets of the opening weekend, which directly contradicts the pre-season reading that their defence was unownable. The caution stands rather than the ban — they travel to a Coventry side with the second-best clean-sheet odds in the league this week, and one result is one result.",
+          "sources": [
+            "Fantasy Football Scout",
+            "All About FPL",
+            "RotoWire"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "caution",
-     "scope": [
-      "GKP",
-      "DEF"
-     ],
-     "until_gameweek": 5,
-     "case": "The third promoted side, away to Manchester United in GW2 and at Manchester City inside the opening seven. The general warning against leaning on promoted defences applies here too, if slightly less severely than Coventry's opening.",
-     "sources": [
-      "RotoWire",
-      "Premier League Official Fantasy"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "SUN",
-   "european_competition": "uel",
-   "new_manager": false,
-   "stances": [
+      "short_name": "IPS",
+      "european_competition": "none",
+      "new_manager": false,
+      "promoted": true,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 5,
+          "case": "The third promoted side, away to Manchester United in GW2 and at Manchester City inside the opening seven. The general warning against leaning on promoted defences applies here too, if slightly less severely than Coventry's opening.",
+          "sources": [
+            "RotoWire",
+            "Premier League Official Fantasy"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "caution",
-     "scope": "all",
-     "until_gameweek": 6,
-     "case": "Named among the sides to approach with caution until their schedule clears, with Europa League football adding midweek minutes on top.",
-     "sources": [
-      "Fantasy Football Scout",
-      "Fantasy Football Scout"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "MUN",
-   "european_competition": "ucl",
-   "new_manager": false,
-   "stances": [
+      "short_name": "SUN",
+      "european_competition": "uel",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "Named among the sides to approach with caution until their schedule clears, with Europa League football adding midweek minutes on top.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "target",
-     "scope": "all",
-     "until_gameweek": 5,
-     "case": "Manchester United lead the entire league on clean-sheet probability in GW2 at 48%, at home to newly-promoted Ipswich, having already played Hull away. Their assets are among the most-sold in the game after a poor opening result, which makes this the rare case where the fixtures and the crowd point in opposite directions — and the fixtures are the more reliable of the two over a single gameweek.",
-     "sources": [
-      "Fantasy Football Scout",
-      "RotoWire"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "ARS",
-   "european_competition": "ucl",
-   "new_manager": false,
-   "stances": [
+      "short_name": "MUN",
+      "european_competition": "ucl",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 5,
+          "case": "Manchester United lead the entire league on clean-sheet probability in GW2 at 48%, at home to newly-promoted Ipswich, having already played Hull away. Their assets are among the most-sold in the game after a poor opening result, which makes this the rare case where the fixtures and the crowd point in opposite directions — and the fixtures are the more reliable of the two over a single gameweek.",
+          "sources": [
+            "Fantasy Football Scout",
+            "RotoWire"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "target",
-     "scope": "all",
-     "until_gameweek": 8,
-     "case": "Arsenal open at home to promoted Coventry and face just one of last season's top six across their first eight matches, away at Aston Villa in GW2. The soft opening is the reason their defensive assets are pushed up every published ranking.",
-     "sources": [
-      "RotoWire",
-      "Premier League Official Fantasy",
-      "Fantasy Football Scout"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "EVE",
-   "european_competition": "none",
-   "new_manager": false,
-   "stances": [
+      "short_name": "ARS",
+      "european_competition": "ucl",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 8,
+          "case": "Arsenal open at home to promoted Coventry and face just one of last season's top six across their first eight matches, away at Aston Villa in GW2. The soft opening is the reason their defensive assets are pushed up every published ranking.",
+          "sources": [
+            "RotoWire",
+            "Premier League Official Fantasy",
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "target",
-     "scope": "all",
-     "until_gameweek": 6,
-     "case": "Named alongside Manchester United, Newcastle and Brentford as having an appealing opening six gameweeks, and with no European football to rotate for.",
-     "sources": [
-      "Fantasy Football Scout",
-      "Premier League Official Fantasy"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "NEW",
-   "european_competition": "none",
-   "new_manager": false,
-   "stances": [
+      "short_name": "EVE",
+      "european_competition": "none",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "Named alongside Manchester United, Newcastle and Brentford as having an appealing opening six gameweeks, and with no European football to rotate for.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Premier League Official Fantasy"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "target",
-     "scope": "all",
-     "until_gameweek": 6,
-     "case": "Named alongside Manchester United, Everton and Brentford as one of four sides with an appealing opening six gameweeks, and with no European football to rotate for -- one match a week means a settled, rested XI while several rivals are travelling midweek. That combination is what makes a mid-priced asset here more reliable than its price suggests: the fixtures are kind and the minutes are not being shared out.",
-     "sources": [
-      "Fantasy Football Scout",
-      "Premier League Official Fantasy"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "BRE",
-   "european_competition": "none",
-   "new_manager": false,
-   "stances": [
+      "short_name": "NEW",
+      "european_competition": "none",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 10,
+          "case": "Named alongside Manchester United, Everton and Brentford as one of four sides with an appealing opening six gameweeks, and with no European football to rotate for -- one match a week means a settled, rested XI while several rivals are travelling midweek. That combination is what makes a mid-priced asset here more reliable than its price suggests: the fixtures are kind and the minutes are not being shared out. EXTENDED on 31 August: Fantasy Football Scout now describe the run as good until Gameweek 10, still with no European football, and name Wissa, Elanga, Hall and Dedic together as excellent picks. The one caveat they do not raise, and Sports Mole do, is that Newcastle have not won any of their last eight league meetings with Bournemouth — the Gameweek 3 opponent.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Premier League Official Fantasy",
+            "Sports Mole"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "target",
-     "scope": "all",
-     "until_gameweek": 6,
-     "case": "Flagged for an appealing opening six, with Igor Thiago and Kiernan Dewsbury-Hall singled out as the routes in.",
-     "sources": [
-      "Fantasy Football Scout",
-      "Premier League Official Fantasy"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "CHE",
-   "european_competition": "none",
-   "new_manager": false,
-   "note": "No European football at all this season — a genuine FPL edge. One game a week means a settled, rested XI while rivals rotate for midweek travel."
-  },
-  {
-   "short_name": "MCI",
-   "european_competition": "ucl",
-   "new_manager": false
-  },
-  {
-   "short_name": "AVL",
-   "european_competition": "ucl",
-   "new_manager": false
-  },
-  {
-   "short_name": "LIV",
-   "european_competition": "ucl",
-   "new_manager": false,
-   "stances": [
+      "short_name": "BRE",
+      "european_competition": "none",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "Flagged for an appealing opening six, with Igor Thiago and Kiernan Dewsbury-Hall singled out as the routes in.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Premier League Official Fantasy"
+          ]
+        }
+      ]
+    },
     {
-     "stance": "target",
-     "scope": [
-      "GKP",
-      "DEF"
-     ],
-     "until_gameweek": 4,
-     "case": "Liverpool sit just behind Manchester United and Coventry on clean-sheet probability this week, at home to Nottingham Forest. A defensive route into a side that is normally priced for its attack, on a week where the clean-sheet market rates them highly.",
-     "sources": [
-      "Fantasy Football Scout"
-     ]
-    }
-   ]
-  },
-  {
-   "short_name": "CRY",
-   "european_competition": "uel",
-   "new_manager": false
-  },
-  {
-   "short_name": "BHA",
-   "european_competition": "uecl",
-   "new_manager": false,
-   "stances": [
+      "short_name": "CHE",
+      "european_competition": "none",
+      "new_manager": false,
+      "note": "No European football at all this season — a genuine FPL edge. One game a week means a settled, rested XI while rivals rotate for midweek travel."
+    },
     {
-     "stance": "target",
-     "scope": [
-      "GKP",
-      "DEF"
-     ],
-     "until_gameweek": 6,
-     "case": "Brighton allowed their opponents zero shots on target in Gameweek 1, and were among the best defences in the league last season — so this is a continuation rather than a one-off. Analysts are citing that defensive form as a reason to avoid opposing attackers, which is the same signal read from the other side. De Cuyper's advanced role adds attacking returns to a defence already worth owning for clean sheets.",
-     "sources": [
-      "Fantasy Football Fix",
-      "All About FPL"
-     ]
+      "short_name": "MCI",
+      "european_competition": "ucl",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": "all",
+          "until_gameweek": 3,
+          "case": "Fantasy Football Scout's Gameweek 3 Scout Picks are titled 'Piling up on Man City' and the piece is built around one fixture: Coventry at home. Their supporting number is that only Palace and Spurs sit below Coventry for goal difference and points. City have won both games under Maresca, Cherki has four attacking returns in two matches, and Foden topped the whole game's expected-goal-involvement table in Gameweek 2. The armband question being asked is not whether to captain Haaland but whether to Triple Captain him. This is a one-week stance, deliberately: Cherki faces Manchester United and Liverpool away inside the following three gameweeks.",
+          "sources": [
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "AVL",
+      "european_competition": "ucl",
+      "new_manager": false
+    },
+    {
+      "short_name": "LIV",
+      "european_competition": "ucl",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 4,
+          "case": "Liverpool sit just behind Manchester United and Coventry on clean-sheet probability this week, at home to Nottingham Forest. A defensive route into a side that is normally priced for its attack, on a week where the clean-sheet market rates them highly.",
+          "sources": [
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "CRY",
+      "european_competition": "uel",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": "all",
+          "until_gameweek": 6,
+          "case": "Jean-Philippe Mateta is out for at least four weeks with a muscular injury picked up in training — Fantasy Football Scout list him as ruled out and describe a month-long absence beckoning. Palace are also one of only two clubs sitting below Coventry for both goal difference and points. Losing the focal point of the attack from a side already struggling for goals is a reason to wait rather than to buy the dip.",
+          "sources": [
+            "Fantasy Football Scout"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "BHA",
+      "european_competition": "uecl",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "target",
+          "scope": [
+            "GKP",
+            "DEF"
+          ],
+          "until_gameweek": 6,
+          "case": "Brighton allowed their opponents zero shots on target in Gameweek 1, and were among the best defences in the league last season — so this is a continuation rather than a one-off. Analysts are citing that defensive form as a reason to avoid opposing attackers, which is the same signal read from the other side. De Cuyper's advanced role adds attacking returns to a defence already worth owning for clean sheets.",
+          "sources": [
+            "Fantasy Football Fix",
+            "All About FPL"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "TOT",
+      "european_competition": "none",
+      "new_manager": false,
+      "stances": [
+        {
+          "stance": "caution",
+          "scope": "all",
+          "until_gameweek": 5,
+          "case": "Fantasy Football Scout place Spurs alongside Palace as one of only two clubs below Coventry on both goal difference and points. The squad was still being rebuilt three days before the deadline: Omar Marmoush arrived on loan from Manchester City with a £60m obligation and Savinho for £85m, with Sky reporting Spurs were pursuing three new forwards and Richarlison leaving. De Zerbi has said he sees Marmoush as a central striker, but nobody has seen the new attack play together. That is a reason to watch rather than to buy, and it applies to the existing Spurs assets too.",
+          "sources": [
+            "Fantasy Football Scout",
+            "Sky Sports Premier League"
+          ]
+        }
+      ]
+    },
+    {
+      "short_name": "FUL",
+      "european_competition": "none",
+      "new_manager": false
+    },
+    {
+      "short_name": "NFO",
+      "european_competition": "none",
+      "new_manager": false
+    },
+    {
+      "short_name": "LEE",
+      "european_competition": "none",
+      "new_manager": false
     }
-   ]
-  },
-  {
-   "short_name": "TOT",
-   "european_competition": "none",
-   "new_manager": false
-  },
-  {
-   "short_name": "FUL",
-   "european_competition": "none",
-   "new_manager": false
-  },
-  {
-   "short_name": "NFO",
-   "european_competition": "none",
-   "new_manager": false
-  },
-  {
-   "short_name": "LEE",
-   "european_competition": "none",
-   "new_manager": false
-  },
-  {
-   "short_name": "BUR",
-   "european_competition": "none",
-   "new_manager": false
-  }
- ]
+  ]
 }

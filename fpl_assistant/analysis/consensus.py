@@ -35,10 +35,18 @@ CONSENSUS_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "consen
 # so they trade honestly against it rather than operating on a mystery
 # scale. Sized to matter: "strong" should beat a marginal alternative
 # outright, not merely nudge it.
+# `neutral` exists because "he starts, but this is the wrong week to buy
+# him" is a real research verdict with nowhere else to go. Without it the
+# only options were to overstate the case as "value" (+1.2), overstate the
+# other way as "avoid" (-8.0), or invent a tier -- and an unrecognised tier
+# is DROPPED by the loop below, which silently deletes the write-up. That is
+# the "no write-up found" failure in another costume, so the neutral verdict
+# gets a real tier that carries the words and moves the projection by zero.
 TIER_BONUS = {
     "must_have": 6.0,
     "strong": 2.5,
     "value": 1.2,
+    "neutral": 0.0,
     "avoid": -8.0,
 }
 MUST_HAVE_TIER = "must_have"
@@ -557,7 +565,7 @@ def summary(scored: pd.DataFrame) -> pd.DataFrame:
     if "consensus_tier" not in scored.columns:
         return pd.DataFrame()
     matched = scored[scored["consensus_tier"].notna()]
-    order = {"must_have": 0, "strong": 1, "value": 2, "avoid": 3}
+    order = {"must_have": 0, "strong": 1, "value": 2, "neutral": 3, "avoid": 4}
     if matched.empty:
         return matched
     return matched.assign(_order=matched["consensus_tier"].map(order)).sort_values(
