@@ -217,3 +217,57 @@ def test_a_sitemap_lastmod_is_not_treated_as_a_publication_date():
     article = _article(via="sitemap", published="", modified="2026-09-01T20:00:00+00:00")
     assert article.published_at is None
     assert article.age_hours() is None
+
+
+# --- the shipped pipeline state -----------------------------------------
+
+DATA = Path(__file__).resolve().parent.parent / "data"
+
+
+def test_the_source_audit_is_committed_and_finds_usable_sources():
+    """A canary. If a future change breaks discovery, this goes red before
+    anyone opens the app and sees empty write-ups."""
+    import json
+    audit = json.loads((DATA / "sources" / "discovery.json").read_text())
+    counts = audit["counts"]
+    assert counts["usable"] >= 40, f"only {counts['usable']} sources are machine-readable"
+    assert counts["A"] >= 15, "feeds are the backbone; too few were found"
+
+
+def test_every_official_club_site_can_be_read_by_the_program():
+    """Twenty clubs, twenty readable sources. Nine were unusable until the
+    probe learned to read robots.txt, and the gap showed up directly as
+    Brentford and Palace players having no evidence."""
+    import json
+    audit = json.loads((DATA / "sources" / "discovery.json").read_text())
+    by_domain = {s["domain"]: s for s in audit["sources"]}
+    clubs = [
+        "arsenal.com", "avfc.co.uk", "afcb.co.uk", "brentfordfc.com",
+        "brightonandhovealbion.com", "chelseafc.com", "ccfc.co.uk", "cpfc.co.uk",
+        "evertonfc.com", "fulhamfc.com", "wearehullcity.co.uk", "itfc.co.uk",
+        "leedsunited.com", "liverpoolfc.com", "mancity.com", "manutd.com",
+        "newcastleunited.com", "nottinghamforest.co.uk", "safc.com",
+        "tottenhamhotspur.com",
+    ]
+    unusable = [c for c in clubs
+                if by_domain.get(c, {}).get("grade") not in collect.USABLE_GRADES]
+    assert not unusable, f"official club sites with no discovery method: {unusable}"
+
+
+def test_the_committed_corpus_actually_contains_articles():
+    """The whole point. An empty corpus means the app is guessing again."""
+    store = corpus_mod.load()
+    assert len(store) > 100, f"corpus holds only {len(store)} items"
+    real = [a for a in store.items if a.is_article]
+    assert len(real) > 50, f"only {len(real)} of {len(store)} items are actual writing"
+
+
+def test_the_biggest_names_in_the_game_have_evidence_in_the_shipped_corpus():
+    """The exact complaint, as a test: Haaland, Szoboszlai and Semenyo all
+    returning nothing at once is the symptom that started this."""
+    store = corpus_mod.load()
+    found = {name: evidence.search(name, club, store.items)
+             for name, club in (("Haaland", "MCI"), ("Szoboszlai", "LIV"), ("Semenyo", "MCI"))}
+    for name, ev in found.items():
+        assert ev.substantive_items, f"{name} has no evidence in the committed corpus"
+    assert gates.check_blackout(found), "the blackout gate should pass on shipped data"
