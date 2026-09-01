@@ -97,6 +97,26 @@ GRADE_NAMES = {
 USABLE_GRADES = (GRADE_FULL, GRADE_PARTIAL)
 
 
+# URL shapes that are tools, profiles or listings rather than writing.
+# The first live run retrieved fplpulse.com/players/haaland/1 with the
+# title "1" and counted it as evidence about Haaland. It is a player
+# profile page with no prose on it. Three of those made Semenyo look
+# "researched — 3 items" when nobody had written a word about him, which
+# is precisely the false success this rebuild exists to stop.
+NON_ARTICLE_PATTERNS = (
+    r"/players?/", r"/compare/", r"/fixtures?/", r"/stats?/", r"/tools?/",
+    r"/teams?/", r"/leagues?/", r"/tables?/", r"/predictions?/", r"/rankings?/",
+    r"/profile/", r"/squad/", r"/live/", r"/points/", r"/tag/", r"/category/",
+    r"/author/", r"/page/\d+", r"/\d+$",
+)
+# Conversely, these say "this is a piece of writing".
+ARTICLE_PATTERNS = (
+    r"/news/", r"/blog/", r"/article", r"/\d{4}/\d{2}/", r"/features?/",
+    r"/opinion/", r"/analysis/", r"/report/", r"/preview/", r"/interview",
+)
+MIN_HEADLINE_WORDS = 4
+
+
 @dataclass
 class Article:
     """One retrieved item. The unit the research engine reasons over."""
@@ -112,6 +132,37 @@ class Article:
     club: str = ""
     gameweek: int | None = None
     source_type: str = ""
+    # When the server said the page last changed. Kept apart from
+    # `published` on purpose: a sitemap's <lastmod> is a modification
+    # stamp, and reading it as a publication date made pages that were
+    # merely re-rendered today look like today's news.
+    modified: str = ""
+    # How the item was found. An RSS entry is a published article by
+    # definition; a sitemap URL is a candidate that has to earn it.
+    via: str = "rss"
+
+    @property
+    def is_article(self) -> bool:
+        """Is this a piece of writing, or a page a program generated?
+
+        Only substantive items may be counted as evidence. Getting this
+        wrong in either direction is costly — too strict and real team
+        news is discarded, too loose and a tool page becomes a "source" in
+        a player write-up — so an RSS entry is trusted, and a bare URL
+        from a sitemap has to look like a headline AND sit on an
+        article-shaped path.
+        """
+        title = (self.title or "").strip()
+        if not title or title.isdigit():
+            return False
+        if self.via == "rss" and len(title.split()) >= 2:
+            return True
+        path = urlparse(self.url).path.lower()
+        if any(re.search(pattern, path) for pattern in NON_ARTICLE_PATTERNS):
+            return False
+        if len(title.split()) < MIN_HEADLINE_WORDS:
+            return False
+        return any(re.search(pattern, path) for pattern in ARTICLE_PATTERNS)
 
     @property
     def published_at(self) -> datetime | None:
@@ -128,9 +179,11 @@ class Article:
         return {
             "title": self.title, "url": self.url, "source": self.source,
             "domain": self.domain, "published": self.published,
+            "modified": self.modified, "via": self.via,
             "retrieved": self.retrieved, "excerpt": self.excerpt,
             "players": self.players, "club": self.club,
             "gameweek": self.gameweek, "source_type": self.source_type,
+            "is_article": self.is_article,
         }
 
     @classmethod
@@ -145,6 +198,8 @@ class Article:
             club=str(data.get("club", "")),
             gameweek=data.get("gameweek"),
             source_type=str(data.get("source_type", "")),
+            modified=str(data.get("modified", "")),
+            via=str(data.get("via", "rss")),
         )
 
 
@@ -467,6 +522,7 @@ def collect_from(source: dict, session: requests.Session | None = None,
                 title=entry["title"], url=entry["url"], source=name, domain=domain,
                 published=stamp.isoformat(timespec="seconds") if stamp else "",
                 retrieved=retrieved, excerpt=entry["excerpt"], source_type=source_type,
+                via="rss",
             ))
     else:
         _, pages = parse_sitemap(result.text)
@@ -478,11 +534,20 @@ def collect_from(source: dict, session: requests.Session | None = None,
         for page, stamp in dated[:limit]:
             if stamp is not None and stamp < cutoff:
                 continue
+            # A news sitemap carries a real <publication_date> and also a
+            # real title; a plain sitemap carries only <lastmod>, which is
+            # when the page was last touched. Treating the second as a
+            # publication date is how a page that has not changed in
+            # months ends up presented as this morning's team news.
+            is_news_sitemap = bool(page["title"])
             articles.append(Article(
                 title=page["title"] or _title_from_url(page["url"]),
                 url=page["url"], source=name, domain=domain,
-                published=stamp.isoformat(timespec="seconds") if stamp else "",
+                published=(stamp.isoformat(timespec="seconds")
+                           if stamp and is_news_sitemap else ""),
+                modified=stamp.isoformat(timespec="seconds") if stamp else "",
                 retrieved=retrieved, excerpt="", source_type=source_type,
+                via="sitemap",
             ))
 
     if not articles:

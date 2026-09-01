@@ -1108,14 +1108,139 @@ def render_freshness_bar(gameweek: int, deadline: str = "") -> None:
             + (f" · {build.display}" if build.known else "")
         )
     with right:
-        if st.button("↻ Refresh data", use_container_width=True,
-                     help="Pulls the latest committed research and re-fetches live FPL data. Free — "
-                          "it clears the in-app caches, nothing more."):
-            st.cache_data.clear()
-            st.rerun()
+        if st.button("↻ Refresh research", use_container_width=True,
+                     help="Goes and reads the football news: fetches every source that "
+                          "publishes a feed or sitemap, updates the article cache and "
+                          "re-researches your squad. Free — public feeds only, no API key."):
+            run_research_refresh(int(gameweek))
 
     if state.message:
         (st.warning if state.stale else st.info)(state.message)
+
+    render_collection_status()
+
+
+def render_collection_status() -> None:
+    """What the research pipeline last actually retrieved.
+
+    On the page rather than buried in a log, because the failure this
+    replaces was invisible: the button reported nothing, retrieved
+    nothing, and the write-ups looked the same either way.
+    """
+    try:
+        from fpl_assistant.research import corpus as corpus_mod
+        store = corpus_mod.load()
+    except Exception:
+        return
+
+    if not len(store):
+        st.error(
+            "**RESEARCH COLLECTION FAILURE** — the article cache is empty, so no player "
+            "assessment on this page is backed by current reporting. Press *Refresh "
+            "research* to collect, or check the Collect research workflow."
+        )
+        return
+
+    age = store.age_hours
+    stale = age is not None and age > 12
+    line = (f"Research cache: **{len(store)} articles** from "
+            f"{store.sources_ok}/{store.sources_checked} sources · "
+            f"collected {store.collected_at_display}")
+    (st.warning if stale else st.caption)(line + ("  ·  worth refreshing" if stale else ""))
+
+
+def run_research_refresh(gameweek: int) -> None:
+    """The Refresh button's actual work: Stage A, then Stage B.
+
+    This used to be `st.cache_data.clear()`. Clearing a cache re-reads the
+    same files; it cannot discover that Haaland is fit or that a manager
+    named a squad. The button now runs the same collector the scheduled
+    workflow runs, so pressing it genuinely researches.
+
+    Every step reports as it happens. A refresh that retrieves nothing
+    says so and stops, rather than handing an empty corpus to the analysis
+    and letting it produce confident-looking output about nothing.
+    """
+    import json as _json
+    from pathlib import Path as _Path
+
+    from datetime import datetime, timezone
+
+    from fpl_assistant.research import collect, corpus as corpus_mod, evidence, gates
+
+    discovery_path = (_Path(__file__).resolve().parent.parent.parent
+                      / "data" / "sources" / "discovery.json")
+    try:
+        discovery = _json.loads(discovery_path.read_text())
+    except (OSError, ValueError):
+        st.error("**RESEARCH COLLECTION FAILURE** — no source discovery audit found. "
+                 "Run the Collect research workflow with mode `probe` first.")
+        return
+
+    usable = [s for s in discovery.get("sources", [])
+              if s.get("grade") in collect.USABLE_GRADES and s.get("feed_url")]
+    if not usable:
+        st.error("**RESEARCH COLLECTION FAILURE** — no source has a feed or sitemap "
+                 "the app can read.")
+        return
+
+    progress = st.progress(0.0, text="Reading FPL expert sources…")
+    session = collect._session()
+    fresh, failures, ok = [], [], 0
+
+    for index, source in enumerate(usable, 1):
+        label = str(source.get("name") or source.get("domain"))
+        progress.progress(index / (len(usable) + 3), text=f"Reading {label}…")
+        articles, error = collect.collect_from(source, session)
+        if error:
+            failures.append(error)
+            continue
+        ok += 1
+        fresh.extend(articles)
+
+    progress.progress(0.85, text="Updating the research cache…")
+    squad = my_squad_players()
+    evidence.tag_articles(fresh, squad)
+    store = corpus_mod.prune(corpus_mod.merge(corpus_mod.load(), fresh))
+    store.collected_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    store.sources_checked, store.sources_ok = len(usable), ok
+    store.failures = failures[:40]
+    corpus_mod.save(store)
+
+    progress.progress(0.93, text="Researching your squad…")
+    by_player = {p["name"]: evidence.search(p["name"], p.get("team", ""), store.items)
+                 for p in squad}
+
+    collection = gates.check_collection(len(usable), ok, len(fresh), failures)
+    blackout = gates.check_blackout(by_player)
+    progress.progress(1.0, text="Done.")
+    progress.empty()
+
+    researched = sum(1 for ev in by_player.values() if ev.researched)
+    st.markdown(
+        f"**SOURCES CHECKED:** {len(usable)}  ·  **RETURNED MATERIAL:** {ok}  \n"
+        f"**NEW ITEMS FOUND:** {len(fresh)}  ·  **CACHE:** {len(store)} articles  \n"
+        + (f"**PLAYERS FULLY RESEARCHED:** {researched}/{len(squad)}  \n" if squad else "")
+        + f"**LAST UPDATED:** {store.collected_at_display}"
+    )
+
+    for verdict in (collection, blackout):
+        if not verdict.ok:
+            st.error(f"**{verdict.headline}** — " + " · ".join(verdict.reasons))
+
+    st.cache_data.clear()
+
+
+def my_squad_players() -> list[dict]:
+    """The owned fifteen, as plain dicts, from the committed squad file."""
+    import json as _json
+    from pathlib import Path as _Path
+
+    path = _Path(__file__).resolve().parent.parent.parent / "data" / "squad" / "current.json"
+    try:
+        return _json.loads(path.read_text()).get("squad", [])
+    except (OSError, ValueError):
+        return []
 
 
 def _section(title: str, subtitle: str = "") -> None:

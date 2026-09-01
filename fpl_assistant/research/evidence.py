@@ -128,6 +128,17 @@ class Evidence:
     kind: str = "general"
 
     @property
+    def substantive(self) -> bool:
+        """Is this something someone wrote, or a page a program generated?
+
+        Only substantive items count toward the evidence threshold. The
+        first live run "researched" Semenyo with three hits, all of which
+        were tool pages titled "1", "2" and "Antoine semenyo". Counting
+        those is how a pipeline reports 15/15 while knowing nothing.
+        """
+        return self.article.is_article
+
+    @property
     def recency_hours(self) -> float | None:
         return self.article.age_hours()
 
@@ -152,12 +163,17 @@ class PlayerEvidence:
     fallbacks_used: list[str] = field(default_factory=list)
 
     @property
+    def substantive_items(self) -> list["Evidence"]:
+        """The items that are actually writing. The only ones that count."""
+        return [e for e in self.items if e.substantive]
+
+    @property
     def researched(self) -> bool:
-        return len(self.items) >= MIN_EVIDENCE_ITEMS
+        return len(self.substantive_items) >= MIN_EVIDENCE_ITEMS
 
     @property
     def team_news(self) -> list[Evidence]:
-        return [e for e in self.items if e.kind == "team news"]
+        return [e for e in self.substantive_items if e.kind == "team news"]
 
     @property
     def recent_team_news(self) -> list[Evidence]:
@@ -172,11 +188,15 @@ class PlayerEvidence:
     def status(self) -> str:
         if self.corpus_size == 0:
             return "RESEARCH COLLECTION FAILURE — nothing was retrieved to search"
+        real = len(self.substantive_items)
         if not self.items:
             return "searched, nothing found"
+        if not real:
+            return (f"searched, {len(self.items)} match(es) — all tool or profile pages, "
+                    f"no article written about him")
         if not self.researched:
-            return f"searched, {len(self.items)} item(s) — below the {MIN_EVIDENCE_ITEMS} needed"
-        return f"researched — {len(self.items)} items"
+            return f"searched, {real} article(s) — below the {MIN_EVIDENCE_ITEMS} needed"
+        return f"researched — {real} articles"
 
     def as_dict(self) -> dict:
         return {
@@ -184,7 +204,10 @@ class PlayerEvidence:
             "researched": self.researched, "status": self.status,
             "queries": self.queries, "corpus_size": self.corpus_size,
             "fallbacks_used": self.fallbacks_used,
-            "items": [e.as_dict() for e in self.items],
+            "substantive": len(self.substantive_items),
+            "matches": len(self.items),
+            "items": [e.as_dict() for e in self.substantive_items],
+            "discarded_pages": [e.article.url for e in self.items if not e.substantive],
         }
 
 
@@ -229,20 +252,20 @@ def search(name: str, club: str, articles: list[Article], full_name: str = "",
                 result.items.append(Evidence(article, variant, classify(article)))
             break
 
-    if len(result.items) < min_items and club:
+    if len(result.substantive_items) < min_items and club:
         # Fallback: the player was not named, but his club's team news is
         # still evidence about whether he plays. Ranked below a name match
         # and labelled as club-level so a write-up can say so.
         for article in articles:
             if article.url in seen or not mentions_club(article, club):
                 continue
-            if classify(article) != "team news":
+            if not article.is_article or classify(article) != "team news":
                 continue
             seen.add(article.url)
             result.items.append(Evidence(article, f"{club} team news", "club team news"))
             if "club team news" not in result.fallbacks_used:
                 result.fallbacks_used.append("club team news")
-            if len(result.items) >= min_items * 2:
+            if len(result.substantive_items) >= min_items * 2:
                 break
 
     result.items.sort(

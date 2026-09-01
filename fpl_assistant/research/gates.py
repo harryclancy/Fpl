@@ -78,7 +78,9 @@ def check_blackout(evidence_by_player: dict) -> Verdict:
     if not present:
         return Verdict(True, "", ["no bellwether players in this squad to check against"])
 
-    empty = [name for name, ev in present.items() if not ev.items]
+    # Substantive items only. A bellwether "evidenced" by three generated
+    # profile pages is exactly the false pass this gate exists to catch.
+    empty = [name for name, ev in present.items() if not ev.substantive_items]
     if len(empty) == len(present):
         return Verdict(False, PIPELINE_FAILURE, [
             f"{', '.join(sorted(empty))} all returned zero evidence at the same time",
