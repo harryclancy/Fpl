@@ -1,24 +1,24 @@
 {
  "mode": "full",
  "gameweek": 3,
- "ran_at": "2026-09-01T22:03:22+00:00",
- "seconds": 314.7,
+ "ran_at": "2026-09-01T22:18:36+00:00",
+ "seconds": 329.7,
  "sources_attempted": 78,
- "sources_readable": 40,
+ "sources_readable": 67,
  "candidates_discovered": 1000,
- "substantive_items": 390,
- "duplicates_removed": 23,
- "deeply_analysed": 310,
- "deep_read_failed": 20,
- "corpus_size": 2752,
- "players_researched": 7,
+ "substantive_items": 598,
+ "duplicates_removed": 27,
+ "deeply_analysed": 300,
+ "deep_read_failed": 121,
+ "corpus_size": 2790,
+ "players_researched": 9,
  "players_total": 15,
  "verdicts": {
   "collection": {
    "ok": true,
    "headline": "",
    "reasons": [
-    "40/78 sources returned 390 articles"
+    "67/78 sources returned 598 articles"
    ]
   },
   "blackout": {
@@ -29,29 +29,36 @@
    ]
   },
   "coverage": {
-   "ok": true,
-   "headline": "",
+   "ok": false,
+   "headline": "RESEARCH COLLECTION FAILURE",
    "reasons": [
-    "7/15 players met the evidence threshold"
+    "9/15 players met the evidence threshold",
+    "short: Diop, Hughes, Kayode, Mitchell, Szoboszlai, Thiago",
+    "under 80% of the squad is evidenced — that is a collection shortfall, not 6 genuinely un-covered players"
    ]
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "Fantasy Football Pundit: nothing published in the last 21 days",
   "FPL Strat: nothing published in the last 21 days",
   "FPLai: nothing published in the last 21 days",
   "FPL Stats: nothing published in the last 21 days",
   "Fantasy Football Reports: nothing published in the last 21 days",
   "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
-  "candidate ceiling of 1000 reached; 38 sources not attempted"
+  "Liverpool: nothing published in the last 21 days",
+  "Tottenham Hotspur: nothing published in the last 21 days",
+  "PhysioRoom: nothing published in the last 21 days",
+  "The Hard Tackle: nothing published in the last 21 days",
+  "candidate ceiling of 1000 reached after taking 19 items from each of 67 sources"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 2,
-   "latest_evidence": "2026-09-01T14:00:00+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-01T19:48:29+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -64,7 +71,7 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "press conference",
+    "match report",
     "set pieces",
     "statistics",
     "tactics",
@@ -75,6 +82,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "‘The best possible solution’ – Dortmund loan Arsenal forward Nwaneri after huge injury blow",
+     "url": "https://www.101greatgoals.com/football/bundesliga/dortmund-loan-arsenal-forward-nwaneri/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-01T19:48:29+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Borussia Dortmund have signed Arsenal attacking midfielder Ethan Nwaneri on a season-long loan. The 19-year-old, who in 2022 became the youngest player in Premier League history when he made his debut at 15 years and 181 days, is set for another temporary spell away from North London after spending the second half of the previous […]"
+    },
+    {
+     "title": "Is Declan Rice injured? Arsenal star gives Mikel Arteta new worry after limping off",
+     "url": "https://www.fourfourtwo.com/person/player/is-declan-rice-injured-arsenal-star-gives-mikel-arteta-new-worry-after-limping-off",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-01T16:00:00+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal are sweating over the fitness of midfielder Declan Rice after the England international limped off at Villa Park during the Gunners' 1-0 Premier League victory against Aston Villa. Bukayo Saka’s 59th-minute goal ultimately secured all three points for Mikel Arteta ’s side, but the win came at a cost. In the 85th minute, Rice was forced off while visibly limping, with Martin Zubimendi takin"
+    },
     {
      "title": "Arsenal youngster given transfer lifeline as Fulham miss out: report",
      "url": "https://www.fourfourtwo.com/transfer/arsenal-youngster-given-transfer-lifeline-as-fulham-miss-out",
@@ -110,31 +135,13 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Two alterations for Villa, who taken on unchanged Arsenal The post Villa v Arsenal team news: Jackson debut, Konsa a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "\"If you’d have told me Arsenal weren’t going to win the win the league again for such a long time, I’d have said you were mad\" Ray Parlour on Arsenal’s 22-year wait for the Premier League",
-     "url": "https://www.fourfourtwo.com/team/if-youd-have-told-me-arsenal-werent-going-to-win-the-win-the-league-again-for-such-a-long-time-id-have-said-you-were-mad-ray-parlour-on-arsenals-22-year-wait-for-the-premier-league",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-31T15:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "It took 22 long years, but Arsenal returned to the summit of English football last season, when they eased to the Premier League title. This title drought stretched back to the days of Arsene Wenger's Invincibles, and for former Gunners midfielder Ray Parlour - a member of that 2004 title-winning squad - the club's wait for the title only made this latest success all the sweeter. And while Parlour"
-    },
-    {
-     "title": "\"In football terms, he is a freak, and I mean that in the utmost respect – if he was in a book, you'd throw the book in the sea\" Paul Merson on the Arsenal player stranger than fiction",
-     "url": "https://www.fourfourtwo.com/team/in-football-terms-he-is-a-freak-and-i-mean-that-in-the-utmost-respect-if-he-was-in-a-book-youd-throw-the-book-in-the-sea-paul-merson-on-the-arsenal-player-stranger-than-fiction",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-31T12:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal were finally able to end their two-decade wait for the Premier League title last season, in a campaign which threw up more than its fair share of subplots. Among the new signings, the redemption arcs and moments of personal glory was the story of 16-year-old Max Dowman , who became the youngest goalscorer in Premier League history when he netted against Everton , before becoming the compet"
     }
    ]
   },
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 6,
+   "evidence_count": 4,
    "source_count": 4,
    "latest_evidence": "2026-09-01T13:20:55+00:00",
    "official_source_found": false,
@@ -149,14 +156,13 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "press conference",
+    "match report",
     "set pieces",
-    "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -170,40 +176,22 @@
      "excerpt": "Premier League players face a suspension if they pick up too many yellow cards – but what are the rules and who is closest to a one-match ban? Here, we list every player currently banned – be it for red cards or collecting yellow cards – and those at most risk of missing a game. […]"
     },
     {
-     "title": "‘After seven years at Arsenal, I wanted to help Man City win’ Vivianne Miedema on transfer motivation and WSL growth",
-     "url": "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T08:01:17+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Vivianne Miedema helped Manchester City break Chelsea’s six-year Women’s Super League winning streak last season as they claimed victory under new manager Andree Jeglertz. Manchester City claimed their first WSL title since 2016 last term, before going on to complete a domestic double by beating Brighton to lift the FA Cup. Miedema, who joined from Arsenal in 2024, says the achievement represented"
+     "title": "Gabriel Jesus: Arsenal forward completes Barcelona transfer in £8.6m deal on Deadline Day",
+     "url": "https://www.skysports.com/football/news/11833/13579275/gabriel-jesus-arsenal-forward-completes-barcelona-transfer-in-8-6m-deal-on-deadline-day",
+     "source": "Sky Sports Premier League",
+     "published": "2026-09-01T00:00:00+00:00",
+     "matched_on": "gabriel",
+     "kind": "transfer",
+     "excerpt": ""
     },
     {
-     "title": "Villa v Arsenal team news: Jackson debut, Konsa a sub",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/villa-v-arsenal-team-news-jackson-debut-konsa-a-sub",
-     "source": "Fantasy Football Scout",
-     "published": "2026-08-31T18:30:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Two alterations for Villa, who taken on unchanged Arsenal The post Villa v Arsenal team news: Jackson debut, Konsa a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "\"If you’d have told me Arsenal weren’t going to win the win the league again for such a long time, I’d have said you were mad\" Ray Parlour on Arsenal’s 22-year wait for the Premier League",
-     "url": "https://www.fourfourtwo.com/team/if-youd-have-told-me-arsenal-werent-going-to-win-the-win-the-league-again-for-such-a-long-time-id-have-said-you-were-mad-ray-parlour-on-arsenals-22-year-wait-for-the-premier-league",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-31T15:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "It took 22 long years, but Arsenal returned to the summit of English football last season, when they eased to the Premier League title. This title drought stretched back to the days of Arsene Wenger's Invincibles, and for former Gunners midfielder Ray Parlour - a member of that 2004 title-winning squad - the club's wait for the title only made this latest success all the sweeter. And while Parlour"
-    },
-    {
-     "title": "\"In football terms, he is a freak, and I mean that in the utmost respect – if he was in a book, you'd throw the book in the sea\" Paul Merson on the Arsenal player stranger than fiction",
-     "url": "https://www.fourfourtwo.com/team/in-football-terms-he-is-a-freak-and-i-mean-that-in-the-utmost-respect-if-he-was-in-a-book-youd-throw-the-book-in-the-sea-paul-merson-on-the-arsenal-player-stranger-than-fiction",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-31T12:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal were finally able to end their two-decade wait for the Premier League title last season, in a campaign which threw up more than its fair share of subplots. Among the new signings, the redemption arcs and moments of personal glory was the story of 16-year-old Max Dowman , who became the youngest goalscorer in Premier League history when he netted against Everton , before becoming the compet"
+     "title": "Arsenal transfer news: Al-Hilal 'getting closer' to finalising Gabriel Martinelli fee, Brazilian left with decision",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/in-martinellis-hands-arsenal-al-hilal-getting-closer-to-agreement-after-increased-bid_603646.html",
+     "source": "Sports Mole",
+     "published": "2026-08-24T17:30:17+01:00",
+     "matched_on": "gabriel",
+     "kind": "transfer",
+     "excerpt": "Al-Hilal are allegedly 'getting closer' to agreeing a deal with Arsenal for Gabriel Martinelli, who will seemingly be left with a decision to make on his future."
     },
     {
      "title": "Barcelona complete signing of Gabriel Jesus from Arsenal",
@@ -219,10 +207,10 @@
   "Guéhi": {
    "player": "Guéhi",
    "club": "MCI",
-   "evidence_count": 3,
-   "source_count": 2,
+   "evidence_count": 6,
+   "source_count": 5,
    "latest_evidence": "2026-09-01T08:01:17+00:00",
-   "official_source_found": false,
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -242,10 +230,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Toffees strike late to snatch a point in Rose's Vitality Stadium opener",
+     "url": "https://www.afcb.co.uk/news/2026/august/29/match-report-v-everton/",
+     "source": "AFC Bournemouth",
+     "published": "2026-08-29T15:55:00+00:00",
+     "matched_on": "guehi",
+     "kind": "team news",
+     "excerpt": "James Tarkowski’s injury-time equaliser took the gloss off Marco Rose’s first home game as AFC Bournemouth Head Coach as Everton claimed a share of the spoils from a 1-1 draw. The Cherries appeared to be heading towards victory as the clock ticked into added time with Alex Scott’s finely-taken first-half goal on course to earn the three points. But for the second game running, the Cherries concede"
+    },
     {
      "title": "‘After seven years at Arsenal, I wanted to help Man City win’ Vivianne Miedema on transfer motivation and WSL growth",
      "url": "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
@@ -272,35 +269,79 @@
      "matched_on": "MCI team news",
      "kind": "club team news",
      "excerpt": "A look at where the young Moroccan fits in at City and what his FPL potential is The post Bouaddi to Man City – could it affect O’Reilly? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Coventry City sign Stephen Mfuni on loan from Manchester City",
+     "url": "https://www.ccfc.co.uk/news/2026/august/30/coventry-city-sign-stephen-mfuni-on-loan-from-manchester-city/",
+     "source": "Coventry City",
+     "published": "2026-08-30T11:29:00+00:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Coventry City are delighted to announce the signing of Stephen Mfuni on a season-long loan from Manchester City. The 18-year-old, who can play at left-back and centre-back, made his senior debut for the Citizens last season in the 10-1 victory over Exeter City in the Emirates FA Cup. Mfuni gained further experience on loan at Championship side Watford, where he made eight appearances during the se"
+    },
+    {
+     "title": "Fulham vs. Chelsea team news: Xabi Alonso makes Enzo Fernandez decision amid Manchester City talk",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/west-london-derby/news/fulham-chelsea-starting-lineups-confirmed-does-fernandez-feature-in-first-alonso-xi_603651.html",
+     "source": "Sports Mole",
+     "published": "2026-08-24T18:49:00+01:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Fulham and Chelsea announce their starting lineups for Monday's Premier League fixture at Craven Cottage."
     }
    ]
   },
   "Kayode": {
    "player": "Kayode",
    "club": "BRE",
-   "evidence_count": 0,
-   "source_count": 0,
+   "evidence_count": 2,
+   "source_count": 1,
    "latest_evidence": "",
-   "official_source_found": false,
+   "official_source_found": true,
    "fpl_source_found": false,
-   "team_news_found": false,
-   "starting_status_assessed": false,
-   "injury_status_assessed": false,
-   "transfer_status_assessed": false,
-   "role_assessed": false,
-   "fixtures_assessed": false,
-   "dimensions_covered": [],
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "injury",
+    "set pieces",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
    "strength": "short",
    "priority": "high",
    "researched": false,
-   "items": []
+   "items": [
+    {
+     "title": "Brentford b team 5 sunderland u21s 1 match report kaye furo fabio carvalho premier league 2",
+     "url": "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Match reports leeds united 1 brentford 1 premier league 30 08 2026",
+     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": ""
+    }
+   ]
   },
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 1,
-   "source_count": 1,
-   "latest_evidence": "2026-08-23T17:42:40+00:00",
+   "evidence_count": 2,
+   "source_count": 2,
+   "latest_evidence": "2026-09-01T18:18:22+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -314,6 +355,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -324,6 +366,15 @@
    "priority": "high",
    "researched": false,
    "items": [
+    {
+     "title": "Liverpool make final decision on signing Ismaila Sarr as Crystal Palace set to finalise ‘record’ winger deal",
+     "url": "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
+     "source": "Football365",
+     "published": "2026-09-01T18:18:22+00:00",
+     "matched_on": "LIV team news",
+     "kind": "club team news",
+     "excerpt": "According to reports, Crystal Palace are ‘set to sign’ a new winger, but Liverpool have now ruled out a move for Ismaila Sarr in this window."
+    },
     {
      "title": "FPL Gameweek 1 Review and Takeaways – Don’t Overreact",
      "url": "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27",
@@ -338,10 +389,10 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "evidence_count": 3,
-   "source_count": 2,
+   "evidence_count": 5,
+   "source_count": 4,
    "latest_evidence": "2026-09-01T08:01:17+00:00",
-   "official_source_found": false,
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -361,7 +412,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -391,16 +442,34 @@
      "matched_on": "MCI team news",
      "kind": "club team news",
      "excerpt": "A look at where the young Moroccan fits in at City and what his FPL potential is The post Bouaddi to Man City – could it affect O’Reilly? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Coventry City sign Stephen Mfuni on loan from Manchester City",
+     "url": "https://www.ccfc.co.uk/news/2026/august/30/coventry-city-sign-stephen-mfuni-on-loan-from-manchester-city/",
+     "source": "Coventry City",
+     "published": "2026-08-30T11:29:00+00:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Coventry City are delighted to announce the signing of Stephen Mfuni on a season-long loan from Manchester City. The 18-year-old, who can play at left-back and centre-back, made his senior debut for the Citizens last season in the 10-1 victory over Exeter City in the Emirates FA Cup. Mfuni gained further experience on loan at Championship side Watford, where he made eight appearances during the se"
+    },
+    {
+     "title": "Fulham vs. Chelsea team news: Xabi Alonso makes Enzo Fernandez decision amid Manchester City talk",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/west-london-derby/news/fulham-chelsea-starting-lineups-confirmed-does-fernandez-feature-in-first-alonso-xi_603651.html",
+     "source": "Sports Mole",
+     "published": "2026-08-24T18:49:00+01:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Fulham and Chelsea announce their starting lineups for Monday's Premier League fixture at Craven Cottage."
     }
    ]
   },
   "Ndiaye": {
    "player": "Ndiaye",
    "club": "EVE",
-   "evidence_count": 4,
-   "source_count": 3,
-   "latest_evidence": "2026-09-01T21:23:00+00:00",
-   "official_source_found": false,
+   "evidence_count": 15,
+   "source_count": 9,
+   "latest_evidence": "2026-09-01T22:22:29+02:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -409,17 +478,18 @@
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
-    "fpl advice",
+    "fixtures",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -432,13 +502,58 @@
      "excerpt": "The Manchester City man is set to return on a season-long loan to Everton, after an initial period in 2025/26 was plagued by injury for Grealish. The 30-year-old’s medical is booked, with the deal anticipated to be completed before the 11pm BST transfer deadline this Tuesday evening. A Toffees fan favourite will head the other way, as Enzo Maresca’s men look to build on their two-from-two start an"
     },
     {
+     "title": "Cherries unchanged for visit of Everton",
+     "url": "https://www.afcb.co.uk/news/2026/august/29/cherries-unchanged-for-visit-of-everton/",
+     "source": "AFC Bournemouth",
+     "published": "2026-08-29T12:45:00+00:00",
+     "matched_on": "ndiaye",
+     "kind": "team news",
+     "excerpt": "AFC Bournemouth Head Coach Marco Rose named an unchanged starting line-up for his first Premier League game at Vitality Stadium against Everton. Rose kept faith with the same team which gave Manchester City a run for their money during Sunday’s 2-1 defeat at Etihad Stadium. The only changes came on the bench where Ryan Christie, Julio Soler and new loan signing Michele Gregorio came in for Will De"
+    },
+    {
+     "title": "Everton XI Revealed To Face Bournemouth",
+     "url": "https://www.evertonfc.com/news/2026/august/29/everton-xi-revealed-to-face-bournemouth/",
+     "source": "Everton",
+     "published": "2026-08-29T12:45:00+00:00",
+     "matched_on": "ndiaye",
+     "kind": "team news",
+     "excerpt": "James Garner starts as the only change to Everton's Premier League XI for the clash at Bournemouth (3pm BST). The England international – who underwent minor hernia surgery in the summer – returns to the Blues' midfield after coming off the bench in last weekend's 2-0 opening-day home victory against Crystal Palace. Garner replaces summer signing Hayden Hackney, who is among the substitutes having"
+    },
+    {
      "title": "DEADLINE DAY LIVE: City agree Fernandez deal and sign Ndiaye with Chelsea set to sign Camara",
      "url": "https://www.101greatgoals.com/news/transfers/deadline-day-live-every-completed-premier-league-deal/",
      "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-01T21:23:00+00:00",
+     "published": "2026-09-01T22:08:00+00:00",
      "matched_on": "ndiaye",
      "kind": "transfer",
      "excerpt": "Stay up to date with every transfer completed across the Premier League on deadline day."
+    },
+    {
+     "title": "Ndiaye Leaves Everton",
+     "url": "https://www.evertonfc.com/news/2026/september/01/ndiaye-leaves-everton/",
+     "source": "Everton",
+     "published": "2026-09-01T20:30:00+00:00",
+     "matched_on": "ndiaye",
+     "kind": "transfer",
+     "excerpt": "Everton can confirm Iliman Ndiaye has signed for Manchester City on a permanent deal for an undisclosed fee. The Senegalese winger joins Enzo Maresca’s side after two years with the Toffees, featuring 74 times across all competitions and scoring 17 goals. Signed from Marseille in July 2024, Ndiaye made history by becoming the last-ever goalscorer for an Everton Men’s player at Goodison Park when h"
+    },
+    {
+     "title": "Romano reveals outcome of Enzo Fernandez medical as Man City complete first deadline day signing",
+     "url": "https://www.football365.com/news/romano-reveals-outcome-enzo-fernandez-medical-man-city-complete-first-deadline-day-signing",
+     "source": "Football365",
+     "published": "2026-09-01T20:26:30+00:00",
+     "matched_on": "ndiaye",
+     "kind": "transfer",
+     "excerpt": "Manchester City have completed the signing of Iliman Ndiaye from Everton for £65m, and there is an update on Chelsea star Enzo Fernandez."
+    },
+    {
+     "title": "Manchester City confirm signing of Iliman Ndiaye from Everton on five-year deal",
+     "url": "https://www.flashscore.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
+     "source": "Flashscore",
+     "published": "2026-09-01T22:22:29+02:00",
+     "matched_on": "ndiaye",
+     "kind": "transfer",
+     "excerpt": ""
     },
     {
      "title": "‘I know this is the perfect fit’ – Ndiaye completes £65m move to Man City",
@@ -450,10 +565,37 @@
      "excerpt": "City have swelled their attacking ranks on deadline day."
     },
     {
-     "title": "Iliman ndiaye man city fpl 2026 27",
-     "url": "https://onefpl.com/blog/iliman-ndiaye-man-city-fpl-2026-27",
-     "source": "OneFPL",
-     "published": "",
+     "title": "Iliman Ndiaye transfer news: Man City sign £65m winger from Everton as Jack Grealish joins Toffees on loan",
+     "url": "https://www.skysports.com/football/news/11671/13579669/iliman-ndiaye-transfer-news-man-city-sign-65m-winger-from-everton-as-jack-grealish-joins-toffees-on-loan",
+     "source": "Sky Sports Premier League",
+     "published": "2026-09-01T00:00:00+00:00",
+     "matched_on": "ndiaye",
+     "kind": "transfer",
+     "excerpt": ""
+    },
+    {
+     "title": "Doku, Cherki, and Now Ndiaye? Man City’s Penchant for Dribblers Is No Coincidence",
+     "url": "https://theanalyst.com/articles/man-city-iliman-ndiaye-dribbling-stats",
+     "source": "Opta Analyst",
+     "published": "2026-09-01T13:24:07+00:00",
+     "matched_on": "ndiaye",
+     "kind": "general",
+     "excerpt": "Manchester City are loading up on players known for their dribbling ability, with Iliman Ndiaye seemingly their next new face. The post Doku, Cherki, and Now Ndiaye? Man City’s Penchant for Dribblers Is No Coincidence appeared first on Opta Analyst ."
+    },
+    {
+     "title": "10 things you might not know about Iliman Ndiaye",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-10-things-63923887",
+     "source": "Manchester City",
+     "published": "2026-09-01T08:30:00+00:00",
+     "matched_on": "ndiaye",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Ndiaye: I want to get fans off their seat and help City win games",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-want-to-help-city-win-games-63923886",
+     "source": "Manchester City",
+     "published": "2026-09-01T08:00:00+00:00",
      "matched_on": "ndiaye",
      "kind": "general",
      "excerpt": ""
@@ -463,22 +605,58 @@
   "Schade": {
    "player": "Schade",
    "club": "BRE",
-   "evidence_count": 0,
-   "source_count": 0,
+   "evidence_count": 3,
+   "source_count": 1,
    "latest_evidence": "",
-   "official_source_found": false,
+   "official_source_found": true,
    "fpl_source_found": false,
-   "team_news_found": false,
-   "starting_status_assessed": false,
-   "injury_status_assessed": false,
-   "transfer_status_assessed": false,
-   "role_assessed": false,
-   "fixtures_assessed": false,
-   "dimensions_covered": [],
-   "strength": "short",
-   "priority": "high",
-   "researched": false,
-   "items": []
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "injury",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "minimum",
+   "priority": "normal",
+   "researched": true,
+   "items": [
+    {
+     "title": "Brentford b team 5 sunderland u21s 1 match report kaye furo fabio carvalho premier league 2",
+     "url": "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Match reports leeds united 1 brentford 1 premier league 30 08 2026",
+     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Analysis leeds united 1 brentford 1 premier league vitaly janelt mamadou sangare kevin schade",
+     "url": "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "schade",
+     "kind": "general",
+     "excerpt": ""
+    }
+   ]
   },
   "Haaland": {
    "player": "Haaland",
@@ -550,19 +728,78 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 1,
-   "source_count": 1,
-   "latest_evidence": "2026-08-31T08:00:00+00:00",
+   "evidence_count": 3,
+   "source_count": 3,
+   "latest_evidence": "2026-08-30T15:29:11+00:00",
    "official_source_found": false,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": false,
+   "fixtures_assessed": true,
    "dimensions_covered": [
-    "press conference",
+    "fixtures",
+    "injury",
+    "match report",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "minimum",
+   "priority": "normal",
+   "researched": true,
+   "items": [
+    {
+     "title": "Chelsea 4-3 Brighton Stats: Cole Palmer Decides Seven-Goal Thriller as Xabi Alonso’s Men Stay Perfect",
+     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
+     "source": "Opta Analyst",
+     "published": "2026-08-30T15:29:11+00:00",
+     "matched_on": "joao pedro",
+     "kind": "general",
+     "excerpt": "Chelsea overcame Brighton in a seven-goal thriller at Stamford Bridge. Re-live this game with our Chelsea vs Brighton stats page. The post Chelsea 4-3 Brighton Stats: Cole Palmer Decides Seven-Goal Thriller as Xabi Alonso’s Men Stay Perfect appeared first on Opta Analyst ."
+    },
+    {
+     "title": "Fulham Vs Chelsea [2-3] Premier League 2026/2027: How Does Xabi Alonso's New Front Three Work? – Tactical Analysis",
+     "url": "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-08-26T09:02:48+00:00",
+     "matched_on": "joao pedro",
+     "kind": "general",
+     "excerpt": "Chelsea’s new front three of Cole Palmer, Morgan Rogers and João Pedro starred in Xabi Alonso’s first Premier League win. This tactical analysis examines their complementary roles, pressing and attacking threat against Fulham."
+    },
+    {
+     "title": "Fulham 2-3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage",
+     "url": "https://www.sportsmole.co.uk/football/fulham/result/chelsea-claim-west-london-derby-bragging-rights-as-alonsos-attack-shines_603660.html",
+     "source": "Sports Mole",
+     "published": "2026-08-24T21:55:30+01:00",
+     "matched_on": "pedro",
+     "kind": "general",
+     "excerpt": "Chelsea claim West London derby bragging rights with a thrilling 3-2 win against Fulham on Monday."
+    }
+   ]
+  },
+  "Thiago": {
+   "player": "Thiago",
+   "club": "BRE",
+   "evidence_count": 2,
+   "source_count": 1,
+   "latest_evidence": "",
+   "official_source_found": true,
+   "fpl_source_found": false,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "injury",
+    "set pieces",
     "tactics",
     "team news",
     "transfer"
@@ -572,43 +809,32 @@
    "researched": false,
    "items": [
     {
-     "title": "“I sat down with Frank Lampard and said his philosophy wouldn’t work to win anything: the way I’d play in your system won’t be good for you!” David Luiz on his frank discussion at Chelsea",
-     "url": "https://www.fourfourtwo.com/team/i-sat-down-with-frank-lampard-and-said-his-philosophy-wouldnt-work-to-win-anything-the-way-id-play-in-your-system-wont-be-good-for-you-david-luiz-on-his-frank-discussion-at-chelsea",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-31T08:00:00+00:00",
-     "matched_on": "CHE team news",
+     "title": "Brentford b team 5 sunderland u21s 1 match report kaye furo fabio carvalho premier league 2",
+     "url": "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "BRE team news",
      "kind": "club team news",
-     "excerpt": "During two trophy-laden spells at Chelsea, David Luiz turned out for the club almost 250 times, helping the Blues win the Champions League, Premier League, FA Cup and Europa League. But shortly after signing a new contract in 2019 and just weeks after he started in Chelsea’s 4-1 Europa League final win over Arsenal , the Brazilian defender signed for the Gunners in an £8million deal. The reason fo"
+     "excerpt": ""
+    },
+    {
+     "title": "Match reports leeds united 1 brentford 1 premier league 30 08 2026",
+     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": ""
     }
    ]
-  },
-  "Thiago": {
-   "player": "Thiago",
-   "club": "BRE",
-   "evidence_count": 0,
-   "source_count": 0,
-   "latest_evidence": "",
-   "official_source_found": false,
-   "fpl_source_found": false,
-   "team_news_found": false,
-   "starting_status_assessed": false,
-   "injury_status_assessed": false,
-   "transfer_status_assessed": false,
-   "role_assessed": false,
-   "fixtures_assessed": false,
-   "dimensions_covered": [],
-   "strength": "short",
-   "priority": "high",
-   "researched": false,
-   "items": []
   },
   "Dubravka": {
    "player": "Dubravka",
    "club": "TOT",
-   "evidence_count": 3,
-   "source_count": 2,
+   "evidence_count": 6,
+   "source_count": 3,
    "latest_evidence": "2026-09-01T15:00:00+00:00",
-   "official_source_found": false,
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -628,7 +854,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "low",
    "researched": true,
    "items": [
@@ -658,68 +884,147 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "The Egyptian forward follows Savio from Man City to Spurs The post Is Marmoush back on the FPL radar after Spurs move? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Confirmed line-up: Debut for González at Spurs",
+     "url": "https://www.newcastleunited.com/en/news/confirmed-line-up-spurs-a",
+     "source": "Newcastle United",
+     "published": "2026-08-29T15:15:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "How to watch Tottenham Hotspur vs Newcastle United: TV channel, kick-off time and team news",
+     "url": "https://www.newcastleunited.com/en/news/how-to-watch-tottenham-hotspur-vs-newcastle-united-tv-channel-kick-off-time-and-team-news",
+     "source": "Newcastle United",
+     "published": "2026-08-29T06:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Matthias Jaissle's team news update: González an 'option' for Spurs trip",
+     "url": "https://www.newcastleunited.com/en/news/matthias-jaissles-team-news-update-gonzalez-an-option-for-spurs-trip",
+     "source": "Newcastle United",
+     "published": "2026-08-27T17:30:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
     }
    ]
   },
   "Hughes": {
    "player": "Hughes",
    "club": "CRY",
-   "evidence_count": 0,
-   "source_count": 0,
-   "latest_evidence": "",
+   "evidence_count": 1,
+   "source_count": 1,
+   "latest_evidence": "2026-09-01T18:18:22+00:00",
    "official_source_found": false,
    "fpl_source_found": false,
    "team_news_found": false,
    "starting_status_assessed": false,
-   "injury_status_assessed": false,
-   "transfer_status_assessed": false,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
    "role_assessed": false,
    "fixtures_assessed": false,
-   "dimensions_covered": [],
+   "dimensions_covered": [
+    "injury",
+    "press conference",
+    "transfer"
+   ],
    "strength": "short",
    "priority": "high",
    "researched": false,
-   "items": []
+   "items": [
+    {
+     "title": "Liverpool make final decision on signing Ismaila Sarr as Crystal Palace set to finalise ‘record’ winger deal",
+     "url": "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
+     "source": "Football365",
+     "published": "2026-09-01T18:18:22+00:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "According to reports, Crystal Palace are ‘set to sign’ a new winger, but Liverpool have now ruled out a move for Ismaila Sarr in this window."
+    }
+   ]
   },
   "Mitchell": {
    "player": "Mitchell",
    "club": "CRY",
-   "evidence_count": 0,
-   "source_count": 0,
-   "latest_evidence": "",
+   "evidence_count": 1,
+   "source_count": 1,
+   "latest_evidence": "2026-09-01T18:18:22+00:00",
    "official_source_found": false,
    "fpl_source_found": false,
    "team_news_found": false,
    "starting_status_assessed": false,
-   "injury_status_assessed": false,
-   "transfer_status_assessed": false,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
    "role_assessed": false,
    "fixtures_assessed": false,
-   "dimensions_covered": [],
+   "dimensions_covered": [
+    "injury",
+    "press conference",
+    "transfer"
+   ],
    "strength": "short",
    "priority": "high",
    "researched": false,
-   "items": []
+   "items": [
+    {
+     "title": "Liverpool make final decision on signing Ismaila Sarr as Crystal Palace set to finalise ‘record’ winger deal",
+     "url": "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
+     "source": "Football365",
+     "published": "2026-09-01T18:18:22+00:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "According to reports, Crystal Palace are ‘set to sign’ a new winger, but Liverpool have now ruled out a move for Ismaila Sarr in this window."
+    }
+   ]
   },
   "Diop": {
    "player": "Diop",
    "club": "IPS",
-   "evidence_count": 0,
-   "source_count": 0,
-   "latest_evidence": "",
-   "official_source_found": false,
+   "evidence_count": 2,
+   "source_count": 2,
+   "latest_evidence": "2026-08-30T18:59:44+00:00",
+   "official_source_found": true,
    "fpl_source_found": false,
-   "team_news_found": false,
-   "starting_status_assessed": false,
-   "injury_status_assessed": false,
-   "transfer_status_assessed": false,
-   "role_assessed": false,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
    "fixtures_assessed": false,
-   "dimensions_covered": [],
+   "dimensions_covered": [
+    "injury",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
    "strength": "short",
    "priority": "high",
    "researched": false,
-   "items": []
+   "items": [
+    {
+     "title": "MANCHESTER UNITED 5 TOWN 2",
+     "url": "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+     "source": "Ipswich Town",
+     "published": "2026-08-30T18:59:44+00:00",
+     "matched_on": "diop",
+     "kind": "team news",
+     "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
+    },
+    {
+     "title": "Man United vs. Ipswich Town: Red Devils could receive 'double boost' for vital Old Trafford battle",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/man-united-could-receive-double-boost-for-vital-old-trafford-battle-with-ipswich_603643.html",
+     "source": "Sports Mole",
+     "published": "2026-08-24T15:36:00+01:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Manchester United could allegedly receive a double injury boost for Sunday's Premier League clash with newly-promoted Ipswich Town at Old Trafford."
+    }
+   ]
   }
  }
 }
