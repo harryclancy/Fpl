@@ -1,0 +1,75 @@
+name: Collect research
+
+# Stage A of the research pipeline: go and get current football news.
+#
+# It runs HERE rather than in a Claude Code session because a Claude Code
+# session cannot reach these sites — its egress proxy answers 403 to
+# CONNECT for essentially every football domain. GitHub Actions has open
+# outbound internet and is free for public repositories, so this is the
+# one place the collection can honestly happen.
+
+on:
+  schedule:
+    # Four times a day. Team news moves in the 72 hours before a deadline,
+    # and this cadence catches press conferences without hammering anyone.
+    - cron: "20 5,11,17,23 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "probe (re-audit source discovery) or collect (fetch articles)"
+        type: choice
+        options: [collect, probe, both]
+        default: collect
+      limit:
+        description: "Optional cap on sources, for a quick test run"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Audit which sources can be read by a program
+        if: inputs.mode == 'probe' || inputs.mode == 'both'
+        run: |
+          python scripts/probe_sources.py ${{ inputs.limit && format('--limit {0}', inputs.limit) || '' }}
+
+      - name: Retrieve current articles
+        # Skipped on a probe-only run. `always()` is deliberately NOT used:
+        # collecting against a failed audit would just produce another
+        # empty corpus, which is the failure this whole pipeline replaces.
+        if: inputs.mode != 'probe'
+        run: |
+          python scripts/collect_research.py ${{ inputs.limit && format('--limit {0}', inputs.limit) || '' }}
+
+      - name: Commit what came back
+        # Runs even when the gates fail, so the evidence of a bad run is
+        # committed and diagnosable rather than discarded with the runner.
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain data/research data/sources)" ]; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research data/sources
+          git commit -m "Collect research: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
