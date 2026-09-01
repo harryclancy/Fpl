@@ -300,3 +300,57 @@ def test_an_unsourced_appearance_count_understates_rather_than_inflates():
                     f"{player['name']}: an estimated appearance count must be a full season, "
                     f"so the rate is a floor"
                 )
+
+
+# --- the refresh must not quietly downgrade the prior --------------------
+
+def test_the_history_refresh_refuses_to_write_a_prior_with_no_positions(monkeypatch, capsys):
+    """What actually happened: the scheduled refresh replaced a small
+    hand-seeded file with 227 players fetched from the API — and no
+    `position` on any of them. Player count went UP, so nothing looked
+    wrong, while the positional-balance guard stopped being able to
+    compute an answer at all. That guard is the one standing between this
+    model and the Gabriel bug.
+
+    A job that overwrites curated data has to prove the replacement is at
+    least as good first.
+    """
+    from scripts import fetch_history
+
+    # Names must differ after normalisation, which strips digits -- so
+    # "Player 1"/"Player 2" would collapse into one record.
+    names = [f"Nameless{chr(97 + i)}" for i in range(20)]
+    payload = {
+        "players": [
+            {"name": name, "team": "ARS", "seasons": [
+                {"season": "2025/26", "minutes": 3000, "goals": 10, "assists": 5,
+                 "clean_sheets": 10, "total_points": 150, "appearances": 34},
+            ]}
+            for name in names
+        ]
+    }
+    written = []
+    monkeypatch.setattr(fetch_history.Path, "write_text",
+                        lambda self, *a, **k: written.append(self))
+
+    report = history.coverage(history.parse(payload))
+    assert not report.balanced, "fixture must reproduce the broken shape"
+    assert report.per_position == {"?": len(names)}
+    assert not written, "nothing may be written when the guard trips"
+
+
+def test_a_payload_with_positions_passes_the_same_guard():
+    """The other half: the guard must accept good data, or the refresh can
+    never run at all."""
+    payload = {"players": [
+        {"name": f"{position}{chr(97 + i)}", "team": "ARS", "position": position, "seasons": [
+            {"season": "2025/26", "minutes": 3000, "goals": 8, "assists": 4,
+             "clean_sheets": 12, "total_points": 140, "appearances": 34},
+        ]}
+        for position in ("GKP", "DEF", "MID", "FWD")
+        for i in range(history.MIN_PLAYERS_PER_POSITION)
+    ]}
+
+    report = history.coverage(history.parse(payload))
+    assert report.balanced, report.warning
+    assert set(report.per_position) == {"GKP", "DEF", "MID", "FWD"}

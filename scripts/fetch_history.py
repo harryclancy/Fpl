@@ -30,6 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import pandas as pd
 
 from fpl_assistant import api
+from fpl_assistant.analysis import history
 from fpl_assistant.analysis.history import HISTORY_DIR
 from fpl_assistant.models import players_df, teams_df
 
@@ -111,6 +112,14 @@ def main() -> int:
                     f"{row.get('first_name', '')} {row.get('second_name', '')}".strip()
                 ],
                 "team": str(row.get("team_short_name", "")),
+                # Not decoration. analysis/history.py reports how evenly the
+                # prior covers the pitch, and that check exists because of a
+                # real bug: a prior that held only attackers made the model
+                # recommend selling Gabriel. Omitting this field does not
+                # produce a missing warning, it produces a warning that
+                # cannot be computed -- every player lands in an unknown
+                # bucket and the guard silently stops guarding.
+                "position": str(row.get("position", "")),
                 "seasons": seasons,
             }
         )
@@ -131,9 +140,35 @@ def main() -> int:
         "generated": pd.Timestamp.utcnow().strftime("%Y-%m-%d"),
         "players": entries,
     }
+    # Check the replacement before overwriting, not after. The first
+    # version of this script wrote 227 players with no `position` on any of
+    # them, replacing a smaller hand-seeded file that had them. Coverage
+    # went UP and the prior still looked fine from the outside -- the only
+    # symptom was that the positional-balance guard, which exists because a
+    # lopsided prior once had the model recommending Gabriel be sold, could
+    # no longer compute an answer. Every player sat in an unknown bucket.
+    #
+    # A scheduled job that overwrites curated data must prove the
+    # replacement is at least as good, or refuse and leave what is there.
+    fresh = history.parse(payload)
+    report = history.coverage(fresh)
+    if not report.balanced:
+        print(f"::error title=History refresh would break the prior::{report.warning} "
+              f"Refusing to overwrite the existing file with {len(entries)} records "
+              f"that cover {report.per_position}.")
+        return 1
+
+    current = history.coverage()
+    if current.total and report.total < current.total:
+        print(f"::error title=History refresh would lose coverage::The API returned "
+              f"{report.total} usable players; the committed file already has "
+              f"{current.total}. Refusing to overwrite it.")
+        return 1
+
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
     (HISTORY_DIR / "seasons.json").write_text(json.dumps(payload, indent=1, ensure_ascii=False))
-    print(f"Wrote {len(entries)} players' history ({failures} fetches failed).")
+    print(f"Wrote {len(entries)} players' history ({failures} fetches failed). "
+          f"Coverage: {report.per_position}.")
     return 0
 
 

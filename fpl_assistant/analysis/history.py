@@ -210,7 +210,16 @@ def load(season_file: str = "seasons.json") -> dict[str, PlayerHistory]:
         payload = json.loads(path.read_text())
     except (json.JSONDecodeError, OSError):
         return {}
+    return parse(payload)
 
+
+def parse(payload: dict) -> dict[str, PlayerHistory]:
+    """Same as `load`, on a payload that is not on disk yet.
+
+    Split out so the refresh script can check what it is about to write
+    BEFORE it overwrites the committed file. A guard that only runs against
+    what already landed reports the damage; this one can prevent it.
+    """
     out: dict[str, PlayerHistory] = {}
     for entry in payload.get("players", []):
         try:
