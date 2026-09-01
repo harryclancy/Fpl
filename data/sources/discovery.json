@@ -1,0 +1,5568 @@
+{
+ "note": "How each verified source can be READ BY A PROGRAM, established by probing it rather than by assumption. `discovery_method` is what the collector uses; `grade` records whether new articles can be found at all. Only grades A and B may be counted as sources researched — a homepage URL alone is a bookmark, not a research capability.",
+ "grades": {
+  "A": "Fully automatable — working feed",
+  "B": "Partially automatable — sitemap or category listing",
+  "C": "Direct page only — cannot discover new articles",
+  "D": "Unusable — blocked, dead or unparseable"
+ },
+ "probed": "2026-09-01T20:34:03Z",
+ "counts": {
+  "A": 30,
+  "B": 33,
+  "C": 21,
+  "D": 16,
+  "usable": 63,
+  "total": 100
+ },
+ "sources": [
+  {
+   "name": "Fantasy Football Scout",
+   "domain": "fantasyfootballscout.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fantasyfootballscout.co.uk/feed/",
+   "items": 12,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fantasyfootballscout.co.uk/feed/",
+     "result": "ok, 12 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Team news blogs, Scout Picks, set-piece and penalty taker lists, buy/keep/sell, predicted line-ups"
+  },
+  {
+   "name": "Premier League Official Fantasy",
+   "domain": "premierleague.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://premierleague.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierleague.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "The Scout's must-haves, official price and ownership news, gameweek lessons, rule changes"
+  },
+  {
+   "name": "Fantasy Football Hub",
+   "domain": "fantasyfootballhub.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fantasyfootballhub.co.uk/feed.xml",
+   "items": 15,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fantasyfootballhub.co.uk/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballhub.co.uk/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballhub.co.uk/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballhub.co.uk/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballhub.co.uk/feed.xml",
+     "result": "ok, 15 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Ultimate gameweek guide, buy/hold/sell, predicted line-ups"
+  },
+  {
+   "name": "Fantasy Football Fix",
+   "domain": "fantasyfootballfix.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fantasyfootballfix.com/sitemap.xml",
+   "items": 3264,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fantasyfootballfix.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fantasyfootballfix.com/sitemap.xml",
+     "result": "ok, 3264 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Captaincy rankings, transfer tips, AI team reveal, gameweek guides"
+  },
+  {
+   "name": "All About FPL",
+   "domain": "allaboutfpl.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://allaboutfpl.com/feed/",
+   "items": 10,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://allaboutfpl.com/feed/",
+     "result": "ok, 10 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Gameweek ultimate guide, transfer tips (buy/avoid/sell/hold), team reveals, price-point rankings"
+  },
+  {
+   "name": "Never Manage Alone",
+   "domain": "nevermanagealone.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://nevermanagealone.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://nevermanagealone.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://nevermanagealone.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Captain picks, differentials, transfer stick-or-twist, £100m Scout squad, predicted line-ups"
+  },
+  {
+   "name": "RotoWire Soccer",
+   "domain": "rotowire.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://rotowire.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://rotowire.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://rotowire.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/sitemap.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://rotowire.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://rotowire.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Gameweek rankings, captain picks, low-owned differentials, match previews and predicted line-ups"
+  },
+  {
+   "name": "FPL Form",
+   "domain": "fplform.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://fplform.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplform.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Transfer suggestions, predicted points, optimiser output"
+  },
+  {
+   "name": "FPL Dashboard (fpl.page)",
+   "domain": "fpl.page",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fpl.page/sitemap.xml",
+   "items": 32,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fpl.page/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.page/sitemap.xml",
+     "result": "ok, 32 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Expert transfer and captaincy consensus, chip strategy guides"
+  },
+  {
+   "name": "Fantasy Football 247",
+   "domain": "fantasyfootball247.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fantasyfootball247.co.uk/feed/",
+   "items": 12,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fantasyfootball247.co.uk/feed/",
+     "result": "ok, 12 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Captain picks, team news posts, gameweek previews"
+  },
+  {
+   "name": "FPL Review",
+   "domain": "fplreview.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplreview.com/sitemap.xml",
+   "items": 7,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplreview.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplreview.com/sitemap.xml",
+     "result": "ok, 7 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Expected-value projections, planner and solver methodology"
+  },
+  {
+   "name": "FPL Optimized",
+   "domain": "fploptimized.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://fploptimized.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploptimized.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Expected points calculator, scenario modelling"
+  },
+  {
+   "name": "FPL360",
+   "domain": "fpl360.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fpl360.com/post-sitemap.xml",
+   "items": 25,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fpl360.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fpl360.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fpl360.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fpl360.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl360.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl360.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl360.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl360.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl360.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fpl360.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fpl360.com/sitemap.xml",
+     "result": "ok, 0 pages, 3 nested"
+    },
+    {
+     "url": "https://fpl360.com/post-sitemap.xml",
+     "result": "ok, 25 pages"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Transfer strategy, chip strategy, season reviews and lessons"
+  },
+  {
+   "name": "OneFPL",
+   "domain": "onefpl.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://onefpl.com/sitemap.xml",
+   "items": 1110,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://onefpl.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://onefpl.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onefpl.com/sitemap.xml",
+     "result": "ok, 1110 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Season tips, pre-season club lessons, chip strategy, captaincy calls"
+  },
+  {
+   "name": "Fantasy Football Geek",
+   "domain": "fantasyfootballgeek.co.uk",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.fantasyfootballgeek.co.uk/post-sitemap1.xml",
+   "items": 1001,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fantasyfootballgeek.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fantasyfootballgeek.co.uk/sitemap.xml",
+     "result": "ok, 0 pages, 13 nested"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/post-sitemap1.xml",
+     "result": "ok, 1001 pages"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Club-by-club pre-season analysis, strategy reviews, contributor drafts"
+  },
+  {
+   "name": "FPL Captain",
+   "domain": "fplcaptain.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplcaptain.com/sitemap.xml",
+   "items": 174,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplcaptain.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcaptain.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcaptain.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcaptain.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcaptain.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcaptain.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcaptain.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcaptain.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcaptain.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcaptain.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcaptain.com/sitemap.xml",
+     "result": "ok, 174 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Captain picks, set-piece takers page, live points, price changes"
+  },
+  {
+   "name": "FPL Central",
+   "domain": "fplcentral.co.uk",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplcentral.co.uk/sitemap.xml",
+   "items": 23,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplcentral.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplcentral.co.uk/sitemap.xml",
+     "result": "ok, 23 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "AI best team, expected points per player, captain picks, price-change predictions"
+  },
+  {
+   "name": "LazyFPL",
+   "domain": "lazyfpl.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (TLS failure: SSLError).",
+   "attempts": [
+    {
+     "url": "https://lazyfpl.com/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/feed",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/rss",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/feed.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/atom.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/feeds/all.rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/blog/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/news/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/sitemap_index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/news-sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/post-sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com/sitemap-news.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://lazyfpl.com",
+     "result": "TLS failure: SSLError"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Gameweek cheat sheets, differential and template analysis by rank tier"
+  },
+  {
+   "name": "FPL Pilot",
+   "domain": "fplpilot.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.fplpilot.com/sitemap-0.xml",
+   "items": 1430,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplpilot.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpilot.com/sitemap.xml",
+     "result": "ok, 0 pages, 1 nested"
+    },
+    {
+     "url": "https://www.fplpilot.com/sitemap-0.xml",
+     "result": "ok, 1430 pages"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Season data reviews, points-per-million and differential efficiency analysis"
+  },
+  {
+   "name": "Chase Your Sport — Fantasy",
+   "domain": "chaseyoursport.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (TLS failure: SSLError).",
+   "attempts": [
+    {
+     "url": "https://chaseyoursport.com/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/feed",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/rss",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/feed.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/atom.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/feeds/all.rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/blog/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/news/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/sitemap_index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/news-sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/post-sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com/sitemap-news.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://chaseyoursport.com",
+     "result": "TLS failure: SSLError"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Player deep-dives, rule-change explainers, position scoring tables, team of the week"
+  },
+  {
+   "name": "FISO",
+   "domain": "fiso.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fiso.co.uk/feed/",
+   "items": 10,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fiso.co.uk/feed/",
+     "result": "ok, 10 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Season reviews, highest scorers per club, long-running community analysis"
+  },
+  {
+   "name": "Statz.ai FPL",
+   "domain": "statz.ai",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://statz.ai/blog/feed/",
+   "items": 50,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://statz.ai/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statz.ai/blog/feed/",
+     "result": "ok, 50 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Head-to-head player comparison, goalkeeper and position value analysis"
+  },
+  {
+   "name": "Full90 FPL",
+   "domain": "full90fpl.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://full90fpl.com/feed/",
+   "items": 10,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://full90fpl.com/feed/",
+     "result": "ok, 10 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Gameweek previews, transfer tips, captaincy corner, fixture focus"
+  },
+  {
+   "name": "FPL Team",
+   "domain": "fpl.team",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://fpl.team/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Predicted line-ups for all 20 clubs, transfer planner, rotation-risk flags"
+  },
+  {
+   "name": "Premier Fantasy Tools",
+   "domain": "premierfantasytools.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://premierfantasytools.com/feed/",
+   "items": 10,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://premierfantasytools.com/feed/",
+     "result": "ok, 10 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Expected points across all 38 gameweeks, team analyser, start/bench calls"
+  },
+  {
+   "name": "FPL Copilot",
+   "domain": "fplcopilot.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplcopilot.com/sitemap.xml",
+   "items": 54,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplcopilot.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplcopilot.com/sitemap.xml",
+     "result": "ok, 54 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Expected points table, squad rating, captain optimality checks"
+  },
+  {
+   "name": "Draft Fantasy",
+   "domain": "draftfantasy.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://draftfantasy.com/sitemap.xml",
+   "items": 387,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://draftfantasy.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfantasy.com/sitemap.xml",
+     "result": "ok, 387 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Tiered rankings, cheat sheets, free FPL tools"
+  },
+  {
+   "name": "Onside Arena",
+   "domain": "onsidearena.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://onsidearena.com/sitemaps/predictions.xml",
+   "items": 51,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://onsidearena.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://onsidearena.com/sitemap.xml",
+     "result": "ok, 0 pages, 7 nested"
+    },
+    {
+     "url": "https://onsidearena.com/sitemaps/predictions.xml",
+     "result": "ok, 51 pages"
+    }
+   ],
+   "tier": 1,
+   "used_for": "AI predictions, captain picks, FDR heatmaps, chip strategy, squad optimiser"
+  },
+  {
+   "name": "LiveFPL",
+   "domain": "livefpl.net",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://livefpl.net/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://livefpl.net",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Live rank, effective ownership by rank tier, price-change predictor, template tracking"
+  },
+  {
+   "name": "Fantasy Football Community",
+   "domain": "fantasyfootballcommunity.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://fantasyfootballcommunity.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/sitemap_index.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/post-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com/sitemap-news.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fantasyfootballcommunity.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Best wildcard drafts, gameweek differentials, chip strategy"
+  },
+  {
+   "name": "Fantasy Football Pundit",
+   "domain": "fantasyfootballpundit.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fantasyfootballpundit.com/feed/",
+   "items": 15,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fantasyfootballpundit.com/feed/",
+     "result": "ok, 15 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Chip strategy guides, gameweek transfer tips with odds"
+  },
+  {
+   "name": "FPL Oracle",
+   "domain": "fploracle.team",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fploracle.team/sitemap.xml",
+   "items": 662,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fploracle.team/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fploracle.team/sitemap.xml",
+     "result": "ok, 662 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Captaincy decision framework, rule-change explainers, early fixture analysis"
+  },
+  {
+   "name": "DraftKings Network Soccer",
+   "domain": "dknetwork.draftkings.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://dknetwork.draftkings.com/feed/",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://dknetwork.draftkings.com/feed/",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Captain picks ranked with reasoning, gameweek rankings, DFS targets"
+  },
+  {
+   "name": "FPL Gameweek",
+   "domain": "fplgameweek.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://fplgameweek.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/feed",
+     "result": "HTTP 502"
+    },
+    {
+     "url": "https://fplgameweek.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplgameweek.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Live manager dashboard, gameweek tracking"
+  },
+  {
+   "name": "What The FPL",
+   "domain": "whatthef.pl",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://whatthef.pl/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://whatthef.pl/sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://whatthef.pl/sitemap_index.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://whatthef.pl/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://whatthef.pl/post-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://whatthef.pl/sitemap-news.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://whatthef.pl",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Price-change predictions, player projections"
+  },
+  {
+   "name": "FPL Pulse",
+   "domain": "fplpulse.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplpulse.com/sitemap.xml",
+   "items": 291,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplpulse.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplpulse.com/sitemap.xml",
+     "result": "ok, 291 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Player stats pages, gameweek reviews, tool round-ups, terminology"
+  },
+  {
+   "name": "Hive League",
+   "domain": "hiveleague.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://hiveleague.com/sitemap.xml",
+   "items": 56,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://hiveleague.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://hiveleague.com/sitemap.xml",
+     "result": "ok, 56 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Crowd-sourced predicted line-ups"
+  },
+  {
+   "name": "FPL Brief",
+   "domain": "fplbrief.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://fplbrief.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fplbrief.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Gameweek preview threads and summaries"
+  },
+  {
+   "name": "The Fantasy Tool",
+   "domain": "thefantasytool.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://thefantasytool.com/sitemap.xml",
+   "items": 2191,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://thefantasytool.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://thefantasytool.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://thefantasytool.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://thefantasytool.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thefantasytool.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thefantasytool.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thefantasytool.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thefantasytool.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thefantasytool.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://thefantasytool.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://thefantasytool.com/sitemap.xml",
+     "result": "ok, 2191 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Team planner, projected points per player per gameweek, optimal squad solver"
+  },
+  {
+   "name": "FPL Strat",
+   "domain": "fplstrat.app",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplstrat.app/sitemap.xml",
+   "items": 23,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplstrat.app/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstrat.app/sitemap.xml",
+     "result": "ok, 23 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Transfer planner, xG-based fixture ticker, player statistics overview"
+  },
+  {
+   "name": "Draft FC",
+   "domain": "draftfc.co.uk",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://draftfc.co.uk/sitemap.xml",
+   "items": 54,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://draftfc.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://draftfc.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://draftfc.co.uk/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://draftfc.co.uk/sitemap.xml",
+     "result": "ok, 54 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Weekly predicted line-ups, waiver tips, draft analytics"
+  },
+  {
+   "name": "The Draft Society",
+   "domain": "thedraftsociety.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.thedraftsociety.com/pages-sitemap.xml",
+   "items": 31,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://thedraftsociety.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thedraftsociety.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thedraftsociety.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thedraftsociety.com/rss.xml",
+     "result": "HTTP 400"
+    },
+    {
+     "url": "https://thedraftsociety.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thedraftsociety.com/atom.xml",
+     "result": "HTTP 400"
+    },
+    {
+     "url": "https://thedraftsociety.com/index.xml",
+     "result": "HTTP 400"
+    },
+    {
+     "url": "https://thedraftsociety.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thedraftsociety.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thedraftsociety.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://thedraftsociety.com/sitemap.xml",
+     "result": "ok, 0 pages, 1 nested"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/pages-sitemap.xml",
+     "result": "ok, 31 pages"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Draft rankings, draft kit, team previews"
+  },
+  {
+   "name": "FPLai",
+   "domain": "fplai.app",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fplai.app/feed.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplai.app/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplai.app/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplai.app/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplai.app/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplai.app/feed.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "AI transfer advice, captain picks, per-player price and ownership pages"
+  },
+  {
+   "name": "FPL Ranker",
+   "domain": "fplranker.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplranker.com/sitemap.xml",
+   "items": 225,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplranker.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplranker.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplranker.com/sitemap.xml",
+     "result": "ok, 225 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Self-learning points projections, mini-league analytics"
+  },
+  {
+   "name": "FPL Rotation Planner",
+   "domain": "fplrotationplanner.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplrotationplanner.com/sitemap.xml",
+   "items": 8,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplrotationplanner.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplrotationplanner.com/sitemap.xml",
+     "result": "ok, 8 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Fixture swing tool, bookmaker-derived goal/assist/clean-sheet probabilities"
+  },
+  {
+   "name": "FPLXI",
+   "domain": "fplxi.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplxi.com/sitemap.xml",
+   "items": 677,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplxi.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplxi.com/sitemap.xml",
+     "result": "ok, 677 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Per-player five-gameweek predictions, transfer recommendations from your own squad"
+  },
+  {
+   "name": "FPL Stats",
+   "domain": "fplstats.app",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://fplstats.app/sitemap.xml",
+   "items": 1,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fplstats.app/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fplstats.app/sitemap.xml",
+     "result": "ok, 1 pages, 0 nested"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Customisable player metrics, value analysis, form comparison"
+  },
+  {
+   "name": "FPL Bot",
+   "domain": "fplbot.app",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://fplbot.app/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fplbot.app",
+     "result": "ok"
+    }
+   ],
+   "tier": 1,
+   "used_for": "FPL search and lookup"
+  },
+  {
+   "name": "Fantasy Football Reports",
+   "domain": "fantasyfootballreports.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fantasyfootballreports.com/feed/",
+   "items": 15,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fantasyfootballreports.com/feed/",
+     "result": "ok, 15 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Position watchlists with ratings, gameweek tips, clean-sheet probability tables"
+  },
+  {
+   "name": "101 Great Goals — Fantasy",
+   "domain": "101greatgoals.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://101greatgoals.com/feed/",
+   "items": 16,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://101greatgoals.com/feed/",
+     "result": "ok, 16 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Weekly five-players-to-buy and players-to-avoid pieces, injury-doubt round-ups"
+  },
+  {
+   "name": "Sportskeeda FPL",
+   "domain": "sportskeeda.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://sportskeeda.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sportskeeda.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Gameweek tips, price changes, squad guidance"
+  },
+  {
+   "name": "Sports Illustrated FPL",
+   "domain": "si.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://si.com/feed/",
+   "items": 88,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://si.com/feed/",
+     "result": "ok, 88 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Gameweek squads, team news round-ups, deadline reminders"
+  },
+  {
+   "name": "FourFourTwo FPL",
+   "domain": "fourfourtwo.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fourfourtwo.com/rss",
+   "items": 50,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fourfourtwo.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fourfourtwo.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fourfourtwo.com/rss",
+     "result": "ok, 50 entries"
+    }
+   ],
+   "tier": 1,
+   "used_for": "FPL news and features"
+  },
+  {
+   "name": "NBC Sports Rotoworld PL",
+   "domain": "nbcsports.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.nbcsports.com/sitemap-200309.xml",
+   "items": 214,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://nbcsports.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nbcsports.com/sitemap.xml",
+     "result": "ok, 0 pages, 275 nested"
+    },
+    {
+     "url": "https://www.nbcsports.com/sitemap-200309.xml",
+     "result": "ok, 214 pages"
+    }
+   ],
+   "tier": 1,
+   "used_for": "Fantasy Premier League news, predictions, player notes"
+  },
+  {
+   "name": "Arsenal",
+   "domain": "arsenal.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.arsenal.com/sitemaps/pages/sitemap.xml",
+   "items": 229,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://arsenal.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://arsenal.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://arsenal.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://arsenal.com/sitemap.xml",
+     "result": "ok, 0 pages, 5 nested"
+    },
+    {
+     "url": "https://www.arsenal.com/sitemaps/articles/sitemap.xml",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://www.arsenal.com/sitemaps/fixtures/sitemap.xml",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://www.arsenal.com/sitemaps/pages/sitemap.xml",
+     "result": "ok, 229 pages"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Arteta press conferences, injury and availability updates, club FPL focus pieces"
+  },
+  {
+   "name": "Aston Villa",
+   "domain": "avfc.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://avfc.co.uk/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://avfc.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://avfc.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://avfc.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://avfc.co.uk/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Pre-match FPL previews, manager press conferences, injury news"
+  },
+  {
+   "name": "AFC Bournemouth",
+   "domain": "afcb.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://afcb.co.uk/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://afcb.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://afcb.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://afcb.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://afcb.co.uk/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Injury news, squad availability, pre-match briefings"
+  },
+  {
+   "name": "Brentford",
+   "domain": "brentfordfc.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://brentfordfc.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brentfordfc.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Team news, debutants, rotation plans, match reports"
+  },
+  {
+   "name": "Brighton & Hove Albion",
+   "domain": "brightonandhovealbion.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://brightonandhovealbion.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://brightonandhovealbion.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Hürzeler interviews, Albion Analytics season previews, transfers and injuries"
+  },
+  {
+   "name": "Chelsea",
+   "domain": "chelseafc.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://chelseafc.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://chelseafc.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Head coach team news ahead of each fixture, injury updates, official previews"
+  },
+  {
+   "name": "Coventry City",
+   "domain": "ccfc.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://ccfc.co.uk/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://ccfc.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://ccfc.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://ccfc.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://ccfc.co.uk/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Squad news, signings, club-published FPL price guides"
+  },
+  {
+   "name": "Crystal Palace",
+   "domain": "cpfc.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://cpfc.co.uk/rss.xml",
+   "items": 200,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://cpfc.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://cpfc.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://cpfc.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://cpfc.co.uk/rss.xml",
+     "result": "ok, 200 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Sage press conferences, named XIs, injury updates"
+  },
+  {
+   "name": "Everton",
+   "domain": "evertonfc.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://evertonfc.com/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://evertonfc.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://evertonfc.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://evertonfc.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://evertonfc.com/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Manager press conferences (live blog and on-demand), team news"
+  },
+  {
+   "name": "Fulham",
+   "domain": "fulhamfc.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://fulhamfc.com/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://fulhamfc.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fulhamfc.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fulhamfc.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fulhamfc.com/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Team news posts, squad numbers, pre-match press conferences"
+  },
+  {
+   "name": "Hull City",
+   "domain": "wearehullcity.co.uk",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://wearehullcity.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/sitemap_index.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/post-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://wearehullcity.co.uk/sitemap-news.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://wearehullcity.co.uk",
+     "result": "ok"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Matchday guides, team news, match reports"
+  },
+  {
+   "name": "Ipswich Town",
+   "domain": "itfc.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://itfc.co.uk/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://itfc.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://itfc.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://itfc.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://itfc.co.uk/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Team news per fixture, matchday guides, contract and squad news"
+  },
+  {
+   "name": "Leeds United",
+   "domain": "leedsunited.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://leedsunited.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://leedsunited.com/sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://leedsunited.com/sitemap_index.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://leedsunited.com/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://leedsunited.com/post-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://leedsunited.com/sitemap-news.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://leedsunited.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Manager fitness updates, injury detail and expected return timelines"
+  },
+  {
+   "name": "Liverpool",
+   "domain": "liverpoolfc.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.liverpoolfc.com/sitemap.xml?page=1",
+   "items": 250,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://liverpoolfc.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://liverpoolfc.com/sitemap.xml",
+     "result": "ok, 0 pages, 333 nested"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/sitemap.xml?page=1",
+     "result": "ok, 250 pages"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Club FPL previews (five players to watch), set-piece and penalty detail, injury news"
+  },
+  {
+   "name": "Manchester City",
+   "domain": "mancity.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://mancity.com/sitemap.xml",
+   "items": 1941,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://mancity.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://mancity.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://mancity.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://mancity.com/sitemap.xml",
+     "result": "ok, 1941 pages, 0 nested"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Club-published FPL Scout Report each gameweek, team news, kick-off info"
+  },
+  {
+   "name": "Manchester United",
+   "domain": "manutd.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (ConnectionError).",
+   "attempts": [
+    {
+     "url": "https://manutd.com/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/feed",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/rss",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/feed.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/atom.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/index.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/feeds/all.rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/blog/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/news/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/sitemap.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/sitemap_index.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/news-sitemap.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/post-sitemap.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com/sitemap-news.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://manutd.com",
+     "result": "ConnectionError"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Team news, manager quotes, injury updates"
+  },
+  {
+   "name": "Newcastle United",
+   "domain": "newcastleunited.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.newcastleunited.com/sitemaps/latest-news-sitemap.xml",
+   "items": 8963,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://newcastleunited.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://newcastleunited.com/sitemap.xml",
+     "result": "ok, 0 pages, 34 nested"
+    },
+    {
+     "url": "https://www.newcastleunited.com/sitemaps/latest-news-sitemap.xml",
+     "result": "ok, 8963 pages"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Manager team-news updates with named injuries and return timelines"
+  },
+  {
+   "name": "Nottingham Forest",
+   "domain": "nottinghamforest.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://nottinghamforest.co.uk/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://nottinghamforest.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://nottinghamforest.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://nottinghamforest.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://nottinghamforest.co.uk/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Team news, manager updates, match previews"
+  },
+  {
+   "name": "Sunderland",
+   "domain": "safc.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://safc.com/rss.xml",
+   "items": 20,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://safc.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://safc.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://safc.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://safc.com/rss.xml",
+     "result": "ok, 20 entries"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Manager injury updates with named players and recovery windows"
+  },
+  {
+   "name": "Tottenham Hotspur",
+   "domain": "tottenhamhotspur.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 429).",
+   "attempts": [
+    {
+     "url": "https://tottenhamhotspur.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://tottenhamhotspur.com/sitemap-news.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://tottenhamhotspur.com",
+     "result": "HTTP 429"
+    }
+   ],
+   "tier": 2,
+   "used_for": "Club FPL previews, team news, injury updates"
+  },
+  {
+   "name": "Understat",
+   "domain": "understat.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://understat.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://understat.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Player and team xG, xA, shot data, expected points table"
+  },
+  {
+   "name": "FBref",
+   "domain": "fbref.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://fbref.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://fbref.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Full player stat tables: shooting, passing, defensive actions, per-90 rates"
+  },
+  {
+   "name": "FootyStats",
+   "domain": "footystats.org",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://footystats.org/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Team xG/xGA per match, shots on target, over/under and clean-sheet trends"
+  },
+  {
+   "name": "FotMob",
+   "domain": "fotmob.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://fotmob.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fotmob.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fotmob.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://fotmob.com/sitemap.xml",
+     "result": "ok, 0 pages, 32 nested"
+    },
+    {
+     "url": "https://www.fotmob.com/sitemap/en.xml",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://www.fotmob.com/sitemap/en-GB.xml",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://www.fotmob.com/sitemap/ar.xml",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://fotmob.com/sitemap_index.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fotmob.com/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fotmob.com/post-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fotmob.com/sitemap-news.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fotmob.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Player ratings, top scorers and assisters, predicted line-ups, per-match stats"
+  },
+  {
+   "name": "Sofascore",
+   "domain": "sofascore.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://sofascore.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://sofascore.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://sofascore.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://sofascore.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://sofascore.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://sofascore.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Live stats, player ratings, heatmaps, expected line-ups"
+  },
+  {
+   "name": "WhoScored",
+   "domain": "whoscored.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://whoscored.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://whoscored.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Predicted line-ups and team news articles, detailed statistical previews"
+  },
+  {
+   "name": "Opta Analyst",
+   "domain": "theanalyst.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://theanalyst.com/feed/",
+   "items": 70,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://theanalyst.com/feed/",
+     "result": "ok, 70 entries"
+    }
+   ],
+   "tier": 3,
+   "used_for": "xG methodology, expected points tables, head-to-head records, supercomputer projections"
+  },
+  {
+   "name": "StatMuse Football",
+   "domain": "statmuse.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://statmuse.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://statmuse.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Direct queries on player records against specific opponents and career splits"
+  },
+  {
+   "name": "Squawka",
+   "domain": "squawka.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://squawka.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://squawka.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Season stat leaders, per-gameweek stat spotlights"
+  },
+  {
+   "name": "WorldFootball",
+   "domain": "worldfootball.net",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://worldfootball.net/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://worldfootball.net",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Fixture lists, results archive, tables by matchday"
+  },
+  {
+   "name": "Soccerway",
+   "domain": "soccerway.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.soccerway.com/sitemap/fsnews-sitemap-news.xml",
+   "items": 100,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://soccerway.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://soccerway.com/sitemap.xml",
+     "result": "ok, 0 pages, 6 nested"
+    },
+    {
+     "url": "https://www.soccerway.com/sitemap/fsnews-sitemap-news.xml",
+     "result": "ok, 100 pages"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Line-ups, goal scorers, cards, substitutions, possession and xG per match"
+  },
+  {
+   "name": "Flashscore",
+   "domain": "flashscore.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.flashscore.com/sitemap/fsnews-sitemap-news.xml",
+   "items": 137,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://flashscore.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://flashscore.com/sitemap.xml",
+     "result": "ok, 0 pages, 34 nested"
+    },
+    {
+     "url": "https://www.flashscore.com/sitemap/fsnews-sitemap-news.xml",
+     "result": "ok, 137 pages"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Live scores, results archive, fixtures and match detail"
+  },
+  {
+   "name": "xG Stat",
+   "domain": "xgstat.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 429).",
+   "attempts": [
+    {
+     "url": "https://xgstat.com/feed/",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/feed",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/rss",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/rss.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/feed.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/atom.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/index.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/feeds/all.rss.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/blog/feed/",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/news/feed/",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/sitemap.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/sitemap_index.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/news-sitemap.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/post-sitemap.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com/sitemap-news.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://xgstat.com",
+     "result": "HTTP 429"
+    }
+   ],
+   "tier": 3,
+   "used_for": "xG tables, shot maps, form analysis, real-standings comparison"
+  },
+  {
+   "name": "Premier Injuries",
+   "domain": "premierinjuries.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.premierinjuries.com/post-sitemap.xml",
+   "items": 84,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://premierinjuries.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://premierinjuries.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://premierinjuries.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://premierinjuries.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://premierinjuries.com/sitemap_index.xml",
+     "result": "ok, 0 pages, 6 nested"
+    },
+    {
+     "url": "https://www.premierinjuries.com/post-sitemap.xml",
+     "result": "ok, 84 pages"
+    }
+   ],
+   "tier": 3,
+   "used_for": "The injury and suspension table by club, with expected return dates"
+  },
+  {
+   "name": "PhysioRoom",
+   "domain": "physioroom.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://physioroom.com/feeds/all.rss.xml",
+   "items": 10,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://physioroom.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://physioroom.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://physioroom.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://physioroom.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://physioroom.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://physioroom.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://physioroom.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://physioroom.com/feeds/all.rss.xml",
+     "result": "ok, 10 entries"
+    }
+   ],
+   "tier": 3,
+   "used_for": "Injury tables by club, injury type and frequency analysis"
+  },
+  {
+   "name": "Sports Mole",
+   "domain": "sportsmole.co.uk",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://sportsmole.co.uk/rss.xml",
+   "items": 120,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://sportsmole.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://sportsmole.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://sportsmole.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://sportsmole.co.uk/rss.xml",
+     "result": "ok, 120 entries"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Match previews with team news and predicted XIs for every fixture"
+  },
+  {
+   "name": "Sky Sports Premier League",
+   "domain": "skysports.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://skysports.com/sitemap.xml",
+   "items": 371,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://skysports.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://skysports.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://skysports.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://skysports.com/sitemap.xml",
+     "result": "ok, 371 pages, 0 nested"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Team news, season previews, transfer and injury reporting"
+  },
+  {
+   "name": "ESPN Soccer",
+   "domain": "espn.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 202).",
+   "attempts": [
+    {
+     "url": "https://espn.com/feed/",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/feed",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/rss",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/rss.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/feed.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/atom.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/index.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/feeds/all.rss.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/blog/feed/",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/news/feed/",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/sitemap_index.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/news-sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/post-sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com/sitemap-news.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://espn.com",
+     "result": "HTTP 202"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Predicted starting XIs, weekend previews, team-by-team analysis"
+  },
+  {
+   "name": "GOAL",
+   "domain": "goal.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://goal.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://goal.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Match previews with H2H records, form and tactical context"
+  },
+  {
+   "name": "Football365",
+   "domain": "football365.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://football365.com/rss",
+   "items": 53,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://football365.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://football365.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://football365.com/rss",
+     "result": "ok, 53 entries"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Match previews with predicted line-ups and odds"
+  },
+  {
+   "name": "CBS Sports Soccer",
+   "domain": "cbssports.com",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://cbssports.com/news-sitemap.xml",
+   "items": 840,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://cbssports.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://cbssports.com/news-sitemap.xml",
+     "result": "ok, 840 pages, 0 nested"
+    }
+   ],
+   "tier": 4,
+   "used_for": "News, scores, standings and fantasy projections"
+  },
+  {
+   "name": "The Hard Tackle",
+   "domain": "thehardtackle.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://thehardtackle.com/feed/",
+   "items": 10,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://thehardtackle.com/feed/",
+     "result": "ok, 10 entries"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Match previews with formations and predicted XIs, FPL differential tips"
+  },
+  {
+   "name": "Tactical Football Analysis",
+   "domain": "tacticalfootballanalysis.com",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://tacticalfootballanalysis.com/feed/",
+   "items": 15,
+   "note": "",
+   "attempts": [
+    {
+     "url": "https://tacticalfootballanalysis.com/feed/",
+     "result": "ok, 15 entries"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Manager tactics breakdowns, team shape, pressing and build-up analysis"
+  },
+  {
+   "name": "Racing Post Football Tips",
+   "domain": "racingpost.com",
+   "grade": "C",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "attempts": [
+    {
+     "url": "https://racingpost.com/feed/",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/feed",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/rss",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/rss.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/feed.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/atom.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/index.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/feeds/all.rss.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/blog/feed/",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/news/feed/",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/sitemap.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/sitemap_index.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/news-sitemap.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/post-sitemap.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com/sitemap-news.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://racingpost.com",
+     "result": "ok"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Match predictions and betting angles including clean-sheet and scorer markets"
+  },
+  {
+   "name": "Oddschecker",
+   "domain": "oddschecker.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://oddschecker.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://oddschecker.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Market odds for goalscorers, clean sheets and results"
+  },
+  {
+   "name": "FreeTips",
+   "domain": "freetips.com",
+   "grade": "D",
+   "discovery_method": "",
+   "feed_url": "",
+   "items": 0,
+   "note": "Homepage unreachable (HTTP 403).",
+   "attempts": [
+    {
+     "url": "https://freetips.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://freetips.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://freetips.com",
+     "result": "HTTP 403"
+    }
+   ],
+   "tier": 4,
+   "used_for": "Per-fixture tips with anytime-scorer and clean-sheet reasoning"
+  }
+ ]
+}
