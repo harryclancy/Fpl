@@ -41,35 +41,55 @@ AMBIGUOUS_SURNAMES = {
     "diop", "sanchez", "santos", "silva", "gomes", "gomez", "pedro", "neto",
 }
 
+# Aliases must be DISTINCTIVE. The first live run credited Semenyo with
+# "Manchester City team news" that turned out to be a Coventry City mascot
+# package and a Sunderland ticket bulletin, because "city" was listed as an
+# alias for MCI and matches Coventry City, Hull City and the word itself.
+# The same trap sits in "united" (Newcastle, Leeds, West Ham), "albion"
+# (West Brom) and "blues" (Everton, Birmingham, Chelsea, Coventry's Sky
+# Blues). None of those may appear here on their own.
 CLUB_NAMES = {
-    "ARS": ["arsenal", "gunners"],
-    "AVL": ["aston villa", "villa"],
-    "BOU": ["bournemouth", "cherries"],
-    "BHA": ["brighton", "seagulls", "albion"],
-    "BRE": ["brentford", "bees"],
-    "CHE": ["chelsea", "blues"],
+    "ARS": ["arsenal", "gunners", "emirates stadium"],
+    "AVL": ["aston villa", "villa park"],
+    "BOU": ["bournemouth", "vitality stadium"],
+    "BHA": ["brighton", "seagulls", "amex"],
+    "BRE": ["brentford", "gtech"],
+    "CHE": ["chelsea", "stamford bridge"],
     "COV": ["coventry", "sky blues"],
-    "CRY": ["crystal palace", "palace", "eagles"],
-    "EVE": ["everton", "toffees"],
-    "FUL": ["fulham", "cottagers"],
-    "HUL": ["hull city", "hull", "tigers"],
-    "IPS": ["ipswich", "tractor boys"],
-    "LEE": ["leeds"],
-    "LIV": ["liverpool", "reds", "anfield"],
-    "MCI": ["manchester city", "man city", "city", "etihad"],
-    "MUN": ["manchester united", "man united", "man utd", "united", "old trafford"],
-    "NEW": ["newcastle", "magpies", "st james"],
-    "NFO": ["nottingham forest", "forest", "city ground"],
+    "CRY": ["crystal palace", "selhurst"],
+    "EVE": ["everton", "toffees", "goodison"],
+    "FUL": ["fulham", "craven cottage"],
+    "HUL": ["hull city", "tigers"],
+    "IPS": ["ipswich", "portman road"],
+    "LEE": ["leeds united", "elland road"],
+    "LIV": ["liverpool", "anfield"],
+    "MCI": ["manchester city", "man city", "etihad"],
+    "MUN": ["manchester united", "man united", "man utd", "old trafford"],
+    "NEW": ["newcastle united", "newcastle", "magpies"],
+    "NFO": ["nottingham forest", "city ground"],
     "SUN": ["sunderland", "black cats"],
     "TOT": ["tottenham", "spurs"],
 }
 
+# Club sites publish far more admin than football. A ticket bulletin is not
+# team news, however many times it says "available".
+CLUB_ADMIN_TERMS = (
+    "ticket", "mascot", "hospitality", "membership", "season card", "shop",
+    "kit launch", "merchandise", "podcast", "quiz", "competition winner",
+    "foundation", "charity", "matchday programme", "away travel", "sales",
+)
+
 # Words that make an article about team selection rather than about
 # anything else. Used to rank, never to exclude.
+# Deliberately phrases, not single words. "available", "returns" and
+# "squad" on their own matched ticket sales and academy news.
 TEAM_NEWS_TERMS = (
-    "team news", "predicted", "line-up", "lineup", "starting xi", "press conference",
-    "injury", "injuries", "doubt", "fitness", "suspended", "suspension", "ruled out",
-    "returns", "available", "squad", "selection", "rotation", "benched", "starts",
+    "team news", "predicted line", "predicted xi", "line up", "lineup", "line-up",
+    "starting xi", "press conference", "injury", "injuries", "injured", "fitness",
+    "ruled out", "sidelined", "suspended", "suspension", "doubt", "returns to training",
+    "back in training", "expected to start", "set to start", "selection", "rotation",
+    "will miss", "misses out", "out for", "recovery", "comeback", "match report",
+    "starts", "benched", "substitute",
 )
 TRANSFER_TERMS = ("transfer", "bid", "deal", "sign", "move", "medical", "loan", "fee")
 
@@ -117,6 +137,18 @@ def article_text(article: Article) -> str:
 def mentions_club(article: Article, club: str) -> bool:
     text = article_text(article)
     return any(_mentions(text, alias) for alias in CLUB_NAMES.get(club.upper(), []))
+
+
+def mentions_club_in_title(article: Article, club: str) -> bool:
+    """A stricter test: is the article ABOUT this club?
+
+    Club websites list their fixtures on every page, so "Liverpool" appears
+    in the body of an Aston Villa match report. Requiring the name in the
+    headline is a crude proxy for aboutness, and a great deal better than
+    the alternative, which was crediting a player with his rivals' news.
+    """
+    title = normalise(article.title)
+    return any(_mentions(title, alias) for alias in CLUB_NAMES.get(club.upper(), []))
 
 
 @dataclass
@@ -211,9 +243,17 @@ class PlayerEvidence:
         }
 
 
+def is_club_admin(article: Article) -> bool:
+    """Ticket sales, mascots, shop news — published by clubs, not football."""
+    text = article_text(article)
+    return any(term in text for term in CLUB_ADMIN_TERMS)
+
+
 def classify(article: Article) -> str:
     text = article_text(article)
-    if any(_mentions(text, term) for term in TEAM_NEWS_TERMS):
+    if is_club_admin(article):
+        return "general"
+    if any(term in text for term in TEAM_NEWS_TERMS):
         return "team news"
     if any(_mentions(text, term) for term in TRANSFER_TERMS):
         return "transfer"
@@ -257,9 +297,15 @@ def search(name: str, club: str, articles: list[Article], full_name: str = "",
         # still evidence about whether he plays. Ranked below a name match
         # and labelled as club-level so a write-up can say so.
         for article in articles:
-            if article.url in seen or not mentions_club(article, club):
+            if article.url in seen or not article.is_article:
                 continue
-            if not article.is_article or classify(article) != "team news":
+            # In the TITLE, not merely somewhere in the page. A club site's
+            # fixture list mentions half the league; that is not the article
+            # being about them. This is what let a Villa match report count
+            # as Liverpool team news.
+            if not mentions_club_in_title(article, club):
+                continue
+            if classify(article) != "team news":
                 continue
             seen.add(article.url)
             result.items.append(Evidence(article, f"{club} team news", "club team news"))

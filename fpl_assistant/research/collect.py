@@ -281,6 +281,15 @@ def fetch(url: str, session: requests.Session | None = None) -> FetchResult:
     except requests.exceptions.RequestException as exc:
         return FetchResult(url, False, error=f"{exc.__class__.__name__}")
 
+    if resp.status_code == 429:
+        # Rate-limited, not absent. Tottenham's site was graded unusable
+        # on a 429 the probe treated as a dead end.
+        time.sleep(3.0)
+        try:
+            resp = session.get(url, timeout=TIMEOUT_SECONDS, allow_redirects=True)
+        except requests.exceptions.RequestException as exc:
+            return FetchResult(url, False, error=f"{exc.__class__.__name__} after 429")
+
     if resp.status_code != 200:
         return FetchResult(url, False, status=resp.status_code)
 
@@ -411,6 +420,34 @@ def _title_from_url(url: str) -> str:
     return re.sub(r"[-_]+", " ", slug).strip().capitalize()
 
 
+def sitemaps_from_robots(base: str, session: requests.Session) -> list[str]:
+    """The canonical way to find a site's index, which the first pass missed.
+
+    robots.txt carries `Sitemap:` lines by standard. Nine of the twenty
+    official club sites were graded unusable because the probe guessed at
+    conventional paths and never simply asked. Guessing is the fallback;
+    this is the front door.
+    """
+    result = fetch(urljoin(base, "/robots.txt"), session)
+    if not result.ok:
+        return []
+    found = []
+    for line in result.text.splitlines():
+        if line.strip().lower().startswith("sitemap:"):
+            url = line.split(":", 1)[1].strip()
+            if url:
+                found.append(url)
+    # Prefer anything that looks like news over a full site index.
+    return sorted(found, key=lambda u: ("news" not in u.lower(), "post" not in u.lower()))
+
+
+def _hosts(domain: str) -> list[str]:
+    """Bare host and www variant. manutd.com refuses connections;
+    www.manutd.com serves fine, and the probe never tried it."""
+    bare = domain[4:] if domain.startswith("www.") else domain
+    return [f"https://{bare}", f"https://www.{bare}"]
+
+
 def probe(name: str, domain: str, session: requests.Session | None = None,
           feed_url: str = "") -> SourceReport:
     """Works out, by asking, how new articles can be discovered from a site.
@@ -421,10 +458,12 @@ def probe(name: str, domain: str, session: requests.Session | None = None,
     """
     session = session or _session()
     report = SourceReport(name=name, domain=domain)
-    base = f"https://{domain}"
+    hosts = _hosts(domain)
+    base = hosts[0]
 
     candidates = [feed_url] if feed_url else []
-    candidates += [urljoin(base, path) for path in FEED_PATHS]
+    for host in hosts:
+        candidates += [urljoin(host, path) for path in FEED_PATHS]
 
     for url in candidates:
         if not url:
@@ -441,8 +480,18 @@ def probe(name: str, domain: str, session: requests.Session | None = None,
             report.feed_url, report.items = url, len(entries)
             return report
 
-    for path in SITEMAP_PATHS:
-        url = urljoin(base, path)
+    sitemap_candidates: list[str] = []
+    for host in hosts:
+        sitemap_candidates += sitemaps_from_robots(host, session)
+    seen_hosts = set()
+    for host in hosts:
+        for path in SITEMAP_PATHS:
+            candidate = urljoin(host, path)
+            if candidate not in seen_hosts:
+                seen_hosts.add(candidate)
+                sitemap_candidates.append(candidate)
+
+    for url in sitemap_candidates:
         result = fetch(url, session)
         time.sleep(POLITE_DELAY_SECONDS)
         if not result.ok:
@@ -471,9 +520,13 @@ def probe(name: str, domain: str, session: requests.Session | None = None,
                     report.feed_url, report.items = child, len(child_pages)
                     return report
 
-    root = fetch(base, session)
-    time.sleep(POLITE_DELAY_SECONDS)
-    report.attempts.append((base, root.reason))
+    root = FetchResult(base, False, error="not attempted")
+    for host in hosts:
+        root = fetch(host, session)
+        time.sleep(POLITE_DELAY_SECONDS)
+        report.attempts.append((host, root.reason))
+        if root.ok:
+            break
     if root.ok:
         report.grade = GRADE_DIRECT
         report.note = "Homepage loads but no feed or sitemap was found — known URLs only."
