@@ -6,13 +6,13 @@
   "C": "Direct page only — cannot discover new articles",
   "D": "Unusable — blocked, dead or unparseable"
  },
- "probed": "2026-09-01T20:34:03Z",
+ "probed": "2026-09-01T21:24:50Z",
  "counts": {
-  "A": 30,
-  "B": 33,
-  "C": 21,
-  "D": 16,
-  "usable": 63,
+  "A": 32,
+  "B": 46,
+  "C": 10,
+  "D": 12,
+  "usable": 78,
   "total": 100
  },
  "sources": [
@@ -36,11 +36,11 @@
   {
    "name": "Premier League Official Fantasy",
    "domain": "premierleague.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.premierleague.com/en/sitemap/global.xml",
+   "items": 874,
+   "note": "",
    "attempts": [
     {
      "url": "https://premierleague.com/feed/",
@@ -83,28 +83,52 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierleague.com/sitemap.xml",
+     "url": "https://www.premierleague.com/feed/",
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierleague.com/sitemap_index.xml",
+     "url": "https://www.premierleague.com/feed",
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierleague.com/news-sitemap.xml",
+     "url": "https://www.premierleague.com/rss",
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierleague.com/post-sitemap.xml",
+     "url": "https://www.premierleague.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierleague.com/sitemap-news.xml",
+     "url": "https://www.premierleague.com/feed.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierleague.com",
-     "result": "ok"
+     "url": "https://www.premierleague.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierleague.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierleague.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierleague.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierleague.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierleague.com/en/sitemap/index.xml",
+     "result": "ok, 0 pages, 3 nested"
+    },
+    {
+     "url": "https://www.premierleague.com/en/sitemap/global.xml",
+     "result": "ok, 874 pages"
     }
    ],
    "tier": 1,
@@ -193,6 +217,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fantasyfootballfix.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fantasyfootballfix.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://fantasyfootballfix.com/sitemap.xml",
      "result": "ok, 3264 pages, 0 nested"
     }
@@ -220,11 +284,11 @@
   {
    "name": "Never Manage Alone",
    "domain": "nevermanagealone.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://nevermanagealone.com/sitemaps/google_news",
+   "items": 2,
+   "note": "",
    "attempts": [
     {
      "url": "https://nevermanagealone.com/feed/",
@@ -267,28 +331,48 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://nevermanagealone.com/sitemap.xml",
+     "url": "https://www.nevermanagealone.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.nevermanagealone.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.nevermanagealone.com/rss",
      "result": "HTTP 404"
     },
     {
-     "url": "https://nevermanagealone.com/sitemap_index.xml",
+     "url": "https://www.nevermanagealone.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://nevermanagealone.com/news-sitemap.xml",
+     "url": "https://www.nevermanagealone.com/feed.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://nevermanagealone.com/post-sitemap.xml",
+     "url": "https://www.nevermanagealone.com/atom.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://nevermanagealone.com/sitemap-news.xml",
+     "url": "https://www.nevermanagealone.com/index.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://nevermanagealone.com",
-     "result": "ok"
+     "url": "https://www.nevermanagealone.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nevermanagealone.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nevermanagealone.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://nevermanagealone.com/sitemaps/google_news",
+     "result": "ok, 2 pages, 0 nested"
     }
    ],
    "tier": 1,
@@ -297,11 +381,11 @@
   {
    "name": "RotoWire Soccer",
    "domain": "rotowire.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.rotowire.com/news-sitemap.php",
+   "items": 522,
+   "note": "",
    "attempts": [
     {
      "url": "https://rotowire.com/feed/",
@@ -344,28 +428,48 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://rotowire.com/sitemap.xml",
-     "result": "HTTP 406"
-    },
-    {
-     "url": "https://rotowire.com/sitemap_index.xml",
+     "url": "https://www.rotowire.com/feed/",
      "result": "HTTP 404"
     },
     {
-     "url": "https://rotowire.com/news-sitemap.xml",
+     "url": "https://www.rotowire.com/feed",
      "result": "HTTP 404"
     },
     {
-     "url": "https://rotowire.com/post-sitemap.xml",
+     "url": "https://www.rotowire.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.rotowire.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://rotowire.com/sitemap-news.xml",
+     "url": "https://www.rotowire.com/feed.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://rotowire.com",
-     "result": "ok"
+     "url": "https://www.rotowire.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.rotowire.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.rotowire.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.rotowire.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.rotowire.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.rotowire.com/news-sitemap.php",
+     "result": "ok, 522 pages, 0 nested"
     }
    ],
    "tier": 1,
@@ -421,6 +525,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fplform.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://fplform.com/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -438,6 +582,26 @@
     },
     {
      "url": "https://fplform.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplform.com/sitemap-news.xml",
      "result": "HTTP 404"
     },
     {
@@ -495,6 +659,46 @@
     },
     {
      "url": "https://fpl.page/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.page/news/feed/",
      "result": "HTTP 404"
     },
     {
@@ -572,6 +776,46 @@
      "result": "ok, 0 entries"
     },
     {
+     "url": "https://www.fplreview.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplreview.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
      "url": "https://fplreview.com/sitemap.xml",
      "result": "ok, 7 pages, 0 nested"
     }
@@ -629,6 +873,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fploptimized.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://fploptimized.com/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -646,6 +930,26 @@
     },
     {
      "url": "https://fploptimized.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fploptimized.com/sitemap-news.xml",
      "result": "HTTP 404"
     },
     {
@@ -706,7 +1010,51 @@
      "result": "ok, 0 entries"
     },
     {
-     "url": "https://fpl360.com/sitemap.xml",
+     "url": "https://www.fpl360.com/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/feed",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/rss",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/feed.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/atom.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/feeds/all.rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/blog/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fpl360.com/news/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://fpl360.com/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fpl360.com/sitemap_index.xml",
      "result": "ok, 0 pages, 3 nested"
     },
     {
@@ -723,7 +1071,7 @@
    "grade": "B",
    "discovery_method": "sitemap",
    "feed_url": "https://onefpl.com/sitemap.xml",
-   "items": 1110,
+   "items": 1117,
    "note": "",
    "attempts": [
     {
@@ -767,8 +1115,48 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.onefpl.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onefpl.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.onefpl.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://onefpl.com/sitemap.xml",
-     "result": "ok, 1110 pages, 0 nested"
+     "result": "ok, 1117 pages, 0 nested"
     }
    ],
    "tier": 1,
@@ -821,6 +1209,46 @@
     },
     {
      "url": "https://fantasyfootballgeek.co.uk/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fantasyfootballgeek.co.uk/news/feed/",
      "result": "HTTP 403"
     },
     {
@@ -885,6 +1313,46 @@
      "result": "ok, 0 entries"
     },
     {
+     "url": "https://www.fplcaptain.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcaptain.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcaptain.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcaptain.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcaptain.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcaptain.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcaptain.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcaptain.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcaptain.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcaptain.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
      "url": "https://fplcaptain.com/sitemap.xml",
      "result": "ok, 174 pages, 0 nested"
     }
@@ -942,6 +1410,46 @@
      "result": "ok, 0 entries"
     },
     {
+     "url": "https://www.fplcentral.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplcentral.co.uk/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
      "url": "https://fplcentral.co.uk/sitemap.xml",
      "result": "ok, 23 pages, 0 nested"
     }
@@ -952,11 +1460,11 @@
   {
    "name": "LazyFPL",
    "domain": "lazyfpl.com",
-   "grade": "D",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage unreachable (TLS failure: SSLError).",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.lazyfpl.com/sitemap.xml",
+   "items": 611,
+   "note": "",
    "attempts": [
     {
      "url": "https://lazyfpl.com/feed/",
@@ -999,28 +1507,48 @@
      "result": "TLS failure: SSLError"
     },
     {
-     "url": "https://lazyfpl.com/sitemap.xml",
-     "result": "TLS failure: SSLError"
+     "url": "https://www.lazyfpl.com/feed/",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://lazyfpl.com/sitemap_index.xml",
-     "result": "TLS failure: SSLError"
+     "url": "https://www.lazyfpl.com/feed",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://lazyfpl.com/news-sitemap.xml",
-     "result": "TLS failure: SSLError"
+     "url": "https://www.lazyfpl.com/rss",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://lazyfpl.com/post-sitemap.xml",
-     "result": "TLS failure: SSLError"
+     "url": "https://www.lazyfpl.com/rss.xml",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://lazyfpl.com/sitemap-news.xml",
-     "result": "TLS failure: SSLError"
+     "url": "https://www.lazyfpl.com/feed.xml",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://lazyfpl.com",
-     "result": "TLS failure: SSLError"
+     "url": "https://www.lazyfpl.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.lazyfpl.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.lazyfpl.com/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.lazyfpl.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.lazyfpl.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.lazyfpl.com/sitemap.xml",
+     "result": "ok, 611 pages, 0 nested"
     }
    ],
    "tier": 1,
@@ -1076,7 +1604,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://fplpilot.com/sitemap.xml",
+     "url": "https://www.fplpilot.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpilot.com/sitemap-index.xml",
      "result": "ok, 0 pages, 1 nested"
     },
     {
@@ -1090,11 +1658,11 @@
   {
    "name": "Chase Your Sport — Fantasy",
    "domain": "chaseyoursport.com",
-   "grade": "D",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage unreachable (TLS failure: SSLError).",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.chaseyoursport.com/sitemap.xml",
+   "items": 18053,
+   "note": "",
    "attempts": [
     {
      "url": "https://chaseyoursport.com/feed/",
@@ -1137,6 +1705,46 @@
      "result": "TLS failure: SSLError"
     },
     {
+     "url": "https://www.chaseyoursport.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.chaseyoursport.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
      "url": "https://chaseyoursport.com/sitemap.xml",
      "result": "TLS failure: SSLError"
     },
@@ -1157,8 +1765,8 @@
      "result": "TLS failure: SSLError"
     },
     {
-     "url": "https://chaseyoursport.com",
-     "result": "TLS failure: SSLError"
+     "url": "https://www.chaseyoursport.com/sitemap.xml",
+     "result": "ok, 18053 pages, 0 nested"
     }
    ],
    "tier": 1,
@@ -1297,6 +1905,54 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fpl.team/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://fpl.team/sitemap.txt",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://fpl.team/sitemap.txt",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
      "url": "https://fpl.team/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -1314,6 +1970,26 @@
     },
     {
      "url": "https://fpl.team/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fpl.team/sitemap-news.xml",
      "result": "HTTP 404"
     },
     {
@@ -1391,6 +2067,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fplcopilot.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplcopilot.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://fplcopilot.com/sitemap.xml",
      "result": "ok, 54 pages, 0 nested"
     }
@@ -1403,7 +2119,7 @@
    "domain": "draftfantasy.com",
    "grade": "B",
    "discovery_method": "sitemap",
-   "feed_url": "https://draftfantasy.com/sitemap.xml",
+   "feed_url": "https://www.draftfantasy.com/sitemap.xml",
    "items": 387,
    "note": "",
    "attempts": [
@@ -1448,7 +2164,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://draftfantasy.com/sitemap.xml",
+     "url": "https://www.draftfantasy.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfantasy.com/sitemap.xml",
      "result": "ok, 387 pages, 0 nested"
     }
    ],
@@ -1502,6 +2258,46 @@
     },
     {
      "url": "https://onsidearena.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.onsidearena.com/news/feed/",
      "result": "HTTP 404"
     },
     {
@@ -1566,6 +2362,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.livefpl.net/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://livefpl.net/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -1583,6 +2419,26 @@
     },
     {
      "url": "https://livefpl.net/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.livefpl.net/sitemap-news.xml",
      "result": "HTTP 404"
     },
     {
@@ -1643,6 +2499,46 @@
      "result": "ok, 0 entries"
     },
     {
+     "url": "https://www.fantasyfootballcommunity.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
      "url": "https://fantasyfootballcommunity.com/sitemap.xml",
      "result": "ok, 0 pages, 0 nested"
     },
@@ -1660,6 +2556,26 @@
     },
     {
      "url": "https://fantasyfootballcommunity.com/sitemap-news.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/sitemap_index.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/post-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.fantasyfootballcommunity.com/sitemap-news.xml",
      "result": "ok, 0 pages, 0 nested"
     },
     {
@@ -1737,6 +2653,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fploracle.team/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/feed",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/rss",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/feed.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/atom.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/feeds/all.rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/blog/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.fploracle.team/news/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
      "url": "https://fploracle.team/sitemap.xml",
      "result": "ok, 662 pages, 0 nested"
     }
@@ -1776,7 +2732,7 @@
     },
     {
      "url": "https://fplgameweek.com/feed",
-     "result": "HTTP 502"
+     "result": "HTTP 404"
     },
     {
      "url": "https://fplgameweek.com/rss",
@@ -1811,6 +2767,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fplgameweek.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://fplgameweek.com/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -1828,6 +2824,26 @@
     },
     {
      "url": "https://fplgameweek.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplgameweek.com/sitemap-news.xml",
      "result": "HTTP 404"
     },
     {
@@ -1888,6 +2904,46 @@
      "result": "ok, 0 entries"
     },
     {
+     "url": "https://www.whatthef.pl/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.whatthef.pl/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
      "url": "https://whatthef.pl/sitemap.xml",
      "result": "ok, 0 pages, 0 nested"
     },
@@ -1908,6 +2964,26 @@
      "result": "ok, 0 pages, 0 nested"
     },
     {
+     "url": "https://www.whatthef.pl/sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.whatthef.pl/sitemap_index.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.whatthef.pl/news-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.whatthef.pl/post-sitemap.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.whatthef.pl/sitemap-news.xml",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
      "url": "https://whatthef.pl",
      "result": "ok"
     }
@@ -1920,7 +2996,7 @@
    "domain": "fplpulse.com",
    "grade": "B",
    "discovery_method": "sitemap",
-   "feed_url": "https://fplpulse.com/sitemap.xml",
+   "feed_url": "https://www.fplpulse.com/sitemap.xml",
    "items": 291,
    "note": "",
    "attempts": [
@@ -1965,7 +3041,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://fplpulse.com/sitemap.xml",
+     "url": "https://www.fplpulse.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplpulse.com/sitemap.xml",
      "result": "ok, 291 pages, 0 nested"
     }
    ],
@@ -2022,6 +3138,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.hiveleague.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.hiveleague.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://hiveleague.com/sitemap.xml",
      "result": "ok, 56 pages, 0 nested"
     }
@@ -2036,7 +3192,7 @@
    "discovery_method": "",
    "feed_url": "",
    "items": 0,
-   "note": "Homepage unreachable (HTTP 403).",
+   "note": "Homepage unreachable (ConnectionError).",
    "attempts": [
     {
      "url": "https://fplbrief.com/feed/",
@@ -2079,6 +3235,46 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.fplbrief.com/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/feed",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/rss",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/feed.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/atom.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/index.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/feeds/all.rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/blog/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/news/feed/",
+     "result": "ConnectionError"
+    },
+    {
      "url": "https://fplbrief.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -2099,8 +3295,32 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.fplbrief.com/sitemap.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/sitemap_index.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/news-sitemap.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/post-sitemap.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplbrief.com/sitemap-news.xml",
+     "result": "ConnectionError"
+    },
+    {
      "url": "https://fplbrief.com",
      "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fplbrief.com",
+     "result": "ConnectionError"
     }
    ],
    "tier": 1,
@@ -2153,6 +3373,46 @@
     },
     {
      "url": "https://thefantasytool.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.thefantasytool.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.thefantasytool.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.thefantasytool.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.thefantasytool.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thefantasytool.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thefantasytool.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thefantasytool.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thefantasytool.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thefantasytool.com/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.thefantasytool.com/news/feed/",
      "result": "ok, 0 entries"
     },
     {
@@ -2213,6 +3473,46 @@
      "result": "ok, 0 entries"
     },
     {
+     "url": "https://www.fplstrat.app/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/feed.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/atom.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/index.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/feeds/all.rss.xml",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/blog/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fplstrat.app/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
      "url": "https://fplstrat.app/sitemap.xml",
      "result": "ok, 23 pages, 0 nested"
     }
@@ -2267,6 +3567,46 @@
     },
     {
      "url": "https://draftfc.co.uk/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.draftfc.co.uk/news/feed/",
      "result": "HTTP 404"
     },
     {
@@ -2327,7 +3667,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://thedraftsociety.com/sitemap.xml",
+     "url": "https://www.thedraftsociety.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/rss.xml",
+     "result": "HTTP 400"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/atom.xml",
+     "result": "HTTP 400"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/index.xml",
+     "result": "HTTP 400"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.thedraftsociety.com/sitemap.xml",
      "result": "ok, 0 pages, 1 nested"
     },
     {
@@ -2421,6 +3801,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fplranker.com/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/feed",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/rss",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/feed.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/atom.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/index.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/feeds/all.rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/blog/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplranker.com/news/feed/",
+     "result": "ConnectionError"
+    },
+    {
      "url": "https://fplranker.com/sitemap.xml",
      "result": "ok, 225 pages, 0 nested"
     }
@@ -2433,7 +3853,7 @@
    "domain": "fplrotationplanner.com",
    "grade": "B",
    "discovery_method": "sitemap",
-   "feed_url": "https://fplrotationplanner.com/sitemap.xml",
+   "feed_url": "https://www.fplrotationplanner.com/sitemap.xml",
    "items": 8,
    "note": "",
    "attempts": [
@@ -2478,7 +3898,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://fplrotationplanner.com/sitemap.xml",
+     "url": "https://www.fplrotationplanner.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplrotationplanner.com/sitemap.xml",
      "result": "ok, 8 pages, 0 nested"
     }
    ],
@@ -2532,6 +3992,46 @@
     },
     {
      "url": "https://fplxi.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplxi.com/news/feed/",
      "result": "HTTP 404"
     },
     {
@@ -2592,6 +4092,46 @@
      "result": "ok, 0 entries"
     },
     {
+     "url": "https://www.fplstats.app/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/feed",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/rss",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/feed.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/atom.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/index.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/feeds/all.rss.xml",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/blog/feed/",
+     "result": "ConnectionError"
+    },
+    {
+     "url": "https://www.fplstats.app/news/feed/",
+     "result": "ConnectionError"
+    },
+    {
      "url": "https://fplstats.app/sitemap.xml",
      "result": "ok, 1 pages, 0 nested"
     }
@@ -2649,6 +4189,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.fplbot.app/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://fplbot.app/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -2666,6 +4246,26 @@
     },
     {
      "url": "https://fplbot.app/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fplbot.app/sitemap-news.xml",
      "result": "HTTP 404"
     },
     {
@@ -2760,6 +4360,46 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.sportskeeda.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://sportskeeda.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -2780,7 +4420,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.sportskeeda.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://sportskeeda.com",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sportskeeda.com",
      "result": "HTTP 403"
     }
    ],
@@ -2793,12 +4457,12 @@
    "grade": "A",
    "discovery_method": "rss",
    "feed_url": "https://si.com/feed/",
-   "items": 88,
+   "items": 89,
    "note": "",
    "attempts": [
     {
      "url": "https://si.com/feed/",
-     "result": "ok, 88 entries"
+     "result": "ok, 89 entries"
     }
    ],
    "tier": 1,
@@ -2834,8 +4498,8 @@
    "domain": "nbcsports.com",
    "grade": "B",
    "discovery_method": "sitemap",
-   "feed_url": "https://www.nbcsports.com/sitemap-200309.xml",
-   "items": 214,
+   "feed_url": "https://www.nbcsports.com/news-articles-sitemap-content.xml",
+   "items": 256,
    "note": "",
    "attempts": [
     {
@@ -2879,12 +4543,52 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://nbcsports.com/sitemap.xml",
-     "result": "ok, 0 pages, 275 nested"
+     "url": "https://www.nbcsports.com/feed/",
+     "result": "HTTP 404"
     },
     {
-     "url": "https://www.nbcsports.com/sitemap-200309.xml",
-     "result": "ok, 214 pages"
+     "url": "https://www.nbcsports.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.nbcsports.com/news-sitemap.xml",
+     "result": "ok, 0 pages, 6 nested"
+    },
+    {
+     "url": "https://www.nbcsports.com/news-articles-sitemap-content.xml",
+     "result": "ok, 256 pages"
     }
    ],
    "tier": 1,
@@ -2940,7 +4644,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://arsenal.com/sitemap.xml",
+     "url": "https://www.arsenal.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.arsenal.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.arsenal.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.arsenal.com/sitemap.xml",
      "result": "ok, 0 pages, 5 nested"
     },
     {
@@ -3020,11 +4764,11 @@
   {
    "name": "Brentford",
    "domain": "brentfordfc.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.brentfordfc.com/en/sitemap.xml",
+   "items": 3572,
+   "note": "",
    "attempts": [
     {
      "url": "https://brentfordfc.com/feed/",
@@ -3067,28 +4811,48 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://brentfordfc.com/sitemap.xml",
+     "url": "https://www.brentfordfc.com/feed/",
      "result": "HTTP 404"
     },
     {
-     "url": "https://brentfordfc.com/sitemap_index.xml",
+     "url": "https://www.brentfordfc.com/feed",
      "result": "HTTP 404"
     },
     {
-     "url": "https://brentfordfc.com/news-sitemap.xml",
+     "url": "https://www.brentfordfc.com/rss",
      "result": "HTTP 404"
     },
     {
-     "url": "https://brentfordfc.com/post-sitemap.xml",
+     "url": "https://www.brentfordfc.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://brentfordfc.com/sitemap-news.xml",
+     "url": "https://www.brentfordfc.com/feed.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://brentfordfc.com",
-     "result": "ok"
+     "url": "https://www.brentfordfc.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.brentfordfc.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.brentfordfc.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.brentfordfc.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.brentfordfc.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.brentfordfc.com/en/sitemap.xml",
+     "result": "ok, 3572 pages, 0 nested"
     }
    ],
    "tier": 2,
@@ -3097,11 +4861,11 @@
   {
    "name": "Brighton & Hove Albion",
    "domain": "brightonandhovealbion.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://www.brightonandhovealbion.com/rss",
+   "items": 20,
+   "note": "",
    "attempts": [
     {
      "url": "https://brightonandhovealbion.com/feed/",
@@ -3144,28 +4908,16 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://brightonandhovealbion.com/sitemap.xml",
-     "result": "HTTP 404"
+     "url": "https://www.brightonandhovealbion.com/feed/",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://brightonandhovealbion.com/sitemap_index.xml",
-     "result": "HTTP 404"
+     "url": "https://www.brightonandhovealbion.com/feed",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://brightonandhovealbion.com/news-sitemap.xml",
-     "result": "HTTP 404"
-    },
-    {
-     "url": "https://brightonandhovealbion.com/post-sitemap.xml",
-     "result": "HTTP 404"
-    },
-    {
-     "url": "https://brightonandhovealbion.com/sitemap-news.xml",
-     "result": "HTTP 404"
-    },
-    {
-     "url": "https://brightonandhovealbion.com",
-     "result": "ok"
+     "url": "https://www.brightonandhovealbion.com/rss",
+     "result": "ok, 20 entries"
     }
    ],
    "tier": 2,
@@ -3174,11 +4926,11 @@
   {
    "name": "Chelsea",
    "domain": "chelseafc.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.chelseafc.com/en/sitemap.xml",
+   "items": 32846,
+   "note": "",
    "attempts": [
     {
      "url": "https://chelseafc.com/feed/",
@@ -3221,28 +4973,48 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://chelseafc.com/sitemap.xml",
+     "url": "https://www.chelseafc.com/feed/",
      "result": "HTTP 404"
     },
     {
-     "url": "https://chelseafc.com/sitemap_index.xml",
+     "url": "https://www.chelseafc.com/feed",
      "result": "HTTP 404"
     },
     {
-     "url": "https://chelseafc.com/news-sitemap.xml",
+     "url": "https://www.chelseafc.com/rss",
      "result": "HTTP 404"
     },
     {
-     "url": "https://chelseafc.com/post-sitemap.xml",
+     "url": "https://www.chelseafc.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://chelseafc.com/sitemap-news.xml",
+     "url": "https://www.chelseafc.com/feed.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://chelseafc.com",
-     "result": "ok"
+     "url": "https://www.chelseafc.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.chelseafc.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.chelseafc.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.chelseafc.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.chelseafc.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.chelseafc.com/en/sitemap.xml",
+     "result": "ok, 32846 pages, 0 nested"
     }
    ],
    "tier": 2,
@@ -3367,11 +5139,11 @@
   {
    "name": "Hull City",
    "domain": "wearehullcity.co.uk",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "A",
+   "discovery_method": "rss",
+   "feed_url": "https://www.wearehullcity.co.uk/rss.xml",
+   "items": 20,
+   "note": "",
    "attempts": [
     {
      "url": "https://wearehullcity.co.uk/feed/",
@@ -3414,28 +5186,20 @@
      "result": "ok, 0 entries"
     },
     {
-     "url": "https://wearehullcity.co.uk/sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.wearehullcity.co.uk/feed/",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://wearehullcity.co.uk/sitemap_index.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.wearehullcity.co.uk/feed",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://wearehullcity.co.uk/news-sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.wearehullcity.co.uk/rss",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://wearehullcity.co.uk/post-sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
-    },
-    {
-     "url": "https://wearehullcity.co.uk/sitemap-news.xml",
-     "result": "ok, 0 pages, 0 nested"
-    },
-    {
-     "url": "https://wearehullcity.co.uk",
-     "result": "ok"
+     "url": "https://www.wearehullcity.co.uk/rss.xml",
+     "result": "ok, 20 entries"
     }
    ],
    "tier": 2,
@@ -3473,11 +5237,11 @@
   {
    "name": "Leeds United",
    "domain": "leedsunited.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.leedsunited.com/sitemaps/sitemap/0.xml",
+   "items": 14863,
+   "note": "",
    "attempts": [
     {
      "url": "https://leedsunited.com/feed/",
@@ -3520,28 +5284,52 @@
      "result": "ok, 0 entries"
     },
     {
-     "url": "https://leedsunited.com/sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.leedsunited.com/feed/",
+     "result": "HTTP 404"
     },
     {
-     "url": "https://leedsunited.com/sitemap_index.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.leedsunited.com/feed",
+     "result": "HTTP 404"
     },
     {
-     "url": "https://leedsunited.com/news-sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.leedsunited.com/rss",
+     "result": "HTTP 404"
     },
     {
-     "url": "https://leedsunited.com/post-sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.leedsunited.com/rss.xml",
+     "result": "HTTP 404"
     },
     {
-     "url": "https://leedsunited.com/sitemap-news.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.leedsunited.com/feed.xml",
+     "result": "HTTP 404"
     },
     {
-     "url": "https://leedsunited.com",
-     "result": "ok"
+     "url": "https://www.leedsunited.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.leedsunited.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.leedsunited.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.leedsunited.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.leedsunited.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.leedsunited.com/sitemap.xml",
+     "result": "ok, 0 pages, 1 nested"
+    },
+    {
+     "url": "https://www.leedsunited.com/sitemaps/sitemap/0.xml",
+     "result": "ok, 14863 pages"
     }
    ],
    "tier": 2,
@@ -3597,6 +5385,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.liverpoolfc.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.liverpoolfc.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://liverpoolfc.com/sitemap.xml",
      "result": "ok, 0 pages, 333 nested"
     },
@@ -3613,8 +5441,8 @@
    "domain": "mancity.com",
    "grade": "B",
    "discovery_method": "sitemap",
-   "feed_url": "https://mancity.com/sitemap.xml",
-   "items": 1941,
+   "feed_url": "https://www.mancity.com/newssitemap.xml",
+   "items": 83,
    "note": "",
    "attempts": [
     {
@@ -3658,8 +5486,48 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://mancity.com/sitemap.xml",
-     "result": "ok, 1941 pages, 0 nested"
+     "url": "https://www.mancity.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.mancity.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.mancity.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.mancity.com/newssitemap.xml",
+     "result": "ok, 83 pages, 0 nested"
     }
    ],
    "tier": 2,
@@ -3668,11 +5536,11 @@
   {
    "name": "Manchester United",
    "domain": "manutd.com",
-   "grade": "D",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage unreachable (ConnectionError).",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.manutd.com/sitemaps/sitemap/0.xml",
+   "items": 10000,
+   "note": "",
    "attempts": [
     {
      "url": "https://manutd.com/feed/",
@@ -3715,28 +5583,52 @@
      "result": "ConnectionError"
     },
     {
-     "url": "https://manutd.com/sitemap.xml",
-     "result": "ConnectionError"
+     "url": "https://www.manutd.com/feed/",
+     "result": "HTTP 403"
     },
     {
-     "url": "https://manutd.com/sitemap_index.xml",
-     "result": "ConnectionError"
+     "url": "https://www.manutd.com/feed",
+     "result": "HTTP 403"
     },
     {
-     "url": "https://manutd.com/news-sitemap.xml",
-     "result": "ConnectionError"
+     "url": "https://www.manutd.com/rss",
+     "result": "HTTP 403"
     },
     {
-     "url": "https://manutd.com/post-sitemap.xml",
-     "result": "ConnectionError"
+     "url": "https://www.manutd.com/rss.xml",
+     "result": "HTTP 403"
     },
     {
-     "url": "https://manutd.com/sitemap-news.xml",
-     "result": "ConnectionError"
+     "url": "https://www.manutd.com/feed.xml",
+     "result": "HTTP 403"
     },
     {
-     "url": "https://manutd.com",
-     "result": "ConnectionError"
+     "url": "https://www.manutd.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.manutd.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.manutd.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.manutd.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.manutd.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.manutd.com/sitemap.xml",
+     "result": "ok, 0 pages, 10 nested"
+    },
+    {
+     "url": "https://www.manutd.com/sitemaps/sitemap/0.xml",
+     "result": "ok, 10000 pages"
     }
    ],
    "tier": 2,
@@ -3792,7 +5684,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://newcastleunited.com/sitemap.xml",
+     "url": "https://www.newcastleunited.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.newcastleunited.com/sitemap.xml",
      "result": "ok, 0 pages, 34 nested"
     },
     {
@@ -3864,11 +5796,11 @@
   {
    "name": "Tottenham Hotspur",
    "domain": "tottenhamhotspur.com",
-   "grade": "D",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage unreachable (HTTP 429).",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+   "items": 500,
+   "note": "",
    "attempts": [
     {
      "url": "https://tottenhamhotspur.com/feed/",
@@ -3911,28 +5843,60 @@
      "result": "ok, 0 entries"
     },
     {
-     "url": "https://tottenhamhotspur.com/sitemap.xml",
+     "url": "https://www.tottenhamhotspur.com/feed/",
      "result": "HTTP 404"
     },
     {
-     "url": "https://tottenhamhotspur.com/sitemap_index.xml",
+     "url": "https://www.tottenhamhotspur.com/feed",
      "result": "HTTP 404"
     },
     {
-     "url": "https://tottenhamhotspur.com/news-sitemap.xml",
+     "url": "https://www.tottenhamhotspur.com/rss",
      "result": "HTTP 404"
     },
     {
-     "url": "https://tottenhamhotspur.com/post-sitemap.xml",
+     "url": "https://www.tottenhamhotspur.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://tottenhamhotspur.com/sitemap-news.xml",
+     "url": "https://www.tottenhamhotspur.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/sitemap/index.xml",
+     "result": "ok, 0 pages, 63 nested"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/sitemap/news_1.xml",
      "result": "HTTP 429"
     },
     {
-     "url": "https://tottenhamhotspur.com",
+     "url": "https://www.tottenhamhotspur.com/sitemap/news_2.xml",
      "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+     "result": "ok, 500 pages"
     }
    ],
    "tier": 2,
@@ -3988,6 +5952,46 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.understat.com/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/feed",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/rss",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/feed.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/atom.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/feeds/all.rss.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/blog/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/news/feed/",
+     "result": "TLS failure: SSLError"
+    },
+    {
      "url": "https://understat.com/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -4006,6 +6010,26 @@
     {
      "url": "https://understat.com/sitemap-news.xml",
      "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.understat.com/sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/sitemap_index.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/news-sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/post-sitemap.xml",
+     "result": "TLS failure: SSLError"
+    },
+    {
+     "url": "https://www.understat.com/sitemap-news.xml",
+     "result": "TLS failure: SSLError"
     },
     {
      "url": "https://understat.com",
@@ -4065,6 +6089,46 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.fbref.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://fbref.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -4085,7 +6149,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.fbref.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://fbref.com",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.fbref.com",
      "result": "HTTP 403"
     }
    ],
@@ -4142,6 +6230,246 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.footystats.org/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_h2h-1.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_h2h-2.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_h2h-3.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_h2h-predictions-1.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_h2h-predictions-2.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_h2h-predictions-3.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_managers.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_players-1.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_players-2.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_players-3.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_players-4.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/nl/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/nl/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/de/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/de/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/ro/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/ro/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/gr/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/gr/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/id/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/id/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/it/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/it/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/jp/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/kr/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/kr/url_nations.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/kr/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/kr/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/pl/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/pl/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/pt/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/pt/url_nations.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/pt/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/pt/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/ru/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/ru/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/se/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/se/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/cn/url_teams.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/cn/url_static_leagues_and_detailed_stats.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/cn/url_nations.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/tr/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/bg/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/sk/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/rs/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/hu/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/hr/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://footystats.org/sitemap/fi/sitemapindex.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://footystats.org/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -4162,7 +6490,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.footystats.org/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://footystats.org",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.footystats.org",
      "result": "HTTP 403"
     }
    ],
@@ -4172,11 +6524,11 @@
   {
    "name": "FotMob",
    "domain": "fotmob.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.fotmob.com/sitemap/en/news/1.xml",
+   "items": 100,
+   "note": "",
    "attempts": [
     {
      "url": "https://fotmob.com/feed/",
@@ -4219,40 +6571,52 @@
      "result": "ok, 0 entries"
     },
     {
-     "url": "https://fotmob.com/sitemap.xml",
-     "result": "ok, 0 pages, 32 nested"
+     "url": "https://www.fotmob.com/feed/",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://www.fotmob.com/sitemap/en.xml",
-     "result": "ok, 0 pages"
+     "url": "https://www.fotmob.com/feed",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://www.fotmob.com/sitemap/en-GB.xml",
-     "result": "ok, 0 pages"
+     "url": "https://www.fotmob.com/rss",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://www.fotmob.com/sitemap/ar.xml",
-     "result": "ok, 0 pages"
+     "url": "https://www.fotmob.com/rss.xml",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://fotmob.com/sitemap_index.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.fotmob.com/feed.xml",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://fotmob.com/news-sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.fotmob.com/atom.xml",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://fotmob.com/post-sitemap.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.fotmob.com/index.xml",
+     "result": "ok, 0 entries"
     },
     {
-     "url": "https://fotmob.com/sitemap-news.xml",
-     "result": "ok, 0 pages, 0 nested"
+     "url": "https://www.fotmob.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
     },
     {
-     "url": "https://fotmob.com",
-     "result": "ok"
+     "url": "https://www.fotmob.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.fotmob.com/news/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.fotmob.com/sitemap/en/news.xml",
+     "result": "ok, 0 pages, 33 nested"
+    },
+    {
+     "url": "https://www.fotmob.com/sitemap/en/news/1.xml",
+     "result": "ok, 100 pages"
     }
    ],
    "tier": 3,
@@ -4308,6 +6672,46 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.sofascore.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.sofascore.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.sofascore.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.sofascore.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.sofascore.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://sofascore.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -4328,7 +6732,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.sofascore.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://sofascore.com",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.sofascore.com",
      "result": "HTTP 403"
     }
    ],
@@ -4385,6 +6813,46 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.whoscored.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://whoscored.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -4405,7 +6873,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.whoscored.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://whoscored.com",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.whoscored.com",
      "result": "HTTP 403"
     }
    ],
@@ -4479,6 +6971,54 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.statmuse.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/sitemap.txt",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
+     "url": "https://www.statmuse.com/sitemap.txt",
+     "result": "ok, 0 pages, 0 nested"
+    },
+    {
      "url": "https://statmuse.com/sitemap.xml",
      "result": "HTTP 404"
     },
@@ -4496,6 +7036,26 @@
     },
     {
      "url": "https://statmuse.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/sitemap_index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/news-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/post-sitemap.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.statmuse.com/sitemap-news.xml",
      "result": "HTTP 404"
     },
     {
@@ -4556,6 +7116,110 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.squawka.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/en/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/nl/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us-es/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/en/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/nl/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us-es/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/en/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/nl/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us-es/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/en/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/nl/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/us-es/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://squawka.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -4576,7 +7240,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.squawka.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://squawka.com",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.squawka.com",
      "result": "HTTP 403"
     }
    ],
@@ -4633,6 +7321,46 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.worldfootball.net/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://worldfootball.net/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -4653,7 +7381,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.worldfootball.net/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://worldfootball.net",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.worldfootball.net",
      "result": "HTTP 403"
     }
    ],
@@ -4666,7 +7418,7 @@
    "grade": "B",
    "discovery_method": "sitemap",
    "feed_url": "https://www.soccerway.com/sitemap/fsnews-sitemap-news.xml",
-   "items": 100,
+   "items": 99,
    "note": "",
    "attempts": [
     {
@@ -4710,12 +7462,56 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://soccerway.com/sitemap.xml",
+     "url": "https://www.soccerway.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.soccerway.com/apostas/sitemap.xml",
+     "result": "HTTP 503"
+    },
+    {
+     "url": "https://www.soccerway.com/sitemap.xml",
      "result": "ok, 0 pages, 6 nested"
     },
     {
      "url": "https://www.soccerway.com/sitemap/fsnews-sitemap-news.xml",
-     "result": "ok, 100 pages"
+     "result": "ok, 99 pages"
     }
    ],
    "tier": 3,
@@ -4727,7 +7523,7 @@
    "grade": "B",
    "discovery_method": "sitemap",
    "feed_url": "https://www.flashscore.com/sitemap/fsnews-sitemap-news.xml",
-   "items": 137,
+   "items": 138,
    "note": "",
    "attempts": [
     {
@@ -4771,12 +7567,52 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://flashscore.com/sitemap.xml",
+     "url": "https://www.flashscore.com/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/feed",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.flashscore.com/sitemap.xml",
      "result": "ok, 0 pages, 34 nested"
     },
     {
      "url": "https://www.flashscore.com/sitemap/fsnews-sitemap-news.xml",
-     "result": "ok, 137 pages"
+     "result": "ok, 138 pages"
     }
    ],
    "tier": 3,
@@ -4832,6 +7668,46 @@
      "result": "HTTP 429"
     },
     {
+     "url": "https://www.xgstat.com/feed/",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/feed",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/rss",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/rss.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/feed.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/atom.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/index.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/feeds/all.rss.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/blog/feed/",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/news/feed/",
+     "result": "HTTP 429"
+    },
+    {
      "url": "https://xgstat.com/sitemap.xml",
      "result": "HTTP 429"
     },
@@ -4852,7 +7728,31 @@
      "result": "HTTP 429"
     },
     {
+     "url": "https://www.xgstat.com/sitemap.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/sitemap_index.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/news-sitemap.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/post-sitemap.xml",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com/sitemap-news.xml",
+     "result": "HTTP 429"
+    },
+    {
      "url": "https://xgstat.com",
+     "result": "HTTP 429"
+    },
+    {
+     "url": "https://www.xgstat.com",
      "result": "HTTP 429"
     }
    ],
@@ -4909,11 +7809,47 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierinjuries.com/sitemap.xml",
+     "url": "https://www.premierinjuries.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.premierinjuries.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.premierinjuries.com/rss",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.premierinjuries.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://premierinjuries.com/sitemap_index.xml",
+     "url": "https://www.premierinjuries.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierinjuries.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierinjuries.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierinjuries.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierinjuries.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierinjuries.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.premierinjuries.com/sitemap_index.xml",
      "result": "ok, 0 pages, 6 nested"
     },
     {
@@ -5003,8 +7939,8 @@
    "domain": "skysports.com",
    "grade": "B",
    "discovery_method": "sitemap",
-   "feed_url": "https://skysports.com/sitemap.xml",
-   "items": 371,
+   "feed_url": "https://www.skysports.com/sitemap/sitemap-news.xml",
+   "items": 53,
    "note": "",
    "attempts": [
     {
@@ -5048,8 +7984,52 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://skysports.com/sitemap.xml",
-     "result": "ok, 371 pages, 0 nested"
+     "url": "https://www.skysports.com/feed/",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.skysports.com/feed",
+     "result": "ok, 0 entries"
+    },
+    {
+     "url": "https://www.skysports.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.skysports.com/sitemap-index.xml",
+     "result": "ok, 0 pages, 4 nested"
+    },
+    {
+     "url": "https://www.skysports.com/sitemap/sitemap-news.xml",
+     "result": "ok, 53 pages"
     }
    ],
    "tier": 4,
@@ -5105,6 +8085,54 @@
      "result": "HTTP 202"
     },
     {
+     "url": "https://www.espn.com/feed/",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/feed",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/rss",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/rss.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/feed.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/atom.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/index.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/feeds/all.rss.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/blog/feed/",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/news/feed/",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
      "url": "https://espn.com/sitemap.xml",
      "result": "HTTP 202"
     },
@@ -5125,7 +8153,31 @@
      "result": "HTTP 202"
     },
     {
+     "url": "https://www.espn.com/sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/sitemap_index.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/news-sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/post-sitemap.xml",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com/sitemap-news.xml",
+     "result": "HTTP 202"
+    },
+    {
      "url": "https://espn.com",
+     "result": "HTTP 202"
+    },
+    {
+     "url": "https://www.espn.com",
      "result": "HTTP 202"
     }
    ],
@@ -5135,11 +8187,11 @@
   {
    "name": "GOAL",
    "domain": "goal.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.goal.com/ar/sitemap/editorial-news.xml",
+   "items": 836,
+   "note": "",
    "attempts": [
     {
      "url": "https://goal.com/feed/",
@@ -5182,28 +8234,68 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://goal.com/sitemap.xml",
+     "url": "https://www.goal.com/feed/",
      "result": "HTTP 404"
     },
     {
-     "url": "https://goal.com/sitemap_index.xml",
+     "url": "https://www.goal.com/feed",
      "result": "HTTP 404"
     },
     {
-     "url": "https://goal.com/news-sitemap.xml",
+     "url": "https://www.goal.com/rss",
      "result": "HTTP 404"
     },
     {
-     "url": "https://goal.com/post-sitemap.xml",
+     "url": "https://www.goal.com/rss.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://goal.com/sitemap-news.xml",
+     "url": "https://www.goal.com/feed.xml",
      "result": "HTTP 404"
     },
     {
-     "url": "https://goal.com",
-     "result": "ok"
+     "url": "https://www.goal.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.goal.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.goal.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.goal.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.goal.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.goal.com/sitemap",
+     "result": "ok, 0 pages, 35 nested"
+    },
+    {
+     "url": "https://www.goal.com/ar-eg/sitemap",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://www.goal.com/ar-sa/sitemap",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://www.goal.com/ar/sitemap",
+     "result": "ok, 0 pages"
+    },
+    {
+     "url": "https://www.goal.com/ar/sitemap",
+     "result": "ok, 0 pages, 15 nested"
+    },
+    {
+     "url": "https://www.goal.com/ar/sitemap/editorial-news.xml",
+     "result": "ok, 836 pages"
     }
    ],
    "tier": 4,
@@ -5239,8 +8331,8 @@
    "domain": "cbssports.com",
    "grade": "B",
    "discovery_method": "sitemap",
-   "feed_url": "https://cbssports.com/news-sitemap.xml",
-   "items": 840,
+   "feed_url": "https://www.cbssports.com/sitemaps/all-news-2026-09-sitemap.xml",
+   "items": 413,
    "note": "",
    "attempts": [
     {
@@ -5284,16 +8376,52 @@
      "result": "HTTP 404"
     },
     {
-     "url": "https://cbssports.com/sitemap.xml",
+     "url": "https://www.cbssports.com/feed/",
      "result": "HTTP 404"
     },
     {
-     "url": "https://cbssports.com/sitemap_index.xml",
+     "url": "https://www.cbssports.com/feed",
      "result": "HTTP 404"
     },
     {
-     "url": "https://cbssports.com/news-sitemap.xml",
-     "result": "ok, 840 pages, 0 nested"
+     "url": "https://www.cbssports.com/rss",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/feed.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/atom.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/index.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/feeds/all.rss.xml",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/blog/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/news/feed/",
+     "result": "HTTP 404"
+    },
+    {
+     "url": "https://www.cbssports.com/sitemaps/all-news-sitemap.xml",
+     "result": "ok, 0 pages, 61 nested"
+    },
+    {
+     "url": "https://www.cbssports.com/sitemaps/all-news-2026-09-sitemap.xml",
+     "result": "ok, 413 pages"
     }
    ],
    "tier": 4,
@@ -5336,11 +8464,11 @@
   {
    "name": "Racing Post Football Tips",
    "domain": "racingpost.com",
-   "grade": "C",
-   "discovery_method": "",
-   "feed_url": "",
-   "items": 0,
-   "note": "Homepage loads but no feed or sitemap was found — known URLs only.",
+   "grade": "B",
+   "discovery_method": "sitemap",
+   "feed_url": "https://www.racingpost.com/sitemaps/news-sitemap.xml",
+   "items": 88,
+   "note": "",
    "attempts": [
     {
      "url": "https://racingpost.com/feed/",
@@ -5383,28 +8511,48 @@
      "result": "HTTP 406"
     },
     {
-     "url": "https://racingpost.com/sitemap.xml",
+     "url": "https://www.racingpost.com/feed/",
      "result": "HTTP 406"
     },
     {
-     "url": "https://racingpost.com/sitemap_index.xml",
+     "url": "https://www.racingpost.com/feed",
      "result": "HTTP 406"
     },
     {
-     "url": "https://racingpost.com/news-sitemap.xml",
+     "url": "https://www.racingpost.com/rss",
      "result": "HTTP 406"
     },
     {
-     "url": "https://racingpost.com/post-sitemap.xml",
+     "url": "https://www.racingpost.com/rss.xml",
      "result": "HTTP 406"
     },
     {
-     "url": "https://racingpost.com/sitemap-news.xml",
+     "url": "https://www.racingpost.com/feed.xml",
      "result": "HTTP 406"
     },
     {
-     "url": "https://racingpost.com",
-     "result": "ok"
+     "url": "https://www.racingpost.com/atom.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://www.racingpost.com/index.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://www.racingpost.com/feeds/all.rss.xml",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://www.racingpost.com/blog/feed/",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://www.racingpost.com/news/feed/",
+     "result": "HTTP 406"
+    },
+    {
+     "url": "https://www.racingpost.com/sitemaps/news-sitemap.xml",
+     "result": "ok, 88 pages, 0 nested"
     }
    ],
    "tier": 4,
@@ -5460,6 +8608,198 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.oddschecker.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/it/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/es/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/us/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/br/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/co/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/au/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/nz/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/in/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/pt/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/za/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/ke/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/ng/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/nl/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/fr/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/se/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/sm/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/cx/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/ca/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/it/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/es/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/us/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/br/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/co/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/au/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/nz/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/in/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/pt/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/za/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/ke/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/ng/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/nl/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/fr/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/se/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/sm/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/cx/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/ca/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://oddschecker.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -5480,7 +8820,31 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.oddschecker.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com/sitemap-news.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://oddschecker.com",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.oddschecker.com",
      "result": "HTTP 403"
     }
    ],
@@ -5537,6 +8901,94 @@
      "result": "HTTP 403"
     },
     {
+     "url": "https://www.freetips.com/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/feed",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/rss",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/feed.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/atom.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/feeds/all.rss.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/blog/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/news/feed/",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/config.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/imagesitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/categoryconfig.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/bingconfig.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/bingcategoryconfig.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/config.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/imagesitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/categoryconfig.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/bingconfig.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/xml/bingcategoryconfig.xml",
+     "result": "HTTP 403"
+    },
+    {
      "url": "https://freetips.com/sitemap.xml",
      "result": "HTTP 403"
     },
@@ -5557,7 +9009,31 @@
      "result": "HTTP 404"
     },
     {
+     "url": "https://www.freetips.com/sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/sitemap_index.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/news-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/post-sitemap.xml",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com/sitemap-news.xml",
+     "result": "HTTP 404"
+    },
+    {
      "url": "https://freetips.com",
+     "result": "HTTP 403"
+    },
+    {
+     "url": "https://www.freetips.com",
      "result": "HTTP 403"
     }
    ],
