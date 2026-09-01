@@ -194,25 +194,29 @@ def priority_for(player: dict, record: PlayerRecord | None = None) -> str:
 def discover(sources: list[dict], session, mode: str = FULL,
              max_candidates: int = MAX_CANDIDATES,
              since: datetime | None = None) -> tuple[list, list[str], int]:
-    """Stage 1. Every readable source, breadth-first, to a ceiling.
+    """Stage 1. Every readable source contributes; nobody eats the budget.
 
-    Breadth-first on purpose: taking up to MAX_PER_SOURCE from each source
-    in turn means a site with a 30,000-entry sitemap contributes its share
-    and no more. Depth-first would let one club's archive consume the
-    entire candidate budget.
+    The first version walked the source list taking up to MAX_PER_SOURCE
+    from each and stopping at the ceiling. That is breadth-first in name
+    only: forty large sitemaps reached 1000 candidates before the other
+    thirty-eight sources were attempted at all, and the ones skipped were
+    the official club RSS feeds — the highest-value material in the list.
+    Squad coverage fell from 15/15 to 7/15 with no other change.
+
+    So every source is asked first, with a fair per-source share, and the
+    ceiling is applied afterwards by interleaving. A site with a 30,000
+    entry archive and a club feed with twenty posts now get equal standing
+    in the first round, which is what breadth-first was supposed to mean.
     """
-    candidates: list = []
     failures: list[str] = []
     readable = 0
     max_age = 21 if mode == FULL else (3 if mode == DEADLINE else 10)
+    share = max(6, max_candidates // max(1, len(sources)))
 
+    per_source: list[list] = []
     for source in sources:
-        if len(candidates) >= max_candidates:
-            failures.append(f"candidate ceiling of {max_candidates} reached; "
-                            f"{len(sources) - readable} sources not attempted")
-            break
         articles, error = collect.collect_from(
-            source, session, max_age_days=max_age, limit=MAX_PER_SOURCE)
+            source, session, max_age_days=max_age, limit=min(MAX_PER_SOURCE, share * 2))
         if error:
             failures.append(error)
             continue
@@ -223,9 +227,29 @@ def discover(sources: list[dict], session, mode: str = FULL,
         if since is not None:
             articles = [a for a in articles
                         if a.published_at is None or a.published_at >= since]
-        candidates.extend(articles[:MAX_PER_SOURCE])
+        if articles:
+            per_source.append(articles)
 
-    return candidates[:max_candidates], failures, readable
+    # Interleave: one from each source in turn, so the ceiling trims the
+    # tail of every source rather than deleting whole sources.
+    candidates: list = []
+    depth = 0
+    while len(candidates) < max_candidates and per_source:
+        took_any = False
+        for bucket in per_source:
+            if depth < len(bucket):
+                candidates.append(bucket[depth])
+                took_any = True
+                if len(candidates) >= max_candidates:
+                    break
+        if not took_any:
+            break
+        depth += 1
+
+    if len(candidates) >= max_candidates:
+        failures.append(f"candidate ceiling of {max_candidates} reached after taking "
+                        f"{depth + 1} items from each of {len(per_source)} sources")
+    return candidates, failures, readable
 
 
 def deep_read(articles: list, session, squad: list[dict], gameweek: int,
@@ -246,6 +270,8 @@ def deep_read(articles: list, session, squad: list[dict], gameweek: int,
         batch = articles[index:index + DEEP_READ_BATCH]
         index += DEEP_READ_BATCH
         for article in batch:
+            if len(read) >= ceiling:
+                break
             result = collect.fetch(article.url, session)
             if not result.ok:
                 report.deep_read_failed += 1

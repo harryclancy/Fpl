@@ -93,12 +93,32 @@ def check_blackout(evidence_by_player: dict) -> Verdict:
     ])
 
 
+# Below this share of the squad, the shortfall is a collection problem
+# rather than a handful of genuinely un-covered players. Set at 80% because
+# one or two obscure bench players with nothing written about them is a
+# real and acceptable outcome; half the squad is not.
+MIN_SQUAD_RESEARCHED = 0.8
+
+
 def check_squad_coverage(evidence_by_player: dict, required: int) -> Verdict:
-    """Every owned player must have been searched for, and most evidenced."""
+    """Every owned player searched for, and nearly all of them evidenced.
+
+    The earlier version passed if ANY player was researched, which let a
+    run report 7/15 as a success. A gate that cannot fail is not a gate.
+    """
     searched = len(evidence_by_player)
     researched = [n for n, ev in evidence_by_player.items() if ev.researched]
+    short = sorted(n for n in evidence_by_player if n not in researched)
     reasons = [f"{len(researched)}/{searched} players met the evidence threshold"]
+    if short:
+        reasons.append("short: " + ", ".join(short))
+
     if searched < required:
         return Verdict(False, COLLECTION_FAILURE,
                        [f"only {searched} of {required} owned players were searched for"])
-    return Verdict(bool(researched), "" if researched else COLLECTION_FAILURE, reasons)
+    if searched and len(researched) / searched < MIN_SQUAD_RESEARCHED:
+        return Verdict(False, COLLECTION_FAILURE, reasons + [
+            f"under {MIN_SQUAD_RESEARCHED:.0%} of the squad is evidenced — that is a "
+            f"collection shortfall, not {len(short)} genuinely un-covered players",
+        ])
+    return Verdict(True, "", reasons)

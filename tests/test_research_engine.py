@@ -212,3 +212,74 @@ def test_a_player_record_reports_every_completeness_field():
                   "starting_status_assessed", "injury_status_assessed",
                   "transfer_status_assessed", "role_assessed", "fixtures_assessed"):
         assert field in record, f"{field} missing from the player research record"
+
+
+# --- discovery must not let big sources starve small ones ----------------
+
+class _FakeSession:
+    pass
+
+
+def test_every_source_is_attempted_before_the_ceiling_bites(monkeypatch):
+    """The regression this fixes: walking the source list and stopping at
+    1000 candidates meant forty large sitemaps consumed the whole budget
+    and the other thirty-eight sources — including every official club RSS
+    feed — were never asked. Squad coverage fell from 15/15 to 7/15."""
+    big = [_article(url=f"https://big.com/news/{i}", domain="big.com") for i in range(500)]
+    small = [_article(url="https://club.com/news/team-news", domain="club.com")]
+
+    def fake_collect(source, session, **kwargs):
+        return (list(big) if source["domain"] == "big.com" else list(small)), ""
+
+    monkeypatch.setattr(pipeline.collect, "collect_from", fake_collect)
+
+    sources = [{"domain": "big.com", "tier": 3}] * 40 + [{"domain": "club.com", "tier": 2}]
+    candidates, failures, readable = pipeline.discover(
+        sources, _FakeSession(), max_candidates=100)
+
+    assert readable == 41, "every source must be attempted"
+    domains = {a.domain for a in candidates}
+    assert "club.com" in domains, "the small source must survive the ceiling"
+
+
+def test_the_ceiling_is_respected():
+    """Discovery is capped, and the cap is reported rather than silent."""
+    big = [_article(url=f"https://big.com/news/{i}", domain="big.com") for i in range(500)]
+
+    def fake_collect(source, session, **kwargs):
+        return list(big), ""
+
+    import types
+    module = types.SimpleNamespace(collect_from=fake_collect)
+    original = pipeline.collect.collect_from
+    pipeline.collect.collect_from = fake_collect
+    try:
+        candidates, failures, _ = pipeline.discover(
+            [{"domain": "big.com", "tier": 3}] * 3, _FakeSession(), max_candidates=50)
+    finally:
+        pipeline.collect.collect_from = original
+
+    assert len(candidates) == 50
+    assert any("ceiling" in f for f in failures)
+
+
+def test_the_coverage_gate_fails_when_half_the_squad_is_unevidenced():
+    """A gate that cannot fail is not a gate. The earlier version passed
+    when any single player was researched, so 7/15 reported as success."""
+    from fpl_assistant.research import evidence, gates
+
+    def player(name, researched):
+        found = evidence.PlayerEvidence(player=name, club="MCI", corpus_size=900)
+        if researched:
+            found.items = [
+                evidence.Evidence(_article(title=f"{name} starts against Coventry",
+                                           url=f"https://x.com/news/{name}-{i}"), name.lower())
+                for i in range(3)
+            ]
+        return found
+
+    half = {f"P{i}": player(f"P{i}", i < 7) for i in range(15)}
+    assert not gates.check_squad_coverage(half, 15)
+
+    nearly = {f"P{i}": player(f"P{i}", i < 13) for i in range(15)}
+    assert gates.check_squad_coverage(nearly, 15), "one or two genuinely uncovered is fine"
