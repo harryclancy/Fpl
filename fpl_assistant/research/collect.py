@@ -140,6 +140,20 @@ class Article:
     # How the item was found. An RSS entry is a published article by
     # definition; a sitemap URL is a candidate that has to earn it.
     via: str = "rss"
+    # Set by the deep-read stage for the items worth fetching in full.
+    body: str = ""
+    topics: list[str] = field(default_factory=list)
+    deep_read: bool = False
+    # Set by dedupe: which story this belongs to, and how many copies of
+    # that story were retrieved. Six outlets rewriting one press
+    # conference is one claim reported six times, not six claims.
+    duplicate_group: str = ""
+    duplicate_count: int = 1
+    duplicate_urls: list[str] = field(default_factory=list)
+    # Set by ranking.
+    relevance_score: float = 0.0
+    score_parts: dict = field(default_factory=dict)
+    source_tier: int = 3
 
     @property
     def is_article(self) -> bool:
@@ -183,7 +197,14 @@ class Article:
             "retrieved": self.retrieved, "excerpt": self.excerpt,
             "players": self.players, "club": self.club,
             "gameweek": self.gameweek, "source_type": self.source_type,
-            "is_article": self.is_article,
+            "substantive": self.is_article,
+            "topics": self.topics, "deep_read": self.deep_read,
+            "duplicate_group": self.duplicate_group,
+            "duplicate_count": self.duplicate_count,
+            "duplicate_urls": self.duplicate_urls,
+            "relevance_score": self.relevance_score,
+            "source_tier": self.source_tier,
+            "body": self.body,
         }
 
     @classmethod
@@ -200,6 +221,14 @@ class Article:
             source_type=str(data.get("source_type", "")),
             modified=str(data.get("modified", "")),
             via=str(data.get("via", "rss")),
+            body=str(data.get("body", "")),
+            topics=list(data.get("topics") or []),
+            deep_read=bool(data.get("deep_read", False)),
+            duplicate_group=str(data.get("duplicate_group", "")),
+            duplicate_count=int(data.get("duplicate_count", 1) or 1),
+            duplicate_urls=list(data.get("duplicate_urls") or []),
+            relevance_score=float(data.get("relevance_score", 0) or 0),
+            source_tier=int(data.get("source_tier", 3) or 3),
         )
 
 

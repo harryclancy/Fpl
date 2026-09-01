@@ -20,6 +20,11 @@ on:
         type: choice
         options: [collect, probe, both]
         default: collect
+      research_mode:
+        description: "full (new gameweek), incremental (routine), deadline (last 72h)"
+        type: choice
+        options: [full, incremental, deadline]
+        default: incremental
       limit:
         description: "Optional cap on sources, for a quick test run"
         type: string
@@ -56,7 +61,7 @@ jobs:
         # empty corpus, which is the failure this whole pipeline replaces.
         if: inputs.mode != 'probe'
         run: |
-          python scripts/collect_research.py ${{ inputs.limit && format('--limit {0}', inputs.limit) || '' }}
+          python scripts/collect_research.py --mode "${{ inputs.research_mode || 'incremental' }}"
 
       - name: Commit what came back
         # Runs even when the gates fail, so the evidence of a bad run is

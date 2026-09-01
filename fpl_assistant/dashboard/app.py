@@ -1150,85 +1150,117 @@ def render_collection_status() -> None:
 
 
 def run_research_refresh(gameweek: int) -> None:
-    """The Refresh button's actual work: Stage A, then Stage B.
+    """The Refresh button's actual work: the five-stage research pipeline.
 
     This used to be `st.cache_data.clear()`. Clearing a cache re-reads the
-    same files; it cannot discover that Haaland is fit or that a manager
-    named a squad. The button now runs the same collector the scheduled
-    workflow runs, so pressing it genuinely researches.
+    same files; it cannot discover that a manager named a squad. The button
+    now runs the same pipeline the scheduled workflow runs — discover,
+    filter, dedupe, rank, deep-read — so pressing it genuinely researches.
 
-    Every step reports as it happens. A refresh that retrieves nothing
-    says so and stops, rather than handing an empty corpus to the analysis
-    and letting it produce confident-looking output about nothing.
+    The mode is chosen rather than fixed: a new gameweek needs the full
+    three-week picture, a deadline needs the last 72 hours of team news,
+    and the rest of the time only what is new since the last run.
     """
     import json as _json
+    from datetime import datetime, timezone
     from pathlib import Path as _Path
 
-    from datetime import datetime, timezone
+    from fpl_assistant.research import collect, corpus as corpus_mod, pipeline
 
-    from fpl_assistant.research import collect, corpus as corpus_mod, evidence, gates
-
-    discovery_path = (_Path(__file__).resolve().parent.parent.parent
-                      / "data" / "sources" / "discovery.json")
+    root = _Path(__file__).resolve().parent.parent.parent
     try:
-        discovery = _json.loads(discovery_path.read_text())
+        discovery = _json.loads((root / "data" / "sources" / "discovery.json").read_text())
     except (OSError, ValueError):
         st.error("**RESEARCH COLLECTION FAILURE** — no source discovery audit found. "
                  "Run the Collect research workflow with mode `probe` first.")
         return
 
-    usable = [s for s in discovery.get("sources", [])
-              if s.get("grade") in collect.USABLE_GRADES and s.get("feed_url")]
-    if not usable:
-        st.error("**RESEARCH COLLECTION FAILURE** — no source has a feed or sitemap "
+    sources = [s for s in discovery.get("sources", [])
+               if s.get("grade") in collect.USABLE_GRADES and s.get("feed_url")]
+    if not sources:
+        st.error("**RESEARCH COLLECTION FAILURE** — no source exposes a feed or sitemap "
                  "the app can read.")
         return
 
-    progress = st.progress(0.0, text="Reading FPL expert sources…")
-    session = collect._session()
-    fresh, failures, ok = [], [], 0
-
-    for index, source in enumerate(usable, 1):
-        label = str(source.get("name") or source.get("domain"))
-        progress.progress(index / (len(usable) + 3), text=f"Reading {label}…")
-        articles, error = collect.collect_from(source, session)
-        if error:
-            failures.append(error)
-            continue
-        ok += 1
-        fresh.extend(articles)
-
-    progress.progress(0.85, text="Updating the research cache…")
     squad = my_squad_players()
-    evidence.tag_articles(fresh, squad)
-    store = corpus_mod.prune(corpus_mod.merge(corpus_mod.load(), fresh))
-    store.collected_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    store.sources_checked, store.sources_ok = len(usable), ok
-    store.failures = failures[:40]
+    store = corpus_mod.load()
+
+    # A stale or empty cache needs the full picture; otherwise only what
+    # has appeared since. Inside a deadline window the pass narrows onto
+    # team news, because that is the only thing that still changes.
+    mode = pipeline.FULL
+    since = None
+    if len(store) and store.collected_at:
+        mode = pipeline.INCREMENTAL
+        since = datetime.fromisoformat(store.collected_at)
+    if _within_deadline_window(gameweek):
+        mode, since = pipeline.DEADLINE, None
+
+    bar = st.progress(0.0, text="Starting the research pass…")
+    articles, report = pipeline.run(
+        sources, squad, int(gameweek), mode=mode, since=since,
+        progress=lambda fraction, text: bar.progress(min(fraction, 1.0), text=text))
+
+    store = corpus_mod.prune(corpus_mod.merge(store, articles))
+    store.collected_at = report.ran_at
+    store.sources_checked = report.sources_attempted
+    store.sources_ok = report.sources_readable
+    store.failures = report.failures[:40]
     corpus_mod.save(store)
+    report.corpus_size = len(store)
+    report.verdicts = pipeline.verdicts(report, len(store))
+    bar.empty()
 
-    progress.progress(0.93, text="Researching your squad…")
-    by_player = {p["name"]: evidence.search(p["name"], p.get("team", ""), store.items)
-                 for p in squad}
-
-    collection = gates.check_collection(len(usable), ok, len(fresh), failures)
-    blackout = gates.check_blackout(by_player)
-    progress.progress(1.0, text="Done.")
-    progress.empty()
-
-    researched = sum(1 for ev in by_player.values() if ev.researched)
-    st.markdown(
-        f"**SOURCES CHECKED:** {len(usable)}  ·  **RETURNED MATERIAL:** {ok}  \n"
-        f"**NEW ITEMS FOUND:** {len(fresh)}  ·  **CACHE:** {len(store)} articles  \n"
-        + (f"**PLAYERS FULLY RESEARCHED:** {researched}/{len(squad)}  \n" if squad else "")
-        + f"**LAST UPDATED:** {store.collected_at_display}"
-    )
-
-    for verdict in (collection, blackout):
-        if not verdict.ok:
-            st.error(f"**{verdict.headline}** — " + " · ".join(verdict.reasons))
-
+    render_research_summary(report, store)
     st.cache_data.clear()
+
+
+def _within_deadline_window(gameweek: int, hours: int = 48) -> bool:
+    """Is the next deadline close enough to narrow the search?"""
+    try:
+        from fpl_assistant import api
+        from fpl_assistant.models import events_df
+        events = events_df(api.get_bootstrap_static())
+        row = events[events["id"] == int(gameweek)]
+        if row.empty:
+            return False
+        deadline = pd.to_datetime(row.iloc[0]["deadline_time"], utc=True)
+        delta = (deadline - pd.Timestamp.now(tz="UTC")).total_seconds() / 3600
+        return 0 <= delta <= hours
+    except Exception:
+        return False
+
+
+def render_research_summary(report, store) -> None:
+    """The numbers, exactly as specified, and no padding of them.
+
+    `candidates discovered` and `substantive items` are deliberately shown
+    side by side. The gap between them is the junk this pipeline throws
+    away, and hiding it would let the headline number drift back toward
+    counting tool pages — the failure that produced a fake 15/15.
+    """
+    st.markdown(
+        f"**SOURCES ATTEMPTED:** {report.sources_attempted}  ·  "
+        f"**READABLE:** {report.sources_readable}  \n"
+        f"**CANDIDATE ITEMS DISCOVERED:** {report.candidates_discovered}  ·  "
+        f"**SUBSTANTIVE:** {report.substantive_items}  \n"
+        f"**DUPLICATES REMOVED:** {report.duplicates_removed}  ·  "
+        f"**DEEPLY ANALYSED:** {report.deeply_analysed}  \n"
+        f"**PLAYERS FULLY RESEARCHED:** {report.players_researched}/{len(report.players)}  \n"
+        f"**LAST UPDATED:** {store.collected_at_display}  ·  {report.mode} pass, "
+        f"{report.seconds:.0f}s"
+    )
+    for verdict in report.verdicts.values():
+        if not verdict["ok"]:
+            st.error(f"**{verdict['headline']}** — " + " · ".join(verdict["reasons"]))
+
+    short = [name for name, rec in report.players.items() if not rec.researched]
+    if short:
+        st.warning(
+            "Below the three-item evidence threshold after every avenue was tried: "
+            + ", ".join(short)
+            + ". Their write-ups say so rather than inventing a view."
+        )
 
 
 def my_squad_players() -> list[dict]:
