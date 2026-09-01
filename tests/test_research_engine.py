@@ -283,3 +283,31 @@ def test_the_coverage_gate_fails_when_half_the_squad_is_unevidenced():
 
     nearly = {f"P{i}": player(f"P{i}", i < 13) for i in range(15)}
     assert gates.check_squad_coverage(nearly, 15), "one or two genuinely uncovered is fine"
+
+
+def test_coverage_is_assessed_against_the_whole_corpus_not_one_run(monkeypatch):
+    """The cache exists so evidence ACCUMULATES. Assessing coverage against
+    only what a run just fetched means every incremental pass reports the
+    squad as unresearched — it only downloaded what was new since
+    yesterday. A full pass reported 9/15 this way while the corpus held
+    ample evidence for all fifteen."""
+    known = [
+        _article(title=f"Haaland starts against Coventry, part {i}",
+                 url=f"https://old.com/news/haaland-{i}")
+        for i in range(4)
+    ]
+    fresh = [_article(title="Squad news roundup", url="https://new.com/news/roundup")]
+
+    def fake_collect(source, session, **kwargs):
+        return list(fresh), ""
+
+    monkeypatch.setattr(pipeline.collect, "collect_from", fake_collect)
+    monkeypatch.setattr(pipeline, "deep_read", lambda *a, **k: [])
+
+    _, report = pipeline.run([{"domain": "new.com", "tier": 3}],
+                             [SQUAD[0]], gameweek=3, session=_FakeSession(),
+                             known=known)
+    assert report.players["Haaland"].evidence_count >= 4, (
+        "evidence already in the corpus must still count"
+    )
+    assert report.players_researched == 1

@@ -69,7 +69,7 @@ def main() -> int:
 
     articles, report = pipeline.run(
         sources, squad, gameweek, mode=mode, since=since,
-        max_candidates=max_candidates, progress=progress)
+        max_candidates=max_candidates, progress=progress, known=store.items)
 
     store = corpus_mod.prune(corpus_mod.merge(store, articles))
     store.collected_at = report.ran_at

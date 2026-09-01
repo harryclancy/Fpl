@@ -254,7 +254,8 @@ def discover(sources: list[dict], session, mode: str = FULL,
 
 def deep_read(articles: list, session, squad: list[dict], gameweek: int,
               report: RunReport, min_items: int = MIN_DEEP_READ,
-              target: int = TARGET_DEEP_READ, ceiling: int = MAX_DEEP_READ) -> list:
+              target: int = TARGET_DEEP_READ, ceiling: int = MAX_DEEP_READ,
+              known: list | None = None) -> list:
     """Stage 5. Fetch the best candidates in full, stopping when covered.
 
     The loop is the adaptive part. After each batch it re-checks the squad:
@@ -288,7 +289,8 @@ def deep_read(articles: list, session, squad: list[dict], gameweek: int,
 
         if len(read) < min_items:
             continue
-        covered = _coverage(read + [a for a in articles if not a.deep_read], squad)
+        covered = _coverage(read + [a for a in articles if not a.deep_read]
+                            + list(known or []), squad)
         short = [name for name, rec in covered.items() if not rec.researched]
         if not short and len(read) >= min_items:
             break
@@ -297,6 +299,15 @@ def deep_read(articles: list, session, squad: list[dict], gameweek: int,
             # nobody has written about, not a reading problem.
             break
     return read
+
+
+def _combine(known: list | None, fresh: list) -> list:
+    """Everything the engine knows, one record per URL, freshest winning."""
+    by_url = {a.url: a for a in (known or []) if a.url}
+    for article in fresh:
+        if article.url:
+            by_url[article.url] = article
+    return list(by_url.values())
 
 
 def _coverage(articles: list, squad: list[dict]) -> dict[str, PlayerRecord]:
@@ -337,8 +348,17 @@ def _coverage(articles: list, squad: list[dict]) -> dict[str, PlayerRecord]:
 
 def run(sources: list[dict], squad: list[dict], gameweek: int, session=None,
         mode: str = FULL, since: datetime | None = None,
-        max_candidates: int = MAX_CANDIDATES, progress=None) -> tuple[list, RunReport]:
-    """The whole pipeline. Returns (articles worth keeping, report)."""
+        max_candidates: int = MAX_CANDIDATES, progress=None,
+        known: list | None = None) -> tuple[list, RunReport]:
+    """The whole pipeline. Returns (articles worth keeping, report).
+
+    `known` is what the corpus already holds. Passing it matters more than
+    it looks: without it, coverage is assessed against ONE RUN'S articles
+    and every incremental pass would report the squad as unresearched
+    because it only fetched what was new since yesterday. The cache exists
+    precisely so evidence accumulates; assessing without it throws that
+    away and made a full pass report 9/15 while the corpus held plenty.
+    """
     session = session or collect._session()
     started = time.time()
     report = RunReport(mode=mode, gameweek=gameweek,
@@ -373,11 +393,12 @@ def run(sources: list[dict], squad: list[dict], gameweek: int, session=None,
     ranked = ranking.rank(unique, squad, gameweek, tier_of)
 
     say(0.6, "Reading the most useful material in full…")
-    read = deep_read(ranked, session, squad, gameweek, report)
+    read = deep_read(ranked, session, squad, gameweek, report, known=known)
     report.deeply_analysed = len(read)
 
     say(0.9, "Assessing every owned player…")
-    records = _coverage(ranked, squad)
+    # Against everything known, not just this run's haul.
+    records = _coverage(_combine(known, ranked), squad)
     report.players = records
     report.seconds = time.time() - started
     return ranked, report

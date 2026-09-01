@@ -1198,7 +1198,7 @@ def run_research_refresh(gameweek: int) -> None:
 
     bar = st.progress(0.0, text="Starting the research pass…")
     articles, report = pipeline.run(
-        sources, squad, int(gameweek), mode=mode, since=since,
+        sources, squad, int(gameweek), mode=mode, since=since, known=store.items,
         progress=lambda fraction, text: bar.progress(min(fraction, 1.0), text=text))
 
     store = corpus_mod.prune(corpus_mod.merge(store, articles))
