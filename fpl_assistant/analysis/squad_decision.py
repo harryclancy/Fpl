@@ -104,6 +104,15 @@ class PlayerSignals:
     form: float = 0.0
     points_per_game: float = 0.0
 
+    # Selection record, from the official FPL data.
+    starts: int = 0
+    appearances: int = 0
+    minutes_played: int = 0
+    team_games: int = 0
+    total_points: int = 0
+    minutes_category: str = "Unassessed"
+    minutes_confidence: float = 0.6
+
     # From the research corpus.
     evidence_count: int = 0
     source_count: int = 0
@@ -223,13 +232,21 @@ def assess(signals: PlayerSignals) -> Assessment:
         score -= 10
         out.protections.append("the published evidence is predominantly favourable")
 
-    # --- unknowns are risk, but they are not problems -------------------
-    # An unresearched player is uncertain, not bad. Scoring him as though
-    # something were wrong is how a quiet, settled squad player gets sold
-    # on the basis of nobody having written about him.
-    if not signals.minutes_assessed:
-        score += 6
-        out.reasons.append("minutes unassessed — no source addressed his selection")
+    # --- expected minutes, graded ---------------------------------------
+    # Read from the selection record first and the news second. Previously
+    # this was a binary "did an article discuss his selection", which three
+    # days before a deadline is false for everyone — so every player took
+    # the same penalty and the ranking carried no information.
+    minutes_penalty = {
+        "Very secure": -12, "Secure": -6, "Slight concern": 4,
+        "Significant concern": 16, "Major doubt": 30, "Unassessed": 6,
+    }.get(signals.minutes_category, 6)
+    score += minutes_penalty
+    if minutes_penalty > 0:
+        out.reasons.append(f"expected minutes: {signals.minutes_category.lower()}")
+    else:
+        out.protections.append(f"expected minutes: {signals.minutes_category.lower()}")
+
     if signals.evidence_count == 0:
         score += 4
         out.reasons.append("no retrieved article mentions him at all")
@@ -303,23 +320,10 @@ def risk_adjusted(signals: PlayerSignals) -> float:
     projection at 60% starting confidence is worth less than 5.5 from a
     settled starter — which the old engine had no way to express.
     """
-    confidence = 1.0
-    if signals.flagged:
-        confidence *= 0.35
-    chance = signals.chance_of_playing
-    if chance is not None:
-        confidence *= max(0.1, chance / 100.0)
-    if signals.injury_talk:
-        confidence *= 0.85
-    if signals.omission_talk:
-        confidence *= 0.75
-    if signals.rotation_talk:
-        confidence *= 0.88
-    if signals.transfer_talk:
-        confidence *= 0.9
-    if not signals.minutes_assessed:
-        # Unknown, not bad. A small haircut for genuine uncertainty.
-        confidence *= 0.95
+    # The minutes assessment already folds in availability, the official
+    # chance-of-playing figure, injuries, omissions, rotation and transfer
+    # talk. Applying those again here would double-count them.
+    confidence = signals.minutes_confidence
     if signals.team_news_found and signals.evidence_balance >= 0:
         confidence = min(1.0, confidence * 1.05)
     return round(signals.projection * confidence, 2)
@@ -420,9 +424,12 @@ def future_transfer_cost(into: PlayerSignals) -> tuple[float, list[str]]:
     if into.transfer_talk:
         cost += 0.8
         notes.append("transfer speculation around the incoming player")
-    if not into.minutes_assessed:
+    if into.minutes_category == "Unassessed":
         cost += 0.6
         notes.append("incoming player's minutes are unassessed")
+    elif into.minutes_category in ("Significant concern", "Major doubt"):
+        cost += 1.0
+        notes.append(f"incoming player's minutes are a {into.minutes_category.lower()}")
     return cost, notes
 
 
@@ -523,7 +530,8 @@ def build_option(out: Assessment, into: PlayerSignals, bank: float,
     option.risks.extend(future_notes + reversal_notes)
 
     # Confidence follows the quality of what is known about both players.
-    known = (into.minutes_assessed, out.signals.minutes_assessed)
+    known = (into.minutes_category != "Unassessed",
+             out.signals.minutes_category != "Unassessed")
     sources = min(into.source_count, out.signals.source_count)
     if all(known) and sources >= 3 and not into.transfer_talk:
         option.confidence = "High"

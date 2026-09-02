@@ -76,10 +76,20 @@ def test_dead_money_on_the_bench_counts_as_a_problem():
 # --- risk-adjusted expectation -------------------------------------------
 
 def test_a_higher_projection_can_lose_to_a_secure_starter():
-    """6.0 at 60% confidence must not automatically beat 5.5 nailed on."""
-    risky = player("Risky", projection=6.0, chance_of_playing=60,
-                   rotation_talk=True, minutes_assessed=True)
-    secure = player("Secure", projection=5.5, minutes_assessed=True,
+    """6.0 at 60% confidence must not automatically beat 5.5 nailed on.
+
+    Availability now reaches the projection through the graded minutes
+    category rather than through a pile of separate multipliers, so this
+    is expressed as the categories the minutes model produces.
+    """
+    from fpl_assistant.analysis import minutes as m
+
+    risky = player("Risky", projection=6.0,
+                   minutes_category=m.SIGNIFICANT,
+                   minutes_confidence=m.CONFIDENCE[m.SIGNIFICANT])
+    secure = player("Secure", projection=5.5,
+                    minutes_category=m.VERY_SECURE,
+                    minutes_confidence=m.CONFIDENCE[m.VERY_SECURE],
                     team_news_found=True, positive_quotes=3)
     assert sd.risk_adjusted(secure) > sd.risk_adjusted(risky)
 
@@ -212,11 +222,14 @@ def test_a_hit_has_to_clear_its_own_cost():
 # --- confidence ----------------------------------------------------------
 
 def test_uncertainty_lowers_the_score():
-    out = sd.assess(player("Out", projection=4.0, minutes_assessed=True,
+    from fpl_assistant.analysis import minutes as m
+
+    out = sd.assess(player("Out", projection=4.0, minutes_category=m.SECURE,
                            source_count=4))
-    known = player("Known", club="LIV", projection=6.0, minutes_assessed=True,
-                   source_count=4)
-    unknown = player("Unknown", club="LIV", projection=6.0, source_count=0)
+    known = player("Known", club="LIV", projection=6.0,
+                   minutes_category=m.SECURE, source_count=4)
+    unknown = player("Unknown", club="LIV", projection=6.0,
+                     minutes_category=m.UNASSESSED, source_count=0)
     assert sd.build_option(out, known, 5.0).score > sd.build_option(out, unknown, 5.0).score
     assert sd.build_option(out, known, 5.0).confidence == "High"
     assert sd.build_option(out, unknown, 5.0).confidence == "Low"
