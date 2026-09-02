@@ -253,3 +253,63 @@ def test_the_club_limit_is_respected():
     sellers = {o.out_player for o in decision.options if o.kind == "transfer"}
     assert "Other" not in sellers, "that would put four Man City players in the squad"
     assert sellers, "swapping one Man City player for another is legal"
+
+
+def test_the_checklist_is_binding_not_advisory():
+    """The first full-input production run recommended selling a player its
+    own sanity check called "not a squad problem being fixed". Printing the
+    warning and recommending the move anyway is worse than not checking."""
+    squad = [
+        player("Settled", position="DEF", price=8.0, projection=5.0,
+               positive_quotes=6, points_per_game=6.0, source_count=4,
+               minutes_category="Very secure", minutes_confidence=1.0,
+               team_news_found=True, fixture_scores=[2.0, 2.2, 2.4, 2.5, 2.6]),
+        player("Problem", position="MID", price=6.0, projection=2.0,
+               status="i", injury_talk=True, source_count=3,
+               minutes_category="Major doubt", minutes_confidence=0.3),
+    ]
+    targets = [
+        player("SlightlyBetterDef", club="BHA", position="DEF", price=6.0,
+               projection=5.6, minutes_category="Secure", minutes_confidence=0.92,
+               source_count=3),
+        player("RealUpgrade", club="LIV", position="MID", price=7.0,
+               projection=5.5, minutes_category="Secure", minutes_confidence=0.92,
+               source_count=3),
+    ]
+    decision = sd.decide(squad, targets, bank=5.0)
+    assert decision.winner.kind == "transfer"
+    assert decision.winner.out_player == "Problem", (
+        "the injured player is the squad problem; the settled asset is not"
+    )
+
+
+def test_a_strong_asset_is_not_sold_when_it_fixes_nothing():
+    """The rejection path: the only move on offer sells a well-held player
+    while nothing is wrong with him. The engine must fall back rather than
+    print its own warning and proceed."""
+    squad = [player("Settled", position="DEF", price=8.0, projection=5.0,
+                    positive_quotes=6, points_per_game=6.0, source_count=4,
+                    minutes_category="Very secure", minutes_confidence=1.0,
+                    team_news_found=True, fixture_scores=[2.0, 2.2, 2.4])]
+    targets = [player("Marginal", club="BHA", position="DEF", price=6.0,
+                      projection=5.6, minutes_category="Secure",
+                      minutes_confidence=0.92, source_count=3)]
+    decision = sd.decide(squad, targets, bank=5.0)
+    assert decision.winner.kind == "roll", decision.winner.label
+    assert any("REJECTED" in n or "not worth spending" in n for n in decision.sanity), (
+        decision.sanity
+    )
+
+
+def test_an_overwhelming_case_can_still_override_the_checklist():
+    """Nothing is protected absolutely — the bar is just high."""
+    squad = [player("Settled", position="DEF", price=8.0, projection=2.0,
+                    positive_quotes=6, points_per_game=6.0, source_count=4,
+                    minutes_category="Very secure", minutes_confidence=1.0)]
+    targets = [player("Elite", club="BHA", position="DEF", price=8.0,
+                      projection=9.0, minutes_category="Very secure",
+                      minutes_confidence=1.0, source_count=4,
+                      fixture_scores=[2.0, 2.0, 2.0, 2.0, 2.0])]
+    decision = sd.decide(squad, targets, bank=5.0)
+    assert decision.winner.kind == "transfer"
+    assert any("overridden" in n for n in decision.sanity)

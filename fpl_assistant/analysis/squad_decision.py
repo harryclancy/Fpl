@@ -651,6 +651,68 @@ def decide(squad: list[PlayerSignals], targets: list[PlayerSignals],
             f"rolling, so it is not worth spending the transfer.")
 
     decision.sanity.extend(_sanity(decision, by_name))
+
+    # The checklist is BINDING, not advisory. The first full-input
+    # production run recommended selling a player its own sanity check
+    # described as "not a squad problem being fixed" — the warning was
+    # printed and the move was recommended anyway, which is worse than not
+    # checking at all, because it looks like the check was considered.
+    decision = _enforce(decision, by_name, roll)
+    return decision
+
+
+def _enforce(decision: Decision, by_name: dict, roll: Option | None) -> Decision:
+    """Demotes a winner that fails its own checks, unless it is overwhelming.
+
+    A strong asset may still be sold — nothing is protected absolutely —
+    but the bar is a move that is clearly worth it, not one that edges
+    ahead on a projection difference while the squad has no actual problem
+    at that position.
+    """
+    winner = decision.winner
+    if not winner or winner.kind != "transfer":
+        return decision
+
+    sold = by_name.get(winner.out_player)
+    if sold is None:
+        return decision
+
+    failures = []
+    if sold.sell_urgency <= 30:
+        failures.append(f"{sold.name} is a {sold.band.lower()} at "
+                        f"{sold.sell_urgency:.0f}/100 — no problem is being fixed")
+    if sold.hold_strength >= 65:
+        failures.append(f"{sold.name}'s hold strength is {sold.hold_strength:.0f}")
+    if not failures:
+        return decision
+
+    # An overwhelming case can still override the checklist. Twice the
+    # threshold for acting, over five gameweeks, on at least medium
+    # confidence — anything less and the checklist wins.
+    overwhelming = (winner.gain_5gw >= MIN_GAIN_TO_ACT * 2
+                    and winner.confidence in ("High", "Medium")
+                    and not any("nothing was identified" in r for r in winner.risks))
+    if overwhelming:
+        decision.sanity.append(
+            "Selling a well-held asset, and the checklist was overridden: the case "
+            f"is {winner.gain_5gw:+.1f} over five gameweeks at {winner.confidence.lower()} "
+            f"confidence, which clears twice the bar for acting. " + " · ".join(failures))
+        return decision
+
+    alternatives = [
+        option for option in decision.options
+        if option is not winner
+        and (option.kind == "roll"
+             or (by_name.get(option.out_player) and
+                 by_name[option.out_player].sell_urgency > 30))
+    ]
+    replacement = alternatives[0] if alternatives else (roll or winner)
+    decision.sanity.append(
+        f"REJECTED {winner.label}: " + " · ".join(failures)
+        + f". Falling back to {replacement.label}, which either addresses a real "
+        f"squad problem or keeps the transfer.")
+    decision.runner_up = winner
+    decision.winner = replacement
     return decision
 
 
