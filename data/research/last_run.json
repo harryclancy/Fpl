@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T12:17:09+00:00",
- "seconds": 140.7,
+ "ran_at": "2026-09-02T13:11:23+00:00",
+ "seconds": 155.4,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 545,
- "substantive_items": 105,
+ "sources_readable": 65,
+ "candidates_discovered": 588,
+ "substantive_items": 147,
  "duplicates_removed": 3,
- "deeply_analysed": 63,
+ "deeply_analysed": 81,
  "deep_read_failed": 39,
- "corpus_size": 3237,
+ "corpus_size": 3290,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 105 articles"
+    "65/78 sources returned 147 articles"
    ]
   },
   "blackout": {
@@ -45,7 +45,6 @@
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -1011,7 +1010,7 @@
    "club": "BRE",
    "evidence_count": 6,
    "source_count": 2,
-   "latest_evidence": "2026-08-24T14:56:00+01:00",
+   "latest_evidence": "2026-09-02T13:55:12+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1023,6 +1022,7 @@
    "dimensions_covered": [
     "fixtures",
     "injury",
+    "press conference",
     "set pieces",
     "tactics",
     "team news",
@@ -1032,6 +1032,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea transfer news: Monaco chief speaks out on Lamine Camara saga, defends decision to scrap deadline-day deal",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/part-of-the-game-monaco-chief-defends-scrapping-camara-chelsea-deadline-day-transfer_604283.html",
+     "source": "Sports Mole",
+     "published": "2026-09-02T13:55:12+01:00",
+     "matched_on": "thiago",
+     "kind": "transfer",
+     "excerpt": "Monaco sporting director Thiago Scuro defends the decision to scrap Lamine Camara's proposed transfer to Chelsea during the closing minutes of the summer window."
+    },
     {
      "title": "Birmingham City vs Brentford - prediction, team news, lineups",
      "url": "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
@@ -1071,15 +1080,6 @@
     {
      "title": "Brentford b team 5 sunderland u21s 1 match report kaye furo fabio carvalho premier league 2",
      "url": "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Academy west ham u18s 5 brentford u18s 4 jai nwosu gary mcdermott match report u18s premier league",
-     "url": "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league",
      "source": "Brentford",
      "published": "",
      "matched_on": "BRE team news",

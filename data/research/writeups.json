@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-02T12:17:09+00:00",
+ "generated": "2026-09-02T13:11:23+00:00",
  "gameweek": 3,
- "corpus_size": 3237,
+ "corpus_size": 3290,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -906,12 +906,12 @@
    "confidence": "medium",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/part-of-the-game-monaco-chief-defends-scrapping-camara-chelsea-deadline-day-transfer_604283.html",
     "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
     "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
     "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
     "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-    "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
-    "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league"
+    "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2"
    ],
    "sources_used": [
     "Brentford",
