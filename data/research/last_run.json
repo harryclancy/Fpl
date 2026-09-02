@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T19:16:47+00:00",
- "seconds": 172.4,
+ "ran_at": "2026-09-02T23:26:53+00:00",
+ "seconds": 136.6,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 555,
- "substantive_items": 117,
- "duplicates_removed": 3,
+ "sources_readable": 65,
+ "candidates_discovered": 685,
+ "substantive_items": 239,
+ "duplicates_removed": 22,
  "deeply_analysed": 74,
- "deep_read_failed": 40,
- "corpus_size": 3600,
+ "deep_read_failed": 16,
+ "corpus_size": 3742,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 117 articles"
+    "65/78 sources returned 239 articles"
    ]
   },
   "blackout": {
@@ -37,7 +37,6 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "Fantasy Football Pundit: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
@@ -759,9 +758,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 11,
-   "source_count": 8,
-   "latest_evidence": "2026-09-02T13:55:59+00:00",
+   "evidence_count": 12,
+   "source_count": 9,
+   "latest_evidence": "2026-09-02T20:55:32+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -820,6 +819,15 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
+    },
+    {
+     "title": "Harry and Lloyd’s Predictions GW3",
+     "url": "https://fantasyfootball247.co.uk/harry-and-lloyds-predictions-gw3-3/",
+     "source": "Fantasy Football 247",
+     "published": "2026-09-02T20:55:32+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Harry and Lloyd’s Predictions GW3 Welcome to Harry and Lloyd’s Predictions GW3 A very high scoring week this week. Haaland had a massive say in the points total. Lots of people correctly predicted him to be first scorer. Lots of extra bonus 5 points for managers and that was needed to claim top spot this […] The post Harry and Lloyd’s Predictions GW3 appeared first on Fantasy Football 247 - Premie"
     },
     {
      "title": "Who is the top scorer of 2026? Harry Kane running away with the title",

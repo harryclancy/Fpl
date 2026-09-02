@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-02T19:16:47+00:00",
+ "generated": "2026-09-02T23:26:53+00:00",
  "gameweek": 3,
- "corpus_size": 3600,
+ "corpus_size": 3742,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -640,20 +640,21 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — FourFourTwo FPL, 02 Sep: “For all the noise surrounding Ekitike, and Haaland’s Golden Boot procession, a certain Brazilian was quietly staking his claim as the Premier League’s next best striker.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 11 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
+   "status": "Latest on Haaland — Fantasy Football 247, 02 Sep: “Haaland had a massive say in the points total.”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 12 retrieved item(s) from 9 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances.” Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).” Fantasy Football Scout, 01 Sep: “Here, we take a look at some of the pros and cons of using the Triple Captain chip on Haaland in Gameweek 3.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]” Full90 FPL, 23 Aug: “If he had started without Haaland and Bruno Fernandes this season he would be laughing.” Opta Analyst, 22 Aug: “Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season.”",
-   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "developments": "Recent developments — Fantasy Football 247, 02 Sep: “If they has correctly guessed Haaland as FGS, we would have had a different winner.” FourFourTwo FPL, 02 Sep: “For all the noise surrounding Ekitike, and Haaland’s Golden Boot procession, a certain Brazilian was quietly staking his claim as the Premier League’s next best striker.” Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "outlook": "On the coming weeks — Opta Analyst, 22 Aug: “Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season.”",
    "confidence": "high",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://fantasyfootball247.co.uk/harry-and-lloyds-predictions-gw3-3/",
     "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
     "https://www.fantasyfootballhub.co.uk/best-fpl-players-for-gameweek-3-article-26-27",
     "https://www.mancity.com/news/mens/haaland-post-palace-reaction-pl-28-aug-63923550",
@@ -664,6 +665,7 @@
    ],
    "sources_used": [
     "FPL Captain",
+    "Fantasy Football 247",
     "Fantasy Football Hub",
     "Fantasy Football Scout",
     "Football365",
@@ -673,6 +675,22 @@
     "Opta Analyst"
    ],
    "quotes": [
+    {
+     "text": "Haaland had a massive say in the points total.",
+     "source": "Fantasy Football 247",
+     "url": "https://fantasyfootball247.co.uk/harry-and-lloyds-predictions-gw3-3/",
+     "published": "2026-09-02T20:55:32+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "If they has correctly guessed Haaland as FGS, we would have had a different winner.",
+     "source": "Fantasy Football 247",
+     "url": "https://fantasyfootball247.co.uk/harry-and-lloyds-predictions-gw3-3/",
+     "published": "2026-09-02T20:55:32+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances.",
      "source": "FourFourTwo FPL",
