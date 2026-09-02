@@ -140,6 +140,8 @@ class RunReport:
     players: dict = field(default_factory=dict)
     failures: list[str] = field(default_factory=list)
     verdicts: dict = field(default_factory=dict)
+    # Stage B's output, recorded here so the summary can report it.
+    writeups_with_prose: int = 0
 
     @property
     def players_researched(self) -> int:

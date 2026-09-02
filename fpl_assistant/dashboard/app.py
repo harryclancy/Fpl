@@ -1209,8 +1209,33 @@ def run_research_refresh(gameweek: int) -> None:
     corpus_mod.save(store)
     report.corpus_size = len(store)
     report.verdicts = pipeline.verdicts(report, len(store))
+
+    # Stage B, immediately. Refreshing the corpus without regenerating the
+    # prose would leave the page showing yesterday's write-ups over
+    # today's evidence, which is the same class of lie as not refreshing
+    # at all — worse, because the timestamp would say it was current.
+    bar.progress(0.97, text="Writing up every player from the new evidence…")
+    from fpl_assistant.analysis import writeup as writeup_mod
+    writeups = writeup_mod.build_all(
+        squad,
+        {name: pipeline._as_player_evidence(rec, len(store))
+         for name, rec in report.players.items()},
+        starting_ids={p["id"] for p in squad if not p.get("on_bench")},
+        captain_id=next((p["id"] for p in squad if p.get("is_captain")), None),
+    )
+    try:
+        (root / "data" / "research" / "writeups.json").write_text(_json.dumps({
+            "note": "Homepage prose composed from data/research/corpus.json.",
+            "generated": report.ran_at, "gameweek": int(gameweek),
+            "corpus_size": len(store),
+            "players": {n: w.as_dict() for n, w in writeups.items()},
+        }, indent=1, ensure_ascii=False) + "\n")
+    except OSError:
+        st.warning("The corpus refreshed but the write-ups could not be saved to disk "
+                   "(read-only filesystem). The page will show the previous prose.")
     bar.empty()
 
+    report.writeups_with_prose = sum(1 for w in writeups.values() if w.has_prose)
     render_research_summary(report, store)
     st.cache_data.clear()
 
@@ -1281,6 +1306,38 @@ def _section(title: str, subtitle: str = "") -> None:
         render_html(f"<p class='fpl-sub'>{subtitle}</p>")
 
 
+def render_corpus_transfer(out_name: str, in_name: str) -> bool:
+    """The four questions a transfer has to answer, argued from evidence."""
+    from fpl_assistant.analysis import writeup as writeup_mod
+
+    payload = load_writeups()
+    players = payload.get("players") or {}
+    if out_name not in players or in_name not in players:
+        return False
+
+    def revive(entry):
+        made = writeup_mod.PlayerWriteup(
+            player=entry["player"], club=entry.get("club", ""),
+            case_for=entry.get("case_for", ""), case_against=entry.get("case_against", ""),
+            expected_minutes=entry.get("expected_minutes", ""),
+            evidence_used=entry.get("evidence_used", []),
+        )
+        made.quotes = [writeup_mod.Quote(**{k: v for k, v in q.items() if k != "topics"})
+                       for q in (entry.get("quotes") or [])]
+        return made
+
+    case = writeup_mod.transfer(revive(players[out_name]), revive(players[in_name]))
+    for heading, body in (("Why this player out", case.why_out),
+                          ("Why this player in", case.why_in),
+                          ("Why not the obvious alternative", case.why_not_alternative),
+                          ("What it means for the next few gameweeks",
+                           case.next_few_gameweeks)):
+        if body:
+            st.markdown(f"**{heading}.** {body}")
+    st.caption(f"Argued from the research corpus. Confidence: {case.confidence}.")
+    return True
+
+
 def render_transfer_block(case, index: int) -> None:
     """One suggested transfer, argued rather than announced.
 
@@ -1308,14 +1365,21 @@ def render_transfer_block(case, index: int) -> None:
     )
 
     st.markdown("**Why this transfer?**")
-    st.markdown(f"**Selling {case.out.name}.** " + (
-        " ".join(f"{point} ({source})." for point, source in case.out.reasons)
-        or "Nothing specific is being said against him — he is simply the player the squad can most afford to lose."
-    ))
-    st.markdown(f"**Buying {case.into.name}.** " + (
-        " ".join(f"{point} ({source})." for point, source in case.into.reasons)
-        or "No researched case beyond the projection, which is thin ground for spending a transfer."
-    ))
+
+    # The corpus argues the move first, because it is reporting. What
+    # follows is the structured case built from projections and fixture
+    # data, which is computation and belongs second.
+    argued = render_corpus_transfer(case.out.name, case.into.name)
+
+    if not argued:
+        st.markdown(f"**Selling {case.out.name}.** " + (
+            " ".join(f"{point} ({source})." for point, source in case.out.reasons)
+            or "Nothing specific is being said against him — he is simply the player the squad can most afford to lose."
+        ))
+        st.markdown(f"**Buying {case.into.name}.** " + (
+            " ".join(f"{point} ({source})." for point, source in case.into.reasons)
+            or "No researched case beyond the projection, which is thin ground for spending a transfer."
+        ))
     if case.into.record:
         st.markdown(f"**His record against them.** {case.into.record}")
     st.markdown(case.why_this_swap)
@@ -1348,6 +1412,67 @@ VERDICT_STYLE = {
 }
 
 
+@st.cache_data(ttl=120)
+def load_writeups() -> dict:
+    """Homepage prose, composed from the research corpus.
+
+    Cached briefly rather than not at all: it is read once per player card
+    and the file only changes when a refresh runs.
+    """
+    import json as _json
+    from pathlib import Path as _Path
+    path = (_Path(__file__).resolve().parent.parent.parent
+            / "data" / "research" / "writeups.json")
+    try:
+        return _json.loads(path.read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+def render_corpus_writeup(name: str) -> bool:
+    """The player's write-up, every sentence quoted from a real article.
+
+    Returns whether anything was rendered, so the caller can tell the
+    difference between "the corpus had nothing" and "the corpus was never
+    consulted" — a distinction this app spent a long time unable to make.
+    """
+    payload = load_writeups()
+    entry = (payload.get("players") or {}).get(name)
+    if not entry:
+        return False
+
+    sections = (
+        ("Current status", entry.get("status")),
+        ("Why he is here", entry.get("why_here")),
+        ("Case for keeping", entry.get("case_for")),
+        ("Case for selling", entry.get("case_against")),
+        ("Expected minutes", entry.get("expected_minutes")),
+        ("Recent developments", entry.get("developments")),
+        ("Next 3–5 gameweeks", entry.get("outlook")),
+    )
+    rendered = False
+    for heading, body in sections:
+        if not body:
+            continue
+        rendered = True
+        st.markdown(f"**{heading}.** {body}")
+
+    used = entry.get("evidence_used") or []
+    sources = entry.get("sources_used") or []
+    if used:
+        st.caption(
+            f"Composed from {entry.get('evidence_count', len(used))} retrieved item(s) "
+            f"across {len(sources)} source(s) — {', '.join(sources[:6])}. "
+            f"Confidence: {entry.get('confidence', 'low')}."
+        )
+        with st.expander(f"Evidence behind this write-up ({len(used)} links)"):
+            for quote in (entry.get("quotes") or [])[:8]:
+                st.markdown(f"- *{quote['source']}* — “{quote['text']}”  \n  {quote['url']}")
+            for url in used:
+                st.caption(url)
+    return rendered
+
+
 def render_player_card(d, alternative_case=None) -> None:
     """One owned player's full dossier.
 
@@ -1372,6 +1497,17 @@ def render_player_card(d, alternative_case=None) -> None:
         f"<span class='fpl-pill fpl-med'>Minutes: {d.minutes_outlook}</span>"
         "</div>"
     )
+
+    # The corpus is the source of the narrative now. What follows it is
+    # the structured dossier — fixtures, flags, projections — which is
+    # computed rather than reported and belongs underneath the reporting.
+    from_corpus = render_corpus_writeup(d.name)
+    if not from_corpus:
+        st.info(
+            f"No corpus write-up for {d.name}. The sections below are the structured "
+            f"dossier only — run a research refresh to generate prose from retrieved "
+            f"articles."
+        )
 
     note = d.escalation_note()
     if note:
