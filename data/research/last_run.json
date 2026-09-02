@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T13:27:07+00:00",
- "seconds": 132.9,
+ "ran_at": "2026-09-02T13:42:28+00:00",
+ "seconds": 181.7,
  "sources_attempted": 78,
  "sources_readable": 65,
- "candidates_discovered": 550,
- "substantive_items": 115,
- "duplicates_removed": 3,
- "deeply_analysed": 71,
- "deep_read_failed": 41,
- "corpus_size": 3301,
+ "candidates_discovered": 572,
+ "substantive_items": 138,
+ "duplicates_removed": 4,
+ "deeply_analysed": 81,
+ "deep_read_failed": 39,
+ "corpus_size": 3336,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 115 articles"
+    "65/78 sources returned 138 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,7 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
-  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
+  "Fantasy Football Pundit: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
@@ -1009,27 +1009,25 @@
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "evidence_count": 6,
-   "source_count": 2,
+   "evidence_count": 3,
+   "source_count": 3,
    "latest_evidence": "2026-09-02T13:55:12+01:00",
-   "official_source_found": true,
-   "fpl_source_found": false,
+   "official_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": true,
+   "fixtures_assessed": false,
    "dimensions_covered": [
-    "fixtures",
     "injury",
     "press conference",
-    "set pieces",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -1043,49 +1041,22 @@
      "excerpt": "Monaco sporting director Thiago Scuro defends the decision to scrap Lamine Camara's proposed transfer to Chelsea during the closing minutes of the summer window."
     },
     {
-     "title": "Birmingham City vs Brentford - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
-     "source": "Sports Mole",
-     "published": "2026-08-24T14:56:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Tuesday's EFL Cup clash between Birmingham City and Brentford, including predictions, team news and possible lineups."
+     "title": "Liverpool have just received some good news about signing Lamine Camara in 2027",
+     "url": "https://www.football365.com/news/lamine-camara-liverpool-as-monaco-thiago-scuro",
+     "source": "Football365",
+     "published": "2026-09-02T13:43:45+00:00",
+     "matched_on": "thiago",
+     "kind": "general",
+     "excerpt": "What AS Monaco sporting director Thiago Scuro has said about Lamine Camara will be music to Liverpool’s ears."
     },
     {
-     "title": "Transfer news and rumours: Palacios to Ipswich, Diouf to Brentford, Flemming Burnley doubts",
-     "url": "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
-     "source": "Sports Mole",
-     "published": "2026-08-24T09:55:26+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up today's latest transfer news and rumours, including the latest on Ezequiel Palacios to Ipswich Town, El Hadji Malick Diouf to Brentford and Zian Flemming’s future at Burnley."
-    },
-    {
-     "title": "Match reports leeds united 1 brentford 1 premier league 30 08 2026",
-     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "First team leeds united v brentford premier league confirmed team news 30 08 2026",
-     "url": "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Brentford b team 5 sunderland u21s 1 match report kaye furo fabio carvalho premier league 2",
-     "url": "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
+     "title": "Inside Everton's failed Folarin Balogun transfer as Monaco chief makes brutal 'no sense at all' claim",
+     "url": "https://www.fourfourtwo.com/transfer/inside-evertons-failed-folarin-balogun-transfer-as-monaco-chief-makes-brutal-no-sense-at-all-claim",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-02T13:40:34+00:00",
+     "matched_on": "thiago",
+     "kind": "general",
+     "excerpt": "AS Monaco sporting director Thiago Scuro has revealed the extraordinary sequence of events behind Folarin Balogun’s deadline day transfer collapse to Everton. Speaking to Get French Football News (GFFN) , Scuro detailed how medical doubts raised by the Premier League club ultimately provoked the striker to reject the move at the final minute. Scuro explained that Monaco had established a clear fin"
     }
    ]
   },
