@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T13:42:28+00:00",
- "seconds": 181.7,
+ "ran_at": "2026-09-02T17:27:41+00:00",
+ "seconds": 149.3,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 572,
- "substantive_items": 138,
- "duplicates_removed": 4,
- "deeply_analysed": 81,
- "deep_read_failed": 39,
- "corpus_size": 3336,
+ "sources_readable": 64,
+ "candidates_discovered": 705,
+ "substantive_items": 267,
+ "duplicates_removed": 13,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 3505,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 138 articles"
+    "64/78 sources returned 267 articles"
    ]
   },
   "blackout": {
@@ -49,7 +49,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -534,7 +535,7 @@
   },
   "Ndiaye": {
    "player": "Ndiaye",
-   "club": "EVE",
+   "club": "MCI",
    "evidence_count": 23,
    "source_count": 12,
    "latest_evidence": "2026-09-02T11:44:47+00:00",
@@ -758,9 +759,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 10,
-   "source_count": 7,
-   "latest_evidence": "2026-09-02T06:00:00+00:00",
+   "evidence_count": 11,
+   "source_count": 8,
+   "latest_evidence": "2026-09-02T13:55:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -821,6 +822,15 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "Who is the top scorer of 2026? Harry Kane running away with the title",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "source": "Football365",
+     "published": "2026-09-02T13:55:59+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Harry Kane was out of the blocks like a bullet in 2026, opening a big lead over 2025’s clear winner Kylian Mbappe and everyone else."
+    },
+    {
      "title": "Best FPL players for Gameweek 3",
      "url": "https://www.fantasyfootballhub.co.uk/best-fpl-players-for-gameweek-3-article-26-27",
      "source": "Fantasy Football Hub",
@@ -879,9 +889,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "source_count": 6,
-   "latest_evidence": "2026-09-02T08:38:00+00:00",
+   "latest_evidence": "2026-09-02T14:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -960,6 +970,15 @@
      "excerpt": "The transfer window has now drawn to a conclusion, with Aston Villa welcoming no less than 10 new signings to the club. Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton W"
     },
     {
+     "title": "Chelsea are the winners of the transfer window, again - and it's not even close",
+     "url": "https://www.fourfourtwo.com/team/chelsea-are-the-winners-of-the-transfer-window-again-and-its-not-even-close",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-02T14:00:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "general",
+     "excerpt": "There is an argument that Chelsea are better at conducting transfers than they are at winning football matches. This summer's window has done nothing to redress that balance. While rival fans mock and scoff at the volume of transfer activity at Stamford Bridge , the reality is they're quite good at it. Xabi Alonso ’s side have emerged from the 2026 summer window stronger, more balanced, and the un"
+    },
+    {
      "title": "Chelsea 4-3 Brighton Stats: Cole Palmer Decides Seven-Goal Thriller as Xabi Alonso’s Men Stay Perfect",
      "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
      "source": "Opta Analyst",
@@ -1009,9 +1028,9 @@
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "evidence_count": 3,
+   "evidence_count": 4,
    "source_count": 3,
-   "latest_evidence": "2026-09-02T13:55:12+01:00",
+   "latest_evidence": "2026-09-02T15:18:40+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1031,6 +1050,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Everton transfer news: Monaco chief makes Folarin Balogun claim after failed Toffees move",
+     "url": "https://www.sportsmole.co.uk/football/everton/transfer-talk/news/monaco-chief-makes-major-balogun-claim-after-failed-everton-transfer_604292.html",
+     "source": "Sports Mole",
+     "published": "2026-09-02T15:18:40+01:00",
+     "matched_on": "thiago",
+     "kind": "transfer",
+     "excerpt": "Monaco sporting director Thiago Scuro claims that Folarin Balogun did 'not feel comfortable' signing for Everton on transfer deadline day."
+    },
     {
      "title": "Chelsea transfer news: Monaco chief speaks out on Lamine Camara saga, defends decision to scrap deadline-day deal",
      "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/part-of-the-game-monaco-chief-defends-scrapping-camara-chelsea-deadline-day-transfer_604283.html",

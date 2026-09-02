@@ -181,7 +181,7 @@
   },
   {
    "player": "Ndiaye",
-   "club": "EVE",
+   "club": "MCI",
    "position": "MID",
    "price": 6.0,
    "sell_urgency": 0.0,
@@ -573,6 +573,41 @@
   },
   {
    "kind": "transfer",
+   "label": "Ndiaye → Ndoye",
+   "classification": "Structural move",
+   "out": "Ndiaye",
+   "in": "Ndoye",
+   "gain_this_gw": 2.29,
+   "gain_3gw": 6.63,
+   "gain_5gw": 10.97,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": 5.4,
+   "confidence": "Medium",
+   "components": {
+    "_corroboration": [
+     "there is transfer speculation around him"
+    ],
+    "five_gw_gain": 11.0,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.8,
+    "asset_loss": -2.0,
+    "hit_cost": -0.0,
+    "_plausibility": "exceptional — requires corroboration"
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Ndiaye, whose hold strength is 95",
+    "Ndiaye is a strong asset on current evidence — selling him now risks buying him back",
+    "Ndiaye takes penalties, which is hard to replace"
+   ]
+  },
+  {
+   "kind": "transfer",
    "label": "Gabriel → White",
    "classification": "Structural move",
    "out": "Gabriel",
@@ -604,57 +639,22 @@
   },
   {
    "kind": "transfer",
-   "label": "Ndiaye → Ndoye",
-   "classification": "Structural move",
-   "out": "Ndiaye",
-   "in": "Ndoye",
-   "gain_this_gw": 1.96,
-   "gain_3gw": 5.69,
-   "gain_5gw": 9.42,
-   "bank_after": 0.5,
-   "hits": 0,
-   "score": 3.85,
-   "confidence": "Medium",
-   "components": {
-    "_corroboration": [
-     "there is transfer speculation around him"
-    ],
-    "five_gw_gain": 9.45,
-    "structure": 0.0,
-    "captaincy": 0.0,
-    "money_enabled": 0.0,
-    "fixture_swing": 0.0,
-    "future_transfer_cost": -0.0,
-    "reversal_risk": -2.8,
-    "asset_loss": -2.0,
-    "hit_cost": -0.0,
-    "_plausibility": "strong"
-   },
-   "reasons": [],
-   "risks": [
-    "gives up Ndiaye, whose hold strength is 95",
-    "Ndiaye is a strong asset on current evidence — selling him now risks buying him back",
-    "Ndiaye takes penalties, which is hard to replace"
-   ]
-  },
-  {
-   "kind": "transfer",
    "label": "Ndiaye → Mundle",
    "classification": "Structural move",
    "out": "Ndiaye",
    "in": "Mundle",
-   "gain_this_gw": 1.4,
-   "gain_3gw": 5.32,
-   "gain_5gw": 9.24,
+   "gain_this_gw": 1.73,
+   "gain_3gw": 6.26,
+   "gain_5gw": 10.79,
    "bank_after": 1.0,
    "hits": 0,
-   "score": 2.55,
+   "score": 4.1,
    "confidence": "Medium",
    "components": {
     "_corroboration": [
      "there is transfer speculation around him"
     ],
-    "five_gw_gain": 9.15,
+    "five_gw_gain": 10.7,
     "structure": 0.0,
     "captaincy": 0.0,
     "money_enabled": 0.0,
@@ -663,7 +663,7 @@
     "reversal_risk": -2.8,
     "asset_loss": -2.0,
     "hit_cost": -0.0,
-    "_plausibility": "strong"
+    "_plausibility": "exceptional — requires corroboration"
    },
    "reasons": [],
    "risks": [
@@ -1220,38 +1220,6 @@
   },
   {
    "kind": "transfer",
-   "label": "Guéhi → Gvardiol",
-   "classification": "Structural move",
-   "out": "Guéhi",
-   "in": "Gvardiol",
-   "gain_this_gw": -0.39,
-   "gain_3gw": -1.09,
-   "gain_5gw": -1.79,
-   "bank_after": 0.4,
-   "hits": 0,
-   "score": -5.85,
-   "confidence": "Medium",
-   "components": {
-    "_corroboration": [],
-    "five_gw_gain": -1.8,
-    "structure": 0.0,
-    "captaincy": 0.0,
-    "money_enabled": 0.0,
-    "fixture_swing": 0.0,
-    "future_transfer_cost": -0.0,
-    "reversal_risk": -2.0,
-    "asset_loss": -1.25,
-    "hit_cost": -0.0,
-    "_plausibility": "small edge"
-   },
-   "reasons": [],
-   "risks": [
-    "gives up Guéhi, whose hold strength is 80",
-    "Guéhi is a strong asset on current evidence — selling him now risks buying him back"
-   ]
-  },
-  {
-   "kind": "transfer",
    "label": "Raya → Sels",
    "classification": "Budget release",
    "out": "Raya",
@@ -1782,7 +1750,7 @@
  ],
  "note": "Transfer decisions built from the fifteen players owned rather than from a shopping list. Sell urgency is scored per player from live FPL data and corpus evidence; no player is protected by name. Rolling is scored on the same scale as every move.",
  "gameweek": 3,
- "generated_from_corpus": 3336,
+ "generated_from_corpus": 3505,
  "completeness": {
   "complete": true,
   "checks": {
@@ -1946,27 +1914,27 @@
   },
   "Ndiaye": {
    "series": [
-    5.55,
-    5.36,
-    5.55,
-    5.36,
-    5.55
+    5.2,
+    5.06,
+    5.2,
+    5.06,
+    5.2
    ],
    "baseline_ppg": 6.5,
    "shrunk_baseline": 5.38,
    "positional_median": 5.0,
-   "regressed_to": 5.55,
+   "regressed_to": 5.2,
    "regression_note": "",
    "news_discount": 0.94,
    "confidence": "Medium",
    "horizon": [
-    5.22,
-    5.04,
-    5.22,
-    5.04,
-    5.22
+    4.89,
+    4.76,
+    4.89,
+    4.76,
+    4.89
    ],
-   "five_gw_total": 25.74
+   "five_gw_total": 24.19
   },
   "Schade": {
    "series": [
