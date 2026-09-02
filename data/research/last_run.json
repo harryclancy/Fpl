@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T13:11:23+00:00",
- "seconds": 155.4,
+ "ran_at": "2026-09-02T13:27:07+00:00",
+ "seconds": 132.9,
  "sources_attempted": 78,
  "sources_readable": 65,
- "candidates_discovered": 588,
- "substantive_items": 147,
+ "candidates_discovered": 550,
+ "substantive_items": 115,
  "duplicates_removed": 3,
- "deeply_analysed": 81,
- "deep_read_failed": 39,
- "corpus_size": 3290,
+ "deeply_analysed": 71,
+ "deep_read_failed": 41,
+ "corpus_size": 3301,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 147 articles"
+    "65/78 sources returned 115 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,7 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
-  "Fantasy Football Pundit: nothing published in the last 10 days",
+  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
@@ -57,8 +57,8 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-01T19:48:29+00:00",
-   "official_source_found": true,
+   "latest_evidence": "2026-09-02T13:09:36+00:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": false,
    "starting_status_assessed": true,
@@ -70,6 +70,7 @@
     "fixtures",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -79,6 +80,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Eberechi Eze set for new Arsenal role as Arteta misses out on elite attacking duo",
+     "url": "https://www.football365.com/news/eberechi-eze-new-role-arsenal-miss-out-vinicius-junior-julian-alvarez",
+     "source": "Football365",
+     "published": "2026-09-02T13:09:36+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal midfielder Eberechi Eze will be asked to frequent a different role this season as the Gunners respond to failures to land a pair of elite forwards this summer."
+    },
     {
      "title": "‘The best possible solution’ – Dortmund loan Arsenal forward Nwaneri after huge injury blow",
      "url": "https://www.101greatgoals.com/football/bundesliga/dortmund-loan-arsenal-forward-nwaneri/",
@@ -123,15 +133,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Vivianne Miedema helped Manchester City break Chelsea’s six-year Women’s Super League winning streak last season as they claimed victory under new manager Andree Jeglertz. Manchester City claimed their first WSL title since 2016 last term, before going on to complete a domestic double by beating Brighton to lift the FA Cup. Miedema, who joined from Arsenal in 2024, says the achievement represented"
-    },
-    {
-     "title": "Aston Villa 0-1 Arsenal",
-     "url": "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
-     "source": "Aston Villa",
-     "published": "2026-08-31T20:58:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Fixtures Aston Villa Vs. Arsenal - Mon, Aug 31 2026, 20:00 Aston Villa fell to defeat in their opening home game of the 2026/27 season on Bank Holiday Monday, narrowly losing out 1-0 to Arsenal. Bukayo Saka’s strike just before the hour mark was enough to seal all three points for the reigning Premier League champions at a new-look Villa Park. Unai Emery’s men showed signs of promise – with three "
     }
    ]
   },
