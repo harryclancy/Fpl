@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T12:02:39+00:00",
- "seconds": 150.9,
+ "ran_at": "2026-09-02T12:17:09+00:00",
+ "seconds": 140.7,
  "sources_attempted": 78,
  "sources_readable": 64,
- "candidates_discovered": 566,
- "substantive_items": 127,
+ "candidates_discovered": 545,
+ "substantive_items": 105,
  "duplicates_removed": 3,
- "deeply_analysed": 80,
- "deep_read_failed": 40,
- "corpus_size": 3231,
+ "deeply_analysed": 63,
+ "deep_read_failed": 39,
+ "corpus_size": 3237,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 127 articles"
+    "64/78 sources returned 105 articles"
    ]
   },
   "blackout": {
@@ -45,7 +45,7 @@
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
