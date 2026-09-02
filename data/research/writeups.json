@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-02T00:55:13+00:00",
+ "generated": "2026-09-02T01:10:53+00:00",
  "gameweek": 3,
- "corpus_size": 2970,
+ "corpus_size": 2988,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -167,12 +167,12 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "status": "Latest on Szoboszlai — FourFourTwo FPL, 29 Aug: “James' Park with a point in Sunday's 2-2 draw, thanks to Dominik Szoboszlai's late leveller.”",
-   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 29 Aug.",
+   "status": "Latest on Szoboszlai — Full90 FPL, 23 Aug: “Outside of the Arsenal picks, and Szoboszlai nobody owned by more than 25% of managers returned.”",
+   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 23 Aug.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 29 Aug: “James' Park with a point in Sunday's 2-2 draw, thanks to Dominik Szoboszlai's late leveller.” Full90 FPL, 23 Aug: “Outside of the Arsenal picks, and Szoboszlai nobody owned by more than 25% of managers returned.”",
+   "developments": "Recent developments — Full90 FPL, 23 Aug: “Outside of the Arsenal picks, and Szoboszlai nobody owned by more than 25% of managers returned.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 3,
@@ -187,14 +187,6 @@
     "Opta Analyst"
    ],
    "quotes": [
-    {
-     "text": "James' Park with a point in Sunday's 2-2 draw, thanks to Dominik Szoboszlai's late leveller.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/competition/watch-liverpool-vs-nottingham-forest-premier-league-2026-27-free",
-     "published": "2026-08-29T08:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
     {
      "text": "Outside of the Arsenal picks, and Szoboszlai nobody owned by more than 25% of managers returned.",
      "source": "Full90 FPL",
@@ -569,9 +561,9 @@
   "Schade": {
    "player": "Schade",
    "club": "BRE",
-   "status": "Latest on Schade — Brentford: “Dominic Calvert-Lewin tapped home from close range late on to cancel out Kevin Schade 's 41st-minute opener and earn the hosts a point - their manager Daniel Farke afterwards describing Brentford's form as \"red-hot\".”",
+   "status": "Latest on Schade — Brentford: “Schade's first-half effort looked to be enough for the three points, but Calvert-Lewin struck with 11 minutes remaining and it ended honours even in West Yorkshire.”",
    "why_here": "Schade is in the starting eleven this week at £6.0m as a MID. The selection rests on 6 retrieved item(s) from 2 source(s).",
-   "case_for": "What supports keeping him: Brentford: “Goalscorer Schade won a penalty during a typically high-energy performance against Spurs on the opening weekend, and the German's sublime finish against Leeds opened his account for the 2026/27 campaign.”",
+   "case_for": "What supports keeping him: Brentford: “Leeds United 1 Brentford 1: Kevin Schade scores in Elland Road draw | Brentford FC Kevin Schade's first goal of the season was cancelled out by Dominic Calvert-Lewin as Brentford were held to a 1-1 draw against Leeds United at Elland Road.” Brentford: “Goalscorer Schade won a penalty during a typically high-energy performance against Spurs on the opening weekend, and the German's sublime finish against Leeds opened his account for the 2026/27 campaign.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
@@ -591,6 +583,22 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Leeds United 1 Brentford 1: Kevin Schade scores in Elland Road draw | Brentford FC Kevin Schade's first goal of the season was cancelled out by Dominic Calvert-Lewin as Brentford were held to a 1-1 draw against Leeds United at Elland Road.",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+     "published": "",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Schade's first-half effort looked to be enough for the three points, but Calvert-Lewin struck with 11 minutes remaining and it ended honours even in West Yorkshire.",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Dominic Calvert-Lewin tapped home from close range late on to cancel out Kevin Schade 's 41st-minute opener and earn the hosts a point - their manager Daniel Farke afterwards describing Brentford's form as \"red-hot\".",
      "source": "Brentford",
@@ -811,14 +819,14 @@
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "status": "6 article(s) reference Thiago, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "status": "Latest on Thiago — Brentford: “Brentford, wearing the Kingsman- inspired away kit for the first time, had the first effort on goal inside the opening eight minutes, but Igor Thiago 's back-post volley from a tight angle was straight at James Trafford.”",
    "why_here": "Thiago is in the starting eleven this week at £8.0m as a FWD. The selection rests on 6 retrieved item(s) from 2 source(s).",
-   "case_for": "",
-   "case_against": "",
+   "case_for": "What supports keeping him: Brentford: “Brentford, wearing the Kingsman- inspired away kit for the first time, had the first effort on goal inside the opening eight minutes, but Igor Thiago 's back-post volley from a tight angle was straight at James Trafford.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "medium",
    "evidence_count": 6,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
@@ -832,7 +840,16 @@
     "Brentford",
     "Sports Mole"
    ],
-   "quotes": []
+   "quotes": [
+    {
+     "text": "Brentford, wearing the Kingsman- inspired away kit for the first time, had the first effort on goal inside the opening eight minutes, but Igor Thiago 's back-post volley from a tight angle was straight at James Trafford.",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+     "published": "",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
   },
   "Dubravka": {
    "player": "Dubravka",
