@@ -1,16 +1,16 @@
 {
- "mode": "incremental",
+ "mode": "full",
  "gameweek": 3,
- "ran_at": "2026-09-01T23:25:00+00:00",
- "seconds": 149.4,
+ "ran_at": "2026-09-02T00:55:13+00:00",
+ "seconds": 164.4,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 586,
- "substantive_items": 151,
- "duplicates_removed": 3,
- "deeply_analysed": 60,
- "deep_read_failed": 30,
- "corpus_size": 2897,
+ "sources_readable": 66,
+ "candidates_discovered": 1000,
+ "substantive_items": 588,
+ "duplicates_removed": 26,
+ "deeply_analysed": 70,
+ "deep_read_failed": 80,
+ "corpus_size": 2970,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 151 articles"
+    "66/78 sources returned 588 articles"
    ]
   },
   "blackout": {
@@ -38,20 +38,18 @@
  },
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
-  "FPL360: nothing published in the last 10 days",
   "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
-  "FPL Strat: nothing published in the last 10 days",
-  "Draft FC: nothing published in the last 10 days",
-  "FPLai: nothing published in the last 10 days",
-  "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: nothing published in the last 10 days",
-  "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "FPL Strat: nothing published in the last 21 days",
+  "FPLai: nothing published in the last 21 days",
+  "FPL Stats: nothing published in the last 21 days",
+  "Fantasy Football Reports: nothing published in the last 21 days",
+  "Ipswich Town: nothing published in the last 21 days",
+  "Liverpool: nothing published in the last 21 days",
+  "Tottenham Hotspur: nothing published in the last 21 days",
+  "PhysioRoom: nothing published in the last 21 days",
+  "The Hard Tackle: nothing published in the last 21 days",
+  "candidate ceiling of 1000 reached after taking 19 items from each of 66 sources"
  ],
  "players": {
   "Raya": {
@@ -67,9 +65,12 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": false,
+   "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "injury",
+    "match report",
+    "set pieces",
     "statistics",
     "tactics",
     "transfer"
@@ -317,12 +318,10 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": true,
+   "fixtures_assessed": false,
    "dimensions_covered": [
-    "fixtures",
     "injury",
     "set pieces",
-    "tactics",
     "team news",
     "transfer"
    ],
@@ -683,9 +682,8 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": true,
+   "fixtures_assessed": false,
    "dimensions_covered": [
-    "fixtures",
     "injury",
     "set pieces",
     "statistics",
@@ -980,12 +978,10 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": true,
+   "fixtures_assessed": false,
    "dimensions_covered": [
-    "fixtures",
     "injury",
     "set pieces",
-    "tactics",
     "team news",
     "transfer"
    ],

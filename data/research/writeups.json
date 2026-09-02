@@ -1,0 +1,949 @@
+{
+ "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
+ "generated": "2026-09-02T00:55:13+00:00",
+ "gameweek": 3,
+ "corpus_size": 2970,
+ "players": {
+  "Raya": {
+   "player": "Raya",
+   "club": "ARS",
+   "status": "6 article(s) reference Raya, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "low",
+   "evidence_count": 6,
+   "evidence_used": [
+    "https://www.101greatgoals.com/football/bundesliga/dortmund-loan-arsenal-forward-nwaneri/",
+    "https://www.fourfourtwo.com/person/player/is-declan-rice-injured-arsenal-star-gives-mikel-arteta-new-worry-after-limping-off",
+    "https://www.fourfourtwo.com/transfer/arsenal-youngster-given-transfer-lifeline-as-fulham-miss-out",
+    "https://www.fourfourtwo.com/person/player/unlikely-arsenal-man-on-course-for-season-best-tally-after-mikel-artetas-latest-tactical-innovation",
+    "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
+    "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/"
+   ],
+   "sources_used": [
+    "101 Great Goals — Fantasy",
+    "Aston Villa",
+    "FourFourTwo FPL"
+   ],
+   "quotes": []
+  },
+  "Gabriel": {
+   "player": "Gabriel",
+   "club": "ARS",
+   "status": "Latest on Gabriel — 101 Great Goals — Fantasy, 01 Sep: “Mitch Fretton Last Update: 1 hour ago 3 min read Add us as a preferred source on Google Barcelona have completed the signing of Gabriel Jesus from Arsenal on a permanent deal for a reported fee of £8.6m.”",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 01 Sep.",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — Sky Sports Premier League, 01 Sep: “Latest Sky Sports deals stream PL games with no contract Please use Chrome browser for a more accessible video player Barcelona boss Hansi Flick gives his verdict on the imminent arrival of Gabriel Jesus from Arsenal.” Sports Mole, 24 Aug: “Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "high",
+   "evidence_count": 10,
+   "evidence_used": [
+    "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
+    "https://www.soccerway.com/news/gabriel-jesus-signs-for-barcelona-from-arsenal-to-end-alvarez-transfer-saga/rZbGna3e/",
+    "https://www.flashscore.com/news/gabriel-jesus-signs-for-barcelona-from-arsenal-to-end-alvarez-transfer-saga/rZbGna3e/",
+    "https://www.skysports.com/football/news/11833/13579275/gabriel-jesus-arsenal-forward-completes-barcelona-transfer-in-8-6m-deal-on-deadline-day",
+    "https://www.skysports.com/football/news/11679/13579254/arsenal-transfer-news-marcus-rashford-loan-could-be-explored-as-replacement-for-gabriel-martinelli-paper-talk",
+    "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/in-martinellis-hands-arsenal-al-hilal-getting-closer-to-agreement-after-increased-bid_603646.html",
+    "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-transfer-news-today-done-deals-live-updates-and-rumours-august-24_603599.html",
+    "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
+    "https://dknetwork.draftkings.com/2026/09/01/prediction-pick-for-gabriel-lourenco-vs-charlie-cleveland-at-dwcs-season-10-week-4/",
+    "https://www.101greatgoals.com/news/transfers/barcelona-complete-signing-gabriel-jesus-arsenal/"
+   ],
+   "sources_used": [
+    "101 Great Goals — Fantasy",
+    "DraftKings Network Soccer",
+    "Fantasy Football Hub",
+    "Flashscore",
+    "Sky Sports Premier League",
+    "Soccerway",
+    "Sports Mole"
+   ],
+   "quotes": [
+    {
+     "text": "Mitch Fretton Last Update: 1 hour ago 3 min read Add us as a preferred source on Google Barcelona have completed the signing of Gabriel Jesus from Arsenal on a permanent deal for a reported fee of £8.6m.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/news/transfers/barcelona-complete-signing-gabriel-jesus-arsenal/",
+     "published": "2026-09-01T13:20:55+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Latest Sky Sports deals stream PL games with no contract Please use Chrome browser for a more accessible video player Barcelona boss Hansi Flick gives his verdict on the imminent arrival of Gabriel Jesus from Arsenal.",
+     "source": "Sky Sports Premier League",
+     "url": "https://www.skysports.com/football/news/11833/13579275/gabriel-jesus-arsenal-forward-completes-barcelona-transfer-in-8-6m-deal-on-deadline-day",
+     "published": "2026-09-01T00:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
+     "published": "2026-08-24T00:54:04+01:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    }
+   ]
+  },
+  "Guéhi": {
+   "player": "Guéhi",
+   "club": "MCI",
+   "status": "Latest on Guéhi — AFC Bournemouth, 29 Aug: “But for the second game running, the Cherries conceded late on with Tarkowski mirroring Manchester City’s Marc Guéhi by denying them at the death.”",
+   "why_here": "Guéhi is in the starting eleven this week at £6.0m as a DEF. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 29 Aug.",
+   "case_for": "What supports keeping him: Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — AFC Bournemouth, 29 Aug: “But for the second game running, the Cherries conceded late on with Tarkowski mirroring Manchester City’s Marc Guéhi by denying them at the death.” Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "high",
+   "evidence_count": 3,
+   "evidence_used": [
+    "https://www.afcb.co.uk/news/2026/august/29/match-report-v-everton/",
+    "https://www.cpfc.co.uk/news/match-previews/the-opposite-view-maresca-on-guehi-ahead-of-selhurst-reunion/",
+    "https://theanalyst.com/articles/manchester-city-vs-bournemouth-stats-premier-league-08-2026"
+   ],
+   "sources_used": [
+    "AFC Bournemouth",
+    "Crystal Palace",
+    "Opta Analyst"
+   ],
+   "quotes": [
+    {
+     "text": "But for the second game running, the Cherries conceded late on with Tarkowski mirroring Manchester City’s Marc Guéhi by denying them at the death.",
+     "source": "AFC Bournemouth",
+     "url": "https://www.afcb.co.uk/news/2026/august/29/match-report-v-everton/",
+     "published": "2026-08-29T15:55:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/manchester-city-vs-bournemouth-stats-premier-league-08-2026",
+     "published": "2026-08-23T15:23:02+00:00",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
+  },
+  "Kayode": {
+   "player": "Kayode",
+   "club": "BRE",
+   "status": "6 article(s) reference Kayode, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Kayode is in the starting eleven this week at £4.6m as a DEF. The selection rests on 6 retrieved item(s) from 2 source(s).",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "low",
+   "evidence_count": 6,
+   "evidence_used": [
+    "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
+    "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
+    "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+    "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
+    "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
+    "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league"
+   ],
+   "sources_used": [
+    "Brentford",
+    "Sports Mole"
+   ],
+   "quotes": []
+  },
+  "Szoboszlai": {
+   "player": "Szoboszlai",
+   "club": "LIV",
+   "status": "Latest on Szoboszlai — FourFourTwo FPL, 29 Aug: “James' Park with a point in Sunday's 2-2 draw, thanks to Dominik Szoboszlai's late leveller.”",
+   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 29 Aug.",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — FourFourTwo FPL, 29 Aug: “James' Park with a point in Sunday's 2-2 draw, thanks to Dominik Szoboszlai's late leveller.” Full90 FPL, 23 Aug: “Outside of the Arsenal picks, and Szoboszlai nobody owned by more than 25% of managers returned.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "high",
+   "evidence_count": 3,
+   "evidence_used": [
+    "https://theanalyst.com/articles/newcastle-vs-liverpool-stats-premier-league-08-2026",
+    "https://www.fourfourtwo.com/competition/watch-liverpool-vs-nottingham-forest-premier-league-2026-27-free",
+    "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27"
+   ],
+   "sources_used": [
+    "FourFourTwo FPL",
+    "Full90 FPL",
+    "Opta Analyst"
+   ],
+   "quotes": [
+    {
+     "text": "James' Park with a point in Sunday's 2-2 draw, thanks to Dominik Szoboszlai's late leveller.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/competition/watch-liverpool-vs-nottingham-forest-premier-league-2026-27-free",
+     "published": "2026-08-29T08:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Outside of the Arsenal picks, and Szoboszlai nobody owned by more than 25% of managers returned.",
+     "source": "Full90 FPL",
+     "url": "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27",
+     "published": "2026-08-23T17:42:40+00:00",
+     "tone": "neutral",
+     "topics": []
+    }
+   ]
+  },
+  "Semenyo": {
+   "player": "Semenyo",
+   "club": "MCI",
+   "status": "Latest on Semenyo — Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.”",
+   "why_here": "Semenyo is in the starting eleven this week at £8.5m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 31 Aug.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.” Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.”",
+   "confidence": "high",
+   "evidence_count": 6,
+   "evidence_used": [
+    "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
+    "https://www.fantasyfootballscout.co.uk/2026/08/31/fpl-gameweek-3-early-scout-picks-piling-up-on-man-city",
+    "https://www.fantasyfootballscout.co.uk/2026/08/31/bouaddi-to-man-city-could-it-affect-oreilly",
+    "https://www.ccfc.co.uk/news/2026/august/30/coventry-city-sign-stephen-mfuni-on-loan-from-manchester-city/",
+    "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
+   ],
+   "sources_used": [
+    "Coventry City",
+    "FPL Captain",
+    "Fantasy Football Hub",
+    "Fantasy Football Scout",
+    "FourFourTwo FPL"
+   ],
+   "quotes": [
+    {
+     "text": "Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/fpl-gameweek-3-early-scout-picks-piling-up-on-man-city",
+     "published": "2026-08-31T21:40:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]",
+     "source": "Fantasy Football Hub",
+     "url": "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+     "published": "2026-08-27T14:30:49+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    }
+   ]
+  },
+  "Ndiaye": {
+   "player": "Ndiaye",
+   "club": "EVE",
+   "status": "Latest on Ndiaye — Soccerway, 01 Sep: “On Friday night it looked like Ndiaye was on his way to Tottenham after the North London club agreed a deal with David Moyes’ side.”",
+   "why_here": "Ndiaye is in the starting eleven this week at £6.0m as a MID. The selection rests on 22 retrieved item(s) from 12 source(s), the most recent dated 01 Sep.",
+   "case_for": "What supports keeping him: Everton, 01 Sep: “Signed from Marseille in July 2024, Ndiaye made history by becoming the last-ever goalscorer for an Everton Men’s player at Goodison Park when he struck twice in the Blues’ 2-0 victory over Southampton in May 2025.” FourFourTwo FPL, 01 Sep: “Iliman Ndiaye heads to Manchester, Jack Grealish returns to Everton Iliman Ndiaye is set to depart (Image credit: Getty Images) Manchester City have struck a deal worth up to £65 million for Ndiaye, days after the 26-year-old was expected to complete a transfer to Tottenham Hotspur .” Manchester City, 01 Sep: “An attacking threat who can play on the wing or through the middle, Ndiaye is two-footed and a source of creativity and goals.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "On minutes — Flashscore, 01 Sep: “Speaking to Man City’s website, Ndiaye said: \"I’ve worked my whole life for an opportunity like this.”",
+   "developments": "Recent developments — Soccerway, 01 Sep: “Ndiaye has signed a five-year contract which will keep him at the Etihad Stadium until 2031.” 101 Great Goals — Fantasy, 01 Sep: “There is a lot still to be decided in the closing hours of the summer window, with Manchester City set to spend big on Iliman Ndiaye and Enzo Fernandez, while there could still be movement at Arsenal , Liverpool, Chelsea, Manchester United and Tottenham. 23:32 – Man City complete British-record Fernandez swoop The deal Manchester City fans have all been waiting for….” 101 Great Goals — Fantasy, 01 Sep: “Manchester City have signed Iliman Ndiaye from Everton and agreed a British-record deal, still to be confirmed, for Enzo Fernandez from Chelsea.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "high",
+   "evidence_count": 22,
+   "evidence_used": [
+    "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
+    "https://www.evertonfc.com/news/2026/august/29/everton-xi-revealed-to-face-bournemouth/",
+    "https://www.afcb.co.uk/news/2026/august/29/cherries-unchanged-for-visit-of-everton/",
+    "https://www.101greatgoals.com/news/transfers/deadline-day-live-every-completed-premier-league-deal/",
+    "https://www.evertonfc.com/news/2026/september/01/ndiaye-leaves-everton/",
+    "https://www.football365.com/news/romano-reveals-outcome-enzo-fernandez-medical-man-city-complete-first-deadline-day-signing",
+    "https://www.soccerway.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
+    "https://www.flashscore.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
+    "https://www.101greatgoals.com/football/premier-league/ndiaye-completes-move-man-city/",
+    "https://www.football365.com/news/arsenal-reach-agreement-deadline-day-fofana-lyon-ndiaye-hijack-fails",
+    "https://www.skysports.com/football/news/11671/13579669/iliman-ndiaye-transfer-news-man-city-sign-65m-winger-from-everton-as-jack-grealish-joins-toffees-on-loan",
+    "https://www.skysports.com/football/news/11671/13579669/iliman-ndiaye-transfer-news-man-city-complete-65m-deal-for-everton-winger-as-cody-gakpo-alternative"
+   ],
+   "sources_used": [
+    "101 Great Goals — Fantasy",
+    "AFC Bournemouth",
+    "Everton",
+    "Fantasy Football Hub",
+    "Flashscore",
+    "Football365",
+    "FourFourTwo FPL",
+    "Manchester City",
+    "OneFPL",
+    "Opta Analyst",
+    "Sky Sports Premier League",
+    "Soccerway"
+   ],
+   "quotes": [
+    {
+     "text": "On Friday night it looked like Ndiaye was on his way to Tottenham after the North London club agreed a deal with David Moyes’ side.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
+     "published": "2026-09-01T22:22:29+02:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Ndiaye has signed a five-year contract which will keep him at the Etihad Stadium until 2031.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
+     "published": "2026-09-01T22:22:29+02:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Speaking to Man City’s website, Ndiaye said: \"I’ve worked my whole life for an opportunity like this.",
+     "source": "Flashscore",
+     "url": "https://www.flashscore.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
+     "published": "2026-09-01T22:22:29+02:00",
+     "tone": "neutral",
+     "topics": [
+      "press conference"
+     ]
+    },
+    {
+     "text": "There is a lot still to be decided in the closing hours of the summer window, with Manchester City set to spend big on Iliman Ndiaye and Enzo Fernandez, while there could still be movement at Arsenal , Liverpool, Chelsea, Manchester United and Tottenham. 23:32 – Man City complete British-record Fernandez swoop The deal Manchester City fans have all been waiting for….",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/news/transfers/deadline-day-live-every-completed-premier-league-deal/",
+     "published": "2026-09-01T22:08:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Manchester City have signed Iliman Ndiaye from Everton and agreed a British-record deal, still to be confirmed, for Enzo Fernandez from Chelsea.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/news/transfers/deadline-day-live-every-completed-premier-league-deal/",
+     "published": "2026-09-01T22:08:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Everton can confirm Iliman Ndiaye has signed for Manchester City on a permanent deal for an undisclosed fee.",
+     "source": "Everton",
+     "url": "https://www.evertonfc.com/news/2026/september/01/ndiaye-leaves-everton/",
+     "published": "2026-09-01T20:30:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Signed from Marseille in July 2024, Ndiaye made history by becoming the last-ever goalscorer for an Everton Men’s player at Goodison Park when he struck twice in the Blues’ 2-0 victory over Southampton in May 2025.",
+     "source": "Everton",
+     "url": "https://www.evertonfc.com/news/2026/september/01/ndiaye-leaves-everton/",
+     "published": "2026-09-01T20:30:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Manchester City have completed the signing of Iliman Ndiaye from Everton for £65m, and there is an update on Chelsea star Enzo Fernandez.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/romano-reveals-outcome-enzo-fernandez-medical-man-city-complete-first-deadline-day-signing",
+     "published": "2026-09-01T20:26:30+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Man City have been active in the transfer market this summer, and they have been frantically working to sign Ndiaye and Fernandez before this window closes.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/romano-reveals-outcome-enzo-fernandez-medical-man-city-complete-first-deadline-day-signing",
+     "published": "2026-09-01T20:26:30+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Nicholas McGee Last Update: 36 minutes ago 2 min read Add us as a preferred source on Google Manchester City have completed the signing of Senegal winger Iliman Ndiaye from Everton Ndiaye has made the move to the Etihad Stadium on a five-year deal after City agreed a £65million with the Merseyside club.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/ndiaye-completes-move-man-city/",
+     "published": "2026-09-01T20:13:56+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "But City swooped in after that transfer fell through, with Ndiaye delighted to have the chance to prove himself for Enzo Maresca’s side after excelling in his time with Everton.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/ndiaye-completes-move-man-city/",
+     "published": "2026-09-01T20:13:56+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Man City’s Penchant for Dribblers Is No Coincidence | Opta Analyst Manchester City are loading up on players known for their dribbling ability, with Iliman Ndiaye seemingly their next new face.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/man-city-iliman-ndiaye-dribbling-stats",
+     "published": "2026-09-01T13:24:07+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Antoine Semenyo was another frequent dribbler who joined City in January from Bournemouth, and now they appear to be adding Iliman Ndiaye to form a formidable foursome of dribble-first attackers – and that’s ignoring the fact Phil Foden is pretty handy on the ball, and new signing Allan is highly regarded for his ball carrying.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/man-city-iliman-ndiaye-dribbling-stats",
+     "published": "2026-09-01T13:24:07+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Iliman Ndiaye heads to Manchester, Jack Grealish returns to Everton Iliman Ndiaye is set to depart (Image credit: Getty Images) Manchester City have struck a deal worth up to £65 million for Ndiaye, days after the 26-year-old was expected to complete a transfer to Tottenham Hotspur .",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
+     "published": "2026-09-01T09:21:21+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "On Monday, Richarlison posted a message to his social media accounts that appeared to put an end to the homecoming buzz — and Ndiaye’s transfer to the North London side.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
+     "published": "2026-09-01T09:21:21+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "An attacking threat who can play on the wing or through the middle, Ndiaye is two-footed and a source of creativity and goals.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-signs-for-city-63923887",
+     "published": "2026-09-01T09:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "“I am really excited to see the level Iliman can reach in the years ahead because I know for sure working with Enzo and his staff is going ensure he becomes a top-class Premier League player.” Special talent, boundless belief Iliman Ndiaye catches the eye on the football pitch.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-signs-for-city-63923887",
+     "published": "2026-09-01T09:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "A prodigiously talented attacking midfielder who can play on either wing, Ndiaye has garnered a reputation as one of the most enjoyable players to watch in the Premier League over the last two terms at Everton.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-want-to-help-city-win-games-63923886",
+     "published": "2026-09-01T08:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Asked in his first City Studios interview to describe the way he plays, Ndiaye lit up.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-want-to-help-city-win-games-63923886",
+     "published": "2026-09-01T08:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "After putting pen to paper on the deal, Ndiaye revealed how immensely proud he was to have joined City.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-it-was-always-city-for-men-63923888",
+     "published": "2026-09-01T08:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "“It’s easy to make the decision about whether you want to be at Manchester City or not,” Ndiaye said.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-it-was-always-city-for-men-63923888",
+     "published": "2026-09-01T08:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Ndiaye swapped Merseyside for Manchester, arriving from Everton in a permanent deal on deadline day on a five-year contract until 2031.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-behind-the-scenes-gallery-63923888",
+     "published": "2026-09-01T08:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Here’s a few things to help you get to know our new man a little better… Birthplace Ndiaye hails from Rouen in the north west of France.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-10-things-63923887",
+     "published": "2026-09-01T07:30:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Ndiaye spent the first 11 years of his life there before moving to the south of France with Marseille and then to Senegal as a teenager.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-10-things-63923887",
+     "published": "2026-09-01T07:30:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Manchester City have confirmed the £65m signing of winger Iliman Ndiaye.",
+     "source": "Sky Sports Premier League",
+     "url": "https://www.skysports.com/football/news/11671/13579669/iliman-ndiaye-transfer-news-man-city-sign-65m-winger-from-everton-as-jack-grealish-joins-toffees-on-loan",
+     "published": "2026-09-01T00:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Ndiaye, who had also been wanted by Tottenham, has signed a five-year contract at Manchester City.",
+     "source": "Sky Sports Premier League",
+     "url": "https://www.skysports.com/football/news/11671/13579669/iliman-ndiaye-transfer-news-man-city-sign-65m-winger-from-everton-as-jack-grealish-joins-toffees-on-loan",
+     "published": "2026-09-01T00:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "The rest of Everton's team remains the same as the one which saw off the Eagles at Hill Dickinson Stadium – Harrison Armstrong and Kiernan Dewsbury-Hall joining Garner in central midfield, with Iliman Ndiaye and Tyrique George the wingers, and in-form Thierno Barry up front.",
+     "source": "Everton",
+     "url": "https://www.evertonfc.com/news/2026/august/29/everton-xi-revealed-to-face-bournemouth/",
+     "published": "2026-08-29T12:45:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Everton impact Ndiaye leaving removes Everton's strongest recent penalty evidence.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/iliman-ndiaye-man-city-fpl-2026-27",
+     "published": "",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "Cherki still has four attacking returns in two league matches and Coventry at home, but City's additions of Ndiaye, Enzo Fernández and Allan increase the minutes risk.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/iliman-ndiaye-man-city-fpl-2026-27",
+     "published": "",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
+  },
+  "Schade": {
+   "player": "Schade",
+   "club": "BRE",
+   "status": "Latest on Schade — Brentford: “Dominic Calvert-Lewin tapped home from close range late on to cancel out Kevin Schade 's 41st-minute opener and earn the hosts a point - their manager Daniel Farke afterwards describing Brentford's form as \"red-hot\".”",
+   "why_here": "Schade is in the starting eleven this week at £6.0m as a MID. The selection rests on 6 retrieved item(s) from 2 source(s).",
+   "case_for": "What supports keeping him: Brentford: “Goalscorer Schade won a penalty during a typically high-energy performance against Spurs on the opening weekend, and the German's sublime finish against Leeds opened his account for the 2026/27 campaign.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "medium",
+   "evidence_count": 6,
+   "evidence_used": [
+    "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
+    "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
+    "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+    "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
+    "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
+    "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade"
+   ],
+   "sources_used": [
+    "Brentford",
+    "Sports Mole"
+   ],
+   "quotes": [
+    {
+     "text": "Dominic Calvert-Lewin tapped home from close range late on to cancel out Kevin Schade 's 41st-minute opener and earn the hosts a point - their manager Daniel Farke afterwards describing Brentford's form as \"red-hot\".",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Goalscorer Schade won a penalty during a typically high-energy performance against Spurs on the opening weekend, and the German's sublime finish against Leeds opened his account for the 2026/27 campaign.",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "set pieces"
+     ]
+    }
+   ]
+  },
+  "Haaland": {
+   "player": "Haaland",
+   "club": "MCI",
+   "status": "Latest on Haaland — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 9 retrieved item(s) from 6 source(s), the most recent dated 01 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).” Fantasy Football Scout, 01 Sep: “Here, we take a look at some of the pros and cons of using the Triple Captain chip on Haaland in Gameweek 3.” Full90 FPL, 23 Aug: “If he had started without Haaland and Bruno Fernandes this season he would be laughing.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — Opta Analyst, 22 Aug: “Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "high",
+   "evidence_count": 9,
+   "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
+    "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
+    "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.fantasyfootballhub.co.uk/best-fpl-players-for-gameweek-3-article-26-27",
+    "https://www.mancity.com/news/mens/haaland-post-palace-reaction-pl-28-aug-63923550",
+    "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27",
+    "https://theanalyst.com/articles/erling-haaland-fpl-do-you-pick-him-in-2026-27-stats",
+    "https://fplcaptain.com/news/fpl-gw6-triple-captain-haaland",
+    "https://fplcaptain.com/news/fpl-gw3-captain-picks-haaland-saka-and-differential-targets"
+   ],
+   "sources_used": [
+    "FPL Captain",
+    "Fantasy Football Hub",
+    "Fantasy Football Scout",
+    "Full90 FPL",
+    "Manchester City",
+    "Opta Analyst"
+   ],
+   "quotes": [
+    {
+     "text": "As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
+     "published": "2026-09-01T11:45:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "Here, we take a look at some of the pros and cons of using the Triple Captain chip on Haaland in Gameweek 3.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
+     "published": "2026-09-01T11:45:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]",
+     "source": "Fantasy Football Hub",
+     "url": "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+     "published": "2026-08-27T14:30:49+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "If he had started without Haaland and Bruno Fernandes this season he would be laughing.",
+     "source": "Full90 FPL",
+     "url": "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27",
+     "published": "2026-08-23T17:42:40+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/erling-haaland-fpl-do-you-pick-him-in-2026-27-stats",
+     "published": "2026-08-22T06:01:23+00:00",
+     "tone": "neutral",
+     "topics": [
+      "fpl advice"
+     ]
+    }
+   ]
+  },
+  "João Pedro": {
+   "player": "João Pedro",
+   "club": "CHE",
+   "status": "Latest on João Pedro — Aston Villa, 31 Aug: “On the field, Emery handed debuts to two of his summer signings – Nicolas Jackson replacing the suspended João Gomes in the XI to start in attack after arriving on Friday, while Zion Suzuki”",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 8 retrieved item(s) from 5 source(s), the most recent dated 31 Aug.",
+   "case_for": "What supports keeping him: Aston Villa, 31 Aug: “Jackson, who arrived from Chelsea on Friday, begins in attack, coming into the side in place of João Gomes who serves the first of his three-match suspension, while Suzuki replaces Marco Bizot in goal.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Tactical Football Analysis, 26 Aug: “Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.”",
+   "case_against": "What argues against him: Aston Villa, 31 Aug: “We must add more players – Goretzka, João, Aaron, Garnacho, Manzambi is coming back from injury.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
+   "developments": "Recent developments — Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "high",
+   "evidence_count": 8,
+   "evidence_used": [
+    "https://avfc.co.uk/news/2026/august/31/reaction-unai-emery-post-arsenal/",
+    "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
+    "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/",
+    "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
+    "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
+    "https://theanalyst.com/articles/chelsea-front-three-cole-palmer-joao-pedro-morgan-rogers-stats",
+    "https://www.sportsmole.co.uk/football/fulham/result/chelsea-claim-west-london-derby-bragging-rights-as-alonsos-attack-shines_603660.html",
+    "https://onefpl.com/blog/chelsea-fpl-attack-palmer-joao-pedro-estevao-rogers-gittens"
+   ],
+   "sources_used": [
+    "Aston Villa",
+    "OneFPL",
+    "Opta Analyst",
+    "Sports Mole",
+    "Tactical Football Analysis"
+   ],
+   "quotes": [
+    {
+     "text": "We must add more players – Goretzka, João, Aaron, Garnacho, Manzambi is coming back from injury.",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/august/31/reaction-unai-emery-post-arsenal/",
+     "published": "2026-08-31T22:12:53+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "On the field, Emery handed debuts to two of his summer signings – Nicolas Jackson replacing the suspended João Gomes in the XI to start in attack after arriving on Friday, while Zion Suzuki",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
+     "published": "2026-08-31T20:58:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "suspension",
+      "transfer"
+     ]
+    },
+    {
+     "text": "Jackson, who arrived from Chelsea on Friday, begins in attack, coming into the side in place of João Gomes who serves the first of his three-match suspension, while Suzuki replaces Marco Bizot in goal.",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/",
+     "published": "2026-08-31T17:45:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "suspension"
+     ]
+    },
+    {
+     "text": "It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
+     "published": "2026-08-30T15:29:11+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
+     "published": "2026-08-30T15:29:11+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
+     "published": "2026-08-26T09:02:48+00:00",
+     "tone": "positive",
+     "topics": [
+      "team news"
+     ]
+    },
+    {
+     "text": "Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
+     "published": "2026-08-26T09:02:48+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/fulham/result/chelsea-claim-west-london-derby-bragging-rights-as-alonsos-attack-shines_603660.html",
+     "published": "2026-08-24T21:55:30+01:00",
+     "tone": "neutral",
+     "topics": [
+      "match report"
+     ]
+    },
+    {
+     "text": "Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/fulham/result/chelsea-claim-west-london-derby-bragging-rights-as-alonsos-attack-shines_603660.html",
+     "published": "2026-08-24T21:55:30+01:00",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
+  },
+  "Thiago": {
+   "player": "Thiago",
+   "club": "BRE",
+   "status": "6 article(s) reference Thiago, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Thiago is in the starting eleven this week at £8.0m as a FWD. The selection rests on 6 retrieved item(s) from 2 source(s).",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "low",
+   "evidence_count": 6,
+   "evidence_used": [
+    "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
+    "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
+    "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+    "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
+    "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
+    "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league"
+   ],
+   "sources_used": [
+    "Brentford",
+    "Sports Mole"
+   ],
+   "quotes": []
+  },
+  "Dubravka": {
+   "player": "Dubravka",
+   "club": "TOT",
+   "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "low",
+   "evidence_count": 6,
+   "evidence_used": [
+    "https://www.fourfourtwo.com/person/player/roberto-de-zerbi-and-tottenham-hotspur-receive-major-transfer-deadline-day-boost",
+    "https://www.fourfourtwo.com/team/theres-been-serious-mismanagement-for-a-while-now-it-didnt-ever-start-making-any-more-sense-peter-crouch-on-the-disastrous-decision-tottenham-hotspur-made-last-season",
+    "https://www.fantasyfootballscout.co.uk/2026/08/31/is-marmoush-back-on-the-fpl-radar-after-spurs-move",
+    "https://www.newcastleunited.com/en/news/confirmed-line-up-spurs-a",
+    "https://www.fourfourtwo.com/transfer/victor-osimhen-is-an-expensive-risk-tottenham-hotspur-should-be-taking-this-summer",
+    "https://www.newcastleunited.com/en/news/how-to-watch-tottenham-hotspur-vs-newcastle-united-tv-channel-kick-off-time-and-team-news"
+   ],
+   "sources_used": [
+    "Fantasy Football Scout",
+    "FourFourTwo FPL",
+    "Newcastle United"
+   ],
+   "quotes": []
+  },
+  "Hughes": {
+   "player": "Hughes",
+   "club": "CRY",
+   "status": "3 article(s) reference Hughes, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Hughes is on the bench this week at £4.5m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s).",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "low",
+   "evidence_count": 3,
+   "evidence_used": [
+    "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
+    "https://www.cpfc.co.uk/news/match-previews/the-opposite-view-maresca-on-guehi-ahead-of-selhurst-reunion/",
+    "https://www.mancity.com/news/mens/enzo-maresca-crystal-palace-press-conference-injury-news-63923408"
+   ],
+   "sources_used": [
+    "Crystal Palace",
+    "Football365",
+    "Manchester City"
+   ],
+   "quotes": []
+  },
+  "Mitchell": {
+   "player": "Mitchell",
+   "club": "CRY",
+   "status": "3 article(s) reference Mitchell, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Mitchell is on the bench this week at £4.5m as a DEF. The selection rests on 3 retrieved item(s) from 3 source(s).",
+   "case_for": "",
+   "case_against": "",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "low",
+   "evidence_count": 3,
+   "evidence_used": [
+    "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
+    "https://www.cpfc.co.uk/news/match-previews/the-opposite-view-maresca-on-guehi-ahead-of-selhurst-reunion/",
+    "https://www.mancity.com/news/mens/enzo-maresca-crystal-palace-press-conference-injury-news-63923408"
+   ],
+   "sources_used": [
+    "Crystal Palace",
+    "Football365",
+    "Manchester City"
+   ],
+   "quotes": []
+  },
+  "Diop": {
+   "player": "Diop",
+   "club": "IPS",
+   "status": "Latest on Diop — Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
+   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 30 Aug.",
+   "case_for": "What supports keeping him: Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "confidence": "high",
+   "evidence_count": 6,
+   "evidence_used": [
+    "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+    "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/man-united-could-receive-double-boost-for-vital-old-trafford-battle-with-ipswich_603643.html",
+    "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
+    "https://www.sportsmole.co.uk/football/ipswich-town/league-cup/preview/ipswich-vs-leicester-prediction-team-news-lineups_603606.html",
+    "https://www.manutd.com/en/news/team-news-for-ipswich-visit-30-august",
+    "https://www.manutd.com/en/news/every-word-from-carricks-press-conference-part-two-ipswich-30-august"
+   ],
+   "sources_used": [
+    "Ipswich Town",
+    "Manchester United",
+    "Sports Mole"
+   ],
+   "quotes": [
+    {
+     "text": "Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.",
+     "source": "Ipswich Town",
+     "url": "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+     "published": "2026-08-30T18:59:44+00:00",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
+  }
+ }
+}
