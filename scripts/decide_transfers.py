@@ -17,7 +17,8 @@ from fpl_assistant import api
 from fpl_assistant.analysis import fixtures as fixtures_analysis
 from fpl_assistant.analysis import minutes as minutes_mod
 from fpl_assistant.analysis import squad_decision as sd
-from fpl_assistant.models import events_df, fixtures_df, players_df, teams_df
+from fpl_assistant.analysis.squad_builder import score_players
+from fpl_assistant.models import attach_team_names, events_df, fixtures_df, players_df, teams_df
 from fpl_assistant.research import corpus as corpus_mod, evidence
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -46,6 +47,10 @@ FPL_TRANSFER_SENSE = ("free transfer", "roll a transfer", "roll the transfer",
                       "transferred out", "transfer tips", "wildcard",
                       "take a hit", "your transfer", "one transfer")
 SET_PIECES = ("set piece", "corner", "free kick", "dead ball")
+# How many replacement candidates to carry per position. Enough to give the
+# engine a real choice; small enough that the comparison stays readable.
+TARGETS_PER_POSITION = 6
+POSITIONS = {1: "GKP", 2: "DEF", 3: "MID", 4: "FWD"}
 PENALTIES = ("penalt", "spot kick", "from the spot")
 
 
@@ -185,14 +190,35 @@ def _live_data():
     except Exception as exc:
         return None, f"the FPL data could not be assembled ({exc.__class__.__name__}: {exc})"
 
+    # The app's own expected-points model, not FPL's `ep_next`. That field
+    # is empty this early in a season, which is why every projection came
+    # back zero and the completeness gate correctly refused to certify the
+    # run. The model here is the same one the squad optimiser uses, so the
+    # transfer engine and the selection engine agree on what a player is
+    # worth.
+    projections = {}
+    try:
+        scored = score_players(players_df(bootstrap), fixtures, teams, next_event)
+        for _, row in scored.iterrows():
+            projections[int(row["id"])] = float(row.get("xp_next", 0) or 0)
+    except Exception as exc:
+        return None, f"the projection model failed ({exc.__class__.__name__}: {exc})"
+
     by_name, by_id = {}, {}
     for element in bootstrap.get("elements", []):
         minutes_played = int(element.get("minutes", 0) or 0)
         starts = int(element.get("starts", 0) or 0)
+        candidate_minutes = minutes_mod.assess(
+            starts=starts,
+            appearances=max(starts, 1 if minutes_played else 0),
+            minutes=minutes_played, team_games=team_games,
+            status=element.get("status", "a"),
+            chance_of_playing=element.get("chance_of_playing_next_round"),
+        )
         record = {
             "status": element.get("status", "a"),
             "chance_of_playing_next_round": element.get("chance_of_playing_next_round"),
-            "projection": float(element.get("ep_next") or 0),
+            "projection": projections.get(int(element["id"]), 0.0),
             "form": float(element.get("form") or 0),
             "points_per_game": float(element.get("points_per_game") or 0),
             "total_points": int(element.get("total_points", 0) or 0),
@@ -202,6 +228,12 @@ def _live_data():
             # single substitute appearance is the closest honest proxy.
             "appearances": max(starts, 1 if minutes_played else 0),
             "team": element.get("team"),
+            "price": float(element.get("now_cost", 0) or 0) / 10.0,
+            "position": POSITIONS.get(int(element.get("element_type", 0) or 0), ""),
+            "club": str(teams.loc[element["team"], "short_name"])
+            if element.get("team") in teams.index else "",
+            "minutes_category": candidate_minutes.category,
+            "minutes_confidence": candidate_minutes.confidence,
         }
         by_id[int(element["id"])] = record
         by_name[str(element.get("web_name", ""))] = record
@@ -255,7 +287,40 @@ def main() -> int:
                 position=str(player.get("position", "")),
                 price=float(player.get("price", 0) or 0)))
 
-    decision = sd.decide(signals, targets=[], bank=float(squad_payload.get("bank", 0)),
+    # Realistic replacements. The engine tests every target against every
+    # plausible seller, so the pool only needs to be the players who could
+    # actually be bought: best projected in each position, inside the money
+    # the squad could raise, and not already owned.
+    bank = float(squad_payload.get("bank", 0))
+    owned = {s.name for s in signals}
+    ceiling = bank + max((s.price for s in signals), default=0.0)
+    targets = []
+    if live:
+        pool = sorted(live["by_name"].items(),
+                      key=lambda kv: float(kv[1].get("projection", 0) or 0),
+                      reverse=True)
+        per_position = {}
+        for name, record in pool:
+            if name in owned or record.get("status") != "a":
+                continue
+            if float(record.get("price", 0) or 0) > ceiling:
+                continue
+            position = record.get("position", "")
+            if len(per_position.get(position, [])) >= TARGETS_PER_POSITION:
+                continue
+            per_position.setdefault(position, []).append(name)
+            targets.append(sd.PlayerSignals(
+                name=name, club=str(record.get("club", "")), position=position,
+                price=float(record.get("price", 0) or 0),
+                projection=float(record.get("projection", 0) or 0),
+                points_per_game=float(record.get("points_per_game", 0) or 0),
+                minutes_category=record.get("minutes_category", "Unassessed"),
+                minutes_confidence=record.get("minutes_confidence", 0.6),
+                source_count=1,
+                fixture_scores=_fixture_scores(live, record.get("team")),
+            ))
+
+    decision = sd.decide(signals, targets=targets, bank=bank,
                          free_transfers=int(squad_payload.get("free_transfers", 1)))
 
     # --- the completeness gate -----------------------------------------

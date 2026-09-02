@@ -1,6 +1,32 @@
 {
  "sell_urgency_ranking": [
   {
+   "player": "Raya",
+   "club": "ARS",
+   "position": "GKP",
+   "price": 6.0,
+   "sell_urgency": 26.0,
+   "band": "Comfortable hold",
+   "hold_strength": 30.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
+   "protections": []
+  },
+  {
+   "player": "Kayode",
+   "club": "BRE",
+   "position": "DEF",
+   "price": 4.6,
+   "sell_urgency": 26.0,
+   "band": "Comfortable hold",
+   "hold_strength": 30.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
+   "protections": []
+  },
+  {
    "player": "Dubravka",
    "club": "TOT",
    "position": "GKP",
@@ -31,79 +57,29 @@
    "club": "CRY",
    "position": "DEF",
    "price": 4.5,
-   "sell_urgency": 16.0,
+   "sell_urgency": 26.0,
    "band": "Comfortable hold",
-   "hold_strength": 31.2,
+   "hold_strength": 30.0,
    "reasons": [
-    "averaging only 0.5 points a game"
+    "expected minutes: unassessed"
    ],
-   "protections": [
-    "expected minutes: very secure"
-   ]
-  },
-  {
-   "player": "Thiago",
-   "club": "BRE",
-   "position": "FWD",
-   "price": 8.0,
-   "sell_urgency": 6.0,
-   "band": "Strong hold",
-   "hold_strength": 57.5,
-   "reasons": [
-    "averaging only 1.0 points a game"
-   ],
-   "protections": [
-    "the published evidence is predominantly favourable",
-    "expected minutes: very secure"
-   ]
+   "protections": []
   },
   {
    "player": "João Pedro",
    "club": "CHE",
    "position": "FWD",
    "price": 7.7,
-   "sell_urgency": 1.0,
-   "band": "Strong hold",
-   "hold_strength": 71.7,
+   "sell_urgency": 23.0,
+   "band": "Comfortable hold",
+   "hold_strength": 56.7,
    "reasons": [
-    "injury reported in this week's coverage"
+    "injury reported in this week's coverage",
+    "expected minutes: unassessed"
    ],
    "protections": [
     "the published evidence is predominantly favourable",
-    "expected minutes: secure",
-    "averaging 10.0 points a game",
     "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Diop",
-   "club": "IPS",
-   "position": "DEF",
-   "price": 4.0,
-   "sell_urgency": 1.0,
-   "band": "Strong hold",
-   "hold_strength": 70.0,
-   "reasons": [
-    "averaging only 2.0 points a game"
-   ],
-   "protections": [
-    "the published evidence is predominantly favourable",
-    "expected minutes: very secure",
-    "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Raya",
-   "club": "ARS",
-   "position": "GKP",
-   "price": 6.0,
-   "sell_urgency": 0.0,
-   "band": "Strong hold",
-   "hold_strength": 45.0,
-   "reasons": [],
-   "protections": [
-    "expected minutes: very secure",
-    "averaging 6.0 points a game"
    ]
   },
   {
@@ -111,44 +87,14 @@
    "club": "ARS",
    "position": "DEF",
    "price": 8.0,
-   "sell_urgency": 0.0,
-   "band": "Strong hold",
-   "hold_strength": 55.0,
-   "reasons": [],
+   "sell_urgency": 21.0,
+   "band": "Comfortable hold",
+   "hold_strength": 40.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
    "protections": [
-    "expected minutes: very secure",
-    "averaging 6.5 points a game",
     "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Guéhi",
-   "club": "MCI",
-   "position": "DEF",
-   "price": 6.0,
-   "sell_urgency": 0.0,
-   "band": "Strong hold",
-   "hold_strength": 80.0,
-   "reasons": [],
-   "protections": [
-    "the published evidence is predominantly favourable",
-    "expected minutes: very secure",
-    "averaging 6.0 points a game",
-    "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Kayode",
-   "club": "BRE",
-   "position": "DEF",
-   "price": 4.6,
-   "sell_urgency": 0.0,
-   "band": "Strong hold",
-   "hold_strength": 45.0,
-   "reasons": [],
-   "protections": [
-    "expected minutes: very secure",
-    "averaging 7.5 points a game"
    ]
   },
   {
@@ -156,13 +102,13 @@
    "club": "LIV",
    "position": "MID",
    "price": 7.0,
-   "sell_urgency": 0.0,
-   "band": "Strong hold",
-   "hold_strength": 65.0,
-   "reasons": [],
+   "sell_urgency": 21.0,
+   "band": "Comfortable hold",
+   "hold_strength": 40.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
    "protections": [
-    "expected minutes: very secure",
-    "averaging 6.0 points a game",
     "team news found and it is not negative"
    ]
   },
@@ -171,13 +117,29 @@
    "club": "MCI",
    "position": "MID",
    "price": 8.5,
-   "sell_urgency": 0.0,
-   "band": "Strong hold",
-   "hold_strength": 63.8,
-   "reasons": [],
+   "sell_urgency": 16.0,
+   "band": "Comfortable hold",
+   "hold_strength": 55.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
    "protections": [
-    "the published evidence is predominantly favourable",
-    "expected minutes: very secure"
+    "the published evidence is predominantly favourable"
+   ]
+  },
+  {
+   "player": "Thiago",
+   "club": "BRE",
+   "position": "FWD",
+   "price": 8.0,
+   "sell_urgency": 16.0,
+   "band": "Comfortable hold",
+   "hold_strength": 55.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
+   "protections": [
+    "the published evidence is predominantly favourable"
    ]
   },
   {
@@ -185,17 +147,64 @@
    "club": "EVE",
    "position": "MID",
    "price": 6.0,
-   "sell_urgency": 0.0,
+   "sell_urgency": 13.0,
    "band": "Strong hold",
-   "hold_strength": 95.0,
+   "hold_strength": 80.0,
    "reasons": [
-    "transfer speculation in this week's coverage"
+    "transfer speculation in this week's coverage",
+    "expected minutes: unassessed"
    ],
    "protections": [
     "the published evidence is predominantly favourable",
-    "expected minutes: secure",
     "on penalties",
-    "averaging 6.5 points a game",
+    "team news found and it is not negative"
+   ]
+  },
+  {
+   "player": "Guéhi",
+   "club": "MCI",
+   "position": "DEF",
+   "price": 6.0,
+   "sell_urgency": 11.0,
+   "band": "Strong hold",
+   "hold_strength": 65.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
+   "protections": [
+    "the published evidence is predominantly favourable",
+    "team news found and it is not negative"
+   ]
+  },
+  {
+   "player": "Haaland",
+   "club": "MCI",
+   "position": "FWD",
+   "price": 15.5,
+   "sell_urgency": 11.0,
+   "band": "Strong hold",
+   "hold_strength": 65.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
+   "protections": [
+    "the published evidence is predominantly favourable",
+    "team news found and it is not negative"
+   ]
+  },
+  {
+   "player": "Diop",
+   "club": "IPS",
+   "position": "DEF",
+   "price": 4.0,
+   "sell_urgency": 11.0,
+   "band": "Strong hold",
+   "hold_strength": 65.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
+   "protections": [
+    "the published evidence is predominantly favourable",
     "team news found and it is not negative"
    ]
   },
@@ -204,31 +213,15 @@
    "club": "BRE",
    "position": "MID",
    "price": 6.0,
-   "sell_urgency": 0.0,
+   "sell_urgency": 8.0,
    "band": "Strong hold",
-   "hold_strength": 85.0,
-   "reasons": [],
+   "hold_strength": 70.0,
+   "reasons": [
+    "expected minutes: unassessed"
+   ],
    "protections": [
     "the published evidence is predominantly favourable",
-    "expected minutes: very secure",
-    "on penalties",
-    "averaging 6.5 points a game"
-   ]
-  },
-  {
-   "player": "Haaland",
-   "club": "MCI",
-   "position": "FWD",
-   "price": 15.5,
-   "sell_urgency": 0.0,
-   "band": "Strong hold",
-   "hold_strength": 80.0,
-   "reasons": [],
-   "protections": [
-    "the published evidence is predominantly favourable",
-    "expected minutes: very secure",
-    "averaging 7.5 points a game",
-    "team news found and it is not negative"
+    "on penalties"
    ]
   }
  ],
@@ -284,124 +277,124 @@
  "completeness": {
   "complete": false,
   "checks": {
-   "Real FPL data loaded": true,
+   "Real FPL data loaded": false,
    "Real current squad loaded": true,
-   "Fixtures loaded": true,
+   "Fixtures loaded": false,
    "No projections replaced by zero": false,
-   "Expected minutes assessed for the majority": true,
+   "Expected minutes assessed for the majority": false,
    "15/15 sell urgency scores": true,
    "Roll transfer included": true,
    "3-GW comparison calculated": true,
    "5-GW comparison calculated": true,
    "Budget effects calculated": true
   },
-  "live_data_error": ""
+  "live_data_error": "the FPL API is unreachable from here (ProxyError)"
  },
  "minutes": {
   "Raya": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Gabriel": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Guéhi": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Kayode": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 162,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Szoboszlai": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Semenyo": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Ndiaye": {
-   "category": "Secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 0.92
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Schade": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 177,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Haaland": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "João Pedro": {
-   "category": "Secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 0.92
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Thiago": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 172,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Dubravka": {
    "category": "Unassessed",
    "starts": 0,
    "minutes": 0,
-   "team_games": 2,
+   "team_games": 0,
    "confidence": 0.6
   },
   "Hughes": {
    "category": "Unassessed",
    "starts": 0,
    "minutes": 0,
-   "team_games": 2,
+   "team_games": 0,
    "confidence": 0.6
   },
   "Mitchell": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   },
   "Diop": {
-   "category": "Very secure",
-   "starts": 2,
-   "minutes": 180,
-   "team_games": 2,
-   "confidence": 1.0
+   "category": "Unassessed",
+   "starts": 0,
+   "minutes": 0,
+   "team_games": 0,
+   "confidence": 0.6
   }
  }
 }
