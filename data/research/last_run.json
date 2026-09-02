@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T17:27:41+00:00",
- "seconds": 149.3,
+ "ran_at": "2026-09-02T19:08:07+00:00",
+ "seconds": 118.0,
  "sources_attempted": 78,
  "sources_readable": 64,
- "candidates_discovered": 705,
- "substantive_items": 267,
- "duplicates_removed": 13,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 3505,
+ "candidates_discovered": 619,
+ "substantive_items": 178,
+ "duplicates_removed": 5,
+ "deeply_analysed": 71,
+ "deep_read_failed": 19,
+ "corpus_size": 3590,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 267 articles"
+    "64/78 sources returned 178 articles"
    ]
   },
   "blackout": {
@@ -37,20 +37,20 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "Fantasy Football Pundit: nothing published in the last 10 days",
+  "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -1092,8 +1092,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-01T15:00:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-02T10:51:42-04:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1118,6 +1118,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "How to watch Nottingham Forest vs Tottenham Hotspur live: Stream, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-nottingham-forest-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-02T10:51:42-04:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Roberto De Zerbi and Tottenham Hotspur receive major transfer deadline day boost",
      "url": "https://www.fourfourtwo.com/person/player/roberto-de-zerbi-and-tottenham-hotspur-receive-major-transfer-deadline-day-boost",
@@ -1162,15 +1171,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur have splashed the cash this summer, but their spending has to continue if they’re serious about competing at the top of the Premier League again – and Victor Osimhen should be priority number one now. It’s no secret that Spurs need firepower up top, after Richarlison showed precisely why he’s not up to the task with a poor performance against Brentford in the opening game of the "
-    },
-    {
-     "title": "How to watch Tottenham Hotspur vs Newcastle United: TV channel, kick-off time and team news",
-     "url": "https://www.newcastleunited.com/en/news/how-to-watch-tottenham-hotspur-vs-newcastle-united-tv-channel-kick-off-time-and-team-news",
-     "source": "Newcastle United",
-     "published": "2026-08-29T06:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
@@ -1274,8 +1274,8 @@
    "player": "Diop",
    "club": "IPS",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-02T08:32:58+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-02T10:40:03-04:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1307,6 +1307,15 @@
      "matched_on": "diop",
      "kind": "team news",
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
+    },
+    {
+     "title": "How to watch Ipswich Town vs Liverpool live: Stream, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-ipswich-town-vs-liverpool-live-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-02T10:40:03-04:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": ""
     },
     {
      "title": "Exequiel Palacios Scout Report At Ipswich Town 2026/2027: What Does The World Cup Winner Bring To Portman Road? - Player Analysis",
@@ -1343,15 +1352,6 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up today's latest transfer news and rumours, including the latest on Ezequiel Palacios to Ipswich Town, El Hadji Malick Diouf to Brentford and Zian Flemming’s future at Burnley."
-    },
-    {
-     "title": "Ipswich Town vs Leicester City - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/ipswich-town/league-cup/preview/ipswich-vs-leicester-prediction-team-news-lineups_603606.html",
-     "source": "Sports Mole",
-     "published": "2026-08-23T23:58:00+01:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Tuesday's EFL Cup clash between Ipswich Town and Leicester City, including predictions, team news and possible lineups."
     }
    ]
   }
