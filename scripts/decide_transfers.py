@@ -115,6 +115,7 @@ def signals_for(player: dict, entry: dict, found, live: dict | None = None,
         total_points=int(live.get("total_points", 0) or 0),
         gameweek_projections=list(live.get("series") or []),
         baseline=float(live.get("baseline", 0) or 0),
+        positional_baseline=float(live.get("positional_baseline", 0) or 0),
         starts=int(live.get("starts", 0) or 0),
         appearances=int(live.get("appearances", 0) or 0),
         minutes_played=int(live.get("minutes", 0) or 0),
@@ -233,6 +234,7 @@ def _live_data():
             # The player's own recent scoring rate, used to regress a
             # projection that has run far ahead of it.
             "baseline": float(element.get("points_per_game") or 0),
+            "element_type": int(element.get("element_type", 0) or 0),
             "form": float(element.get("form") or 0),
             "points_per_game": float(element.get("points_per_game") or 0),
             "total_points": int(element.get("total_points", 0) or 0),
@@ -252,8 +254,19 @@ def _live_data():
         by_id[int(element["id"])] = record
         by_name[str(element.get("web_name", ""))] = record
 
+    # The median scoring rate per position, among players who have
+    # actually featured. This is what a thin sample is shrunk toward.
+    medians = {}
+    for kind in POSITIONS:
+        rates = sorted(r["points_per_game"] for r in by_id.values()
+                       if r.get("element_type") == kind and r["minutes"] >= 180)
+        medians[kind] = rates[len(rates) // 2] if rates else 0.0
+    for record in by_id.values():
+        record["positional_baseline"] = medians.get(record.get("element_type", 0), 0.0)
+
     return {
         "by_id": by_id, "by_name": by_name, "team_games": team_games,
+        "positional_medians": medians,
         "next_event": next_event, "fixture_table": table, "teams": teams,
     }, ""
 
@@ -332,6 +345,7 @@ def main() -> int:
                 minutes_confidence=record.get("minutes_confidence", 0.6),
                 gameweek_projections=list(record.get("series") or []),
                 baseline=float(record.get("baseline", 0) or 0),
+                positional_baseline=float(record.get("positional_baseline", 0) or 0),
                 appearances=int(record.get("appearances", 0) or 0),
                 team_games=live["team_games"],
                 source_count=1,
@@ -377,6 +391,8 @@ def main() -> int:
         s.name: {
             "series": s.gameweek_projections,
             "baseline_ppg": s.baseline,
+            "shrunk_baseline": sd.shrunk_baseline(s),
+            "positional_median": s.positional_baseline,
             "regressed_to": sd.regress(s)[0],
             "regression_note": sd.regress(s)[1],
             "news_discount": round(sd.news_discount(s), 3),

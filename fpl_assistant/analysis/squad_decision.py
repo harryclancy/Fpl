@@ -109,7 +109,8 @@ class PlayerSignals:
     # is the whole calibration fix — see horizon_points below.
     gameweek_projections: list[float] = field(default_factory=list)
     projection_confidence: str = "medium"
-    baseline: float = 0.0          # recent scoring rate, for regression
+    baseline: float = 0.0          # this season's points per game
+    positional_baseline: float = 0.0   # the median for his position
 
     # Selection record, from the official FPL data.
     starts: int = 0
@@ -342,8 +343,12 @@ EXTREME_GAIN = 15.0
 # How far a projection may sit above a player's own recent scoring rate
 # before it is pulled back toward it. Breakouts are real, so this shrinks
 # overconfidence rather than removing it.
-REGRESSION_CEILING = 2.0
-REGRESSION_STRENGTH = 0.5
+REGRESSION_CEILING = 1.75
+REGRESSION_STRENGTH = 0.65
+# Games before this season's scoring rate is worth believing on its own.
+# The same half-life the projection model uses for shrinkage, because the
+# problem is identical: one huge game is not a rate.
+BASELINE_HALF_LIFE = 6.0
 
 HIGH, MEDIUM, LOW = "High", "Medium", "Low"
 
@@ -374,8 +379,9 @@ def projection_confidence(signals: PlayerSignals) -> str:
         demerits += 1                      # a move would reset everything
     if signals.rotation_talk:
         demerits += 1
-    if signals.baseline and signals.projection > signals.baseline * REGRESSION_CEILING:
-        demerits += 2                      # far above his own scoring rate
+    baseline = shrunk_baseline(signals)
+    if baseline and signals.projection > baseline * REGRESSION_CEILING:
+        demerits += 2                      # far above a credible scoring rate
     if signals.evidence_count == 0:
         demerits += 1
 
@@ -384,22 +390,50 @@ def projection_confidence(signals: PlayerSignals) -> str:
     return MEDIUM if demerits <= 2 else LOW
 
 
-def regress(signals: PlayerSignals) -> tuple[float, str]:
-    """Pulls a projection back toward the player's own scoring rate.
+def shrunk_baseline(signals: PlayerSignals) -> float:
+    """This season's scoring rate, believed in proportion to its sample.
 
-    Applies only above the ceiling, and only halfway, so a genuine
+    Regressing against raw points-per-game does not work early in a
+    season, and that is exactly when it is needed: a defender who scored
+    seventeen in gameweek one has a points-per-game of eight and a half,
+    so a projection of eight looks perfectly reasonable against it. The
+    rate is the thing that is wrong.
+
+    So the baseline is shrunk toward the median for the player's position
+    by sample size, on the same half-life the projection model uses. After
+    two games a player's own rate is worth a quarter; after a dozen it is
+    worth most of the weight.
+    """
+    own = signals.baseline
+    positional = signals.positional_baseline
+    if not own:
+        return positional
+    if not positional:
+        return own
+    games = float(signals.appearances or signals.team_games or 0)
+    trust = games / (games + BASELINE_HALF_LIFE) if games else 0.0
+    return round(trust * own + (1 - trust) * positional, 2)
+
+
+def regress(signals: PlayerSignals) -> tuple[float, str]:
+    """Pulls a projection back toward a sample-aware scoring baseline.
+
+    Applies only above the ceiling, and only partway, so a genuine
     breakout keeps most of its uplift while a number resting on one haul
     stops being treated as a settled fact.
     """
     projection = (signals.gameweek_projections[0] if signals.gameweek_projections
                   else signals.projection)
-    baseline = signals.baseline
+    baseline = shrunk_baseline(signals)
     if not baseline or projection <= baseline * REGRESSION_CEILING:
         return projection, ""
-    pulled = projection - (projection - baseline * REGRESSION_CEILING) * REGRESSION_STRENGTH
+    ceiling = baseline * REGRESSION_CEILING
+    pulled = projection - (projection - ceiling) * REGRESSION_STRENGTH
     return round(pulled, 2), (
-        f"projection {projection:.1f} regressed to {pulled:.1f} — more than "
-        f"{REGRESSION_CEILING:.0f}x his own scoring rate of {baseline:.1f}")
+        f"projection {projection:.2f} regressed to {pulled:.2f} — more than "
+        f"{REGRESSION_CEILING}x a sample-shrunk baseline of {baseline:.2f} "
+        f"(own rate {signals.baseline:.2f} over {signals.appearances} appearances, "
+        f"positional median {signals.positional_baseline:.2f})")
 
 
 def news_discount(signals: PlayerSignals) -> float:

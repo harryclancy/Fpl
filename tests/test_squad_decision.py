@@ -346,3 +346,66 @@ def test_size_alone_cannot_override_a_hold():
     assert decision.winner.kind == "roll", decision.winner.label
     assert any("only argument for the move is the model" in n
                for n in decision.sanity), decision.sanity
+
+
+# --- calibration ---------------------------------------------------------
+
+def test_fixtures_are_not_counted_twice():
+    """The +15.66 bug. horizon_points used to shade an already
+    fixture-adjusted projection by difficulty again, compounding across
+    five gameweeks. Given the model's own per-gameweek series it must use
+    it as-is."""
+    series = [5.0, 5.0, 5.0, 5.0, 5.0]
+    kind = player("Kind", gameweek_projections=series,
+                  fixture_scores=[2.0, 2.0, 2.0, 2.0, 2.0])
+    hard = player("Hard", gameweek_projections=series,
+                  fixture_scores=[5.0, 5.0, 5.0, 5.0, 5.0])
+    assert sd.horizon_points(kind) == sd.horizon_points(hard), (
+        "difficulty is already inside the series; applying it again is a double count"
+    )
+
+
+def test_minutes_are_not_counted_twice():
+    """The projection is built from expected minutes, so the category must
+    not be applied again. Only news the model cannot see may discount it."""
+    from fpl_assistant.analysis import minutes as m
+    clean = player("Clean", gameweek_projections=[5.0], minutes_category=m.MAJOR_DOUBT)
+    assert sd.risk_adjusted(clean) == 5.0, "the model already knows his minutes"
+    reported = player("Reported", gameweek_projections=[5.0],
+                      minutes_category=m.VERY_SECURE, injury_talk=True)
+    assert sd.risk_adjusted(reported) < 5.0, "a knock reported this week is new information"
+
+
+def test_a_thin_sample_is_shrunk_toward_the_positional_median():
+    """Regressing against raw points-per-game fails exactly when needed. A
+    defender who scored 17 in gameweek one has a rate of 8.5, so a
+    projection of 8 looks reasonable against it — the rate is what is
+    wrong."""
+    hauler = player("Hauler", position="DEF", baseline=8.5, positional_baseline=2.5,
+                    appearances=2, gameweek_projections=[8.2])
+    assert sd.shrunk_baseline(hauler) < 5.0, sd.shrunk_baseline(hauler)
+    regressed, note = sd.regress(hauler)
+    assert regressed < 8.2
+    assert "sample-shrunk baseline" in note
+
+
+def test_an_established_player_keeps_his_own_rate():
+    """Shrinkage must fade as the sample grows, or it would flatten a
+    genuinely elite player all season."""
+    proven = player("Proven", baseline=8.0, positional_baseline=3.0, appearances=30)
+    assert sd.shrunk_baseline(proven) > 7.0
+
+
+def test_plausibility_bands_flag_an_extreme_swing():
+    assert sd.plausibility(2.0) == "small edge"
+    assert sd.plausibility(8.0) == "strong"
+    assert "audited" in sd.plausibility(20.0)
+
+
+def test_projection_confidence_falls_with_the_sample():
+    thin = player("Thin", appearances=1, team_games=8, minutes_category="Unassessed")
+    solid = player("Solid", appearances=8, team_games=8, minutes_category="Very secure",
+                   evidence_count=5, baseline=5.0, positional_baseline=4.0,
+                   gameweek_projections=[5.5])
+    assert sd.projection_confidence(thin) == sd.LOW
+    assert sd.projection_confidence(solid) == sd.HIGH
