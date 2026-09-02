@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-02T05:31:59+00:00",
+ "generated": "2026-09-02T11:28:58+00:00",
  "gameweek": 3,
- "corpus_size": 3053,
+ "corpus_size": 3189,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -622,16 +622,17 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 9 retrieved item(s) from 6 source(s), the most recent dated 01 Sep.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).” Fantasy Football Scout, 01 Sep: “Here, we take a look at some of the pros and cons of using the Triple Captain chip on Haaland in Gameweek 3.” Full90 FPL, 23 Aug: “If he had started without Haaland and Bruno Fernandes this season he would be laughing.”",
+   "status": "Latest on Haaland — FourFourTwo FPL, 02 Sep: “For all the noise surrounding Ekitike, and Haaland’s Golden Boot procession, a certain Brazilian was quietly staking his claim as the Premier League’s next best striker.”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 02 Sep.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances.” Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).” Fantasy Football Scout, 01 Sep: “Here, we take a look at some of the pros and cons of using the Triple Captain chip on Haaland in Gameweek 3.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Opta Analyst, 22 Aug: “Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season.”",
+   "developments": "Recent developments — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]” Full90 FPL, 23 Aug: “If he had started without Haaland and Bruno Fernandes this season he would be laughing.” Opta Analyst, 22 Aug: “Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "evidence_used": [
+    "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
@@ -646,11 +647,28 @@
     "FPL Captain",
     "Fantasy Football Hub",
     "Fantasy Football Scout",
+    "FourFourTwo FPL",
     "Full90 FPL",
     "Manchester City",
     "Opta Analyst"
    ],
    "quotes": [
+    {
+     "text": "Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
+     "published": "2026-09-02T06:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "For all the noise surrounding Ekitike, and Haaland’s Golden Boot procession, a certain Brazilian was quietly staking his claim as the Premier League’s next best striker.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
+     "published": "2026-09-02T06:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).",
      "source": "Fantasy Football Scout",
@@ -705,18 +723,21 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — Aston Villa, 31 Aug: “On the field, Emery handed debuts to two of his summer signings – Nicolas Jackson replacing the suspended João Gomes in the XI to start in attack after arriving on Friday, while Zion Suzuki”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 8 retrieved item(s) from 5 source(s), the most recent dated 31 Aug.",
-   "case_for": "What supports keeping him: Aston Villa, 31 Aug: “Jackson, who arrived from Chelsea on Friday, begins in attack, coming into the side in place of João Gomes who serves the first of his three-match suspension, while Suzuki replaces Marco Bizot in goal.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Tactical Football Analysis, 26 Aug: “Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.”",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 11 retrieved item(s) from 6 source(s), the most recent dated 02 Sep.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Aston Villa, 31 Aug: “Jackson, who arrived from Chelsea on Friday, begins in attack, coming into the side in place of João Gomes who serves the first of his three-match suspension, while Suzuki replaces Marco Bizot in goal.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.”",
    "case_against": "What argues against him: Aston Villa, 31 Aug: “We must add more players – Goretzka, João, Aaron, Garnacho, Manzambi is coming back from injury.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
-   "developments": "Recent developments — Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Aston Villa, 02 Sep: “Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton Wanderers.” Tactical Football Analysis, 26 Aug: “Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.”",
+   "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “Unai Emery is overseeing an enforced revolution at Villa Park (Image credit: Getty Images) Facebook Pinterest Email Join the conversation Follow us Add us as a preferred source on Google Joao Gomes won’t forget his Aston Villa debut in a hurry.” FourFourTwo FPL, 02 Sep: “Latest Videos From FourFourTwo Watch full video here: Joao Pedro will win the 2026/27 Golden Boot, here's why Joao Pedro hit 20 in all competitions for Chelsea last season, and is currently on two-in-two (Image credit: DAVID GRAY / AFP via Getty Images) Joao Pedro , like his French peer, was equally a standout in a failing Chelsea machine.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 8,
+   "evidence_count": 11,
    "evidence_used": [
+    "https://www.fourfourtwo.com/team/new-look-aston-villa-are-in-for-a-long-season-but-unai-emery-is-the-continuity-that-matters-most",
+    "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://avfc.co.uk/news/2026/august/31/reaction-unai-emery-post-arsenal/",
     "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
     "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/",
+    "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/",
     "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
     "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
     "https://theanalyst.com/articles/chelsea-front-three-cole-palmer-joao-pedro-morgan-rogers-stats",
@@ -725,12 +746,50 @@
    ],
    "sources_used": [
     "Aston Villa",
+    "FourFourTwo FPL",
     "OneFPL",
     "Opta Analyst",
     "Sports Mole",
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton Wanderers.",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/",
+     "published": "2026-09-02T08:38:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer",
+      "rotation"
+     ]
+    },
+    {
+     "text": "Unai Emery is overseeing an enforced revolution at Villa Park (Image credit: Getty Images) Facebook Pinterest Email Join the conversation Follow us Add us as a preferred source on Google Joao Gomes won’t forget his Aston Villa debut in a hurry.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/team/new-look-aston-villa-are-in-for-a-long-season-but-unai-emery-is-the-continuity-that-matters-most",
+     "published": "2026-09-02T08:14:35+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Latest Videos From FourFourTwo Watch full video here: Joao Pedro will win the 2026/27 Golden Boot, here's why Joao Pedro hit 20 in all competitions for Chelsea last season, and is currently on two-in-two (Image credit: DAVID GRAY / AFP via Getty Images) Joao Pedro , like his French peer, was equally a standout in a failing Chelsea machine.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
+     "published": "2026-09-02T06:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
+     "published": "2026-09-02T06:00:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "tactics"
+     ]
+    },
     {
      "text": "We must add more players – Goretzka, João, Aaron, Garnacho, Manzambi is coming back from injury.",
      "source": "Aston Villa",
@@ -929,29 +988,48 @@
   "Diop": {
    "player": "Diop",
    "club": "IPS",
-   "status": "Latest on Diop — Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
-   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 30 Aug.",
-   "case_for": "What supports keeping him: Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
+   "status": "",
+   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 02 Sep.",
+   "case_for": "What supports keeping him: RotoWire Soccer, 02 Sep: “For more markets and the rest of the matchweek, see RotoWire's soccer betting page and the best sportsbook promos Ipswich Town vs Liverpool Key Matchups Alexander Isak Issa Diop and Jacob Greaves Isak scored his first of the season against Forest and is the one Liverpool player whose finishing can settle a game like this without the rest of the performance being any good.” RotoWire Soccer, 02 Sep: “Diop and Greaves kept Sunderland to a single goal and then had an afternoon at Old Trafford neither will want back, with Greaves putting through his own net off a Harry Maguire shot.” Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+    "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
     "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/man-united-could-receive-double-boost-for-vital-old-trafford-battle-with-ipswich_603643.html",
     "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
     "https://www.sportsmole.co.uk/football/ipswich-town/league-cup/preview/ipswich-vs-leicester-prediction-team-news-lineups_603606.html",
-    "https://www.manutd.com/en/news/team-news-for-ipswich-visit-30-august",
-    "https://www.manutd.com/en/news/every-word-from-carricks-press-conference-part-two-ipswich-30-august"
+    "https://www.manutd.com/en/news/team-news-for-ipswich-visit-30-august"
    ],
    "sources_used": [
     "Ipswich Town",
     "Manchester United",
+    "RotoWire Soccer",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "For more markets and the rest of the matchweek, see RotoWire's soccer betting page and the best sportsbook promos Ipswich Town vs Liverpool Key Matchups Alexander Isak Issa Diop and Jacob Greaves Isak scored his first of the season against Forest and is the one Liverpool player whose finishing can settle a game like this without the rest of the performance being any good.",
+     "source": "RotoWire Soccer",
+     "url": "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
+     "published": "2026-09-02T03:03:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "statistics"
+     ]
+    },
+    {
+     "text": "Diop and Greaves kept Sunderland to a single goal and then had an afternoon at Old Trafford neither will want back, with Greaves putting through his own net off a Harry Maguire shot.",
+     "source": "RotoWire Soccer",
+     "url": "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
+     "published": "2026-09-02T03:03:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.",
      "source": "Ipswich Town",
