@@ -387,6 +387,32 @@ def main() -> int:
     payload["generated_from_corpus"] = len(store)
     payload["completeness"] = {"complete": complete, "checks": checks,
                                "live_data_error": live_error}
+    # A league-wide sanity view. The distribution is where an inflated
+    # model shows itself: a defender above the best forward, or a
+    # non-playing squad filler in the top ten, is visible here long before
+    # it reaches a recommendation.
+    if live:
+        market = []
+        for name, record in live["by_name"].items():
+            series = record.get("series") or []
+            if not series:
+                continue
+            market.append({
+                "player": name, "club": record.get("club", ""),
+                "position": record.get("position", ""),
+                "price": record.get("price", 0.0),
+                "five_gw": round(sum(series[:5]), 2),
+                "per_gw": round(series[0], 2),
+                "minutes": record.get("minutes", 0),
+                "sample": record.get("minutes_category", ""),
+            })
+        by_position = {}
+        for position, top in (("GKP", 10), ("DEF", 15), ("MID", 15), ("FWD", 10)):
+            ranked = sorted((m for m in market if m["position"] == position),
+                            key=lambda m: m["five_gw"], reverse=True)
+            by_position[position] = ranked[:top]
+        payload["market_projections"] = by_position
+
     payload["projection_audit"] = {
         s.name: {
             "series": s.gameweek_projections,
