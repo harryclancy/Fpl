@@ -1306,6 +1306,80 @@ def _section(title: str, subtitle: str = "") -> None:
         render_html(f"<p class='fpl-sub'>{subtitle}</p>")
 
 
+@st.cache_data(ttl=120)
+def load_decision() -> dict:
+    """The transfer decision, built from the squad rather than a shopping list."""
+    import json as _json
+    from pathlib import Path as _Path
+    path = (_Path(__file__).resolve().parent.parent.parent
+            / "data" / "research" / "decision.json")
+    try:
+        return _json.loads(path.read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+def render_sell_urgency() -> None:
+    """The diagnosis the whole decision rests on, shown rather than hidden.
+
+    It goes on the page because the reader's first question about any
+    suggested transfer is "why him?", and the answer is a ranking — not a
+    sentence about the one player being sold.
+    """
+    payload = load_decision()
+    ranking = payload.get("sell_urgency_ranking") or []
+    if not ranking:
+        return
+    with st.expander("Sell urgency — all 15, most sellable first"):
+        st.caption(
+            "Scored 0–100 from this week's evidence and the official FPL data. "
+            "No player is protected by name: a premium survives because his "
+            "evidence protects him, and the engine will sell anyone whose "
+            "situation deteriorates."
+        )
+        for index, row in enumerate(ranking, 1):
+            reasons = "; ".join(row.get("reasons", [])[:2])
+            protections = "; ".join(row.get("protections", [])[:1])
+            st.markdown(
+                f"**{index}. {row['player']}** ({row['position']}, £{row['price']:.1f}m) "
+                f"— **{row['sell_urgency']:.0f}/100**, {row['band']} "
+                f"· hold strength {row['hold_strength']:.0f}"
+                + (f"  \n  ↳ {reasons}" if reasons else "")
+                + (f"  \n  ↳ protected by {protections}" if protections else "")
+            )
+
+
+def render_decision_summary() -> None:
+    """Why the recommended decision beat the alternatives, including rolling."""
+    payload = load_decision()
+    winner = payload.get("winner")
+    options = payload.get("options") or []
+    if not winner:
+        return
+
+    if winner.get("kind") == "roll":
+        st.info(
+            "**Recommended: roll the transfer.** "
+            + " ".join(winner.get("reasons", []))
+        )
+    for note in payload.get("sanity_checks", []):
+        (st.warning if note.startswith("WARNING") else st.caption)(note)
+
+    considered = [o for o in options if o.get("kind") == "transfer"][:4]
+    if considered:
+        with st.expander(f"Options compared ({len(options)} including rolling)"):
+            st.caption("Every attractive target is tested against every plausible "
+                       "outgoing player, not just the one the money fits.")
+            for option in considered:
+                st.markdown(
+                    f"- **{option['label']}** — {option['classification']}, "
+                    f"score {option['score']}, this GW {option['gain_this_gw']:+.2f}, "
+                    f"3GW {option['gain_3gw']:+.2f}, 5GW {option['gain_5gw']:+.2f}, "
+                    f"confidence {option['confidence']}"
+                    + (f"  \n  ↳ risk: {option['risks'][0]}" if option.get("risks") else "")
+                )
+
+
 def render_corpus_transfer(out_name: str, in_name: str) -> bool:
     """The four questions a transfer has to answer, argued from evidence."""
     from fpl_assistant.analysis import writeup as writeup_mod
@@ -1703,6 +1777,8 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
 
     # ================= SECTION 2 — SUGGESTED TRANSFERS ================
     _section("Suggested transfers", budget.headline if budget else "")
+    render_sell_urgency()
+    render_decision_summary()
 
     if ranking.entries:
         with st.expander("Sell urgency across all fifteen — worked out before any target"):

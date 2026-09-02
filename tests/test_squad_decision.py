@@ -1,0 +1,242 @@
+"""The transfer decision engine: squad first, evidence only, roll always.
+
+The failure being fixed: the engine asked "who is attractive to buy?" and
+then found whoever the money worked against. That sells settled assets to
+fund bandwagons, because the outgoing player was chosen by arithmetic
+rather than because anything was wrong with him.
+"""
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from fpl_assistant.analysis import squad_decision as sd
+
+
+def player(name, **kw):
+    base = dict(name=name, club="MCI", position="MID", price=7.0, projection=5.0)
+    base.update(kw)
+    return sd.PlayerSignals(**base)
+
+
+# --- sell urgency --------------------------------------------------------
+
+def test_no_player_is_protected_by_name():
+    """Two identical records differing only in name must score identically.
+    Reputation may not enter the arithmetic anywhere."""
+    a = sd.assess(player("Haaland", price=15.5, points_per_game=8.0))
+    b = sd.assess(player("Nobody", price=15.5, points_per_game=8.0))
+    assert a.sell_urgency == b.sell_urgency
+    assert a.hold_strength == b.hold_strength
+
+
+def test_a_premium_asset_is_protected_by_his_evidence_not_his_price():
+    settled = sd.assess(player("Premium", price=15.5, points_per_game=8.0,
+                               positive_quotes=6, negative_quotes=0,
+                               minutes_assessed=True, team_news_found=True,
+                               penalties=True, fixture_scores=[2.0, 2.2, 2.4]))
+    assert settled.band in ("Strong hold", "Comfortable hold")
+    assert settled.hold_strength >= 65
+
+
+def test_the_same_premium_becomes_sellable_when_the_evidence_turns():
+    """The engine must be able to sell ANY player when circumstances change."""
+    broken = sd.assess(player("Premium", price=15.5, points_per_game=8.0,
+                              status="i", chance_of_playing=0,
+                              injury_talk=True, negative_quotes=5,
+                              minutes_assessed=True))
+    assert broken.sell_urgency >= 91
+    assert broken.forced
+
+
+def test_current_news_outweighs_historic_output():
+    """Excellent history plus current minutes uncertainty must still carry
+    meaningful sell urgency."""
+    great_history = player("X", points_per_game=7.0, omission_talk=True,
+                           rotation_talk=True, transfer_talk=True,
+                           negative_quotes=3, minutes_assessed=True)
+    assert sd.assess(great_history).sell_urgency >= 46
+
+
+def test_an_unresearched_player_is_uncertain_not_condemned():
+    """Nobody writing about a squad player is not evidence he is bad. The
+    old engine had no way to say that and quietly marked them down."""
+    quiet = sd.assess(player("Quiet", evidence_count=0))
+    injured = sd.assess(player("Injured", status="i", injury_talk=True))
+    assert quiet.sell_urgency < injured.sell_urgency
+    assert quiet.band in ("Comfortable hold", "Monitor")
+
+
+def test_dead_money_on_the_bench_counts_as_a_problem():
+    expensive_bench = sd.assess(player("Bench", price=6.0, on_bench=True))
+    cheap_bench = sd.assess(player("Cheap", price=4.0, on_bench=True))
+    assert expensive_bench.sell_urgency > cheap_bench.sell_urgency
+
+
+# --- risk-adjusted expectation -------------------------------------------
+
+def test_a_higher_projection_can_lose_to_a_secure_starter():
+    """6.0 at 60% confidence must not automatically beat 5.5 nailed on."""
+    risky = player("Risky", projection=6.0, chance_of_playing=60,
+                   rotation_talk=True, minutes_assessed=True)
+    secure = player("Secure", projection=5.5, minutes_assessed=True,
+                    team_news_found=True, positive_quotes=3)
+    assert sd.risk_adjusted(secure) > sd.risk_adjusted(risky)
+
+
+def test_the_horizon_is_front_loaded_but_looks_five_weeks_out():
+    assert len(sd.HORIZON_WEIGHTS) == 5
+    assert sd.HORIZON_WEIGHTS[0] > sd.HORIZON_WEIGHTS[-1]
+    assert abs(sum(sd.HORIZON_WEIGHTS) - 1.0) < 0.01
+
+
+# --- classification and the money question -------------------------------
+
+def test_a_downgrade_whose_money_does_nothing_is_penalised():
+    """Gabriel to De Cuyper is not an upgrade because De Cuyper is cheaper.
+    If the released money does nothing, the move is worse, not better."""
+    out = sd.assess(player("Strong", position="DEF", price=8.0,
+                           positive_quotes=4, minutes_assessed=True,
+                           team_news_found=True))
+    into = player("Cheaper", club="BHA", position="DEF", price=5.7, projection=4.8)
+    unspent = sd.build_option(out, into, bank=0.0)
+    spent = sd.build_option(out, into, bank=0.0, money_enables="a midfield upgrade")
+    assert unspent.classification == sd.BUDGET_RELEASE
+    assert spent.score > unspent.score
+    assert any("nothing was identified" in r for r in unspent.risks)
+
+
+def test_a_forced_move_is_labelled_as_one():
+    out = sd.assess(player("Injured", status="i", chance_of_playing=0,
+                           injury_talk=True))
+    option = sd.build_option(out, player("Fit", projection=5.0), bank=0.0)
+    assert option.classification == sd.FORCED
+
+
+# --- rolling -------------------------------------------------------------
+
+def test_rolling_is_always_among_the_options():
+    decision = sd.decide([player("A"), player("B")], targets=[], bank=0.0)
+    assert any(o.kind == "roll" for o in decision.options)
+
+
+def test_a_marginal_gain_loses_to_rolling():
+    """The single most common mistake in this game is spending a free
+    transfer for a fractional gain."""
+    squad = [player("Owned", projection=5.0, minutes_assessed=True)]
+    target = player("Marginal", club="LIV", projection=5.2, minutes_assessed=True)
+    decision = sd.decide(squad, [target], bank=5.0)
+    assert decision.winner.kind == "roll"
+    assert any("not worth spending" in note for note in decision.sanity)
+
+
+def test_a_clear_upgrade_beats_rolling():
+    squad = [player("Weak", projection=2.0, status="i", chance_of_playing=0,
+                    injury_talk=True, minutes_assessed=True)]
+    target = player("Strong", club="LIV", projection=7.0, minutes_assessed=True,
+                    team_news_found=True, positive_quotes=4, source_count=4,
+                    fixture_scores=[2.0, 2.0, 2.2, 2.4, 2.5])
+    squad[0].source_count = 4
+    decision = sd.decide(squad, [target], bank=5.0)
+    assert decision.winner.kind == "transfer"
+
+
+# --- the mandatory question ----------------------------------------------
+
+def test_one_target_is_tested_against_every_plausible_seller():
+    """The specific fix: the old engine found a target then searched for a
+    victim, and the victim was chosen by price."""
+    squad = [player("A", projection=4.0), player("B", projection=4.5),
+             player("C", projection=3.0)]
+    decision = sd.decide(squad, [player("Target", club="LIV", projection=6.0)],
+                         bank=10.0)
+    sellers = {o.out_player for o in decision.options if o.kind == "transfer"}
+    assert sellers == {"A", "B", "C"}, sellers
+
+
+def test_the_engine_must_explain_why_this_player_and_not_the_next_two():
+    squad = [player("A", projection=3.0, status="i", injury_talk=True),
+             player("B", projection=5.0, positive_quotes=3),
+             player("C", projection=4.0)]
+    for p in squad:
+        p.source_count = 3
+        p.minutes_assessed = True
+    decision = sd.decide(squad, [player("T", club="LIV", projection=7.0,
+                                        minutes_assessed=True, source_count=3)],
+                         bank=10.0)
+    if decision.winner.kind == "transfer":
+        explanation = sd.why_this_player_out(decision, decision.winner)
+        assert decision.winner.out_player in explanation
+        assert "Not " in explanation or "more obvious sale" in explanation
+
+
+def test_selling_a_strong_asset_raises_a_sanity_warning():
+    squad = [player("Strong", projection=6.0, positive_quotes=6, penalties=True,
+                    minutes_assessed=True, team_news_found=True, source_count=4,
+                    points_per_game=7.0, fixture_scores=[2.0, 2.0, 2.2])]
+    decision = sd.decide(squad, [player("T", club="LIV", projection=9.0,
+                                        minutes_assessed=True, source_count=4)],
+                         bank=10.0)
+    if decision.winner.kind == "transfer":
+        assert any("hold strength" in n or "not a squad problem" in n
+                   for n in decision.sanity)
+
+
+# --- reversal and future cost --------------------------------------------
+
+def test_selling_someone_you_will_want_back_is_penalised():
+    strong = sd.assess(player("Strong", positive_quotes=6, penalties=True,
+                              points_per_game=7.0, minutes_assessed=True,
+                              team_news_found=True, fixture_scores=[2.0, 2.2]))
+    risk, notes = sd.reversal_risk(strong, player("Other", club="LIV"))
+    assert risk > 0
+    assert any("buying him back" in n for n in notes)
+
+
+def test_one_good_fixture_before_a_hard_run_is_penalised():
+    cost, notes = sd.future_transfer_cost(
+        player("Punt", club="LIV", fixture_scores=[2.0, 4.0, 4.2, 4.5, 4.0],
+               minutes_assessed=True))
+    assert cost > 0
+    assert any("need reversing" in n for n in notes)
+
+
+def test_a_hit_has_to_clear_its_own_cost():
+    out = sd.assess(player("Out", projection=4.0))
+    into = player("In", club="LIV", projection=5.0, minutes_assessed=True)
+    free = sd.build_option(out, into, bank=5.0, hits=0)
+    hit = sd.build_option(out, into, bank=5.0, hits=1)
+    assert free.score - hit.score == sd.HIT_COST
+
+
+# --- confidence ----------------------------------------------------------
+
+def test_uncertainty_lowers_the_score():
+    out = sd.assess(player("Out", projection=4.0, minutes_assessed=True,
+                           source_count=4))
+    known = player("Known", club="LIV", projection=6.0, minutes_assessed=True,
+                   source_count=4)
+    unknown = player("Unknown", club="LIV", projection=6.0, source_count=0)
+    assert sd.build_option(out, known, 5.0).score > sd.build_option(out, unknown, 5.0).score
+    assert sd.build_option(out, known, 5.0).confidence == "High"
+    assert sd.build_option(out, unknown, 5.0).confidence == "Low"
+
+
+def test_an_unaffordable_move_is_rejected_not_scored():
+    out = sd.assess(player("Cheap", price=4.0))
+    option = sd.build_option(out, player("Expensive", club="LIV", price=12.0), bank=0.0)
+    assert option.score < -50
+    assert "unaffordable" in option.risks
+
+
+def test_the_club_limit_is_respected():
+    """Three from one club plus a player from elsewhere: selling the
+    outsider and buying a fourth from the capped club is illegal. Selling
+    one of the three and buying another from the same club is fine — the
+    count stays at three — so only the first case may be rejected."""
+    squad = [player(f"P{i}", club="MCI") for i in range(3)] + [player("Other", club="LIV")]
+    decision = sd.decide(squad, [player("Target", club="MCI", projection=9.0)],
+                         bank=20.0)
+    sellers = {o.out_player for o in decision.options if o.kind == "transfer"}
+    assert "Other" not in sellers, "that would put four Man City players in the squad"
+    assert sellers, "swapping one Man City player for another is legal"
