@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T19:08:07+00:00",
- "seconds": 118.0,
+ "ran_at": "2026-09-02T19:16:47+00:00",
+ "seconds": 172.4,
  "sources_attempted": 78,
  "sources_readable": 64,
- "candidates_discovered": 619,
- "substantive_items": 178,
- "duplicates_removed": 5,
- "deeply_analysed": 71,
- "deep_read_failed": 19,
- "corpus_size": 3590,
+ "candidates_discovered": 555,
+ "substantive_items": 117,
+ "duplicates_removed": 3,
+ "deeply_analysed": 74,
+ "deep_read_failed": 40,
+ "corpus_size": 3600,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 178 articles"
+    "64/78 sources returned 117 articles"
    ]
   },
   "blackout": {
@@ -37,9 +37,9 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "Fantasy Football Pundit: nothing published in the last 10 days",
-  "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
