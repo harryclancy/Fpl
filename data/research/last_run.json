@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T11:28:58+00:00",
- "seconds": 125.1,
+ "ran_at": "2026-09-02T11:33:41+00:00",
+ "seconds": 147.7,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 681,
- "substantive_items": 236,
- "duplicates_removed": 19,
- "deeply_analysed": 69,
- "deep_read_failed": 21,
- "corpus_size": 3189,
+ "sources_readable": 62,
+ "candidates_discovered": 555,
+ "substantive_items": 116,
+ "duplicates_removed": 3,
+ "deeply_analysed": 74,
+ "deep_read_failed": 39,
+ "corpus_size": 3200,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 236 articles"
+    "62/78 sources returned 116 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,8 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
-  "Fantasy Football Pundit: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
+  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
   "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,7 +51,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -1275,7 +1277,7 @@
    "club": "IPS",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-02T03:03:00+00:00",
+   "latest_evidence": "2026-09-02T08:32:58+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1288,6 +1290,7 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
     "set pieces",
     "statistics",
     "tactics",
@@ -1306,6 +1309,15 @@
      "matched_on": "diop",
      "kind": "team news",
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
+    },
+    {
+     "title": "Exequiel Palacios Scout Report At Ipswich Town 2026/2027: What Does The World Cup Winner Bring To Portman Road? - Player Analysis",
+     "url": "https://tacticalfootballanalysis.com/exequiel-palacios-scout-report-ipswich-town-2026-2027-analysis-tactics/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-09-02T08:32:58+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Exequiel Palacios arrives at Ipswich Town as a World Cup-winning midfielder with elite-level experience. This scout report analyses his tactical role, press resistance, passing and defensive qualities, key injury and physical concerns, and how he could fit Gary O’Neil’s system."
     },
     {
      "title": "Ipswich Town vs Liverpool Prediction, Predicted Lineups & Team News",
@@ -1342,15 +1354,6 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Tuesday's EFL Cup clash between Ipswich Town and Leicester City, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Team news for ipswich visit 30 august",
-     "url": "https://www.manutd.com/en/news/team-news-for-ipswich-visit-30-august",
-     "source": "Manchester United",
-     "published": "",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   }
