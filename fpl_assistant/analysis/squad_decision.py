@@ -349,6 +349,13 @@ REGRESSION_STRENGTH = 0.65
 # The same half-life the projection model uses for shrinkage, because the
 # problem is identical: one huge game is not a rate.
 BASELINE_HALF_LIFE = 6.0
+# Below this many appearances a projection is an extrapolation from almost
+# nothing, and gets a tighter ceiling. A defender with two games and one
+# huge haul cleared the ordinary 1.75x bar because his own inflated rate
+# was still holding the baseline up; the sample size has to bound the
+# claim as well as weight the average.
+THIN_SAMPLE_APPEARANCES = 4
+THIN_SAMPLE_CEILING = 1.35
 
 HIGH, MEDIUM, LOW = "High", "Medium", "Low"
 
@@ -379,8 +386,7 @@ def projection_confidence(signals: PlayerSignals) -> str:
         demerits += 1                      # a move would reset everything
     if signals.rotation_talk:
         demerits += 1
-    baseline = shrunk_baseline(signals)
-    if baseline and signals.projection > baseline * REGRESSION_CEILING:
+    if regress(signals)[1]:
         demerits += 2                      # far above a credible scoring rate
     if signals.evidence_count == 0:
         demerits += 1
@@ -425,15 +431,20 @@ def regress(signals: PlayerSignals) -> tuple[float, str]:
     projection = (signals.gameweek_projections[0] if signals.gameweek_projections
                   else signals.projection)
     baseline = shrunk_baseline(signals)
-    if not baseline or projection <= baseline * REGRESSION_CEILING:
+    if not baseline:
         return projection, ""
-    ceiling = baseline * REGRESSION_CEILING
+    thin = 0 < signals.appearances < THIN_SAMPLE_APPEARANCES
+    multiple = THIN_SAMPLE_CEILING if thin else REGRESSION_CEILING
+    if projection <= baseline * multiple:
+        return projection, ""
+    ceiling = baseline * multiple
     pulled = projection - (projection - ceiling) * REGRESSION_STRENGTH
     return round(pulled, 2), (
         f"projection {projection:.2f} regressed to {pulled:.2f} — more than "
-        f"{REGRESSION_CEILING}x a sample-shrunk baseline of {baseline:.2f} "
-        f"(own rate {signals.baseline:.2f} over {signals.appearances} appearances, "
-        f"positional median {signals.positional_baseline:.2f})")
+        f"{multiple}x a sample-shrunk baseline of {baseline:.2f} "
+        + ("(thin sample) " if thin else "")
+        + f"(own rate {signals.baseline:.2f} over {signals.appearances} appearances, "
+        + f"positional median {signals.positional_baseline:.2f})")
 
 
 def news_discount(signals: PlayerSignals) -> float:

@@ -409,3 +409,18 @@ def test_projection_confidence_falls_with_the_sample():
                    gameweek_projections=[5.5])
     assert sd.projection_confidence(thin) == sd.LOW
     assert sd.projection_confidence(solid) == sd.HIGH
+
+
+def test_a_two_game_sample_gets_a_tighter_ceiling():
+    """A defender with two games and one huge haul cleared the ordinary
+    ceiling because his own inflated rate was still propping the baseline
+    up. Sample size has to bound the claim, not only weight the average."""
+    thin = player("Thin", position="DEF", baseline=8.5, positional_baseline=3.0,
+                  appearances=2, gameweek_projections=[7.7])
+    established = player("Established", position="DEF", baseline=6.0,
+                         positional_baseline=3.0, appearances=20,
+                         gameweek_projections=[7.7])
+    thin_value, thin_note = sd.regress(thin)
+    established_value, _ = sd.regress(established)
+    assert thin_value < 7.7 and "thin sample" in thin_note
+    assert thin_value < established_value, "the thin sample must be bounded harder"
