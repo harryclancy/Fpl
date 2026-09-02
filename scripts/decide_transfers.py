@@ -113,6 +113,8 @@ def signals_for(player: dict, entry: dict, found, live: dict | None = None,
         form=float(live.get("form", 0) or 0),
         points_per_game=float(live.get("points_per_game", 0) or 0),
         total_points=int(live.get("total_points", 0) or 0),
+        gameweek_projections=list(live.get("series") or []),
+        baseline=float(live.get("baseline", 0) or 0),
         starts=int(live.get("starts", 0) or 0),
         appearances=int(live.get("appearances", 0) or 0),
         minutes_played=int(live.get("minutes", 0) or 0),
@@ -196,11 +198,19 @@ def _live_data():
     # run. The model here is the same one the squad optimiser uses, so the
     # transfer engine and the selection engine agree on what a player is
     # worth.
-    projections = {}
+    projections, series_by_id = {}, {}
     try:
         scored = score_players(players_df(bootstrap), fixtures, teams, next_event)
+        # The model publishes a per-gameweek series, each entry already
+        # adjusted for THAT gameweek's fixture. Carrying it through is the
+        # calibration fix: the engine used to take one number and re-shade
+        # it by difficulty itself, applying fixtures twice.
+        gw_columns = [c for c in scored.columns if c.startswith("xp_gw")]
+        gw_columns.sort(key=lambda c: int(c.replace("xp_gw", "")))
         for _, row in scored.iterrows():
-            projections[int(row["id"])] = float(row.get("xp_next", 0) or 0)
+            pid = int(row["id"])
+            projections[pid] = float(row.get("xp_next", 0) or 0)
+            series_by_id[pid] = [float(row.get(c, 0) or 0) for c in gw_columns[:5]]
     except Exception as exc:
         return None, f"the projection model failed ({exc.__class__.__name__}: {exc})"
 
@@ -219,6 +229,10 @@ def _live_data():
             "status": element.get("status", "a"),
             "chance_of_playing_next_round": element.get("chance_of_playing_next_round"),
             "projection": projections.get(int(element["id"]), 0.0),
+            "series": series_by_id.get(int(element["id"]), []),
+            # The player's own recent scoring rate, used to regress a
+            # projection that has run far ahead of it.
+            "baseline": float(element.get("points_per_game") or 0),
             "form": float(element.get("form") or 0),
             "points_per_game": float(element.get("points_per_game") or 0),
             "total_points": int(element.get("total_points", 0) or 0),
@@ -316,6 +330,10 @@ def main() -> int:
                 points_per_game=float(record.get("points_per_game", 0) or 0),
                 minutes_category=record.get("minutes_category", "Unassessed"),
                 minutes_confidence=record.get("minutes_confidence", 0.6),
+                gameweek_projections=list(record.get("series") or []),
+                baseline=float(record.get("baseline", 0) or 0),
+                appearances=int(record.get("appearances", 0) or 0),
+                team_games=live["team_games"],
                 source_count=1,
                 fixture_scores=_fixture_scores(live, record.get("team")),
             ))
@@ -355,6 +373,18 @@ def main() -> int:
     payload["generated_from_corpus"] = len(store)
     payload["completeness"] = {"complete": complete, "checks": checks,
                                "live_data_error": live_error}
+    payload["projection_audit"] = {
+        s.name: {
+            "series": s.gameweek_projections,
+            "baseline_ppg": s.baseline,
+            "regressed_to": sd.regress(s)[0],
+            "regression_note": sd.regress(s)[1],
+            "news_discount": round(sd.news_discount(s), 3),
+            "confidence": sd.projection_confidence(s),
+            "horizon": sd.horizon_points(s),
+            "five_gw_total": round(sum(sd.horizon_points(s)), 2),
+        }
+        for s in signals}
     payload["minutes"] = {
         s.name: {"category": s.minutes_category, "starts": s.starts,
                  "minutes": s.minutes_played, "team_games": s.team_games,

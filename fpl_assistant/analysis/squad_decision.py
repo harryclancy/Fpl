@@ -104,6 +104,13 @@ class PlayerSignals:
     form: float = 0.0
     points_per_game: float = 0.0
 
+    # Per-gameweek projections from the expected-points model, already
+    # fixture-adjusted and already minutes-adjusted. Using these directly
+    # is the whole calibration fix — see horizon_points below.
+    gameweek_projections: list[float] = field(default_factory=list)
+    projection_confidence: str = "medium"
+    baseline: float = 0.0          # recent scoring rate, for regression
+
     # Selection record, from the official FPL data.
     starts: int = 0
     appearances: int = 0
@@ -312,32 +319,163 @@ def rank(signals: list[PlayerSignals]) -> list[Assessment]:
 
 # --- risk-adjusted expectation -------------------------------------------
 
-def risk_adjusted(signals: PlayerSignals) -> float:
-    """Projected points, discounted by how likely he is to be on the pitch.
+# How much a projection may be discounted for news the model cannot see.
+# Small on purpose: the expected-points model already knows the player's
+# minutes record, so this is the increment for a knock or an omission
+# reported since, not a second full availability adjustment.
+NEWS_DISCOUNT = {
+    "injury": 0.88, "omission": 0.85, "rotation": 0.94, "transfer": 0.94,
+}
 
-    Raw projection is a statement about a player who plays. The whole point
-    of researching minutes is that this is not guaranteed, and a 6.0
-    projection at 60% starting confidence is worth less than 5.5 from a
-    settled starter — which the old engine had no way to express.
+
+# Plausibility bands for a five-gameweek transfer gain. A straight swap
+# between two players of similar standing is a small edge; anything past
+# "strong" is claiming the model has spotted something the whole market
+# missed, and should have to prove it.
+PLAUSIBILITY = (
+    (3.0, "small edge"),
+    (7.0, "meaningful"),
+    (10.0, "strong"),
+    (15.0, "exceptional — requires corroboration"),
+)
+EXTREME_GAIN = 15.0
+# How far a projection may sit above a player's own recent scoring rate
+# before it is pulled back toward it. Breakouts are real, so this shrinks
+# overconfidence rather than removing it.
+REGRESSION_CEILING = 2.0
+REGRESSION_STRENGTH = 0.5
+
+HIGH, MEDIUM, LOW = "High", "Medium", "Low"
+
+
+def plausibility(gain_5gw: float) -> str:
+    for ceiling, label in PLAUSIBILITY:
+        if abs(gain_5gw) <= ceiling:
+            return label
+    return "extreme — automatically audited"
+
+
+def projection_confidence(signals: PlayerSignals) -> str:
+    """How much the number itself should be trusted.
+
+    Separate from how good the player is. A projection built on two
+    appearances, or on a player whose role changed last week, is a weaker
+    claim than the same number from a settled starter with a season behind
+    him — and a large gain resting on the weak one should not win.
     """
-    # The minutes assessment already folds in availability, the official
-    # chance-of-playing figure, injuries, omissions, rotation and transfer
-    # talk. Applying those again here would double-count them.
-    confidence = signals.minutes_confidence
-    if signals.team_news_found and signals.evidence_balance >= 0:
-        confidence = min(1.0, confidence * 1.05)
-    return round(signals.projection * confidence, 2)
+    demerits = 0
+    if signals.minutes_category in ("Unassessed", "Major doubt", "Significant concern"):
+        demerits += 2
+    elif signals.minutes_category == "Slight concern":
+        demerits += 1
+    if signals.team_games and signals.appearances <= 1:
+        demerits += 2                      # essentially no sample
+    if signals.transfer_talk:
+        demerits += 1                      # a move would reset everything
+    if signals.rotation_talk:
+        demerits += 1
+    if signals.baseline and signals.projection > signals.baseline * REGRESSION_CEILING:
+        demerits += 2                      # far above his own scoring rate
+    if signals.evidence_count == 0:
+        demerits += 1
+
+    if demerits == 0:
+        return HIGH
+    return MEDIUM if demerits <= 2 else LOW
+
+
+def regress(signals: PlayerSignals) -> tuple[float, str]:
+    """Pulls a projection back toward the player's own scoring rate.
+
+    Applies only above the ceiling, and only halfway, so a genuine
+    breakout keeps most of its uplift while a number resting on one haul
+    stops being treated as a settled fact.
+    """
+    projection = (signals.gameweek_projections[0] if signals.gameweek_projections
+                  else signals.projection)
+    baseline = signals.baseline
+    if not baseline or projection <= baseline * REGRESSION_CEILING:
+        return projection, ""
+    pulled = projection - (projection - baseline * REGRESSION_CEILING) * REGRESSION_STRENGTH
+    return round(pulled, 2), (
+        f"projection {projection:.1f} regressed to {pulled:.1f} — more than "
+        f"{REGRESSION_CEILING:.0f}x his own scoring rate of {baseline:.1f}")
+
+
+def news_discount(signals: PlayerSignals) -> float:
+    """The part of minutes risk the projection model cannot already see.
+
+    This was the second double-count. `xp_next` is built from expected
+    minutes — the model applies availability, start probability and
+    rotation itself — and risk_adjusted() then multiplied the result by
+    the minutes-category confidence AGAIN. A very secure starter came
+    through unscathed while a doubtful one was penalised twice, which
+    widened every gap between them.
+
+    What remains legitimately outside the model is THIS WEEK'S REPORTING:
+    a knock, an omission or a transfer saga that broke after the data was
+    published. Only that is applied here.
+    """
+    factor = 1.0
+    if signals.injury_talk:
+        factor *= NEWS_DISCOUNT["injury"]
+    if signals.omission_talk:
+        factor *= NEWS_DISCOUNT["omission"]
+    if signals.rotation_talk:
+        factor *= NEWS_DISCOUNT["rotation"]
+    if signals.transfer_talk:
+        factor *= NEWS_DISCOUNT["transfer"]
+    # A flagged player IS visible to the model, but the model is gentle
+    # about it; a hard flag deserves more than the model's haircut.
+    if signals.flagged:
+        factor *= 0.6
+    return factor
+
+
+def risk_adjusted(signals: PlayerSignals) -> float:
+    """This gameweek's projection, discounted only for news, not twice."""
+    base = (signals.gameweek_projections[0] if signals.gameweek_projections
+            else signals.projection)
+    return round(base * news_discount(signals), 2)
 
 
 def horizon_points(signals: PlayerSignals, weeks: int = 5) -> list[float]:
-    """A per-gameweek expectation, shaded by each fixture's difficulty."""
-    base = risk_adjusted(signals)
+    """Per-gameweek expectation over the horizon.
+
+    THE CALIBRATION FIX. This used to take a single projection and shade it
+    by each gameweek's fixture difficulty — but `xp_next` is ALREADY
+    fixture-adjusted, so difficulty was applied twice. A player with a kind
+    run got the model's uplift and then another 12% per step on top of it,
+    compounding across five gameweeks. That is what produced a +15.66
+    five-gameweek delta for a straight defender swap.
+
+    The expected-points model already publishes a per-gameweek series
+    (`xp_gw*`), each entry fixture-adjusted for that specific gameweek.
+    Using it directly removes the double count entirely. The shading path
+    survives only as a fallback for callers with no series, and is applied
+    at half strength because even then it is partly redundant.
+    """
+    discount = news_discount(signals)
+    regressed, _ = regress(signals)
+    series = signals.gameweek_projections
+    if series:
+        # Scale the whole series by whatever the first gameweek's
+        # regression did, so a pulled-back projection stays pulled back
+        # across the horizon rather than snapping back in gameweek two.
+        scale = (regressed / series[0]) if series[0] else 1.0
+        out = [round(value * scale * discount, 2) for value in series[:weeks]]
+        # Pad a short series with its own tail rather than with zero: a
+        # missing fifth gameweek is unknown, not a blank.
+        while len(out) < weeks:
+            out.append(out[-1] if out else 0.0)
+        return out
+
+    base = round(signals.projection * discount, 2)
     out = []
     for index in range(weeks):
         difficulty = (signals.fixture_scores[index]
                       if index < len(signals.fixture_scores) else 3.0)
-        # 3 is neutral; each step of difficulty moves expectation ~12%.
-        out.append(round(base * (1.0 + (3.0 - difficulty) * 0.12), 2))
+        out.append(round(base * (1.0 + (3.0 - difficulty) * 0.06), 2))
     return out
 
 
@@ -515,7 +653,29 @@ def build_option(out: Assessment, into: PlayerSignals, bank: float,
         option.risks.append(
             f"gives up {out.name}, whose hold strength is {out.hold_strength:.0f}")
 
+    # What is actually OBSERVED against the outgoing player, as opposed to
+    # computed about him. Only these may support overriding a hold.
+    corroboration = []
+    if out.signals.flagged:
+        corroboration.append("he is flagged as unavailable")
+    if out.signals.injury_talk:
+        corroboration.append("an injury is reported this week")
+    if out.signals.omission_talk:
+        corroboration.append("he was left out of a recent squad")
+    if out.signals.rotation_talk:
+        corroboration.append("rotation risk is being reported")
+    if out.signals.transfer_talk:
+        corroboration.append("there is transfer speculation around him")
+    if out.signals.minutes_category in ("Significant concern", "Major doubt"):
+        corroboration.append(f"his expected minutes are a {out.signals.minutes_category.lower()}")
+    if out.signals.fixture_difficulty >= 3.8:
+        corroboration.append(
+            f"his fixture run is hard (mean difficulty {out.signals.fixture_difficulty:.1f})")
+    if out.signals.evidence_balance <= -0.34:
+        corroboration.append("this week's reporting on him is predominantly cautionary")
+
     option.components = {
+        "_corroboration": corroboration,
         "five_gw_gain": weighted_gain,
         "structure": structure,
         "captaincy": captain_upgrade,
@@ -526,7 +686,8 @@ def build_option(out: Assessment, into: PlayerSignals, bank: float,
         "asset_loss": -asset_loss,
         "hit_cost": -HIT_COST * hits,
     }
-    option.score = round(sum(option.components.values()), 2)
+    option.score = round(sum(v for k, v in option.components.items()
+                             if isinstance(v, (int, float))), 2)
     option.risks.extend(future_notes + reversal_notes)
 
     # Confidence follows the quality of what is known about both players.
@@ -534,11 +695,19 @@ def build_option(out: Assessment, into: PlayerSignals, bank: float,
              out.signals.minutes_category != "Unassessed")
     sources = min(into.source_count, out.signals.source_count)
     if all(known) and sources >= 3 and not into.transfer_talk:
-        option.confidence = "High"
+        option.confidence = HIGH
     elif any(known) and sources >= 1:
-        option.confidence = "Medium"
+        option.confidence = MEDIUM
     else:
-        option.confidence = "Low"
+        option.confidence = LOW
+
+    # A move is never more trustworthy than the projections underneath it.
+    weakest = min(
+        (projection_confidence(into), projection_confidence(out.signals)),
+        key=lambda level: {HIGH: 0, MEDIUM: 1, LOW: 2}[level])
+    if {HIGH: 0, MEDIUM: 1, LOW: 2}[weakest] > {HIGH: 0, MEDIUM: 1, LOW: 2}[option.confidence]:
+        option.confidence = weakest
+    option.components["_plausibility"] = plausibility(option.gain_5gw)
     if option.confidence != "High":
         # Uncertainty must cost something, or the engine will always prefer
         # the exciting unknown to the boring known.
@@ -686,18 +855,34 @@ def _enforce(decision: Decision, by_name: dict, roll: Option | None) -> Decision
     if not failures:
         return decision
 
-    # An overwhelming case can still override the checklist. Twice the
-    # threshold for acting, over five gameweeks, on at least medium
-    # confidence — anything less and the checklist wins.
-    overwhelming = (winner.gain_5gw >= MIN_GAIN_TO_ACT * 2
-                    and winner.confidence in ("High", "Medium")
-                    and not any("nothing was identified" in r for r in winner.risks))
-    if overwhelming:
+    # A projection alone may NOT override a hold. This is the rule the
+    # Gabriel case exposed: the model claimed +15.7 over five gameweeks
+    # for a straight defender swap, the checklist objected, and the size
+    # of the number was allowed to settle it. A number is not evidence.
+    #
+    # An override now needs CORROBORATION — something someone observed
+    # about the outgoing player or his situation — as well as size.
+    corroboration = winner.components.get("_corroboration") or []
+    large = winner.gain_5gw >= MIN_GAIN_TO_ACT * 2
+    trusted = winner.confidence in (HIGH, MEDIUM)
+    audited = abs(winner.gain_5gw) < EXTREME_GAIN
+
+    if large and trusted and corroboration and audited:
         decision.sanity.append(
-            "Selling a well-held asset, and the checklist was overridden: the case "
-            f"is {winner.gain_5gw:+.1f} over five gameweeks at {winner.confidence.lower()} "
-            f"confidence, which clears twice the bar for acting. " + " · ".join(failures))
+            f"Selling a well-held asset, and the checklist was overridden: "
+            f"{winner.gain_5gw:+.1f} over five gameweeks ({plausibility(winner.gain_5gw)}) "
+            f"at {winner.confidence.lower()} confidence, CORROBORATED by "
+            + "; ".join(corroboration) + ". " + " · ".join(failures))
         return decision
+
+    if large and not corroboration:
+        failures.append(
+            f"the only argument for the move is the model's own {winner.gain_5gw:+.1f}, "
+            f"with nothing observed about {sold.name} to support it")
+    if not audited:
+        failures.append(
+            f"a {winner.gain_5gw:+.1f} five-gameweek swing on a straight swap is "
+            f"{plausibility(winner.gain_5gw)} and is not trusted without corroboration")
 
     alternatives = [
         option for option in decision.options

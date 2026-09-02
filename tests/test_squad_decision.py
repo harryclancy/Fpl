@@ -84,12 +84,13 @@ def test_a_higher_projection_can_lose_to_a_secure_starter():
     """
     from fpl_assistant.analysis import minutes as m
 
-    risky = player("Risky", projection=6.0,
-                   minutes_category=m.SIGNIFICANT,
-                   minutes_confidence=m.CONFIDENCE[m.SIGNIFICANT])
-    secure = player("Secure", projection=5.5,
-                    minutes_category=m.VERY_SECURE,
-                    minutes_confidence=m.CONFIDENCE[m.VERY_SECURE],
+    # Availability now lives INSIDE the projection — the expected-points
+    # model applies expected minutes itself, so multiplying by the minutes
+    # category again was a double count. What legitimately remains outside
+    # the model is this week's reporting, so that is what separates these.
+    risky = player("Risky", projection=6.0, minutes_category=m.SIGNIFICANT,
+                   injury_talk=True, rotation_talk=True)
+    secure = player("Secure", projection=5.5, minutes_category=m.VERY_SECURE,
                     team_news_found=True, positive_quotes=3)
     assert sd.risk_adjusted(secure) > sd.risk_adjusted(risky)
 
@@ -231,7 +232,9 @@ def test_uncertainty_lowers_the_score():
     unknown = player("Unknown", club="LIV", projection=6.0,
                      minutes_category=m.UNASSESSED, source_count=0)
     assert sd.build_option(out, known, 5.0).score > sd.build_option(out, unknown, 5.0).score
-    assert sd.build_option(out, known, 5.0).confidence == "High"
+    # Not High: neither player has any retrieved evidence behind him, and a
+    # move is never more trustworthy than the projections underneath it.
+    assert sd.build_option(out, known, 5.0).confidence == "Medium"
     assert sd.build_option(out, unknown, 5.0).confidence == "Low"
 
 
@@ -302,14 +305,44 @@ def test_a_strong_asset_is_not_sold_when_it_fixes_nothing():
 
 
 def test_an_overwhelming_case_can_still_override_the_checklist():
-    """Nothing is protected absolutely — the bar is just high."""
-    squad = [player("Settled", position="DEF", price=8.0, projection=2.0,
-                    positive_quotes=6, points_per_game=6.0, source_count=4,
-                    minutes_category="Very secure", minutes_confidence=1.0)]
+    """Nothing is protected absolutely — but size alone is not enough.
+
+    The override now needs CORROBORATION: something OBSERVED about the
+    outgoing player, not merely a large number computed about him. Here
+    the held player has a hard fixture run and cautionary reporting, which
+    is the kind of evidence that earns an override.
+    """
+    # A realistic gap. Two points a gameweek between defenders is already
+    # a big claim; the earlier fixture used five, which the outlier
+    # detector correctly refused as not credible for a straight swap.
+    squad = [player("Settled", position="DEF", price=8.0, projection=3.6,
+                    positive_quotes=1, negative_quotes=4, points_per_game=6.0,
+                    source_count=4, minutes_category="Very secure",
+                    penalties=True, set_pieces=True, appearances=8, team_games=8,
+                    fixture_scores=[4.2, 4.0, 4.5, 4.1, 4.0])]
     targets = [player("Elite", club="BHA", position="DEF", price=8.0,
-                      projection=9.0, minutes_category="Very secure",
-                      minutes_confidence=1.0, source_count=4,
+                      projection=5.6, minutes_category="Very secure",
+                      source_count=4, appearances=8, team_games=8,
                       fixture_scores=[2.0, 2.0, 2.0, 2.0, 2.0])]
     decision = sd.decide(squad, targets, bank=5.0)
-    assert decision.winner.kind == "transfer"
-    assert any("overridden" in n for n in decision.sanity)
+    assert decision.winner.kind == "transfer", decision.sanity
+    assert any("CORROBORATED" in n for n in decision.sanity), decision.sanity
+
+
+def test_size_alone_cannot_override_a_hold():
+    """The Gabriel case, generically. The model claimed a huge gain, the
+    checklist objected, and the number was allowed to settle it. A number
+    is not evidence about a footballer."""
+    squad = [player("Settled", position="DEF", price=8.0, projection=2.0,
+                    positive_quotes=6, points_per_game=6.0, source_count=4,
+                    minutes_category="Very secure", team_news_found=True,
+                    appearances=8, team_games=8,
+                    fixture_scores=[2.2, 2.4, 2.3, 2.5, 2.4])]
+    targets = [player("Shiny", club="BHA", position="DEF", price=6.0,
+                      projection=9.0, minutes_category="Very secure",
+                      source_count=4, appearances=8, team_games=8,
+                      fixture_scores=[2.0, 2.0, 2.0, 2.0, 2.0])]
+    decision = sd.decide(squad, targets, bank=5.0)
+    assert decision.winner.kind == "roll", decision.winner.label
+    assert any("only argument for the move is the model" in n
+               for n in decision.sanity), decision.sanity
