@@ -132,43 +132,56 @@ def signals_for(player: dict, entry: dict, found, live: dict | None = None,
 
 
 def _live_data():
-    """The official FPL picture, or a stated reason it is unavailable."""
+    """The official FPL picture, or a stated reason it is unavailable.
+
+    Reads `bootstrap["elements"]` directly rather than the trimmed
+    players_df, because the fields this engine needs — `starts`, `ep_next`,
+    `minutes`, `form` — are native FPL columns that players_df does not
+    carry. The first production run failed here silently: the script raised
+    before writing its output, so the committed decision file was the stale
+    local one and the completeness gate reported on the wrong data.
+
+    Every failure returns a reason instead of propagating, so the gate can
+    say what was missing rather than the job dying with a traceback.
+    """
     try:
         bootstrap = api.get_bootstrap_static()
     except Exception as exc:
         return None, f"the FPL API is unreachable from here ({exc.__class__.__name__})"
+
     try:
         fixtures = fixtures_df(api.get_fixtures())
+        teams = teams_df(bootstrap)
+        events = events_df(bootstrap)
+
+        finished = events[events["finished"] == True] if "finished" in events else events.iloc[:0]
+        team_games = int(len(finished))
+        upcoming = events[events["finished"] != True] if "finished" in events else events
+        next_event = int(upcoming.iloc[0]["id"]) if len(upcoming) else 1
+        table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, 5)
     except Exception as exc:
-        return None, f"fixtures could not be fetched ({exc.__class__.__name__})"
-
-    players = players_df(bootstrap)
-    teams = teams_df(bootstrap)
-    events = events_df(bootstrap)
-    finished = events[events["finished"]] if "finished" in events else events.iloc[:0]
-    team_games = int(len(finished))
-
-    upcoming = events[~events["finished"]] if "finished" in events else events
-    next_event = int(upcoming.iloc[0]["id"]) if len(upcoming) else 1
-    table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, 5)
+        return None, f"the FPL data could not be assembled ({exc.__class__.__name__}: {exc})"
 
     by_name, by_id = {}, {}
-    for _, row in players.iterrows():
+    for element in bootstrap.get("elements", []):
+        minutes_played = int(element.get("minutes", 0) or 0)
+        starts = int(element.get("starts", 0) or 0)
         record = {
-            "status": row.get("status", "a"),
-            "chance_of_playing_next_round": row.get("chance_of_playing_next_round"),
-            "projection": float(row.get("ep_next", 0) or 0),
-            "form": float(row.get("form", 0) or 0),
-            "points_per_game": float(row.get("points_per_game", 0) or 0),
-            "total_points": int(row.get("total_points", 0) or 0),
-            "minutes": int(row.get("minutes", 0) or 0),
-            "starts": int(row.get("starts", 0) or 0),
-            "appearances": int(row.get("starts", 0) or 0)
-            or (1 if int(row.get("minutes", 0) or 0) else 0),
-            "team": row.get("team"),
+            "status": element.get("status", "a"),
+            "chance_of_playing_next_round": element.get("chance_of_playing_next_round"),
+            "projection": float(element.get("ep_next") or 0),
+            "form": float(element.get("form") or 0),
+            "points_per_game": float(element.get("points_per_game") or 0),
+            "total_points": int(element.get("total_points", 0) or 0),
+            "minutes": minutes_played,
+            "starts": starts,
+            # FPL does not publish an appearance count. Starts plus a
+            # single substitute appearance is the closest honest proxy.
+            "appearances": max(starts, 1 if minutes_played else 0),
+            "team": element.get("team"),
         }
-        by_id[int(row["id"])] = record
-        by_name[str(row.get("web_name", ""))] = record
+        by_id[int(element["id"])] = record
+        by_name[str(element.get("web_name", ""))] = record
 
     return {
         "by_id": by_id, "by_name": by_name, "team_games": team_games,

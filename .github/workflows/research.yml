@@ -64,7 +64,11 @@ jobs:
           python scripts/collect_research.py --mode "${{ inputs.research_mode || 'incremental' }}"
 
       - name: Decide transfers from the refreshed squad and corpus
-        if: inputs.mode != 'probe'
+        # `always()` so the decision file is written and committed even
+        # when the completeness gate fails. The first production run
+        # raised before writing, so the committed file was a stale local
+        # one and the gate reported on the wrong data entirely.
+        if: always() && inputs.mode != 'probe'
         run: python scripts/decide_transfers.py
 
       - name: Commit what came back
