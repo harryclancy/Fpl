@@ -1,32 +1,6 @@
 {
  "sell_urgency_ranking": [
   {
-   "player": "Raya",
-   "club": "ARS",
-   "position": "GKP",
-   "price": 6.0,
-   "sell_urgency": 26.0,
-   "band": "Comfortable hold",
-   "hold_strength": 30.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
-   "protections": []
-  },
-  {
-   "player": "Kayode",
-   "club": "BRE",
-   "position": "DEF",
-   "price": 4.6,
-   "sell_urgency": 26.0,
-   "band": "Comfortable hold",
-   "hold_strength": 30.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
-   "protections": []
-  },
-  {
    "player": "Dubravka",
    "club": "TOT",
    "position": "GKP",
@@ -57,74 +31,14 @@
    "club": "CRY",
    "position": "DEF",
    "price": 4.5,
-   "sell_urgency": 26.0,
-   "band": "Comfortable hold",
-   "hold_strength": 30.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
-   "protections": []
-  },
-  {
-   "player": "João Pedro",
-   "club": "CHE",
-   "position": "FWD",
-   "price": 7.7,
-   "sell_urgency": 23.0,
-   "band": "Comfortable hold",
-   "hold_strength": 56.7,
-   "reasons": [
-    "injury reported in this week's coverage",
-    "expected minutes: unassessed"
-   ],
-   "protections": [
-    "the published evidence is predominantly favourable",
-    "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Gabriel",
-   "club": "ARS",
-   "position": "DEF",
-   "price": 8.0,
-   "sell_urgency": 21.0,
-   "band": "Comfortable hold",
-   "hold_strength": 40.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
-   "protections": [
-    "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Szoboszlai",
-   "club": "LIV",
-   "position": "MID",
-   "price": 7.0,
-   "sell_urgency": 21.0,
-   "band": "Comfortable hold",
-   "hold_strength": 40.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
-   "protections": [
-    "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Semenyo",
-   "club": "MCI",
-   "position": "MID",
-   "price": 8.5,
    "sell_urgency": 16.0,
    "band": "Comfortable hold",
-   "hold_strength": 55.0,
+   "hold_strength": 31.2,
    "reasons": [
-    "expected minutes: unassessed"
+    "averaging only 0.5 points a game"
    ],
    "protections": [
-    "the published evidence is predominantly favourable"
+    "expected minutes: very secure"
    ]
   },
   {
@@ -132,63 +46,32 @@
    "club": "BRE",
    "position": "FWD",
    "price": 8.0,
-   "sell_urgency": 16.0,
-   "band": "Comfortable hold",
-   "hold_strength": 55.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
-   "protections": [
-    "the published evidence is predominantly favourable"
-   ]
-  },
-  {
-   "player": "Ndiaye",
-   "club": "EVE",
-   "position": "MID",
-   "price": 6.0,
-   "sell_urgency": 13.0,
+   "sell_urgency": 6.0,
    "band": "Strong hold",
-   "hold_strength": 80.0,
+   "hold_strength": 57.5,
    "reasons": [
-    "transfer speculation in this week's coverage",
-    "expected minutes: unassessed"
+    "averaging only 1.0 points a game"
    ],
    "protections": [
     "the published evidence is predominantly favourable",
-    "on penalties",
-    "team news found and it is not negative"
+    "expected minutes: very secure"
    ]
   },
   {
-   "player": "Guéhi",
-   "club": "MCI",
-   "position": "DEF",
-   "price": 6.0,
-   "sell_urgency": 11.0,
-   "band": "Strong hold",
-   "hold_strength": 65.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
-   "protections": [
-    "the published evidence is predominantly favourable",
-    "team news found and it is not negative"
-   ]
-  },
-  {
-   "player": "Haaland",
-   "club": "MCI",
+   "player": "João Pedro",
+   "club": "CHE",
    "position": "FWD",
-   "price": 15.5,
-   "sell_urgency": 11.0,
+   "price": 7.7,
+   "sell_urgency": 1.0,
    "band": "Strong hold",
-   "hold_strength": 65.0,
+   "hold_strength": 71.7,
    "reasons": [
-    "expected minutes: unassessed"
+    "injury reported in this week's coverage"
    ],
    "protections": [
     "the published evidence is predominantly favourable",
+    "expected minutes: secure",
+    "averaging 10.0 points a game",
     "team news found and it is not negative"
    ]
   },
@@ -197,14 +80,122 @@
    "club": "IPS",
    "position": "DEF",
    "price": 4.0,
-   "sell_urgency": 11.0,
+   "sell_urgency": 1.0,
    "band": "Strong hold",
-   "hold_strength": 65.0,
+   "hold_strength": 70.0,
    "reasons": [
-    "expected minutes: unassessed"
+    "averaging only 2.0 points a game"
    ],
    "protections": [
     "the published evidence is predominantly favourable",
+    "expected minutes: very secure",
+    "team news found and it is not negative"
+   ]
+  },
+  {
+   "player": "Raya",
+   "club": "ARS",
+   "position": "GKP",
+   "price": 6.0,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 45.0,
+   "reasons": [],
+   "protections": [
+    "expected minutes: very secure",
+    "averaging 6.0 points a game"
+   ]
+  },
+  {
+   "player": "Gabriel",
+   "club": "ARS",
+   "position": "DEF",
+   "price": 8.0,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 55.0,
+   "reasons": [],
+   "protections": [
+    "expected minutes: very secure",
+    "averaging 6.5 points a game",
+    "team news found and it is not negative"
+   ]
+  },
+  {
+   "player": "Guéhi",
+   "club": "MCI",
+   "position": "DEF",
+   "price": 6.0,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 80.0,
+   "reasons": [],
+   "protections": [
+    "the published evidence is predominantly favourable",
+    "expected minutes: very secure",
+    "averaging 6.0 points a game",
+    "team news found and it is not negative"
+   ]
+  },
+  {
+   "player": "Kayode",
+   "club": "BRE",
+   "position": "DEF",
+   "price": 4.6,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 45.0,
+   "reasons": [],
+   "protections": [
+    "expected minutes: very secure",
+    "averaging 7.5 points a game"
+   ]
+  },
+  {
+   "player": "Szoboszlai",
+   "club": "LIV",
+   "position": "MID",
+   "price": 7.0,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 65.0,
+   "reasons": [],
+   "protections": [
+    "expected minutes: very secure",
+    "averaging 6.0 points a game",
+    "team news found and it is not negative"
+   ]
+  },
+  {
+   "player": "Semenyo",
+   "club": "MCI",
+   "position": "MID",
+   "price": 8.5,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 63.8,
+   "reasons": [],
+   "protections": [
+    "the published evidence is predominantly favourable",
+    "expected minutes: very secure"
+   ]
+  },
+  {
+   "player": "Ndiaye",
+   "club": "EVE",
+   "position": "MID",
+   "price": 6.0,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 95.0,
+   "reasons": [
+    "transfer speculation in this week's coverage"
+   ],
+   "protections": [
+    "the published evidence is predominantly favourable",
+    "expected minutes: secure",
+    "on penalties",
+    "averaging 6.5 points a game",
     "team news found and it is not negative"
    ]
   },
@@ -213,19 +204,293 @@
    "club": "BRE",
    "position": "MID",
    "price": 6.0,
-   "sell_urgency": 8.0,
+   "sell_urgency": 0.0,
    "band": "Strong hold",
-   "hold_strength": 70.0,
-   "reasons": [
-    "expected minutes: unassessed"
-   ],
+   "hold_strength": 85.0,
+   "reasons": [],
    "protections": [
     "the published evidence is predominantly favourable",
-    "on penalties"
+    "expected minutes: very secure",
+    "on penalties",
+    "averaging 6.5 points a game"
+   ]
+  },
+  {
+   "player": "Haaland",
+   "club": "MCI",
+   "position": "FWD",
+   "price": 15.5,
+   "sell_urgency": 0.0,
+   "band": "Strong hold",
+   "hold_strength": 80.0,
+   "reasons": [],
+   "protections": [
+    "the published evidence is predominantly favourable",
+    "expected minutes: very secure",
+    "averaging 7.5 points a game",
+    "team news found and it is not negative"
    ]
   }
  ],
  "options": [
+  {
+   "kind": "transfer",
+   "label": "Gabriel → De Cuyper",
+   "classification": "Structural move",
+   "out": "Gabriel",
+   "in": "De Cuyper",
+   "gain_this_gw": 4.6,
+   "gain_3gw": 10.46,
+   "gain_5gw": 15.66,
+   "bank_after": 3.3,
+   "hits": 0,
+   "score": 15.7,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 17.5,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "Gabriel may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Diop → Mendy",
+   "classification": "Direct upgrade",
+   "out": "Diop",
+   "in": "Mendy",
+   "gain_this_gw": 3.22,
+   "gain_3gw": 8.38,
+   "gain_5gw": 14.51,
+   "bank_after": 0.0,
+   "hits": 0,
+   "score": 10.8,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 14.35,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.75,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Diop, whose hold strength is 70",
+    "Diop is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Raya → Tzolakis",
+   "classification": "Structural move",
+   "out": "Raya",
+   "in": "Tzolakis",
+   "gain_this_gw": 2.52,
+   "gain_3gw": 5.74,
+   "gain_5gw": 9.19,
+   "bank_after": 1.5,
+   "hits": 0,
+   "score": 8.8,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 9.6,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": []
+  },
+  {
+   "kind": "transfer",
+   "label": "Semenyo → Gibbs-White",
+   "classification": "Structural move",
+   "out": "Semenyo",
+   "in": "Gibbs-White",
+   "gain_this_gw": 1.6,
+   "gain_3gw": 6.18,
+   "gain_5gw": 9.8,
+   "bank_after": 0.6,
+   "hits": 0,
+   "score": 7.61,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 9.85,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.44,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Semenyo, whose hold strength is 64",
+    "Semenyo may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Mitchell → Mendy",
+   "classification": "Structural move",
+   "out": "Mitchell",
+   "in": "Mendy",
+   "gain_this_gw": 1.9,
+   "gain_3gw": 4.61,
+   "gain_5gw": 8.41,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": 7.35,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 8.15,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": []
+  },
+  {
+   "kind": "transfer",
+   "label": "Gabriel → Calafiori",
+   "classification": "Structural move",
+   "out": "Gabriel",
+   "in": "Calafiori",
+   "gain_this_gw": 1.62,
+   "gain_3gw": 5.3,
+   "gain_5gw": 9.2,
+   "bank_after": 2.4,
+   "hits": 0,
+   "score": 7.15,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 8.95,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "Gabriel may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Semenyo → Mbeumo",
+   "classification": "Structural move",
+   "out": "Semenyo",
+   "in": "Mbeumo",
+   "gain_this_gw": 1.54,
+   "gain_3gw": 5.05,
+   "gain_5gw": 9.51,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": 6.91,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 9.15,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.44,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Semenyo, whose hold strength is 64",
+    "Semenyo may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Mitchell → Ajayi",
+   "classification": "Structural move",
+   "out": "Mitchell",
+   "in": "Ajayi",
+   "gain_this_gw": 1.8,
+   "gain_3gw": 4.32,
+   "gain_5gw": 7.92,
+   "bank_after": 0.4,
+   "hits": 0,
+   "score": 6.85,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 7.65,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": []
+  },
+  {
+   "kind": "transfer",
+   "label": "Gabriel → White",
+   "classification": "Structural move",
+   "out": "Gabriel",
+   "in": "White",
+   "gain_this_gw": 0.97,
+   "gain_3gw": 3.17,
+   "gain_5gw": 5.5,
+   "bank_after": 2.5,
+   "hits": 0,
+   "score": 3.55,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 5.35,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "Gabriel may need to be bought back"
+   ]
+  },
   {
    "kind": "roll",
    "label": "Roll the transfer",
@@ -246,155 +511,1324 @@
     "keeps the transfer for next week, which is worth roughly 1.6 points as the option to react to team news that has not been published yet"
    ],
    "risks": []
+  },
+  {
+   "kind": "transfer",
+   "label": "Semenyo → Ndoye",
+   "classification": "Structural move",
+   "out": "Semenyo",
+   "in": "Ndoye",
+   "gain_this_gw": 0.34,
+   "gain_3gw": 2.4,
+   "gain_5gw": 3.65,
+   "bank_after": 3.0,
+   "hits": 0,
+   "score": 1.41,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 3.65,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.44,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Semenyo, whose hold strength is 64",
+    "Semenyo may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Ndiaye → Ndoye",
+   "classification": "Structural move",
+   "out": "Ndiaye",
+   "in": "Ndoye",
+   "gain_this_gw": 2.03,
+   "gain_3gw": 4.17,
+   "gain_5gw": 6.14,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": 1.1,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 6.7,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.8,
+    "asset_loss": -2.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Ndiaye, whose hold strength is 95",
+    "Ndiaye is a strong asset on current evidence — selling him now risks buying him back",
+    "Ndiaye takes penalties, which is hard to replace"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Guéhi → De Cuyper",
+   "classification": "Structural move",
+   "out": "Guéhi",
+   "in": "De Cuyper",
+   "gain_this_gw": 0.84,
+   "gain_3gw": 2.34,
+   "gain_5gw": 3.84,
+   "bank_after": 1.3,
+   "hits": 0,
+   "score": 0.7,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 4.75,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Guéhi, whose hold strength is 80",
+    "Guéhi is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Thiago → Barry",
+   "classification": "Structural move",
+   "out": "Thiago",
+   "in": "Barry",
+   "gain_this_gw": -1.57,
+   "gain_3gw": 0.42,
+   "gain_5gw": 2.4,
+   "bank_after": 2.5,
+   "hits": 0,
+   "score": -1.57,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": 0.35,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.12,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Thiago, whose hold strength is 58",
+    "Thiago may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Gabriel → Mendy",
+   "classification": "Budget release",
+   "out": "Gabriel",
+   "in": "Mendy",
+   "gain_this_gw": 0.64,
+   "gain_3gw": -0.06,
+   "gain_5gw": -0.76,
+   "bank_after": 4.0,
+   "hits": 0,
+   "score": -3.5,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -0.2,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "Gabriel may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Raya → Trafford",
+   "classification": "Budget release",
+   "out": "Raya",
+   "in": "Trafford",
+   "gain_this_gw": 0.13,
+   "gain_3gw": -0.19,
+   "gain_5gw": -2.96,
+   "bank_after": 1.0,
+   "hits": 0,
+   "score": -3.95,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -1.65,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Gabriel → Ajayi",
+   "classification": "Budget release",
+   "out": "Gabriel",
+   "in": "Ajayi",
+   "gain_this_gw": 0.54,
+   "gain_3gw": -0.35,
+   "gain_5gw": -1.25,
+   "bank_after": 3.9,
+   "hits": 0,
+   "score": -4.0,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -0.7,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "Gabriel may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Kayode → Mendy",
+   "classification": "Structural move",
+   "out": "Kayode",
+   "in": "Mendy",
+   "gain_this_gw": -1.3,
+   "gain_3gw": -2.37,
+   "gain_5gw": -2.05,
+   "bank_after": 0.6,
+   "hits": 0,
+   "score": -4.3,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -3.5,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": []
+  },
+  {
+   "kind": "transfer",
+   "label": "Kayode → Ajayi",
+   "classification": "Structural move",
+   "out": "Kayode",
+   "in": "Ajayi",
+   "gain_this_gw": -1.4,
+   "gain_3gw": -2.66,
+   "gain_5gw": -2.54,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": -4.8,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -4.0,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": []
+  },
+  {
+   "kind": "transfer",
+   "label": "Thiago → Wissa",
+   "classification": "Budget release",
+   "out": "Thiago",
+   "in": "Wissa",
+   "gain_this_gw": -1.58,
+   "gain_3gw": -1.43,
+   "gain_5gw": -0.43,
+   "bank_after": 1.9,
+   "hits": 0,
+   "score": -5.68,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -2.25,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.12,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Thiago, whose hold strength is 58",
+    "Thiago may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Raya → Pickford",
+   "classification": "Structural move",
+   "out": "Raya",
+   "in": "Pickford",
+   "gain_this_gw": -1.0,
+   "gain_3gw": -2.89,
+   "gain_5gw": -5.7,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": -6.15,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -5.35,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": []
+  },
+  {
+   "kind": "transfer",
+   "label": "Schade → Ndoye",
+   "classification": "Sideways move",
+   "out": "Schade",
+   "in": "Ndoye",
+   "gain_this_gw": -0.96,
+   "gain_3gw": -0.39,
+   "gain_5gw": 0.2,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": -6.2,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -1.1,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.8,
+    "asset_loss": -1.5,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Schade, whose hold strength is 85",
+    "Schade is a strong asset on current evidence — selling him now risks buying him back",
+    "Schade takes penalties, which is hard to replace"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Thiago → Nketiah",
+   "classification": "Budget release",
+   "out": "Thiago",
+   "in": "Nketiah",
+   "gain_this_gw": -1.76,
+   "gain_3gw": -1.99,
+   "gain_5gw": -2.11,
+   "bank_after": 2.5,
+   "hits": 0,
+   "score": -6.83,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -3.4,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.12,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Thiago, whose hold strength is 58",
+    "Thiago may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Guéhi → Calafiori",
+   "classification": "Structural move",
+   "out": "Guéhi",
+   "in": "Calafiori",
+   "gain_this_gw": -2.14,
+   "gain_3gw": -2.82,
+   "gain_5gw": -2.62,
+   "bank_after": 0.4,
+   "hits": 0,
+   "score": -7.8,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -3.75,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Guéhi, whose hold strength is 80",
+    "Guéhi is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Raya → Sels",
+   "classification": "Budget release",
+   "out": "Raya",
+   "in": "Sels",
+   "gain_this_gw": -0.62,
+   "gain_3gw": -2.92,
+   "gain_5gw": -6.14,
+   "bank_after": 1.0,
+   "hits": 0,
+   "score": -7.8,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -5.5,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -0.0,
+    "asset_loss": -0.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "João Pedro → Barry",
+   "classification": "Budget release",
+   "out": "João Pedro",
+   "in": "Barry",
+   "gain_this_gw": 0.05,
+   "gain_3gw": -2.24,
+   "gain_5gw": -4.4,
+   "bank_after": 2.2,
+   "hits": 0,
+   "score": -8.83,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -3.7,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.83,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up João Pedro, whose hold strength is 72",
+    "João Pedro is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Thiago → Gonzalo",
+   "classification": "Budget release",
+   "out": "Thiago",
+   "in": "Gonzalo",
+   "gain_this_gw": -1.96,
+   "gain_3gw": -4.75,
+   "gain_5gw": -3.85,
+   "bank_after": 2.0,
+   "hits": 0,
+   "score": -9.52,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -6.1,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.12,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Thiago, whose hold strength is 58",
+    "Thiago may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Haaland → Isak",
+   "classification": "Budget release",
+   "out": "Haaland",
+   "in": "Isak",
+   "gain_this_gw": -1.21,
+   "gain_3gw": -2.42,
+   "gain_5gw": -5.53,
+   "bank_after": 6.5,
+   "hits": 0,
+   "score": -10.0,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -4.45,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Haaland, whose hold strength is 80",
+    "Haaland is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Guéhi → White",
+   "classification": "Structural move",
+   "out": "Guéhi",
+   "in": "White",
+   "gain_this_gw": -2.79,
+   "gain_3gw": -4.95,
+   "gain_5gw": -6.32,
+   "bank_after": 0.5,
+   "hits": 0,
+   "score": -11.4,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -7.35,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Guéhi, whose hold strength is 80",
+    "Guéhi is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "João Pedro → Wissa",
+   "classification": "Budget release",
+   "out": "João Pedro",
+   "in": "Wissa",
+   "gain_this_gw": 0.04,
+   "gain_3gw": -4.09,
+   "gain_5gw": -7.23,
+   "bank_after": 1.6,
+   "hits": 0,
+   "score": -11.48,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -6.35,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.83,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up João Pedro, whose hold strength is 72",
+    "João Pedro is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "João Pedro → Nketiah",
+   "classification": "Budget release",
+   "out": "João Pedro",
+   "in": "Nketiah",
+   "gain_this_gw": -0.14,
+   "gain_3gw": -4.65,
+   "gain_5gw": -8.91,
+   "bank_after": 2.2,
+   "hits": 0,
+   "score": -12.63,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -7.5,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.83,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up João Pedro, whose hold strength is 72",
+    "João Pedro is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Guéhi → Gvardiol",
+   "classification": "Structural move",
+   "out": "Guéhi",
+   "in": "Gvardiol",
+   "gain_this_gw": -1.93,
+   "gain_3gw": -5.39,
+   "gain_5gw": -8.85,
+   "bank_after": 0.4,
+   "hits": 0,
+   "score": -12.95,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -8.9,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": 0.0,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "gives up Guéhi, whose hold strength is 80",
+    "Guéhi is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Szoboszlai → Ndoye",
+   "classification": "Budget release",
+   "out": "Szoboszlai",
+   "in": "Ndoye",
+   "gain_this_gw": -2.01,
+   "gain_3gw": -5.09,
+   "gain_5gw": -7.1,
+   "bank_after": 1.5,
+   "hits": 0,
+   "score": -13.0,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -8.2,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.5,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Szoboszlai, whose hold strength is 65",
+    "Szoboszlai is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Thiago → Calvert-Lewin",
+   "classification": "Budget release",
+   "out": "Thiago",
+   "in": "Calvert-Lewin",
+   "gain_this_gw": -2.86,
+   "gain_3gw": -5.42,
+   "gain_5gw": -9.56,
+   "bank_after": 2.0,
+   "hits": 0,
+   "score": -13.57,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -10.15,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.12,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Thiago, whose hold strength is 58",
+    "Thiago may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Semenyo → Mundle",
+   "classification": "Budget release",
+   "out": "Semenyo",
+   "in": "Mundle",
+   "gain_this_gw": -2.12,
+   "gain_3gw": -6.52,
+   "gain_5gw": -8.87,
+   "bank_after": 3.5,
+   "hits": 0,
+   "score": -13.94,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -9.2,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -1.0,
+    "reversal_risk": -1.0,
+    "asset_loss": -0.44,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Semenyo, whose hold strength is 64",
+    "incoming player's minutes are a significant concern",
+    "Semenyo may need to be bought back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Ndiaye → Mundle",
+   "classification": "Budget release",
+   "out": "Ndiaye",
+   "in": "Mundle",
+   "gain_this_gw": -0.43,
+   "gain_3gw": -4.75,
+   "gain_5gw": -6.38,
+   "bank_after": 1.0,
+   "hits": 0,
+   "score": -14.25,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -6.15,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -1.0,
+    "reversal_risk": -2.8,
+    "asset_loss": -2.0,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Ndiaye, whose hold strength is 95",
+    "incoming player's minutes are a significant concern",
+    "Ndiaye is a strong asset on current evidence — selling him now risks buying him back",
+    "Ndiaye takes penalties, which is hard to replace"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "João Pedro → Gonzalo",
+   "classification": "Budget release",
+   "out": "João Pedro",
+   "in": "Gonzalo",
+   "gain_this_gw": -0.34,
+   "gain_3gw": -7.41,
+   "gain_5gw": -10.65,
+   "bank_after": 1.7,
+   "hits": 0,
+   "score": -15.28,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -10.15,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.83,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up João Pedro, whose hold strength is 72",
+    "João Pedro is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Haaland → Barry",
+   "classification": "Budget release",
+   "out": "Haaland",
+   "in": "Barry",
+   "gain_this_gw": -3.73,
+   "gain_3gw": -6.45,
+   "gain_5gw": -10.03,
+   "bank_after": 10.0,
+   "hits": 0,
+   "score": -16.35,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -10.8,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Haaland, whose hold strength is 80",
+    "Haaland is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Guéhi → Mendy",
+   "classification": "Budget release",
+   "out": "Guéhi",
+   "in": "Mendy",
+   "gain_this_gw": -3.12,
+   "gain_3gw": -8.18,
+   "gain_5gw": -12.58,
+   "bank_after": 2.0,
+   "hits": 0,
+   "score": -18.5,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -12.95,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Guéhi, whose hold strength is 80",
+    "Guéhi is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Haaland → Wissa",
+   "classification": "Budget release",
+   "out": "Haaland",
+   "in": "Wissa",
+   "gain_this_gw": -3.74,
+   "gain_3gw": -8.3,
+   "gain_5gw": -12.86,
+   "bank_after": 9.4,
+   "hits": 0,
+   "score": -18.95,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -13.4,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Haaland, whose hold strength is 80",
+    "Haaland is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Guéhi → Ajayi",
+   "classification": "Budget release",
+   "out": "Guéhi",
+   "in": "Ajayi",
+   "gain_this_gw": -3.22,
+   "gain_3gw": -8.47,
+   "gain_5gw": -13.07,
+   "bank_after": 1.9,
+   "hits": 0,
+   "score": -18.95,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -13.4,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Guéhi, whose hold strength is 80",
+    "Guéhi is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "João Pedro → Calvert-Lewin",
+   "classification": "Budget release",
+   "out": "João Pedro",
+   "in": "Calvert-Lewin",
+   "gain_this_gw": -1.24,
+   "gain_3gw": -8.08,
+   "gain_5gw": -16.36,
+   "bank_after": 1.7,
+   "hits": 0,
+   "score": -19.33,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -14.2,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.83,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up João Pedro, whose hold strength is 72",
+    "João Pedro is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Haaland → Nketiah",
+   "classification": "Budget release",
+   "out": "Haaland",
+   "in": "Nketiah",
+   "gain_this_gw": -3.92,
+   "gain_3gw": -8.86,
+   "gain_5gw": -14.54,
+   "bank_after": 10.0,
+   "hits": 0,
+   "score": -20.1,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -14.55,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Haaland, whose hold strength is 80",
+    "Haaland is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Schade → Mundle",
+   "classification": "Budget release",
+   "out": "Schade",
+   "in": "Mundle",
+   "gain_this_gw": -3.42,
+   "gain_3gw": -9.31,
+   "gain_5gw": -12.32,
+   "bank_after": 1.0,
+   "hits": 0,
+   "score": -21.6,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -14.0,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -1.0,
+    "reversal_risk": -2.8,
+    "asset_loss": -1.5,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Schade, whose hold strength is 85",
+    "incoming player's minutes are a significant concern",
+    "Schade is a strong asset on current evidence — selling him now risks buying him back",
+    "Schade takes penalties, which is hard to replace"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Haaland → Gonzalo",
+   "classification": "Budget release",
+   "out": "Haaland",
+   "in": "Gonzalo",
+   "gain_this_gw": -4.12,
+   "gain_3gw": -11.62,
+   "gain_5gw": -16.28,
+   "bank_after": 9.5,
+   "hits": 0,
+   "score": -22.8,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -17.25,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Haaland, whose hold strength is 80",
+    "Haaland is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Haaland → Calvert-Lewin",
+   "classification": "Budget release",
+   "out": "Haaland",
+   "in": "Calvert-Lewin",
+   "gain_this_gw": -5.02,
+   "gain_3gw": -12.29,
+   "gain_5gw": -21.99,
+   "bank_after": 9.5,
+   "hits": 0,
+   "score": -26.85,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -21.3,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -0.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -1.25,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Haaland, whose hold strength is 80",
+    "Haaland is a strong asset on current evidence — selling him now risks buying him back"
+   ]
+  },
+  {
+   "kind": "transfer",
+   "label": "Szoboszlai → Mundle",
+   "classification": "Budget release",
+   "out": "Szoboszlai",
+   "in": "Mundle",
+   "gain_this_gw": -4.47,
+   "gain_3gw": -14.01,
+   "gain_5gw": -19.62,
+   "bank_after": 2.0,
+   "hits": 0,
+   "score": -26.9,
+   "confidence": "Medium",
+   "components": {
+    "five_gw_gain": -21.1,
+    "structure": 0.0,
+    "captaincy": 0.0,
+    "money_enabled": -1.5,
+    "fixture_swing": 0.0,
+    "future_transfer_cost": -1.0,
+    "reversal_risk": -2.0,
+    "asset_loss": -0.5,
+    "hit_cost": -0.0
+   },
+   "reasons": [],
+   "risks": [
+    "this is a downgrade whose only benefit is money, and nothing was identified for the money to do",
+    "gives up Szoboszlai, whose hold strength is 65",
+    "incoming player's minutes are a significant concern",
+    "Szoboszlai is a strong asset on current evidence — selling him now risks buying him back"
+   ]
   }
  ],
  "winner": {
-  "kind": "roll",
-  "label": "Roll the transfer",
-  "classification": "Roll",
-  "out": "",
-  "in": "",
-  "gain_this_gw": 0.0,
-  "gain_3gw": 0.0,
-  "gain_5gw": 0.0,
+  "kind": "transfer",
+  "label": "Gabriel → De Cuyper",
+  "classification": "Structural move",
+  "out": "Gabriel",
+  "in": "De Cuyper",
+  "gain_this_gw": 4.6,
+  "gain_3gw": 10.46,
+  "gain_5gw": 15.66,
+  "bank_after": 3.3,
+  "hits": 0,
+  "score": 15.7,
+  "confidence": "Medium",
+  "components": {
+   "five_gw_gain": 17.5,
+   "structure": 0.0,
+   "captaincy": 0.0,
+   "money_enabled": 0.0,
+   "fixture_swing": 0.0,
+   "future_transfer_cost": -0.0,
+   "reversal_risk": -1.0,
+   "asset_loss": -0.0,
+   "hit_cost": -0.0
+  },
+  "reasons": [],
+  "risks": [
+   "Gabriel may need to be bought back"
+  ]
+ },
+ "runner_up": {
+  "kind": "transfer",
+  "label": "Diop → Mendy",
+  "classification": "Direct upgrade",
+  "out": "Diop",
+  "in": "Mendy",
+  "gain_this_gw": 3.22,
+  "gain_3gw": 8.38,
+  "gain_5gw": 14.51,
   "bank_after": 0.0,
   "hits": 0,
-  "score": 1.6,
-  "confidence": "High",
+  "score": 10.8,
+  "confidence": "Medium",
   "components": {
-   "transfer_flexibility_value": 1.6
+   "five_gw_gain": 14.35,
+   "structure": 0.0,
+   "captaincy": 0.0,
+   "money_enabled": 0.0,
+   "fixture_swing": 0.0,
+   "future_transfer_cost": -0.0,
+   "reversal_risk": -2.0,
+   "asset_loss": -0.75,
+   "hit_cost": -0.0
   },
-  "reasons": [
-   "keeps the transfer for next week, which is worth roughly 1.6 points as the option to react to team news that has not been published yet"
-  ],
-  "risks": []
+  "reasons": [],
+  "risks": [
+   "gives up Diop, whose hold strength is 70",
+   "Diop is a strong asset on current evidence — selling him now risks buying him back"
+  ]
  },
- "runner_up": null,
- "sanity_checks": [],
+ "sanity_checks": [
+  "Not selling the most sellable player. Dubravka scores 26 against Gabriel's 0 — the move must justify that, and does so only if no affordable upgrade existed in GKP.",
+  "WARNING: Gabriel's sell urgency is only 0 (Strong hold). This is not a squad problem being fixed."
+ ],
  "note": "Transfer decisions built from the fifteen players owned rather than from a shopping list. Sell urgency is scored per player from live FPL data and corpus evidence; no player is protected by name. Rolling is scored on the same scale as every move.",
  "gameweek": 3,
- "generated_from_corpus": 3205,
+ "generated_from_corpus": 3231,
  "completeness": {
-  "complete": false,
+  "complete": true,
   "checks": {
-   "Real FPL data loaded": false,
+   "Real FPL data loaded": true,
    "Real current squad loaded": true,
-   "Fixtures loaded": false,
-   "No projections replaced by zero": false,
-   "Expected minutes assessed for the majority": false,
+   "Fixtures loaded": true,
+   "No projections replaced by zero": true,
+   "Expected minutes assessed for the majority": true,
    "15/15 sell urgency scores": true,
    "Roll transfer included": true,
    "3-GW comparison calculated": true,
    "5-GW comparison calculated": true,
    "Budget effects calculated": true
   },
-  "live_data_error": "the FPL API is unreachable from here (ProxyError)"
+  "live_data_error": ""
  },
  "minutes": {
   "Raya": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Gabriel": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Guéhi": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Kayode": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 162,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Szoboszlai": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Semenyo": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Ndiaye": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 0.92
   },
   "Schade": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 177,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Haaland": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "João Pedro": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 0.92
   },
   "Thiago": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 172,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Dubravka": {
    "category": "Unassessed",
    "starts": 0,
    "minutes": 0,
-   "team_games": 0,
+   "team_games": 2,
    "confidence": 0.6
   },
   "Hughes": {
    "category": "Unassessed",
    "starts": 0,
    "minutes": 0,
-   "team_games": 0,
+   "team_games": 2,
    "confidence": 0.6
   },
   "Mitchell": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   },
   "Diop": {
-   "category": "Unassessed",
-   "starts": 0,
-   "minutes": 0,
-   "team_games": 0,
-   "confidence": 0.6
+   "category": "Very secure",
+   "starts": 2,
+   "minutes": 180,
+   "team_games": 2,
+   "confidence": 1.0
   }
  }
 }
