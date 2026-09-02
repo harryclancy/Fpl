@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-02T01:10:53+00:00",
- "seconds": 181.4,
+ "ran_at": "2026-09-02T05:31:59+00:00",
+ "seconds": 197.8,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 553,
- "substantive_items": 127,
- "duplicates_removed": 3,
+ "sources_readable": 62,
+ "candidates_discovered": 586,
+ "substantive_items": 156,
+ "duplicates_removed": 6,
  "deeply_analysed": 81,
  "deep_read_failed": 39,
- "corpus_size": 2988,
+ "corpus_size": 3053,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 127 articles"
+    "62/78 sources returned 156 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,8 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
-  "Fantasy Football Pundit: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
+  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
@@ -50,7 +51,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
