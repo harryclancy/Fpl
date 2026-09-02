@@ -195,3 +195,18 @@ def test_the_alternative_is_argued_against_not_ignored():
     case = writeup.transfer(writeup.build("X", "BRE", [], price=4.5), into, alternative)
     assert case.alternative == "Foden"
     assert "Foden" in case.why_not_alternative
+
+
+def test_an_abbreviation_does_not_split_a_sentence_in_half():
+    """"St James' Park" split into a fragment beginning "James' Park with a
+    point in Sunday's draw", which was then quoted as a source's words."""
+    text = ("Newcastle were held at St James' Park with a point in Sunday's 2-2 draw, "
+            "thanks to Dominik Szoboszlai's late leveller from the penalty spot.")
+    got = writeup._sentences(text)
+    assert len(got) == 1, got
+    assert got[0].startswith("Newcastle were held")
+
+
+def test_a_fragment_starting_mid_clause_is_rejected():
+    assert not writeup._is_prose(
+        "james' Park with a point in Sunday's draw, thanks to a late leveller.")

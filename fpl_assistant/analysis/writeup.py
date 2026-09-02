@@ -68,7 +68,19 @@ SECTION_TOPICS = {
     "outlook": ("fixtures", "fpl advice", "tactics", "statistics"),
 }
 
+# Abbreviations that end in a full stop and are not the end of a sentence.
+# "St James' Park" split into a fragment beginning "James' Park with a
+# point in Sunday's draw", which was then quoted as a source's words.
+ABBREVIATIONS = ("St", "Mr", "Mrs", "Ms", "Dr", "No", "vs", "Jr", "Sr",
+                 "Ave", "Rd", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+                 "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Oct",
+                 "Nov", "Dec")
 SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-ZÀ-Ü“\"'])")
+# Python's `re` allows only fixed-width lookbehind, so the abbreviation
+# guard cannot live in the split pattern. The stop is masked before the
+# split and restored afterwards, which is simpler and does the same job.
+_ABBREV_DOT = re.compile(rf"\b({'|'.join(ABBREVIATIONS)})\.", re.IGNORECASE)
+_DOT_MASK = "\x00"
 
 # RSS feeds append this to nearly every excerpt. It is the feed's own
 # plumbing and carries no claim.
@@ -196,6 +208,12 @@ def _is_prose(sentence: str) -> bool:
     if any(marker in lowered for marker in NAV_MARKERS):
         return False
 
+    # A fragment left by a bad split starts mid-clause. Requiring the
+    # first word to be capitalised or a quote mark catches most of them.
+    first = sentence.lstrip("“\"'")[:1]
+    if first and not (first.isupper() or first.isdigit()):
+        return False
+
     words = [w for w in sentence.split() if w.isalpha()]
     if len(words) < 8:
         return False
@@ -214,10 +232,11 @@ def _is_prose(sentence: str) -> bool:
 def _sentences(text: str, exclude_title: str = "") -> list[str]:
     """Splits into sentences, keeping only the ones that are actually prose."""
     cleaned_text = FEED_TAIL.sub("", text or "")
+    cleaned_text = _ABBREV_DOT.sub(lambda m: m.group(1) + _DOT_MASK, cleaned_text)
     title_key = ev.normalise(exclude_title)[:60] if exclude_title else ""
     out = []
     for chunk in SENTENCE_SPLIT.split(cleaned_text):
-        cleaned = _clean(chunk)
+        cleaned = _clean(chunk.replace(_DOT_MASK, "."))
         if not (MIN_SENTENCE_CHARS <= len(cleaned) <= MAX_SENTENCE_CHARS):
             continue
         if not _is_prose(cleaned):
