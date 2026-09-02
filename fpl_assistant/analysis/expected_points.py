@@ -200,6 +200,78 @@ def _optional_column(players: pd.DataFrame, name: str) -> pd.Series:
     return pd.to_numeric(players[name], errors="coerce")
 
 
+# --- sample-size shrinkage ------------------------------------------------
+#
+# THE BUG THIS EXISTS TO FIX. Every per-90 rate below — expected goals,
+# expected assists, goals conceded, saves, defensive contributions — was
+# read straight from the official data and used at full strength no matter
+# how few minutes produced it. A defender who took 1.68 expected goal
+# involvements from one gameweek has an xGI/90 near 0.85, which the model
+# then multiplied by a defender's six-point goal value and projected across
+# five gameweeks. That is how a £5.7m defender came to be projected above
+# Haaland, and it was not a weighting problem: it was a rate computed from
+# a single match being treated as a fact about the player.
+#
+# The correction is the standard one. A rate observed over `minutes` is
+# blended with a prior rate, weighted by how much evidence each represents:
+#
+#     shrunk = (observed * minutes + prior * PRIOR_MINUTES) / (minutes + PRIOR_MINUTES)
+#
+# PRIOR_MINUTES is the amount of evidence the prior is worth. At 450 — five
+# full matches — a player with 90 minutes keeps a sixth of his own rate; at
+# 900 minutes he keeps two thirds; by a full season the prior barely
+# registers. Nothing is capped and no player is named: an genuinely elite
+# rate survives once there are minutes behind it.
+PRIOR_MINUTES = 450.0
+
+# Sample-size states, reported alongside the projection so a number built
+# on nothing is visibly built on nothing.
+SAMPLE_STATES = (
+    (900, "established"),
+    (450, "moderate"),
+    (180, "small"),
+    (1, "very small"),
+)
+
+
+def sample_state(minutes: float) -> str:
+    for threshold, label in SAMPLE_STATES:
+        if minutes >= threshold:
+            return label
+    return "none"
+
+
+def _positional_prior(rate: pd.Series, position: pd.Series,
+                      minutes: pd.Series, floor: float = 450.0) -> pd.Series:
+    """The rate a player of this position typically posts.
+
+    Computed only from players with real minutes behind them, because a
+    prior built from the same thin samples it is meant to correct would
+    inherit their noise.
+    """
+    established = minutes >= floor
+    if not established.any():
+        established = minutes >= minutes.quantile(0.75)
+    medians = rate.where(established).groupby(position).median()
+    return position.map(medians).fillna(rate.where(established).median()).fillna(0.0)
+
+
+def shrink_rate(rate: pd.Series, minutes: pd.Series, position: pd.Series,
+                prior: pd.Series | None = None,
+                prior_minutes: float = PRIOR_MINUTES) -> pd.Series:
+    """Pulls a per-90 rate toward a prior in proportion to the sample.
+
+    Applied to every rate the model extrapolates. Without it, one match can
+    define a player's attacking output for the rest of the season.
+    """
+    minutes = pd.to_numeric(minutes, errors="coerce").fillna(0.0).astype(float)
+    rate = pd.to_numeric(rate, errors="coerce").fillna(0.0).astype(float)
+    if prior is None:
+        prior = _positional_prior(rate, position, minutes)
+    weight = minutes / (minutes + prior_minutes)
+    return rate * weight + prior * (1 - weight)
+
+
 def _safe_div(numerator, denominator, default=0.0):
     """Element-wise divide that yields `default` instead of inf/NaN."""
     result = np.divide(
@@ -499,6 +571,13 @@ def _component_points_per_match(
         )
         xg90, xa90 = per_90 * 0.6, per_90 * 0.4
 
+    # Shrink BEFORE the set-piece and penalty uplifts, which are structural
+    # facts about a player's role rather than observed rates and should not
+    # be regressed away.
+    player_minutes = _column(players, "minutes")
+    xg90 = shrink_rate(xg90, player_minutes, position)
+    xa90 = shrink_rate(xa90, player_minutes, position)
+
     xg90 = xg90 + _penalty_uplift(players, games, preseason)
     xa90 = xa90 + _set_piece_uplift(players)
 
@@ -523,6 +602,11 @@ def _component_points_per_match(
             ),
             index=players.index,
         )
+
+    # Same shrinkage on the defensive side. A goalkeeper who kept a clean
+    # sheet in his only appearance has an expected-goals-conceded rate near
+    # zero, which would project as an elite defence.
+    xgc90 = shrink_rate(xgc90, player_minutes, position)
 
     # Goals against follow a Poisson process closely enough that P(0) =
     # exp(-expected goals) is a good clean-sheet estimate. Dividing the
@@ -552,7 +636,7 @@ def _component_points_per_match(
     )
 
     # --- Saves (goalkeepers) ---
-    saves90 = _column(players, "saves_per_90")
+    saves90 = shrink_rate(_column(players, "saves_per_90"), player_minutes, position)
     if saves90.sum() == 0:
         saves_total = _column(players, "saves")
         saves90 = pd.Series(
@@ -572,7 +656,14 @@ def _component_points_per_match(
     # raw-action count as threshold-hits would silently inflate every
     # defender by several points a game.
     defcon_rate = (
-        _column(players, "defensive_contribution") / games
+        # Per game the PLAYER featured in, not per team game, then shrunk:
+        # two defensive-contribution points from one cameo is not a rate.
+        shrink_rate(
+            pd.Series(_safe_div(
+                _column(players, "defensive_contribution").to_numpy(),
+                (_column(players, "minutes") / FULL_MATCH_MINUTES).to_numpy()),
+                index=players.index),
+            _column(players, "minutes"), position)
     ).clip(upper=1.0)
     defensive_contribution = defcon_rate * minutes_share * DEFENSIVE_CONTRIBUTION_POINTS
 
@@ -581,7 +672,12 @@ def _component_points_per_match(
     # thresholds: who collects bonus is highly persistent (it tracks goals,
     # assists, clean sheets and defensive actions), so the realised rate is
     # a good forecast and avoids reimplementing the whole BPS table.
-    bonus_rate = _column(players, "bonus") / games
+    bonus_rate = shrink_rate(
+        pd.Series(_safe_div(
+            _column(players, "bonus").to_numpy(),
+            (_column(players, "minutes") / FULL_MATCH_MINUTES).to_numpy()),
+            index=players.index),
+        _column(players, "minutes"), position)
     bonus = bonus_rate * minutes_share
 
     # --- Cards ---
@@ -759,6 +855,16 @@ def expected_points(
 
     for offset, gw in enumerate(gameweeks):
         df[f"xp_gw{gw}"] = per_gw_points[gw].round(2)
+
+    # How much the projection should be trusted, published alongside it.
+    # A number built on ninety minutes is a different kind of claim from
+    # one built on a season, and the transfer engine needs to know which
+    # it is holding.
+    df["sample_state"] = _column(df, "minutes").map(sample_state)
+    df["projection_confidence"] = df["sample_state"].map({
+        "established": "High", "moderate": "Medium",
+        "small": "Low", "very small": "Low", "none": "Low",
+    }).fillna("Low")
 
     df["xp_next"] = per_gw_points[gameweeks[0]].round(2) if gameweeks else 0.0
     df["xp_horizon"] = (
