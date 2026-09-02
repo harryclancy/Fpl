@@ -158,7 +158,30 @@ def _live_data():
         team_games = int(len(finished))
         upcoming = events[events["finished"] != True] if "finished" in events else events
         next_event = int(upcoming.iloc[0]["id"]) if len(upcoming) else 1
-        table = fixtures_analysis.team_fixture_table(fixtures, teams, next_event, 5)
+        # Difficulty per team for the next five gameweeks, built here from
+        # the fixtures frame rather than read out of team_fixture_table.
+        # That table's cells are opponent LABELS ("CHE (H)") with the
+        # numbers in a parallel set of columns — the first production run
+        # died on float("CHE (H)"). Computing it directly cannot break on
+        # a column-naming assumption.
+        table = {}
+        for team_id in teams.index:
+            run = []
+            for gw in range(next_event, next_event + 5):
+                played = fixtures[
+                    (fixtures["event"] == gw)
+                    & ((fixtures["team_h"] == team_id) | (fixtures["team_a"] == team_id))
+                ]
+                if played.empty:
+                    continue
+                scores = []
+                for _, fixture in played.iterrows():
+                    home = fixture["team_h"] == team_id
+                    scores.append(float(
+                        fixture["team_h_difficulty"] if home
+                        else fixture["team_a_difficulty"]))
+                run.append(sum(scores) / len(scores))
+            table[team_id] = run
     except Exception as exc:
         return None, f"the FPL data could not be assembled ({exc.__class__.__name__}: {exc})"
 
@@ -190,11 +213,9 @@ def _live_data():
 
 
 def _fixture_scores(live, team_id) -> list[float]:
-    table = live["fixture_table"]
-    if team_id is None or team_id not in table.index:
+    if team_id is None:
         return []
-    row = table.loc[team_id]
-    return [float(v) for v in row.tolist() if v == v][:5]
+    return list(live["fixture_table"].get(team_id, []))[:5]
 
 
 def main() -> int:
@@ -220,9 +241,19 @@ def main() -> int:
             record = live["by_id"].get(int(player.get("id", 0) or 0)) \
                 or live["by_name"].get(name, {})
             fixture_scores = _fixture_scores(live, record.get("team"))
-        signals.append(signals_for(
-            player, entries.get(name, {}), found, record, fixture_scores,
-            live["team_games"] if live else 0))
+        try:
+            signals.append(signals_for(
+                player, entries.get(name, {}), found, record, fixture_scores,
+                live["team_games"] if live else 0))
+        except Exception as exc:
+            # One malformed player must not cost the whole run its output.
+            # The completeness gate will report the shortfall.
+            print(f"::warning title=Signal build failed::{name}: "
+                  f"{exc.__class__.__name__}: {exc}")
+            signals.append(sd.PlayerSignals(
+                name=name, club=str(player.get("team", "")),
+                position=str(player.get("position", "")),
+                price=float(player.get("price", 0) or 0)))
 
     decision = sd.decide(signals, targets=[], bank=float(squad_payload.get("bank", 0)),
                          free_transfers=int(squad_payload.get("free_transfers", 1)))
