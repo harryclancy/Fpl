@@ -216,3 +216,18 @@ def test_rotation_risk_only_considers_players_i_own():
     assert "Target" not in answer.players
     assert "Target" not in answer.short_answer
     assert answer.players[0] == "Newman"
+
+
+def test_a_player_expected_to_start_is_not_listed_as_at_risk():
+    state = decision()
+    state["player_status"]["Likely"] = {
+        "outlook": "Likely to start", "confidence": "Medium",
+        "minutes_label": "60-90 minutes", "expected_share": 0.88,
+        "basis": "the official appearance record", "stale": False,
+        "reasons": [], "vetoes": [],
+        "lineups": {"readable": 0, "starts": 0, "benched": 0, "omitted": 0,
+                    "summary": ""}, "evidence": []}
+    state["player_facts"]["Likely"] = {"brief": {}}
+    answer = q.answer("Who is most at risk of not starting?", state)
+    assert "Likely" not in answer.players
+    assert "Likely" not in (answer.caveat or "")

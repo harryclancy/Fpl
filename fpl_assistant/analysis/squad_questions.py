@@ -412,8 +412,12 @@ def _rotation(result: Answer, statuses: dict) -> Answer:
     result.headline = "WHO IS MOST AT RISK OF NOT STARTING?"
     ranked = sorted(statuses.items(),
                     key=lambda kv: float(kv[1].get("expected_share", 1.0) or 1.0))
+    # Below "likely to start". A player the freshness layer expects to
+    # play is not at risk, and listing him under "most at risk" next to a
+    # backup keeper who is in nobody's eleven flattens the distinction the
+    # whole layer exists to draw.
     at_risk = [(name, status) for name, status in ranked
-               if float(status.get("expected_share", 1.0) or 1.0) < 0.9]
+               if float(status.get("expected_share", 1.0) or 1.0) < 0.85]
     if not at_risk:
         result.short_answer = (
             "Nobody in the squad is a serious doubt on current evidence.")
