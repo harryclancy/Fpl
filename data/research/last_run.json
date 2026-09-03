@@ -1,16 +1,16 @@
 {
  "mode": "deadline",
  "gameweek": 3,
- "ran_at": "2026-09-03T17:25:37+00:00",
- "seconds": 188.7,
+ "ran_at": "2026-09-03T17:35:51+00:00",
+ "seconds": 202.9,
  "sources_attempted": 78,
- "sources_readable": 62,
+ "sources_readable": 60,
  "candidates_discovered": 1000,
- "substantive_items": 605,
- "duplicates_removed": 38,
- "deeply_analysed": 83,
- "deep_read_failed": 97,
- "corpus_size": 4502,
+ "substantive_items": 606,
+ "duplicates_removed": 40,
+ "deeply_analysed": 60,
+ "deep_read_failed": 90,
+ "corpus_size": 4524,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 605 articles"
+    "60/78 sources returned 606 articles"
    ]
   },
   "blackout": {
@@ -39,8 +39,9 @@
  "failures": [
   "FPL360: nothing published in the last 3 days",
   "FPL Central: nothing published in the last 3 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 3 days",
-  "Fantasy Football Pundit: nothing published in the last 3 days",
+  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 3 days",
   "Draft FC: nothing published in the last 3 days",
   "FPLai: nothing published in the last 3 days",
@@ -53,7 +54,8 @@
   "Premier Injuries: nothing published in the last 3 days",
   "PhysioRoom: nothing published in the last 3 days",
   "The Hard Tackle: nothing published in the last 3 days",
-  "candidate ceiling of 1000 reached after taking 23 items from each of 62 sources"
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml",
+  "candidate ceiling of 1000 reached after taking 24 items from each of 60 sources"
  ],
  "players": {
   "Raya": {
@@ -174,7 +176,7 @@
      "title": "FPL suspensions watch: Gabriel, Gross among players booked so far",
      "url": "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
      "source": "Fantasy Football Hub",
-     "published": "2026-09-01T10:00:17+00:00",
+     "published": "2026-09-01T12:00:17+00:00",
      "matched_on": "gabriel",
      "kind": "team news",
      "excerpt": "Premier League players face a suspension if they pick up too many yellow cards – but what are the rules and who is closest to a one-match ban? Here, we list every player currently banned – be it for red cards or collecting yellow cards – and those at most risk of missing a game. […]"
