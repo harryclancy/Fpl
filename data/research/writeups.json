@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-03T03:03:38+00:00",
+ "generated": "2026-09-03T03:11:39+00:00",
  "gameweek": 3,
- "corpus_size": 3866,
+ "corpus_size": 3870,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -974,7 +974,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — NBC Sports Rotoworld PL, 02 Sep: “Spurs kept adding right to the deadline, as Mykhailo Mudryk and Tosin Adarabioyo added even more Premier League experience to De Zerbi’s project after summer moves for Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dubravka, Mateus Fernandes, Sandro Tonali, Savio, and Omar Marmoush.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 02 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 02 Sep.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -983,18 +983,19 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719",
     "https://www.nbcsports.com/soccer/news/how-to-watch-nottingham-forest-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
     "https://www.fourfourtwo.com/person/player/roberto-de-zerbi-and-tottenham-hotspur-receive-major-transfer-deadline-day-boost",
     "https://www.fourfourtwo.com/team/theres-been-serious-mismanagement-for-a-while-now-it-didnt-ever-start-making-any-more-sense-peter-crouch-on-the-disastrous-decision-tottenham-hotspur-made-last-season",
     "https://www.fantasyfootballscout.co.uk/2026/08/31/is-marmoush-back-on-the-fpl-radar-after-spurs-move",
-    "https://www.newcastleunited.com/en/news/confirmed-line-up-spurs-a",
-    "https://www.fourfourtwo.com/transfer/victor-osimhen-is-an-expensive-risk-tottenham-hotspur-should-be-taking-this-summer"
+    "https://www.newcastleunited.com/en/news/confirmed-line-up-spurs-a"
    ],
    "sources_used": [
     "Fantasy Football Scout",
     "FourFourTwo FPL",
     "NBC Sports Rotoworld PL",
-    "Newcastle United"
+    "Newcastle United",
+    "RotoWire Soccer"
    ],
    "quotes": [
     {

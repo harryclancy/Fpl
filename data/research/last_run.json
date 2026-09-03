@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-03T03:03:38+00:00",
- "seconds": 129.1,
+ "ran_at": "2026-09-03T03:11:39+00:00",
+ "seconds": 119.0,
  "sources_attempted": 78,
  "sources_readable": 64,
- "candidates_discovered": 584,
- "substantive_items": 142,
+ "candidates_discovered": 548,
+ "substantive_items": 106,
  "duplicates_removed": 5,
- "deeply_analysed": 88,
+ "deeply_analysed": 69,
  "deep_read_failed": 32,
- "corpus_size": 3866,
+ "corpus_size": 3870,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 142 articles"
+    "64/78 sources returned 106 articles"
    ]
   },
   "blackout": {
@@ -1101,8 +1101,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-02T10:51:42-04:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-03T03:03:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1127,6 +1127,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Nottingham Forest vs Tottenham Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719",
+     "source": "RotoWire Soccer",
+     "published": "2026-09-03T03:03:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "How to watch Nottingham Forest vs Tottenham Hotspur live: Stream, TV, team news, prediction",
      "url": "https://www.nbcsports.com/soccer/news/how-to-watch-nottingham-forest-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
@@ -1171,15 +1180,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "Victor Osimhen is an expensive risk Tottenham Hotspur should be taking this summer",
-     "url": "https://www.fourfourtwo.com/transfer/victor-osimhen-is-an-expensive-risk-tottenham-hotspur-should-be-taking-this-summer",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-29T08:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur have splashed the cash this summer, but their spending has to continue if they’re serious about competing at the top of the Premier League again – and Victor Osimhen should be priority number one now. It’s no secret that Spurs need firepower up top, after Richarlison showed precisely why he’s not up to the task with a poor performance against Brentford in the opening game of the "
     }
    ]
   },
