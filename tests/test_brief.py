@@ -34,7 +34,7 @@ def every_brief():
                        starts=0, minutes_played=0, prior_minutes=400,
                        prior_appearances=6, five_gw=5.0,
                        bench_alternatives=[B.Alternative("Someone", "starting", 20.0)])),
-        B.build(player(position="GKP", price=5.0, status="d",
+        B.build(player(position="GKP", price=5.0, availability="d",
                        chance_of_playing=50)),
         B.build(player(new_club_evidence="signed for Arsenal this summer")),
         B.build(player(points_per_game=0.5,
@@ -132,7 +132,7 @@ def test_a_prior_season_at_the_same_club_does_earn_it():
 
 
 def test_an_injury_flag_drops_confidence_and_the_decision():
-    brief = B.build(player(status="d", chance_of_playing=50))
+    brief = B.build(player(availability="d", chance_of_playing=50))
     assert brief.confidence in (B.LOW, B.MEDIUM)
     assert brief.verdict_label in (B.START_MONITOR, B.HOLD_REASSESS)
 

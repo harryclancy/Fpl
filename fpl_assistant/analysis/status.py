@@ -145,6 +145,21 @@ class PlayerStatus:
     vetoes: list[str] = field(default_factory=list)
     validation: list[str] = field(default_factory=list)
 
+    # The vocabulary the rest of the app already speaks. Kept as a
+    # translation rather than as a second opinion: everything downstream
+    # reads this, so there is one status and one set of labels derived
+    # from it, not two engines reaching similar conclusions separately.
+    MINUTES_LABELS = {
+        VERY_LIKELY: "Very secure", LIKELY: "Secure",
+        FIFTY_FIFTY: "Significant concern",
+        LIKELY_BENCH: "Significant concern",
+        VERY_UNLIKELY: "Major doubt", OUT: "Major doubt",
+    }
+
+    @property
+    def minutes_category(self) -> str:
+        return self.MINUTES_LABELS.get(self.outlook, "Significant concern")
+
     @property
     def expected_share(self) -> float:
         return EXPECTED_SHARE.get(self.outlook, 0.6)
@@ -209,6 +224,7 @@ class PlayerStatus:
             "outlook": self.outlook, "confidence": self.confidence,
             "minutes_low": self.minutes_low, "minutes_high": self.minutes_high,
             "minutes_label": self.minutes_label,
+            "minutes_category": self.minutes_category,
             "expected_share": round(self.expected_share, 3),
             "starts": self.starts, "minutes_played": self.minutes_played,
             "prior_minutes": self.prior_minutes,
@@ -310,7 +326,7 @@ def assess(player: str, club: str, articles, variants: list[str], own: set,
            availability: str = "a", chance_of_playing: float | None = None,
            set_pieces: bool = False, penalties: bool = False,
            prior_minutes: int = 0, prior_appearances: int = 0,
-           now: datetime | None = None) -> PlayerStatus:
+           club_matches=None, now: datetime | None = None) -> PlayerStatus:
     """The Current Status Pass for one player.
 
     `articles` is whatever the corpus holds about him and his club; every
@@ -345,7 +361,7 @@ def assess(player: str, club: str, articles, variants: list[str], own: set,
         status.best_source = usable[0].source
         status.best_source_date = usable[0].published
 
-    _read_evidence(status, usable, variants, own, mentions)
+    _read_evidence(status, usable, variants, own, mentions, club_matches)
 
     # 1 & 2: the base, with a transfer voiding what it was built on.
     outlook, why = base_outlook(starts, minutes_played, team_games,
@@ -367,7 +383,7 @@ def assess(player: str, club: str, articles, variants: list[str], own: set,
 
 
 def _read_evidence(status: PlayerStatus, graded: list, variants, own,
-                   mentions) -> None:
+                   mentions, club_matches=None) -> None:
     """Pulls the specific findings out of the graded items.
 
     Only items that are both recent and about him are allowed to set a
@@ -378,7 +394,7 @@ def _read_evidence(status: PlayerStatus, graded: list, variants, own,
     for item in graded:
         recent = item.age_hours is not None and item.age_hours <= 336
         about_him = item.specificity >= se.PASSING
-        text = item.excerpt or item.title
+        text = item.body or item.excerpt or item.title
 
         if item.kind == se.PREDICTED_XI and item.recency >= 0.5:
             verdict = se.lineup_verdict(text, variants, own, mentions)
@@ -387,7 +403,16 @@ def _read_evidence(status: PlayerStatus, graded: list, variants, own,
             elif verdict == se.BENCHED:
                 tally.benched += 1
             elif verdict == se.OMITTED:
-                tally.omitted += 1
+                # BEING LEFT OUT is only readable from a line-up that is
+                # unambiguously HIS club's. "Coventry lineup vs. Man City"
+                # contains no City player, and reading it as City's would
+                # conclude the whole side had been dropped — the most
+                # damaging way this parser can be wrong.
+                subject = se.lineup_subject(item.title)
+                if club_matches and club_matches(subject):
+                    tally.omitted += 1
+                else:
+                    tally.unread += 1
             else:
                 tally.unread += 1
             if item.source and item.source not in tally.sources:
@@ -395,20 +420,33 @@ def _read_evidence(status: PlayerStatus, graded: list, variants, own,
 
         if not (recent and about_him):
             continue
-        if item.kind == se.ARRIVAL and not status.new_club:
-            status.new_club = item.title or text[:160]
-        elif item.kind == se.INJURY_UPDATE and not status.injury:
-            status.injury = item.title or text[:160]
-        elif item.kind == se.SUSPENSION and not status.suspension:
-            status.suspension = item.title or text[:160]
-        elif item.kind == se.TRANSFER_TALK and not status.transfer_talk:
+        # A finding is only recorded when a sentence both names him and
+        # makes the claim. Reading the KIND alone turned a club round-up
+        # into a report about one player: "FPL suspensions watch: Gabriel,
+        # Gross among players booked so far" ruled a fit defender OUT.
+        full = f"{item.title}. {text}"
+        if not status.new_club:
+            said = se.about_him(full, variants, own, mentions, se.ARRIVAL_CLAIMS)
+            if said and item.kind == se.ARRIVAL:
+                status.new_club = said
+        if not status.injury:
+            said = se.about_him(full, variants, own, mentions, se.INJURY_CLAIMS)
+            if said:
+                status.injury = said
+        if not status.suspension:
+            said = se.about_him(full, variants, own, mentions,
+                                se.SUSPENSION_CLAIMS)
+            if said:
+                status.suspension = said
+        if not status.transfer_talk and item.kind == se.TRANSFER_TALK:
             status.transfer_talk = item.title or text[:160]
 
         # Managers are quoted everywhere and almost never under a
         # "press conference" headline, so the gate is the attribution
         # inside the text rather than the kind of article carrying it.
         if not status.manager_reading and item.recency >= 0.5:
-            reading, quote = se.manager_signal(f"{item.title}. {text}")
+            reading, quote = se.manager_signal_about(
+                f"{item.title}. {text}", variants, own, mentions)
             if reading:
                 status.manager_reading, status.manager_quote = reading, quote
     status.lineups = tally
@@ -670,3 +708,55 @@ def coverage(statuses: list) -> dict:
         "not_recently_verified": unverified,
         "deadline_coverage": grade,
     }
+
+
+# --- feeding the rest of the app -----------------------------------------
+
+def apply_to_frame(scored, statuses_by_id: dict, points_column: str = "xp_next",
+                   into: str = "xp_with_minutes"):
+    """Adds start probability to a scored frame, and the value it implies.
+
+    PART M. A projection is what a player scores IF HE PLAYS. Selecting an
+    eleven on that alone starts a high-ceiling player with a one-in-four
+    chance of being on the pitch ahead of a reliable one, which is not a
+    trade-off anyone would make if it were stated out loud. Multiplying it
+    by the expected share states it.
+    """
+    frame = scored.copy()
+    shares, outlooks, confidences = [], [], []
+    for player_id in frame["id"]:
+        status = statuses_by_id.get(int(player_id))
+        shares.append(status.expected_share if status else 1.0)
+        outlooks.append(status.outlook if status else "")
+        confidences.append(status.confidence if status else "")
+    frame["expected_share"] = shares
+    frame["status_outlook"] = outlooks
+    frame["status_confidence"] = confidences
+    frame[into] = frame[points_column].fillna(0) * frame["expected_share"]
+    return frame
+
+
+def selection_note(status: PlayerStatus, alternative: PlayerStatus | None,
+                   started: bool) -> str:
+    """Why the eleven has him in it, or does not — in minutes terms.
+
+    The explicit upside-versus-minutes sentence Part M asks for, written
+    where the trade-off actually happens rather than left implicit in a
+    sorted column.
+    """
+    if started and status.outlook in (LIKELY_BENCH, VERY_UNLIKELY):
+        base = (f"He starts despite a {status.outlook.lower()} reading because "
+                f"the alternatives are worse")
+        if alternative:
+            base += (f" — the next option, {alternative.player}, is "
+                     f"{alternative.outlook.lower()}")
+        return base + "."
+    if not started and status.starting:
+        base = "He sits even though his minutes look fine"
+        if alternative:
+            base += f", because {alternative.player} offers more this week"
+        return base + "."
+    if not started:
+        return (f"He sits: {status.outlook.lower()} at {status.minutes_label}, "
+                f"which is not enough to risk a starting place on.")
+    return ""

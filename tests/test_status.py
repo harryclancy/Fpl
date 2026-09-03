@@ -315,3 +315,127 @@ def test_targeted_terms_are_built_from_the_decision_not_the_player():
     assert "predicted xi coventry" in joined
     assert "team news" in joined
     assert "injury" in joined
+
+
+# --- defects the first live run of the freshness layer produced ----------
+#
+# Each of these shipped a wrong label to the page. They are the reason the
+# gate on every finding is "a sentence that names him AND makes the claim"
+# rather than "an article of the right kind".
+
+SPORTS_MOLE_BODY = (
+    "Brentford lineup vs. Sunderland: Predicted XI for Premier League clash. "
+    "Keith Andrews has a decision to make at left-back. " + ("Filler. " * 60) +
+    "Brentford possible starting lineup: Kelleher; Kayode, Ajer, Collins, "
+    "Lewis-Potter; Janelt, Sangare; Ouattara, Damsgaard, Schade; Thiago "
+    "Written by Ben Knapton People mentioned in this article")
+
+
+def read_lineup(name, full, body=SPORTS_MOLE_BODY):
+    return se.lineup_verdict(body, ev.name_variants(name, full),
+                             ev.own_tokens(name, full), ev.mentions_this_player)
+
+
+def test_a_lineup_with_no_substitutes_section_is_still_readable():
+    """Most predicted XIs announce the eleven and never list a bench. The
+    parser only looked for where the eleven ENDED, so it read none of them."""
+    assert read_lineup("Thiago", "Igor Thiago") == se.STARTS
+    assert read_lineup("Schade", "Kevin Schade") == se.STARTS
+    assert read_lineup("Haaland", "Erling Haaland") == se.OMITTED
+
+
+def test_the_lineup_is_cut_at_the_page_furniture():
+    eleven, bench = se.extract_lineup(SPORTS_MOLE_BODY)
+    assert "Kelleher" in eleven and "Thiago" in eleven
+    assert "Written by" not in eleven
+    assert bench == ""
+
+
+def test_a_lineup_is_read_from_the_body_not_from_a_preview():
+    """The team sheet sits two thousand characters into the page; grading
+    only ever needed the opening, and the parser was handed the opening."""
+    graded = se.grade(
+        Article(title="Brentford lineup vs. Sunderland: Predicted XI",
+                url="u", source="Sports Mole", domain="sportsmole.co.uk",
+                body=SPORTS_MOLE_BODY,
+                published=(NOW - timedelta(hours=4)).isoformat()),
+        ev.name_variants("Thiago", "Igor Thiago"),
+        ev.own_tokens("Thiago", "Igor Thiago"), ev.mentions_this_player, NOW)
+    assert "Kelleher" in graded.body
+    assert len(graded.excerpt) <= 300
+
+
+def test_the_opponents_lineup_cannot_bench_your_whole_team():
+    """"Coventry lineup vs. Man City" contains no City player. Reading it
+    as City's would drop the entire side."""
+    assert se.lineup_subject("Coventry lineup vs. Man City") == "Coventry lineup"
+    assert se.lineup_subject("Arsenal vs Chelsea Prediction") == "Arsenal"
+
+    city_player = assess(articles=[
+        article("Coventry lineup vs. Man City: Predicted XI",
+                "Coventry possible starting lineup: Collins; Thomas, Binks, "
+                "Kitching, Bidwell; Eccles, Sheaf; Wright, Torp, Sakamoto; "
+                "Simms Written by", hours_ago=5),
+    ], starts=4, minutes_played=360, team_games=4)
+    assert city_player.lineups.omitted == 0
+    assert city_player.outlook != ST.LIKELY_BENCH
+
+
+def test_a_bookings_watchlist_is_not_a_suspension():
+    """"FPL suspensions watch: Newman, Gross among players booked so far"
+    ruled a fit defender OUT."""
+    status = assess(articles=[
+        article("FPL suspensions watch: Newman, Gross among players booked so far",
+                "Alex Newman is one booking away from a ban. Several players "
+                "are on four yellow cards.", source="FF Scout",
+                domain="fantasyfootballscout.co.uk", hours_ago=20),
+    ], starts=4, minutes_played=360, team_games=4)
+    assert status.outlook != ST.OUT
+    assert not status.suspension
+
+
+def test_a_club_injury_roundup_is_not_a_report_that_he_is_injured():
+    status = assess(articles=[
+        article("Man City injury, suspension news and return dates for Coventry",
+                "Manchester City have a number of players unavailable. Rodri "
+                "is out injured and Stones is a doubt.", hours_ago=8),
+    ], starts=4, minutes_played=360, team_games=4)
+    assert not status.injury
+    assert status.outlook == ST.VERY_LIKELY
+
+
+def test_a_named_injury_report_is_recorded():
+    status = assess(articles=[
+        article("Man City injury news",
+                "Alex Newman picked up a knock in training and is a doubt for "
+                "Saturday.", hours_ago=8),
+    ], starts=4, minutes_played=360, team_games=4)
+    assert status.injury
+    assert status.outlook == ST.FIFTY_FIFTY
+
+
+def test_a_manager_quote_must_be_about_him():
+    """"the team news is out" and "Arsenal are out of the title race" were
+    read as reports that a fit goalkeeper was unavailable."""
+    status = assess(articles=[
+        article("Arsenal team news", "The team news is out. Arteta said "
+                "Arsenal are out of the title race already, which is absurd.",
+                hours_ago=6),
+    ], starts=4, minutes_played=360, team_games=4)
+    assert status.outlook == ST.VERY_LIKELY
+    assert not status.manager_reading
+
+
+def test_another_players_transfer_is_not_his_transfer():
+    """A raw count of the string "Gabriel" in an article about Gabriel
+    Jesus leaving made an Arsenal centre-half a new signing."""
+    status = assess(
+        name="Gabriel", full="Gabriel dos Santos Magalhaes", club="ARS",
+        articles=[article(
+            "Barcelona complete signing of Gabriel Jesus from Arsenal",
+            "Barcelona have completed the signing of Gabriel Jesus. Gabriel "
+            "Jesus joins on a permanent deal. Gabriel Jesus said he was "
+            "excited to join.", hours_ago=30)],
+        starts=4, minutes_played=360, team_games=4)
+    assert not status.new_club
+    assert status.outlook == ST.VERY_LIKELY

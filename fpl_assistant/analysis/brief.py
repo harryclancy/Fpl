@@ -158,7 +158,7 @@ class BriefInputs:
     starts: int = 0
     minutes_played: int = 0
     team_games: int = 0
-    status: str = "a"
+    availability: str = "a"
     chance_of_playing: float | None = None
     minutes_category: str = "Unassessed"
     # Last completed season, at the club he is at NOW. This is what makes
@@ -169,6 +169,11 @@ class BriefInputs:
     prior_minutes: int = 0
     prior_appearances: int = 0
     new_club_evidence: str = ""      # a published line saying he has moved
+    # THE CURRENT STATUS PASS, when one has been run. It is authoritative:
+    # if the freshness layer has looked at predicted line-ups and what the
+    # manager said, the write-up must not reach its own separate verdict
+    # from the same evidence and land somewhere else.
+    status: dict = field(default_factory=dict)
     rotation_evidence: str = ""
     injury_evidence: str = ""
     transfer_evidence: str = ""
@@ -269,10 +274,14 @@ def playing_verdict(inputs: BriefInputs) -> tuple[str, str]:
     evidence from the new club his minutes are treated as unproven
     however impressive the raw numbers look.
     """
-    if inputs.status in ("i", "s", "u", "n"):
+    fresh = inputs.status or {}
+    if fresh.get("outlook"):
+        return _from_status(inputs, fresh)
+
+    if inputs.availability in ("i", "s", "u", "n"):
         reason = {"i": "he is injured", "s": "he is suspended",
                   "u": "he is unavailable",
-                  "n": "he is not in the squad"}[inputs.status]
+                  "n": "he is not in the squad"}[inputs.availability]
         return OUT, f"He will not play: {reason}."
 
     chance = inputs.chance_of_playing
@@ -280,7 +289,7 @@ def playing_verdict(inputs: BriefInputs) -> tuple[str, str]:
         return DOUBTFUL, (
             f"FPL puts him at {chance:.0f}% to feature, so he is closer to a "
             f"non-starter than a pick.")
-    if inputs.status == "d" or (chance is not None and chance <= 75):
+    if inputs.availability == "d" or (chance is not None and chance <= 75):
         return UNCERTAIN, (
             "He carries a fitness flag, so the starting call will not be "
             "settled until the team sheet.")
@@ -333,6 +342,37 @@ def playing_verdict(inputs: BriefInputs) -> tuple[str, str]:
 
 
 # --- 2. why do I want him THIS gameweek? ---------------------------------
+
+# The freshness layer's vocabulary, mapped onto this module's. One
+# status, two names for it, and the translation lives in one place.
+STATUS_PLAYING = {
+    "Very likely to start": SECURE, "Likely to start": LIKELY,
+    "50-50": UNCERTAIN, "Likely bench": UNCERTAIN,
+    "Very unlikely to start": DOUBTFUL, "Out": OUT,
+}
+
+
+def _from_status(inputs: BriefInputs, fresh: dict) -> tuple[str, str]:
+    """The playing verdict, read off the Current Status Pass.
+
+    Not recomputed. The freshness layer has already weighed the predicted
+    line-ups, the manager's words and the appearance record; reaching a
+    second verdict here from the same evidence is how a page ends up
+    telling a manager two different things about one player.
+    """
+    outlook = fresh.get("outlook", "")
+    playing = STATUS_PLAYING.get(outlook, UNCERTAIN)
+    reasons = [r for r in (fresh.get("reasons") or []) if r]
+    vetoes = [v for v in (fresh.get("vetoes") or []) if v]
+    lead = vetoes[0] if vetoes else (reasons[0] if reasons else "")
+    minutes = fresh.get("minutes_label", "")
+    sentence = f"{outlook} this week"
+    if minutes:
+        sentence += f" ({minutes})"
+    if lead:
+        sentence += f" — {lead}"
+    return playing, sentence + "."
+
 
 def _rank_phrase(rank: float | None, superlative: str, comparative: str,
                  weak_superlative: str, weak_comparative: str) -> str:
@@ -488,14 +528,20 @@ def poor_value(inputs: BriefInputs) -> str:
             f"enough")
 
 
-def opportunity_case(inputs: BriefInputs) -> str:
+def opportunity_case(inputs: BriefInputs, playing: str = SECURE) -> str:
     """The floor a nailed attacker has even when the numbers are cold.
 
     Written for the striker with two points a game and a kind fixture:
     the case for him is not his form, it is that he is the one on the
     pitch when the chances arrive.
+
+    Which is why it is gated on him being on the pitch. Telling a manager
+    that a player the freshness layer expects to be benched has "access
+    to the chances" is the write-up arguing with its own status line.
     """
     fixture = inputs.this_week
+    if playing not in (SECURE, LIKELY):
+        return ""
     if not (inputs.attacker and fixture) or fixture.difficulty > 3.0:
         return ""
     return ("Whatever else is wrong, he is on the pitch when the chances "
@@ -558,6 +604,18 @@ def case_against(inputs: BriefInputs, playing: str) -> list[str]:
     money = "" if enabler else poor_value(inputs)
     if money:
         against.append(money)
+
+    fresh = inputs.status or {}
+    tally = fresh.get("lineups") or {}
+    if tally.get("benched", 0) + tally.get("omitted", 0):
+        against.append(
+            f"the current predicted line-ups are the problem — {tally['summary']}")
+    if fresh.get("manager_reading") in ("undecided", "will not start"):
+        against.append("the manager has not committed to him starting")
+    if fresh.get("stale") and not tally.get("readable"):
+        against.append(
+            "his starting status has not been confirmed by anything published "
+            "recently, which is an absence of news rather than good news")
 
     if inputs.new_club_evidence:
         against.append("he is new to the club, and a role can look settled for "
@@ -774,6 +832,13 @@ def confidence(inputs: BriefInputs, playing: str) -> tuple[str, str]:
     it to mean something. Two starts at a club he has just joined is a
     MEDIUM however clean the numbers look.
     """
+    fresh = inputs.status or {}
+    if fresh.get("confidence"):
+        detail = fresh.get("basis") or "current evidence"
+        if fresh.get("stale"):
+            detail += ", not recently re-checked"
+        return fresh["confidence"], f"resting on {detail}"
+
     reasons = []
     level = MEDIUM
 
@@ -864,7 +929,7 @@ def build(inputs: BriefInputs) -> Brief:
         "case_for": [fixture_case(inputs)] + (
             [] if (returns_case(inputs) or value_case(inputs)
                    or enabler_case(inputs))
-            else [opportunity_case(inputs)]),
+            else [opportunity_case(inputs, playing)]),
         # THE CASE AGAINST — always something, and always about him. Capped
         # at the strongest three: every possible doubt reads as hedging.
         "against": [_sentence_from(_strongest(doubts))],
@@ -878,7 +943,7 @@ def build(inputs: BriefInputs) -> Brief:
     sections = _fill(sections, [
         ("verdict", keep_or_sell_case(inputs, direction)),
         ("case_for", returns_case(inputs)),
-        ("case_for", opportunity_case(inputs)),
+        ("case_for", opportunity_case(inputs, playing)),
         ("why", "" if inputs.on_bench else selection_case(inputs)),
         ("case_for", value_case(inputs)),
         ("case_for", enabler_case(inputs)),

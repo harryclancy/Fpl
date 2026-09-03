@@ -19,11 +19,13 @@ from fpl_assistant.analysis import minutes as minutes_mod
 from fpl_assistant.analysis import brief as brief_mod
 from fpl_assistant.analysis import player_facts as pf
 from fpl_assistant.analysis import squad_decision as sd
+from fpl_assistant.analysis import status as status_mod
 from fpl_assistant.analysis import strategy as st
 from fpl_assistant.analysis import writeup as writeup_mod
 from fpl_assistant.analysis.squad_builder import score_players
 from fpl_assistant.models import attach_team_names, events_df, fixtures_df, players_df, teams_df
 from fpl_assistant.research import corpus as corpus_mod, evidence
+from fpl_assistant.research import status_evidence as se
 
 ROOT = Path(__file__).resolve().parent.parent
 SQUAD = ROOT / "data" / "squad" / "current.json"
@@ -384,8 +386,71 @@ def joined_recently(facts) -> str:
     return _first_claim(facts, pf.ARRIVAL)
 
 
+class _TitleOnly:
+    """A stand-in article so the club test can be run on a bare string.
+
+    `mentions_club_in_title` takes an article because that is what every
+    other caller has. Here the string being tested is half a headline —
+    the part before "vs" — so it is wrapped rather than the function
+    being widened for one caller.
+    """
+
+    def __init__(self, title: str):
+        self.title = title or ""
+        self.url = ""
+        self.excerpt = ""
+
+
+def status_for(name: str, club: str, player: dict, live, store,
+               full_name: str = "") -> "status_mod.PlayerStatus":
+    """THE CURRENT STATUS PASS, run before anything is decided about him.
+
+    Targeted rather than general: the corpus is filtered to what could
+    answer "will he play this week", his club's team-news material is
+    pulled in alongside his own name so a predicted line-up counts even
+    when the headline names only the club, and every item is graded for
+    THIS question before any of it is believed.
+    """
+    record = {}
+    if live:
+        record = live["by_id"].get(int(player.get("id", 0) or 0)) \
+            or live["by_name"].get(name, {})
+    full_name = full_name or str(record.get("full_name") or "")
+    found = evidence.search(name, club, store.items, full_name)
+    # His own coverage is not enough. A predicted line-up is titled by
+    # CLUB — "Brentford lineup vs. Sunderland" names nobody — so a search
+    # for the player returns the one document in the corpus that actually
+    # answers the question exactly never. The status corpus is assembled
+    # by decision instead: everything about him, plus his club's current
+    # selection coverage, with the line-up parser reading the body.
+    articles = se.targeted_articles(
+        store.items, [item.article for item in found.items], club,
+        lambda article, club_short: evidence.mentions_club_in_title(
+            article, club_short))
+    prior_minutes, prior_appearances = last_season(name, club)
+    return status_mod.assess(
+        name, club, articles,
+        evidence.name_variants(name, full_name),
+        evidence.own_tokens(name, full_name),
+        evidence.mentions_this_player,
+        player_id=int(player.get("id", 0) or 0),
+        club_name=_club_name(live, record.get("team")) or club,
+        position=str(player.get("position") or record.get("position") or ""),
+        price=float(player.get("price") or record.get("price") or 0),
+        starts=int(record.get("starts", 0) or 0),
+        minutes_played=int(record.get("minutes", 0) or 0),
+        team_games=int((live or {}).get("team_games", 0) or 0),
+        availability=str(record.get("status", "a") or "a"),
+        chance_of_playing=record.get("chance_of_playing_next_round"),
+        set_pieces=bool(record.get("set_pieces")),
+        penalties=bool(record.get("penalties")),
+        prior_minutes=prior_minutes, prior_appearances=prior_appearances,
+        club_matches=lambda text: evidence.mentions_club_in_title(
+            _TitleOnly(text), club))
+
+
 def brief_inputs(facts, signal, player: dict, live, rec, assessments,
-                 squad: list[dict], plans) -> "brief_mod.BriefInputs":
+                 squad: list[dict], plans, statuses=None) -> "brief_mod.BriefInputs":
     """Assembles everything one judgement is allowed to use.
 
     Every field is sourced rather than assumed: the fixture run and the
@@ -394,6 +459,7 @@ def brief_inputs(facts, signal, player: dict, live, rec, assessments,
     wrote, and the alternatives from the plans the transfer engine
     actually built and refused. Nothing here is a placeholder.
     """
+    statuses = statuses or {}
     record = {}
     if live:
         record = live["by_id"].get(int(player.get("id", 0) or 0)) \
@@ -411,7 +477,10 @@ def brief_inputs(facts, signal, player: dict, live, rec, assessments,
 
     club_short = str(record.get("club") or signal.club)
     minutes, appearances = last_season(signal.name, club_short)
-    joined = joined_recently(facts)
+    state = statuses.get(signal.name)
+    # Read off the status pass where one exists, so the write-up and the
+    # card cannot disagree about whether he has just moved.
+    joined = (state.new_club if state else "") or joined_recently(facts)
 
     opponent_id = (((live or {}).get("fixture_runs", {}).get(team_id) or [{}])[0]
                    .get("opponent_id") if fixtures else None)
@@ -425,7 +494,7 @@ def brief_inputs(facts, signal, player: dict, live, rec, assessments,
         starts=int(record.get("starts", 0) or 0),
         minutes_played=int(record.get("minutes", 0) or 0),
         team_games=int((live or {}).get("team_games", 0) or 0),
-        status=str(record.get("status", "a") or "a"),
+        availability=str(record.get("status", "a") or "a"),
         chance_of_playing=record.get("chance_of_playing_next_round"),
         minutes_category=signal.minutes_category,
         prior_minutes=minutes, prior_appearances=appearances,
@@ -452,6 +521,8 @@ def brief_inputs(facts, signal, player: dict, live, rec, assessments,
         on_bench=bool(player.get("on_bench")),
         captain=bool(player.get("is_captain")),
         vice=bool(player.get("is_vice_captain")),
+        status=(statuses.get(signal.name).as_dict()
+                if statuses.get(signal.name) else {}),
         being_sold=signal.name in rec.out_names,
         sell_urgency=next((a.sell_urgency for a in assessments
                            if a.name == signal.name), 0.0),
@@ -720,6 +791,19 @@ def main() -> int:
     entries = writeups.get("players", {})
     live, live_error = _live_data()
 
+    # --- THE CURRENT STATUS PASS ---------------------------------------
+    # Runs before the diagnosis, before the market is read and before a
+    # word is written, because every one of those depends on whether the
+    # player is going to be on the pitch — and that is the question the
+    # old pipeline never asked.
+    statuses, statuses_by_id = {}, {}
+    for player in squad:
+        state = status_for(player["name"], str(player.get("team", "")),
+                           player, live, store)
+        statuses[player["name"]] = state
+        if state.player_id:
+            statuses_by_id[state.player_id] = state
+
     signals = []
     for player in squad:
         name = player["name"]
@@ -731,9 +815,17 @@ def main() -> int:
                 or live["by_name"].get(name, {})
             fixture_scores = _fixture_scores(live, record.get("team"))
         try:
-            signals.append(signals_for(
+            signal = signals_for(
                 player, entries.get(name, {}), found, record, fixture_scores,
-                live["team_games"] if live else 0))
+                live["team_games"] if live else 0)
+            # ONE SOURCE OF TRUTH for minutes. The signal used to carry a
+            # separately-computed category, which is how the card could
+            # say "minutes secure" while the write-up said the opposite.
+            state = statuses[name]
+            signal.minutes_category = state.minutes_category
+            signal.minutes_confidence = state.expected_share
+            signal.minutes_assessed = state.checked
+            signals.append(signal)
         except Exception as exc:
             # One malformed player must not cost the whole run its output.
             # The completeness gate will report the shortfall.
@@ -829,6 +921,17 @@ def main() -> int:
         # The same sentence extraction the squad's write-ups use, so an
         # incoming player is argued from published prose rather than from
         # headlines — and, like theirs, only from sentences that name him.
+        # PART L: a target's status matters as much as an owned
+        # player's. Buying into a rotation doubt is the same mistake as
+        # keeping one, and the old pool was ranked on projections that
+        # assumed everybody plays.
+        target_state = status_for(
+            target.name, target.club,
+            {"id": 0, "position": target.position, "price": target.price},
+            live, store)
+        statuses[target.name] = target_state
+        target.minutes_category = target_state.minutes_category
+        target.minutes_confidence = target_state.expected_share
         target_full = str((live["by_name"].get(target.name, {}) if live
                            else {}).get("full_name") or "")
         quotes = writeup_mod.quotes_for(target.name, target.club,
@@ -896,7 +999,8 @@ def main() -> int:
         signal = next(s for s in signals if s.name == name)
         owner = next(p for p in squad if p["name"] == name)
         judgement = brief_mod.build(brief_inputs(
-            assessment, signal, owner, live, rec, assessments, squad, plans))
+            assessment, signal, owner, live, rec, assessments, squad, plans,
+            statuses))
         record["brief"] = judgement.as_dict()
 
         # The old one-paragraph form stays as the compact summary shown
@@ -917,6 +1021,15 @@ def main() -> int:
     squad_names = set(built)
     clashes = st.contradictions(rec, blocks, squad_names)
     audit = st.trust_audit(rec, blocks, squad_names)
+    # Nothing may be published about a player whose displayed state is
+    # internally impossible — a new club, an old club's starting record
+    # and a confident label built from the second under the first.
+    validation = {state.player: problems for state in
+                  [statuses[p["name"]] for p in squad if p["name"] in statuses]
+                  if (problems := status_mod.validate(state))}
+    checks["Current status checked for all 15"] = (
+        len([p for p in squad if p["name"] in statuses]) == len(squad) == 15)
+    checks["No impossible player states"] = not validation
     checks["Every write-up passes its own quality test"] = not quality
     checks["No text contradicts the recommendation"] = not clashes
     checks["Manual trust audit passed"] = st.audit_passed(audit)
@@ -980,6 +1093,16 @@ def main() -> int:
                 "defence_rank": round(kinds.get("defence", 0.0), 3)}
             for team_id, kinds in live.get("strength_ranks", {}).items()
             if team_id in live["teams"].index}
+    # The freshness layer's own record, and the metric that replaces
+    # "we collected 3,888 articles" — which was never the target and made
+    # a bad run look like a good one.
+    squad_statuses = [statuses[p["name"]] for p in squad if p["name"] in statuses]
+    payload["player_status"] = {name: state.as_dict()
+                                for name, state in statuses.items()}
+    payload["status_coverage"] = status_mod.coverage(squad_statuses)
+    payload["status_validation"] = {
+        state.player: problems for state in squad_statuses
+        if (problems := status_mod.validate(state))}
     payload["player_facts"] = facts_out
     payload["target_facts"] = target_facts_out
     payload["quality_problems"] = quality
@@ -1012,6 +1135,24 @@ def main() -> int:
         print(f"  live data: {live_error}")
     if not complete:
         print("\nTRANSFER ENGINE TEST INCOMPLETE — the ranking below is not authoritative.")
+    print()
+
+    print("CURRENT STATUS PASS")
+    coverage = payload["status_coverage"]
+    for label, value in coverage.items():
+        if isinstance(value, list):
+            value = ", ".join(value) or "none"
+        print(f"  {label.replace('_', ' ')}: {value}")
+    print()
+    print(f"{'PLAYER':<12}{'OUTLOOK':<26}{'CONF':<8}{'MINUTES':<14} BASIS")
+    for state in sorted(squad_statuses, key=lambda s: s.expected_share):
+        print(f"{state.player:<12}{state.outlook:<26}{state.confidence:<8}"
+              f"{state.minutes_label:<14} {state.basis}")
+    if validation:
+        print("\nIMPOSSIBLE STATES")
+        for player, problems in validation.items():
+            for problem in problems:
+                print(f"  - {problem}")
     print()
 
     print(f"SELL URGENCY RANKING (corpus: {len(store)} articles, "

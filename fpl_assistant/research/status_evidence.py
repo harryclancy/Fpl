@@ -65,8 +65,9 @@ KIND_PATTERNS = (
         "ruled out", "return date", "back in training", "returned to training",
         "undergo a scan", "picked up a knock", "injury blow", "doubt for")),
     (SUSPENSION, (
-        "suspended for", "suspension", "red card", "sent off", "serve a ban",
-        "one-match ban", "three-match ban")),
+        "is suspended", "suspended for the", "serves a ban", "serve a ban",
+        "one-match ban", "three-match ban", "banned for", "was sent off",
+        "shown a red card")),
     (ARRIVAL, (
         "has joined", "have joined", "completed a move", "completing a move",
         "completes a move", "signed for", "new signing", "unveiled",
@@ -248,14 +249,27 @@ def specificity(title: str, body: str, variants: list[str], own: set,
     text = body or ""
     if not text:
         return CLUB_ONLY
+    # Counted through the disambiguator, sentence by sentence, NOT with a
+    # raw regex. A bare count of the string "Gabriel" in an article about
+    # Gabriel Jesus leaving for Barcelona scored the Arsenal centre-half
+    # as its main subject, and the freshness layer then read a completed
+    # transfer as HIS completed transfer.
     hits = 0
-    for variant in variants:
-        pattern = rf"(?<![A-Za-z0-9]){re.escape(variant)}(?![A-Za-z0-9])"
-        hits += len(re.findall(pattern, text, flags=re.IGNORECASE))
-    if hits >= 3:
-        return IN_BODY
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        if any(mentions(sentence, variant, own) for variant in variants):
+            hits += 1
+            if hits >= 3:
+                return IN_BODY
     if hits >= 1:
         return PASSING
+    # A team sheet is the most specific mention of a player there is, and
+    # it is not prose: "Foden, Cherki, Semenyo; Haaland" has no sentence
+    # in it, so the sentence-wise test above scores the single document
+    # that answers the question as though it barely mentioned him.
+    for slot in re.split(r"[,;:|\n\u2022]+", text):
+        slot = slot.strip()
+        if slot and any(mentions(slot, variant, own) for variant in variants):
+            return PASSING
     return CLUB_ONLY
 
 
@@ -275,6 +289,12 @@ class Graded:
     specificity: float = 0.0
     relevance: float = 0.0
     excerpt: str = ""
+    # The full text, kept because a predicted line-up is announced around
+    # two thousand characters into the page. Grading only ever needed the
+    # opening, so the body was truncated to an excerpt — and the parser
+    # downstream was then handed a preview that stopped before the team
+    # sheet it existed to read.
+    body: str = ""
 
     @property
     def weight(self) -> float:
@@ -326,7 +346,7 @@ def grade(article, variants: list[str], own: set, mentions,
         recency=recency_weight(age),
         specificity=specificity(title, body, variants, own, mentions),
         relevance=DECISION_RELEVANCE.get(kind, 0.15),
-        excerpt=(body or "")[:300])
+        excerpt=(body or "")[:300], body=body or "")
 
 
 # --- what to go looking for ----------------------------------------------
@@ -363,8 +383,27 @@ def targeted_terms(player: str, full_name: str, club: str, club_name: str,
 
 STARTS, BENCHED, OMITTED, UNREAD = "starts", "benched", "omitted", "unread"
 
-# Where the eleven stops and the substitutes begin. Almost every predicted
-# line-up in the corpus uses one of these.
+# Where an eleven BEGINS. Every predicted line-up in the corpus announces
+# itself with one of these and then lists the names; the earlier version
+# of this parser only looked for where the eleven ENDED, so an article
+# with no substitutes section — which is most of them — was unreadable.
+LINEUP_START_MARKERS = (
+    "possible starting lineup:", "possible starting line-up:",
+    "predicted starting lineup:", "predicted lineup:", "predicted line-up:",
+    "expected lineup:", "expected line-up:", "starting lineup:",
+    "starting line-up:", "predicted xi:", "possible xi:", "likely xi:",
+    "starting xi:", "expected xi:", "probable xi:", "line-up:", "lineup:",
+)
+
+# Where it stops. A team sheet is followed by the page's furniture, and
+# without these the last name in the eleven arrives glued to a byline.
+LINEUP_END_MARKERS = (
+    "written by", "people mentioned", "read more", "related articles",
+    "get free daily", "sign up", "follow us", "more from", "share this",
+    "id like to receive", "i'd like to receive",
+)
+
+# Where the eleven stops and the substitutes begin.
 BENCH_MARKERS = ("subs:", "substitutes:", "bench:", "subs :", "substitutes :",
                  "on the bench:", "replacements:", "also available:")
 
@@ -373,6 +412,42 @@ BENCH_MARKERS = ("subs:", "substitutes:", "bench:", "subs :", "substitutes :",
 # talks about an eleven", because only the first can support the claim
 # that a player was left OUT of it.
 FORMATION = re.compile(r"\b[3-5]-[1-5]-[1-4](?:-[1-3])?\b")
+
+
+def extract_lineup(body: str) -> tuple[str, str]:
+    """The eleven and the bench, as raw text, or two empty strings.
+
+    Returns what the article actually lists rather than the whole page,
+    because a team sheet is eleven names in a row and everything around
+    it is prose that happens to contain other players' names.
+    """
+    text = body or ""
+    lowered = text.lower()
+
+    start = None
+    for marker in LINEUP_START_MARKERS:
+        found = lowered.find(marker)
+        if found != -1 and (start is None or found < start):
+            start = found + len(marker)
+    if start is None:
+        return "", ""
+
+    end = len(text)
+    for marker in LINEUP_END_MARKERS:
+        found = lowered.find(marker, start)
+        if found != -1:
+            end = min(end, found)
+    segment = text[start:end]
+
+    segment_lower = segment.lower()
+    split_at = None
+    for marker in BENCH_MARKERS:
+        found = segment_lower.find(marker)
+        if found != -1 and (split_at is None or found < split_at):
+            split_at = found
+    if split_at is None:
+        return segment, ""
+    return segment[:split_at], segment[split_at:]
 
 
 def lineup_verdict(body: str, variants: list[str], own: set, mentions) -> str:
@@ -386,13 +461,6 @@ def lineup_verdict(body: str, variants: list[str], own: set, mentions) -> str:
     text = body or ""
     if not text:
         return UNREAD
-    lowered = text.lower()
-
-    split_at = None
-    for marker in BENCH_MARKERS:
-        found = lowered.find(marker)
-        if found != -1 and (split_at is None or found < split_at):
-            split_at = found
 
     def named(section: str) -> bool:
         # A line-up is a LIST, not prose, so it is read slot by slot. The
@@ -410,22 +478,31 @@ def lineup_verdict(body: str, variants: list[str], own: set, mentions) -> str:
                 return True
         return False
 
-    if split_at is not None:
-        eleven, bench = text[:split_at], text[split_at:]
+    eleven, bench = extract_lineup(text)
+    if eleven:
         if named(eleven):
             return STARTS
-        if named(bench):
+        if bench and named(bench):
             return BENCHED
-        # A readable listing that does not contain him at all is a claim
-        # that he is not in the squad — but only if it really is a
-        # listing, not an article that happens to use the word "subs".
-        if FORMATION.search(text) or _surname_run(text[:split_at]):
+        if _surname_run(eleven, needed=7):
             return OMITTED
         return UNREAD
 
-    if named(text) and FORMATION.search(text):
-        # A formation with no bench section: the names given are the
-        # eleven, so being among them means starting.
+    # No announced line-up. Fall back to a bench section on its own, which
+    # some team-news pieces publish without the eleven.
+    lowered = text.lower()
+    split_at = None
+    for marker in BENCH_MARKERS:
+        found = lowered.find(marker)
+        if found != -1 and (split_at is None or found < split_at):
+            split_at = found
+    if split_at is not None:
+        before, after = text[:split_at], text[split_at:]
+        if named(after):
+            return BENCHED
+        if named(before) and FORMATION.search(text):
+            return STARTS
+    if FORMATION.search(text) and named(text):
         return STARTS
     return UNREAD
 
@@ -495,8 +572,10 @@ MANAGER_PATTERNS = (
     (AVAILABLE, ("is available", "is fit", "back in training",
                  "trained fully", "is ready", "back available",
                  "will be involved", "is in contention")),
-    (UNAVAILABLE, ("is out", "ruled out", "will be out", "is injured",
-                   "is suspended", "faces a spell")),
+    (UNAVAILABLE, ("ruled out of", "is out injured", "will be out for",
+                   "is out of the", "has been ruled out", "is injured and",
+                   "is suspended", "faces a spell", "will not be available",
+                   "unavailable for")),
 )
 
 # How hard each reading pushes, on a -1 (certainly not) to +1 scale.
@@ -525,6 +604,63 @@ def _attributed(sentence: str, previous: str = "") -> bool:
     return any(marker in (previous or "").lower() for marker in ATTRIBUTION)
 
 
+# What has to be said ABOUT HIM before a finding is recorded. A round-up
+# titled "Man City injury, suspension news and return dates" is not a
+# report that this player is injured, and a bookings watch-list naming
+# him is not a suspension. Both reached the page as one.
+INJURY_CLAIMS = ("is injured", "is a doubt", "picked up a knock", "picked up an injury",
+                 "will miss", "ruled out", "sidelined", "is out", "faces a spell",
+                 "undergo a scan", "hamstring", "is not fit", "fitness concern",
+                 "limped off", "went off injured", "strain", "in a race to be fit")
+SUSPENSION_CLAIMS = ("is suspended", "suspended for", "serves a ban", "serve a ban",
+                     "banned for", "was sent off", "red card", "will miss through")
+ARRIVAL_CLAIMS = ("has joined", "have joined", "joins", "signed for", "completed a move",
+                  "completing a move", "completes a move", "new signing", "unveiled",
+                  "sealed a move", "completed the signing", "agreed a deal to join",
+                  "arrives at")
+
+
+def about_him(text: str, variants: list[str], own: set, mentions,
+              claims: tuple) -> str:
+    """The sentence that names him AND makes the claim, or nothing.
+
+    The gate that stops a club round-up becoming a report about one
+    player. "Man City injury, suspension news and return dates" names
+    twenty men and says nothing about any particular one; a finding drawn
+    from it is an inference dressed as a fact.
+    """
+    for sentence in re.split(r"(?<=[.!?])\s+", text or ""):
+        lowered = sentence.lower()
+        if not any(claim in lowered for claim in claims):
+            continue
+        if any(mentions(sentence, variant, own) for variant in variants):
+            return sentence.strip()
+    return ""
+
+
+def manager_signal_about(text: str, variants: list[str], own: set,
+                         mentions) -> tuple[str, str]:
+    """The manager's words ABOUT HIM, rather than anywhere on the page.
+
+    Running the patterns over a whole article read "the team news is out"
+    and "Arsenal are out of the title race" as reports that a fit
+    goalkeeper was unavailable. The claim has to name him, like every
+    other claim in this codebase.
+    """
+    sentences = re.split(r"(?<=[.!?])\s+", text or "")
+    for reading, patterns in MANAGER_PATTERNS:
+        for index, sentence in enumerate(sentences):
+            lowered = sentence.lower()
+            if not any(pattern in lowered for pattern in patterns):
+                continue
+            if not any(mentions(sentence, variant, own) for variant in variants):
+                continue
+            previous = sentences[index - 1] if index else ""
+            if _attributed(sentence, previous):
+                return reading, sentence.strip()
+    return "", ""
+
+
 def manager_signal(text: str) -> tuple[str, str]:
     """The strongest thing a manager is reported to have said, and where.
 
@@ -548,3 +684,52 @@ def manager_signal(text: str) -> tuple[str, str]:
             if _attributed(sentence, previous):
                 return reading, sentence.strip()
     return "", ""
+
+
+# --- gathering the evidence that could answer the question ---------------
+
+SPLIT_TITLE = re.compile(r"\s+(?:vs\.?|v\.?|against)\s+", flags=re.IGNORECASE)
+
+
+def lineup_subject(title: str) -> str:
+    """Whose line-up is this? The half of the headline before "vs".
+
+    "Coventry lineup vs. Man City" is Coventry's eleven. Reading it as
+    City's would find no City player in it and conclude that every one of
+    them had been dropped — which is the most damaging way to be wrong
+    that this parser has available to it.
+    """
+    return SPLIT_TITLE.split(title or "", maxsplit=1)[0]
+
+
+def targeted_articles(store_items, player_named, club: str, club_matches,
+                      max_age_hours: float = 336.0) -> list:
+    """His own coverage PLUS his club's current team news.
+
+    A2 in one function. The general player search cannot answer a
+    selection question, because a predicted line-up is titled by club and
+    never by player — "Brentford lineup vs. Sunderland" names nobody, and
+    a search for the striker inside it returns nothing. Yet it is the
+    single most relevant document in the corpus for whether he starts.
+
+    So the status corpus is assembled by DECISION rather than by name:
+    everything about him, plus everything about his club that addresses
+    selection, and the line-up parser then reads the body for his name.
+    """
+    gathered, seen = list(player_named), {getattr(a, "url", "") for a in player_named}
+    for article in store_items:
+        url = getattr(article, "url", "")
+        if url in seen:
+            continue
+        title = getattr(article, "title", "") or ""
+        kind = article_kind(title, getattr(article, "body", "") or "")
+        if kind not in STATUS_KINDS:
+            continue
+        age = article.age_hours() if hasattr(article, "age_hours") else None
+        if age is None or age > max_age_hours:
+            continue
+        if not club_matches(article, club):
+            continue
+        gathered.append(article)
+        seen.add(url)
+    return gathered
