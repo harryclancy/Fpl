@@ -1,16 +1,16 @@
 {
  "mode": "deadline",
  "gameweek": 3,
- "ran_at": "2026-09-03T16:27:29+00:00",
- "seconds": 209.1,
+ "ran_at": "2026-09-03T16:36:36+00:00",
+ "seconds": 228.8,
  "sources_attempted": 78,
- "sources_readable": 60,
+ "sources_readable": 59,
  "candidates_discovered": 1000,
- "substantive_items": 614,
- "duplicates_removed": 26,
- "deeply_analysed": 60,
- "deep_read_failed": 90,
- "corpus_size": 4391,
+ "substantive_items": 609,
+ "duplicates_removed": 29,
+ "deeply_analysed": 63,
+ "deep_read_failed": 87,
+ "corpus_size": 4426,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 614 articles"
+    "59/78 sources returned 609 articles"
    ]
   },
   "blackout": {
@@ -40,9 +40,9 @@
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 3 days",
   "FPL Central: nothing published in the last 3 days",
-  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 3 days",
-  "Fantasy Football Pundit: nothing published in the last 3 days",
+  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 3 days",
   "Draft FC: nothing published in the last 3 days",
   "FPLai: nothing published in the last 3 days",
@@ -55,7 +55,8 @@
   "Premier Injuries: nothing published in the last 3 days",
   "PhysioRoom: nothing published in the last 3 days",
   "The Hard Tackle: nothing published in the last 3 days",
-  "candidate ceiling of 1000 reached after taking 24 items from each of 60 sources"
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml",
+  "candidate ceiling of 1000 reached after taking 24 items from each of 59 sources"
  ],
  "players": {
   "Raya": {
@@ -63,9 +64,9 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-03T05:55:00+01:00",
-   "official_source_found": false,
-   "fpl_source_found": true,
+   "latest_evidence": "2026-09-03T15:30:00+00:00",
+   "official_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -88,6 +89,33 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arturo Ruiz's first Brighton press conference | preparations for Arsenal in the WSL",
+     "url": "https://www.brightonandhovealbion.com/media-video/arturo-ruizs-first-brighton-press-conference-or-preparations-for-arsenal-in-the-wsl",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-09-03T15:30:00+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "🎬 Arturo Ruiz's first Brighton press conference | preparations for Arsenal in the WSL"
+    },
+    {
+     "title": "Arsenal vs Chelsea predicted lineups, possible XI's, team news ahead of huge clash",
+     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-03T09:08:05-04:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "How to watch Arsenal vs Chelsea live: Stream link, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-live-how-to-watch-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-03T08:44:33-04:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Arsenal vs Chelsea Prediction, Predicted Lineups & Team News",
      "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
@@ -114,42 +142,15 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Arsenal midfielder Eberechi Eze will be asked to frequent a different role this season as the Gunners respond to failures to land a pair of elite forwards this summer."
-    },
-    {
-     "title": "‘The best possible solution’ – Dortmund loan Arsenal forward Nwaneri after huge injury blow",
-     "url": "https://www.101greatgoals.com/football/bundesliga/dortmund-loan-arsenal-forward-nwaneri/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-01T19:48:29+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Borussia Dortmund have signed Arsenal attacking midfielder Ethan Nwaneri on a season-long loan. The 19-year-old, who in 2022 became the youngest player in Premier League history when he made his debut at 15 years and 181 days, is set for another temporary spell away from North London after spending the second half of the previous […]"
-    },
-    {
-     "title": "Is Declan Rice injured? Arsenal star gives Mikel Arteta new worry after limping off",
-     "url": "https://www.fourfourtwo.com/person/player/is-declan-rice-injured-arsenal-star-gives-mikel-arteta-new-worry-after-limping-off",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T16:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal are sweating over the fitness of midfielder Declan Rice after the England international limped off at Villa Park during the Gunners' 1-0 Premier League victory against Aston Villa. Bukayo Saka’s 59th-minute goal ultimately secured all three points for Mikel Arteta ’s side, but the win came at a cost. In the 85th minute, Rice was forced off while visibly limping, with Martin Zubimendi takin"
-    },
-    {
-     "title": "Arsenal youngster given transfer lifeline as Fulham miss out: report",
-     "url": "https://www.fourfourtwo.com/transfer/arsenal-youngster-given-transfer-lifeline-as-fulham-miss-out",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T14:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "The proposed move would see Nwaneri join Bundesliga club Borussia Dortmund on loan, without an option to purchase, according to reports. Arsenal , who will strive to retain the Premier League title for the first time in the North London club’s history this season, are willing to part ways with their 19-year-old prospect. Borussia Dortmund ’s interest in Nwaneri pre-dates the signing of Giannis Kon"
     }
    ]
   },
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 7,
-   "latest_evidence": "2026-09-01T16:30:00+00:00",
+   "latest_evidence": "2026-09-03T00:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -180,6 +181,15 @@
      "matched_on": "gabriel",
      "kind": "team news",
      "excerpt": "Premier League players face a suspension if they pick up too many yellow cards – but what are the rules and who is closest to a one-match ban? Here, we list every player currently banned – be it for red cards or collecting yellow cards – and those at most risk of missing a game. […]"
+    },
+    {
+     "title": "Gabriel Martinelli transfer news: Forward joins Al Hilal in a club-record sale for Arsenal in £60m deal",
+     "url": "https://www.skysports.com/football/news/11670/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
+     "source": "Sky Sports Premier League",
+     "published": "2026-09-03T00:00:00+00:00",
+     "matched_on": "gabriel",
+     "kind": "transfer",
+     "excerpt": ""
     },
     {
      "title": "Gabriel Jesus signs for Barcelona from Arsenal to end Alvarez transfer saga",
@@ -744,8 +754,8 @@
      "excerpt": "Nilson Angulo’s stunning free-kick against Ipswich Town has been nominated for the Guinness Goal of the Month award for August. The Ecuadorian produced a moment of magic at Portman Road on the opening day of the Premier League season, curling a superb free-kick over the wall and in off the underside of the crossbar to level the scores. It was Sunderland’s first goal of the 2026-27 campaign and Ang"
     },
     {
-     "title": "Analysis leeds united 1 brentford 1 premier league vitaly janelt mamadou sangare kevin schade",
-     "url": "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade",
+     "title": "First team mamadou sangare keane lewis potter kevin schade premier league awards august",
+     "url": "https://www.brentfordfc.com/en/news/article/first-team-mamadou-sangare-keane-lewis-potter-kevin-schade-premier-league-awards-august",
      "source": "Brentford",
      "published": "",
      "matched_on": "schade",
@@ -753,8 +763,8 @@
      "excerpt": ""
     },
     {
-     "title": "First team mamadou sangare keane lewis potter kevin schade premier league awards august",
-     "url": "https://www.brentfordfc.com/en/news/article/first-team-mamadou-sangare-keane-lewis-potter-kevin-schade-premier-league-awards-august",
+     "title": "Analysis leeds united 1 brentford 1 premier league vitaly janelt mamadou sangare kevin schade",
+     "url": "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade",
      "source": "Brentford",
      "published": "",
      "matched_on": "schade",
@@ -1119,7 +1129,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-03T11:17:48+01:00",
+   "latest_evidence": "2026-09-03T13:00:19+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1144,6 +1154,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "From huge hype to harsh realities: The disastrous starts of Tottenham and Fiorentina",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-serie-a-the-disastrous-starts-of-tottenham-and-fiorentina-2026-27/Sh5VZv8U/",
+     "source": "Soccerway",
+     "published": "2026-09-03T13:00:19+02:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Tottenham lineup vs. Nottingham Forest: Predicted XI amid Savio, James Maddison injury concerns",
      "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-savio-maddison-make-the-cut-predicted-tottenham-xi-vs-forest_604364.html",
@@ -1188,15 +1207,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "A busy summer of transfer business is over for Tottenham Hotspur , but injuries to James Maddison and Xavi Simons have left the Lilywhites short in one area. It seems Spurs have bolstered pretty much every area of their squad apart from central attacking midfield (or the No.10 role). Jan Paul Van Hecke and Marcos Senesi are new faces in defence, Matheus Fernandes and £100m man Sandro Tonali are th"
-    },
-    {
-     "title": "Nottingham Forest vs Tottenham Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-03T03:03:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
@@ -1204,7 +1214,7 @@
    "player": "Hughes",
    "club": "CRY",
    "evidence_count": 6,
-   "source_count": 4,
+   "source_count": 3,
    "latest_evidence": "2026-09-03T16:28:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
@@ -1219,6 +1229,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Fulham lineup vs. Crystal Palace: Predicted XI for Premier League clash as Alvaro Arbeloa plans key change",
+     "url": "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T16:28:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole looks at how Fulham could line up in Saturday's Premier League clash with Crystal Palace."
+    },
     {
      "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
      "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
@@ -1263,15 +1282,6 @@
      "matched_on": "CRY team news",
      "kind": "club team news",
      "excerpt": "Crystal Palace return to action on Friday night (20:00 BST) when Manchester City become the first visitors to Selhurst Park this season â here's what Enzo Maresca had to say in his pre-match press conference..."
-    },
-    {
-     "title": "Bouaddi fit to face Crystal Palace, says Maresca",
-     "url": "https://www.mancity.com/news/mens/enzo-maresca-crystal-palace-press-conference-injury-news-63923408",
-     "source": "Manchester City",
-     "published": "2026-08-27T09:40:00+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
@@ -1279,7 +1289,7 @@
    "player": "Mitchell",
    "club": "CRY",
    "evidence_count": 6,
-   "source_count": 4,
+   "source_count": 3,
    "latest_evidence": "2026-09-03T16:28:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
@@ -1294,6 +1304,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Fulham lineup vs. Crystal Palace: Predicted XI for Premier League clash as Alvaro Arbeloa plans key change",
+     "url": "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T16:28:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole looks at how Fulham could line up in Saturday's Premier League clash with Crystal Palace."
+    },
     {
      "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
      "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
@@ -1338,15 +1357,6 @@
      "matched_on": "CRY team news",
      "kind": "club team news",
      "excerpt": "Crystal Palace return to action on Friday night (20:00 BST) when Manchester City become the first visitors to Selhurst Park this season â here's what Enzo Maresca had to say in his pre-match press conference..."
-    },
-    {
-     "title": "Bouaddi fit to face Crystal Palace, says Maresca",
-     "url": "https://www.mancity.com/news/mens/enzo-maresca-crystal-palace-press-conference-injury-news-63923408",
-     "source": "Manchester City",
-     "published": "2026-08-27T09:40:00+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
@@ -1355,9 +1365,9 @@
    "club": "IPS",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-02T23:29:44+01:00",
+   "latest_evidence": "2026-09-03T15:04:02+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1386,6 +1396,15 @@
      "matched_on": "diop",
      "kind": "team news",
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
+    },
+    {
+     "title": "Ipswich v Liverpool: Preview, predicted line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/ipswich-vs-liverpool-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-03T15:04:02+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Preview as Ipswich host Liverpool in the Premier League"
     },
     {
      "title": "Liverpool lineup vs. Ipswich Town: Predicted XI as Andoni Iraola faces Bradley Barcola debut decision",
@@ -1422,15 +1441,6 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "Exequiel Palacios Scout Report At Ipswich Town 2026/2027: What Does The World Cup Winner Bring To Portman Road? - Player Analysis",
-     "url": "https://tacticalfootballanalysis.com/exequiel-palacios-scout-report-ipswich-town-2026-2027-analysis-tactics/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-09-02T08:32:58+00:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": "Exequiel Palacios arrives at Ipswich Town as a World Cup-winning midfielder with elite-level experience. This scout report analyses his tactical role, press resistance, passing and defensive qualities, key injury and physical concerns, and how he could fit Gary O’Neil’s system."
     }
    ]
   }
