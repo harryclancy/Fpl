@@ -289,7 +289,7 @@
    "gross_5gw": 0,
    "net_5gw": 1.6,
    "flexibility_value": 1.6,
-   "reversal_risk": 0.0,
+   "reversal_risk": 0,
    "rejected": false,
    "rejection_reasons": [],
    "notes": [
@@ -422,7 +422,7 @@
  ],
  "note": "One decision, chosen between complete plans rather than between individual swaps. Every plan carries its own hit, its own bank and its own free transfers, and any plan that fails one of the twelve rejection rules is out rather than shown with a caveat. Evidence may only argue for a move if it is about one of the two players in it.",
  "gameweek": 3,
- "generated_from_corpus": 3806,
+ "generated_from_corpus": 3866,
  "completeness": {
   "complete": false,
   "checks": {

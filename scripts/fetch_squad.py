@@ -79,6 +79,32 @@ def main() -> int:
         free_transfers, chips_used = 1, []
 
     indexed = players.set_index("id")
+
+    # SELLING VALUES, WITHOUT LOGGING IN.
+    # FPL publishes a player's selling price only through the
+    # authenticated my-team endpoint, and this app has no credentials and
+    # is not going to acquire any. What the public API does give is the
+    # squad's team value, which is computed from selling prices — so the
+    # TOTAL is known exactly even though the split is not:
+    #
+    #     sum(selling) = team_value - bank
+    #
+    # If that equals the sum of the market prices, nobody has risen and
+    # every selling price is exactly the market price. Otherwise there is
+    # a known shortfall which cannot be attributed to any one player, so
+    # each is valued as though the entire shortfall were his. That is the
+    # worst case, which makes every plan costed on it affordable in
+    # reality — the failure mode a guess here would produce.
+    market = {}
+    for pick in confirmed.squad.picks:
+        if pick.player_id in indexed.index:
+            market[pick.player_id] = float(
+                indexed.loc[pick.player_id].get("price", 0) or 0)
+    selling_total = float(confirmed.squad.team_value or 0.0) - float(
+        confirmed.squad.bank or 0.0)
+    shortfall = round(max(0.0, sum(market.values()) - selling_total), 1)
+    basis = "exact" if shortfall <= 0 else "conservative"
+
     squad = []
     for pick in confirmed.squad.picks:
         if pick.player_id not in indexed.index:
@@ -87,7 +113,11 @@ def main() -> int:
         squad.append({
             "id": int(pick.player_id),
             # Selling value, not market price — see models.SquadPick.
-            "selling_price": round(float(pick.selling_price), 1),
+            "selling_price": (round(float(pick.selling_price), 1)
+                              if pick.selling_price > 0 else
+                              round(max(0.0, market.get(pick.player_id, 0.0)
+                                        - shortfall), 1)),
+            "selling_price_basis": ("api" if pick.selling_price > 0 else basis),
             "purchase_price": round(float(pick.purchase_price), 1),
             "name": str(row.get("web_name")),
             "team": str(row.get("team_short_name")),
@@ -113,6 +143,9 @@ def main() -> int:
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "bank": float(confirmed.squad.bank or 0.0),
         "team_value": float(confirmed.squad.team_value or 0.0),
+        "selling_value_total": round(selling_total, 1),
+        "selling_value_shortfall": shortfall,
+        "selling_value_basis": basis,
         "free_transfers": int(free_transfers),
         "chips_used": chips_used,
         "squad": squad,

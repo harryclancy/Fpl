@@ -352,7 +352,8 @@ def squad_state(squad_payload: dict, squad: list[dict]) -> st.SquadState:
         free_transfers=int(squad_payload.get("free_transfers", 1) or 1),
         event=int(squad_payload.get("planning_gameweek", 0) or 0),
         squad_size=len(squad), selling_values=selling,
-        purchase_values=purchase)
+        purchase_values=purchase,
+        selling_basis=str(squad_payload.get("selling_value_basis") or "unknown"))
 
 
 def legacy_view(rec: st.Recommendation) -> tuple[dict, list[dict]]:
@@ -506,11 +507,14 @@ def main() -> int:
     # from evidence about BOTH players or from neither.
     for target in targets:
         found = evidence.search(target.name, target.club, store.items)
+        # The same sentence extraction the squad's write-ups use, so an
+        # incoming player is argued from published prose rather than from
+        # headlines — and, like theirs, only from sentences that name him.
+        quotes = writeup_mod.quotes_for(target.name, target.club,
+                                        found.substantive_items)
         target_facts = pf.build(
             target.name, target.club, target.position, target.price,
-            quotes=[{"text": item.title, "source": item.source,
-                     "url": item.url, "published": item.published}
-                    for item in found[:12]],
+            quotes=[q.as_dict() for q in quotes[:12]],
             expected_minutes=target.minutes_category,
             fixture="", form="")
         target.source_count = len({c.source for c in target_facts.claims}) or 1

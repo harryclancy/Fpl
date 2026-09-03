@@ -83,6 +83,12 @@ class Move:
     buy_price: float = 0.0
     out_5gw: float = 0.0
     in_5gw: float = 0.0
+    # The per-gameweek series behind those totals, so "this week" and
+    # "the next three" are read off the model rather than approximated as
+    # a fraction of the five-week figure.
+    out_series: list[float] = field(default_factory=list)
+    in_series: list[float] = field(default_factory=list)
+    reversal_risk: float = 0.0
 
     # The outgoing player's diagnosis, carried on the move so a rule can
     # ask "is a problem being fixed?" without looking anything up by name.
@@ -107,6 +113,13 @@ class Move:
     @property
     def points_delta(self) -> float:
         return round(self.in_5gw - self.out_5gw, 2)
+
+    def delta_over(self, weeks: int) -> float:
+        """The gain over the first `weeks` gameweeks, from the series."""
+        if not self.in_series or not self.out_series:
+            return round(self.points_delta * weeks / 5, 2)
+        pairs = list(zip(self.in_series[:weeks], self.out_series[:weeks]))
+        return round(sum(i - o for i, o in pairs), 2)
 
     @property
     def label(self) -> str:
@@ -501,6 +514,11 @@ class SquadState:
     selling_values: dict = field(default_factory=dict)   # name -> £m
     purchase_values: dict = field(default_factory=dict)
     squad_size: int = 0
+    # "api" when FPL gave the selling price outright, "exact" when the
+    # squad's team value proves nobody has risen, "conservative" when the
+    # split is unknown and every player is valued as though the whole
+    # shortfall were his. Never a guess presented as a fact.
+    selling_basis: str = "unknown"
 
     @property
     def missing(self) -> list[str]:
@@ -531,6 +549,7 @@ class SquadState:
         return {"bank": self.bank, "free_transfers": self.free_transfers,
                 "event": self.event, "squad_size": self.squad_size,
                 "complete": self.complete, "missing": self.missing,
+                "selling_basis": self.selling_basis,
                 "selling_values": self.selling_values,
                 "purchase_values": self.purchase_values}
 
@@ -550,6 +569,8 @@ def build_move(out: "sd.Assessment", into: "sd.PlayerSignals",
         buy_price=into.price,
         out_5gw=round(sum(out_series), 2),
         in_5gw=round(sum(in_series), 2),
+        out_series=out_series, in_series=in_series,
+        reversal_risk=sd.reversal_risk(out, into)[0],
         out_urgency=out.sell_urgency,
         out_hold=out.hold_strength,
         out_flagged=out.signals.flagged or out.forced,
@@ -579,9 +600,12 @@ def _plan(kind: str, moves: list[Move], state: SquadState,
     plan = Plan(kind=kind, moves=list(moves),
                 free_transfers=state.free_transfers, bank_before=state.bank,
                 money_enables=money_enables)
-    plan.gain_gw1 = round(sum((m.in_5gw - m.out_5gw) / 5 for m in moves), 2)
-    plan.gain_3gw = round(sum((m.in_5gw - m.out_5gw) * 0.6 for m in moves), 2)
+    plan.gain_gw1 = round(sum(m.delta_over(1) for m in moves), 2)
+    plan.gain_3gw = round(sum(m.delta_over(3) for m in moves), 2)
     plan.gross_5gw = round(sum(m.points_delta for m in moves), 2)
+    # Selling someone you will want back is a real cost: you buy him
+    # again at a higher price with a transfer you no longer have.
+    plan.reversal_risk = round(sum(m.reversal_risk for m in moves), 2)
     # Unused free transfers keep their option value; spent ones do not.
     unused = max(0, state.free_transfers - len(moves))
     plan.flexibility_value = round(min(unused, 1) * ROLL_VALUE, 2)
@@ -975,7 +999,7 @@ def trust_audit(rec: Recommendation, blocks: list | None = None,
         not rec.incomplete,
         "; ".join(rec.incomplete) or
         f"£{rec.state.bank:.1f}m, {rec.state.free_transfers} free transfer(s), "
-        f"{len(rec.state.selling_values)} selling prices"))
+        f"{len(rec.state.selling_values)} selling prices ({rec.state.selling_basis})"))
 
     fixes = (not rec.acting
              or all(m.out_flagged or m.out_urgency > NO_PROBLEM_URGENCY

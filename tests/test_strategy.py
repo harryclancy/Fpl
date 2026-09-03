@@ -333,3 +333,42 @@ def test_a_card_recommending_a_sale_no_plan_makes_is_caught():
         rec, [("Unrelated card", "Unrelated is the one to move on.")],
         known_names={"Unrelated"})
     assert clashes and "Unrelated" in clashes[0]
+
+
+def test_gameweek_one_gain_is_read_from_the_series_not_averaged():
+    """A move that is all upside in week one must not look spread out."""
+    s = state(names=["A"], values={"A": 6.0})
+    move = st.Move("A", "B", selling_value=6.0, buy_price=6.0,
+                   out_series=[2.0, 5.0, 5.0, 5.0, 5.0],
+                   in_series=[9.0, 5.0, 5.0, 5.0, 5.0],
+                   out_5gw=22.0, in_5gw=29.0)
+    plan = st._plan("single", [move], s)
+    assert plan.gain_gw1 == 7.0
+    assert plan.gain_3gw == 7.0
+    assert plan.gross_5gw == 7.0
+
+
+def test_reversal_risk_is_subtracted_from_the_deciding_number():
+    s = state(names=["A"], values={"A": 6.0})
+    move = st.Move("A", "B", selling_value=6.0, buy_price=6.0,
+                   out_5gw=20.0, in_5gw=25.0, reversal_risk=2.0)
+    plan = st._plan("single", [move], s)
+    assert plan.gross_5gw == 5.0
+    assert plan.net_5gw == 3.0
+
+
+def test_conservative_selling_values_are_still_a_complete_state():
+    """Unknown split, known total: usable, and labelled as what it is."""
+    s = state(names=["A"], values={"A": 5.9})
+    s.selling_basis = "conservative"
+    assert s.complete
+    rec = st.choose([st.roll_plan(s)], s)
+    checks = st.trust_audit(rec, [])
+    assert checks[0][1]
+    assert "conservative" in checks[0][2]
+
+
+def test_a_zero_selling_value_is_still_missing_data():
+    s = state(names=["A"], values={"A": 0.0})
+    assert not s.complete
+    assert any("no selling price" in m for m in s.missing)
