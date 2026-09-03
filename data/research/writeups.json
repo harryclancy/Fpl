@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-03T03:11:39+00:00",
+ "generated": "2026-09-03T03:24:57+00:00",
  "gameweek": 3,
- "corpus_size": 3870,
+ "corpus_size": 3878,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -34,14 +34,14 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "status": "Latest on Gabriel — 101 Great Goals — Fantasy, 01 Sep: “Mitch Fretton Last Update: 1 hour ago 3 min read Add us as a preferred source on Google Barcelona have completed the signing of Gabriel Jesus from Arsenal on a permanent deal for a reported fee of £8.6m.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 01 Sep.",
+   "status": "10 article(s) reference Gabriel, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 10 retrieved item(s) from 7 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Sky Sports Premier League, 01 Sep: “Latest Sky Sports deals stream PL games with no contract Please use Chrome browser for a more accessible video player Barcelona boss Hansi Flick gives his verdict on the imminent arrival of Gabriel Jesus from Arsenal.” Sports Mole, 24 Aug: “Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 10,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
@@ -64,50 +64,19 @@
     "Soccerway",
     "Sports Mole"
    ],
-   "quotes": [
-    {
-     "text": "Mitch Fretton Last Update: 1 hour ago 3 min read Add us as a preferred source on Google Barcelona have completed the signing of Gabriel Jesus from Arsenal on a permanent deal for a reported fee of £8.6m.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/news/transfers/barcelona-complete-signing-gabriel-jesus-arsenal/",
-     "published": "2026-09-01T13:20:55+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Latest Sky Sports deals stream PL games with no contract Please use Chrome browser for a more accessible video player Barcelona boss Hansi Flick gives his verdict on the imminent arrival of Gabriel Jesus from Arsenal.",
-     "source": "Sky Sports Premier League",
-     "url": "https://www.skysports.com/football/news/11833/13579275/gabriel-jesus-arsenal-forward-completes-barcelona-transfer-in-8-6m-deal-on-deadline-day",
-     "published": "2026-09-01T00:00:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
-     "published": "2026-08-24T00:54:04+01:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    }
-   ]
+   "quotes": []
   },
   "Guéhi": {
    "player": "Guéhi",
    "club": "MCI",
-   "status": "Latest on Guéhi — AFC Bournemouth, 29 Aug: “But for the second game running, the Cherries conceded late on with Tarkowski mirroring Manchester City’s Marc Guéhi by denying them at the death.”",
-   "why_here": "Guéhi is in the starting eleven this week at £6.0m as a DEF. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 29 Aug.",
-   "case_for": "What supports keeping him: Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.”",
-   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "status": "3 article(s) reference Guéhi, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Guéhi is in the starting eleven this week at £6.0m as a DEF. The selection rests on 3 retrieved item(s) from 3 source(s).",
+   "case_for": "",
+   "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — AFC Bournemouth, 29 Aug: “But for the second game running, the Cherries conceded late on with Tarkowski mirroring Manchester City’s Marc Guéhi by denying them at the death.” Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 3,
    "evidence_used": [
     "https://www.afcb.co.uk/news/2026/august/29/match-report-v-everton/",
@@ -119,24 +88,7 @@
     "Crystal Palace",
     "Opta Analyst"
    ],
-   "quotes": [
-    {
-     "text": "But for the second game running, the Cherries conceded late on with Tarkowski mirroring Manchester City’s Marc Guéhi by denying them at the death.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/august/29/match-report-v-everton/",
-     "published": "2026-08-29T15:55:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/manchester-city-vs-bournemouth-stats-premier-league-08-2026",
-     "published": "2026-08-23T15:23:02+00:00",
-     "tone": "positive",
-     "topics": []
-    }
-   ]
+   "quotes": []
   },
   "Kayode": {
    "player": "Kayode",
@@ -252,10 +204,10 @@
    "club": "MCI",
    "status": "Latest on Ndiaye — FourFourTwo FPL, 02 Sep: “Sanctioning the departures of both Beto and Iliman Ndiaye on transfer deadline day was always going to be a gamble.”",
    "why_here": "Ndiaye is in the starting eleven this week at £6.0m as a MID. The selection rests on 23 retrieved item(s) from 12 source(s), the most recent dated 02 Sep.",
-   "case_for": "What supports keeping him: Everton, 01 Sep: “Signed from Marseille in July 2024, Ndiaye made history by becoming the last-ever goalscorer for an Everton Men’s player at Goodison Park when he struck twice in the Blues’ 2-0 victory over Southampton in May 2025.” FourFourTwo FPL, 01 Sep: “Iliman Ndiaye heads to Manchester, Jack Grealish returns to Everton Iliman Ndiaye is set to depart (Image credit: Getty Images) Manchester City have struck a deal worth up to £65 million for Ndiaye, days after the 26-year-old was expected to complete a transfer to Tottenham Hotspur .” Manchester City, 01 Sep: “An attacking threat who can play on the wing or through the middle, Ndiaye is two-footed and a source of creativity and goals.”",
+   "case_for": "What supports keeping him: Everton, 01 Sep: “Signed from Marseille in July 2024, Ndiaye made history by becoming the last-ever goalscorer for an Everton Men’s player at Goodison Park when he struck twice in the Blues’ 2-0 victory over Southampton in May 2025.” 101 Great Goals — Fantasy, 01 Sep: ““City fans can rest assured that I will give my all to bring more success to this incredible club.” Ndiaye scored 17 goals and provided four assists for Everton after joining from Marseille in 2024.” Manchester City, 01 Sep: “An attacking threat who can play on the wing or through the middle, Ndiaye is two-footed and a source of creativity and goals.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Flashscore, 01 Sep: “Speaking to Man City’s website, Ndiaye said: \"I’ve worked my whole life for an opportunity like this.”",
-   "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “Bye, bye, Mr Iliman Ndiaye (Image credit: Getty Images) Their lack of conviction in decision-making was exhibited in the earlier saga surrounding 19-year-old midfielder Harrison Armstrong.” Soccerway, 01 Sep: “On Friday night it looked like Ndiaye was on his way to Tottenham after the North London club agreed a deal with David Moyes’ side.” Soccerway, 01 Sep: “Ndiaye has signed a five-year contract which will keep him at the Etihad Stadium until 2031.”",
+   "developments": "Recent developments — Soccerway, 01 Sep: “On Friday night it looked like Ndiaye was on his way to Tottenham after the North London club agreed a deal with David Moyes’ side.” Soccerway, 01 Sep: “Ndiaye has signed a five-year contract which will keep him at the Etihad Stadium until 2031.” 101 Great Goals — Fantasy, 01 Sep: “There is a lot still to be decided in the closing hours of the summer window, with Manchester City set to spend big on Iliman Ndiaye and Enzo Fernandez, while there could still be movement at Arsenal , Liverpool, Chelsea, Manchester United and Tottenham. 23:32 – Man City complete British-record Fernandez swoop The deal Manchester City fans have all been waiting for….”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 23,
@@ -297,14 +249,6 @@
      "topics": [
       "transfer"
      ]
-    },
-    {
-     "text": "Bye, bye, Mr Iliman Ndiaye (Image credit: Getty Images) Their lack of conviction in decision-making was exhibited in the earlier saga surrounding 19-year-old midfielder Harrison Armstrong.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/team/everton-summer-transfer-window-disaster-leaves-club-desperately-short-of-options-conviction-and-goodwill",
-     "published": "2026-09-02T11:44:47+00:00",
-     "tone": "neutral",
-     "topics": []
     },
     {
      "text": "On Friday night it looked like Ndiaye was on his way to Tottenham after the North London club agreed a deal with David Moyes’ side.",
@@ -395,7 +339,7 @@
      ]
     },
     {
-     "text": "Nicholas McGee Last Update: 36 minutes ago 2 min read Add us as a preferred source on Google Manchester City have completed the signing of Senegal winger Iliman Ndiaye from Everton Ndiaye has made the move to the Etihad Stadium on a five-year deal after City agreed a £65million with the Merseyside club.",
+     "text": "But City swooped in after that transfer fell through, with Ndiaye delighted to have the chance to prove himself for Enzo Maresca’s side after excelling in his time with Everton.",
      "source": "101 Great Goals — Fantasy",
      "url": "https://www.101greatgoals.com/football/premier-league/ndiaye-completes-move-man-city/",
      "published": "2026-09-01T20:13:56+00:00",
@@ -405,14 +349,12 @@
      ]
     },
     {
-     "text": "But City swooped in after that transfer fell through, with Ndiaye delighted to have the chance to prove himself for Enzo Maresca’s side after excelling in his time with Everton.",
+     "text": "“City fans can rest assured that I will give my all to bring more success to this incredible club.” Ndiaye scored 17 goals and provided four assists for Everton after joining from Marseille in 2024.",
      "source": "101 Great Goals — Fantasy",
      "url": "https://www.101greatgoals.com/football/premier-league/ndiaye-completes-move-man-city/",
      "published": "2026-09-01T20:13:56+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
+     "tone": "positive",
+     "topics": []
     },
     {
      "text": "Man City’s Penchant for Dribblers Is No Coincidence | Opta Analyst Manchester City are loading up on players known for their dribbling ability, with Iliman Ndiaye seemingly their next new face.",
@@ -428,16 +370,6 @@
      "url": "https://theanalyst.com/articles/man-city-iliman-ndiaye-dribbling-stats",
      "published": "2026-09-01T13:24:07+00:00",
      "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Iliman Ndiaye heads to Manchester, Jack Grealish returns to Everton Iliman Ndiaye is set to depart (Image credit: Getty Images) Manchester City have struck a deal worth up to £65 million for Ndiaye, days after the 26-year-old was expected to complete a transfer to Tottenham Hotspur .",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
-     "published": "2026-09-01T09:21:21+00:00",
-     "tone": "positive",
      "topics": [
       "transfer"
      ]
@@ -760,12 +692,12 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "status": "Latest on João Pedro — Aston Villa, 31 Aug: “On the field, Emery handed debuts to two of his summer signings – Nicolas Jackson replacing the suspended João Gomes in the XI to start in attack after arriving on Friday, while Zion Suzuki”",
+   "status": "Latest on João Pedro — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.”",
    "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 12 retrieved item(s) from 6 source(s), the most recent dated 02 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Aston Villa, 31 Aug: “Jackson, who arrived from Chelsea on Friday, begins in attack, coming into the side in place of João Gomes who serves the first of his three-match suspension, while Suzuki replaces Marco Bizot in goal.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.”",
-   "case_against": "What argues against him: Aston Villa, 31 Aug: “We must add more players – Goretzka, João, Aaron, Garnacho, Manzambi is coming back from injury.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Aston Villa, 02 Sep: “Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton Wanderers.” Tactical Football Analysis, 26 Aug: “Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.”",
-   "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.” FourFourTwo FPL, 02 Sep: “Unai Emery is overseeing an enforced revolution at Villa Park (Image credit: Getty Images) Facebook Pinterest Email Join the conversation Follow us Add us as a preferred source on Google Joao Gomes won’t forget his Aston Villa debut in a hurry.” FourFourTwo FPL, 02 Sep: “Latest Videos From FourFourTwo Watch full video here: Joao Pedro will win the 2026/27 Golden Boot, here's why Joao Pedro hit 20 in all competitions for Chelsea last season, and is currently on two-in-two (Image credit: DAVID GRAY / AFP via Getty Images) Joao Pedro , like his French peer, was equally a standout in a failing Chelsea machine.”",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
+   "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 12,
@@ -803,33 +735,6 @@
      ]
     },
     {
-     "text": "Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton Wanderers.",
-     "source": "Aston Villa",
-     "url": "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/",
-     "published": "2026-09-02T08:38:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer",
-      "rotation"
-     ]
-    },
-    {
-     "text": "Unai Emery is overseeing an enforced revolution at Villa Park (Image credit: Getty Images) Facebook Pinterest Email Join the conversation Follow us Add us as a preferred source on Google Joao Gomes won’t forget his Aston Villa debut in a hurry.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/team/new-look-aston-villa-are-in-for-a-long-season-but-unai-emery-is-the-continuity-that-matters-most",
-     "published": "2026-09-02T08:14:35+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Latest Videos From FourFourTwo Watch full video here: Joao Pedro will win the 2026/27 Golden Boot, here's why Joao Pedro hit 20 in all competitions for Chelsea last season, and is currently on two-in-two (Image credit: DAVID GRAY / AFP via Getty Images) Joao Pedro , like his French peer, was equally a standout in a failing Chelsea machine.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
-     "published": "2026-09-02T06:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
      "text": "It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.",
      "source": "FourFourTwo FPL",
      "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
@@ -840,35 +745,12 @@
      ]
     },
     {
-     "text": "We must add more players – Goretzka, João, Aaron, Garnacho, Manzambi is coming back from injury.",
-     "source": "Aston Villa",
-     "url": "https://avfc.co.uk/news/2026/august/31/reaction-unai-emery-post-arsenal/",
-     "published": "2026-08-31T22:12:53+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
-     "text": "On the field, Emery handed debuts to two of his summer signings – Nicolas Jackson replacing the suspended João Gomes in the XI to start in attack after arriving on Friday, while Zion Suzuki",
-     "source": "Aston Villa",
-     "url": "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
-     "published": "2026-08-31T20:58:00+00:00",
+     "text": "This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
+     "published": "2026-09-02T06:00:00+00:00",
      "tone": "neutral",
-     "topics": [
-      "suspension",
-      "transfer"
-     ]
-    },
-    {
-     "text": "Jackson, who arrived from Chelsea on Friday, begins in attack, coming into the side in place of João Gomes who serves the first of his three-match suspension, while Suzuki replaces Marco Bizot in goal.",
-     "source": "Aston Villa",
-     "url": "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/",
-     "published": "2026-08-31T17:45:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "suspension"
-     ]
+     "topics": []
     },
     {
      "text": "It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.",
@@ -887,17 +769,15 @@
      "topics": []
     },
     {
-     "text": "Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.",
+     "text": "Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.",
      "source": "Tactical Football Analysis",
      "url": "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
      "published": "2026-08-26T09:02:48+00:00",
-     "tone": "positive",
-     "topics": [
-      "team news"
-     ]
+     "tone": "neutral",
+     "topics": []
     },
     {
-     "text": "Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.",
+     "text": "When the ball goes back to Leno, João Pedro pounces while keeping the midfielder behind him in his cover shadow.",
      "source": "Tactical Football Analysis",
      "url": "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
      "published": "2026-08-26T09:02:48+00:00",
@@ -927,14 +807,14 @@
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "status": "Latest on Thiago — Football365, 02 Sep: “Liverpool: FSG have just received some good news about signing Lamine Camara in 2027 AS Monaco star and Liverpool target Lamine Camara Liverpool will get the chance to bring Lamine Camara to Anfield in 2027, with AS Monaco sporting director Thiago Scuro revealing that the midfielder will be allowed to leave soon.”",
-   "why_here": "Thiago is in the starting eleven this week at £8.0m as a FWD. The selection rests on 4 retrieved item(s) from 3 source(s), the most recent dated 02 Sep.",
+   "status": "4 article(s) reference Thiago, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Thiago is in the starting eleven this week at £8.0m as a FWD. The selection rests on 4 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Football365, 02 Sep: “Liverpool: FSG have just received some good news about signing Lamine Camara in 2027 AS Monaco star and Liverpool target Lamine Camara Liverpool will get the chance to bring Lamine Camara to Anfield in 2027, with AS Monaco sporting director Thiago Scuro revealing that the midfielder will be allowed to leave soon.” FourFourTwo FPL, 02 Sep: “AS Monaco sporting director Thiago Scuro has revealed the extraordinary sequence of events behind Folarin Balogun’s deadline day transfer collapse to Everton.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 4,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/everton/transfer-talk/news/monaco-chief-makes-major-balogun-claim-after-failed-everton-transfer_604292.html",
@@ -947,28 +827,7 @@
     "FourFourTwo FPL",
     "Sports Mole"
    ],
-   "quotes": [
-    {
-     "text": "Liverpool: FSG have just received some good news about signing Lamine Camara in 2027 AS Monaco star and Liverpool target Lamine Camara Liverpool will get the chance to bring Lamine Camara to Anfield in 2027, with AS Monaco sporting director Thiago Scuro revealing that the midfielder will be allowed to leave soon.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/lamine-camara-liverpool-as-monaco-thiago-scuro",
-     "published": "2026-09-02T13:43:45+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "AS Monaco sporting director Thiago Scuro has revealed the extraordinary sequence of events behind Folarin Balogun’s deadline day transfer collapse to Everton.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/transfer/inside-evertons-failed-folarin-balogun-transfer-as-monaco-chief-makes-brutal-no-sense-at-all-claim",
-     "published": "2026-09-02T13:40:34+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    }
-   ]
+   "quotes": []
   },
   "Dubravka": {
    "player": "Dubravka",

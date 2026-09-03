@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-03T03:11:39+00:00",
- "seconds": 119.0,
+ "ran_at": "2026-09-03T03:24:57+00:00",
+ "seconds": 124.6,
  "sources_attempted": 78,
  "sources_readable": 64,
- "candidates_discovered": 548,
- "substantive_items": 106,
+ "candidates_discovered": 542,
+ "substantive_items": 103,
  "duplicates_removed": 5,
- "deeply_analysed": 69,
+ "deeply_analysed": 66,
  "deep_read_failed": 32,
- "corpus_size": 3870,
+ "corpus_size": 3878,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 106 articles"
+    "64/78 sources returned 103 articles"
    ]
   },
   "blackout": {
@@ -38,13 +38,13 @@
  },
  "failures": [
   "FPL360: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
-  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
+  "Fantasy Football Pundit: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
