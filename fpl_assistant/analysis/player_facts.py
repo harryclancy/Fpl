@@ -47,6 +47,7 @@ SET_PIECES = "set pieces"
 PENALTIES = "penalties"
 INJURY = "injury"
 TRANSFER = "transfer status"
+ARRIVAL = "arrival"
 FORM = "form"
 UNDERLYING = "underlying data"
 FIXTURES = "fixture outlook"
@@ -77,9 +78,20 @@ BUCKET_TERMS = {
     PENALTIES: ("penalt", "spot kick", "from the spot"),
     INJURY: ("injury", "injured", "hamstring", "knock", "scan", "surgery",
              "fitness", "doubt", "strain"),
+    # Two different things, deliberately kept apart. TRANSFER is "he may
+    # leave", which is a reason for caution about owning him. ARRIVAL is
+    # "he has already joined", which is not a reason to sell anybody --
+    # it is a reason to stop trusting the minutes he earned somewhere
+    # else. Filing them in one bucket made a completed signing read as a
+    # cautionary note about the player who had just arrived.
     TRANSFER: ("bid for", "a bid", "medical", "release clause", "agreed terms",
-               "transfer fee", "set to join", "completed a move", "asking price",
-               "linked with a move", "transfer request"),
+               "transfer fee", "set to join", "asking price",
+               "linked with a move", "transfer request", "wants to leave",
+               "up for sale"),
+    ARRIVAL: ("has joined", "have joined", "joins on", "signed for",
+              "completed a move", "completing a move", "completes a move",
+              "new signing", "unveiled", "sealed a move", "arrives at",
+              "completed the signing", "agreed a deal to join"),
     FORM: ("in form", "scored", "assist", "goal", "brace", "hat-trick", "haul",
            "blank", "struggling", "poor run"),
     UNDERLYING: ("xg", "xa", "xgi", "expected goals", "expected assists",
@@ -106,6 +118,9 @@ BUCKET_TERMS = {
 # defence, the manager's general policy. Everything else needs the player
 # named, because everything else is a claim about him personally.
 CLUB_LEVEL_BUCKETS = frozenset({FIXTURES, TEAM_STRENGTH, CLEAN_SHEET})
+
+# An arrival changes what his record proves, not whether to sell him,
+# so it sits in neither support set.
 
 # What may support a decision to sell. The absence of a player from
 # someone else's shortlist is not on this list, and that is the point.

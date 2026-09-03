@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from fpl_assistant import api
 from fpl_assistant.analysis import fixtures as fixtures_analysis
 from fpl_assistant.analysis import minutes as minutes_mod
+from fpl_assistant.analysis import brief as brief_mod
 from fpl_assistant.analysis import player_facts as pf
 from fpl_assistant.analysis import squad_decision as sd
 from fpl_assistant.analysis import strategy as st
@@ -27,6 +28,7 @@ from fpl_assistant.research import corpus as corpus_mod, evidence
 ROOT = Path(__file__).resolve().parent.parent
 SQUAD = ROOT / "data" / "squad" / "current.json"
 WRITEUPS = ROOT / "data" / "research" / "writeups.json"
+SEASONS = ROOT / "data" / "history" / "seasons.json"
 OUT = ROOT / "data" / "research" / "decision.json"
 
 # Terms that say a specific thing happened, used to set the event flags the
@@ -194,10 +196,12 @@ def _live_data():
                 run.append(sum(scores) / len(scores))
             table[team_id] = run
 
-        # Human-readable opponents, for the player cards.
-        labels = {}
+        # The same runs, structured. A write-up cannot say what a
+        # fixture MEANS from the string "SUN (H)" — it needs the opponent,
+        # the venue and the difficulty as separate facts.
+        labels, runs = {}, {}
         for team_id in teams.index:
-            run = []
+            run, structured = [], []
             for gw in range(next_event, next_event + 5):
                 played = fixtures[
                     (fixtures["event"] == gw)
@@ -209,7 +213,20 @@ def _live_data():
                     short = (teams.loc[opponent, "short_name"]
                              if opponent in teams.index else "?")
                     run.append(f"{short} ({'H' if home else 'A'})")
+                    structured.append({
+                        "opponent": short, "opponent_id": int(opponent),
+                        "home": bool(home),
+                        "difficulty": float(fixture["team_h_difficulty"] if home
+                                            else fixture["team_a_difficulty"]),
+                    })
             labels[team_id] = run
+            runs[team_id] = structured
+
+        # Where each side sits in the league for attack and defence, as a
+        # percentile rather than FPL's raw 1000-1400 number. A percentile
+        # is what lets the prose say "one of the meanest defences in the
+        # league" and be held to it, instead of asserting it.
+        strength_ranks = _strength_ranks(teams)
     except Exception as exc:
         return None, f"the FPL data could not be assembled ({exc.__class__.__name__}: {exc})"
 
@@ -270,6 +287,16 @@ def _live_data():
             if element.get("team") in teams.index else "",
             "minutes_category": candidate_minutes.category,
             "minutes_confidence": candidate_minutes.confidence,
+            # Underlying rates, for the part of a write-up that asks what
+            # he does with the chances rather than whether he gets them.
+            "xgi90": float(element.get("expected_goal_involvements_per_90") or 0),
+            "xgc90": float(element.get("expected_goals_conceded_per_90") or 0),
+            "defcon90": float(element.get("defensive_contribution_per_90") or 0),
+            "penalties": _is_taker(element.get("penalties_order")),
+            "set_pieces": (_is_taker(element.get("direct_freekicks_order"))
+                           or _is_taker(
+                               element.get("corners_and_indirect_freekicks_order"))),
+            "five_gw": round(sum(series_by_id.get(int(element["id"]), [])[:5]), 2),
             # The real full name, which is what lets the evidence layer
             # tell this player apart from everybody else who shares his
             # web_name. Without it "Nobel Mendy" and "David Raya" look
@@ -291,11 +318,23 @@ def _live_data():
     for record in by_id.values():
         record["positional_baseline"] = medians.get(record.get("element_type", 0), 0.0)
 
+    # The same idea for the underlying rates, so "well clear of a typical
+    # midfielder" is measured against the league rather than asserted.
+    rate_medians = {}
+    for kind in POSITIONS:
+        for key in ("xgi90", "defcon90", "five_gw"):
+            values = sorted(r[key] for r in by_id.values()
+                            if r.get("element_type") == kind and r["minutes"] >= 180)
+            rate_medians[(kind, key)] = (values[len(values) // 2]
+                                         if values else 0.0)
+
     return {
         "by_id": by_id, "by_name": by_name, "team_games": team_games,
         "positional_medians": medians,
         "next_event": next_event, "fixture_table": table, "teams": teams,
-        "fixture_labels": labels,
+        "fixture_labels": labels, "fixture_runs": runs,
+        "strength_ranks": strength_ranks,
+        "rate_medians": rate_medians,
     }, ""
 
 
@@ -308,6 +347,250 @@ def _fixture_labels(live, player: dict, count: int) -> list[str]:
     record = live["by_id"].get(int(player.get("id", 0) or 0)) or {}
     team_id = record.get("team")
     return list(live.get("fixture_labels", {}).get(team_id, []))[:count]
+
+
+def last_season(name: str, club: str) -> tuple[int, int]:
+    """Minutes and appearances in the last completed season, at THIS club.
+
+    The record is keyed by the club the player is at now, so a player who
+    has moved does not match and correctly comes back with nothing —
+    which is the behaviour we want. A season built somewhere else is not
+    evidence about the shirt he is wearing today.
+    """
+    try:
+        payload = json.loads(SEASONS.read_text())
+    except (OSError, json.JSONDecodeError):
+        return 0, 0
+    for record in payload.get("players", []):
+        if record.get("name") != name or record.get("team") != club:
+            continue
+        seasons = record.get("seasons") or []
+        if not seasons:
+            return 0, 0
+        latest = seasons[0]
+        return (int(latest.get("minutes", 0) or 0),
+                int(latest.get("appearances", 0) or 0))
+    return 0, 0
+
+
+def joined_recently(facts) -> str:
+    """A published line saying he has changed clubs, or nothing.
+
+    Detected from what someone actually wrote rather than inferred from a
+    thin appearance count, because "he has not played much" and "he is
+    new here" call for different write-ups and only one of them is a
+    reason to distrust his previous record.
+    """
+    return _first_claim(facts, pf.ARRIVAL)
+
+
+def brief_inputs(facts, signal, player: dict, live, rec, assessments,
+                 squad: list[dict], plans) -> "brief_mod.BriefInputs":
+    """Assembles everything one judgement is allowed to use.
+
+    Every field is sourced rather than assumed: the fixture run and the
+    opponents' strength from the official data, the prior season from the
+    committed history, the transfer status from something a journalist
+    wrote, and the alternatives from the plans the transfer engine
+    actually built and refused. Nothing here is a placeholder.
+    """
+    record = {}
+    if live:
+        record = live["by_id"].get(int(player.get("id", 0) or 0)) \
+            or live["by_name"].get(signal.name, {})
+    team_id = record.get("team")
+    kind = record.get("element_type", 0)
+    ranks = (live or {}).get("strength_ranks", {})
+    medians = (live or {}).get("rate_medians", {})
+
+    fixtures = []
+    for entry in ((live or {}).get("fixture_runs", {}).get(team_id) or [])[:5]:
+        fixtures.append(brief_mod.Fixture(
+            opponent=entry["opponent"], home=entry["home"],
+            difficulty=entry["difficulty"]))
+
+    club_short = str(record.get("club") or signal.club)
+    minutes, appearances = last_season(signal.name, club_short)
+    joined = joined_recently(facts)
+
+    opponent_id = (((live or {}).get("fixture_runs", {}).get(team_id) or [{}])[0]
+                   .get("opponent_id") if fixtures else None)
+    mine = ranks.get(team_id, {})
+    theirs = ranks.get(opponent_id, {}) if opponent_id is not None else {}
+
+    return brief_mod.BriefInputs(
+        player=signal.name, club=club_short,
+        club_name=_club_name(live, team_id) or club_short,
+        position=signal.position, price=signal.price,
+        starts=int(record.get("starts", 0) or 0),
+        minutes_played=int(record.get("minutes", 0) or 0),
+        team_games=int((live or {}).get("team_games", 0) or 0),
+        status=str(record.get("status", "a") or "a"),
+        chance_of_playing=record.get("chance_of_playing_next_round"),
+        minutes_category=signal.minutes_category,
+        prior_minutes=minutes, prior_appearances=appearances,
+        new_club_evidence=joined,
+        rotation_evidence=_first_claim(facts, pf.ROTATION),
+        injury_evidence=_first_claim(facts, pf.INJURY),
+        transfer_evidence="" if joined else _first_claim(facts, pf.TRANSFER),
+        fixtures=fixtures,
+        team_attack_rank=mine.get("attack"), team_defence_rank=mine.get("defence"),
+        opponent_attack_rank=theirs.get("attack"),
+        opponent_defence_rank=theirs.get("defence"),
+        points_per_game=float(record.get("points_per_game", 0) or 0),
+        positional_ppg=float(record.get("positional_baseline", 0) or 0),
+        total_points=int(record.get("total_points", 0) or 0),
+        xgi90=float(record.get("xgi90", 0) or 0),
+        positional_xgi90=float(medians.get((kind, "xgi90"), 0) or 0),
+        xgc90=float(record.get("xgc90", 0) or 0),
+        defcon90=float(record.get("defcon90", 0) or 0),
+        set_pieces=bool(record.get("set_pieces")),
+        penalties=bool(record.get("penalties")),
+        projection=float(record.get("projection", 0) or 0),
+        five_gw=float(record.get("five_gw", 0) or 0),
+        positional_five_gw=float(medians.get((kind, "five_gw"), 0) or 0),
+        on_bench=bool(player.get("on_bench")),
+        captain=bool(player.get("is_captain")),
+        vice=bool(player.get("is_vice_captain")),
+        being_sold=signal.name in rec.out_names,
+        sell_urgency=next((a.sell_urgency for a in assessments
+                           if a.name == signal.name), 0.0),
+        hold_strength=next((a.hold_strength for a in assessments
+                            if a.name == signal.name), 0.0),
+        bench_alternatives=_bench_alternatives(signal, player, squad, live),
+        transfer_alternatives=_transfer_alternatives(signal, plans),
+    )
+
+
+def _club_name(live, team_id) -> str:
+    teams = (live or {}).get("teams")
+    if teams is None or team_id not in teams.index:
+        return ""
+    return str(teams.loc[team_id, "name"])
+
+
+def _bench_alternatives(signal, player: dict, squad: list[dict],
+                        live) -> list:
+    """Who he is actually picked ahead of, or behind — same position only.
+
+    A comparison against a player who cannot fill his slot is not a
+    comparison, and "he starts" without one is a statement rather than a
+    decision.
+    """
+    if not live:
+        return []
+    wanted = not player.get("on_bench")
+    others = []
+    for other in squad:
+        if other["name"] == signal.name or other.get("position") != signal.position:
+            continue
+        # Picked ahead of the bench; measured against the eleven if benched.
+        if bool(other.get("on_bench")) == wanted:
+            continue
+        record = live["by_id"].get(int(other.get("id", 0) or 0)) \
+            or live["by_name"].get(other["name"], {})
+        runs = live.get("fixture_runs", {}).get(record.get("team")) or []
+        detail = ""
+        if record.get("starts") and runs:
+            detail = (f"starting, {runs[0]['opponent']} "
+                      f"{'at home' if runs[0]['home'] else 'away'}")
+        others.append(brief_mod.Alternative(
+            name=other["name"], detail=detail,
+            five_gw=float(record.get("five_gw", 0) or 0)))
+    others.sort(key=lambda a: a.five_gw, reverse=True)
+    return others[:2]
+
+
+def _transfer_alternatives(signal, plans) -> list:
+    """The replacement the engine actually costed, and what it decided.
+
+    Taken off the plans rather than invented, so a write-up that raises a
+    better-looking option can also say what happened to it — which is the
+    difference between analysis and a loose end.
+    """
+    found = []
+    for plan in plans:
+        for move in plan.moves:
+            if move.out_name != signal.name:
+                continue
+            reason = ""
+            if plan.rejection_reasons:
+                reason = plan.rejection_reasons[0].split(": ", 1)[-1]
+            found.append(brief_mod.Alternative(
+                name=move.in_name, five_gw=move.in_5gw,
+                rejected_because=reason))
+    found.sort(key=lambda a: a.five_gw, reverse=True)
+    return found[:1]
+
+
+def brief_quality(judgement) -> list[str]:
+    """The user's own final test, run before anything is saved.
+
+    A write-up that fails these is not shipped with a caveat — it is
+    reported as a quality problem and fails the completeness gate, the
+    same as any other bad output.
+    """
+    problems = []
+    if not judgement.why:
+        problems.append("the brief does not say why he is in the team")
+    if not judgement.case_for:
+        problems.append("the brief makes no case for him")
+    if len(judgement.against.split()) < 8:
+        problems.append("the brief has no real case against him")
+    if not judgement.verdict_label:
+        problems.append("the brief reaches no decision")
+    if "\u2192" not in judgement.verdict:
+        problems.append("the brief does not look past this gameweek")
+    if not (brief_mod.MIN_WORDS <= judgement.words <= brief_mod.MAX_WORDS):
+        problems.append(
+            f"the brief is {judgement.words} words, outside "
+            f"{brief_mod.MIN_WORDS}-{brief_mod.MAX_WORDS}")
+    return problems
+
+
+def _first_claim(facts, *buckets) -> str:
+    for claim in facts.claims:
+        if claim.player_named and set(buckets) & set(claim.buckets):
+            return claim.text
+    return ""
+
+
+def _is_taker(order) -> bool:
+    """FPL publishes a set-piece ORDER; anything but first choice is noise."""
+    try:
+        return int(order) <= 2
+    except (TypeError, ValueError):
+        return False
+
+
+def _strength_ranks(teams) -> dict:
+    """Each side's attack and defence as a 0-1 position in the league.
+
+    Averaged across home and away, because a write-up's claim about a
+    club ("one of the meanest defences") is a claim about the side, not
+    about one venue — the venue is already in the fixture difficulty.
+    """
+    ranks = {}
+    for kind, columns in (
+            ("attack", ("strength_attack_home", "strength_attack_away")),
+            ("defence", ("strength_defence_home", "strength_defence_away"))):
+        values = {}
+        for team_id in teams.index:
+            row = teams.loc[team_id]
+            numbers = [float(row[c]) for c in columns
+                       if c in teams.columns and row[c] == row[c]]
+            if numbers:
+                values[team_id] = sum(numbers) / len(numbers)
+        if not values:
+            continue
+        order = sorted(values, key=lambda t: values[t])
+        last = len(order) - 1
+        for position, team_id in enumerate(order):
+            # A higher FPL strength is a better side, for both attack and
+            # defence, so a high rank means "good at this" either way.
+            ranks.setdefault(team_id, {})[kind] = (
+                position / last if last else 0.5)
+    return ranks
 
 
 def _fixture_scores(live, team_id) -> list[float]:
@@ -580,8 +863,23 @@ def main() -> int:
             line = "Keeping him this week."
         record = assessment.as_dict()
         record["decision_line"] = line
+
+        # THE JUDGEMENT. Built last, from the decision and from every
+        # structured input the run has — the fixture and its difficulty,
+        # the opponent's strength, last season at THIS club, the bench
+        # player he is picked ahead of, the transfer the engine costed and
+        # refused. The research is the input; this is the conclusion.
+        signal = next(s for s in signals if s.name == name)
+        owner = next(p for p in squad if p["name"] == name)
+        judgement = brief_mod.build(brief_inputs(
+            assessment, signal, owner, live, rec, assessments, squad, plans))
+        record["brief"] = judgement.as_dict()
+
+        # The old one-paragraph form stays as the compact summary shown
+        # above the fold; the brief is what opens underneath it.
         record["prose"] = writeup_mod.from_facts(assessment)
         problems = writeup_mod.quality_check(assessment)
+        problems += brief_quality(judgement)
         if problems:
             quality[name] = problems
         facts_out[name] = record

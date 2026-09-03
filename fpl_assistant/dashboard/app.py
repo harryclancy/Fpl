@@ -1641,13 +1641,15 @@ def load_writeups() -> dict:
 
 
 def render_compact_player(facts: dict) -> None:
-    """One player, at a glance, with the depth one tap away.
+    """One player, at a glance, with the judgement one tap away.
 
-    Roughly a phone-screen each rather than several. Everything shown here
-    comes from the structured assessment, so a sentence about another
-    player cannot appear in it.
+    The card is the decision; the dropdown is the reasoning that reached
+    it. Raw sources sit in a second dropdown below, deliberately
+    separate — mixing quoted sentences into the argument is what made the
+    old write-ups read like a clippings file rather than a view.
     """
     verdict = facts.get("verdict", "Keep")
+    judgement = facts.get("brief") or {}
     minutes = facts.get("expected_minutes", "Unknown")
     minutes_label = ("Minutes: " + minutes.lower()) if minutes != "Unknown" else (
         "Team-news evidence is limited")
@@ -1662,20 +1664,39 @@ def render_compact_player(facts: dict) -> None:
         + (f"<p class='fpl-meta'>{facts['fixture']}</p>" if facts.get("fixture") else "")
         + "</div>"
     )
-    if facts.get("decision_line"):
+
+    if judgement.get("verdict_label"):
+        st.markdown(f"**{judgement['verdict_label']}**")
+    elif facts.get("decision_line"):
         st.markdown(f"**{facts['decision_line']}**")
 
     lines = []
-    if facts.get("main_risk"):
-        lines.append(f"**Main risk:** {facts['main_risk']}")
     if facts.get("next_fixtures"):
         lines.append("**Next 4:** " + " · ".join(facts["next_fixtures"][:4]))
-    lines.append(f"**Confidence:** {facts.get('confidence', 'Low').lower()}")
+    lines.append("**Confidence:** "
+                 + str(judgement.get("confidence")
+                       or facts.get("confidence", "Low")).lower()
+                 + (f" — {judgement['confidence_reason']}"
+                    if judgement.get("confidence_reason") else ""))
     st.caption("  \n".join(lines))
 
-    with st.expander("Why — and the sources"):
-        if facts.get("prose"):
+    if judgement:
+        with st.expander("Why he's in my team"):
+            for heading, key in (("Why he's in my team", "why"),
+                                 ("The case for", "case_for"),
+                                 ("The case against", "against")):
+                if judgement.get(key):
+                    st.markdown(f"**{heading}.** {judgement[key]}")
+            if judgement.get("verdict"):
+                st.markdown(f"**Manager's verdict — {judgement['verdict_label']}.** "
+                            f"{judgement['verdict']}")
+    elif facts.get("prose"):
+        with st.expander("Why he's in my team"):
             st.markdown(facts["prose"])
+
+    with st.expander("Evidence & sources"):
+        st.caption("The raw material the judgement above was built from, kept "
+                   "separate from it on purpose.")
         for label, key in (("Availability", "availability"),
                            ("Recent selection", "recent_selection"),
                            ("Role", "role"), ("Set pieces", "set_pieces"),
@@ -1683,7 +1704,12 @@ def render_compact_player(facts: dict) -> None:
                            ("Expert view", "expert_view")):
             if facts.get(key):
                 st.markdown(f"**{label}.** {facts[key]}")
-        for claim in facts.get("claims", [])[:6]:
+        claims = facts.get("claims", [])
+        if not claims:
+            st.markdown("No article retrieved this week is about him "
+                        "directly, so the judgement above rests on the "
+                        "official data, the fixtures and his selection record.")
+        for claim in claims[:6]:
             st.markdown(f"- *{claim['source']}* ({claim['kind']}) — “{claim['text']}”")
             if claim.get("url"):
                 st.caption(claim["url"])
