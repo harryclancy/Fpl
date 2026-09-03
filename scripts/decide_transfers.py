@@ -650,10 +650,13 @@ def transfer_inputs(plan, rec, statuses, live, assessments, state,
     # The next realistic sales, so "why him" is a comparison rather than
     # an assertion — ranked as the diagnosis ranked them.
     sold = {move.out_name for move in plan.moves}
+    # Position carried through so a midfield sale is compared with a
+    # midfielder rather than with the backup goalkeeper.
     other_sales = [
         (a.name, a.sell_urgency, a.band,
-         statuses[a.name].outlook if a.name in statuses else "")
-        for a in assessments if a.name not in sold][:3]
+         statuses[a.name].outlook if a.name in statuses else "",
+         a.signals.position)
+        for a in assessments if a.name not in sold][:6]
 
     # The other targets the engine costed for the same outgoing player,
     # with what happened to them.

@@ -31,15 +31,24 @@ def side(name, club="CHE", pos="MID", price=7.0,
                    fixtures=list(fixtures), **kw)
 
 
-def state(bank=0.5, free_transfers=1):
+def state(bank=0.5, free_transfers=1, sells=None):
+    """A squad state whose selling values cover the players under test.
+
+    Without them a move is unaffordable, and the affordability check
+    fires before anything else — correctly, but it hides the rule the
+    test is actually about.
+    """
     values = {f"P{i}": 6.0 for i in range(15)}
+    values.update(sells or {"Gabriel": 8.0, "Semenyo": 8.5, "Out": 6.5,
+                            "Enzo": 6.5, "A": 6.0, "B": 6.0, "Asset": 8.0,
+                            "Owned": 6.0, "Settled": 7.0})
     return st.SquadState(bank=bank, free_transfers=free_transfers, event=4,
                          squad_size=15, selling_values=values,
                          purchase_values=values, selling_basis="conservative")
 
 
 def move(out="Out", into="In", out_club="CHE", in_club="LIV", position="MID",
-         selling=6.5, buying=7.0, out_5gw=18.0, in_5gw=27.0, **kw):
+         selling=8.0, buying=6.5, out_5gw=18.0, in_5gw=27.0, **kw):
     made = st.Move(out, into, out_club=out_club, in_club=in_club,
                    position=position, selling_value=selling, buy_price=buying,
                    out_5gw=out_5gw, in_5gw=in_5gw, **kw)
@@ -121,6 +130,7 @@ def test_a_hit_that_does_not_clear_rolling_is_refused():
     second = move("Semenyo", "Saka", out_club="MCI", in_club="ARS",
                   out_5gw=25.0, in_5gw=30.2)
     plan = st._plan("package", [first, second], state(bank=0.0))
+    assert plan.affordable, "the fixture must be affordable to test the hit"
     brief = tb.build(inputs(
         plan, [(side("Gabriel", "ARS", "DEF", 8.0), side("Calafiori", "ARS", "DEF", 6.5)),
                (side("Semenyo", "MCI"), side("Saka", "ARS", price=10.0))]))
@@ -349,3 +359,50 @@ def test_a_move_with_no_published_evidence_fails_the_evidence_question():
     brief = tb.build(inputs(plan, [(out, into)]))
     failed = [q for q, ok, _ in brief.trust if not ok]
     assert "Does the reasoning use actual evidence?" in failed
+
+
+# --- defects the live regression run exposed ----------------------------
+
+def test_an_unaffordable_move_is_refused_before_anything_else_is_argued():
+    """It was printed with a negative bank and a verdict about team news."""
+    out = side("Owned", price=5.0, five=20.0)
+    into = side("Expensive", club="LIV", price=12.0, five=28.0)
+    swap = move("Owned", "Expensive", selling=5.0, buying=12.0,
+                out_5gw=20.0, in_5gw=28.0)
+    plan = st._plan("single", [swap], state(bank=0.0, sells={"Owned": 5.0}))
+    brief = tb.build(inputs(plan, [(out, into)]))
+    assert not plan.affordable
+    assert "cannot be afforded" in brief.verdict
+    assert "UNAFFORDABLE" in brief.arithmetic
+    assert "cannot be afforded" in brief.case_against
+
+
+def test_a_sale_is_compared_with_a_player_in_the_same_position():
+    """A midfielder was measured against the backup goalkeeper, twice."""
+    brief = upgrade_brief(other_sales=[
+        ("Backup keeper", 50.0, "Possible sell", "Likely bench", "GKP"),
+        ("Another mid", 30.0, "Monitor", "Likely to start", "MID")])
+    assert "Another mid" in brief.why_out
+    assert "Backup keeper" not in brief.why_out
+
+
+def test_the_same_sentence_is_not_repeated_for_two_alternatives():
+    brief = upgrade_brief(other_sales=[
+        ("First", 60.0, "Possible sell", "50-50", "MID"),
+        ("Second", 58.0, "Possible sell", "50-50", "MID")])
+    sentences = [part.strip() for part in brief.why_out.split(". ") if part]
+    assert len(sentences) == len(set(sentences)), brief.why_out
+
+
+def test_a_player_with_no_fixture_list_says_so_rather_than_printing_dashes():
+    blank = side("Unknown", fixtures=[("—", 3.0)] * 4)
+    assert "no fixture list" in blank.labels()
+
+
+def test_selling_out_of_position_does_not_block_the_sale_justification():
+    """A more sellable GOALKEEPER is not a reason to refuse a midfield
+    upgrade — you cannot buy a midfielder with a goalkeeper's money."""
+    brief = upgrade_brief(other_sales=[
+        ("Backup keeper", 70.0, "Strong sell", "Likely bench", "GKP")])
+    assert dict((q, ok) for q, ok, _ in brief.trust)[
+        "Is he the right player to sell?"]

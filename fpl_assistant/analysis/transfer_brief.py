@@ -74,7 +74,9 @@ class Side:
         return sum(scores) / len(scores) if scores else 3.0
 
     def labels(self, weeks: int = 4) -> str:
-        return " → ".join(label for label, _ in self.fixtures[:weeks])
+        known = [label for label, _ in self.fixtures[:weeks]
+                 if label and label.strip("— ")]
+        return " → ".join(known) if known else "no fixture list available"
 
 
 @dataclass
@@ -173,7 +175,13 @@ def arithmetic(inputs: TransferBriefInputs) -> str:
     else:
         parts.append("no hit, this is within your free transfers")
         parts.append(f"net {plan.net_5gw:+.1f} after the flexibility given up")
-    parts.append(f"£{plan.bank_before:.1f}m → £{plan.bank_after:.1f}m in the bank")
+    if plan.affordable:
+        parts.append(
+            f"£{plan.bank_before:.1f}m → £{plan.bank_after:.1f}m in the bank")
+    else:
+        parts.append(
+            f"UNAFFORDABLE — it needs £{-plan.bank_after:.1f}m more than the "
+            f"squad can raise")
     parts.append(f"{plan.free_transfers_after} free transfer"
                  f"{'s' if plan.free_transfers_after != 1 else ''} next week")
     return ". ".join(part[0].upper() + part[1:] for part in parts) + "."
@@ -359,6 +367,11 @@ def case_against(inputs: TransferBriefInputs) -> str:
     plan, (out, into) = inputs.plan, inputs.sides[0]
     doubts = []
 
+    if not plan.affordable:
+        doubts.append(
+            f"it cannot be afforded — £{plan.bank_after:.1f}m in the bank "
+            f"afterwards, so the move does not exist as described")
+
     if out.secure and out.sell_urgency < 30:
         doubts.append(
             f"the biggest downside is that {out.name} is not a problem — "
@@ -448,13 +461,21 @@ def why_out(inputs: TransferBriefInputs) -> str:
             f"urgency.")
     out = sold[0]
     names = {side.name for side in sold}
-    others = [row for row in inputs.other_sales if row[0] not in names][:2]
-    for name, urgency, band, outlook in others:
+    pool = [row for row in inputs.other_sales if row[0] not in names]
+    # Same position first: "he is a better sale than the backup
+    # goalkeeper" is not an argument about a midfielder, and it appeared
+    # twice in a row because the pool was never filtered.
+    same = [row for row in pool if len(row) > 4 and row[4] == out.position]
+    others = (same or pool)[:2]
+    for row in others:
+        name, urgency, band, outlook = row[:4]
         if urgency > out.sell_urgency + 5:
+            where = (f"in {out.position}" if len(row) > 4 and row[4] == out.position
+                     else f"at {row[4]}" if len(row) > 4 else "in his position")
             lines.append(
-                f"{name} scores higher at {urgency:.0f}, so he is the more "
-                f"obvious sale on paper — he is kept because no affordable "
-                f"upgrade was found in his position this week.")
+                f"{name} scores higher at {urgency:.0f} and is the more "
+                f"obvious sale on paper; he is kept because no affordable "
+                f"upgrade was found {where} this week.")
         else:
             lines.append(
                 f"He is the better sale than {name}, who is {outlook.lower()} "
@@ -480,7 +501,8 @@ def best_sale_justified(inputs: TransferBriefInputs) -> tuple[bool, str]:
         return True, f"{out.name} is a genuine problem at {out.sell_urgency:.0f}/100"
     better = [row for row in inputs.other_sales
               if row[0] != out.name and row[1] > out.sell_urgency + 15
-              and row[3] not in ("Very likely to start", "Likely to start")]
+              and row[3] not in ("Very likely to start", "Likely to start")
+              and (len(row) < 5 or row[4] == out.position)]
     if better:
         return False, (
             f"{better[0][0]} is more sellable ({better[0][1]:.0f} against "
@@ -724,6 +746,11 @@ def verdict(inputs: TransferBriefInputs) -> tuple[str, str]:
             "carrying it, and next week it becomes two.")
 
     plan, (out, into) = inputs.plan, inputs.sides[0]
+    if not plan.affordable:
+        return NOT_WORTH_A_HIT, (
+            f"It cannot be afforded: £{plan.bank_after:.1f}m in the bank "
+            f"afterwards. Nothing else about it matters until the money "
+            f"works.")
     if plan.hit and inputs.margin < st.DECISION_MARGIN:
         return NOT_WORTH_A_HIT, (
             f"On raw projections the package gains {plan.gross_5gw:+.1f} over "
