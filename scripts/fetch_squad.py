@@ -86,6 +86,9 @@ def main() -> int:
         row = indexed.loc[pick.player_id]
         squad.append({
             "id": int(pick.player_id),
+            # Selling value, not market price — see models.SquadPick.
+            "selling_price": round(float(pick.selling_price), 1),
+            "purchase_price": round(float(pick.purchase_price), 1),
             "name": str(row.get("web_name")),
             "team": str(row.get("team_short_name")),
             "position": str(row.get("position")),

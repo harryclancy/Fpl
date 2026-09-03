@@ -598,7 +598,7 @@ def transfer(out_writeup: PlayerWriteup, in_writeup: PlayerWriteup,
 # about one player reaching another player's card.
 
 def from_facts(facts) -> str:
-    """A compact write-up: what to do with him, and why. 70-130 words.
+    """A compact write-up: what to do with him, and why. Up to 120 words.
 
     Seven headings repeating the same information is not thoroughness, it
     is padding — and padding is what forced the same sentence to appear
@@ -659,7 +659,7 @@ def from_facts(facts) -> str:
         sentences.append("No article retrieved this week discusses him directly.")
 
     text = " ".join(sentences)
-    return _cap_words(text, 130)
+    return _cap_words(text, 120)
 
 
 def _trim(text: str, limit: int = 150) -> str:

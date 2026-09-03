@@ -158,6 +158,13 @@ class SquadPick:
     is_vice_captain: bool
     multiplier: int
     position_order: int  # 1-15, squad slot order
+    # What FPL would actually give you for him, and what you paid. These
+    # are NOT the market price: FPL returns only half of any rise since
+    # purchase, so selling a risen asset raises less than his listed value
+    # and a transfer plan costed on market price can be unaffordable in
+    # reality. Zero means the API did not supply it.
+    selling_price: float = 0.0
+    purchase_price: float = 0.0
 
 
 @dataclass
@@ -191,6 +198,8 @@ def parse_squad(team_id: int, event: int, picks_response: dict) -> Squad:
             is_vice_captain=p["is_vice_captain"],
             multiplier=p["multiplier"],
             position_order=p["position"],
+            selling_price=float(p.get("selling_price", 0) or 0) / 10.0,
+            purchase_price=float(p.get("purchase_price", 0) or 0) / 10.0,
         )
         for p in picks_response["picks"]
     ]

@@ -146,7 +146,7 @@ def test_the_write_up_stays_within_a_readable_length():
                      quotes=[quote(f"Haaland is a clear buy and takes the penalties. "
                                    f"Sentence {i}.") for i in range(20)])
     words = len(writeup.from_facts(facts).split())
-    assert 15 <= words <= 130, words
+    assert 15 <= words <= 120, words
 
 
 def test_the_quality_check_catches_a_leaked_claim():

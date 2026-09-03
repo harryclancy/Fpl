@@ -1391,69 +1391,91 @@ def render_transfer_decision() -> None:
 
     The page used to say "Recommended: roll" and then show large transfer
     cards telling you to make a move. That is not a presentation problem —
-    it is the interface disagreeing with itself. There is one plan here,
-    and rejected ideas live under Other options considered at a fraction
-    of the visual weight.
+    it is the interface disagreeing with itself. Everything rendered here
+    comes off a single recommendation, so the sections cannot contradict
+    each other, and the four lines under the headline answer the only
+    questions that matter before a deadline: what is wrong, what you gain,
+    what it costs, and what would change it.
     """
     payload = load_decision()
+    rec = payload.get("recommendation") or {}
+    explanation = payload.get("explanation") or {}
     winner = payload.get("winner")
-    options = payload.get("options") or []
-    if not winner:
+    if not rec and not winner:
         return
 
     _section("Transfer plan")
 
-    if winner.get("kind") == "roll":
-        best = next((o for o in options
-                     if o.get("kind") == "transfer" and not o.get("rejected")), None)
+    if rec.get("incomplete"):
+        render_html(
+            "<div class='fpl-card fpl-plan-card'>"
+            "<h3>No recommendation this week</h3>"
+            "<p class='fpl-meta'>Required data is missing</p></div>")
+        st.markdown(
+            "**Why.** " + explanation.get("problem", "")
+            + "\n\nA recommendation built on numbers that are not known would "
+            "look actionable and be wrong, so none is made.")
+        return
+
+    plan = rec.get("winner") or {}
+    acting = bool(plan.get("moves"))
+    headline = explanation.get("headline") or ("Roll the transfer" if not acting
+                                               else plan.get("label", ""))
+
+    if not acting:
         render_html(
             "<div class='fpl-card fpl-plan-card'>"
             "<h3>Roll the transfer</h3>"
-            "<p class='fpl-meta'>1 free transfer becomes 2 next week</p>"
-            "</div>"
-        )
-        st.markdown(
-            "**Why.** No player in the squad has a strong enough case against him to "
-            "justify using the transfer this week."
-        )
-        if best:
-            st.markdown(
-                f"**Closest alternative.** {best['label']} — worth about "
-                f"{best.get('net_gain_5gw', best.get('gain_5gw', 0)):+.1f} points over "
-                f"five gameweeks, which is not enough to give up the flexibility."
-            )
-        st.caption("Confidence: medium")
+            f"<p class='fpl-meta'>{plan.get('free_transfers', 1)} free transfer "
+            f"becomes {plan.get('free_transfers_after', 2)} next week</p></div>")
     else:
-        render_html(
-            "<div class='fpl-card fpl-plan-card'>"
-            "<h3>Make this move</h3>"
+        moves = plan.get("moves", [])
+        rows = "".join(
             "<div class='fpl-swap'>"
             f"<div class='fpl-out'><div class='lab'>Out</div>"
-            f"<div class='leg'>{winner['out']}</div></div>"
+            f"<div class='leg'>{m['out']}</div></div>"
             "<div class='arrow'>↓</div>"
             f"<div class='fpl-in'><div class='lab'>In</div>"
-            f"<div class='leg'>{winner['in']}</div></div>"
-            "</div></div>"
-        )
-        st.markdown(
-            f"**This gameweek** {winner.get('gain_this_gw', 0):+.1f}  ·  "
-            f"**Next 5** {winner.get('gross_gain_5gw', 0):+.1f}  \n"
-            f"**Hit** −{winner.get('hit_points', 0):.0f}  ·  "
-            f"**Net over 5** {winner.get('net_gain_5gw', 0):+.1f}  ·  "
-            f"**Bank after** £{winner.get('bank_after', 0):.1f}m"
-        )
-        if render_corpus_transfer(winner["out"], winner["in"]):
-            pass
-        st.caption(f"Confidence: {winner.get('confidence', 'medium').lower()}")
+            f"<div class='leg'>{m['in']}</div></div></div>"
+            for m in moves)
+        hit = plan.get("hit", 0)
+        badge = (f"<p class='fpl-meta'>Costs a {hit:.0f}-point hit</p>"
+                 if hit else "<p class='fpl-meta'>No hit — within your free "
+                 "transfers</p>")
+        render_html("<div class='fpl-card fpl-plan-card'>"
+                    f"<h3>{headline}</h3>{rows}{badge}</div>")
 
-    considered = [o for o in options if o.get("kind") == "transfer"][:6]
-    if considered:
-        with st.expander(f"Other options considered ({len(considered)})"):
-            for option in considered:
-                note = (f"Rejected — {option['rejection_reason']}"
-                        if option.get("rejected") else
-                        f"{option.get('net_gain_5gw', 0):+.1f} over five gameweeks")
-                st.markdown(f"**{option['label']}** — {note}")
+    for label, key in (("What's wrong", "problem"), ("What you gain", "gain"),
+                       ("What it costs", "cost"), ("", "changes")):
+        text = explanation.get(key)
+        if not text:
+            continue
+        st.markdown(f"**{label}.** {text}" if label else f"_{text}_")
+
+    if rec.get("close_call"):
+        st.info("Close call — a manager who did the opposite would not be "
+                "making a mistake.")
+    st.caption(f"Confidence: {plan.get('confidence', 'Medium').lower()}  ·  "
+               f"Net over five gameweeks {plan.get('net_5gw', 0):+.1f}")
+
+    alternatives = rec.get("alternatives") or []
+    if alternatives:
+        with st.expander(f"Other plans considered ({len(alternatives)})"):
+            for other in alternatives:
+                st.markdown(
+                    f"**{other['label']}** — {other.get('net_5gw', 0):+.1f} over "
+                    f"five gameweeks after costs"
+                    + (f", a {other['hit']:.0f}-point hit included"
+                       if other.get("hit") else ""))
+
+    refused = rec.get("rejected") or []
+    if refused:
+        with st.expander(f"Ruled out ({len(refused)})"):
+            st.caption("These failed one of the twelve checks, so they are not "
+                       "options with a caveat — they are out.")
+            for other in refused[:8]:
+                why = (other.get("rejection_reasons") or [""])[0]
+                st.markdown(f"**{other['label']}** — {why.split(': ', 1)[-1]}")
 
     ranking = payload.get("sell_urgency_ranking") or []
     if ranking:
@@ -1493,37 +1515,6 @@ def render_sell_urgency() -> None:
                 + (f"  \n  ↳ {reasons}" if reasons else "")
                 + (f"  \n  ↳ protected by {protections}" if protections else "")
             )
-
-
-def render_decision_summary() -> None:
-    """Why the recommended decision beat the alternatives, including rolling."""
-    payload = load_decision()
-    winner = payload.get("winner")
-    options = payload.get("options") or []
-    if not winner:
-        return
-
-    if winner.get("kind") == "roll":
-        st.info(
-            "**Recommended: roll the transfer.** "
-            + " ".join(winner.get("reasons", []))
-        )
-    for note in payload.get("sanity_checks", []):
-        (st.warning if note.startswith("WARNING") else st.caption)(note)
-
-    considered = [o for o in options if o.get("kind") == "transfer"][:4]
-    if considered:
-        with st.expander(f"Options compared ({len(options)} including rolling)"):
-            st.caption("Every attractive target is tested against every plausible "
-                       "outgoing player, not just the one the money fits.")
-            for option in considered:
-                st.markdown(
-                    f"- **{option['label']}** — {option['classification']}, "
-                    f"score {option['score']}, this GW {option['gain_this_gw']:+.2f}, "
-                    f"3GW {option['gain_3gw']:+.2f}, 5GW {option['gain_5gw']:+.2f}, "
-                    f"confidence {option['confidence']}"
-                    + (f"  \n  ↳ risk: {option['risks'][0]}" if option.get("risks") else "")
-                )
 
 
 def render_corpus_transfer(out_name: str, in_name: str) -> bool:
@@ -1671,8 +1662,8 @@ def render_compact_player(facts: dict) -> None:
         + (f"<p class='fpl-meta'>{facts['fixture']}</p>" if facts.get("fixture") else "")
         + "</div>"
     )
-    if facts.get("prose"):
-        st.markdown(facts["prose"])
+    if facts.get("decision_line"):
+        st.markdown(f"**{facts['decision_line']}**")
 
     lines = []
     if facts.get("main_risk"):
@@ -1682,7 +1673,9 @@ def render_compact_player(facts: dict) -> None:
     lines.append(f"**Confidence:** {facts.get('confidence', 'Low').lower()}")
     st.caption("  \n".join(lines))
 
-    with st.expander("More analysis & sources"):
+    with st.expander("Why — and the sources"):
+        if facts.get("prose"):
+            st.markdown(facts["prose"])
         for label, key in (("Availability", "availability"),
                            ("Recent selection", "recent_selection"),
                            ("Role", "role"), ("Set pieces", "set_pieces"),

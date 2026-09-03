@@ -18,6 +18,7 @@ from fpl_assistant.analysis import fixtures as fixtures_analysis
 from fpl_assistant.analysis import minutes as minutes_mod
 from fpl_assistant.analysis import player_facts as pf
 from fpl_assistant.analysis import squad_decision as sd
+from fpl_assistant.analysis import strategy as st
 from fpl_assistant.analysis import writeup as writeup_mod
 from fpl_assistant.analysis.squad_builder import score_players
 from fpl_assistant.models import attach_team_names, events_df, fixtures_df, players_df, teams_df
@@ -308,6 +309,89 @@ def _fixture_scores(live, team_id) -> list[float]:
     return list(live["fixture_table"].get(team_id, []))[:5]
 
 
+KIND_MAP = {pf.FACT: st.FACT, pf.STATISTICAL: st.STATISTIC,
+            pf.EXPERT: st.EXPERT, pf.INFERENCE: st.INFERENCE}
+
+
+def reasons_from(facts: pf.PlayerFacts) -> list[st.Reason]:
+    """Turns one player's structured facts into arguments about HIM.
+
+    Every claim already survived player_facts.classify, which drops
+    anything not about this player. What is added here is the level: a
+    claim drawn from the fixture, team-strength or clean-sheet buckets is
+    true of the whole club, so it cannot separate two of its players.
+    """
+    reasons = []
+    for claim in facts.claims:
+        if not claim.player_named:
+            continue
+        level = (st.CLUB_LEVEL if set(claim.buckets) & pf.CLUB_LEVEL_BUCKETS
+                 else st.PLAYER_LEVEL)
+        reasons.append(st.Reason(
+            text=claim.text, about=facts.player, level=level,
+            kind=KIND_MAP.get(claim.kind, st.INFERENCE),
+            source=claim.source))
+    return reasons
+
+
+def squad_state(squad_payload: dict, squad: list[dict]) -> st.SquadState:
+    """The real state, or an honest record of what is missing from it.
+
+    Selling price, not market price: FPL returns only half of any rise
+    since purchase, so a plan costed on the listed value can be
+    unaffordable in reality. A zero here makes the state incomplete rather
+    than silently substituting the market price.
+    """
+    selling, purchase = {}, {}
+    for player in squad:
+        name = player["name"]
+        selling[name] = float(player.get("selling_price") or 0.0)
+        purchase[name] = float(player.get("purchase_price") or 0.0)
+    return st.SquadState(
+        bank=float(squad_payload.get("bank", 0) or 0),
+        free_transfers=int(squad_payload.get("free_transfers", 1) or 1),
+        event=int(squad_payload.get("planning_gameweek", 0) or 0),
+        squad_size=len(squad), selling_values=selling,
+        purchase_values=purchase)
+
+
+def legacy_view(rec: st.Recommendation) -> tuple[dict, list[dict]]:
+    """The old winner/options shape, DERIVED from the one recommendation.
+
+    Not a second engine. Every field here is read off `rec`, so the older
+    parts of the page cannot disagree with the newer ones — which is
+    precisely how the page once printed ROLL at the top and "make the
+    move" three sections down.
+    """
+    def as_option(plan: st.Plan) -> dict:
+        move = plan.moves[0] if plan.moves else None
+        return {
+            "kind": "roll" if plan.kind == "roll" else "transfer",
+            "label": plan.label,
+            "classification": plan.kind.title(),
+            "out": move.out_name if move else "",
+            "in": move.in_name if move else "",
+            "gain_this_gw": round(plan.gain_gw1, 2),
+            "gain_3gw": round(plan.gain_3gw, 2),
+            "gain_5gw": round(plan.gross_5gw, 2),
+            "gross_gain_5gw": round(plan.gross_5gw, 2),
+            "hit_points": plan.hit,
+            "net_gain_5gw": plan.net_5gw,
+            "bank_after": plan.bank_after,
+            "hits": plan.paid_transfers,
+            "rejected": plan.rejected,
+            "rejection_reason": "; ".join(plan.rejection_reasons),
+            "score": plan.net_5gw,
+            "confidence": plan.confidence,
+            "reasons": plan.notes + [r.text for m in plan.moves for r in m.reasons][:3],
+            "risks": plan.rejection_reasons,
+            "components": {},
+        }
+
+    return as_option(rec.winner), [as_option(p) for p in
+                                   [rec.winner] + rec.alternatives + rec.rejected]
+
+
 def main() -> int:
     try:
         squad_payload = json.loads(SQUAD.read_text())
@@ -344,6 +428,11 @@ def main() -> int:
                 name=name, club=str(player.get("team", "")),
                 position=str(player.get("position", "")),
                 price=float(player.get("price", 0) or 0)))
+
+    # THE DIAGNOSIS COMES FIRST. Nothing about the market has been read
+    # at this point, so the squad is graded on its own merits rather than
+    # against whatever happens to look exciting this week.
+    assessments = sd.rank(signals)
 
     # Realistic replacements. The engine tests every target against every
     # plausible seller, so the pool only needs to be the players who could
@@ -383,8 +472,56 @@ def main() -> int:
                 fixture_scores=_fixture_scores(live, record.get("team")),
             ))
 
-    decision = sd.decide(signals, targets=targets, bank=bank,
-                         free_transfers=int(squad_payload.get("free_transfers", 1)))
+    # Structured facts, then prose from them. The homepage renders only
+    # from this, so an article sentence about one player cannot reach
+    # another player's card.
+    facts_out, quality, target_facts_out, built = {}, {}, {}, {}
+    reasons: list[st.Reason] = []
+    for signal, player in zip(signals, squad):
+        entry = entries.get(signal.name, {})
+        assessment = pf.build(
+            signal.name, signal.club, signal.position, signal.price,
+            quotes=entry.get("quotes") or [],
+            availability=(pf.OUT if signal.flagged else
+                          pf.DOUBT if signal.minutes_category in
+                          ("Significant concern", "Major doubt") else pf.FIT),
+            expected_minutes=signal.minutes_category,
+            sell_urgency=next((a.sell_urgency for a in assessments
+                               if a.name == signal.name), 0.0),
+            sell_band=next((a.band for a in assessments
+                            if a.name == signal.name), ""),
+            fixture=_fixture_label(live, player) if live else "",
+            next_fixtures=_fixture_labels(live, player, 4) if live else [],
+            form=(f"{signal.points_per_game:.1f} points a game this season"
+                  if signal.points_per_game else ""),
+            starting=not player.get("on_bench"),
+            captain=bool(player.get("is_captain")),
+            vice=bool(player.get("is_vice_captain")),
+        )
+        built[signal.name] = assessment
+        reasons.extend(reasons_from(assessment))
+
+
+    # The same treatment for every realistic target, so a move is argued
+    # from evidence about BOTH players or from neither.
+    for target in targets:
+        found = evidence.search(target.name, target.club, store.items)
+        target_facts = pf.build(
+            target.name, target.club, target.position, target.price,
+            quotes=[{"text": item.title, "source": item.source,
+                     "url": item.url, "published": item.published}
+                    for item in found[:12]],
+            expected_minutes=target.minutes_category,
+            fixture="", form="")
+        target.source_count = len({c.source for c in target_facts.claims}) or 1
+        reasons.extend(reasons_from(target_facts))
+        target_facts_out[target.name] = target_facts.as_dict()
+
+    # --- one state, one decision ---------------------------------------
+    state = squad_state(squad_payload, squad)
+    plans = st.generate_plans(assessments, targets, state, reasons)
+    rec = st.choose(plans, state)
+    explanation = st.explain(rec)
 
     # --- the completeness gate -----------------------------------------
     # A ranking computed on zeros is not a result. Rather than presenting
@@ -396,23 +533,73 @@ def main() -> int:
         "Fixtures loaded": bool(live) and any(s.fixture_scores for s in signals),
         "No projections replaced by zero": all(s.projection > 0 for s in signals),
         "Expected minutes assessed for the majority": assessed > len(signals) / 2,
-        "15/15 sell urgency scores": len(decision.assessments) == len(squad) == 15,
-        "Roll transfer included": any(o.kind == "roll" for o in decision.options),
-        "3-GW comparison calculated": all(
-            hasattr(o, "gain_3gw") for o in decision.options),
+        "15/15 sell urgency scores": len(assessments) == len(squad) == 15,
+        "Real selling prices for all 15": state.complete,
+        "Roll transfer included": any(p.kind == "roll" for p in plans),
         "5-GW comparison calculated": all(
-            hasattr(o, "gain_5gw") for o in decision.options),
-        "Budget effects calculated": all(
-            o.kind != "transfer" or o.bank_after is not None for o in decision.options),
+            p.gross_5gw is not None for p in plans),
+        "Every plan's arithmetic verified": all(
+            not st.verify_arithmetic(p) for p in plans if not p.rejected),
+        "Exactly one recommendation": rec.winner is not None,
     }
+
+    # THE WRITE-UPS ARE COMPOSED LAST, FROM THE DECISION.
+    # This is the ordering that makes a contradiction impossible rather
+    # than detectable: a card cannot say "the one to move on" while the
+    # plan keeps him, because the verdict it renders is read off the plan
+    # instead of being computed a second time from the same evidence.
+    for name, assessment in built.items():
+        if name in rec.out_names:
+            assessment.verdict = pf.SELL_VERDICT
+            line = "Selling him this week — see the transfer plan above."
+        elif rec.incomplete:
+            line = "No transfer decision this week."
+        else:
+            if assessment.verdict == pf.SELL_VERDICT:
+                assessment.verdict = (pf.MONITOR if assessment.sell_urgency >= 45
+                                      else pf.KEEP)
+            line = "Keeping him this week."
+        record = assessment.as_dict()
+        record["decision_line"] = line
+        record["prose"] = writeup_mod.from_facts(assessment)
+        problems = writeup_mod.quality_check(assessment)
+        if problems:
+            quality[name] = problems
+        facts_out[name] = record
+
+    # --- the write-ups must agree with the decision --------------------
+    # Generated last, scanned before anything is written. A page whose
+    # prose argues with its own recommendation is not published.
+    blocks = [(f"{name} write-up", record.get("prose", ""))
+              for name, record in facts_out.items() if isinstance(record, dict)]
+    blocks.extend((f"decision {key}", value) for key, value in explanation.items())
+    squad_names = set(built)
+    clashes = st.contradictions(rec, blocks, squad_names)
+    audit = st.trust_audit(rec, blocks, squad_names)
+    checks["No text contradicts the recommendation"] = not clashes
+    checks["Manual trust audit passed"] = st.audit_passed(audit)
     complete = all(checks.values())
 
-    payload = decision.as_dict()
+    winner_view, option_views = legacy_view(rec)
+    payload = {
+        "sell_urgency_ranking": [a.as_dict() for a in assessments],
+        "recommendation": rec.as_dict(),
+        "explanation": explanation,
+        "trust_audit": [{"question": q, "passed": ok, "detail": detail}
+                        for q, ok, detail in audit],
+        "contradictions": clashes,
+        # Derived from the recommendation above, never computed separately,
+        # so the older sections of the page cannot disagree with it.
+        "winner": winner_view,
+        "options": option_views,
+        "sanity_checks": rec.notes,
+    }
     payload["note"] = (
-        "Transfer decisions built from the fifteen players owned rather than from a "
-        "shopping list. Sell urgency is scored per player from live FPL data and "
-        "corpus evidence; no player is protected by name. Rolling is scored on the "
-        "same scale as every move."
+        "One decision, chosen between complete plans rather than between individual "
+        "swaps. Every plan carries its own hit, its own bank and its own free "
+        "transfers, and any plan that fails one of the twelve rejection rules is out "
+        "rather than shown with a caveat. Evidence may only argue for a move if it is "
+        "about one of the two players in it."
     )
     payload["gameweek"] = squad_payload.get("planning_gameweek")
     payload["generated_from_corpus"] = len(store)
@@ -444,39 +631,8 @@ def main() -> int:
             by_position[position] = ranked[:top]
         payload["market_projections"] = by_position
 
-    # Structured facts, then prose from them. The homepage renders only
-    # from this, so an article sentence about one player cannot reach
-    # another player's card.
-    facts_out, quality = {}, {}
-    for signal, player in zip(signals, squad):
-        entry = entries.get(signal.name, {})
-        assessment = pf.build(
-            signal.name, signal.club, signal.position, signal.price,
-            quotes=entry.get("quotes") or [],
-            availability=(pf.OUT if signal.flagged else
-                          pf.DOUBT if signal.minutes_category in
-                          ("Significant concern", "Major doubt") else pf.FIT),
-            expected_minutes=signal.minutes_category,
-            sell_urgency=next((a.sell_urgency for a in decision.assessments
-                               if a.name == signal.name), 0.0),
-            sell_band=next((a.band for a in decision.assessments
-                            if a.name == signal.name), ""),
-            fixture=_fixture_label(live, player) if live else "",
-            next_fixtures=_fixture_labels(live, player, 4) if live else [],
-            form=(f"{signal.points_per_game:.1f} points a game this season"
-                  if signal.points_per_game else ""),
-            starting=not player.get("on_bench"),
-            captain=bool(player.get("is_captain")),
-            vice=bool(player.get("is_vice_captain")),
-        )
-        record = assessment.as_dict()
-        record["prose"] = writeup_mod.from_facts(assessment)
-        problems = writeup_mod.quality_check(assessment)
-        if problems:
-            quality[signal.name] = problems
-        facts_out[signal.name] = record
-
     payload["player_facts"] = facts_out
+    payload["target_facts"] = target_facts_out
     payload["quality_problems"] = quality
 
     payload["projection_audit"] = {
@@ -513,12 +669,37 @@ def main() -> int:
           f"{live['team_games'] if live else 0} team games played)\n")
     print(f"{'#':>2}  {'PLAYER':<12}{'POS':<5}{'£':>6}{'PPG':>6}{'PROJ':>6}  "
           f"{'URG':>4}{'HOLD':>6}  {'MINUTES':<20} BAND")
-    for index, a in enumerate(decision.assessments, 1):
+    for index, a in enumerate(assessments, 1):
         s = a.signals
         print(f"{index:>2}. {a.name:<12}{s.position:<5}{s.price:>6.1f}"
               f"{s.points_per_game:>6.1f}{s.projection:>6.1f}  "
               f"{a.sell_urgency:>4.0f}{a.hold_strength:>6.0f}  "
               f"{s.minutes_category:<20} {a.band}")
+    print("\nTHE DECISION")
+    print(f"  {explanation['headline']}")
+    for key in ("problem", "gain", "cost", "changes"):
+        if explanation.get(key):
+            print(f"    {key}: {explanation[key]}")
+    if rec.alternatives:
+        print("\n  Alternatives considered")
+        for plan in rec.alternatives[:4]:
+            print(f"    {plan.label:<40} net {plan.net_5gw:+6.2f} over 5 GW")
+    if rec.rejected:
+        print(f"\n  Rejected plans: {len(rec.rejected)}")
+        for plan in rec.rejected[:5]:
+            print(f"    {plan.label:<40} {plan.rejection_reasons[0]}")
+
+    print("\nMANUAL TRUST AUDIT")
+    for question, passed, detail in audit:
+        print(f"  [{'x' if passed else ' '}] {question}")
+        print(f"      {detail}")
+    if clashes:
+        print("\nCONTRADICTIONS")
+        for clash in clashes:
+            print(f"  - {clash}")
+    if not st.audit_passed(audit):
+        print("\nDO NOT SHIP — the trust audit did not pass.")
+
     print(f"\nWrote {OUT}")
     return 0 if complete else 1
 
