@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-03T05:47:28+00:00",
- "seconds": 165.8,
+ "ran_at": "2026-09-03T11:17:13+00:00",
+ "seconds": 202.5,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 564,
- "substantive_items": 125,
- "duplicates_removed": 5,
- "deeply_analysed": 82,
- "deep_read_failed": 38,
- "corpus_size": 3935,
+ "sources_readable": 65,
+ "candidates_discovered": 722,
+ "substantive_items": 275,
+ "duplicates_removed": 32,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 4096,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 125 articles"
+    "65/78 sources returned 275 articles"
    ]
   },
   "blackout": {
@@ -37,7 +37,6 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "Fantasy Football Pundit: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
@@ -45,11 +44,10 @@
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: nothing published in the last 10 days",
+  "PhysioRoom: timed out after 12s for https://physioroom.com/feeds/all.rss.xml",
   "The Hard Tackle: nothing published in the last 10 days",
   "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
@@ -58,11 +56,11 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-02T13:09:36+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-03T05:55:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
-   "team_news_found": false,
+   "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
@@ -70,18 +68,38 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
     "set pieces",
     "statistics",
     "tactics",
+    "team news",
     "transfer"
    ],
    "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal vs Chelsea Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
+     "source": "RotoWire Soccer",
+     "published": "2026-09-03T05:03:00+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Arsenal injury, suspension list and return dates vs. Chelsea: Declan Rice, Jurrien Timber, Cristhian Mosquera latest",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-mosquera-timber-latest-arsenal-injury-suspension-list-vs-chelsea_604308.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T05:55:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Sunday's Premier League clash with Chelsea."
+    },
     {
      "title": "Eberechi Eze set for new Arsenal role as Arteta misses out on elite attacking duo",
      "url": "https://www.football365.com/news/eberechi-eze-new-role-arsenal-miss-out-vinicius-junior-julian-alvarez",
@@ -117,24 +135,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "The proposed move would see Nwaneri join Bundesliga club Borussia Dortmund on loan, without an option to purchase, according to reports. Arsenal , who will strive to retain the Premier League title for the first time in the North London club’s history this season, are willing to part ways with their 19-year-old prospect. Borussia Dortmund ’s interest in Nwaneri pre-dates the signing of Giannis Kon"
-    },
-    {
-     "title": "Unlikely Arsenal man on course for season-best tally after Mikel Arteta's latest tactical innovation",
-     "url": "https://www.fourfourtwo.com/person/player/unlikely-arsenal-man-on-course-for-season-best-tally-after-mikel-artetas-latest-tactical-innovation",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T10:30:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Few pundits or supporters could see anything other than Arsenal retaining the Premier League trophy this season before opening day. Mikel Arteta has strengthened his squad in all areas of the pitch, whilst the managerial changes at their major rivals over the last eight months have left them not yet in a position to challenge. The Spaniard’s side weren’t the most attractive title winners last term"
-    },
-    {
-     "title": "‘After seven years at Arsenal, I wanted to help Man City win’ Vivianne Miedema on transfer motivation and WSL growth",
-     "url": "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T08:01:17+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Vivianne Miedema helped Manchester City break Chelsea’s six-year Women’s Super League winning streak last season as they claimed victory under new manager Andree Jeglertz. Manchester City claimed their first WSL title since 2016 last term, before going on to complete a domestic double by beating Brighton to lift the FA Cup. Miedema, who joined from Arsenal in 2024, says the achievement represented"
     }
    ]
   },
@@ -760,9 +760,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "source_count": 10,
-   "latest_evidence": "2026-09-02T20:55:32+00:00",
+   "latest_evidence": "2026-09-03T11:45:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -823,6 +823,24 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "Zopharâs Gameweek 3 Q&A: Top City picks, Triple Captain Haaland, buy Konsa?",
+     "url": "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
+     "source": "Fantasy Football Hub",
+     "published": "2026-09-03T11:45:59+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "FPL Gameweek 3 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whetherÂ Ezri KonsaÂ is one to buy this week, the top Manchester City picks amid their new signings, using the Triple Captain on Erling HaalandÂ and the case […]"
+    },
+    {
+     "title": "Who is the top scorer of 2026? Harry Kane running away with the title",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "source": "Football365",
+     "published": "2026-09-03T05:55:59+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Harry Kane was out of the blocks like a bullet in 2026, opening a big lead over 2025’s clear winner Kylian Mbappe and everyone else."
+    },
+    {
      "title": "Harry and Lloyd’s Predictions GW3",
      "url": "https://fantasyfootball247.co.uk/harry-and-lloyds-predictions-gw3-3/",
      "source": "Fantasy Football 247",
@@ -830,15 +848,6 @@
      "matched_on": "haaland",
      "kind": "general",
      "excerpt": "Harry and Lloyd’s Predictions GW3 Welcome to Harry and Lloyd’s Predictions GW3 A very high scoring week this week. Haaland had a massive say in the points total. Lots of people correctly predicted him to be first scorer. Lots of extra bonus 5 points for managers and that was needed to claim top spot this […] The post Harry and Lloyd’s Predictions GW3 appeared first on Fantasy Football 247 - Premie"
-    },
-    {
-     "title": "Who is the top scorer of 2026? Harry Kane running away with the title",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "source": "Football365",
-     "published": "2026-09-02T13:55:59+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Harry Kane was out of the blocks like a bullet in 2026, opening a big lead over 2025’s clear winner Kylian Mbappe and everyone else."
     },
     {
      "title": "Best FPL players for Gameweek 3",
@@ -877,18 +886,9 @@
      "excerpt": "Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season. Is he worth spending the money on for FPL managers? The post Haaland or no Haaland? The If, When, and Why for FPL Managers appeared first on Opta Analyst ."
     },
     {
-     "title": "Fpl gw6 triple captain haaland",
-     "url": "https://fplcaptain.com/news/fpl-gw6-triple-captain-haaland",
-     "source": "FPL Captain",
-     "published": "",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Fpl gw3 captain picks haaland saka and differential targets",
-     "url": "https://fplcaptain.com/news/fpl-gw3-captain-picks-haaland-saka-and-differential-targets",
-     "source": "FPL Captain",
+     "title": "Best fpl budget enablers 2026 27 haaland draft",
+     "url": "https://onefpl.com/blog/best-fpl-budget-enablers-2026-27-haaland-draft",
+     "source": "OneFPL",
      "published": "",
      "matched_on": "haaland",
      "kind": "general",
