@@ -893,6 +893,7 @@ def main() -> int:
     squad_names = set(built)
     clashes = st.contradictions(rec, blocks, squad_names)
     audit = st.trust_audit(rec, blocks, squad_names)
+    checks["Every write-up passes its own quality test"] = not quality
     checks["No text contradicts the recommendation"] = not clashes
     checks["Manual trust audit passed"] = st.audit_passed(audit)
     complete = all(checks.values())

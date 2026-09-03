@@ -512,17 +512,22 @@ def case_against(inputs: BriefInputs, playing: str) -> list[str]:
             f"{fixture.opponent} {fixture.venue} is a genuinely hard week and "
             f"{subject} will limit the ceiling")
 
+    enabler = inputs.price <= 4.6
     if inputs.points_per_game and inputs.positional_ppg:
         if inputs.points_per_game <= inputs.positional_ppg * 0.7:
+            tail = ("which is the whole of what he offers"
+                    if enabler else
+                    f"and £{inputs.price:.1f}m is a lot to have tied up in it")
             against.append(
                 f"his {inputs.points_per_game:.1f} points a game is poor for "
-                f"the position and £{inputs.price:.1f}m is a lot to have tied "
-                f"up in it")
+                f"the position, {tail}")
     if (inputs.attacker and inputs.xgi90 and inputs.positional_xgi90
             and inputs.xgi90 <= inputs.positional_xgi90 * 0.7):
         against.append("the underlying attacking numbers are thin, so the "
                        "returns are not obviously waiting to arrive")
-    money = poor_value(inputs)
+    # Not for an enabler: he is not bought to out-score anyone, and
+    # saying his money is idle when his money is the point is backwards.
+    money = "" if enabler else poor_value(inputs)
     if money:
         against.append(money)
 
@@ -642,9 +647,14 @@ def selection_case(inputs: BriefInputs) -> str:
     names = " and ".join(o.name for o in others)
     if inputs.on_bench:
         best = others[0]
-        return (f"He sits because {names} are ahead of him on this week's "
-                f"balance of minutes and fixture — {best.name} in particular"
-                + (f" ({best.detail})" if best.detail else "") + ".")
+        verb = "is" if len(others) == 1 else "are"
+        detail = f" ({best.detail})" if best.detail else ""
+        if len(others) == 1:
+            return (f"He sits because {names} {verb} ahead of him on this "
+                    f"week's balance of minutes and fixture{detail}.")
+        return (f"He sits because {names} {verb} ahead of him on this week's "
+                f"balance of minutes and fixture — {best.name} in "
+                f"particular{detail}.")
     return (f"He starts ahead of {names}, whose minutes or fixtures are the "
             f"weaker of the options available this week.")
 
@@ -678,9 +688,10 @@ def decide(inputs: BriefInputs, playing: str, direction: str) -> tuple[str, str]
             return BENCH_MONITOR, ("Not enough certainty over his minutes to "
                                    "start him, and not enough wrong with him "
                                    "to spend a transfer.")
-        return BENCH_HOLD, ("A useful body with secure minutes is worth having "
-                            "on the bench; he is not the problem with this "
-                            "squad.")
+        cover = ("secure minutes" if playing == SECURE
+                 else "minutes that look likely enough")
+        return BENCH_HOLD, (f"A useful body with {cover} is worth having on the "
+                            f"bench; he is not the problem with this squad.")
 
     if playing == UNCERTAIN:
         return START_MONITOR, ("The fixture is worth taking the chance on, but "
@@ -800,12 +811,15 @@ def build(inputs: BriefInputs) -> Brief:
         "case_for": [fixture_case(inputs)],
         # THE CASE AGAINST — always something, and always about him. Capped
         # at the strongest three: every possible doubt reads as hedging.
-        "against": [_sentence_from(doubts[:3])],
-        # THE VERDICT — the decision, and what it trades away.
-        "verdict": [rationale],
+        "against": [_sentence_from(_strongest(doubts))],
+        # THE VERDICT — the decision, the horizon, and what it trades
+        # away. The look-ahead is core: a brief that stops at this week
+        # cannot tell a hard fixture from a bad signing, and leaving it to
+        # compete for spare words meant a long case-against silently
+        # deleted it.
+        "verdict": [rationale] + ([run_line] if run_line else []),
     }
     sections = _fill(sections, [
-        ("verdict", run_line),                       # the look-ahead is core
         ("verdict", keep_or_sell_case(inputs, direction)),
         ("case_for", returns_case(inputs)),
         ("case_for", opportunity_case(inputs)),
@@ -859,6 +873,26 @@ def _role_line(inputs: BriefInputs, playing: str) -> str:
             f"{descriptor}, "
             f"{'the ' if where in ('captain', 'vice-captain') else ''}{where} "
             f"this week.")
+
+
+DOUBT_BUDGET = 46
+
+
+def _strongest(doubts: list[str]) -> list[str]:
+    """The doubts worth the room, in the order they were raised.
+
+    Capped by words rather than by count. Three sentences of caveat read
+    as hedging, and on one player they grew long enough to push the
+    look-ahead off the end of the write-up entirely.
+    """
+    kept, used = [], 0
+    for doubt in doubts:
+        cost = len(doubt.split())
+        if kept and used + cost > DOUBT_BUDGET:
+            break
+        kept.append(doubt)
+        used += cost
+    return kept
 
 
 def _sentence_from(parts: list[str]) -> str:
@@ -923,6 +957,26 @@ def _role_line(inputs: BriefInputs, playing: str) -> str:
             f"{descriptor}, "
             f"{'the ' if where in ('captain', 'vice-captain') else ''}{where} "
             f"this week.")
+
+
+DOUBT_BUDGET = 46
+
+
+def _strongest(doubts: list[str]) -> list[str]:
+    """The doubts worth the room, in the order they were raised.
+
+    Capped by words rather than by count. Three sentences of caveat read
+    as hedging, and on one player they grew long enough to push the
+    look-ahead off the end of the write-up entirely.
+    """
+    kept, used = [], 0
+    for doubt in doubts:
+        cost = len(doubt.split())
+        if kept and used + cost > DOUBT_BUDGET:
+            break
+        kept.append(doubt)
+        used += cost
+    return kept
 
 
 def _sentence_from(parts: list[str]) -> str:
