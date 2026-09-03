@@ -406,3 +406,17 @@ def test_selling_out_of_position_does_not_block_the_sale_justification():
         ("Backup keeper", 70.0, "Strong sell", "Likely bench", "GKP")])
     assert dict((q, ok) for q, ok, _ in brief.trust)[
         "Is he the right player to sell?"]
+
+
+def test_two_players_who_are_both_fine_is_said_to_be_weak_ground():
+    """"Mitchell scores higher at 16" against an outgoing player on 0 is
+    ranking noise presented as a finding."""
+    out = side("Settled", urgency=0.0, five=21.0, fixtures=FLAT)
+    into = side("Other", club="LIV", five=24.0, fixtures=FLAT)
+    swap = move("Settled", "Other", selling=7.0, buying=6.5,
+                out_5gw=21.0, in_5gw=24.0, out_urgency=0.0)
+    plan = st._plan("single", [swap], state())
+    brief = tb.build(inputs(plan, [(out, into)], other_sales=[
+        ("Mitchell", 16.0, "Strong hold", "Very likely to start", "MID")]))
+    assert "neither he nor mitchell" in brief.why_out.lower()
+    assert "scores higher" not in brief.why_out

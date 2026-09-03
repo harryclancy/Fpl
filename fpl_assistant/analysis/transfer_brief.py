@@ -469,6 +469,16 @@ def why_out(inputs: TransferBriefInputs) -> str:
     others = (same or pool)[:2]
     for row in others:
         name, urgency, band, outlook = row[:4]
+        if max(urgency, out.sell_urgency) < 30:
+            # Both are fine. Ranking noise as though it were a finding
+            # ("scores higher at 16") reads as a problem where there is
+            # none, and the honest answer is that neither is a sale.
+            lines.append(
+                f"Neither he nor {name} ({urgency:.0f}/100) is a squad "
+                f"problem, so this is a choice between two players who are "
+                f"both doing their job — which is the weakest ground a "
+                f"transfer can stand on.")
+            continue
         if urgency > out.sell_urgency + 5:
             where = (f"in {out.position}" if len(row) > 4 and row[4] == out.position
                      else f"at {row[4]}" if len(row) > 4 else "in his position")
