@@ -199,3 +199,20 @@ def test_an_unrecognised_question_says_so_rather_than_guessing():
 def test_the_suggestion_chips_are_questions_the_engine_can_route():
     for suggestion in q.SUGGESTIONS:
         assert q.intent(suggestion) != q.UNKNOWN, suggestion
+
+
+def test_rotation_risk_only_considers_players_i_own():
+    """`player_status` also carries every transfer target that was
+    costed, so "who is most at risk" answered about a team nobody owns."""
+    state = decision()
+    state["player_status"]["Target"] = {
+        "outlook": "Very unlikely to start", "confidence": "High",
+        "minutes_label": "0-20 minutes", "expected_share": 0.1,
+        "basis": "current predicted line-ups", "stale": False,
+        "reasons": [], "vetoes": [],
+        "lineups": {"readable": 1, "starts": 0, "benched": 0, "omitted": 1,
+                    "summary": "1 leaves him out"}, "evidence": []}
+    answer = q.answer("Who is most at risk of not starting?", state)
+    assert "Target" not in answer.players
+    assert "Target" not in answer.short_answer
+    assert answer.players[0] == "Newman"

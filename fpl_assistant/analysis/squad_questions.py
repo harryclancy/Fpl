@@ -171,7 +171,12 @@ def answer(question: str, decision: dict) -> Answer:
     if kind in (WHO_SELL, WEAKEST):
         return _weakest(result, decision)
     if kind == ROTATION_RISK:
-        return _rotation(result, statuses)
+        # Restricted to the squad. `player_status` also carries every
+        # transfer target that was costed, and "who is most at risk"
+        # asked about a team the manager does not own.
+        owned = {name: state for name, state in statuses.items()
+                 if not squad or name in facts}
+        return _rotation(result, owned)
     if kind == BEST_RUN:
         return _best_run(result, facts)
 

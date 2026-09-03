@@ -952,9 +952,9 @@ def build(inputs: BriefInputs) -> Brief:
     level, why_that = confidence(inputs, playing)
     return Brief(
         player=inputs.player,
-        why=" ".join(sections["why"]), case_for=" ".join(sections["case_for"]),
-        against=" ".join(sections["against"]),
-        verdict_label=label, verdict=" ".join(sections["verdict"]),
+        why=_join(sections["why"]), case_for=_join(sections["case_for"]),
+        against=_join(sections["against"]),
+        verdict_label=label, verdict=_join(sections["verdict"]),
         next_four=[f.label for f in inputs.fixtures[:4]],
         confidence=level, confidence_reason=why_that,
         playing=playing, run=direction)
@@ -1035,6 +1035,11 @@ def _capitalise(text: str) -> str:
 
 
 MIN_WORDS, MAX_WORDS = 100, 180
+
+
+def _join(parts: list) -> str:
+    """Sentences into a paragraph, without the gaps where one was empty."""
+    return " ".join(part.strip() for part in parts if part and part.strip())
 
 
 def _fill(sections: dict, optional: list[tuple], budget: int) -> dict:
