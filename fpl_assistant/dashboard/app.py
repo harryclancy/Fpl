@@ -1461,21 +1461,19 @@ def load_decision() -> dict:
 
 
 def render_transfer_decision() -> None:
-    """One decision, stated plainly, with everything else collapsed.
+    """One decision, with the argument for it one tap away.
 
-    The page used to say "Recommended: roll" and then show large transfer
-    cards telling you to make a move. That is not a presentation problem —
-    it is the interface disagreeing with itself. Everything rendered here
-    comes off a single recommendation, so the sections cannot contradict
-    each other, and the four lines under the headline answer the only
-    questions that matter before a deadline: what is wrong, what you gain,
-    what it costs, and what would change it.
+    The collapsed card carries the four numbers a manager checks before
+    anything else — free transfers, hit, net effect, confidence — and the
+    reasoning opens underneath. Everything technical is nested a level
+    deeper, on the same principle as the player rows: the judgement
+    first, the evidence available but never in front of it.
     """
     payload = load_decision()
     rec = payload.get("recommendation") or {}
+    brief = payload.get("transfer_brief") or {}
     explanation = payload.get("explanation") or {}
-    winner = payload.get("winner")
-    if not rec and not winner:
+    if not rec and not brief:
         return
 
     _section("Transfer plan")
@@ -1485,25 +1483,15 @@ def render_transfer_decision() -> None:
             "<div class='fpl-card fpl-plan-card'>"
             "<h3>No recommendation this week</h3>"
             "<p class='fpl-meta'>Required data is missing</p></div>")
-        st.markdown(
-            "**Why.** " + explanation.get("problem", "")
-            + "\n\nA recommendation built on numbers that are not known would "
-            "look actionable and be wrong, so none is made.")
+        st.markdown("**Why.** " + explanation.get("problem", ""))
         return
 
     plan = rec.get("winner") or {}
     acting = bool(plan.get("moves"))
-    headline = explanation.get("headline") or ("Roll the transfer" if not acting
-                                               else plan.get("label", ""))
+    headline = brief.get("label") or ("Roll the transfer" if not acting
+                                      else plan.get("label", ""))
 
-    if not acting:
-        render_html(
-            "<div class='fpl-card fpl-plan-card'>"
-            "<h3>Roll the transfer</h3>"
-            f"<p class='fpl-meta'>{plan.get('free_transfers', 1)} free transfer "
-            f"becomes {plan.get('free_transfers_after', 2)} next week</p></div>")
-    else:
-        moves = plan.get("moves", [])
+    if acting:
         rows = "".join(
             "<div class='fpl-swap'>"
             f"<div class='fpl-out'><div class='lab'>Out</div>"
@@ -1511,54 +1499,97 @@ def render_transfer_decision() -> None:
             "<div class='arrow'>↓</div>"
             f"<div class='fpl-in'><div class='lab'>In</div>"
             f"<div class='leg'>{m['in']}</div></div></div>"
-            for m in moves)
-        hit = plan.get("hit", 0)
-        badge = (f"<p class='fpl-meta'>Costs a {hit:.0f}-point hit</p>"
-                 if hit else "<p class='fpl-meta'>No hit — within your free "
-                 "transfers</p>")
-        render_html("<div class='fpl-card fpl-plan-card'>"
-                    f"<h3>{headline}</h3>{rows}{badge}</div>")
+            for m in plan.get("moves", []))
+    else:
+        rows = "<p class='fpl-meta'>Keep the transfer — it becomes two next week</p>"
 
-    for label, key in (("What's wrong", "problem"), ("What you gain", "gain"),
-                       ("What it costs", "cost"), ("", "changes")):
-        text = explanation.get(key)
-        if not text:
-            continue
-        st.markdown(f"**{label}.** {text}" if label else f"_{text}_")
+    hit = plan.get("hit", 0)
+    tags = "".join((
+        _tag("t-flat", f"FT {plan.get('free_transfers', 1)}"),
+        _tag("t-bad" if hit else "t-good",
+             f"Hit −{hit:.0f}" if hit else "No hit"),
+        _tag("t-good" if plan.get("net_5gw", 0) > 0 else "t-warn",
+             f"Net 5-GW {plan.get('net_5gw', 0):+.1f}"),
+        _tag(CONFIDENCE_TAGS.get(brief.get("confidence", ""), "t-flat"),
+             f"{brief.get('confidence', 'Medium')} confidence"),
+    ))
+    render_html(f"<div class='fpl-card fpl-plan-card'><h3>{headline}</h3>"
+                f"{rows}<div class='tags'>{tags}</div></div>")
 
-    if rec.get("close_call"):
-        st.info("Close call — a manager who did the opposite would not be "
-                "making a mistake.")
-    st.caption(f"Confidence: {plan.get('confidence', 'Medium').lower()}  ·  "
-               f"Net over five gameweeks {plan.get('net_5gw', 0):+.1f}")
+    if brief.get("verdict_label"):
+        render_html(
+            f"<div class='fpl-verdict'>"
+            f"<div class='label'>{brief['verdict_label']}</div>"
+            f"{brief.get('verdict', '')}</div>")
 
-    alternatives = rec.get("alternatives") or []
+    with st.expander("Why this transfer?"):
+        if brief.get("arithmetic"):
+            st.caption(brief["arithmetic"])
+        for heading, key in (("Why this move", "why_move"),
+                             ("The case for", "case_for"),
+                             ("The case against", "case_against"),
+                             ("Why this player out", "why_out"),
+                             ("Why this player in", "why_in"),
+                             ("Why now", "why_now"),
+                             ("Why not roll", "why_not_roll"),
+                             ("3-5 gameweek plan", "horizon")):
+            if brief.get(key):
+                st.markdown(f"**{heading}.** {brief[key]}")
+
+    with st.expander("Deeper evidence & sources"):
+        st.caption("Every item here was graded for this decision before any "
+                   "of it was believed.")
+        items = brief.get("evidence") or []
+        for item in items[:8]:
+            st.markdown(
+                f"- **{item.get('about', '')}** · {item.get('kind', '')}"
+                f" · {item.get('source', 'unknown')} — {item.get('text', '')}")
+        if not items:
+            st.markdown("Nothing published this week argues for or against "
+                        "this decision; it rests on the official data, the "
+                        "fixtures and the checked minutes.")
+        failed = [row for row in (brief.get("trust") or []) if not row["passed"]]
+        st.markdown("**Trust test.** "
+                    + ("All ten questions pass." if not failed else
+                       "Failed: " + "; ".join(row["question"] for row in failed)))
+
+    alternatives = payload.get("transfer_alternatives") or []
     if alternatives:
-        with st.expander(f"Other plans considered ({len(alternatives)})"):
+        with st.expander(f"Alternatives considered ({len(alternatives)})"):
             for other in alternatives:
-                st.markdown(
-                    f"**{other['label']}** — {other.get('net_5gw', 0):+.1f} over "
-                    f"five gameweeks after costs"
-                    + (f", a {other['hit']:.0f}-point hit included"
-                       if other.get("hit") else ""))
+                st.markdown(f"**{other['label']}** — {other['note']}")
+                inner = other.get("brief") or {}
+                if inner.get("why_move"):
+                    with st.expander("More"):
+                        for heading, key in (("Why this move", "why_move"),
+                                             ("The case against", "case_against"),
+                                             ("Verdict", "verdict")):
+                            if inner.get(key):
+                                st.markdown(f"**{heading}.** {inner[key]}")
 
-    refused = rec.get("rejected") or []
+    refused = payload.get("transfer_rejected") or []
     if refused:
         with st.expander(f"Ruled out ({len(refused)})"):
-            st.caption("These failed one of the twelve checks, so they are not "
-                       "options with a caveat — they are out.")
-            for other in refused[:8]:
-                why = (other.get("rejection_reasons") or [""])[0]
-                st.markdown(f"**{other['label']}** — {why.split(': ', 1)[-1]}")
+            st.caption("These failed one of the twelve checks, so they are "
+                       "not options with a caveat — they are out.")
+            for other in refused:
+                st.markdown(f"**{other['label']}** — {other['note']}")
+
+    watchlist = payload.get("transfer_watchlist") or []
+    if watchlist:
+        with st.expander("Watchlist — what would change this"):
+            for entry in watchlist:
+                st.markdown(f"**{entry['label']}**  \n{entry['note']}")
 
     ranking = payload.get("sell_urgency_ranking") or []
     if ranking:
         with st.expander("How every player was rated"):
-            st.caption("Scored from this week's evidence and the official data. "
-                       "No player is protected by name.")
+            st.caption("Scored from this week's evidence and the official "
+                       "data. No player is protected by name.")
             for row in ranking:
                 st.markdown(f"**{row['player']}** — {row['band']}"
-                            + (f" · {row['reasons'][0]}" if row.get("reasons") else ""))
+                            + (f" · {row['reasons'][0]}" if row.get("reasons")
+                               else ""))
 
 
 def render_sell_urgency() -> None:

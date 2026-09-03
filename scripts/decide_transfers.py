@@ -21,6 +21,7 @@ from fpl_assistant.analysis import player_facts as pf
 from fpl_assistant.analysis import squad_decision as sd
 from fpl_assistant.analysis import status as status_mod
 from fpl_assistant.analysis import strategy as st
+from fpl_assistant.analysis import transfer_brief as tbrief
 from fpl_assistant.analysis import writeup as writeup_mod
 from fpl_assistant.analysis.squad_builder import score_players
 from fpl_assistant.models import attach_team_names, events_df, fixtures_df, players_df, teams_df
@@ -600,6 +601,88 @@ def _transfer_alternatives(signal, plans) -> list:
     return found[:1]
 
 
+def _side(name: str, statuses: dict, live, assessments,
+          fallback_five: float = 0.0) -> "tbrief.Side":
+    """One end of a swap, assembled from the state already established.
+
+    Reads the status pass for whether he plays, the diagnosis for how
+    sellable he is, and the fixture table for what is coming — so the
+    transfer argument and the player card are drawn from one set of
+    facts rather than two.
+    """
+    state = statuses.get(name)
+    record = (live or {}).get("by_name", {}).get(name, {})
+    team_id = record.get("team")
+    runs = ((live or {}).get("fixture_runs", {}).get(team_id) or [])
+    assessment = next((a for a in assessments if a.name == name), None)
+    return tbrief.Side(
+        name=name,
+        club=str(record.get("club") or (state.club if state else "")),
+        position=str(record.get("position") or (state.position if state else "")),
+        price=float(record.get("price") or (state.price if state else 0.0)),
+        outlook=(state.outlook if state else "50-50"),
+        minutes_label=(state.minutes_label if state else ""),
+        confidence=(state.confidence if state else "Low"),
+        starts=(state.starts if state else 0),
+        team_games=(state.team_games if state else 0),
+        new_club=(state.new_club if state else ""),
+        injury=(state.injury if state else ""),
+        set_pieces=bool(record.get("set_pieces")),
+        penalties=bool(record.get("penalties")),
+        sell_urgency=(assessment.sell_urgency if assessment else 0.0),
+        hold_strength=(assessment.hold_strength if assessment else 0.0),
+        five_gw=float(record.get("five_gw") or fallback_five),
+        fixtures=[(f"{entry['opponent']} ({'H' if entry['home'] else 'A'})",
+                   float(entry["difficulty"])) for entry in runs[:5]],
+        evidence=[item.as_dict() for item in (state.evidence if state else [])][:4],
+    )
+
+
+def transfer_inputs(plan, rec, statuses, live, assessments, state,
+                    plans) -> "tbrief.TransferBriefInputs":
+    """Everything one transfer argument may use, and nothing else."""
+    sides = []
+    for move in plan.moves:
+        sides.append((
+            _side(move.out_name, statuses, live, assessments, move.out_5gw),
+            _side(move.in_name, statuses, live, assessments, move.in_5gw)))
+
+    # The next realistic sales, so "why him" is a comparison rather than
+    # an assertion — ranked as the diagnosis ranked them.
+    sold = {move.out_name for move in plan.moves}
+    other_sales = [
+        (a.name, a.sell_urgency, a.band,
+         statuses[a.name].outlook if a.name in statuses else "")
+        for a in assessments if a.name not in sold][:3]
+
+    # The other targets the engine costed for the same outgoing player,
+    # with what happened to them.
+    other_targets = []
+    if plan.moves:
+        wanted = plan.moves[0].out_name
+        for other in plans:
+            if other is plan:
+                continue
+            for move in other.moves:
+                if move.out_name != wanted or move.in_name == plan.moves[0].in_name:
+                    continue
+                other_targets.append((
+                    move.in_name,
+                    move.points_delta - plan.moves[0].points_delta,
+                    (other.rejection_reasons or [""])[0]))
+    other_targets.sort(key=lambda row: row[1], reverse=True)
+
+    roll = next((p for p in plans if p.kind == "roll"), None)
+    return tbrief.TransferBriefInputs(
+        plan=plan, sides=sides,
+        roll_net=(roll.net_5gw if roll else st.ROLL_VALUE),
+        margin=round(plan.net_5gw - (roll.net_5gw if roll else st.ROLL_VALUE), 2),
+        close_call=rec.close_call and plan is rec.winner,
+        free_transfers=state.free_transfers, bank_before=state.bank,
+        other_sales=other_sales, other_targets=other_targets[:2],
+        gameweek=state.event)
+
+
 def brief_quality(judgement) -> list[str]:
     """The user's own final test, run before anything is saved.
 
@@ -952,6 +1035,32 @@ def main() -> int:
     rec = st.choose(plans, state)
     explanation = st.explain(rec)
 
+    # --- the transfer, argued the way a manager would argue it ---------
+    # The same treatment the player write-ups get: named judgements built
+    # from the state already established, rather than a paragraph about
+    # why the incoming player is good.
+    transfer = tbrief.build(transfer_inputs(
+        rec.winner, rec, statuses, live, assessments, state, plans))
+    alternatives = [
+        {"label": plan.label,
+         "note": tbrief.rejected_note(plan),
+         "brief": tbrief.build(transfer_inputs(
+             plan, rec, statuses, live, assessments, state, plans)).as_dict()}
+        for plan in rec.alternatives[:3] if plan.moves]
+    refused = [{"label": plan.label, "note": tbrief.rejected_note(plan)}
+               for plan in rec.rejected[:6]]
+    # The best refused plan, framed as a thing to watch rather than a
+    # prediction. A future transfer stated as a certainty is the same
+    # overreach as a starting place stated from last season's record.
+    watchlist = []
+    for plan in rec.rejected[:1]:
+        if not plan.moves:
+            continue
+        side = _side(plan.moves[0].in_name, statuses, live, assessments,
+                     plan.moves[0].in_5gw)
+        watchlist.append({"label": plan.label,
+                          "note": tbrief.watchlist_note(plan, side)})
+
     # --- the completeness gate -----------------------------------------
     # A ranking computed on zeros is not a result. Rather than presenting
     # one, the run says exactly which inputs were missing.
@@ -1030,6 +1139,7 @@ def main() -> int:
     checks["Current status checked for all 15"] = (
         len([p for p in squad if p["name"] in statuses]) == len(squad) == 15)
     checks["No impossible player states"] = not validation
+    checks["Transfer write-up passes its trust test"] = transfer.trusted
     checks["Every write-up passes its own quality test"] = not quality
     checks["No text contradicts the recommendation"] = not clashes
     checks["Manual trust audit passed"] = st.audit_passed(audit)
@@ -1040,6 +1150,10 @@ def main() -> int:
         "sell_urgency_ranking": [a.as_dict() for a in assessments],
         "recommendation": rec.as_dict(),
         "explanation": explanation,
+        "transfer_brief": transfer.as_dict(),
+        "transfer_alternatives": alternatives,
+        "transfer_rejected": refused,
+        "transfer_watchlist": watchlist,
         "trust_audit": [{"question": q, "passed": ok, "detail": detail}
                         for q, ok, detail in audit],
         "contradictions": clashes,
@@ -1165,6 +1279,26 @@ def main() -> int:
               f"{s.points_per_game:>6.1f}{s.projection:>6.1f}  "
               f"{a.sell_urgency:>4.0f}{a.hold_strength:>6.0f}  "
               f"{s.minutes_category:<20} {a.band}")
+    print("\nTHE TRANSFER, ARGUED")
+    print(f"  {transfer.label}  [{transfer.verdict_label}]  "
+          f"confidence {transfer.confidence}")
+    print(f"  {transfer.arithmetic}")
+    for head, key in (("WHY THIS MOVE", "why_move"),
+                      ("THE CASE FOR", "case_for"),
+                      ("THE CASE AGAINST", "case_against"),
+                      ("WHY THIS PLAYER OUT", "why_out"),
+                      ("WHY THIS PLAYER IN", "why_in"),
+                      ("WHY NOW", "why_now"),
+                      ("WHY NOT ROLL", "why_not_roll"),
+                      ("3-5 GAMEWEEK PLAN", "horizon"),
+                      ("VERDICT", "verdict")):
+        text = getattr(transfer, key)
+        if text:
+            print(f"    {head}: {text}")
+    print("  TRUST TEST")
+    for question, passed, detail in transfer.trust:
+        print(f"    [{'x' if passed else ' '}] {question} — {detail[:90]}")
+
     print("\nTHE DECISION")
     print(f"  {explanation['headline']}")
     for key in ("problem", "gain", "cost", "changes"):
