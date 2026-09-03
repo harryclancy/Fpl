@@ -524,7 +524,7 @@ def _transfer_alternatives(signal, plans) -> list:
                 reason = plan.rejection_reasons[0].split(": ", 1)[-1]
             found.append(brief_mod.Alternative(
                 name=move.in_name, five_gw=move.in_5gw,
-                rejected_because=reason))
+                delta=move.points_delta, rejected_because=reason))
     found.sort(key=lambda a: a.five_gw, reverse=True)
     return found[:1]
 

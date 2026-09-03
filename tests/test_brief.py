@@ -466,3 +466,24 @@ def test_a_club_claim_is_omitted_when_there_is_no_rating_behind_it():
     assert "reliable source of clean sheets" not in brief.case_for
     assert "meanest" not in brief.case_for
     assert brief.case_for  # the fixture itself still carries the section
+
+
+def test_the_quoted_gap_is_the_engines_own_figure():
+    """The write-up quoted +1.1 while the reason under it quoted +5.0 —
+    two separately-computed totals subtracted from each other."""
+    brief = B.build(player(five_gw=26.1, transfer_alternatives=[
+        B.Alternative("Barry", five_gw=31.1, delta=5.0,
+                      rejected_because="nothing published argues against "
+                                       "keeping him — a projection is a claim")]))
+    assert "+5.0" in brief.verdict
+    assert "+1.1" not in brief.verdict
+
+
+def test_a_quoted_rejection_reason_does_not_repeat_the_sentence_around_it():
+    brief = B.build(player(transfer_alternatives=[
+        B.Alternative("Barry", five_gw=31.1, delta=5.0,
+                      rejected_because="nothing published argues against "
+                                       "keeping him — a projection is a claim, "
+                                       "not evidence for it")]))
+    assert "a projection is a claim" not in brief.verdict
+    assert "nothing published argues against keeping him" in brief.verdict

@@ -131,6 +131,11 @@ class Alternative:
     name: str
     detail: str = ""
     five_gw: float = 0.0
+    # The engine's own five-gameweek difference for THIS swap. Two
+    # separately-computed totals subtracted from each other disagreed with
+    # the engine's own figure, so the write-up quoted +1.1 and the reason
+    # underneath it quoted +5.0.
+    delta: float | None = None
     rejected_because: str = ""
 
 
@@ -632,8 +637,9 @@ def keep_or_sell_case(inputs: BriefInputs, direction: str) -> str:
         return ("Selling him over one difficult fixture would be short-term: "
                 "the underlying reasons to own him are unchanged and the run "
                 "turns straight afterwards.")
-    if target and target.five_gw:
-        delta = target.five_gw - inputs.five_gw
+    if target and (target.five_gw or target.delta is not None):
+        delta = (target.delta if target.delta is not None
+                 else target.five_gw - inputs.five_gw)
         if delta <= 0:
             return (f"The best realistic replacement, {target.name}, projects "
                     f"{abs(delta):.1f} points LOWER over five gameweeks, so "
@@ -644,9 +650,8 @@ def keep_or_sell_case(inputs: BriefInputs, direction: str) -> str:
                     f"a transfer, so it is better spent elsewhere.")
         if target.rejected_because:
             return (f"{target.name} projects {delta:+.1f} over five gameweeks, "
-                    f"and that move was looked at and refused: "
-                    f"{target.rejected_because}. A projection gap on its own is "
-                    f"a model claim, not a reason to sell.")
+                    f"and that move was costed and refused — "
+                    f"{_shorten(target.rejected_because)}.")
         return (f"{target.name} projects {delta:+.1f} over five gameweeks, which "
                 f"is the live argument against keeping him — and it is worth "
                 f"revisiting the moment anything is published against him.")
@@ -661,6 +666,20 @@ def keep_or_sell_case(inputs: BriefInputs, direction: str) -> str:
     return ("There is no case for spending a transfer on him this week, which "
             "is the only question that matters while the squad has bigger "
             "problems.")
+
+
+def _shorten(reason: str) -> str:
+    """The engine's rejection reason, cut to the clause that carries it.
+
+    The full text is written for the transfer page, where it stands
+    alone. Quoted inside a verdict it repeated the point the sentence
+    around it was already making.
+    """
+    reason = reason.strip().rstrip(".")
+    for separator in (" — ", " -- "):
+        if separator in reason:
+            reason = reason.split(separator)[0]
+    return reason
 
 
 def selection_case(inputs: BriefInputs) -> str:
