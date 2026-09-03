@@ -206,6 +206,7 @@ class Plan:
                        "confidence": m.confidence,
                        "reasons": [{"text": r.text, "about": r.about,
                                     "level": r.level, "kind": r.kind,
+                                    "direction": r.direction,
                                     "source": r.source} for r in m.reasons],
                        "excluded_reasons": m.excluded}
                       for m in self.moves],
