@@ -479,20 +479,26 @@ def _bench_alternatives(signal, player: dict, squad: list[dict],
     """
     if not live:
         return []
+    # A starter is measured against the BENCH he is picked ahead of; a
+    # benched player against the eleven he is behind. The comparison was
+    # the wrong way round, so a starting forward was told another
+    # starting forward projected higher — true, irrelevant, and not a
+    # selection decision he can act on.
     wanted = not player.get("on_bench")
     others = []
     for other in squad:
         if other["name"] == signal.name or other.get("position") != signal.position:
             continue
-        # Picked ahead of the bench; measured against the eleven if benched.
-        if bool(other.get("on_bench")) == wanted:
+        if bool(other.get("on_bench")) != wanted:
             continue
         record = live["by_id"].get(int(other.get("id", 0) or 0)) \
             or live["by_name"].get(other["name"], {})
         runs = live.get("fixture_runs", {}).get(record.get("team")) or []
         detail = ""
-        if record.get("starts") and runs:
-            detail = (f"starting, {runs[0]['opponent']} "
+        if runs:
+            games = int(live.get("team_games", 0) or 0)
+            detail = (f"{int(record.get('starts', 0) or 0)} of {games} started, "
+                      f"{runs[0]['opponent']} "
                       f"{'at home' if runs[0]['home'] else 'away'}")
         others.append(brief_mod.Alternative(
             name=other["name"], detail=detail,
@@ -949,6 +955,13 @@ def main() -> int:
             by_position[position] = ranked[:top]
         payload["market_projections"] = by_position
 
+    if live:
+        payload["team_strength"] = {
+            str(live["teams"].loc[team_id, "short_name"]): {
+                "attack_rank": round(kinds.get("attack", 0.0), 3),
+                "defence_rank": round(kinds.get("defence", 0.0), 3)}
+            for team_id, kinds in live.get("strength_ranks", {}).items()
+            if team_id in live["teams"].index}
     payload["player_facts"] = facts_out
     payload["target_facts"] = target_facts_out
     payload["quality_problems"] = quality

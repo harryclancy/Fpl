@@ -365,7 +365,7 @@ def fixture_case(inputs: BriefInputs) -> str:
 
     if inputs.attacker:
         opponent = _rank_phrase(
-            inputs.opponent_defence_rank,
+            _agreeing(inputs.opponent_defence_rank, fixture.difficulty),
             "strongest defensive", "solid defensive",
             "leakiest defensive", "leakier defensive")
         sentence = f"{where} is {phrase} for an attacker"
@@ -381,7 +381,7 @@ def fixture_case(inputs: BriefInputs) -> str:
         return sentence
 
     opponent = _rank_phrase(
-        inputs.opponent_attack_rank,
+        _agreeing(inputs.opponent_attack_rank, fixture.difficulty),
         "most dangerous attacking", "dangerous attacking",
         "least threatening attacking", "less threatening attacking")
     sentence = f"{where} is {phrase} for a clean sheet"
@@ -395,6 +395,30 @@ def fixture_case(inputs: BriefInputs) -> str:
         weak="not a reliable source of clean sheets, so the returns lean on "
              "what he does himself rather than on the shut-out")
     return sentence
+
+
+def _agreeing(rank: float | None, difficulty: float) -> float | None:
+    """The opponent's rating, but only when it agrees with the fixture.
+
+    FPL publishes two independent views of an opponent: an editorial 1-5
+    difficulty and a 1000-1400 strength table. They can disagree, and
+    when they did the write-up printed both — "a favourable fixture,
+    against one of the strongest defensive sides in the league" — which
+    is one sentence arguing with itself. The difficulty is the number the
+    projection model uses, so it wins, and the other simply goes unsaid
+    rather than being reported as a contradiction.
+    """
+    if rank is None:
+        return None
+    easy_fixture = difficulty <= 2.6
+    hard_fixture = difficulty >= 3.7
+    weak_opponent = rank <= 0.4
+    strong_opponent = rank >= 0.6
+    if easy_fixture and strong_opponent:
+        return None
+    if hard_fixture and weak_opponent:
+        return None
+    return rank
 
 
 def _own_team_clause(club: str, rank: float | None, strong: str,
@@ -610,6 +634,10 @@ def keep_or_sell_case(inputs: BriefInputs, direction: str) -> str:
                 "turns straight afterwards.")
     if target and target.five_gw:
         delta = target.five_gw - inputs.five_gw
+        if delta <= 0:
+            return (f"The best realistic replacement, {target.name}, projects "
+                    f"{abs(delta):.1f} points LOWER over five gameweeks, so "
+                    f"there is nothing to move to even if you wanted to.")
         if delta <= 1.0:
             return (f"The best realistic replacement, {target.name}, projects "
                     f"{delta:+.1f} over five gameweeks — not enough to be worth "

@@ -373,3 +373,66 @@ def test_a_joining_line_is_read_from_published_text_not_inferred():
                      quotes=[{"text": "Ndiaye started and played the full 90 "
                                       "minutes on Saturday.", "source": "Test"}])
     assert decide.joined_recently(quiet) == ""
+
+
+# --- defects the first live run of the briefs produced -------------------
+
+def test_a_sentence_never_argues_with_itself_about_the_opponent():
+    """"a favourable fixture, against one of the strongest defensive sides"
+    reached the page: two independent FPL ratings disagreeing, both
+    printed."""
+    brief = B.build(player(position="FWD", opponent_defence_rank=0.95,
+                           fixtures=[B.Fixture("SUN", True, 2.1),
+                                     B.Fixture("BOU", False, 3.0),
+                                     B.Fixture("CHE", True, 3.0),
+                                     B.Fixture("AVL", False, 3.0)]))
+    assert "strongest defensive" not in brief.case_for
+    assert "favourable" in brief.case_for
+
+    hard = B.build(player(position="DEF", opponent_attack_rank=0.05,
+                          fixtures=[B.Fixture("MCI", False, 4.5),
+                                    B.Fixture("BUR", True, 2.0),
+                                    B.Fixture("EVE", True, 2.4),
+                                    B.Fixture("FUL", False, 2.6)]))
+    assert "least threatening" not in hard.case_for
+
+
+def test_agreeing_ratings_are_still_quoted():
+    brief = B.build(player(position="FWD", opponent_defence_rank=0.05,
+                           fixtures=[B.Fixture("SUN", True, 2.1),
+                                     B.Fixture("BOU", False, 3.0),
+                                     B.Fixture("CHE", True, 3.0),
+                                     B.Fixture("AVL", False, 3.0)]))
+    assert "leakiest defensive" in brief.case_for
+
+
+def test_a_worse_replacement_is_called_worse_not_marginal():
+    brief = B.build(player(five_gw=35.0, transfer_alternatives=[
+        B.Alternative("Weaker", five_gw=31.8)]))
+    assert "LOWER" in brief.verdict
+    assert "not enough to be worth a transfer" not in brief.verdict
+
+
+def test_a_starter_is_compared_with_the_bench_not_with_other_starters():
+    """A starting forward being told another starting forward projects
+    higher is true, irrelevant, and not a decision he can act on."""
+    live = fake_live()
+    squad = [
+        {"id": 10, "name": "Gabriel", "position": "DEF", "on_bench": False,
+         "is_captain": False, "is_vice_captain": False},
+        {"id": 11, "name": "Starter", "position": "DEF", "on_bench": False},
+        {"id": 12, "name": "Benched", "position": "DEF", "on_bench": True},
+    ]
+    live["by_id"][11] = dict(live["by_id"][10], five_gw=40.0)
+    live["by_id"][12] = dict(live["by_id"][10], five_gw=9.0)
+    signal = sd.PlayerSignals(name="Gabriel", club="ARS", position="DEF",
+                              price=8.0, gameweek_projections=[4.4] * 5)
+    names = [a.name for a in decide._bench_alternatives(
+        signal, squad[0], squad, live)]
+    assert names == ["Benched"]
+
+    benched = sd.PlayerSignals(name="Benched", club="ARS", position="DEF",
+                               price=4.0, gameweek_projections=[1.0] * 5)
+    names = [a.name for a in decide._bench_alternatives(
+        benched, squad[2], squad, live)]
+    assert "Gabriel" in names and "Benched" not in names
