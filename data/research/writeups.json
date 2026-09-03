@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-03T11:17:13+00:00",
+ "generated": "2026-09-03T11:26:02+00:00",
  "gameweek": 3,
- "corpus_size": 4096,
+ "corpus_size": 4101,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -116,12 +116,12 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
+    "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
     "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
     "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
     "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
-    "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-    "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
-    "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league"
+    "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026"
    ],
    "sources_used": [
     "Brentford",
@@ -165,39 +165,37 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "status": "Latest on Semenyo — Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.”",
-   "why_here": "Semenyo is in the starting eleven this week at £8.5m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 31 Aug.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.”",
+   "status": "Latest on Semenyo — Sports Mole, 03 Sep: “Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.”",
+   "why_here": "Semenyo is in the starting eleven this week at £8.5m as a MID. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 03 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 03 Sep: “Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.” Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 31 Aug: “Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.”",
+   "developments": "Recent developments — Sports Mole, 03 Sep: “Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.” Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html",
+    "https://www.sportsmole.co.uk/football/man-city/preview/man-city-vs-coventry-prediction-team-news-lineups_604324.html",
+    "https://www.sportsmole.co.uk/football/man-city/feature/three-ways-man-city-could-line-up-with-gbp125m-signing-enzo-fernandez_604323.html",
     "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/doku-nunes-latest-man-city-injury-list-for-coventry-clash_604319.html",
-    "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
-    "https://www.fantasyfootballscout.co.uk/2026/08/31/fpl-gameweek-3-early-scout-picks-piling-up-on-man-city",
-    "https://www.fantasyfootballscout.co.uk/2026/08/31/bouaddi-to-man-city-could-it-affect-oreilly",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
    ],
    "sources_used": [
     "FPL Captain",
     "Fantasy Football Hub",
-    "Fantasy Football Scout",
-    "FourFourTwo FPL",
     "Sports Mole"
    ],
    "quotes": [
     {
-     "text": "Antoine Semenyo (£8.5m) very likely starts, as he always does, but Phil Foden (£7.0m) and Rayan Cherki (£7.6m) are cheaper – and the latter is setting FPL pulses racing.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/fpl-gameweek-3-early-scout-picks-piling-up-on-man-city",
-     "published": "2026-08-31T21:40:00+00:00",
+     "text": "Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/preview/man-city-vs-coventry-prediction-team-news-lineups_604324.html",
+     "published": "2026-09-03T08:30:00+01:00",
      "tone": "positive",
      "topics": [
-      "fpl advice"
+      "transfer"
      ]
     },
     {
@@ -524,21 +522,21 @@
   "Schade": {
    "player": "Schade",
    "club": "BRE",
-   "status": "Latest on Schade — Brentford: “Schade's first-half effort looked to be enough for the three points, but Calvert-Lewin struck with 11 minutes remaining and it ended honours even in West Yorkshire.”",
-   "why_here": "Schade is in the starting eleven this week at £6.0m as a MID. The selection rests on 6 retrieved item(s) from 2 source(s).",
-   "case_for": "What supports keeping him: Brentford: “Leeds United 1 Brentford 1: Kevin Schade scores in Elland Road draw | Brentford FC Kevin Schade's first goal of the season was cancelled out by Dominic Calvert-Lewin as Brentford were held to a 1-1 draw against Leeds United at Elland Road.” Brentford: “Goalscorer Schade won a penalty during a typically high-energy performance against Spurs on the opening weekend, and the German's sublime finish against Leeds opened his account for the 2026/27 campaign.”",
+   "status": "Latest on Schade — Sports Mole, 03 Sep: “Brentford had never lost a Premier League game in which Schade had scored before gameweek two, and that sequence was prolonged against the Whites, even if Dominic Calvert-Lewin stole a point back for Daniel Farke's side late on.”",
+   "why_here": "Schade is in the starting eleven this week at £6.0m as a MID. The selection rests on 6 retrieved item(s) from 2 source(s), the most recent dated 03 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 03 Sep: “The £35m left-back from West Ham United was an unused substitute in last weekend's 1-1 draw with Leeds United , in which Keane Lewis-Potter laid on the assist for Kevin Schade's opening goal.” Sports Mole, 03 Sep: “The Lewis-Potter and Schade link-up guaranteed that Brentford would avoid defeat at Elland Road, as the Bees have never lost a Premier League match in which the latter has scored in, winning 13 and drawing four such fixtures.” Sports Mole, 03 Sep: “Match preview The sensational Kevin Schade streak continued at Elland Road last weekend, where the Brentford attacker's audacious flick put Keith Andrews 's side a goal to the good against Leeds, who had to pull off a never-before-seen feat to deny the Bees a slice of the spoils.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "medium",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
+    "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
     "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
     "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
     "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
-    "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-    "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
     "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade"
    ],
    "sources_used": [
@@ -546,6 +544,40 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "The £35m left-back from West Ham United was an unused substitute in last weekend's 1-1 draw with Leeds United , in which Keane Lewis-Potter laid on the assist for Kevin Schade's opening goal.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
+     "published": "2026-09-03T10:09:00+01:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "The Lewis-Potter and Schade link-up guaranteed that Brentford would avoid defeat at Elland Road, as the Bees have never lost a Premier League match in which the latter has scored in, winning 13 and drawing four such fixtures.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
+     "published": "2026-09-03T10:09:00+01:00",
+     "tone": "positive",
+     "topics": [
+      "fixtures"
+     ]
+    },
+    {
+     "text": "Match preview The sensational Kevin Schade streak continued at Elland Road last weekend, where the Brentford attacker's audacious flick put Keith Andrews 's side a goal to the good against Leeds, who had to pull off a never-before-seen feat to deny the Bees a slice of the spoils.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
+     "published": "2026-09-03T10:00:00+01:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Brentford had never lost a Premier League game in which Schade had scored before gameweek two, and that sequence was prolonged against the Whites, even if Dominic Calvert-Lewin stole a point back for Daniel Farke's side late on.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
+     "published": "2026-09-03T10:00:00+01:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Leeds United 1 Brentford 1: Kevin Schade scores in Elland Road draw | Brentford FC Kevin Schade's first goal of the season was cancelled out by Dominic Calvert-Lewin as Brentford were held to a 1-1 draw against Leeds United at Elland Road.",
      "source": "Brentford",
@@ -846,40 +878,30 @@
   "Dubravka": {
    "player": "Dubravka",
    "club": "TOT",
-   "status": "Latest on Dubravka — NBC Sports Rotoworld PL, 02 Sep: “Spurs kept adding right to the deadline, as Mykhailo Mudryk and Tosin Adarabioyo added even more Premier League experience to De Zerbi’s project after summer moves for Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dubravka, Mateus Fernandes, Sandro Tonali, Savio, and Omar Marmoush.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 02 Sep.",
+   "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — NBC Sports Rotoworld PL, 02 Sep: “Spurs kept adding right to the deadline, as Mykhailo Mudryk and Tosin Adarabioyo added even more Premier League experience to De Zerbi’s project after summer moves for Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dubravka, Mateus Fernandes, Sandro Tonali, Savio, and Omar Marmoush.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
-    "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719",
-    "https://www.nbcsports.com/soccer/news/how-to-watch-nottingham-forest-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
-    "https://www.fourfourtwo.com/person/player/roberto-de-zerbi-and-tottenham-hotspur-receive-major-transfer-deadline-day-boost",
-    "https://www.fourfourtwo.com/team/theres-been-serious-mismanagement-for-a-while-now-it-didnt-ever-start-making-any-more-sense-peter-crouch-on-the-disastrous-decision-tottenham-hotspur-made-last-season",
-    "https://www.fantasyfootballscout.co.uk/2026/08/31/is-marmoush-back-on-the-fpl-radar-after-spurs-move",
-    "https://www.newcastleunited.com/en/news/confirmed-line-up-spurs-a"
+    "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-savio-maddison-make-the-cut-predicted-tottenham-xi-vs-forest_604364.html",
+    "https://www.sportsmole.co.uk/football/nottingham-forest/predicted-lineups/munoz-makes-the-xi-predicted-nottingham-forest-lineup-vs-tottenham_604363.html",
+    "https://www.sportsmole.co.uk/football/spurs/preview/nottm-forest-vs-spurs-prediction-team-news-lineups_604360.html",
+    "https://www.nottinghamforest.co.uk/news/2026/september/03/how-to-watch-glasner-s-pre-spurs-press-conference/",
+    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-can-fix-their-james-maddison-and-xavi-simons-injury-headaches-without-spending-a-penny",
+    "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719"
    ],
    "sources_used": [
-    "Fantasy Football Scout",
     "FourFourTwo FPL",
-    "NBC Sports Rotoworld PL",
-    "Newcastle United",
-    "RotoWire Soccer"
+    "Nottingham Forest",
+    "RotoWire Soccer",
+    "Sports Mole"
    ],
-   "quotes": [
-    {
-     "text": "Spurs kept adding right to the deadline, as Mykhailo Mudryk and Tosin Adarabioyo added even more Premier League experience to De Zerbi’s project after summer moves for Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dubravka, Mateus Fernandes, Sandro Tonali, Savio, and Omar Marmoush.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-nottingham-forest-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
-     "published": "2026-09-02T10:51:42-04:00",
-     "tone": "neutral",
-     "topics": []
-    }
-   ]
+   "quotes": []
   },
   "Hughes": {
    "player": "Hughes",

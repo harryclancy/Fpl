@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-03T11:17:13+00:00",
- "seconds": 202.5,
+ "ran_at": "2026-09-03T11:26:02+00:00",
+ "seconds": 141.0,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 722,
- "substantive_items": 275,
- "duplicates_removed": 32,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 4096,
+ "sources_readable": 64,
+ "candidates_discovered": 554,
+ "substantive_items": 106,
+ "duplicates_removed": 5,
+ "deeply_analysed": 64,
+ "deep_read_failed": 26,
+ "corpus_size": 4101,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 275 articles"
+    "64/78 sources returned 106 articles"
    ]
   },
   "blackout": {
@@ -37,6 +37,7 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "Fantasy Football Pundit: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
@@ -47,7 +48,7 @@
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: timed out after 12s for https://physioroom.com/feeds/all.rss.xml",
+  "PhysioRoom: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days",
   "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
@@ -313,7 +314,7 @@
    "club": "BRE",
    "evidence_count": 6,
    "source_count": 2,
-   "latest_evidence": "2026-08-24T14:56:00+01:00",
+   "latest_evidence": "2026-09-03T10:09:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -325,7 +326,9 @@
    "dimensions_covered": [
     "fixtures",
     "injury",
+    "match report",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -334,6 +337,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Brentford lineup vs. Sunderland: Predicted XI for Premier League clash as Diouf decision made",
+     "url": "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T10:09:00+01:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Brentford could line up for Saturday's Premier League match against Sunderland."
+    },
+    {
+     "title": "Brentford vs Sunderland - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T10:00:00+01:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Brentford and Sunderland, including predictions, team news and possible lineups."
+    },
     {
      "title": "Birmingham City vs Brentford - prediction, team news, lineups",
      "url": "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
@@ -364,24 +385,6 @@
     {
      "title": "First team leeds united v brentford premier league confirmed team news 30 08 2026",
      "url": "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Brentford b team 5 sunderland u21s 1 match report kaye furo fabio carvalho premier league 2",
-     "url": "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Academy west ham u18s 5 brentford u18s 4 jai nwosu gary mcdermott match report u18s premier league",
-     "url": "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league",
      "source": "Brentford",
      "published": "",
      "matched_on": "BRE team news",
@@ -452,8 +455,8 @@
    "player": "Semenyo",
    "club": "MCI",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-02T23:51:41+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-03T08:40:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -467,7 +470,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -488,6 +490,33 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "Coventry lineup vs. Man City: Predicted XI for Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T08:40:00+01:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Coventry City could line up for Saturday’s Premier League clash with Manchester City."
+    },
+    {
+     "title": "Manchester City vs Coventry City - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/man-city/preview/man-city-vs-coventry-prediction-team-news-lineups_604324.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T08:30:00+01:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Manchester City and Coventry City, including predictions, team news and possible lineups."
+    },
+    {
+     "title": "Enzo Fernandez: Three ways Man City could line up with £125m signing under Enzo Maresca",
+     "url": "https://www.sportsmole.co.uk/football/man-city/feature/three-ways-man-city-could-line-up-with-gbp125m-signing-enzo-fernandez_604323.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T07:35:00+01:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes a look at three ways that Enzo Maresca's Manchester City could line up with new £125m signing Enzo Fernandez."
+    },
+    {
      "title": "Man City injury, suspension news and return dates for Coventry City clash: Jeremy Doku, Matheus Nunes latest",
      "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/doku-nunes-latest-man-city-injury-list-for-coventry-clash_604319.html",
      "source": "Sports Mole",
@@ -495,33 +524,6 @@
      "matched_on": "MCI team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up Manchester City’s injury and suspension news ahead of their Premier League clash with Coventry City on Saturday."
-    },
-    {
-     "title": "‘After seven years at Arsenal, I wanted to help Man City win’ Vivianne Miedema on transfer motivation and WSL growth",
-     "url": "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T08:01:17+00:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Vivianne Miedema helped Manchester City break Chelsea’s six-year Women’s Super League winning streak last season as they claimed victory under new manager Andree Jeglertz. Manchester City claimed their first WSL title since 2016 last term, before going on to complete a domestic double by beating Brighton to lift the FA Cup. Miedema, who joined from Arsenal in 2024, says the achievement represented"
-    },
-    {
-     "title": "FPL Gameweek 3 early Scout Picks: Piling up on Man City",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/fpl-gameweek-3-early-scout-picks-piling-up-on-man-city",
-     "source": "Fantasy Football Scout",
-     "published": "2026-08-31T21:40:00+00:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Our ‘bus team’ for the upcoming Gameweek The post FPL Gameweek 3 early Scout Picks: Piling up on Man City appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Bouaddi to Man City – could it affect O’Reilly?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/bouaddi-to-man-city-could-it-affect-oreilly",
-     "source": "Fantasy Football Scout",
-     "published": "2026-08-31T08:45:00+00:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "A look at where the young Moroccan fits in at City and what his FPL potential is The post Bouaddi to Man City – could it affect O’Reilly? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
@@ -679,7 +681,7 @@
    "club": "BRE",
    "evidence_count": 6,
    "source_count": 2,
-   "latest_evidence": "2026-08-24T14:56:00+01:00",
+   "latest_evidence": "2026-09-03T10:09:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -691,6 +693,7 @@
    "dimensions_covered": [
     "fixtures",
     "injury",
+    "match report",
     "set pieces",
     "statistics",
     "tactics",
@@ -701,6 +704,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Brentford lineup vs. Sunderland: Predicted XI for Premier League clash as Diouf decision made",
+     "url": "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T10:09:00+01:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Brentford could line up for Saturday's Premier League match against Sunderland."
+    },
+    {
+     "title": "Brentford vs Sunderland - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T10:00:00+01:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Brentford and Sunderland, including predictions, team news and possible lineups."
+    },
     {
      "title": "Birmingham City vs Brentford - prediction, team news, lineups",
      "url": "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
@@ -722,24 +743,6 @@
     {
      "title": "Match reports leeds united 1 brentford 1 premier league 30 08 2026",
      "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "First team leeds united v brentford premier league confirmed team news 30 08 2026",
-     "url": "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Brentford b team 5 sunderland u21s 1 match report kaye furo fabio carvalho premier league 2",
-     "url": "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
      "source": "Brentford",
      "published": "",
      "matched_on": "BRE team news",
@@ -1102,8 +1105,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-03T03:03:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-03T11:17:48+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1129,55 +1132,55 @@
    "researched": true,
    "items": [
     {
+     "title": "Tottenham lineup vs. Nottingham Forest: Predicted XI amid Savio, James Maddison injury concerns",
+     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-savio-maddison-make-the-cut-predicted-tottenham-xi-vs-forest_604364.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T11:17:48+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League match against Nottingham Forest."
+    },
+    {
+     "title": "Nottingham Forest lineup vs. Tottenham: Predicted XI for Premier League clash as Daniel Munoz starts",
+     "url": "https://www.sportsmole.co.uk/football/nottingham-forest/predicted-lineups/munoz-makes-the-xi-predicted-nottingham-forest-lineup-vs-tottenham_604363.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T11:08:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Nottingham Forest could line up for Saturday's Premier League match against Tottenham Hotspur."
+    },
+    {
+     "title": "Nottingham Forest vs Tottenham Hotspur - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/spurs/preview/nottm-forest-vs-spurs-prediction-team-news-lineups_604360.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T10:54:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Nottingham Forest and Tottenham Hotspur, including predictions, team news and possible lineups."
+    },
+    {
+     "title": "HOW TO WATCH GLASNER'S PRE-SPURS PRESS CONFERENCE",
+     "url": "https://www.nottinghamforest.co.uk/news/2026/september/03/how-to-watch-glasner-s-pre-spurs-press-conference/",
+     "source": "Nottingham Forest",
+     "published": "2026-09-03T08:18:08+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Boss to preview visit of Spurs Press conference to begin around 2pm BST Watch live on Forest TV Oliver Glasner will take questions from the local and national media to preview Nottingham Forest’s upcoming Premier League fixture against Tottenham Hotspur at the City Ground. The Reds picked up their first point under the Austrian last weekend against Liverpool at Anfield, with attention now turning "
+    },
+    {
+     "title": "Tottenham Hotspur can fix their James Maddison and Xavi Simons injury headaches without spending a penny",
+     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-can-fix-their-james-maddison-and-xavi-simons-injury-headaches-without-spending-a-penny",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-03T06:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "A busy summer of transfer business is over for Tottenham Hotspur , but injuries to James Maddison and Xavi Simons have left the Lilywhites short in one area. It seems Spurs have bolstered pretty much every area of their squad apart from central attacking midfield (or the No.10 role). Jan Paul Van Hecke and Marcos Senesi are new faces in defence, Matheus Fernandes and £100m man Sandro Tonali are th"
+    },
+    {
      "title": "Nottingham Forest vs Tottenham Prediction, Predicted Lineups & Team News",
      "url": "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719",
      "source": "RotoWire Soccer",
      "published": "2026-09-03T03:03:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "How to watch Nottingham Forest vs Tottenham Hotspur live: Stream, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-nottingham-forest-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-02T10:51:42-04:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Roberto De Zerbi and Tottenham Hotspur receive major transfer deadline day boost",
-     "url": "https://www.fourfourtwo.com/person/player/roberto-de-zerbi-and-tottenham-hotspur-receive-major-transfer-deadline-day-boost",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T15:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur have been handed a lift on transfer deadline day as Swedish international Dejan Kulusevski returned to full team training, 477 days after suffering a complex knee injury. The 26-year-old forward has not featured in a competitive fixture since May 2025, when a challenge during a Premier League defeat to Crystal Palace left him with patella cartilage damage in his right knee. While"
-    },
-    {
-     "title": "\"There’s been serious mismanagement for a while now: it didn’t ever start making any more sense\" Peter Crouch on the ‘disastrous’ decision Tottenham Hotspur made last season",
-     "url": "https://www.fourfourtwo.com/team/theres-been-serious-mismanagement-for-a-while-now-it-didnt-ever-start-making-any-more-sense-peter-crouch-on-the-disastrous-decision-tottenham-hotspur-made-last-season",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-31T18:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham will be hoping that the 2025/26 season saw the club bottom out following a series of recent struggles. The club only secured their Premier League status on the final day of last season, as they meandered to a second consecutive 17th-place finish, but did not have a cup win to fall back on this season, following their 2025 Europa League triumph. The reasons for Spurs' recent struggles hav"
-    },
-    {
-     "title": "Is Marmoush back on the FPL radar after Spurs move?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/is-marmoush-back-on-the-fpl-radar-after-spurs-move",
-     "source": "Fantasy Football Scout",
-     "published": "2026-08-31T09:30:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "The Egyptian forward follows Savio from Man City to Spurs The post Is Marmoush back on the FPL radar after Spurs move? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Confirmed line-up: Debut for González at Spurs",
-     "url": "https://www.newcastleunited.com/en/news/confirmed-line-up-spurs-a",
-     "source": "Newcastle United",
-     "published": "2026-08-29T15:15:00+00:00",
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": ""
