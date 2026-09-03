@@ -576,20 +576,33 @@ def test_an_injured_squad_still_gets_the_rest_of_the_plan(monkeypatch):
     # under "Transfer plan", because "Recommended: roll" above cards
     # saying "make the move" was the interface disagreeing with itself.
     assert "Transfer plan" in page
-    assert "Why each player is in the team" in page
+    # And renamed again from "Why each player is in the team": one player
+    # is now one collapsed component, so the section is a list of players
+    # rather than a run of essays.
+    assert "Your squad" in page
 
 
 def test_the_front_page_explains_each_player(monkeypatch):
     """The complaint: the plan page said who to start and never said why.
-    Every player should carry a case you can argue with."""
+
+    Every player still carries a case you can argue with — it now lives
+    behind his own row rather than in a run of essays down the page, so
+    what this checks is that each of the fifteen is present as its own
+    component and that the reasoning sections are there to open.
+    """
     _with_confirmed_squad(monkeypatch)
     at = AppTest.from_file(APP_PATH)
     at.run(timeout=120)
 
     page = _all_markdown(at)
-    assert "Why each player is in the team" in page
-    assert "Recent form:" in page, "no qualitative form line"
-    assert "The fixture:" in page, "no opponent context"
+    assert "Your squad" in page
+    assert "Starting XI" in page and "Bench" in page
+
+    labels = _expander_labels(at)
+    # One component per player, and the reasoning nested inside it.
+    for section in ("This gameweek", "Role & minutes", "Next 4 gameweeks",
+                    "The case against", "Evidence & sources"):
+        assert section in labels, f"{section} is not on the page"
 
 
 # --- marking the app's own homework -------------------------------------
@@ -704,17 +717,21 @@ def test_the_reasons_people_give_reach_the_page(monkeypatch):
     # applies to it — which means this also proves the file parses and
     # reaches a player's card.
     # The guarantee is stronger than any one phrase: EVERY owned player
-    # gets the full dossier, whether or not anyone published an FPL
-    # article about him. These sections are unconditional.
+    # gets the full reasoning, whether or not anyone published an FPL
+    # article about him. It now lives behind his own row rather than as a
+    # run of headed paragraphs down the page, so the sections are
+    # expanders — but they are still unconditional, and there is still one
+    # of each per player.
     page = _all_markdown(at)
-    for section in ("This gameweek.", "Why he's in our squad.", "Case for keeping.",
-                    "Case for selling.", "Latest developments.", "Expert view.",
-                    "Risks.", "Our verdict:"):
-        assert section in page, f"missing dossier section: {section}"
-    # And a player nobody wrote about says so rather than showing nothing.
-    assert "commentary on him was limited" in page or "Sources used" in " ".join(
-        _expander_labels(at)
-    ) or "weakest kind of case" in page
+    labels = _expander_labels(at)
+    for section in ("This gameweek", "Role & minutes", "Next 4 gameweeks",
+                    "The case against", "Evidence & sources"):
+        assert section in labels, f"missing reasoning section: {section}"
+
+    # A player nobody wrote about says so rather than showing nothing.
+    assert ("No article retrieved this week addresses his selection" in page
+            or "no current predicted line-up names him" in page
+            or "thinner comfort than it sounds" in page)
 
 
 def test_the_shipped_research_renders_both_sides_for_a_real_player():

@@ -54,6 +54,7 @@ from fpl_assistant.analysis.season_state import is_preseason
 from fpl_assistant.config import FPL_TEAM_ID
 from fpl_assistant.dashboard.cards import SCORE_BAD, SCORE_WARN, player_rank_card, render_rank_card_list
 from fpl_assistant.dashboard.htmlutil import render_html
+from fpl_assistant.dashboard import media
 from fpl_assistant.dashboard.media import player_photo_html
 from fpl_assistant.dashboard.pitch import render_pitch_html
 from fpl_assistant.dashboard.styles import (
@@ -1208,8 +1209,38 @@ def render_collection_status() -> None:
         )
         return
 
+    # PART I. ARTICLE COUNT IS NOT THE METRIC. Three thousand articles
+    # is irrelevant if today's team news was missed, and printing the
+    # number made a bad run look like a good one. What a manager needs to
+    # know before a deadline is whether HIS FIFTEEN have been checked.
+    coverage = (load_decision().get("status_coverage") or {})
     age = store.age_hours
     stale = age is not None and age > 12
+
+    if coverage:
+        grade = coverage.get("deadline_coverage", "THIN")
+        line = (
+            f"**{coverage.get('status_checked', '0/0')} status checked**  ·  "
+            f"{coverage.get('fresh_evidence_72h', '0/0')} with evidence "
+            f"under 72h  ·  "
+            f"{coverage.get('predicted_xi_checked', '0/0')} found in a "
+            f"predicted XI  ·  deadline coverage **{grade}**")
+        moved = coverage.get("recent_transfers") or []
+        if moved:
+            line += f"  ·  recently transferred: {', '.join(moved)}"
+        unchecked = coverage.get("not_recently_verified") or []
+        if unchecked:
+            line += f"  ·  not re-checked: {', '.join(unchecked)}"
+        (st.warning if grade == "THIN" or stale else st.caption)(line)
+        with st.expander("Technical details"):
+            st.caption(
+                f"Research cache: {len(store)} articles from "
+                f"{store.sources_ok}/{store.sources_checked} sources · "
+                f"collected {store.collected_at_display}. Article volume is "
+                f"not the target — decision quality and freshness are — so "
+                f"the count lives here rather than on the page.")
+        return
+
     line = (f"Research cache: **{len(store)} articles** from "
             f"{store.sources_ok}/{store.sources_checked} sources · "
             f"collected {store.collected_at_display}")
@@ -1302,9 +1333,52 @@ def run_research_refresh(gameweek: int) -> None:
                    "(read-only filesystem). The page will show the previous prose.")
     bar.empty()
 
+    # PART N. One coherent pipeline. Refreshing the corpus and stopping
+    # there leaves the page showing yesterday's status over today's
+    # evidence — the same class of lie as not refreshing at all, and
+    # worse, because the timestamp would say it was current. So the
+    # status pass, the transfer plan, the write-ups and the question
+    # engine's state are all regenerated from the corpus that was just
+    # collected, in that order, because each depends on the last.
+    bar = st.progress(0.98, text="Re-checking every player's current status…")
+    rebuilt = _rebuild_decision()
+    bar.empty()
+
     report.writeups_with_prose = sum(1 for w in writeups.values() if w.has_prose)
     render_research_summary(report, store)
+    if rebuilt:
+        st.success(rebuilt)
     st.cache_data.clear()
+
+
+def _rebuild_decision() -> str:
+    """Re-runs the decision pipeline against the corpus just collected.
+
+    Invoked in-process rather than shelled out, so a read-only filesystem
+    or a missing FPL connection degrades to a message instead of a
+    traceback. The heavy lifting is the same module the scheduled
+    workflow runs — there is one pipeline, not an app copy of it.
+    """
+    import subprocess
+    import sys as _sys
+    from pathlib import Path as _Path
+
+    root = _Path(__file__).resolve().parent.parent.parent
+    script = root / "scripts" / "decide_transfers.py"
+    if not script.exists():
+        return ""
+    try:
+        finished = subprocess.run(
+            [_sys.executable, str(script)], cwd=str(root),
+            capture_output=True, text=True, timeout=600)
+    except Exception as exc:
+        return f"Status pass could not be re-run here ({exc.__class__.__name__})."
+    if finished.returncode != 0:
+        tail = (finished.stdout or finished.stderr or "").strip().splitlines()
+        return ("Status re-checked, but the completeness gate did not pass: "
+                + (tail[-1] if tail else "no detail"))
+    return ("Status, transfer plan, write-ups and the question box have all "
+            "been rebuilt from the evidence just collected.")
 
 
 def _within_deadline_window(gameweek: int, hours: int = 48) -> bool:
@@ -1640,79 +1714,278 @@ def load_writeups() -> dict:
         return {}
 
 
-def render_compact_player(facts: dict) -> None:
-    """One player, at a glance, with the judgement one tap away.
+# The three things a manager checks on a phone before a deadline, and
+# the colour each of them earns. Nothing else in a player row is tinted.
+OUTLOOK_TAGS = {
+    "Very likely to start": ("t-good", "STARTS"),
+    "Likely to start": ("t-good", "LIKELY"),
+    "50-50": ("t-warn", "50-50"),
+    "Likely bench": ("t-warn", "BENCH"),
+    "Very unlikely to start": ("t-bad", "UNLIKELY"),
+    "Out": ("t-bad", "OUT"),
+}
+CONFIDENCE_TAGS = {"High": "t-good", "Medium": "t-warn", "Low": "t-bad"}
+VERDICT_TAGS = {
+    "CAPTAIN": "t-accent", "VICE-CAPTAIN, AND HOLD": "t-accent",
+    "START AND HOLD": "t-good", "KEEP THROUGH THE TOUGH FIXTURE": "t-good",
+    "START, BUT MONITOR": "t-warn", "HOLD THIS WEEK, REASSESS NEXT": "t-warn",
+    "BENCH AND HOLD": "t-flat", "BENCH, AND MONITOR": "t-warn",
+    "SELL": "t-bad", "SELL IF THE MINUTES CONCERN IS CONFIRMED": "t-bad",
+}
 
-    The card is the decision; the dropdown is the reasoning that reached
-    it. Raw sources sit in a second dropdown below, deliberately
-    separate — mixing quoted sentences into the argument is what made the
-    old write-ups read like a clippings file rather than a view.
+
+def _tag(css_class: str, text: str) -> str:
+    return f"<span class='fpl-tag {css_class}'>{text}</span>"
+
+
+def render_ask_box() -> None:
+    """A direct question, answered from the state the page is showing.
+
+    Deliberately at the bottom: the page should have answered most of it
+    already, and this is for the thing it did not. The answer is read off
+    the same committed decision the rows above render, so it cannot tell
+    a manager something the card underneath it contradicts.
     """
-    verdict = facts.get("verdict", "Keep")
-    judgement = facts.get("brief") or {}
-    minutes = facts.get("expected_minutes", "Unknown")
-    minutes_label = ("Minutes: " + minutes.lower()) if minutes != "Unknown" else (
-        "Team-news evidence is limited")
+    from fpl_assistant.analysis import squad_questions
 
+    _section("Ask about my team", "Answered from this week's checked status.")
+    decision = load_decision()
+    if not decision:
+        st.info("No decision file has been generated yet. Run Refresh "
+                "Research and the question box will have something to read.")
+        return
+
+    st.caption("Try: " + " · ".join(squad_questions.SUGGESTIONS[:4]))
+    question = st.text_input(
+        "Ask about your FPL team…", key="ask_about_my_team",
+        placeholder="Ask about your FPL team…", label_visibility="collapsed")
+    if not question:
+        return
+
+    answer = squad_questions.answer(question, decision)
     render_html(
-        "<div class='fpl-card fpl-player-card'>"
-        f"<h4>{facts['player']}</h4>"
-        f"<p class='fpl-meta'>{facts['club']} · {facts['position']} · "
-        f"£{facts['price']:.1f}m</p>"
-        f"<span class='fpl-pill fpl-high'>{verdict}</span> "
-        f"<span class='fpl-pill fpl-med'>{minutes_label}</span>"
-        + (f"<p class='fpl-meta'>{facts['fixture']}</p>" if facts.get("fixture") else "")
-        + "</div>"
-    )
+        f"<div class='fpl-ask-answer'><h5>{answer.headline}</h5>"
+        f"<p><b>{answer.short_answer}</b></p></div>")
+    if answer.why:
+        st.markdown(f"**Why.** {answer.why}")
+    facts = []
+    if answer.call:
+        facts.append(f"**My call.** {answer.call}")
+    if answer.expected_minutes:
+        facts.append(f"**Expected minutes.** {answer.expected_minutes}")
+    if answer.confidence:
+        facts.append(f"**Confidence.** {answer.confidence}")
+    if facts:
+        st.markdown("  \n".join(facts))
+    if answer.caveat:
+        st.caption(answer.caveat)
+    if answer.evidence:
+        with st.expander(f"Evidence used ({len(answer.evidence)})"):
+            for item in answer.evidence[:6]:
+                st.markdown(
+                    f"- **{item.get('source', 'unknown')}** · "
+                    f"{item.get('kind', '')} · {item.get('when', '')} — "
+                    f"{item.get('title', '')}")
+                if item.get("url"):
+                    st.caption(item["url"])
 
-    if judgement.get("verdict_label"):
-        st.markdown(f"**{judgement['verdict_label']}**")
-    elif facts.get("decision_line"):
-        st.markdown(f"**{facts['decision_line']}**")
 
-    lines = []
-    if facts.get("next_fixtures"):
-        lines.append("**Next 4:** " + " · ".join(facts["next_fixtures"][:4]))
-    lines.append("**Confidence:** "
-                 + str(judgement.get("confidence")
-                       or facts.get("confidence", "Low")).lower()
-                 + (f" — {judgement['confidence_reason']}"
-                    if judgement.get("confidence_reason") else ""))
-    st.caption("  \n".join(lines))
+def render_armband_case(player_cases) -> None:
+    """The captaincy argued once, under the team, rather than per player.
 
-    if judgement:
-        with st.expander("Why he's in my team"):
-            for heading, key in (("Why he's in my team", "why"),
-                                 ("The case for", "case_for"),
-                                 ("The case against", "against")):
-                if judgement.get(key):
-                    st.markdown(f"**{heading}.** {judgement[key]}")
-            if judgement.get("verdict"):
-                st.markdown(f"**Manager's verdict — {judgement['verdict_label']}.** "
-                            f"{judgement['verdict']}")
-    elif facts.get("prose"):
-        with st.expander("Why he's in my team"):
-            st.markdown(facts["prose"])
+    It used to live inside a per-player card. With one component per
+    player and everything collapsed, the biggest free decision of the
+    week would have spent the season behind a tap — so it moves out to
+    where the eleven is chosen, which is where a manager is looking when
+    he makes it.
+    """
+    captain = next((case for case in player_cases if case.captain), None)
+    vice = next((case for case in player_cases if case.vice_captain), None)
+    if not captain and not vice:
+        return
 
-    with st.expander("Evidence & sources"):
-        st.caption("The raw material the judgement above was built from, kept "
-                   "separate from it on purpose.")
-        for label, key in (("Availability", "availability"),
-                           ("Recent selection", "recent_selection"),
-                           ("Role", "role"), ("Set pieces", "set_pieces"),
-                           ("Form", "form"), ("Underlying data", "underlying"),
-                           ("Expert view", "expert_view")):
-            if facts.get(key):
-                st.markdown(f"**{label}.** {facts[key]}")
-        claims = facts.get("claims", [])
-        if not claims:
-            st.markdown("No article retrieved this week is about him "
-                        "directly, so the judgement above rests on the "
-                        "official data, the fixtures and his selection record.")
-        for claim in claims[:6]:
-            st.markdown(f"- *{claim['source']}* ({claim['kind']}) — “{claim['text']}”")
-            if claim.get("url"):
-                st.caption(claim["url"])
+    for case, alternative, which in ((captain, vice, "Captaincy"),
+                                     (vice, captain, "Vice-captaincy")):
+        if case is None:
+            continue
+        parts = [f"**{which} reasoning.** {case.name}."]
+        if case.case_for:
+            parts.append(case.case_for[0][0].rstrip(".")
+                         + f" ({case.case_for[0][1]}).")
+        if case.record_vs:
+            parts.append(f"Against this opponent: {case.record_vs}")
+        if case.ownership >= 40:
+            parts.append(
+                f"At {case.ownership:.0f}% owned this is the safe armband "
+                f"rather than the clever one — it protects rank more than it "
+                f"gains it.")
+        else:
+            parts.append(
+                f"At {case.ownership:.0f}% owned this is a genuine "
+                f"differential armband. Take it deliberately rather than by "
+                f"accident.")
+        if alternative is not None:
+            parts.append(f"The alternative is {alternative.name}.")
+        st.markdown(" ".join(parts))
+
+
+def player_row_html(facts: dict, status: dict, photo: str) -> str:
+    """One player, collapsed: the whole decision on a single line of card.
+
+    Fifteen of these ARE the squad section, so the row has to answer
+    three questions without being opened — what the plan says, whether he
+    is going to be on the pitch, and how sure that is. Everything else
+    waits behind the tap.
+    """
+    brief = facts.get("brief") or {}
+    label = brief.get("verdict_label", "")
+    outlook = status.get("outlook", "")
+    outlook_class, outlook_text = OUTLOOK_TAGS.get(outlook, ("t-flat", "UNCHECKED"))
+    confidence = brief.get("confidence") or status.get("confidence", "")
+
+    tags = []
+    if label:
+        tags.append(_tag(VERDICT_TAGS.get(label, "t-flat"), label))
+    tags.append(_tag(outlook_class, outlook_text))
+    if confidence:
+        tags.append(_tag(CONFIDENCE_TAGS.get(confidence, "t-flat"),
+                         f"{confidence} confidence"))
+
+    fixtures = brief.get("next_four") or facts.get("next_fixtures") or []
+    next_up = fixtures[0] if fixtures else ""
+    minutes = status.get("minutes_label", "")
+
+    return (
+        "<div class='fpl-prow'>"
+        f"<span class='face'>{photo}</span>"
+        "<span class='body'>"
+        f"<div class='name'>{facts['player']}</div>"
+        f"<div class='sub'>{facts['club']} · {facts['position']} · "
+        f"£{facts['price']:.1f}m{(' · ' + minutes) if minutes else ''}</div>"
+        f"<div class='tags'>{''.join(tags)}</div>"
+        "</span>"
+        f"<span class='fx'><b>{next_up}</b>next</span>"
+        "</div>")
+
+
+def render_player(facts: dict, status: dict, photo: str) -> None:
+    """One player = one top-level dropdown, closed until asked for.
+
+    The judgement opens first and everything technical is nested one
+    level deeper, because the reader's question is "what do I do with
+    him", not "what did you read". Evidence is inspectable, and it is
+    inspectable LAST.
+    """
+    brief = facts.get("brief") or {}
+    header = (f"{facts['player']} · {brief.get('verdict_label', 'REVIEW')}"
+              f" · {status.get('outlook', 'unchecked')}")
+
+    with st.expander(header):
+        render_html(player_row_html(facts, status, photo))
+
+        if brief.get("why"):
+            render_html(f"<div class='fpl-lead'>{brief['why']}</div>")
+
+        label = brief.get("verdict_label", "")
+        if label:
+            render_html(
+                f"<div class='fpl-verdict'><div class='label'>{label}</div>"
+                f"{brief.get('verdict', '')}</div>")
+
+        with st.expander("This gameweek"):
+            st.markdown(brief.get("case_for")
+                        or "No fixture reading was generated for him.")
+            if facts.get("fixture"):
+                st.caption(facts["fixture"])
+
+        with st.expander("Role & minutes"):
+            _render_role_and_minutes(status, facts)
+
+        with st.expander("Next 4 gameweeks"):
+            runs = brief.get("next_four") or facts.get("next_fixtures") or []
+            if runs:
+                render_html("<div class='fpl-run'>"
+                            + "".join(f"<span>{fx}</span>" for fx in runs[:4])
+                            + "</div>")
+            st.markdown(brief.get("verdict")
+                        or "No forward view was generated for him.")
+
+        with st.expander("The case against"):
+            st.markdown(brief.get("against")
+                        or "No specific doubt was recorded, which is thinner "
+                           "comfort than it sounds.")
+
+        with st.expander("Evidence & sources"):
+            _render_evidence(status, facts)
+
+
+def _render_role_and_minutes(status: dict, facts: dict) -> None:
+    """Everything that bears on whether he is on the pitch, with its date."""
+    if not status:
+        st.markdown("No current status has been recorded for him.")
+        return
+    lines = [
+        f"**Starting outlook.** {status.get('outlook', 'unchecked')}",
+        f"**Expected minutes.** {status.get('minutes_label', 'unknown')}",
+        f"**Recent starts.** {status.get('starts', 0)} of "
+        f"{status.get('team_games', 0)} this season"
+        + (f", {status.get('prior_minutes', 0):,} minutes at the club last year"
+           if status.get("prior_minutes") else ""),
+    ]
+    if status.get("new_club"):
+        lines.append(f"**New club.** {status['new_club']}")
+    if status.get("role"):
+        lines.append(f"**Role.** {status['role']}")
+    pieces = []
+    if status.get("penalties"):
+        pieces.append("penalties")
+    if status.get("set_pieces"):
+        pieces.append("set pieces")
+    if pieces:
+        lines.append(f"**Set pieces.** He takes the {' and '.join(pieces)}.")
+    if status.get("injury"):
+        lines.append(f"**Injury.** {status['injury']}")
+    if status.get("suspension"):
+        lines.append(f"**Suspension.** {status['suspension']}")
+    if status.get("manager_quote"):
+        lines.append(f"**The manager said.** “{status['manager_quote']}”")
+    st.markdown("  \n".join(lines))
+
+    tally = status.get("lineups") or {}
+    st.markdown("**Latest status evidence.** " + (
+        tally.get("summary") or "no current predicted line-up names him"))
+    st.caption(
+        f"Resting on {status.get('basis', 'the appearance record')}"
+        + (" · not re-checked recently" if status.get("stale") else "")
+        + f" · {status.get('fresh_source_count', 0)} source(s) in the last "
+          f"72 hours")
+    for reason in (status.get("vetoes") or [])[:2]:
+        st.warning(reason)
+
+
+def _render_evidence(status: dict, facts: dict) -> None:
+    """The raw material, graded, and kept away from the judgement."""
+    st.caption("What the judgement above was built from. Graded for THIS "
+               "question — a predicted line-up published today outranks a "
+               "month-old piece calling him nailed.")
+    items = (status or {}).get("evidence") or []
+    for item in items[:6]:
+        st.markdown(
+            f"- **{item.get('source', 'unknown')}** · {item.get('kind', '')}"
+            f" · {item.get('when', '')} · tier {item.get('tier', '?')}"
+            f" ({item.get('tier_name', '')}) — {item.get('title', '')}")
+        if item.get("url"):
+            st.caption(item["url"])
+    if not items:
+        st.markdown("No article retrieved this week addresses his selection, "
+                    "so the judgement rests on the official appearance "
+                    "record, the fixtures and the fixture difficulty.")
+    for label, key in (("Availability", "availability"),
+                       ("Recent selection", "recent_selection"),
+                       ("Form", "form"), ("Underlying data", "underlying"),
+                       ("Expert view", "expert_view")):
+        if facts.get(key):
+            st.markdown(f"**{label}.** {facts[key]}")
 
 
 def render_corpus_writeup(name: str) -> bool:
@@ -1757,101 +2030,6 @@ def render_corpus_writeup(name: str) -> bool:
             for url in used:
                 st.caption(url)
     return rendered
-
-
-def render_player_card(d, alternative_case=None) -> None:
-    """One owned player's full dossier.
-
-    Every section is always present. Where the evidence is thin the
-    section says what is thin — a reader can act on "we could not confirm
-    his minutes", and cannot act on a missing card.
-    """
-    badge = ""
-    if d.captain:
-        badge = " &nbsp;<span class='fpl-pill fpl-high'>C</span>"
-    elif d.vice_captain:
-        badge = " &nbsp;<span class='fpl-pill fpl-med'>VC</span>"
-    style, label = VERDICT_STYLE.get(d.verdict, ("fpl-med", d.verdict.title()))
-
-    render_html(
-        "<div class='fpl-card'>"
-        f"<h4>{d.name.upper()}{badge}</h4>"
-        f"<p class='fpl-meta'>{d.team} | {d.position} | £{d.price:.1f}m · "
-        f"{'Starting XI' if d.starting else 'Bench'}</p>"
-        f"<span class='fpl-pill {style}'>{label}</span> "
-        f"<span class='fpl-pill fpl-med'>{d.status}</span> "
-        f"<span class='fpl-pill fpl-med'>Minutes: {d.minutes_outlook}</span>"
-        "</div>"
-    )
-
-    # The corpus is the source of the narrative now. What follows it is
-    # the structured dossier — fixtures, flags, projections — which is
-    # computed rather than reported and belongs underneath the reporting.
-    decision = load_decision()
-    facts = (decision.get("player_facts") or {}).get(d.name)
-    if facts:
-        render_compact_player(facts)
-        return
-
-    from_corpus = render_corpus_writeup(d.name)
-    if not from_corpus:
-        st.info(
-            f"No corpus write-up for {d.name}. The sections below are the structured "
-            f"dossier only — run a research refresh to generate prose from retrieved "
-            f"articles."
-        )
-
-    note = d.escalation_note()
-    if note:
-        st.caption(note)
-
-    if d.major_events:
-        for event in d.major_events[:3]:
-            st.warning(event.display)
-
-    st.markdown(f"**This gameweek.** {d.this_gameweek}")
-    st.markdown(f"**Why he's in our squad.** {d.why_in_squad}")
-    st.markdown(f"**Case for keeping.** {d.case_for_keeping}")
-    st.markdown(f"**Case for selling.** {d.case_for_selling}")
-    st.markdown(f"**Next {transfer_case.LOOKAHEAD_GAMEWEEKS} gameweeks.** {d.next_gameweeks}")
-    st.markdown(f"**Latest developments.** {d.latest_developments}")
-    st.markdown(f"**Expert view.** {d.expert_view}")
-    st.markdown(f"**Risks.** {d.risks}")
-
-    if d.claims:
-        for claim in d.claims:
-            st.markdown(f"- {claim.display}")
-
-    if d.captain or d.vice_captain:
-        which = "Captaincy" if d.captain else "Vice-captaincy"
-        armband = [f"**{which} reasoning.**"]
-        if d.case_for:
-            armband.append(d.case_for[0][0].rstrip(".") + f" ({d.case_for[0][1]}).")
-        if d.record_vs:
-            armband.append(f"Against this opponent: {d.record_vs}")
-        if d.ownership >= 40:
-            armband.append(
-                f"At {d.ownership:.0f}% owned this is the safe armband rather than the clever one — "
-                f"it protects rank more than it gains it."
-            )
-        else:
-            armband.append(
-                f"At {d.ownership:.0f}% owned this is a genuine differential armband. Take it "
-                f"deliberately rather than by accident."
-            )
-        if alternative_case is not None:
-            armband.append(f"The alternative is {alternative_case.name}.")
-        st.markdown(" ".join(armband))
-
-    st.markdown(
-        f"**Our verdict: {d.verdict}.** Confidence: {d.confidence}."
-    )
-
-    if d.sources:
-        with st.expander(f"Sources used: {len(d.sources)}"):
-            for source in d.sources:
-                st.markdown(f"- {source}")
-    st.markdown("")
 
 
 def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, state) -> None:
@@ -1948,16 +2126,37 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     if len(suggested) < 15:
         suggested, suggested_ids = owned, list(owned_ids)
 
+    decision_file = load_decision()
+    all_facts = decision_file.get("player_facts") or {}
+    all_status = decision_file.get("player_status") or {}
+
     # ================= SECTION 1 — THIS WEEK'S SUGGESTED TEAM ==========
     _section(
         f"This week's suggested team",
         f"Gameweek {next_event} · built from the squad you confirmed in GW{confirmed.event}",
     )
 
+    # PART M. A projection is what a player scores IF HE PLAYS. Picking
+    # an eleven on that alone starts a high-ceiling player with a
+    # one-in-four chance of being on the pitch ahead of a reliable one —
+    # a trade nobody would make if it were stated out loud. Multiplying
+    # by the checked start probability states it.
+    shares = {}
+    for name, state in all_status.items():
+        share = state.get("expected_share")
+        if share is not None:
+            shares[name] = float(share)
+    suggested = suggested.copy()
+    suggested["expected_share"] = [
+        shares.get(str(row), 1.0) for row in suggested["web_name"]]
+    suggested["xp_with_minutes"] = (
+        suggested["xp_next"].fillna(0) * suggested["expected_share"])
+
     starting, bench, formation = [], [], None
     captain_id = vice_id = None
     try:
-        starting, bench, formation = optimiser.optimise_starting_xi(suggested, points_column="xp_next")
+        starting, bench, formation = optimiser.optimise_starting_xi(
+            suggested, points_column="xp_with_minutes")
         captain_id, vice_id = squad_builder.pick_captain(suggested, starting)
     except Exception:
         available = suggested.sort_values("xp_next", ascending=False)
@@ -2017,16 +2216,18 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     if budget:
         st.caption(budget.reason)
 
-    # ================= SECTION 3 — WHY EACH PLAYER ====================
-    _section(
-        "Why each player is in the team",
-        "All fifteen, including anyone the plan above would move on.",
-    )
+    # ================= SECTION 4 — YOUR SQUAD =========================
+    # ONE PLAYER = ONE COMPONENT, and there are exactly fifteen of them.
+    # The page used to render a player two or three times over — a card
+    # here, a dossier there, a corpus write-up underneath — and on a
+    # phone that is a scroll with no shape to it. Everything about a
+    # player now lives behind his own row, closed until it is asked for.
+    _section("Your squad", "All fifteen. Tap a player for the reasoning.")
 
+    matchup_fixtures = cached_matchups(int(next_event))
+    player_cases = []
     order = list(starting) + list(bench)
     order += [i for i in suggested_ids if i not in order]
-    player_cases = []
-    matchup_fixtures = cached_matchups(int(next_event))
     for pid in order:
         if pid not in lookup.index:
             continue
@@ -2037,14 +2238,33 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
         )
         player_cases.append(dossier.build(
             row, next_event, fixtures=matchup_fixtures, fixture_run=run,
-            starting=pid in starting, captain=pid == captain_id, vice_captain=pid == vice_id,
+            starting=pid in starting, captain=pid == captain_id,
+            vice_captain=pid == vice_id,
         ))
 
-    captain_case = next((c for c in player_cases if c.captain), None)
-    vice_case = next((c for c in player_cases if c.vice_captain), None)
-    for case in player_cases:
-        alternative = vice_case if case.captain else (captain_case if case.vice_captain else None)
-        render_player_card(case, alternative)
+    def render_group(label: str, ids: list) -> None:
+        if not ids:
+            return
+        st.markdown(f"**{label}**")
+        for pid in ids:
+            if pid not in lookup.index:
+                continue
+            row = lookup.loc[pid]
+            name = str(row["web_name"])
+            facts = all_facts.get(name) or {
+                "player": name, "club": str(row.get("team_short_name", "")),
+                "position": str(row.get("position", "")),
+                "price": float(row.get("price", 0) or 0),
+            }
+            render_player(facts, all_status.get(name) or {},
+                          media.headshot_html(row.to_dict()))
+
+    render_armband_case(player_cases)
+    render_group("Starting XI", list(starting))
+    render_group("Bench", list(bench))
+
+    # ================= SECTION 5 — ASK ABOUT MY TEAM ==================
+    render_ask_box()
 
     # --- the footer: what was checked, and how much was read -----------
     st.markdown("---")

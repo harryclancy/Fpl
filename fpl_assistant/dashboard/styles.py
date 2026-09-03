@@ -430,6 +430,120 @@ HOMEPAGE_CSS = """
 
 /* Keep anything wide inside its own scroller so the page never does. */
 .fpl-home table, .fpl-home pre { display: block; overflow-x: auto; max-width: 100%; }
+
+/* ------------------------------------------------------------------ */
+/* THE DESIGN SYSTEM                                                    */
+/*                                                                      */
+/* Colour carries meaning here and nothing else. A premium sports        */
+/* product is restrained: one deep near-black for structure, one violet  */
+/* accent for the app's own voice, and three status colours that mean    */
+/* exactly one thing each wherever they appear. Everything else is       */
+/* neutral, so when something IS coloured the eye knows it matters.      */
+.fpl-home {
+  --ink: #14161f;           /* deep navy-black: structure and headings  */
+  --ink-2: #2a2e3d;
+  --grey: #6b7280;          /* cool grey: secondary text                */
+  --grey-2: #9aa1ad;
+  --line: #e7e6ee;
+  --surface: #ffffff;
+  --surface-2: #f7f7fb;
+  --accent: #6d5ae6;        /* violet: the app speaking, never a status */
+  --accent-soft: #efecfe;
+  --good: #14794a;          /* muted green: secure, positive            */
+  --good-soft: #e7f4ed;
+  --warn: #9a6400;          /* amber: monitor, uncertain                */
+  --warn-soft: #fdf3e3;
+  --bad: #a8232c;           /* muted red: doubt, sell, unavailable      */
+  --bad-soft: #fbeaec;
+}
+
+/* --- the player row: one tap target, everything on it ------------- */
+/* Fifteen of these are the page. They have to be scannable in a       */
+/* column on a phone, which means a fixed height, a real photo, and    */
+/* the three things a manager checks before a deadline: what the plan  */
+/* says, whether he plays, and how sure it is.                         */
+.fpl-prow {
+  display: flex; align-items: center; gap: .8rem;
+  padding: .1rem 0;
+}
+.fpl-prow .face { flex: 0 0 auto; }
+.fpl-prow .body { flex: 1 1 auto; min-width: 0; }
+.fpl-prow .name {
+  font-family: 'Barlow Condensed', system-ui, sans-serif;
+  font-size: 1.28rem; font-weight: 700; letter-spacing: .01em;
+  color: var(--ink); line-height: 1.1; text-transform: uppercase;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.fpl-prow .sub {
+  color: var(--grey); font-size: .82rem; margin-top: .1rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.fpl-prow .tags { margin-top: .34rem; display: flex; flex-wrap: wrap; gap: .3rem; }
+.fpl-prow .fx {
+  flex: 0 0 auto; text-align: right; color: var(--grey);
+  font-size: .78rem; line-height: 1.3;
+}
+.fpl-prow .fx b { display: block; color: var(--ink-2); font-size: .92rem; }
+
+/* --- tags: the only coloured things in a player row ---------------- */
+.fpl-tag {
+  display: inline-block; padding: .14rem .5rem; border-radius: 6px;
+  font-size: .69rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; white-space: nowrap;
+}
+.t-good { background: var(--good-soft); color: var(--good); }
+.t-warn { background: var(--warn-soft); color: var(--warn); }
+.t-bad  { background: var(--bad-soft);  color: var(--bad); }
+.t-flat { background: var(--surface-2); color: var(--grey);
+          border: 1px solid var(--line); }
+.t-accent { background: var(--accent-soft); color: var(--accent); }
+
+/* --- the four sections inside an opened player -------------------- */
+.fpl-lead {
+  font-size: 1rem; line-height: 1.6; color: var(--ink-2);
+  border-left: 3px solid var(--accent); padding-left: .8rem;
+  margin: .2rem 0 .9rem 0;
+}
+.fpl-verdict {
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: 12px; padding: .7rem .85rem; margin: .2rem 0 .4rem 0;
+}
+.fpl-verdict .label {
+  font-family: 'Barlow Condensed', system-ui, sans-serif;
+  font-size: 1.05rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--ink);
+}
+
+/* --- the next four, as a strip -------------------------------------- */
+.fpl-run { display: flex; gap: .34rem; margin: .1rem 0 .5rem 0; flex-wrap: wrap; }
+.fpl-run span {
+  flex: 1 1 0; min-width: 62px; text-align: center;
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: 8px; padding: .3rem .2rem;
+  font-size: .78rem; font-weight: 600; color: var(--ink-2);
+}
+
+/* --- the question box ----------------------------------------------- */
+.fpl-ask { margin-top: .4rem; }
+.fpl-ask-answer {
+  background: var(--surface); border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px; padding: .85rem 1rem; margin: .6rem 0;
+}
+.fpl-ask-answer h5 {
+  font-family: 'Barlow Condensed', system-ui, sans-serif;
+  margin: 0 0 .3rem 0; font-size: 1.12rem; letter-spacing: .03em;
+  text-transform: uppercase; color: var(--ink);
+}
+
+/* Streamlit's expander, made to read as a row rather than a widget. */
+.fpl-home div[data-testid="stExpander"] details {
+  border: 1px solid var(--line) !important; border-radius: 14px !important;
+  background: var(--surface) !important; margin-bottom: .55rem !important;
+  box-shadow: 0 1px 2px rgba(16,18,26,.04);
+}
+.fpl-home div[data-testid="stExpander"] summary { padding: .6rem .8rem !important; }
+.fpl-home div[data-testid="stExpander"] summary:hover { background: var(--surface-2) !important; }
 </style>
 """
 

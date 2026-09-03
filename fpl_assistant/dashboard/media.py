@@ -123,3 +123,50 @@ MEDIA_CSS = """
 }
 </style>
 """
+
+
+# --- one image pipeline, keyed to the CURRENT club -----------------------
+
+def current_headshot(player: dict) -> dict:
+    """The one function every part of the app asks for a player's face.
+
+    PART G. The photo itself was never the problem — it is keyed on the
+    player's own `code`, which does not change when he moves. The club
+    did: the tile behind the face is tinted with his club's colours and
+    captioned with his club's initials, so a record carrying last
+    season's team painted a Manchester City player in Everton blue.
+
+    So the club is taken from the CURRENT bootstrap on every call and
+    nothing about a player's appearance is remembered between runs. There
+    is no image cache to invalidate, which is the most reliable way of
+    never serving a stale one.
+    """
+    return {
+        "code": player.get("code"),
+        "name": str(player.get("web_name") or player.get("name") or ""),
+        "team": str(player.get("team_short_name") or player.get("team") or ""),
+        "url": photo_url(player.get("code")),
+    }
+
+
+def headshot_html(player: dict, size_px: int = 52) -> str:
+    """A face rendered from the current record, or an honest fallback.
+
+    A WRONG IMAGE IS WORSE THAN NO IMAGE. Where the photo CDN has no
+    entry — a new signing, a promoted squad player — the tile shows his
+    initials on his current club's colours rather than reaching for
+    something that might be somebody else.
+    """
+    current = current_headshot(player)
+    return player_photo_html(current["code"], current["name"], size_px,
+                             current["team"])
+
+
+def stale_image(cached_team: str, current_team: str) -> bool:
+    """Would a remembered image now be wrong?
+
+    Kept as an explicit test even though nothing here caches, because the
+    rule is what matters: if the club a picture was chosen for is not the
+    club he plays for, the picture is not reused.
+    """
+    return bool(cached_team) and bool(current_team) and cached_team != current_team
