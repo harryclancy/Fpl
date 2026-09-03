@@ -290,10 +290,22 @@ class Reason:
     level: str = PLAYER_LEVEL
     kind: str = INFERENCE
     source: str = ""
+    # Which decision this item actually argues for: "sell", "buy", or ""
+    # when it argues for neither. A claim can name the right player, sit
+    # in the right topic and still say the opposite of what it is being
+    # used to prove — "he very likely starts, as he always does" names
+    # the player and concerns his minutes, and it is an argument for
+    # KEEPING him. Reading such a sentence as corroboration for a sale is
+    # how an article about two other players' prices became a reason to
+    # move him on.
+    direction: str = ""
 
     @property
     def observed(self) -> bool:
         return self.kind in OBSERVED
+
+    def argues_for(self, decision: str) -> bool:
+        return self.observed and self.direction == decision
 
 
 def admissible(reasons: list[Reason], move: Move) -> tuple[list[Reason], list[str]]:
@@ -350,6 +362,18 @@ DOUBTFUL_MINUTES = ("Unassessed", "Significant concern", "Major doubt")
 
 def _observed_about(move: Move, name: str) -> list[Reason]:
     return [r for r in move.reasons if r.about == name and r.observed]
+
+
+def supports_selling(move: Move) -> list[Reason]:
+    """Published items that actually argue against keeping the outgoing player."""
+    return [r for r in move.reasons
+            if r.about == move.out_name and r.argues_for("sell")]
+
+
+def supports_buying(move: Move) -> list[Reason]:
+    """Published items that actually argue for the incoming player."""
+    return [r for r in move.reasons
+            if r.about == move.in_name and r.argues_for("buy")]
 
 
 def rule_affordable(plan: Plan) -> str | None:
@@ -422,16 +446,17 @@ def rule_claim_corroborated(plan: Plan) -> str | None:
         held = move.out_hold >= STRONG_HOLD
         if not (driving or held):
             continue
-        if not _observed_about(move, move.out_name):
+        if not supports_selling(move):
             reason = (f"a strong hold ({move.out_hold:.0f}/100)" if held else
                       f"{move.points_delta:+.1f} over five gameweeks")
             return (f"the case for selling {move.out_name} is {reason} and "
-                    f"nothing published this week is about him — the engine's "
-                    f"own projection is a claim, not evidence for it")
-        if driving and not _observed_about(move, move.in_name):
+                    f"nothing published this week argues against keeping him — "
+                    f"the engine's own projection is a claim, not evidence "
+                    f"for it")
+        if driving and not supports_buying(move):
             return (f"{move.in_name} is projected {move.points_delta:+.1f} "
                     f"better over five gameweeks and nothing published this "
-                    f"week is about him to corroborate it")
+                    f"week argues for him to corroborate it")
     return None
 
 
@@ -447,12 +472,12 @@ def rule_problem_being_fixed(plan: Plan) -> str | None:
     for move in plan.moves:
         if move.out_flagged or move.out_urgency > NO_PROBLEM_URGENCY:
             continue
-        if not _observed_about(move, move.out_name):
+        if not supports_selling(move):
             return (f"{move.out_name} is not a problem — "
                     f"{move.out_urgency:.0f}/100 sell urgency, a "
                     f"{band(move.out_urgency).lower()}, and nothing published "
-                    f"this week is about him. The entire case for the move is "
-                    f"a projection about {move.in_name}")
+                    f"this week argues against keeping him. The entire case "
+                    f"for the move is a projection about {move.in_name}")
         if move.points_delta < REAL_UPGRADE:
             return (f"{move.out_name} is not a problem "
                     f"({move.out_urgency:.0f}/100 sell urgency, "
@@ -898,8 +923,7 @@ def explain(rec: Recommendation) -> dict:
     plan = rec.winner
     problems, gains = [], []
     for move in plan.moves:
-        observed = [r.text for r in move.reasons
-                    if r.about == move.out_name and r.observed]
+        observed = [r.text for r in supports_selling(move)]
         if move.out_flagged:
             problems.append(f"{move.out_name} is unavailable")
         elif observed:
@@ -908,8 +932,7 @@ def explain(rec: Recommendation) -> dict:
             problems.append(
                 f"{move.out_name} is a {band(move.out_urgency).lower()} at "
                 f"{move.out_urgency:.0f}/100")
-        into = [r.text for r in move.reasons
-                if r.about == move.in_name and r.observed]
+        into = [r.text for r in supports_buying(move)]
         line = (f"{move.in_name} projects {move.points_delta:+.1f} points more "
                 f"over five gameweeks")
         if into:
@@ -1043,13 +1066,26 @@ def trust_audit(rec: Recommendation, blocks: list | None = None,
         "no move is made" if not rec.acting else
         "; ".join(f"{m.out_name} {m.out_urgency:.0f}/100" for m in plan.moves)))
 
+    # One question, both halves of it: the item must be about a player in
+    # the move, AND it must argue for the decision it is being used to
+    # support. An item can pass the first and fail the second — "he very
+    # likely starts, as he always does" is about him and argues the
+    # opposite way — which is the failure this half was added for.
     scoped = all(r.about in {m.out_name, m.in_name}
                  for m in plan.moves for r in m.reasons)
+    arguing = (not rec.acting or all(
+        supports_selling(m) and supports_buying(m) for m in plan.moves
+        if not m.out_flagged))
     checks.append((
-        "Is every cited item about a player in the move?", scoped,
+        "Is every cited item about a player in the move, and does it argue "
+        "for the decision it supports?", scoped and arguing,
         f"{sum(len(m.reasons) for m in plan.moves)} item(s) admitted, "
         f"{sum(len(m.excluded) for m in plan.moves)} excluded as off-subject "
-        f"or club-level"))
+        f"or club-level"
+        + ("" if not rec.acting else "; " + "; ".join(
+            f"{m.label}: {len(supports_selling(m))} against keeping "
+            f"{m.out_name}, {len(supports_buying(m))} for {m.in_name}"
+            for m in plan.moves))))
 
     same_club_ok = all(differentiating(m.reasons, m)
                        for m in plan.moves if m.same_club)

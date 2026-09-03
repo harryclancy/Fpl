@@ -337,7 +337,7 @@ def reasons_from(facts: pf.PlayerFacts) -> list[st.Reason]:
         reasons.append(st.Reason(
             text=claim.text, about=facts.player, level=level,
             kind=KIND_MAP.get(claim.kind, st.INFERENCE),
-            source=claim.source))
+            direction=claim.direction, source=claim.source))
     return reasons
 
 

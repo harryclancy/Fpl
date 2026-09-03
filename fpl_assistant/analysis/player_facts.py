@@ -117,6 +117,13 @@ BUY_SUPPORT = frozenset({
     EXPERT_BUY, FORM, UNDERLYING, SET_PIECES, PENALTIES, FIXTURES, ROLE, MINUTES,
 })
 
+# Buckets whose mere presence argues one way whatever the wording. An
+# injury report is bad news however cheerfully it is written; a confirmed
+# penalty duty is good news however drily. Everything outside these two
+# sets needs the sentence's own tone to say which way it points.
+ALWAYS_CAUTIONARY = frozenset({INJURY, SUSPENSION, ROTATION, TRANSFER, EXPERT_SELL})
+ALWAYS_ENCOURAGING = frozenset({EXPERT_BUY, SET_PIECES, PENALTIES})
+
 # Claim kinds, so an inference is never presented as something a
 # journalist said.
 FACT = "fact"
@@ -132,6 +139,11 @@ class Claim:
     text: str
     kind: str
     buckets: tuple[str, ...] = ()
+    # Which way this claim argues. A claim can name the right player, sit
+    # in the right bucket, and still say the opposite of what it is being
+    # used to prove -- "Semenyo very likely starts, as he always does" is
+    # a MINUTES claim about Semenyo and it is an argument for KEEPING him.
+    tone: str = "neutral"
     source: str = ""
     url: str = ""
     published: str = ""
@@ -139,8 +151,35 @@ class Claim:
 
     def as_dict(self) -> dict:
         return {"text": self.text, "kind": self.kind, "buckets": list(self.buckets),
+                "tone": self.tone, "direction": self.direction,
                 "source": self.source, "url": self.url, "published": self.published,
                 "player_named": self.player_named}
+
+    @property
+    def direction(self) -> str:
+        """Which decision this claim actually supports: "sell", "buy" or "".
+
+        Bucket membership alone is not enough. MINUTES and SELECTION sit
+        in SELL_SUPPORT because that is where an omission belongs, but a
+        MINUTES claim saying he starts every week belongs on the other
+        side of the argument entirely.
+        """
+        buckets = set(self.buckets)
+        if buckets & ALWAYS_CAUTIONARY:
+            return "sell"
+        if buckets & ALWAYS_ENCOURAGING:
+            return "buy"
+        if self.tone == "negative" and buckets & SELL_SUPPORT:
+            return "sell"
+        if self.tone == "positive" and buckets & BUY_SUPPORT:
+            return "buy"
+        return ""
+
+
+def _tone(text: str) -> str:
+    """Which way the sentence reads, when the caller has not said."""
+    from fpl_assistant.analysis import writeup as _writeup
+    return _writeup._tone(text)
 
 
 def buckets_for(text: str) -> tuple[str, ...]:
@@ -162,7 +201,8 @@ def names_player(text: str, name: str, full_name: str = "") -> bool:
 
 
 def classify(text: str, name: str, club: str, full_name: str = "",
-             source: str = "", url: str = "", published: str = "") -> Claim | None:
+             source: str = "", url: str = "", published: str = "",
+             tone: str = "") -> Claim | None:
     """Turns one sentence into a claim about this player, or discards it.
 
     Returns None when the sentence cannot legitimately say anything about
@@ -190,6 +230,7 @@ def classify(text: str, name: str, club: str, full_name: str = "",
     else:
         kind = FACT
     return Claim(text=text.strip(), kind=kind, buckets=found, source=source,
+                 tone=tone or _tone(text),
                  url=url, published=published, player_named=named)
 
 
@@ -304,7 +345,8 @@ def build(name: str, club: str, position: str, price: float, *,
         claim = classify(
             quote.get("text", ""), name, club, full_name,
             source=quote.get("source", ""), url=quote.get("url", ""),
-            published=quote.get("published", ""))
+            published=quote.get("published", ""),
+            tone=str(quote.get("tone") or ""))
         if claim:
             facts.claims.append(claim)
     facts.sources = sorted({c.source for c in facts.claims if c.source})

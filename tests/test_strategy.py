@@ -71,9 +71,11 @@ def test_same_club_move_survives_on_a_player_level_difference():
     s = state(names=["Owned Defender"], values={"Owned Defender": 6.0})
     reasons = [
         st.Reason("has taken every corner since the opening weekend",
-                  about="Other Defender", level=st.PLAYER_LEVEL, kind=st.FACT),
+                  about="Other Defender", level=st.PLAYER_LEVEL, kind=st.FACT,
+                  direction="buy"),
         st.Reason("was substituted at half time on Saturday",
-                  about="Owned Defender", level=st.PLAYER_LEVEL, kind=st.FACT),
+                  about="Owned Defender", level=st.PLAYER_LEVEL, kind=st.FACT,
+                  direction="sell"),
     ]
     plan = plan_of(out, into, s, reasons)
     assert not any("same_club" in r for r in plan.rejection_reasons)
@@ -404,9 +406,11 @@ def test_the_same_move_survives_once_something_is_observed_about_both():
                    confidence="Medium")
     move.reasons = [
         st.Reason("has been moved to right-back for the last three games",
-                  about="Settled", level=st.PLAYER_LEVEL, kind=st.FACT),
+                  about="Settled", level=st.PLAYER_LEVEL, kind=st.FACT,
+                  direction="sell"),
         st.Reason("has started every league game and taken the corners",
-                  about="Cheap Alternative", level=st.PLAYER_LEVEL, kind=st.FACT),
+                  about="Cheap Alternative", level=st.PLAYER_LEVEL,
+                  kind=st.FACT, direction="buy"),
     ]
     plan = st.reject(st._plan("single", [move], s))
     assert not plan.rejected, plan.rejection_reasons
@@ -422,7 +426,45 @@ def test_a_large_projection_needs_corroboration_on_the_incoming_player_too():
                    out_minutes="Very secure", in_minutes="Very secure",
                    confidence="Medium")
     move.reasons = [st.Reason("was dropped on Saturday", about="Settled",
-                              level=st.PLAYER_LEVEL, kind=st.FACT)]
+                              level=st.PLAYER_LEVEL, kind=st.FACT,
+                              direction="sell")]
     plan = st.reject(st._plan("single", [move], s))
     assert plan.rejected
     assert any("corroboration" in r for r in plan.rejection_reasons)
+
+
+# --- the live failure: evidence that argues the other way ----------------
+
+def test_a_favourable_item_cannot_corroborate_a_sale():
+    """The live run cited 'he very likely starts, as he always does' as a
+    reason to sell him, because it named him and concerned his minutes."""
+    s = state(names=["Owned"], values={"Owned": 8.5})
+    move = st.Move("Owned", "Target", position="MID",
+                   out_club="Bournemouth", in_club="Forest",
+                   selling_value=8.5, buy_price=8.0,
+                   out_5gw=24.5, in_5gw=30.1,
+                   out_urgency=0.0, out_hold=64.0,
+                   out_minutes="Very secure", in_minutes="Very secure",
+                   confidence="Medium")
+    move.reasons = [
+        st.Reason("very likely starts, as he always does, but two rivals are "
+                  "cheaper", about="Owned", level=st.PLAYER_LEVEL,
+                  kind=st.EXPERT, direction="buy"),
+        st.Reason("scored again at the weekend", about="Target",
+                  level=st.PLAYER_LEVEL, kind=st.FACT, direction="buy"),
+    ]
+    plan = st.reject(st._plan("single", [move], s))
+    assert plan.rejected
+    assert any("argues against keeping him" in r for r in plan.rejection_reasons)
+
+
+def test_direction_is_read_from_the_claim_not_from_the_topic():
+    from fpl_assistant.analysis import player_facts as pf
+    keep = pf.classify(
+        "Antoine Semenyo (\u00a38.5m) very likely starts, as he always does, "
+        "but Phil Foden (\u00a37.0m) is cheaper.",
+        "Semenyo", "BOU", "Antoine Semenyo")
+    drop = pf.classify("Semenyo was left out of the squad with a hamstring "
+                       "injury.", "Semenyo", "BOU", "Antoine Semenyo")
+    assert keep is not None and keep.direction != "sell"
+    assert drop is not None and drop.direction == "sell"
