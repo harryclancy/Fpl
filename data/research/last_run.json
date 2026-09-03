@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-03T03:33:39+00:00",
- "seconds": 133.3,
+ "ran_at": "2026-09-03T05:47:28+00:00",
+ "seconds": 165.8,
  "sources_attempted": 78,
  "sources_readable": 63,
- "candidates_discovered": 546,
- "substantive_items": 102,
+ "candidates_discovered": 564,
+ "substantive_items": 125,
  "duplicates_removed": 5,
- "deeply_analysed": 65,
- "deep_read_failed": 32,
- "corpus_size": 3878,
+ "deeply_analysed": 82,
+ "deep_read_failed": 38,
+ "corpus_size": 3935,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 102 articles"
+    "63/78 sources returned 125 articles"
    ]
   },
   "blackout": {
@@ -37,9 +37,9 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
-  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
+  "Fantasy Football Pundit: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
@@ -760,8 +760,8 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 12,
-   "source_count": 9,
+   "evidence_count": 13,
+   "source_count": 10,
    "latest_evidence": "2026-09-02T20:55:32+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
