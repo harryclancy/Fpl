@@ -575,8 +575,17 @@ def _strength_ranks(teams) -> dict:
     Averaged across home and away, because a write-up's claim about a
     club ("one of the meanest defences") is a claim about the side, not
     about one venue — the venue is already in the fixture difficulty.
+
+    RETURNS NOTHING WHEN THE RATINGS DO NOT DISCRIMINATE. The first live
+    run of the write-ups produced identical attack and defence ranks for
+    all twenty clubs, which means FPL's two strength columns were
+    carrying one undifferentiated number — and a sentence like "Arsenal
+    are not a reliable source of clean sheets" built on that is a
+    confident claim with nothing behind it. An empty result makes the
+    prose omit club-quality claims altogether, which is the honest
+    outcome: the fixture difficulty still does the work.
     """
-    ranks = {}
+    ranks, orderings = {}, {}
     for kind, columns in (
             ("attack", ("strength_attack_home", "strength_attack_away")),
             ("defence", ("strength_defence_home", "strength_defence_away"))):
@@ -596,6 +605,15 @@ def _strength_ranks(teams) -> dict:
             # defence, so a high rank means "good at this" either way.
             ranks.setdefault(team_id, {})[kind] = (
                 position / last if last else 0.5)
+        orderings[kind] = order
+
+    if len(orderings) == 2:
+        attack, defence = orderings.get("attack"), orderings.get("defence")
+        if attack == defence:
+            # One number wearing two hats. It cannot say that a side
+            # attacks well and defends badly, which is the only thing
+            # these clauses are for.
+            return {}
     return ranks
 
 

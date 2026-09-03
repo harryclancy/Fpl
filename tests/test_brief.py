@@ -262,12 +262,16 @@ def fake_live():
         {"id": 1, "name": "Arsenal", "short_name": "ARS",
          "strength_attack_home": 1300, "strength_attack_away": 1280,
          "strength_defence_home": 1340, "strength_defence_away": 1320},
+        # Deliberately crossed over: Sunderland defend better than they
+        # attack, Chelsea the reverse. A table where both orderings match
+        # carries no directional information and is refused — see
+        # test_undifferentiated_strength_ratings_are_refused.
         {"id": 2, "name": "Sunderland", "short_name": "SUN",
          "strength_attack_home": 1010, "strength_attack_away": 1000,
-         "strength_defence_home": 1020, "strength_defence_away": 1005},
+         "strength_defence_home": 1210, "strength_defence_away": 1190},
         {"id": 3, "name": "Chelsea", "short_name": "CHE",
          "strength_attack_home": 1260, "strength_attack_away": 1240,
-         "strength_defence_home": 1200, "strength_defence_away": 1180},
+         "strength_defence_home": 1060, "strength_defence_away": 1040},
     ]).set_index("id", drop=False)
     record = {
         "team": 1, "element_type": 2, "club": "ARS", "status": "a",
@@ -331,13 +335,12 @@ def test_the_pipeline_supplies_a_real_fixture_run_with_opponents():
 
 def test_the_pipeline_ranks_the_clubs_against_the_league():
     inputs = assembled()
-    # Arsenal have both the best defence and the best attack of the
-    # three, so Chelsea sit mid-table on attack and above Sunderland on
-    # defence. The point of the test is that the ranks are real
-    # positions in the league rather than the 0.5 default.
+    # Arsenal have the best defence; Chelsea attack better than they
+    # defend, which is exactly the distinction a single blunt rating
+    # cannot make.
     assert inputs.team_defence_rank == 1.0
     assert inputs.opponent_attack_rank == 0.5
-    assert inputs.opponent_defence_rank == 0.5
+    assert inputs.opponent_defence_rank == 0.0
 
 
 def test_the_pipeline_carries_the_prior_season_from_the_committed_history():
@@ -436,3 +439,30 @@ def test_a_starter_is_compared_with_the_bench_not_with_other_starters():
     names = [a.name for a in decide._bench_alternatives(
         benched, squad[2], squad, live)]
     assert "Gabriel" in names and "Benched" not in names
+
+
+def test_undifferentiated_strength_ratings_are_refused_rather_than_quoted():
+    """One number wearing two hats cannot say a side attacks well and
+    defends badly, which is the only thing the clause is for."""
+    degenerate = pd.DataFrame([
+        {"id": 1, "name": "A", "short_name": "A",
+         "strength_attack_home": 1200, "strength_attack_away": 1200,
+         "strength_defence_home": 1200, "strength_defence_away": 1200},
+        {"id": 2, "name": "B", "short_name": "B",
+         "strength_attack_home": 1100, "strength_attack_away": 1100,
+         "strength_defence_home": 1100, "strength_defence_away": 1100},
+        {"id": 3, "name": "C", "short_name": "C",
+         "strength_attack_home": 1000, "strength_attack_away": 1000,
+         "strength_defence_home": 1000, "strength_defence_away": 1000},
+    ]).set_index("id", drop=False)
+    assert decide._strength_ranks(degenerate) == {}
+    # A genuinely directional table still ranks.
+    assert decide._strength_ranks(fake_live()["teams"])
+
+
+def test_a_club_claim_is_omitted_when_there_is_no_rating_behind_it():
+    brief = B.build(player(position="DEF", team_defence_rank=None,
+                           opponent_attack_rank=None))
+    assert "reliable source of clean sheets" not in brief.case_for
+    assert "meanest" not in brief.case_for
+    assert brief.case_for  # the fixture itself still carries the section
