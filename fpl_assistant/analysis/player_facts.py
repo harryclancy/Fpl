@@ -152,10 +152,12 @@ def buckets_for(text: str) -> tuple[str, ...]:
 def names_player(text: str, name: str, full_name: str = "") -> bool:
     """Is this sentence ABOUT the player, or merely near him?
 
-    The gate that stops João Pedro's news appearing in Raya's card.
+    The gate that stops João Pedro's news appearing in Raya's card, and
+    -- read on the original sentence, where capitalisation survives --
+    the gate that stops Gabriel Jesus's transfer appearing in Gabriel's.
     """
-    normalised = ev.normalise(text)
-    return any(ev._mentions(normalised, variant)
+    own = ev.own_tokens(name, full_name)
+    return any(ev.mentions_this_player(text, variant, own)
                for variant in ev.name_variants(name, full_name))
 
 

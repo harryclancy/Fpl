@@ -270,6 +270,13 @@ def _live_data():
             if element.get("team") in teams.index else "",
             "minutes_category": candidate_minutes.category,
             "minutes_confidence": candidate_minutes.confidence,
+            # The real full name, which is what lets the evidence layer
+            # tell this player apart from everybody else who shares his
+            # web_name. Without it "Nobel Mendy" and "David Raya" look
+            # like the same shape of phrase.
+            "full_name": " ".join(part for part in (
+                str(element.get("first_name") or ""),
+                str(element.get("second_name") or "")) if part).strip(),
         }
         by_id[int(element["id"])] = record
         by_name[str(element.get("web_name", ""))] = record
@@ -480,8 +487,13 @@ def main() -> int:
     reasons: list[st.Reason] = []
     for signal, player in zip(signals, squad):
         entry = entries.get(signal.name, {})
+        live_record = {}
+        if live:
+            live_record = live["by_id"].get(int(player.get("id", 0) or 0)) \
+                or live["by_name"].get(signal.name, {})
         assessment = pf.build(
             signal.name, signal.club, signal.position, signal.price,
+            full_name=str(live_record.get("full_name") or ""),
             quotes=entry.get("quotes") or [],
             availability=(pf.OUT if signal.flagged else
                           pf.DOUBT if signal.minutes_category in
@@ -510,10 +522,13 @@ def main() -> int:
         # The same sentence extraction the squad's write-ups use, so an
         # incoming player is argued from published prose rather than from
         # headlines — and, like theirs, only from sentences that name him.
+        target_full = str((live["by_name"].get(target.name, {}) if live
+                           else {}).get("full_name") or "")
         quotes = writeup_mod.quotes_for(target.name, target.club,
-                                        found.substantive_items)
+                                        found.substantive_items, target_full)
         target_facts = pf.build(
             target.name, target.club, target.position, target.price,
+            full_name=target_full,
             quotes=[q.as_dict() for q in quotes[:12]],
             expected_minutes=target.minutes_category,
             fixture="", form="")

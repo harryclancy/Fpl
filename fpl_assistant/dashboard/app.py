@@ -1881,40 +1881,43 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
     ranking = dossier.rank_by_sell_urgency(squad_dossiers)
 
     # --- the transfer decision -----------------------------------------
-    plan = None
+    #
+    # THERE IS ONE ENGINE. This page used to run two: the PuLP optimiser
+    # below chose transfers for the suggested eleven at the top, and the
+    # plan engine chose a different answer for the section underneath. So
+    # the page could show a squad with a transfer already applied while
+    # the next heading said "roll", and each half could cite reasoning
+    # that contradicted the other. That is not a rendering bug to patch —
+    # it is two opinions printed as one recommendation.
+    #
+    # The optimiser still runs, because its budget advice is used
+    # elsewhere, but it no longer decides anything the reader sees. The
+    # squad shown, the transfers named and every player's card all come
+    # off the same committed decision.
     try:
         budget = transfer_budget.decide(owned, free_transfers=free_transfers)
-        plan = optimiser.optimise_transfers(
-            scored, owned_ids, bank=bank, free_transfers=free_transfers,
-            max_transfers=budget.limit, template_weight=rank_strategy_weight(),
-        )
     except Exception:
         budget = None
 
-    cases = []
-    if plan is not None and plan.transfers:
-        try:
-            cases = transfer_case.explain_plan(
-                scored, plan.out_ids, plan.in_ids, next_event,
-                fixture_table=fixture_table, free_transfers=free_transfers,
-                bank_after=bank,
-            )
-            for case in cases:
-                case.why_not_instead = ranking.why_this_one(case.out.player_id)
-        except Exception:
-            cases = []
+    decision_payload = load_decision()
+    recommendation = decision_payload.get("recommendation") or {}
+    winning_plan = recommendation.get("winner") or {}
+    by_web_name = {}
+    for _, row in scored.iterrows():
+        by_web_name.setdefault(str(row.get("web_name")), int(row["id"]))
 
-    # A transfer the reasoning itself advises against is not a
-    # recommendation. Rolling is a real answer and the page has to be
-    # willing to give it rather than inventing a move to fill the space.
-    acting = [c for c in cases if not c.roll_instead]
-    apply_ids = set()
-    for case in acting:
-        apply_ids.add(case.out.player_id)
+    apply_ids, incoming_ids = set(), []
+    for move in winning_plan.get("moves", []):
+        out_id = by_web_name.get(move.get("out"))
+        in_id = by_web_name.get(move.get("in"))
+        # Both halves must resolve, or the swap is not applied at all: a
+        # squad missing a player it sold is worse than one showing the
+        # move undone.
+        if out_id in owned_ids and in_id is not None:
+            apply_ids.add(out_id)
+            incoming_ids.append(in_id)
 
-    suggested_ids = [i for i in owned_ids if i not in apply_ids] + [
-        c.into.player_id for c in acting
-    ]
+    suggested_ids = [i for i in owned_ids if i not in apply_ids] + incoming_ids
     suggested = scored[scored["id"].isin(suggested_ids)].copy()
     if len(suggested) < 15:
         suggested, suggested_ids = owned, list(owned_ids)
@@ -1968,6 +1971,9 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
                 st.markdown(line)
 
     # ================= SECTION 2 — SUGGESTED TRANSFERS ================
+    # One call, one decision. Everything that used to be rendered here —
+    # the roll card, the transfer blocks, the "considered and rejected"
+    # captions — came from the second engine and is gone with it.
     render_transfer_decision()
 
     if ranking.entries:
@@ -1982,33 +1988,8 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
                     f"**{d.sell_urgency}/5 · {d.name}** ({d.sell_urgency_label}) — "
                     f"{d.sell_urgency_reason}"
                 )
-
-    if not acting:
-        render_html(
-            "<div class='fpl-card'><h4>Roll the transfer</h4>"
-            "<p class='fpl-meta'>No move clears the bar this week.</p></div>"
-        )
-        if cases:
-            st.markdown(cases[0].roll_verdict)
-            st.markdown(f"**Next {transfer_case.LOOKAHEAD_GAMEWEEKS} gameweeks.** {cases[0].look_ahead}")
-            if cases[0].alternative:
-                st.markdown(f"**The closest thing to a move.** {cases[0].alternative}")
-        else:
-            st.markdown(
-                "Nothing in the squad is injured, suspended or out of favour, and no available "
-                "upgrade pays for itself across the next few gameweeks. A banked transfer is worth "
-                "more than a marginal one — it buys the option to react to team news next week."
-            )
-        if budget:
-            st.caption(budget.reason)
-    else:
-        for index, case in enumerate(acting):
-            render_transfer_block(case, index)
-        held = [c for c in cases if c.roll_instead]
-        for case in held:
-            st.caption(
-                f"Considered and rejected: {case.out.name} → {case.into.name}. {case.roll_verdict}"
-            )
+    if budget:
+        st.caption(budget.reason)
 
     # ================= SECTION 3 — WHY EACH PLAYER ====================
     _section(
@@ -2049,7 +2030,7 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
             )
         report = quality_control.run(
             confirmed_ids, scored, next_event,
-            transfer_cases=cases, player_cases=player_cases,
+            transfer_cases=[], player_cases=player_cases,
             bank=bank, free_transfers=free_transfers,
             confirmed_event=confirmed.event,
         )

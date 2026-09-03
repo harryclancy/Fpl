@@ -130,6 +130,83 @@ def _mentions(haystack: str, term: str) -> bool:
     return re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", haystack) is not None
 
 
+def mentions_this_player(text: str, term: str, own: set,
+                        full_name_known: bool | None = None) -> bool:
+    """Is this a mention of HIM, or of somebody who shares the name?
+
+    FPL's web_name is often a bare surname or a bare forename, and a
+    football corpus is full of other people who have it. Searching for
+    "Gabriel" finds Gabriel Jesus and Gabriel Martinelli; searching for
+    "Mendy" finds every Mendy in the pyramid. Counting those is how an
+    article about a striker joining Barcelona became a reason to sell a
+    centre-half.
+
+    The test is capitalisation, read on the ORIGINAL text rather than the
+    normalised one: a name butted against another capitalised word that
+    is not part of this player's own name is somebody else's full name.
+    "Gabriel Jesus" clashes, "Gabriel Magalhaes" does not, and "Gabriel
+    headed the opener" does not, because "headed" is not a name.
+
+    The word BEFORE the match is only consulted when the player's real
+    full name is known. Without it, "David Raya" and "Nobel Mendy" are
+    indistinguishable -- both are a capitalised word in front of a
+    surname -- and rejecting the first to catch the second would lose far
+    more evidence than it saves. Given the full name, "David" is his and
+    "Nobel" is not, and both cases are decided correctly.
+    """
+    if full_name_known is None:
+        full_name_known = len(own) > 1
+    pattern = rf"(?<![A-Za-z0-9]){re.escape(term)}(?![A-Za-z0-9])"
+    for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+        before = text[:match.start()]
+        after = text[match.end():]
+        previous = before.split()[-1] if before.split() else ""
+        following = after.split()[0] if after.split() else ""
+        # A word that opens a sentence is capitalised by grammar, not by
+        # being a name, so it cannot testify either way.
+        sentence_start = bool(re.search(r"[.!?\u2022|]\s*$", before.rstrip()
+                                        [:len(before.rstrip()) - len(previous)]
+                                        + " ")) or not before.strip()
+        neighbours = []
+        if full_name_known and not sentence_start:
+            neighbours.append(previous)
+        neighbours.append(following)
+        if not any(_name_like(word, own) for word in neighbours):
+            return True
+    return False
+
+
+# Capitalised words that are not part of anybody's name. Kept short and
+# general: days, months, competitions and the handful of words that open
+# a clause. Nothing club- or player-specific belongs here.
+_CAPITALISED_NOT_NAMES = frozenset("""
+monday tuesday wednesday thursday friday saturday sunday january february
+march april may june july august september october november december
+premier league cup fa efl uefa champions europa conference world euro
+gameweek fpl fantasy football club united city town rovers wanderers albion
+the a an and but or if when while after before however meanwhile although
+""".split())
+
+
+def _name_like(word: str, own: set) -> bool:
+    """Does this neighbouring word read as part of somebody else's name?"""
+    stripped = word.strip(".,;:!?()[]{}\"'\u2019\u201c\u201d")
+    if len(stripped) < 3 or not stripped[0].isupper() or not stripped.isalpha():
+        return False
+    lowered = normalise(stripped)
+    return lowered not in _CAPITALISED_NOT_NAMES and lowered not in own
+
+
+def own_tokens(name: str, full_name: str = "") -> set:
+    """Every word that belongs to this player's own name."""
+    tokens = set()
+    for candidate in (name, full_name):
+        for part in normalise(candidate).split():
+            if part:
+                tokens.add(part)
+    return tokens
+
+
 def article_text(article: Article) -> str:
     return normalise(f"{article.title} {article.excerpt} {article.url}")
 

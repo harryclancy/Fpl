@@ -128,7 +128,8 @@ def test_a_strong_hold_cannot_be_sold_on_a_projection_alone():
     plan = plan_of(out, into, s, [reason])
     if assessment.hold_strength >= st.STRONG_HOLD:
         assert plan.rejected
-        assert any("strong_hold" in r for r in plan.rejection_reasons)
+        assert any("corroboration" in r or "problem_fixed" in r
+                   for r in plan.rejection_reasons)
 
 
 def test_a_hit_must_clear_four_points_not_match_them():
@@ -372,3 +373,56 @@ def test_a_zero_selling_value_is_still_missing_data():
     s = state(names=["A"], values={"A": 0.0})
     assert not s.complete
     assert any("no selling price" in m for m in s.missing)
+
+
+# --- the live failure: a 0/100 hold sold on a projection alone -----------
+
+def test_a_player_with_no_problem_cannot_be_sold_however_big_the_projection():
+    """The live run recommended exactly this before the rule existed."""
+    s = state(names=["Settled"], values={"Settled": 8.0})
+    move = st.Move("Settled", "Cheap Alternative", position="DEF",
+                   out_club="Arsenal", in_club="Brighton",
+                   selling_value=8.0, buy_price=4.5,
+                   out_5gw=21.4, in_5gw=27.9,
+                   out_urgency=0.0, out_hold=55.0,
+                   out_minutes="Very secure", in_minutes="Very secure",
+                   confidence="Medium")
+    plan = st.reject(st._plan("single", [move], s))
+    assert plan.rejected
+    assert any("problem_fixed" in r for r in plan.rejection_reasons)
+    assert "projection" in plan.rejection_reasons[0]
+
+
+def test_the_same_move_survives_once_something_is_observed_about_both():
+    s = state(names=["Settled"], values={"Settled": 8.0})
+    move = st.Move("Settled", "Cheap Alternative", position="DEF",
+                   out_club="Arsenal", in_club="Brighton",
+                   selling_value=8.0, buy_price=4.5,
+                   out_5gw=21.4, in_5gw=27.9,
+                   out_urgency=40.0, out_hold=40.0,
+                   out_minutes="Very secure", in_minutes="Very secure",
+                   confidence="Medium")
+    move.reasons = [
+        st.Reason("has been moved to right-back for the last three games",
+                  about="Settled", level=st.PLAYER_LEVEL, kind=st.FACT),
+        st.Reason("has started every league game and taken the corners",
+                  about="Cheap Alternative", level=st.PLAYER_LEVEL, kind=st.FACT),
+    ]
+    plan = st.reject(st._plan("single", [move], s))
+    assert not plan.rejected, plan.rejection_reasons
+
+
+def test_a_large_projection_needs_corroboration_on_the_incoming_player_too():
+    s = state(names=["Settled"], values={"Settled": 8.0})
+    move = st.Move("Settled", "Unknown Quantity", position="DEF",
+                   out_club="Arsenal", in_club="Brighton",
+                   selling_value=8.0, buy_price=4.5,
+                   out_5gw=21.4, in_5gw=27.9,
+                   out_urgency=40.0, out_hold=40.0,
+                   out_minutes="Very secure", in_minutes="Very secure",
+                   confidence="Medium")
+    move.reasons = [st.Reason("was dropped on Saturday", about="Settled",
+                              level=st.PLAYER_LEVEL, kind=st.FACT)]
+    plan = st.reject(st._plan("single", [move], s))
+    assert plan.rejected
+    assert any("corroboration" in r for r in plan.rejection_reasons)

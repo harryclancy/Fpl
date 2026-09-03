@@ -95,6 +95,14 @@ NAV_MARKERS = (
     "fixture ticker", "team reveals", "sign up", "log in", "toolkit",
     "why join us", "free team rating", "latest news", "more from", "related articles",
     "most read", "top stories", "watch live", "buy tickets", "shop now",
+    # Byline and syndication chrome. A live run quoted "Mitch Fretton Last
+    # Update: 1 hour ago 3 min read Add us as a preferred source on
+    # Google" as evidence about a centre-half, because the sentence
+    # splitter found no full stop before the real prose began.
+    "last update", "min read", "preferred source", "add us as a",
+    "reading time", "follow us on", "subscribe", "newsletter",
+    "please use chrome", "accessible video player", "stream pl games",
+    "no contract", "getty images", "image credit", "advertisement",
 )
 # A run of Capitalised Words With No Verb is a menu or a team list, not a
 # sentence. Measured rather than guessed: real prose is mostly lowercase.
@@ -274,6 +282,7 @@ def quotes_for(name: str, club: str, items, full_name: str = "") -> list[Quote]:
     yields one usable sentence, a full article yields a dozen.
     """
     variants = ev.name_variants(name, full_name)
+    own = ev.own_tokens(name, full_name)
     found: list[Quote] = []
     seen: set[str] = set()
 
@@ -287,7 +296,10 @@ def quotes_for(name: str, club: str, items, full_name: str = "") -> list[Quote]:
             if taken >= MAX_PER_ARTICLE:
                 break
             normalised = ev.normalise(sentence)
-            if not any(ev._mentions(normalised, variant) for variant in variants):
+            # Read on the ORIGINAL sentence, so capitalisation can tell
+            # this player apart from everybody else who shares his name.
+            if not any(ev.mentions_this_player(sentence, variant, own)
+                       for variant in variants):
                 continue
             key = normalised[:90]
             if key in seen:

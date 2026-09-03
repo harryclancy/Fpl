@@ -404,21 +404,55 @@ def rule_evidence_exists(plan: Plan) -> str | None:
     return None
 
 
-def rule_strong_hold_corroborated(plan: Plan) -> str | None:
+def rule_claim_corroborated(plan: Plan) -> str | None:
+    """A claim big enough to drive a decision needs someone to have seen it.
+
+    The engine's own projection is not evidence. It is a model output,
+    and a model that says a £4.5m defender will out-score an established
+    one by six points over five gameweeks is making a claim, not
+    reporting a fact. A claim that large has to be corroborated on both
+    sides of the swap: something observed about the player being sold,
+    and something observed about the player being bought. Otherwise the
+    number is arguing with itself.
+    """
     for move in plan.moves:
-        if move.out_hold < STRONG_HOLD or move.out_flagged:
+        if move.out_flagged:
+            continue
+        driving = move.points_delta >= REAL_UPGRADE
+        held = move.out_hold >= STRONG_HOLD
+        if not (driving or held):
             continue
         if not _observed_about(move, move.out_name):
-            return (f"{move.out_name} is a strong hold ({move.out_hold:.0f}/100) "
-                    f"and nothing has been observed about him to justify "
-                    f"selling — a projection is not evidence")
+            reason = (f"a strong hold ({move.out_hold:.0f}/100)" if held else
+                      f"{move.points_delta:+.1f} over five gameweeks")
+            return (f"the case for selling {move.out_name} is {reason} and "
+                    f"nothing published this week is about him — the engine's "
+                    f"own projection is a claim, not evidence for it")
+        if driving and not _observed_about(move, move.in_name):
+            return (f"{move.in_name} is projected {move.points_delta:+.1f} "
+                    f"better over five gameweeks and nothing published this "
+                    f"week is about him to corroborate it")
     return None
 
 
 def rule_problem_being_fixed(plan: Plan) -> str | None:
+    """The diagnosis comes first, and a projection cannot overrule it.
+
+    A projection argues for the INCOMING player. It says nothing about
+    whether the outgoing one is a problem, so however large it is it
+    cannot buy its way past a squad member with nothing wrong. This is
+    the rule that stops a 0/100 hold being sold because someone cheaper
+    modelled better.
+    """
     for move in plan.moves:
         if move.out_flagged or move.out_urgency > NO_PROBLEM_URGENCY:
             continue
+        if not _observed_about(move, move.out_name):
+            return (f"{move.out_name} is not a problem — "
+                    f"{move.out_urgency:.0f}/100 sell urgency, a "
+                    f"{band(move.out_urgency).lower()}, and nothing published "
+                    f"this week is about him. The entire case for the move is "
+                    f"a projection about {move.in_name}")
         if move.points_delta < REAL_UPGRADE:
             return (f"{move.out_name} is not a problem "
                     f"({move.out_urgency:.0f}/100 sell urgency, "
@@ -477,7 +511,7 @@ REJECTION_RULES = (
     ("hit_cleared", rule_hit_cleared),
     ("same_club", rule_same_club_differentiated),
     ("evidence_exists", rule_evidence_exists),
-    ("strong_hold", rule_strong_hold_corroborated),
+    ("corroboration", rule_claim_corroborated),
     ("problem_fixed", rule_problem_being_fixed),
     ("sideways", rule_not_sideways),
     ("money_use", rule_money_has_a_use),
