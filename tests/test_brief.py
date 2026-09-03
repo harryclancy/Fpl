@@ -487,3 +487,25 @@ def test_a_quoted_rejection_reason_does_not_repeat_the_sentence_around_it():
                                        "not evidence for it")]))
     assert "a projection is a claim" not in brief.verdict
     assert "nothing published argues against keeping him" in brief.verdict
+
+
+def test_a_quoted_reason_does_not_restate_the_gap_twice():
+    brief = B.build(player(transfer_alternatives=[
+        B.Alternative("Barry", five_gw=31.1, delta=5.0,
+                      rejected_because="the case for selling him is +5.0 over "
+                                       "five gameweeks and nothing published "
+                                       "argues against keeping him")]))
+    assert brief.verdict.count("+5.0") == 1
+    assert "nothing published argues against keeping him" in brief.verdict
+
+
+def test_the_case_for_is_never_left_as_a_single_sentence_when_it_can_say_more():
+    """A striker with cold numbers and a kind fixture still has an
+    argument: he is the one on the pitch when the chances arrive."""
+    brief = B.build(player(
+        position="FWD", xgi90=0.0, positional_xgi90=0.0,
+        five_gw=24.0, positional_five_gw=24.0, price=8.0,
+        fixtures=[B.Fixture("SUN", True, 2.2), B.Fixture("BOU", False, 3.0),
+                  B.Fixture("CHE", True, 3.0), B.Fixture("AVL", False, 3.0)]))
+    assert brief.case_for.count(".") >= 2, brief.case_for
+    assert "on the pitch when the chances come" in brief.case_for

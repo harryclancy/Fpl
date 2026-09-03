@@ -498,9 +498,8 @@ def opportunity_case(inputs: BriefInputs) -> str:
     fixture = inputs.this_week
     if not (inputs.attacker and fixture) or fixture.difficulty > 3.0:
         return ""
-    return ("Whatever else is wrong, he is the man on the pitch when the "
-            "chances come, and that access is the whole case for owning a "
-            "starter in a week like this.")
+    return ("Whatever else is wrong, he is on the pitch when the chances "
+            "come, and that access is the case for owning him this week.")
 
 
 def _position(code: str) -> str:
@@ -679,7 +678,11 @@ def _shorten(reason: str) -> str:
     for separator in (" — ", " -- "):
         if separator in reason:
             reason = reason.split(separator)[0]
-    return reason
+    # The engine's reason often opens by restating the projection gap,
+    # which the sentence quoting it has just given. Once is enough.
+    if " and " in reason and "over five gameweeks" in reason.split(" and ")[0]:
+        reason = " and ".join(reason.split(" and ")[1:])
+    return reason.strip()
 
 
 def selection_case(inputs: BriefInputs) -> str:
@@ -854,8 +857,14 @@ def build(inputs: BriefInputs) -> Brief:
         # decision the reader came for.
         "why": ([_role_line(inputs, playing), playing_line]
                 + ([selection_case(inputs)] if inputs.on_bench else [])),
-        # THE CASE FOR — the fixture interpreted, and what he does with it.
-        "case_for": [fixture_case(inputs)],
+        # THE CASE FOR — the fixture interpreted, and what he does with
+        # it. When the numbers give nothing, the access a starter has to
+        # the chances is the argument, and it is core: a one-sentence
+        # case for is where a write-up stops being an argument.
+        "case_for": [fixture_case(inputs)] + (
+            [] if (returns_case(inputs) or value_case(inputs)
+                   or enabler_case(inputs))
+            else [opportunity_case(inputs)]),
         # THE CASE AGAINST — always something, and always about him. Capped
         # at the strongest three: every possible doubt reads as hedging.
         "against": [_sentence_from(_strongest(doubts))],
