@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-03T16:36:36+00:00",
+ "generated": "2026-09-03T17:25:37+00:00",
  "gameweek": 3,
- "corpus_size": 4426,
+ "corpus_size": 4502,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -253,14 +253,14 @@
    "player": "Ndiaye",
    "club": "MCI",
    "status": "Latest on Ndiaye — Fantasy Football Scout, 03 Sep: “Via Ian Hart A: Iliman Ndiaye has swapped Merseyside for Manchester this week, in a deal which could rise to £65m.”",
-   "why_here": "Ndiaye is in the starting eleven this week at £6.0m as a MID. The selection rests on 25 retrieved item(s) from 13 source(s), the most recent dated 03 Sep.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 03 Sep: “I don’t think he’ll be a nailed-on starter, either, given Manchester City’s squad depth, which you can see below via the excellent @4lex_mcfc Even when Ndiaye does start, he probably won’t play the full 90 minutes, which will subsequently impact his ability to hit the defensive contribution (DefCon) threshold.” Everton, 01 Sep: “Signed from Marseille in July 2024, Ndiaye made history by becoming the last-ever goalscorer for an Everton Men’s player at Goodison Park when he struck twice in the Blues’ 2-0 victory over Southampton in May 2025.” 101 Great Goals — Fantasy, 01 Sep: ““City fans can rest assured that I will give my all to bring more success to this incredible club.” Ndiaye scored 17 goals and provided four assists for Everton after joining from Marseille in 2024.”",
+   "why_here": "Ndiaye is in the starting eleven this week at £6.0m as a MID. The selection rests on 26 retrieved item(s) from 13 source(s), the most recent dated 03 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 03 Sep: “I don’t think he’ll be a nailed-on starter, either, given Manchester City’s squad depth, which you can see below via the excellent @4lex_mcfc Even when Ndiaye does start, he probably won’t play the full 90 minutes, which will subsequently impact his ability to hit the defensive contribution (DefCon) threshold.” Manchester City, 03 Sep: “BUY YOUR NDIAYE #7 SHIRT HERE The 26-year-old has emerged as one of the most dynamic and exciting attacking talents in the Premier League over the past few seasons.” Manchester City, 03 Sep: “You can buy your Ndiaye 7 shirt right now on our Online Store or by visiting our Stadium, Arndale or Trafford Centre Stores.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Flashscore, 01 Sep: “Speaking to Man City’s website, Ndiaye said: \"I’ve worked my whole life for an opportunity like this.”",
    "developments": "Recent developments — Everton, 02 Sep: “Now Everton’s number 10, he takes the shirt previously worn in the Premier League era by the likes of Iliman Ndiaye, Wayne Rooney and Romelu Lukaku.” FourFourTwo FPL, 02 Sep: “Sanctioning the departures of both Beto and Iliman Ndiaye on transfer deadline day was always going to be a gamble.” Soccerway, 01 Sep: “On Friday night it looked like Ndiaye was on his way to Tottenham after the North London club agreed a deal with David Moyes’ side.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 25,
+   "evidence_count": 26,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
     "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
@@ -311,6 +311,22 @@
       "statistics",
       "rotation"
      ]
+    },
+    {
+     "text": "BUY YOUR NDIAYE #7 SHIRT HERE The 26-year-old has emerged as one of the most dynamic and exciting attacking talents in the Premier League over the past few seasons.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-squad-number-63924046",
+     "published": "2026-09-03T04:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "You can buy your Ndiaye 7 shirt right now on our Online Store or by visiting our Stadium, Arndale or Trafford Centre Stores.",
+     "source": "Manchester City",
+     "url": "https://www.mancity.com/news/mens/iliman-ndiaye-squad-number-63924046",
+     "published": "2026-09-03T04:00:00+00:00",
+     "tone": "positive",
+     "topics": []
     },
     {
      "text": "Now Everton’s number 10, he takes the shirt previously worn in the Premier League era by the likes of Iliman Ndiaye, Wayne Rooney and Romelu Lukaku.",

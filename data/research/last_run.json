@@ -1,16 +1,16 @@
 {
  "mode": "deadline",
  "gameweek": 3,
- "ran_at": "2026-09-03T16:36:36+00:00",
- "seconds": 228.8,
+ "ran_at": "2026-09-03T17:25:37+00:00",
+ "seconds": 188.7,
  "sources_attempted": 78,
- "sources_readable": 59,
+ "sources_readable": 62,
  "candidates_discovered": 1000,
- "substantive_items": 609,
- "duplicates_removed": 29,
- "deeply_analysed": 63,
- "deep_read_failed": 87,
- "corpus_size": 4426,
+ "substantive_items": 605,
+ "duplicates_removed": 38,
+ "deeply_analysed": 83,
+ "deep_read_failed": 97,
+ "corpus_size": 4502,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 609 articles"
+    "62/78 sources returned 605 articles"
    ]
   },
   "blackout": {
@@ -37,12 +37,10 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 3 days",
   "FPL Central: nothing published in the last 3 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 3 days",
-  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
+  "Fantasy Football Pundit: nothing published in the last 3 days",
   "FPL Strat: nothing published in the last 3 days",
   "Draft FC: nothing published in the last 3 days",
   "FPLai: nothing published in the last 3 days",
@@ -55,8 +53,7 @@
   "Premier Injuries: nothing published in the last 3 days",
   "PhysioRoom: nothing published in the last 3 days",
   "The Hard Tackle: nothing published in the last 3 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml",
-  "candidate ceiling of 1000 reached after taking 24 items from each of 59 sources"
+  "candidate ceiling of 1000 reached after taking 23 items from each of 62 sources"
  ],
  "players": {
   "Raya": {
@@ -573,7 +570,7 @@
   "Ndiaye": {
    "player": "Ndiaye",
    "club": "MCI",
-   "evidence_count": 25,
+   "evidence_count": 26,
    "source_count": 13,
    "latest_evidence": "2026-09-03T15:35:00+00:00",
    "official_source_found": true,
