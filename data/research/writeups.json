@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-02T23:26:53+00:00",
+ "generated": "2026-09-03T01:15:11+00:00",
  "gameweek": 3,
- "corpus_size": 3742,
+ "corpus_size": 3806,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -211,18 +211,18 @@
    "evidence_count": 6,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/doku-nunes-latest-man-city-injury-list-for-coventry-clash_604319.html",
     "https://www.fourfourtwo.com/person/player/after-seven-years-at-arsenal-i-wanted-to-help-man-city-win-vivianne-miedema-on-transfer-motivation-and-wsl-growth",
     "https://www.fantasyfootballscout.co.uk/2026/08/31/fpl-gameweek-3-early-scout-picks-piling-up-on-man-city",
     "https://www.fantasyfootballscout.co.uk/2026/08/31/bouaddi-to-man-city-could-it-affect-oreilly",
-    "https://www.ccfc.co.uk/news/2026/august/30/coventry-city-sign-stephen-mfuni-on-loan-from-manchester-city/",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
    ],
    "sources_used": [
-    "Coventry City",
     "FPL Captain",
     "Fantasy Football Hub",
     "Fantasy Football Scout",
-    "FourFourTwo FPL"
+    "FourFourTwo FPL",
+    "Sports Mole"
    ],
    "quotes": [
     {
@@ -1058,46 +1058,36 @@
   "Diop": {
    "player": "Diop",
    "club": "IPS",
-   "status": "",
+   "status": "Latest on Diop — Sports Mole, 02 Sep: “Protecting the shot-stopper should be centre-backs Issa Diop and Jacob Greaves, the latter of whom will be desperate to move on from his own goal at Old Trafford.”",
    "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 02 Sep.",
-   "case_for": "What supports keeping him: RotoWire Soccer, 02 Sep: “For more markets and the rest of the matchweek, see RotoWire's soccer betting page and the best sportsbook promos Ipswich Town vs Liverpool Key Matchups Alexander Isak Issa Diop and Jacob Greaves Isak scored his first of the season against Forest and is the one Liverpool player whose finishing can settle a game like this without the rest of the performance being any good.” RotoWire Soccer, 02 Sep: “Diop and Greaves kept Sunderland to a single goal and then had an afternoon at Old Trafford neither will want back, with Greaves putting through his own net off a Harry Maguire shot.” Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
+   "case_for": "What supports keeping him: Sports Mole, 02 Sep: “Protecting the shot-stopper should be centre-backs Issa Diop and Jacob Greaves, the latter of whom will be desperate to move on from his own goal at Old Trafford.” Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Sports Mole, 02 Sep: “Protecting the shot-stopper should be centre-backs Issa Diop and Jacob Greaves, the latter of whom will be desperate to move on from his own goal at Old Trafford.” Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+    "https://www.sportsmole.co.uk/football/liverpool/predicted-lineups/barcola-to-make-reds-debut-predicted-liverpool-xi-vs-ipswich_604314.html",
+    "https://www.sportsmole.co.uk/football/ipswich-town/predicted-lineups/one-major-change-for-the-tractor-boys-predicted-ipswich-xi-vs-liverpool_604313.html",
+    "https://www.football365.com/match-preview/ipswich-v-liverpool-prediction-preview",
     "https://www.nbcsports.com/soccer/news/how-to-watch-ipswich-town-vs-liverpool-live-stream-tv-team-news-prediction",
-    "https://tacticalfootballanalysis.com/exequiel-palacios-scout-report-ipswich-town-2026-2027-analysis-tactics/",
-    "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
-    "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/man-united-could-receive-double-boost-for-vital-old-trafford-battle-with-ipswich_603643.html",
-    "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html"
+    "https://tacticalfootballanalysis.com/exequiel-palacios-scout-report-ipswich-town-2026-2027-analysis-tactics/"
    ],
    "sources_used": [
+    "Football365",
     "Ipswich Town",
     "NBC Sports Rotoworld PL",
-    "RotoWire Soccer",
     "Sports Mole",
     "Tactical Football Analysis"
    ],
    "quotes": [
     {
-     "text": "For more markets and the rest of the matchweek, see RotoWire's soccer betting page and the best sportsbook promos Ipswich Town vs Liverpool Key Matchups Alexander Isak Issa Diop and Jacob Greaves Isak scored his first of the season against Forest and is the one Liverpool player whose finishing can settle a game like this without the rest of the performance being any good.",
-     "source": "RotoWire Soccer",
-     "url": "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
-     "published": "2026-09-02T03:03:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
-     "text": "Diop and Greaves kept Sunderland to a single goal and then had an afternoon at Old Trafford neither will want back, with Greaves putting through his own net off a Harry Maguire shot.",
-     "source": "RotoWire Soccer",
-     "url": "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
-     "published": "2026-09-02T03:03:00+00:00",
+     "text": "Protecting the shot-stopper should be centre-backs Issa Diop and Jacob Greaves, the latter of whom will be desperate to move on from his own goal at Old Trafford.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/ipswich-town/predicted-lineups/one-major-change-for-the-tractor-boys-predicted-ipswich-xi-vs-liverpool_604313.html",
+     "published": "2026-09-02T23:27:00+01:00",
      "tone": "positive",
      "topics": []
     },
