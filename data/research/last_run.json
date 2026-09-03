@@ -1,16 +1,16 @@
 {
- "mode": "deadline",
+ "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-03T17:35:51+00:00",
- "seconds": 202.9,
+ "ran_at": "2026-09-03T23:25:20+00:00",
+ "seconds": 147.6,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 1000,
- "substantive_items": 606,
- "duplicates_removed": 40,
- "deeply_analysed": 60,
- "deep_read_failed": 90,
- "corpus_size": 4524,
+ "sources_readable": 64,
+ "candidates_discovered": 689,
+ "substantive_items": 247,
+ "duplicates_removed": 19,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 4665,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 606 articles"
+    "64/78 sources returned 247 articles"
    ]
   },
   "blackout": {
@@ -37,25 +37,20 @@
   }
  },
  "failures": [
-  "FPL360: nothing published in the last 3 days",
-  "FPL Central: nothing published in the last 3 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
-  "Premier Fantasy Tools: nothing published in the last 3 days",
-  "Fantasy Football Pundit: HTTP 202 for https://fantasyfootballpundit.com/feed/",
-  "FPL Strat: nothing published in the last 3 days",
-  "Draft FC: nothing published in the last 3 days",
-  "FPLai: nothing published in the last 3 days",
-  "FPL Ranker: nothing published in the last 3 days",
-  "FPL Rotation Planner: nothing published in the last 3 days",
-  "FPL Stats: nothing published in the last 3 days",
-  "Fantasy Football Reports: nothing published in the last 3 days",
-  "Liverpool: nothing published in the last 3 days",
-  "Tottenham Hotspur: nothing published in the last 3 days",
-  "Premier Injuries: nothing published in the last 3 days",
-  "PhysioRoom: nothing published in the last 3 days",
-  "The Hard Tackle: nothing published in the last 3 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml",
-  "candidate ceiling of 1000 reached after taking 24 items from each of 60 sources"
+  "RotoWire Soccer: timed out after 12s for https://www.rotowire.com/news-sitemap.php",
+  "FPL360: nothing published in the last 10 days",
+  "Fantasy Football Pundit: nothing published in the last 10 days",
+  "FPL Strat: nothing published in the last 10 days",
+  "Draft FC: nothing published in the last 10 days",
+  "FPLai: nothing published in the last 10 days",
+  "FPL Stats: nothing published in the last 10 days",
+  "Fantasy Football Reports: nothing published in the last 10 days",
+  "Liverpool: nothing published in the last 10 days",
+  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Premier Injuries: nothing published in the last 10 days",
+  "PhysioRoom: nothing published in the last 10 days",
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -147,9 +142,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "source_count": 7,
-   "latest_evidence": "2026-09-03T00:00:00+00:00",
+   "latest_evidence": "2026-09-03T19:56:54+02:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -164,6 +159,7 @@
     "injury",
     "match report",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -252,6 +248,15 @@
      "matched_on": "gabriel",
      "kind": "transfer",
      "excerpt": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray."
+    },
+    {
+     "title": "Martinelli moves to Saudi giants Al Hilal after seven years with Arsenal",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-gabriel-martinelli-joins-al-hilal-from-arsenal/Wll3VINj/",
+     "source": "Soccerway",
+     "published": "2026-09-03T19:56:54+02:00",
+     "matched_on": "gabriel",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "Prediction, pick for Gabriel Lourenco vs. Charlie Cleveland at DWCS Season 10, Week 4",
@@ -572,9 +577,9 @@
   "Ndiaye": {
    "player": "Ndiaye",
    "club": "MCI",
-   "evidence_count": 26,
+   "evidence_count": 28,
    "source_count": 13,
-   "latest_evidence": "2026-09-03T15:35:00+00:00",
+   "latest_evidence": "2026-09-03T21:03:11+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -599,6 +604,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Ndiaye + Enzo to Man City: How does it affect FPL?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-03T17:45:00+00:00",
+     "matched_on": "ndiaye",
+     "kind": "team news",
+     "excerpt": "Both transfers have consequences for their new and old clubs The post Ndiaye + Enzo to Man City: How does it affect FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
@@ -697,15 +711,6 @@
      "matched_on": "ndiaye",
      "kind": "transfer",
      "excerpt": ""
-    },
-    {
-     "title": "‘I know this is the perfect fit’ – Ndiaye completes £65m move to Man City",
-     "url": "https://www.101greatgoals.com/football/premier-league/ndiaye-completes-move-man-city/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-01T20:13:56+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": "City have swelled their attacking ranks on deadline day."
     }
    ]
   },
