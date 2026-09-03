@@ -389,4 +389,16 @@ def _headline_points(facts: PlayerFacts) -> tuple[str, str]:
         risk = "recent team-news evidence is limited"
     elif facts.claims_in(TRANSFER):
         risk = "there is transfer speculation around him"
+    elif facts.expert_view == MIXED:
+        risk = "the published advice on him is split"
+    elif not [c for c in facts.claims if c.player_named]:
+        risk = "nothing published this week is about him specifically"
+    else:
+        # Every card carries a risk line. "Nothing found" is a finding; an
+        # empty line reads as though the question was never asked.
+        risk = "no specific concern found this week"
+
+    if not positive:
+        positive = ("no clear positive found this week"
+                    if not facts.claims else "he is in the squad and available")
     return positive, risk
