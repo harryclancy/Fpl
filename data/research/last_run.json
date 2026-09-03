@@ -1,16 +1,16 @@
 {
- "mode": "incremental",
+ "mode": "deadline",
  "gameweek": 3,
- "ran_at": "2026-09-03T11:56:51+00:00",
- "seconds": 140.4,
+ "ran_at": "2026-09-03T16:27:29+00:00",
+ "seconds": 209.1,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 551,
- "substantive_items": 103,
- "duplicates_removed": 4,
- "deeply_analysed": 64,
- "deep_read_failed": 26,
- "corpus_size": 4109,
+ "sources_readable": 60,
+ "candidates_discovered": 1000,
+ "substantive_items": 614,
+ "duplicates_removed": 26,
+ "deeply_analysed": 60,
+ "deep_read_failed": 90,
+ "corpus_size": 4391,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 103 articles"
+    "60/78 sources returned 614 articles"
    ]
   },
   "blackout": {
@@ -38,18 +38,24 @@
  },
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
-  "FPL360: nothing published in the last 10 days",
-  "Fantasy Football Pundit: nothing published in the last 10 days",
-  "FPL Strat: nothing published in the last 10 days",
-  "Draft FC: nothing published in the last 10 days",
-  "FPLai: nothing published in the last 10 days",
-  "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: nothing published in the last 10 days",
-  "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "FPL360: nothing published in the last 3 days",
+  "FPL Central: nothing published in the last 3 days",
+  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
+  "Premier Fantasy Tools: nothing published in the last 3 days",
+  "Fantasy Football Pundit: nothing published in the last 3 days",
+  "FPL Strat: nothing published in the last 3 days",
+  "Draft FC: nothing published in the last 3 days",
+  "FPLai: nothing published in the last 3 days",
+  "FPL Ranker: nothing published in the last 3 days",
+  "FPL Rotation Planner: nothing published in the last 3 days",
+  "FPL Stats: nothing published in the last 3 days",
+  "Fantasy Football Reports: nothing published in the last 3 days",
+  "Liverpool: nothing published in the last 3 days",
+  "Tottenham Hotspur: nothing published in the last 3 days",
+  "Premier Injuries: nothing published in the last 3 days",
+  "PhysioRoom: nothing published in the last 3 days",
+  "The Hard Tackle: nothing published in the last 3 days",
+  "candidate ceiling of 1000 reached after taking 24 items from each of 60 sources"
  ],
  "players": {
   "Raya": {
@@ -395,9 +401,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 3,
-   "source_count": 3,
-   "latest_evidence": "2026-08-29T08:00:00+00:00",
+   "evidence_count": 5,
+   "source_count": 5,
+   "latest_evidence": "2026-09-03T15:35:56+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -411,16 +417,26 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Barcola, Szoboszlai + Liverpool injury latest for FPL Gameweek 3",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/barcola-szoboszlai-liverpool-injury-latest-for-fpl-gameweek-3",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-03T15:35:56+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "The big-money signing from PSG could play on Friday The post Barcola, Szoboszlai + Liverpool injury latest for FPL Gameweek 3 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Newcastle 2-2 Liverpool Stats: Last-Gasp Szoboszlai Spot-Kick Salvages Draw",
      "url": "https://theanalyst.com/articles/newcastle-vs-liverpool-stats-premier-league-08-2026",
@@ -438,6 +454,15 @@
      "matched_on": "szoboszlai",
      "kind": "transfer",
      "excerpt": "Watch Liverpool vs Nottingham Forest as both teams go in search of a first win of the new Premier League season. Want to watch the game for FREE and in full? FourFourTwo is providing you with all the details on live streams and TV channels, wherever you are in the world. Liverpool vs Nottingham Forest: key information Kick-off time: 12:30pm BST / 7:30am ET / 9:30pm AEST FREE Stream: CazeTV's YouTu"
+    },
+    {
+     "title": "Carragher tells Iraola to have brutal ‘conversation’ with £60m Liverpool midfielder and change his mind",
+     "url": "https://www.football365.com/news/liverpool-dominik-szoboszlai-jamie-carragher-verdict",
+     "source": "Football365",
+     "published": "2026-09-03T13:09:07+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "Sky Sports pundit Jamie Carragher names the Liverpool star that manager Andoni Iraola is using in the wrong position."
     },
     {
      "title": "FPL Gameweek 1 Review and Takeaways – Don’t Overreact",
@@ -538,9 +563,9 @@
   "Ndiaye": {
    "player": "Ndiaye",
    "club": "MCI",
-   "evidence_count": 23,
-   "source_count": 12,
-   "latest_evidence": "2026-09-02T11:44:47+00:00",
+   "evidence_count": 25,
+   "source_count": 13,
+   "latest_evidence": "2026-09-03T15:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -565,6 +590,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-03T15:35:00+00:00",
+     "matched_on": "ndiaye",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Everton star undergoes medical as Toffees green light big wage deal",
      "url": "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
@@ -591,6 +625,15 @@
      "matched_on": "ndiaye",
      "kind": "team news",
      "excerpt": "AFC Bournemouth Head Coach Marco Rose named an unchanged starting line-up for his first Premier League game at Vitality Stadium against Everton. Rose kept faith with the same team which gave Manchester City a run for their money during Sunday’s 2-1 defeat at Etihad Stadium. The only changes came on the bench where Ryan Christie, Julio Soler and new loan signing Michele Gregorio came in for Will De"
+    },
+    {
+     "title": "Grealish & Maitland-Niles Everton Squad Numbers Confirmed",
+     "url": "https://www.evertonfc.com/news/2026/september/02/Grealish---Maitland-Niles-Everton-Squad-Numbers-Confirmed/",
+     "source": "Everton",
+     "published": "2026-09-02T12:09:34+00:00",
+     "matched_on": "ndiaye",
+     "kind": "transfer",
+     "excerpt": "New Everton signings Jack Grealish and Ainsley Maitland-Niles have had their squad numbers confirmed for the 2026/27 campaign. Returning loanee Grealish will wear the Blues’ number 10 shirt, while full-back Maitland-Niles will be the number two. Grealish – number 18 last season for the Toffees – rejoined Everton on deadline day of the summer transfer window, signing on loan from Manchester City fo"
     },
     {
      "title": "Everton summer transfer window disaster leaves club desperately short of options, conviction and goodwill",
@@ -654,103 +697,64 @@
      "matched_on": "ndiaye",
      "kind": "transfer",
      "excerpt": "City have swelled their attacking ranks on deadline day."
-    },
-    {
-     "title": "Arsenal ‘reach agreement’ for next deadline day signing after Ndiaye ‘hijack’ fails",
-     "url": "https://www.football365.com/news/arsenal-reach-agreement-deadline-day-fofana-lyon-ndiaye-hijack-fails",
-     "source": "Football365",
-     "published": "2026-09-01T09:28:33+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": "Arsenal have now reached an agreement with Malick Fofana as they look to get a deal over the line for the Lyon winger, according to reports."
-    },
-    {
-     "title": "Iliman Ndiaye transfer news: Man City sign £65m winger from Everton as Jack Grealish joins Toffees on loan",
-     "url": "https://www.skysports.com/football/news/11671/13579669/iliman-ndiaye-transfer-news-man-city-sign-65m-winger-from-everton-as-jack-grealish-joins-toffees-on-loan",
-     "source": "Sky Sports Premier League",
-     "published": "2026-09-01T00:00:00+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": ""
     }
    ]
   },
   "Schade": {
    "player": "Schade",
    "club": "BRE",
-   "evidence_count": 6,
-   "source_count": 2,
-   "latest_evidence": "2026-09-03T10:09:00+01:00",
+   "evidence_count": 4,
+   "source_count": 3,
+   "latest_evidence": "2026-09-03T11:57:00+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
-   "team_news_found": true,
-   "starting_status_assessed": true,
+   "team_news_found": false,
+   "starting_status_assessed": false,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": true,
+   "fixtures_assessed": false,
    "dimensions_covered": [
-    "fixtures",
     "injury",
-    "match report",
     "set pieces",
     "statistics",
     "tactics",
-    "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
     {
-     "title": "Brentford lineup vs. Sunderland: Predicted XI for Premier League clash as Diouf decision made",
-     "url": "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T10:09:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Brentford could line up for Saturday's Premier League match against Sunderland."
+     "title": "EMERSONN NOMINATED FOR GOAL OF THE MONTH",
+     "url": "https://www.itfc.co.uk/news/2026/september/03/emersonn-nominated-for-goal-of-the-month/",
+     "source": "Ipswich Town",
+     "published": "2026-09-03T11:57:00+00:00",
+     "matched_on": "schade",
+     "kind": "general",
+     "excerpt": "Town striker Emersonn has been nominated for the Premier League’s Goal of the Month award for August, sponsored by Guinness. The Brazilian striker opened the scoring in the home clash with Sunderland, as he finished well following a storming run from Julio Enciso which saw the Paraguayan beat two Black Cats defenders before laying the ball back for his teammate to score. Emersonn’s goal is one of "
     },
     {
-     "title": "Brentford vs Sunderland - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T10:00:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Brentford and Sunderland, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Birmingham City vs Brentford - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
-     "source": "Sports Mole",
-     "published": "2026-08-24T14:56:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Tuesday's EFL Cup clash between Birmingham City and Brentford, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Transfer news and rumours: Palacios to Ipswich, Diouf to Brentford, Flemming Burnley doubts",
-     "url": "https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/news/transfer-news-and-rumours-palacios-to-ipswich-diouf-to-brentford-flemming-burnley-doubts_603620.html",
-     "source": "Sports Mole",
-     "published": "2026-08-24T09:55:26+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up today's latest transfer news and rumours, including the latest on Ezequiel Palacios to Ipswich Town, El Hadji Malick Diouf to Brentford and Zian Flemming’s future at Burnley."
-    },
-    {
-     "title": "Match reports leeds united 1 brentford 1 premier league 30 08 2026",
-     "url": "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
+     "title": "Angulo nominated for Guinness Goal of the Month",
+     "url": "https://www.safc.com/news/2026/september/03/angulo-nominated-for-guinness-goal-of-the-month/",
+     "source": "Sunderland",
+     "published": "2026-09-03T11:25:13+00:00",
+     "matched_on": "schade",
+     "kind": "general",
+     "excerpt": "Nilson Angulo’s stunning free-kick against Ipswich Town has been nominated for the Guinness Goal of the Month award for August. The Ecuadorian produced a moment of magic at Portman Road on the opening day of the Premier League season, curling a superb free-kick over the wall and in off the underside of the crossbar to level the scores. It was Sunderland’s first goal of the 2026-27 campaign and Ang"
     },
     {
      "title": "Analysis leeds united 1 brentford 1 premier league vitaly janelt mamadou sangare kevin schade",
      "url": "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "schade",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "First team mamadou sangare keane lewis potter kevin schade premier league awards august",
+     "url": "https://www.brentfordfc.com/en/news/article/first-team-mamadou-sangare-keane-lewis-potter-kevin-schade-premier-league-awards-august",
      "source": "Brentford",
      "published": "",
      "matched_on": "schade",
@@ -762,9 +766,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 14,
+   "evidence_count": 17,
    "source_count": 10,
-   "latest_evidence": "2026-09-03T11:45:59+00:00",
+   "latest_evidence": "2026-09-03T15:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -778,6 +782,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -788,6 +793,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-03T15:35:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL Gameweek 3 Wildcard best team + pros/cons of using",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-03T11:40:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Is it possible to house all of Cole Palmer, Bruno Fernandes and Erling Haaland in one squad? The post FPL Gameweek 3 Wildcard best team + pros/cons of using appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Erling Haaland won’t win the Golden Boot this season, and Joao Pedro is the reason why",
      "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
@@ -852,6 +875,15 @@
      "excerpt": "Harry and Lloyd’s Predictions GW3 Welcome to Harry and Lloyd’s Predictions GW3 A very high scoring week this week. Haaland had a massive say in the points total. Lots of people correctly predicted him to be first scorer. Lots of extra bonus 5 points for managers and that was needed to claim top spot this […] The post Harry and Lloyd’s Predictions GW3 appeared first on Fantasy Football 247 - Premie"
     },
     {
+     "title": "Best FPL captain for Gameweek 3: Haaland a Triple Captain shout?",
+     "url": "https://www.fantasyfootballhub.co.uk/best-fpl-captain-for-gameweek-3-article-26-27",
+     "source": "Fantasy Football Hub",
+     "published": "2026-09-02T14:00:52+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Fantasy Football Hub’s resident Fantasy Premier League (FPL) captaincy expert Chris Tan takes a close look at the best options for Gameweek 3 of the 2026/27 season. Powered by Hub AI and Chrisâs eye for detail, having analysed the weekly captaincy candidates on the Hub for many years, we reveal the top three picks each […]"
+    },
+    {
      "title": "Best FPL players for Gameweek 3",
      "url": "https://www.fantasyfootballhub.co.uk/best-fpl-players-for-gameweek-3-article-26-27",
      "source": "Fantasy Football Hub",
@@ -868,42 +900,15 @@
      "matched_on": "haaland",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "FPL Gameweek 1 Review and Takeaways – Don’t Overreact",
-     "url": "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27",
-     "source": "Full90 FPL",
-     "published": "2026-08-23T17:42:40+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "FPL Gameweek 1 Review and Takeaways – Don’t Overreact The FPL General picked the wrong season to go without the two-mium. If he had started without Haaland and Bruno Fernandes this season he would be laughing. And that kind of summarises gameweek 1. Outside of the Arsenal picks, and Szoboszlai nobody owned by more than […] The post FPL Gameweek 1 Review and Takeaways – Don’t Overreact appeared fir"
-    },
-    {
-     "title": "Haaland or no Haaland? The If, When, and Why for FPL Managers",
-     "url": "https://theanalyst.com/articles/erling-haaland-fpl-do-you-pick-him-in-2026-27-stats",
-     "source": "Opta Analyst",
-     "published": "2026-08-22T06:01:23+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Erling Haaland is priced at a record £15.5m for the 2026-27 Fantasy Premier League season. Is he worth spending the money on for FPL managers? The post Haaland or no Haaland? The If, When, and Why for FPL Managers appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Best fpl budget enablers 2026 27 haaland draft",
-     "url": "https://onefpl.com/blog/best-fpl-budget-enablers-2026-27-haaland-draft",
-     "source": "OneFPL",
-     "published": "",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 13,
-   "source_count": 7,
-   "latest_evidence": "2026-09-02T14:00:00+00:00",
+   "evidence_count": 15,
+   "source_count": 8,
+   "latest_evidence": "2026-09-03T15:38:54+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -927,6 +932,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Aston Villa injury, suspension list and return dates vs. Hull City: Joao Gomes, Brian Madjo latest",
+     "url": "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/gomes-madjo-latest-aston-villa-injury-suspension-list-vs-hull_604388.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T15:10:00+01:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Aston Villa's latest injury and suspension news ahead of their Premier League clash with Hull City."
+    },
     {
      "title": "New-look Aston Villa are in for a long season but Unai Emery is the continuity that matters most",
      "url": "https://www.fourfourtwo.com/team/new-look-aston-villa-are-in-for-a-long-season-but-unai-emery-is-the-continuity-that-matters-most",
@@ -973,6 +987,15 @@
      "excerpt": "Fixtures Aston Villa Vs. Arsenal - Mon, Aug 31 2026, 20:00 Unai Emery has named his side to take on Arsenal in Aston Villa’s first home game of the Premier League season (ko 8pm). The Villans welcome to reigning champions to B6 on Bank Holiday Monday, and Emery has handed debuts to both Zion Suzuki and Nicolas Jackson, who start the game. Jackson, who arrived from Chelsea on Friday, begins in atta"
     },
     {
+     "title": "£54m Chelsea star’s reaction to Man Utd interest emerges",
+     "url": "https://www.football365.com/news/chelsea-manchester-united-pedro-neto",
+     "source": "Football365",
+     "published": "2026-09-03T15:38:54+00:00",
+     "matched_on": "pedro",
+     "kind": "transfer",
+     "excerpt": "A Chelsea star was the subject of interest from Manchester United in the summer transfer window."
+    },
+    {
      "title": "Villans welcome 10 new faces",
      "url": "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/",
      "source": "Aston Villa",
@@ -1016,34 +1039,16 @@
      "matched_on": "joao pedro",
      "kind": "general",
      "excerpt": "Chelsea's new-look front three made a blistering start to life together, each getting on the scoresheet in a 3-2 win over Fulham on Monday. The post In Cole Palmer, João Pedro and Morgan Rogers, Chelsea Have a Front Three to Rival Any Other appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Fulham 2-3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage",
-     "url": "https://www.sportsmole.co.uk/football/fulham/result/chelsea-claim-west-london-derby-bragging-rights-as-alonsos-attack-shines_603660.html",
-     "source": "Sports Mole",
-     "published": "2026-08-24T21:55:30+01:00",
-     "matched_on": "pedro",
-     "kind": "general",
-     "excerpt": "Chelsea claim West London derby bragging rights with a thrilling 3-2 win against Fulham on Monday."
-    },
-    {
-     "title": "Joao pedro analysis why the blues master of all trades stands alone in 2026",
-     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-analysis-why-the-blues-master-of-all-trades-stands-alone-in-2026",
-     "source": "Chelsea",
-     "published": "",
-     "matched_on": "joao pedro",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "evidence_count": 4,
-   "source_count": 3,
-   "latest_evidence": "2026-09-02T15:18:40+01:00",
-   "official_source_found": false,
+   "evidence_count": 5,
+   "source_count": 4,
+   "latest_evidence": "2026-09-03T15:24:04+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1058,7 +1063,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -1079,6 +1084,15 @@
      "matched_on": "thiago",
      "kind": "transfer",
      "excerpt": "Monaco sporting director Thiago Scuro defends the decision to scrap Lamine Camara's proposed transfer to Chelsea during the closing minutes of the summer window."
+    },
+    {
+     "title": "Everything you need to know: Brentford v Sunderland",
+     "url": "https://www.safc.com/news/2026/september/03/everything-you-need-to-know--brentford-v-sunderland/",
+     "source": "Sunderland",
+     "published": "2026-09-03T15:24:04+00:00",
+     "matched_on": "thiago",
+     "kind": "general",
+     "excerpt": "Sunderland continue their 2026-27 Premier League campaign on Saturday afternoon, travelling to west London to face Brentford at the Gtech Community Stadium. The Black Cats’ third fixture of the new top-flight season gets under way at 3pm BST, with Régis Le Bris’ side looking to build on last weekend’s 1-0 victory over Fulham. Wilson Isidor’s second-half strike secured all three points at the Stadi"
     },
     {
      "title": "Liverpool have just received some good news about signing Lamine Camara in 2027",
@@ -1189,9 +1203,9 @@
   "Hughes": {
    "player": "Hughes",
    "club": "CRY",
-   "evidence_count": 3,
-   "source_count": 3,
-   "latest_evidence": "2026-09-01T18:18:22+00:00",
+   "evidence_count": 6,
+   "source_count": 4,
+   "latest_evidence": "2026-09-03T16:28:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": false,
@@ -1201,10 +1215,37 @@
    "role_assessed": false,
    "fixtures_assessed": false,
    "dimensions_covered": [],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T16:28:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole looks at how Crystal Palace could line up in Saturday's Premier League clash with Fulham."
+    },
+    {
+     "title": "Fulham vs Crystal Palace - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-crystal-palace-prediction-team-news-lineups_604397.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T16:05:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Fulham and Crystal Palace, including predictions, team news and possible lineups."
+    },
+    {
+     "title": "Fulham vs. Crystal Palace: Ismaila Sarr, Jean-Philippe Mateta, team news update before Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/transfer-talk/news/will-sarr-play-against-fulham-sage-delivers-crystal-palace-team-news-update_604395.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T15:51:32+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Crystal Palace manager Pierre Sage provides an update on the availability of attacker Ismaila Sarr ahead of Saturday’s Premier League clash with Fulham at Craven Cottage."
+    },
     {
      "title": "Liverpool make final decision on signing Ismaila Sarr as Crystal Palace set to finalise ‘record’ winger deal",
      "url": "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
@@ -1237,9 +1278,9 @@
   "Mitchell": {
    "player": "Mitchell",
    "club": "CRY",
-   "evidence_count": 3,
-   "source_count": 3,
-   "latest_evidence": "2026-09-01T18:18:22+00:00",
+   "evidence_count": 6,
+   "source_count": 4,
+   "latest_evidence": "2026-09-03T16:28:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": false,
@@ -1249,10 +1290,37 @@
    "role_assessed": false,
    "fixtures_assessed": false,
    "dimensions_covered": [],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T16:28:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole looks at how Crystal Palace could line up in Saturday's Premier League clash with Fulham."
+    },
+    {
+     "title": "Fulham vs Crystal Palace - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-crystal-palace-prediction-team-news-lineups_604397.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T16:05:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Fulham and Crystal Palace, including predictions, team news and possible lineups."
+    },
+    {
+     "title": "Fulham vs. Crystal Palace: Ismaila Sarr, Jean-Philippe Mateta, team news update before Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/transfer-talk/news/will-sarr-play-against-fulham-sage-delivers-crystal-palace-team-news-update_604395.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T15:51:32+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Crystal Palace manager Pierre Sage provides an update on the availability of attacker Ismaila Sarr ahead of Saturday’s Premier League clash with Fulham at Craven Cottage."
+    },
     {
      "title": "Liverpool make final decision on signing Ismaila Sarr as Crystal Palace set to finalise ‘record’ winger deal",
      "url": "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
