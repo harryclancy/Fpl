@@ -1086,6 +1086,73 @@ def _build_id() -> str:
         return ""
 
 
+def render_plan_header(gameweek: int, free_transfers: int = 1, bank: float = 0.0,
+                       deadline: str = "", transfers_proposed: int = 0,
+                       hit: int = 0) -> None:
+    """The first thing on the page: whose plan this is, and the shape of it.
+
+    Replaces a block of research diagnostics. Somebody opening this on a
+    phone wants to know their gameweek, their transfer and their money —
+    not how many sources were attempted. The diagnostics still exist; they
+    now live behind Research details, which is where they belong.
+    """
+    plan = "No transfer recommended"
+    if transfers_proposed == 1:
+        plan = "1 transfer recommended"
+    elif transfers_proposed > 1:
+        plan = f"{transfers_proposed} transfers recommended"
+    if hit:
+        plan += f" · −{hit} hit"
+
+    render_html(
+        "<div class='fpl-plan-head'>"
+        f"<h2>Your GW{gameweek} plan</h2>"
+        f"<p class='fpl-plan-meta'>{free_transfers} free transfer"
+        f"{'s' if free_transfers != 1 else ''} · £{bank:.1f}m in the bank</p>"
+        f"<p class='fpl-plan-meta'>{plan}</p>"
+        + (f"<p class='fpl-plan-meta'>Deadline {deadline}</p>" if deadline else "")
+        + "</div>"
+    )
+
+
+def render_research_details(gameweek: int) -> None:
+    """Everything technical, one tap away and closed by default."""
+    from fpl_assistant.research import corpus as corpus_mod
+
+    store = corpus_mod.load()
+    state = None
+    try:
+        payload = consensus.load_consensus(int(gameweek)) or {}
+        state = freshness.from_files(int(gameweek), payload)
+    except Exception:
+        pass
+
+    label = "Research: current"
+    if not len(store):
+        label = "Research: not yet collected"
+    elif (age := store.age_hours) is not None and age > 24:
+        label = f"Research: {age / 24:.0f} days old"
+    st.caption(f"{label} · updated {store.collected_at_display}")
+
+    with st.expander("Research details"):
+        st.markdown(
+            f"- Sources attempted: **{store.sources_checked}**\n"
+            f"- Sources readable: **{store.sources_ok}**\n"
+            f"- Articles held: **{len(store)}**\n"
+            f"- Last collected: **{store.collected_at_display}**"
+        )
+        if state and state.message:
+            st.caption(state.message)
+        build = version.current()
+        if build.known:
+            st.caption(build.display)
+        if st.button("Refresh research now", use_container_width=True,
+                     help="Reads every source that publishes a feed or sitemap, "
+                          "updates the article cache and re-researches your squad. "
+                          "Free — public feeds only."):
+            run_research_refresh(int(gameweek))
+
+
 def render_freshness_bar(gameweek: int, deadline: str = "") -> None:
     """The small status line, and the only refresh control anyone needs.
 
@@ -1319,6 +1386,85 @@ def load_decision() -> dict:
         return {}
 
 
+def render_transfer_decision() -> None:
+    """One decision, stated plainly, with everything else collapsed.
+
+    The page used to say "Recommended: roll" and then show large transfer
+    cards telling you to make a move. That is not a presentation problem —
+    it is the interface disagreeing with itself. There is one plan here,
+    and rejected ideas live under Other options considered at a fraction
+    of the visual weight.
+    """
+    payload = load_decision()
+    winner = payload.get("winner")
+    options = payload.get("options") or []
+    if not winner:
+        return
+
+    _section("Transfer plan")
+
+    if winner.get("kind") == "roll":
+        best = next((o for o in options
+                     if o.get("kind") == "transfer" and not o.get("rejected")), None)
+        render_html(
+            "<div class='fpl-card fpl-plan-card'>"
+            "<h3>Roll the transfer</h3>"
+            "<p class='fpl-meta'>1 free transfer becomes 2 next week</p>"
+            "</div>"
+        )
+        st.markdown(
+            "**Why.** No player in the squad has a strong enough case against him to "
+            "justify using the transfer this week."
+        )
+        if best:
+            st.markdown(
+                f"**Closest alternative.** {best['label']} — worth about "
+                f"{best.get('net_gain_5gw', best.get('gain_5gw', 0)):+.1f} points over "
+                f"five gameweeks, which is not enough to give up the flexibility."
+            )
+        st.caption("Confidence: medium")
+    else:
+        render_html(
+            "<div class='fpl-card fpl-plan-card'>"
+            "<h3>Make this move</h3>"
+            "<div class='fpl-swap'>"
+            f"<div class='fpl-out'><div class='lab'>Out</div>"
+            f"<div class='leg'>{winner['out']}</div></div>"
+            "<div class='arrow'>↓</div>"
+            f"<div class='fpl-in'><div class='lab'>In</div>"
+            f"<div class='leg'>{winner['in']}</div></div>"
+            "</div></div>"
+        )
+        st.markdown(
+            f"**This gameweek** {winner.get('gain_this_gw', 0):+.1f}  ·  "
+            f"**Next 5** {winner.get('gross_gain_5gw', 0):+.1f}  \n"
+            f"**Hit** −{winner.get('hit_points', 0):.0f}  ·  "
+            f"**Net over 5** {winner.get('net_gain_5gw', 0):+.1f}  ·  "
+            f"**Bank after** £{winner.get('bank_after', 0):.1f}m"
+        )
+        if render_corpus_transfer(winner["out"], winner["in"]):
+            pass
+        st.caption(f"Confidence: {winner.get('confidence', 'medium').lower()}")
+
+    considered = [o for o in options if o.get("kind") == "transfer"][:6]
+    if considered:
+        with st.expander(f"Other options considered ({len(considered)})"):
+            for option in considered:
+                note = (f"Rejected — {option['rejection_reason']}"
+                        if option.get("rejected") else
+                        f"{option.get('net_gain_5gw', 0):+.1f} over five gameweeks")
+                st.markdown(f"**{option['label']}** — {note}")
+
+    ranking = payload.get("sell_urgency_ranking") or []
+    if ranking:
+        with st.expander("How every player was rated"):
+            st.caption("Scored from this week's evidence and the official data. "
+                       "No player is protected by name.")
+            for row in ranking:
+                st.markdown(f"**{row['player']}** — {row['band']}"
+                            + (f" · {row['reasons'][0]}" if row.get("reasons") else ""))
+
+
 def render_sell_urgency() -> None:
     """The diagnosis the whole decision rests on, shown rather than hidden.
 
@@ -1503,6 +1649,53 @@ def load_writeups() -> dict:
         return {}
 
 
+def render_compact_player(facts: dict) -> None:
+    """One player, at a glance, with the depth one tap away.
+
+    Roughly a phone-screen each rather than several. Everything shown here
+    comes from the structured assessment, so a sentence about another
+    player cannot appear in it.
+    """
+    verdict = facts.get("verdict", "Keep")
+    minutes = facts.get("expected_minutes", "Unknown")
+    minutes_label = ("Minutes: " + minutes.lower()) if minutes != "Unknown" else (
+        "Team-news evidence is limited")
+
+    render_html(
+        "<div class='fpl-card fpl-player-card'>"
+        f"<h4>{facts['player']}</h4>"
+        f"<p class='fpl-meta'>{facts['club']} · {facts['position']} · "
+        f"£{facts['price']:.1f}m</p>"
+        f"<span class='fpl-pill fpl-high'>{verdict}</span> "
+        f"<span class='fpl-pill fpl-med'>{minutes_label}</span>"
+        + (f"<p class='fpl-meta'>{facts['fixture']}</p>" if facts.get("fixture") else "")
+        + "</div>"
+    )
+    if facts.get("prose"):
+        st.markdown(facts["prose"])
+
+    lines = []
+    if facts.get("main_risk"):
+        lines.append(f"**Main risk:** {facts['main_risk']}")
+    if facts.get("next_fixtures"):
+        lines.append("**Next 4:** " + " · ".join(facts["next_fixtures"][:4]))
+    lines.append(f"**Confidence:** {facts.get('confidence', 'Low').lower()}")
+    st.caption("  \n".join(lines))
+
+    with st.expander("More analysis & sources"):
+        for label, key in (("Availability", "availability"),
+                           ("Recent selection", "recent_selection"),
+                           ("Role", "role"), ("Set pieces", "set_pieces"),
+                           ("Form", "form"), ("Underlying data", "underlying"),
+                           ("Expert view", "expert_view")):
+            if facts.get(key):
+                st.markdown(f"**{label}.** {facts[key]}")
+        for claim in facts.get("claims", [])[:6]:
+            st.markdown(f"- *{claim['source']}* ({claim['kind']}) — “{claim['text']}”")
+            if claim.get("url"):
+                st.caption(claim["url"])
+
+
 def render_corpus_writeup(name: str) -> bool:
     """The player's write-up, every sentence quoted from a real article.
 
@@ -1575,6 +1768,12 @@ def render_player_card(d, alternative_case=None) -> None:
     # The corpus is the source of the narrative now. What follows it is
     # the structured dossier — fixtures, flags, projections — which is
     # computed rather than reported and belongs underneath the reporting.
+    decision = load_decision()
+    facts = (decision.get("player_facts") or {}).get(d.name)
+    if facts:
+        render_compact_player(facts)
+        return
+
     from_corpus = render_corpus_writeup(d.name)
     if not from_corpus:
         st.info(
@@ -1776,9 +1975,7 @@ def render_owned_squad_plan(players, fixtures, teams, next_event, confirmed, sta
                 st.markdown(line)
 
     # ================= SECTION 2 — SUGGESTED TRANSFERS ================
-    _section("Suggested transfers", budget.headline if budget else "")
-    render_sell_urgency()
-    render_decision_summary()
+    render_transfer_decision()
 
     if ranking.entries:
         with st.expander("Sell urgency across all fifteen — worked out before any target"):

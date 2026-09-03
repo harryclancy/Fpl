@@ -543,6 +543,14 @@ class Option:
     gain_5gw: float = 0.0
     bank_after: float = 0.0
     hits: int = 0
+    # The hit shown as its own line rather than folded into the score.
+    # Hiding a -4 inside a weighted sum is how a move that loses points
+    # can look like one that gains them.
+    gross_gain_5gw: float = 0.0
+    hit_points: float = 0.0
+    net_gain_5gw: float = 0.0
+    rejected: bool = False
+    rejection_reason: str = ""
     score: float = 0.0
     confidence: str = "low"
     components: dict = field(default_factory=dict)
@@ -566,6 +574,10 @@ class Option:
             "gain_this_gw": round(self.gain_this_gw, 2),
             "gain_3gw": round(self.gain_3gw, 2),
             "gain_5gw": round(self.gain_5gw, 2),
+            "gross_gain_5gw": round(self.gross_gain_5gw, 2),
+            "hit_points": round(self.hit_points, 2),
+            "net_gain_5gw": round(self.net_gain_5gw, 2),
+            "rejected": self.rejected, "rejection_reason": self.rejection_reason,
             "bank_after": round(self.bank_after, 1), "hits": self.hits,
             "score": round(self.score, 2), "confidence": self.confidence,
             "components": {k: round(v, 2) if isinstance(v, float) else v
@@ -733,6 +745,10 @@ def build_option(out: Assessment, into: PlayerSignals, bank: float,
     }
     option.score = round(sum(v for k, v in option.components.items()
                              if isinstance(v, (int, float))), 2)
+    # Explicit, visible transfer arithmetic.
+    option.gross_gain_5gw = option.gain_5gw
+    option.hit_points = HIT_COST * hits
+    option.net_gain_5gw = round(option.gross_gain_5gw - option.hit_points, 2)
     option.risks.extend(future_notes + reversal_notes)
 
     # Confidence follows the quality of what is known about both players.
@@ -833,6 +849,10 @@ def decide(squad: list[PlayerSignals], targets: list[PlayerSignals],
             after[candidate.signals.club] = after.get(candidate.signals.club, 1) - 1
             if after.get(target.club, 0) >= 3:
                 continue
+            # Hits are only considered when there is no free transfer, and
+            # then the move has to clear the four points on top of
+            # everything else — see build_option, where the cost is a named
+            # line rather than a term buried in the score.
             hits = 0 if free_transfers >= 1 else 1
             captain_upgrade = (captain_upgrade_for(target, candidate)
                                if captain_upgrade_for else 0.0)
@@ -937,6 +957,12 @@ def _enforce(decision: Decision, by_name: dict, roll: Option | None) -> Decision
                  by_name[option.out_player].sell_urgency > 30))
     ]
     replacement = alternatives[0] if alternatives else (roll or winner)
+    # THE CONTRADICTION RULE. A rejected move is marked as rejected on the
+    # option itself, so it can never be rendered as a recommendation while
+    # its own explanation says it is the wrong move. The page shows one
+    # decision; everything else belongs under options considered.
+    winner.rejected = True
+    winner.rejection_reason = "; ".join(failures)
     decision.sanity.append(
         f"REJECTED {winner.label}: " + " · ".join(failures)
         + f". Falling back to {replacement.label}, which either addresses a real "

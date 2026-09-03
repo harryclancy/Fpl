@@ -589,3 +589,117 @@ def transfer(out_writeup: PlayerWriteup, in_writeup: PlayerWriteup,
     case.confidence = "high" if strong else ("medium" if in_writeup.case_for else "low")
     case.evidence_used = (out_writeup.evidence_used[:5] + in_writeup.evidence_used[:5])
     return case
+
+
+# --- prose from structured facts -----------------------------------------
+#
+# The rewrite. Everything above assembles quotes; what follows writes from
+# a decided assessment instead, which is the only way to stop a sentence
+# about one player reaching another player's card.
+
+def from_facts(facts) -> str:
+    """A compact write-up: what to do with him, and why. 70-130 words.
+
+    Seven headings repeating the same information is not thoroughness, it
+    is padding — and padding is what forced the same sentence to appear
+    under four headings. One paragraph, then the two lines a manager
+    actually scans for.
+    """
+    from fpl_assistant.analysis import player_facts as pf
+
+    sentences = []
+
+    # What he is and what the plan is.
+    role = {
+        pf.CAPTAIN: "is the captain pick this week",
+        pf.VICE: "takes the armband if the captain does not play",
+        pf.START: "starts",
+        pf.BENCH: "is on the bench",
+        pf.MONITOR: "needs watching before the deadline",
+        pf.SELL_VERDICT: "is the one to move on",
+        pf.KEEP: "is a straightforward hold",
+    }.get(facts.verdict, "is in the squad")
+    sentences.append(f"{facts.player} {role}.")
+
+    # Minutes, in plain words, and only what is actually known.
+    if facts.expected_minutes in ("Very secure", "Secure"):
+        sentences.append(
+            f"His place looks {facts.expected_minutes.lower()} on the selection record.")
+    elif facts.expected_minutes in ("Significant concern", "Major doubt"):
+        sentences.append(f"Expected minutes are a {facts.expected_minutes.lower()}.")
+    elif facts.expected_minutes == "Slight concern":
+        sentences.append("There is a slight question over his minutes.")
+    else:
+        sentences.append("Nothing published this week settles his minutes either way.")
+
+    if facts.availability == pf.OUT:
+        sentences.append("He is unavailable.")
+    elif facts.availability == pf.DOUBT:
+        sentences.append("His availability is in doubt.")
+
+    if facts.role:
+        sentences.append(_trim(facts.role))
+    if facts.set_pieces:
+        sentences.append(_trim(facts.set_pieces))
+
+    # The fixture, which is the other half of every FPL decision.
+    if facts.fixture:
+        sentences.append(f"This week: {facts.fixture}.")
+
+    # What the analysts said — about HIM, not about his club.
+    view = {
+        pf.BUY: "Analysts are recommending him.",
+        pf.SELL: "Analysts are recommending a sale.",
+        pf.HOLD: "The published advice is to hold.",
+        pf.MIXED: "The published advice is split.",
+    }.get(facts.expert_view)
+    if view:
+        sentences.append(view)
+    elif not facts.claims:
+        sentences.append("No article retrieved this week discusses him directly.")
+
+    text = " ".join(sentences)
+    return _cap_words(text, 130)
+
+
+def _trim(text: str, limit: int = 150) -> str:
+    text = text.strip().rstrip(".")
+    if len(text) > limit:
+        text = text[:limit].rsplit(" ", 1)[0] + "…"
+    return text + "."
+
+
+def _cap_words(text: str, limit: int) -> str:
+    words = text.split()
+    if len(words) <= limit:
+        return text
+    return " ".join(words[:limit]).rstrip(",;") + "…"
+
+
+def quality_check(facts) -> list[str]:
+    """The per-card checklist, run before anything is displayed.
+
+    Returns the problems found. A card with problems is not shown as a
+    confident assessment — the point is that a contradiction between the
+    label and the prose can never reach the page again.
+    """
+    from fpl_assistant.analysis import player_facts as pf
+
+    problems = []
+    for claim in facts.claims:
+        if not claim.player_named and not (set(claim.buckets) & pf.CLUB_LEVEL_BUCKETS):
+            problems.append(f"a claim not about {facts.player} reached his card")
+    if facts.verdict == pf.SELL_VERDICT and not facts.supports_sale():
+        problems.append("marked for sale with no evidence that supports selling him")
+    if facts.expected_minutes in ("Very secure", "Secure") and facts.availability == pf.OUT:
+        problems.append("minutes described as secure for an unavailable player")
+    if facts.confidence == pf.HIGH and not [c for c in facts.claims if c.player_named]:
+        problems.append("high confidence with no player-specific evidence")
+    seen = set()
+    for claim in facts.claims:
+        key = claim.text[:60]
+        if key in seen:
+            problems.append("the same sentence appears twice")
+            break
+        seen.add(key)
+    return problems

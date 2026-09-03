@@ -572,7 +572,10 @@ def test_an_injured_squad_still_gets_the_rest_of_the_plan(monkeypatch):
 
     page = _all_markdown(at)
     assert "Captaincy reasoning" in page, "the captaincy explanation vanished"
-    assert "Suggested transfers" in page
+    # Renamed from "Suggested transfers": the page shows ONE decision
+    # under "Transfer plan", because "Recommended: roll" above cards
+    # saying "make the move" was the interface disagreeing with itself.
+    assert "Transfer plan" in page
     assert "Why each player is in the team" in page
 
 

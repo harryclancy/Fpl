@@ -16,7 +16,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from fpl_assistant import api
 from fpl_assistant.analysis import fixtures as fixtures_analysis
 from fpl_assistant.analysis import minutes as minutes_mod
+from fpl_assistant.analysis import player_facts as pf
 from fpl_assistant.analysis import squad_decision as sd
+from fpl_assistant.analysis import writeup as writeup_mod
 from fpl_assistant.analysis.squad_builder import score_players
 from fpl_assistant.models import attach_team_names, events_df, fixtures_df, players_df, teams_df
 from fpl_assistant.research import corpus as corpus_mod, evidence
@@ -190,6 +192,23 @@ def _live_data():
                         else fixture["team_a_difficulty"]))
                 run.append(sum(scores) / len(scores))
             table[team_id] = run
+
+        # Human-readable opponents, for the player cards.
+        labels = {}
+        for team_id in teams.index:
+            run = []
+            for gw in range(next_event, next_event + 5):
+                played = fixtures[
+                    (fixtures["event"] == gw)
+                    & ((fixtures["team_h"] == team_id) | (fixtures["team_a"] == team_id))
+                ]
+                for _, fixture in played.iterrows():
+                    home = fixture["team_h"] == team_id
+                    opponent = fixture["team_a"] if home else fixture["team_h"]
+                    short = (teams.loc[opponent, "short_name"]
+                             if opponent in teams.index else "?")
+                    run.append(f"{short} ({'H' if home else 'A'})")
+            labels[team_id] = run
     except Exception as exc:
         return None, f"the FPL data could not be assembled ({exc.__class__.__name__}: {exc})"
 
@@ -268,7 +287,19 @@ def _live_data():
         "by_id": by_id, "by_name": by_name, "team_games": team_games,
         "positional_medians": medians,
         "next_event": next_event, "fixture_table": table, "teams": teams,
+        "fixture_labels": labels,
     }, ""
+
+
+def _fixture_label(live, player: dict) -> str:
+    labels = _fixture_labels(live, player, 1)
+    return labels[0] if labels else ""
+
+
+def _fixture_labels(live, player: dict, count: int) -> list[str]:
+    record = live["by_id"].get(int(player.get("id", 0) or 0)) or {}
+    team_id = record.get("team")
+    return list(live.get("fixture_labels", {}).get(team_id, []))[:count]
 
 
 def _fixture_scores(live, team_id) -> list[float]:
@@ -412,6 +443,41 @@ def main() -> int:
                             key=lambda m: m["five_gw"], reverse=True)
             by_position[position] = ranked[:top]
         payload["market_projections"] = by_position
+
+    # Structured facts, then prose from them. The homepage renders only
+    # from this, so an article sentence about one player cannot reach
+    # another player's card.
+    facts_out, quality = {}, {}
+    for signal, player in zip(signals, squad):
+        entry = entries.get(signal.name, {})
+        assessment = pf.build(
+            signal.name, signal.club, signal.position, signal.price,
+            quotes=entry.get("quotes") or [],
+            availability=(pf.OUT if signal.flagged else
+                          pf.DOUBT if signal.minutes_category in
+                          ("Significant concern", "Major doubt") else pf.FIT),
+            expected_minutes=signal.minutes_category,
+            sell_urgency=next((a.sell_urgency for a in decision.assessments
+                               if a.name == signal.name), 0.0),
+            sell_band=next((a.band for a in decision.assessments
+                            if a.name == signal.name), ""),
+            fixture=_fixture_label(live, player) if live else "",
+            next_fixtures=_fixture_labels(live, player, 4) if live else [],
+            form=(f"{signal.points_per_game:.1f} points a game this season"
+                  if signal.points_per_game else ""),
+            starting=not player.get("on_bench"),
+            captain=bool(player.get("is_captain")),
+            vice=bool(player.get("is_vice_captain")),
+        )
+        record = assessment.as_dict()
+        record["prose"] = writeup_mod.from_facts(assessment)
+        problems = writeup_mod.quality_check(assessment)
+        if problems:
+            quality[signal.name] = problems
+        facts_out[signal.name] = record
+
+    payload["player_facts"] = facts_out
+    payload["quality_problems"] = quality
 
     payload["projection_audit"] = {
         s.name: {
