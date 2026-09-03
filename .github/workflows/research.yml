@@ -63,6 +63,19 @@ jobs:
         run: |
           python scripts/collect_research.py --mode "${{ inputs.research_mode || 'incremental' }}"
 
+      - name: Refresh the squad the decision will be made about
+        # The decision is arithmetic on bank, free transfers and SELLING
+        # values, and only the FPL API knows them. Reading a squad file
+        # committed hours ago is how a plan gets costed on prices that
+        # have since moved -- and a missing selling price now makes the
+        # whole recommendation INCOMPLETE rather than being quietly
+        # replaced by the market price. So it is refreshed here, in the
+        # one place the API is reachable, immediately before it is used.
+        if: always() && inputs.mode != 'probe'
+        env:
+          FPL_TEAM_ID: ${{ vars.FPL_TEAM_ID }}
+        run: python scripts/fetch_squad.py
+
       - name: Decide transfers from the refreshed squad and corpus
         # `always()` so the decision file is written and committed even
         # when the completeness gate fails. The first production run
@@ -76,13 +89,13 @@ jobs:
         # committed and diagnosable rather than discarded with the runner.
         if: always()
         run: |
-          if [ -z "$(git status --porcelain data/research data/sources)" ]; then
+          if [ -z "$(git status --porcelain data/research data/sources data/squad)" ]; then
             echo "Nothing new to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/research data/sources
+          git add data/research data/sources data/squad
           git commit -m "Collect research: $(date -u '+%Y-%m-%d %H:%M UTC')"
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
