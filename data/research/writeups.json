@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-04T05:28:05+00:00",
+ "generated": "2026-09-04T11:28:32+00:00",
  "gameweek": 3,
- "corpus_size": 4759,
+ "corpus_size": 4923,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -46,15 +46,15 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "status": "12 article(s) reference Gabriel, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 12 retrieved item(s) from 7 source(s).",
+   "status": "Latest on Gabriel — Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.”",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 13 retrieved item(s) from 8 source(s), the most recent dated 04 Sep.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.” Football365, 04 Sep: “But former Aston Villa forward Gabby Agbonlahor has boldly argued that Gabriel is actually the “most overrated player in the league” at the moment.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
-   "evidence_count": 12,
+   "confidence": "high",
+   "evidence_count": 13,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
     "https://www.skysports.com/football/news/11670/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
@@ -65,20 +65,38 @@
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/in-martinellis-hands-arsenal-al-hilal-getting-closer-to-agreement-after-increased-bid_603646.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-transfer-news-today-done-deals-live-updates-and-rumours-august-24_603599.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
+    "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong",
     "https://www.soccerway.com/news/soccer-premier-league-gabriel-martinelli-joins-al-hilal-from-arsenal/Wll3VINj/",
-    "https://dknetwork.draftkings.com/2026/09/01/prediction-pick-for-gabriel-lourenco-vs-charlie-cleveland-at-dwcs-season-10-week-4/",
-    "https://www.101greatgoals.com/news/transfers/barcelona-complete-signing-gabriel-jesus-arsenal/"
+    "https://dknetwork.draftkings.com/2026/09/01/prediction-pick-for-gabriel-lourenco-vs-charlie-cleveland-at-dwcs-season-10-week-4/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "DraftKings Network Soccer",
     "Fantasy Football Hub",
     "Flashscore",
+    "Football365",
     "Sky Sports Premier League",
     "Soccerway",
     "Sports Mole"
    ],
-   "quotes": []
+   "quotes": [
+    {
+     "text": "Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong",
+     "published": "2026-09-04T10:58:20+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "But former Aston Villa forward Gabby Agbonlahor has boldly argued that Gabriel is actually the “most overrated player in the league” at the moment.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong",
+     "published": "2026-09-04T10:58:20+00:00",
+     "tone": "neutral",
+     "topics": []
+    }
+   ]
   },
   "Guéhi": {
    "player": "Guéhi",
@@ -967,7 +985,7 @@
      "topics": []
     },
     {
-     "text": "Joao Pedro analysis: Why the Blues' master of all trades stands alone in 2026 | News | Official Site | Chelsea Football Club Since the start of 2026, no Premier League player has scored more goals in all competitions than Joao Pedro As he begins his second full season in Blue, the Brazilian has made himself at home at the centre of Chelsea’s attack.",
+     "text": "Joao Pedro analysis: Why the Blues' master of all trades stands alone in 2026 | News | Official Site | Chelsea Football Club Since the start of 2026, no Premier League player has scored more goals in all competitions than Joao Pedro.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-analysis-why-the-blues-master-of-all-trades-stands-alone-in-2026",
      "published": "",
@@ -1118,8 +1136,8 @@
    "evidence_count": 6,
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
-    "https://www.sportsmole.co.uk/football/ipswich-town/team-news/ipswich-vs-liverpool-injury-suspension-list-predicted-xis_604317.html",
     "https://www.101greatgoals.com/match-previews/premier-league-matches/ipswich-vs-liverpool-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
+    "https://www.sportsmole.co.uk/football/ipswich-town/team-news/ipswich-vs-liverpool-injury-suspension-list-predicted-xis_604317.html",
     "https://www.sportsmole.co.uk/football/liverpool/predicted-lineups/barcola-to-make-reds-debut-predicted-liverpool-xi-vs-ipswich_604314.html",
     "https://www.sportsmole.co.uk/football/ipswich-town/predicted-lineups/one-major-change-for-the-tractor-boys-predicted-ipswich-xi-vs-liverpool_604313.html",
     "https://www.football365.com/match-preview/ipswich-v-liverpool-prediction-preview"

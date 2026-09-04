@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-04T05:28:05+00:00",
- "seconds": 177.4,
+ "ran_at": "2026-09-04T11:28:32+00:00",
+ "seconds": 125.1,
  "sources_attempted": 78,
  "sources_readable": 63,
- "candidates_discovered": 628,
- "substantive_items": 186,
- "duplicates_removed": 8,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 4759,
+ "candidates_discovered": 718,
+ "substantive_items": 282,
+ "duplicates_removed": 19,
+ "deeply_analysed": 67,
+ "deep_read_failed": 23,
+ "corpus_size": 4923,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 186 articles"
+    "63/78 sources returned 282 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "FPL360: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -45,13 +46,12 @@
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Ipswich Town: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -143,9 +143,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 12,
-   "source_count": 7,
-   "latest_evidence": "2026-09-03T19:56:54+02:00",
+   "evidence_count": 13,
+   "source_count": 8,
+   "latest_evidence": "2026-09-04T10:58:20+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -251,6 +251,15 @@
      "excerpt": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray."
     },
     {
+     "title": "Arsenal key star is ‘most overrated player’ in Premier League – ‘he doesn’t belong at the top’",
+     "url": "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong",
+     "source": "Football365",
+     "published": "2026-09-04T10:58:20+00:00",
+     "matched_on": "gabriel",
+     "kind": "general",
+     "excerpt": "Arsenal star Gabriel Magalhaes has been told that he is currently the “most overrated player” in the Premier League."
+    },
+    {
      "title": "Martinelli moves to Saudi giants Al Hilal after seven years with Arsenal",
      "url": "https://www.soccerway.com/news/soccer-premier-league-gabriel-martinelli-joins-al-hilal-from-arsenal/Wll3VINj/",
      "source": "Soccerway",
@@ -267,15 +276,6 @@
      "matched_on": "gabriel",
      "kind": "general",
      "excerpt": "Ryan Wohl details his best bet for Gabriel Lourenco vs Charlie Cleveland at Dana White's Contender Series Season 10, Week 4. The post Prediction, pick for Gabriel Lourenco vs. Charlie Cleveland at DWCS Season 10, Week 4 appeared first on DraftKings Network ."
-    },
-    {
-     "title": "Barcelona complete signing of Gabriel Jesus from Arsenal",
-     "url": "https://www.101greatgoals.com/news/transfers/barcelona-complete-signing-gabriel-jesus-arsenal/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-01T13:20:55+00:00",
-     "matched_on": "gabriel",
-     "kind": "general",
-     "excerpt": "Gabriel Jesus has joined Barcelona."
     }
    ]
   },
@@ -1370,7 +1370,7 @@
    "club": "IPS",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-03T20:00:00+01:00",
+   "latest_evidence": "2026-09-04T09:13:32+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1403,6 +1403,15 @@
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
     },
     {
+     "title": "Ipswich v Liverpool: Preview, predicted line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/ipswich-vs-liverpool-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-04T09:13:32+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Preview as Ipswich host Liverpool in the Premier League"
+    },
+    {
      "title": "Ipswich Town vs. Liverpool injury, suspension list, predicted XIs before Premier League clash",
      "url": "https://www.sportsmole.co.uk/football/ipswich-town/team-news/ipswich-vs-liverpool-injury-suspension-list-predicted-xis_604317.html",
      "source": "Sports Mole",
@@ -1410,15 +1419,6 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Friday's Premier League clash between Ipswich Town and Liverpool."
-    },
-    {
-     "title": "Ipswich v Liverpool: Preview, predicted line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/ipswich-vs-liverpool-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-03T15:04:02+00:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": "Preview as Ipswich host Liverpool in the Premier League"
     },
     {
      "title": "Liverpool lineup vs. Ipswich Town: Predicted XI as Andoni Iraola faces Bradley Barcola debut decision",
