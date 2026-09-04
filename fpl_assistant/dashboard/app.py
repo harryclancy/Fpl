@@ -3612,11 +3612,75 @@ def render_transfers_tab(players, fixtures, teams, next_event, squad):
             render_html(render_rank_card_list(replacement_cards))
 
 
+def render_build_marker() -> None:
+    """Which commit is live, printed before anything can go wrong.
+
+    DEPLOYMENT PROOF. The marker used to appear only inside the freshness
+    bar, which is reached after the FPL data has loaded — so on a boot
+    failure there was no marker at all, and a failed deploy was
+    indistinguishable from a stale one. It is now the first thing the page
+    writes, before any network call, so the live commit is always
+    readable.
+    """
+    build = version.current()
+    render_html(
+        "<div style='text-align:right;font-size:.72rem;color:#9aa1ad;"
+        "letter-spacing:.04em;margin:-.4rem 0 .2rem 0'>"
+        f"build {build.short}"
+        + (f" · {build.branch}" if build.branch else "")
+        + "</div>")
+
+
+def render_startup_failure(exc: Exception) -> None:
+    """A boot that cannot reach the FPL API must still be a boot.
+
+    THE FIX AT THE HEART OF THIS. An exception escaping the startup
+    script does not just show an error page — the hosting platform
+    records the build as failed and goes on serving the PREVIOUS build,
+    which is precisely the "it stopped redeploying" symptom. Catching it
+    turns a failed deployment into a successful one that explains itself,
+    and the build marker above proves the new code is live.
+    """
+    st.error(
+        "**The official FPL API could not be reached from this server.**  \n"
+        f"`{exc.__class__.__name__}: {exc}`")
+    st.markdown(
+        "This is a connectivity problem between the host and "
+        "fantasy.premierleague.com, not a fault in the app — the build "
+        "marker above is this commit, so the deployment itself succeeded. "
+        "The API rate-limits datacentre traffic, so it is usually "
+        "temporary."
+    )
+    st.markdown(
+        "**What still works.** The research, the transfer plan and the "
+        "player write-ups are committed to the repository by the scheduled "
+        "workflow, which reaches the API from GitHub. They are current as "
+        "of the last successful run."
+    )
+    decision = load_decision()
+    coverage = decision.get("status_coverage") or {}
+    if coverage:
+        st.caption(
+            f"Last checked squad status: {coverage.get('status_checked', '—')} "
+            f"· deadline coverage {coverage.get('deadline_coverage', '—')}")
+    recommendation = decision.get("recommendation") or {}
+    if recommendation.get("verdict"):
+        st.markdown(f"**Last committed transfer decision.** "
+                    f"{recommendation['verdict']}")
+    st.caption("Reload in a few minutes, or press R to rerun.")
+
+
 def main():
     inject_global_css()
+    # Before anything that can fail: which commit is running.
+    render_build_marker()
     hero_header()
-    with st.spinner("Pulling the latest FPL data…"):
-        players, teams, events, fixtures, state = load_core_data()
+    try:
+        with st.spinner("Pulling the latest FPL data…"):
+            players, teams, events, fixtures, state = load_core_data()
+    except Exception as exc:
+        render_startup_failure(exc)
+        return
     next_event = state.planning_event
 
     st.sidebar.header("Settings")

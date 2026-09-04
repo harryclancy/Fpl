@@ -1,0 +1,81 @@
+name: Verify the live deployment
+
+# WHAT THIS ANSWERS: "did the push actually reach the live app?"
+#
+# The app prints its own commit as a build marker, but Streamlit renders
+# through JavaScript, so the marker is not in the HTML a plain fetch
+# returns — which is why this reads the page in a real browser instead of
+# curling it. Chromium is preinstalled on GitHub's runners and the whole
+# check takes well under a minute, so it stays inside the free tier.
+#
+# It runs on pushes that change CODE, not on the many data commits the
+# research and snapshot workflows make: verifying a deployment forty
+# times a day would be its own kind of waste.
+
+on:
+  push:
+    branches: [claude/fpl-assistant-manager-fjcupn]
+    paths:
+      - "fpl_assistant/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".streamlit/**"
+      - ".github/workflows/verify-deploy.yml"
+  workflow_dispatch:
+    inputs:
+      wait_seconds:
+        description: "How long to give Streamlit before looking"
+        type: string
+        default: "180"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-deploy
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Work out what we are looking for
+        id: expected
+        run: |
+          echo "commit=$(git rev-parse --short=7 HEAD)" >> "$GITHUB_OUTPUT"
+          if [ -z "${{ vars.STREAMLIT_APP_URL }}" ]; then
+            echo "::warning title=No app URL::Set the repository variable \
+            STREAMLIT_APP_URL to the live app address and this workflow \
+            will confirm each deploy automatically."
+            echo "skip=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Is the app answering at all?
+        if: steps.expected.outputs.skip != 'yes'
+        run: |
+          url="${{ vars.STREAMLIT_APP_URL }}"
+          code=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 \
+                 "${url%/}/healthz" || echo 000)
+          echo "healthz: $code"
+          if [ "$code" != "200" ]; then
+            echo "::warning title=App not answering::${url%/}/healthz returned \
+            $code. The app may be asleep, still building, or failing to start."
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.expected.outputs.skip != 'yes'
+        with:
+          python-version: "3.11"
+
+      - name: Read the build marker in a real browser
+        if: steps.expected.outputs.skip != 'yes'
+        env:
+          APP_URL: ${{ vars.STREAMLIT_APP_URL }}
+          EXPECTED: ${{ steps.expected.outputs.commit }}
+          WAIT: ${{ inputs.wait_seconds || '180' }}
+        run: |
+          pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+          python scripts/check_deploy.py

@@ -4,6 +4,8 @@ Endpoints used are the same ones the fantasy.premierleague.com site itself calls
 No API key is needed. Be a reasonable citizen: responses are cached to disk
 (see cache.py) so a dashboard refresh doesn't refetch everything every time.
 """
+import time
+
 import requests
 
 from fpl_assistant.cache import cached_fetch
@@ -12,11 +14,39 @@ from fpl_assistant.config import BASE_URL, CACHE_TTL_SECONDS
 _session = requests.Session()
 _session.headers.update({"User-Agent": "fpl-assistant-manager/0.1 (personal use)"})
 
+# A DEPLOY DEPENDS ON THIS CALL SUCCEEDING.
+#
+# The disk cache lives in a gitignored directory, so a freshly deployed
+# container starts with nothing and the first page load must reach
+# fantasy.premierleague.com. The API rate-limits and intermittently 403s
+# traffic from datacentre IP ranges — which is exactly what a hosting
+# platform is — and an unhandled failure there does not merely show an
+# error: it aborts the startup script, the platform records the build as
+# failed, and it keeps serving the PREVIOUS build. The app then looks as
+# though it has stopped deploying.
+#
+# So one transient refusal must not be able to cost a deployment.
+RETRIES = 3
+BACKOFF_SECONDS = (0.5, 2.0, 5.0)
+
 
 def _get(path: str) -> dict:
-    resp = _session.get(f"{BASE_URL}{path}", timeout=15)
-    resp.raise_for_status()
-    return resp.json()
+    last = None
+    for attempt in range(RETRIES):
+        try:
+            resp = _session.get(f"{BASE_URL}{path}", timeout=15)
+            resp.raise_for_status()
+            return resp.json()
+        except requests.RequestException as exc:
+            last = exc
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            # A 404 is an answer, not a hiccup; retrying it wastes the
+            # startup budget the deploy is being timed against.
+            if status is not None and 400 <= status < 500 and status not in (403, 429):
+                raise
+            if attempt < RETRIES - 1:
+                time.sleep(BACKOFF_SECONDS[attempt])
+    raise last
 
 
 def get_bootstrap_static() -> dict:

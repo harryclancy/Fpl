@@ -84,6 +84,28 @@ jobs:
         if: always() && inputs.mode != 'probe'
         run: python scripts/decide_transfers.py
 
+      - name: Discard a refresh that changed nothing that matters
+        # EACH COMMIT TRIGGERS A REDEPLOY. The squad file carries a
+        # `fetched_at` stamp and an ownership percentage that drifts by a
+        # tenth every few minutes, so this workflow was committing eight
+        # times a day with no decision-relevant change in any of them --
+        # eight rebuilds of the live app for a timestamp. If that is all
+        # that moved, put the file back.
+        if: always()
+        run: |
+          for file in data/squad/current.json; do
+            [ -f "$file" ] || continue
+            git diff --quiet -- "$file" && continue
+            substantive=$(git diff -U0 -- "$file" \
+              | grep -E '^[+-]' \
+              | grep -vE '^(\+\+\+|---)' \
+              | grep -vcE '"(fetched_at|selected_by_percent)"' || true)
+            if [ "$substantive" -eq 0 ]; then
+              git checkout -- "$file"
+              echo "$file: only the timestamp and ownership drift changed — not committing."
+            fi
+          done
+
       - name: Commit what came back
         # Runs even when the gates fail, so the evidence of a bad run is
         # committed and diagnosable rather than discarded with the runner.
