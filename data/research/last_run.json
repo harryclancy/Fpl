@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-03T23:25:20+00:00",
- "seconds": 147.6,
+ "ran_at": "2026-09-04T05:28:05+00:00",
+ "seconds": 177.4,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 689,
- "substantive_items": 247,
- "duplicates_removed": 19,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 4665,
+ "sources_readable": 63,
+ "candidates_discovered": 628,
+ "substantive_items": 186,
+ "duplicates_removed": 8,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 4759,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 247 articles"
+    "63/78 sources returned 186 articles"
    ]
   },
   "blackout": {
@@ -37,14 +37,15 @@
   }
  },
  "failures": [
-  "RotoWire Soccer: timed out after 12s for https://www.rotowire.com/news-sitemap.php",
   "FPL360: nothing published in the last 10 days",
-  "Fantasy Football Pundit: nothing published in the last 10 days",
+  "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
+  "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -57,8 +58,8 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-03T15:30:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-03T20:35:58+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -83,6 +84,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury, suspension list and return dates vs. Arsenal: Moises Caicedo, Jordan Henderson updates",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/caicedo-palestra-henderson-latest-chelsea-injury-suspension-list-vs-arsenal_604422.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T20:35:58+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Sunday's Premier League clash with Arsenal."
+    },
     {
      "title": "Arturo Ruiz's first Brighton press conference | preparations for Arsenal in the WSL",
      "url": "https://www.brightonandhovealbion.com/media-video/arturo-ruizs-first-brighton-press-conference-or-preparations-for-arsenal-in-the-wsl",
@@ -127,15 +137,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Sunday's Premier League clash with Chelsea."
-    },
-    {
-     "title": "Eberechi Eze set for new Arsenal role as Arteta misses out on elite attacking duo",
-     "url": "https://www.football365.com/news/eberechi-eze-new-role-arsenal-miss-out-vinicius-junior-julian-alvarez",
-     "source": "Football365",
-     "published": "2026-09-02T13:09:36+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal midfielder Eberechi Eze will be asked to frequent a different role this season as the Gunners respond to failures to land a pair of elite forwards this summer."
     }
    ]
   },
@@ -493,8 +494,8 @@
    "player": "Semenyo",
    "club": "MCI",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-03T08:40:00+01:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-03T17:45:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -528,6 +529,15 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "Ndiaye + Enzo to Man City: How does it affect FPL?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-03T17:45:00+00:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Both transfers have consequences for their new and old clubs The post Ndiaye + Enzo to Man City: How does it affect FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
      "title": "Coventry lineup vs. Man City: Predicted XI for Premier League clash",
      "url": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html",
      "source": "Sports Mole",
@@ -553,15 +563,6 @@
      "matched_on": "MCI team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes a look at three ways that Enzo Maresca's Manchester City could line up with new £125m signing Enzo Fernandez."
-    },
-    {
-     "title": "Man City injury, suspension news and return dates for Coventry City clash: Jeremy Doku, Matheus Nunes latest",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/doku-nunes-latest-man-city-injury-list-for-coventry-clash_604319.html",
-     "source": "Sports Mole",
-     "published": "2026-09-02T23:51:41+01:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up Manchester City’s injury and suspension news ahead of their Premier League clash with Coventry City on Saturday."
     },
     {
      "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
@@ -1368,8 +1369,8 @@
    "player": "Diop",
    "club": "IPS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-03T15:04:02+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-03T20:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1400,6 +1401,15 @@
      "matched_on": "diop",
      "kind": "team news",
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
+    },
+    {
+     "title": "Ipswich Town vs. Liverpool injury, suspension list, predicted XIs before Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/ipswich-town/team-news/ipswich-vs-liverpool-injury-suspension-list-predicted-xis_604317.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T20:00:00+01:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Friday's Premier League clash between Ipswich Town and Liverpool."
     },
     {
      "title": "Ipswich v Liverpool: Preview, predicted line-ups, stats and where to watch",
@@ -1436,15 +1446,6 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": "All the team news and predictions ahead of the Premier League clash between Ipswich Town and Liverpool."
-    },
-    {
-     "title": "How to watch Ipswich Town vs Liverpool live: Stream, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-ipswich-town-vs-liverpool-live-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-02T10:40:03-04:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   }

@@ -1,14 +1,14 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-03T23:25:20+00:00",
+ "generated": "2026-09-04T05:28:05+00:00",
  "gameweek": 3,
- "corpus_size": 4665,
+ "corpus_size": 4759,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — RotoWire Soccer, 03 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 03 Sep.",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 03 Sep.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "On minutes — RotoWire Soccer, 03 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
@@ -17,16 +17,15 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/caicedo-palestra-henderson-latest-chelsea-injury-suspension-list-vs-arsenal_604422.html",
     "https://www.brightonandhovealbion.com/media-video/arturo-ruizs-first-brighton-press-conference-or-preparations-for-arsenal-in-the-wsl",
     "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
     "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-live-how-to-watch-stream-tv-team-news-prediction",
     "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
-    "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-mosquera-timber-latest-arsenal-injury-suspension-list-vs-chelsea_604308.html",
-    "https://www.football365.com/news/eberechi-eze-new-role-arsenal-miss-out-vinicius-junior-julian-alvarez"
+    "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-mosquera-timber-latest-arsenal-injury-suspension-list-vs-chelsea_604308.html"
    ],
    "sources_used": [
     "Brighton & Hove Albion",
-    "Football365",
     "NBC Sports Rotoworld PL",
     "RotoWire Soccer",
     "Sports Mole"
@@ -205,29 +204,46 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "status": "Latest on Semenyo — Sports Mole, 03 Sep: “Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.”",
-   "why_here": "Semenyo is in the starting eleven this week at £8.5m as a MID. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 03 Sep.",
-   "case_for": "What supports keeping him: Sports Mole, 03 Sep: “Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.”",
+   "status": "Latest on Semenyo — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "why_here": "Semenyo is in the starting eleven this week at £8.5m as a MID. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 03 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 03 Sep: “Even beyond the Norwegian, it could be Ndiaye, Enzo, Antoine Semenyo (£8.5m), a fit Jeremy Doku (£7.4m) etc.” Fantasy Football Scout, 03 Sep: “Anderson, Enzo, O’Reilly, Bouaddi, Kovacic CAM Cherki, Foden, Enzo, O’Reilly WINGS Semenyo, Doku, Foden, Ndiaye, Allan Haaland, Semenyo, Ndiaye Ndiaye will therefore be far from the nailed-on, 90-minute man we’ve become accustomed to seeing him as.” Sports Mole, 03 Sep: “Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Sports Mole, 03 Sep: “Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.” Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
     "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html",
     "https://www.sportsmole.co.uk/football/man-city/preview/man-city-vs-coventry-prediction-team-news-lineups_604324.html",
     "https://www.sportsmole.co.uk/football/man-city/feature/three-ways-man-city-could-line-up-with-gbp125m-signing-enzo-fernandez_604323.html",
-    "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/doku-nunes-latest-man-city-injury-list-for-coventry-clash_604319.html",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
    ],
    "sources_used": [
     "FPL Captain",
     "Fantasy Football Hub",
+    "Fantasy Football Scout",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Even beyond the Norwegian, it could be Ndiaye, Enzo, Antoine Semenyo (£8.5m), a fit Jeremy Doku (£7.4m) etc.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
+     "published": "2026-09-03T17:45:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Anderson, Enzo, O’Reilly, Bouaddi, Kovacic CAM Cherki, Foden, Enzo, O’Reilly WINGS Semenyo, Doku, Foden, Ndiaye, Allan Haaland, Semenyo, Ndiaye Ndiaye will therefore be far from the nailed-on, 90-minute man we’ve become accustomed to seeing him as.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
+     "published": "2026-09-03T17:45:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Iliman Ndiaye was another Deadline Day signing for City and is available to start either on the left or right flank, though Maresca may decide to stick with Antoine Semenyo and Phil Foden in wide areas.",
      "source": "Sports Mole",
@@ -1092,7 +1108,7 @@
    "player": "Diop",
    "club": "IPS",
    "status": "Latest on Diop — Sports Mole, 02 Sep: “Protecting the shot-stopper should be centre-backs Issa Diop and Jacob Greaves, the latter of whom will be desperate to move on from his own goal at Old Trafford.”",
-   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 02 Sep.",
+   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 02 Sep: “Protecting the shot-stopper should be centre-backs Issa Diop and Jacob Greaves, the latter of whom will be desperate to move on from his own goal at Old Trafford.” Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1102,17 +1118,16 @@
    "evidence_count": 6,
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+    "https://www.sportsmole.co.uk/football/ipswich-town/team-news/ipswich-vs-liverpool-injury-suspension-list-predicted-xis_604317.html",
     "https://www.101greatgoals.com/match-previews/premier-league-matches/ipswich-vs-liverpool-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
     "https://www.sportsmole.co.uk/football/liverpool/predicted-lineups/barcola-to-make-reds-debut-predicted-liverpool-xi-vs-ipswich_604314.html",
     "https://www.sportsmole.co.uk/football/ipswich-town/predicted-lineups/one-major-change-for-the-tractor-boys-predicted-ipswich-xi-vs-liverpool_604313.html",
-    "https://www.football365.com/match-preview/ipswich-v-liverpool-prediction-preview",
-    "https://www.nbcsports.com/soccer/news/how-to-watch-ipswich-town-vs-liverpool-live-stream-tv-team-news-prediction"
+    "https://www.football365.com/match-preview/ipswich-v-liverpool-prediction-preview"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Football365",
     "Ipswich Town",
-    "NBC Sports Rotoworld PL",
     "Sports Mole"
    ],
    "quotes": [
