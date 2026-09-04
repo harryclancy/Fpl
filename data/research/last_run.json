@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
- "gameweek": 3,
- "ran_at": "2026-09-04T17:26:43+00:00",
- "seconds": 137.6,
+ "gameweek": 4,
+ "ran_at": "2026-09-04T23:25:31+00:00",
+ "seconds": 132.6,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 776,
- "substantive_items": 330,
- "duplicates_removed": 31,
- "deeply_analysed": 66,
- "deep_read_failed": 24,
- "corpus_size": 5135,
+ "sources_readable": 65,
+ "candidates_discovered": 734,
+ "substantive_items": 296,
+ "duplicates_removed": 17,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 5329,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 330 articles"
+    "65/78 sources returned 296 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,6 @@
  "failures": [
   "FPL360: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
-  "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
@@ -58,8 +57,8 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-04T11:09:00+01:00",
-   "official_source_found": true,
+   "latest_evidence": "2026-09-04T14:50:00+00:00",
+   "official_source_found": false,
    "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -72,7 +71,7 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -82,6 +81,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal vs Chelsea Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
+     "source": "RotoWire Soccer",
+     "published": "2026-09-04T14:50:00+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Xabi Alonso reveals how Morgan Rogers feels after rejecting Arsenal for Chelsea",
+     "url": "https://www.football365.com/news/xabi-alonso-morgan-rogers-arsenal-chelsea",
+     "source": "Football365",
+     "published": "2026-09-04T13:53:32+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Morgan Rogers is set to line up for Chelsea against Arsenal at the Emirates Stadium in the Premier League on Sunday."
+    },
     {
      "title": "Man Utd, Arsenal and Liverpool among clubs one injury away from disaster",
      "url": "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
@@ -117,24 +134,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Sunday's Premier League clash between Arsenal and Chelsea, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Chelsea injury, suspension list and return dates vs. Arsenal: Moises Caicedo, Jordan Henderson updates",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/caicedo-palestra-henderson-latest-chelsea-injury-suspension-list-vs-arsenal_604422.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T20:35:58+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Sunday's Premier League clash with Arsenal."
-    },
-    {
-     "title": "Arturo Ruiz's first Brighton press conference | preparations for Arsenal in the WSL",
-     "url": "https://www.brightonandhovealbion.com/media-video/arturo-ruizs-first-brighton-press-conference-or-preparations-for-arsenal-in-the-wsl",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-03T15:30:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "🎬 Arturo Ruiz's first Brighton press conference | preparations for Arsenal in the WSL"
     }
    ]
   },
@@ -277,53 +276,66 @@
     }
    ]
   },
-  "Guéhi": {
-   "player": "Guéhi",
-   "club": "MCI",
-   "evidence_count": 3,
+  "Egan": {
+   "player": "Egan",
+   "club": "HUL",
+   "evidence_count": 4,
    "source_count": 3,
-   "latest_evidence": "2026-08-29T15:55:00+00:00",
+   "latest_evidence": "2026-09-04T15:00:00+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
-   "transfer_status_assessed": false,
-   "role_assessed": false,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
    "fixtures_assessed": false,
    "dimensions_covered": [
-    "team news"
+    "match report",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
    ],
    "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
     {
-     "title": "Toffees strike late to snatch a point in Rose's Vitality Stadium opener",
-     "url": "https://www.afcb.co.uk/news/2026/august/29/match-report-v-everton/",
-     "source": "AFC Bournemouth",
-     "published": "2026-08-29T15:55:00+00:00",
-     "matched_on": "guehi",
+     "title": "Team News: Coventry City (A)",
+     "url": "https://www.wearehullcity.co.uk/news/2026/august/29/team-news-coventry-city-a/",
+     "source": "Hull City",
+     "published": "2026-08-29T12:45:00+00:00",
+     "matched_on": "egan",
      "kind": "team news",
-     "excerpt": "James Tarkowski’s injury-time equaliser took the gloss off Marco Rose’s first home game as AFC Bournemouth Head Coach as Everton claimed a share of the spoils from a 1-1 draw. The Cherries appeared to be heading towards victory as the clock ticked into added time with Alex Scott’s finely-taken first-half goal on course to earn the three points. But for the second game running, the Cherries concede"
+     "excerpt": "Fixtures Coventry City Vs. Hull City - Sat, Aug 29 2026, 15:00 Sergej Jakirović has made one change to his starting XI as the Tigers face Coventry City on matchday two of the Premier League. Japanese international Hidemasa Morita makes his full City debut and his first league outing for the club, replacing Matt Crooks. Goalscorers against Manchester United Semi Ajayi and Nobel Mendy start in the s"
     },
     {
-     "title": "The opposite view: Maresca on GuÃ©hi ahead of Selhurst reunion",
-     "url": "https://www.cpfc.co.uk/news/match-previews/the-opposite-view-maresca-on-guehi-ahead-of-selhurst-reunion/",
-     "source": "Crystal Palace",
-     "published": "2026-08-28T08:05:29+00:00",
-     "matched_on": "guehi",
-     "kind": "team news",
-     "excerpt": "Crystal Palace return to action on Friday night (20:00 BST) when Manchester City become the first visitors to Selhurst Park this season â here's what Enzo Maresca had to say in his pre-match press conference..."
+     "title": "15 reasons that prove the Premier League is the Super League in disguise",
+     "url": "https://www.fourfourtwo.com/competition/15-reasons-that-prove-the-premier-league-is-the-super-league-in-disguise",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-04T06:00:00+00:00",
+     "matched_on": "egan",
+     "kind": "transfer",
+     "excerpt": "The Premier League is king. It's where players want to play and it's what broadcasters want to show. You'll find some, not all, fans of lower league clubs who claim to support Liverpool or Manchester United, too, or Scottish football supporters who also 'have a Premier League team'. And with the ever-increasing sums of money changing hands, moving from one top flight team's accounts to another, th"
     },
     {
-     "title": "Manchester City 2-1 Bournemouth Stats: Substitute Cherki Sparks Late Turnaround as Maresca Gets First Win",
-     "url": "https://theanalyst.com/articles/manchester-city-vs-bournemouth-stats-premier-league-08-2026",
-     "source": "Opta Analyst",
-     "published": "2026-08-23T15:23:02+00:00",
-     "matched_on": "guehi",
-     "kind": "team news",
-     "excerpt": "Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol. The post Manchester City 2-1 Bournemouth Stats: Substitute Cherki Sparks Late Turnaround as Maresca Gets First Win appeared first on Opta Analyst ."
+     "title": "‘Hull City have had a great start, but it will be a tough season and they must stick together – we did in 2008, even after Phil Brown’s teamtalk, and the club stayed in the Premier League’ Dean Windass talks to FFT about the Tigers’ survival chances",
+     "url": "https://www.fourfourtwo.com/team/hull-city-have-had-a-great-start-but-it-will-be-a-tough-season-and-they-must-stick-together-we-did-in-2008-even-after-phil-browns-teamtalk-and-the-club-stayed-in-the-premier-league-dean-windass-talks-to-fft-about-the-tigers-survival-chances",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-04T15:00:00+00:00",
+     "matched_on": "egan",
+     "kind": "general",
+     "excerpt": "When Hull City won the play-off final and reached the Premier League 18 years ago, Dean Windass was the hero. Windass struck a sensational volley for his local club to down Bristol City at Wembley , then was part of the squad that went into the top flight for the 2008-09 campaign. Hull were tipped for instant relegation, but shocked everyone by winning six of their first nine games – following up "
+    },
+    {
+     "title": "Best hull fpl defenders tzolakis egan ajayi mendy 2026 27",
+     "url": "https://onefpl.com/blog/best-hull-fpl-defenders-tzolakis-egan-ajayi-mendy-2026-27",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "egan",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -332,7 +344,7 @@
    "club": "BRE",
    "evidence_count": 6,
    "source_count": 2,
-   "latest_evidence": "2026-09-03T10:09:00+01:00",
+   "latest_evidence": "2026-09-04T15:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -355,6 +367,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Brentford vs. Sunderland injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/brentford/injury-news/team-news/brentford-vs-sunderland-injury-suspension-list-predicted-xis_604358.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T15:00:00+01:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday's Premier League match between Brentford and Sunderland."
+    },
     {
      "title": "Brentford lineup vs. Sunderland: Predicted XI for Premier League clash as Diouf decision made",
      "url": "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
@@ -399,25 +420,16 @@
      "matched_on": "BRE team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "First team leeds united v brentford premier league confirmed team news 30 08 2026",
-     "url": "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-     "source": "Brentford",
-     "published": "",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 5,
-   "source_count": 5,
-   "latest_evidence": "2026-09-03T15:35:56+00:00",
-   "official_source_found": false,
+   "evidence_count": 6,
+   "source_count": 6,
+   "latest_evidence": "2026-09-04T17:45:04+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -441,6 +453,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "TEAM NEWS | LIVERPOOL (H)",
+     "url": "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
+     "source": "Ipswich Town",
+     "published": "2026-09-04T17:45:04+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Fixtures Ipswich Town Vs. Liverpool - Fri, Sep 4th 2026, 20:00 Team news for Town’s Premier League clash against Liverpool can now be confirmed. Gary O’Neil has made one change from the defeat to Manchester United on Sunday as Exequiel Palacios comes in for his first Town start in place of Marcelino Núñez. Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Gr"
+    },
     {
      "title": "Barcola, Szoboszlai + Liverpool injury latest for FPL Gameweek 3",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/barcola-szoboszlai-liverpool-injury-latest-for-fpl-gameweek-3",
@@ -492,8 +513,8 @@
    "player": "Semenyo",
    "club": "MCI",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-04T11:10:00+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-04T16:10:41+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -507,7 +528,7 @@
     "fpl advice",
     "injury",
     "match report",
-    "set pieces",
+    "press conference",
     "statistics",
     "tactics",
     "team news",
@@ -527,40 +548,40 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
-     "title": "FPL Gameweek 3 Scout Picks: Man City triple-up",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/fpl-gameweek-3-scout-picks-man-city-triple-up",
+     "title": "Man City v Coventry predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/man-city-v-coventry-predicted-line-ups-fpl-team-news",
      "source": "Fantasy Football Scout",
-     "published": "2026-09-04T11:10:00+00:00",
+     "published": "2026-09-04T16:10:41+00:00",
      "matched_on": "MCI team news",
      "kind": "club team news",
-     "excerpt": "Our chosen XI and subs ahead of tonight's deadline The post FPL Gameweek 3 Scout Picks: Man City triple-up appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "excerpt": "Team form, absentees and our predicted XIs The post Man City v Coventry predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Ndiaye + Enzo to Man City: How does it affect FPL?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-03T17:45:00+00:00",
+     "title": "Man City v Coventry: Preview, predicted line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/man-city-v-coventry-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-04T15:26:24+00:00",
      "matched_on": "MCI team news",
      "kind": "club team news",
-     "excerpt": "Both transfers have consequences for their new and old clubs The post Ndiaye + Enzo to Man City: How does it affect FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "excerpt": "Preview as Man City host Coventry in the Premier League"
     },
     {
-     "title": "Coventry lineup vs. Man City: Predicted XI for Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html",
+     "title": "Man City vs. Coventry injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/team-news/man-city-vs-coventry-injury-suspension-list-predicted-xis_604327.html",
      "source": "Sports Mole",
-     "published": "2026-09-03T08:40:00+01:00",
+     "published": "2026-09-04T15:00:00+01:00",
      "matched_on": "MCI team news",
      "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Coventry City could line up for Saturday’s Premier League clash with Manchester City."
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Manchester City and Coventry City."
     },
     {
-     "title": "Manchester City vs Coventry City - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/man-city/preview/man-city-vs-coventry-prediction-team-news-lineups_604324.html",
+     "title": "Man City vs. Coventry team news: Enzo Fernandez, Iliman Ndiaye, Matheus Nunes update from Enzo Maresca",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
      "source": "Sports Mole",
-     "published": "2026-09-03T08:30:00+01:00",
+     "published": "2026-09-04T15:00:00+01:00",
      "matched_on": "MCI team news",
      "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Manchester City and Coventry City, including predictions, team news and possible lineups."
+     "excerpt": "Enzo Maresca reveals whether club-record signing Enzo Fernandez will be ready to make his Manchester City debut in Saturday’s Premier League clash with Coventry City at the Etihad Stadium."
     },
     {
      "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
@@ -569,146 +590,6 @@
      "published": "",
      "matched_on": "semenyo",
      "kind": "general",
-     "excerpt": ""
-    }
-   ]
-  },
-  "Ndiaye": {
-   "player": "Ndiaye",
-   "club": "MCI",
-   "evidence_count": 29,
-   "source_count": 14,
-   "latest_evidence": "2026-09-04T15:00:00+01:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "Man City vs. Coventry team news: Enzo Fernandez, Iliman Ndiaye, Matheus Nunes update from Enzo Maresca",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
-     "source": "Sports Mole",
-     "published": "2026-09-04T15:00:00+01:00",
-     "matched_on": "ndiaye",
-     "kind": "team news",
-     "excerpt": "Enzo Maresca reveals whether club-record signing Enzo Fernandez will be ready to make his Manchester City debut in Saturday’s Premier League clash with Coventry City at the Etihad Stadium."
-    },
-    {
-     "title": "Ndiaye + Enzo to Man City: How does it affect FPL?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-03T17:45:00+00:00",
-     "matched_on": "ndiaye",
-     "kind": "team news",
-     "excerpt": "Both transfers have consequences for their new and old clubs The post Ndiaye + Enzo to Man City: How does it affect FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-03T15:35:00+00:00",
-     "matched_on": "ndiaye",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Everton star undergoes medical as Toffees green light big wage deal",
-     "url": "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T09:21:21+00:00",
-     "matched_on": "ndiaye",
-     "kind": "team news",
-     "excerpt": "The Manchester City man is set to return on a season-long loan to Everton, after an initial period in 2025/26 was plagued by injury for Grealish. The 30-year-old’s medical is booked, with the deal anticipated to be completed before the 11pm BST transfer deadline this Tuesday evening. A Toffees fan favourite will head the other way, as Enzo Maresca’s men look to build on their two-from-two start an"
-    },
-    {
-     "title": "Everton XI Revealed To Face Bournemouth",
-     "url": "https://www.evertonfc.com/news/2026/august/29/everton-xi-revealed-to-face-bournemouth/",
-     "source": "Everton",
-     "published": "2026-08-29T12:45:00+00:00",
-     "matched_on": "ndiaye",
-     "kind": "team news",
-     "excerpt": "James Garner starts as the only change to Everton's Premier League XI for the clash at Bournemouth (3pm BST). The England international – who underwent minor hernia surgery in the summer – returns to the Blues' midfield after coming off the bench in last weekend's 2-0 opening-day home victory against Crystal Palace. Garner replaces summer signing Hayden Hackney, who is among the substitutes having"
-    },
-    {
-     "title": "Cherries unchanged for visit of Everton",
-     "url": "https://www.afcb.co.uk/news/2026/august/29/cherries-unchanged-for-visit-of-everton/",
-     "source": "AFC Bournemouth",
-     "published": "2026-08-29T12:45:00+00:00",
-     "matched_on": "ndiaye",
-     "kind": "team news",
-     "excerpt": "AFC Bournemouth Head Coach Marco Rose named an unchanged starting line-up for his first Premier League game at Vitality Stadium against Everton. Rose kept faith with the same team which gave Manchester City a run for their money during Sunday’s 2-1 defeat at Etihad Stadium. The only changes came on the bench where Ryan Christie, Julio Soler and new loan signing Michele Gregorio came in for Will De"
-    },
-    {
-     "title": "Grealish & Maitland-Niles Everton Squad Numbers Confirmed",
-     "url": "https://www.evertonfc.com/news/2026/september/02/Grealish---Maitland-Niles-Everton-Squad-Numbers-Confirmed/",
-     "source": "Everton",
-     "published": "2026-09-02T12:09:34+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": "New Everton signings Jack Grealish and Ainsley Maitland-Niles have had their squad numbers confirmed for the 2026/27 campaign. Returning loanee Grealish will wear the Blues’ number 10 shirt, while full-back Maitland-Niles will be the number two. Grealish – number 18 last season for the Toffees – rejoined Everton on deadline day of the summer transfer window, signing on loan from Manchester City fo"
-    },
-    {
-     "title": "Everton summer transfer window disaster leaves club desperately short of options, conviction and goodwill",
-     "url": "https://www.fourfourtwo.com/team/everton-summer-transfer-window-disaster-leaves-club-desperately-short-of-options-conviction-and-goodwill",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-02T11:44:47+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": "If transfer windows are meant to reflect a football club’s long-term vision, Everton’s summer 2026 recruitment was a masterclass in panic, indecision and dysfunction. The Toffees' window shows nothing less than a club all at sea: decades removed from their last trophy lift, and decades away from their next. After years of walking the financial tightrope and navigating Profitability and Sustainabil"
-    },
-    {
-     "title": "DEADLINE DAY LIVE: City complete British-record Fernandez deal and sign Ndiaye as Chelsea’s Camara move collapses",
-     "url": "https://www.101greatgoals.com/news/transfers/deadline-day-live-every-completed-premier-league-deal/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-01T22:08:00+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": "Stay up to date with every transfer completed across the Premier League on deadline day."
-    },
-    {
-     "title": "Ndiaye Leaves Everton",
-     "url": "https://www.evertonfc.com/news/2026/september/01/ndiaye-leaves-everton/",
-     "source": "Everton",
-     "published": "2026-09-01T20:30:00+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": "Everton can confirm Iliman Ndiaye has signed for Manchester City on a permanent deal for an undisclosed fee. The Senegalese winger joins Enzo Maresca’s side after two years with the Toffees, featuring 74 times across all competitions and scoring 17 goals. Signed from Marseille in July 2024, Ndiaye made history by becoming the last-ever goalscorer for an Everton Men’s player at Goodison Park when h"
-    },
-    {
-     "title": "Romano reveals outcome of Enzo Fernandez medical as Man City complete first deadline day signing",
-     "url": "https://www.football365.com/news/romano-reveals-outcome-enzo-fernandez-medical-man-city-complete-first-deadline-day-signing",
-     "source": "Football365",
-     "published": "2026-09-01T20:26:30+00:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": "Manchester City have completed the signing of Iliman Ndiaye from Everton for £65m, and there is an update on Chelsea star Enzo Fernandez."
-    },
-    {
-     "title": "Manchester City confirm signing of Iliman Ndiaye from Everton on five-year deal",
-     "url": "https://www.soccerway.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
-     "source": "Soccerway",
-     "published": "2026-09-01T22:22:29+02:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
      "excerpt": ""
     }
    ]
@@ -771,6 +652,143 @@
      "source": "Brentford",
      "published": "",
      "matched_on": "schade",
+     "kind": "general",
+     "excerpt": ""
+    }
+   ]
+  },
+  "Cherki": {
+   "player": "Cherki",
+   "club": "MCI",
+   "evidence_count": 16,
+   "source_count": 8,
+   "latest_evidence": "2026-09-03T12:00:00+00:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "Cherki, Mbeumo, Newcastle players: Buy, keep or sell in Gameweek 3?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/cherki-mbeumo-newcastle-players-buy-keep-or-sell-in-gameweek-3",
+     "source": "Fantasy Football Scout",
+     "published": "2026-08-31T15:15:00+00:00",
+     "matched_on": "cherki",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Cherki, Mbeumo, Newcastle players: Buy, keep or sell in Gameweek 3? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Braces for Haaland and Cherki ensure polished Palace win",
+     "url": "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
+     "source": "Manchester City",
+     "published": "2026-08-28T08:55:00+00:00",
+     "matched_on": "cherki",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Cherki starts with new boy Bouaddi on the bench",
+     "url": "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-team-news-63923533",
+     "source": "Manchester City",
+     "published": "2026-08-28T05:45:00+00:00",
+     "matched_on": "cherki",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Manchester City 2-1 Bournemouth Stats: Substitute Cherki Sparks Late Turnaround as Maresca Gets First Win",
+     "url": "https://theanalyst.com/articles/manchester-city-vs-bournemouth-stats-premier-league-08-2026",
+     "source": "Opta Analyst",
+     "published": "2026-08-23T15:23:02+00:00",
+     "matched_on": "cherki",
+     "kind": "team news",
+     "excerpt": "Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol. The post Manchester City 2-1 Bournemouth Stats: Substitute Cherki Sparks Late Turnaround as Maresca Gets First Win appeared first on Opta Analyst ."
+    },
+    {
+     "title": "Transfer Rumors: Real Madrid Ready Cherki Bid; Chelsea’s Mac Allister Move",
+     "url": "https://www.si.com/soccer/transfer-rumors-real-madrid-ready-cherki-bid-chelsea-mac-allister-move?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-01T23:05:00+00:00",
+     "matched_on": "cherki",
+     "kind": "transfer",
+     "excerpt": "Martín Zubimendi, Manu Koné, Gavi, Raúl Asencio and Luke Shaw all feature in the gossip."
+    },
+    {
+     "title": "Cherki up for Premier League Goal of the Month award",
+     "url": "https://www.mancity.com/news/mens/rayan-cherki-has-been-nominated-for-the-guinness-goal-of-the-month-for-august-63924027",
+     "source": "Manchester City",
+     "published": "2026-09-03T12:00:00+00:00",
+     "matched_on": "cherki",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "EMERSONN NOMINATED FOR GOAL OF THE MONTH",
+     "url": "https://www.itfc.co.uk/news/2026/september/03/emersonn-nominated-for-goal-of-the-month/",
+     "source": "Ipswich Town",
+     "published": "2026-09-03T11:57:00+00:00",
+     "matched_on": "cherki",
+     "kind": "general",
+     "excerpt": "Town striker Emersonn has been nominated for the Premier League’s Goal of the Month award for August, sponsored by Guinness. The Brazilian striker opened the scoring in the home clash with Sunderland, as he finished well following a storming run from Julio Enciso which saw the Paraguayan beat two Black Cats defenders before laying the ball back for his teammate to score. Emersonn’s goal is one of "
+    },
+    {
+     "title": "Angulo nominated for Guinness Goal of the Month",
+     "url": "https://www.safc.com/news/2026/september/03/angulo-nominated-for-guinness-goal-of-the-month/",
+     "source": "Sunderland",
+     "published": "2026-09-03T11:25:13+00:00",
+     "matched_on": "cherki",
+     "kind": "general",
+     "excerpt": "Nilson Angulo’s stunning free-kick against Ipswich Town has been nominated for the Guinness Goal of the Month award for August. The Ecuadorian produced a moment of magic at Portman Road on the opening day of the Premier League season, curling a superb free-kick over the wall and in off the underside of the crossbar to level the scores. It was Sunderland’s first goal of the 2026-27 campaign and Ang"
+    },
+    {
+     "title": "Cherki up for EA Sports Player of the Month award",
+     "url": "https://www.mancity.com/news/mens/rayan-cherki-up-for-ea-sports-player-of-the-month-award-63924025",
+     "source": "Manchester City",
+     "published": "2026-09-03T10:00:00+00:00",
+     "matched_on": "cherki",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Doku, Cherki, and Now Ndiaye? Man City’s Penchant for Dribblers Is No Coincidence",
+     "url": "https://theanalyst.com/articles/man-city-iliman-ndiaye-dribbling-stats",
+     "source": "Opta Analyst",
+     "published": "2026-09-01T13:24:07+00:00",
+     "matched_on": "cherki",
+     "kind": "general",
+     "excerpt": "Manchester City are loading up on players known for their dribbling ability, with Iliman Ndiaye seemingly their next new face. The post Doku, Cherki, and Now Ndiaye? Man City’s Penchant for Dribblers Is No Coincidence appeared first on Opta Analyst ."
+    },
+    {
+     "title": "Cherki conjured up the complete display, says admiring Maresca",
+     "url": "https://www.mancity.com/news/mens/enzo-maresca-post-crystal-palace-reaction-63923552",
+     "source": "Manchester City",
+     "published": "2026-08-28T10:20:00+00:00",
+     "matched_on": "cherki",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "'It's my instinct', says Cherki after wondergoal against Palace",
+     "url": "https://www.mancity.com/news/mens/cherki-post-palace-reaction-pl-28-aug-63923521",
+     "source": "Manchester City",
+     "published": "2026-08-28T09:20:00+00:00",
+     "matched_on": "cherki",
      "kind": "general",
      "excerpt": ""
     }
@@ -1131,10 +1149,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-04T07:32:52+01:00",
-   "official_source_found": true,
-   "fpl_source_found": false,
+   "source_count": 5,
+   "latest_evidence": "2026-09-04T16:21:52+00:00",
+   "official_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1143,8 +1161,10 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1155,6 +1175,42 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Nottingham Forest v Tottenham: Preview, expected line-ups, stats, TV",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/nottingham-forest-v-tottenham-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-04T16:21:52+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Nottingham Forest face Tottenham in the Premier League on Saturday. Read our in-depth preview here."
+    },
+    {
+     "title": "Nott’m Forest v Tottenham predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/nottm-forest-v-tottenham-predicted-line-ups-fpl-team-news-2",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-04T16:11:48+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Nott’m Forest v Tottenham predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Nottingham Forest vs Tottenham Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719",
+     "source": "RotoWire Soccer",
+     "published": "2026-09-04T14:49:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Nottingham Forest vs. Tottenham injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/nottingham-forest-vs-tottenham-injury-suspension-list-predicted-xis_604365.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T15:00:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday's Premier League clash between Nottingham Forest and Tottenham Hotspur."
+    },
     {
      "title": "Tottenham drop major Dejan Kulusevski injury hint as final 25-man Premier League squad revealed",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/spurs-drop-major-kulusevski-injury-hint-as-final-premier-league-squad-revealed_604445.html",
@@ -1172,117 +1228,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "Tottenham lineup vs. Nottingham Forest: Predicted XI amid Savio, James Maddison injury concerns",
-     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-savio-maddison-make-the-cut-predicted-tottenham-xi-vs-forest_604364.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T11:17:48+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League match against Nottingham Forest."
-    },
-    {
-     "title": "Nottingham Forest lineup vs. Tottenham: Predicted XI for Premier League clash as Daniel Munoz starts",
-     "url": "https://www.sportsmole.co.uk/football/nottingham-forest/predicted-lineups/munoz-makes-the-xi-predicted-nottingham-forest-lineup-vs-tottenham_604363.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T11:08:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Nottingham Forest could line up for Saturday's Premier League match against Tottenham Hotspur."
-    },
-    {
-     "title": "Nottingham Forest vs Tottenham Hotspur - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/spurs/preview/nottm-forest-vs-spurs-prediction-team-news-lineups_604360.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T10:54:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Nottingham Forest and Tottenham Hotspur, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "HOW TO WATCH GLASNER'S PRE-SPURS PRESS CONFERENCE",
-     "url": "https://www.nottinghamforest.co.uk/news/2026/september/03/how-to-watch-glasner-s-pre-spurs-press-conference/",
-     "source": "Nottingham Forest",
-     "published": "2026-09-03T08:18:08+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Boss to preview visit of Spurs Press conference to begin around 2pm BST Watch live on Forest TV Oliver Glasner will take questions from the local and national media to preview Nottingham Forest’s upcoming Premier League fixture against Tottenham Hotspur at the City Ground. The Reds picked up their first point under the Austrian last weekend against Liverpool at Anfield, with attention now turning "
-    }
-   ]
-  },
-  "Hughes": {
-   "player": "Hughes",
-   "club": "CRY",
-   "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-03T16:28:00+01:00",
-   "official_source_found": true,
-   "fpl_source_found": false,
-   "team_news_found": false,
-   "starting_status_assessed": false,
-   "injury_status_assessed": false,
-   "transfer_status_assessed": false,
-   "role_assessed": false,
-   "fixtures_assessed": false,
-   "dimensions_covered": [],
-   "strength": "good",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "Fulham lineup vs. Crystal Palace: Predicted XI for Premier League clash as Alvaro Arbeloa plans key change",
-     "url": "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T16:28:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole looks at how Fulham could line up in Saturday's Premier League clash with Crystal Palace."
-    },
-    {
-     "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
-     "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T16:28:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole looks at how Crystal Palace could line up in Saturday's Premier League clash with Fulham."
-    },
-    {
-     "title": "Fulham vs Crystal Palace - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-crystal-palace-prediction-team-news-lineups_604397.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T16:05:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Fulham and Crystal Palace, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Fulham vs. Crystal Palace: Ismaila Sarr, Jean-Philippe Mateta, team news update before Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/crystal-palace/transfer-talk/news/will-sarr-play-against-fulham-sage-delivers-crystal-palace-team-news-update_604395.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T15:51:32+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Crystal Palace manager Pierre Sage provides an update on the availability of attacker Ismaila Sarr ahead of Saturday’s Premier League clash with Fulham at Craven Cottage."
-    },
-    {
-     "title": "Liverpool make final decision on signing Ismaila Sarr as Crystal Palace set to finalise ‘record’ winger deal",
-     "url": "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
-     "source": "Football365",
-     "published": "2026-09-01T18:18:22+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "According to reports, Crystal Palace are ‘set to sign’ a new winger, but Liverpool have now ruled out a move for Ismaila Sarr in this window."
-    },
-    {
-     "title": "The opposite view: Maresca on GuÃ©hi ahead of Selhurst reunion",
-     "url": "https://www.cpfc.co.uk/news/match-previews/the-opposite-view-maresca-on-guehi-ahead-of-selhurst-reunion/",
-     "source": "Crystal Palace",
-     "published": "2026-08-28T08:05:29+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Crystal Palace return to action on Friday night (20:00 BST) when Manchester City become the first visitors to Selhurst Park this season â here's what Enzo Maresca had to say in his pre-match press conference..."
     }
    ]
   },
@@ -1291,20 +1236,55 @@
    "club": "CRY",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-03T16:28:00+01:00",
+   "latest_evidence": "2026-09-04T16:09:31+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
-   "team_news_found": false,
-   "starting_status_assessed": false,
-   "injury_status_assessed": false,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
    "transfer_status_assessed": false,
-   "role_assessed": false,
-   "fixtures_assessed": false,
-   "dimensions_covered": [],
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "press conference",
+    "statistics",
+    "tactics",
+    "team news"
+   ],
    "strength": "good",
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Fulham v Crystal Palace predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-04T16:09:31+00:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Fulham v Crystal Palace predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Fulham vs. Crystal Palace injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T15:00:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up the team news as Fulham prepare to take on Crystal Palace in the Premier League."
+    },
+    {
+     "title": "Pre-Crystal Palace Press Conference",
+     "url": "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/",
+     "source": "Fulham",
+     "published": "2026-09-04T12:39:55+00:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Álvaro Arbeloa is hopeful that if Fulham can play with the identity he is working towards, then we can bank our first points of the season against Crystal Palace on Saturday. After losing to both Chelsea and Sunderland, our Head Coach was asked how vital it is that his side provide a response at the Cottage this weekend. “Yes, it's very important, because we play at home, we play against a team th"
+    },
     {
      "title": "Fulham lineup vs. Crystal Palace: Predicted XI for Premier League clash as Alvaro Arbeloa plans key change",
      "url": "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
@@ -1331,33 +1311,6 @@
      "matched_on": "CRY team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Saturday's Premier League clash between Fulham and Crystal Palace, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Fulham vs. Crystal Palace: Ismaila Sarr, Jean-Philippe Mateta, team news update before Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/crystal-palace/transfer-talk/news/will-sarr-play-against-fulham-sage-delivers-crystal-palace-team-news-update_604395.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T15:51:32+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Crystal Palace manager Pierre Sage provides an update on the availability of attacker Ismaila Sarr ahead of Saturday’s Premier League clash with Fulham at Craven Cottage."
-    },
-    {
-     "title": "Liverpool make final decision on signing Ismaila Sarr as Crystal Palace set to finalise ‘record’ winger deal",
-     "url": "https://www.football365.com/news/liverpool-final-decision-signing-ismaila-sarr-crystal-palace-finalise-record-winger-deal",
-     "source": "Football365",
-     "published": "2026-09-01T18:18:22+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "According to reports, Crystal Palace are ‘set to sign’ a new winger, but Liverpool have now ruled out a move for Ismaila Sarr in this window."
-    },
-    {
-     "title": "The opposite view: Maresca on GuÃ©hi ahead of Selhurst reunion",
-     "url": "https://www.cpfc.co.uk/news/match-previews/the-opposite-view-maresca-on-guehi-ahead-of-selhurst-reunion/",
-     "source": "Crystal Palace",
-     "published": "2026-08-28T08:05:29+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Crystal Palace return to action on Friday night (20:00 BST) when Manchester City become the first visitors to Selhurst Park this season â here's what Enzo Maresca had to say in his pre-match press conference..."
     }
    ]
   },
@@ -1365,8 +1318,8 @@
    "player": "Diop",
    "club": "IPS",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-04T09:13:32+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-04T17:45:04+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1380,6 +1333,8 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1390,6 +1345,15 @@
    "researched": true,
    "items": [
     {
+     "title": "TEAM NEWS | LIVERPOOL (H)",
+     "url": "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
+     "source": "Ipswich Town",
+     "published": "2026-09-04T17:45:04+00:00",
+     "matched_on": "diop",
+     "kind": "team news",
+     "excerpt": "Fixtures Ipswich Town Vs. Liverpool - Fri, Sep 4th 2026, 20:00 Team news for Town’s Premier League clash against Liverpool can now be confirmed. Gary O’Neil has made one change from the defeat to Manchester United on Sunday as Exequiel Palacios comes in for his first Town start in place of Marcelino Núñez. Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Gr"
+    },
+    {
      "title": "MANCHESTER UNITED 5 TOWN 2",
      "url": "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
      "source": "Ipswich Town",
@@ -1399,6 +1363,33 @@
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
     },
     {
+     "title": "Ipswich v Liverpool predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/ipswich-v-liverpool-predicted-line-ups-fpl-team-news",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-04T16:00:27+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Ipswich v Liverpool predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Ipswich Town vs Liverpool Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
+     "source": "RotoWire Soccer",
+     "published": "2026-09-04T14:48:00+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Shock Liverpool team selection vs Ipswich predicted by two sources with star humbled",
+     "url": "https://www.football365.com/news/shock-team-selection-liverpool-vs-ipswich-predicted-two-sources-star-humbled",
+     "source": "Football365",
+     "published": "2026-09-04T13:27:53+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Two journalists who primarily cover Liverpool expect Andoni Iraola to make a surprising team selection in tonight’s clash between the Reds and Ipswich Town."
+    },
+    {
      "title": "Ipswich v Liverpool: Preview, predicted line-ups, stats and where to watch",
      "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/ipswich-vs-liverpool-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
      "source": "101 Great Goals — Fantasy",
@@ -1406,42 +1397,89 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": "Preview as Ipswich host Liverpool in the Premier League"
+    }
+   ]
+  },
+  "Hughes": {
+   "player": "Hughes",
+   "club": "CRY",
+   "evidence_count": 6,
+   "source_count": 3,
+   "latest_evidence": "2026-09-04T16:09:31+00:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": false,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "press conference",
+    "statistics",
+    "tactics",
+    "team news"
+   ],
+   "strength": "good",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "Fulham v Crystal Palace predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-04T16:09:31+00:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Fulham v Crystal Palace predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Ipswich Town vs. Liverpool injury, suspension list, predicted XIs before Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/ipswich-town/team-news/ipswich-vs-liverpool-injury-suspension-list-predicted-xis_604317.html",
+     "title": "Fulham vs. Crystal Palace injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
      "source": "Sports Mole",
-     "published": "2026-09-03T20:00:00+01:00",
-     "matched_on": "IPS team news",
+     "published": "2026-09-04T15:00:00+01:00",
+     "matched_on": "CRY team news",
      "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Friday's Premier League clash between Ipswich Town and Liverpool."
+     "excerpt": "Sports Mole rounds up the team news as Fulham prepare to take on Crystal Palace in the Premier League."
     },
     {
-     "title": "Liverpool lineup vs. Ipswich Town: Predicted XI as Andoni Iraola faces Bradley Barcola debut decision",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/predicted-lineups/barcola-to-make-reds-debut-predicted-liverpool-xi-vs-ipswich_604314.html",
+     "title": "Pre-Crystal Palace Press Conference",
+     "url": "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/",
+     "source": "Fulham",
+     "published": "2026-09-04T12:39:55+00:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Álvaro Arbeloa is hopeful that if Fulham can play with the identity he is working towards, then we can bank our first points of the season against Crystal Palace on Saturday. After losing to both Chelsea and Sunderland, our Head Coach was asked how vital it is that his side provide a response at the Cottage this weekend. “Yes, it's very important, because we play at home, we play against a team th"
+    },
+    {
+     "title": "Fulham lineup vs. Crystal Palace: Predicted XI for Premier League clash as Alvaro Arbeloa plans key change",
+     "url": "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
      "source": "Sports Mole",
-     "published": "2026-09-02T23:29:44+01:00",
-     "matched_on": "IPS team news",
+     "published": "2026-09-03T16:28:00+01:00",
+     "matched_on": "CRY team news",
      "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Liverpool could line up for Friday's Premier League clash against Ipswich Town."
+     "excerpt": "Sports Mole looks at how Fulham could line up in Saturday's Premier League clash with Crystal Palace."
     },
     {
-     "title": "Ipswich Town lineup vs. Liverpool: Predicted XI as Gary O'Neil looks to avoid second Premier League thrashing",
-     "url": "https://www.sportsmole.co.uk/football/ipswich-town/predicted-lineups/one-major-change-for-the-tractor-boys-predicted-ipswich-xi-vs-liverpool_604313.html",
+     "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
      "source": "Sports Mole",
-     "published": "2026-09-02T23:27:00+01:00",
-     "matched_on": "IPS team news",
+     "published": "2026-09-03T16:28:00+01:00",
+     "matched_on": "CRY team news",
      "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Ipswich Town could line up for Friday's Premier League match against Liverpool."
+     "excerpt": "Sports Mole looks at how Crystal Palace could line up in Saturday's Premier League clash with Fulham."
     },
     {
-     "title": "Ipswich Town v Liverpool: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/ipswich-v-liverpool-prediction-preview",
-     "source": "Football365",
-     "published": "2026-09-02T19:24:02+00:00",
-     "matched_on": "IPS team news",
+     "title": "Fulham vs Crystal Palace - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-crystal-palace-prediction-team-news-lineups_604397.html",
+     "source": "Sports Mole",
+     "published": "2026-09-03T16:05:00+01:00",
+     "matched_on": "CRY team news",
      "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Ipswich Town and Liverpool."
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Fulham and Crystal Palace, including predictions, team news and possible lineups."
     }
    ]
   }
