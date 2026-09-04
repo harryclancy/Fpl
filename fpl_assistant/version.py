@@ -32,6 +32,10 @@ class Version:
     commit: str = ""
     branch: str = ""
     committed_at: str = ""
+    # The same moment as an ISO timestamp. `committed_at` is formatted for
+    # a footer and cannot be parsed back, so the age was always unknown
+    # even when the date was on the page.
+    committed_iso: str = ""
 
     @property
     def short(self) -> str:
@@ -40,6 +44,37 @@ class Version:
     @property
     def known(self) -> bool:
         return bool(self.commit)
+
+    @property
+    def age_hours(self) -> float | None:
+        """How long this build has been the running one."""
+        if not self.committed_iso:
+            return None
+        try:
+            stamp = datetime.fromisoformat(self.committed_iso)
+        except ValueError:
+            return None
+        if stamp.tzinfo is None:
+            stamp = stamp.replace(tzinfo=timezone.utc)
+        return (datetime.now(timezone.utc) - stamp).total_seconds() / 3600
+
+    @property
+    def age_display(self) -> str:
+        """The build's age in words, which is what makes a stale one obvious.
+
+        A commit hash tells you nothing until you go and compare it with
+        the repository. "18 hours old" is readable at a glance, and a
+        deployment that has quietly stopped following the branch announces
+        itself the moment the number stops being small.
+        """
+        hours = self.age_hours
+        if hours is None:
+            return ""
+        if hours < 1:
+            return "just now"
+        if hours < 24:
+            return f"{hours:.0f}h old"
+        return f"{hours / 24:.0f}d old"
 
     @property
     def display(self) -> str:
@@ -56,34 +91,63 @@ def _read(path: Path) -> str:
         return ""
 
 
-def _commit_time(commit: str) -> str:
-    """The commit's timestamp, if it can be had cheaply.
+def _commit_time(commit: str) -> datetime | None:
+    """When this build was made, by whichever route works on a clone.
 
-    Loose object files are zlib-compressed and packed objects are not
-    readable without implementing packfile parsing, which is far more
-    machinery than a footer line justifies. So this tries the loose object
-    and gives up quietly otherwise — the commit hash alone answers the
-    question that matters.
+    A DEPLOY IS A FRESH CLONE, and on one the objects are PACKED. The
+    original implementation read the loose object only, so on the one
+    machine whose age actually matters — the live server — it always came
+    back empty and the footer never showed how old the running build was.
+
+    Three routes, cheapest-reliable first:
+
+        the reflog, which a clone writes and which carries plain unix
+        timestamps, no decompression needed;
+        the loose object, for a working checkout;
+        and failing both, when HEAD was last written, which on a clone is
+        when the deployment happened — arguably the more useful number
+        anyway, since the question is "how old is what I am looking at".
     """
+    stamp = _from_reflog(commit) or _from_loose_object(commit)
+    if stamp:
+        return stamp
+    try:
+        return datetime.fromtimestamp((GIT_DIR / "HEAD").stat().st_mtime,
+                                      tz=timezone.utc)
+    except OSError:
+        return None
+
+
+def _from_reflog(commit: str) -> datetime | None:
+    """The clone's own log, which every clone writes and nothing packs."""
+    for line in reversed(_read(GIT_DIR / "logs" / "HEAD").splitlines()):
+        parts = line.split()
+        if len(parts) < 5 or not commit.startswith(parts[1][:7]):
+            continue
+        for token in parts:
+            if token.isdigit() and len(token) >= 9:
+                return datetime.fromtimestamp(int(token), tz=timezone.utc)
+    return None
+
+
+def _from_loose_object(commit: str) -> datetime | None:
     if len(commit) < 40:
-        return ""
+        return None
     loose = GIT_DIR / "objects" / commit[:2] / commit[2:]
     if not loose.exists():
-        return ""
+        return None
     try:
         import zlib
 
         raw = zlib.decompress(loose.read_bytes()).decode("utf-8", "replace")
     except Exception:
-        return ""
+        return None
     for line in raw.splitlines():
         if line.startswith("committer "):
-            parts = line.split()
-            for token in reversed(parts):
+            for token in reversed(line.split()):
                 if token.isdigit():
-                    stamp = datetime.fromtimestamp(int(token), tz=timezone.utc)
-                    return stamp.strftime("%d %b %Y · %H:%M UTC")
-    return ""
+                    return datetime.fromtimestamp(int(token), tz=timezone.utc)
+    return None
 
 
 def current() -> Version:
@@ -93,8 +157,7 @@ def current() -> Version:
     for key in ("STREAMLIT_COMMIT_SHA", "GIT_COMMIT", "SOURCE_COMMIT"):
         value = os.environ.get(key)
         if value:
-            return Version(commit=value, branch=os.environ.get("GIT_BRANCH", ""),
-                           committed_at=_commit_time(value))
+            return _version(value, os.environ.get("GIT_BRANCH", ""))
 
     head = _read(GIT_DIR / "HEAD")
     if not head:
@@ -115,4 +178,12 @@ def current() -> Version:
     else:
         branch, commit = "detached", head
 
-    return Version(commit=commit, branch=branch, committed_at=_commit_time(commit))
+    return _version(commit, branch)
+
+
+def _version(commit: str, branch: str) -> Version:
+    stamp = _commit_time(commit)
+    return Version(
+        commit=commit, branch=branch,
+        committed_at=(stamp.strftime("%d %b %Y · %H:%M UTC") if stamp else ""),
+        committed_iso=(stamp.isoformat() if stamp else ""))

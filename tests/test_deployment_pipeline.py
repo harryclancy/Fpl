@@ -171,3 +171,53 @@ class _HTTPError(requests.HTTPError):
 class _Status:
     def __init__(self, status_code):
         self.status_code = status_code
+
+
+def test_the_marker_reports_how_old_the_running_build_is():
+    """A hash tells you nothing until you compare it with the repository.
+    An age is readable at a glance, and a deployment that has stopped
+    following the branch announces itself when the number stops being
+    small."""
+    build = version.current()
+    assert build.age_display
+    assert build.age_hours is not None and build.age_hours >= 0
+
+
+def test_an_unknown_build_does_not_claim_an_age():
+    blank = version.Version()
+    assert blank.age_display == ""
+    assert blank.age_hours is None
+    assert blank.display == "version unknown"
+
+
+def test_the_build_time_is_readable_on_a_packed_clone(tmp_path, monkeypatch):
+    """A DEPLOY IS A FRESH CLONE, where objects are packed. Reading the
+    loose object only meant the one machine whose age matters — the live
+    server — never showed one."""
+    fake = tmp_path / ".git"
+    (fake / "logs").mkdir(parents=True)
+    (fake / "refs" / "heads").mkdir(parents=True)
+    (fake / "HEAD").write_text("ref: refs/heads/main\n")
+    (fake / "refs" / "heads" / "main").write_text("a" * 40 + "\n")
+    (fake / "logs" / "HEAD").write_text(
+        "0" * 40 + " " + "a" * 40 + " Someone <s@x> 1787054000 +0000\tclone: from x\n")
+    monkeypatch.setattr(version, "GIT_DIR", fake)
+
+    build = version.current()
+    assert build.short == "aaaaaaa"
+    assert build.committed_iso, "no timestamp on a packed clone"
+    assert build.age_hours is not None
+
+
+def test_with_no_reflog_or_loose_object_the_deploy_time_is_used(tmp_path,
+                                                                monkeypatch):
+    fake = tmp_path / ".git"
+    (fake / "refs" / "heads").mkdir(parents=True)
+    (fake / "HEAD").write_text("ref: refs/heads/main\n")
+    (fake / "refs" / "heads" / "main").write_text("b" * 40 + "\n")
+    monkeypatch.setattr(version, "GIT_DIR", fake)
+
+    build = version.current()
+    # When HEAD was written IS when the deployment happened, which is the
+    # question being asked anyway.
+    assert build.age_hours is not None and build.age_hours < 1

@@ -3623,11 +3623,17 @@ def render_build_marker() -> None:
     readable.
     """
     build = version.current()
+    age = build.age_display
+    # An age that stops being small is the fastest way to notice a
+    # deployment that has quietly stopped following the branch.
+    stale = (build.age_hours or 0) > 48
+    colour = "#a8232c" if stale else "#9aa1ad"
     render_html(
-        "<div style='text-align:right;font-size:.72rem;color:#9aa1ad;"
+        f"<div style='text-align:right;font-size:.72rem;color:{colour};"
         "letter-spacing:.04em;margin:-.4rem 0 .2rem 0'>"
         f"build {build.short}"
-        + (f" · {build.branch}" if build.branch else "")
+        + (f" · {age}" if age else "")
+        + (" · not following the branch?" if stale else "")
         + "</div>")
 
 
