@@ -1,44 +1,52 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-04T11:28:32+00:00",
+ "generated": "2026-09-04T17:26:43+00:00",
  "gameweek": 3,
- "corpus_size": 4923,
+ "corpus_size": 5135,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — RotoWire Soccer, 03 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 03 Sep.",
-   "case_for": "",
-   "case_against": "",
-   "expected_minutes": "On minutes — RotoWire Soccer, 03 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
-   "developments": "Recent developments — RotoWire Soccer, 03 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
+   "status": "Latest on Raya — Football365, 04 Sep: “Of course, it is hard to attract top-level keepers to sit on the bench, especially behind someone as consistent as Raya, but one injury to the Spaniard and the best defence in the league feels a lot more vulnerable.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 04 Sep.",
+   "case_for": "What supports keeping him: Football365, 04 Sep: “David Raya at Arsenal Arsenal’s goalkeeper department is split between one of the best shot-stoppers in the world and a collection of goalkeepers known for making absolute howlers.”",
+   "case_against": "What argues against him: Football365, 04 Sep: “Of course, it is hard to attract top-level keepers to sit on the bench, especially behind someone as consistent as Raya, but one injury to the Spaniard and the best defence in the league feels a lot more vulnerable.”",
+   "expected_minutes": "On minutes — Football365, 04 Sep: “Of course, it is hard to attract top-level keepers to sit on the bench, especially behind someone as consistent as Raya, but one injury to the Spaniard and the best defence in the league feels a lot more vulnerable.”",
+   "developments": "Recent developments — Football365, 04 Sep: “David Raya at Arsenal Arsenal’s goalkeeper department is split between one of the best shot-stoppers in the world and a collection of goalkeepers known for making absolute howlers.” Football365, 04 Sep: “Of course, it is hard to attract top-level keepers to sit on the bench, especially behind someone as consistent as Raya, but one injury to the Spaniard and the best defence in the league feels a lot more vulnerable.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
+    "https://www.sportsmole.co.uk/football/chelsea/predicted-lineups/caicedo-concern-neto-decision-predicted-chelsea-xi-vs-arsenal_604463.html",
+    "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/will-rice-mosquera-make-it-predicted-arsenal-xi-vs-chelsea_604462.html",
+    "https://www.sportsmole.co.uk/football/arsenal/preview/arsenal-vs-chelsea-prediction-team-news-lineups_604458.html",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/caicedo-palestra-henderson-latest-chelsea-injury-suspension-list-vs-arsenal_604422.html",
-    "https://www.brightonandhovealbion.com/media-video/arturo-ruizs-first-brighton-press-conference-or-preparations-for-arsenal-in-the-wsl",
-    "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
-    "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-live-how-to-watch-stream-tv-team-news-prediction",
-    "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
-    "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-mosquera-timber-latest-arsenal-injury-suspension-list-vs-chelsea_604308.html"
+    "https://www.brightonandhovealbion.com/media-video/arturo-ruizs-first-brighton-press-conference-or-preparations-for-arsenal-in-the-wsl"
    ],
    "sources_used": [
     "Brighton & Hove Albion",
-    "NBC Sports Rotoworld PL",
-    "RotoWire Soccer",
+    "Football365",
     "Sports Mole"
    ],
    "quotes": [
     {
-     "text": "Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.",
-     "source": "RotoWire Soccer",
-     "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
-     "published": "2026-09-03T05:03:00+00:00",
-     "tone": "neutral",
+     "text": "David Raya at Arsenal Arsenal’s goalkeeper department is split between one of the best shot-stoppers in the world and a collection of goalkeepers known for making absolute howlers.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
+     "published": "2026-09-04T10:33:42+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Of course, it is hard to attract top-level keepers to sit on the bench, especially behind someone as consistent as Raya, but one injury to the Spaniard and the best defence in the league feels a lot more vulnerable.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
+     "published": "2026-09-04T10:33:42+00:00",
+     "tone": "negative",
      "topics": [
-      "match report"
+      "injury",
+      "transfer"
      ]
     }
    ]
@@ -233,10 +241,10 @@
    "evidence_count": 6,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.fantasyfootballscout.co.uk/2026/09/04/fpl-gameweek-3-scout-picks-man-city-triple-up",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
     "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/onyeka-pinnock-decision-predicted-coventry-lineup-vs-man-city_604326.html",
     "https://www.sportsmole.co.uk/football/man-city/preview/man-city-vs-coventry-prediction-team-news-lineups_604324.html",
-    "https://www.sportsmole.co.uk/football/man-city/feature/three-ways-man-city-could-line-up-with-gbp125m-signing-enzo-fernandez_604323.html",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
    ],
    "sources_used": [
@@ -287,16 +295,17 @@
   "Ndiaye": {
    "player": "Ndiaye",
    "club": "MCI",
-   "status": "Latest on Ndiaye — Fantasy Football Scout, 03 Sep: “Plenty of intriguing moves were made on transfer deadline day , but perhaps none more eye-catching than Manchester City swooping in to splash close to £200 million combined on Enzo Fernandez (£6.9m) and Iliman Ndiaye (£6.0m).”",
-   "why_here": "Ndiaye is in the starting eleven this week at £6.0m as a MID. The selection rests on 28 retrieved item(s) from 13 source(s), the most recent dated 03 Sep.",
+   "status": "Latest on Ndiaye — Sports Mole, 04 Sep: “Attacker Ndiaye has arrived from Everton for an initial £60m , while midfielder Fernandez has completed a record-breaking £125m move from Chelsea.”",
+   "why_here": "Ndiaye is in the starting eleven this week at £6.0m as a MID. The selection rests on 29 retrieved item(s) from 14 source(s), the most recent dated 04 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 03 Sep: “We’ll start at Everton, where Ndiaye’s departure creates uncertainty regarding the club’s first-choice penalty taker .” Fantasy Football Scout, 03 Sep: “I don’t think he’ll be a nailed-on starter, either, given Manchester City’s squad depth, which you can see below via the excellent @4lex_mcfc Even when Ndiaye does start, he probably won’t play the full 90 minutes, which will subsequently impact his ability to hit the defensive contribution (DefCon) threshold.” Manchester City, 03 Sep: “BUY YOUR NDIAYE #7 SHIRT HERE The 26-year-old has emerged as one of the most dynamic and exciting attacking talents in the Premier League over the past few seasons.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Flashscore, 01 Sep: “Speaking to Man City’s website, Ndiaye said: \"I’ve worked my whole life for an opportunity like this.”",
-   "developments": "Recent developments — Fantasy Football Scout, 03 Sep: “Via Ian Hart A: Iliman Ndiaye has swapped Merseyside for Manchester this week, in a deal which could rise to £65m.” Manchester City, 03 Sep: “You can buy your Ndiaye 7 shirt right now on our Online Store or by visiting our Stadium, Arndale or Trafford Centre Stores.” Everton, 02 Sep: “Now Everton’s number 10, he takes the shirt previously worn in the Premier League era by the likes of Iliman Ndiaye, Wayne Rooney and Romelu Lukaku.”",
+   "developments": "Recent developments — Sports Mole, 04 Sep: “\"It's very important that he is with us, and we are 100% happy with that.\" Maresca was also full of praise for Ndiaye, who is another expected to be selected in Man City’s matchday squad for the clash with Coventry.” Fantasy Football Scout, 03 Sep: “Plenty of intriguing moves were made on transfer deadline day , but perhaps none more eye-catching than Manchester City swooping in to splash close to £200 million combined on Enzo Fernandez (£6.9m) and Iliman Ndiaye (£6.0m).” Fantasy Football Scout, 03 Sep: “Via Ian Hart A: Iliman Ndiaye has swapped Merseyside for Manchester this week, in a deal which could rise to £65m.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 28,
+   "evidence_count": 29,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
     "https://www.fourfourtwo.com/transfer/everton-star-undergoes-medical-as-toffees-green-light-big-wage-deal",
@@ -307,8 +316,7 @@
     "https://www.101greatgoals.com/news/transfers/deadline-day-live-every-completed-premier-league-deal/",
     "https://www.evertonfc.com/news/2026/september/01/ndiaye-leaves-everton/",
     "https://www.football365.com/news/romano-reveals-outcome-enzo-fernandez-medical-man-city-complete-first-deadline-day-signing",
-    "https://www.soccerway.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
-    "https://www.flashscore.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/"
+    "https://www.soccerway.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -323,9 +331,26 @@
     "OneFPL",
     "Opta Analyst",
     "Sky Sports Premier League",
-    "Soccerway"
+    "Soccerway",
+    "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Attacker Ndiaye has arrived from Everton for an initial £60m , while midfielder Fernandez has completed a record-breaking £125m move from Chelsea.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
+     "published": "2026-09-04T15:00:00+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "\"It's very important that he is with us, and we are 100% happy with that.\" Maresca was also full of praise for Ndiaye, who is another expected to be selected in Man City’s matchday squad for the clash with Coventry.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
+     "published": "2026-09-04T15:00:00+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Plenty of intriguing moves were made on transfer deadline day , but perhaps none more eye-catching than Manchester City swooping in to splash close to £200 million combined on Enzo Fernandez (£6.9m) and Iliman Ndiaye (£6.0m).",
      "source": "Fantasy Football Scout",
@@ -723,14 +748,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 03 Sep: “The Porto fixture on Tuesday isn’t ideal, but Haaland is in good physical condition.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 17 retrieved item(s) from 10 source(s), the most recent dated 03 Sep.",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 18 retrieved item(s) from 10 source(s), the most recent dated 03 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 03 Sep: “Firstly, he won’t be on penalties anymore, certainly not with Erling Haaland (£15.5m) around.” Fantasy Football Scout, 03 Sep: “You may have started the season without Erling Haaland (£15.5m) in your side, or the short-term lure of Rayan Cherki (£7.7m) – whatever the longer-term reservations about game-time – may be too much to resist.” FourFourTwo FPL, 02 Sep: “Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football 247, 02 Sep: “Haaland had a massive say in the points total.” Fantasy Football 247, 02 Sep: “If they has correctly guessed Haaland as FGS, we would have had a different winner.” FourFourTwo FPL, 02 Sep: “For all the noise surrounding Ekitike, and Haaland’s Golden Boot procession, a certain Brazilian was quietly staking his claim as the Premier League’s next best striker.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).” Fantasy Football Scout, 01 Sep: “Here, we take a look at some of the pros and cons of using the Triple Captain chip on Haaland in Gameweek 3.”",
    "confidence": "high",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
@@ -873,15 +898,17 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 15 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 17 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
    "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 15,
+   "evidence_count": 17,
    "evidence_used": [
+    "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
+    "https://avfc.co.uk/news/2026/september/04/prematch-team-news-for-hull-clash/",
     "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/gomes-madjo-latest-aston-villa-injury-suspension-list-vs-hull_604388.html",
     "https://www.fourfourtwo.com/team/new-look-aston-villa-are-in-for-a-long-season-but-unai-emery-is-the-continuity-that-matters-most",
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
@@ -891,9 +918,7 @@
     "https://www.football365.com/news/chelsea-manchester-united-pedro-neto",
     "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/",
     "https://www.fourfourtwo.com/team/chelsea-are-the-winners-of-the-transfer-window-again-and-its-not-even-close",
-    "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
-    "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
-    "https://theanalyst.com/articles/chelsea-front-three-cole-palmer-joao-pedro-morgan-rogers-stats"
+    "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller"
    ],
    "sources_used": [
     "Aston Villa",
@@ -1044,7 +1069,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1053,15 +1078,14 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/spurs-drop-major-kulusevski-injury-hint-as-final-premier-league-squad-revealed_604445.html",
     "https://www.soccerway.com/news/soccer-premier-league-serie-a-the-disastrous-starts-of-tottenham-and-fiorentina-2026-27/Sh5VZv8U/",
     "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-savio-maddison-make-the-cut-predicted-tottenham-xi-vs-forest_604364.html",
     "https://www.sportsmole.co.uk/football/nottingham-forest/predicted-lineups/munoz-makes-the-xi-predicted-nottingham-forest-lineup-vs-tottenham_604363.html",
     "https://www.sportsmole.co.uk/football/spurs/preview/nottm-forest-vs-spurs-prediction-team-news-lineups_604360.html",
-    "https://www.nottinghamforest.co.uk/news/2026/september/03/how-to-watch-glasner-s-pre-spurs-press-conference/",
-    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-can-fix-their-james-maddison-and-xavi-simons-injury-headaches-without-spending-a-penny"
+    "https://www.nottinghamforest.co.uk/news/2026/september/03/how-to-watch-glasner-s-pre-spurs-press-conference/"
    ],
    "sources_used": [
-    "FourFourTwo FPL",
     "Nottingham Forest",
     "Soccerway",
     "Sports Mole"

@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 3,
- "ran_at": "2026-09-04T11:28:32+00:00",
- "seconds": 125.1,
+ "ran_at": "2026-09-04T17:26:43+00:00",
+ "seconds": 137.6,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 718,
- "substantive_items": 282,
- "duplicates_removed": 19,
- "deeply_analysed": 67,
- "deep_read_failed": 23,
- "corpus_size": 4923,
+ "sources_readable": 64,
+ "candidates_discovered": 776,
+ "substantive_items": 330,
+ "duplicates_removed": 31,
+ "deeply_analysed": 66,
+ "deep_read_failed": 24,
+ "corpus_size": 5135,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 282 articles"
+    "64/78 sources returned 330 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "FPL360: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -46,20 +45,20 @@
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-03T20:35:58+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-04T11:09:00+01:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -74,7 +73,6 @@
     "injury",
     "match report",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -84,6 +82,42 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Man Utd, Arsenal and Liverpool among clubs one injury away from disaster",
+     "url": "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
+     "source": "Football365",
+     "published": "2026-09-04T10:33:42+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "One injury to these Premier League players and some of these clubs look very exposed."
+    },
+    {
+     "title": "Chelsea lineup vs. Arsenal: Predicted XI as Xabi Alonso sweats on Moises Caicedo injury",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/predicted-lineups/caicedo-concern-neto-decision-predicted-chelsea-xi-vs-arsenal_604463.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T11:09:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Chelsea could line up for Sunday's Premier League match against Arsenal."
+    },
+    {
+     "title": "Arsenal lineup vs. Chelsea: Predicted XI after Declan Rice, Cristhian Mosquera injury updates",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/will-rice-mosquera-make-it-predicted-arsenal-xi-vs-chelsea_604462.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T11:00:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Sunday's Premier League match against Chelsea."
+    },
+    {
+     "title": "Arsenal vs Chelsea - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/preview/arsenal-vs-chelsea-prediction-team-news-lineups_604458.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T10:50:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Sunday's Premier League clash between Arsenal and Chelsea, including predictions, team news and possible lineups."
+    },
     {
      "title": "Chelsea injury, suspension list and return dates vs. Arsenal: Moises Caicedo, Jordan Henderson updates",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/caicedo-palestra-henderson-latest-chelsea-injury-suspension-list-vs-arsenal_604422.html",
@@ -101,42 +135,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "🎬 Arturo Ruiz's first Brighton press conference | preparations for Arsenal in the WSL"
-    },
-    {
-     "title": "Arsenal vs Chelsea predicted lineups, possible XI's, team news ahead of huge clash",
-     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-03T09:08:05-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "How to watch Arsenal vs Chelsea live: Stream link, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-live-how-to-watch-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-03T08:44:33-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Arsenal vs Chelsea Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-03T05:03:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Arsenal injury, suspension list and return dates vs. Chelsea: Declan Rice, Jurrien Timber, Cristhian Mosquera latest",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-mosquera-timber-latest-arsenal-injury-suspension-list-vs-chelsea_604308.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T05:55:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Sunday's Premier League clash with Chelsea."
     }
    ]
   },
@@ -495,7 +493,7 @@
    "club": "MCI",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-03T17:45:00+00:00",
+   "latest_evidence": "2026-09-04T11:10:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -529,6 +527,15 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "FPL Gameweek 3 Scout Picks: Man City triple-up",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/fpl-gameweek-3-scout-picks-man-city-triple-up",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-04T11:10:00+00:00",
+     "matched_on": "MCI team news",
+     "kind": "club team news",
+     "excerpt": "Our chosen XI and subs ahead of tonight's deadline The post FPL Gameweek 3 Scout Picks: Man City triple-up appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
      "title": "Ndiaye + Enzo to Man City: How does it affect FPL?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
      "source": "Fantasy Football Scout",
@@ -556,15 +563,6 @@
      "excerpt": "Sports Mole previews Saturday's Premier League clash between Manchester City and Coventry City, including predictions, team news and possible lineups."
     },
     {
-     "title": "Enzo Fernandez: Three ways Man City could line up with £125m signing under Enzo Maresca",
-     "url": "https://www.sportsmole.co.uk/football/man-city/feature/three-ways-man-city-could-line-up-with-gbp125m-signing-enzo-fernandez_604323.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T07:35:00+01:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes a look at three ways that Enzo Maresca's Manchester City could line up with new £125m signing Enzo Fernandez."
-    },
-    {
      "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
      "url": "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
      "source": "FPL Captain",
@@ -578,9 +576,9 @@
   "Ndiaye": {
    "player": "Ndiaye",
    "club": "MCI",
-   "evidence_count": 28,
-   "source_count": 13,
-   "latest_evidence": "2026-09-03T21:03:11+00:00",
+   "evidence_count": 29,
+   "source_count": 14,
+   "latest_evidence": "2026-09-04T15:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -605,6 +603,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man City vs. Coventry team news: Enzo Fernandez, Iliman Ndiaye, Matheus Nunes update from Enzo Maresca",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T15:00:00+01:00",
+     "matched_on": "ndiaye",
+     "kind": "team news",
+     "excerpt": "Enzo Maresca reveals whether club-record signing Enzo Fernandez will be ready to make his Manchester City debut in Saturday’s Premier League clash with Coventry City at the Etihad Stadium."
+    },
     {
      "title": "Ndiaye + Enzo to Man City: How does it affect FPL?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/ndiaye-enzo-to-man-city-how-does-it-affect-fpl",
@@ -703,15 +710,6 @@
      "matched_on": "ndiaye",
      "kind": "transfer",
      "excerpt": ""
-    },
-    {
-     "title": "Manchester City confirm signing of Iliman Ndiaye from Everton on five-year deal",
-     "url": "https://www.flashscore.com/news/manchester-city-confirm-signing-of-iliman-ndiaye-from-everton-on-five-year-deal/AimpqpO8/",
-     "source": "Flashscore",
-     "published": "2026-09-01T22:22:29+02:00",
-     "matched_on": "ndiaye",
-     "kind": "transfer",
-     "excerpt": ""
     }
    ]
   },
@@ -781,7 +779,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "source_count": 10,
    "latest_evidence": "2026-09-03T15:35:00+00:00",
    "official_source_found": true,
@@ -921,9 +919,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 15,
+   "evidence_count": 17,
    "source_count": 8,
-   "latest_evidence": "2026-09-03T15:38:54+00:00",
+   "latest_evidence": "2026-09-04T15:42:58+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -947,6 +945,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Injury-hit Aston Villa receive triple boost ahead of Hull City clash",
+     "url": "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-04T15:42:58+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "An injury-stricken Aston Villa have received a triple boost ahead of the club's clash with Hull City on Saturday, with updates being heard in a pre-match press conference regarding four injured players. Unai Emery's side have lost both of their two Premier League matches so far this term, with Brighton serving his men a 4-0 defeat in their opening match. That was followed up by a 1-0 loss at Villa"
+    },
+    {
+     "title": "Team news for Hull clash",
+     "url": "https://avfc.co.uk/news/2026/september/04/prematch-team-news-for-hull-clash/",
+     "source": "Aston Villa",
+     "published": "2026-09-04T13:15:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Fixtures Hull City Vs. Aston Villa - Sat, Sep 05 2026, 17:30 João Gomes misses Aston Villa’s Premier League trip to Hull City through suspension, while the clash also comes too soon for Johan Manzambi despite closing in on his return to fitness. Gomes saw red on the opening day at Brighton & Hove Albion and was forced to sit out of Monday’s narrow 1-0 defeat to Arsenal. Gomes now serves the second"
+    },
     {
      "title": "Aston Villa injury, suspension list and return dates vs. Hull City: Joao Gomes, Brian Madjo latest",
      "url": "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/gomes-madjo-latest-aston-villa-injury-suspension-list-vs-hull_604388.html",
@@ -1036,24 +1052,6 @@
      "matched_on": "joao pedro",
      "kind": "general",
      "excerpt": "Chelsea overcame Brighton in a seven-goal thriller at Stamford Bridge. Re-live this game with our Chelsea vs Brighton stats page. The post Chelsea 4-3 Brighton Stats: Cole Palmer Decides Seven-Goal Thriller as Xabi Alonso’s Men Stay Perfect appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Fulham Vs Chelsea [2-3] Premier League 2026/2027: How Does Xabi Alonso's New Front Three Work? – Tactical Analysis",
-     "url": "https://tacticalfootballanalysis.com/fulham-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-08-26T09:02:48+00:00",
-     "matched_on": "joao pedro",
-     "kind": "general",
-     "excerpt": "Chelsea’s new front three of Cole Palmer, Morgan Rogers and João Pedro starred in Xabi Alonso’s first Premier League win. This tactical analysis examines their complementary roles, pressing and attacking threat against Fulham."
-    },
-    {
-     "title": "In Cole Palmer, João Pedro and Morgan Rogers, Chelsea Have a Front Three to Rival Any Other",
-     "url": "https://theanalyst.com/articles/chelsea-front-three-cole-palmer-joao-pedro-morgan-rogers-stats",
-     "source": "Opta Analyst",
-     "published": "2026-08-25T14:37:16+00:00",
-     "matched_on": "joao pedro",
-     "kind": "general",
-     "excerpt": "Chelsea's new-look front three made a blistering start to life together, each getting on the scoresheet in a 3-2 win over Fulham on Monday. The post In Cole Palmer, João Pedro and Morgan Rogers, Chelsea Have a Front Three to Rival Any Other appeared first on Opta Analyst ."
     }
    ]
   },
@@ -1133,10 +1131,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-03T13:00:19+02:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-04T07:32:52+01:00",
    "official_source_found": true,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1145,10 +1143,8 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1159,6 +1155,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham drop major Dejan Kulusevski injury hint as final 25-man Premier League squad revealed",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/spurs-drop-major-kulusevski-injury-hint-as-final-premier-league-squad-revealed_604445.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T07:32:52+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur have provided a hint over the future of Dejan Kulusevski after revealing their final 25-man squad for the 2026-27 Premier League season."
+    },
     {
      "title": "From huge hype to harsh realities: The disastrous starts of Tottenham and Fiorentina",
      "url": "https://www.soccerway.com/news/soccer-premier-league-serie-a-the-disastrous-starts-of-tottenham-and-fiorentina-2026-27/Sh5VZv8U/",
@@ -1203,15 +1208,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Boss to preview visit of Spurs Press conference to begin around 2pm BST Watch live on Forest TV Oliver Glasner will take questions from the local and national media to preview Nottingham Forest’s upcoming Premier League fixture against Tottenham Hotspur at the City Ground. The Reds picked up their first point under the Austrian last weekend against Liverpool at Anfield, with attention now turning "
-    },
-    {
-     "title": "Tottenham Hotspur can fix their James Maddison and Xavi Simons injury headaches without spending a penny",
-     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-can-fix-their-james-maddison-and-xavi-simons-injury-headaches-without-spending-a-penny",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-03T06:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "A busy summer of transfer business is over for Tottenham Hotspur , but injuries to James Maddison and Xavi Simons have left the Lilywhites short in one area. It seems Spurs have bolstered pretty much every area of their squad apart from central attacking midfield (or the No.10 role). Jan Paul Van Hecke and Marcos Senesi are new faces in defence, Matheus Fernandes and £100m man Sandro Tonali are th"
     }
    ]
   },
