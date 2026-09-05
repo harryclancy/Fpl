@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-05T05:27:21+00:00",
- "seconds": 121.9,
+ "ran_at": "2026-09-05T11:26:28+00:00",
+ "seconds": 130.6,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 606,
- "substantive_items": 165,
+ "sources_readable": 62,
+ "candidates_discovered": 665,
+ "substantive_items": 227,
  "duplicates_removed": 15,
- "deeply_analysed": 73,
- "deep_read_failed": 17,
- "corpus_size": 5405,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 5534,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 165 articles"
+    "62/78 sources returned 227 articles"
    ]
   },
   "blackout": {
@@ -39,6 +39,7 @@
  "failures": [
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -662,9 +663,9 @@
   "Cherki": {
    "player": "Cherki",
    "club": "MCI",
-   "evidence_count": 16,
-   "source_count": 8,
-   "latest_evidence": "2026-09-03T12:00:00+00:00",
+   "evidence_count": 17,
+   "source_count": 9,
+   "latest_evidence": "2026-09-05T07:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -676,6 +677,7 @@
    "dimensions_covered": [
     "fixtures",
     "fpl advice",
+    "injury",
     "set pieces",
     "statistics",
     "tactics",
@@ -686,6 +688,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "'Chelsea had a good transfer window but have left themselves short in a key position' Clinton Morrison assesses the most dramatic transfer deadline day in years",
+     "url": "https://www.fourfourtwo.com/transfer/chelsea-had-a-good-transfer-window-but-have-left-themselves-short-in-a-key-position-clinton-morrison-assesses-the-most-dramatic-transfer-deadline-day-in-years",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-05T07:00:00+00:00",
+     "matched_on": "cherki",
+     "kind": "team news",
+     "excerpt": "The only place to start this week is to reflect on the summer transfer window. It was a crazy deadline day, and the stand-out deal was undoubtedly Enzo Fernandez’s £125 million move from Chelsea to Manchester City. No matter what you want to say about Fernandez, he's still a good footballer, and Chelsea would be devastated to lose him. He's not a Rodri replacement, because he's not a number six — "
+    },
     {
      "title": "Cherki, Mbeumo, Newcastle players: Buy, keep or sell in Gameweek 3?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/cherki-mbeumo-newcastle-players-buy-keep-or-sell-in-gameweek-3",
@@ -781,15 +792,6 @@
      "url": "https://www.mancity.com/news/mens/enzo-maresca-post-crystal-palace-reaction-63923552",
      "source": "Manchester City",
      "published": "2026-08-28T10:20:00+00:00",
-     "matched_on": "cherki",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "'It's my instinct', says Cherki after wondergoal against Palace",
-     "url": "https://www.mancity.com/news/mens/cherki-post-palace-reaction-pl-28-aug-63923521",
-     "source": "Manchester City",
-     "published": "2026-08-28T09:20:00+00:00",
      "matched_on": "cherki",
      "kind": "general",
      "excerpt": ""
@@ -939,9 +941,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "source_count": 8,
-   "latest_evidence": "2026-09-04T15:42:58+00:00",
+   "latest_evidence": "2026-09-05T07:58:07+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1038,6 +1040,15 @@
      "excerpt": "Fixtures Aston Villa Vs. Arsenal - Mon, Aug 31 2026, 20:00 Unai Emery has named his side to take on Arsenal in Aston Villa’s first home game of the Premier League season (ko 8pm). The Villans welcome to reigning champions to B6 on Bank Holiday Monday, and Emery has handed debuts to both Zion Suzuki and Nicolas Jackson, who start the game. Jackson, who arrived from Chelsea on Friday, begins in atta"
     },
     {
+     "title": "Chelsea transfer news: Arsenal and Man City keep 'close eye' on Blues attacker",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/arsenal-and-man-city-keep-close-eye-on-chelsea-attacker_604523.html",
+     "source": "Sports Mole",
+     "published": "2026-09-05T07:58:07+01:00",
+     "matched_on": "pedro",
+     "kind": "transfer",
+     "excerpt": "Arsenal and Manchester City reportedly keep close eye on Chelsea attacker Pedro Neto ahead of January window."
+    },
+    {
      "title": "£54m Chelsea star’s reaction to Man Utd interest emerges",
      "url": "https://www.football365.com/news/chelsea-manchester-united-pedro-neto",
      "source": "Football365",
@@ -1063,15 +1074,6 @@
      "matched_on": "joao pedro",
      "kind": "general",
      "excerpt": "There is an argument that Chelsea are better at conducting transfers than they are at winning football matches. This summer's window has done nothing to redress that balance. While rival fans mock and scoff at the volume of transfer activity at Stamford Bridge , the reality is they're quite good at it. Xabi Alonso ’s side have emerged from the 2026 summer window stronger, more balanced, and the un"
-    },
-    {
-     "title": "Chelsea 4-3 Brighton Stats: Cole Palmer Decides Seven-Goal Thriller as Xabi Alonso’s Men Stay Perfect",
-     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
-     "source": "Opta Analyst",
-     "published": "2026-08-30T15:29:11+00:00",
-     "matched_on": "joao pedro",
-     "kind": "general",
-     "excerpt": "Chelsea overcame Brighton in a seven-goal thriller at Stamford Bridge. Re-live this game with our Chelsea vs Brighton stats page. The post Chelsea 4-3 Brighton Stats: Cole Palmer Decides Seven-Goal Thriller as Xabi Alonso’s Men Stay Perfect appeared first on Opta Analyst ."
     }
    ]
   },
