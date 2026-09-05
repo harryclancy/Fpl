@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-04T23:25:31+00:00",
- "seconds": 132.6,
+ "ran_at": "2026-09-05T05:27:21+00:00",
+ "seconds": 121.9,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 734,
- "substantive_items": 296,
- "duplicates_removed": 17,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 5329,
+ "sources_readable": 63,
+ "candidates_discovered": 606,
+ "substantive_items": 165,
+ "duplicates_removed": 15,
+ "deeply_analysed": 73,
+ "deep_read_failed": 17,
+ "corpus_size": 5405,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 296 articles"
+    "63/78 sources returned 165 articles"
    ]
   },
   "blackout": {
@@ -38,18 +38,20 @@
  },
  "failures": [
   "FPL360: nothing published in the last 10 days",
+  "FPL Central: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
+  "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -1318,8 +1320,8 @@
    "player": "Diop",
    "club": "IPS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-04T17:45:04+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-04T19:13:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1332,7 +1334,6 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "match report",
     "press conference",
     "set pieces",
     "statistics",
@@ -1363,6 +1364,33 @@
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
     },
     {
+     "title": "Ipswich v Liverpool team news: Araujo starts, Barcola a sub",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/ipswich-v-liverpool-team-news-araujo-starts-barcola-a-sub",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-04T18:15:00+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "It's one change apiece at Portman Road The post Ipswich v Liverpool team news: Araujo starts, Barcola a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Liverpool team news vs. Ipswich: Andoni Iraola makes major midfield decision for second Premier League matchweek",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/who-did-iraola-bench-liverpool-team-news-vs-ipswich-revealed_604502.html",
+     "source": "Sports Mole",
+     "published": "2026-09-04T19:13:00+01:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Liverpool boss Andoni Iraola makes a major midfield decision ahead of his side's clash with Ipswich Town on Friday in the Premier League."
+    },
+    {
+     "title": "Ipswich vs Liverpool: Line-ups confirmed for Friday night football",
+     "url": "https://www.101greatgoals.com/football/premier-league/ipswich-vs-liverpool-line-ups-confirmed/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-04T17:47:30+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the team news ahead of Ipswich vs Liverpool in the Premier League."
+    },
+    {
      "title": "Ipswich v Liverpool predicted line-ups + FPL team news",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/ipswich-v-liverpool-predicted-line-ups-fpl-team-news",
      "source": "Fantasy Football Scout",
@@ -1370,33 +1398,6 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": "Team form, absentees and our predicted XIs The post Ipswich v Liverpool predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Ipswich Town vs Liverpool Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/ipswich-town-vs-liverpool-prediction-predicted-lineups-team-news-131273",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-04T14:48:00+00:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Shock Liverpool team selection vs Ipswich predicted by two sources with star humbled",
-     "url": "https://www.football365.com/news/shock-team-selection-liverpool-vs-ipswich-predicted-two-sources-star-humbled",
-     "source": "Football365",
-     "published": "2026-09-04T13:27:53+00:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": "Two journalists who primarily cover Liverpool expect Andoni Iraola to make a surprising team selection in tonight’s clash between the Reds and Ipswich Town."
-    },
-    {
-     "title": "Ipswich v Liverpool: Preview, predicted line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/ipswich-vs-liverpool-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-04T09:13:32+00:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": "Preview as Ipswich host Liverpool in the Premier League"
     }
    ]
   },
