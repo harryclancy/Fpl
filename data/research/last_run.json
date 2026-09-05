@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-05T11:26:28+00:00",
- "seconds": 130.6,
+ "ran_at": "2026-09-05T17:25:49+00:00",
+ "seconds": 156.7,
  "sources_attempted": 78,
  "sources_readable": 62,
- "candidates_discovered": 665,
- "substantive_items": 227,
- "duplicates_removed": 15,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 5534,
+ "candidates_discovered": 761,
+ "substantive_items": 323,
+ "duplicates_removed": 23,
+ "deeply_analysed": 71,
+ "deep_read_failed": 19,
+ "corpus_size": 5748,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 227 articles"
+    "62/78 sources returned 323 articles"
    ]
   },
   "blackout": {
@@ -59,10 +59,10 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-04T14:50:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-05T08:19:49+00:00",
    "official_source_found": false,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -74,6 +74,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -84,6 +85,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal v Chelsea: Preview, expected line-ups, stats, TV channel, live online stream and prediction",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/arsenal-v-chelsea-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-05T08:19:49+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Preview as Arsenal host Chelsea in the Premier League"
+    },
     {
      "title": "Arsenal vs Chelsea Prediction, Predicted Lineups & Team News",
      "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
@@ -101,15 +111,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Morgan Rogers is set to line up for Chelsea against Arsenal at the Emirates Stadium in the Premier League on Sunday."
-    },
-    {
-     "title": "Man Utd, Arsenal and Liverpool among clubs one injury away from disaster",
-     "url": "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
-     "source": "Football365",
-     "published": "2026-09-04T10:33:42+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "One injury to these Premier League players and some of these clubs look very exposed."
     },
     {
      "title": "Chelsea lineup vs. Arsenal: Predicted XI as Xabi Alonso sweats on Moises Caicedo injury",
@@ -282,9 +283,9 @@
   "Egan": {
    "player": "Egan",
    "club": "HUL",
-   "evidence_count": 4,
+   "evidence_count": 5,
    "source_count": 3,
-   "latest_evidence": "2026-09-04T15:00:00+00:00",
+   "latest_evidence": "2026-09-05T15:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -300,10 +301,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Team News: Aston Villa (H)",
+     "url": "https://www.wearehullcity.co.uk/news/2026/september/05/team-news-aston-villa-h/",
+     "source": "Hull City",
+     "published": "2026-09-05T15:15:00+00:00",
+     "matched_on": "egan",
+     "kind": "team news",
+     "excerpt": "Fixtures Hull City Vs. Aston Villa - Sat, Sep 05 2026, 17:30 Four of Hull City’s deadline day signings feature in the matchday squad for this evening’s Premier League home clash with Aston Villa. However, Sorba Thomas, Brooke Norton-Cuffy, Christos Mouzakitis and Robinio Vaz will all have to wait a little longer for their first appearances as they are named on the bench. The starting eleven shows "
+    },
     {
      "title": "Team News: Coventry City (A)",
      "url": "https://www.wearehullcity.co.uk/news/2026/august/29/team-news-coventry-city-a/",
@@ -515,9 +525,9 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-04T16:10:41+00:00",
+   "evidence_count": 3,
+   "source_count": 3,
+   "latest_evidence": "2026-09-05T13:30:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -530,17 +540,25 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "match report",
     "press conference",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "3pm team news: Foden a sub, O’Reilly injured in warm-up",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-05T13:30:00+00:00",
+     "matched_on": "semenyo",
+     "kind": "team news",
+     "excerpt": "Manchester City v Coventry City is among five Premier League matches at 3pm BST The post 3pm team news: Foden a sub, O’Reilly injured in warm-up appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Zopharâs Gameweek 2 Q&A: Hinshelwood or Ndiaye? Triple-up on Chelsea?",
      "url": "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
@@ -549,42 +567,6 @@
      "matched_on": "semenyo",
      "kind": "transfer",
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
-    },
-    {
-     "title": "Man City v Coventry predicted line-ups + FPL team news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/man-city-v-coventry-predicted-line-ups-fpl-team-news",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-04T16:10:41+00:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Team form, absentees and our predicted XIs The post Man City v Coventry predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Man City v Coventry: Preview, predicted line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/man-city-v-coventry-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-04T15:26:24+00:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Preview as Man City host Coventry in the Premier League"
-    },
-    {
-     "title": "Man City vs. Coventry injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/team-news/man-city-vs-coventry-injury-suspension-list-predicted-xis_604327.html",
-     "source": "Sports Mole",
-     "published": "2026-09-04T15:00:00+01:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Manchester City and Coventry City."
-    },
-    {
-     "title": "Man City vs. Coventry team news: Enzo Fernandez, Iliman Ndiaye, Matheus Nunes update from Enzo Maresca",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
-     "source": "Sports Mole",
-     "published": "2026-09-04T15:00:00+01:00",
-     "matched_on": "MCI team news",
-     "kind": "club team news",
-     "excerpt": "Enzo Maresca reveals whether club-record signing Enzo Fernandez will be ready to make his Manchester City debut in Saturday’s Premier League clash with Coventry City at the Etihad Stadium."
     },
     {
      "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
@@ -663,9 +645,9 @@
   "Cherki": {
    "player": "Cherki",
    "club": "MCI",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "source_count": 9,
-   "latest_evidence": "2026-09-05T07:00:00+00:00",
+   "latest_evidence": "2026-09-05T13:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -678,6 +660,7 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -688,6 +671,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "3pm team news: Foden a sub, O’Reilly injured in warm-up",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-05T13:30:00+00:00",
+     "matched_on": "cherki",
+     "kind": "team news",
+     "excerpt": "Manchester City v Coventry City is among five Premier League matches at 3pm BST The post 3pm team news: Foden a sub, O’Reilly injured in warm-up appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "'Chelsea had a good transfer window but have left themselves short in a key position' Clinton Morrison assesses the most dramatic transfer deadline day in years",
      "url": "https://www.fourfourtwo.com/transfer/chelsea-had-a-good-transfer-window-but-have-left-themselves-short-in-a-key-position-clinton-morrison-assesses-the-most-dramatic-transfer-deadline-day-in-years",
@@ -786,24 +778,15 @@
      "matched_on": "cherki",
      "kind": "general",
      "excerpt": "Manchester City are loading up on players known for their dribbling ability, with Iliman Ndiaye seemingly their next new face. The post Doku, Cherki, and Now Ndiaye? Man City’s Penchant for Dribblers Is No Coincidence appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Cherki conjured up the complete display, says admiring Maresca",
-     "url": "https://www.mancity.com/news/mens/enzo-maresca-post-crystal-palace-reaction-63923552",
-     "source": "Manchester City",
-     "published": "2026-08-28T10:20:00+00:00",
-     "matched_on": "cherki",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 18,
-   "source_count": 10,
-   "latest_evidence": "2026-09-03T15:35:00+00:00",
+   "evidence_count": 23,
+   "source_count": 15,
+   "latest_evidence": "2026-09-05T18:01:38+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -883,6 +866,51 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "Haaland the hero as Manchester City ride luck to win against valiant Coventry",
+     "url": "https://www.soccerway.com/news/haaland-the-hero-as-manchester-city-ride-luck-to-win-against-valiant-coventry/YuJWrrYO/",
+     "source": "Soccerway",
+     "published": "2026-09-05T18:01:38+02:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Manchester City 1-0 Coventry: Haaland proves the difference again",
+     "url": "https://www.101greatgoals.com/news/manchester-city-1-0-coventry-haaland-proves-the-difference-again/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-05T15:55:16+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Erling Haaland hit his 300th career goal as Manchester City made heavy work of beating newly-promoted Coventry in the Premier League. Haaland powered in a wonderful header to prove the difference maker as Coventry gave a spirited display as they wait for their first point back in the top flight. City needed Gianluigi Donnarumma to […]"
+    },
+    {
+     "title": "Football Tracker: Haaland puts Man City ahead, Inter hosting Napoli",
+     "url": "https://www.flashscore.com/news/football-tracker-live-scores-updates-september-5-6-2026/hfq3Dkqg/",
+     "source": "Flashscore",
+     "published": "2026-09-05T17:32:39+02:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Erling Haaland breaks new Sergio Aguero Man City record with 300th career goal vs. Coventry",
+     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-heads-to-new-heights-as-man-city-marksman-breaks-aguero-scoring-record_604544.html",
+     "source": "Sports Mole",
+     "published": "2026-09-05T16:22:48+01:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Erling Haaland breaks a new Sergio Aguero Manchester City record with his opening goal in the Sky Blues' Premier League clash with Coventry City."
+    },
+    {
+     "title": "Erling Haaland career statistics, goals, video highlights, Man City and Norway stats, Premier League records",
+     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-05T09:32:00-04:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
      "title": "Zopharâs Gameweek 3 Q&A: Top City picks, Triple Captain Haaland, buy Konsa?",
      "url": "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
      "source": "Fantasy Football Hub",
@@ -890,60 +918,15 @@
      "matched_on": "haaland",
      "kind": "general",
      "excerpt": "FPL Gameweek 3 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whetherÂ Ezri KonsaÂ is one to buy this week, the top Manchester City picks amid their new signings, using the Triple Captain on Erling HaalandÂ and the case […]"
-    },
-    {
-     "title": "Who is the top scorer of 2026? Harry Kane running away with the title",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "source": "Football365",
-     "published": "2026-09-03T05:55:59+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Harry Kane was out of the blocks like a bullet in 2026, opening a big lead over 2025’s clear winner Kylian Mbappe and everyone else."
-    },
-    {
-     "title": "Harry and Lloyd’s Predictions GW3",
-     "url": "https://fantasyfootball247.co.uk/harry-and-lloyds-predictions-gw3-3/",
-     "source": "Fantasy Football 247",
-     "published": "2026-09-02T20:55:32+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Harry and Lloyd’s Predictions GW3 Welcome to Harry and Lloyd’s Predictions GW3 A very high scoring week this week. Haaland had a massive say in the points total. Lots of people correctly predicted him to be first scorer. Lots of extra bonus 5 points for managers and that was needed to claim top spot this […] The post Harry and Lloyd’s Predictions GW3 appeared first on Fantasy Football 247 - Premie"
-    },
-    {
-     "title": "Best FPL captain for Gameweek 3: Haaland a Triple Captain shout?",
-     "url": "https://www.fantasyfootballhub.co.uk/best-fpl-captain-for-gameweek-3-article-26-27",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-02T14:00:52+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Fantasy Football Hub’s resident Fantasy Premier League (FPL) captaincy expert Chris Tan takes a close look at the best options for Gameweek 3 of the 2026/27 season. Powered by Hub AI and Chrisâs eye for detail, having analysed the weekly captaincy candidates on the Hub for many years, we reveal the top three picks each […]"
-    },
-    {
-     "title": "Best FPL players for Gameweek 3",
-     "url": "https://www.fantasyfootballhub.co.uk/best-fpl-players-for-gameweek-3-article-26-27",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-01T13:00:44+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Who are the best FPL players for Gameweek 3? Expert Fantasy Premier League manager Abdul Rehman (FPL Salah) guides us through the top picks. Check out ourÂ Ultimate Guide to FPL for all of our content and tips ahead of Gameweek 3. Join the Hub! Best FPL players for Gameweek 3 Erling Haaland (Â£15.5m) – […]"
-    },
-    {
-     "title": "Palace win is a step in the right direction, says Haaland",
-     "url": "https://www.mancity.com/news/mens/haaland-post-palace-reaction-pl-28-aug-63923550",
-     "source": "Manchester City",
-     "published": "2026-08-28T10:05:00+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 18,
+   "evidence_count": 19,
    "source_count": 8,
-   "latest_evidence": "2026-09-05T07:58:07+01:00",
+   "latest_evidence": "2026-09-05T11:29:45+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1067,13 +1050,13 @@
      "excerpt": "The transfer window has now drawn to a conclusion, with Aston Villa welcoming no less than 10 new signings to the club. Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton W"
     },
     {
-     "title": "Chelsea are the winners of the transfer window, again - and it's not even close",
-     "url": "https://www.fourfourtwo.com/team/chelsea-are-the-winners-of-the-transfer-window-again-and-its-not-even-close",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-02T14:00:00+00:00",
-     "matched_on": "joao pedro",
+     "title": "Arsenal plot game-changing Chelsea raid worth £100m – report",
+     "url": "https://www.football365.com/news/arsenal-news-pedro-neto-interest-chelsea-january-raid-100-million",
+     "source": "Football365",
+     "published": "2026-09-05T11:29:45+00:00",
+     "matched_on": "pedro",
      "kind": "general",
-     "excerpt": "There is an argument that Chelsea are better at conducting transfers than they are at winning football matches. This summer's window has done nothing to redress that balance. While rival fans mock and scoff at the volume of transfer activity at Stamford Bridge , the reality is they're quite good at it. Xabi Alonso ’s side have emerged from the 2026 summer window stronger, more balanced, and the un"
+     "excerpt": "The Gunners hold interest in a Chelsea forward heading towards the January window, as per a report, and he has been described as a ‘game-changer’"
     }
    ]
   },
@@ -1153,8 +1136,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-04T16:21:52+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-05T08:24:53+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1179,6 +1162,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham injury news: Spurs playmaker suffers 'fresh' injury blow ahead of Nottingham Forest clash",
+     "url": "https://www.sportsmole.co.uk/football/spurs/news/tottenham-star-suffers-fresh-injury-blow-ahead-of-forest-clash_604524.html",
+     "source": "Sports Mole",
+     "published": "2026-09-05T08:24:53+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur attacker Dejan Kulusevki suffers a fresh injury blow, as confirmed by Roberto De Zerbi."
+    },
     {
      "title": "Nottingham Forest v Tottenham: Preview, expected line-ups, stats, TV",
      "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/nottingham-forest-v-tottenham-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
@@ -1223,98 +1215,61 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur have provided a hint over the future of Dejan Kulusevski after revealing their final 25-man squad for the 2026-27 Premier League season."
-    },
-    {
-     "title": "From huge hype to harsh realities: The disastrous starts of Tottenham and Fiorentina",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-serie-a-the-disastrous-starts-of-tottenham-and-fiorentina-2026-27/Sh5VZv8U/",
-     "source": "Soccerway",
-     "published": "2026-09-03T13:00:19+02:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
   "Mitchell": {
    "player": "Mitchell",
    "club": "CRY",
-   "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-04T16:09:31+00:00",
+   "evidence_count": 3,
+   "source_count": 2,
+   "latest_evidence": "2026-09-05T16:00:00+00:00",
    "official_source_found": true,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
-   "transfer_status_assessed": false,
+   "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": true,
+   "fixtures_assessed": false,
    "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
     "injury",
-    "press conference",
-    "statistics",
+    "match report",
+    "set pieces",
     "tactics",
-    "team news"
+    "team news",
+    "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "low",
    "researched": true,
    "items": [
     {
-     "title": "Fulham v Crystal Palace predicted line-ups + FPL team news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-04T16:09:31+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Team form, absentees and our predicted XIs The post Fulham v Crystal Palace predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "title": "Report: Palace hit back to stun Fulham for first win of 26/27",
+     "url": "https://www.cpfc.co.uk/news/match-reports/match-report-highlights-palace-fulham-september-2026/",
+     "source": "Crystal Palace",
+     "published": "2026-09-05T15:56:23+00:00",
+     "matched_on": "mitchell",
+     "kind": "team news",
+     "excerpt": "Crystal Palace got a first Premier League win under Pierre Sage after a double from Tyrick Mitchell and a late winner from Ben Chilwell earned a dramatic 3-2 victory at Fulham."
     },
     {
-     "title": "Fulham vs. Crystal Palace injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
-     "source": "Sports Mole",
-     "published": "2026-09-04T15:00:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up the team news as Fulham prepare to take on Crystal Palace in the Premier League."
-    },
-    {
-     "title": "Pre-Crystal Palace Press Conference",
-     "url": "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/",
+     "title": "Fulham 2-3 Crystal Palace",
+     "url": "https://www.fulhamfc.com/news/2026/september/05/fulham-2-3-crystal-palace/",
      "source": "Fulham",
-     "published": "2026-09-04T12:39:55+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Álvaro Arbeloa is hopeful that if Fulham can play with the identity he is working towards, then we can bank our first points of the season against Crystal Palace on Saturday. After losing to both Chelsea and Sunderland, our Head Coach was asked how vital it is that his side provide a response at the Cottage this weekend. “Yes, it's very important, because we play at home, we play against a team th"
+     "published": "2026-09-05T16:00:00+00:00",
+     "matched_on": "mitchell",
+     "kind": "transfer",
+     "excerpt": "Fulham were beaten 3-2 by Crystal Palace on Saturday afternoon at Craven Cottage. Despite leading twice through Josh King and César Palacios’ first goal for the Club, the Eagles hit back three times, courtesy of Tyrick Mitchell’s brace and Ben Chilwell’s strike. The Whites had by far the better of the game, but shortcomings at both ends of the pitch meant we are still looking for our first points "
     },
     {
-     "title": "Fulham lineup vs. Crystal Palace: Predicted XI for Premier League clash as Alvaro Arbeloa plans key change",
-     "url": "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T16:28:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole looks at how Fulham could line up in Saturday's Premier League clash with Crystal Palace."
-    },
-    {
-     "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
-     "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T16:28:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole looks at how Crystal Palace could line up in Saturday's Premier League clash with Fulham."
-    },
-    {
-     "title": "Fulham vs Crystal Palace - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-crystal-palace-prediction-team-news-lineups_604397.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T16:05:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Fulham and Crystal Palace, including predictions, team news and possible lineups."
+     "title": "Mitchell: I heard Eddie shout shoot!",
+     "url": "https://www.cpfc.co.uk/news/first-team/mitchell-i-heard-eddie-shout-shoot/",
+     "source": "Crystal Palace",
+     "published": "2026-09-05T15:40:00+00:00",
+     "matched_on": "mitchell",
+     "kind": "general",
+     "excerpt": "Tyrick Mitchell said his brace in Crystal Palace's sensational win at Fulham is down to an improved focus on his attacking play."
     }
    ]
   },

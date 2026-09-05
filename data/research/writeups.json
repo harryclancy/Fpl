@@ -1,30 +1,31 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-05T11:26:28+00:00",
+ "generated": "2026-09-05T17:25:49+00:00",
  "gameweek": 4,
- "corpus_size": 5534,
+ "corpus_size": 5748,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 04 Sep.",
-   "case_for": "What supports keeping him: Football365, 04 Sep: “David Raya at Arsenal Arsenal’s goalkeeper department is split between one of the best shot-stoppers in the world and a collection of goalkeepers known for making absolute howlers.”",
-   "case_against": "What argues against him: Football365, 04 Sep: “Of course, it is hard to attract top-level keepers to sit on the bench, especially behind someone as consistent as Raya, but one injury to the Spaniard and the best defence in the league feels a lot more vulnerable.”",
+   "status": "Latest on Raya — RotoWire Soccer, 04 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 04 Sep.",
+   "case_for": "",
+   "case_against": "",
    "expected_minutes": "On minutes — RotoWire Soccer, 04 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — RotoWire Soccer, 04 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.101greatgoals.com/match-previews/premier-league-matches/arsenal-v-chelsea-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
     "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
     "https://www.football365.com/news/xabi-alonso-morgan-rogers-arsenal-chelsea",
-    "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
     "https://www.sportsmole.co.uk/football/chelsea/predicted-lineups/caicedo-concern-neto-decision-predicted-chelsea-xi-vs-arsenal_604463.html",
     "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/will-rice-mosquera-make-it-predicted-arsenal-xi-vs-chelsea_604462.html",
     "https://www.sportsmole.co.uk/football/arsenal/preview/arsenal-vs-chelsea-prediction-team-news-lineups_604458.html"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "Football365",
     "RotoWire Soccer",
     "Sports Mole"
@@ -38,25 +39,6 @@
      "tone": "neutral",
      "topics": [
       "match report"
-     ]
-    },
-    {
-     "text": "David Raya at Arsenal Arsenal’s goalkeeper department is split between one of the best shot-stoppers in the world and a collection of goalkeepers known for making absolute howlers.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
-     "published": "2026-09-04T10:33:42+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Of course, it is hard to attract top-level keepers to sit on the bench, especially behind someone as consistent as Raya, but one injury to the Spaniard and the best defence in the league feels a lot more vulnerable.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/man-utd-arsenal-and-liverpool-among-clubs-one-injury-away-from-disaster",
-     "published": "2026-09-04T10:33:42+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury",
-      "transfer"
      ]
     }
    ]
@@ -119,16 +101,17 @@
   "Egan": {
    "player": "Egan",
    "club": "HUL",
-   "status": "4 article(s) reference Egan, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Egan is in the starting eleven this week at £4.0m as a DEF. The selection rests on 4 retrieved item(s) from 3 source(s).",
+   "status": "5 article(s) reference Egan, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Egan is in the starting eleven this week at £4.0m as a DEF. The selection rests on 5 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "low",
-   "evidence_count": 4,
+   "evidence_count": 5,
    "evidence_used": [
+    "https://www.wearehullcity.co.uk/news/2026/september/05/team-news-aston-villa-h/",
     "https://www.wearehullcity.co.uk/news/2026/august/29/team-news-coventry-city-a/",
     "https://www.fourfourtwo.com/competition/15-reasons-that-prove-the-premier-league-is-the-super-league-in-disguise",
     "https://www.fourfourtwo.com/team/hull-city-have-had-a-great-start-but-it-will-be-a-tough-season-and-they-must-stick-together-we-did-in-2008-even-after-phil-browns-teamtalk-and-the-club-stayed-in-the-premier-league-dean-windass-talks-to-fft-about-the-tigers-survival-chances",
@@ -244,28 +227,23 @@
    "player": "Semenyo",
    "club": "MCI",
    "status": "Latest on Semenyo — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
-   "why_here": "Semenyo is in the starting eleven this week at £8.5m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 27 Aug.",
+   "why_here": "Semenyo is in the starting eleven this week at £8.5m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 27 Aug.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 3,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
-    "https://www.fantasyfootballscout.co.uk/2026/09/04/man-city-v-coventry-predicted-line-ups-fpl-team-news",
-    "https://www.101greatgoals.com/match-previews/premier-league-matches/man-city-v-coventry-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
-    "https://www.sportsmole.co.uk/football/man-city/injury-news/team-news/man-city-vs-coventry-injury-suspension-list-predicted-xis_604327.html",
-    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/will-fernandez-ndiaye-make-man-city-debuts-vs-coventry-maresca-provides-latest-update_604482.html",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "FPL Captain",
     "Fantasy Football Hub",
-    "Fantasy Football Scout",
-    "Sports Mole"
+    "Fantasy Football Scout"
    ],
    "quotes": [
     {
@@ -344,15 +322,16 @@
    "player": "Cherki",
    "club": "MCI",
    "status": "Latest on Cherki — FourFourTwo FPL, 05 Sep: “It leaves Man City with a very strong squad, especially when you consider that they’ll have either Rayan Cherki or Phil Foden in the number ten role.”",
-   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 17 retrieved item(s) from 9 source(s), the most recent dated 05 Sep.",
+   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 18 retrieved item(s) from 9 source(s), the most recent dated 05 Sep.",
    "case_for": "What supports keeping him: Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.” OneFPL: “Cherki has: two GW1 assists two GW2 goals Coventry at home in GW3 a new £7.7m price The upside remains elite.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — OneFPL: “Rayan Cherki FPL GW3: Still Buy After Deadline Day? | OneFPL Loading OneFPL page In this article sections The short answer Still BUY/HOLD — but with more rotation risk than before deadline day.”",
    "developments": "Recent developments — Opta Analyst, 01 Sep: “Last year, City then added Rayan Cherki , arguably even more of a maverick than Doku, and the Frenchman enjoyed a brilliant first season in the Premier League.” Opta Analyst, 01 Sep: “Similarly, they’ll have four of last season’s top eight for most dribbles completed: Doku (84), Ndiaye (65), Semenyo (59) and Cherki (51).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
     "https://www.fourfourtwo.com/transfer/chelsea-had-a-good-transfer-window-but-have-left-themselves-short-in-a-key-position-clinton-morrison-assesses-the-most-dramatic-transfer-deadline-day-in-years",
     "https://www.fantasyfootballscout.co.uk/2026/08/31/cherki-mbeumo-newcastle-players-buy-keep-or-sell-in-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
@@ -363,8 +342,7 @@
     "https://www.itfc.co.uk/news/2026/september/03/emersonn-nominated-for-goal-of-the-month/",
     "https://www.safc.com/news/2026/september/03/angulo-nominated-for-guinness-goal-of-the-month/",
     "https://www.mancity.com/news/mens/rayan-cherki-up-for-ea-sports-player-of-the-month-award-63924025",
-    "https://theanalyst.com/articles/man-city-iliman-ndiaye-dribbling-stats",
-    "https://www.mancity.com/news/mens/enzo-maresca-post-crystal-palace-reaction-63923552"
+    "https://theanalyst.com/articles/man-city-iliman-ndiaye-dribbling-stats"
    ],
    "sources_used": [
     "FPL Captain",
@@ -436,15 +414,15 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — Fantasy Football Scout, 03 Sep: “The Porto fixture on Tuesday isn’t ideal, but Haaland is in good physical condition.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 18 retrieved item(s) from 10 source(s), the most recent dated 03 Sep.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 03 Sep: “Firstly, he won’t be on penalties anymore, certainly not with Erling Haaland (£15.5m) around.” Fantasy Football Scout, 03 Sep: “You may have started the season without Erling Haaland (£15.5m) in your side, or the short-term lure of Rayan Cherki (£7.7m) – whatever the longer-term reservations about game-time – may be too much to resist.” FourFourTwo FPL, 02 Sep: “Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances.”",
+   "status": "Latest on Haaland — Soccerway, 05 Sep: “The Sky Blues didn’t capitulate from there, though, instead continuing to defend resolutely, with last-ditch blocks denying Enzo Fernandez on debut and also Haaland from doubling his tally, leaving them with a fighting chance after the break.”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 23 retrieved item(s) from 15 source(s), the most recent dated 05 Sep.",
+   "case_for": "What supports keeping him: Soccerway, 05 Sep: “Semenyo more than atoned for his earlier error on 26 minutes, when his dogged determination at the byline saw him get a cross off that he had no right to, and waiting in the wings was the effervescent Erling Haaland to head home a 20th goal in 21 PL games against newly-promoted opposition.” 101 Great Goals — Fantasy, 05 Sep: “Erling Haaland has now scored against 24 of the 25 teams he's faced in the Premier League.” NBC Sports Rotoworld PL, 05 Sep: “Haaland rockets Man City 4-1 up over Palace Phil Foden puts the ball on a plate for Erling Haaland to blast his effort into the back of the net to complete his brace and give Manchester City a resounding 4-1 lead over Crystal Palace.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football 247, 02 Sep: “Haaland had a massive say in the points total.” Fantasy Football 247, 02 Sep: “If they has correctly guessed Haaland as FGS, we would have had a different winner.” FourFourTwo FPL, 02 Sep: “For all the noise surrounding Ekitike, and Haaland’s Golden Boot procession, a certain Brazilian was quietly staking his claim as the Premier League’s next best striker.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).” Fantasy Football Scout, 01 Sep: “Here, we take a look at some of the pros and cons of using the Triple Captain chip on Haaland in Gameweek 3.”",
+   "expected_minutes": "On minutes — NBC Sports Rotoworld PL, 05 Sep: “Erling Haaland’s Premier League goal video highlights: 2025-26 season Week 37 — Goal at Bournemouth Haaland equalizes for Man City against Bournemouth Erling Haaland finally gets Manchester City on the scoresheet to make it 1-1 against Bournemouth at the Vitality Stadium.”",
+   "developments": "Recent developments — Sports Mole, 05 Sep: “Haaland took little time to make his mark against Frank Lampard's side too, opening the scoring just before the half-hour mark with a bullet header from Antoine Semenyo's cross.” Sports Mole, 05 Sep: “After Semenyo just about kept the ball in play and delivered an inviting ball to the back stick, Haaland tore away from his marker - Aurele Amenda - and left Carl Rushworth with no chance.” 101 Great Goals — Fantasy, 05 Sep: “Haaland powered in a wonderful header to prove the difference maker as Coventry gave a spirited display as they wait for their first point back in the top flight.”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 03 Sep: “The Porto fixture on Tuesday isn’t ideal, but Haaland is in good physical condition.” Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).”",
    "confidence": "high",
-   "evidence_count": 18,
+   "evidence_count": 23,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
@@ -452,26 +430,97 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
-    "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
-    "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-    "https://fantasyfootball247.co.uk/harry-and-lloyds-predictions-gw3-3/",
-    "https://www.fantasyfootballhub.co.uk/best-fpl-captain-for-gameweek-3-article-26-27",
-    "https://www.fantasyfootballhub.co.uk/best-fpl-players-for-gameweek-3-article-26-27",
-    "https://www.mancity.com/news/mens/haaland-post-palace-reaction-pl-28-aug-63923550"
+    "https://www.soccerway.com/news/haaland-the-hero-as-manchester-city-ride-luck-to-win-against-valiant-coventry/YuJWrrYO/",
+    "https://www.101greatgoals.com/news/manchester-city-1-0-coventry-haaland-proves-the-difference-again/",
+    "https://www.flashscore.com/news/football-tracker-live-scores-updates-september-5-6-2026/hfq3Dkqg/",
+    "https://www.sportsmole.co.uk/football/man-city/news/haaland-heads-to-new-heights-as-man-city-marksman-breaks-aguero-scoring-record_604544.html",
+    "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
+    "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "FPL Captain",
     "Fantasy Football 247",
     "Fantasy Football Hub",
     "Fantasy Football Scout",
+    "Flashscore",
     "Football365",
     "FourFourTwo FPL",
     "Full90 FPL",
     "Manchester City",
+    "NBC Sports Rotoworld PL",
     "OneFPL",
-    "Opta Analyst"
+    "Opta Analyst",
+    "Soccerway",
+    "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Semenyo more than atoned for his earlier error on 26 minutes, when his dogged determination at the byline saw him get a cross off that he had no right to, and waiting in the wings was the effervescent Erling Haaland to head home a 20th goal in 21 PL games against newly-promoted opposition.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/haaland-the-hero-as-manchester-city-ride-luck-to-win-against-valiant-coventry/YuJWrrYO/",
+     "published": "2026-09-05T18:01:38+02:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "The Sky Blues didn’t capitulate from there, though, instead continuing to defend resolutely, with last-ditch blocks denying Enzo Fernandez on debut and also Haaland from doubling his tally, leaving them with a fighting chance after the break.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/haaland-the-hero-as-manchester-city-ride-luck-to-win-against-valiant-coventry/YuJWrrYO/",
+     "published": "2026-09-05T18:01:38+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Haaland took little time to make his mark against Frank Lampard's side too, opening the scoring just before the half-hour mark with a bullet header from Antoine Semenyo's cross.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-heads-to-new-heights-as-man-city-marksman-breaks-aguero-scoring-record_604544.html",
+     "published": "2026-09-05T16:22:48+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "After Semenyo just about kept the ball in play and delivered an inviting ball to the back stick, Haaland tore away from his marker - Aurele Amenda - and left Carl Rushworth with no chance.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-heads-to-new-heights-as-man-city-marksman-breaks-aguero-scoring-record_604544.html",
+     "published": "2026-09-05T16:22:48+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Haaland powered in a wonderful header to prove the difference maker as Coventry gave a spirited display as they wait for their first point back in the top flight.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/news/manchester-city-1-0-coventry-haaland-proves-the-difference-again/",
+     "published": "2026-09-05T15:55:16+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland has now scored against 24 of the 25 teams he's faced in the Premier League.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/news/manchester-city-1-0-coventry-haaland-proves-the-difference-again/",
+     "published": "2026-09-05T15:55:16+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Haaland rockets Man City 4-1 up over Palace Phil Foden puts the ball on a plate for Erling Haaland to blast his effort into the back of the net to complete his brace and give Manchester City a resounding 4-1 lead over Crystal Palace.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
+     "published": "2026-09-05T09:32:00-04:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland’s Premier League goal video highlights: 2025-26 season Week 37 — Goal at Bournemouth Haaland equalizes for Man City against Bournemouth Erling Haaland finally gets Manchester City on the scoresheet to make it 1-1 against Bournemouth at the Vitality Stadium.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
+     "published": "2026-09-05T09:32:00-04:00",
+     "tone": "positive",
+     "topics": [
+      "match report"
+     ]
+    },
     {
      "text": "Firstly, he won’t be on penalties anymore, certainly not with Erling Haaland (£15.5m) around.",
      "source": "Fantasy Football Scout",
@@ -587,14 +636,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 18 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 19 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
    "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 18,
+   "evidence_count": 19,
    "evidence_used": [
     "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
     "https://avfc.co.uk/news/2026/september/04/prematch-team-news-for-hull-clash/",
@@ -607,7 +656,7 @@
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/arsenal-and-man-city-keep-close-eye-on-chelsea-attacker_604523.html",
     "https://www.football365.com/news/chelsea-manchester-united-pedro-neto",
     "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/",
-    "https://www.fourfourtwo.com/team/chelsea-are-the-winners-of-the-transfer-window-again-and-its-not-even-close"
+    "https://www.football365.com/news/arsenal-news-pedro-neto-interest-chelsea-january-raid-100-million"
    ],
    "sources_used": [
     "Aston Villa",
@@ -758,7 +807,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -767,18 +816,17 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/spurs/news/tottenham-star-suffers-fresh-injury-blow-ahead-of-forest-clash_604524.html",
     "https://www.101greatgoals.com/match-previews/premier-league-matches/nottingham-forest-v-tottenham-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
     "https://www.fantasyfootballscout.co.uk/2026/09/04/nottm-forest-v-tottenham-predicted-line-ups-fpl-team-news-2",
     "https://www.rotowire.com/soccer/article/nottingham-forest-vs-tottenham-prediction-predicted-lineups-team-news-131719",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/nottingham-forest-vs-tottenham-injury-suspension-list-predicted-xis_604365.html",
-    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/spurs-drop-major-kulusevski-injury-hint-as-final-premier-league-squad-revealed_604445.html",
-    "https://www.soccerway.com/news/soccer-premier-league-serie-a-the-disastrous-starts-of-tottenham-and-fiorentina-2026-27/Sh5VZv8U/"
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/spurs-drop-major-kulusevski-injury-hint-as-final-premier-league-squad-revealed_604445.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Fantasy Football Scout",
     "RotoWire Soccer",
-    "Soccerway",
     "Sports Mole"
    ],
    "quotes": []
@@ -786,29 +834,66 @@
   "Mitchell": {
    "player": "Mitchell",
    "club": "CRY",
-   "status": "6 article(s) reference Mitchell, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Mitchell is on the bench this week at £4.5m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s).",
-   "case_for": "",
-   "case_against": "",
+   "status": "Latest on Mitchell — Crystal Palace, 05 Sep: “Twice the Eagles fell behind at Craven Cottage, only for Mitchell to twice drag them level in an end-to-end encounter.”",
+   "why_here": "Mitchell is on the bench this week at £4.5m as a DEF. The selection rests on 3 retrieved item(s) from 2 source(s), the most recent dated 05 Sep.",
+   "case_for": "What supports keeping him: Fulham, 05 Sep: “Despite leading twice through Josh King and César Palacios’ first goal for the Club, the Eagles hit back three times, courtesy of Tyrick Mitchell’s brace and Ben Chilwell’s strike.” Crystal Palace, 05 Sep: “Mitchell’s replacement Chilwell then scored with his first touch since re-joining the club earlier this week, sparking pandemonium in the away end before the Eagles held on for a magnificent victory.” Crystal Palace, 05 Sep: “First-team JUST NOW Tyrick Mitchell said his brace in Crystal Palace's sensational win at Fulham is down to an improved focus on his attacking play.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Crystal Palace, 05 Sep: “Palace twice trailed at Craven Cottage in an open game, only for Mitchell to score either side of half-time to twice bring them level.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
-   "evidence_count": 6,
+   "confidence": "high",
+   "evidence_count": 3,
    "evidence_used": [
-    "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
-    "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
-    "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/",
-    "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
-    "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
-    "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-crystal-palace-prediction-team-news-lineups_604397.html"
+    "https://www.cpfc.co.uk/news/match-reports/match-report-highlights-palace-fulham-september-2026/",
+    "https://www.fulhamfc.com/news/2026/september/05/fulham-2-3-crystal-palace/",
+    "https://www.cpfc.co.uk/news/first-team/mitchell-i-heard-eddie-shout-shoot/"
    ],
    "sources_used": [
-    "Fantasy Football Scout",
-    "Fulham",
-    "Sports Mole"
+    "Crystal Palace",
+    "Fulham"
    ],
-   "quotes": []
+   "quotes": [
+    {
+     "text": "Despite leading twice through Josh King and César Palacios’ first goal for the Club, the Eagles hit back three times, courtesy of Tyrick Mitchell’s brace and Ben Chilwell’s strike.",
+     "source": "Fulham",
+     "url": "https://www.fulhamfc.com/news/2026/september/05/fulham-2-3-crystal-palace/",
+     "published": "2026-09-05T16:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Twice the Eagles fell behind at Craven Cottage, only for Mitchell to twice drag them level in an end-to-end encounter.",
+     "source": "Crystal Palace",
+     "url": "https://www.cpfc.co.uk/news/match-reports/match-report-highlights-palace-fulham-september-2026/",
+     "published": "2026-09-05T15:56:23+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Mitchell’s replacement Chilwell then scored with his first touch since re-joining the club earlier this week, sparking pandemonium in the away end before the Eagles held on for a magnificent victory.",
+     "source": "Crystal Palace",
+     "url": "https://www.cpfc.co.uk/news/match-reports/match-report-highlights-palace-fulham-september-2026/",
+     "published": "2026-09-05T15:56:23+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "First-team JUST NOW Tyrick Mitchell said his brace in Crystal Palace's sensational win at Fulham is down to an improved focus on his attacking play.",
+     "source": "Crystal Palace",
+     "url": "https://www.cpfc.co.uk/news/first-team/mitchell-i-heard-eddie-shout-shoot/",
+     "published": "2026-09-05T15:40:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Palace twice trailed at Craven Cottage in an open game, only for Mitchell to score either side of half-time to twice bring them level.",
+     "source": "Crystal Palace",
+     "url": "https://www.cpfc.co.uk/news/first-team/mitchell-i-heard-eddie-shout-shoot/",
+     "published": "2026-09-05T15:40:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    }
+   ]
   },
   "Diop": {
    "player": "Diop",
