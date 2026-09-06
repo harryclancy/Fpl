@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-06T11:27:01+00:00",
- "seconds": 153.1,
+ "ran_at": "2026-09-06T17:26:18+00:00",
+ "seconds": 128.1,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 643,
- "substantive_items": 218,
- "duplicates_removed": 16,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 6110,
+ "sources_readable": 61,
+ "candidates_discovered": 735,
+ "substantive_items": 309,
+ "duplicates_removed": 22,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 6293,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 218 articles"
+    "61/78 sources returned 309 articles"
    ]
   },
   "blackout": {
@@ -37,16 +37,18 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
+  "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -59,7 +61,7 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-06T05:00:00+00:00",
+   "latest_evidence": "2026-09-06T08:00:00-04:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -85,6 +87,15 @@
    "researched": true,
    "items": [
     {
+     "title": "Arsenal vs Chelsea predicted lineups, possible XIs, team news ahead of huge clash",
+     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-06T08:00:00-04:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
      "title": "WSL preview: Albion take on Arsenal",
      "url": "https://www.brightonandhovealbion.com/media-article/wft-news-wsl-team-news",
      "source": "Brighton & Hove Albion",
@@ -92,15 +103,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Our new WSL campaign begins on Sunday against the Gunners."
-    },
-    {
-     "title": "Arsenal vs Chelsea predicted lineups, possible XIs, team news ahead of huge clash",
-     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-05T13:50:00-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
     },
     {
      "title": "How to watch Arsenal vs Chelsea live: Stream link, TV, team news, prediction",
@@ -356,7 +358,7 @@
    "club": "BRE",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-06T07:00:00+00:00",
+   "latest_evidence": "2026-09-06T12:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -415,13 +417,13 @@
      "excerpt": "Sports Mole previews Saturday's Premier League clash between Brentford and Sunderland, including predictions, team news and possible lineups."
     },
     {
-     "title": "Birmingham City vs Brentford - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/brentford/league-cup/preview/birmingham-vs-brentford-prediction-team-news-lineups_603640.html",
-     "source": "Sports Mole",
-     "published": "2026-08-24T14:56:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Tuesday's EFL Cup clash between Birmingham City and Brentford, including predictions, team news and possible lineups."
+     "title": "Umoren: Happy to get the goal",
+     "url": "https://www.wearehullcity.co.uk/news/2026/september/06/umoren-happy-to-get-the-goal/",
+     "source": "Hull City",
+     "published": "2026-09-06T12:30:00+00:00",
+     "matched_on": "kayode",
+     "kind": "general",
+     "excerpt": "Fixtures Hull City U18 Vs. Charlton Athletic U18 - Sat, Sep 05 2026, 11:00 Second-year scholar Ekemini Umoren was pleased to have netted the winning goal, as Hull City Under-18s claimed three points against Charlton Athletic in the Professional Development League, coming away 2-1 winners. Umoren scored the winning goal in the 68 th minute of proceedings at Bishop Burton College on Saturday, after "
     },
     {
      "title": "Hull City U18s 2-1 Charlton Athletic U18s",
@@ -782,8 +784,8 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 27,
-   "source_count": 15,
+   "evidence_count": 26,
+   "source_count": 14,
    "latest_evidence": "2026-09-06T10:43:34+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -909,13 +911,13 @@
      "excerpt": "Erling Haaland hit his 300th career goal as Manchester City made heavy work of beating newly-promoted Coventry in the Premier League. Haaland powered in a wonderful header to prove the difference maker as Coventry gave a spirited display as they wait for their first point back in the top flight. City needed Gianluigi Donnarumma to […]"
     },
     {
-     "title": "Football Tracker: Haaland puts Man City ahead, Inter hosting Napoli",
-     "url": "https://www.flashscore.com/news/football-tracker-live-scores-updates-september-5-6-2026/hfq3Dkqg/",
-     "source": "Flashscore",
-     "published": "2026-09-05T17:32:39+02:00",
+     "title": "Erling Haaland breaks new Sergio Aguero Man City record with 300th career goal vs. Coventry",
+     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-heads-to-new-heights-as-man-city-marksman-breaks-aguero-scoring-record_604544.html",
+     "source": "Sports Mole",
+     "published": "2026-09-05T16:22:48+01:00",
      "matched_on": "haaland",
      "kind": "general",
-     "excerpt": ""
+     "excerpt": "Erling Haaland breaks a new Sergio Aguero Manchester City record with his opening goal in the Sky Blues' Premier League clash with Coventry City."
     }
    ]
   },
@@ -1135,7 +1137,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-05T18:06:39+00:00",
+   "latest_evidence": "2026-09-06T09:01:37+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1146,11 +1148,9 @@
    "fixtures_assessed": false,
    "dimensions_covered": [
     "injury",
-    "match report",
     "press conference",
     "set pieces",
     "statistics",
-    "tactics",
     "team news",
     "transfer"
    ],
@@ -1158,6 +1158,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham transfer news: £75m attacker signing 'not ruled out' after Roberto De Zerbi recommendation",
+     "url": "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-could-complete-gbp75m-attacker-signing-after-de-zerbi-recommendation_604569.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T09:01:37+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur have reportedly not ruled out making a £75m attacker signing in 2027 after their unprecedented summer spending spree."
+    },
     {
      "title": "GLASNER'S SPURS REACTION",
      "url": "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction/",
@@ -1202,15 +1211,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Forest team announced Delap makes full debut Sels to reach 100 Forest appearances Liam Delap will make his full Nottingham Forest debut against Tottenham Hotspur at the City Ground. The summer signing from Chelsea rose from the substitutes’ bench in last weekend’s 2-2 draw with Liverpool at Anfield, with Oliver Glasner opting to select the forward from the start against Spurs. Matz Sels will also "
-    },
-    {
-     "title": "U18s Report: Palace beaten by Tottenham",
-     "url": "https://www.cpfc.co.uk/news/match-reports/u18s-report-palace-beaten-by-tottenham/",
-     "source": "Crystal Palace",
-     "published": "2026-09-05T12:33:24+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Crystal Palace Under-18s surrendered a two-goal lead as in-form Tottenham Hotspur came from behind to win 4-2 in the U18 Premier League South on Saturday morning at a sun-drenched Academy."
     }
    ]
   },
