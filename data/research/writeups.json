@@ -1,61 +1,50 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-06T17:26:18+00:00",
+ "generated": "2026-09-06T23:27:11+00:00",
  "gameweek": 4,
- "corpus_size": 6293,
+ "corpus_size": 6460,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — RotoWire Soccer, 04 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 04 Sep.",
+   "status": "6 article(s) reference Raya, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
    "case_for": "",
    "case_against": "",
-   "expected_minutes": "On minutes — RotoWire Soccer, 04 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
-   "developments": "Recent developments — RotoWire Soccer, 04 Sep: “Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.”",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
-    "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
-    "https://www.brightonandhovealbion.com/media-article/wft-news-wsl-team-news",
-    "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-live-how-to-watch-stream-tv-team-news-prediction",
-    "https://www.sportsmole.co.uk/football/aston-villa/champions-league/news/aston-villa-handed-early-champions-league-suspension-boost_604537.html",
-    "https://www.101greatgoals.com/match-previews/premier-league-matches/arsenal-v-chelsea-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
-    "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768"
+    "https://www.sportsmole.co.uk/football/arsenal/news/why-var-disallowed-calafiori-goal-in-arsenal-vs-chelsea_604603.html",
+    "https://www.fantasyfootballscout.co.uk/2026/09/06/arsenal-v-chelsea-team-news-konsa-tzolis-start-no-mosquera",
+    "https://www.101greatgoals.com/football/premier-league/arsenal-vs-chelsea-line-ups-confirmed/",
+    "https://www.sportsmole.co.uk/football/arsenal/news/konsa-starts-as-colwill-dropped-arsenal-chelsea-team-news-confirmed_604597.html",
+    "https://www.brightonandhovealbion.com/media-article/wft-match-report-bha-arsenal-wsl-september-2026",
+    "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Brighton & Hove Albion",
+    "Fantasy Football Scout",
     "NBC Sports Rotoworld PL",
-    "RotoWire Soccer",
     "Sports Mole"
    ],
-   "quotes": [
-    {
-     "text": "Coventry were beaten 3-0 with Havertz, Saka and Odegaard scoring, and Aston Villa lost 1-0 at home without registering a single shot on target, which meant Raya made no saves.",
-     "source": "RotoWire Soccer",
-     "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
-     "published": "2026-09-04T14:50:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "match report"
-     ]
-    }
-   ]
+   "quotes": []
   },
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "status": "Latest on Gabriel — Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 14 retrieved item(s) from 9 source(s), the most recent dated 04 Sep.",
+   "status": "Latest on Gabriel — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 15 retrieved item(s) from 9 source(s), the most recent dated 06 Sep.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.” Football365, 04 Sep: “But former Aston Villa forward Gabby Agbonlahor has boldly argued that Gabriel is actually the “most overrated player in the league” at the moment.”",
+   "developments": "Recent developments — Sports Mole, 06 Sep: “That match was the 12th time that Gabriel has played against the Blues, and he has never ended on the losing side, with OptaJoe data editor Harvey Downes confirming that is the most an Arsenal player has ever played against Chelsea without suffering defeat.” Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.” Football365, 04 Sep: “But former Aston Villa forward Gabby Agbonlahor has boldly argued that Gabriel is actually the “most overrated player in the league” at the moment.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 14,
+   "evidence_count": 15,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
     "https://www.skysports.com/football/news/11670/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
@@ -66,9 +55,9 @@
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/in-martinellis-hands-arsenal-al-hilal-getting-closer-to-agreement-after-increased-bid_603646.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-transfer-news-today-done-deals-live-updates-and-rumours-august-24_603599.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
+    "https://www.sportsmole.co.uk/football/arsenal/title-race/news/gabriel-breaks-gunners-record-in-blues-win-as-arteta-faces-city-title-fight_604627.html",
     "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong",
-    "https://www.soccerway.com/news/soccer-premier-league-gabriel-martinelli-joins-al-hilal-from-arsenal/Wll3VINj/",
-    "https://dknetwork.draftkings.com/2026/09/01/prediction-pick-for-gabriel-lourenco-vs-charlie-cleveland-at-dwcs-season-10-week-4/"
+    "https://www.soccerway.com/news/soccer-premier-league-gabriel-martinelli-joins-al-hilal-from-arsenal/Wll3VINj/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -82,6 +71,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/title-race/news/gabriel-breaks-gunners-record-in-blues-win-as-arteta-faces-city-title-fight_604627.html",
+     "published": "2026-09-06T23:40:37+01:00",
+     "tone": "neutral",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "That match was the 12th time that Gabriel has played against the Blues, and he has never ended on the losing side, with OptaJoe data editor Harvey Downes confirming that is the most an Arsenal player has ever played against Chelsea without suffering defeat.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/title-race/news/gabriel-breaks-gunners-record-in-blues-win-as-arteta-faces-city-title-fight_604627.html",
+     "published": "2026-09-06T23:40:37+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.",
      "source": "Football365",
@@ -446,15 +453,15 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — Soccerway, 05 Sep: “Semenyo more than atoned for his earlier error on 26 minutes, when his dogged determination at the byline saw him get a cross off that he had no right to, and waiting in the wings was the effervescent Erling Haaland to head home a 20th goal in 21 PL games against newly-promoted opposition.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 26 retrieved item(s) from 14 source(s), the most recent dated 06 Sep.",
+   "status": "Latest on Haaland — Sports Illustrated FPL, 06 Sep: “AtlÃ©tico’s JuliÃ¡n Alvarez remains a target, but plans are already being put in place to try to sign Erling Haaland from Man City. (Source: El Nacional As far as the January window is concerned, Barcelona have around $70 million (â¬60 million) available to spend under their Financial Fair Play allocation.”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 27 retrieved item(s) from 15 source(s), the most recent dated 06 Sep.",
    "case_for": "What supports keeping him: Soccerway, 06 Sep: “Haaland ’s single goal proved to be the difference between Manchester City and newly promoted Coventry as Enzo Maresca's men made it three wins from their opening three games.” Soccerway, 06 Sep: “Both players made their debuts in the win over Coventry , and earned the praise from star player Haaland - who himself netted the 300th club goal of his career.” Fantasy Football Scout, 05 Sep: “Enzo, we know each other very well, I know how good he is and I know that he is going to help the team win games.” – Enzo Maresca on Enzo Fernandez Enzo and Antoine Semenyo (£8.5m) combined for Haaland’s goal, with the latter providing the assist.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.” Football365, 05 Sep: “Reading (136) are next in his sights as victim number nine. * Haaland scored more Premier League goals than two teams (Everton and Wolves) in his debut season. * By scoring nine goals in his first five Premier League games in 2022/23, Haaland finally knocked Micky Quinn’s name out of the record books.”",
-   "developments": "Recent developments — Soccerway, 05 Sep: “The Sky Blues didn’t capitulate from there, though, instead continuing to defend resolutely, with last-ditch blocks denying Enzo Fernandez on debut and also Haaland from doubling his tally, leaving them with a fighting chance after the break.” Football365, 05 Sep: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.” Sports Mole, 05 Sep: “Haaland took little time to make his mark against Frank Lampard's side too, opening the scoring just before the half-hour mark with a bullet header from Antoine Semenyo's cross.”",
+   "developments": "Recent developments — Soccerway, 05 Sep: “Semenyo more than atoned for his earlier error on 26 minutes, when his dogged determination at the byline saw him get a cross off that he had no right to, and waiting in the wings was the effervescent Erling Haaland to head home a 20th goal in 21 PL games against newly-promoted opposition.” Soccerway, 05 Sep: “The Sky Blues didn’t capitulate from there, though, instead continuing to defend resolutely, with last-ditch blocks denying Enzo Fernandez on debut and also Haaland from doubling his tally, leaving them with a fighting chance after the break.” Football365, 05 Sep: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 03 Sep: “The Porto fixture on Tuesday isn’t ideal, but Haaland is in good physical condition.” Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).”",
    "confidence": "high",
-   "evidence_count": 26,
+   "evidence_count": 27,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
@@ -462,12 +469,12 @@
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
+    "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
     "https://www.soccerway.com/news/erling-haaland-praises-new-manchester-city-signings-in-win-over-coventry/tr0PPKGt/",
     "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-    "https://www.soccerway.com/news/haaland-the-hero-as-manchester-city-ride-luck-to-win-against-valiant-coventry/YuJWrrYO/",
-    "https://www.101greatgoals.com/news/manchester-city-1-0-coventry-haaland-proves-the-difference-again/",
-    "https://www.sportsmole.co.uk/football/man-city/news/haaland-heads-to-new-heights-as-man-city-marksman-breaks-aguero-scoring-record_604544.html"
+    "https://www.soccerway.com/news/haaland-the-hero-as-manchester-city-ride-luck-to-win-against-valiant-coventry/YuJWrrYO/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -483,9 +490,18 @@
     "OneFPL",
     "Opta Analyst",
     "Soccerway",
+    "Sports Illustrated FPL",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "AtlÃ©tico’s JuliÃ¡n Alvarez remains a target, but plans are already being put in place to try to sign Erling Haaland from Man City. (Source: El Nacional As far as the January window is concerned, Barcelona have around $70 million (â¬60 million) available to spend under their Financial Fair Play allocation.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
+     "published": "2026-09-06T23:05:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Haaland ’s single goal proved to be the difference between Manchester City and newly promoted Coventry as Enzo Maresca's men made it three wins from their opening three games.",
      "source": "Soccerway",

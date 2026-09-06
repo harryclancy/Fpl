@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-06T17:26:18+00:00",
- "seconds": 128.1,
+ "ran_at": "2026-09-06T23:27:11+00:00",
+ "seconds": 150.3,
  "sources_attempted": 78,
  "sources_readable": 61,
- "candidates_discovered": 735,
- "substantive_items": 309,
+ "candidates_discovered": 700,
+ "substantive_items": 287,
  "duplicates_removed": 22,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 6293,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 6460,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 309 articles"
+    "61/78 sources returned 287 articles"
    ]
   },
   "blackout": {
@@ -42,13 +42,13 @@
   "FPL Central: nothing published in the last 10 days",
   "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
-  "DraftKings Network Soccer: HTTP 304 for https://dknetwork.draftkings.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -61,7 +61,7 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-06T08:00:00-04:00",
+   "latest_evidence": "2026-09-06T17:13:15+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -75,7 +75,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -87,55 +86,55 @@
    "researched": true,
    "items": [
     {
+     "title": "Arsenal vs Chelsea: Why VAR disallowed Riccardo Calafiori goal",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/why-var-disallowed-calafiori-goal-in-arsenal-vs-chelsea_604603.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T17:13:15+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Riccardo Calafiori scores in the first half to equalise for Arsenal but the goal has been ruled out by VAR."
+    },
+    {
+     "title": "Arsenal v Chelsea team news: Konsa + Tzolis start, no Mosquera",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/06/arsenal-v-chelsea-team-news-konsa-tzolis-start-no-mosquera",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-06T15:10:00+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "The line-ups from Gameweek 3’s final match The post Arsenal v Chelsea team news: Konsa + Tzolis start, no Mosquera appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal vs Chelsea: Line-ups confirmed for London derby in Premier League",
+     "url": "https://www.101greatgoals.com/football/premier-league/arsenal-vs-chelsea-line-ups-confirmed/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-06T14:26:55+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the team news ahead of Arsenal vs Chelsea in the Premier League."
+    },
+    {
+     "title": "Arsenal vs. Chelsea lineups confirmed: Ezri Konsa starts, Bruno Guimaraes decision, Levi Colwill dropped",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/konsa-starts-as-colwill-dropped-arsenal-chelsea-team-news-confirmed_604597.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T15:18:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal and Chelsea confirm their starting lineups for Sunday's Premier League London derby at the Emirates Stadium."
+    },
+    {
+     "title": "Albion 0 Arsenal 1: Narrow opening day defeat for Ruiz's team",
+     "url": "https://www.brightonandhovealbion.com/media-article/wft-match-report-bha-arsenal-wsl-september-2026",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-09-06T13:00:00+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Early goal settles contest at Broadfield Stadium."
+    },
+    {
      "title": "Arsenal vs Chelsea predicted lineups, possible XIs, team news ahead of huge clash",
      "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
      "source": "NBC Sports Rotoworld PL",
      "published": "2026-09-06T08:00:00-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "WSL preview: Albion take on Arsenal",
-     "url": "https://www.brightonandhovealbion.com/media-article/wft-news-wsl-team-news",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-06T05:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Our new WSL campaign begins on Sunday against the Gunners."
-    },
-    {
-     "title": "How to watch Arsenal vs Chelsea live: Stream link, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-live-how-to-watch-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-05T09:22:00-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Aston Villa news: Unai Emery handed early Champions League suspension boost as ex-Arsenal midfielder banned",
-     "url": "https://www.sportsmole.co.uk/football/aston-villa/champions-league/news/aston-villa-handed-early-champions-league-suspension-boost_604537.html",
-     "source": "Sports Mole",
-     "published": "2026-09-05T12:28:55+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Aston Villa receive an early Champions League suspension boost ahead of their opening two fixtures of the 2026-27 competition."
-    },
-    {
-     "title": "Arsenal v Chelsea: Preview, expected line-ups, stats, TV channel, live online stream and prediction",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/arsenal-v-chelsea-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-05T08:19:49+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Preview as Arsenal host Chelsea in the Premier League"
-    },
-    {
-     "title": "Arsenal vs Chelsea Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/arsenal-vs-chelsea-prediction-predicted-lineups-team-news-131768",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-04T14:50:00+00:00",
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": ""
@@ -145,9 +144,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 14,
+   "evidence_count": 15,
    "source_count": 9,
-   "latest_evidence": "2026-09-04T10:58:20+00:00",
+   "latest_evidence": "2026-09-06T23:40:37+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -253,6 +252,15 @@
      "excerpt": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray."
     },
     {
+     "title": "Arsenal 2-1 Chelsea: Gabriel breaks Gunners record as Premier League win sets Mikel Arteta up for Man City title fight",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/title-race/news/gabriel-breaks-gunners-record-in-blues-win-as-arteta-faces-city-title-fight_604627.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T23:40:37+01:00",
+     "matched_on": "gabriel",
+     "kind": "general",
+     "excerpt": "Arsenal's Gabriel Magalhaes breaks a club record in his side's 2-1 win against Chelsea, with the game setting up Man City as the Gunners' biggest threat."
+    },
+    {
      "title": "Arsenal key star is ‘most overrated player’ in Premier League – ‘he doesn’t belong at the top’",
      "url": "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong",
      "source": "Football365",
@@ -269,15 +277,6 @@
      "matched_on": "gabriel",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Prediction, pick for Gabriel Lourenco vs. Charlie Cleveland at DWCS Season 10, Week 4",
-     "url": "https://dknetwork.draftkings.com/2026/09/01/prediction-pick-for-gabriel-lourenco-vs-charlie-cleveland-at-dwcs-season-10-week-4/",
-     "source": "DraftKings Network Soccer",
-     "published": "2026-09-01T16:30:00+00:00",
-     "matched_on": "gabriel",
-     "kind": "general",
-     "excerpt": "Ryan Wohl details his best bet for Gabriel Lourenco vs Charlie Cleveland at Dana White's Contender Series Season 10, Week 4. The post Prediction, pick for Gabriel Lourenco vs. Charlie Cleveland at DWCS Season 10, Week 4 appeared first on DraftKings Network ."
     }
    ]
   },
@@ -784,9 +783,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 26,
-   "source_count": 14,
-   "latest_evidence": "2026-09-06T10:43:34+02:00",
+   "evidence_count": 27,
+   "source_count": 15,
+   "latest_evidence": "2026-09-06T23:05:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -866,6 +865,15 @@
      "excerpt": ""
     },
     {
+     "title": "Transfer Rumors: Barcelona Ready Haaland Bid; Man Utd Suffer Huge Hall Blow",
+     "url": "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-06T23:05:00+00:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "David Alaba, Lamine Camara, Julián Alvarez, Endrick and Karim Benzema all feature in the gossip."
+    },
+    {
      "title": "Zopharâs Gameweek 2 Q&A: Hinshelwood or Ndiaye? Triple-up on Chelsea?",
      "url": "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
      "source": "Fantasy Football Hub",
@@ -873,6 +881,15 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
+    },
+    {
+     "title": "Who is the top scorer of 2026? Harry Kane running away with the title",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "source": "Football365",
+     "published": "2026-09-06T21:22:59+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Harry Kane was out of the blocks like a bullet in 2026, opening a big lead over 2025’s clear winner Kylian Mbappe and everyone else."
     },
     {
      "title": "'Reason why they were bought': Haaland praises new Manchester City signings",
@@ -900,24 +917,6 @@
      "matched_on": "haaland",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Manchester City 1-0 Coventry: Haaland proves the difference again",
-     "url": "https://www.101greatgoals.com/news/manchester-city-1-0-coventry-haaland-proves-the-difference-again/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-05T15:55:16+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Erling Haaland hit his 300th career goal as Manchester City made heavy work of beating newly-promoted Coventry in the Premier League. Haaland powered in a wonderful header to prove the difference maker as Coventry gave a spirited display as they wait for their first point back in the top flight. City needed Gianluigi Donnarumma to […]"
-    },
-    {
-     "title": "Erling Haaland breaks new Sergio Aguero Man City record with 300th career goal vs. Coventry",
-     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-heads-to-new-heights-as-man-city-marksman-breaks-aguero-scoring-record_604544.html",
-     "source": "Sports Mole",
-     "published": "2026-09-05T16:22:48+01:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Erling Haaland breaks a new Sergio Aguero Manchester City record with his opening goal in the Sky Blues' Premier League clash with Coventry City."
     }
    ]
   },
