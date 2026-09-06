@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-05T23:26:01+00:00",
- "seconds": 139.5,
+ "ran_at": "2026-09-06T05:27:23+00:00",
+ "seconds": 148.7,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 712,
- "substantive_items": 293,
- "duplicates_removed": 34,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 5909,
+ "sources_readable": 61,
+ "candidates_discovered": 606,
+ "substantive_items": 201,
+ "duplicates_removed": 5,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 6011,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 293 articles"
+    "61/78 sources returned 201 articles"
    ]
   },
   "blackout": {
@@ -39,6 +39,7 @@
  "failures": [
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -144,10 +145,10 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 13,
-   "source_count": 8,
+   "evidence_count": 14,
+   "source_count": 9,
    "latest_evidence": "2026-09-04T10:58:20+00:00",
-   "official_source_found": false,
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -783,7 +784,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 25,
+   "evidence_count": 26,
    "source_count": 15,
    "latest_evidence": "2026-09-05T21:50:00+00:00",
    "official_source_found": true,
@@ -1136,7 +1137,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-05T15:52:00+00:00",
+   "latest_evidence": "2026-09-05T18:06:39+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1148,6 +1149,7 @@
    "dimensions_covered": [
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1158,6 +1160,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "GLASNER'S SPURS REACTION",
+     "url": "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction/",
+     "source": "Nottingham Forest",
+     "published": "2026-09-05T18:06:39+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Oliver Glasner admitted he was a bit disappointed to only take a point from Nottingham Forest’s draw with Tottenham Hotspur. The Reds played out a goalless draw at the City Ground, although Forest saw a second-half Neco Williams goal ruled out by VAR. The point is Forest’s second of the season under Glasner, though the Austrian is happy with what he is seeing from his side. “We defended well, but "
+    },
+    {
+     "title": "Neco Williams and Oliver Glasner react to disallowed Nottingham Forest goal v Tottenham – ‘Headed it in’",
+     "url": "https://www.football365.com/news/neco-williams-oliver-glasner-nottingham-forest-tottenham-hotspur-var-controversry",
+     "source": "Football365",
+     "published": "2026-09-05T17:30:29+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Neco Williams and Oliver Glasner are fuming after Nottingham Forest saw a goal ruled out against Tottenham Hotspur."
+    },
     {
      "title": "FOREST PICK UP POINT IN SPURS STALEMATE",
      "url": "https://www.nottinghamforest.co.uk/news/2026/september/05/spurs-report/",
@@ -1193,24 +1213,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Crystal Palace Under-18s surrendered a two-goal lead as in-form Tottenham Hotspur came from behind to win 4-2 in the U18 Premier League South on Saturday morning at a sun-drenched Academy."
-    },
-    {
-     "title": "Tottenham injury news: Spurs playmaker suffers 'fresh' injury blow ahead of Nottingham Forest clash",
-     "url": "https://www.sportsmole.co.uk/football/spurs/news/tottenham-star-suffers-fresh-injury-blow-ahead-of-forest-clash_604524.html",
-     "source": "Sports Mole",
-     "published": "2026-09-05T08:24:53+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur attacker Dejan Kulusevki suffers a fresh injury blow, as confirmed by Roberto De Zerbi."
-    },
-    {
-     "title": "Nottingham Forest v Tottenham: Preview, expected line-ups, stats, TV",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/nottingham-forest-v-tottenham-preview-team-news-line-ups-stats-where-to-watch-tv-channel-live-online-stream-prediction/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-04T16:21:52+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Nottingham Forest face Tottenham in the Premier League on Saturday. Read our in-depth preview here."
     }
    ]
   },
