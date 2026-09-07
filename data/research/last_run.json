@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-07T17:28:47+00:00",
- "seconds": 161.4,
+ "ran_at": "2026-09-07T23:27:22+00:00",
+ "seconds": 149.1,
  "sources_attempted": 78,
  "sources_readable": 62,
- "candidates_discovered": 760,
- "substantive_items": 321,
- "duplicates_removed": 21,
- "deeply_analysed": 70,
- "deep_read_failed": 20,
- "corpus_size": 6917,
+ "candidates_discovered": 697,
+ "substantive_items": 245,
+ "duplicates_removed": 12,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 7068,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 321 articles"
+    "62/78 sources returned 245 articles"
    ]
   },
   "blackout": {
@@ -40,27 +40,27 @@
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 2,
-   "latest_evidence": "2026-09-07T10:03:44+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-07T10:09:00-04:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -75,6 +75,7 @@
     "injury",
     "match report",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -83,6 +84,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Xabi Alonso reaction — Chelsea manager speaks on midfield, Caicedo injury after tight derby loss at Arsenal",
+     "url": "https://www.nbcsports.com/soccer/news/xabi-alonso-reaction-chelsea-manager-speaks-after-tight-derby-at-arsenal",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-07T10:09:00-04:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Mikel Arteta reaction — Arsenal boss praises mentality after win vs Chelsea, gives Mosquera injury update",
+     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-boss-speaks-after-tense-derby-versus-chelsea",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-07T10:07:00-04:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Arsenal lineup vs. Napoli: Predicted XI as Mikel Arteta makes two changes for Champions League",
      "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/predicted-lineups/zubi-returns-guimaraes-decision-predicted-arsenal-xi-vs-napoli_604643.html",
@@ -109,24 +128,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "If the main reason is that Odegaard is free of the injuries that saw him miss 30 games last season for Arsenal and Norway, there can be no doubt that the No. 8 has a more determined mindset now. He seizes games more now. At 27, Odegaard has come of age as a heavyweight footballer. He arrived at the top of the table with Arsenal in May and now at the top table with the world’s elite players. For lo"
-    },
-    {
-     "title": "Arsenal injury news: Mikel Arteta provides update on Gunners defender after Chelsea win",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/arteta-provides-injury-update-on-arsenal-defender-after-win-vs-chelsea_604609.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T20:13:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Mikel Arteta provides update on Arsenal defender Cristhian Mosquera after 2-1 victory over Chelsea in the Premier League."
-    },
-    {
-     "title": "Arsenal injury, suspension list and return dates vs. Napoli: William Saliba, Jurrien Timber, Cristhian Mosquera latest",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/mosquera-timber-latest-arsenal-injury-suspension-list-vs-napoli_604606.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T20:05:48+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Wednesday's Champions League clash with Napoli."
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
@@ -939,9 +940,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 21,
+   "evidence_count": 22,
    "source_count": 8,
-   "latest_evidence": "2026-09-07T10:03:44+00:00",
+   "latest_evidence": "2026-09-07T18:14:23+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -966,6 +967,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Team news for Club Brugge clash",
+     "url": "https://avfc.co.uk/news/2026/september/07/prematch-club-brugge-team-news/",
+     "source": "Aston Villa",
+     "published": "2026-09-07T18:14:23+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Fixtures Club Brugge Vs. Aston Villa - Tue, Sep 08 2026, 18:45 Aston Villa are in Belgium ahead of their UEFA Champions League opener against Club Brugge. And after landing in Bruges, Unai Emery headed for his press conference at Jan Breydelstadion on Monday evening. The Villa manager offered an update on the state of his squad ahead of the game, with João Gomes available for selection again. Leon"
+    },
     {
      "title": "Injury-hit Aston Villa receive triple boost ahead of Hull City clash",
      "url": "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
@@ -1064,15 +1074,6 @@
      "matched_on": "joao",
      "kind": "transfer",
      "excerpt": "The transfer window has now drawn to a conclusion, with Aston Villa welcoming no less than 10 new signings to the club. Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton W"
-    },
-    {
-     "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
-     "url": "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-07T10:03:44+00:00",
-     "matched_on": "pedro",
-     "kind": "general",
-     "excerpt": "Arsenal conceded a goal on Sunday. Yes, you read that correctly. After keeping out Coventry City and Aston Villa , the Premier League champions were breached by Chelsea in the second minute of their London derby. The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya. Arsenal's stifling defensive excellence is the stuff of champions Mikel Ar"
     }
    ]
   },
