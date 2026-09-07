@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-06T23:27:11+00:00",
- "seconds": 150.3,
+ "ran_at": "2026-09-07T05:29:23+00:00",
+ "seconds": 120.5,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 700,
- "substantive_items": 287,
- "duplicates_removed": 22,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 6460,
+ "sources_readable": 62,
+ "candidates_discovered": 625,
+ "substantive_items": 219,
+ "duplicates_removed": 7,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 6573,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 287 articles"
+    "62/78 sources returned 219 articles"
    ]
   },
   "blackout": {
@@ -40,7 +40,6 @@
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -60,10 +59,10 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-06T17:13:15+01:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
+   "source_count": 1,
+   "latest_evidence": "2026-09-06T20:13:00+01:00",
+   "official_source_found": false,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -86,6 +85,42 @@
    "researched": true,
    "items": [
     {
+     "title": "Arsenal injury news: Mikel Arteta provides update on Gunners defender after Chelsea win",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/arteta-provides-injury-update-on-arsenal-defender-after-win-vs-chelsea_604609.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T20:13:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Mikel Arteta provides update on Arsenal defender Cristhian Mosquera after 2-1 victory over Chelsea in the Premier League."
+    },
+    {
+     "title": "Arsenal injury, suspension list and return dates vs. Napoli: William Saliba, Jurrien Timber, Cristhian Mosquera latest",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/mosquera-timber-latest-arsenal-injury-suspension-list-vs-napoli_604606.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T20:05:48+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Wednesday's Champions League clash with Napoli."
+    },
+    {
+     "title": "Chelsea injury news: Xabi Alonso provides Moises Caicedo update after loss vs Arsenal",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/alonso-provides-caicedo-injury-update-after-chelsea-loss-vs-arsenal_604611.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T19:45:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Xabi Alonso confirms that Chelsea midfielder Moises Caicedo will not be hurried into action as he recovers from injury."
+    },
+    {
+     "title": "Arsenal 2-1 Chelsea: Highlights, man of the match, stats from Martin Odegaard masterclass",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/result/martins-masterclass-inspires-arsenal-to-chaotic-chelsea-comeback_604598.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T18:29:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal pass the first major test of their Premier League title credentials as the holders came from behind to beat Chelsea 2-1 at the Emirates Stadium."
+    },
+    {
      "title": "Arsenal vs Chelsea: Why VAR disallowed Riccardo Calafiori goal",
      "url": "https://www.sportsmole.co.uk/football/arsenal/news/why-var-disallowed-calafiori-goal-in-arsenal-vs-chelsea_604603.html",
      "source": "Sports Mole",
@@ -95,24 +130,6 @@
      "excerpt": "Riccardo Calafiori scores in the first half to equalise for Arsenal but the goal has been ruled out by VAR."
     },
     {
-     "title": "Arsenal v Chelsea team news: Konsa + Tzolis start, no Mosquera",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/06/arsenal-v-chelsea-team-news-konsa-tzolis-start-no-mosquera",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-06T15:10:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "The line-ups from Gameweek 3’s final match The post Arsenal v Chelsea team news: Konsa + Tzolis start, no Mosquera appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal vs Chelsea: Line-ups confirmed for London derby in Premier League",
-     "url": "https://www.101greatgoals.com/football/premier-league/arsenal-vs-chelsea-line-ups-confirmed/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-06T14:26:55+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Catch up with all the team news ahead of Arsenal vs Chelsea in the Premier League."
-    },
-    {
      "title": "Arsenal vs. Chelsea lineups confirmed: Ezri Konsa starts, Bruno Guimaraes decision, Levi Colwill dropped",
      "url": "https://www.sportsmole.co.uk/football/arsenal/news/konsa-starts-as-colwill-dropped-arsenal-chelsea-team-news-confirmed_604597.html",
      "source": "Sports Mole",
@@ -120,24 +137,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Arsenal and Chelsea confirm their starting lineups for Sunday's Premier League London derby at the Emirates Stadium."
-    },
-    {
-     "title": "Albion 0 Arsenal 1: Narrow opening day defeat for Ruiz's team",
-     "url": "https://www.brightonandhovealbion.com/media-article/wft-match-report-bha-arsenal-wsl-september-2026",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-06T13:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Early goal settles contest at Broadfield Stadium."
-    },
-    {
-     "title": "Arsenal vs Chelsea predicted lineups, possible XIs, team news ahead of huge clash",
-     "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-06T08:00:00-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
@@ -438,8 +437,8 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 6,
-   "source_count": 6,
+   "evidence_count": 7,
+   "source_count": 7,
    "latest_evidence": "2026-09-04T17:45:04+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -518,6 +517,15 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "FPL Gameweek 1 Review and Takeaways – Don’t Overreact The FPL General picked the wrong season to go without the two-mium. If he had started without Haaland and Bruno Fernandes this season he would be laughing. And that kind of summarises gameweek 1. Outside of the Arsenal picks, and Szoboszlai nobody owned by more than […] The post FPL Gameweek 1 Review and Takeaways – Don’t Overreact appeared fir"
+    },
+    {
+     "title": "Wirtz vs szoboszlai fpl 2026 27",
+     "url": "https://onefpl.com/blog/wirtz-vs-szoboszlai-fpl-2026-27",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -923,7 +931,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 19,
+   "evidence_count": 20,
    "source_count": 8,
    "latest_evidence": "2026-09-05T11:29:45+00:00",
    "official_source_found": true,
@@ -936,6 +944,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1367,28 +1376,40 @@
    "club": "CRY",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-05T16:19:32+00:00",
+   "latest_evidence": "2026-09-06T18:31:09+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
-   "transfer_status_assessed": false,
+   "transfer_status_assessed": true,
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
-    "team news"
+    "team news",
+    "transfer"
    ],
    "strength": "good",
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Crystal Palace vs Middlesbrough - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/league-cup/preview/crystal-palace-vs-middlesbrough-prediction-team-news-lineups_604587.html",
+     "source": "Sports Mole",
+     "published": "2026-09-06T18:31:09+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Tuesday's EFL Cup clash between Crystal Palace and Middlesbrough, including predictions, team news and possible lineups."
+    },
     {
      "title": "Post-Crystal Palace Press Conference",
      "url": "https://www.fulhamfc.com/news/2026/september/05/post-crystal-palace-press-conference/",
@@ -1433,15 +1454,6 @@
      "matched_on": "CRY team news",
      "kind": "club team news",
      "excerpt": "Sports Mole looks at how Fulham could line up in Saturday's Premier League clash with Crystal Palace."
-    },
-    {
-     "title": "Crystal Palace lineup vs. Fulham: Predicted XI for Premier League clash with new signings available",
-     "url": "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T16:28:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole looks at how Crystal Palace could line up in Saturday's Premier League clash with Fulham."
     }
    ]
   }

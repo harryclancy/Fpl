@@ -1,37 +1,52 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-06T23:27:11+00:00",
+ "generated": "2026-09-07T05:29:23+00:00",
  "gameweek": 4,
- "corpus_size": 6460,
+ "corpus_size": 6573,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "6 article(s) reference Raya, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
+   "status": "Latest on Raya — Sports Mole, 06 Sep: “One spectacular David Raya save later - the Spaniard tipped Estevao Willian's late curler over the bar - Arsenal maintained their 100% start to the Premier League campaign, while inflicting the first setback of the Alonso Chelsea era.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 1 source(s), the most recent dated 06 Sep.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Sports Mole, 06 Sep: “One spectacular David Raya save later - the Spaniard tipped Estevao Willian's late curler over the bar - Arsenal maintained their 100% start to the Premier League campaign, while inflicting the first setback of the Alonso Chelsea era.” Sports Mole, 06 Sep: “Arsenal do not do themselves justice when defending a free kick, and the ball drops kindly for Chelsea's £117m star, whose volley is not the most venomous but has enough to beat David Raya and trickle into the bottom corner!”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/arsenal/news/arteta-provides-injury-update-on-arsenal-defender-after-win-vs-chelsea_604609.html",
+    "https://www.sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/mosquera-timber-latest-arsenal-injury-suspension-list-vs-napoli_604606.html",
+    "https://www.sportsmole.co.uk/football/chelsea/news/alonso-provides-caicedo-injury-update-after-chelsea-loss-vs-arsenal_604611.html",
+    "https://www.sportsmole.co.uk/football/arsenal/result/martins-masterclass-inspires-arsenal-to-chaotic-chelsea-comeback_604598.html",
     "https://www.sportsmole.co.uk/football/arsenal/news/why-var-disallowed-calafiori-goal-in-arsenal-vs-chelsea_604603.html",
-    "https://www.fantasyfootballscout.co.uk/2026/09/06/arsenal-v-chelsea-team-news-konsa-tzolis-start-no-mosquera",
-    "https://www.101greatgoals.com/football/premier-league/arsenal-vs-chelsea-line-ups-confirmed/",
-    "https://www.sportsmole.co.uk/football/arsenal/news/konsa-starts-as-colwill-dropped-arsenal-chelsea-team-news-confirmed_604597.html",
-    "https://www.brightonandhovealbion.com/media-article/wft-match-report-bha-arsenal-wsl-september-2026",
-    "https://www.nbcsports.com/soccer/news/arsenal-vs-chelsea-predicted-lineups-possible-xis-team-news-ahead-of-huge-clash"
+    "https://www.sportsmole.co.uk/football/arsenal/news/konsa-starts-as-colwill-dropped-arsenal-chelsea-team-news-confirmed_604597.html"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
-    "Brighton & Hove Albion",
-    "Fantasy Football Scout",
-    "NBC Sports Rotoworld PL",
     "Sports Mole"
    ],
-   "quotes": []
+   "quotes": [
+    {
+     "text": "One spectacular David Raya save later - the Spaniard tipped Estevao Willian's late curler over the bar - Arsenal maintained their 100% start to the Premier League campaign, while inflicting the first setback of the Alonso Chelsea era.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/result/martins-masterclass-inspires-arsenal-to-chaotic-chelsea-comeback_604598.html",
+     "published": "2026-09-06T18:29:00+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Arsenal do not do themselves justice when defending a free kick, and the ball drops kindly for Chelsea's £117m star, whose volley is not the most venomous but has enough to beat David Raya and trickle into the bottom corner!",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/result/martins-masterclass-inspires-arsenal-to-chaotic-chelsea-comeback_604598.html",
+     "published": "2026-09-06T18:29:00+01:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    }
+   ]
   },
   "Gabriel": {
    "player": "Gabriel",
@@ -111,7 +126,7 @@
    "player": "Egan",
    "club": "HUL",
    "status": "5 article(s) reference Egan, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Egan is in the starting eleven this week at £4.0m as a DEF. The selection rests on 5 retrieved item(s) from 3 source(s).",
+   "why_here": "Egan is in the starting eleven this week at £4.1m as a DEF. The selection rests on 5 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -173,21 +188,22 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — Fantasy Football Scout, 03 Sep: “Probably Conor, and especially Hugo, will go later, yes.” – Andoni Iraola With the ongoing injuries at right-back, Iraola was asked about the conversations he’s had with Dominik Szoboszlai about moving him into the back four, as happened in Gameweek 2, and whether he sees the Hungarian as an ongoing option at full-back.”",
-   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 6 retrieved item(s) from 6 source(s), the most recent dated 03 Sep.",
-   "case_for": "",
-   "case_against": "",
+   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 7 retrieved item(s) from 7 source(s), the most recent dated 03 Sep.",
+   "case_for": "What supports keeping him: OneFPL: “Wirtz vs Szoboszlai After GW3: FPL Verdict | OneFPL Loading OneFPL page In this article sections The short answer Neither Wirtz nor Szoboszlai is an automatic buy for GW4.”",
+   "case_against": "What argues against him: OneFPL: “What changed Managers are selling both Wirtz and Szoboszlai in the latest transfer snapshot.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Scout, 03 Sep: “That’s why I value Dom Szoboszlai, who can play right-back, [and] Ronald Araújo, who can also play right-back.” – Andoni Iraola on Dominik Szoboszlai and the versatility of his players Cody Gakpo is staying with the Reds after touted moves to Tottenham Hotspur and Manchester City failed to materialise, and Iraola is happy to have him still aboard.” Football365, 03 Sep: “Liverpool: Carragher tells Iraola to have brutal ‘conversation’ with £60m Liverpool midfielder and change his mind Liverpool manager Andoni Iraola and Jamie Carragher Jamie Carragher has said that Liverpool manager Andoni Iraola needs to change Dominik Szoboszlai’s role in the team.” Football365, 03 Sep: “Szoboszlai is a midfielder by trade, but the Hungary international was deployed at right-back on many occasions last season.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 7,
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/barcola-szoboszlai-liverpool-injury-latest-for-fpl-gameweek-3",
     "https://theanalyst.com/articles/newcastle-vs-liverpool-stats-premier-league-08-2026",
     "https://www.fourfourtwo.com/competition/watch-liverpool-vs-nottingham-forest-premier-league-2026-27-free",
     "https://www.football365.com/news/liverpool-dominik-szoboszlai-jamie-carragher-verdict",
-    "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27"
+    "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27",
+    "https://onefpl.com/blog/wirtz-vs-szoboszlai-fpl-2026-27"
    ],
    "sources_used": [
     "Fantasy Football Scout",
@@ -195,6 +211,7 @@
     "FourFourTwo FPL",
     "Full90 FPL",
     "Ipswich Town",
+    "OneFPL",
     "Opta Analyst"
    ],
    "quotes": [
@@ -239,6 +256,26 @@
      "published": "2026-08-23T17:42:40+00:00",
      "tone": "neutral",
      "topics": []
+    },
+    {
+     "text": "Wirtz vs Szoboszlai After GW3: FPL Verdict | OneFPL Loading OneFPL page In this article sections The short answer Neither Wirtz nor Szoboszlai is an automatic buy for GW4.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/wirtz-vs-szoboszlai-fpl-2026-27",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "What changed Managers are selling both Wirtz and Szoboszlai in the latest transfer snapshot.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/wirtz-vs-szoboszlai-fpl-2026-27",
+     "published": "",
+     "tone": "negative",
+     "topics": [
+      "transfer"
+     ]
     }
    ]
   },
@@ -750,6 +787,14 @@
      "topics": [
       "match report"
      ]
+    },
+    {
+     "text": "Premium-team structure Budget enablers matter most if they unlock a meaningful upgrade such as Palmer + Haaland, or Palmer + Isak + a stronger midfield.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/best-fpl-budget-enablers-2026-27-haaland-draft",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
@@ -757,14 +802,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 19 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 20 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
    "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.”",
-   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "outlook": "On the coming weeks — OneFPL: “João Pedro FPL After GW3: Essential or Trap? | OneFPL Loading OneFPL page In this article sections The short answer João Pedro remains a strong HOLD and a good BUY for the right structure, but 'essential' is still too strong.”",
    "confidence": "high",
-   "evidence_count": 19,
+   "evidence_count": 20,
    "evidence_used": [
     "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
     "https://avfc.co.uk/news/2026/september/04/prematch-team-news-for-hull-clash/",
@@ -883,6 +928,24 @@
      "published": "",
      "tone": "positive",
      "topics": []
+    },
+    {
+     "text": "João Pedro FPL After GW3: Essential or Trap? | OneFPL Loading OneFPL page In this article sections The short answer João Pedro remains a strong HOLD and a good BUY for the right structure, but 'essential' is still too strong.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/joao-pedro-essential-ownership-trap-fpl",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "That creates a useful squad-structure decision: João Pedro if you need a forward.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/joao-pedro-essential-ownership-trap-fpl",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
@@ -890,7 +953,7 @@
    "player": "Thiago",
    "club": "BRE",
    "status": "Latest on Thiago — Sunderland, 03 Sep: “The Bees also reached the quarter-finals of the Carabao Cup, while Igor Thiago finished as their leading scorer with 22 league goals.”",
-   "why_here": "Thiago is in the starting eleven this week at £8.0m as a FWD. The selection rests on 5 retrieved item(s) from 4 source(s), the most recent dated 03 Sep.",
+   "why_here": "Thiago is in the starting eleven this week at £7.9m as a FWD. The selection rests on 5 retrieved item(s) from 4 source(s), the most recent dated 03 Sep.",
    "case_for": "What supports keeping him: Sunderland, 03 Sep: “The Bees also reached the quarter-finals of the Carabao Cup, while Igor Thiago finished as their leading scorer with 22 league goals.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sunderland, 03 Sep: “The Bees also reached the quarter-finals of the Carabao Cup, while Igor Thiago finished as their leading scorer with 22 league goals.”",
@@ -1075,29 +1138,38 @@
   "Hughes": {
    "player": "Hughes",
    "club": "CRY",
-   "status": "6 article(s) reference Hughes, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Hughes is on the bench this week at £4.5m as a MID. The selection rests on 6 retrieved item(s) from 3 source(s).",
+   "status": "Latest on Hughes — Sports Mole, 06 Sep: “Will Hughes is an option to replace Wharton, and he may play next to Cheick Doucoure, while Takehiro Tomiyasu could be thrown into the backline.”",
+   "why_here": "Hughes is on the bench this week at £4.5m as a MID. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 06 Sep.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Sports Mole, 06 Sep: “Will Hughes is an option to replace Wharton, and he may play next to Cheick Doucoure, while Takehiro Tomiyasu could be thrown into the backline.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/crystal-palace/league-cup/preview/crystal-palace-vs-middlesbrough-prediction-team-news-lineups_604587.html",
     "https://www.fulhamfc.com/news/2026/september/05/post-crystal-palace-press-conference/",
     "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
     "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
     "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/",
-    "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html",
-    "https://www.sportsmole.co.uk/football/crystal-palace/predicted-lineups/any-debutants-how-palace-could-line-up-against-fulham_604402.html"
+    "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html"
    ],
    "sources_used": [
     "Fantasy Football Scout",
     "Fulham",
     "Sports Mole"
    ],
-   "quotes": []
+   "quotes": [
+    {
+     "text": "Will Hughes is an option to replace Wharton, and he may play next to Cheick Doucoure, while Takehiro Tomiyasu could be thrown into the backline.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/league-cup/preview/crystal-palace-vs-middlesbrough-prediction-team-news-lineups_604587.html",
+     "published": "2026-09-06T18:31:09+01:00",
+     "tone": "neutral",
+     "topics": []
+    }
+   ]
   }
  }
 }
