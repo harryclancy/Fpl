@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-07T05:29:23+00:00",
- "seconds": 120.5,
+ "ran_at": "2026-09-07T11:31:10+00:00",
+ "seconds": 161.3,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 625,
- "substantive_items": 219,
- "duplicates_removed": 7,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 6573,
+ "sources_readable": 61,
+ "candidates_discovered": 691,
+ "substantive_items": 266,
+ "duplicates_removed": 21,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 6719,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 219 articles"
+    "61/78 sources returned 266 articles"
    ]
   },
   "blackout": {
@@ -40,6 +40,7 @@
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -47,22 +48,22 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 1,
-   "latest_evidence": "2026-09-06T20:13:00+01:00",
+   "source_count": 2,
+   "latest_evidence": "2026-09-07T10:03:44+00:00",
    "official_source_found": false,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -130,22 +131,22 @@
      "excerpt": "Riccardo Calafiori scores in the first half to equalise for Arsenal but the goal has been ruled out by VAR."
     },
     {
-     "title": "Arsenal vs. Chelsea lineups confirmed: Ezri Konsa starts, Bruno Guimaraes decision, Levi Colwill dropped",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/konsa-starts-as-colwill-dropped-arsenal-chelsea-team-news-confirmed_604597.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T15:18:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal and Chelsea confirm their starting lineups for Sunday's Premier League London derby at the Emirates Stadium."
+     "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
+     "url": "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-07T10:03:44+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Arsenal conceded a goal on Sunday. Yes, you read that correctly. After keeping out Coventry City and Aston Villa , the Premier League champions were breached by Chelsea in the second minute of their London derby. The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya. Arsenal's stifling defensive excellence is the stuff of champions Mikel Ar"
     }
    ]
   },
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "source_count": 9,
-   "latest_evidence": "2026-09-06T23:40:37+01:00",
+   "latest_evidence": "2026-09-07T08:11:36+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -251,6 +252,15 @@
      "excerpt": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray."
     },
     {
+     "title": "Rooney insists Arsenal star got ‘extremely lucky’ vs Chelsea as Carragher reveals ‘huge worry’",
+     "url": "https://www.football365.com/news/rooney-insists-arsenal-star-extremely-lucky-chelsea-carragher-reveals-huge-worry",
+     "source": "Football365",
+     "published": "2026-09-07T08:11:36+00:00",
+     "matched_on": "gabriel",
+     "kind": "general",
+     "excerpt": "Wayne Rooney thinks Arsenal star Gabriel Magalhaes was “extremely lucky” not to get sent off in Sunday’s win against Chelsea."
+    },
+    {
      "title": "Arsenal 2-1 Chelsea: Gabriel breaks Gunners record as Premier League win sets Mikel Arteta up for Man City title fight",
      "url": "https://www.sportsmole.co.uk/football/arsenal/title-race/news/gabriel-breaks-gunners-record-in-blues-win-as-arteta-faces-city-title-fight_604627.html",
      "source": "Sports Mole",
@@ -267,15 +277,6 @@
      "matched_on": "gabriel",
      "kind": "general",
      "excerpt": "Arsenal star Gabriel Magalhaes has been told that he is currently the “most overrated player” in the Premier League."
-    },
-    {
-     "title": "Martinelli moves to Saudi giants Al Hilal after seven years with Arsenal",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-gabriel-martinelli-joins-al-hilal-from-arsenal/Wll3VINj/",
-     "source": "Soccerway",
-     "published": "2026-09-03T19:56:54+02:00",
-     "matched_on": "gabriel",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -791,9 +792,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 27,
+   "evidence_count": 28,
    "source_count": 15,
-   "latest_evidence": "2026-09-06T23:05:00+00:00",
+   "latest_evidence": "2026-09-07T06:44:36+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -891,6 +892,15 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "Arsenal do not have a single ‘wow’ world-class player; only Haaland in PL",
+     "url": "https://www.football365.com/news/arsenal-wow-world-class-star-mailbox",
+     "source": "Football365",
+     "published": "2026-09-07T06:44:36+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "How did Premier League clubs spend so much money without buying a single world-class player? Arsenal will win title without one again."
+    },
+    {
      "title": "Who is the top scorer of 2026? Harry Kane running away with the title",
      "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
      "source": "Football365",
@@ -916,24 +926,15 @@
      "matched_on": "haaland",
      "kind": "general",
      "excerpt": "Erling Haaland has been a Premier League player for barely three seasons but has already outscored a legion of legends and is firing Norway to the World Cup."
-    },
-    {
-     "title": "Haaland the hero as Manchester City ride luck to win against valiant Coventry",
-     "url": "https://www.soccerway.com/news/haaland-the-hero-as-manchester-city-ride-luck-to-win-against-valiant-coventry/YuJWrrYO/",
-     "source": "Soccerway",
-     "published": "2026-09-05T18:01:38+02:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 20,
+   "evidence_count": 21,
    "source_count": 8,
-   "latest_evidence": "2026-09-05T11:29:45+00:00",
+   "latest_evidence": "2026-09-07T10:03:44+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1058,13 +1059,13 @@
      "excerpt": "The transfer window has now drawn to a conclusion, with Aston Villa welcoming no less than 10 new signings to the club. Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton W"
     },
     {
-     "title": "Arsenal plot game-changing Chelsea raid worth £100m – report",
-     "url": "https://www.football365.com/news/arsenal-news-pedro-neto-interest-chelsea-january-raid-100-million",
-     "source": "Football365",
-     "published": "2026-09-05T11:29:45+00:00",
+     "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
+     "url": "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-07T10:03:44+00:00",
      "matched_on": "pedro",
      "kind": "general",
-     "excerpt": "The Gunners hold interest in a Chelsea forward heading towards the January window, as per a report, and he has been described as a ‘game-changer’"
+     "excerpt": "Arsenal conceded a goal on Sunday. Yes, you read that correctly. After keeping out Coventry City and Aston Villa , the Premier League champions were breached by Chelsea in the second minute of their London derby. The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya. Arsenal's stifling defensive excellence is the stuff of champions Mikel Ar"
     }
    ]
   },
