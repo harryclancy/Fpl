@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-07T11:31:10+00:00",
- "seconds": 161.3,
+ "ran_at": "2026-09-07T17:28:47+00:00",
+ "seconds": 161.4,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 691,
- "substantive_items": 266,
+ "sources_readable": 62,
+ "candidates_discovered": 760,
+ "substantive_items": 321,
  "duplicates_removed": 21,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 6719,
+ "deeply_analysed": 70,
+ "deep_read_failed": 20,
+ "corpus_size": 6917,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 266 articles"
+    "62/78 sources returned 321 articles"
    ]
   },
   "blackout": {
@@ -40,12 +40,11 @@
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
+  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
-  "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
@@ -76,7 +75,6 @@
     "injury",
     "match report",
     "set pieces",
-    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -85,6 +83,33 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal lineup vs. Napoli: Predicted XI as Mikel Arteta makes two changes for Champions League",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/predicted-lineups/zubi-returns-guimaraes-decision-predicted-arsenal-xi-vs-napoli_604643.html",
+     "source": "Sports Mole",
+     "published": "2026-09-07T10:01:55+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Wednesday's Champions League clash with Napoli."
+    },
+    {
+     "title": "Napoli vs Arsenal - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/preview/napoli-vs-arsenal-prediction-team-news-lineups_604638.html",
+     "source": "Sports Mole",
+     "published": "2026-09-07T09:44:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Wednesday's Champions League clash between Napoli and Arsenal, including predictions, team news and possible lineups."
+    },
+    {
+     "title": "HENRY WINTER: Martin Odegaard is having his Dennis Bergkamp moment at Arsenal. He's tougher, more determined and a real winner",
+     "url": "https://www.fourfourtwo.com/person/player/henry-winter-martin-odegaard-is-having-his-dennis-bergkamp-moment-at-arsenal-hes-tougher-more-determined-and-a-real-winner",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-07T08:10:44+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "If the main reason is that Odegaard is free of the injuries that saw him miss 30 games last season for Arsenal and Norway, there can be no doubt that the No. 8 has a more determined mindset now. He seizes games more now. At 27, Odegaard has come of age as a heavyweight footballer. He arrived at the top of the table with Arsenal in May and now at the top table with the world’s elite players. For lo"
+    },
     {
      "title": "Arsenal injury news: Mikel Arteta provides update on Gunners defender after Chelsea win",
      "url": "https://www.sportsmole.co.uk/football/arsenal/news/arteta-provides-injury-update-on-arsenal-defender-after-win-vs-chelsea_604609.html",
@@ -102,33 +127,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Wednesday's Champions League clash with Napoli."
-    },
-    {
-     "title": "Chelsea injury news: Xabi Alonso provides Moises Caicedo update after loss vs Arsenal",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/alonso-provides-caicedo-injury-update-after-chelsea-loss-vs-arsenal_604611.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T19:45:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Xabi Alonso confirms that Chelsea midfielder Moises Caicedo will not be hurried into action as he recovers from injury."
-    },
-    {
-     "title": "Arsenal 2-1 Chelsea: Highlights, man of the match, stats from Martin Odegaard masterclass",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/result/martins-masterclass-inspires-arsenal-to-chaotic-chelsea-comeback_604598.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T18:29:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal pass the first major test of their Premier League title credentials as the holders came from behind to beat Chelsea 2-1 at the Emirates Stadium."
-    },
-    {
-     "title": "Arsenal vs Chelsea: Why VAR disallowed Riccardo Calafiori goal",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/why-var-disallowed-calafiori-goal-in-arsenal-vs-chelsea_604603.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T17:13:15+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Riccardo Calafiori scores in the first half to equalise for Arsenal but the goal has been ruled out by VAR."
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
@@ -357,7 +355,7 @@
    "club": "BRE",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-06T12:30:00+00:00",
+   "latest_evidence": "2026-09-07T09:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -379,6 +377,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Watch Under-21s host Brentford at the MKM Stadium",
+     "url": "https://www.wearehullcity.co.uk/news/2026/september/07/watch-under-21s-host-brentford-at-the-mkm-stadium/",
+     "source": "Hull City",
+     "published": "2026-09-07T09:00:00+00:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Hull City U21 Vs. Brentford U21 - Tue, Sep 08 2026, 19:00 Supporters can attend the Under-21s’ Premier League Cup fixture at home to Brentford at the MKM Stadium for free! Conor Sellars and David Meyler’s side welcome the Bees to the MKM Stadium on Tuesday 8 September for a 7pm kick-off, aiming to make it two wins from two in the Premier League Cup after defeating Derby County 4-1 in the "
+    },
     {
      "title": "Danso set for Sunderland debut at Brentford",
      "url": "https://www.safc.com/news/2026/september/05/danso-set-for-sunderland-debut-at-brentford/",
@@ -407,15 +414,6 @@
      "excerpt": "Sports Mole takes an in-depth look at how Brentford could line up for Saturday's Premier League match against Sunderland."
     },
     {
-     "title": "Brentford vs Sunderland - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-sunderland-prediction-team-news-lineups_604351.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T10:00:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Brentford and Sunderland, including predictions, team news and possible lineups."
-    },
-    {
      "title": "Umoren: Happy to get the goal",
      "url": "https://www.wearehullcity.co.uk/news/2026/september/06/umoren-happy-to-get-the-goal/",
      "source": "Hull City",
@@ -438,9 +436,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 7,
-   "latest_evidence": "2026-09-04T17:45:04+00:00",
+   "latest_evidence": "2026-09-07T13:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -461,10 +459,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Gakpo, Szoboszlai, Sangare, Konsa: Buy, keep or sell in Gameweek 4?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/07/gakpo-szoboszlai-sangare-konsa-buy-keep-or-sell-in-gameweek-4",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-07T13:30:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Gakpo, Szoboszlai, Sangare, Konsa: Buy, keep or sell in Gameweek 4? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "TEAM NEWS | LIVERPOOL (H)",
      "url": "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
@@ -1146,7 +1153,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-06T09:01:37+01:00",
+   "latest_evidence": "2026-09-07T11:17:34+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1154,12 +1161,14 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": false,
+   "fixtures_assessed": true,
    "dimensions_covered": [
+    "fpl advice",
     "injury",
     "press conference",
     "set pieces",
     "statistics",
+    "tactics",
     "team news",
     "transfer"
    ],
@@ -1167,6 +1176,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "The Sack Race: Arbeloa and De Zerbi tipped to leave Fulham and Tottenham",
+     "url": "https://www.101greatgoals.com/football/premier-league/the-sack-race-arbeloa-and-de-zerbi-tipped-to-leave-fulham-and-tottenham/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-07T11:17:34+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Fulham and Tottenham have had difficult starts to the new Premier League season, leading to speculation they could leave their posts"
+    },
     {
      "title": "Tottenham transfer news: £75m attacker signing 'not ruled out' after Roberto De Zerbi recommendation",
      "url": "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-could-complete-gbp75m-attacker-signing-after-de-zerbi-recommendation_604569.html",
@@ -1211,15 +1229,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Savio is back in the starting XI for Spurs"
-    },
-    {
-     "title": "TEAM NEWS | DELAP MAKES FULL DEBUT AGAINST SPURS",
-     "url": "https://www.nottinghamforest.co.uk/news/2026/september/05/team-news---delap-makes-full-debut-against-spurs/",
-     "source": "Nottingham Forest",
-     "published": "2026-09-05T12:45:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Forest team announced Delap makes full debut Sels to reach 100 Forest appearances Liam Delap will make his full Nottingham Forest debut against Tottenham Hotspur at the City Ground. The summer signing from Chelsea rose from the substitutes’ bench in last weekend’s 2-2 draw with Liverpool at Anfield, with Oliver Glasner opting to select the forward from the start against Spurs. Matz Sels will also "
     }
    ]
   },
