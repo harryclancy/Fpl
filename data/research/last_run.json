@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-08T05:29:45+00:00",
- "seconds": 153.2,
+ "ran_at": "2026-09-08T11:29:39+00:00",
+ "seconds": 120.6,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 630,
- "substantive_items": 193,
- "duplicates_removed": 7,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 7178,
+ "sources_readable": 64,
+ "candidates_discovered": 683,
+ "substantive_items": 210,
+ "duplicates_removed": 14,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 7309,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 193 articles"
+    "64/78 sources returned 210 articles"
    ]
   },
   "blackout": {
@@ -37,16 +37,15 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -58,8 +57,8 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-07T20:07:33+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-08T03:03:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -70,6 +69,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "set pieces",
@@ -82,6 +82,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Napoli vs Arsenal Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/napoli-vs-arsenal-prediction-predicted-lineups-team-news-132925",
+     "source": "RotoWire Soccer",
+     "published": "2026-09-08T03:03:00+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Arsenal star feels ‘disrespected’ by Arteta after being ‘deliberately benched’ to force failed transfer",
      "url": "https://www.football365.com/news/arsenal-star-disresepcted-arteta-deliberately-benched-failed-transfer",
@@ -117,15 +126,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Wednesday's Champions League clash with Napoli."
-    },
-    {
-     "title": "Napoli vs Arsenal - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/preview/napoli-vs-arsenal-prediction-team-news-lineups_604638.html",
-     "source": "Sports Mole",
-     "published": "2026-09-07T09:44:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Wednesday's Champions League clash between Napoli and Arsenal, including predictions, team news and possible lineups."
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
@@ -798,9 +798,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 28,
+   "evidence_count": 29,
    "source_count": 15,
-   "latest_evidence": "2026-09-07T06:44:36+00:00",
+   "latest_evidence": "2026-09-08T06:32:43+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -898,6 +898,15 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "What makes a good Premier League season? And will we get that in 26/27?",
+     "url": "https://www.football365.com/news/title-race-relegation-fight-spurs-haaland-10-things-good-premier-league-season",
+     "source": "Football365",
+     "published": "2026-09-08T06:32:43+00:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Is it too early to start thinking about whether this is going to be a good Premier League season? Yes. Are we doing it anyway? Also yes."
+    },
+    {
      "title": "Arsenal do not have a single ‘wow’ world-class player; only Haaland in PL",
      "url": "https://www.football365.com/news/arsenal-wow-world-class-star-mailbox",
      "source": "Football365",
@@ -923,15 +932,6 @@
      "matched_on": "haaland",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "The ridiculous stats of Erling Haaland as he reaches 300 career goals at 26",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "source": "Football365",
-     "published": "2026-09-05T17:30:20+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Erling Haaland has been a Premier League player for barely three seasons but has already outscored a legion of legends and is firing Norway to the World Cup."
     }
    ]
   },

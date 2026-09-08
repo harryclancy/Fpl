@@ -1,14 +1,14 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-08T05:29:45+00:00",
+ "generated": "2026-09-08T11:29:39+00:00",
  "gameweek": 4,
- "corpus_size": 7178,
+ "corpus_size": 7309,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 07 Sep.",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 07 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -17,17 +17,18 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.rotowire.com/soccer/article/napoli-vs-arsenal-prediction-predicted-lineups-team-news-132925",
     "https://www.football365.com/news/arsenal-star-disresepcted-arteta-deliberately-benched-failed-transfer",
     "https://www.nbcsports.com/soccer/news/xabi-alonso-reaction-chelsea-manager-speaks-after-tight-derby-at-arsenal",
     "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-boss-speaks-after-tense-derby-versus-chelsea",
     "https://www.sportsmole.co.uk/football/arsenal/champions-league/predicted-lineups/zubi-returns-guimaraes-decision-predicted-arsenal-xi-vs-napoli_604643.html",
-    "https://www.sportsmole.co.uk/football/arsenal/champions-league/preview/napoli-vs-arsenal-prediction-team-news-lineups_604638.html",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
     "Football365",
     "FourFourTwo FPL",
     "NBC Sports Rotoworld PL",
+    "RotoWire Soccer",
     "Sports Mole"
    ],
    "quotes": [
@@ -525,14 +526,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Football365, 07 Sep: “For all that money spent, possibly only Haaland from an EPL best XI would walk into that “triopoloy” of Clubs.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 28 retrieved item(s) from 15 source(s), the most recent dated 07 Sep.",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 29 retrieved item(s) from 15 source(s), the most recent dated 07 Sep.",
    "case_for": "What supports keeping him: Soccerway, 06 Sep: “Haaland ’s single goal proved to be the difference between Manchester City and newly promoted Coventry as Enzo Maresca's men made it three wins from their opening three games.” Soccerway, 06 Sep: “Both players made their debuts in the win over Coventry , and earned the praise from star player Haaland - who himself netted the 300th club goal of his career.” Fantasy Football Scout, 05 Sep: “Enzo, we know each other very well, I know how good he is and I know that he is going to help the team win games.” – Enzo Maresca on Enzo Fernandez Enzo and Antoine Semenyo (£8.5m) combined for Haaland’s goal, with the latter providing the assist.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.” Football365, 05 Sep: “Reading (136) are next in his sights as victim number nine. * Haaland scored more Premier League goals than two teams (Everton and Wolves) in his debut season. * By scoring nine goals in his first five Premier League games in 2022/23, Haaland finally knocked Micky Quinn’s name out of the record books.”",
    "developments": "Recent developments — Football365, 07 Sep: “And it’s only a matter of time before even Haaland follows in the path of Henry, Ronalo, Modric, etc.” Sports Illustrated FPL, 06 Sep: “AtlÃ©tico’s JuliÃ¡n Alvarez remains a target, but plans are already being put in place to try to sign Erling Haaland from Man City. (Source: El Nacional As far as the January window is concerned, Barcelona have around $70 million (â¬60 million) available to spend under their Financial Fair Play allocation.” Soccerway, 05 Sep: “Semenyo more than atoned for his earlier error on 26 minutes, when his dogged determination at the byline saw him get a cross off that he had no right to, and waiting in the wings was the effervescent Erling Haaland to head home a 20th goal in 21 PL games against newly-promoted opposition.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 03 Sep: “The Porto fixture on Tuesday isn’t ideal, but Haaland is in good physical condition.” Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).”",
    "confidence": "high",
-   "evidence_count": 28,
+   "evidence_count": 29,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
@@ -542,10 +543,10 @@
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
     "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.football365.com/news/title-race-relegation-fight-spurs-haaland-10-things-good-premier-league-season",
     "https://www.football365.com/news/arsenal-wow-world-class-star-mailbox",
     "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-    "https://www.soccerway.com/news/erling-haaland-praises-new-manchester-city-signings-in-win-over-coventry/tr0PPKGt/",
-    "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life"
+    "https://www.soccerway.com/news/erling-haaland-praises-new-manchester-city-signings-in-win-over-coventry/tr0PPKGt/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
