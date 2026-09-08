@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-08T17:29:31+00:00",
+ "generated": "2026-09-08T23:27:18+00:00",
  "gameweek": 4,
- "corpus_size": 7519,
+ "corpus_size": 7706,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -153,16 +153,17 @@
   "Egan": {
    "player": "Egan",
    "club": "HUL",
-   "status": "5 article(s) reference Egan, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Egan is in the starting eleven this week at £4.1m as a DEF. The selection rests on 5 retrieved item(s) from 3 source(s).",
+   "status": "6 article(s) reference Egan, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Egan is in the starting eleven this week at £4.1m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "low",
-   "evidence_count": 5,
+   "evidence_count": 6,
    "evidence_used": [
+    "https://www.wearehullcity.co.uk/news/2026/september/08/team-news-sunderland-a/",
     "https://www.wearehullcity.co.uk/news/2026/september/05/team-news-aston-villa-h/",
     "https://www.wearehullcity.co.uk/news/2026/august/29/team-news-coventry-city-a/",
     "https://www.fourfourtwo.com/competition/15-reasons-that-prove-the-premier-league-is-the-super-league-in-disguise",
@@ -535,15 +536,15 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — Football365, 07 Sep: “For all that money spent, possibly only Haaland from an EPL best XI would walk into that “triopoloy” of Clubs.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 29 retrieved item(s) from 15 source(s), the most recent dated 07 Sep.",
-   "case_for": "What supports keeping him: Soccerway, 06 Sep: “Haaland ’s single goal proved to be the difference between Manchester City and newly promoted Coventry as Enzo Maresca's men made it three wins from their opening three games.” Soccerway, 06 Sep: “Both players made their debuts in the win over Coventry , and earned the praise from star player Haaland - who himself netted the 300th club goal of his career.” Fantasy Football Scout, 05 Sep: “Enzo, we know each other very well, I know how good he is and I know that he is going to help the team win games.” – Enzo Maresca on Enzo Fernandez Enzo and Antoine Semenyo (£8.5m) combined for Haaland’s goal, with the latter providing the assist.”",
+   "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 36 retrieved item(s) from 15 source(s), the most recent dated 08 Sep.",
+   "case_for": "What supports keeping him: Soccerway, 08 Sep: “Haaland made it third time lucky less than two minutes into the second half, guiding Enzo Fernandez ’s cross in off the post to score his fourth goal in three games across all competitions, and move joint-third on City’s list of all-time top goalscorers (166 strikes).” Soccerway, 08 Sep: “City were wobbling, but they rode out the storm, and Haaland slotted home in stoppage time to become the club’s third-highest goalscorer of all time across all competitions (167 strikes).” Soccerway, 08 Sep: “Manchester City's Erling Haaland netted a brace to kick-start their campaign for a second Champions League crown, with the Citizens beating Porto 2-0 22:37 CET - Life for Inter at the Bernabeu!”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.” Football365, 05 Sep: “Reading (136) are next in his sights as victim number nine. * Haaland scored more Premier League goals than two teams (Everton and Wolves) in his debut season. * By scoring nine goals in his first five Premier League games in 2022/23, Haaland finally knocked Micky Quinn’s name out of the record books.”",
-   "developments": "Recent developments — Football365, 07 Sep: “And it’s only a matter of time before even Haaland follows in the path of Henry, Ronalo, Modric, etc.” Sports Illustrated FPL, 06 Sep: “AtlÃ©tico’s JuliÃ¡n Alvarez remains a target, but plans are already being put in place to try to sign Erling Haaland from Man City. (Source: El Nacional As far as the January window is concerned, Barcelona have around $70 million (â¬60 million) available to spend under their Financial Fair Play allocation.” Soccerway, 05 Sep: “Semenyo more than atoned for his earlier error on 26 minutes, when his dogged determination at the byline saw him get a cross off that he had no right to, and waiting in the wings was the effervescent Erling Haaland to head home a 20th goal in 21 PL games against newly-promoted opposition.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 03 Sep: “The Porto fixture on Tuesday isn’t ideal, but Haaland is in good physical condition.” Fantasy Football Scout, 01 Sep: “As Manchester City prepare to host Coventry City in Gameweek 3, many Fantasy Premier League (FPL) managers are set to deploy the Triple Captain chip on Erling Haaland (£15.5m).”",
+   "expected_minutes": "On minutes — Soccerway, 08 Sep: “A second on the night from Marc Bartra and a first Champions League goal in green and white for Troy Parrott has seen them overturn the deficit. 22:08 CET - No prizes for guessing who has given Manchester City a 1-0 lead over Porto... that's right, it's Erling Haaland .” Opta Analyst, 08 Sep: “Manchester City kicked off their Champions League campaign with a win as Erling Haaland scored twice in a 2-0 defeat of Porto at Estádio do Dragão on Tuesday.”",
+   "developments": "Recent developments — Sports Illustrated FPL, 08 Sep: “GyÃ¶keres is not seen as untouchable and was even touted to officials in Saudi Arabia. (Source: Ben Jacobs Erling Haaland intends to leave Manchester City at the end of the season and has already held meetings to plan his next move.” Sports Mole, 08 Sep: “Striker Erling Haaland was predictably the one to open the scoring, with the Norwegian outjumping Jakub Kiwior to convert Enzo Fernandez's cross low into the left corner.” Sports Mole, 08 Sep: “Their dominance was rewarded with a 90th-minute Haaland goal, with the striker coolly sliding the ball with his right foot into the right corner.”",
+   "outlook": "On the coming weeks — Sports Mole, 08 Sep: “Haaland entered the European fixture in fourth spot in Man City's all-time goalscorer list, one behind Tommy Johnson, who represented the club between 1920 and 1930.” 101 Great Goals — Fantasy, 08 Sep: “Haaland’s header early in the second half gave City a crucial lead early in the second half, before the prolific Norwegian tapped home a second to finally seal the game, but only after the visitors had to withstand a barrage of pressure in Portugal.”",
    "confidence": "high",
-   "evidence_count": 29,
+   "evidence_count": 36,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
@@ -551,12 +552,12 @@
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
+    "https://www.si.com/soccer/transfer-rumors-haaland-chooses-real-madrid-barcelona-arsenal-gyokeres-swap?utm_source=RSS",
+    "https://www.sportsmole.co.uk/football/man-city/champions-league/news/on-the-move-haaland-climbs-above-johnson-in-man-city-goalscoring-list-with-brace-in-european-win_604747.html",
     "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
-    "https://www.football365.com/news/title-race-relegation-fight-spurs-haaland-10-things-good-premier-league-season",
-    "https://www.football365.com/news/arsenal-wow-world-class-star-mailbox",
-    "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-    "https://www.soccerway.com/news/erling-haaland-praises-new-manchester-city-signings-in-win-over-coventry/tr0PPKGt/"
+    "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026",
+    "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -576,6 +577,141 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Haaland made it third time lucky less than two minutes into the second half, guiding Enzo Fernandez ’s cross in off the post to score his fourth goal in three games across all competitions, and move joint-third on City’s list of all-time top goalscorers (166 strikes).",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-uefa-champions-league-porto-manchester-city-report-2026-09-08/WINHLhu2/",
+     "published": "2026-09-08T23:15:11+02:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "City were wobbling, but they rode out the storm, and Haaland slotted home in stoppage time to become the club’s third-highest goalscorer of all time across all competitions (167 strikes).",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-uefa-champions-league-porto-manchester-city-report-2026-09-08/WINHLhu2/",
+     "published": "2026-09-08T23:15:11+02:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "GyÃ¶keres is not seen as untouchable and was even touted to officials in Saudi Arabia. (Source: Ben Jacobs Erling Haaland intends to leave Manchester City at the end of the season and has already held meetings to plan his next move.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/soccer/transfer-rumors-haaland-chooses-real-madrid-barcelona-arsenal-gyokeres-swap?utm_source=RSS",
+     "published": "2026-09-08T23:05:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Manchester City's Erling Haaland netted a brace to kick-start their campaign for a second Champions League crown, with the Citizens beating Porto 2-0 22:37 CET - Life for Inter at the Bernabeu!",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-uefa-champions-league-live-updates-matchday-1-september-2026/fwATHxAN/",
+     "published": "2026-09-08T22:58:49+02:00",
+     "tone": "positive",
+     "topics": [
+      "rotation"
+     ]
+    },
+    {
+     "text": "A second on the night from Marc Bartra and a first Champions League goal in green and white for Troy Parrott has seen them overturn the deficit. 22:08 CET - No prizes for guessing who has given Manchester City a 1-0 lead over Porto... that's right, it's Erling Haaland .",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-uefa-champions-league-live-updates-matchday-1-september-2026/fwATHxAN/",
+     "published": "2026-09-08T22:58:49+02:00",
+     "tone": "positive",
+     "topics": [
+      "match report",
+      "rotation"
+     ]
+    },
+    {
+     "text": "Striker Erling Haaland was predictably the one to open the scoring, with the Norwegian outjumping Jakub Kiwior to convert Enzo Fernandez's cross low into the left corner.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/club-brugge/champions-league/feature/mbappe-history-and-haaland-brace-tuesdays-champions-league-roundup_604743.html",
+     "published": "2026-09-08T22:28:00+01:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "Their dominance was rewarded with a 90th-minute Haaland goal, with the striker coolly sliding the ball with his right foot into the right corner.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/club-brugge/champions-league/feature/mbappe-history-and-haaland-brace-tuesdays-champions-league-roundup_604743.html",
+     "published": "2026-09-08T22:28:00+01:00",
+     "tone": "positive",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "Haaland entered the European fixture in fourth spot in Man City's all-time goalscorer list, one behind Tommy Johnson, who represented the club between 1920 and 1930.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/on-the-move-haaland-climbs-above-johnson-in-man-city-goalscoring-list-with-brace-in-european-win_604747.html",
+     "published": "2026-09-08T21:56:00+01:00",
+     "tone": "positive",
+     "topics": [
+      "fixtures"
+     ]
+    },
+    {
+     "text": "Johnson struck 166 goals in all competitions for the Citizens, and he has now been passed by Haaland, who will now have second-placed Eric Brook in his sights.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/on-the-move-haaland-climbs-above-johnson-in-man-city-goalscoring-list-with-brace-in-european-win_604747.html",
+     "published": "2026-09-08T21:56:00+01:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Manchester City kicked off their Champions League campaign with a win as Erling Haaland scored twice in a 2-0 defeat of Porto at Estádio do Dragão on Tuesday.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026",
+     "published": "2026-09-08T21:31:21+00:00",
+     "tone": "positive",
+     "topics": [
+      "rotation"
+     ]
+    },
+    {
+     "text": "And it was Haaland who made the difference again, having also scored Saturday’s winner against Coventry City.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026",
+     "published": "2026-09-08T21:31:21+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
+     "published": "2026-09-08T21:30:20+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Those players have all played comfortably more than 200 games. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
+     "published": "2026-09-08T21:30:20+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Haaland’s header early in the second half gave City a crucial lead early in the second half, before the prolific Norwegian tapped home a second to finally seal the game, but only after the visitors had to withstand a barrage of pressure in Portugal.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/champions-league/porto-manchester-city-report-result-goals-champions-league/",
+     "published": "2026-09-08T20:56:44+00:00",
+     "tone": "neutral",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "Table of Contents Costa saves deny City in first half Haaland the difference for unconvincing City Costa saves deny City in first half Man City created their first major opening in the 21st minute when Phil Foden’s clever movement helped create space for Erling Haaland, but the striker was denied by a big hand from Diogo Costa.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/champions-league/porto-manchester-city-report-result-goals-champions-league/",
+     "published": "2026-09-08T20:56:44+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "For all that money spent, possibly only Haaland from an EPL best XI would walk into that “triopoloy” of Clubs.",
      "source": "Football365",
@@ -651,24 +787,6 @@
      "published": "2026-09-05T18:01:38+02:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "published": "2026-09-05T17:30:20+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Reading (136) are next in his sights as victim number nine. * Haaland scored more Premier League goals than two teams (Everton and Wolves) in his debut season. * By scoring nine goals in his first five Premier League games in 2022/23, Haaland finally knocked Micky Quinn’s name out of the record books.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "published": "2026-09-05T17:30:20+00:00",
-     "tone": "positive",
-     "topics": [
-      "injury"
-     ]
     },
     {
      "text": "Haaland took little time to make his mark against Frank Lampard's side too, opening the scoring just before the half-hour mark with a bullet header from Antoine Semenyo's cross.",

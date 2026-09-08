@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-08T17:29:31+00:00",
- "seconds": 146.7,
+ "ran_at": "2026-09-08T23:27:18+00:00",
+ "seconds": 127.2,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 781,
- "substantive_items": 301,
- "duplicates_removed": 28,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 7519,
+ "sources_readable": 62,
+ "candidates_discovered": 713,
+ "substantive_items": 266,
+ "duplicates_removed": 17,
+ "deeply_analysed": 72,
+ "deep_read_failed": 18,
+ "corpus_size": 7706,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 301 articles"
+    "62/78 sources returned 266 articles"
    ]
   },
   "blackout": {
@@ -46,8 +46,9 @@
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
+  "Manchester United: ChunkedEncodingError for https://www.manutd.com/sitemaps/sitemap/0.xml",
+  "Newcastle United: timed out after 12s for https://www.newcastleunited.com/sitemaps/latest-news-sitemap.xml",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -281,9 +282,9 @@
   "Egan": {
    "player": "Egan",
    "club": "HUL",
-   "evidence_count": 5,
+   "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-05T15:15:00+00:00",
+   "latest_evidence": "2026-09-08T17:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -303,6 +304,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Team News: Sunderland (A)",
+     "url": "https://www.wearehullcity.co.uk/news/2026/september/08/team-news-sunderland-a/",
+     "source": "Hull City",
+     "published": "2026-09-08T17:30:00+00:00",
+     "matched_on": "egan",
+     "kind": "team news",
+     "excerpt": "Fixtures Sunderland Vs. Hull City - Tue, Sep 08 2026, 19:45 Sergej Jakirović has made eight changes from the goalless draw with Aston Villa for Hull City’s Carabao Cup round three tie at Sunderland. Captain Lewie Coyle, Nobel Mendy and Lucas Gourna are the only survivors from Saturday’s stalemate, with new signings Mohamed-Ali Cho, Sorba Thomas and Robinio Vaz handed their full debuts. Dillon Phil"
+    },
     {
      "title": "Team News: Aston Villa (H)",
      "url": "https://www.wearehullcity.co.uk/news/2026/september/05/team-news-aston-villa-h/",
@@ -799,9 +809,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 29,
+   "evidence_count": 36,
    "source_count": 15,
-   "latest_evidence": "2026-09-08T06:32:43+00:00",
+   "latest_evidence": "2026-09-08T23:15:11+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -881,6 +891,24 @@
      "excerpt": ""
     },
     {
+     "title": "Transfer Rumors: Haaland Chooses Between Real Madrid, Barcelona; Arsenal’s Gyokeres Swap Plan",
+     "url": "https://www.si.com/soccer/transfer-rumors-haaland-chooses-real-madrid-barcelona-arsenal-gyokeres-swap?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-08T23:05:00+00:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "Julián Alvarez, Adam Wharton, Jude Bellingham, Vitor Roque and Alex Scott all feature in the gossip."
+    },
+    {
+     "title": "Porto 0-2 Man City: Erling Haaland climbs above Tommy Johnson in Citizens goalscoring list with brace in European win",
+     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/on-the-move-haaland-climbs-above-johnson-in-man-city-goalscoring-list-with-brace-in-european-win_604747.html",
+     "source": "Sports Mole",
+     "published": "2026-09-08T21:56:00+01:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "Erling Haaland moves into third in Manchester City's all-time goalscorer list courtesy of his brace in Tuesday's 2-0 success over Porto in the Champions League."
+    },
+    {
      "title": "Transfer Rumors: Barcelona Ready Haaland Bid; Man Utd Suffer Huge Hall Blow",
      "url": "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
      "source": "Sports Illustrated FPL",
@@ -899,40 +927,22 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
-     "title": "What makes a good Premier League season? And will we get that in 26/27?",
-     "url": "https://www.football365.com/news/title-race-relegation-fight-spurs-haaland-10-things-good-premier-league-season",
-     "source": "Football365",
-     "published": "2026-09-08T06:32:43+00:00",
+     "title": "Porto 0-2 Man City Stats: Haaland Double Earns Maresca Dream Champions League Start",
+     "url": "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026",
+     "source": "Opta Analyst",
+     "published": "2026-09-08T21:31:21+00:00",
      "matched_on": "haaland",
      "kind": "general",
-     "excerpt": "Is it too early to start thinking about whether this is going to be a good Premier League season? Yes. Are we doing it anyway? Also yes."
+     "excerpt": "Erling Haaland was the difference as Manchester City got off to a winning start in the Champions League. Relive the game with our Porto vs Man City stats page. The post Porto 0-2 Man City Stats: Haaland Double Earns Maresca Dream Champions League Start appeared first on Opta Analyst ."
     },
     {
-     "title": "Arsenal do not have a single ‘wow’ world-class player; only Haaland in PL",
-     "url": "https://www.football365.com/news/arsenal-wow-world-class-star-mailbox",
+     "title": "The ridiculous stats of Erling Haaland as he reaches 300 career goals at 26",
+     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
      "source": "Football365",
-     "published": "2026-09-07T06:44:36+00:00",
+     "published": "2026-09-08T21:30:20+00:00",
      "matched_on": "haaland",
      "kind": "general",
-     "excerpt": "How did Premier League clubs spend so much money without buying a single world-class player? Arsenal will win title without one again."
-    },
-    {
-     "title": "Who is the top scorer of 2026? Harry Kane running away with the title",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "source": "Football365",
-     "published": "2026-09-06T21:22:59+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Harry Kane was out of the blocks like a bullet in 2026, opening a big lead over 2025’s clear winner Kylian Mbappe and everyone else."
-    },
-    {
-     "title": "'Reason why they were bought': Haaland praises new Manchester City signings",
-     "url": "https://www.soccerway.com/news/erling-haaland-praises-new-manchester-city-signings-in-win-over-coventry/tr0PPKGt/",
-     "source": "Soccerway",
-     "published": "2026-09-06T10:43:34+02:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": ""
+     "excerpt": "Erling Haaland has been a Premier League player for barely three seasons but has already outscored a legion of legends and is firing Norway to the World Cup."
     }
    ]
   },
