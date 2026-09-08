@@ -1,37 +1,47 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-08T11:29:39+00:00",
+ "generated": "2026-09-08T17:29:31+00:00",
  "gameweek": 4,
- "corpus_size": 7309,
+ "corpus_size": 7519,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 07 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
+   "status": "",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 08 Sep.",
+   "case_for": "What supports keeping him: Tactical Football Analysis, 08 Sep: “Arsenal Vs Chelsea Lineups & Formations Arsenal Lineup Vs Chelsea: Arteta’s 4-2-3-1 Arteta set his team up in a 4-2-3-1 formation with David Raya in goal behind a back four of Ben White Ezri Konsa Gabriel Magalhães and Riccardo Calafiori, from right to left.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.football365.com/match-preview/napoli-v-arsenal-prediction-preview",
+    "https://tacticalfootballanalysis.com/arsenal-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
+    "https://www.football365.com/news/big-midweek-champions-league-returns-liverpool-arsenal-man-city-barcelona",
     "https://www.rotowire.com/soccer/article/napoli-vs-arsenal-prediction-predicted-lineups-team-news-132925",
     "https://www.football365.com/news/arsenal-star-disresepcted-arteta-deliberately-benched-failed-transfer",
-    "https://www.nbcsports.com/soccer/news/xabi-alonso-reaction-chelsea-manager-speaks-after-tight-derby-at-arsenal",
-    "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-boss-speaks-after-tense-derby-versus-chelsea",
-    "https://www.sportsmole.co.uk/football/arsenal/champions-league/predicted-lineups/zubi-returns-guimaraes-decision-predicted-arsenal-xi-vs-napoli_604643.html",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
     "Football365",
     "FourFourTwo FPL",
-    "NBC Sports Rotoworld PL",
     "RotoWire Soccer",
-    "Sports Mole"
+    "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Arsenal Vs Chelsea Lineups & Formations Arsenal Lineup Vs Chelsea: Arteta’s 4-2-3-1 Arteta set his team up in a 4-2-3-1 formation with David Raya in goal behind a back four of Ben White Ezri Konsa Gabriel Magalhães and Riccardo Calafiori, from right to left.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/arsenal-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
+     "published": "2026-09-08T09:17:21+00:00",
+     "tone": "positive",
+     "topics": [
+      "team news",
+      "tactics"
+     ]
+    },
     {
      "text": "The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.",
      "source": "FourFourTwo FPL",
@@ -853,15 +863,16 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 22 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 23 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
    "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.”",
    "outlook": "On the coming weeks — OneFPL: “João Pedro FPL After GW3: Essential or Trap? | OneFPL Loading OneFPL page In this article sections The short answer João Pedro remains a strong HOLD and a good BUY for the right structure, but 'essential' is still too strong.”",
    "confidence": "high",
-   "evidence_count": 22,
+   "evidence_count": 23,
    "evidence_used": [
+    "https://avfc.co.uk/news/2026/september/08/prematch-club-brugge-team-news/",
     "https://avfc.co.uk/news/2026/september/07/prematch-club-brugge-team-news/",
     "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
     "https://avfc.co.uk/news/2026/september/04/prematch-team-news-for-hull-clash/",
@@ -872,8 +883,7 @@
     "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
     "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/arsenal-and-man-city-keep-close-eye-on-chelsea-attacker_604523.html",
-    "https://www.football365.com/news/chelsea-manchester-united-pedro-neto",
-    "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/"
+    "https://www.football365.com/news/chelsea-manchester-united-pedro-neto"
    ],
    "sources_used": [
     "Aston Villa",
@@ -1042,7 +1052,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1051,16 +1061,17 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.fourfourtwo.com/team/spurs-not-having-a-stadium-sponsor-could-be-costing-up-to-gbp40m-in-revenue-with-scr-as-the-new-financial-control-it-might-limit-their-transfer-spending",
     "https://www.101greatgoals.com/football/premier-league/the-sack-race-arbeloa-and-de-zerbi-tipped-to-leave-fulham-and-tottenham/",
     "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-could-complete-gbp75m-attacker-signing-after-de-zerbi-recommendation_604569.html",
     "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction/",
     "https://www.football365.com/news/neco-williams-oliver-glasner-nottingham-forest-tottenham-hotspur-var-controversry",
-    "https://www.nottinghamforest.co.uk/news/2026/september/05/spurs-report/",
-    "https://www.101greatgoals.com/football/nottingham-forest-v-tottenham-how-the-sides-lineup-at-the-city-ground/"
+    "https://www.nottinghamforest.co.uk/news/2026/september/05/spurs-report/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Football365",
+    "FourFourTwo FPL",
     "Nottingham Forest",
     "Sports Mole"
    ],

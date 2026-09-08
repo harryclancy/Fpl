@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-08T11:29:39+00:00",
- "seconds": 120.6,
+ "ran_at": "2026-09-08T17:29:31+00:00",
+ "seconds": 146.7,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 683,
- "substantive_items": 210,
- "duplicates_removed": 14,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 7309,
+ "sources_readable": 63,
+ "candidates_discovered": 781,
+ "substantive_items": 301,
+ "duplicates_removed": 28,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 7519,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 210 articles"
+    "63/78 sources returned 301 articles"
    ]
   },
   "blackout": {
@@ -46,6 +46,7 @@
   "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -57,8 +58,8 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-08T03:03:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-08T10:51:46+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -83,6 +84,33 @@
    "researched": true,
    "items": [
     {
+     "title": "Napoli v Arsenal: Prediction, team news, lineups and odds",
+     "url": "https://www.football365.com/match-preview/napoli-v-arsenal-prediction-preview",
+     "source": "Football365",
+     "published": "2026-09-08T10:51:46+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Champions League clash between Napoli and Arsenal."
+    },
+    {
+     "title": "Arsenal Vs Chelsea [2-1] Premier League 2026/2027: How Mikel Arteta Attacking Dynamism Opened Chelsea - Tactical Analysis",
+     "url": "https://tacticalfootballanalysis.com/arsenal-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-09-08T09:17:21+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal’s 2-1 win over Chelsea showcased Mikel Arteta’s attacking rotations and aggressive full-back positioning. This tactical analysis examines Declan Rice’s build-up role, how Arsenal manipulated Chelsea’s defensive shapes, and why Xabi Alonso’s side struggled to create clear chances."
+    },
+    {
+     "title": "Big Midweek: Champions League returns with tasty Liverpool and Arsenal fixtures, reborn Raphinha, Man City tactical battle…",
+     "url": "https://www.football365.com/news/big-midweek-champions-league-returns-liverpool-arsenal-man-city-barcelona",
+     "source": "Football365",
+     "published": "2026-09-08T06:25:32+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "The Champions League is back and there are some tasty fixtures on matchday one, while there’s EFL Cup and Championship action to keep an eye out for as well."
+    },
+    {
      "title": "Napoli vs Arsenal Prediction, Predicted Lineups & Team News",
      "url": "https://www.rotowire.com/soccer/article/napoli-vs-arsenal-prediction-predicted-lineups-team-news-132925",
      "source": "RotoWire Soccer",
@@ -99,33 +127,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Piers Morgan says he has it “on good authority” that the Arsenal star is “p****d off” with Mikel Arteta and Arsenal."
-    },
-    {
-     "title": "Xabi Alonso reaction — Chelsea manager speaks on midfield, Caicedo injury after tight derby loss at Arsenal",
-     "url": "https://www.nbcsports.com/soccer/news/xabi-alonso-reaction-chelsea-manager-speaks-after-tight-derby-at-arsenal",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-07T10:09:00-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Mikel Arteta reaction — Arsenal boss praises mentality after win vs Chelsea, gives Mosquera injury update",
-     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-boss-speaks-after-tense-derby-versus-chelsea",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-07T10:07:00-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Arsenal lineup vs. Napoli: Predicted XI as Mikel Arteta makes two changes for Champions League",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/predicted-lineups/zubi-returns-guimaraes-decision-predicted-arsenal-xi-vs-napoli_604643.html",
-     "source": "Sports Mole",
-     "published": "2026-09-07T10:01:55+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Wednesday's Champions League clash with Napoli."
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
@@ -938,9 +939,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 22,
+   "evidence_count": 23,
    "source_count": 8,
-   "latest_evidence": "2026-09-07T18:14:23+00:00",
+   "latest_evidence": "2026-09-08T15:32:09+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -965,6 +966,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Wan-Bissaka makes first start in Bruges",
+     "url": "https://avfc.co.uk/news/2026/september/08/prematch-club-brugge-team-news/",
+     "source": "Aston Villa",
+     "published": "2026-09-08T15:32:09+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Fixtures Club Brugge Vs. Aston Villa - Tue, Sep 08 2026, 18:45 Aston Villa begin their UEFA Champions League journey in Belgium tonight, taking on Club Brugge. And ahead of kick-off at Jan Breydelstadion, the starting lineups have been announced for the league phase opener. Manager Unai Emery has made two changes from the weekend's draw at Hull City. Aaron Wan-Bissaka comes in for his full debut f"
+    },
     {
      "title": "Team news for Club Brugge clash",
      "url": "https://avfc.co.uk/news/2026/september/07/prematch-club-brugge-team-news/",
@@ -1063,15 +1073,6 @@
      "matched_on": "pedro",
      "kind": "transfer",
      "excerpt": "A Chelsea star was the subject of interest from Manchester United in the summer transfer window."
-    },
-    {
-     "title": "Villans welcome 10 new faces",
-     "url": "https://avfc.co.uk/news/2026/september/02/news-villans-welcome-10-new-faces/",
-     "source": "Aston Villa",
-     "published": "2026-09-02T08:38:00+00:00",
-     "matched_on": "joao",
-     "kind": "transfer",
-     "excerpt": "The transfer window has now drawn to a conclusion, with Aston Villa welcoming no less than 10 new signings to the club. Unai Emery’s summer recruitment drive got underway midway through July, when Johan Manzambi arrived from UEFA Europa League final opponents SC Freiburg, the exciting young playmaker’s arrival followed up four days later by the signing of midfielder João Gomes from Wolverhampton W"
     }
    ]
   },
@@ -1151,8 +1152,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-07T11:17:34+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-08T06:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1175,6 +1176,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur’s £40m stadium dilemma limits transfer spending under new rules",
+     "url": "https://www.fourfourtwo.com/team/spurs-not-having-a-stadium-sponsor-could-be-costing-up-to-gbp40m-in-revenue-with-scr-as-the-new-financial-control-it-might-limit-their-transfer-spending",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-08T06:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "As more clubs in the Premier League and Championship have moved from their historic homes into shiny new grounds, the impressive potential of stadium naming rights has made its way into the English game. Renaming Highbury or Goodison Park would have been beyond the pale, not to mention a futile exercise in terms of what the supporters of Arsenal or Everton would have called them. But nobody refers"
+    },
     {
      "title": "The Sack Race: Arbeloa and De Zerbi tipped to leave Fulham and Tottenham",
      "url": "https://www.101greatgoals.com/football/premier-league/the-sack-race-arbeloa-and-de-zerbi-tipped-to-leave-fulham-and-tottenham/",
@@ -1219,15 +1229,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Nottingham Forest picked up their first Premier League point on home soil in today’s goalless draw with Tottenham Hotspur. In a tightly contested fixture on Trentside, the Reds were denied three points in the second period after Neco Williams put the ball in the back of the net. The goal was ruled out by VAR after a review, meaning both sides took a share of the spoils. Omar Marmoush saw an effort"
-    },
-    {
-     "title": "Nottingham Forest v Tottenham; How the sides lineup at the City Ground",
-     "url": "https://www.101greatgoals.com/football/nottingham-forest-v-tottenham-how-the-sides-lineup-at-the-city-ground/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-05T12:52:09+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Savio is back in the starting XI for Spurs"
     }
    ]
   },
