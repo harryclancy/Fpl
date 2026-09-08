@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-07T23:27:22+00:00",
- "seconds": 149.1,
+ "ran_at": "2026-09-08T05:29:45+00:00",
+ "seconds": 153.2,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 697,
- "substantive_items": 245,
- "duplicates_removed": 12,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 7068,
+ "sources_readable": 63,
+ "candidates_discovered": 630,
+ "substantive_items": 193,
+ "duplicates_removed": 7,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 7178,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 245 articles"
+    "63/78 sources returned 193 articles"
    ]
   },
   "blackout": {
@@ -40,7 +40,6 @@
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -59,8 +58,8 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-07T10:09:00-04:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-07T20:07:33+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -71,7 +70,6 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
     "set pieces",
@@ -84,6 +82,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal star feels ‘disrespected’ by Arteta after being ‘deliberately benched’ to force failed transfer",
+     "url": "https://www.football365.com/news/arsenal-star-disresepcted-arteta-deliberately-benched-failed-transfer",
+     "source": "Football365",
+     "published": "2026-09-07T20:07:33+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Piers Morgan says he has it “on good authority” that the Arsenal star is “p****d off” with Mikel Arteta and Arsenal."
+    },
     {
      "title": "Xabi Alonso reaction — Chelsea manager speaks on midfield, Caicedo injury after tight derby loss at Arsenal",
      "url": "https://www.nbcsports.com/soccer/news/xabi-alonso-reaction-chelsea-manager-speaks-after-tight-derby-at-arsenal",
@@ -119,15 +126,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Wednesday's Champions League clash between Napoli and Arsenal, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "HENRY WINTER: Martin Odegaard is having his Dennis Bergkamp moment at Arsenal. He's tougher, more determined and a real winner",
-     "url": "https://www.fourfourtwo.com/person/player/henry-winter-martin-odegaard-is-having-his-dennis-bergkamp-moment-at-arsenal-hes-tougher-more-determined-and-a-real-winner",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-07T08:10:44+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "If the main reason is that Odegaard is free of the injuries that saw him miss 30 games last season for Arsenal and Norway, there can be no doubt that the No. 8 has a more determined mindset now. He seizes games more now. At 27, Odegaard has come of age as a heavyweight footballer. He arrived at the top of the table with Arsenal in May and now at the top table with the world’s elite players. For lo"
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
