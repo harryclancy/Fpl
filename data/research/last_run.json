@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-09T05:29:21+00:00",
- "seconds": 166.7,
+ "ran_at": "2026-09-09T11:30:08+00:00",
+ "seconds": 162.8,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 627,
- "substantive_items": 183,
- "duplicates_removed": 7,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 7811,
+ "sources_readable": 63,
+ "candidates_discovered": 675,
+ "substantive_items": 214,
+ "duplicates_removed": 10,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 7957,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 183 articles"
+    "63/78 sources returned 214 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,7 @@
  "failures": [
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -50,9 +50,8 @@
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: timed out after 12s for https://physioroom.com/feeds/all.rss.xml",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "PhysioRoom: nothing published in the last 10 days",
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -143,9 +142,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 17,
+   "evidence_count": 19,
    "source_count": 10,
-   "latest_evidence": "2026-09-07T08:11:36+00:00",
+   "latest_evidence": "2026-09-09T11:27:53+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -177,6 +176,15 @@
      "matched_on": "gabriel",
      "kind": "team news",
      "excerpt": "Premier League players face a suspension if they pick up too many yellow cards – but what are the rules and who is closest to a one-match ban? Here, we list every player currently banned – be it for red cards or collecting yellow cards – and those at most risk of missing a game. […]"
+    },
+    {
+     "title": "Barcelona transfer news: \"He refused to negotiate\" - Julian Alvarez alternative firmly rejects Barca",
+     "url": "https://www.sportsmole.co.uk/football/barcelona/transfer-talk/news/he-refused-to-negotiate-julian-alvarez-alternative-firmly-rejects-barca_604761.html",
+     "source": "Sports Mole",
+     "published": "2026-09-09T09:17:06+01:00",
+     "matched_on": "gabriel",
+     "kind": "transfer",
+     "excerpt": "Barcelona ultimately signed Gabriel Jesus, having failed to convince Julian Alvarez. But that was not the only setback the Catalan club suffered this summer in the striker market."
     },
     {
      "title": "Gabriel Martinelli transfer news: Forward joins Al Hilal in a club-record sale for Arsenal in £60m deal",
@@ -251,6 +259,15 @@
      "excerpt": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray."
     },
     {
+     "title": "Scholes slams Arsenal star who ‘gets away with murder’ after Chelsea victory",
+     "url": "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea",
+     "source": "Football365",
+     "published": "2026-09-09T11:27:53+00:00",
+     "matched_on": "gabriel",
+     "kind": "general",
+     "excerpt": "Paul Scholes agrees that Arsenal centre-back Gabriel Magalhaes “gets away with murder” after watching the Gunners beat Chelsea."
+    },
+    {
      "title": "Rooney insists Arsenal star got ‘extremely lucky’ vs Chelsea as Carragher reveals ‘huge worry’",
      "url": "https://www.football365.com/news/rooney-insists-arsenal-star-extremely-lucky-chelsea-carragher-reveals-huge-worry",
      "source": "Football365",
@@ -258,24 +275,6 @@
      "matched_on": "gabriel",
      "kind": "general",
      "excerpt": "Wayne Rooney thinks Arsenal star Gabriel Magalhaes was “extremely lucky” not to get sent off in Sunday’s win against Chelsea."
-    },
-    {
-     "title": "Arsenal 2-1 Chelsea: Gabriel breaks Gunners record as Premier League win sets Mikel Arteta up for Man City title fight",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/title-race/news/gabriel-breaks-gunners-record-in-blues-win-as-arteta-faces-city-title-fight_604627.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T23:40:37+01:00",
-     "matched_on": "gabriel",
-     "kind": "general",
-     "excerpt": "Arsenal's Gabriel Magalhaes breaks a club record in his side's 2-1 win against Chelsea, with the game setting up Man City as the Gunners' biggest threat."
-    },
-    {
-     "title": "Arsenal key star is ‘most overrated player’ in Premier League – ‘he doesn’t belong at the top’",
-     "url": "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong",
-     "source": "Football365",
-     "published": "2026-09-04T10:58:20+00:00",
-     "matched_on": "gabriel",
-     "kind": "general",
-     "excerpt": "Arsenal star Gabriel Magalhaes has been told that he is currently the “most overrated player” in the Premier League."
     }
    ]
   },
@@ -550,7 +549,7 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "evidence_count": 3,
+   "evidence_count": 4,
    "source_count": 3,
    "latest_evidence": "2026-09-05T13:30:00+00:00",
    "official_source_found": false,
@@ -596,6 +595,15 @@
     {
      "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
      "url": "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "semenyo",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Fpl price changes wissa rises as semenyo and rice values drop",
+     "url": "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
      "source": "FPL Captain",
      "published": "",
      "matched_on": "semenyo",
@@ -670,7 +678,7 @@
   "Cherki": {
    "player": "Cherki",
    "club": "MCI",
-   "evidence_count": 19,
+   "evidence_count": 20,
    "source_count": 9,
    "latest_evidence": "2026-09-05T21:50:00+00:00",
    "official_source_found": true,
@@ -809,9 +817,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 36,
+   "evidence_count": 37,
    "source_count": 15,
-   "latest_evidence": "2026-09-08T23:15:11+02:00",
+   "latest_evidence": "2026-09-09T07:38:31+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -927,6 +935,15 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
+     "title": "Erling Haaland says Man City have unearthed a \"gem\" who has been \"amazing\" in training after Porto win",
+     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-hails-man-city-gem-who-has-been-amazing-in-training-after-porto-win_604757.html",
+     "source": "Sports Mole",
+     "published": "2026-09-09T07:38:31+01:00",
+     "matched_on": "haaland",
+     "kind": "general",
+     "excerpt": "Manchester City striker Erling Haaland believes the club have unearthed a real \"gem\" in Ayyoub Bouaddi, praising his standout performance against Porto in the Champions League."
+    },
+    {
      "title": "Porto 0-2 Man City Stats: Haaland Double Earns Maresca Dream Champions League Start",
      "url": "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026",
      "source": "Opta Analyst",
@@ -934,24 +951,15 @@
      "matched_on": "haaland",
      "kind": "general",
      "excerpt": "Erling Haaland was the difference as Manchester City got off to a winning start in the Champions League. Relive the game with our Porto vs Man City stats page. The post Porto 0-2 Man City Stats: Haaland Double Earns Maresca Dream Champions League Start appeared first on Opta Analyst ."
-    },
-    {
-     "title": "The ridiculous stats of Erling Haaland as he reaches 300 career goals at 26",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "source": "Football365",
-     "published": "2026-09-08T21:30:20+00:00",
-     "matched_on": "haaland",
-     "kind": "general",
-     "excerpt": "Erling Haaland has been a Premier League player for barely three seasons but has already outscored a legion of legends and is firing Norway to the World Cup."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 23,
+   "evidence_count": 24,
    "source_count": 8,
-   "latest_evidence": "2026-09-08T15:32:09+00:00",
+   "latest_evidence": "2026-09-09T09:51:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -976,6 +984,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Aston Villa injury, suspension list and return dates vs. Nottingham Forest: Matty Cash, Leon Goretzka, Joao Gomes, Brian Madjo latest",
+     "url": "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/cash-goretzka-gomes-madjo-latest-aston-villa-injury-suspension-list-vs-forest_604765.html",
+     "source": "Sports Mole",
+     "published": "2026-09-09T09:51:00+01:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Aston Villa's latest injury and suspension news ahead of their Premier League clash with Nottingham Forest."
+    },
     {
      "title": "Wan-Bissaka makes first start in Bruges",
      "url": "https://avfc.co.uk/news/2026/september/08/prematch-club-brugge-team-news/",
@@ -1074,15 +1091,6 @@
      "matched_on": "pedro",
      "kind": "transfer",
      "excerpt": "Arsenal and Manchester City reportedly keep close eye on Chelsea attacker Pedro Neto ahead of January window."
-    },
-    {
-     "title": "£54m Chelsea star’s reaction to Man Utd interest emerges",
-     "url": "https://www.football365.com/news/chelsea-manchester-united-pedro-neto",
-     "source": "Football365",
-     "published": "2026-09-03T15:38:54+00:00",
-     "matched_on": "pedro",
-     "kind": "transfer",
-     "excerpt": "A Chelsea star was the subject of interest from Manchester United in the summer transfer window."
     }
    ]
   },
@@ -1163,7 +1171,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-08T06:00:00+00:00",
+   "latest_evidence": "2026-09-09T06:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1173,6 +1181,7 @@
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "fpl advice",
     "injury",
     "press conference",
@@ -1186,6 +1195,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham injury, suspension news and return dates for Everton clash: Maddison, Kulusevski, Simons latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-kulusevski-simons-latest-spurs-injury-list-for-everton-clash_604742.html",
+     "source": "Sports Mole",
+     "published": "2026-09-09T06:00:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up Tottenham Hotspur’s injury and suspension news ahead of their Premier League clash with Everton on Saturday."
+    },
     {
      "title": "Tottenham Hotspur’s £40m stadium dilemma limits transfer spending under new rules",
      "url": "https://www.fourfourtwo.com/team/spurs-not-having-a-stadium-sponsor-could-be-costing-up-to-gbp40m-in-revenue-with-scr-as-the-new-financial-control-it-might-limit-their-transfer-spending",
@@ -1230,15 +1248,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Neco Williams and Oliver Glasner are fuming after Nottingham Forest saw a goal ruled out against Tottenham Hotspur."
-    },
-    {
-     "title": "FOREST PICK UP POINT IN SPURS STALEMATE",
-     "url": "https://www.nottinghamforest.co.uk/news/2026/september/05/spurs-report/",
-     "source": "Nottingham Forest",
-     "published": "2026-09-05T15:52:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Nottingham Forest picked up their first Premier League point on home soil in today’s goalless draw with Tottenham Hotspur. In a tightly contested fixture on Trentside, the Reds were denied three points in the second period after Neco Williams put the ball in the back of the net. The goal was ruled out by VAR after a review, meaning both sides took a share of the spoils. Omar Marmoush saw an effort"
     }
    ]
   },

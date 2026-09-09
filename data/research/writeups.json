@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-09T05:29:21+00:00",
+ "generated": "2026-09-09T11:30:08+00:00",
  "gameweek": 4,
- "corpus_size": 7811,
+ "corpus_size": 7957,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -64,17 +64,18 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "status": "Latest on Gabriel — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 17 retrieved item(s) from 10 source(s), the most recent dated 07 Sep.",
+   "status": "Latest on Gabriel — Football365, 09 Sep: “And Scholes thought Gabriel should have definitely been sent off for the indicent, Scholes said on The Good, The Bad & The Football podcast : “He should have been sent off.”",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 19 retrieved item(s) from 10 source(s), the most recent dated 09 Sep.",
    "case_for": "What supports keeping him: Football365, 07 Sep: “However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.”",
    "case_against": "What argues against him: Football365, 07 Sep: “And Rooney thinks Gabriel should have been dismissed for this incident, having gone “way over the top”.”",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Sports Mole, 06 Sep: “That match was the 12th time that Gabriel has played against the Blues, and he has never ended on the losing side, with OptaJoe data editor Harvey Downes confirming that is the most an Arsenal player has ever played against Chelsea without suffering defeat.” Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.” Football365, 04 Sep: “But former Aston Villa forward Gabby Agbonlahor has boldly argued that Gabriel is actually the “most overrated player in the league” at the moment.”",
+   "expected_minutes": "On minutes — Football365, 09 Sep: “Gabriel was perhaps fortunate to stay on the pitch while Arsenal were trailing 1-0 to an early Morgan Rogers’ opener for Chelsea after kicking Emiliano Martinez in the head as he looked to get to the ball inside the penalty area.”",
+   "developments": "Recent developments — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.” Sports Mole, 06 Sep: “That match was the 12th time that Gabriel has played against the Blues, and he has never ended on the losing side, with OptaJoe data editor Harvey Downes confirming that is the most an Arsenal player has ever played against Chelsea without suffering defeat.” Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 17,
+   "evidence_count": 19,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
+    "https://www.sportsmole.co.uk/football/barcelona/transfer-talk/news/he-refused-to-negotiate-julian-alvarez-alternative-firmly-rejects-barca_604761.html",
     "https://www.skysports.com/football/news/11670/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
     "https://www.soccerway.com/news/gabriel-jesus-signs-for-barcelona-from-arsenal-to-end-alvarez-transfer-saga/rZbGna3e/",
     "https://www.flashscore.com/news/gabriel-jesus-signs-for-barcelona-from-arsenal-to-end-alvarez-transfer-saga/rZbGna3e/",
@@ -83,9 +84,8 @@
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/in-martinellis-hands-arsenal-al-hilal-getting-closer-to-agreement-after-increased-bid_603646.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-transfer-news-today-done-deals-live-updates-and-rumours-august-24_603599.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
-    "https://www.football365.com/news/rooney-insists-arsenal-star-extremely-lucky-chelsea-carragher-reveals-huge-worry",
-    "https://www.sportsmole.co.uk/football/arsenal/title-race/news/gabriel-breaks-gunners-record-in-blues-win-as-arteta-faces-city-title-fight_604627.html",
-    "https://www.football365.com/news/arsenal-key-star-most-overrated-player-premier-league-doesnt-belong"
+    "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea",
+    "https://www.football365.com/news/rooney-insists-arsenal-star-extremely-lucky-chelsea-carragher-reveals-huge-worry"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -100,6 +100,27 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Gabriel was perhaps fortunate to stay on the pitch while Arsenal were trailing 1-0 to an early Morgan Rogers’ opener for Chelsea after kicking Emiliano Martinez in the head as he looked to get to the ball inside the penalty area.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea",
+     "published": "2026-09-09T11:27:53+00:00",
+     "tone": "neutral",
+     "topics": [
+      "match report",
+      "set pieces"
+     ]
+    },
+    {
+     "text": "And Scholes thought Gabriel should have definitely been sent off for the indicent, Scholes said on The Good, The Bad & The Football podcast : “He should have been sent off.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea",
+     "published": "2026-09-09T11:27:53+00:00",
+     "tone": "neutral",
+     "topics": [
+      "suspension"
+     ]
+    },
     {
      "text": "However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.",
      "source": "Football365",
@@ -331,18 +352,19 @@
    "player": "Semenyo",
    "club": "MCI",
    "status": "Latest on Semenyo — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
-   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 27 Aug.",
+   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 4 retrieved item(s) from 3 source(s), the most recent dated 27 Aug.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 3,
+   "evidence_count": 4,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
-    "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
+    "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
+    "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop"
    ],
    "sources_used": [
     "FPL Captain",
@@ -426,14 +448,14 @@
    "player": "Cherki",
    "club": "MCI",
    "status": "Latest on Cherki — FourFourTwo FPL, 05 Sep: “It leaves Man City with a very strong squad, especially when you consider that they’ll have either Rayan Cherki or Phil Foden in the number ten role.”",
-   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 19 retrieved item(s) from 9 source(s), the most recent dated 05 Sep.",
+   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 20 retrieved item(s) from 9 source(s), the most recent dated 05 Sep.",
    "case_for": "What supports keeping him: Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.” OneFPL: “Cherki has: two GW1 assists two GW2 goals Coventry at home in GW3 a new £7.7m price The upside remains elite.”",
    "case_against": "What argues against him: Fantasy Football Scout, 05 Sep: “Nor was a benching for Phil Foden (£7.0m), a pre-match withdrawal from Nico O’Reilly (£6.5m) or a blank from Rayan Cherki (£7.8m).” Fantasy Football Scout, 05 Sep: “At least he has the ‘xMins’ on his side… CHERKI SUBBED OFF – BUT UNLUCKY TO BLANK A whopping 2.1 million FPL managers brought in Cherki ahead of Gameweek 3.”",
    "expected_minutes": "On minutes — OneFPL: “Rayan Cherki FPL GW3: Still Buy After Deadline Day? | OneFPL Loading OneFPL page In this article sections The short answer Still BUY/HOLD — but with more rotation risk than before deadline day.”",
    "developments": "Recent developments — Opta Analyst, 01 Sep: “Last year, City then added Rayan Cherki , arguably even more of a maverick than Doku, and the Frenchman enjoyed a brilliant first season in the Premier League.” Opta Analyst, 01 Sep: “Similarly, they’ll have four of last season’s top eight for most dribbles completed: Doku (84), Ndiaye (65), Semenyo (59) and Cherki (51).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 19,
+   "evidence_count": 20,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
@@ -539,14 +561,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 36 retrieved item(s) from 15 source(s), the most recent dated 08 Sep.",
-   "case_for": "What supports keeping him: Soccerway, 08 Sep: “Haaland made it third time lucky less than two minutes into the second half, guiding Enzo Fernandez ’s cross in off the post to score his fourth goal in three games across all competitions, and move joint-third on City’s list of all-time top goalscorers (166 strikes).” Soccerway, 08 Sep: “City were wobbling, but they rode out the storm, and Haaland slotted home in stoppage time to become the club’s third-highest goalscorer of all time across all competitions (167 strikes).” Soccerway, 08 Sep: “Manchester City's Erling Haaland netted a brace to kick-start their campaign for a second Champions League crown, with the Citizens beating Porto 2-0 22:37 CET - Life for Inter at the Bernabeu!”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 37 retrieved item(s) from 15 source(s), the most recent dated 09 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 09 Sep: “Erling Haaland hails Ayyoub Bouaddi after beating Porto © Iconsport / SPI Bouaddi played alongside Enzo Fernandez in midfield as City maintained their perfect start to the season with victory in Portugal Haaland was full of praise for the youngster afterwards, revealing that he had already spoken to the club's chairman about how impressed he had been in training.” Soccerway, 08 Sep: “Haaland made it third time lucky less than two minutes into the second half, guiding Enzo Fernandez ’s cross in off the post to score his fourth goal in three games across all competitions, and move joint-third on City’s list of all-time top goalscorers (166 strikes).” Soccerway, 08 Sep: “City were wobbling, but they rode out the storm, and Haaland slotted home in stoppage time to become the club’s third-highest goalscorer of all time across all competitions (167 strikes).”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Soccerway, 08 Sep: “A second on the night from Marc Bartra and a first Champions League goal in green and white for Troy Parrott has seen them overturn the deficit. 22:08 CET - No prizes for guessing who has given Manchester City a 1-0 lead over Porto... that's right, it's Erling Haaland .” Opta Analyst, 08 Sep: “Manchester City kicked off their Champions League campaign with a win as Erling Haaland scored twice in a 2-0 defeat of Porto at Estádio do Dragão on Tuesday.”",
-   "developments": "Recent developments — Sports Illustrated FPL, 08 Sep: “GyÃ¶keres is not seen as untouchable and was even touted to officials in Saudi Arabia. (Source: Ben Jacobs Erling Haaland intends to leave Manchester City at the end of the season and has already held meetings to plan his next move.” Sports Mole, 08 Sep: “Striker Erling Haaland was predictably the one to open the scoring, with the Norwegian outjumping Jakub Kiwior to convert Enzo Fernandez's cross low into the left corner.” Sports Mole, 08 Sep: “Their dominance was rewarded with a 90th-minute Haaland goal, with the striker coolly sliding the ball with his right foot into the right corner.”",
+   "expected_minutes": "On minutes — Soccerway, 08 Sep: “Manchester City's Erling Haaland netted a brace to kick-start their campaign for a second Champions League crown, with the Citizens beating Porto 2-0 22:37 CET - Life for Inter at the Bernabeu!” Soccerway, 08 Sep: “A second on the night from Marc Bartra and a first Champions League goal in green and white for Troy Parrott has seen them overturn the deficit. 22:08 CET - No prizes for guessing who has given Manchester City a 1-0 lead over Porto... that's right, it's Erling Haaland .”",
+   "developments": "Recent developments — Sports Mole, 09 Sep: “Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.” Sports Illustrated FPL, 08 Sep: “GyÃ¶keres is not seen as untouchable and was even touted to officials in Saudi Arabia. (Source: Ben Jacobs Erling Haaland intends to leave Manchester City at the end of the season and has already held meetings to plan his next move.” Sports Mole, 08 Sep: “Striker Erling Haaland was predictably the one to open the scoring, with the Norwegian outjumping Jakub Kiwior to convert Enzo Fernandez's cross low into the left corner.”",
    "outlook": "On the coming weeks — Sports Mole, 08 Sep: “Haaland entered the European fixture in fourth spot in Man City's all-time goalscorer list, one behind Tommy Johnson, who represented the club between 1920 and 1930.” 101 Great Goals — Fantasy, 08 Sep: “Haaland’s header early in the second half gave City a crucial lead early in the second half, before the prolific Norwegian tapped home a second to finally seal the game, but only after the visitors had to withstand a barrage of pressure in Portugal.”",
    "confidence": "high",
-   "evidence_count": 36,
+   "evidence_count": 37,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
@@ -558,8 +580,8 @@
     "https://www.sportsmole.co.uk/football/man-city/champions-league/news/on-the-move-haaland-climbs-above-johnson-in-man-city-goalscoring-list-with-brace-in-european-win_604747.html",
     "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
-    "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026",
-    "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life"
+    "https://www.sportsmole.co.uk/football/man-city/news/haaland-hails-man-city-gem-who-has-been-amazing-in-training-after-porto-win_604757.html",
+    "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -579,6 +601,26 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-hails-man-city-gem-who-has-been-amazing-in-training-after-porto-win_604757.html",
+     "published": "2026-09-09T07:38:31+01:00",
+     "tone": "neutral",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "Erling Haaland hails Ayyoub Bouaddi after beating Porto © Iconsport / SPI Bouaddi played alongside Enzo Fernandez in midfield as City maintained their perfect start to the season with victory in Portugal Haaland was full of praise for the youngster afterwards, revealing that he had already spoken to the club's chairman about how impressed he had been in training.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/news/haaland-hails-man-city-gem-who-has-been-amazing-in-training-after-porto-win_604757.html",
+     "published": "2026-09-09T07:38:31+01:00",
+     "tone": "positive",
+     "topics": [
+      "tactics"
+     ]
+    },
     {
      "text": "Haaland made it third time lucky less than two minutes into the second half, guiding Enzo Fernandez ’s cross in off the post to score his fourth goal in three games across all competitions, and move joint-third on City’s list of all-time top goalscorers (166 strikes).",
      "source": "Soccerway",
@@ -983,15 +1025,16 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 23 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 24 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...”",
    "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.”",
    "outlook": "On the coming weeks — OneFPL: “João Pedro FPL After GW3: Essential or Trap? | OneFPL Loading OneFPL page In this article sections The short answer João Pedro remains a strong HOLD and a good BUY for the right structure, but 'essential' is still too strong.”",
    "confidence": "high",
-   "evidence_count": 23,
+   "evidence_count": 24,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/cash-goretzka-gomes-madjo-latest-aston-villa-injury-suspension-list-vs-forest_604765.html",
     "https://avfc.co.uk/news/2026/september/08/prematch-club-brugge-team-news/",
     "https://avfc.co.uk/news/2026/september/07/prematch-club-brugge-team-news/",
     "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
@@ -1002,8 +1045,7 @@
     "https://avfc.co.uk/news/2026/august/31/reaction-unai-emery-post-arsenal/",
     "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
     "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/",
-    "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/arsenal-and-man-city-keep-close-eye-on-chelsea-attacker_604523.html",
-    "https://www.football365.com/news/chelsea-manchester-united-pedro-neto"
+    "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/arsenal-and-man-city-keep-close-eye-on-chelsea-attacker_604523.html"
    ],
    "sources_used": [
     "Aston Villa",
@@ -1181,12 +1223,12 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-kulusevski-simons-latest-spurs-injury-list-for-everton-clash_604742.html",
     "https://www.fourfourtwo.com/team/spurs-not-having-a-stadium-sponsor-could-be-costing-up-to-gbp40m-in-revenue-with-scr-as-the-new-financial-control-it-might-limit-their-transfer-spending",
     "https://www.101greatgoals.com/football/premier-league/the-sack-race-arbeloa-and-de-zerbi-tipped-to-leave-fulham-and-tottenham/",
     "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-could-complete-gbp75m-attacker-signing-after-de-zerbi-recommendation_604569.html",
     "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction/",
-    "https://www.football365.com/news/neco-williams-oliver-glasner-nottingham-forest-tottenham-hotspur-var-controversry",
-    "https://www.nottinghamforest.co.uk/news/2026/september/05/spurs-report/"
+    "https://www.football365.com/news/neco-williams-oliver-glasner-nottingham-forest-tottenham-hotspur-var-controversry"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
