@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-09T11:30:08+00:00",
+ "generated": "2026-09-09T17:29:40+00:00",
  "gameweek": 4,
- "corpus_size": 7957,
+ "corpus_size": 8185,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -65,14 +65,14 @@
    "player": "Gabriel",
    "club": "ARS",
    "status": "Latest on Gabriel — Football365, 09 Sep: “And Scholes thought Gabriel should have definitely been sent off for the indicent, Scholes said on The Good, The Bad & The Football podcast : “He should have been sent off.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 19 retrieved item(s) from 10 source(s), the most recent dated 09 Sep.",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 20 retrieved item(s) from 10 source(s), the most recent dated 09 Sep.",
    "case_for": "What supports keeping him: Football365, 07 Sep: “However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.”",
    "case_against": "What argues against him: Football365, 07 Sep: “And Rooney thinks Gabriel should have been dismissed for this incident, having gone “way over the top”.”",
    "expected_minutes": "On minutes — Football365, 09 Sep: “Gabriel was perhaps fortunate to stay on the pitch while Arsenal were trailing 1-0 to an early Morgan Rogers’ opener for Chelsea after kicking Emiliano Martinez in the head as he looked to get to the ball inside the penalty area.”",
-   "developments": "Recent developments — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.” Sports Mole, 06 Sep: “That match was the 12th time that Gabriel has played against the Blues, and he has never ended on the losing side, with OptaJoe data editor Harvey Downes confirming that is the most an Arsenal player has ever played against Chelsea without suffering defeat.” Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.”",
+   "developments": "Recent developments — Football365, 09 Sep: “Man Utd: Ryan Giggs thinks INEOS have unearthed the next Wayne Rooney – ‘a generational talent’ Manchester United teenager JJ Gabriel and Wayne Rooney Ryan Giggs has compared Manchester United youngster JJ Gabriel to Red Devils legend Wayne Rooney and has given him some strong advice about his future.” Football365, 09 Sep: “Gabriel is only 15 years of age, but the Man Utd teenager has already been making the headlines.” Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 19,
+   "evidence_count": 20,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
     "https://www.sportsmole.co.uk/football/barcelona/transfer-talk/news/he-refused-to-negotiate-julian-alvarez-alternative-firmly-rejects-barca_604761.html",
@@ -84,8 +84,8 @@
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/in-martinellis-hands-arsenal-al-hilal-getting-closer-to-agreement-after-increased-bid_603646.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-transfer-news-today-done-deals-live-updates-and-rumours-august-24_603599.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
-    "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea",
-    "https://www.football365.com/news/rooney-insists-arsenal-star-extremely-lucky-chelsea-carragher-reveals-huge-worry"
+    "https://www.football365.com/news/jj-gabriel-ryan-giggs-wayne-rooney-manchester-united",
+    "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -100,6 +100,22 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Man Utd: Ryan Giggs thinks INEOS have unearthed the next Wayne Rooney – ‘a generational talent’ Manchester United teenager JJ Gabriel and Wayne Rooney Ryan Giggs has compared Manchester United youngster JJ Gabriel to Red Devils legend Wayne Rooney and has given him some strong advice about his future.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/jj-gabriel-ryan-giggs-wayne-rooney-manchester-united",
+     "published": "2026-09-09T15:10:25+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Gabriel is only 15 years of age, but the Man Utd teenager has already been making the headlines.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/jj-gabriel-ryan-giggs-wayne-rooney-manchester-united",
+     "published": "2026-09-09T15:10:25+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Gabriel was perhaps fortunate to stay on the pitch while Arsenal were trailing 1-0 to an early Morgan Rogers’ opener for Chelsea after kicking Emiliano Martinez in the head as he looked to get to the ball inside the penalty area.",
      "source": "Football365",
@@ -352,22 +368,24 @@
    "player": "Semenyo",
    "club": "MCI",
    "status": "Latest on Semenyo — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
-   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 4 retrieved item(s) from 3 source(s), the most recent dated 27 Aug.",
+   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 5 retrieved item(s) from 4 source(s), the most recent dated 27 Aug.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 4,
+   "evidence_count": 5,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
-    "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop"
+    "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-semenyo-gyokeres/"
    ],
    "sources_used": [
     "FPL Captain",
+    "FPL360",
     "Fantasy Football Hub",
     "Fantasy Football Scout"
    ],
@@ -381,6 +399,22 @@
      "topics": [
       "transfer"
      ]
+    },
+    {
+     "text": "You’ve got Haaland facing a tough Liverpool defence, Semenyo potentially on his way out of favour, and a resurgent Arsenal attack with new blood.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-semenyo-gyokeres/",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Semenyo’s form cliff (2.0 rating) makes him risky despite Man City’s overall attacking prowess—monitor team sheets before deadline.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-semenyo-gyokeres/",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
@@ -448,15 +482,16 @@
    "player": "Cherki",
    "club": "MCI",
    "status": "Latest on Cherki — FourFourTwo FPL, 05 Sep: “It leaves Man City with a very strong squad, especially when you consider that they’ll have either Rayan Cherki or Phil Foden in the number ten role.”",
-   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 20 retrieved item(s) from 9 source(s), the most recent dated 05 Sep.",
+   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 21 retrieved item(s) from 9 source(s), the most recent dated 05 Sep.",
    "case_for": "What supports keeping him: Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.” OneFPL: “Cherki has: two GW1 assists two GW2 goals Coventry at home in GW3 a new £7.7m price The upside remains elite.”",
    "case_against": "What argues against him: Fantasy Football Scout, 05 Sep: “Nor was a benching for Phil Foden (£7.0m), a pre-match withdrawal from Nico O’Reilly (£6.5m) or a blank from Rayan Cherki (£7.8m).” Fantasy Football Scout, 05 Sep: “At least he has the ‘xMins’ on his side… CHERKI SUBBED OFF – BUT UNLUCKY TO BLANK A whopping 2.1 million FPL managers brought in Cherki ahead of Gameweek 3.”",
    "expected_minutes": "On minutes — OneFPL: “Rayan Cherki FPL GW3: Still Buy After Deadline Day? | OneFPL Loading OneFPL page In this article sections The short answer Still BUY/HOLD — but with more rotation risk than before deadline day.”",
    "developments": "Recent developments — Opta Analyst, 01 Sep: “Last year, City then added Rayan Cherki , arguably even more of a maverick than Doku, and the Frenchman enjoyed a brilliant first season in the Premier League.” Opta Analyst, 01 Sep: “Similarly, they’ll have four of last season’s top eight for most dribbles completed: Doku (84), Ndiaye (65), Semenyo (59) and Cherki (51).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 20,
+   "evidence_count": 21,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
     "https://www.fourfourtwo.com/transfer/chelsea-had-a-good-transfer-window-but-have-left-themselves-short-in-a-key-position-clinton-morrison-assesses-the-most-dramatic-transfer-deadline-day-in-years",
@@ -467,8 +502,7 @@
     "https://www.si.com/soccer/transfer-rumors-real-madrid-ready-cherki-bid-chelsea-mac-allister-move?utm_source=RSS",
     "https://www.mancity.com/news/mens/rayan-cherki-has-been-nominated-for-the-guinness-goal-of-the-month-for-august-63924027",
     "https://www.itfc.co.uk/news/2026/september/03/emersonn-nominated-for-goal-of-the-month/",
-    "https://www.safc.com/news/2026/september/03/angulo-nominated-for-guinness-goal-of-the-month/",
-    "https://www.mancity.com/news/mens/rayan-cherki-up-for-ea-sports-player-of-the-month-award-63924025"
+    "https://www.safc.com/news/2026/september/03/angulo-nominated-for-guinness-goal-of-the-month/"
    ],
    "sources_used": [
     "FPL Captain",
@@ -561,31 +595,32 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 37 retrieved item(s) from 15 source(s), the most recent dated 09 Sep.",
-   "case_for": "What supports keeping him: Sports Mole, 09 Sep: “Erling Haaland hails Ayyoub Bouaddi after beating Porto © Iconsport / SPI Bouaddi played alongside Enzo Fernandez in midfield as City maintained their perfect start to the season with victory in Portugal Haaland was full of praise for the youngster afterwards, revealing that he had already spoken to the club's chairman about how impressed he had been in training.” Soccerway, 08 Sep: “Haaland made it third time lucky less than two minutes into the second half, guiding Enzo Fernandez ’s cross in off the post to score his fourth goal in three games across all competitions, and move joint-third on City’s list of all-time top goalscorers (166 strikes).” Soccerway, 08 Sep: “City were wobbling, but they rode out the storm, and Haaland slotted home in stoppage time to become the club’s third-highest goalscorer of all time across all competitions (167 strikes).”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 42 retrieved item(s) from 16 source(s), the most recent dated 09 Sep.",
+   "case_for": "What supports keeping him: Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.” Fantasy Football Scout, 09 Sep: “HAALAND DOUBLE Days after ‘only’ scoring once past Coventry City , Gameweek 3’s Triple Captain users had to witness Erling Haaland (£15.5m) scoring twice on this occasion.” Fantasy Football Scout, 09 Sep: “Haaland then struck a cutback straight at the goalkeeper, before breaking the deadlock in the 47th minute when softly heading Enzo Fernandez ‘s (£6.9m) cross in off the post.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Soccerway, 08 Sep: “Manchester City's Erling Haaland netted a brace to kick-start their campaign for a second Champions League crown, with the Citizens beating Porto 2-0 22:37 CET - Life for Inter at the Bernabeu!” Soccerway, 08 Sep: “A second on the night from Marc Bartra and a first Champions League goal in green and white for Troy Parrott has seen them overturn the deficit. 22:08 CET - No prizes for guessing who has given Manchester City a 1-0 lead over Porto... that's right, it's Erling Haaland .”",
-   "developments": "Recent developments — Sports Mole, 09 Sep: “Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.” Sports Illustrated FPL, 08 Sep: “GyÃ¶keres is not seen as untouchable and was even touted to officials in Saudi Arabia. (Source: Ben Jacobs Erling Haaland intends to leave Manchester City at the end of the season and has already held meetings to plan his next move.” Sports Mole, 08 Sep: “Striker Erling Haaland was predictably the one to open the scoring, with the Norwegian outjumping Jakub Kiwior to convert Enzo Fernandez's cross low into the left corner.”",
-   "outlook": "On the coming weeks — Sports Mole, 08 Sep: “Haaland entered the European fixture in fourth spot in Man City's all-time goalscorer list, one behind Tommy Johnson, who represented the club between 1920 and 1930.” 101 Great Goals — Fantasy, 08 Sep: “Haaland’s header early in the second half gave City a crucial lead early in the second half, before the prolific Norwegian tapped home a second to finally seal the game, but only after the visitors had to withstand a barrage of pressure in Portugal.”",
+   "expected_minutes": "On minutes — NBC Sports Rotoworld PL, 09 Sep: “Erling Haaland’s Premier League goal video highlights: 2026-27 season Week 3 — Goal vs Coventry City Haaland's header puts Man City ahead of Coventry Antoine Semenyo's picture-perfect cross finds the head of Erling Haaland inside the box to give Manchester City a 1-0 lead over Coventry City at the Etihad.” NBC Sports Rotoworld PL, 09 Sep: “2 goals at Crystal Palace Haaland's header puts Man City in front of Palace Antoine Semenyo floats in a cross to Erling Haaland, who makes no mistake in front of goal to make it 1-0 for Manchester City against Crystal Palace at Selhurst Park.”",
+   "developments": "Recent developments — Opta Analyst, 09 Sep: “Mbappé is still just 27 years old, while Haaland is even younger at 26, so both could quite feasibly be playing in the competition for the next 10 years.” Football365, 09 Sep: “Erling Haaland makes decision on leaving Man City in 2027 as he chooses between Barcelona, Real Madrid Erling Haaland has been linked with moves to Real Madrid and Barcelona.” Football365, 09 Sep: “Erling Haaland wants to leave Man City at the end of the season and prefers to leave for Barcelona over Real Madrid, according to reports.”",
+   "outlook": "On the coming weeks — Sports Mole, 09 Sep: “Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.” Sports Mole, 09 Sep: “Erling Haaland hails Ayyoub Bouaddi after beating Porto © Iconsport / SPI Bouaddi played alongside Enzo Fernandez in midfield as City maintained their perfect start to the season with victory in Portugal Haaland was full of praise for the youngster afterwards, revealing that he had already spoken to the club's chairman about how impressed he had been in training.”",
    "confidence": "high",
-   "evidence_count": 37,
+   "evidence_count": 42,
    "evidence_used": [
+    "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
+    "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
+    "https://www.football365.com/news/man-city-erling-haaland-decision-transfer-barcelona-real-madrid",
     "https://www.si.com/soccer/transfer-rumors-haaland-chooses-real-madrid-barcelona-arsenal-gyokeres-swap?utm_source=RSS",
     "https://www.sportsmole.co.uk/football/man-city/champions-league/news/on-the-move-haaland-climbs-above-johnson-in-man-city-goalscoring-list-with-brace-in-european-win_604747.html",
-    "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS",
-    "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
-    "https://www.sportsmole.co.uk/football/man-city/news/haaland-hails-man-city-gem-who-has-been-amazing-in-training-after-porto-win_604757.html",
-    "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026"
+    "https://www.si.com/soccer/transfer-rumors-barcelona-haaland-man-utd-hall?utm_source=RSS"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "FPL Captain",
+    "FPL360",
     "Fantasy Football 247",
     "Fantasy Football Hub",
     "Fantasy Football Scout",
@@ -601,6 +636,78 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
+     "published": "2026-09-09T14:53:03+00:00",
+     "tone": "positive",
+     "topics": [
+      "match report"
+     ]
+    },
+    {
+     "text": "Mbappé is still just 27 years old, while Haaland is even younger at 26, so both could quite feasibly be playing in the competition for the next 10 years.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
+     "published": "2026-09-09T14:53:03+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "HAALAND DOUBLE Days after ‘only’ scoring once past Coventry City , Gameweek 3’s Triple Captain users had to witness Erling Haaland (£15.5m) scoring twice on this occasion.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
+     "published": "2026-09-09T14:40:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "Haaland then struck a cutback straight at the goalkeeper, before breaking the deadlock in the 47th minute when softly heading Enzo Fernandez ‘s (£6.9m) cross in off the post.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
+     "published": "2026-09-09T14:40:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland makes decision on leaving Man City in 2027 as he chooses between Barcelona, Real Madrid Erling Haaland has been linked with moves to Real Madrid and Barcelona.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/man-city-erling-haaland-decision-transfer-barcelona-real-madrid",
+     "published": "2026-09-09T14:06:22+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland wants to leave Man City at the end of the season and prefers to leave for Barcelona over Real Madrid, according to reports.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/man-city-erling-haaland-decision-transfer-barcelona-real-madrid",
+     "published": "2026-09-09T14:06:22+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland’s Premier League goal video highlights: 2026-27 season Week 3 — Goal vs Coventry City Haaland's header puts Man City ahead of Coventry Antoine Semenyo's picture-perfect cross finds the head of Erling Haaland inside the box to give Manchester City a 1-0 lead over Coventry City at the Etihad.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
+     "published": "2026-09-09T10:10:00-04:00",
+     "tone": "positive",
+     "topics": [
+      "match report"
+     ]
+    },
+    {
+     "text": "2 goals at Crystal Palace Haaland's header puts Man City in front of Palace Antoine Semenyo floats in a cross to Erling Haaland, who makes no mistake in front of goal to make it 1-0 for Manchester City against Crystal Palace at Selhurst Park.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
+     "published": "2026-09-09T10:10:00-04:00",
+     "tone": "positive",
+     "topics": [
+      "match report"
+     ]
+    },
     {
      "text": "Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.",
      "source": "Sports Mole",
@@ -644,27 +751,6 @@
      "published": "2026-09-08T23:05:00+00:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Manchester City's Erling Haaland netted a brace to kick-start their campaign for a second Champions League crown, with the Citizens beating Porto 2-0 22:37 CET - Life for Inter at the Bernabeu!",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-uefa-champions-league-live-updates-matchday-1-september-2026/fwATHxAN/",
-     "published": "2026-09-08T22:58:49+02:00",
-     "tone": "positive",
-     "topics": [
-      "rotation"
-     ]
-    },
-    {
-     "text": "A second on the night from Marc Bartra and a first Champions League goal in green and white for Troy Parrott has seen them overturn the deficit. 22:08 CET - No prizes for guessing who has given Manchester City a 1-0 lead over Porto... that's right, it's Erling Haaland .",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-uefa-champions-league-live-updates-matchday-1-september-2026/fwATHxAN/",
-     "published": "2026-09-08T22:58:49+02:00",
-     "tone": "positive",
-     "topics": [
-      "match report",
-      "rotation"
-     ]
     },
     {
      "text": "Striker Erling Haaland was predictably the one to open the scoring, with the Norwegian outjumping Jakub Kiwior to convert Enzo Fernandez's cross low into the left corner.",
@@ -865,24 +951,6 @@
      "topics": []
     },
     {
-     "text": "Haaland rockets Man City 4-1 up over Palace Phil Foden puts the ball on a plate for Erling Haaland to blast his effort into the back of the net to complete his brace and give Manchester City a resounding 4-1 lead over Crystal Palace.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
-     "published": "2026-09-05T09:32:00-04:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Erling Haaland’s Premier League goal video highlights: 2025-26 season Week 37 — Goal at Bournemouth Haaland equalizes for Man City against Bournemouth Erling Haaland finally gets Manchester City on the scoresheet to make it 1-1 against Bournemouth at the Vitality Stadium.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-career-statistics-goals-manchester-city-norway-club-country-records",
-     "published": "2026-09-05T09:32:00-04:00",
-     "tone": "positive",
-     "topics": [
-      "match report"
-     ]
-    },
-    {
      "text": "Firstly, he won’t be on penalties anymore, certainly not with Erling Haaland (£15.5m) around.",
      "source": "Fantasy Football Scout",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
@@ -1015,6 +1083,60 @@
      "text": "Premium-team structure Budget enablers matter most if they unlock a meaningful upgrade such as Palmer + Haaland, or Palmer + Isak + a stronger midfield.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/best-fpl-budget-enablers-2026-27-haaland-draft",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Key Takeaways Haaland remains the safest captain with 212 points, 59.6% ownership, and a form rating of 5.0 — but Man City face Everton (difficulty 4) on the final day.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/04/30/fpl-captain-picks-gw35-haaland-vs-fernandes/",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "Captain Pick #1: Haaland — The Safe Choice I’m not going to bury the lede: Haaland remains the obvious captain for most managers, and for good reason.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/04/30/fpl-captain-picks-gw35-haaland-vs-fernandes/",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "You’ve got Haaland facing a tough Liverpool defence, Semenyo potentially on his way out of favour, and a resurgent Arsenal attack with new blood.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-semenyo-gyokeres/",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Key Takeaways: GW37 Captain Strategy Haaland remains the safest pick despite Liverpool’s defensive quality—he’s scored 26 goals this season and faces 19 minutes of action minimum.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-semenyo-gyokeres/",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "That’s a tough match, sure, but Haaland’s elite goal-scoring record means he creates his own luck.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-vs-gibbs-white/",
+     "published": "",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Against Bournemouth, they’ll have a record of defending set-pieces decently, but City’s open-play dominance means Haaland gets multiple opportunities every single match.",
+     "source": "FPL360",
+     "url": "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-vs-gibbs-white/",
      "published": "",
      "tone": "neutral",
      "topics": []
