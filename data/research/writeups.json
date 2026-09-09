@@ -1,14 +1,14 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-08T23:27:18+00:00",
+ "generated": "2026-09-09T05:29:21+00:00",
  "gameweek": 4,
- "corpus_size": 7706,
+ "corpus_size": 7811,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 08 Sep.",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 08 Sep.",
    "case_for": "What supports keeping him: Tactical Football Analysis, 08 Sep: “Arsenal Vs Chelsea Lineups & Formations Arsenal Lineup Vs Chelsea: Arteta’s 4-2-3-1 Arteta set his team up in a 4-2-3-1 formation with David Raya in goal behind a back four of Ben White Ezri Konsa Gabriel Magalhães and Riccardo Calafiori, from right to left.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -17,17 +17,18 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/arsenal/champions-league/team-news/napoli-vs-arsenal-injury-suspension-list-predicted-xis_604646.html",
     "https://www.football365.com/match-preview/napoli-v-arsenal-prediction-preview",
     "https://tacticalfootballanalysis.com/arsenal-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
     "https://www.football365.com/news/big-midweek-champions-league-returns-liverpool-arsenal-man-city-barcelona",
     "https://www.rotowire.com/soccer/article/napoli-vs-arsenal-prediction-predicted-lineups-team-news-132925",
-    "https://www.football365.com/news/arsenal-star-disresepcted-arteta-deliberately-benched-failed-transfer",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
     "Football365",
     "FourFourTwo FPL",
     "RotoWire Soccer",
+    "Sports Mole",
     "Tactical Football Analysis"
    ],
    "quotes": [
@@ -64,14 +65,14 @@
    "player": "Gabriel",
    "club": "ARS",
    "status": "Latest on Gabriel — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 16 retrieved item(s) from 9 source(s), the most recent dated 07 Sep.",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 17 retrieved item(s) from 10 source(s), the most recent dated 07 Sep.",
    "case_for": "What supports keeping him: Football365, 07 Sep: “However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.”",
    "case_against": "What argues against him: Football365, 07 Sep: “And Rooney thinks Gabriel should have been dismissed for this incident, having gone “way over the top”.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Sports Mole, 06 Sep: “That match was the 12th time that Gabriel has played against the Blues, and he has never ended on the losing side, with OptaJoe data editor Harvey Downes confirming that is the most an Arsenal player has ever played against Chelsea without suffering defeat.” Football365, 04 Sep: “Gabriel is well-known for his housery as one of the most disliked players in the Premier League, but he is also regarded as one of the best centre-backs in the division.” Football365, 04 Sep: “But former Aston Villa forward Gabby Agbonlahor has boldly argued that Gabriel is actually the “most overrated player in the league” at the moment.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 16,
+   "evidence_count": 17,
    "evidence_used": [
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
     "https://www.skysports.com/football/news/11670/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
@@ -88,6 +89,7 @@
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
+    "CBS Sports Soccer",
     "DraftKings Network Soccer",
     "Fantasy Football Hub",
     "Flashscore",

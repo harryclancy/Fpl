@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-08T23:27:18+00:00",
- "seconds": 127.2,
+ "ran_at": "2026-09-09T05:29:21+00:00",
+ "seconds": 166.7,
  "sources_attempted": 78,
  "sources_readable": 62,
- "candidates_discovered": 713,
- "substantive_items": 266,
- "duplicates_removed": 17,
- "deeply_analysed": 72,
- "deep_read_failed": 18,
- "corpus_size": 7706,
+ "candidates_discovered": 627,
+ "substantive_items": 183,
+ "duplicates_removed": 7,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 7811,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 266 articles"
+    "62/78 sources returned 183 articles"
    ]
   },
   "blackout": {
@@ -39,6 +39,7 @@
  "failures": [
   "FPL360: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -47,20 +48,19 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
-  "Manchester United: ChunkedEncodingError for https://www.manutd.com/sitemaps/sitemap/0.xml",
-  "Newcastle United: timed out after 12s for https://www.newcastleunited.com/sitemaps/latest-news-sitemap.xml",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "PhysioRoom: timed out after 12s for https://physioroom.com/feeds/all.rss.xml",
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-08T10:51:46+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-08T20:00:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -84,6 +84,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Napoli vs. Arsenal injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/team-news/napoli-vs-arsenal-injury-suspension-list-predicted-xis_604646.html",
+     "source": "Sports Mole",
+     "published": "2026-09-08T20:00:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Wednesday's Champions League clash between Napoli and Arsenal."
+    },
     {
      "title": "Napoli v Arsenal: Prediction, team news, lineups and odds",
      "url": "https://www.football365.com/match-preview/napoli-v-arsenal-prediction-preview",
@@ -121,15 +130,6 @@
      "excerpt": ""
     },
     {
-     "title": "Arsenal star feels ‘disrespected’ by Arteta after being ‘deliberately benched’ to force failed transfer",
-     "url": "https://www.football365.com/news/arsenal-star-disresepcted-arteta-deliberately-benched-failed-transfer",
-     "source": "Football365",
-     "published": "2026-09-07T20:07:33+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Piers Morgan says he has it “on good authority” that the Arsenal star is “p****d off” with Mikel Arteta and Arsenal."
-    },
-    {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
      "url": "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
      "source": "FourFourTwo FPL",
@@ -143,8 +143,8 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 16,
-   "source_count": 9,
+   "evidence_count": 17,
+   "source_count": 10,
    "latest_evidence": "2026-09-07T08:11:36+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
