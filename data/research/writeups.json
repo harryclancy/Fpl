@@ -1,48 +1,35 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-10T11:29:31+00:00",
+ "generated": "2026-09-10T17:28:05+00:00",
  "gameweek": 4,
- "corpus_size": 8614,
+ "corpus_size": 8844,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 08 Sep.",
-   "case_for": "What supports keeping him: Tactical Football Analysis, 08 Sep: “Arsenal Vs Chelsea Lineups & Formations Arsenal Lineup Vs Chelsea: Arteta’s 4-2-3-1 Arteta set his team up in a 4-2-3-1 formation with David Raya in goal behind a back four of Ben White Ezri Konsa Gabriel Magalhães and Riccardo Calafiori, from right to left.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
+   "status": "Latest on Raya — FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 07 Sep.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
+    "https://www.sportsmole.co.uk/football/sunderland/predicted-lineups/fofana-to-start-against-former-admirers-predicted-sunderland-xi-vs-arsenal_604792.html",
+    "https://www.sportsmole.co.uk/football/arsenal/preview/sunderland-vs-arsenal-prediction-team-news-lineups_604790.html",
     "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-mosquera-latest-arsenal-injury-suspension-list-vs-sunderland_604811.html",
     "https://www.101greatgoals.com/football/napoli-v-arsenal-line-ups-confirmed-as-gunners-start-fresh-champions-league-journey/",
-    "https://www.sportsmole.co.uk/football/arsenal/champions-league/team-news/napoli-vs-arsenal-injury-suspension-list-predicted-xis_604646.html",
-    "https://www.football365.com/match-preview/napoli-v-arsenal-prediction-preview",
-    "https://tacticalfootballanalysis.com/arsenal-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
-    "Football365",
     "FourFourTwo FPL",
-    "Sports Mole",
-    "Tactical Football Analysis"
+    "Sports Mole"
    ],
    "quotes": [
-    {
-     "text": "Arsenal Vs Chelsea Lineups & Formations Arsenal Lineup Vs Chelsea: Arteta’s 4-2-3-1 Arteta set his team up in a 4-2-3-1 formation with David Raya in goal behind a back four of Ben White Ezri Konsa Gabriel Magalhães and Riccardo Calafiori, from right to left.",
-     "source": "Tactical Football Analysis",
-     "url": "https://tacticalfootballanalysis.com/arsenal-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
-     "published": "2026-09-08T09:17:21+00:00",
-     "tone": "positive",
-     "topics": [
-      "team news",
-      "tactics"
-     ]
-    },
     {
      "text": "The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.",
      "source": "FourFourTwo FPL",
@@ -65,15 +52,16 @@
    "player": "Gabriel",
    "club": "ARS",
    "status": "Latest on Gabriel — Football365, 09 Sep: “And Scholes thought Gabriel should have definitely been sent off for the indicent, Scholes said on The Good, The Bad & The Football podcast : “He should have been sent off.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 20 retrieved item(s) from 10 source(s), the most recent dated 09 Sep.",
-   "case_for": "What supports keeping him: Football365, 07 Sep: “However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.”",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 22 retrieved item(s) from 11 source(s), the most recent dated 10 Sep.",
+   "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 10 Sep: “Man United: 15-year-old JJ Gabriel scores Youth League hat-trick Skip to content Football News Man United teenager Gabriel scores hat-trick in UEFA Youth League demolition JJ Gabriel furthered his case for an historic first-team appearance by scoring a hat-trick on his Youth League debut.” FourFourTwo FPL, 10 Sep: “Having met the league's academic year age requirement prior to the start of the 2026/27 campaign, Gabriel is legally eligible to make his Premier League debut this term, which was not the case last season.” Football365, 07 Sep: “However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.”",
    "case_against": "What argues against him: Football365, 07 Sep: “And Rooney thinks Gabriel should have been dismissed for this incident, having gone “way over the top”.”",
    "expected_minutes": "On minutes — Football365, 09 Sep: “Gabriel was perhaps fortunate to stay on the pitch while Arsenal were trailing 1-0 to an early Morgan Rogers’ opener for Chelsea after kicking Emiliano Martinez in the head as he looked to get to the ball inside the penalty area.”",
-   "developments": "Recent developments — Football365, 09 Sep: “Man Utd: Ryan Giggs thinks INEOS have unearthed the next Wayne Rooney – ‘a generational talent’ Manchester United teenager JJ Gabriel and Wayne Rooney Ryan Giggs has compared Manchester United youngster JJ Gabriel to Red Devils legend Wayne Rooney and has given him some strong advice about his future.” Football365, 09 Sep: “Gabriel is only 15 years of age, but the Man Utd teenager has already been making the headlines.” Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
-   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "developments": "Recent developments — 101 Great Goals — Fantasy, 10 Sep: “Gabriel, 15, was a regular feature in United’s pre-season squads this summer, though he featured in just one of those games, against Atletico Madrid in Stockholm.” FourFourTwo FPL, 10 Sep: “Gabriel’s ascent has fuelled speculation over whether he can feature for Manchester United’s senior squad in the Premier League this season.” Football365, 09 Sep: “Man Utd: Ryan Giggs thinks INEOS have unearthed the next Wayne Rooney – ‘a generational talent’ Manchester United teenager JJ Gabriel and Wayne Rooney Ryan Giggs has compared Manchester United youngster JJ Gabriel to Red Devils legend Wayne Rooney and has given him some strong advice about his future.”",
+   "outlook": "On the coming weeks — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
    "confidence": "high",
-   "evidence_count": 20,
+   "evidence_count": 22,
    "evidence_used": [
+    "https://www.fourfourtwo.com/person/player/manchester-united-academy-sensation-steals-show-with-european-hat-trick-as-historic-debut-edges-closer",
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
     "https://www.sportsmole.co.uk/football/barcelona/transfer-talk/news/he-refused-to-negotiate-julian-alvarez-alternative-firmly-rejects-barca_604761.html",
     "https://www.skysports.com/football/news/11670/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
@@ -84,8 +72,7 @@
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/in-martinellis-hands-arsenal-al-hilal-getting-closer-to-agreement-after-increased-bid_603646.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-transfer-news-today-done-deals-live-updates-and-rumours-august-24_603599.html",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/martinelli-future-gunners-talks-with-new-club-after-failed-galatasaray-bid_603609.html",
-    "https://www.football365.com/news/jj-gabriel-ryan-giggs-wayne-rooney-manchester-united",
-    "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea"
+    "https://www.101greatgoals.com/football/man-united-gabriel-hat-trick/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -94,12 +81,45 @@
     "Fantasy Football Hub",
     "Flashscore",
     "Football365",
+    "FourFourTwo FPL",
     "Leeds United",
     "Sky Sports Premier League",
     "Soccerway",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Man United: 15-year-old JJ Gabriel scores Youth League hat-trick Skip to content Football News Man United teenager Gabriel scores hat-trick in UEFA Youth League demolition JJ Gabriel furthered his case for an historic first-team appearance by scoring a hat-trick on his Youth League debut.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/man-united-gabriel-hat-trick/",
+     "published": "2026-09-10T16:06:31+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Gabriel, 15, was a regular feature in United’s pre-season squads this summer, though he featured in just one of those games, against Atletico Madrid in Stockholm.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/man-united-gabriel-hat-trick/",
+     "published": "2026-09-10T16:06:31+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Gabriel’s ascent has fuelled speculation over whether he can feature for Manchester United’s senior squad in the Premier League this season.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/manchester-united-academy-sensation-steals-show-with-european-hat-trick-as-historic-debut-edges-closer",
+     "published": "2026-09-10T15:13:09+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Having met the league's academic year age requirement prior to the start of the 2026/27 campaign, Gabriel is legally eligible to make his Premier League debut this term, which was not the case last season.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/manchester-united-academy-sensation-steals-show-with-european-hat-trick-as-historic-debut-edges-closer",
+     "published": "2026-09-10T15:13:09+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Man Utd: Ryan Giggs thinks INEOS have unearthed the next Wayne Rooney – ‘a generational talent’ Manchester United teenager JJ Gabriel and Wayne Rooney Ryan Giggs has compared Manchester United youngster JJ Gabriel to Red Devils legend Wayne Rooney and has given him some strong advice about his future.",
      "source": "Football365",
@@ -379,29 +399,39 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "status": "Latest on Semenyo — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
-   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 5 retrieved item(s) from 4 source(s), the most recent dated 27 Aug.",
+   "status": "Latest on Semenyo — 101 Great Goals — Fantasy, 10 Sep: “Semenyo is not a bad player, but he does not currently look like good value.”",
+   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 10 Sep.",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 5,
+   "evidence_count": 6,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/05/3pm-team-news-foden-a-sub-cherki-oreilly-semenyo-start",
     "https://www.fantasyfootballhub.co.uk/zophars-gameweek-2-qa-hinshelwood-or-ndiaye-triple-up-on-chelsea-2026-27-article",
+    "https://www.101greatgoals.com/football/fantasy/fantasy-premier-league-2026-27-antoine-semenyo-harry-maguire-headline-this-weeks-must-drops/",
     "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
     "https://fpl360.com/2026/05/13/fpl-captain-picks-gw37-haaland-semenyo-gyokeres/"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "FPL Captain",
     "FPL360",
     "Fantasy Football Hub",
     "Fantasy Football Scout"
    ],
    "quotes": [
+    {
+     "text": "Semenyo is not a bad player, but he does not currently look like good value.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/fantasy/fantasy-premier-league-2026-27-antoine-semenyo-harry-maguire-headline-this-weeks-must-drops/",
+     "published": "2026-09-10T13:07:42+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]",
      "source": "Fantasy Football Hub",
@@ -607,14 +637,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 44 retrieved item(s) from 16 source(s), the most recent dated 10 Sep.",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 45 retrieved item(s) from 16 source(s), the most recent dated 10 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 10 Sep: “Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.” Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.” Fantasy Football Scout, 09 Sep: “HAALAND DOUBLE Days after ‘only’ scoring once past Coventry City , Gameweek 3’s Triple Captain users had to witness Erling Haaland (£15.5m) scoring twice on this occasion.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — NBC Sports Rotoworld PL, 09 Sep: “Erling Haaland’s Premier League goal video highlights: 2026-27 season Week 3 — Goal vs Coventry City Haaland's header puts Man City ahead of Coventry Antoine Semenyo's picture-perfect cross finds the head of Erling Haaland inside the box to give Manchester City a 1-0 lead over Coventry City at the Etihad.” NBC Sports Rotoworld PL, 09 Sep: “2 goals at Crystal Palace Haaland's header puts Man City in front of Palace Antoine Semenyo floats in a cross to Erling Haaland, who makes no mistake in front of goal to make it 1-0 for Manchester City against Crystal Palace at Selhurst Park.”",
-   "developments": "Recent developments — Sports Mole, 10 Sep: “Haaland could catch up and overtake Mbappe if he continues to score at the otherworldly rate he has in his first 59 UCL appearances.” Opta Analyst, 09 Sep: “Mbappé is still just 27 years old, while Haaland is even younger at 26, so both could quite feasibly be playing in the competition for the next 10 years.” Fantasy Football Scout, 09 Sep: “Haaland then struck a cutback straight at the goalkeeper, before breaking the deadlock in the 47th minute when softly heading Enzo Fernandez ‘s (£6.9m) cross in off the post.”",
+   "developments": "Recent developments — Football365, 10 Sep: “Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.” Football365, 10 Sep: “Just take a look at these stats =1) Erling Haaland (Manchester City) – £189.1m (€220m) And these stats as well. =1) Lamine Yamal (FC Barcelona) – £189.1m (€220m) The generational talent of Lamine Yamal is the most valuable player in world football, tied with Haaland.” Sports Mole, 10 Sep: “Haaland could catch up and overtake Mbappe if he continues to score at the otherworldly rate he has in his first 59 UCL appearances.”",
    "outlook": "On the coming weeks — Sports Mole, 09 Sep: “Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.” Sports Mole, 09 Sep: “Erling Haaland hails Ayyoub Bouaddi after beating Porto © Iconsport / SPI Bouaddi played alongside Enzo Fernandez in midfield as City maintained their perfect start to the season with victory in Portugal Haaland was full of praise for the youngster afterwards, revealing that he had already spoken to the club's chairman about how impressed he had been in training.”",
    "confidence": "high",
-   "evidence_count": 44,
+   "evidence_count": 45,
    "evidence_used": [
     "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
     "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
@@ -648,6 +678,22 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/yamal-mbappe-most-valuable-footballers-in-the-world",
+     "published": "2026-09-10T14:41:09+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Just take a look at these stats =1) Erling Haaland (Manchester City) – £189.1m (€220m) And these stats as well. =1) Lamine Yamal (FC Barcelona) – £189.1m (€220m) The generational talent of Lamine Yamal is the most valuable player in world football, tied with Haaland.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/yamal-mbappe-most-valuable-footballers-in-the-world",
+     "published": "2026-09-10T14:41:09+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.",
      "source": "Sports Mole",
@@ -1178,14 +1224,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 26 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 27 retrieved item(s) from 8 source(s), the most recent dated 02 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...” OneFPL: “3 Leeds: Palmer, Rogers & João Pedro FPL | OneFPL Loading OneFPL page In this article sections The short answer Chelsea's 6-3 Carabao Cup win over Leeds strengthened the FPL case for their main attackers before Hull — but for different reasons.”",
    "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.” Tactical Football Analysis, 26 Aug: “Palmer took advantage of this space to receive and turn, while taking advantage of the massive gap that still existed between Fulham’s centre-backs to play João Pedro through to score.”",
    "outlook": "On the coming weeks — OneFPL: “João Pedro FPL After GW3: Essential or Trap? | OneFPL Loading OneFPL page In this article sections The short answer João Pedro remains a strong HOLD and a good BUY for the right structure, but 'essential' is still too strong.”",
    "confidence": "high",
-   "evidence_count": 26,
+   "evidence_count": 27,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
     "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/cash-goretzka-gomes-madjo-latest-aston-villa-injury-suspension-list-vs-forest_604765.html",
@@ -1341,29 +1387,50 @@
      "published": "",
      "tone": "neutral",
      "topics": []
+    },
+    {
+     "text": "Joao Pedro signs new Chelsea contract | News | Official Site | Chelsea Football Club Chelsea is delighted to announce that Joao Pedro has signed a new contract until 2034.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
+     "published": "",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Joao Pedro continued to be decisive in his first full season as a Chelsea player.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "status": "Latest on Thiago — Sunderland, 03 Sep: “The Bees also reached the quarter-finals of the Carabao Cup, while Igor Thiago finished as their leading scorer with 22 league goals.”",
-   "why_here": "Thiago is in the starting eleven this week at £7.9m as a FWD. The selection rests on 5 retrieved item(s) from 4 source(s), the most recent dated 03 Sep.",
+   "status": "Latest on Thiago — Brentford: “Brazil equalise with a fantastic strike from Vinicius Junior! 🇧🇷 pic.twitter.com/rRBSI3lzLn — Match of the Day (@BBCMOTD) June 13, 2026 Thiago played 62 minutes and continued to offer Brazil a physical presence through the middle, occupying the well-organised Moroccan defenders.”",
+   "why_here": "Thiago is in the starting eleven this week at £7.9m as a FWD. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 03 Sep.",
    "case_for": "What supports keeping him: Sunderland, 03 Sep: “The Bees also reached the quarter-finals of the Carabao Cup, while Igor Thiago finished as their leading scorer with 22 league goals.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Sunderland, 03 Sep: “The Bees also reached the quarter-finals of the Carabao Cup, while Igor Thiago finished as their leading scorer with 22 league goals.”",
-   "developments": "Recent developments — Sunderland, 03 Sep: “The Bees also reached the quarter-finals of the Carabao Cup, while Igor Thiago finished as their leading scorer with 22 league goals.”",
+   "expected_minutes": "On minutes — Brentford: “World Cup: Kristoffer Ajer and Norway beat Ivory Coast to set up clash with Igor Thiago's Brazil | Brentford FC | Brentford FC Brentford defender Kristoffer Ajer played the full 90 minutes as Norway beat Ivory Coast 2-1 to reach the round of 16 at the 2026 FIFA World Cup.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
-   "evidence_count": 5,
+   "confidence": "medium",
+   "evidence_count": 7,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/everton/transfer-talk/news/monaco-chief-makes-major-balogun-claim-after-failed-everton-transfer_604292.html",
     "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/part-of-the-game-monaco-chief-defends-scrapping-camara-chelsea-deadline-day-transfer_604283.html",
     "https://www.safc.com/news/2026/september/03/everything-you-need-to-know--brentford-v-sunderland/",
     "https://www.football365.com/news/lamine-camara-liverpool-as-monaco-thiago-scuro",
-    "https://www.fourfourtwo.com/transfer/inside-evertons-failed-folarin-balogun-transfer-as-monaco-chief-makes-brutal-no-sense-at-all-claim"
+    "https://www.fourfourtwo.com/transfer/inside-evertons-failed-folarin-balogun-transfer-as-monaco-chief-makes-brutal-no-sense-at-all-claim",
+    "https://www.brentfordfc.com/en/news/article/international-igor-thiago-brazil-1-morocco-1-group-c-2026-fifa-world-cup",
+    "https://www.brentfordfc.com/en/news/article/international-2026-fifa-world-cup-kristoffer-ajer-norway-2-ivory-coast-1-brazil-igor-thiago"
    ],
    "sources_used": [
+    "Brentford",
     "Football365",
     "FourFourTwo FPL",
     "Sports Mole",
@@ -1379,6 +1446,32 @@
      "topics": [
       "rotation"
      ]
+    },
+    {
+     "text": "Brazil equalise with a fantastic strike from Vinicius Junior! 🇧🇷 pic.twitter.com/rRBSI3lzLn — Match of the Day (@BBCMOTD) June 13, 2026 Thiago played 62 minutes and continued to offer Brazil a physical presence through the middle, occupying the well-organised Moroccan defenders.",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/international-igor-thiago-brazil-1-morocco-1-group-c-2026-fifa-world-cup",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "World Cup: Kristoffer Ajer and Norway beat Ivory Coast to set up clash with Igor Thiago's Brazil | Brentford FC | Brentford FC Brentford defender Kristoffer Ajer played the full 90 minutes as Norway beat Ivory Coast 2-1 to reach the round of 16 at the 2026 FIFA World Cup.",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/international-2026-fifa-world-cup-kristoffer-ajer-norway-2-ivory-coast-1-brazil-igor-thiago",
+     "published": "",
+     "tone": "neutral",
+     "topics": [
+      "match report"
+     ]
+    },
+    {
+     "text": "Ajer and Norway will now face Igor Thiago ’s Brazil in the round of 16 on Sunday 5 July (9pm kick-off BST) in New Jersey.",
+     "source": "Brentford",
+     "url": "https://www.brentfordfc.com/en/news/article/international-2026-fifa-world-cup-kristoffer-ajer-norway-2-ivory-coast-1-brazil-igor-thiago",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
@@ -1386,7 +1479,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1395,18 +1488,16 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
-    "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-kulusevski-simons-latest-spurs-injury-list-for-everton-clash_604742.html",
-    "https://www.fourfourtwo.com/team/spurs-not-having-a-stadium-sponsor-could-be-costing-up-to-gbp40m-in-revenue-with-scr-as-the-new-financial-control-it-might-limit-their-transfer-spending",
-    "https://www.101greatgoals.com/football/premier-league/the-sack-race-arbeloa-and-de-zerbi-tipped-to-leave-fulham-and-tottenham/",
-    "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-could-complete-gbp75m-attacker-signing-after-de-zerbi-recommendation_604569.html",
-    "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction/",
-    "https://www.football365.com/news/neco-williams-oliver-glasner-nottingham-forest-tottenham-hotspur-var-controversry"
+    "https://www.sportsmole.co.uk/football/everton/predicted-lineups/grealish-maitland-niles-decisions-predicted-everton-xi-vs-tottenham_604783.html",
+    "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html",
+    "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-everton-prediction-team-news-lineups_604780.html",
+    "https://www.football365.com/news/man-utd-line-up-same-level-tottenham",
+    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-kulusevski-simons-latest-spurs-injury-list-for-everton-clash_604742.html"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "Football365",
     "FourFourTwo FPL",
-    "Nottingham Forest",
     "Sports Mole"
    ],
    "quotes": []

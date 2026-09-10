@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-10T11:29:31+00:00",
- "seconds": 136.4,
+ "ran_at": "2026-09-10T17:28:05+00:00",
+ "seconds": 166.2,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 719,
- "substantive_items": 258,
- "duplicates_removed": 18,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 8614,
+ "sources_readable": 65,
+ "candidates_discovered": 801,
+ "substantive_items": 353,
+ "duplicates_removed": 29,
+ "deeply_analysed": 63,
+ "deep_read_failed": 27,
+ "corpus_size": 8844,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 258 articles"
+    "65/78 sources returned 353 articles"
    ]
   },
   "blackout": {
@@ -48,15 +48,16 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-09T23:49:18+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-10T11:04:16+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -81,6 +82,33 @@
    "researched": true,
    "items": [
     {
+     "title": "Arsenal lineup vs. Sunderland: Predicted XI as four changes made by Mikel Arteta",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
+     "source": "Sports Mole",
+     "published": "2026-09-10T11:04:16+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Saturday's Premier League clash with Sunderland."
+    },
+    {
+     "title": "Sunderland lineup vs. Arsenal: Predicted XI as Malick Fofana starts against former admirers",
+     "url": "https://www.sportsmole.co.uk/football/sunderland/predicted-lineups/fofana-to-start-against-former-admirers-predicted-sunderland-xi-vs-arsenal_604792.html",
+     "source": "Sports Mole",
+     "published": "2026-09-10T10:54:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Sunderland could line up for Saturday's Premier League clash with Arsenal."
+    },
+    {
+     "title": "Sunderland vs Arsenal - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/preview/sunderland-vs-arsenal-prediction-team-news-lineups_604790.html",
+     "source": "Sports Mole",
+     "published": "2026-09-10T10:53:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Sunderland and Arsenal, including predictions, team news and possible lineups."
+    },
+    {
      "title": "Arsenal injury, suspension list and return dates vs. Sunderland: Jurrien Timber, William Saliba, Cristhian Mosquera latest",
      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-mosquera-latest-arsenal-injury-suspension-list-vs-sunderland_604811.html",
      "source": "Sports Mole",
@@ -99,33 +127,6 @@
      "excerpt": "De Bruyne starts for the hosts"
     },
     {
-     "title": "Napoli vs. Arsenal injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/team-news/napoli-vs-arsenal-injury-suspension-list-predicted-xis_604646.html",
-     "source": "Sports Mole",
-     "published": "2026-09-08T20:00:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Wednesday's Champions League clash between Napoli and Arsenal."
-    },
-    {
-     "title": "Napoli v Arsenal: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/napoli-v-arsenal-prediction-preview",
-     "source": "Football365",
-     "published": "2026-09-08T10:51:46+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Champions League clash between Napoli and Arsenal."
-    },
-    {
-     "title": "Arsenal Vs Chelsea [2-1] Premier League 2026/2027: How Mikel Arteta Attacking Dynamism Opened Chelsea - Tactical Analysis",
-     "url": "https://tacticalfootballanalysis.com/arsenal-chelsea-premier-league-2026-2027-tactical-analysis-tactics/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-09-08T09:17:21+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal’s 2-1 win over Chelsea showcased Mikel Arteta’s attacking rotations and aggressive full-back positioning. This tactical analysis examines Declan Rice’s build-up role, how Arsenal manipulated Chelsea’s defensive shapes, and why Xabi Alonso’s side struggled to create clear chances."
-    },
-    {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
      "url": "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
      "source": "FourFourTwo FPL",
@@ -139,9 +140,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 20,
-   "source_count": 10,
-   "latest_evidence": "2026-09-09T15:10:25+00:00",
+   "evidence_count": 22,
+   "source_count": 11,
+   "latest_evidence": "2026-09-10T16:06:31+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -166,6 +167,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Manchester United academy sensation steals show with European hat-trick as historic debut edges closer",
+     "url": "https://www.fourfourtwo.com/person/player/manchester-united-academy-sensation-steals-show-with-european-hat-trick-as-historic-debut-edges-closer",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-10T15:13:09+00:00",
+     "matched_on": "gabriel",
+     "kind": "team news",
+     "excerpt": "Fifteen-year-old prodigy JJ Gabriel arrived on the continental stage with a hat-trick on his UEFA Youth League debut against Sabah FK U19, who were beaten 5-0 at Leigh Sports Village. The forward delivered a three-goal performance to spearhead Manchester United ’s youth side to victory, underlining yet again why he is considered one of the brightest talents in Carrington's academy. Gabriel’s ascen"
+    },
     {
      "title": "FPL suspensions watch: Gabriel, Gross among players booked so far",
      "url": "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
@@ -257,22 +267,13 @@
      "excerpt": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray."
     },
     {
-     "title": "Ryan Giggs thinks Man Utd have unearthed the next Wayne Rooney – ‘a generational talent’",
-     "url": "https://www.football365.com/news/jj-gabriel-ryan-giggs-wayne-rooney-manchester-united",
-     "source": "Football365",
-     "published": "2026-09-09T15:10:25+00:00",
+     "title": "Man United teenager Gabriel scores hat-trick in UEFA Youth League demolition",
+     "url": "https://www.101greatgoals.com/football/man-united-gabriel-hat-trick/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-10T16:06:31+00:00",
      "matched_on": "gabriel",
      "kind": "general",
-     "excerpt": "Ryan Giggs has compared a Manchester United youngster to Red Devils legend Wayne Rooney."
-    },
-    {
-     "title": "Scholes slams Arsenal star who ‘gets away with murder’ after Chelsea victory",
-     "url": "https://www.football365.com/news/arsenal-scholes-gabriel-magalhaes-murder-chelsea",
-     "source": "Football365",
-     "published": "2026-09-09T11:27:53+00:00",
-     "matched_on": "gabriel",
-     "kind": "general",
-     "excerpt": "Paul Scholes agrees that Arsenal centre-back Gabriel Magalhaes “gets away with murder” after watching the Gunners beat Chelsea."
+     "excerpt": "JJ Gabriel furthered his case for an historic first-team appearance by scoring a hat-trick on his Youth League debut."
     }
    ]
   },
@@ -556,9 +557,9 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "evidence_count": 5,
-   "source_count": 4,
-   "latest_evidence": "2026-09-05T13:30:00+00:00",
+   "evidence_count": 6,
+   "source_count": 5,
+   "latest_evidence": "2026-09-10T13:07:42+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -573,6 +574,7 @@
     "injury",
     "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -599,6 +601,15 @@
      "matched_on": "semenyo",
      "kind": "transfer",
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
+    },
+    {
+     "title": "Fantasy Premier League 2026/27: Semenyo and Maguire headline this week’s must drops",
+     "url": "https://www.101greatgoals.com/football/fantasy/fantasy-premier-league-2026-27-antoine-semenyo-harry-maguire-headline-this-weeks-must-drops/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-10T13:07:42+00:00",
+     "matched_on": "semenyo",
+     "kind": "general",
+     "excerpt": "The season is starting to take shape and now is a good time to work out who you can dump from your Fantasy Premier League squad. We offer five names for consideration..."
     },
     {
      "title": "Fpl price changes wissa rises as semenyo and rice values drop",
@@ -835,9 +846,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 44,
+   "evidence_count": 45,
    "source_count": 16,
-   "latest_evidence": "2026-09-10T02:21:00+01:00",
+   "latest_evidence": "2026-09-10T14:41:09+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -975,7 +986,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 26,
+   "evidence_count": 27,
    "source_count": 8,
    "latest_evidence": "2026-09-10T06:00:00+00:00",
    "official_source_found": true,
@@ -1115,8 +1126,8 @@
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "evidence_count": 5,
-   "source_count": 4,
+   "evidence_count": 7,
+   "source_count": 5,
    "latest_evidence": "2026-09-03T15:24:04+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1125,10 +1136,13 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": false,
+   "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "injury",
+    "match report",
     "press conference",
+    "set pieces",
     "tactics",
     "team news",
     "transfer"
@@ -1181,6 +1195,24 @@
      "matched_on": "thiago",
      "kind": "general",
      "excerpt": "AS Monaco sporting director Thiago Scuro has revealed the extraordinary sequence of events behind Folarin Balogun’s deadline day transfer collapse to Everton. Speaking to Get French Football News (GFFN) , Scuro detailed how medical doubts raised by the Premier League club ultimately provoked the striker to reject the move at the final minute. Scuro explained that Monaco had established a clear fin"
+    },
+    {
+     "title": "International igor thiago brazil 1 morocco 1 group c 2026 fifa world cup",
+     "url": "https://www.brentfordfc.com/en/news/article/international-igor-thiago-brazil-1-morocco-1-group-c-2026-fifa-world-cup",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "thiago",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "International 2026 fifa world cup kristoffer ajer norway 2 ivory coast 1 brazil igor thiago",
+     "url": "https://www.brentfordfc.com/en/news/article/international-2026-fifa-world-cup-kristoffer-ajer-norway-2-ivory-coast-1-brazil-igor-thiago",
+     "source": "Brentford",
+     "published": "",
+     "matched_on": "thiago",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -1188,9 +1220,9 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-09T06:00:00+01:00",
-   "official_source_found": true,
+   "source_count": 3,
+   "latest_evidence": "2026-09-10T10:25:51+01:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1200,9 +1232,8 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
-    "press conference",
+    "match report",
     "set pieces",
     "statistics",
     "tactics",
@@ -1214,6 +1245,51 @@
    "researched": true,
    "items": [
     {
+     "title": "Everton lineup vs. Tottenham: Predicted XI as Jack Grealish, Ainsley Maitland-Niles start Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/everton/predicted-lineups/grealish-maitland-niles-decisions-predicted-everton-xi-vs-tottenham_604783.html",
+     "source": "Sports Mole",
+     "published": "2026-09-10T10:25:51+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Everton could line up for Saturday's Premier League clash with Tottenham Hotspur."
+    },
+    {
+     "title": "Tottenham lineup vs. Everton: Predicted XI as Mathys Tel, James Maddison decisions made for Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html",
+     "source": "Sports Mole",
+     "published": "2026-09-10T10:25:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League clash with Everton."
+    },
+    {
+     "title": "Tottenham Hotspur vs Everton - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-everton-prediction-team-news-lineups_604780.html",
+     "source": "Sports Mole",
+     "published": "2026-09-10T10:23:28+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Tottenham Hotspur and Everton, including predictions, team news and possible lineups."
+    },
+    {
+     "title": "Man Utd line-up sees them on same level as Tottenham; NOT a compliment",
+     "url": "https://www.football365.com/news/man-utd-line-up-same-level-tottenham",
+     "source": "Football365",
+     "published": "2026-09-10T06:30:42+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Remember when ‘Anyone but United’ meant you wanted anyone but United to win? Now you just want to emulate Anyone but United."
+    },
+    {
+     "title": "Tottenham Hotspur need to forget their £185m midfield duo – Roberto De Zerbi must build his midfield around another guy",
+     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-10T06:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "“He’s the reason”, Tottenham Hotspur fans once sang about Rodrigo Bentancur. In the 2021/22 season, particularly once Antonio Conte took over from Nuno Espirito Santo, the Uruguayan was instrumental in the middle of the park. He forged a fine partnership with Pierre-Emile Hojbjerg , and looked a world beater in north London. There was even an argument to be made that he was their most important pl"
+    },
+    {
      "title": "Tottenham injury, suspension news and return dates for Everton clash: Maddison, Kulusevski, Simons latest",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-kulusevski-simons-latest-spurs-injury-list-for-everton-clash_604742.html",
      "source": "Sports Mole",
@@ -1221,51 +1297,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up Tottenham Hotspur’s injury and suspension news ahead of their Premier League clash with Everton on Saturday."
-    },
-    {
-     "title": "Tottenham Hotspur’s £40m stadium dilemma limits transfer spending under new rules",
-     "url": "https://www.fourfourtwo.com/team/spurs-not-having-a-stadium-sponsor-could-be-costing-up-to-gbp40m-in-revenue-with-scr-as-the-new-financial-control-it-might-limit-their-transfer-spending",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-08T06:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "As more clubs in the Premier League and Championship have moved from their historic homes into shiny new grounds, the impressive potential of stadium naming rights has made its way into the English game. Renaming Highbury or Goodison Park would have been beyond the pale, not to mention a futile exercise in terms of what the supporters of Arsenal or Everton would have called them. But nobody refers"
-    },
-    {
-     "title": "The Sack Race: Arbeloa and De Zerbi tipped to leave Fulham and Tottenham",
-     "url": "https://www.101greatgoals.com/football/premier-league/the-sack-race-arbeloa-and-de-zerbi-tipped-to-leave-fulham-and-tottenham/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-07T11:17:34+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Fulham and Tottenham have had difficult starts to the new Premier League season, leading to speculation they could leave their posts"
-    },
-    {
-     "title": "Tottenham transfer news: £75m attacker signing 'not ruled out' after Roberto De Zerbi recommendation",
-     "url": "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-could-complete-gbp75m-attacker-signing-after-de-zerbi-recommendation_604569.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T09:01:37+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur have reportedly not ruled out making a £75m attacker signing in 2027 after their unprecedented summer spending spree."
-    },
-    {
-     "title": "GLASNER'S SPURS REACTION",
-     "url": "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction/",
-     "source": "Nottingham Forest",
-     "published": "2026-09-05T18:06:39+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Oliver Glasner admitted he was a bit disappointed to only take a point from Nottingham Forest’s draw with Tottenham Hotspur. The Reds played out a goalless draw at the City Ground, although Forest saw a second-half Neco Williams goal ruled out by VAR. The point is Forest’s second of the season under Glasner, though the Austrian is happy with what he is seeing from his side. “We defended well, but "
-    },
-    {
-     "title": "Neco Williams and Oliver Glasner react to disallowed Nottingham Forest goal v Tottenham – ‘Headed it in’",
-     "url": "https://www.football365.com/news/neco-williams-oliver-glasner-nottingham-forest-tottenham-hotspur-var-controversry",
-     "source": "Football365",
-     "published": "2026-09-05T17:30:29+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Neco Williams and Oliver Glasner are fuming after Nottingham Forest saw a goal ruled out against Tottenham Hotspur."
     }
    ]
   },
