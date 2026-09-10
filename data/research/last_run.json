@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-09T23:27:42+00:00",
- "seconds": 166.8,
+ "ran_at": "2026-09-10T05:29:20+00:00",
+ "seconds": 156.3,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 743,
- "substantive_items": 290,
- "duplicates_removed": 21,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 8361,
+ "sources_readable": 66,
+ "candidates_discovered": 658,
+ "substantive_items": 215,
+ "duplicates_removed": 10,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 8471,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 290 articles"
+    "66/78 sources returned 215 articles"
    ]
   },
   "blackout": {
@@ -47,9 +47,8 @@
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: timed out after 12s for https://physioroom.com/feeds/all.rss.xml",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "PhysioRoom: nothing published in the last 10 days",
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -57,7 +56,7 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-08T20:00:00+01:00",
+   "latest_evidence": "2026-09-09T23:49:18+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -81,6 +80,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal injury, suspension list and return dates vs. Sunderland: Jurrien Timber, William Saliba, Cristhian Mosquera latest",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-mosquera-latest-arsenal-injury-suspension-list-vs-sunderland_604811.html",
+     "source": "Sports Mole",
+     "published": "2026-09-09T23:49:18+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League clash with Sunderland."
+    },
+    {
+     "title": "Napoli v Arsenal: Line-ups confirmed as Gunners start fresh Champions League journey",
+     "url": "https://www.101greatgoals.com/football/napoli-v-arsenal-line-ups-confirmed-as-gunners-start-fresh-champions-league-journey/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-09T17:59:24+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "De Bruyne starts for the hosts"
+    },
     {
      "title": "Napoli vs. Arsenal injury, suspension list, predicted XIs",
      "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/team-news/napoli-vs-arsenal-injury-suspension-list-predicted-xis_604646.html",
@@ -107,24 +124,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Arsenal’s 2-1 win over Chelsea showcased Mikel Arteta’s attacking rotations and aggressive full-back positioning. This tactical analysis examines Declan Rice’s build-up role, how Arsenal manipulated Chelsea’s defensive shapes, and why Xabi Alonso’s side struggled to create clear chances."
-    },
-    {
-     "title": "Big Midweek: Champions League returns with tasty Liverpool and Arsenal fixtures, reborn Raphinha, Man City tactical battle…",
-     "url": "https://www.football365.com/news/big-midweek-champions-league-returns-liverpool-arsenal-man-city-barcelona",
-     "source": "Football365",
-     "published": "2026-09-08T06:25:32+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "The Champions League is back and there are some tasty fixtures on matchday one, while there’s EFL Cup and Championship action to keep an eye out for as well."
-    },
-    {
-     "title": "Napoli vs Arsenal Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/napoli-vs-arsenal-prediction-predicted-lineups-team-news-132925",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-08T03:03:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
@@ -836,9 +835,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 43,
+   "evidence_count": 44,
    "source_count": 16,
-   "latest_evidence": "2026-09-09T23:05:00+00:00",
+   "latest_evidence": "2026-09-10T02:21:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -976,7 +975,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 24,
+   "evidence_count": 25,
    "source_count": 8,
    "latest_evidence": "2026-09-09T09:51:00+01:00",
    "official_source_found": true,
