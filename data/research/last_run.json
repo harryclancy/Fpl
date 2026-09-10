@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-10T05:29:20+00:00",
- "seconds": 156.3,
+ "ran_at": "2026-09-10T11:29:31+00:00",
+ "seconds": 136.4,
  "sources_attempted": 78,
  "sources_readable": 66,
- "candidates_discovered": 658,
- "substantive_items": 215,
- "duplicates_removed": 10,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 8471,
+ "candidates_discovered": 719,
+ "substantive_items": 258,
+ "duplicates_removed": 18,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 8614,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 215 articles"
+    "66/78 sources returned 258 articles"
    ]
   },
   "blackout": {
@@ -975,9 +975,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 25,
+   "evidence_count": 26,
    "source_count": 8,
-   "latest_evidence": "2026-09-09T09:51:00+01:00",
+   "latest_evidence": "2026-09-10T06:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1002,6 +1002,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur need to forget their £185m midfield duo – Roberto De Zerbi must build his midfield around another guy",
+     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-10T06:00:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "“He’s the reason”, Tottenham Hotspur fans once sang about Rodrigo Bentancur. In the 2021/22 season, particularly once Antonio Conte took over from Nuno Espirito Santo, the Uruguayan was instrumental in the middle of the park. He forged a fine partnership with Pierre-Emile Hojbjerg , and looked a world beater in north London. There was even an argument to be made that he was their most important pl"
+    },
     {
      "title": "Aston Villa injury, suspension list and return dates vs. Nottingham Forest: Matty Cash, Leon Goretzka, Joao Gomes, Brian Madjo latest",
      "url": "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/cash-goretzka-gomes-madjo-latest-aston-villa-injury-suspension-list-vs-forest_604765.html",
@@ -1100,15 +1109,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Fixtures Aston Villa Vs. Arsenal - Mon, Aug 31 2026, 20:00 Unai Emery has named his side to take on Arsenal in Aston Villa’s first home game of the Premier League season (ko 8pm). The Villans welcome to reigning champions to B6 on Bank Holiday Monday, and Emery has handed debuts to both Zion Suzuki and Nicolas Jackson, who start the game. Jackson, who arrived from Chelsea on Friday, begins in atta"
-    },
-    {
-     "title": "Chelsea transfer news: Arsenal and Man City keep 'close eye' on Blues attacker",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/arsenal-and-man-city-keep-close-eye-on-chelsea-attacker_604523.html",
-     "source": "Sports Mole",
-     "published": "2026-09-05T07:58:07+01:00",
-     "matched_on": "pedro",
-     "kind": "transfer",
-     "excerpt": "Arsenal and Manchester City reportedly keep close eye on Chelsea attacker Pedro Neto ahead of January window."
     }
    ]
   },
