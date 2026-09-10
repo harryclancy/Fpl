@@ -1,35 +1,46 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-10T17:28:05+00:00",
+ "generated": "2026-09-10T23:26:46+00:00",
  "gameweek": 4,
- "corpus_size": 8844,
+ "corpus_size": 9031,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 07 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
+   "status": "",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 10 Sep.",
+   "case_for": "What supports keeping him: RotoWire Soccer, 10 Sep: “Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
     "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
     "https://www.sportsmole.co.uk/football/sunderland/predicted-lineups/fofana-to-start-against-former-admirers-predicted-sunderland-xi-vs-arsenal_604792.html",
     "https://www.sportsmole.co.uk/football/arsenal/preview/sunderland-vs-arsenal-prediction-team-news-lineups_604790.html",
     "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-mosquera-latest-arsenal-injury-suspension-list-vs-sunderland_604811.html",
-    "https://www.101greatgoals.com/football/napoli-v-arsenal-line-ups-confirmed-as-gunners-start-fresh-champions-league-journey/",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "FourFourTwo FPL",
+    "RotoWire Soccer",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.",
+     "source": "RotoWire Soccer",
+     "url": "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
+     "published": "2026-09-10T16:03:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "match report",
+      "fixtures"
+     ]
+    },
     {
      "text": "The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.",
      "source": "FourFourTwo FPL",
@@ -52,14 +63,14 @@
    "player": "Gabriel",
    "club": "ARS",
    "status": "Latest on Gabriel — Football365, 09 Sep: “And Scholes thought Gabriel should have definitely been sent off for the indicent, Scholes said on The Good, The Bad & The Football podcast : “He should have been sent off.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 22 retrieved item(s) from 11 source(s), the most recent dated 10 Sep.",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 23 retrieved item(s) from 11 source(s), the most recent dated 10 Sep.",
    "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 10 Sep: “Man United: 15-year-old JJ Gabriel scores Youth League hat-trick Skip to content Football News Man United teenager Gabriel scores hat-trick in UEFA Youth League demolition JJ Gabriel furthered his case for an historic first-team appearance by scoring a hat-trick on his Youth League debut.” FourFourTwo FPL, 10 Sep: “Having met the league's academic year age requirement prior to the start of the 2026/27 campaign, Gabriel is legally eligible to make his Premier League debut this term, which was not the case last season.” Football365, 07 Sep: “However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.”",
    "case_against": "What argues against him: Football365, 07 Sep: “And Rooney thinks Gabriel should have been dismissed for this incident, having gone “way over the top”.”",
    "expected_minutes": "On minutes — Football365, 09 Sep: “Gabriel was perhaps fortunate to stay on the pitch while Arsenal were trailing 1-0 to an early Morgan Rogers’ opener for Chelsea after kicking Emiliano Martinez in the head as he looked to get to the ball inside the penalty area.”",
    "developments": "Recent developments — 101 Great Goals — Fantasy, 10 Sep: “Gabriel, 15, was a regular feature in United’s pre-season squads this summer, though he featured in just one of those games, against Atletico Madrid in Stockholm.” FourFourTwo FPL, 10 Sep: “Gabriel’s ascent has fuelled speculation over whether he can feature for Manchester United’s senior squad in the Premier League this season.” Football365, 09 Sep: “Man Utd: Ryan Giggs thinks INEOS have unearthed the next Wayne Rooney – ‘a generational talent’ Manchester United teenager JJ Gabriel and Wayne Rooney Ryan Giggs has compared Manchester United youngster JJ Gabriel to Red Devils legend Wayne Rooney and has given him some strong advice about his future.”",
    "outlook": "On the coming weeks — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
    "confidence": "high",
-   "evidence_count": 22,
+   "evidence_count": 23,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/manchester-united-academy-sensation-steals-show-with-european-hat-trick-as-historic-debut-edges-closer",
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
@@ -276,20 +287,21 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — 101 Great Goals — Fantasy, 09 Sep: “After working the ball into the penalty box, Szoboszlai slid a delicate backheel from Ronald Araujo past Jan Oblak, to draw the hosts level.”",
-   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 9 retrieved item(s) from 8 source(s), the most recent dated 09 Sep.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 07 Sep: “CODY GAKPO / DOMINIK SZOBOSZLAI It’s now four attacking returns in three matches for Cody Gakpo (£7.2m), who supplied two superb assists at Ipswich Town on Friday.” Fantasy Football Scout, 07 Sep: “But this competition, I think is going to be good for all of them.” – Andoni Iraola on Cody Gakpo As for Dominik Szoboszlai (£7.0m), on another day, he hauls in Gameweek 3.” OneFPL: “Wirtz vs Szoboszlai After GW3: FPL Verdict | OneFPL Loading OneFPL page In this article sections The short answer Neither Wirtz nor Szoboszlai is an automatic buy for GW4.”",
+   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 10 retrieved item(s) from 9 source(s), the most recent dated 10 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 10 Sep: “Andoni Iraola opted to start Alexis Mac Allister and Dominik Szoboszlai together in the middle, dropping Ryan Gravenberch to the bench for a third consecutive game.” Sports Mole, 10 Sep: “Both Szoboszlai and Mac Allister scored , and the pair were strong with and without the ball, and that is especially surprising for the former.” Fantasy Football Scout, 07 Sep: “CODY GAKPO / DOMINIK SZOBOSZLAI It’s now four attacking returns in three matches for Cody Gakpo (£7.2m), who supplied two superb assists at Ipswich Town on Friday.”",
    "case_against": "What argues against him: OneFPL: “What changed Managers are selling both Wirtz and Szoboszlai in the latest transfer snapshot.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Scout, 03 Sep: “Probably Conor, and especially Hugo, will go later, yes.” – Andoni Iraola With the ongoing injuries at right-back, Iraola was asked about the conversations he’s had with Dominik Szoboszlai about moving him into the back four, as happened in Gameweek 2, and whether he sees the Hungarian as an ongoing option at full-back.” Fantasy Football Scout, 03 Sep: “That’s why I value Dom Szoboszlai, who can play right-back, [and] Ronald Araújo, who can also play right-back.” – Andoni Iraola on Dominik Szoboszlai and the versatility of his players Cody Gakpo is staying with the Reds after touted moves to Tottenham Hotspur and Manchester City failed to materialise, and Iraola is happy to have him still aboard.” Football365, 03 Sep: “Liverpool: Carragher tells Iraola to have brutal ‘conversation’ with £60m Liverpool midfielder and change his mind Liverpool manager Andoni Iraola and Jamie Carragher Jamie Carragher has said that Liverpool manager Andoni Iraola needs to change Dominik Szoboszlai’s role in the team.”",
-   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "developments": "Recent developments — Fantasy Football Scout, 07 Sep: “But this competition, I think is going to be good for all of them.” – Andoni Iraola on Cody Gakpo As for Dominik Szoboszlai (£7.0m), on another day, he hauls in Gameweek 3.” Fantasy Football Scout, 03 Sep: “Probably Conor, and especially Hugo, will go later, yes.” – Andoni Iraola With the ongoing injuries at right-back, Iraola was asked about the conversations he’s had with Dominik Szoboszlai about moving him into the back four, as happened in Gameweek 2, and whether he sees the Hungarian as an ongoing option at full-back.” Fantasy Football Scout, 03 Sep: “That’s why I value Dom Szoboszlai, who can play right-back, [and] Ronald Araújo, who can also play right-back.” – Andoni Iraola on Dominik Szoboszlai and the versatility of his players Cody Gakpo is staying with the Reds after touted moves to Tottenham Hotspur and Manchester City failed to materialise, and Iraola is happy to have him still aboard.”",
+   "outlook": "On the coming weeks — Football365, 03 Sep: “Liverpool: Carragher tells Iraola to have brutal ‘conversation’ with £60m Liverpool midfielder and change his mind Liverpool manager Andoni Iraola and Jamie Carragher Jamie Carragher has said that Liverpool manager Andoni Iraola needs to change Dominik Szoboszlai’s role in the team.” OneFPL: “Wirtz vs Szoboszlai After GW3: FPL Verdict | OneFPL Loading OneFPL page In this article sections The short answer Neither Wirtz nor Szoboszlai is an automatic buy for GW4.”",
    "confidence": "high",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/07/gakpo-szoboszlai-sangare-konsa-buy-keep-or-sell-in-gameweek-4",
     "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/barcola-szoboszlai-liverpool-injury-latest-for-fpl-gameweek-3",
     "https://theanalyst.com/articles/newcastle-vs-liverpool-stats-premier-league-08-2026",
     "https://www.fourfourtwo.com/competition/watch-liverpool-vs-nottingham-forest-premier-league-2026-27-free",
+    "https://www.sportsmole.co.uk/football/liverpool/feature/why-iraola-has-dropped-gravenberch-for-mac-allister-and-szoboszlai_604887.html",
     "https://www.101greatgoals.com/football/champions-league/watch-szoboszlai-draws-liverpool-level-with-atletico-madrid/",
     "https://www.football365.com/news/liverpool-dominik-szoboszlai-jamie-carragher-verdict",
     "https://full90fpl.com/fpl-gameweek-1-review-26-27/?utm_source=rss&utm_medium=rss&utm_campaign=fpl-gameweek-1-review-26-27",
@@ -303,9 +315,26 @@
     "Full90 FPL",
     "Ipswich Town",
     "OneFPL",
-    "Opta Analyst"
+    "Opta Analyst",
+    "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Andoni Iraola opted to start Alexis Mac Allister and Dominik Szoboszlai together in the middle, dropping Ryan Gravenberch to the bench for a third consecutive game.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/feature/why-iraola-has-dropped-gravenberch-for-mac-allister-and-szoboszlai_604887.html",
+     "published": "2026-09-10T19:51:27+01:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Both Szoboszlai and Mac Allister scored , and the pair were strong with and without the ball, and that is especially surprising for the former.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/feature/why-iraola-has-dropped-gravenberch-for-mac-allister-and-szoboszlai_604887.html",
+     "published": "2026-09-10T19:51:27+01:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "After working the ball into the penalty box, Szoboszlai slid a delicate backheel from Ronald Araujo past Jan Oblak, to draw the hosts level.",
      "source": "101 Great Goals — Fantasy",
@@ -638,11 +667,11 @@
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
    "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 45 retrieved item(s) from 16 source(s), the most recent dated 10 Sep.",
-   "case_for": "What supports keeping him: Sports Mole, 10 Sep: “Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.” Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.” Fantasy Football Scout, 09 Sep: “HAALAND DOUBLE Days after ‘only’ scoring once past Coventry City , Gameweek 3’s Triple Captain users had to witness Erling Haaland (£15.5m) scoring twice on this occasion.”",
+   "case_for": "What supports keeping him: Football365, 10 Sep: “Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.” Sports Mole, 10 Sep: “Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.” Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — NBC Sports Rotoworld PL, 09 Sep: “Erling Haaland’s Premier League goal video highlights: 2026-27 season Week 3 — Goal vs Coventry City Haaland's header puts Man City ahead of Coventry Antoine Semenyo's picture-perfect cross finds the head of Erling Haaland inside the box to give Manchester City a 1-0 lead over Coventry City at the Etihad.” NBC Sports Rotoworld PL, 09 Sep: “2 goals at Crystal Palace Haaland's header puts Man City in front of Palace Antoine Semenyo floats in a cross to Erling Haaland, who makes no mistake in front of goal to make it 1-0 for Manchester City against Crystal Palace at Selhurst Park.”",
-   "developments": "Recent developments — Football365, 10 Sep: “Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.” Football365, 10 Sep: “Just take a look at these stats =1) Erling Haaland (Manchester City) – £189.1m (€220m) And these stats as well. =1) Lamine Yamal (FC Barcelona) – £189.1m (€220m) The generational talent of Lamine Yamal is the most valuable player in world football, tied with Haaland.” Sports Mole, 10 Sep: “Haaland could catch up and overtake Mbappe if he continues to score at the otherworldly rate he has in his first 59 UCL appearances.”",
-   "outlook": "On the coming weeks — Sports Mole, 09 Sep: “Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.” Sports Mole, 09 Sep: “Erling Haaland hails Ayyoub Bouaddi after beating Porto © Iconsport / SPI Bouaddi played alongside Enzo Fernandez in midfield as City maintained their perfect start to the season with victory in Portugal Haaland was full of praise for the youngster afterwards, revealing that he had already spoken to the club's chairman about how impressed he had been in training.”",
+   "developments": "Recent developments — Football365, 10 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.” Football365, 10 Sep: “Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.” Football365, 10 Sep: “Just take a look at these stats =1) Erling Haaland (Manchester City) – £189.1m (€220m) And these stats as well. =1) Lamine Yamal (FC Barcelona) – £189.1m (€220m) The generational talent of Lamine Yamal is the most valuable player in world football, tied with Haaland.”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 09 Sep: “HAALAND DOUBLE Days after ‘only’ scoring once past Coventry City , Gameweek 3’s Triple Captain users had to witness Erling Haaland (£15.5m) scoring twice on this occasion.” Sports Mole, 09 Sep: “Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.”",
    "confidence": "high",
    "evidence_count": 45,
    "evidence_used": [
@@ -678,6 +707,22 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-09-10T21:22:59+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-09-10T21:22:59+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.",
      "source": "Football365",
@@ -1336,6 +1381,24 @@
      "topics": []
     },
     {
+     "text": "Joao Pedro signs new Chelsea contract | News | Official Site | Chelsea Football Club Chelsea is delighted to announce that Joao Pedro has signed a new contract until 2034.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
+     "published": "",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Joao Pedro continued to be decisive in his first full season as a Chelsea player.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
      "text": "Joao Pedro analysis: Why the Blues' master of all trades stands alone in 2026 | News | Official Site | Chelsea Football Club Since the start of 2026, no Premier League player has scored more goals in all competitions than Joao Pedro.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-analysis-why-the-blues-master-of-all-trades-stands-alone-in-2026",
@@ -1384,24 +1447,6 @@
      "text": "João Pedro: named on the bench but did not play.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Joao Pedro signs new Chelsea contract | News | Official Site | Chelsea Football Club Chelsea is delighted to announce that Joao Pedro has signed a new contract until 2034.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
-     "published": "",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Joao Pedro continued to be decisive in his first full season as a Chelsea player.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
      "published": "",
      "tone": "neutral",
      "topics": []
@@ -1488,12 +1533,12 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.football365.com/match-preview/tottenham-v-everton-prediction-preview-2026-2027",
     "https://www.sportsmole.co.uk/football/everton/predicted-lineups/grealish-maitland-niles-decisions-predicted-everton-xi-vs-tottenham_604783.html",
     "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html",
     "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-everton-prediction-team-news-lineups_604780.html",
     "https://www.football365.com/news/man-utd-line-up-same-level-tottenham",
-    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
-    "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-kulusevski-simons-latest-spurs-injury-list-for-everton-clash_604742.html"
+    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy"
    ],
    "sources_used": [
     "Football365",
@@ -1592,13 +1637,13 @@
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
     "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+    "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
+    "https://www.cpfc.co.uk/news/first-team/team-news-sage-updates-on-doucoure-ahead-of-ipswich-visit/",
     "https://www.fantasyfootballscout.co.uk/2026/09/04/ipswich-v-liverpool-team-news-araujo-starts-barcola-a-sub",
-    "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/who-did-iraola-bench-liverpool-team-news-vs-ipswich-revealed_604502.html",
-    "https://www.101greatgoals.com/football/premier-league/ipswich-vs-liverpool-line-ups-confirmed/",
-    "https://www.fantasyfootballscout.co.uk/2026/09/04/ipswich-v-liverpool-predicted-line-ups-fpl-team-news"
+    "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/who-did-iraola-bench-liverpool-team-news-vs-ipswich-revealed_604502.html"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
+    "Crystal Palace",
     "Fantasy Football Scout",
     "Ipswich Town",
     "Sports Mole"
@@ -1635,12 +1680,12 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
     "https://www.sportsmole.co.uk/football/crystal-palace/league-cup/preview/crystal-palace-vs-middlesbrough-prediction-team-news-lineups_604587.html",
     "https://www.fulhamfc.com/news/2026/september/05/post-crystal-palace-press-conference/",
     "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
     "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
-    "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/",
-    "https://www.sportsmole.co.uk/football/fulham/predicted-lineups/arbeloa-to-make-key-change-how-fulham-could-line-up-against-palace_604401.html"
+    "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/"
    ],
    "sources_used": [
     "Fantasy Football Scout",
