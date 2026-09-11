@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-10T23:26:46+00:00",
- "seconds": 158.3,
+ "ran_at": "2026-09-11T05:28:56+00:00",
+ "seconds": 128.1,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 772,
- "substantive_items": 336,
- "duplicates_removed": 32,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 9031,
+ "sources_readable": 66,
+ "candidates_discovered": 653,
+ "substantive_items": 231,
+ "duplicates_removed": 15,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 9147,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 336 articles"
+    "66/78 sources returned 231 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -995,7 +994,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 27,
+   "evidence_count": 28,
    "source_count": 8,
    "latest_evidence": "2026-09-10T06:00:00+00:00",
    "official_source_found": true,
