@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@import "leaflet.markercluster/dist/MarkerCluster.css";
+@import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+
+  /* Neutral base */
+  --color-paper: #faf7f2;
+  --color-paper-dim: #f2ede4;
+  --color-ink: #201c16;
+  --color-ink-soft: #55504a;
+  --color-line: #e7e0d4;
+
+  /* Brand */
+  --color-brand-900: #0a3324;
+  --color-brand-800: #0f5132;
+  --color-brand-700: #166741;
+  --color-brand-600: #1c7d4f;
+  --color-brand-100: #dcf0e3;
+  --color-brand-50: #f0f8f2;
+
+  /* Status colours — kept perfectly consistent everywhere in the app */
+  --color-visited: #1c8a4b;
+  --color-visited-dark: #0f5c31;
+  --color-visited-bg: #e4f6ea;
+  --color-unvisited: #d97706;
+  --color-unvisited-dark: #9a5b04;
+  --color-unvisited-bg: #fdf1de;
+
+  --color-favourite: #d1435b;
+  --color-want: #6d5bd0;
+
+  --shadow-card: 0 1px 2px rgba(32, 28, 22, 0.04), 0 8px 24px -12px rgba(32, 28, 22, 0.18);
+  --shadow-pop: 0 12px 40px -8px rgba(32, 28, 22, 0.28);
+
+  --radius-card: 1.1rem;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overscroll-behavior-y: none;
+  }
+  ::selection {
+    background: var(--color-brand-100);
+    color: var(--color-brand-900);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .tap-highlight-none {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.leaflet-container {
+  font-family: var(--font-sans);
+  background: #eef2ec;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem;
+  padding: 0;
+  overflow: hidden;
+}
+.leaflet-popup-content {
+  margin: 0;
+  width: 260px !important;
+}
+.leaflet-popup-tip {
+  background: white;
+}
+
+.pub-marker-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-pop-in {
+  animation: pop-in 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes check-draw {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.animate-check-draw {
+  stroke-dasharray: 24;
+  animation: check-draw 0.4s ease forwards 0.1s;
+}
