@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-11T17:28:26+00:00",
- "seconds": 142.3,
+ "ran_at": "2026-09-11T23:26:40+00:00",
+ "seconds": 149.7,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 846,
- "substantive_items": 380,
- "duplicates_removed": 33,
- "deeply_analysed": 70,
- "deep_read_failed": 20,
- "corpus_size": 9571,
+ "sources_readable": 64,
+ "candidates_discovered": 735,
+ "substantive_items": 290,
+ "duplicates_removed": 26,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 9734,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 380 articles"
+    "64/78 sources returned 290 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -48,15 +49,16 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-11T16:09:00+00:00",
+   "source_count": 6,
+   "latest_evidence": "2026-09-11T17:00:26+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -70,6 +72,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -81,6 +84,15 @@
    "researched": true,
    "items": [
     {
+     "title": "Arsenal Predicted Lineup vs. Sunderland: In-Form Odegaard Leads the Way",
+     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-11T17:00:26+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "The Gunners visit a ground they dropped points at in dramatic fashion last season."
+    },
+    {
      "title": "Sunderland vs Arsenal Prediction, Predicted Lineups & Team News",
      "url": "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
      "source": "RotoWire Soccer",
@@ -90,6 +102,15 @@
      "excerpt": ""
     },
     {
+     "title": "White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/white-timber-mosquera-arsenal-injury-latest-for-fpl-gameweek-4",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-11T14:56:09+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Plus, positive words on Ezri Konsa The post White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
      "title": "Arsenal lineup vs. Sunderland: Predicted XI as four changes made by Mikel Arteta",
      "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
      "source": "Sports Mole",
@@ -97,24 +118,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Saturday's Premier League clash with Sunderland."
-    },
-    {
-     "title": "Sunderland lineup vs. Arsenal: Predicted XI as Malick Fofana starts against former admirers",
-     "url": "https://www.sportsmole.co.uk/football/sunderland/predicted-lineups/fofana-to-start-against-former-admirers-predicted-sunderland-xi-vs-arsenal_604792.html",
-     "source": "Sports Mole",
-     "published": "2026-09-10T10:54:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Sunderland could line up for Saturday's Premier League clash with Arsenal."
-    },
-    {
-     "title": "Sunderland vs Arsenal - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/preview/sunderland-vs-arsenal-prediction-team-news-lineups_604790.html",
-     "source": "Sports Mole",
-     "published": "2026-09-10T10:53:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Sunderland and Arsenal, including predictions, team news and possible lineups."
     },
     {
      "title": "Premier League goalkeepers ranked: David Raya still sets the standard, lowly Alisson",
@@ -361,29 +364,46 @@
    "player": "Kayode",
    "club": "BRE",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-07T09:00:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-11T16:16:48+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
-   "transfer_status_assessed": true,
+   "transfer_status_assessed": false,
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
-    "match report",
-    "statistics",
+    "press conference",
     "tactics",
-    "team news",
-    "transfer"
+    "team news"
    ],
    "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Collins + Jensen: Brentford injury latest for FPL Gameweek 4",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/collins-jensen-brentford-injury-latest-for-fpl-gameweek-4",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-11T16:16:48+00:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Centre-back Nathan Collins was forced off early versus Sunderland The post Collins + Jensen: Brentford injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Bournemouth vs. Brentford injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/bournemouth/injury-news/team-news/bournemouth-vs-brentford-injury-suspension-list-predicted-xis_604829.html",
+     "source": "Sports Mole",
+     "published": "2026-09-11T15:00:00+01:00",
+     "matched_on": "BRE team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Bournemouth and Brentford."
+    },
     {
      "title": "Watch Under-21s host Brentford at the MKM Stadium",
      "url": "https://www.wearehullcity.co.uk/news/2026/september/07/watch-under-21s-host-brentford-at-the-mkm-stadium/",
@@ -401,24 +421,6 @@
      "matched_on": "BRE team news",
      "kind": "club team news",
      "excerpt": "Kevin Danso will make his Sunderland debut against Brentford this afternoon, kick-off 3pm BST. The Austria international joined the Club on a season-long loan from Tottenham Hotspur on Deadline Day and comes into the starting XI in place of Trai Hume. There are also places on the bench for fellow Deadline Day arrivals Malick Fofana and Dayann Méthalie, who could make their Sunderland debuts at the"
-    },
-    {
-     "title": "Brentford vs. Sunderland injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/brentford/injury-news/team-news/brentford-vs-sunderland-injury-suspension-list-predicted-xis_604358.html",
-     "source": "Sports Mole",
-     "published": "2026-09-04T15:00:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday's Premier League match between Brentford and Sunderland."
-    },
-    {
-     "title": "Brentford lineup vs. Sunderland: Predicted XI for Premier League clash as Diouf decision made",
-     "url": "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T10:09:00+01:00",
-     "matched_on": "BRE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Brentford could line up for Saturday's Premier League match against Sunderland."
     },
     {
      "title": "Umoren: Happy to get the goal",
@@ -994,9 +996,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 33,
-   "source_count": 9,
-   "latest_evidence": "2026-09-11T16:34:24+02:00",
+   "evidence_count": 34,
+   "source_count": 10,
+   "latest_evidence": "2026-09-11T22:01:00+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1240,7 +1242,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-11T12:30:00+00:00",
+   "latest_evidence": "2026-09-11T12:40:00+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1252,7 +1254,6 @@
    "dimensions_covered": [
     "fixtures",
     "injury",
-    "match report",
     "statistics",
     "tactics",
     "team news",
@@ -1262,6 +1263,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Moyes Reveals Everton Team News For Spurs Trip",
+     "url": "https://www.evertonfc.com/news/2026/september/11/moyes-reveals-everton-team-news-for-spurs-trip/",
+     "source": "Everton",
+     "published": "2026-09-11T12:40:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "David Moyes says Jack Grealish is ready to start for Everton ahead of this weekend's trip to Tottenham Hotspur. The Blues travel to north London on Saturday for a 5.30pm (BST) kick-off, looking to extend their unbeaten start to the season. Transfer deadline day recruit Grealish impressed off the bench during Sunday's game against Manchester United, as Ainsley Maitland-Niles marked his Toffees debu"
+    },
     {
      "title": "On Demand: Moyes' Pre-Spurs Press Conference",
      "url": "https://www.evertonfc.com/news/2026/september/11/watch-moyes--press-conference---follow-live-blog/",
@@ -1306,15 +1316,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League clash with Everton."
-    },
-    {
-     "title": "Tottenham Hotspur vs Everton - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-everton-prediction-team-news-lineups_604780.html",
-     "source": "Sports Mole",
-     "published": "2026-09-10T10:23:28+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Tottenham Hotspur and Everton, including predictions, team news and possible lineups."
     }
    ]
   },
@@ -1386,10 +1387,10 @@
    "player": "Diop",
    "club": "IPS",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-10T16:00:00+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-11T15:00:00+01:00",
    "official_source_found": true,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1398,11 +1399,9 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1431,6 +1430,15 @@
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
     },
     {
+     "title": "Crystal Palace vs. Ipswich injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
+     "source": "Sports Mole",
+     "published": "2026-09-11T15:00:00+01:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Crystal Palace and Ipswich Town."
+    },
+    {
      "title": "Crystal Palace vs Ipswich Town - prediction, team news, lineups",
      "url": "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
      "source": "Sports Mole",
@@ -1449,15 +1457,6 @@
      "excerpt": "Crystal Palace Manager Pierre Sage has revealed that Cheick DoucourÃ© is in contention to be part of the matchday squad for this weekend's game against Ipswich Town (Saturday, 15:00 BST)."
     },
     {
-     "title": "Ipswich v Liverpool team news: Araujo starts, Barcola a sub",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/04/ipswich-v-liverpool-team-news-araujo-starts-barcola-a-sub",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-04T18:15:00+00:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": "It's one change apiece at Portman Road The post Ipswich v Liverpool team news: Araujo starts, Barcola a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "Liverpool team news vs. Ipswich: Andoni Iraola makes major midfield decision for second Premier League matchweek",
      "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/who-did-iraola-bench-liverpool-team-news-vs-ipswich-revealed_604502.html",
      "source": "Sports Mole",
@@ -1473,7 +1472,7 @@
    "club": "CRY",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-10T16:00:00+01:00",
+   "latest_evidence": "2026-09-11T15:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1498,6 +1497,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Crystal Palace vs. Ipswich injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
+     "source": "Sports Mole",
+     "published": "2026-09-11T15:00:00+01:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Crystal Palace and Ipswich Town."
+    },
     {
      "title": "Crystal Palace vs Ipswich Town - prediction, team news, lineups",
      "url": "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
@@ -1542,15 +1550,6 @@
      "matched_on": "CRY team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up the team news as Fulham prepare to take on Crystal Palace in the Premier League."
-    },
-    {
-     "title": "Pre-Crystal Palace Press Conference",
-     "url": "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/",
-     "source": "Fulham",
-     "published": "2026-09-04T12:39:55+00:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Álvaro Arbeloa is hopeful that if Fulham can play with the identity he is working towards, then we can bank our first points of the season against Crystal Palace on Saturday. After losing to both Chelsea and Sunderland, our Head Coach was asked how vital it is that his side provide a response at the Cottage this weekend. “Yes, it's very important, because we play at home, we play against a team th"
     }
    ]
   }

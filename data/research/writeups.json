@@ -1,36 +1,48 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-11T17:28:26+00:00",
+ "generated": "2026-09-11T23:26:40+00:00",
  "gameweek": 4,
- "corpus_size": 9571,
+ "corpus_size": 9734,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 11 Sep.",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 6 source(s), the most recent dated 11 Sep.",
    "case_for": "What supports keeping him: RotoWire Soccer, 11 Sep: “Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.” Football365, 11 Sep: “David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "expected_minutes": "On minutes — Sports Illustrated FPL, 11 Sep: “Arsenal Predicted Lineup vs. Sunderland GK: David Raya —Unflappable in the week after conceding for the first time this season on Sunday, Raya is chasing Hull City’s Konstantinos Tzolakis in the Golden Glove race at this early juncture.”",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
     "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
+    "https://www.fantasyfootballscout.co.uk/2026/09/11/white-timber-mosquera-arsenal-injury-latest-for-fpl-gameweek-4",
     "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
-    "https://www.sportsmole.co.uk/football/sunderland/predicted-lineups/fofana-to-start-against-former-admirers-predicted-sunderland-xi-vs-arsenal_604792.html",
-    "https://www.sportsmole.co.uk/football/arsenal/preview/sunderland-vs-arsenal-prediction-team-news-lineups_604790.html",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
+    "Fantasy Football Scout",
     "Football365",
     "FourFourTwo FPL",
     "RotoWire Soccer",
+    "Sports Illustrated FPL",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Arsenal Predicted Lineup vs. Sunderland GK: David Raya —Unflappable in the week after conceding for the first time this season on Sunday, Raya is chasing Hull City’s Konstantinos Tzolakis in the Golden Glove race at this early juncture.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
+     "published": "2026-09-11T17:00:26+00:00",
+     "tone": "neutral",
+     "topics": [
+      "team news"
+     ]
+    },
     {
      "text": "Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.",
      "source": "RotoWire Soccer",
@@ -271,7 +283,7 @@
    "player": "Kayode",
    "club": "BRE",
    "status": "Latest on Kayode — Hull City, 06 Sep: “Umoren scored the winning goal in the 68 th minute of proceedings at Bishop Burton College on Saturday, after George Akinniranye’s first-half opener was cancelled out by Kayode Peterkin’s strike in the early stages of the second half.”",
-   "why_here": "Kayode is in the starting eleven this week at £4.6m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 06 Sep.",
+   "why_here": "Kayode is in the starting eleven this week at £4.6m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 06 Sep.",
    "case_for": "What supports keeping him: Hull City, 06 Sep: “Umoren scored the winning goal in the 68 th minute of proceedings at Bishop Burton College on Saturday, after George Akinniranye’s first-half opener was cancelled out by Kayode Peterkin’s strike in the early stages of the second half.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -280,14 +292,15 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/11/collins-jensen-brentford-injury-latest-for-fpl-gameweek-4",
+    "https://www.sportsmole.co.uk/football/bournemouth/injury-news/team-news/bournemouth-vs-brentford-injury-suspension-list-predicted-xis_604829.html",
     "https://www.wearehullcity.co.uk/news/2026/september/07/watch-under-21s-host-brentford-at-the-mkm-stadium/",
     "https://www.safc.com/news/2026/september/05/danso-set-for-sunderland-debut-at-brentford/",
-    "https://www.sportsmole.co.uk/football/brentford/injury-news/team-news/brentford-vs-sunderland-injury-suspension-list-predicted-xis_604358.html",
-    "https://www.sportsmole.co.uk/football/brentford/predicted-lineups/will-diouf-debut-predicted-brentford-xi-vs-sunderland_604356.html",
     "https://www.wearehullcity.co.uk/news/2026/september/06/umoren-happy-to-get-the-goal/",
     "https://www.wearehullcity.co.uk/news/2026/september/06/hull-city-u18s-2-1-charlton-athletic-u18s/"
    ],
    "sources_used": [
+    "Fantasy Football Scout",
     "Hull City",
     "Sports Mole",
     "Sunderland"
@@ -1362,14 +1375,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — Soccerway, 11 Sep: “I’m really excited because I think we can achieve a lot of things together.” Neto joins Moises Caicedo and Joao Pedro in Chelsea players who have signed fresh terms in 2026.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 33 retrieved item(s) from 9 source(s), the most recent dated 11 Sep.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 34 retrieved item(s) from 10 source(s), the most recent dated 11 Sep.",
    "case_for": "What supports keeping him: Soccerway, 11 Sep: “Pedro has a leading four goal involvements for the campaign after the Blues beat Fulham and Brighton before falling to Arsenal last weekend.” Soccerway, 11 Sep: “Brazil coach Carlo Ancelotti opted against handing Pedro a spot in the side for the World Cup over the summer but after his fine start to the campaign under manager Xabi Alonso, he has been back into the fold as Brazil prepare to face Australia and India during the upcoming international break.” FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.”",
    "case_against": "What argues against him: Tactical Football Analysis, 11 Sep: “João Pedro did not feature, which is a positive because his legs will be well rested for their upcoming fixture against Hull City at home.”",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...” OneFPL: “3 Leeds: Palmer, Rogers & João Pedro FPL | OneFPL Loading OneFPL page In this article sections The short answer Chelsea's 6-3 Carabao Cup win over Leeds strengthened the FPL case for their main attackers before Hull — but for different reasons.”",
    "developments": "Recent developments — Tactical Football Analysis, 11 Sep: “João Pedro (£7.7m, FWD) There are few engaged FPL managers who are yet to have him in their squads.” FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.” FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.”",
    "outlook": "On the coming weeks — OneFPL: “João Pedro FPL After GW3: Essential or Trap? | OneFPL Loading OneFPL page In this article sections The short answer João Pedro remains a strong HOLD and a good BUY for the right structure, but 'essential' is still too strong.”",
    "confidence": "high",
-   "evidence_count": 33,
+   "evidence_count": 34,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/11/prematch-team-news-for-forest-fixture/",
     "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
@@ -1387,6 +1400,7 @@
    "sources_used": [
     "Aston Villa",
     "Chelsea",
+    "Flashscore",
     "Football365",
     "FourFourTwo FPL",
     "OneFPL",
@@ -1703,12 +1717,12 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.evertonfc.com/news/2026/september/11/moyes-reveals-everton-team-news-for-spurs-trip/",
     "https://www.evertonfc.com/news/2026/september/11/watch-moyes--press-conference---follow-live-blog/",
     "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-everton-live-stream-link-tv-team-news-prediction",
     "https://www.football365.com/match-preview/tottenham-v-everton-prediction-preview-2026-2027",
     "https://www.sportsmole.co.uk/football/everton/predicted-lineups/grealish-maitland-niles-decisions-predicted-everton-xi-vs-tottenham_604783.html",
-    "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html",
-    "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-everton-prediction-team-news-lineups_604780.html"
+    "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html"
    ],
    "sources_used": [
     "Everton",
@@ -1797,7 +1811,7 @@
    "player": "Diop",
    "club": "IPS",
    "status": "Latest on Diop — Ipswich Town, 04 Sep: “Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
-   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 04 Sep.",
+   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 04 Sep.",
    "case_for": "What supports keeping him: Ipswich Town, 04 Sep: “Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.” Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1808,14 +1822,13 @@
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
     "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+    "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
     "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
     "https://www.cpfc.co.uk/news/first-team/team-news-sage-updates-on-doucoure-ahead-of-ipswich-visit/",
-    "https://www.fantasyfootballscout.co.uk/2026/09/04/ipswich-v-liverpool-team-news-araujo-starts-barcola-a-sub",
     "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/who-did-iraola-bench-liverpool-team-news-vs-ipswich-revealed_604502.html"
    ],
    "sources_used": [
     "Crystal Palace",
-    "Fantasy Football Scout",
     "Ipswich Town",
     "Sports Mole"
    ],
@@ -1851,12 +1864,12 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
     "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
     "https://www.sportsmole.co.uk/football/crystal-palace/league-cup/preview/crystal-palace-vs-middlesbrough-prediction-team-news-lineups_604587.html",
     "https://www.fulhamfc.com/news/2026/september/05/post-crystal-palace-press-conference/",
     "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
-    "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
-    "https://www.fulhamfc.com/news/2026/september/04/pre-crystal-palace-press-conference/"
+    "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html"
    ],
    "sources_used": [
     "Fantasy Football Scout",
