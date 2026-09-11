@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { PubDataProvider } from './context/PubDataContext';
 import { ToastProvider } from './components/ui/Toast';
 import { AppShell } from './components/layout/AppShell';
@@ -31,7 +31,7 @@ export default function App() {
   return (
     <PubDataProvider>
       <ToastProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Suspense fallback={<PageFallback />}>
             <Routes>
               <Route element={<AppShell />}>
@@ -50,7 +50,7 @@ export default function App() {
               </Route>
             </Routes>
           </Suspense>
-        </BrowserRouter>
+        </HashRouter>
       </ToastProvider>
     </PubDataProvider>
   );
