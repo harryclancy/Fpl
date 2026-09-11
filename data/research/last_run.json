@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-11T05:28:56+00:00",
- "seconds": 128.1,
+ "ran_at": "2026-09-11T11:28:52+00:00",
+ "seconds": 162.0,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 653,
- "substantive_items": 231,
- "duplicates_removed": 15,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 9147,
+ "sources_readable": 65,
+ "candidates_discovered": 752,
+ "substantive_items": 320,
+ "duplicates_removed": 36,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 9321,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 231 articles"
+    "65/78 sources returned 320 articles"
    ]
   },
   "blackout": {
@@ -48,7 +48,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -139,9 +140,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 23,
+   "evidence_count": 24,
    "source_count": 11,
-   "latest_evidence": "2026-09-10T16:06:31+00:00",
+   "latest_evidence": "2026-09-11T10:57:34+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -183,6 +184,15 @@
      "matched_on": "gabriel",
      "kind": "team news",
      "excerpt": "Premier League players face a suspension if they pick up too many yellow cards – but what are the rules and who is closest to a one-match ban? Here, we list every player currently banned – be it for red cards or collecting yellow cards – and those at most risk of missing a game. […]"
+    },
+    {
+     "title": "Arteta definitely ‘fires back’ at bitter Jesus with ‘gratitude’ in unhinged Arsenal attack",
+     "url": "https://www.football365.com/news/arteta-fires-back-bitter-jesus-gratitude-arsenal-attack",
+     "source": "Football365",
+     "published": "2026-09-11T10:57:34+00:00",
+     "matched_on": "gabriel",
+     "kind": "transfer",
+     "excerpt": "Mikel Arteta has torn former striker Gabriel Jesus a new one as ‘bitter Arsenal transfer exit escalates’ with ‘gratitude’ and ‘understanding’."
     },
     {
      "title": "Barcelona transfer news: \"He refused to negotiate\" - Julian Alvarez alternative firmly rejects Barca",
@@ -264,15 +274,6 @@
      "matched_on": "gabriel",
      "kind": "transfer",
      "excerpt": "Arsenal reportedly hold talks with a new club over the transfer of winger Gabriel Martinelli following a failed £38m offer from Galatasaray."
-    },
-    {
-     "title": "Man United teenager Gabriel scores hat-trick in UEFA Youth League demolition",
-     "url": "https://www.101greatgoals.com/football/man-united-gabriel-hat-trick/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-10T16:06:31+00:00",
-     "matched_on": "gabriel",
-     "kind": "general",
-     "excerpt": "JJ Gabriel furthered his case for an historic first-team appearance by scoring a hat-trick on his Youth League debut."
     }
    ]
   },
@@ -854,9 +855,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 45,
-   "source_count": 16,
-   "latest_evidence": "2026-09-10T21:22:59+00:00",
+   "evidence_count": 46,
+   "source_count": 17,
+   "latest_evidence": "2026-09-11T08:45:25+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -954,6 +955,15 @@
      "excerpt": ""
     },
     {
+     "title": "FPL Gameweek 4 Wildcard Guide 2026/27: Best Picks And Captaincy Options",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-09-11T08:45:25+00:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "Planning an FPL Gameweek 4 wildcard? This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro."
+    },
+    {
      "title": "Transfer Rumors: Real Madrid Ready Mac Allister Swap; Barcelona Step Up Haaland Talks",
      "url": "https://www.si.com/soccer/transfer-rumors-real-madrid-mac-allister-swap-barcelona-haaland-talks?utm_source=RSS",
      "source": "Sports Illustrated FPL",
@@ -979,24 +989,15 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "Julián Alvarez, Adam Wharton, Jude Bellingham, Vitor Roque and Alex Scott all feature in the gossip."
-    },
-    {
-     "title": "Porto 0-2 Man City: Erling Haaland climbs above Tommy Johnson in Citizens goalscoring list with brace in European win",
-     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/on-the-move-haaland-climbs-above-johnson-in-man-city-goalscoring-list-with-brace-in-european-win_604747.html",
-     "source": "Sports Mole",
-     "published": "2026-09-08T21:56:00+01:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Erling Haaland moves into third in Manchester City's all-time goalscorer list courtesy of his brace in Tuesday's 2-0 success over Porto in the Champions League."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 28,
+   "evidence_count": 30,
    "source_count": 8,
-   "latest_evidence": "2026-09-10T06:00:00+00:00",
+   "latest_evidence": "2026-09-11T08:45:25+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1134,9 +1135,9 @@
   "Thiago": {
    "player": "Thiago",
    "club": "BRE",
-   "evidence_count": 7,
-   "source_count": 5,
-   "latest_evidence": "2026-09-03T15:24:04+00:00",
+   "evidence_count": 8,
+   "source_count": 6,
+   "latest_evidence": "2026-09-11T08:45:25+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1147,18 +1148,29 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL Gameweek 4 Wildcard Guide 2026/27: Best Picks And Captaincy Options",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-09-11T08:45:25+00:00",
+     "matched_on": "thiago",
+     "kind": "transfer",
+     "excerpt": "Planning an FPL Gameweek 4 wildcard? This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro."
+    },
     {
      "title": "Everton transfer news: Monaco chief makes Folarin Balogun claim after failed Toffees move",
      "url": "https://www.sportsmole.co.uk/football/everton/transfer-talk/news/monaco-chief-makes-major-balogun-claim-after-failed-everton-transfer_604292.html",
@@ -1229,9 +1241,9 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-10T12:03:30+00:00",
+   "latest_evidence": "2026-09-10T22:57:17-04:00",
    "official_source_found": false,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1252,6 +1264,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "How to watch Tottenham Hotspur vs Everton live: Stream link, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-everton-live-stream-link-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-10T22:57:17-04:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Tottenham v Everton: Prediction, team news, lineups and odds",
      "url": "https://www.football365.com/match-preview/tottenham-v-everton-prediction-preview-2026-2027",
@@ -1296,15 +1317,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Remember when ‘Anyone but United’ meant you wanted anyone but United to win? Now you just want to emulate Anyone but United."
-    },
-    {
-     "title": "Tottenham Hotspur need to forget their £185m midfield duo – Roberto De Zerbi must build his midfield around another guy",
-     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-10T06:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "“He’s the reason”, Tottenham Hotspur fans once sang about Rodrigo Bentancur. In the 2021/22 season, particularly once Antonio Conte took over from Nuno Espirito Santo, the Uruguayan was instrumental in the middle of the park. He forged a fine partnership with Pierre-Emile Hojbjerg , and looked a world beater in north London. There was even an argument to be made that he was their most important pl"
     }
    ]
   },
