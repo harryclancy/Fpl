@@ -1,30 +1,31 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-11T11:28:52+00:00",
+ "generated": "2026-09-11T17:28:26+00:00",
  "gameweek": 4,
- "corpus_size": 9321,
+ "corpus_size": 9571,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 10 Sep.",
-   "case_for": "What supports keeping him: RotoWire Soccer, 10 Sep: “Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.” FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
+   "status": "Latest on Raya — FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 11 Sep.",
+   "case_for": "What supports keeping him: RotoWire Soccer, 11 Sep: “Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.” Football365, 11 Sep: “David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
     "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
     "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
     "https://www.sportsmole.co.uk/football/sunderland/predicted-lineups/fofana-to-start-against-former-admirers-predicted-sunderland-xi-vs-arsenal_604792.html",
     "https://www.sportsmole.co.uk/football/arsenal/preview/sunderland-vs-arsenal-prediction-team-news-lineups_604790.html",
-    "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-mosquera-latest-arsenal-injury-suspension-list-vs-sunderland_604811.html",
+    "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
+    "Football365",
     "FourFourTwo FPL",
     "RotoWire Soccer",
     "Sports Mole"
@@ -34,11 +35,21 @@
      "text": "Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.",
      "source": "RotoWire Soccer",
      "url": "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
-     "published": "2026-09-10T16:03:00+00:00",
+     "published": "2026-09-11T16:09:00+00:00",
      "tone": "positive",
      "topics": [
       "match report",
       "fixtures"
+     ]
+    },
+    {
+     "text": "David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "published": "2026-09-11T13:09:35+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
      ]
     },
     {
@@ -63,14 +74,14 @@
    "player": "Gabriel",
    "club": "ARS",
    "status": "Latest on Gabriel — Football365, 09 Sep: “And Scholes thought Gabriel should have definitely been sent off for the indicent, Scholes said on The Good, The Bad & The Football podcast : “He should have been sent off.”",
-   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 24 retrieved item(s) from 11 source(s), the most recent dated 11 Sep.",
+   "why_here": "Gabriel is in the starting eleven this week at £8.0m as a DEF. The selection rests on 25 retrieved item(s) from 12 source(s), the most recent dated 11 Sep.",
    "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 10 Sep: “Man United: 15-year-old JJ Gabriel scores Youth League hat-trick Skip to content Football News Man United teenager Gabriel scores hat-trick in UEFA Youth League demolition JJ Gabriel furthered his case for an historic first-team appearance by scoring a hat-trick on his Youth League debut.” FourFourTwo FPL, 10 Sep: “Having met the league's academic year age requirement prior to the start of the 2026/27 campaign, Gabriel is legally eligible to make his Premier League debut this term, which was not the case last season.” Football365, 07 Sep: “However, Arsenal arguably had a slice of good luck during Gabriel’s clash with Chelsea goalkeeper Emiliano Martinez, who was struck on his head with a boot.”",
    "case_against": "What argues against him: Football365, 07 Sep: “And Rooney thinks Gabriel should have been dismissed for this incident, having gone “way over the top”.”",
    "expected_minutes": "On minutes — Football365, 09 Sep: “Gabriel was perhaps fortunate to stay on the pitch while Arsenal were trailing 1-0 to an early Morgan Rogers’ opener for Chelsea after kicking Emiliano Martinez in the head as he looked to get to the ball inside the penalty area.”",
    "developments": "Recent developments — Football365, 11 Sep: “Because this no-holds barred, X-rated, frankly unhinged stuff from the Spaniard: “Very surprised, to be fair, especially because with Gabriel I had an individual talk in the dressing room.” 101 Great Goals — Fantasy, 10 Sep: “Gabriel, 15, was a regular feature in United’s pre-season squads this summer, though he featured in just one of those games, against Atletico Madrid in Stockholm.” FourFourTwo FPL, 10 Sep: “Gabriel’s ascent has fuelled speculation over whether he can feature for Manchester United’s senior squad in the Premier League this season.”",
    "outlook": "On the coming weeks — Sports Mole, 06 Sep: “Gabriel played a leading role at the back against Chelsea, with the central defender often getting the better of the likes of Joao Pedro.”",
    "confidence": "high",
-   "evidence_count": 24,
+   "evidence_count": 25,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/manchester-united-academy-sensation-steals-show-with-european-hat-trick-as-historic-debut-edges-closer",
     "https://www.fantasyfootballhub.co.uk/fpl-yellow-cards-and-suspensions",
@@ -96,7 +107,8 @@
     "Leeds United",
     "Sky Sports Premier League",
     "Soccerway",
-    "Sports Mole"
+    "Sports Mole",
+    "Sunderland"
    ],
    "quotes": [
     {
@@ -297,10 +309,10 @@
    "status": "Latest on Szoboszlai — 101 Great Goals — Fantasy, 09 Sep: “After working the ball into the penalty box, Szoboszlai slid a delicate backheel from Ronald Araujo past Jan Oblak, to draw the hosts level.”",
    "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 10 retrieved item(s) from 9 source(s), the most recent dated 10 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 10 Sep: “Andoni Iraola opted to start Alexis Mac Allister and Dominik Szoboszlai together in the middle, dropping Ryan Gravenberch to the bench for a third consecutive game.” Sports Mole, 10 Sep: “Both Szoboszlai and Mac Allister scored , and the pair were strong with and without the ball, and that is especially surprising for the former.” Fantasy Football Scout, 07 Sep: “CODY GAKPO / DOMINIK SZOBOSZLAI It’s now four attacking returns in three matches for Cody Gakpo (£7.2m), who supplied two superb assists at Ipswich Town on Friday.”",
-   "case_against": "What argues against him: OneFPL: “What changed Managers are selling both Wirtz and Szoboszlai in the latest transfer snapshot.”",
+   "case_against": "What argues against him: OneFPL: “OneFPL verdict Do not sell Szoboszlai just because the crowd is moving away.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Scout, 07 Sep: “But this competition, I think is going to be good for all of them.” – Andoni Iraola on Cody Gakpo As for Dominik Szoboszlai (£7.0m), on another day, he hauls in Gameweek 3.” Fantasy Football Scout, 03 Sep: “Probably Conor, and especially Hugo, will go later, yes.” – Andoni Iraola With the ongoing injuries at right-back, Iraola was asked about the conversations he’s had with Dominik Szoboszlai about moving him into the back four, as happened in Gameweek 2, and whether he sees the Hungarian as an ongoing option at full-back.” Fantasy Football Scout, 03 Sep: “That’s why I value Dom Szoboszlai, who can play right-back, [and] Ronald Araújo, who can also play right-back.” – Andoni Iraola on Dominik Szoboszlai and the versatility of his players Cody Gakpo is staying with the Reds after touted moves to Tottenham Hotspur and Manchester City failed to materialise, and Iraola is happy to have him still aboard.”",
-   "outlook": "On the coming weeks — Football365, 03 Sep: “Liverpool: Carragher tells Iraola to have brutal ‘conversation’ with £60m Liverpool midfielder and change his mind Liverpool manager Andoni Iraola and Jamie Carragher Jamie Carragher has said that Liverpool manager Andoni Iraola needs to change Dominik Szoboszlai’s role in the team.” OneFPL: “Wirtz vs Szoboszlai After GW3: FPL Verdict | OneFPL Loading OneFPL page In this article sections The short answer Neither Wirtz nor Szoboszlai is an automatic buy for GW4.”",
+   "outlook": "On the coming weeks — Football365, 03 Sep: “Liverpool: Carragher tells Iraola to have brutal ‘conversation’ with £60m Liverpool midfielder and change his mind Liverpool manager Andoni Iraola and Jamie Carragher Jamie Carragher has said that Liverpool manager Andoni Iraola needs to change Dominik Szoboszlai’s role in the team.” OneFPL: “Wirtz vs Szoboszlai FPL GW4: Who to Keep? | OneFPL Loading OneFPL page In this article sections The short answer Szoboszlai is a HOLD and may be the better value pick than the transfer market suggests.”",
    "confidence": "high",
    "evidence_count": 10,
    "evidence_used": [
@@ -412,23 +424,24 @@
      "topics": []
     },
     {
-     "text": "Wirtz vs Szoboszlai After GW3: FPL Verdict | OneFPL Loading OneFPL page In this article sections The short answer Neither Wirtz nor Szoboszlai is an automatic buy for GW4.",
+     "text": "Wirtz vs Szoboszlai FPL GW4: Who to Keep? | OneFPL Loading OneFPL page In this article sections The short answer Szoboszlai is a HOLD and may be the better value pick than the transfer market suggests.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/wirtz-vs-szoboszlai-fpl-2026-27",
      "published": "",
-     "tone": "positive",
+     "tone": "neutral",
      "topics": [
+      "transfer",
       "fpl advice"
      ]
     },
     {
-     "text": "What changed Managers are selling both Wirtz and Szoboszlai in the latest transfer snapshot.",
+     "text": "OneFPL verdict Do not sell Szoboszlai just because the crowd is moving away.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/wirtz-vs-szoboszlai-fpl-2026-27",
      "published": "",
      "tone": "negative",
      "topics": [
-      "transfer"
+      "fpl advice"
      ]
     }
    ]
@@ -436,12 +449,12 @@
   "Semenyo": {
    "player": "Semenyo",
    "club": "MCI",
-   "status": "Latest on Semenyo — 101 Great Goals — Fantasy, 10 Sep: “Semenyo is not a bad player, but he does not currently look like good value.”",
-   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 10 Sep.",
-   "case_for": "",
-   "case_against": "",
+   "status": "Latest on Semenyo — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "why_here": "Semenyo is in the starting eleven this week at £8.4m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 11 Sep.",
+   "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 11 Sep: “You can also read our guide to the best GW4 FPL attackers to buy Table of Contents Antoine Semenyo Harry Maguire Nico O’Reilly Dan Ballard Dominic Calvert-Lewin Antoine Semenyo Price: 8.4m Ownership: 17.7% Position: Midfielder Opponents: MUN (A), SUN (H), LIV (A) Manchester City winger Antoine Semenyo is starting to look expensive for what he is currently offering.” 101 Great Goals — Fantasy, 11 Sep: “Semenyo has been involved in build-up play and chance creation, but that does not always translate into reliable FPL returns.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Hub, 27 Aug: “This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
@@ -462,12 +475,24 @@
    ],
    "quotes": [
     {
-     "text": "Semenyo is not a bad player, but he does not currently look like good value.",
+     "text": "You can also read our guide to the best GW4 FPL attackers to buy Table of Contents Antoine Semenyo Harry Maguire Nico O’Reilly Dan Ballard Dominic Calvert-Lewin Antoine Semenyo Price: 8.4m Ownership: 17.7% Position: Midfielder Opponents: MUN (A), SUN (H), LIV (A) Manchester City winger Antoine Semenyo is starting to look expensive for what he is currently offering.",
      "source": "101 Great Goals — Fantasy",
      "url": "https://www.101greatgoals.com/football/fantasy/fantasy-premier-league-2026-27-antoine-semenyo-harry-maguire-headline-this-weeks-must-drops/",
-     "published": "2026-09-10T13:07:42+00:00",
-     "tone": "neutral",
-     "topics": []
+     "published": "2026-09-11T16:17:37+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "Semenyo has been involved in build-up play and chance creation, but that does not always translate into reliable FPL returns.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/fantasy/fantasy-premier-league-2026-27-antoine-semenyo-harry-maguire-headline-this-weeks-must-drops/",
+     "published": "2026-09-11T16:17:37+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
     },
     {
      "text": "This week, he covers whether to roll a transfer, what to do about Haaland if you don’t own him, whether Semenyo is a hold, and other key Gameweek 2 dilemmas. […]",
@@ -560,15 +585,15 @@
   "Cherki": {
    "player": "Cherki",
    "club": "MCI",
-   "status": "Latest on Cherki — FourFourTwo FPL, 05 Sep: “It leaves Man City with a very strong squad, especially when you consider that they’ll have either Rayan Cherki or Phil Foden in the number ten role.”",
-   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 21 retrieved item(s) from 9 source(s), the most recent dated 05 Sep.",
-   "case_for": "What supports keeping him: Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.” OneFPL: “Cherki has: two GW1 assists two GW2 goals Coventry at home in GW3 a new £7.7m price The upside remains elite.”",
+   "status": "Latest on Cherki — Sports Mole, 11 Sep: “The theme of the first half is Man Utd's fast breaks unsettling the possession-based tactics of the Citizens, who become increasingly reliant on the magic of Cherki as the match approaches the half-time interval.”",
+   "why_here": "Cherki is in the starting eleven this week at £7.8m as a MID. The selection rests on 22 retrieved item(s) from 10 source(s), the most recent dated 11 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 11 Sep: “The Citizens enjoy the better of control and possession at the start of the first half and deservedly take the lead through Cherki, however, United's chasing of the match is successful late on, with Fernandes equalising.” Opta Analyst, 23 Aug: “Manchester City were heading for defeat in their first Premier League game under Enzo Maresca, until Rayan Cherki came on to assist late goals for Marc Guéhi and Josko Gvardiol.” OneFPL: “Cherki has: two GW1 assists two GW2 goals Coventry at home in GW3 a new £7.7m price The upside remains elite.”",
    "case_against": "What argues against him: Fantasy Football Scout, 05 Sep: “Nor was a benching for Phil Foden (£7.0m), a pre-match withdrawal from Nico O’Reilly (£6.5m) or a blank from Rayan Cherki (£7.8m).” Fantasy Football Scout, 05 Sep: “At least he has the ‘xMins’ on his side… CHERKI SUBBED OFF – BUT UNLUCKY TO BLANK A whopping 2.1 million FPL managers brought in Cherki ahead of Gameweek 3.”",
    "expected_minutes": "On minutes — OneFPL: “Rayan Cherki FPL GW3: Still Buy After Deadline Day? | OneFPL Loading OneFPL page In this article sections The short answer Still BUY/HOLD — but with more rotation risk than before deadline day.”",
-   "developments": "Recent developments — Opta Analyst, 01 Sep: “Last year, City then added Rayan Cherki , arguably even more of a maverick than Doku, and the Frenchman enjoyed a brilliant first season in the Premier League.” Opta Analyst, 01 Sep: “Similarly, they’ll have four of last season’s top eight for most dribbles completed: Doku (84), Ndiaye (65), Semenyo (59) and Cherki (51).”",
+   "developments": "Recent developments — FourFourTwo FPL, 05 Sep: “It leaves Man City with a very strong squad, especially when you consider that they’ll have either Rayan Cherki or Phil Foden in the number ten role.” Opta Analyst, 01 Sep: “Last year, City then added Rayan Cherki , arguably even more of a maverick than Doku, and the Frenchman enjoyed a brilliant first season in the Premier League.” Opta Analyst, 01 Sep: “Similarly, they’ll have four of last season’s top eight for most dribbles completed: Doku (84), Ndiaye (65), Semenyo (59) and Cherki (51).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 21,
+   "evidence_count": 22,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
@@ -579,9 +604,9 @@
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-team-news-63923533",
     "https://theanalyst.com/articles/manchester-city-vs-bournemouth-stats-premier-league-08-2026",
     "https://www.si.com/soccer/transfer-rumors-real-madrid-ready-cherki-bid-chelsea-mac-allister-move?utm_source=RSS",
+    "https://www.sportsmole.co.uk/football/man-utd/manchester-derby/feature/sesko-cherki-shine-as-ai-predicts-all-timer-manchester-derby_604951.html",
     "https://www.mancity.com/news/mens/rayan-cherki-has-been-nominated-for-the-guinness-goal-of-the-month-for-august-63924027",
-    "https://www.itfc.co.uk/news/2026/september/03/emersonn-nominated-for-goal-of-the-month/",
-    "https://www.safc.com/news/2026/september/03/angulo-nominated-for-guinness-goal-of-the-month/"
+    "https://www.itfc.co.uk/news/2026/september/03/emersonn-nominated-for-goal-of-the-month/"
    ],
    "sources_used": [
     "FPL Captain",
@@ -592,9 +617,28 @@
     "OneFPL",
     "Opta Analyst",
     "Sports Illustrated FPL",
+    "Sports Mole",
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "The theme of the first half is Man Utd's fast breaks unsettling the possession-based tactics of the Citizens, who become increasingly reliant on the magic of Cherki as the match approaches the half-time interval.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/manchester-derby/feature/sesko-cherki-shine-as-ai-predicts-all-timer-manchester-derby_604951.html",
+     "published": "2026-09-11T15:54:30+01:00",
+     "tone": "neutral",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "The Citizens enjoy the better of control and possession at the start of the first half and deservedly take the lead through Cherki, however, United's chasing of the match is successful late on, with Fernandes equalising.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/manchester-derby/feature/sesko-cherki-shine-as-ai-predicts-all-timer-manchester-derby_604951.html",
+     "published": "2026-09-11T15:54:30+01:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Nor was a benching for Phil Foden (£7.0m), a pre-match withdrawal from Nico O’Reilly (£6.5m) or a blank from Rayan Cherki (£7.8m).",
      "source": "Fantasy Football Scout",
@@ -674,15 +718,16 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 46 retrieved item(s) from 17 source(s), the most recent dated 11 Sep.",
-   "case_for": "What supports keeping him: Tactical Football Analysis, 11 Sep: “Manchester United And Man City: Fernandes And Haaland’s FPL Form Fig. 1: Top 10 shots after the first three gameweeks (Source: FFHub Ahead of the blockbuster fixture at Old Trafford on Sunday, the numbers suggest we can expect goals from both sides.” Football365, 10 Sep: “Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.” Sports Mole, 10 Sep: “Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.”",
+   "why_here": "Haaland is captained this week at £15.5m as a FWD. The selection rests on 47 retrieved item(s) from 17 source(s), the most recent dated 11 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.” Tactical Football Analysis, 11 Sep: “Manchester United And Man City: Fernandes And Haaland’s FPL Form Fig. 1: Top 10 shots after the first three gameweeks (Source: FFHub Ahead of the blockbuster fixture at Old Trafford on Sunday, the numbers suggest we can expect goals from both sides.” Football365, 10 Sep: “Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.” NBC Sports Rotoworld PL, 09 Sep: “Erling Haaland’s Premier League goal video highlights: 2026-27 season Week 3 — Goal vs Coventry City Haaland's header puts Man City ahead of Coventry Antoine Semenyo's picture-perfect cross finds the head of Erling Haaland inside the box to give Manchester City a 1-0 lead over Coventry City at the Etihad.”",
-   "developments": "Recent developments — Tactical Football Analysis, 11 Sep: “Bruno Fernandes (15 shots, 8 key passes, 2.26 xG) and Erling Haaland (14 shots, 8 on target, 2.47 xG) are fully justifying their premium price points and will likely continue to do so.” Football365, 10 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.” Football365, 10 Sep: “Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.”",
+   "expected_minutes": "On minutes — Sports Mole, 10 Sep: “Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.” Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.”",
+   "developments": "Recent developments — Fantasy Football 247, 11 Sep: “Just to rub it in, our two highest-scoring players outside of Haaland were Kinsky and Le Fée.” Tactical Football Analysis, 11 Sep: “Bruno Fernandes (15 shots, 8 key passes, 2.26 xG) and Erling Haaland (14 shots, 8 on target, 2.47 xG) are fully justifying their premium price points and will likely continue to do so.” Football365, 10 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 09 Sep: “HAALAND DOUBLE Days after ‘only’ scoring once past Coventry City , Gameweek 3’s Triple Captain users had to witness Erling Haaland (£15.5m) scoring twice on this occasion.” Sports Mole, 09 Sep: “Haaland has now described Bouaddi as a \"gem\", suggesting his impact in training has been just as impressive as his performances on the pitch.”",
    "confidence": "high",
-   "evidence_count": 46,
+   "evidence_count": 47,
    "evidence_used": [
+    "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
     "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
     "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
@@ -693,8 +738,7 @@
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
     "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
     "https://www.si.com/soccer/transfer-rumors-real-madrid-mac-allister-swap-barcelona-haaland-talks?utm_source=RSS",
-    "https://www.football365.com/news/man-city-erling-haaland-decision-transfer-barcelona-real-madrid",
-    "https://www.si.com/soccer/transfer-rumors-haaland-chooses-real-madrid-barcelona-arsenal-gyokeres-swap?utm_source=RSS"
+    "https://www.football365.com/news/man-city-erling-haaland-decision-transfer-barcelona-real-madrid"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -716,6 +760,24 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.",
+     "source": "Fantasy Football 247",
+     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
+     "published": "2026-09-11T13:56:05+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "Just to rub it in, our two highest-scoring players outside of Haaland were Kinsky and Le Fée.",
+     "source": "Fantasy Football 247",
+     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
+     "published": "2026-09-11T13:56:05+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Manchester United And Man City: Fernandes And Haaland’s FPL Form Fig. 1: Top 10 shots after the first three gameweeks (Source: FFHub Ahead of the blockbuster fixture at Old Trafford on Sunday, the numbers suggest we can expect goals from both sides.",
      "source": "Tactical Football Analysis",
@@ -1299,16 +1361,17 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "status": "Latest on João Pedro — Tactical Football Analysis, 11 Sep: “João Pedro (£7.7m, FWD) There are few engaged FPL managers who are yet to have him in their squads.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 30 retrieved item(s) from 8 source(s), the most recent dated 11 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.” Opta Analyst, 30 Aug: “But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.” Sports Mole, 24 Aug: “Chelsea raced into the lead after just 31 seconds thanks to Joao Pedro 's delightful dink, and that early goal set the tempo for the half, with the two attack-minded sides trading chances in an energetic, back-and-forth clash.”",
+   "status": "Latest on João Pedro — Soccerway, 11 Sep: “I’m really excited because I think we can achieve a lot of things together.” Neto joins Moises Caicedo and Joao Pedro in Chelsea players who have signed fresh terms in 2026.”",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 33 retrieved item(s) from 9 source(s), the most recent dated 11 Sep.",
+   "case_for": "What supports keeping him: Soccerway, 11 Sep: “Pedro has a leading four goal involvements for the campaign after the Blues beat Fulham and Brighton before falling to Arsenal last weekend.” Soccerway, 11 Sep: “Brazil coach Carlo Ancelotti opted against handing Pedro a spot in the side for the World Cup over the summer but after his fine start to the campaign under manager Xabi Alonso, he has been back into the fold as Brazil prepare to face Australia and India during the upcoming international break.” FourFourTwo FPL, 02 Sep: “It is Pedro who will be the foil this season — a clinical, multi-faceted goalscorer playing in a Chelsea system that has begun the campaign in rock-and-roll fashion by winning games 4-3 and 3-2.”",
    "case_against": "What argues against him: Tactical Football Analysis, 11 Sep: “João Pedro did not feature, which is a positive because his legs will be well rested for their upcoming fixture against Hull City at home.”",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...” OneFPL: “3 Leeds: Palmer, Rogers & João Pedro FPL | OneFPL Loading OneFPL page In this article sections The short answer Chelsea's 6-3 Carabao Cup win over Leeds strengthened the FPL case for their main attackers before Hull — but for different reasons.”",
-   "developments": "Recent developments — FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.” FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.” Opta Analyst, 30 Aug: “It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.”",
+   "developments": "Recent developments — Tactical Football Analysis, 11 Sep: “João Pedro (£7.7m, FWD) There are few engaged FPL managers who are yet to have him in their squads.” FourFourTwo FPL, 02 Sep: “Signing Rogers gives Chelsea what could be the most lethal front three in the Premier League alongside Cole Palmer and Joao Pedro, supported by enviable depth in reserve.” FourFourTwo FPL, 02 Sep: “This is a high-scoring attack, with two top-tier creative players in Palmer and Morgan Rogers, and Pedro is the finishing centre-point.”",
    "outlook": "On the coming weeks — OneFPL: “João Pedro FPL After GW3: Essential or Trap? | OneFPL Loading OneFPL page In this article sections The short answer João Pedro remains a strong HOLD and a good BUY for the right structure, but 'essential' is still too strong.”",
    "confidence": "high",
-   "evidence_count": 30,
+   "evidence_count": 33,
    "evidence_used": [
+    "https://avfc.co.uk/news/2026/september/11/prematch-team-news-for-forest-fixture/",
     "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
     "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/cash-goretzka-gomes-madjo-latest-aston-villa-injury-suspension-list-vs-forest_604765.html",
     "https://avfc.co.uk/news/2026/september/08/prematch-club-brugge-team-news/",
@@ -1319,8 +1382,7 @@
     "https://www.fourfourtwo.com/team/new-look-aston-villa-are-in-for-a-long-season-but-unai-emery-is-the-continuity-that-matters-most",
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://avfc.co.uk/news/2026/august/31/reaction-unai-emery-post-arsenal/",
-    "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/",
-    "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/"
+    "https://avfc.co.uk/news/2026/august/31/report-aston-villa-0-1-arsenal/"
    ],
    "sources_used": [
     "Aston Villa",
@@ -1329,10 +1391,37 @@
     "FourFourTwo FPL",
     "OneFPL",
     "Opta Analyst",
+    "Soccerway",
     "Sports Mole",
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "I’m really excited because I think we can achieve a lot of things together.” Neto joins Moises Caicedo and Joao Pedro in Chelsea players who have signed fresh terms in 2026.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/it-s-an-unbelievable-moment-pedro-neto-signs-new-contract-at-chelsea-until-2032/ClH0LpoB/",
+     "published": "2026-09-11T16:34:24+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Pedro has a leading four goal involvements for the campaign after the Blues beat Fulham and Brighton before falling to Arsenal last weekend.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/joao-pedro-wins-premier-league-player-of-the-month-after-red-hot-start-to-season/x2qnm5bl/",
+     "published": "2026-09-11T14:23:51+02:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Brazil coach Carlo Ancelotti opted against handing Pedro a spot in the side for the World Cup over the summer but after his fine start to the campaign under manager Xabi Alonso, he has been back into the fold as Brazil prepare to face Australia and India during the upcoming international break.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/joao-pedro-wins-premier-league-player-of-the-month-after-red-hot-start-to-season/x2qnm5bl/",
+     "published": "2026-09-11T14:23:51+02:00",
+     "tone": "positive",
+     "topics": [
+      "statistics"
+     ]
+    },
     {
      "text": "João Pedro did not feature, which is a positive because his legs will be well rested for their upcoming fixture against Hull City at home.",
      "source": "Tactical Football Analysis",
@@ -1433,6 +1522,22 @@
      "topics": []
     },
     {
+     "text": "It is the first time Joao Pedro has received the Premier League Player of the Month award and he becomes the first Chelsea player to win it in almost two years, since Cole Palmer got his second in September 2024.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-wins-premier-league-award",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Palmer was nominated again this time around but Joao Pedro finished ahead of his Blues team-mate and six other shortlisted players in the public vote to take home the prize.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-wins-premier-league-award",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
      "text": "Joao Pedro signs new Chelsea contract | News | Official Site | Chelsea Football Club Chelsea is delighted to announce that Joao Pedro has signed a new contract until 2034.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
@@ -1499,22 +1604,6 @@
      "text": "João Pedro: named on the bench but did not play.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "It is the first time Joao Pedro has received the Premier League Player of the Month award and he becomes the first Chelsea player to win it in almost two years, since Cole Palmer got his second in September 2024.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-wins-premier-league-award",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Palmer was nominated again this time around but Joao Pedro finished ahead of his Blues team-mate and six other shortlisted players in the public vote to take home the prize.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-wins-premier-league-award",
      "published": "",
      "tone": "neutral",
      "topics": []
@@ -1605,7 +1694,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1614,14 +1703,15 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.evertonfc.com/news/2026/september/11/watch-moyes--press-conference---follow-live-blog/",
     "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-everton-live-stream-link-tv-team-news-prediction",
     "https://www.football365.com/match-preview/tottenham-v-everton-prediction-preview-2026-2027",
     "https://www.sportsmole.co.uk/football/everton/predicted-lineups/grealish-maitland-niles-decisions-predicted-everton-xi-vs-tottenham_604783.html",
     "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html",
-    "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-everton-prediction-team-news-lineups_604780.html",
-    "https://www.football365.com/news/man-utd-line-up-same-level-tottenham"
+    "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-everton-prediction-team-news-lineups_604780.html"
    ],
    "sources_used": [
+    "Everton",
     "Football365",
     "NBC Sports Rotoworld PL",
     "Sports Mole"

@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-11T11:28:52+00:00",
- "seconds": 162.0,
+ "ran_at": "2026-09-11T17:28:26+00:00",
+ "seconds": 142.3,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 752,
- "substantive_items": 320,
- "duplicates_removed": 36,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 9321,
+ "sources_readable": 66,
+ "candidates_discovered": 846,
+ "substantive_items": 380,
+ "duplicates_removed": 33,
+ "deeply_analysed": 70,
+ "deep_read_failed": 20,
+ "corpus_size": 9571,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 320 articles"
+    "66/78 sources returned 380 articles"
    ]
   },
   "blackout": {
@@ -48,16 +48,15 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-10T16:03:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-11T16:09:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -85,7 +84,7 @@
      "title": "Sunderland vs Arsenal Prediction, Predicted Lineups & Team News",
      "url": "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
      "source": "RotoWire Soccer",
-     "published": "2026-09-10T16:03:00+00:00",
+     "published": "2026-09-11T16:09:00+00:00",
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": ""
@@ -118,13 +117,13 @@
      "excerpt": "Sports Mole previews Saturday's Premier League clash between Sunderland and Arsenal, including predictions, team news and possible lineups."
     },
     {
-     "title": "Arsenal injury, suspension list and return dates vs. Sunderland: Jurrien Timber, William Saliba, Cristhian Mosquera latest",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-mosquera-latest-arsenal-injury-suspension-list-vs-sunderland_604811.html",
-     "source": "Sports Mole",
-     "published": "2026-09-09T23:49:18+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League clash with Sunderland."
+     "title": "Premier League goalkeepers ranked: David Raya still sets the standard, lowly Alisson",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "source": "Football365",
+     "published": "2026-09-11T13:09:35+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers."
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
@@ -140,9 +139,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 24,
-   "source_count": 11,
-   "latest_evidence": "2026-09-11T10:57:34+00:00",
+   "evidence_count": 25,
+   "source_count": 12,
+   "latest_evidence": "2026-09-11T14:26:41+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -568,7 +567,7 @@
    "club": "MCI",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-10T13:07:42+00:00",
+   "latest_evidence": "2026-09-11T16:17:37+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -612,10 +611,10 @@
      "excerpt": "FPL Gameweek 2 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whether to roll a transfer, what to do about Haaland if you donât own him, whether Semenyo is a hold, and other key Gameweek 2Â dilemmas. […]"
     },
     {
-     "title": "Fantasy Premier League 2026/27: Semenyo and Maguire headline this week’s must drops",
+     "title": "Fantasy Premier League 2026/27: GW4 must-drops",
      "url": "https://www.101greatgoals.com/football/fantasy/fantasy-premier-league-2026-27-antoine-semenyo-harry-maguire-headline-this-weeks-must-drops/",
      "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-10T13:07:42+00:00",
+     "published": "2026-09-11T16:17:37+00:00",
      "matched_on": "semenyo",
      "kind": "general",
      "excerpt": "The season is starting to take shape and now is a good time to work out who you can dump from your Fantasy Premier League squad. We offer five names for consideration..."
@@ -715,9 +714,9 @@
   "Cherki": {
    "player": "Cherki",
    "club": "MCI",
-   "evidence_count": 21,
-   "source_count": 9,
-   "latest_evidence": "2026-09-09T14:40:00+00:00",
+   "evidence_count": 22,
+   "source_count": 10,
+   "latest_evidence": "2026-09-11T15:54:30+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -824,6 +823,15 @@
      "excerpt": "Martín Zubimendi, Manu Koné, Gavi, Raúl Asencio and Luke Shaw all feature in the gossip."
     },
     {
+     "title": "Man Utd vs. Man City predicted by AI: Rayan Cherki, Benjamin Sesko shine in all-timer Manchester derby",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/manchester-derby/feature/sesko-cherki-shine-as-ai-predicts-all-timer-manchester-derby_604951.html",
+     "source": "Sports Mole",
+     "published": "2026-09-11T15:54:30+01:00",
+     "matched_on": "cherki",
+     "kind": "general",
+     "excerpt": "Ahead of Sunday's Premier League clash between Manchester United and Manchester City, we asked ChatGPT to predict the outcome of the Manchester derby."
+    },
+    {
      "title": "Cherki up for Premier League Goal of the Month award",
      "url": "https://www.mancity.com/news/mens/rayan-cherki-has-been-nominated-for-the-guinness-goal-of-the-month-for-august-63924027",
      "source": "Manchester City",
@@ -840,24 +848,15 @@
      "matched_on": "cherki",
      "kind": "general",
      "excerpt": "Town striker Emersonn has been nominated for the Premier League’s Goal of the Month award for August, sponsored by Guinness. The Brazilian striker opened the scoring in the home clash with Sunderland, as he finished well following a storming run from Julio Enciso which saw the Paraguayan beat two Black Cats defenders before laying the ball back for his teammate to score. Emersonn’s goal is one of "
-    },
-    {
-     "title": "Angulo nominated for Guinness Goal of the Month",
-     "url": "https://www.safc.com/news/2026/september/03/angulo-nominated-for-guinness-goal-of-the-month/",
-     "source": "Sunderland",
-     "published": "2026-09-03T11:25:13+00:00",
-     "matched_on": "cherki",
-     "kind": "general",
-     "excerpt": "Nilson Angulo’s stunning free-kick against Ipswich Town has been nominated for the Guinness Goal of the Month award for August. The Ecuadorian produced a moment of magic at Portman Road on the opening day of the Premier League season, curling a superb free-kick over the wall and in off the underside of the crossbar to level the scores. It was Sunderland’s first goal of the 2026-27 campaign and Ang"
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 46,
+   "evidence_count": 47,
    "source_count": 17,
-   "latest_evidence": "2026-09-11T08:45:25+00:00",
+   "latest_evidence": "2026-09-11T13:56:05+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -882,6 +881,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FF247 Site Team News GW4",
+     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
+     "source": "Fantasy Football 247",
+     "published": "2026-09-11T13:56:05+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "FF247 Site Team News GW4 Welcome to FF247 Site Team GW4 GW3 – Triple Captain. Red Arrow. Obviously. Despite playing our Triple Captain, we somehow still ended the week staring at a red arrow. To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, […] The post FF247 Site Team News GW4 appeared first on Fantasy Football 247 - Premier League "
+    },
     {
      "title": "When Will Kylian Mbappé or Erling Haaland Break Cristiano Ronaldo’s Champions League Goals Record?",
      "url": "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
@@ -980,24 +988,15 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "Erling Haaland wants to leave Man City at the end of the season and prefers to leave for Barcelona over Real Madrid, according to reports."
-    },
-    {
-     "title": "Transfer Rumors: Haaland Chooses Between Real Madrid, Barcelona; Arsenal’s Gyokeres Swap Plan",
-     "url": "https://www.si.com/soccer/transfer-rumors-haaland-chooses-real-madrid-barcelona-arsenal-gyokeres-swap?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-08T23:05:00+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Julián Alvarez, Adam Wharton, Jude Bellingham, Vitor Roque and Alex Scott all feature in the gossip."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 30,
-   "source_count": 8,
-   "latest_evidence": "2026-09-11T08:45:25+00:00",
+   "evidence_count": 33,
+   "source_count": 9,
+   "latest_evidence": "2026-09-11T16:34:24+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1022,6 +1021,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Team news for Forest fixture",
+     "url": "https://avfc.co.uk/news/2026/september/11/prematch-team-news-for-forest-fixture/",
+     "source": "Aston Villa",
+     "published": "2026-09-11T14:00:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Fixtures Aston Villa Vs. Nottingham Forest - Sat, Sep 12 2026, 15:00 Unai Emery will assess Matty Cash and Johan Manzambi ahead of Aston Villa’s Premier League encounter against Nottingham Forest. Right-back Cash missed Tuesday’s UEFA Champions League victory at Club Brugge due to injury, while forward Manzambi is still working towards his Villa debut since arriving at the club in the summer. And "
+    },
     {
      "title": "Tottenham Hotspur need to forget their £185m midfield duo – Roberto De Zerbi must build his midfield around another guy",
      "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
@@ -1120,15 +1128,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Fixtures Aston Villa Vs. Arsenal - Mon, Aug 31 2026, 20:00 Aston Villa fell to defeat in their opening home game of the 2026/27 season on Bank Holiday Monday, narrowly losing out 1-0 to Arsenal. Bukayo Saka’s strike just before the hour mark was enough to seal all three points for the reigning Premier League champions at a new-look Villa Park. Unai Emery’s men showed signs of promise – with three "
-    },
-    {
-     "title": "Two debuts for Arsenal clash",
-     "url": "https://avfc.co.uk/news/2026/august/31/prematch-villa-arsenal-team-news-pl-2526/",
-     "source": "Aston Villa",
-     "published": "2026-08-31T17:45:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Aston Villa Vs. Arsenal - Mon, Aug 31 2026, 20:00 Unai Emery has named his side to take on Arsenal in Aston Villa’s first home game of the Premier League season (ko 8pm). The Villans welcome to reigning champions to B6 on Bank Holiday Monday, and Emery has handed debuts to both Zion Suzuki and Nicolas Jackson, who start the game. Jackson, who arrived from Chelsea on Friday, begins in atta"
     }
    ]
   },
@@ -1240,9 +1239,9 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-10T22:57:17-04:00",
-   "official_source_found": false,
+   "source_count": 4,
+   "latest_evidence": "2026-09-11T12:30:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1254,7 +1253,6 @@
     "fixtures",
     "injury",
     "match report",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1264,6 +1262,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "On Demand: Moyes' Pre-Spurs Press Conference",
+     "url": "https://www.evertonfc.com/news/2026/september/11/watch-moyes--press-conference---follow-live-blog/",
+     "source": "Everton",
+     "published": "2026-09-11T12:30:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Click here to be redirected to the live blog for David Moyes’ pre-match press conference."
+    },
     {
      "title": "How to watch Tottenham Hotspur vs Everton live: Stream link, TV, team news, prediction",
      "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-everton-live-stream-link-tv-team-news-prediction",
@@ -1308,15 +1315,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Saturday's Premier League clash between Tottenham Hotspur and Everton, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Man Utd line-up sees them on same level as Tottenham; NOT a compliment",
-     "url": "https://www.football365.com/news/man-utd-line-up-same-level-tottenham",
-     "source": "Football365",
-     "published": "2026-09-10T06:30:42+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Remember when ‘Anyone but United’ meant you wanted anyone but United to win? Now you just want to emulate Anyone but United."
     }
    ]
   },
