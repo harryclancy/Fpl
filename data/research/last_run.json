@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-12T17:26:53+00:00",
- "seconds": 125.2,
+ "ran_at": "2026-09-12T23:26:59+00:00",
+ "seconds": 119.0,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 783,
- "substantive_items": 331,
- "duplicates_removed": 22,
- "deeply_analysed": 68,
- "deep_read_failed": 22,
- "corpus_size": 10172,
+ "sources_readable": 65,
+ "candidates_discovered": 750,
+ "substantive_items": 309,
+ "duplicates_removed": 25,
+ "deeply_analysed": 73,
+ "deep_read_failed": 17,
+ "corpus_size": 10348,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 331 articles"
+    "65/78 sources returned 309 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -54,10 +55,10 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 6,
+   "evidence_count": 7,
    "source_count": 5,
-   "latest_evidence": "2026-09-12T07:45:37+01:00",
-   "official_source_found": false,
+   "latest_evidence": "2026-09-12T22:14:33+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -67,10 +68,8 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -82,40 +81,49 @@
    "researched": true,
    "items": [
     {
-     "title": "Mikel Arteta drops triple Arsenal injury update as £50m star spotted limping before Sunderland clash",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/triple-arsenal-injury-update-as-gbp50m-star-spotted-limping-before-sunderland-clash_605002.html",
-     "source": "Sports Mole",
-     "published": "2026-09-12T07:45:37+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal receive positive injury news on Ben White, Cristhian Mosquera and Jurrien Timber as Mikel Arteta outlines encouraging updates before facing Sunderland."
+     "title": "Le Bris: It was a game of fine margins",
+     "url": "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
+     "source": "Sunderland",
+     "published": "2026-09-12T21:45:15+00:00",
+     "matched_on": "raya",
+     "kind": "transfer",
+     "excerpt": "Régis Le Bris felt Sunderland were close to taking something from Saturday’s Premier League fixture against champions Arsenal, despite suffering a 2-0 defeat at the Stadium of Light. The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later. Bukayo Saka adde"
     },
     {
-     "title": "Sunderland vs. Arsenal injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/team-news/sunderland-vs-arsenal-injury-suspension-list-predicted-xis_604794.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T20:00:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday's Premier League clash between Sunderland and Arsenal."
+     "title": "Raya and Arsenal exorcise Sunderland demons to show strength of champions",
+     "url": "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
+     "source": "Football365",
+     "published": "2026-09-12T22:14:33+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Arsenal’s last Saturday night in Sunderland reinforced the view they might never win the title. This one illustrated why they might p*ss it this time…"
     },
     {
-     "title": "Arsenal Predicted Lineup vs. Sunderland: In-Form Odegaard Leads the Way",
-     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-11T17:00:26+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "The Gunners visit a ground they dropped points at in dramatic fashion last season."
-    },
-    {
-     "title": "Sunderland vs Arsenal Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-11T16:09:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
+     "title": "Mikel Arteta furious with Sunderland 'judo roll' penalty vs Arsenal: 'No penalty in any game, any league'",
+     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-12T17:59:00-04:00",
+     "matched_on": "raya",
+     "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’",
+     "url": "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
+     "source": "Football365",
+     "published": "2026-09-12T21:58:35+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Arsenal manager Mikel Arteta and Sunderland boss Regis Le Bris were blown away by the Spanish star."
+    },
+    {
+     "title": "Sunderland 0-2 Arsenal Stats: Bruno Guimarães Back to Haunt Former Rivals After David Raya Penalty Heroics",
+     "url": "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
+     "source": "Opta Analyst",
+     "published": "2026-09-12T21:25:06+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Bruno Guimarães and Bukayo Saka scored the goals as Premier League champions Arsenal maintained their 100% start to the season, but they also had their goalkeeper to thank. The post Sunderland 0-2 Arsenal Stats: Bruno Guimarães Back to Haunt Former Rivals After David Raya Penalty Heroics appeared first on Opta Analyst ."
     },
     {
      "title": "Premier League goalkeepers ranked: David Raya still sets the standard, lowly Alisson",
@@ -142,7 +150,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-11T23:26:44+00:00",
+   "latest_evidence": "2026-09-12T14:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -186,6 +194,15 @@
      "excerpt": "Luka Vuskovic hauls and Dominic Calvert-Lewin spurns big chances in Brighton 1-1 Leeds The post FPL notes: £4.5m midfielder stars again + another De Cuyper return appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Coventry vs. Brighton injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
+     "source": "Sports Mole",
+     "published": "2026-09-12T14:00:00+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Sunday's Premier League clash between Coventry City and Brighton & Hove Albion."
+    },
+    {
      "title": "Coventry v Brighton predicted line-ups + FPL team news",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
      "source": "Fantasy Football Scout",
@@ -211,15 +228,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "All the team news and predictions ahead of the Premier League clash between Coventry City and Brighton."
-    },
-    {
-     "title": "Brighton lineup vs. Coventry: Predicted XI after Georginio Rutter, Femi Azeez injury updates",
-     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/double-boost-for-hurzeler-predicted-brighton-xi-vs-coventry_604936.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T09:45:39+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Brighton & Hove Albion could line up for Sunday's Premier League clash with Coventry City."
     }
    ]
   },
@@ -443,9 +451,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 9,
-   "latest_evidence": "2026-09-10T19:51:27+01:00",
+   "latest_evidence": "2026-09-12T23:05:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -470,6 +478,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Iraola on fatigue + Barcola fitness, Fulham improve",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-12T23:05:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "It's close but no cigar for Alexander Isak and Dominik Szoboszlai at Anfield The post FPL notes: Iraola on fatigue + Barcola fitness, Fulham improve appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Gakpo, Szoboszlai, Sangare, Konsa: Buy, keep or sell in Gameweek 4?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/07/gakpo-szoboszlai-sangare-konsa-buy-keep-or-sell-in-gameweek-4",
@@ -707,7 +724,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-11T23:26:44+00:00",
+   "latest_evidence": "2026-09-12T14:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -732,6 +749,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Coventry vs. Brighton injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
+     "source": "Sports Mole",
+     "published": "2026-09-12T14:00:00+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Sunday's Premier League clash between Coventry City and Brighton & Hove Albion."
+    },
     {
      "title": "Coventry v Brighton predicted line-ups + FPL team news",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
@@ -776,15 +802,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Brighton & Hove Albion could line up for Sunday's Premier League clash with Coventry City."
-    },
-    {
-     "title": "Coventry lineup vs. Brighton: Predicted XI as Frank Lampard makes Loum Tchaouna, Ellis Simms decisions",
-     "url": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/lampards-attacking-dilemma-predicted-coventry-xi-vs-brighton_604933.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T09:35:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Coventry City could line up for Sunday's Premier League clash with Brighton & Hove Albion."
     }
    ]
   },
@@ -933,7 +950,7 @@
    "club": "MCI",
    "evidence_count": 49,
    "source_count": 17,
-   "latest_evidence": "2026-09-12T08:12:10+01:00",
+   "latest_evidence": "2026-09-12T21:00:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1298,20 +1315,21 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-11T12:40:00+00:00",
+   "latest_evidence": "2026-09-12T17:45:39+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
-   "role_assessed": true,
+   "role_assessed": false,
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
+    "match report",
     "statistics",
-    "tactics",
     "team news",
     "transfer"
    ],
@@ -1319,6 +1337,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham vs Everton: Confirmed teams and full line ups",
+     "url": "https://www.101greatgoals.com/football/premier-league/tottenham-vs-everton-live-teams-line-ups-tv-channel-online-stream/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-12T17:45:39+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Confirmed teams from Tottenham vs Everton in the Premier League"
+    },
+    {
+     "title": "Spurs v Everton team news: Porro + Udogie out, Grealish still a sub",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/spurs-v-everton-team-news-porro-udogie-out-grealish-still-a-sub",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-12T16:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Four changes for the hosts, one for the Toffees The post Spurs v Everton team news: Porro + Udogie out, Grealish still a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "One Change As Everton XI For Spurs Test Confirmed",
+     "url": "https://www.evertonfc.com/news/2026/september/12/one-change-as-everton-xi-for-spurs-test-confirmed/",
+     "source": "Everton",
+     "published": "2026-09-12T15:15:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Ainsley Maitland-Niles is handed a full Everton debut for the Blues' clash with Tottenham Hotspur. Fresh from scoring a stunning last-gasp equaliser in the 2-2 draw with Manchester United last time out, right-back Maitland-Niles is named from the start for Saturday's 5.30pm (BST) kick-off in north London. Boss David Moyes names an otherwise unchanged starting line-up, with Jordan Pickford shielded"
+    },
     {
      "title": "Moyes Reveals Everton Team News For Spurs Trip",
      "url": "https://www.evertonfc.com/news/2026/september/11/moyes-reveals-everton-team-news-for-spurs-trip/",
@@ -1345,33 +1390,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "Tottenham v Everton: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/tottenham-v-everton-prediction-preview-2026-2027",
-     "source": "Football365",
-     "published": "2026-09-10T12:03:30+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Tottenham and Everton."
-    },
-    {
-     "title": "Everton lineup vs. Tottenham: Predicted XI as Jack Grealish, Ainsley Maitland-Niles start Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/everton/predicted-lineups/grealish-maitland-niles-decisions-predicted-everton-xi-vs-tottenham_604783.html",
-     "source": "Sports Mole",
-     "published": "2026-09-10T10:25:51+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Everton could line up for Saturday's Premier League clash with Tottenham Hotspur."
-    },
-    {
-     "title": "Tottenham lineup vs. Everton: Predicted XI as Mathys Tel, James Maddison decisions made for Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html",
-     "source": "Sports Mole",
-     "published": "2026-09-10T10:25:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League clash with Everton."
     }
    ]
   },
@@ -1609,9 +1627,9 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-11T08:36:00+01:00",
+   "evidence_count": 3,
+   "source_count": 2,
+   "latest_evidence": "2026-09-11T08:25:33+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1625,14 +1643,13 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -1646,44 +1663,17 @@
      "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
     },
     {
-     "title": "Leeds United injury, suspension list and return dates vs. Newcastle United: Joe Rodon, Ilia Gruev latest",
-     "url": "https://www.sportsmole.co.uk/football/leeds-united/injury-news/injuries-and-suspensions/rodon-gruev-leeds-injury-suspension-list-vs-newcastle_604929.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T08:36:00+01:00",
-     "matched_on": "LEE team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Leeds United's latest injury and suspension news ahead of their Premier League clash with Newcastle United."
-    },
-    {
-     "title": "Chelsea v Leeds United: Confirmed line-ups as Premier League rivals meet in EFL Cup",
-     "url": "https://www.101greatgoals.com/football/chelsea-v-leeds-united-team-news/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-09T17:55:13+00:00",
-     "matched_on": "LEE team news",
-     "kind": "club team news",
-     "excerpt": "Leeds head to west London with unbeaten so far this term."
-    },
-    {
-     "title": "Chelsea vs. Leeds United team news: Estevao Willian decision made by Xabi Alonso amid speculation",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/league-cup/news/chelsea-leeds-united-starting-lineups-confirmed-alonso-makes-nine-changes-for-efl-cup-tie_604797.html",
-     "source": "Sports Mole",
-     "published": "2026-09-09T18:52:00+01:00",
-     "matched_on": "LEE team news",
-     "kind": "club team news",
-     "excerpt": "Chelsea and Leeds United announce their starting lineups for Wednesday's EFL Cup third round tie at Stamford Bridge."
-    },
-    {
-     "title": "Chelsea injury news: Xabi Alonso provides Marco Palestra, Moises Caicedo update ahead of Leeds United EFL Cup tie",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-quartet-ruled-out-of-leeds-efl-cup-tie-through-injury_604729.html",
-     "source": "Sports Mole",
-     "published": "2026-09-08T14:30:46+01:00",
-     "matched_on": "LEE team news",
-     "kind": "club team news",
-     "excerpt": "Chelsea manager Xabi Alonso provides an injury update ahead of Wednesday's EFL Cup third round tie against Leeds United."
-    },
-    {
      "title": "Muharemovic picks up seasons first hero of the month award",
      "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Tarik muharemovic we have to be ready",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",

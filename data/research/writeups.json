@@ -1,56 +1,131 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-12T17:26:53+00:00",
+ "generated": "2026-09-12T23:26:59+00:00",
  "gameweek": 5,
- "corpus_size": 10172,
+ "corpus_size": 10348,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — FourFourTwo FPL, 07 Sep: “It's not easy to score against a goalkeeper of Raya's quality from wider angles.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 11 Sep.",
-   "case_for": "What supports keeping him: RotoWire Soccer, 11 Sep: “Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.” Football365, 11 Sep: “David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.” FourFourTwo FPL, 07 Sep: “The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya.”",
+   "status": "Latest on Raya — Football365, 12 Sep: “2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 12 Sep.",
+   "case_for": "What supports keeping him: Football365, 12 Sep: “Enzo Le Fee stepped up to take the penalty, but Arsenal and Spain international goalkeeper Raya saved it with a superb save low to his left.” Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.” Opta Analyst, 12 Sep: “David Raya’s penalty save and a stunning goal from former Newcastle United midfielder Bruno Guimarães proved crucial as Arsenal beat Sunderland 2-0 at the Stadium of Light.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Sports Illustrated FPL, 11 Sep: “Arsenal Predicted Lineup vs. Sunderland GK: David Raya —Unflappable in the week after conceding for the first time this season on Sunday, Raya is chasing Hull City’s Konstantinos Tzolakis in the Golden Glove race at this early juncture.”",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — Football365, 12 Sep: “REACTION: Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’ Raya did it again in added time.” Sunderland, 12 Sep: “The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later.” Sunderland, 12 Sep: ““Raya was one of the best players on the pitch.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 7,
    "evidence_used": [
-    "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/triple-arsenal-injury-update-as-gbp50m-star-spotted-limping-before-sunderland-clash_605002.html",
-    "https://www.sportsmole.co.uk/football/arsenal/injury-news/team-news/sunderland-vs-arsenal-injury-suspension-list-predicted-xis_604794.html",
-    "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
-    "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
+    "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
+    "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
+    "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
+    "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
+    "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
    "sources_used": [
     "Football365",
     "FourFourTwo FPL",
-    "RotoWire Soccer",
-    "Sports Illustrated FPL",
-    "Sports Mole"
+    "NBC Sports Rotoworld PL",
+    "Opta Analyst",
+    "Sunderland"
    ],
    "quotes": [
     {
-     "text": "Arsenal Predicted Lineup vs. Sunderland GK: David Raya —Unflappable in the week after conceding for the first time this season on Sunday, Raya is chasing Hull City’s Konstantinos Tzolakis in the Golden Glove race at this early juncture.",
-     "source": "Sports Illustrated FPL",
-     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
-     "published": "2026-09-11T17:00:26+00:00",
+     "text": "2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
+     "published": "2026-09-12T22:14:33+00:00",
      "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "REACTION: Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’ Raya did it again in added time.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
+     "published": "2026-09-12T22:14:33+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Enzo Le Fee stepped up to take the penalty, but Arsenal and Spain international goalkeeper Raya saved it with a superb save low to his left.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
+     "published": "2026-09-12T21:58:35+00:00",
+     "tone": "positive",
      "topics": [
-      "team news"
+      "transfer",
+      "set pieces"
      ]
     },
     {
-     "text": "Arsenal changed heavily for Napoli and won 1-0 anyway through an Odegaard goal from a Christos Tzolis assist, with Raya making three saves for the clean sheet.",
-     "source": "RotoWire Soccer",
-     "url": "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
-     "published": "2026-09-11T16:09:00+00:00",
+     "text": "After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
+     "published": "2026-09-12T21:58:35+00:00",
      "tone": "positive",
      "topics": [
-      "match report",
-      "fixtures"
+      "tactics"
+     ]
+    },
+    {
+     "text": "The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later.",
+     "source": "Sunderland",
+     "url": "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
+     "published": "2026-09-12T21:45:15+00:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "“Raya was one of the best players on the pitch.",
+     "source": "Sunderland",
+     "url": "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
+     "published": "2026-09-12T21:45:15+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "David Raya’s penalty save and a stunning goal from former Newcastle United midfielder Bruno Guimarães proved crucial as Arsenal beat Sunderland 2-0 at the Stadium of Light.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
+     "published": "2026-09-12T21:25:06+00:00",
+     "tone": "positive",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "It was Guimarães who made the breakthrough with a curling strike into the top-right corner in the 58 minute, only 121 seconds after Raya had brilliantly turned Enzo Le Feé’s spot-kick against the post.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
+     "published": "2026-09-12T21:25:06+00:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "But he was left angry with the fact that Raya had to save a penalty in the first place, as Arteta felt Daniel Ballard used a ‘judo roll’ to win a penalty off Ezri Konsa as Arsenal were penalized for physical play in the box.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
+     "published": "2026-09-12T17:59:00-04:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "“They could’ve changed the game.” Bruno Guimaraes came off the bench and slammed the Gunners in front, moments after Sunderland saw a penalty saved by Raya, and Guimaraes was asked whether Raya was the best keeper in the world.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
+     "published": "2026-09-12T17:59:00-04:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
      ]
     },
     {
@@ -96,10 +171,10 @@
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
     "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
+    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
     "https://www.brightonandhovealbion.com/media-article/mu21-match-report-bha-leicester-city-premier-league-2-pl2-september-2026",
-    "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview",
-    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/double-boost-for-hurzeler-predicted-brighton-xi-vs-coventry_604936.html"
+    "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview"
    ],
    "sources_used": [
     "Brighton & Hove Albion",
@@ -387,16 +462,17 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "status": "Latest on Szoboszlai — 101 Great Goals — Fantasy, 09 Sep: “After working the ball into the penalty box, Szoboszlai slid a delicate backheel from Ronald Araujo past Jan Oblak, to draw the hosts level.”",
-   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 10 retrieved item(s) from 9 source(s), the most recent dated 10 Sep.",
-   "case_for": "What supports keeping him: Sports Mole, 10 Sep: “Andoni Iraola opted to start Alexis Mac Allister and Dominik Szoboszlai together in the middle, dropping Ryan Gravenberch to the bench for a third consecutive game.” Sports Mole, 10 Sep: “Both Szoboszlai and Mac Allister scored , and the pair were strong with and without the ball, and that is especially surprising for the former.” Fantasy Football Scout, 07 Sep: “CODY GAKPO / DOMINIK SZOBOSZLAI It’s now four attacking returns in three matches for Cody Gakpo (£7.2m), who supplied two superb assists at Ipswich Town on Friday.”",
+   "status": "Latest on Szoboszlai — Fantasy Football Scout, 12 Sep: “Isak was often isolated and looked short on energy himself, while Szoboszlai was one part of yet another unconvincing central midfield display.”",
+   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 11 retrieved item(s) from 9 source(s), the most recent dated 12 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 12 Sep: “Above: Alexander Isak’s xG shot graph in Gameweek 4 (the bigger the circle, the better the chance) Szoboszlai, meanwhile, racked up three big chances created (BCC, below), one for Isak’s aforementioned header.” Sports Mole, 10 Sep: “Andoni Iraola opted to start Alexis Mac Allister and Dominik Szoboszlai together in the middle, dropping Ryan Gravenberch to the bench for a third consecutive game.” Sports Mole, 10 Sep: “Both Szoboszlai and Mac Allister scored , and the pair were strong with and without the ball, and that is especially surprising for the former.”",
    "case_against": "What argues against him: OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Scout, 07 Sep: “But this competition, I think is going to be good for all of them.” – Andoni Iraola on Cody Gakpo As for Dominik Szoboszlai (£7.0m), on another day, he hauls in Gameweek 3.” Fantasy Football Scout, 03 Sep: “Probably Conor, and especially Hugo, will go later, yes.” – Andoni Iraola With the ongoing injuries at right-back, Iraola was asked about the conversations he’s had with Dominik Szoboszlai about moving him into the back four, as happened in Gameweek 2, and whether he sees the Hungarian as an ongoing option at full-back.” Fantasy Football Scout, 03 Sep: “That’s why I value Dom Szoboszlai, who can play right-back, [and] Ronald Araújo, who can also play right-back.” – Andoni Iraola on Dominik Szoboszlai and the versatility of his players Cody Gakpo is staying with the Reds after touted moves to Tottenham Hotspur and Manchester City failed to materialise, and Iraola is happy to have him still aboard.”",
+   "developments": "Recent developments — 101 Great Goals — Fantasy, 09 Sep: “After working the ball into the penalty box, Szoboszlai slid a delicate backheel from Ronald Araujo past Jan Oblak, to draw the hosts level.” Fantasy Football Scout, 07 Sep: “CODY GAKPO / DOMINIK SZOBOSZLAI It’s now four attacking returns in three matches for Cody Gakpo (£7.2m), who supplied two superb assists at Ipswich Town on Friday.” Fantasy Football Scout, 07 Sep: “But this competition, I think is going to be good for all of them.” – Andoni Iraola on Cody Gakpo As for Dominik Szoboszlai (£7.0m), on another day, he hauls in Gameweek 3.”",
    "outlook": "On the coming weeks — Football365, 03 Sep: “Liverpool: Carragher tells Iraola to have brutal ‘conversation’ with £60m Liverpool midfielder and change his mind Liverpool manager Andoni Iraola and Jamie Carragher Jamie Carragher has said that Liverpool manager Andoni Iraola needs to change Dominik Szoboszlai’s role in the team.”",
    "confidence": "high",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
     "https://www.fantasyfootballscout.co.uk/2026/09/07/gakpo-szoboszlai-sangare-konsa-buy-keep-or-sell-in-gameweek-4",
     "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/barcola-szoboszlai-liverpool-injury-latest-for-fpl-gameweek-3",
@@ -420,6 +496,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Isak was often isolated and looked short on energy himself, while Szoboszlai was one part of yet another unconvincing central midfield display.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
+     "published": "2026-09-12T23:05:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Above: Alexander Isak’s xG shot graph in Gameweek 4 (the bigger the circle, the better the chance) Szoboszlai, meanwhile, racked up three big chances created (BCC, below), one for Isak’s aforementioned header.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
+     "published": "2026-09-12T23:05:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "statistics"
+     ]
+    },
     {
      "text": "Andoni Iraola opted to start Alexis Mac Allister and Dominik Szoboszlai together in the middle, dropping Ryan Gravenberch to the bench for a third consecutive game.",
      "source": "Sports Mole",
@@ -963,12 +1057,12 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
     "https://www.brightonandhovealbion.com/media-article/mu21-match-report-bha-leicester-city-premier-league-2-pl2-september-2026",
     "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
     "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview",
-    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/double-boost-for-hurzeler-predicted-brighton-xi-vs-coventry_604936.html",
-    "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/lampards-attacking-dilemma-predicted-coventry-xi-vs-brighton_604933.html"
+    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/double-boost-for-hurzeler-predicted-brighton-xi-vs-coventry_604936.html"
    ],
    "sources_used": [
     "Brighton & Hove Albion",
@@ -1276,25 +1370,6 @@
      ]
     },
     {
-     "text": "3 Leeds: Palmer, Rogers & João Pedro FPL | OneFPL Loading OneFPL page In this article sections The short answer Chelsea's 6-3 Carabao Cup win over Leeds strengthened the FPL case for their main attackers before Hull — but for different reasons.",
-     "source": "OneFPL",
-     "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
-     "published": "",
-     "tone": "neutral",
-     "topics": [
-      "fpl advice",
-      "rotation"
-     ]
-    },
-    {
-     "text": "That matters because Palmer and Rogers did not play a full cup match.",
-     "source": "OneFPL",
-     "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
      "text": "Why Palmer remains premium penalties, central creative role, captaincy ceiling, secure importance to Chelsea.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/cole-palmer-fpl-redemption-season-2026-27",
@@ -1313,6 +1388,25 @@
      "published": "",
      "tone": "neutral",
      "topics": []
+    },
+    {
+     "text": "3 Leeds: Palmer, Rogers & João Pedro FPL | OneFPL Loading OneFPL page In this article sections The short answer Chelsea's 6-3 Carabao Cup win over Leeds strengthened the FPL case for their main attackers before Hull — but for different reasons.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
+     "published": "",
+     "tone": "neutral",
+     "topics": [
+      "fpl advice",
+      "rotation"
+     ]
+    },
+    {
+     "text": "That matters because Palmer and Rogers did not play a full cup match.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
@@ -1321,11 +1415,11 @@
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
    "why_here": "Haaland is in the starting eleven this week at £15.5m as a FWD. The selection rests on 49 retrieved item(s) from 17 source(s), the most recent dated 12 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 12 Sep: “I have to say that Haaland is a joke though, and he scored twice against FC Porto on Tuesday night.” Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.” Tactical Football Analysis, 11 Sep: “Manchester United And Man City: Fernandes And Haaland’s FPL Form Fig. 1: Top 10 shots after the first three gameweeks (Source: FFHub Ahead of the blockbuster fixture at Old Trafford on Sunday, the numbers suggest we can expect goals from both sides.”",
+   "case_for": "What supports keeping him: Football365, 12 Sep: “Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.” FourFourTwo FPL, 12 Sep: “I have to say that Haaland is a joke though, and he scored twice against FC Porto on Tuesday night.” Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 10 Sep: “Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.” Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.”",
-   "developments": "Recent developments — Sports Mole, 12 Sep: “Alonso now believes the £60m star possesses many of the same qualities as former Real Madrid legend Benzema and is already on Haaland's level.” Sports Mole, 12 Sep: “\"I would say yes,\" Alonso said when asked whether Pedro is on the same level as Haaland, via Sky Sports .” FourFourTwo FPL, 12 Sep: “We saw that last weekend in the 2-2 draw with Everton They'll have a game plan to try and stop Man City and Haaland, so I think it’ll be a fascinating contest.”",
-   "outlook": "On the coming weeks — Tactical Football Analysis, 11 Sep: “Bruno Fernandes (15 shots, 8 key passes, 2.26 xG) and Erling Haaland (14 shots, 8 on target, 2.47 xG) are fully justifying their premium price points and will likely continue to do so.” Fantasy Football Scout, 09 Sep: “HAALAND DOUBLE Days after ‘only’ scoring once past Coventry City , Gameweek 3’s Triple Captain users had to witness Erling Haaland (£15.5m) scoring twice on this occasion.”",
+   "developments": "Recent developments — Football365, 12 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.” Sports Mole, 12 Sep: “Alonso now believes the £60m star possesses many of the same qualities as former Real Madrid legend Benzema and is already on Haaland's level.” Sports Mole, 12 Sep: “\"I would say yes,\" Alonso said when asked whether Pedro is on the same level as Haaland, via Sky Sports .”",
+   "outlook": "On the coming weeks — Tactical Football Analysis, 11 Sep: “Manchester United And Man City: Fernandes And Haaland’s FPL Form Fig. 1: Top 10 shots after the first three gameweeks (Source: FFHub Ahead of the blockbuster fixture at Old Trafford on Sunday, the numbers suggest we can expect goals from both sides.” Tactical Football Analysis, 11 Sep: “Bruno Fernandes (15 shots, 8 key passes, 2.26 xG) and Erling Haaland (14 shots, 8 on target, 2.47 xG) are fully justifying their premium price points and will likely continue to do so.”",
    "confidence": "high",
    "evidence_count": 49,
    "evidence_used": [
@@ -1362,6 +1456,22 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-09-12T21:00:59+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-09-12T21:00:59+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Alonso now believes the £60m star possesses many of the same qualities as former Real Madrid legend Benzema and is already on Haaland's level.",
      "source": "Sports Mole",
@@ -1433,22 +1543,6 @@
      "topics": [
       "statistics"
      ]
-    },
-    {
-     "text": "Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-09-10T21:22:59+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-09-10T21:22:59+00:00",
-     "tone": "neutral",
-     "topics": []
     },
     {
      "text": "Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.",
@@ -2372,18 +2466,18 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.101greatgoals.com/football/premier-league/tottenham-vs-everton-live-teams-line-ups-tv-channel-online-stream/",
+    "https://www.fantasyfootballscout.co.uk/2026/09/12/spurs-v-everton-team-news-porro-udogie-out-grealish-still-a-sub",
+    "https://www.evertonfc.com/news/2026/september/12/one-change-as-everton-xi-for-spurs-test-confirmed/",
     "https://www.evertonfc.com/news/2026/september/11/moyes-reveals-everton-team-news-for-spurs-trip/",
     "https://www.evertonfc.com/news/2026/september/11/watch-moyes--press-conference---follow-live-blog/",
-    "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-everton-live-stream-link-tv-team-news-prediction",
-    "https://www.football365.com/match-preview/tottenham-v-everton-prediction-preview-2026-2027",
-    "https://www.sportsmole.co.uk/football/everton/predicted-lineups/grealish-maitland-niles-decisions-predicted-everton-xi-vs-tottenham_604783.html",
-    "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-maddison-make-it-predicted-tottenham-xi-vs-everton_604782.html"
+    "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-everton-live-stream-link-tv-team-news-prediction"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "Everton",
-    "Football365",
-    "NBC Sports Rotoworld PL",
-    "Sports Mole"
+    "Fantasy Football Scout",
+    "NBC Sports Rotoworld PL"
    ],
    "quotes": []
   },
@@ -2693,27 +2787,22 @@
    "player": "Muharemović",
    "club": "LEE",
    "status": "Latest on Muharemović — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
-   "why_here": "Muharemović is on the bench this week at £5.0m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 11 Sep.",
+   "why_here": "Muharemović is on the bench this week at £5.0m as a DEF. The selection rests on 3 retrieved item(s) from 2 source(s), the most recent dated 11 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.” Sports Mole, 09 Sep: “James Justin, Tarik Muharemovic and Ethan Ampadu are the trio to keep their places from the game at the Amex Stadium.”",
+   "developments": "Recent developments — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 3,
    "evidence_used": [
     "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-    "https://www.sportsmole.co.uk/football/leeds-united/injury-news/injuries-and-suspensions/rodon-gruev-leeds-injury-suspension-list-vs-newcastle_604929.html",
-    "https://www.101greatgoals.com/football/chelsea-v-leeds-united-team-news/",
-    "https://www.sportsmole.co.uk/football/chelsea/league-cup/news/chelsea-leeds-united-starting-lineups-confirmed-alonso-makes-nine-changes-for-efl-cup-tie_604797.html",
-    "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-quartet-ruled-out-of-leeds-efl-cup-tie-through-injury_604729.html",
-    "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award"
+    "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
+    "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "FourFourTwo FPL",
-    "Leeds United",
-    "Sports Mole"
+    "Leeds United"
    ],
    "quotes": [
     {
@@ -2726,14 +2815,6 @@
       "set pieces",
       "statistics"
      ]
-    },
-    {
-     "text": "James Justin, Tarik Muharemovic and Ethan Ampadu are the trio to keep their places from the game at the Amex Stadium.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/league-cup/news/chelsea-leeds-united-starting-lineups-confirmed-alonso-makes-nine-changes-for-efl-cup-tie_604797.html",
-     "published": "2026-09-09T18:52:00+01:00",
-     "tone": "neutral",
-     "topics": []
     }
    ]
   }
