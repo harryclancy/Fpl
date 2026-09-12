@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-11T23:26:40+00:00",
+ "generated": "2026-09-12T05:27:59+00:00",
  "gameweek": 4,
- "corpus_size": 9734,
+ "corpus_size": 9831,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -17,10 +17,10 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/arsenal/injury-news/team-news/sunderland-vs-arsenal-injury-suspension-list-predicted-xis_604794.html",
     "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
     "https://www.rotowire.com/soccer/article/sunderland-vs-arsenal-prediction-predicted-lineups-team-news-133417",
     "https://www.fantasyfootballscout.co.uk/2026/09/11/white-timber-mosquera-arsenal-injury-latest-for-fpl-gameweek-4",
-    "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
     "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
    ],
@@ -1811,7 +1811,7 @@
    "player": "Diop",
    "club": "IPS",
    "status": "Latest on Diop — Ipswich Town, 04 Sep: “Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
-   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 04 Sep.",
+   "why_here": "Diop is on the bench this week at £4.0m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 04 Sep.",
    "case_for": "What supports keeping him: Ipswich Town, 04 Sep: “Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.” Ipswich Town, 30 Aug: “Kjell Scherpen started in goal, with a defence of Dara O’Shea, Issa Diop, Jacob Greaves and Leif Davis in front of him.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1822,13 +1822,14 @@
    "evidence_used": [
     "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
     "https://www.itfc.co.uk/news/2026/august/30/manchester-united-v-ipswich-town-match-report/",
+    "https://www.fantasyfootballscout.co.uk/2026/09/12/crystal-palace-v-ipswich-predicted-line-ups-fpl-team-news",
     "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
     "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
-    "https://www.cpfc.co.uk/news/first-team/team-news-sage-updates-on-doucoure-ahead-of-ipswich-visit/",
-    "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/who-did-iraola-bench-liverpool-team-news-vs-ipswich-revealed_604502.html"
+    "https://www.cpfc.co.uk/news/first-team/team-news-sage-updates-on-doucoure-ahead-of-ipswich-visit/"
    ],
    "sources_used": [
     "Crystal Palace",
+    "Fantasy Football Scout",
     "Ipswich Town",
     "Sports Mole"
    ],
@@ -1864,12 +1865,12 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/12/crystal-palace-v-ipswich-predicted-line-ups-fpl-team-news",
     "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
     "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-ipswich-prediction-team-news-lineups_604830.html",
     "https://www.sportsmole.co.uk/football/crystal-palace/league-cup/preview/crystal-palace-vs-middlesbrough-prediction-team-news-lineups_604587.html",
     "https://www.fulhamfc.com/news/2026/september/05/post-crystal-palace-press-conference/",
-    "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
-    "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html"
+    "https://www.fantasyfootballscout.co.uk/2026/09/04/fulham-v-crystal-palace-predicted-line-ups-fpl-team-news-2"
    ],
    "sources_used": [
     "Fantasy Football Scout",

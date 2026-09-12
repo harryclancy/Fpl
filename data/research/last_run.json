@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-11T23:26:40+00:00",
- "seconds": 149.7,
+ "ran_at": "2026-09-12T05:27:59+00:00",
+ "seconds": 142.0,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 735,
- "substantive_items": 290,
- "duplicates_removed": 26,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 9734,
+ "sources_readable": 65,
+ "candidates_discovered": 649,
+ "substantive_items": 209,
+ "duplicates_removed": 17,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 9831,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 290 articles"
+    "65/78 sources returned 209 articles"
    ]
   },
   "blackout": {
@@ -49,8 +49,7 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -58,7 +57,7 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 6,
-   "latest_evidence": "2026-09-11T17:00:26+00:00",
+   "latest_evidence": "2026-09-11T20:00:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -83,6 +82,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Sunderland vs. Arsenal injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/team-news/sunderland-vs-arsenal-injury-suspension-list-predicted-xis_604794.html",
+     "source": "Sports Mole",
+     "published": "2026-09-11T20:00:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday's Premier League clash between Sunderland and Arsenal."
+    },
     {
      "title": "Arsenal Predicted Lineup vs. Sunderland: In-Form Odegaard Leads the Way",
      "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-sunderland-9-12-26?utm_source=RSS",
@@ -109,15 +117,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Plus, positive words on Ezri Konsa The post White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal lineup vs. Sunderland: Predicted XI as four changes made by Mikel Arteta",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/four-changes-from-arteta-predicted-arsenal-xi-vs-sunderland_604793.html",
-     "source": "Sports Mole",
-     "published": "2026-09-10T11:04:16+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Saturday's Premier League clash with Sunderland."
     },
     {
      "title": "Premier League goalkeepers ranked: David Raya still sets the standard, lowly Alisson",
@@ -1387,10 +1386,10 @@
    "player": "Diop",
    "club": "IPS",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-11T15:00:00+01:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-11T23:22:54+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1399,6 +1398,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1430,6 +1430,15 @@
      "excerpt": "Fixtures Manchester United Vs. Ipswich Town - Sun, Aug 30th 2026, 16:30 Town were beaten 5-2 at Old Trafford this afternoon. The Blues took the lead through Leif Davis, but a Bruno Fernandes hat-trick and goals from Harry Maguire and Bryan Mbeumo meant the points stayed with Manchester United, before Chuba Akpom's late consolation. Manager Gary O’Neil named an unchanged side from the Blues’ openin"
     },
     {
+     "title": "Crystal Palace v Ipswich predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/crystal-palace-v-ipswich-predicted-line-ups-fpl-team-news",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-11T23:22:54+00:00",
+     "matched_on": "IPS team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Crystal Palace v Ipswich predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
      "title": "Crystal Palace vs. Ipswich injury, suspension list, predicted XIs",
      "url": "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
      "source": "Sports Mole",
@@ -1455,15 +1464,6 @@
      "matched_on": "IPS team news",
      "kind": "club team news",
      "excerpt": "Crystal Palace Manager Pierre Sage has revealed that Cheick DoucourÃ© is in contention to be part of the matchday squad for this weekend's game against Ipswich Town (Saturday, 15:00 BST)."
-    },
-    {
-     "title": "Liverpool team news vs. Ipswich: Andoni Iraola makes major midfield decision for second Premier League matchweek",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/who-did-iraola-bench-liverpool-team-news-vs-ipswich-revealed_604502.html",
-     "source": "Sports Mole",
-     "published": "2026-09-04T19:13:00+01:00",
-     "matched_on": "IPS team news",
-     "kind": "club team news",
-     "excerpt": "Liverpool boss Andoni Iraola makes a major midfield decision ahead of his side's clash with Ipswich Town on Friday in the Premier League."
     }
    ]
   },
@@ -1472,7 +1472,7 @@
    "club": "CRY",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-11T15:00:00+01:00",
+   "latest_evidence": "2026-09-11T23:22:54+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1497,6 +1497,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Crystal Palace v Ipswich predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/crystal-palace-v-ipswich-predicted-line-ups-fpl-team-news",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-11T23:22:54+00:00",
+     "matched_on": "CRY team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Crystal Palace v Ipswich predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Crystal Palace vs. Ipswich injury, suspension list, predicted XIs",
      "url": "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/crystal-palace-vs-ipswich-injury-suspension-list-predicted-xis_604831.html",
@@ -1541,15 +1550,6 @@
      "matched_on": "CRY team news",
      "kind": "club team news",
      "excerpt": "Team form, absentees and our predicted XIs The post Fulham v Crystal Palace predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Fulham vs. Crystal Palace injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/fulham/injury-news/team-news/fulham-vs-palace-injury-suspension-list-predicted-xis_604398.html",
-     "source": "Sports Mole",
-     "published": "2026-09-04T15:00:00+01:00",
-     "matched_on": "CRY team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up the team news as Fulham prepare to take on Crystal Palace in the Premier League."
     }
    ]
   }
