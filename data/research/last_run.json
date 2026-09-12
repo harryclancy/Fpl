@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 4,
- "ran_at": "2026-09-12T05:27:59+00:00",
- "seconds": 142.0,
+ "ran_at": "2026-09-12T11:27:12+00:00",
+ "seconds": 153.3,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 649,
- "substantive_items": 209,
- "duplicates_removed": 17,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 9831,
+ "sources_readable": 66,
+ "candidates_discovered": 699,
+ "substantive_items": 257,
+ "duplicates_removed": 22,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 9961,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 209 articles"
+    "66/78 sources returned 257 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -141,9 +140,9 @@
   "Gabriel": {
    "player": "Gabriel",
    "club": "ARS",
-   "evidence_count": 25,
+   "evidence_count": 26,
    "source_count": 12,
-   "latest_evidence": "2026-09-11T14:26:41+00:00",
+   "latest_evidence": "2026-09-12T09:11:29+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -855,9 +854,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 47,
+   "evidence_count": 49,
    "source_count": 17,
-   "latest_evidence": "2026-09-11T13:56:05+00:00",
+   "latest_evidence": "2026-09-12T08:12:10+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -995,9 +994,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 34,
+   "evidence_count": 36,
    "source_count": 10,
-   "latest_evidence": "2026-09-11T22:01:00+02:00",
+   "latest_evidence": "2026-09-12T08:12:10+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
