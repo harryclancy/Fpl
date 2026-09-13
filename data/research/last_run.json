@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-12T23:26:59+00:00",
- "seconds": 119.0,
+ "ran_at": "2026-09-13T05:28:49+00:00",
+ "seconds": 122.8,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 750,
- "substantive_items": 309,
- "duplicates_removed": 25,
- "deeply_analysed": 73,
- "deep_read_failed": 17,
- "corpus_size": 10348,
+ "sources_readable": 66,
+ "candidates_discovered": 635,
+ "substantive_items": 187,
+ "duplicates_removed": 8,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 10440,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 309 articles"
+    "66/78 sources returned 187 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -1088,7 +1087,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 40,
+   "evidence_count": 41,
    "source_count": 11,
    "latest_evidence": "2026-09-12T18:09:00+02:00",
    "official_source_found": true,
@@ -1314,8 +1313,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-12T17:45:39+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-12T18:55:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1337,6 +1336,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton Extend Unbeaten Start With Spurs Point",
+     "url": "https://www.evertonfc.com/news/2026/september/12/everton-extend-unbeaten-start-with-spurs-point/",
+     "source": "Everton",
+     "published": "2026-09-12T18:55:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Everton extended their unbeaten start to the season with a 0-0 draw at Tottenham Hotspur on Saturday evening. The result, which sees Everton up to six points from their opening four Premier League games, was Spurs' first goalless affair in the league since moving into Tottenham Hotspur Stadium in April 2019. David Moyes made one enforced change from the side that started the dramatic 2-2 draw with"
+    },
     {
      "title": "Tottenham vs Everton: Confirmed teams and full line ups",
      "url": "https://www.101greatgoals.com/football/premier-league/tottenham-vs-everton-live-teams-line-ups-tv-channel-online-stream/",
@@ -1381,15 +1389,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Click here to be redirected to the live blog for David Moyes’ pre-match press conference."
-    },
-    {
-     "title": "How to watch Tottenham Hotspur vs Everton live: Stream link, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-everton-live-stream-link-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-10T22:57:17-04:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
@@ -1663,8 +1662,8 @@
      "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
     },
     {
-     "title": "Muharemovic picks up seasons first hero of the month award",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
+     "title": "Tarik muharemovic we have to be ready",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -1672,8 +1671,8 @@
      "excerpt": ""
     },
     {
-     "title": "Tarik muharemovic we have to be ready",
-     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
+     "title": "Muharemovic picks up seasons first hero of the month award",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
