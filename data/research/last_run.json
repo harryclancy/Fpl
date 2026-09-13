@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-13T11:27:45+00:00",
- "seconds": 123.3,
+ "ran_at": "2026-09-13T17:27:39+00:00",
+ "seconds": 160.5,
  "sources_attempted": 78,
  "sources_readable": 65,
- "candidates_discovered": 665,
- "substantive_items": 224,
- "duplicates_removed": 14,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 10551,
+ "candidates_discovered": 739,
+ "substantive_items": 307,
+ "duplicates_removed": 25,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 10735,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 224 articles"
+    "65/78 sources returned 307 articles"
    ]
   },
   "blackout": {
@@ -42,14 +42,14 @@
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
-  "FPLai: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -471,9 +471,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 11,
+   "evidence_count": 13,
    "source_count": 9,
-   "latest_evidence": "2026-09-12T23:05:00+00:00",
+   "latest_evidence": "2026-09-13T17:34:45+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -544,6 +544,15 @@
      "excerpt": "Both Newcastle and Liverpool have new managers in the dugout for the 2026-27 Premier League campaign, but who will get off to a perfect start? The post Newcastle 2-2 Liverpool Stats: Last-Gasp Szoboszlai Spot-Kick Salvages Draw appeared first on Opta Analyst ."
     },
     {
+     "title": "Liverpool transfer news: Why 'problem' midfield was not addressed as Fulham expose Dominik Szoboszlai, Ryan Gravenberch issue",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/why-problem-midfield-was-not-addressed-as-szoboszlai-gravenberch-exposed_605069.html",
+     "source": "Sports Mole",
+     "published": "2026-09-13T17:34:45+01:00",
+     "matched_on": "szoboszlai",
+     "kind": "transfer",
+     "excerpt": "A new report claims to reveal why Liverpool did not address their problematic midfield in the summer amid concerns about Dominik Szoboszlai and Ryan Gravenberch."
+    },
+    {
      "title": "How to watch Liverpool vs Nottingham Forest for FREE: Live stream details as both sides look for first win of Premier League 2026/27",
      "url": "https://www.fourfourtwo.com/competition/watch-liverpool-vs-nottingham-forest-premier-league-2026-27-free",
      "source": "FourFourTwo FPL",
@@ -551,6 +560,15 @@
      "matched_on": "szoboszlai",
      "kind": "transfer",
      "excerpt": "Watch Liverpool vs Nottingham Forest as both teams go in search of a first win of the new Premier League season. Want to watch the game for FREE and in full? FourFourTwo is providing you with all the details on live streams and TV channels, wherever you are in the world. Liverpool vs Nottingham Forest: key information Kick-off time: 12:30pm BST / 7:30am ET / 9:30pm AEST FREE Stream: CazeTV's YouTu"
+    },
+    {
+     "title": "Liverpool legend urges Iraola to drop Wirtz to help Reds teammate with Szoboszlai ‘rationale’",
+     "url": "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale",
+     "source": "Football365",
+     "published": "2026-09-13T14:46:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "Former Liverpool defender Steve Nicol has told Reds boss Andoni Iraola why he should drop Florian Wirtz to get his attack firing this season."
     },
     {
      "title": "Liverpool’s midfield: Why Alexis Mac Allister and Dominik Szoboszlai have created a Ryan Gravenberch issue for Andoni Iraola",
@@ -587,15 +605,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "FPL Gameweek 1 Review and Takeaways – Don’t Overreact The FPL General picked the wrong season to go without the two-mium. If he had started without Haaland and Bruno Fernandes this season he would be laughing. And that kind of summarises gameweek 1. Outside of the Arsenal picks, and Szoboszlai nobody owned by more than […] The post FPL Gameweek 1 Review and Takeaways – Don’t Overreact appeared fir"
-    },
-    {
-     "title": "Wirtz vs szoboszlai fpl 2026 27",
-     "url": "https://onefpl.com/blog/wirtz-vs-szoboszlai-fpl-2026-27",
-     "source": "OneFPL",
-     "published": "",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1334,8 +1343,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-12T18:55:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-13T06:46:43+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1357,6 +1366,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham verdict on sacking Roberto De Zerbi revealed after draw against Everton",
+     "url": "https://www.football365.com/news/tottenham-verdict-sacking-roberto-de-zerbi-revealed-draw-everton",
+     "source": "Football365",
+     "published": "2026-09-13T06:46:43+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "According to reports, there are ‘increasing doubts’ about Roberto De Zerbi’s position at Tottenham Hotspur after Saturday’s draw against Everton."
+    },
     {
      "title": "Everton Extend Unbeaten Start With Spurs Point",
      "url": "https://www.evertonfc.com/news/2026/september/12/everton-extend-unbeaten-start-with-spurs-point/",
@@ -1401,15 +1419,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "David Moyes says Jack Grealish is ready to start for Everton ahead of this weekend's trip to Tottenham Hotspur. The Blues travel to north London on Saturday for a 5.30pm (BST) kick-off, looking to extend their unbeaten start to the season. Transfer deadline day recruit Grealish impressed off the bench during Sunday's game against Manchester United, as Ainsley Maitland-Niles marked his Toffees debu"
-    },
-    {
-     "title": "On Demand: Moyes' Pre-Spurs Press Conference",
-     "url": "https://www.evertonfc.com/news/2026/september/11/watch-moyes--press-conference---follow-live-blog/",
-     "source": "Everton",
-     "published": "2026-09-11T12:30:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Click here to be redirected to the live blog for David Moyes’ pre-match press conference."
     }
    ]
   },
