@@ -1,38 +1,61 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-13T05:28:49+00:00",
+ "generated": "2026-09-13T11:27:45+00:00",
  "gameweek": 5,
- "corpus_size": 10440,
+ "corpus_size": 10551,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — Football365, 12 Sep: “2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 12 Sep.",
-   "case_for": "What supports keeping him: Football365, 12 Sep: “Enzo Le Fee stepped up to take the penalty, but Arsenal and Spain international goalkeeper Raya saved it with a superb save low to his left.” Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.” Opta Analyst, 12 Sep: “David Raya’s penalty save and a stunning goal from former Newcastle United midfielder Bruno Guimarães proved crucial as Arsenal beat Sunderland 2-0 at the Stadium of Light.”",
+   "status": "Latest on Raya — Football365, 13 Sep: “However, it was far from easy for Arsenal, with Raya saving a penalty before Guimaraes broke the deadlock with a great strike a few minutes later.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 9 retrieved item(s) from 6 source(s), the most recent dated 13 Sep.",
+   "case_for": "What supports keeping him: Football365, 13 Sep: “Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.” Football365, 12 Sep: “Enzo Le Fee stepped up to take the penalty, but Arsenal and Spain international goalkeeper Raya saved it with a superb save low to his left.” Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Football365, 12 Sep: “REACTION: Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’ Raya did it again in added time.” Sunderland, 12 Sep: “The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later.” Sunderland, 12 Sep: ““Raya was one of the best players on the pitch.”",
-   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "developments": "Recent developments — Football365, 12 Sep: “2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.” Football365, 12 Sep: “REACTION: Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’ Raya did it again in added time.” Sunderland, 12 Sep: “The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later.”",
+   "outlook": "On the coming weeks — OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
    "confidence": "high",
-   "evidence_count": 7,
+   "evidence_count": 9,
    "evidence_used": [
     "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
+    "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
     "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
     "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
     "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
     "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-    "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
+    "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
+    "https://onefpl.com/blog/david-raya-fpl-2026-27"
    ],
    "sources_used": [
     "Football365",
     "FourFourTwo FPL",
     "NBC Sports Rotoworld PL",
+    "OneFPL",
     "Opta Analyst",
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
+     "published": "2026-09-13T07:12:05+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "However, it was far from easy for Arsenal, with Raya saving a penalty before Guimaraes broke the deadlock with a great strike a few minutes later.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
+     "published": "2026-09-13T07:12:05+00:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
     {
      "text": "2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.",
      "source": "Football365",
@@ -153,6 +176,28 @@
      "published": "2026-09-07T10:03:44+00:00",
      "tone": "positive",
      "topics": []
+    },
+    {
+     "text": "David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/david-raya-fpl-2026-27",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "set pieces",
+      "fpl advice",
+      "fixtures"
+     ]
+    },
+    {
+     "text": "Why Raya is different You are paying for Arsenal's clean-sheet probability, secure starts, saves, penalty-save upside and bonus potential.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/david-raya-fpl-2026-27",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "set pieces"
+     ]
     }
    ]
   },
@@ -1047,30 +1092,40 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "status": "6 article(s) reference Groß, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Groß is in the starting eleven this week at £5.6m as a MID. The selection rests on 6 retrieved item(s) from 4 source(s).",
-   "case_for": "",
-   "case_against": "",
+   "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "why_here": "Groß is in the starting eleven this week at £5.6m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
+   "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
     "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
     "https://www.brightonandhovealbion.com/media-article/mu21-match-report-bha-leicester-city-premier-league-2-pl2-september-2026",
     "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-    "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview",
-    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/double-boost-for-hurzeler-predicted-brighton-xi-vs-coventry_604936.html"
+    "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview"
    ],
    "sources_used": [
+    "Aston Villa",
     "Brighton & Hove Albion",
     "Fantasy Football Scout",
     "Football365",
     "Sports Mole"
    ],
-   "quotes": []
+   "quotes": [
+    {
+     "text": "The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+     "published": "2026-09-13T10:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
   },
   "Palmer": {
    "player": "Palmer",
@@ -2331,6 +2386,22 @@
      "topics": []
     },
     {
+     "text": "Joao Pedro: We need to improve on the details | News | Official Site | Chelsea Football Club Joao Pedro believes Chelsea made a strong start against Hull City, but need to improve quickly to avoid dropping more points after having to settle for just one in Saturday’s Premier League meeting with the Tigers.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-we-need-to-improve-on-the-details",
+     "published": "",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Morgan Rogers fired us into a seventh-minute lead after being found on the edge of the box by Joao Pedro , but two quick-fire Hull goals left us trailing, until the Brazilian smashed an equaliser into the roof of the net.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-we-need-to-improve-on-the-details",
+     "published": "",
+     "tone": "positive",
+     "topics": []
+    },
+    {
      "text": "Joao Pedro signs new Chelsea contract | News | Official Site | Chelsea Football Club Chelsea is delighted to announce that Joao Pedro has signed a new contract until 2034.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
@@ -2409,22 +2480,6 @@
      "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
      "published": "",
      "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Joao Pedro: We need to improve on the details | News | Official Site | Chelsea Football Club Joao Pedro believes Chelsea made a strong start against Hull City, but need to improve quickly to avoid dropping more points after having to settle for just one in Saturday’s Premier League meeting with the Tigers.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-we-need-to-improve-on-the-details",
-     "published": "",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Morgan Rogers fired us into a seventh-minute lead after being found on the edge of the box by Joao Pedro , but two quick-fire Hull goals left us trailing, until the Brazilian smashed an equaliser into the roof of the net.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/joao-pedro-we-need-to-improve-on-the-details",
-     "published": "",
-     "tone": "positive",
      "topics": []
     }
    ]

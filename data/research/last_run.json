@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-13T05:28:49+00:00",
- "seconds": 122.8,
+ "ran_at": "2026-09-13T11:27:45+00:00",
+ "seconds": 123.3,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 635,
- "substantive_items": 187,
- "duplicates_removed": 8,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 10440,
+ "sources_readable": 65,
+ "candidates_discovered": 665,
+ "substantive_items": 224,
+ "duplicates_removed": 14,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 10551,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 187 articles"
+    "65/78 sources returned 224 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -54,9 +55,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 7,
-   "source_count": 5,
-   "latest_evidence": "2026-09-12T22:14:33+00:00",
+   "evidence_count": 9,
+   "source_count": 6,
+   "latest_evidence": "2026-09-13T07:12:05+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -67,16 +68,18 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -87,6 +90,15 @@
      "matched_on": "raya",
      "kind": "transfer",
      "excerpt": "Régis Le Bris felt Sunderland were close to taking something from Saturday’s Premier League fixture against champions Arsenal, despite suffering a 2-0 defeat at the Stadium of Light. The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later. Bukayo Saka adde"
+    },
+    {
+     "title": "Bruno Guimaraes hails Arsenal star as ‘best in the world’ after Sunderland win – ‘he is unbelievable’",
+     "url": "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
+     "source": "Football365",
+     "published": "2026-09-13T07:12:05+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland."
     },
     {
      "title": "Raya and Arsenal exorcise Sunderland demons to show strength of champions",
@@ -141,6 +153,15 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Arsenal conceded a goal on Sunday. Yes, you read that correctly. After keeping out Coventry City and Aston Villa , the Premier League champions were breached by Chelsea in the second minute of their London derby. The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya. Arsenal's stifling defensive excellence is the stuff of champions Mikel Ar"
+    },
+    {
+     "title": "David raya fpl 2026 27",
+     "url": "https://onefpl.com/blog/david-raya-fpl-2026-27",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -722,8 +743,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-12T14:00:00+01:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-13T10:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -748,6 +769,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Clark signs first professional contract with Villa",
+     "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+     "source": "Aston Villa",
+     "published": "2026-09-13T10:00:00+00:00",
+     "matched_on": "gro",
+     "kind": "transfer",
+     "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
     {
      "title": "Coventry vs. Brighton injury, suspension list, predicted XIs",
      "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
@@ -792,15 +822,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "All the team news and predictions ahead of the Premier League clash between Coventry City and Brighton."
-    },
-    {
-     "title": "Brighton lineup vs. Coventry: Predicted XI after Georginio Rutter, Femi Azeez injury updates",
-     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/double-boost-for-hurzeler-predicted-brighton-xi-vs-coventry_604936.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T09:45:39+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Brighton & Hove Albion could line up for Sunday's Premier League clash with Coventry City."
     }
    ]
   },
