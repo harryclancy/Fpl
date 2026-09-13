@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-13T17:27:39+00:00",
- "seconds": 160.5,
+ "ran_at": "2026-09-13T23:27:01+00:00",
+ "seconds": 122.3,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 739,
- "substantive_items": 307,
- "duplicates_removed": 25,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 10735,
+ "sources_readable": 64,
+ "candidates_discovered": 734,
+ "substantive_items": 305,
+ "duplicates_removed": 23,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 10928,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 307 articles"
+    "64/78 sources returned 305 articles"
    ]
   },
   "blackout": {
@@ -37,6 +37,7 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
   "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
@@ -44,20 +45,20 @@
   "Draft FC: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 9,
-   "source_count": 6,
-   "latest_evidence": "2026-09-13T07:12:05+00:00",
+   "evidence_count": 10,
+   "source_count": 7,
+   "latest_evidence": "2026-09-13T22:55:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -82,6 +83,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: White injury, Le Bris on Le Fee’s pen miss + Raya haul",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-white-injury-le-bris-on-le-fee-pen-miss-raya-haul",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-13T22:55:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Plus, Bukayo Saka benefits from Viktor Gyokeres' limited game-time The post FPL notes: White injury, Le Bris on Le Fee’s pen miss + Raya haul appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Le Bris: It was a game of fine margins",
      "url": "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
@@ -168,10 +178,10 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-12T14:00:00+01:00",
-   "official_source_found": true,
+   "evidence_count": 3,
+   "source_count": 1,
+   "latest_evidence": "2026-09-13T20:30:00+00:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -191,10 +201,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-13T20:30:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "team news",
+     "excerpt": "Coventry are yet to score this season, having lost all four matches The post FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
@@ -212,42 +231,6 @@
      "matched_on": "de cuyper",
      "kind": "team news",
      "excerpt": "Luka Vuskovic hauls and Dominic Calvert-Lewin spurns big chances in Brighton 1-1 Leeds The post FPL notes: £4.5m midfielder stars again + another De Cuyper return appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Coventry vs. Brighton injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
-     "source": "Sports Mole",
-     "published": "2026-09-12T14:00:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Sunday's Premier League clash between Coventry City and Brighton & Hove Albion."
-    },
-    {
-     "title": "Coventry v Brighton predicted line-ups + FPL team news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-11T23:26:44+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Team form, absentees and our predicted XIs The post Coventry v Brighton predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Albion 3 Leicester 0: Seagulls see off Foxes in PL2",
-     "url": "https://www.brightonandhovealbion.com/media-article/mu21-match-report-bha-leicester-city-premier-league-2-pl2-september-2026",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-11T20:15:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Albion secured their first win of the Premier League 2 season."
-    },
-    {
-     "title": "Coventry City v Brighton: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview",
-     "source": "Football365",
-     "published": "2026-09-11T10:56:51+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Coventry City and Brighton."
     }
    ]
   },
@@ -611,9 +594,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 31,
+   "evidence_count": 32,
    "source_count": 14,
-   "latest_evidence": "2026-09-12T15:53:01+01:00",
+   "latest_evidence": "2026-09-13T19:20:21-04:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -729,6 +712,15 @@
      "excerpt": ""
     },
     {
+     "title": "Amid difficult season, Blue Jays slugger Vladimir Guerrero Jr. hits first home run at Rogers Centre",
+     "url": "https://www.nbcsports.com/mlb/news/amid-difficult-season-blue-jays-slugger-vladimir-guerrero-jr-hits-first-home-run-at-rogers-centre",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-13T19:20:21-04:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
      "title": "Chelsea vs Hull City: Interesting Morgan Rogers stat emerges after early goal in Premier League clash",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/morgan-rogers-stat-emerges-after-early-chelsea-goal-vs-hull-city_605026.html",
      "source": "Sports Mole",
@@ -736,15 +728,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers becomes fifth different player to score or assist in each of Chelsea's first four games after scoring against Hull City."
-    },
-    {
-     "title": "Morgan Rogers says Xabi Alonso has turned Chelsea into 'exciting' outfit",
-     "url": "https://www.flashscore.com/news/morgan-rogers-says-xabi-alonso-has-turned-chelsea-into-an-exciting-outfit/UyUxqql3/",
-     "source": "Flashscore",
-     "published": "2026-09-10T11:50:33+02:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -752,8 +735,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-13T10:00:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-13T15:02:44+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -788,6 +771,33 @@
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
     },
     {
+     "title": "Coventry 0-5 Brighton: Sky Blues implode as Awoniyi sees red on shocking afternoon for Frank Lampard",
+     "url": "https://www.101greatgoals.com/match-reports/coventry-0-5-brighton-report-goals-stats/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-13T15:02:44+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Coventry remain rooted to the foot of the Premier League table after a heavy defeat to Brighton..."
+    },
+    {
+     "title": "Coventry v Brighton team news: Both sides unchanged",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/coventry-v-brighton-team-news-both-sides-unchanged",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-13T12:15:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "The Sky Blues have lost all three of their Premier League games so far The post Coventry v Brighton team news: Both sides unchanged appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Coventry v Brighton: Confirmed line-ups and team news as Sky Blues go in search of first win",
+     "url": "https://www.101greatgoals.com/football/premier-league/coventry-v-brighton-confirmed-line-ups-stream-team-news-as-sky-blues-go-in-search-of-first-win/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-13T11:55:06+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Brighton go to struggling Coventry this afternoon in the Premier League. Get all the team news here..."
+    },
+    {
      "title": "Coventry vs. Brighton injury, suspension list, predicted XIs",
      "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
      "source": "Sports Mole",
@@ -804,33 +814,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Team form, absentees and our predicted XIs The post Coventry v Brighton predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Albion 3 Leicester 0: Seagulls see off Foxes in PL2",
-     "url": "https://www.brightonandhovealbion.com/media-article/mu21-match-report-bha-leicester-city-premier-league-2-pl2-september-2026",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-11T20:15:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Albion secured their first win of the Premier League 2 season."
-    },
-    {
-     "title": "Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-11T14:43:04+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "News that might affect Maxim De Cuyper The post Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Coventry City v Brighton: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview",
-     "source": "Football365",
-     "published": "2026-09-11T10:56:51+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Coventry City and Brighton."
     }
    ]
   },
@@ -977,9 +960,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 49,
+   "evidence_count": 61,
    "source_count": 17,
-   "latest_evidence": "2026-09-12T21:00:59+00:00",
+   "latest_evidence": "2026-09-13T23:48:44+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1004,6 +987,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "‘It was completely clear’ – Maresca claims he knew Haaland goal was not offside",
+     "url": "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-13T19:29:50+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "The City boss never had any doubts."
+    },
     {
      "title": "FF247 Site Team News GW4",
      "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
@@ -1102,15 +1094,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "Julián Alvarez, Martín Zubimendi, Manu Koné and Nico Paz all feature in the gossip."
-    },
-    {
-     "title": "Haaland makes decision on leaving Man City in 2027 as he chooses between Barcelona, Real Madrid",
-     "url": "https://www.football365.com/news/man-city-erling-haaland-decision-transfer-barcelona-real-madrid",
-     "source": "Football365",
-     "published": "2026-09-09T14:06:22+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Erling Haaland wants to leave Man City at the end of the season and prefers to leave for Barcelona over Real Madrid, according to reports."
     }
    ]
   },

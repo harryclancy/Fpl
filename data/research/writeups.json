@@ -1,22 +1,23 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-13T17:27:39+00:00",
+ "generated": "2026-09-13T23:27:01+00:00",
  "gameweek": 5,
- "corpus_size": 10735,
+ "corpus_size": 10928,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — Football365, 13 Sep: “However, it was far from easy for Arsenal, with Raya saving a penalty before Guimaraes broke the deadlock with a great strike a few minutes later.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 9 retrieved item(s) from 6 source(s), the most recent dated 13 Sep.",
-   "case_for": "What supports keeping him: Football365, 13 Sep: “Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.” Football365, 12 Sep: “Enzo Le Fee stepped up to take the penalty, but Arsenal and Spain international goalkeeper Raya saved it with a superb save low to his left.” Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 13 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 13 Sep: “Up stepped Enzo Le Fee (£5.8m), for the second week running, but the Frenchman saw his effort excellently tipped against the post by Raya.” Football365, 13 Sep: “Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.” Football365, 12 Sep: “Enzo Le Fee stepped up to take the penalty, but Arsenal and Spain international goalkeeper Raya saved it with a superb save low to his left.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Football365, 12 Sep: “2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.” Football365, 12 Sep: “REACTION: Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’ Raya did it again in added time.” Sunderland, 12 Sep: “The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later.”",
+   "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “The Gunners would have been 1-0 down after 56 minutes, had David Raya (£6.0m) not earned his crust with a superb penalty save.”",
+   "developments": "Recent developments — Football365, 12 Sep: “2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.” Football365, 12 Sep: “REACTION: Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’ Raya did it again in added time.” Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.”",
    "outlook": "On the coming weeks — OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
    "confidence": "high",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-white-injury-le-bris-on-le-fee-pen-miss-raya-haul",
     "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
     "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
     "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
@@ -28,6 +29,7 @@
     "https://onefpl.com/blog/david-raya-fpl-2026-27"
    ],
    "sources_used": [
+    "Fantasy Football Scout",
     "Football365",
     "FourFourTwo FPL",
     "NBC Sports Rotoworld PL",
@@ -36,6 +38,27 @@
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "The Gunners would have been 1-0 down after 56 minutes, had David Raya (£6.0m) not earned his crust with a superb penalty save.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-white-injury-le-bris-on-le-fee-pen-miss-raya-haul",
+     "published": "2026-09-13T22:55:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "match report",
+      "set pieces"
+     ]
+    },
+    {
+     "text": "Up stepped Enzo Le Fee (£5.8m), for the second week running, but the Frenchman saw his effort excellently tipped against the post by Raya.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-white-injury-le-bris-on-le-fee-pen-miss-raya-haul",
+     "published": "2026-09-13T22:55:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.",
      "source": "Football365",
@@ -204,30 +227,45 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "status": "Latest on De Cuyper — Fantasy Football Scout, 11 Sep: ““I expect him more after the international break.” – Fabian Hurzeler on Kaoru Mitoma That’s good short-term news for the ‘out of position’ Maxim De Cuyper , then.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £4.8m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 11 Sep.",
+   "status": "Latest on De Cuyper — Fantasy Football Scout, 13 Sep: “Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.”",
+   "why_here": "De Cuyper is in the starting eleven this week at £4.8m as a DEF. The selection rests on 3 retrieved item(s) from 1 source(s), the most recent dated 13 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 07 Sep: “So, that’s very positive and hopefully he can continue like this.” – Fabian Hurzeler on Malick Yalcouye ANOTHER DE CUYPER RETURN AS VUSKOVIC HAULS Maxim De Cuyper (£4.7m), again playing on the left wing, salvaged a return despite a booking and clean sheet loss.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Scout, 11 Sep: “So, overall, I’m happy with his performances and hopefully, he can keep going like this.” – Fabian Hurzeler on Maxim De Cuyper £4.5m midfielder Malick Yalcouye looks set to be heavily involved again on Sunday.”",
+   "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.”",
+   "developments": "Recent developments — Fantasy Football Scout, 11 Sep: ““I expect him more after the international break.” – Fabian Hurzeler on Kaoru Mitoma That’s good short-term news for the ‘out of position’ Maxim De Cuyper , then.” Fantasy Football Scout, 11 Sep: “So, overall, I’m happy with his performances and hopefully, he can keep going like this.” – Fabian Hurzeler on Maxim De Cuyper £4.5m midfielder Malick Yalcouye looks set to be heavily involved again on Sunday.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 3,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
     "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-    "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
-    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
-    "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
-    "https://www.brightonandhovealbion.com/media-article/mu21-match-report-bha-leicester-city-premier-league-2-pl2-september-2026",
-    "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview"
+    "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return"
    ],
    "sources_used": [
-    "Brighton & Hove Albion",
-    "Fantasy Football Scout",
-    "Football365",
-    "Sports Mole"
+    "Fantasy Football Scout"
    ],
    "quotes": [
+    {
+     "text": "Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+     "published": "2026-09-13T20:30:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "team news",
+      "tactics"
+     ]
+    },
+    {
+     "text": "Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+     "published": "2026-09-13T20:30:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "suspension"
+     ]
+    },
     {
      "text": "“I expect him more after the international break.” – Fabian Hurzeler on Kaoru Mitoma That’s good short-term news for the ‘out of position’ Maxim De Cuyper , then.",
      "source": "Fantasy Football Scout",
@@ -696,14 +734,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Tactical Football Analysis, 26 Aug: “Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 31 retrieved item(s) from 14 source(s), the most recent dated 12 Sep.",
+   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 32 retrieved item(s) from 14 source(s), the most recent dated 13 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 12 Sep: “Morgan Rogers joins Chelsea heroes after early goal © Iconsport / PA Images Rogers collected Joao Pedro's pass before surging into the penalty area and unleashing a thunderous left-footed strike inside the opening seven minutes, giving Chelsea an early advantage at Stamford Bridge.” Fantasy Football Scout, 10 Sep: “So, I hope we can have Cody with us, but I cannot guarantee it.” – Andoni Iraola on Cody Gakpo But even if Gakpo is passed fit to start in Andoni Iraola’s Friday presser, I’d still put Rogers and Gibbs-White ahead.” Fantasy Football Scout, 10 Sep: “Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).”",
    "case_against": "What argues against him: Football365, 03 Sep: “Arsenal legend Ian Wright insists that he was “gutted” that the Gunners missed out on Morgan Rogers to Chelsea in the summer.”",
    "expected_minutes": "On minutes — Sports Mole, 11 Sep: “Why Morgan Rogers has changed Estevao's Chelsea pathway Alonso has predominantly favoured a 3-4-2-1 in which two attacking midfielders operate behind the centre-forward.” Football365, 07 Sep: “The Gunners ran out deserved 2-1 winners, with Martin Odegaard securing all three points after Kai Havertz has cancelled out Rogers’ early opener.”",
-   "developments": "Recent developments — Sports Mole, 12 Sep: “Rogers joined the Blues from Aston Villa during the summer transfer window for a club-record £117m fee and has wasted little time showing why Chelsea were prepared to break their transfer record for his signature.” Sports Mole, 11 Sep: “Those two positions have so far belonged to Cole Palmer and Rogers.” Fantasy Football Scout, 10 Sep: “Given the schedule, I’d feel much more confident with Rogers or Gibbs-White, who aren’t playing in Europe.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 10 Sep: “They knew they weren’t starting and they were ready to make an impact.” – Xabi Alonso Cole Palmer (£9.6m) and Morgan Rogers (£7.6m) made a massive difference, the former scoring two goals in three minutes, one from the spot, while the latter provided four assists – one of the Fantasy variety – as Chelsea ran riot in the second half.” Football365, 08 Sep: “Chelsea backed new manager Xabi Alonso over the summer by signing Rogers in a club-record £117million deal from Aston Villa.”",
+   "developments": "Recent developments — NBC Sports Rotoworld PL, 13 Sep: “23 Home Run Derby champion, Guerrero connected off Baltimore’s Trevor Rogers in the fifth inning of Sunday’s 8-1 win His 350-foot drive into the left field bullpen was his ninth homer of the season.” Sports Mole, 12 Sep: “Rogers joined the Blues from Aston Villa during the summer transfer window for a club-record £117m fee and has wasted little time showing why Chelsea were prepared to break their transfer record for his signature.” Sports Mole, 11 Sep: “Those two positions have so far belonged to Cole Palmer and Rogers.”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 10 Sep: “Given the schedule, I’d feel much more confident with Rogers or Gibbs-White, who aren’t playing in Europe.” Fantasy Football Scout, 10 Sep: “They knew they weren’t starting and they were ready to make an impact.” – Xabi Alonso Cole Palmer (£9.6m) and Morgan Rogers (£7.6m) made a massive difference, the former scoring two goals in three minutes, one from the spot, while the latter provided four assists – one of the Fantasy variety – as Chelsea ran riot in the second half.”",
    "confidence": "high",
-   "evidence_count": 31,
+   "evidence_count": 32,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
     "https://www.fantasyfootballscout.co.uk/2026/09/10/gakpo-v-rogers-v-mgw-top-everton-picks-buy-konsa-fpl-qa",
@@ -715,8 +753,8 @@
     "https://www.football365.com/news/arsenal-wright-failed-sign-chelsea-rogers-arteta-not-happy",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
     "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
-    "https://www.sportsmole.co.uk/football/chelsea/news/morgan-rogers-stat-emerges-after-early-chelsea-goal-vs-hull-city_605026.html",
-    "https://www.flashscore.com/news/morgan-rogers-says-xabi-alonso-has-turned-chelsea-into-an-exciting-outfit/UyUxqql3/"
+    "https://www.nbcsports.com/mlb/news/amid-difficult-season-blue-jays-slugger-vladimir-guerrero-jr-hits-first-home-run-at-rogers-centre",
+    "https://www.sportsmole.co.uk/football/chelsea/news/morgan-rogers-stat-emerges-after-early-chelsea-goal-vs-hull-city_605026.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -735,6 +773,14 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "23 Home Run Derby champion, Guerrero connected off Baltimore’s Trevor Rogers in the fifth inning of Sunday’s 8-1 win His 350-foot drive into the left field bullpen was his ninth homer of the season.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/mlb/news/amid-difficult-season-blue-jays-slugger-vladimir-guerrero-jr-hits-first-home-run-at-rogers-centre",
+     "published": "2026-09-13T19:20:21-04:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Rogers joined the Blues from Aston Villa during the summer transfer window for a club-record £117m fee and has wasted little time showing why Chelsea were prepared to break their transfer record for his signature.",
      "source": "Sports Mole",
@@ -1130,7 +1176,7 @@
    "player": "Groß",
    "club": "BHA",
    "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
-   "why_here": "Groß is in the starting eleven this week at £5.6m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
+   "why_here": "Groß is in the starting eleven this week at £5.6m as a MID. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 13 Sep.",
    "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1140,17 +1186,16 @@
    "evidence_count": 6,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+    "https://www.101greatgoals.com/match-reports/coventry-0-5-brighton-report-goals-stats/",
+    "https://www.fantasyfootballscout.co.uk/2026/09/13/coventry-v-brighton-team-news-both-sides-unchanged",
+    "https://www.101greatgoals.com/football/premier-league/coventry-v-brighton-confirmed-line-ups-stream-team-news-as-sky-blues-go-in-search-of-first-win/",
     "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/injury-news/team-news/coventry-vs-brighton-injury-suspension-list-predicted-xis_604937.html",
-    "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news",
-    "https://www.brightonandhovealbion.com/media-article/mu21-match-report-bha-leicester-city-premier-league-2-pl2-september-2026",
-    "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-    "https://www.football365.com/match-preview/coventry-city-v-brighton-prediction-preview"
+    "https://www.fantasyfootballscout.co.uk/2026/09/12/coventry-v-brighton-predicted-line-ups-fpl-team-news"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "Aston Villa",
-    "Brighton & Hove Albion",
     "Fantasy Football Scout",
-    "Football365",
     "Sports Mole"
    ],
    "quotes": [
@@ -1506,15 +1551,16 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is in the starting eleven this week at £15.5m as a FWD. The selection rests on 49 retrieved item(s) from 17 source(s), the most recent dated 12 Sep.",
-   "case_for": "What supports keeping him: Football365, 12 Sep: “Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.” FourFourTwo FPL, 12 Sep: “I have to say that Haaland is a joke though, and he scored twice against FC Porto on Tuesday night.” Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.”",
-   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Sports Mole, 10 Sep: “Haaland could spoil Mbappe's bid © Iconsport / DeFodi images The looming presence of Erling Haaland could also spoil Mbappe's bid to be the Champions League's greatest goalscorer, with the Norwegian currently sitting in seventh spot in the competition's all-time top scorers list.” Opta Analyst, 09 Sep: “But most expected of all the events across the six games were the goals scored by superstars Kylian Mbappé and Erling Haaland Mbappé opened the scoring with a well-taken finish after pouncing on Yann Bisseck’s mistake to set Madrid on their way to a 2-1 win over Inter, while Haaland struck twice to hand City a 2-0 victory in Portugal.”",
-   "developments": "Recent developments — Football365, 12 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.” Sports Mole, 12 Sep: “Alonso now believes the £60m star possesses many of the same qualities as former Real Madrid legend Benzema and is already on Haaland's level.” Sports Mole, 12 Sep: “\"I would say yes,\" Alonso said when asked whether Pedro is on the same level as Haaland, via Sky Sports .”",
-   "outlook": "On the coming weeks — Tactical Football Analysis, 11 Sep: “Manchester United And Man City: Fernandes And Haaland’s FPL Form Fig. 1: Top 10 shots after the first three gameweeks (Source: FFHub Ahead of the blockbuster fixture at Old Trafford on Sunday, the numbers suggest we can expect goals from both sides.” Tactical Football Analysis, 11 Sep: “Bruno Fernandes (15 shots, 8 key passes, 2.26 xG) and Erling Haaland (14 shots, 8 on target, 2.47 xG) are fully justifying their premium price points and will likely continue to do so.”",
+   "why_here": "Haaland is in the starting eleven this week at £15.5m as a FWD. The selection rests on 61 retrieved item(s) from 17 source(s), the most recent dated 13 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 13 Sep: “While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.” Sports Mole, 13 Sep: “Michael Carrick 's Red Devils were beaten 1-0 in the Manchester derby on Sunday , with Erling Haaland scoring the only goal of the game in the 60th minute.” 101 Great Goals — Fantasy, 13 Sep: “Haaland was initially flagged for offside but, after a lengthy VAR check, the goal was controversially awarded.”",
+   "case_against": "What argues against him: Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 13 Sep: “VAR gets both big calls wrong in Manchester derby as United suffer twice Erling Haaland's winner was initially disallowed for offside The first Manchester derby of the 2026/27 season is in the books, and what a relief to just be able to focus on the football after City ran out deserved 1-0 winners.” 101 Great Goals — Fantasy, 13 Sep: “Haaland secured a 1-0 victory for City over arch rivals Manchester United , which maintained their perfect Premier League start under Maresca, as he netted the game’s only goal on the hour mark, steering Josko Gvardiol’s deflected cross to the far post into the top-left corner.”",
+   "developments": "Recent developments — Sports Mole, 13 Sep: “If Maresca can continue to platform Haaland, then there is no reason to believe that City will not compete at the top of the table.” Soccerway, 13 Sep: “Haaland's strike on the hour ‌mark was initially disallowed for offside but was ‌allowed to stand after a VAR review ‌found him to be onside.” Soccerway, 13 Sep: “\"The on-field decision was ​offside against Erling Haaland - that was checked by VAR, and he was found ​to be in an onside position,\" the statement said.”",
+   "outlook": "On the coming weeks — Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.” Tactical Football Analysis, 11 Sep: “Manchester United And Man City: Fernandes And Haaland’s FPL Form Fig. 1: Top 10 shots after the first three gameweeks (Source: FFHub Ahead of the blockbuster fixture at Old Trafford on Sunday, the numbers suggest we can expect goals from both sides.”",
    "confidence": "high",
-   "evidence_count": 49,
+   "evidence_count": 61,
    "evidence_used": [
+    "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
     "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
     "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
@@ -1525,8 +1571,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
     "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
-    "https://www.si.com/soccer/transfer-rumors-real-madrid-mac-allister-swap-barcelona-haaland-talks?utm_source=RSS",
-    "https://www.football365.com/news/man-city-erling-haaland-decision-transfer-barcelona-real-madrid"
+    "https://www.si.com/soccer/transfer-rumors-real-madrid-mac-allister-swap-barcelona-haaland-talks?utm_source=RSS"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1549,18 +1594,225 @@
    ],
    "quotes": [
     {
-     "text": "Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 18 goals Another double v Porto means Haaland is matching Mbappe stride for stride in the opening weeks of the 26/27 season.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-09-12T21:00:59+00:00",
+     "text": "While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/manchester-derby/news/another-one-haalands-new-record-for-city-should-worry-gunners-in-title-race_605086.html",
+     "published": "2026-09-13T23:48:44+01:00",
      "tone": "positive",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "If Maresca can continue to platform Haaland, then there is no reason to believe that City will not compete at the top of the table.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/manchester-derby/news/another-one-haalands-new-record-for-city-should-worry-gunners-in-title-race_605086.html",
+     "published": "2026-09-13T23:48:44+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Michael Carrick 's Red Devils were beaten 1-0 in the Manchester derby on Sunday , with Erling Haaland scoring the only goal of the game in the 60th minute.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/manchester-derby/news/mistake-var-error-acknowledged-on-haaland-goal-as-carrick-faces-pressure_605084.html",
+     "published": "2026-09-13T23:08:17+01:00",
+     "tone": "positive",
+     "topics": [
+      "match report"
+     ]
+    },
+    {
+     "text": "The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/manchester-derby/news/mistake-var-error-acknowledged-on-haaland-goal-as-carrick-faces-pressure_605084.html",
+     "published": "2026-09-13T23:08:17+01:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Haaland's strike on the hour ‌mark was initially disallowed for offside but was ‌allowed to stand after a VAR review ‌found him to be onside.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-pro-ref-admits-var-wrong-to-award-haaland-winner-in-manchester-derby/SrAbnrtf/",
+     "published": "2026-09-13T23:04:57+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "\"The on-field decision was ​offside against Erling Haaland - that was checked by VAR, and he was found ​to be in an onside position,\" the statement said.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-pro-ref-admits-var-wrong-to-award-haaland-winner-in-manchester-derby/SrAbnrtf/",
+     "published": "2026-09-13T23:04:57+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Video ‌reviews showed Haaland was onside when the ball was played, ‌but an attempt by City midfielder Enzo Fernandez to head it into ‌the net was seemingly ignored in the VAR deliberations, with the ‌Argentinian appearing to be in an offside position when Josko Gvardiol played the initial ball in.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-carrick-slams-var-after-controversial-haaland-goal-clinches-manchester-derby/GrXxGbr1/",
+     "published": "2026-09-13T21:52:24+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "I ‌went to him because he was there in front of me; ​that's why Haaland was free at the back,\" he explained.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-carrick-slams-var-after-controversial-haaland-goal-clinches-manchester-derby/GrXxGbr1/",
+     "published": "2026-09-13T21:52:24+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "The crucial moment came on the hour mark as Haaland steered the ball into the top-left corner from Josko Gvardiol’s deflected left-wing cross.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/proref-acknowledge-error-of-judgement-over-haaland-manchester-derby-winning-goal/",
+     "published": "2026-09-13T21:43:35+00:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "Haaland was initially flagged for offside but, after a lengthy VAR check, the goal was controversially awarded.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/proref-acknowledge-error-of-judgement-over-haaland-manchester-derby-winning-goal/",
+     "published": "2026-09-13T21:43:35+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "VAR gets both big calls wrong in Manchester derby as United suffer twice Erling Haaland's winner was initially disallowed for offside The first Manchester derby of the 2026/27 season is in the books, and what a relief to just be able to focus on the football after City ran out deserved 1-0 winners.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/manchester-derby-two-var-decisions-wrong-united-pay-price-city-16-conclusions",
+     "published": "2026-09-13T20:38:30+00:00",
+     "tone": "neutral",
+     "topics": [
+      "match report"
+     ]
+    },
+    {
+     "text": "Because we’re fairly sure the assistant referee (perfectly understandably) reckons both Erling Haaland and Enzo Fernandez were offside, rendering the subjective matter of the latter’s involvement moot.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/manchester-derby-two-var-decisions-wrong-united-pay-price-city-16-conclusions",
+     "published": "2026-09-13T20:38:30+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Controversy surrounded the goal too, as after being initially deemed to be offside, Erling Haaland was allowed to celebrate for a second time after he was confirmed to have been onside as he converted Josko Gvardiol ’s delivery despite Enzo Fernandez ’s unsuccessful attempt to make contact with the cross from an offside position.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-manchester-united-manchester-city-report-september-13-2026/O08D1jAO/",
+     "published": "2026-09-13T19:36:13+02:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
+     "published": "2026-09-13T19:30:20+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Those players have all played comfortably more than 200 games. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
+     "published": "2026-09-13T19:30:20+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Haaland secured a 1-0 victory for City over arch rivals Manchester United , which maintained their perfect Premier League start under Maresca, as he netted the game’s only goal on the hour mark, steering Josko Gvardiol’s deflected cross to the far post into the top-left corner.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
+     "published": "2026-09-13T19:29:50+00:00",
+     "tone": "positive",
+     "topics": [
+      "match report",
+      "set pieces"
+     ]
+    },
+    {
+     "text": "It looked as if it would not be allowed to stand as the offside flag cut short Haaland’s celebrations.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
+     "published": "2026-09-13T19:29:50+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "But the Red Devils failed to make the extra man count, though Marcus Rashford and Kobbie Mainoo each hit the post, and they were punished as Haaland produced a fine close-range finish to steer Josko Gvardiol’s deflected cross to the far post back across goal and into the top-left corner.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/carrick-confused-haaland-goal/",
+     "published": "2026-09-13T18:46:48+00:00",
+     "tone": "positive",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "Haaland’s celebrations were initially cut short by the offside flag but, after a lengthy VAR review, it was ruled that the Norway talisman was onside.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/premier-league/carrick-confused-haaland-goal/",
+     "published": "2026-09-13T18:46:48+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/michael-carrick-staggered-erling-haalands-man-city-winner-gary-neville-lost-man-utd-call",
+     "published": "2026-09-13T18:29:22+00:00",
+     "tone": "negative",
+     "topics": []
+    },
+    {
+     "text": "But the Red Devils didn’t create enough clear-cut chances, and Erling Haaland capitalised on the hour mark with a back-post finish from Josko Gvardiol’s deflected cross.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/michael-carrick-staggered-erling-haalands-man-city-winner-gary-neville-lost-man-utd-call",
+     "published": "2026-09-13T18:29:22+00:00",
+     "tone": "neutral",
      "topics": []
     },
     {
      "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
      "source": "Football365",
      "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-09-12T21:00:59+00:00",
+     "published": "2026-09-13T18:00:59+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland was originally ruled to be offside at the time of the cross, but VAR review found the Norwegian to be onside.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/referees-group-pro-ref-acknowledges-error-on-erling-haalands-goal-to-win-manchester-derby",
+     "published": "2026-09-13T18:00:34-04:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Haaland was all alone and slammed the ball past Lammens for what would be the game’s lone goal.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/referees-group-pro-ref-acknowledges-error-on-erling-haalands-goal-to-win-manchester-derby",
+     "published": "2026-09-13T18:00:34-04:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland ‘s controversially awarded goal saw 10-man Manchester City edge out Manchester United in a tense and fiery derby at Old Trafford.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/man-utd-vs-man-city-stats-premier-league-09-2026",
+     "published": "2026-09-13T17:55:33+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Yet, on the hour mark, Haaland steered in at the back post from Josko Gvardiol ‘s deflected cross.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/man-utd-vs-man-city-stats-premier-league-09-2026",
+     "published": "2026-09-13T17:55:33+00:00",
      "tone": "neutral",
      "topics": []
     },
@@ -1840,22 +2092,6 @@
      "source": "Opta Analyst",
      "url": "https://theanalyst.com/articles/porto-vs-man-city-stats-champions-league-09-2026",
      "published": "2026-09-08T21:31:21+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "published": "2026-09-08T21:30:20+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Those players have all played comfortably more than 200 games. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "published": "2026-09-08T21:30:20+00:00",
      "tone": "positive",
      "topics": []
     },
