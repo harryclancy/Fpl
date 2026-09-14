@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-13T23:27:01+00:00",
- "seconds": 122.3,
+ "ran_at": "2026-09-14T05:29:18+00:00",
+ "seconds": 149.8,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 734,
- "substantive_items": 305,
- "duplicates_removed": 23,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 10928,
+ "sources_readable": 67,
+ "candidates_discovered": 637,
+ "substantive_items": 204,
+ "duplicates_removed": 7,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 11032,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 305 articles"
+    "67/78 sources returned 204 articles"
    ]
   },
   "blackout": {
@@ -37,15 +37,12 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -960,9 +957,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 61,
+   "evidence_count": 62,
    "source_count": 17,
-   "latest_evidence": "2026-09-13T23:48:44+01:00",
+   "latest_evidence": "2026-09-14T05:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -987,6 +984,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: “Happy” Haaland, Foden red card + Shaw injury latest",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-14T05:00:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Plus, Gvardiol the top-scoring FPL defender The post FPL notes: “Happy” Haaland, Foden red card + Shaw injury latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "‘It was completely clear’ – Maresca claims he knew Haaland goal was not offside",
      "url": "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
@@ -1085,15 +1091,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "Planning an FPL Gameweek 4 wildcard? This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro."
-    },
-    {
-     "title": "Transfer Rumors: Real Madrid Ready Mac Allister Swap; Barcelona Step Up Haaland Talks",
-     "url": "https://www.si.com/soccer/transfer-rumors-real-madrid-mac-allister-swap-barcelona-haaland-talks?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-09T23:05:00+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Julián Alvarez, Martín Zubimendi, Manu Koné and Nico Paz all feature in the gossip."
     }
    ]
   },
@@ -1327,21 +1324,21 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-13T06:46:43+00:00",
+   "latest_evidence": "2026-09-13T22:07:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
-   "role_assessed": false,
+   "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
     "statistics",
+    "tactics",
     "team news",
     "transfer"
    ],
@@ -1349,6 +1346,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham lineup vs. Liverpool: Predicted XI for EFL Cup fixture as Roberto De Zerbi deals with Pedro Porro injury",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/predicted-lineups/will-porro-play-predicted-spurs-xi-vs-liverpool_605082.html",
+     "source": "Sports Mole",
+     "published": "2026-09-13T22:07:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Tuesday's EFL Cup match against Liverpool."
+    },
+    {
+     "title": "Tottenham injury, suspension news and return dates for Liverpool clash: Pedro Porro, Destiny Udogie, Mykhaylo Mudryk latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-mudryk-udogie-latest-spurs-injury-list-for-liverpool-clash_605080.html",
+     "source": "Sports Mole",
+     "published": "2026-09-13T20:45:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up Tottenham Hotspur’s injury and suspension news ahead of their EFL Cup clash with Liverpool on Tuesday."
+    },
+    {
+     "title": "Liverpool vs Tottenham Hotspur - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/league-cup/preview/liverpool-vs-spurs-prediction-team-news-lineups_605044.html",
+     "source": "Sports Mole",
+     "published": "2026-09-13T19:05:56+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Tuesday's EFL Cup clash between Liverpool and Tottenham Hotspur, including predictions, team news and possible lineups."
+    },
     {
      "title": "Tottenham verdict on sacking Roberto De Zerbi revealed after draw against Everton",
      "url": "https://www.football365.com/news/tottenham-verdict-sacking-roberto-de-zerbi-revealed-draw-everton",
@@ -1375,33 +1399,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Confirmed teams from Tottenham vs Everton in the Premier League"
-    },
-    {
-     "title": "Spurs v Everton team news: Porro + Udogie out, Grealish still a sub",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/spurs-v-everton-team-news-porro-udogie-out-grealish-still-a-sub",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-12T16:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Four changes for the hosts, one for the Toffees The post Spurs v Everton team news: Porro + Udogie out, Grealish still a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "One Change As Everton XI For Spurs Test Confirmed",
-     "url": "https://www.evertonfc.com/news/2026/september/12/one-change-as-everton-xi-for-spurs-test-confirmed/",
-     "source": "Everton",
-     "published": "2026-09-12T15:15:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Ainsley Maitland-Niles is handed a full Everton debut for the Blues' clash with Tottenham Hotspur. Fresh from scoring a stunning last-gasp equaliser in the 2-2 draw with Manchester United last time out, right-back Maitland-Niles is named from the start for Saturday's 5.30pm (BST) kick-off in north London. Boss David Moyes names an otherwise unchanged starting line-up, with Jordan Pickford shielded"
-    },
-    {
-     "title": "Moyes Reveals Everton Team News For Spurs Trip",
-     "url": "https://www.evertonfc.com/news/2026/september/11/moyes-reveals-everton-team-news-for-spurs-trip/",
-     "source": "Everton",
-     "published": "2026-09-11T12:40:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "David Moyes says Jack Grealish is ready to start for Everton ahead of this weekend's trip to Tottenham Hotspur. The Blues travel to north London on Saturday for a 5.30pm (BST) kick-off, looking to extend their unbeaten start to the season. Transfer deadline day recruit Grealish impressed off the bench during Sunday's game against Manchester United, as Ainsley Maitland-Niles marked his Toffees debu"
     }
    ]
   },
