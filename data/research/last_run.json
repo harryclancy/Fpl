@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-14T23:27:01+00:00",
- "seconds": 137.1,
+ "ran_at": "2026-09-15T05:30:45+00:00",
+ "seconds": 135.8,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 712,
- "substantive_items": 258,
- "duplicates_removed": 22,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 11541,
+ "sources_readable": 66,
+ "candidates_discovered": 622,
+ "substantive_items": 170,
+ "duplicates_removed": 5,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 11630,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 258 articles"
+    "66/78 sources returned 170 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,6 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -1344,7 +1343,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-14T15:56:45+00:00",
+   "latest_evidence": "2026-09-14T20:10:58+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1355,6 +1354,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1368,6 +1368,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Liverpool v Tottenham: Preview, expected line-ups and stats",
+     "url": "https://www.101greatgoals.com/match-previews/liverpool-v-tottenham-efl-cup-line-ups-stats-preview-tv-channel-live-online-stream-carabao-spurs/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-14T20:10:58+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Preview as Liverpool host Tottenham in the EFL Cup last 32"
+    },
+    {
+     "title": "Liverpool vs. Tottenham injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/team-news/liverpool-vs-tottenham-injury-suspension-list-predicted-xis_605094.html",
+     "source": "Sports Mole",
+     "published": "2026-09-14T20:00:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of the EFL Cup clash between Liverpool and Tottenham Hotspur."
+    },
     {
      "title": "Roberto De Zerbi enters Tottenham Hotspur history books as 50-year low revealed",
      "url": "https://www.fourfourtwo.com/team/what-is-the-longest-tottenham-hotspur-have-gone-without-scoring-at-the-start-of-a-season",
@@ -1403,24 +1421,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur forward Richarlison could be handed a route back into first-team action this week, with the Carabao Cup offering the exiled forward his only realistic chance of playing competitive football before 2027. The Brazilian international was excluded from manager Roberto De Zerbi ’s official 25-man Premier League squad list following the conclusion of the summer transfer window. Richarl"
-    },
-    {
-     "title": "Liverpool injury news: Defender returns in major boost ahead of Tottenham clash",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/defender-returns-liverpool-receive-major-injury-boost-ahead-of-spurs-clash_605117.html",
-     "source": "Sports Mole",
-     "published": "2026-09-14T12:47:19+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Joe Gomez returns to Liverpool training ahead of the Reds' EFL Cup clash against Tottenham Hotspur."
-    },
-    {
-     "title": "‘There’s very little patience’ – Ornstein gives huge De Zerbi sack update at Tottenham",
-     "url": "https://www.football365.com/news/tottenham-ornstein-de-zerbi-sack-update-patience",
-     "source": "Football365",
-     "published": "2026-09-14T11:46:25+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "David Ornstein doubts that Tottenham have sacking Roberto De Zerbi “on the agenda” despite their poor start to the new season."
     }
    ]
   },

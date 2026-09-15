@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-14T23:27:01+00:00",
+ "generated": "2026-09-15T05:30:45+00:00",
  "gameweek": 5,
- "corpus_size": 11541,
+ "corpus_size": 11630,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -2943,41 +2943,30 @@
   "Dubravka": {
    "player": "Dubravka",
    "club": "TOT",
-   "status": "Latest on Dubravka — Football365, 14 Sep: “Spurs spent over £300m on new signings over the summer transfer window with Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dubravka, Mateus Fernandes, Sandro Tonali, Savinho, Omar Marmoush, Mykhaylo Mudryk and Tosin Adarabioyo all arriving.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 14 Sep.",
+   "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Football365, 14 Sep: “Spurs spent over £300m on new signings over the summer transfer window with Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dubravka, Mateus Fernandes, Sandro Tonali, Savinho, Omar Marmoush, Mykhaylo Mudryk and Tosin Adarabioyo all arriving.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
+   "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.101greatgoals.com/match-previews/liverpool-v-tottenham-efl-cup-line-ups-stats-preview-tv-channel-live-online-stream-carabao-spurs/",
+    "https://www.sportsmole.co.uk/football/liverpool/injury-news/team-news/liverpool-vs-tottenham-injury-suspension-list-predicted-xis_605094.html",
     "https://www.fourfourtwo.com/team/what-is-the-longest-tottenham-hotspur-have-gone-without-scoring-at-the-start-of-a-season",
     "https://theanalyst.com/articles/premier-league-worst-starts-coventry-tottenham-aston-villa",
     "https://www.sportsmole.co.uk/football/spurs/league-cup/news/spurs-suffer-new-injury-before-liverpool-efl-cup-clash-as-richarlison-update-shared_605126.html",
-    "https://www.fourfourtwo.com/person/player/exiled-tottenham-hotspur-star-richarlison-offered-lifeline-by-competition-rulebook",
-    "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/defender-returns-liverpool-receive-major-injury-boost-ahead-of-spurs-clash_605117.html",
-    "https://www.football365.com/news/tottenham-ornstein-de-zerbi-sack-update-patience"
+    "https://www.fourfourtwo.com/person/player/exiled-tottenham-hotspur-star-richarlison-offered-lifeline-by-competition-rulebook"
    ],
    "sources_used": [
-    "Football365",
+    "101 Great Goals — Fantasy",
     "FourFourTwo FPL",
     "Opta Analyst",
     "Sports Mole"
    ],
-   "quotes": [
-    {
-     "text": "Spurs spent over £300m on new signings over the summer transfer window with Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dubravka, Mateus Fernandes, Sandro Tonali, Savinho, Omar Marmoush, Mykhaylo Mudryk and Tosin Adarabioyo all arriving.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/tottenham-ornstein-de-zerbi-sack-update-patience",
-     "published": "2026-09-14T11:46:25+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    }
-   ]
+   "quotes": []
   },
   "Barnes": {
    "player": "Barnes",
