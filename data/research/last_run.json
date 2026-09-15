@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-15T05:30:45+00:00",
- "seconds": 135.8,
+ "ran_at": "2026-09-15T11:29:27+00:00",
+ "seconds": 125.8,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 622,
- "substantive_items": 170,
- "duplicates_removed": 5,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 11630,
+ "sources_readable": 65,
+ "candidates_discovered": 703,
+ "substantive_items": 247,
+ "duplicates_removed": 23,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 11767,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 170 articles"
+    "65/78 sources returned 247 articles"
    ]
   },
   "blackout": {
@@ -39,6 +39,7 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -610,7 +611,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 34,
+   "evidence_count": 35,
    "source_count": 15,
    "latest_evidence": "2026-09-14T16:30:00+00:00",
    "official_source_found": true,
@@ -836,7 +837,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 30,
+   "evidence_count": 31,
    "source_count": 11,
    "latest_evidence": "2026-09-14T11:00:00+00:00",
    "official_source_found": true,
@@ -976,9 +977,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 64,
+   "evidence_count": 66,
    "source_count": 17,
-   "latest_evidence": "2026-09-14T10:54:18+00:00",
+   "latest_evidence": "2026-09-15T11:00:26+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1103,20 +1104,20 @@
      "excerpt": ""
     },
     {
-     "title": "FPL Gameweek 4 Wildcard Guide 2026/27: Best Picks And Captaincy Options",
-     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-09-11T08:45:25+00:00",
+     "title": "Haaland, Man City ‘understanding’ in 2027 revealed as Barcelona, Real Madrid prepare bids",
+     "url": "https://www.football365.com/news/man-city-erling-haaland-understanding-barcelona-real-madrid",
+     "source": "Football365",
+     "published": "2026-09-15T11:00:26+00:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "Planning an FPL Gameweek 4 wildcard? This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro."
+     "excerpt": "Erling Haaland and Man City reportedly have an ‘understanding’ over a potential transfer in 2027 as Barcelona and Real Madrid prepare moves."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 43,
+   "evidence_count": 44,
    "source_count": 12,
    "latest_evidence": "2026-09-14T13:00:00+00:00",
    "official_source_found": true,
@@ -1343,7 +1344,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-14T20:10:58+00:00",
+   "latest_evidence": "2026-09-15T11:17:37+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1372,10 +1373,28 @@
      "title": "Liverpool v Tottenham: Preview, expected line-ups and stats",
      "url": "https://www.101greatgoals.com/match-previews/liverpool-v-tottenham-efl-cup-line-ups-stats-preview-tv-channel-live-online-stream-carabao-spurs/",
      "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-14T20:10:58+00:00",
+     "published": "2026-09-15T11:17:37+00:00",
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Preview as Liverpool host Tottenham in the EFL Cup last 32"
+    },
+    {
+     "title": "The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet",
+     "url": "https://theanalyst.com/articles/premier-league-worst-starts-coventry-tottenham-aston-villa",
+     "source": "Opta Analyst",
+     "published": "2026-09-15T06:13:37+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham are yet to score, Coventry are yet to score or record a point, and Aston Villa are starting slowly again. But what does a bad start really mean, and can those teams learn anything from the slowest starts in Premier League history? The post The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet appeared first on Opta Analyst ."
+    },
+    {
+     "title": "Tottenham injury news: Roberto De Zerbi reveals Mohammed Kudus fitness boost ahead of EFL Cup tie",
+     "url": "https://www.sportsmole.co.uk/football/spurs/league-cup/news/de-zerbi-reveals-kudus-fitness-boost-ahead-of-efl-cup-tie_605155.html",
+     "source": "Sports Mole",
+     "published": "2026-09-15T01:17:51+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur boss Roberto De Zerbi reveals a Mohammed Kudus fitness boost ahead of Tuesday's EFL Cup tie against Liverpool."
     },
     {
      "title": "Liverpool vs. Tottenham injury, suspension list, predicted XIs",
@@ -1396,15 +1415,6 @@
      "excerpt": "Only two teams are still without a goal after four matches of the new Premier League season. Tottenham Hotspur and Coventry City are 360 minutes plus stoppage time without a goal. As a newly promoted team, Coventry have their own issues to resolve . Spurs have invested heavily in improving on the last two seasons of dreadful Premier League results and a goalless start hasn't exactly been sweetened"
     },
     {
-     "title": "The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet",
-     "url": "https://theanalyst.com/articles/premier-league-worst-starts-coventry-tottenham-aston-villa",
-     "source": "Opta Analyst",
-     "published": "2026-09-14T14:41:08+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham are yet to score, Coventry are yet to score or record a point, and Aston Villa are starting slowly again. But what does a bad start really mean, and can those teams learn anything from the slowest starts in Premier League history? The post The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet appeared first on Opta Analyst ."
-    },
-    {
      "title": "Tottenham suffer new injury blow before Liverpool as Richarlison update shared by Roberto De Zerbi",
      "url": "https://www.sportsmole.co.uk/football/spurs/league-cup/news/spurs-suffer-new-injury-before-liverpool-efl-cup-clash-as-richarlison-update-shared_605126.html",
      "source": "Sports Mole",
@@ -1412,24 +1422,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur suffer a new injury blow before their EFL Cup third-round clash with Liverpool as Roberto De Zerbi issues an update on Richarlison."
-    },
-    {
-     "title": "Exiled Tottenham Hotspur star Richarlison offered lifeline by competition rulebook",
-     "url": "https://www.fourfourtwo.com/person/player/exiled-tottenham-hotspur-star-richarlison-offered-lifeline-by-competition-rulebook",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-14T14:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur forward Richarlison could be handed a route back into first-team action this week, with the Carabao Cup offering the exiled forward his only realistic chance of playing competitive football before 2027. The Brazilian international was excluded from manager Roberto De Zerbi ’s official 25-man Premier League squad list following the conclusion of the summer transfer window. Richarl"
     }
    ]
   },
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 6,
-   "latest_evidence": "2026-09-11T10:30:00+00:00",
+   "latest_evidence": "2026-09-15T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1450,8 +1451,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -1480,6 +1481,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
+    },
+    {
+     "title": "What's Next for Raptors After Kawhi Leonard Trade?",
+     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-15T11:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
     },
     {
      "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
