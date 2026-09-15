@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-15T11:29:27+00:00",
- "seconds": 125.8,
+ "ran_at": "2026-09-15T17:27:40+00:00",
+ "seconds": 165.6,
  "sources_attempted": 78,
  "sources_readable": 65,
- "candidates_discovered": 703,
- "substantive_items": 247,
- "duplicates_removed": 23,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 11767,
+ "candidates_discovered": 746,
+ "substantive_items": 287,
+ "duplicates_removed": 29,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 11957,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 247 articles"
+    "65/78 sources returned 287 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,6 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -49,7 +48,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -752,8 +752,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-14T13:05:00+01:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-15T11:04:28+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -767,9 +767,7 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
-    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -788,6 +786,33 @@
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
     },
     {
+     "title": "Manchester United v Brighton: Preview, expected line-ups, stats",
+     "url": "https://www.101greatgoals.com/match-previews/manchester-united-v-brighton-preview-expected-line-ups-stats-and-where-to-watch/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-15T11:04:28+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Preview as Manchester United host Brighton in the EFL Cup"
+    },
+    {
+     "title": "Man Utd v Brighton: Prediction, team news, lineups and odds",
+     "url": "https://www.football365.com/match-preview/man-utd-v-brighton-prediction-preview",
+     "source": "Football365",
+     "published": "2026-09-15T10:45:59+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Carabao Cup clash between Manchester United and Brighton."
+    },
+    {
+     "title": "Who are the ITV pundits, commentators and presenters for Manchester United vs Brighton?",
+     "url": "https://www.fourfourtwo.com/competition/who-are-the-itv-pundits-commentators-and-presenters-for-manchester-united-vs-brighton",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-15T10:27:12+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "All is not well at Old Trafford following their Manchester derby defeat last weekend, but Michael Carrick still has the opportunity to turn things around. Brighton, meanwhile, travel north as one of the Premier League's form sides. ITV are broadcasting this game on free-to-air television in the UK on Wednesday night and. Bringing you all the build-up, in-game analysis and post-game talking points "
+    },
+    {
      "title": "Man United lineup vs. Brighton: Predicted XI for EFL Cup third-round tie including Sesko decision",
      "url": "https://www.sportsmole.co.uk/football/man-utd/league-cup/predicted-lineups/sesko-to-start-full-back-decisions-predicted-man-utd-lineup-vs-brighton_605103.html",
      "source": "Sports Mole",
@@ -804,33 +829,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Wednesday's EFL Cup third-round clash between Manchester United and Brighton & Hove Albion, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Man United injury, suspension list and return dates vs. Brighton: Carlos Baleba, Luke Shaw, Amad Diallo, Matthijs de Ligt latest",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/injuries-and-suspensions/baleba-shaw-amad-de-ligt-latest-man-united-injury-suspension-list-vs-brighton_605107.html",
-     "source": "Sports Mole",
-     "published": "2026-09-14T09:18:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up Manchester United's injury and suspension list ahead of Wednesday's EFL Cup contest with Brighton & Hove Albion."
-    },
-    {
-     "title": "Coventry 0-5 Brighton: Sky Blues implode as Awoniyi sees red on shocking afternoon for Frank Lampard",
-     "url": "https://www.101greatgoals.com/match-reports/coventry-0-5-brighton-report-goals-stats/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-13T15:02:44+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Coventry remain rooted to the foot of the Premier League table after a heavy defeat to Brighton..."
-    },
-    {
-     "title": "Coventry v Brighton team news: Both sides unchanged",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/coventry-v-brighton-team-news-both-sides-unchanged",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-13T12:15:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "The Sky Blues have lost all three of their Premier League games so far The post Coventry v Brighton team news: Both sides unchanged appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -977,9 +975,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 66,
+   "evidence_count": 69,
    "source_count": 17,
-   "latest_evidence": "2026-09-15T11:00:26+00:00",
+   "latest_evidence": "2026-09-15T16:20:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1343,7 +1341,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
+   "source_count": 5,
    "latest_evidence": "2026-09-15T11:17:37+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -1379,6 +1377,33 @@
      "excerpt": "Preview as Liverpool host Tottenham in the EFL Cup last 32"
     },
     {
+     "title": "Who are the ITV pundits, commentators and presenters for Liverpool vs Tottenham Hotspur?",
+     "url": "https://www.fourfourtwo.com/competition/who-are-the-itv-pundits-commentators-and-presenters-for-liverpool-vs-tottenham-hotspur",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-15T10:20:02+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Liverpool and Tottenham have had tricky starts to the 2026/27 campaign but should both be eyeing silverware this season, and the Carabao Cup is a great opportunity to secure some. ITV are showing this fixture in the UK and have rolled out their broadcasting A team to bring you all the build-up, in-game analysis and post-game talking points. Here's a full breakdown of the ITV squad calling this mid"
+    },
+    {
+     "title": "Liverpool v Tottenham: Prediction, team news, lineups and odds",
+     "url": "https://www.football365.com/match-preview/liverpool-v-tottenham-prediction-preview",
+     "source": "Football365",
+     "published": "2026-09-15T10:07:50+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Carabao Cup clash between Liverpool and Tottenham."
+    },
+    {
+     "title": "Liverpool vs. Spurs team news: Andoni Iraola confirms one starter, hints at rotation for EFL Cup tie",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/league-cup/news/iraola-confirms-one-liverpool-starter-hints-at-rotation-for-spurs-efl-cup-tie_605164.html",
+     "source": "Sports Mole",
+     "published": "2026-09-15T10:07:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Liverpool manager Andoni Iraola confirms one starter for Tuesday's EFL Cup third round tie against Tottenham Hotspur."
+    },
+    {
      "title": "The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet",
      "url": "https://theanalyst.com/articles/premier-league-worst-starts-coventry-tottenham-aston-villa",
      "source": "Opta Analyst",
@@ -1395,33 +1420,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur boss Roberto De Zerbi reveals a Mohammed Kudus fitness boost ahead of Tuesday's EFL Cup tie against Liverpool."
-    },
-    {
-     "title": "Liverpool vs. Tottenham injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/team-news/liverpool-vs-tottenham-injury-suspension-list-predicted-xis_605094.html",
-     "source": "Sports Mole",
-     "published": "2026-09-14T20:00:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of the EFL Cup clash between Liverpool and Tottenham Hotspur."
-    },
-    {
-     "title": "Roberto De Zerbi enters Tottenham Hotspur history books as 50-year low revealed",
-     "url": "https://www.fourfourtwo.com/team/what-is-the-longest-tottenham-hotspur-have-gone-without-scoring-at-the-start-of-a-season",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-14T15:56:45+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Only two teams are still without a goal after four matches of the new Premier League season. Tottenham Hotspur and Coventry City are 360 minutes plus stoppage time without a goal. As a newly promoted team, Coventry have their own issues to resolve . Spurs have invested heavily in improving on the last two seasons of dreadful Premier League results and a goalless start hasn't exactly been sweetened"
-    },
-    {
-     "title": "Tottenham suffer new injury blow before Liverpool as Richarlison update shared by Roberto De Zerbi",
-     "url": "https://www.sportsmole.co.uk/football/spurs/league-cup/news/spurs-suffer-new-injury-before-liverpool-efl-cup-clash-as-richarlison-update-shared_605126.html",
-     "source": "Sports Mole",
-     "published": "2026-09-14T15:09:57+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur suffer a new injury blow before their EFL Cup third-round clash with Liverpool as Roberto De Zerbi issues an update on Richarlison."
     }
    ]
   },
