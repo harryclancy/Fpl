@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-15T23:27:35+00:00",
- "seconds": 145.9,
+ "ran_at": "2026-09-16T05:29:40+00:00",
+ "seconds": 122.5,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 736,
- "substantive_items": 284,
- "duplicates_removed": 28,
+ "sources_readable": 66,
+ "candidates_discovered": 618,
+ "substantive_items": 176,
+ "duplicates_removed": 9,
  "deeply_analysed": 79,
  "deep_read_failed": 11,
- "corpus_size": 12136,
+ "corpus_size": 12240,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 284 articles"
+    "66/78 sources returned 176 articles"
    ]
   },
   "blackout": {
@@ -39,7 +39,6 @@
  "failures": [
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -752,8 +751,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 6,
-   "latest_evidence": "2026-09-15T13:48:00+01:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-15T20:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -785,6 +784,15 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "Man United vs. Brighton injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/team-news/man-utd-vs-brighton-injury-suspension-list-predicted-xis_605104.html",
+     "source": "Sports Mole",
+     "published": "2026-09-15T20:00:00+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Wednesday’s EFL Cup third-round clash between Manchester United and Brighton & Hove Albion."
     },
     {
      "title": "Man United v Brighton | Hürzeler pre-match press conference",
@@ -821,15 +829,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "All the team news and predictions ahead of the Carabao Cup clash between Manchester United and Brighton."
-    },
-    {
-     "title": "Who are the ITV pundits, commentators and presenters for Manchester United vs Brighton?",
-     "url": "https://www.fourfourtwo.com/competition/who-are-the-itv-pundits-commentators-and-presenters-for-manchester-united-vs-brighton",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-15T10:27:12+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "All is not well at Old Trafford following their Manchester derby defeat last weekend, but Michael Carrick still has the opportunity to turn things around. Brighton, meanwhile, travel north as one of the Premier League's form sides. ITV are broadcasting this game on free-to-air television in the UK on Wednesday night and. Bringing you all the build-up, in-game analysis and post-game talking points "
     }
    ]
   },
