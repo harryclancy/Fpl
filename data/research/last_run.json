@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-16T17:28:24+00:00",
- "seconds": 163.4,
+ "ran_at": "2026-09-16T23:28:09+00:00",
+ "seconds": 122.0,
  "sources_attempted": 78,
- "sources_readable": 67,
- "candidates_discovered": 746,
- "substantive_items": 292,
- "duplicates_removed": 11,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 12574,
+ "sources_readable": 66,
+ "candidates_discovered": 732,
+ "substantive_items": 300,
+ "duplicates_removed": 20,
+ "deeply_analysed": 71,
+ "deep_read_failed": 19,
+ "corpus_size": 12760,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "67/78 sources returned 292 articles"
+    "66/78 sources returned 300 articles"
    ]
   },
   "blackout": {
@@ -37,6 +37,7 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -760,7 +761,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-15T20:00:00+01:00",
+   "latest_evidence": "2026-09-16T12:03:57-04:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -775,7 +776,7 @@
     "injury",
     "match report",
     "press conference",
-    "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -792,6 +793,15 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "How to watch Brighton vs Arsenal live: Stream, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-brighton-vs-arsenal-live-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-16T12:03:57-04:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": ""
     },
     {
      "title": "Man United vs. Brighton injury, suspension list, predicted XIs",
@@ -828,15 +838,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Preview as Manchester United host Brighton in the EFL Cup"
-    },
-    {
-     "title": "Man Utd v Brighton: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/man-utd-v-brighton-prediction-preview",
-     "source": "Football365",
-     "published": "2026-09-15T10:45:59+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Carabao Cup clash between Manchester United and Brighton."
     }
    ]
   },
@@ -1123,9 +1124,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 46,
-   "source_count": 13,
-   "latest_evidence": "2026-09-16T10:20:00+01:00",
+   "evidence_count": 49,
+   "source_count": 14,
+   "latest_evidence": "2026-09-16T21:47:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1147,9 +1148,36 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "low",
+   "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Joao Pedro injury: How many games will Chelsea and Brazil forward miss after withdrawing from Selecao squad?",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html",
+     "source": "Sports Mole",
+     "published": "2026-09-16T21:47:00+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "How many games will Joao Pedro miss for Chelsea after withdrawal from Brazil's squad for the September international break?"
+    },
+    {
+     "title": "Alcaraz Strikes Late To Seal Cup Progress For Blues",
+     "url": "https://www.evertonfc.com/news/2026/september/16/wolves-report/",
+     "source": "Everton",
+     "published": "2026-09-16T20:40:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Patience paid off for Everton as a largely dominant display was rewarded with Charly Alcaraz's 80th-minute winner to see off Wolves 1-0 in the Carabao Cup third round at Hill Dickinson Stadium. Tyler Dibling caught the eye all night and fittingly got the crucial assist, squaring for substitute Alcaraz to take a touch and fire past former Toffees keeper Joao Virginia. Virginia has been excellent in"
+    },
+    {
+     "title": "Joao Pedro out of Brazil squad with reported injury",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/16/joao-pedro-out-of-brazil-squad-with-reported-injury",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-16T18:30:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "The striker's withdrawal casts doubt on his Gameweek 5 availability The post Joao Pedro out of Brazil squad with reported injury appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Chelsea lineup vs. Brentford: Possible XI for Xabi Alonso's side including Joao Pedro, Reece James updates",
      "url": "https://www.sportsmole.co.uk/football/chelsea/title-race/predicted-lineups/will-pedro-james-be-available-how-chelsea-could-line-up-vs-brentford_605222.html",
@@ -1230,33 +1258,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "An injury-stricken Aston Villa have received a triple boost ahead of the club's clash with Hull City on Saturday, with updates being heard in a pre-match press conference regarding four injured players. Unai Emery's side have lost both of their two Premier League matches so far this term, with Brighton serving his men a 4-0 defeat in their opening match. That was followed up by a 1-0 loss at Villa"
-    },
-    {
-     "title": "Team news for Hull clash",
-     "url": "https://avfc.co.uk/news/2026/september/04/prematch-team-news-for-hull-clash/",
-     "source": "Aston Villa",
-     "published": "2026-09-04T13:15:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Hull City Vs. Aston Villa - Sat, Sep 05 2026, 17:30 João Gomes misses Aston Villa’s Premier League trip to Hull City through suspension, while the clash also comes too soon for Johan Manzambi despite closing in on his return to fitness. Gomes saw red on the opening day at Brighton & Hove Albion and was forced to sit out of Monday’s narrow 1-0 defeat to Arsenal. Gomes now serves the second"
-    },
-    {
-     "title": "Aston Villa injury, suspension list and return dates vs. Hull City: Joao Gomes, Brian Madjo latest",
-     "url": "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/gomes-madjo-latest-aston-villa-injury-suspension-list-vs-hull_604388.html",
-     "source": "Sports Mole",
-     "published": "2026-09-03T15:10:00+01:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Aston Villa's latest injury and suspension news ahead of their Premier League clash with Hull City."
-    },
-    {
-     "title": "New-look Aston Villa are in for a long season but Unai Emery is the continuity that matters most",
-     "url": "https://www.fourfourtwo.com/team/new-look-aston-villa-are-in-for-a-long-season-but-unai-emery-is-the-continuity-that-matters-most",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-02T08:14:35+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Joao Gomes won’t forget his Aston Villa debut in a hurry. On his early return from injury, the midfielder started an awful performance with a yellow card and ended it with a straight red. He played 39 minutes and Villa were already 4-0 down. Their first half at Brighton & Hove Albion in the first Premier League match of the season was reflected in Gomes’ display and was a brutal reminder that deci"
     }
    ]
   },
@@ -1358,8 +1359,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 6,
-   "latest_evidence": "2026-09-16T03:24:24+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-16T16:23:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1384,6 +1385,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Aston Villa: Sandro Tonali, Pedro Porro, Dejan Kulusevski latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/tonali-status-kulusevski-update-spurs-injury-suspension-list-vs-villa_605247.html",
+     "source": "Sports Mole",
+     "published": "2026-09-16T16:23:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of Saturday's Premier League clash with Aston Villa."
+    },
     {
      "title": "Why Spurs Guard Dylan Harper Believes He's Being Shaped By Those Around Him",
      "url": "https://www.si.com/nba/spurs/onsi/why-san-antonio-spurs-guard-dylan-harper-believes-hes-being-shaped-by-those-around-him?utm_source=RSS",
@@ -1428,15 +1438,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Liverpool manager Andoni Iraola confirms one starter for Tuesday's EFL Cup third round tie against Tottenham Hotspur."
-    },
-    {
-     "title": "The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet",
-     "url": "https://theanalyst.com/articles/premier-league-worst-starts-coventry-tottenham-aston-villa",
-     "source": "Opta Analyst",
-     "published": "2026-09-15T06:13:37+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham are yet to score, Coventry are yet to score or record a point, and Aston Villa are starting slowly again. But what does a bad start really mean, and can those teams learn anything from the slowest starts in Premier League history? The post The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet appeared first on Opta Analyst ."
     }
    ]
   },
