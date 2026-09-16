@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-16T05:29:40+00:00",
- "seconds": 122.5,
+ "ran_at": "2026-09-16T11:30:23+00:00",
+ "seconds": 180.7,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 618,
- "substantive_items": 176,
- "duplicates_removed": 9,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 12240,
+ "sources_readable": 65,
+ "candidates_discovered": 681,
+ "substantive_items": 229,
+ "duplicates_removed": 11,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 12372,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 176 articles"
+    "65/78 sources returned 229 articles"
    ]
   },
   "blackout": {
@@ -46,9 +46,10 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: nothing published in the last 10 days",
+  "Premier Injuries: HTTP 403 for https://www.premierinjuries.com/post-sitemap.xml",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -56,7 +57,7 @@
    "club": "ARS",
    "evidence_count": 12,
    "source_count": 7,
-   "latest_evidence": "2026-09-14T18:58:09+00:00",
+   "latest_evidence": "2026-09-16T09:39:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -107,6 +108,15 @@
      "matched_on": "raya",
      "kind": "transfer",
      "excerpt": "Régis Le Bris felt Sunderland were close to taking something from Saturday’s Premier League fixture against champions Arsenal, despite suffering a 2-0 defeat at the Stadium of Light. The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later. Bukayo Saka adde"
+    },
+    {
+     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Trafford falls, lowly Alisson",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "source": "Football365",
+     "published": "2026-09-16T09:39:35+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers."
     },
     {
      "title": "Jamie Carragher names ‘Arsenal’s most important player’ – NOT Rice or Odegaard",
@@ -161,15 +171,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Bruno Guimarães and Bukayo Saka scored the goals as Premier League champions Arsenal maintained their 100% start to the season, but they also had their goalkeeper to thank. The post Sunderland 0-2 Arsenal Stats: Bruno Guimarães Back to Haunt Former Rivals After David Raya Penalty Heroics appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Premier League goalkeepers ranked: David Raya still sets the standard, lowly Alisson",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "source": "Football365",
-     "published": "2026-09-11T13:09:35+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers."
     },
     {
      "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
@@ -470,9 +471,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 15,
+   "evidence_count": 17,
    "source_count": 9,
-   "latest_evidence": "2026-09-15T21:08:55+00:00",
+   "latest_evidence": "2026-09-16T10:27:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -543,6 +544,15 @@
      "excerpt": "Both Newcastle and Liverpool have new managers in the dugout for the 2026-27 Premier League campaign, but who will get off to a perfect start? The post Newcastle 2-2 Liverpool Stats: Last-Gasp Szoboszlai Spot-Kick Salvages Draw appeared first on Opta Analyst ."
     },
     {
+     "title": "Liverpool save millions in transfer bailout as risky manoeuvre eases pressure on hierarchy",
+     "url": "https://www.fourfourtwo.com/team/liverpool-save-millions-in-transfer-bailout-as-risky-manoeuvre-eases-pressure-on-depleted-hierarchy",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-16T10:27:59+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "transfer",
+     "excerpt": "Liverpool secured a 3-1 Carabao Cup victory against Tottenham Hotspur yesterday evening, with an added-time Dominik Szoboszlai screamer securing victory amid late Spurs pressure. Goals arrived through the Hungarian, Cody Gakpo and Alexis Mac Allister — who scored in similar style to his thumper versus Atletico Madrid last week — as Andoni Iraola fielded a rotated side. Four Liverpool youngsters in"
+    },
+    {
      "title": "Liverpool transfer news: Why 'problem' midfield was not addressed as Fulham expose Dominik Szoboszlai, Ryan Gravenberch issue",
      "url": "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/why-problem-midfield-was-not-addressed-as-szoboszlai-gravenberch-exposed_605069.html",
      "source": "Sports Mole",
@@ -559,6 +569,15 @@
      "matched_on": "szoboszlai",
      "kind": "transfer",
      "excerpt": "Watch Liverpool vs Nottingham Forest as both teams go in search of a first win of the new Premier League season. Want to watch the game for FREE and in full? FourFourTwo is providing you with all the details on live streams and TV channels, wherever you are in the world. Liverpool vs Nottingham Forest: key information Kick-off time: 12:30pm BST / 7:30am ET / 9:30pm AEST FREE Stream: CazeTV's YouTu"
+    },
+    {
+     "title": "Iraola hails Szoboszlai after rocket seals Liverpool’s win over Tottenham",
+     "url": "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-16T08:16:27+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "Andoni Iraola was full of praise for midfielder Dominik Szoboszlai on Tuesday night."
     },
     {
      "title": "Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16",
@@ -586,33 +605,15 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Former Liverpool defender Steve Nicol has told Reds boss Andoni Iraola why he should drop Florian Wirtz to get his attack firing this season."
-    },
-    {
-     "title": "Liverpool’s midfield: Why Alexis Mac Allister and Dominik Szoboszlai have created a Ryan Gravenberch issue for Andoni Iraola",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/feature/why-iraola-has-dropped-gravenberch-for-mac-allister-and-szoboszlai_604887.html",
-     "source": "Sports Mole",
-     "published": "2026-09-10T19:51:27+01:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Ryan Gravenberch has been dropped by Andoni Iraola at Liverpool, and here, Sports Mole explains why Alexis Mac Allister and Dominik Szoboszlai are preferred."
-    },
-    {
-     "title": "WATCH: Szoboszlai draws Liverpool level with Atletico Madrid",
-     "url": "https://www.101greatgoals.com/football/champions-league/watch-szoboszlai-draws-liverpool-level-with-atletico-madrid/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-09T19:54:25+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Watch Dominik Szoboszlai score for Liverpool against Atletico Madrid."
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 35,
+   "evidence_count": 36,
    "source_count": 15,
-   "latest_evidence": "2026-09-14T16:30:00+00:00",
+   "latest_evidence": "2026-09-16T06:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -737,13 +738,13 @@
      "excerpt": ""
     },
     {
-     "title": "Gallery: Belloumi Brace Earns Point at Bridge",
-     "url": "https://www.wearehullcity.co.uk/news/2026/september/14/gallery-belloumi-brace-earns-point-at-bridge/",
-     "source": "Hull City",
-     "published": "2026-09-14T13:00:00+00:00",
+     "title": "Could Arsenal match the Invincibles and go unbeaten in the Premier League again?",
+     "url": "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-16T06:00:00+00:00",
      "matched_on": "rogers",
      "kind": "general",
-     "excerpt": "Fixtures Chelsea FC Vs. Hull City - Sat, Sep 12 2026, 15:00 Hull City’s unbeaten start to the 2026/27 Premier League campaign continued with an impressive 2-2 draw away at Chelsea. Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bri"
+     "excerpt": "Morgan Rogers is the only player to have scored against Arsenal this season. Chelsea succeeded where Coventry City, Aston Villa, Napoli and Sunderland have failed, and the Gunners came back to beat them too. There are two teams without a goal in their first four Premier League matches of 2026/27 but Arsenal stand alone in having conceded only once. They've won all of their games and looked all but"
     }
    ]
   },
@@ -975,9 +976,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 70,
+   "evidence_count": 72,
    "source_count": 17,
-   "latest_evidence": "2026-09-15T23:05:00+00:00",
+   "latest_evidence": "2026-09-16T11:52:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1102,22 +1103,22 @@
      "excerpt": ""
     },
     {
-     "title": "Transfer Rumors: Real Madrid Lure Man Utd Wonderkid; Alexander-Arnold’s Liverpool Return",
-     "url": "https://www.si.com/soccer/transfer-rumors-real-madrid-wonderkid-alexander-arnold-liverpool-return?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-15T23:05:00+00:00",
+     "title": "Manchester City transfer news: Erling Haaland exit date becoming increasingly clear?",
+     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/erling-haaland-exit-date-becoming-increasingly-clear_605211.html",
+     "source": "Sports Mole",
+     "published": "2026-09-16T07:18:07+01:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "Erling Haaland, Christian Pulisic, Endrick and Lamine Camara all feature in the gossip."
+     "excerpt": "Erling Haaland has been at Manchester City since 2022. The question now is how much longer the Norwegian will stay."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 45,
+   "evidence_count": 46,
    "source_count": 13,
-   "latest_evidence": "2026-09-15T19:00:00+00:00",
+   "latest_evidence": "2026-09-16T10:20:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1142,6 +1143,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea lineup vs. Brentford: Possible XI for Xabi Alonso's side including Joao Pedro, Reece James updates",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/title-race/predicted-lineups/will-pedro-james-be-available-how-chelsea-could-line-up-vs-brentford_605222.html",
+     "source": "Sports Mole",
+     "published": "2026-09-16T10:20:00+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Sports Mole looks at how Chelsea could line up in Friday's Premier League clash with Brentford."
+    },
     {
      "title": "Joao Pedro, Shaw, Baleba: FPL injury updates ahead of Gameweek 5",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/15/joao-pedro-shaw-baleba-fpl-injury-updates-ahead-of-gameweek-5",
@@ -1240,15 +1250,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Joao Gomes won’t forget his Aston Villa debut in a hurry. On his early return from injury, the midfielder started an awful performance with a yellow card and ended it with a straight red. He played 39 minutes and Villa were already 4-0 down. Their first half at Brighton & Hove Albion in the first Premier League match of the season was reflected in Gomes’ display and was a brutal reminder that deci"
-    },
-    {
-     "title": "Erling Haaland won’t win the Golden Boot this season, and Joao Pedro is the reason why",
-     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-02T06:00:00+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Last season, much was made of Hugo Ekitike, a standout striker in a faltering Liverpool attack, whose season tragically ended with an achilles tear versus PSG in the Champions League. Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances. For all the noise surroundi"
     }
    ]
   },
@@ -1341,8 +1342,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-15T11:17:37+00:00",
+   "source_count": 6,
+   "latest_evidence": "2026-09-16T03:24:24+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1367,6 +1368,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Why Spurs Guard Dylan Harper Believes He's Being Shaped By Those Around Him",
+     "url": "https://www.si.com/nba/spurs/onsi/why-san-antonio-spurs-guard-dylan-harper-believes-hes-being-shaped-by-those-around-him?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-16T03:24:24+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "San Antonio Spurs star Dylan Harper plans to take everything ahead of him in stride. Whether he starts or comes off the bench, he's trusting the network around him."
+    },
     {
      "title": "Liverpool v Tottenham: Preview, expected line-ups and stats",
      "url": "https://www.101greatgoals.com/match-previews/liverpool-v-tottenham-efl-cup-line-ups-stats-preview-tv-channel-live-online-stream-carabao-spurs/",
@@ -1411,15 +1421,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham are yet to score, Coventry are yet to score or record a point, and Aston Villa are starting slowly again. But what does a bad start really mean, and can those teams learn anything from the slowest starts in Premier League history? The post The Premier League’s Worst Starts, and Why Coventry, Villa and Spurs Shouldn’t Panic Yet appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Tottenham injury news: Roberto De Zerbi reveals Mohammed Kudus fitness boost ahead of EFL Cup tie",
-     "url": "https://www.sportsmole.co.uk/football/spurs/league-cup/news/de-zerbi-reveals-kudus-fitness-boost-ahead-of-efl-cup-tie_605155.html",
-     "source": "Sports Mole",
-     "published": "2026-09-15T01:17:51+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur boss Roberto De Zerbi reveals a Mohammed Kudus fitness boost ahead of Tuesday's EFL Cup tie against Liverpool."
     }
    ]
   },
