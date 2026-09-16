@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-16T11:30:23+00:00",
- "seconds": 180.7,
+ "ran_at": "2026-09-16T17:28:24+00:00",
+ "seconds": 163.4,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 681,
- "substantive_items": 229,
+ "sources_readable": 67,
+ "candidates_discovered": 746,
+ "substantive_items": 292,
  "duplicates_removed": 11,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 12372,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 12574,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 229 articles"
+    "67/78 sources returned 292 articles"
    ]
   },
   "blackout": {
@@ -37,7 +37,6 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Central: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -46,10 +45,9 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: HTTP 403 for https://www.premierinjuries.com/post-sitemap.xml",
+  "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -195,9 +193,9 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 3,
-   "source_count": 1,
-   "latest_evidence": "2026-09-13T20:30:00+00:00",
+   "evidence_count": 4,
+   "source_count": 2,
+   "latest_evidence": "2026-09-16T16:00:04+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -248,6 +246,15 @@
      "matched_on": "de cuyper",
      "kind": "team news",
      "excerpt": "Luka Vuskovic hauls and Dominic Calvert-Lewin spurns big chances in Brighton 1-1 Leeds The post FPL notes: £4.5m midfielder stars again + another De Cuyper return appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
+     "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
+     "source": "Fantasy Football Hub",
+     "published": "2026-09-16T16:00:04+00:00",
+     "matched_on": "de cuyper",
+     "kind": "transfer",
+     "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
     }
    ]
   },
@@ -331,9 +338,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "source_count": 7,
-   "latest_evidence": "2026-09-11T14:56:09+00:00",
+   "latest_evidence": "2026-09-16T16:00:04+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -431,6 +438,15 @@
      "excerpt": "Two alterations for Villa, who taken on unchanged Arsenal The post Villa v Arsenal team news: Jackson debut, Konsa a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
+     "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
+     "source": "Fantasy Football Hub",
+     "published": "2026-09-16T16:00:04+00:00",
+     "matched_on": "konsa",
+     "kind": "transfer",
+     "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
+    },
+    {
      "title": "Aston Villa complete £77m double swoop as Konsa replacement signed",
      "url": "https://www.football365.com/news/aston-villa-transfers-news-ibrahim-mbaye-signing-taylor-harwood-bellis-joins",
      "source": "Football365",
@@ -456,24 +472,15 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
-    },
-    {
-     "title": "Zopharâs Gameweek 3 Q&A: Top City picks, Triple Captain Haaland, buy Konsa?",
-     "url": "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-03T11:45:59+00:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "FPL Gameweek 3 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whetherÂ Ezri KonsaÂ is one to buy this week, the top Manchester City picks amid their new signings, using the Triple Captain on Erling HaalandÂ and the case […]"
     }
    ]
   },
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "source_count": 9,
-   "latest_evidence": "2026-09-16T10:27:59+00:00",
+   "latest_evidence": "2026-09-16T13:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -498,6 +505,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Gakpo impresses, Szoboszlai goal + Porro injury boost",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/16/fpl-notes-gakpo-impresses-szoboszlai-scores-porro-injury-boost",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-16T13:45:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Notes from the midweek cup ties involving Brentford, Liverpool and Spurs The post FPL notes: Gakpo impresses, Szoboszlai goal + Porro injury boost appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: Iraola on fatigue + Barcola fitness, Fulham improve",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
@@ -596,15 +612,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Steve Nicol reckons Liverpool boss Andoni Iraola should drop Florian Wirtz to the bench and push Dominik Szoboszlai further forward."
-    },
-    {
-     "title": "Liverpool legend urges Iraola to drop Wirtz to help Reds teammate with Szoboszlai ‘rationale’",
-     "url": "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale",
-     "source": "Football365",
-     "published": "2026-09-13T14:46:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Former Liverpool defender Steve Nicol has told Reds boss Andoni Iraola why he should drop Florian Wirtz to get his attack firing this season."
     }
    ]
   },
@@ -976,9 +983,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 72,
+   "evidence_count": 73,
    "source_count": 17,
-   "latest_evidence": "2026-09-16T11:52:00+01:00",
+   "latest_evidence": "2026-09-16T16:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1256,9 +1263,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-06T10:20:00+00:00",
+   "evidence_count": 7,
+   "source_count": 6,
+   "latest_evidence": "2026-09-16T14:47:46+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1290,6 +1297,15 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Plus, Marco Rose on Bournemouth's midweek exertions The post FPL notes: Jaissle on Fernandez-Pardo’s fitness + Wissa deeper appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL | GAMEWEEK 5 HINTS AND TIPS",
+     "url": "https://www.itfc.co.uk/news/2026/september/16/fpl---gameweek-5-hints-and-tips/",
+     "source": "Ipswich Town",
+     "published": "2026-09-16T14:47:46+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": "Ipswich Town have teamed up with Fantasy Football Scout to help bring you hints, tips, and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in the overall game and your competitive mini-leagues. TOWN SPOTLIGHT: EMERSONN (£5.5m) Last week’s spotlight tipped Leif Davis (£4.0) to bring FPL "
     },
     {
      "title": "Wissa shortlisted for Premier League's EA Sports Player of the Month award for August",
