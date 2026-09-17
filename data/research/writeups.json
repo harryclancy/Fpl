@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-17T05:29:37+00:00",
+ "generated": "2026-09-17T11:29:28+00:00",
  "gameweek": 5,
- "corpus_size": 12848,
+ "corpus_size": 12995,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1753,14 +1753,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is in the starting eleven this week at £15.5m as a FWD. The selection rests on 73 retrieved item(s) from 17 source(s), the most recent dated 16 Sep.",
+   "why_here": "Haaland is in the starting eleven this week at £15.5m as a FWD. The selection rests on 74 retrieved item(s) from 17 source(s), the most recent dated 17 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 16 Sep: “This season, under new manager Enzo Maresca, Haaland remains firmly on his own extraordinary standards, having scored six goals in six appearances.” Football365, 15 Sep: “Man Utd vs Man City: Webb reveals real reason for Haaland goal decision, verdict on Foden, Fernandes clash PRO Ref head Howard Webb Pro Ref chief Howard Webb has revealed why Erling Haaland’s winning goal in Manchester City ’s 1-0 win against Manchester United wrongly stood.” NBC Sports Rotoworld PL, 15 Sep: “Haaland was all alone and slammed the ball past Lammens for what would be the game’s lone goal.”",
    "case_against": "What argues against him: Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
-   "developments": "Recent developments — Sports Mole, 16 Sep: “Referee governing body Pro Ref, formerly PGMOL, have since apologised to Man United after confirming an “error of judgment” from VAR, who failed to identify that Enzo Fernandez had interfered with play while in an offside position before Haaland made the net ripple.” Sports Mole, 16 Sep: “Having tormented Borussia Dortmund 's opponents between 2020 and 2022, Manchester City persuaded Haaland to sign for a fee of just £51m (€60m), a deal that has since looked more like highway robbery than a transfer.” Football365, 16 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.”",
+   "developments": "Recent developments — Football365, 17 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.” Sports Mole, 16 Sep: “Referee governing body Pro Ref, formerly PGMOL, have since apologised to Man United after confirming an “error of judgment” from VAR, who failed to identify that Enzo Fernandez had interfered with play while in an offside position before Haaland made the net ripple.” Sports Mole, 16 Sep: “Having tormented Borussia Dortmund 's opponents between 2020 and 2022, Manchester City persuaded Haaland to sign for a fee of just £51m (€60m), a deal that has since looked more like highway robbery than a transfer.”",
    "outlook": "On the coming weeks — Sports Mole, 13 Sep: “While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.” Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.”",
    "confidence": "high",
-   "evidence_count": 73,
+   "evidence_count": 74,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
     "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
@@ -1795,6 +1795,14 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-09-17T06:00:59+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.",
      "source": "FourFourTwo FPL",
@@ -1840,14 +1848,6 @@
      "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/erling-haaland-exit-date-becoming-increasingly-clear_605211.html",
      "published": "2026-09-16T07:18:07+01:00",
      "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-09-16T07:00:59+00:00",
-     "tone": "neutral",
      "topics": []
     },
     {
@@ -2768,16 +2768,17 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "status": "Latest on João Pedro — Sports Mole, 16 Sep: “Joao Pedro initially appeared to emerge from the frustrating Premier League fixture completely unscathed.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 49 retrieved item(s) from 14 source(s), the most recent dated 16 Sep.",
-   "case_for": "What supports keeping him: Hull City, 14 Sep: “The Tigers’ unbeaten start to the new campaign continued at Stamford Bridge despite conceding their first league goals of the season as they turned around an early deficit thanks to Mohamed Belloumi’s quick-fire first half double, although João Pedro would go on to net a second half leveller for the hosts.” Soccerway, 12 Sep: “Pedro goal sequence Reuters/Peter Cziborra/Opta by Stats Perform It was end-to-end at points as the clock ticked down, but Rogers could only shoot straight at Tzolakis, and Mohamed-Ali Cho was unable to turn past Martinez as both sides wasted opportunities.” Opta Analyst, 12 Sep: “2 Hull Stats: João Pedro Adds Another Goal and Assist But Hull Still Maintain Unbeaten Start | Opta Analyst Mohamed Belloumi gave Hull City a surprise advantage at Stamford Bridge, but João Pedro’s second-half goal earned a draw for Chelsea João Pedro salvaged a point with a second-half equaliser, but Chelsea were held in another chaotic contest on Saturday, drawing 2-2 with Hull City.”",
-   "case_against": "What argues against him: Sports Mole, 16 Sep: “\"The player will replace Chelsea striker Joao Pedro, who is injured,\" the governing body explained to supporters.” Tactical Football Analysis, 11 Sep: “João Pedro did not feature, which is a positive because his legs will be well rested for their upcoming fixture against Hull City at home.”",
+   "status": "Latest on João Pedro — Football365, 17 Sep: “Not only was Pedro named as the Premier League Player of the Month for August, the centre-forward also ranks as the division’s best player so far.”",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 51 retrieved item(s) from 14 source(s), the most recent dated 17 Sep.",
+   "case_for": "What supports keeping him: Football365, 17 Sep: “Chelsea star man putting Erling Haaland in the shade with flying start Joao Pedro is on fire this season Joao Pedro was surprisingly left out of the Brazil squad for the World Cup.” Hull City, 14 Sep: “The Tigers’ unbeaten start to the new campaign continued at Stamford Bridge despite conceding their first league goals of the season as they turned around an early deficit thanks to Mohamed Belloumi’s quick-fire first half double, although João Pedro would go on to net a second half leveller for the hosts.” Soccerway, 12 Sep: “Pedro goal sequence Reuters/Peter Cziborra/Opta by Stats Perform It was end-to-end at points as the clock ticked down, but Rogers could only shoot straight at Tzolakis, and Mohamed-Ali Cho was unable to turn past Martinez as both sides wasted opportunities.”",
+   "case_against": "What argues against him: Soccerway, 17 Sep: “Brazil ⁠did ​not specify the nature of Joao Pedro 's injury but ‌said in a social media post that Fluminense midfielder Matheus Martinelli had been called up as his replacement.” Sports Mole, 16 Sep: “\"The player will replace Chelsea striker Joao Pedro, who is injured,\" the governing body explained to supporters.” Tactical Football Analysis, 11 Sep: “João Pedro did not feature, which is a positive because his legs will be well rested for their upcoming fixture against Hull City at home.”",
    "expected_minutes": "On minutes — Sports Mole, 24 Aug: “3 Chelsea: Highlights, man of the match, stats as Pedro, Palmer, Rogers light up Craven Cottage - Sports Mole Menu Loading...” OneFPL: “That is not the same thing as an official injury update Chelsea have not confirmed a new João Pedro injury in the information available at the time of this update.”",
-   "developments": "Recent developments — Fantasy Football Scout, 15 Sep: “Joao Pedro and Reece James were not see in the part of training in which Sky cameras were present.” Hull City, 14 Sep: “Although João Pedro would go on to net a second-half leveller for the hosts, the Tigers recorded their first point at Stamford Bridge since February 1976.” Soccerway, 12 Sep: “Nonetheless, Chelsea continued to push and levelled the game once more in the 66th minute when Joao Pedro rifled in from close range, setting up an intriguing finale.”",
+   "developments": "Recent developments — Sports Mole, 16 Sep: “Joao Pedro initially appeared to emerge from the frustrating Premier League fixture completely unscathed.” Fantasy Football Scout, 15 Sep: “Joao Pedro and Reece James were not see in the part of training in which Sky cameras were present.” Hull City, 14 Sep: “Although João Pedro would go on to net a second-half leveller for the hosts, the Tigers recorded their first point at Stamford Bridge since February 1976.”",
    "outlook": "On the coming weeks — Opta Analyst, 12 Sep: “Brazil international João Pedro fired in a powerful finish after 66 minutes, denying Hull what would have been another impressive scalp early in their return to the Premier League – and the chance to sit top of the early league table.” 101 Great Goals — Fantasy, 12 Sep: “Chelsea head coach Xabi Alonso sent on Pep Chavarria for Jorrel Hato at half-time and, after Kostantinos Tzolakis turned Blues wideman Reece James’ strike behind, Joao Pedro levelled following Cole Palmer’s electric run along the right and pass inside the box.”",
    "confidence": "high",
-   "evidence_count": 49,
+   "evidence_count": 51,
    "evidence_used": [
+    "https://www.soccerway.com/news/chelsea-s-joao-pedro-to-miss-brazil-s-friendlies-against-australia-india-with-injury/nsfSIWpT/",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html",
     "https://www.evertonfc.com/news/2026/september/16/wolves-report/",
     "https://www.fantasyfootballscout.co.uk/2026/09/16/joao-pedro-out-of-brazil-squad-with-reported-injury",
@@ -2788,8 +2789,7 @@
     "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
     "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/cash-goretzka-gomes-madjo-latest-aston-villa-injury-suspension-list-vs-forest_604765.html",
     "https://avfc.co.uk/news/2026/september/08/prematch-club-brugge-team-news/",
-    "https://avfc.co.uk/news/2026/september/07/prematch-club-brugge-team-news/",
-    "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash"
+    "https://avfc.co.uk/news/2026/september/07/prematch-club-brugge-team-news/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2808,6 +2808,32 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Brazil ⁠did ​not specify the nature of Joao Pedro 's injury but ‌said in a social media post that Fluminense midfielder Matheus Martinelli had been called up as his replacement.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/chelsea-s-joao-pedro-to-miss-brazil-s-friendlies-against-australia-india-with-injury/nsfSIWpT/",
+     "published": "2026-09-17T07:45:07+02:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Chelsea star man putting Erling Haaland in the shade with flying start Joao Pedro is on fire this season Joao Pedro was surprisingly left out of the Brazil squad for the World Cup.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/joao-pedro-best-player-premier-league-europe-top-five-leagues-so-far",
+     "published": "2026-09-17T06:11:48+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Not only was Pedro named as the Premier League Player of the Month for August, the centre-forward also ranks as the division’s best player so far.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/joao-pedro-best-player-premier-league-europe-top-five-leagues-so-far",
+     "published": "2026-09-17T06:11:48+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Joao Pedro initially appeared to emerge from the frustrating Premier League fixture completely unscathed.",
      "source": "Sports Mole",

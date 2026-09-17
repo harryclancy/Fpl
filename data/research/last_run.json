@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-17T05:29:37+00:00",
- "seconds": 132.7,
+ "ran_at": "2026-09-17T11:29:28+00:00",
+ "seconds": 169.6,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 602,
- "substantive_items": 174,
- "duplicates_removed": 3,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 12848,
+ "sources_readable": 65,
+ "candidates_discovered": 708,
+ "substantive_items": 258,
+ "duplicates_removed": 16,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 12995,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 174 articles"
+    "65/78 sources returned 258 articles"
    ]
   },
   "blackout": {
@@ -37,10 +37,8 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -986,9 +984,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 73,
+   "evidence_count": 74,
    "source_count": 17,
-   "latest_evidence": "2026-09-16T16:30:00+00:00",
+   "latest_evidence": "2026-09-17T11:00:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1126,9 +1124,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 51,
    "source_count": 14,
-   "latest_evidence": "2026-09-16T21:47:00+01:00",
+   "latest_evidence": "2026-09-17T07:45:07+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1153,6 +1151,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea's Joao Pedro to miss Brazil's friendlies against Australia & India with injury",
+     "url": "https://www.soccerway.com/news/chelsea-s-joao-pedro-to-miss-brazil-s-friendlies-against-australia-india-with-injury/nsfSIWpT/",
+     "source": "Soccerway",
+     "published": "2026-09-17T07:45:07+02:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "Joao Pedro injury: How many games will Chelsea and Brazil forward miss after withdrawing from Selecao squad?",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html",
@@ -1251,15 +1258,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Fixtures Club Brugge Vs. Aston Villa - Tue, Sep 08 2026, 18:45 Aston Villa are in Belgium ahead of their UEFA Champions League opener against Club Brugge. And after landing in Bruges, Unai Emery headed for his press conference at Jan Breydelstadion on Monday evening. The Villa manager offered an update on the state of his squad ahead of the game, with João Gomes available for selection again. Leon"
-    },
-    {
-     "title": "Injury-hit Aston Villa receive triple boost ahead of Hull City clash",
-     "url": "https://www.fourfourtwo.com/team/injury-hit-aston-villa-receive-triple-boost-ahead-of-hull-city-clash",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-04T15:42:58+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "An injury-stricken Aston Villa have received a triple boost ahead of the club's clash with Hull City on Saturday, with updates being heard in a pre-match press conference regarding four injured players. Unai Emery's side have lost both of their two Premier League matches so far this term, with Brighton serving his men a 4-0 defeat in their opening match. That was followed up by a 1-0 loss at Villa"
     }
    ]
   },
