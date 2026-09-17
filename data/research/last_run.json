@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-17T11:29:28+00:00",
- "seconds": 169.6,
+ "ran_at": "2026-09-17T17:27:27+00:00",
+ "seconds": 134.4,
  "sources_attempted": 78,
- "sources_readable": 65,
- "candidates_discovered": 708,
- "substantive_items": 258,
- "duplicates_removed": 16,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 12995,
+ "sources_readable": 66,
+ "candidates_discovered": 778,
+ "substantive_items": 328,
+ "duplicates_removed": 20,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 13214,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "65/78 sources returned 258 articles"
+    "66/78 sources returned 328 articles"
    ]
   },
   "blackout": {
@@ -44,7 +44,6 @@
   "Draft FC: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Fulham: ConnectionError for https://fulhamfc.com/rss.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -195,8 +194,8 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 4,
-   "source_count": 2,
+   "evidence_count": 5,
+   "source_count": 3,
    "latest_evidence": "2026-09-16T16:00:04+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -218,7 +217,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -257,6 +256,15 @@
      "matched_on": "de cuyper",
      "kind": "transfer",
      "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
+    },
+    {
+     "title": "Maxim de cuyper fpl 2026 27",
+     "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "de cuyper",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -761,10 +769,10 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-16T21:35:15+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-17T10:56:49+01:00",
    "official_source_found": true,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -776,7 +784,7 @@
     "injury",
     "match report",
     "press conference",
-    "statistics",
+    "set pieces",
     "tactics",
     "team news",
     "transfer"
@@ -795,6 +803,33 @@
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
     },
     {
+     "title": "Arsenal lineup vs. Brighton: Predicted XI as Bruno Guimaraes makes first Premier League start",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/guimaraes-starts-timber-decision-predicted-arsenal-xi-vs-brighton_605238.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T10:56:49+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Saturday's Premier League clash with Brighton & Hove Albion."
+    },
+    {
+     "title": "Brighton lineup vs. Arsenal: Predicted XI as Fabian Hurzeler makes six changes from Man United win",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/six-seagulls-changes-predicted-brighton-xi-vs-arsenal_605237.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T10:56:00+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Brighton & Hove Albion could line up for Saturday's Premier League clash with Arsenal."
+    },
+    {
+     "title": "Brighton & Hove Albion vs Arsenal - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/preview/brighton-vs-arsenal-prediction-team-news-lineups_605233.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T10:48:00+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Brighton & Hove Albion and Arsenal, including predictions, team news and possible lineups."
+    },
+    {
      "title": "Carrick sack coming as Man Utd players down tools after Brighton comeback",
      "url": "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback",
      "source": "Football365",
@@ -811,33 +846,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "🎬 Post-Match | Hürzeler reacts to huge comeback | Man United v Brighton"
-    },
-    {
-     "title": "Manchester United 2-3 Brighton: Brighton mount historic EFL Cup comeback",
-     "url": "https://www.101greatgoals.com/news/manchester-united-2-3-brighton-brighton-mount-historic-efl-cup-comeback/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-16T20:55:32+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Brighton roll on in the EFL Cup with a famous win"
-    },
-    {
-     "title": "Arsenal injury, suspension list and return dates vs. Brighton & Hove Albion: Jurrien Timber, Piero Hincapie, Ben White latest",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-hincapie-saliba-latest-arsenal-injury-suspension-list-vs-brighton_605266.html",
-     "source": "Sports Mole",
-     "published": "2026-09-16T20:36:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League visit to Brighton & Hove Albion."
-    },
-    {
-     "title": "Man United vs. Brighton: Michael Carrick confirms Red Devils XI for crucial EFL Cup fixture including Benjamin Sesko, JJ Gabriel decisions",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/league-cup/news/sesko-jj-gabriel-decisions-man-united-confirm-starting-xi-for-brighton-contest_605261.html",
-     "source": "Sports Mole",
-     "published": "2026-09-16T18:52:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Manchester United and Brighton & Hove Albion confirm their starting teams for Wednesday's EFL Cup third-round contest at Old Trafford."
     }
    ]
   },
@@ -1124,9 +1132,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 51,
+   "evidence_count": 56,
    "source_count": 14,
-   "latest_evidence": "2026-09-17T07:45:07+02:00",
+   "latest_evidence": "2026-09-17T17:42:21+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1151,6 +1159,33 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury news: Major Joao Pedro update amid 'surprise' Xabi Alonso comments on Brazil squad withdrawal",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/major-pedro-injury-update-amid-surprise-alonso-comments-on-chelsea-star_605304.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T17:42:21+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea forward Joao Pedro is allegedly suffering with a knee injury, despite claims from manager Xabi Alonso that he could feature against Brentford on Friday night."
+    },
+    {
+     "title": "Joao Pedro, James, Caicedo: Chelsea injury latest for FPL Gameweek 5",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/joao-pedro-james-caicedo-chelsea-injury-latest-for-fpl-gameweek-5",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-17T14:01:27+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "The most-owned FPL player has pulled out of Brazil's latest squad The post Joao Pedro, James, Caicedo: Chelsea injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-17T12:45:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Six managers face the media, including Chelsea's Xabi Alonso The post FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Chelsea's Joao Pedro to miss Brazil's friendlies against Australia & India with injury",
      "url": "https://www.soccerway.com/news/chelsea-s-joao-pedro-to-miss-brazil-s-friendlies-against-australia-india-with-injury/nsfSIWpT/",
@@ -1231,33 +1266,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "“He’s the reason”, Tottenham Hotspur fans once sang about Rodrigo Bentancur. In the 2021/22 season, particularly once Antonio Conte took over from Nuno Espirito Santo, the Uruguayan was instrumental in the middle of the park. He forged a fine partnership with Pierre-Emile Hojbjerg , and looked a world beater in north London. There was even an argument to be made that he was their most important pl"
-    },
-    {
-     "title": "Aston Villa injury, suspension list and return dates vs. Nottingham Forest: Matty Cash, Leon Goretzka, Joao Gomes, Brian Madjo latest",
-     "url": "https://www.sportsmole.co.uk/football/aston-villa/injury-news/injuries-and-suspensions/cash-goretzka-gomes-madjo-latest-aston-villa-injury-suspension-list-vs-forest_604765.html",
-     "source": "Sports Mole",
-     "published": "2026-09-09T09:51:00+01:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Aston Villa's latest injury and suspension news ahead of their Premier League clash with Nottingham Forest."
-    },
-    {
-     "title": "Wan-Bissaka makes first start in Bruges",
-     "url": "https://avfc.co.uk/news/2026/september/08/prematch-club-brugge-team-news/",
-     "source": "Aston Villa",
-     "published": "2026-09-08T15:32:09+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Club Brugge Vs. Aston Villa - Tue, Sep 08 2026, 18:45 Aston Villa begin their UEFA Champions League journey in Belgium tonight, taking on Club Brugge. And ahead of kick-off at Jan Breydelstadion, the starting lineups have been announced for the league phase opener. Manager Unai Emery has made two changes from the weekend's draw at Hull City. Aaron Wan-Bissaka comes in for his full debut f"
-    },
-    {
-     "title": "Team news for Club Brugge clash",
-     "url": "https://avfc.co.uk/news/2026/september/07/prematch-club-brugge-team-news/",
-     "source": "Aston Villa",
-     "published": "2026-09-07T18:14:23+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Club Brugge Vs. Aston Villa - Tue, Sep 08 2026, 18:45 Aston Villa are in Belgium ahead of their UEFA Champions League opener against Club Brugge. And after landing in Bruges, Unai Emery headed for his press conference at Jan Breydelstadion on Monday evening. The Villa manager offered an update on the state of his squad ahead of the game, with João Gomes available for selection again. Leon"
     }
    ]
   },
@@ -1359,8 +1367,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-16T16:23:00+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-17T10:28:37+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1385,6 +1393,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Aston Villa lineup vs. Tottenham: Predicted XI as Tammy Abraham starts Premier League battle",
+     "url": "https://www.sportsmole.co.uk/football/aston-villa/predicted-lineups/abraham-or-jackson-barkley-or-gomes-predicted-villa-xi-vs-tottenham_605230.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T10:28:37+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Aston Villa could line up for Saturday's Premier League clash with Tottenham Hotspur."
+    },
+    {
+     "title": "Tottenham lineup vs. Aston Villa: Predicted XI as James Maddison starts, Mathys Tel dropped for Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/maddison-starts-mathys-dropped-predicted-tottenham-xi-vs-villa_605228.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T10:18:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League clash with Aston Villa."
+    },
+    {
+     "title": "Tottenham Hotspur vs Aston Villa - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-aston-villa-prediction-team-news-lineups_605218.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T10:17:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Tottenham Hotspur and Aston Villa, including predictions, team news and possible lineups."
+    },
     {
      "title": "Tottenham Hotspur injury, suspension list and return dates vs. Aston Villa: Sandro Tonali, Pedro Porro, Dejan Kulusevski latest",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/tonali-status-kulusevski-update-spurs-injury-suspension-list-vs-villa_605247.html",
@@ -1411,42 +1446,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Preview as Liverpool host Tottenham in the EFL Cup last 32"
-    },
-    {
-     "title": "Who are the ITV pundits, commentators and presenters for Liverpool vs Tottenham Hotspur?",
-     "url": "https://www.fourfourtwo.com/competition/who-are-the-itv-pundits-commentators-and-presenters-for-liverpool-vs-tottenham-hotspur",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-15T10:20:02+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Liverpool and Tottenham have had tricky starts to the 2026/27 campaign but should both be eyeing silverware this season, and the Carabao Cup is a great opportunity to secure some. ITV are showing this fixture in the UK and have rolled out their broadcasting A team to bring you all the build-up, in-game analysis and post-game talking points. Here's a full breakdown of the ITV squad calling this mid"
-    },
-    {
-     "title": "Liverpool v Tottenham: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/liverpool-v-tottenham-prediction-preview",
-     "source": "Football365",
-     "published": "2026-09-15T10:07:50+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Carabao Cup clash between Liverpool and Tottenham."
-    },
-    {
-     "title": "Liverpool vs. Spurs team news: Andoni Iraola confirms one starter, hints at rotation for EFL Cup tie",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/league-cup/news/iraola-confirms-one-liverpool-starter-hints-at-rotation-for-spurs-efl-cup-tie_605164.html",
-     "source": "Sports Mole",
-     "published": "2026-09-15T10:07:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Liverpool manager Andoni Iraola confirms one starter for Tuesday's EFL Cup third round tie against Tottenham Hotspur."
     }
    ]
   },
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "source_count": 6,
-   "latest_evidence": "2026-09-15T11:00:00+00:00",
+   "latest_evidence": "2026-09-17T12:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1497,6 +1505,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
+    },
+    {
+     "title": "FPL Gameweek 5 tips: Touré's personal milestone and a good time to buy Barnes",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
+     "source": "Newcastle United",
+     "published": "2026-09-17T12:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "What's Next for Raptors After Kawhi Leonard Trade?",
