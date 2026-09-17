@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-16T23:28:09+00:00",
+ "generated": "2026-09-17T05:29:37+00:00",
  "gameweek": 5,
- "corpus_size": 12760,
+ "corpus_size": 12848,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -268,7 +268,7 @@
    "player": "De Cuyper",
    "club": "BHA",
    "status": "Latest on De Cuyper — Fantasy Football Scout, 13 Sep: “Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £4.8m as a DEF. The selection rests on 4 retrieved item(s) from 2 source(s), the most recent dated 13 Sep.",
+   "why_here": "De Cuyper is in the starting eleven this week at £4.9m as a DEF. The selection rests on 4 retrieved item(s) from 2 source(s), the most recent dated 13 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 07 Sep: “So, that’s very positive and hopefully he can continue like this.” – Fabian Hurzeler on Malick Yalcouye ANOTHER DE CUYPER RETURN AS VUSKOVIC HAULS Maxim De Cuyper (£4.7m), again playing on the left wing, salvaged a return despite a booking and clean sheet loss.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.”",
@@ -1332,31 +1332,59 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
-   "why_here": "Groß is in the starting eleven this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
-   "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "status": "Latest on Groß — Football365, 16 Sep: “Their press was impeccable and United had no answer to it. 35-year-old Groß was strolling across the Old Trafford pitch as if he owned the place.”",
+   "why_here": "Groß is in the starting eleven this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 16 Sep.",
+   "case_for": "What supports keeping him: Football365, 16 Sep: “Charalampos Kostoulas, Pascal Groß and Maxim De Cuyper got the goals for the Brighton, who were worthy of at least double that.” Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "expected_minutes": "On minutes — 101 Great Goals — Fantasy, 16 Sep: “BRIGHTON ARE LEVEL! 🔥 From 2-0 down, Pascal Groß equalises for the Seagulls at Old Trafford #ITVFootball @BHAFC @Carabao_Cup pic.twitter.com/LhBSLfUSDn — ITV Football (@itvfootball) September 16, 2026 United had bossed the first half but Brighton struck back in stoppage time with Charalampos Kostoulas poking through the legs of a hesitant Karl Darlow.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
-    "https://www.nbcsports.com/soccer/news/how-to-watch-brighton-vs-arsenal-live-stream-tv-team-news-prediction",
-    "https://www.sportsmole.co.uk/football/man-utd/injury-news/team-news/man-utd-vs-brighton-injury-suspension-list-predicted-xis_605104.html",
-    "https://www.brightonandhovealbion.com/media-video/man-united-v-brighton-or-huerzeler-pre-match-press-conference",
-    "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/carrick-issues-shaw-fitness-update-as-baleba-debut-date-emerges_605178.html",
-    "https://www.101greatgoals.com/match-previews/manchester-united-v-brighton-preview-expected-line-ups-stats-and-where-to-watch/"
+    "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback",
+    "https://www.brightonandhovealbion.com/media-video/post-match-or-huerzeler-reacts-to-huge-comeback-or-man-united-v-brighton",
+    "https://www.101greatgoals.com/news/manchester-united-2-3-brighton-brighton-mount-historic-efl-cup-comeback/",
+    "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/timber-hincapie-saliba-latest-arsenal-injury-suspension-list-vs-brighton_605266.html",
+    "https://www.sportsmole.co.uk/football/man-utd/league-cup/news/sesko-jj-gabriel-decisions-man-united-confirm-starting-xi-for-brighton-contest_605261.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Aston Villa",
     "Brighton & Hove Albion",
-    "NBC Sports Rotoworld PL",
+    "Football365",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Charalampos Kostoulas, Pascal Groß and Maxim De Cuyper got the goals for the Brighton, who were worthy of at least double that.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback",
+     "published": "2026-09-16T21:35:15+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Their press was impeccable and United had no answer to it. 35-year-old Groß was strolling across the Old Trafford pitch as if he owned the place.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback",
+     "published": "2026-09-16T21:35:15+00:00",
+     "tone": "neutral",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "BRIGHTON ARE LEVEL! 🔥 From 2-0 down, Pascal Groß equalises for the Seagulls at Old Trafford #ITVFootball @BHAFC @Carabao_Cup pic.twitter.com/LhBSLfUSDn — ITV Football (@itvfootball) September 16, 2026 United had bossed the first half but Brighton struck back in stoppage time with Charalampos Kostoulas poking through the legs of a hesitant Karl Darlow.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/news/manchester-united-2-3-brighton-brighton-mount-historic-efl-cup-comeback/",
+     "published": "2026-09-16T20:55:32+00:00",
+     "tone": "neutral",
+     "topics": [
+      "rotation"
+     ]
+    },
     {
      "text": "The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.",
      "source": "Aston Villa",
