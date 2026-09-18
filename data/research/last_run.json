@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-17T17:27:27+00:00",
- "seconds": 134.4,
+ "ran_at": "2026-09-18T01:18:47+00:00",
+ "seconds": 151.1,
  "sources_attempted": 78,
- "sources_readable": 66,
- "candidates_discovered": 778,
- "substantive_items": 328,
- "duplicates_removed": 20,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 13214,
+ "sources_readable": 64,
+ "candidates_discovered": 742,
+ "substantive_items": 312,
+ "duplicates_removed": 26,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 13410,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "66/78 sources returned 328 articles"
+    "64/78 sources returned 312 articles"
    ]
   },
   "blackout": {
@@ -37,8 +37,10 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -852,9 +854,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 31,
-   "source_count": 11,
-   "latest_evidence": "2026-09-14T11:00:00+00:00",
+   "evidence_count": 33,
+   "source_count": 12,
+   "latest_evidence": "2026-09-17T20:47:11-04:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -970,22 +972,22 @@
      "excerpt": "A report has claimed that two of Chelsea’s biggest stars are ready to move to Manchester United in the summer transfer window."
     },
     {
-     "title": "Chelsea attacker outshines Didier Drogba as remarkable stat emerges after 2-2 draw vs Hull City",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/better-than-drogba-chelsea-attacker-proves-his-class-as-fantastic-stat-emerges_605031.html",
-     "source": "Sports Mole",
-     "published": "2026-09-12T17:40:52+01:00",
+     "title": "Josh Palmer scores his second TD of the season on his second catch",
+     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/josh-palmer-scores-his-second-td-of-the-season-on-his-second-catch",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-09-17T20:47:11-04:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Chelsea attacker Cole Palmer becomes the second player with most goal contributions after Jimmy Floyd Hasselbaink in his first 100 appearances for the club."
+     "excerpt": ""
     },
     {
-     "title": "Chelsea top scorers against the Big Six: Palmer has more than rest of squad combined",
-     "url": "https://www.football365.com/news/chelsea-top-scorers-premier-league-big-six-games-hazard-alonso",
+     "title": "Palmer set for England call-up with two uncapped stars as Tuchel considers five exciting talents",
+     "url": "https://www.football365.com/news/palmer-set-england-call-up-two-uncapped-stars-tuchel-considers-five-exciting-talents",
      "source": "Football365",
-     "published": "2026-09-11T13:29:20+00:00",
+     "published": "2026-09-17T20:37:34+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined."
+     "excerpt": "According to reports, Chelsea star Cole Palmer is ‘set’ to be part of England’s squad for this international break with two uncapped players."
     }
    ]
   },
@@ -1132,9 +1134,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 56,
+   "evidence_count": 57,
    "source_count": 14,
-   "latest_evidence": "2026-09-17T17:42:21+01:00",
+   "latest_evidence": "2026-09-17T19:50:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1159,6 +1161,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "What to do with Joao Pedro in FPL + top 5 replacements",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/what-to-do-with-joao-pedro-in-fpl-top-5-replacements",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-17T19:50:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "FPL Meerkat looks at the options available to Joao Pedro owners The post What to do with Joao Pedro in FPL + top 5 replacements appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Chelsea injury news: Major Joao Pedro update amid 'surprise' Xabi Alonso comments on Brazil squad withdrawal",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/major-pedro-injury-update-amid-surprise-alonso-comments-on-chelsea-star_605304.html",
@@ -1257,15 +1268,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Fixtures Aston Villa Vs. Nottingham Forest - Sat, Sep 12 2026, 15:00 Unai Emery will assess Matty Cash and Johan Manzambi ahead of Aston Villa’s Premier League encounter against Nottingham Forest. Right-back Cash missed Tuesday’s UEFA Champions League victory at Club Brugge due to injury, while forward Manzambi is still working towards his Villa debut since arriving at the club in the summer. And "
-    },
-    {
-     "title": "Tottenham Hotspur need to forget their £185m midfield duo – Roberto De Zerbi must build his midfield around another guy",
-     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-to-forget-their-gbp185m-midfield-duo-roberto-de-zerbi-must-build-his-midfield-around-another-guy",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-10T06:00:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "“He’s the reason”, Tottenham Hotspur fans once sang about Rodrigo Bentancur. In the 2021/22 season, particularly once Antonio Conte took over from Nuno Espirito Santo, the Uruguayan was instrumental in the middle of the park. He forged a fine partnership with Pierre-Emile Hojbjerg , and looked a world beater in north London. There was even an argument to be made that he was their most important pl"
     }
    ]
   },
