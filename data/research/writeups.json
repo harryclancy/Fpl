@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-18T15:01:29+00:00",
+ "generated": "2026-09-18T19:40:46+00:00",
  "gameweek": 5,
- "corpus_size": 13796,
+ "corpus_size": 13976,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1364,48 +1364,31 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "status": "Latest on Groß — Football365, 16 Sep: “Their press was impeccable and United had no answer to it. 35-year-old Groß was strolling across the Old Trafford pitch as if he owned the place.”",
-   "why_here": "Groß is in the starting eleven this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 16 Sep.",
-   "case_for": "What supports keeping him: Football365, 16 Sep: “Charalampos Kostoulas, Pascal Groß and Maxim De Cuyper got the goals for the Brighton, who were worthy of at least double that.” Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "why_here": "Groß is in the starting eleven this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
+   "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+    "https://www.si.com/soccer/arsenal-predicted-lineup-vs-brighton-9-19-26?utm_source=RSS",
+    "https://www.fantasyfootballscout.co.uk/2026/09/18/vuskovic-mitoma-hinshelwood-brighton-injury-latest-for-fpl-gameweek-5",
     "https://www.brightonandhovealbion.com/media-video/brighton-v-arsenal-or-huerzeler-pre-match-press-conference",
     "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/guimaraes-starts-timber-decision-predicted-arsenal-xi-vs-brighton_605238.html",
-    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/six-seagulls-changes-predicted-brighton-xi-vs-arsenal_605237.html",
-    "https://www.sportsmole.co.uk/football/arsenal/preview/brighton-vs-arsenal-prediction-team-news-lineups_605233.html",
-    "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback"
+    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/six-seagulls-changes-predicted-brighton-xi-vs-arsenal_605237.html"
    ],
    "sources_used": [
     "Aston Villa",
     "Brighton & Hove Albion",
-    "Football365",
+    "Fantasy Football Scout",
+    "Sports Illustrated FPL",
     "Sports Mole"
    ],
    "quotes": [
-    {
-     "text": "Charalampos Kostoulas, Pascal Groß and Maxim De Cuyper got the goals for the Brighton, who were worthy of at least double that.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback",
-     "published": "2026-09-16T21:35:15+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Their press was impeccable and United had no answer to it. 35-year-old Groß was strolling across the Old Trafford pitch as if he owned the place.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback",
-     "published": "2026-09-16T21:35:15+00:00",
-     "tone": "neutral",
-     "topics": [
-      "tactics"
-     ]
-    },
     {
      "text": "The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.",
      "source": "Aston Villa",
@@ -1419,15 +1402,15 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "status": "Latest on Palmer — FourFourTwo FPL, 18 Sep: “At his squad announcement today, the England boss has said that both Palmer and Alexander-Arnold show the best versions of themselves during the upcoming games.”",
-   "why_here": "Palmer is captained this week at £9.7m as a MID. The selection rests on 40 retrieved item(s) from 15 source(s), the most recent dated 18 Sep.",
+   "status": "Latest on Palmer — Sports Illustrated FPL, 18 Sep: “El lateral del Real Madrid, Alexander-Arnold, ex del Liverpool, no habÃ­a sido convocado por su selecciÃ³n desde junio de 2025, mientras que Palmer regresa despuÃ©s de haberse quedado fuera de la lista mundialista, una decisiÃ³n por la que Tuchel recibiÃ³ numerosas crÃ­ticas.”",
+   "why_here": "Palmer is captained this week at £9.7m as a MID. The selection rests on 41 retrieved item(s) from 16 source(s), the most recent dated 18 Sep.",
    "case_for": "What supports keeping him: Football365, 17 Sep: “Palmer was a notable absentee from England’s squad for this summer’s World Cup after he struggled for form and fitness during the 2025/26 campaign.” Sports Mole, 12 Sep: “Palmer has now recorded 71 Premier League goal involvements in his first 100 appearances for Chelsea, a remarkable return that places him ahead of club legends such as Didier Drogba , Eden Hazard and Cesc Fabregas at the same stage of their Blues careers.” Football365, 11 Sep: “Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined.”",
    "case_against": "What argues against him: Football365, 02 Sep: “Chelsea did have to sell Marc Cucurella to Real Madrid but players such as Joao Pedro and Cole Palmer have been deemed untouchable by the west Londoners.” Chelsea: “Palmer was outstanding in his first two campaigns at Stamford Bridge, but injury made it difficult for him to replicate that level of performance in 2025/26.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.” Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.”",
-   "developments": "Recent developments — 101 Great Goals — Fantasy, 18 Sep: “Chelsea forward Palmer and Real Madrid wideman Alexander-Arnold return for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.” Football365, 18 Sep: “England head coach Thomas Tuchel has recalled Trent Alexander-Arnold, Cole Palmer and Dominic Calvert-Lewin ahead of the upcoming international fixtures.” Football365, 17 Sep: “England squad: Palmer 'set' for call-up with two uncapped stars as Tuchel 'considering five exciting talents' Thomas Tuchel in England training According to reports, Chelsea star Cole Palmer is ‘set’ to be part of England’s squad for this international break with two uncapped players.”",
+   "developments": "Recent developments — FourFourTwo FPL, 18 Sep: “At his squad announcement today, the England boss has said that both Palmer and Alexander-Arnold show the best versions of themselves during the upcoming games.” 101 Great Goals — Fantasy, 18 Sep: “Chelsea forward Palmer and Real Madrid wideman Alexander-Arnold return for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.” Football365, 18 Sep: “England head coach Thomas Tuchel has recalled Trent Alexander-Arnold, Cole Palmer and Dominic Calvert-Lewin ahead of the upcoming international fixtures.”",
    "outlook": "On the coming weeks — Tactical Football Analysis, 11 Sep: “Chelsea Vs Hull: Palmer’s Captaincy Appeal And Attacking Picks Fig. 2: Best projected triple captaincy weeks (Source: Solio Chelsea were 2 goals down after 48 minutes on Wednesday night at Stamford Bridge in their 3rd round Carabao Cup tie against Leeds United They won the match 6-3.” Fantasy Football Scout, 10 Sep: “Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).”",
    "confidence": "high",
-   "evidence_count": 40,
+   "evidence_count": 41,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html",
     "https://www.fourfourtwo.com/team/chelsea-are-scoring-for-fun-but-theres-one-bad-habit-xabi-alonso-needs-to-break-to-turn-them-into-contenders",
@@ -1440,7 +1423,7 @@
     "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
     "https://www.fourfourtwo.com/competition/watch-arsenal-vs-chelsea-premier-league-2026-27-free",
     "https://www.football365.com/news/chelsea-manchester-united-transfer",
-    "https://www.fourfourtwo.com/person/player/thomas-tuchel-sets-cole-palmer-and-trent-alexander-arnold-a-new-challenge-after-england-recalls"
+    "https://www.si.com/mx/tuchel-vuelve-a-convocar-a-trent-y-palmer-con-inglaterra-pero-no-a-foden?utm_source=RSS"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1455,11 +1438,22 @@
     "OneFPL",
     "Opta Analyst",
     "Soccerway",
+    "Sports Illustrated FPL",
     "Sports Mole",
     "Sunderland",
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "El lateral del Real Madrid, Alexander-Arnold, ex del Liverpool, no habÃ­a sido convocado por su selecciÃ³n desde junio de 2025, mientras que Palmer regresa despuÃ©s de haberse quedado fuera de la lista mundialista, una decisiÃ³n por la que Tuchel recibiÃ³ numerosas crÃ­ticas.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/mx/tuchel-vuelve-a-convocar-a-trent-y-palmer-con-inglaterra-pero-no-a-foden?utm_source=RSS",
+     "published": "2026-09-18T19:26:37+00:00",
+     "tone": "neutral",
+     "topics": [
+      "statistics"
+     ]
+    },
     {
      "text": "At his squad announcement today, the England boss has said that both Palmer and Alexander-Arnold show the best versions of themselves during the upcoming games.",
      "source": "FourFourTwo FPL",
@@ -2924,16 +2918,18 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "status": "Latest on João Pedro — Soccerway, 17 Sep: “Brazil ⁠did ​not specify the nature of Joao Pedro 's injury but ‌said in a social media post that Fluminense midfielder Matheus Martinelli had been called up as his replacement.” Sports Mole, 16 Sep: “\"The player will replace Chelsea striker Joao Pedro, who is injured,\" the governing body explained to supporters.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 61 retrieved item(s) from 15 source(s), the most recent dated 18 Sep.",
+   "status": "Latest on João Pedro — Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.” Soccerway, 17 Sep: “Pedro not ruled out Alonso first gave an update on his team ahead of the clash, revealing details on a number of players, including striker Joao Pedro , who missed training this weekend and missed out on the Brazil squad.”",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 64 retrieved item(s) from 15 source(s), the most recent dated 18 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 17 Sep: “Pedro has enjoyed an outstanding start to the 2026-27 top-flight campaign, contributing three goals and three assists from four appearances.” Football365, 17 Sep: “Chelsea star man putting Erling Haaland in the shade with flying start Joao Pedro is on fire this season Joao Pedro was surprisingly left out of the Brazil squad for the World Cup.” Hull City, 14 Sep: “The Tigers’ unbeaten start to the new campaign continued at Stamford Bridge despite conceding their first league goals of the season as they turned around an early deficit thanks to Mohamed Belloumi’s quick-fire first half double, although João Pedro would go on to net a second half leveller for the hosts.”",
-   "case_against": "What argues against him: RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.” Sports Mole, 18 Sep: “However, despite his comments to the media, a report quickly emerged which suggested that Joao Pedro had been ruled out of the trip to the Gtech Community Stadium with a knee injury.” Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 17 Sep: “Pedro not ruled out Alonso first gave an update on his team ahead of the clash, revealing details on a number of players, including striker Joao Pedro , who missed training this weekend and missed out on the Brazil squad.” Fantasy Football Scout, 17 Sep: “He didn’t clarify what Joao Pedro ‘s injury is (reports suggest it’s a knee problem), either, and said it was possible that the striker could play tomorrow despite pulling out of the Brazil squad.”",
-   "developments": "Recent developments — RotoWire Soccer, 18 Sep: “ESPN Brasil's Bruno Andrade and Pedro Ivo Almeida report that Joao Pedro has swelling in the knee caused by a strain of the anterior cruciate and medial collateral ligaments, picked up in the draw with Hull City.” Fantasy Football Scout, 17 Sep: “Joao Pedro is the highest-owned player in the game at 74.0% ownership.” Sports Mole, 17 Sep: “The report alleges that Pedro is suffering from \"edema in his knee, caused by a sprain of the anterior cruciate and medial collateral ligaments\" during last weekend's game against Hull City.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 17 Sep: ““He is getting closer and tomorrow, we will take a final decision in the team and in the squad that is coming to Brentford.” – Xabi Alonso on Moises Caicedo Reece James , along with Caicedo and Pedro, missed training on Tuesday , and Alonso was asked why.” Sports Mole, 16 Sep: “Joao Pedro initially appeared to emerge from the frustrating Premier League fixture completely unscathed.”",
+   "case_against": "What argues against him: Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.” Soccerway, 18 Sep: “Chelsea are still without long-term absentees Jordan Henderson and Moises Caicedo, while Joao Pedro is a major doubt after withdrawing from Brazil duty.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.” Sports Mole, 18 Sep: “However, despite his comments to the media, a report quickly emerged which suggested that Joao Pedro had been ruled out of the trip to the Gtech Community Stadium with a knee injury.”",
+   "developments": "Recent developments — Sports Mole, 18 Sep: “Joao Pedro is expected to miss Friday's Premier League trip to the Gtech Community Stadium because of a knee problem suffered against Hull City.” Sports Mole, 18 Sep: “What he cannot necessarily reproduce is the combination of movement, creativity and positional flexibility that has made Joao Pedro central to the relationship between Cole Palmer and Morgan Rogers.” RotoWire Soccer, 18 Sep: “ESPN Brasil's Bruno Andrade and Pedro Ivo Almeida report that Joao Pedro has swelling in the knee caused by a strain of the anterior cruciate and medial collateral ligaments, picked up in the draw with Hull City.”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 17 Sep: “Joao Pedro is the highest-owned player in the game at 74.0% ownership.” Fantasy Football Scout, 17 Sep: ““He is getting closer and tomorrow, we will take a final decision in the team and in the squad that is coming to Brentford.” – Xabi Alonso on Moises Caicedo Reece James , along with Caicedo and Pedro, missed training on Tuesday , and Alonso was asked why.”",
    "confidence": "high",
-   "evidence_count": 61,
+   "evidence_count": 64,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
+    "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
     "https://www.rotowire.com/soccer/article/fpl-tips-joao-pedro-anthony-elanga-injury-updates-and-best-replacements-for-gw5-134689",
     "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-handed-another-major-injury-blow-ahead-of-brentford-game_605408.html",
@@ -2943,9 +2939,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/17/joao-pedro-james-caicedo-chelsea-injury-latest-for-fpl-gameweek-5",
     "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest",
     "https://www.soccerway.com/news/chelsea-s-joao-pedro-to-miss-brazil-s-friendlies-against-australia-india-with-injury/nsfSIWpT/",
-    "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html",
-    "https://www.evertonfc.com/news/2026/september/16/wolves-report/",
-    "https://www.fantasyfootballscout.co.uk/2026/09/16/joao-pedro-out-of-brazil-squad-with-reported-injury"
+    "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2965,6 +2959,52 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
+     "published": "2026-09-18T18:15:00+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
+     "published": "2026-09-18T17:54:55+02:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Chelsea are still without long-term absentees Jordan Henderson and Moises Caicedo, while Joao Pedro is a major doubt after withdrawing from Brazil duty.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
+     "published": "2026-09-18T17:54:55+02:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Joao Pedro is expected to miss Friday's Premier League trip to the Gtech Community Stadium because of a knee problem suffered against Hull City.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-chelsea-cannot-simply-replace-benzema-like-joao-pedro-with-danny-welbeck_605435.html",
+     "published": "2026-09-18T17:41:31+01:00",
+     "tone": "negative",
+     "topics": []
+    },
+    {
+     "text": "What he cannot necessarily reproduce is the combination of movement, creativity and positional flexibility that has made Joao Pedro central to the relationship between Cole Palmer and Morgan Rogers.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-chelsea-cannot-simply-replace-benzema-like-joao-pedro-with-danny-welbeck_605435.html",
+     "published": "2026-09-18T17:41:31+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.",
      "source": "RotoWire Soccer",
@@ -3545,7 +3585,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -3554,16 +3594,18 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
-    "https://www.football365.com/news/longest-goalless-starts-to-premier-league-season",
-    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-had-their-william-saliba-and-blew-it-luka-vuskovic-has-it-all",
-    "https://www.football365.com/match-preview/tottenham-v-aston-villa-prediction-preview",
-    "https://www.sportsmole.co.uk/football/aston-villa/predicted-lineups/abraham-or-jackson-barkley-or-gomes-predicted-villa-xi-vs-tottenham_605230.html",
-    "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/maddison-starts-mathys-dropped-predicted-tottenham-xi-vs-villa_605228.html",
-    "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-aston-villa-prediction-team-news-lineups_605218.html"
+    "https://www.fantasyfootballscout.co.uk/2026/09/18/porro-tonali-udogie-tottenham-injury-latest-for-fpl-gameweek-5",
+    "https://avfc.co.uk/news/2026/september/18/prematch-emery-previews-tottenham-tilt/",
+    "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/tottenham-vs-aston-villa-injury-suspension-list-predicted-xis_605232.html",
+    "https://www.101greatgoals.com/match-previews/tottenham-v-aston-villa-preview-expected-line-ups-stats-and-where-to-watch/",
+    "https://www.football365.com/news/longest-goalless-starts-to-premier-league-season"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
+    "Aston Villa",
+    "Fantasy Football Scout",
     "Football365",
-    "FourFourTwo FPL",
     "Sports Mole"
    ],
    "quotes": []

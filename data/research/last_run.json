@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-18T15:01:29+00:00",
- "seconds": 173.7,
+ "ran_at": "2026-09-18T19:40:46+00:00",
+ "seconds": 177.2,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 727,
- "substantive_items": 300,
- "duplicates_removed": 20,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 13796,
+ "sources_readable": 61,
+ "candidates_discovered": 672,
+ "substantive_items": 262,
+ "duplicates_removed": 22,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 13976,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 300 articles"
+    "61/78 sources returned 262 articles"
    ]
   },
   "blackout": {
@@ -37,21 +37,23 @@
   }
  },
  "failures": [
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -772,10 +774,10 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-18T09:30:00+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-09-18T15:00:03+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -784,6 +786,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -804,6 +807,24 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "Arsenal Predicted Lineup vs. Brighton: Saka Seeks More Goals at Favorite Stadium",
+     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-brighton-9-19-26?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-18T15:00:03+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "The Gunners have won all seven of their outings across all competitions this season."
+    },
+    {
+     "title": "Vuskovic, Mitoma, Hinshelwood: Brighton injury latest for FPL Gameweek 5",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/vuskovic-mitoma-hinshelwood-brighton-injury-latest-for-fpl-gameweek-5",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-18T13:45:23+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "The Seagulls came from behind to beat Man United in midweek The post Vuskovic, Mitoma, Hinshelwood: Brighton injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Brighton v Arsenal | Hürzeler pre-match press conference",
@@ -831,33 +852,15 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Brighton & Hove Albion could line up for Saturday's Premier League clash with Arsenal."
-    },
-    {
-     "title": "Brighton & Hove Albion vs Arsenal - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/preview/brighton-vs-arsenal-prediction-team-news-lineups_605233.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T10:48:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Brighton & Hove Albion and Arsenal, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Carrick sack coming as Man Utd players down tools after Brighton comeback",
-     "url": "https://www.football365.com/news/opinion-carrick-sack-man-utd-down-tools-brighton-comeback",
-     "source": "Football365",
-     "published": "2026-09-16T21:35:15+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Let’s not play this down. We know it’s early in the season. But that was an embarrassment from Man Utd. Carrick is already a dead man walking."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 40,
-   "source_count": 15,
-   "latest_evidence": "2026-09-18T14:26:47+00:00",
+   "evidence_count": 41,
+   "source_count": 16,
+   "latest_evidence": "2026-09-18T19:26:37+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -982,13 +985,13 @@
      "excerpt": "A report has claimed that two of Chelsea’s biggest stars are ready to move to Manchester United in the summer transfer window."
     },
     {
-     "title": "Thomas Tuchel sets Cole Palmer and Trent Alexander-Arnold a new challenge after England recalls",
-     "url": "https://www.fourfourtwo.com/person/player/thomas-tuchel-sets-cole-palmer-and-trent-alexander-arnold-a-new-challenge-after-england-recalls",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-18T14:26:47+00:00",
+     "title": "Tuchel vuelve a convocar a Trent y Palmer con Inglaterra, pero no a Foden",
+     "url": "https://www.si.com/mx/tuchel-vuelve-a-convocar-a-trent-y-palmer-con-inglaterra-pero-no-a-foden?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-18T19:26:37+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Thomas Tuchel has urged both Cole Palmer and Trent Alexander-Arnold to prove why they deserve to be in the England squad after both earned recalls. The Three Lions are due to play against Spain, Czechia and Croatia over the next three weeks, in what looks like an opportunity for them to prove a point of their own. At his squad announcement today, the England boss has said that both Palmer and Alex"
+     "excerpt": "El entrenador alemán que dirige a la selección inglesa, también dejó fuera a Ollie Watkins, Ivan Toney y Noni Madueke, quienes estuvieron en el Mundial 2026."
     }
    ]
   },
@@ -1135,9 +1138,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 61,
+   "evidence_count": 64,
    "source_count": 15,
-   "latest_evidence": "2026-09-18T14:06:00+00:00",
+   "latest_evidence": "2026-09-18T18:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1162,6 +1165,24 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Brentford v Chelsea team news: Sangare benched, no Pedro",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-18T18:15:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Two changes for Brentford, five for Chelsea The post Brentford v Chelsea team news: Sangare benched, no Pedro appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Who's Missing: Chelsea's Joao Pedro injured, Foden suspended for Man City",
+     "url": "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
+     "source": "Soccerway",
+     "published": "2026-09-18T17:54:55+02:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "FPL Tips: Joao Pedro & Anthony Elanga Injury Updates and Best Replacements for GW5",
      "url": "https://www.rotowire.com/soccer/article/fpl-tips-joao-pedro-anthony-elanga-injury-updates-and-best-replacements-for-gw5-134689",
@@ -1251,24 +1272,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "How many games will Joao Pedro miss for Chelsea after withdrawal from Brazil's squad for the September international break?"
-    },
-    {
-     "title": "Alcaraz Strikes Late To Seal Cup Progress For Blues",
-     "url": "https://www.evertonfc.com/news/2026/september/16/wolves-report/",
-     "source": "Everton",
-     "published": "2026-09-16T20:40:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Patience paid off for Everton as a largely dominant display was rewarded with Charly Alcaraz's 80th-minute winner to see off Wolves 1-0 in the Carabao Cup third round at Hill Dickinson Stadium. Tyler Dibling caught the eye all night and fittingly got the crucial assist, squaring for substitute Alcaraz to take a touch and fire past former Toffees keeper Joao Virginia. Virginia has been excellent in"
-    },
-    {
-     "title": "Joao Pedro out of Brazil squad with reported injury",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/16/joao-pedro-out-of-brazil-squad-with-reported-injury",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-16T18:30:00+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "The striker's withdrawal casts doubt on his Gameweek 5 availability The post Joao Pedro out of Brazil squad with reported injury appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -1370,9 +1373,9 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-18T06:45:11+00:00",
-   "official_source_found": false,
+   "source_count": 5,
+   "latest_evidence": "2026-09-18T13:55:17+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1381,9 +1384,11 @@
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1395,6 +1400,51 @@
    "researched": true,
    "items": [
     {
+     "title": "Porro, Tonali, Udogie: Tottenham injury latest for FPL Gameweek 5",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/porro-tonali-udogie-tottenham-injury-latest-for-fpl-gameweek-5",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-18T13:55:17+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Roberto De Zerbi made changes in midweek The post Porro, Tonali, Udogie: Tottenham injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Emery previews Tottenham tilt",
+     "url": "https://avfc.co.uk/news/2026/september/18/prematch-emery-previews-tottenham-tilt/",
+     "source": "Aston Villa",
+     "published": "2026-09-18T13:40:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 Unai Emery met with the media on Friday afternoon to look ahead to Aston Villa’s Premier League clash with Tottenham Hotspur. The Villans visit the capital on Saturday (ko 12.30pm), looking to secure back-to-back victories after Wednesday’s Carabao Cup triumph over Coventry City. And Emery sat before the local and national media "
+    },
+    {
+     "title": "Team news for Spurs showdown",
+     "url": "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
+     "source": "Aston Villa",
+     "published": "2026-09-18T13:15:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes is set to return to Aston Villa’s squad for Saturday’s Premier League trip to Tottenham Hotspur but Marco Bizot joins a lengthy injury list. Gomes has completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening day of the season and is poised to be back in the fold in north London"
+    },
+    {
+     "title": "Tottenham vs. Aston Villa injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/tottenham-vs-aston-villa-injury-suspension-list-predicted-xis_605232.html",
+     "source": "Sports Mole",
+     "published": "2026-09-18T12:30:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday's Premier League fixture between Tottenham Hotspur and Aston Villa."
+    },
+    {
+     "title": "Tottenham v Aston Villa: Preview, expected line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/tottenham-v-aston-villa-preview-expected-line-ups-stats-and-where-to-watch/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-18T09:53:15+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham face Aston Villa in the Premier League on Saturday. Read our in-depth preview here."
+    },
+    {
      "title": "Spurs – and Souness – shamed by the longest-ever goalless starts to a Premier League season",
      "url": "https://www.football365.com/news/longest-goalless-starts-to-premier-league-season",
      "source": "Football365",
@@ -1402,51 +1452,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Only one Premier League team has ever gone more games without scoring at the start of a season than Coventry and £300m spenders Spurs. These are the longest goal droughts from the start of a…"
-    },
-    {
-     "title": "Tottenham Hotspur had their William Saliba and blew it - Luka Vuskovic has it all",
-     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-had-their-william-saliba-and-blew-it-luka-vuskovic-has-it-all",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-18T06:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur are one of two teams without a Premier League goal this season. Four matches in, only Spurs and promoted Coventry City are still goalless. It's the worst-ever start to a Spurs season in goalscoring terms but they have at least conceded half as many as the Sky Blues. New signing Jan Paul van Hecke is one of the reasons the major problem appears to be at the attacking end of the pi"
-    },
-    {
-     "title": "Tottenham v Aston Villa: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/tottenham-v-aston-villa-prediction-preview",
-     "source": "Football365",
-     "published": "2026-09-17T19:02:49+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Tottenham and Aston Villa."
-    },
-    {
-     "title": "Aston Villa lineup vs. Tottenham: Predicted XI as Tammy Abraham starts Premier League battle",
-     "url": "https://www.sportsmole.co.uk/football/aston-villa/predicted-lineups/abraham-or-jackson-barkley-or-gomes-predicted-villa-xi-vs-tottenham_605230.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T10:28:37+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Aston Villa could line up for Saturday's Premier League clash with Tottenham Hotspur."
-    },
-    {
-     "title": "Tottenham lineup vs. Aston Villa: Predicted XI as James Maddison starts, Mathys Tel dropped for Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/maddison-starts-mathys-dropped-predicted-tottenham-xi-vs-villa_605228.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T10:18:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League clash with Aston Villa."
-    },
-    {
-     "title": "Tottenham Hotspur vs Aston Villa - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-aston-villa-prediction-team-news-lineups_605218.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T10:17:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Tottenham Hotspur and Aston Villa, including predictions, team news and possible lineups."
     }
    ]
   },
