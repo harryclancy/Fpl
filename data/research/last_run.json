@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 5,
- "ran_at": "2026-09-18T01:18:47+00:00",
- "seconds": 151.1,
+ "ran_at": "2026-09-18T09:50:02+00:00",
+ "seconds": 141.0,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 742,
- "substantive_items": 312,
- "duplicates_removed": 26,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 13410,
+ "sources_readable": 65,
+ "candidates_discovered": 687,
+ "substantive_items": 267,
+ "duplicates_removed": 17,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 13591,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 312 articles"
+    "65/78 sources returned 267 articles"
    ]
   },
   "blackout": {
@@ -37,13 +37,12 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
+  "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
@@ -854,9 +853,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 33,
-   "source_count": 12,
-   "latest_evidence": "2026-09-17T20:47:11-04:00",
+   "evidence_count": 38,
+   "source_count": 15,
+   "latest_evidence": "2026-09-18T11:23:32+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -881,6 +880,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "England squad announcement LIVE: Thomas Tuchel makes Cole Palmer, Trent Alexander-Arnold decisions for Nations League",
+     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html",
+     "source": "Sports Mole",
+     "published": "2026-09-18T09:34:00+01:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Follow Sports Mole's live blog of Thomas Tuchel's England squad announcement, as the Three Lions boss names his September/October Nations League group."
+    },
     {
      "title": "Chelsea are scoring for fun but there's one bad habit Xabi Alonso needs to break to turn them into contenders",
      "url": "https://www.fourfourtwo.com/team/chelsea-are-scoring-for-fun-but-theres-one-bad-habit-xabi-alonso-needs-to-break-to-turn-them-into-contenders",
@@ -972,22 +980,13 @@
      "excerpt": "A report has claimed that two of Chelsea’s biggest stars are ready to move to Manchester United in the summer transfer window."
     },
     {
-     "title": "Josh Palmer scores his second TD of the season on his second catch",
-     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/josh-palmer-scores-his-second-td-of-the-season-on-his-second-catch",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-17T20:47:11-04:00",
+     "title": "Alexander-Arnold named in England squad alongside Palmer, Branthwaite & Ngumoha",
+     "url": "https://www.soccerway.com/news/alexander-arnold-named-in-england-squad-alongside-palmer-branthwaite-ngumoha/8niOpdmL/",
+     "source": "Soccerway",
+     "published": "2026-09-18T11:23:32+02:00",
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Palmer set for England call-up with two uncapped stars as Tuchel considers five exciting talents",
-     "url": "https://www.football365.com/news/palmer-set-england-call-up-two-uncapped-stars-tuchel-considers-five-exciting-talents",
-     "source": "Football365",
-     "published": "2026-09-17T20:37:34+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "According to reports, Chelsea star Cole Palmer is ‘set’ to be part of England’s squad for this international break with two uncapped players."
     }
    ]
   },
@@ -1370,7 +1369,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-09-17T10:28:37+01:00",
+   "latest_evidence": "2026-09-17T19:02:49+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1378,14 +1377,11 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": true,
+   "fixtures_assessed": false,
    "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
     "injury",
     "match report",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1395,6 +1391,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham v Aston Villa: Prediction, team news, lineups and odds",
+     "url": "https://www.football365.com/match-preview/tottenham-v-aston-villa-prediction-preview",
+     "source": "Football365",
+     "published": "2026-09-17T19:02:49+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Premier League clash between Tottenham and Aston Villa."
+    },
     {
      "title": "Aston Villa lineup vs. Tottenham: Predicted XI as Tammy Abraham starts Premier League battle",
      "url": "https://www.sportsmole.co.uk/football/aston-villa/predicted-lineups/abraham-or-jackson-barkley-or-gomes-predicted-villa-xi-vs-tottenham_605230.html",
@@ -1439,15 +1444,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "San Antonio Spurs star Dylan Harper plans to take everything ahead of him in stride. Whether he starts or comes off the bench, he's trusting the network around him."
-    },
-    {
-     "title": "Liverpool v Tottenham: Preview, expected line-ups and stats",
-     "url": "https://www.101greatgoals.com/match-previews/liverpool-v-tottenham-efl-cup-line-ups-stats-preview-tv-channel-live-online-stream-carabao-spurs/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-15T11:17:37+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Preview as Liverpool host Tottenham in the EFL Cup last 32"
     }
    ]
   },
@@ -1567,18 +1563,19 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 20,
-   "source_count": 5,
-   "latest_evidence": "2026-09-14T10:00:50+01:00",
-   "official_source_found": false,
+   "evidence_count": 21,
+   "source_count": 6,
+   "latest_evidence": "2026-09-18T09:00:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": false,
+   "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "injury",
     "press conference",
     "set pieces",
