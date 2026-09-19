@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-19T01:14:02+00:00",
- "seconds": 164.6,
+ "ran_at": "2026-09-19T09:34:37+00:00",
+ "seconds": 153.7,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 622,
- "substantive_items": 219,
- "duplicates_removed": 8,
- "deeply_analysed": 88,
- "deep_read_failed": 2,
- "corpus_size": 14120,
+ "sources_readable": 62,
+ "candidates_discovered": 598,
+ "substantive_items": 185,
+ "duplicates_removed": 15,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 14231,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 219 articles"
+    "62/78 sources returned 185 articles"
    ]
   },
   "blackout": {
@@ -40,18 +40,19 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -472,9 +473,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 18,
+   "evidence_count": 19,
    "source_count": 9,
-   "latest_evidence": "2026-09-16T13:45:00+00:00",
+   "latest_evidence": "2026-09-19T06:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -581,6 +582,15 @@
      "excerpt": "Watch Liverpool vs Nottingham Forest as both teams go in search of a first win of the new Premier League season. Want to watch the game for FREE and in full? FourFourTwo is providing you with all the details on live streams and TV channels, wherever you are in the world. Liverpool vs Nottingham Forest: key information Kick-off time: 12:30pm BST / 7:30am ET / 9:30pm AEST FREE Stream: CazeTV's YouTu"
     },
     {
+     "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
+     "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-19T06:00:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "I’ll start today by looking back at that brilliant goal from Dominik Szoboszlai in an important 3-1 win for Liverpool against Tottenham. I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai. He's got one of the best techniques I've seen in Europe at the moment, when you consider his ability in shooting from distance. He jus"
+    },
+    {
      "title": "Iraola hails Szoboszlai after rocket seals Liverpool’s win over Tottenham",
      "url": "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/",
      "source": "101 Great Goals — Fantasy",
@@ -597,15 +607,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Liverpool were made to work hard before the tie was settled in stunning fashion."
-    },
-    {
-     "title": "Iraola told to drop big-money Liverpool signing and promote superstar to advanced role",
-     "url": "https://www.football365.com/news/liverpool-iraola-wirtz-nicol-drop-promote-szoboszlai",
-     "source": "Football365",
-     "published": "2026-09-14T08:03:02+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Steve Nicol reckons Liverpool boss Andoni Iraola should drop Florian Wirtz to the bench and push Dominik Szoboszlai further forward."
     }
    ]
   },
@@ -1390,7 +1391,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-18T15:33:45+00:00",
+   "latest_evidence": "2026-09-19T06:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1405,6 +1406,7 @@
     "injury",
     "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1460,13 +1462,13 @@
      "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday's Premier League fixture between Tottenham Hotspur and Aston Villa."
     },
     {
-     "title": "Tottenham v Aston Villa: Preview, expected line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/tottenham-v-aston-villa-preview-expected-line-ups-stats-and-where-to-watch/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-18T09:53:15+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham face Aston Villa in the Premier League on Saturday. Read our in-depth preview here."
+     "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
+     "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-19T06:00:00+00:00",
+     "matched_on": "dubravka",
+     "kind": "general",
+     "excerpt": "I’ll start today by looking back at that brilliant goal from Dominik Szoboszlai in an important 3-1 win for Liverpool against Tottenham. I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai. He's got one of the best techniques I've seen in Europe at the moment, when you consider his ability in shooting from distance. He jus"
     }
    ]
   },
