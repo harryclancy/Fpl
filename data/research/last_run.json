@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
- "gameweek": 5,
- "ran_at": "2026-09-18T19:40:46+00:00",
- "seconds": 177.2,
+ "gameweek": 6,
+ "ran_at": "2026-09-19T01:14:02+00:00",
+ "seconds": 164.6,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 672,
- "substantive_items": 262,
- "duplicates_removed": 22,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 13976,
+ "sources_readable": 63,
+ "candidates_discovered": 622,
+ "substantive_items": 219,
+ "duplicates_removed": 8,
+ "deeply_analysed": 88,
+ "deep_read_failed": 2,
+ "corpus_size": 14120,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 262 articles"
+    "63/78 sources returned 219 articles"
    ]
   },
   "blackout": {
@@ -37,7 +37,6 @@
   }
  },
  "failures": [
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
@@ -47,7 +46,6 @@
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -196,13 +194,13 @@
     }
    ]
   },
-  "De Cuyper": {
-   "player": "De Cuyper",
-   "club": "BHA",
-   "evidence_count": 5,
-   "source_count": 3,
-   "latest_evidence": "2026-09-16T16:00:04+00:00",
-   "official_source_found": false,
+  "Muharemović": {
+   "player": "Muharemović",
+   "club": "LEE",
+   "evidence_count": 3,
+   "source_count": 2,
+   "latest_evidence": "2026-09-11T08:25:33+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -215,59 +213,40 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
     {
-     "title": "FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-13T20:30:00+00:00",
-     "matched_on": "de cuyper",
+     "title": "'Bukayo Saka is the standout attacking option right now with strong fixtures and penalty duty' Expert tips for playing the perfect FPL Wildcard in Gameweek 4",
+     "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-11T08:25:33+00:00",
+     "matched_on": "muharemovic",
      "kind": "team news",
-     "excerpt": "Coventry are yet to score this season, having lost all four matches The post FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
     },
     {
-     "title": "Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-11T14:43:04+00:00",
-     "matched_on": "de cuyper",
-     "kind": "team news",
-     "excerpt": "News that might affect Maxim De Cuyper The post Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: £4.5m midfielder stars again + another De Cuyper return",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-07T02:00:00+00:00",
-     "matched_on": "de cuyper",
-     "kind": "team news",
-     "excerpt": "Luka Vuskovic hauls and Dominic Calvert-Lewin spurns big chances in Brighton 1-1 Leeds The post FPL notes: £4.5m midfielder stars again + another De Cuyper return appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
-     "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-16T16:00:04+00:00",
-     "matched_on": "de cuyper",
-     "kind": "transfer",
-     "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
-    },
-    {
-     "title": "Maxim de cuyper fpl 2026 27",
-     "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
-     "source": "OneFPL",
+     "title": "Tarik muharemovic we have to be ready",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
+     "source": "Leeds United",
      "published": "",
-     "matched_on": "de cuyper",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic picks up seasons first hero of the month award",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
      "kind": "general",
      "excerpt": ""
     }
@@ -770,12 +749,12 @@
     }
    ]
   },
-  "Groß": {
-   "player": "Groß",
-   "club": "BHA",
-   "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-18T15:00:03+00:00",
+  "Barnes": {
+   "player": "Barnes",
+   "club": "NEW",
+   "evidence_count": 10,
+   "source_count": 6,
+   "latest_evidence": "2026-09-18T11:59:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -791,67 +770,104 @@
     "match report",
     "press conference",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
-     "title": "Clark signs first professional contract with Villa",
-     "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
-     "source": "Aston Villa",
-     "published": "2026-09-13T10:00:00+00:00",
-     "matched_on": "gro",
-     "kind": "transfer",
-     "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
-    },
-    {
-     "title": "Arsenal Predicted Lineup vs. Brighton: Saka Seeks More Goals at Favorite Stadium",
-     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-brighton-9-19-26?utm_source=RSS",
+     "title": "Kentucky expects RB Jovantae Barnes to return against Alabama",
+     "url": "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
      "source": "Sports Illustrated FPL",
-     "published": "2026-09-18T15:00:03+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "The Gunners have won all seven of their outings across all competitions this season."
+     "published": "2026-09-09T23:10:24+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Barnes has delt with an undisclosed injury since the spring."
     },
     {
-     "title": "Vuskovic, Mitoma, Hinshelwood: Brighton injury latest for FPL Gameweek 5",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/vuskovic-mitoma-hinshelwood-brighton-injury-latest-for-fpl-gameweek-5",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-18T13:45:23+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "The Seagulls came from behind to beat Man United in midweek The post Vuskovic, Mitoma, Hinshelwood: Brighton injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "title": "Newcastle United demonstrated the power of the twelfth man – can Aston Villa overcome the empty North Stand?",
+     "url": "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-07T16:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Newcastle United found themselves in a hole against Bournemouth when they met in the Premier League last weekend. Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler. Eventually, Jacob Ramsey added a second to salvage a point. Anecdotally, it was one of those days when it"
     },
     {
-     "title": "Brighton v Arsenal | Hürzeler pre-match press conference",
-     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-arsenal-or-huerzeler-pre-match-press-conference",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-18T09:30:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "🎬 Brighton v Arsenal | Hürzeler pre-match press conference"
+     "title": "Honours even following pulsating draw at St James' Park",
+     "url": "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
+     "source": "AFC Bournemouth",
+     "published": "2026-09-05T13:25:00+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
     },
     {
-     "title": "Arsenal lineup vs. Brighton: Predicted XI as Bruno Guimaraes makes first Premier League start",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/guimaraes-starts-timber-decision-predicted-arsenal-xi-vs-brighton_605238.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T10:56:49+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Saturday's Premier League clash with Brighton & Hove Albion."
+     "title": "Game4Hope Set For Goodison Park As Legends Return To Grand Old Lady",
+     "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
+     "source": "Everton",
+     "published": "2026-09-18T11:59:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Game4Hope will now take place at Goodison Park on Saturday 26 September, giving some of football’s biggest names – and a host of Everton and Liverpool favourite – the opportunity to return to one of the sport’s most iconic stadiums. The inaugural charity fixture, which will raise vital funds and awareness in the fight against homelessness, will see Tim Cahill’s star-studded Merseyside XI take on a"
     },
     {
-     "title": "Brighton lineup vs. Arsenal: Predicted XI as Fabian Hurzeler makes six changes from Man United win",
-     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/six-seagulls-changes-predicted-brighton-xi-vs-arsenal_605237.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T10:56:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Brighton & Hove Albion could line up for Saturday's Premier League clash with Arsenal."
+     "title": "FPL Gameweek 5 tips: Touré's personal milestone and a good time to buy Barnes",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
+     "source": "Newcastle United",
+     "published": "2026-09-17T12:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "What's Next for Raptors After Kawhi Leonard Trade?",
+     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-15T11:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
+    },
+    {
+     "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
+     "source": "Newcastle United",
+     "published": "2026-09-11T10:30:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Everton Icon Cahill To Return Alongside Brazil Great Rivaldo At Hill Dickinson Stadium",
+     "url": "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
+     "source": "Everton",
+     "published": "2026-09-10T08:59:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Everton icon Tim Cahill is set to grace Hill Dickinson Stadium as captain of Team Merseyside at #Game4Hope . And the Blues favourite is going head-to-head with Ballon d’Or and World Cup winner Rivaldo at the star-studded charity game on Saturday 26 September (4.45pm BST kick-off). An all-star Merseyside XI made up of Everton and Liverpool legends takes on a Rest of the World XI as football unites "
+    },
+    {
+     "title": "Gallery: Tav strikes again on Tyneside but Magpies grab a point",
+     "url": "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
+     "source": "AFC Bournemouth",
+     "published": "2026-09-05T14:10:34+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Marcus Tavernier made it two goals from as many games on the road in the Premier League this season, as AFC Bournemouth drew 2-2 with Newcastle at St James’ Park. The 27-year-old, who was on the books at Newcastle as a youngster, struck within nine minutes of the draw on Tyneside. It made it a hat-trick of goals for Tavernier at St James’ Park in the past nine months, while an own goal from Malick"
+    },
+    {
+     "title": "Barnes hits beauty but Bournemouth dominate at Newcastle",
+     "url": "https://www.101greatgoals.com/news/barnes-hits-beauty-but-bournemouth-dominate-at-newcastle/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-05T12:19:07+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Three goals in a thrilling first half"
     }
    ]
   },
@@ -998,9 +1014,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 76,
+   "evidence_count": 77,
    "source_count": 17,
-   "latest_evidence": "2026-09-18T13:11:41+00:00",
+   "latest_evidence": "2026-09-18T23:09:07+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1125,22 +1141,22 @@
      "excerpt": ""
     },
     {
-     "title": "Manchester City transfer news: Erling Haaland exit date becoming increasingly clear?",
-     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/erling-haaland-exit-date-becoming-increasingly-clear_605211.html",
+     "title": "Cristiano Ronaldo, Lionel Messi, Erling Haaland and Kylian Mbappe top football's biggest sponsorship deals",
+     "url": "https://www.sportsmole.co.uk/football/feature/biggest-player-sponsorship-deals-in-football-history_605454.html",
      "source": "Sports Mole",
-     "published": "2026-09-16T07:18:07+01:00",
+     "published": "2026-09-18T23:09:07+01:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "Erling Haaland has been at Manchester City since 2022. The question now is how much longer the Norwegian will stay."
+     "excerpt": "Mbappe stunned football by ditching Nike for Swiss brand On in a landmark 2026 deal. See how it compares to Beckham, Ronaldo, Messi, Neymar and Haaland's biggest boot sponsorships"
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 64,
+   "evidence_count": 65,
    "source_count": 15,
-   "latest_evidence": "2026-09-18T18:15:00+00:00",
+   "latest_evidence": "2026-09-19T00:05:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1165,6 +1181,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Pedro injury latest + why Sangare was benched",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-19T00:05:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "FPL lessons from Brentford 3-0 Chelsea The post FPL notes: Pedro injury latest + why Sangare was benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Brentford v Chelsea team news: Sangare benched, no Pedro",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
@@ -1263,15 +1288,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": ""
-    },
-    {
-     "title": "Joao Pedro injury: How many games will Chelsea and Brazil forward miss after withdrawing from Selecao squad?",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html",
-     "source": "Sports Mole",
-     "published": "2026-09-16T21:47:00+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "How many games will Joao Pedro miss for Chelsea after withdrawal from Brazil's squad for the September international break?"
     }
    ]
   },
@@ -1373,8 +1389,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-18T13:55:17+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-18T15:33:45+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1389,7 +1405,6 @@
     "injury",
     "match report",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1399,6 +1414,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham v Aston Villa predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/tottenham-v-aston-villa-predicted-line-ups-fpl-team-news-2",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-18T15:33:45+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Tottenham v Aston Villa predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Porro, Tonali, Udogie: Tottenham injury latest for FPL Gameweek 5",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/porro-tonali-udogie-tottenham-injury-latest-for-fpl-gameweek-5",
@@ -1443,137 +1467,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham face Aston Villa in the Premier League on Saturday. Read our in-depth preview here."
-    },
-    {
-     "title": "Spurs – and Souness – shamed by the longest-ever goalless starts to a Premier League season",
-     "url": "https://www.football365.com/news/longest-goalless-starts-to-premier-league-season",
-     "source": "Football365",
-     "published": "2026-09-18T06:45:11+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Only one Premier League team has ever gone more games without scoring at the start of a season than Coventry and £300m spenders Spurs. These are the longest goal droughts from the start of a…"
-    }
-   ]
-  },
-  "Barnes": {
-   "player": "Barnes",
-   "club": "NEW",
-   "evidence_count": 10,
-   "source_count": 6,
-   "latest_evidence": "2026-09-18T11:59:00+00:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "Kentucky expects RB Jovantae Barnes to return against Alabama",
-     "url": "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-09T23:10:24+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Barnes has delt with an undisclosed injury since the spring."
-    },
-    {
-     "title": "Newcastle United demonstrated the power of the twelfth man – can Aston Villa overcome the empty North Stand?",
-     "url": "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-07T16:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Newcastle United found themselves in a hole against Bournemouth when they met in the Premier League last weekend. Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler. Eventually, Jacob Ramsey added a second to salvage a point. Anecdotally, it was one of those days when it"
-    },
-    {
-     "title": "Honours even following pulsating draw at St James' Park",
-     "url": "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
-     "source": "AFC Bournemouth",
-     "published": "2026-09-05T13:25:00+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
-    },
-    {
-     "title": "Game4Hope Set For Goodison Park As Legends Return To Grand Old Lady",
-     "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
-     "source": "Everton",
-     "published": "2026-09-18T11:59:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Game4Hope will now take place at Goodison Park on Saturday 26 September, giving some of football’s biggest names – and a host of Everton and Liverpool favourite – the opportunity to return to one of the sport’s most iconic stadiums. The inaugural charity fixture, which will raise vital funds and awareness in the fight against homelessness, will see Tim Cahill’s star-studded Merseyside XI take on a"
-    },
-    {
-     "title": "FPL Gameweek 5 tips: Touré's personal milestone and a good time to buy Barnes",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-     "source": "Newcastle United",
-     "published": "2026-09-17T12:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "What's Next for Raptors After Kawhi Leonard Trade?",
-     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-15T11:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
-    },
-    {
-     "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-     "source": "Newcastle United",
-     "published": "2026-09-11T10:30:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Everton Icon Cahill To Return Alongside Brazil Great Rivaldo At Hill Dickinson Stadium",
-     "url": "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
-     "source": "Everton",
-     "published": "2026-09-10T08:59:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Everton icon Tim Cahill is set to grace Hill Dickinson Stadium as captain of Team Merseyside at #Game4Hope . And the Blues favourite is going head-to-head with Ballon d’Or and World Cup winner Rivaldo at the star-studded charity game on Saturday 26 September (4.45pm BST kick-off). An all-star Merseyside XI made up of Everton and Liverpool legends takes on a Rest of the World XI as football unites "
-    },
-    {
-     "title": "Gallery: Tav strikes again on Tyneside but Magpies grab a point",
-     "url": "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
-     "source": "AFC Bournemouth",
-     "published": "2026-09-05T14:10:34+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Marcus Tavernier made it two goals from as many games on the road in the Premier League this season, as AFC Bournemouth drew 2-2 with Newcastle at St James’ Park. The 27-year-old, who was on the books at Newcastle as a youngster, struck within nine minutes of the draw on Tyneside. It made it a hat-trick of goals for Tavernier at St James’ Park in the past nine months, while an own goal from Malick"
-    },
-    {
-     "title": "Barnes hits beauty but Bournemouth dominate at Newcastle",
-     "url": "https://www.101greatgoals.com/news/barnes-hits-beauty-but-bournemouth-dominate-at-newcastle/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-05T12:19:07+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Three goals in a thrilling first half"
     }
    ]
   },
@@ -1713,12 +1606,12 @@
     }
    ]
   },
-  "Muharemović": {
-   "player": "Muharemović",
-   "club": "LEE",
-   "evidence_count": 3,
-   "source_count": 2,
-   "latest_evidence": "2026-09-11T08:25:33+00:00",
+  "Groß": {
+   "player": "Groß",
+   "club": "BHA",
+   "evidence_count": 6,
+   "source_count": 5,
+   "latest_evidence": "2026-09-18T15:35:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1732,40 +1625,145 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
     {
-     "title": "'Bukayo Saka is the standout attacking option right now with strong fixtures and penalty duty' Expert tips for playing the perfect FPL Wildcard in Gameweek 4",
-     "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-11T08:25:33+00:00",
-     "matched_on": "muharemovic",
+     "title": "Clark signs first professional contract with Villa",
+     "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+     "source": "Aston Villa",
+     "published": "2026-09-13T10:00:00+00:00",
+     "matched_on": "gro",
+     "kind": "transfer",
+     "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "Brighton v Arsenal predicted line-ups + FPL team news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brighton-v-arsenal-predicted-line-ups-fpl-team-news-2",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-18T15:35:19+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Team form, absentees and our predicted XIs The post Brighton v Arsenal predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal Predicted Lineup vs. Brighton: Saka Seeks More Goals at Favorite Stadium",
+     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-brighton-9-19-26?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-18T15:00:03+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "The Gunners have won all seven of their outings across all competitions this season."
+    },
+    {
+     "title": "Vuskovic, Mitoma, Hinshelwood: Brighton injury latest for FPL Gameweek 5",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/vuskovic-mitoma-hinshelwood-brighton-injury-latest-for-fpl-gameweek-5",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-18T13:45:23+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "The Seagulls came from behind to beat Man United in midweek The post Vuskovic, Mitoma, Hinshelwood: Brighton injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Brighton v Arsenal | Hürzeler pre-match press conference",
+     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-arsenal-or-huerzeler-pre-match-press-conference",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-09-18T09:30:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "🎬 Brighton v Arsenal | Hürzeler pre-match press conference"
+    },
+    {
+     "title": "Arsenal lineup vs. Brighton: Predicted XI as Bruno Guimaraes makes first Premier League start",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/guimaraes-starts-timber-decision-predicted-arsenal-xi-vs-brighton_605238.html",
+     "source": "Sports Mole",
+     "published": "2026-09-17T10:56:49+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Saturday's Premier League clash with Brighton & Hove Albion."
+    }
+   ]
+  },
+  "De Cuyper": {
+   "player": "De Cuyper",
+   "club": "BHA",
+   "evidence_count": 5,
+   "source_count": 3,
+   "latest_evidence": "2026-09-16T16:00:04+00:00",
+   "official_source_found": false,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "match report",
+    "press conference",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "good",
+   "priority": "normal",
+   "researched": true,
+   "items": [
+    {
+     "title": "FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-13T20:30:00+00:00",
+     "matched_on": "de cuyper",
      "kind": "team news",
-     "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
+     "excerpt": "Coventry are yet to score this season, having lost all four matches The post FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Tarik muharemovic we have to be ready",
-     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
+     "title": "Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-11T14:43:04+00:00",
+     "matched_on": "de cuyper",
+     "kind": "team news",
+     "excerpt": "News that might affect Maxim De Cuyper The post Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Muharemovic picks up seasons first hero of the month award",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
-     "source": "Leeds United",
+     "title": "FPL notes: £4.5m midfielder stars again + another De Cuyper return",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-07T02:00:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "team news",
+     "excerpt": "Luka Vuskovic hauls and Dominic Calvert-Lewin spurns big chances in Brighton 1-1 Leeds The post FPL notes: £4.5m midfielder stars again + another De Cuyper return appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
+     "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
+     "source": "Fantasy Football Hub",
+     "published": "2026-09-16T16:00:04+00:00",
+     "matched_on": "de cuyper",
+     "kind": "transfer",
+     "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
+    },
+    {
+     "title": "Maxim de cuyper fpl 2026 27",
+     "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
+     "source": "OneFPL",
      "published": "",
-     "matched_on": "muharemovic",
+     "matched_on": "de cuyper",
      "kind": "general",
      "excerpt": ""
     }

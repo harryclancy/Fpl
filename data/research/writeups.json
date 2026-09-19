@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-18T19:40:46+00:00",
- "gameweek": 5,
- "corpus_size": 13976,
+ "generated": "2026-09-19T01:14:02+00:00",
+ "gameweek": 6,
+ "corpus_size": 14120,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -274,96 +274,37 @@
     }
    ]
   },
-  "De Cuyper": {
-   "player": "De Cuyper",
-   "club": "BHA",
-   "status": "Latest on De Cuyper — Fantasy Football Scout, 13 Sep: “Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £4.9m as a DEF. The selection rests on 5 retrieved item(s) from 3 source(s), the most recent dated 13 Sep.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 07 Sep: “So, that’s very positive and hopefully he can continue like this.” – Fabian Hurzeler on Malick Yalcouye ANOTHER DE CUYPER RETURN AS VUSKOVIC HAULS Maxim De Cuyper (£4.7m), again playing on the left wing, salvaged a return despite a booking and clean sheet loss.”",
+  "Muharemović": {
+   "player": "Muharemović",
+   "club": "LEE",
+   "status": "Latest on Muharemović — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
+   "why_here": "Muharemović is in the starting eleven this week at £5.0m as a DEF. The selection rests on 3 retrieved item(s) from 2 source(s), the most recent dated 11 Sep.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.”",
-   "developments": "Recent developments — Fantasy Football Scout, 11 Sep: ““I expect him more after the international break.” – Fabian Hurzeler on Kaoru Mitoma That’s good short-term news for the ‘out of position’ Maxim De Cuyper , then.” Fantasy Football Scout, 11 Sep: “So, overall, I’m happy with his performances and hopefully, he can keep going like this.” – Fabian Hurzeler on Maxim De Cuyper £4.5m midfielder Malick Yalcouye looks set to be heavily involved again on Sunday.”",
-   "outlook": "On the coming weeks — OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.” OneFPL: “De Cuyper is a defender in FPL but is regularly used in advanced areas.”",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Recent developments — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
+   "outlook": "On the coming weeks — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
    "confidence": "high",
-   "evidence_count": 5,
+   "evidence_count": 3,
    "evidence_used": [
-    "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
-    "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-    "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
-    "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
-    "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27"
+    "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
+    "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
+    "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award"
    ],
    "sources_used": [
-    "Fantasy Football Hub",
-    "Fantasy Football Scout",
-    "OneFPL"
+    "FourFourTwo FPL",
+    "Leeds United"
    ],
    "quotes": [
     {
-     "text": "Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
-     "published": "2026-09-13T20:30:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "team news",
-      "tactics"
-     ]
-    },
-    {
-     "text": "Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
-     "published": "2026-09-13T20:30:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "suspension"
-     ]
-    },
-    {
-     "text": "“I expect him more after the international break.” – Fabian Hurzeler on Kaoru Mitoma That’s good short-term news for the ‘out of position’ Maxim De Cuyper , then.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-     "published": "2026-09-11T14:43:04+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "So, overall, I’m happy with his performances and hopefully, he can keep going like this.” – Fabian Hurzeler on Maxim De Cuyper £4.5m midfielder Malick Yalcouye looks set to be heavily involved again on Sunday.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-     "published": "2026-09-11T14:43:04+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "So, that’s very positive and hopefully he can continue like this.” – Fabian Hurzeler on Malick Yalcouye ANOTHER DE CUYPER RETURN AS VUSKOVIC HAULS Maxim De Cuyper (£4.7m), again playing on the left wing, salvaged a return despite a booking and clean sheet loss.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
-     "published": "2026-09-07T02:00:00+00:00",
+     "text": "Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
+     "published": "2026-09-11T08:25:33+00:00",
      "tone": "positive",
      "topics": [
-      "fixtures"
-     ]
-    },
-    {
-     "text": "Why De Cuyper is valuable in FPL His classification is the key.",
-     "source": "OneFPL",
-     "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
-     "published": "",
-     "tone": "neutral",
-     "topics": [
-      "fpl advice"
-     ]
-    },
-    {
-     "text": "De Cuyper is a defender in FPL but is regularly used in advanced areas.",
-     "source": "OneFPL",
-     "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
-     "published": "",
-     "tone": "neutral",
-     "topics": [
-      "fpl advice"
+      "set pieces",
+      "statistics"
      ]
     }
    ]
@@ -436,7 +377,7 @@
    "player": "Konsa",
    "club": "ARS",
    "status": "Latest on Konsa — Fantasy Football Scout, 11 Sep: “We’ve done it and so far it’s working well.” – Mikel Arteta on Ezri Konsa 0 Comments Login to Post a Comment No comments have been submitted for this post yet.”",
-   "why_here": "Konsa is in the starting eleven this week at £4.5m as a DEF. The selection rests on 14 retrieved item(s) from 7 source(s), the most recent dated 11 Sep.",
+   "why_here": "Konsa is in the starting eleven this week at £4.6m as a DEF. The selection rests on 14 retrieved item(s) from 7 source(s), the most recent dated 11 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 11 Sep: “And yeah, the full-back position nowadays does have some huge physical demands.” – Mikel Arteta on keeping his right-backs fit There was praise for Ezri Konsa , meanwhile, after a solid start to his Gunners career.” Fantasy Football Scout, 10 Sep: “Konsa banked defensive contribution (DefCon) points in Gameweek 3, and I fully expect clean sheets to follow soon.” Fantasy Football Scout, 07 Sep: “Given his price of only £4.4m, which is quite frankly ridiculous for an Arsenal defender, we believe Konsa is a straightforward buy.”",
    "case_against": "What argues against him: FourFourTwo FPL, 11 Sep: “Riccardo Calafiori and Ezri Konsa give double Arsenal coverage in the best defensive unit in the league, with Konsa remaining an absolute steal following the Mosquera injury situation.” Fantasy Football Scout, 06 Sep: “Open Controls Permalink Login To Reply F4L just now tbh if you like your xG you'd look at this match and say chelsea barely threatened arsenal Open Controls Permalink Login To Reply theshazly just now Sell Hume or Robertson for Konsa ?!” FourFourTwo FPL, 01 Sep: “Just six minutes prior to Rice's departure, centre-back Cristhian Mosquera went down holding his thigh and was replaced by Ezri Konsa, handing Arteta a worrying double injury blow.”",
    "expected_minutes": "On minutes — Fantasy Football Scout, 07 Sep: “The way he played tonight against this opponent, playing man-to-man against Joao Pedro, he was phenomenal.” – Mikel Arteta on Ezri Konsa It’s too early to say if Konsa will be a week-in, week-out starter while William Saliba (£6.0m) is out injured, certainly with any conviction.” Sports Mole, 06 Sep: “The reigning champions have made just the one change to the team that beat Aston Villa 1-0 on Monday, but it is a significant one, as Ezri Konsa has come in for his full debut.”",
@@ -1361,40 +1302,130 @@
     }
    ]
   },
-  "Groß": {
-   "player": "Groß",
-   "club": "BHA",
-   "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
-   "why_here": "Groß is in the starting eleven this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
-   "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
-   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+  "Barnes": {
+   "player": "Barnes",
+   "club": "NEW",
+   "status": "Latest on Barnes — Sports Illustrated FPL, 15 Sep: “Leonard's Arrival Could Change Scottie Barnes' Role Apr 23, 2026; Toronto, Ontario, CAN; Toronto Raptors guard Scottie Barnes (4) drives to the basket against the Cleveland Cavaliers during the first half of game three of the first round of the 2026 NBA Playoffs at Scotiabank Arena.”",
+   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 10 retrieved item(s) from 6 source(s), the most recent dated 18 Sep.",
+   "case_for": "What supports keeping him: Newcastle United, 11 Sep: “Barnes scooped an additional two bonus points to emerge from Saturday's clash with Bournemouth with a 12-point haul.” FourFourTwo FPL, 07 Sep: “Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler.” AFC Bournemouth, 05 Sep: “But back came the Magpies with goals from Harvey Barnes and Jacob Ramsey, as the Cherries were left to settle for a point.”",
+   "case_against": "What argues against him: Sports Illustrated FPL, 09 Sep: “Barnes has delt with an undisclosed injury since the spring.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "developments": "Recent developments — Everton, 18 Sep: “Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides” Newcastle United, 17 Sep: “Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.” Newcastle United, 17 Sep: “Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 10,
    "evidence_used": [
-    "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
-    "https://www.si.com/soccer/arsenal-predicted-lineup-vs-brighton-9-19-26?utm_source=RSS",
-    "https://www.fantasyfootballscout.co.uk/2026/09/18/vuskovic-mitoma-hinshelwood-brighton-injury-latest-for-fpl-gameweek-5",
-    "https://www.brightonandhovealbion.com/media-video/brighton-v-arsenal-or-huerzeler-pre-match-press-conference",
-    "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/guimaraes-starts-timber-decision-predicted-arsenal-xi-vs-brighton_605238.html",
-    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/six-seagulls-changes-predicted-brighton-xi-vs-arsenal_605237.html"
+    "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
+    "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
+    "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
+    "https://www.evertonfc.com/news/2026/september/18/game4hope/",
+    "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
+    "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
+    "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
+    "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
+    "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
+    "https://www.101greatgoals.com/news/barnes-hits-beauty-but-bournemouth-dominate-at-newcastle/"
    ],
    "sources_used": [
-    "Aston Villa",
-    "Brighton & Hove Albion",
-    "Fantasy Football Scout",
-    "Sports Illustrated FPL",
-    "Sports Mole"
+    "101 Great Goals — Fantasy",
+    "AFC Bournemouth",
+    "Everton",
+    "FourFourTwo FPL",
+    "Newcastle United",
+    "Sports Illustrated FPL"
    ],
    "quotes": [
     {
-     "text": "The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.",
-     "source": "Aston Villa",
-     "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
-     "published": "2026-09-13T10:00:00+00:00",
+     "text": "Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides",
+     "source": "Everton",
+     "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
+     "published": "2026-09-18T11:59:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
+     "published": "2026-09-17T12:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
+     "published": "2026-09-17T12:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Leonard's Arrival Could Change Scottie Barnes' Role Apr 23, 2026; Toronto, Ontario, CAN; Toronto Raptors guard Scottie Barnes (4) drives to the basket against the Cleveland Cavaliers during the first half of game three of the first round of the 2026 NBA Playoffs at Scotiabank Arena.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
+     "published": "2026-09-15T11:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "suspension",
+      "tactics"
+     ]
+    },
+    {
+     "text": "Sokolowski-Imagn Images | IMAGN IMAGES via Reuters Connect Scottie Barnes has spent the majority of his time in the NBA being the primary offensive creator for Toronto.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
+     "published": "2026-09-15T11:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Best of Newcastle in Gameweek 3 Harvey Barnes (£6.0m) was the Magpies' star of the show in Gameweek 3.",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
+     "published": "2026-09-11T10:30:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Barnes scooped an additional two bonus points to emerge from Saturday's clash with Bournemouth with a 12-point haul.",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
+     "published": "2026-09-11T10:30:00+00:00",
      "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Barnes has delt with an undisclosed injury since the spring.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
+     "published": "2026-09-09T23:10:24+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
+     "published": "2026-09-07T16:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "But back came the Magpies with goals from Harvey Barnes and Jacob Ramsey, as the Cherries were left to settle for a point.",
+     "source": "AFC Bournemouth",
+     "url": "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
+     "published": "2026-09-05T14:10:34+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "But from their first noteworthy chance of the first half, the hosts reduced the arrears through Harvey Barnes’s stunning strike just two minutes later.",
+     "source": "AFC Bournemouth",
+     "url": "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
+     "published": "2026-09-05T13:25:00+00:00",
+     "tone": "neutral",
      "topics": []
     }
    ]
@@ -1403,7 +1434,7 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Sports Illustrated FPL, 18 Sep: “El lateral del Real Madrid, Alexander-Arnold, ex del Liverpool, no habÃ­a sido convocado por su selecciÃ³n desde junio de 2025, mientras que Palmer regresa despuÃ©s de haberse quedado fuera de la lista mundialista, una decisiÃ³n por la que Tuchel recibiÃ³ numerosas crÃ­ticas.”",
-   "why_here": "Palmer is captained this week at £9.7m as a MID. The selection rests on 41 retrieved item(s) from 16 source(s), the most recent dated 18 Sep.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 41 retrieved item(s) from 16 source(s), the most recent dated 18 Sep.",
    "case_for": "What supports keeping him: Football365, 17 Sep: “Palmer was a notable absentee from England’s squad for this summer’s World Cup after he struggled for form and fitness during the 2025/26 campaign.” Sports Mole, 12 Sep: “Palmer has now recorded 71 Premier League goal involvements in his first 100 appearances for Chelsea, a remarkable return that places him ahead of club legends such as Didier Drogba , Eden Hazard and Cesc Fabregas at the same stage of their Blues careers.” Football365, 11 Sep: “Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined.”",
    "case_against": "What argues against him: Football365, 02 Sep: “Chelsea did have to sell Marc Cucurella to Real Madrid but players such as Joao Pedro and Cole Palmer have been deemed untouchable by the west Londoners.” Chelsea: “Palmer was outstanding in his first two campaigns at Stamford Bridge, but injury made it difficult for him to replicate that level of performance in 2025/26.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.” Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.”",
@@ -1879,14 +1910,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is in the starting eleven this week at £15.6m as a FWD. The selection rests on 76 retrieved item(s) from 17 source(s), the most recent dated 18 Sep.",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 77 retrieved item(s) from 17 source(s), the most recent dated 18 Sep.",
    "case_for": "What supports keeping him: Football365, 18 Sep: “He looks fully fit and healthy for once and Arsenal are reaping the rewards. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 18 Sep: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.” Sports Mole, 16 Sep: “This season, under new manager Enzo Maresca, Haaland remains firmly on his own extraordinary standards, having scored six goals in six appearances.”",
    "case_against": "What argues against him: Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
-   "developments": "Recent developments — Football365, 18 Sep: “Topical Top Ten Sergio Aguero Joe Williams 24 Apr 2026 Noel Gallagher names his greatest ever Man City player who ‘made the legend of Erling Haaland’ Oasis star Noel Gallagher has revealed who he sees as the greatest player he’s seen at Man City in an incredible era of success for the club.” Football365, 17 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.” Sports Mole, 16 Sep: “Referee governing body Pro Ref, formerly PGMOL, have since apologised to Man United after confirming an “error of judgment” from VAR, who failed to identify that Enzo Fernandez had interfered with play while in an offside position before Haaland made the net ripple.”",
+   "developments": "Recent developments — Sports Mole, 18 Sep: “Biggest player sponsorship deals in football history: Erling Haaland and Nike (2023) Reported value: around $20 million to $24 million per year over ten years © Iconsport / PA Images Erling Haaland signed a ten-year contract with Nike in 2023 after a spell without a boot sponsor.” Sports Mole, 18 Sep: “Haaland had worn Nike boots from the age of 14 before briefly wearing Adidas and Puma products following the expiry of his previous Nike deal in 2022.” Football365, 18 Sep: “Topical Top Ten Sergio Aguero Joe Williams 24 Apr 2026 Noel Gallagher names his greatest ever Man City player who ‘made the legend of Erling Haaland’ Oasis star Noel Gallagher has revealed who he sees as the greatest player he’s seen at Man City in an incredible era of success for the club.”",
    "outlook": "On the coming weeks — Sports Mole, 13 Sep: “While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.” Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.”",
    "confidence": "high",
-   "evidence_count": 76,
+   "evidence_count": 77,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
     "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
@@ -1899,7 +1930,7 @@
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
-    "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/erling-haaland-exit-date-becoming-increasingly-clear_605211.html"
+    "https://www.sportsmole.co.uk/football/feature/biggest-player-sponsorship-deals-in-football-history_605454.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1921,6 +1952,26 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Biggest player sponsorship deals in football history: Erling Haaland and Nike (2023) Reported value: around $20 million to $24 million per year over ten years © Iconsport / PA Images Erling Haaland signed a ten-year contract with Nike in 2023 after a spell without a boot sponsor.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/feature/biggest-player-sponsorship-deals-in-football-history_605454.html",
+     "published": "2026-09-18T23:09:07+01:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Haaland had worn Nike boots from the age of 14 before briefly wearing Adidas and Puma products following the expiry of his previous Nike deal in 2022.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/feature/biggest-player-sponsorship-deals-in-football-history_605454.html",
+     "published": "2026-09-18T23:09:07+01:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "He looks fully fit and healthy for once and Arsenal are reaping the rewards. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.",
      "source": "Football365",
@@ -2918,16 +2969,17 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "status": "Latest on João Pedro — Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.” Soccerway, 17 Sep: “Pedro not ruled out Alonso first gave an update on his team ahead of the clash, revealing details on a number of players, including striker Joao Pedro , who missed training this weekend and missed out on the Brazil squad.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 64 retrieved item(s) from 15 source(s), the most recent dated 18 Sep.",
-   "case_for": "What supports keeping him: Sports Mole, 17 Sep: “Pedro has enjoyed an outstanding start to the 2026-27 top-flight campaign, contributing three goals and three assists from four appearances.” Football365, 17 Sep: “Chelsea star man putting Erling Haaland in the shade with flying start Joao Pedro is on fire this season Joao Pedro was surprisingly left out of the Brazil squad for the World Cup.” Hull City, 14 Sep: “The Tigers’ unbeaten start to the new campaign continued at Stamford Bridge despite conceding their first league goals of the season as they turned around an early deficit thanks to Mohamed Belloumi’s quick-fire first half double, although João Pedro would go on to net a second half leveller for the hosts.”",
-   "case_against": "What argues against him: Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.” Soccerway, 18 Sep: “Chelsea are still without long-term absentees Jordan Henderson and Moises Caicedo, while Joao Pedro is a major doubt after withdrawing from Brazil duty.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.” Sports Mole, 18 Sep: “However, despite his comments to the media, a report quickly emerged which suggested that Joao Pedro had been ruled out of the trip to the Gtech Community Stadium with a knee injury.”",
+   "status": "Latest on João Pedro — Sports Mole, 18 Sep: “However, despite his comments to the media, a report quickly emerged which suggested that Joao Pedro had been ruled out of the trip to the Gtech Community Stadium with a knee injury.” Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.”",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 65 retrieved item(s) from 15 source(s), the most recent dated 19 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).” Sports Mole, 17 Sep: “Pedro has enjoyed an outstanding start to the 2026-27 top-flight campaign, contributing three goals and three assists from four appearances.” Football365, 17 Sep: “Chelsea star man putting Erling Haaland in the shade with flying start Joao Pedro is on fire this season Joao Pedro was surprisingly left out of the Brazil squad for the World Cup.”",
+   "case_against": "What argues against him: Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 18 Sep: “Chelsea are still without long-term absentees Jordan Henderson and Moises Caicedo, while Joao Pedro is a major doubt after withdrawing from Brazil duty.” RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.”",
    "developments": "Recent developments — Sports Mole, 18 Sep: “Joao Pedro is expected to miss Friday's Premier League trip to the Gtech Community Stadium because of a knee problem suffered against Hull City.” Sports Mole, 18 Sep: “What he cannot necessarily reproduce is the combination of movement, creativity and positional flexibility that has made Joao Pedro central to the relationship between Cole Palmer and Morgan Rogers.” RotoWire Soccer, 18 Sep: “ESPN Brasil's Bruno Andrade and Pedro Ivo Almeida report that Joao Pedro has swelling in the knee caused by a strain of the anterior cruciate and medial collateral ligaments, picked up in the draw with Hull City.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 17 Sep: “Joao Pedro is the highest-owned player in the game at 74.0% ownership.” Fantasy Football Scout, 17 Sep: ““He is getting closer and tomorrow, we will take a final decision in the team and in the squad that is coming to Brentford.” – Xabi Alonso on Moises Caicedo Reece James , along with Caicedo and Pedro, missed training on Tuesday , and Alonso was asked why.”",
    "confidence": "high",
-   "evidence_count": 64,
+   "evidence_count": 65,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",
     "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
     "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
     "https://www.rotowire.com/soccer/article/fpl-tips-joao-pedro-anthony-elanga-injury-updates-and-best-replacements-for-gw5-134689",
@@ -2938,8 +2990,7 @@
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/major-pedro-injury-update-amid-surprise-alonso-comments-on-chelsea-star_605304.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/17/joao-pedro-james-caicedo-chelsea-injury-latest-for-fpl-gameweek-5",
     "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest",
-    "https://www.soccerway.com/news/chelsea-s-joao-pedro-to-miss-brazil-s-friendlies-against-australia-india-with-injury/nsfSIWpT/",
-    "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html"
+    "https://www.soccerway.com/news/chelsea-s-joao-pedro-to-miss-brazil-s-friendlies-against-australia-india-with-injury/nsfSIWpT/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2959,6 +3010,26 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",
+     "published": "2026-09-19T00:05:00+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "“Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",
+     "published": "2026-09-19T00:05:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "statistics"
+     ]
+    },
     {
      "text": "Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.",
      "source": "Fantasy Football Scout",
@@ -3585,7 +3656,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -3594,149 +3665,20 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/18/tottenham-v-aston-villa-predicted-line-ups-fpl-team-news-2",
     "https://www.fantasyfootballscout.co.uk/2026/09/18/porro-tonali-udogie-tottenham-injury-latest-for-fpl-gameweek-5",
     "https://avfc.co.uk/news/2026/september/18/prematch-emery-previews-tottenham-tilt/",
     "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/tottenham-vs-aston-villa-injury-suspension-list-predicted-xis_605232.html",
-    "https://www.101greatgoals.com/match-previews/tottenham-v-aston-villa-preview-expected-line-ups-stats-and-where-to-watch/",
-    "https://www.football365.com/news/longest-goalless-starts-to-premier-league-season"
+    "https://www.101greatgoals.com/match-previews/tottenham-v-aston-villa-preview-expected-line-ups-stats-and-where-to-watch/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Aston Villa",
     "Fantasy Football Scout",
-    "Football365",
     "Sports Mole"
    ],
    "quotes": []
-  },
-  "Barnes": {
-   "player": "Barnes",
-   "club": "NEW",
-   "status": "Latest on Barnes — Sports Illustrated FPL, 15 Sep: “Leonard's Arrival Could Change Scottie Barnes' Role Apr 23, 2026; Toronto, Ontario, CAN; Toronto Raptors guard Scottie Barnes (4) drives to the basket against the Cleveland Cavaliers during the first half of game three of the first round of the 2026 NBA Playoffs at Scotiabank Arena.”",
-   "why_here": "Barnes is on the bench this week at £6.0m as a MID. The selection rests on 10 retrieved item(s) from 6 source(s), the most recent dated 18 Sep.",
-   "case_for": "What supports keeping him: Newcastle United, 11 Sep: “Barnes scooped an additional two bonus points to emerge from Saturday's clash with Bournemouth with a 12-point haul.” FourFourTwo FPL, 07 Sep: “Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler.” AFC Bournemouth, 05 Sep: “But back came the Magpies with goals from Harvey Barnes and Jacob Ramsey, as the Cherries were left to settle for a point.”",
-   "case_against": "What argues against him: Sports Illustrated FPL, 09 Sep: “Barnes has delt with an undisclosed injury since the spring.”",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Everton, 18 Sep: “Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides” Newcastle United, 17 Sep: “Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.” Newcastle United, 17 Sep: “Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.”",
-   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "high",
-   "evidence_count": 10,
-   "evidence_used": [
-    "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
-    "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
-    "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
-    "https://www.evertonfc.com/news/2026/september/18/game4hope/",
-    "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-    "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
-    "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-    "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
-    "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
-    "https://www.101greatgoals.com/news/barnes-hits-beauty-but-bournemouth-dominate-at-newcastle/"
-   ],
-   "sources_used": [
-    "101 Great Goals — Fantasy",
-    "AFC Bournemouth",
-    "Everton",
-    "FourFourTwo FPL",
-    "Newcastle United",
-    "Sports Illustrated FPL"
-   ],
-   "quotes": [
-    {
-     "text": "Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides",
-     "source": "Everton",
-     "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
-     "published": "2026-09-18T11:59:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-     "published": "2026-09-17T12:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-     "published": "2026-09-17T12:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Leonard's Arrival Could Change Scottie Barnes' Role Apr 23, 2026; Toronto, Ontario, CAN; Toronto Raptors guard Scottie Barnes (4) drives to the basket against the Cleveland Cavaliers during the first half of game three of the first round of the 2026 NBA Playoffs at Scotiabank Arena.",
-     "source": "Sports Illustrated FPL",
-     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
-     "published": "2026-09-15T11:00:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "suspension",
-      "tactics"
-     ]
-    },
-    {
-     "text": "Sokolowski-Imagn Images | IMAGN IMAGES via Reuters Connect Scottie Barnes has spent the majority of his time in the NBA being the primary offensive creator for Toronto.",
-     "source": "Sports Illustrated FPL",
-     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
-     "published": "2026-09-15T11:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Best of Newcastle in Gameweek 3 Harvey Barnes (£6.0m) was the Magpies' star of the show in Gameweek 3.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-     "published": "2026-09-11T10:30:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Barnes scooped an additional two bonus points to emerge from Saturday's clash with Bournemouth with a 12-point haul.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-     "published": "2026-09-11T10:30:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Barnes has delt with an undisclosed injury since the spring.",
-     "source": "Sports Illustrated FPL",
-     "url": "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
-     "published": "2026-09-09T23:10:24+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
-     "text": "Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
-     "published": "2026-09-07T16:00:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "But back came the Magpies with goals from Harvey Barnes and Jacob Ramsey, as the Cherries were left to settle for a point.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
-     "published": "2026-09-05T14:10:34+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "But from their first noteworthy chance of the first half, the hosts reduced the arrears through Harvey Barnes’s stunning strike just two minutes later.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
-     "published": "2026-09-05T13:25:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    }
-   ]
   },
   "Hall": {
    "player": "Hall",
@@ -3976,37 +3918,134 @@
     }
    ]
   },
-  "Muharemović": {
-   "player": "Muharemović",
-   "club": "LEE",
-   "status": "Latest on Muharemović — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
-   "why_here": "Muharemović is on the bench this week at £5.0m as a DEF. The selection rests on 3 retrieved item(s) from 2 source(s), the most recent dated 11 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
+  "Groß": {
+   "player": "Groß",
+   "club": "BHA",
+   "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "why_here": "Groß is on the bench this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
+   "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
-   "outlook": "On the coming weeks — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
+   "developments": "Recent developments — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 3,
+   "evidence_count": 6,
    "evidence_used": [
-    "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-    "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
-    "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award"
+    "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+    "https://www.fantasyfootballscout.co.uk/2026/09/18/brighton-v-arsenal-predicted-line-ups-fpl-team-news-2",
+    "https://www.si.com/soccer/arsenal-predicted-lineup-vs-brighton-9-19-26?utm_source=RSS",
+    "https://www.fantasyfootballscout.co.uk/2026/09/18/vuskovic-mitoma-hinshelwood-brighton-injury-latest-for-fpl-gameweek-5",
+    "https://www.brightonandhovealbion.com/media-video/brighton-v-arsenal-or-huerzeler-pre-match-press-conference",
+    "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/guimaraes-starts-timber-decision-predicted-arsenal-xi-vs-brighton_605238.html"
    ],
    "sources_used": [
-    "FourFourTwo FPL",
-    "Leeds United"
+    "Aston Villa",
+    "Brighton & Hove Albion",
+    "Fantasy Football Scout",
+    "Sports Illustrated FPL",
+    "Sports Mole"
    ],
    "quotes": [
     {
-     "text": "Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-     "published": "2026-09-11T08:25:33+00:00",
+     "text": "The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+     "published": "2026-09-13T10:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
+  },
+  "De Cuyper": {
+   "player": "De Cuyper",
+   "club": "BHA",
+   "status": "Latest on De Cuyper — Fantasy Football Scout, 13 Sep: “Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.”",
+   "why_here": "De Cuyper is on the bench this week at £4.9m as a DEF. The selection rests on 5 retrieved item(s) from 3 source(s), the most recent dated 13 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 07 Sep: “So, that’s very positive and hopefully he can continue like this.” – Fabian Hurzeler on Malick Yalcouye ANOTHER DE CUYPER RETURN AS VUSKOVIC HAULS Maxim De Cuyper (£4.7m), again playing on the left wing, salvaged a return despite a booking and clean sheet loss.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.”",
+   "developments": "Recent developments — Fantasy Football Scout, 11 Sep: ““I expect him more after the international break.” – Fabian Hurzeler on Kaoru Mitoma That’s good short-term news for the ‘out of position’ Maxim De Cuyper , then.” Fantasy Football Scout, 11 Sep: “So, overall, I’m happy with his performances and hopefully, he can keep going like this.” – Fabian Hurzeler on Maxim De Cuyper £4.5m midfielder Malick Yalcouye looks set to be heavily involved again on Sunday.”",
+   "outlook": "On the coming weeks — OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.” OneFPL: “De Cuyper is a defender in FPL but is regularly used in advanced areas.”",
+   "confidence": "high",
+   "evidence_count": 5,
+   "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+    "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
+    "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
+    "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
+    "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27"
+   ],
+   "sources_used": [
+    "Fantasy Football Hub",
+    "Fantasy Football Scout",
+    "OneFPL"
+   ],
+   "quotes": [
+    {
+     "text": "Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+     "published": "2026-09-13T20:30:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "team news",
+      "tactics"
+     ]
+    },
+    {
+     "text": "Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+     "published": "2026-09-13T20:30:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "suspension"
+     ]
+    },
+    {
+     "text": "“I expect him more after the international break.” – Fabian Hurzeler on Kaoru Mitoma That’s good short-term news for the ‘out of position’ Maxim De Cuyper , then.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
+     "published": "2026-09-11T14:43:04+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "So, overall, I’m happy with his performances and hopefully, he can keep going like this.” – Fabian Hurzeler on Maxim De Cuyper £4.5m midfielder Malick Yalcouye looks set to be heavily involved again on Sunday.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
+     "published": "2026-09-11T14:43:04+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "So, that’s very positive and hopefully he can continue like this.” – Fabian Hurzeler on Malick Yalcouye ANOTHER DE CUYPER RETURN AS VUSKOVIC HAULS Maxim De Cuyper (£4.7m), again playing on the left wing, salvaged a return despite a booking and clean sheet loss.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
+     "published": "2026-09-07T02:00:00+00:00",
      "tone": "positive",
      "topics": [
-      "set pieces",
-      "statistics"
+      "fixtures"
+     ]
+    },
+    {
+     "text": "Why De Cuyper is valuable in FPL His classification is the key.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
+     "published": "",
+     "tone": "neutral",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "De Cuyper is a defender in FPL but is regularly used in advanced areas.",
+     "source": "OneFPL",
+     "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
+     "published": "",
+     "tone": "neutral",
+     "topics": [
+      "fpl advice"
      ]
     }
    ]
