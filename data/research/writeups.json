@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-19T14:28:36+00:00",
+ "generated": "2026-09-19T19:20:53+00:00",
  "gameweek": 6,
- "corpus_size": 14380,
+ "corpus_size": 14569,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1314,18 +1314,19 @@
    "player": "Barnes",
    "club": "NEW",
    "status": "Latest on Barnes — Sports Illustrated FPL, 15 Sep: “Leonard's Arrival Could Change Scottie Barnes' Role Apr 23, 2026; Toronto, Ontario, CAN; Toronto Raptors guard Scottie Barnes (4) drives to the basket against the Cleveland Cavaliers during the first half of game three of the first round of the 2026 NBA Playoffs at Scotiabank Arena.”",
-   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 10 retrieved item(s) from 6 source(s), the most recent dated 18 Sep.",
-   "case_for": "What supports keeping him: Newcastle United, 11 Sep: “Barnes scooped an additional two bonus points to emerge from Saturday's clash with Bournemouth with a 12-point haul.” FourFourTwo FPL, 07 Sep: “Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler.” AFC Bournemouth, 05 Sep: “But back came the Magpies with goals from Harvey Barnes and Jacob Ramsey, as the Cherries were left to settle for a point.”",
+   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 11 retrieved item(s) from 7 source(s), the most recent dated 19 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 19 Sep: “Harvey Barnes shines in Newcastle vs Hull City © Iconsport / Andrew Yates / Sportimage Barnes was the architect behind both goals, providing the assists for Joe Willock and Lewis Hall According to Opta Analyst , the two early assists were the earliest in a Premier League game that a Newcastle player has ever recorded.” Sports Mole, 19 Sep: “Barnes produced a smart pass inside the box for Willock, who unleashed a thunderous left-footed strike that left the goalkeeper with no chance.” Newcastle United, 11 Sep: “Barnes scooped an additional two bonus points to emerge from Saturday's clash with Bournemouth with a 12-point haul.”",
    "case_against": "What argues against him: Sports Illustrated FPL, 09 Sep: “Barnes has delt with an undisclosed injury since the spring.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Everton, 18 Sep: “Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides” Newcastle United, 17 Sep: “Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.” Newcastle United, 17 Sep: “Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "evidence_used": [
     "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
     "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
     "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
+    "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
     "https://www.evertonfc.com/news/2026/september/18/game4hope/",
     "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
     "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
@@ -1340,9 +1341,26 @@
     "Everton",
     "FourFourTwo FPL",
     "Newcastle United",
-    "Sports Illustrated FPL"
+    "Sports Illustrated FPL",
+    "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Harvey Barnes shines in Newcastle vs Hull City © Iconsport / Andrew Yates / Sportimage Barnes was the architect behind both goals, providing the assists for Joe Willock and Lewis Hall According to Opta Analyst , the two early assists were the earliest in a Premier League game that a Newcastle player has ever recorded.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
+     "published": "2026-09-19T16:08:15+01:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Barnes produced a smart pass inside the box for Willock, who unleashed a thunderous left-footed strike that left the goalkeeper with no chance.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
+     "published": "2026-09-19T16:08:15+01:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides",
      "source": "Everton",
@@ -1919,10 +1937,10 @@
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
    "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 77 retrieved item(s) from 17 source(s), the most recent dated 19 Sep.",
-   "case_for": "What supports keeping him: Football365, 18 Sep: “He looks fully fit and healthy for once and Arsenal are reaping the rewards. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 18 Sep: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.” Sports Mole, 16 Sep: “This season, under new manager Enzo Maresca, Haaland remains firmly on his own extraordinary standards, having scored six goals in six appearances.”",
+   "case_for": "What supports keeping him: Football365, 19 Sep: “Not a great deal more to say really. 9) Erling Haaland – 19 goals Another double v Porto meant Haaland was matching Mbappe stride for stride in the opening weeks of the 26/27 season, but he could only score one – slightly dodgy goal – against Manchester United. 8) Michael Olise – 20 goals As performatively unbothered as he is, Olise is also a phenomenal footballer.” Football365, 18 Sep: “He looks fully fit and healthy for once and Arsenal are reaping the rewards. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 18 Sep: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.”",
    "case_against": "What argues against him: Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
-   "developments": "Recent developments — Football365, 19 Sep: “Erling Haaland: Why prospect of Barcelona signing Man City star are now 'different' Erling Haaland has been linked with a move to Barcelona.” Football365, 19 Sep: “The prospect of Barcelona signing Erling Haaland is “slightly different” now amid fresh speculation surrounding the Man City striker’s future.” Sports Mole, 18 Sep: “Biggest player sponsorship deals in football history: Erling Haaland and Nike (2023) Reported value: around $20 million to $24 million per year over ten years © Iconsport / PA Images Erling Haaland signed a ten-year contract with Nike in 2023 after a spell without a boot sponsor.”",
+   "developments": "Recent developments — Football365, 19 Sep: “Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.” Football365, 19 Sep: “Erling Haaland: Why prospect of Barcelona signing Man City star are now 'different' Erling Haaland has been linked with a move to Barcelona.” Football365, 19 Sep: “The prospect of Barcelona signing Erling Haaland is “slightly different” now amid fresh speculation surrounding the Man City striker’s future.”",
    "outlook": "On the coming weeks — Sports Mole, 13 Sep: “While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.” Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.”",
    "confidence": "high",
    "evidence_count": 77,
@@ -1960,6 +1978,24 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Not a great deal more to say really. 9) Erling Haaland – 19 goals Another double v Porto meant Haaland was matching Mbappe stride for stride in the opening weeks of the 26/27 season, but he could only score one – slightly dodgy goal – against Manchester United. 8) Michael Olise – 20 goals As performatively unbothered as he is, Olise is also a phenomenal footballer.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-09-19T17:42:59+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-09-19T17:42:59+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Erling Haaland: Why prospect of Barcelona signing Man City star are now 'different' Erling Haaland has been linked with a move to Barcelona.",
      "source": "Football365",
@@ -2021,14 +2057,6 @@
      "source": "Football365",
      "url": "https://www.football365.com/news/manchester-city-top-scorers-games-premier-league-big-six-aguero-haaland",
      "published": "2026-09-18T11:52:25+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Manchester United Bayern Munich Jason Soutar 10 Sep 2026 Twenty most valuable footballers in the world: Haaland above Mbappe, tied with Yamal Eleven Premier League players rank among the top 20 most valuable players in the world, including three of Arsenal’s Premier League winners.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-09-17T06:00:59+00:00",
      "tone": "neutral",
      "topics": []
     },
@@ -3674,7 +3702,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 19 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -3683,17 +3711,19 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
-    "https://www.fourfourtwo.com/person/player/mathys-tel-is-tottenham-hotspurs-worst-ever-signing",
-    "https://www.fantasyfootballscout.co.uk/2026/09/18/tottenham-v-aston-villa-predicted-line-ups-fpl-team-news-2",
-    "https://www.fantasyfootballscout.co.uk/2026/09/18/porro-tonali-udogie-tottenham-injury-latest-for-fpl-gameweek-5",
-    "https://avfc.co.uk/news/2026/september/18/prematch-emery-previews-tottenham-tilt/",
-    "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
+    "https://avfc.co.uk/news/2026/september/19/report-tottenham-v-aston-villa/",
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-sorrow-spurs-defender-suffers-new-injury-as-three-replacements-identified_605479.html",
+    "https://www.fantasyfootballscout.co.uk/2026/09/19/spurs-v-aston-villa-team-news-porro-manzambi-start",
+    "https://www.101greatgoals.com/football/premier-league/tottenham-v-aston-villa-confirmed-team-news/",
+    "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "Aston Villa",
     "Fantasy Football Scout",
-    "FourFourTwo FPL"
+    "FourFourTwo FPL",
+    "Sports Mole"
    ],
    "quotes": [
     {
@@ -3948,7 +3978,7 @@
    "player": "Groß",
    "club": "BHA",
    "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
-   "why_here": "Groß is on the bench this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 6 source(s), the most recent dated 13 Sep.",
+   "why_here": "Groß is on the bench this week at £5.7m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
    "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -3958,19 +3988,18 @@
    "evidence_count": 6,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+    "https://www.101greatgoals.com/football/brighton-v-arsenal-confirmed-team-news/",
     "https://www.101greatgoals.com/match-previews/brighton-v-arsenal-preview-expected-line-ups-stats-and-where-to-watch/",
     "https://www.fourfourtwo.com/person/coaches-managers/fabian-hurzeler-is-a-victim-of-roberto-de-zerbis-success-at-brighton",
     "https://www.nbcsports.com/soccer/news/how-to-watch-brighton-vs-arsenal-live-stream-tv-team-news-prediction",
-    "https://www.fantasyfootballscout.co.uk/2026/09/18/brighton-v-arsenal-predicted-line-ups-fpl-team-news-2",
-    "https://www.si.com/soccer/arsenal-predicted-lineup-vs-brighton-9-19-26?utm_source=RSS"
+    "https://www.fantasyfootballscout.co.uk/2026/09/18/brighton-v-arsenal-predicted-line-ups-fpl-team-news-2"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Aston Villa",
     "Fantasy Football Scout",
     "FourFourTwo FPL",
-    "NBC Sports Rotoworld PL",
-    "Sports Illustrated FPL"
+    "NBC Sports Rotoworld PL"
    ],
    "quotes": [
     {
