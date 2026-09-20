@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-20T01:13:47+00:00",
- "seconds": 117.2,
+ "ran_at": "2026-09-20T09:50:53+00:00",
+ "seconds": 163.0,
  "sources_attempted": 78,
- "sources_readable": 64,
- "candidates_discovered": 613,
- "substantive_items": 214,
- "duplicates_removed": 17,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 14715,
+ "sources_readable": 63,
+ "candidates_discovered": 581,
+ "substantive_items": 180,
+ "duplicates_removed": 6,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 14837,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "64/78 sources returned 214 articles"
+    "63/78 sources returned 180 articles"
    ]
   },
   "blackout": {
@@ -49,8 +49,9 @@
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
-  "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "PhysioRoom: timed out after 12s for https://physioroom.com/feeds/all.rss.xml",
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -1022,9 +1023,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 77,
+   "evidence_count": 78,
    "source_count": 17,
-   "latest_evidence": "2026-09-19T17:42:59+00:00",
+   "latest_evidence": "2026-09-20T07:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
