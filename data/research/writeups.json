@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-19T19:20:53+00:00",
+ "generated": "2026-09-20T01:13:47+00:00",
  "gameweek": 6,
- "corpus_size": 14569,
+ "corpus_size": 14715,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -3649,16 +3649,17 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "status": "Latest on Wissa — Ipswich Town, 16 Sep: “Ranking fourth amongst forwards, Emersonn is just a point behind Alexander Isak (£9.1m) and ahead of the likes of Kai Havertz (£7.6m) and Yoane Wissa (£6.2m).”",
-   "why_here": "Wissa is in the starting eleven this week at £6.2m as a FWD. The selection rests on 7 retrieved item(s) from 6 source(s), the most recent dated 16 Sep.",
+   "status": "Latest on Wissa — Fantasy Football Scout, 19 Sep: “Unfortunately for the striker’s owners in FPL, Wissa saw his first-half spot-kick saved.”",
+   "why_here": "Wissa is in the starting eleven this week at £6.2m as a FWD. The selection rests on 8 retrieved item(s) from 6 source(s), the most recent dated 19 Sep.",
    "case_for": "Nothing retrieved this cycle makes a positive case for him. The evidence found is all cautionary.",
-   "case_against": "What argues against him: Fantasy Football Scout, 06 Sep: “He took up a role up front alongside Yoane Wissa (£6.2m), who dropped a lot deeper in the second half.”",
+   "case_against": "What argues against him: Fantasy Football Scout, 19 Sep: “WISSA, PENALTY MISSA Newcastle had lost all three of last season’s penalty takers over the summer, so the question was over who would step up from 12 yards next.” Fantasy Football Scout, 06 Sep: “He took up a role up front alongside Yoane Wissa (£6.2m), who dropped a lot deeper in the second half.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Ipswich Town, 16 Sep: “Ranking fourth amongst forwards, Emersonn is just a point behind Alexander Isak (£9.1m) and ahead of the likes of Kai Havertz (£7.6m) and Yoane Wissa (£6.2m).” Fantasy Football Scout, 06 Sep: “He took up a role up front alongside Yoane Wissa (£6.2m), who dropped a lot deeper in the second half.”",
-   "outlook": "On the coming weeks — Ipswich Town, 16 Sep: “Ranking fourth amongst forwards, Emersonn is just a point behind Alexander Isak (£9.1m) and ahead of the likes of Kai Havertz (£7.6m) and Yoane Wissa (£6.2m).” Fantasy Football Scout, 06 Sep: “He took up a role up front alongside Yoane Wissa (£6.2m), who dropped a lot deeper in the second half.”",
+   "developments": "Recent developments — Ipswich Town, 16 Sep: “Ranking fourth amongst forwards, Emersonn is just a point behind Alexander Isak (£9.1m) and ahead of the likes of Kai Havertz (£7.6m) and Yoane Wissa (£6.2m).”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
     "https://www.fantasyfootballscout.co.uk/2026/09/06/fpl-notes-jaissle-on-fernandez-pardos-fitness-wissa-deeper",
     "https://www.itfc.co.uk/news/2026/september/16/fpl---gameweek-5-hints-and-tips/",
     "https://www.newcastleunited.com/en/news/wissa-shortlisted-for-premier-leagues-ea-sports-player-of-the-month-award-for-august",
@@ -3676,6 +3677,26 @@
     "Opta Analyst"
    ],
    "quotes": [
+    {
+     "text": "WISSA, PENALTY MISSA Newcastle had lost all three of last season’s penalty takers over the summer, so the question was over who would step up from 12 yards next.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
+     "published": "2026-09-19T22:00:00+00:00",
+     "tone": "negative",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "Unfortunately for the striker’s owners in FPL, Wissa saw his first-half spot-kick saved.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
+     "published": "2026-09-19T22:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "fpl advice"
+     ]
+    },
     {
      "text": "Ranking fourth amongst forwards, Emersonn is just a point behind Alexander Isak (£9.1m) and ahead of the likes of Kai Havertz (£7.6m) and Yoane Wissa (£6.2m).",
      "source": "Ipswich Town",
@@ -3711,11 +3732,11 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://avfc.co.uk/news/2026/september/19/postmatch-mcginn-reflects-on-tottenham-triumph/",
     "https://avfc.co.uk/news/2026/september/19/report-tottenham-v-aston-villa/",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-sorrow-spurs-defender-suffers-new-injury-as-three-replacements-identified_605479.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/19/spurs-v-aston-villa-team-news-porro-manzambi-start",
     "https://www.101greatgoals.com/football/premier-league/tottenham-v-aston-villa-confirmed-team-news/",
-    "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [

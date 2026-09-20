@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-19T19:20:53+00:00",
- "seconds": 140.5,
+ "ran_at": "2026-09-20T01:13:47+00:00",
+ "seconds": 117.2,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 694,
- "substantive_items": 271,
- "duplicates_removed": 25,
- "deeply_analysed": 78,
- "deep_read_failed": 12,
- "corpus_size": 14569,
+ "sources_readable": 64,
+ "candidates_discovered": 613,
+ "substantive_items": 214,
+ "duplicates_removed": 17,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 14715,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 271 articles"
+    "64/78 sources returned 214 articles"
    ]
   },
   "blackout": {
@@ -46,7 +46,6 @@
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -1303,9 +1302,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 6,
-   "latest_evidence": "2026-09-16T14:47:46+00:00",
+   "latest_evidence": "2026-09-19T22:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1325,10 +1324,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Wissa pen miss + Newcastle the new DefCon kings?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-19T22:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Plus, a £5.1m Hull winger is up to fourth in the FPL midfielder standings The post FPL notes: Wissa pen miss + Newcastle the new DefCon kings? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: Jaissle on Fernandez-Pardo’s fitness + Wissa deeper",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/06/fpl-notes-jaissle-on-fernandez-pardos-fitness-wissa-deeper",
@@ -1399,7 +1407,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-19T13:45:00+00:00",
+   "latest_evidence": "2026-09-19T16:43:21+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1423,6 +1431,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "McGinn reflects on Tottenham triumph",
+     "url": "https://avfc.co.uk/news/2026/september/19/postmatch-mcginn-reflects-on-tottenham-triumph/",
+     "source": "Aston Villa",
+     "published": "2026-09-19T16:43:21+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 John McGinn cut a delighted figure after Aston Villa clinched all three points at Tottenham Hotspur. The Villa captain admitted “it’s a relief” but we “deserved our win” after helping secure a 3-2 triumph in north London – our first Premier League victory of the campaign. Johan Manzambi, Nicolas Jackson and Emi Buendía put the vi"
+    },
     {
      "title": "Tottenham Hotspur 2-3 Aston Villa",
      "url": "https://avfc.co.uk/news/2026/september/19/report-tottenham-v-aston-villa/",
@@ -1458,15 +1475,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham and Aston Villa go in search of their first Premier League win of the season this lunchtime. Get all the team news here ahead of a crunch clash in North London."
-    },
-    {
-     "title": "Gomes starts at Spurs",
-     "url": "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
-     "source": "Aston Villa",
-     "published": "2026-09-19T10:15:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes returned to Aston Villa’s starting XI for Saturday’s Premier League clash at Tottenham Hotspur while there was also a full debut for Johan Manzambi. Midfielder Gomes completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening weekend of the season. He returned to Villa’s line-up f"
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
