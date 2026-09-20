@@ -1,25 +1,26 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-20T09:50:53+00:00",
+ "generated": "2026-09-20T14:43:07+00:00",
  "gameweek": 6,
- "corpus_size": 14837,
+ "corpus_size": 14972,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — Football365, 14 Sep: “Carragher made the claim about Raya while reflecting on Arsenal’s win against Sunderland on Monday Night Football on Sky Sports.”",
-   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 13 retrieved item(s) from 7 source(s), the most recent dated 18 Sep.",
-   "case_for": "What supports keeping him: Football365, 18 Sep: “But is he better than David Raya? 15) Alexander Isak (Liverpool) Isak has started well, but he has a long way to go to justify the £125m Liverpool paid to sign him in 2025. 14) Rayan Cherki (Manchester City) A true breath of fresh air.” Football365, 16 Sep: “David Raya has started 2026/27 where he left off last season, while two new signings feature among the top 10 Premier League goalkeepers.” Football365, 16 Sep: “Arsenal David Raya Lewis Oldham 13 Sep 2026 Bruno Guimaraes hails Arsenal star as ‘best in the world’ after Sunderland win – ‘he is unbelievable’ Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.”",
+   "status": "Latest on Raya — Football365, 16 Sep: “David Raya has started 2026/27 where he left off last season, while two new signings feature among the top 10 Premier League goalkeepers.”",
+   "why_here": "Raya is in the starting eleven this week at £6.0m as a GKP. The selection rests on 14 retrieved item(s) from 8 source(s), the most recent dated 20 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 20 Sep: “Arsenal have now conceded each of their three Premier League goals in 2026-27 from outside the box, after Morgan Rogers's effort for Chelsea, and an intriguing David Raya statistic emerged shortly after full time.” Sports Mole, 20 Sep: “Of every goalkeeper to concede 100 or more Premier League goals, Raya has conceded the second-highest share from outside the box - 33 of the 160 he has let in (20.6%) were fired in from 18 yards of further.” Football365, 18 Sep: “But is he better than David Raya? 15) Alexander Isak (Liverpool) Isak has started well, but he has a long way to go to justify the £125m Liverpool paid to sign him in 2025. 14) Rayan Cherki (Manchester City) A true breath of fresh air.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “The Gunners would have been 1-0 down after 56 minutes, had David Raya (£6.0m) not earned his crust with a superb penalty save.”",
-   "developments": "Recent developments — Football365, 14 Sep: “Just minutes before Guimaraes scored for Arsenal in the second half, goalkeeper Raya stopped Sunderland from going ahead from the penalty spot.” FourFourTwo FPL, 14 Sep: “The likes of David Raya, Declan Rice and Bruno Fernandes were shoo-ins in their respective roles, and so too was Jurrien Timber at right-back.” Fantasy Football Scout, 13 Sep: “Up stepped Enzo Le Fee (£5.8m), for the second week running, but the Frenchman saw his effort excellently tipped against the post by Raya.”",
-   "outlook": "On the coming weeks — Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.” OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
+   "developments": "Recent developments — Football365, 16 Sep: “Arsenal David Raya Lewis Oldham 13 Sep 2026 Bruno Guimaraes hails Arsenal star as ‘best in the world’ after Sunderland win – ‘he is unbelievable’ Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.” Football365, 14 Sep: “Carragher made the claim about Raya while reflecting on Arsenal’s win against Sunderland on Monday Night Football on Sky Sports.” Football365, 14 Sep: “Just minutes before Guimaraes scored for Arsenal in the second half, goalkeeper Raya stopped Sunderland from going ahead from the penalty spot.”",
+   "outlook": "On the coming weeks — FourFourTwo FPL, 14 Sep: “The likes of David Raya, Declan Rice and Bruno Fernandes were shoo-ins in their respective roles, and so too was Jurrien Timber at right-back.” Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.”",
    "confidence": "high",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/arsenal-have-the-best-player-in-his-position-in-the-premier-league-but-he-shouldnt-start",
     "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-white-injury-le-bris-on-le-fee-pen-miss-raya-haul",
     "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
+    "https://www.sportsmole.co.uk/football/arsenal/feature/are-arsenal-unlucky-with-the-goals-they-concede-what-the-numbers-say_605514.html",
     "https://www.football365.com/news/premier-league-power-rankings-2026-27-haaland",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
     "https://www.football365.com/news/david-raya-jamie-carragher-arsenal-verdict",
@@ -27,8 +28,7 @@
     "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
     "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
     "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
-    "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
-    "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again"
+    "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save"
    ],
    "sources_used": [
     "Fantasy Football Scout",
@@ -37,9 +37,26 @@
     "NBC Sports Rotoworld PL",
     "OneFPL",
     "Opta Analyst",
+    "Sports Mole",
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "Arsenal have now conceded each of their three Premier League goals in 2026-27 from outside the box, after Morgan Rogers's effort for Chelsea, and an intriguing David Raya statistic emerged shortly after full time.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/feature/are-arsenal-unlucky-with-the-goals-they-concede-what-the-numbers-say_605514.html",
+     "published": "2026-09-20T12:26:35+01:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Of every goalkeeper to concede 100 or more Premier League goals, Raya has conceded the second-highest share from outside the box - 33 of the 160 he has let in (20.6%) were fired in from 18 yards of further.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/feature/are-arsenal-unlucky-with-the-goals-they-concede-what-the-numbers-say_605514.html",
+     "published": "2026-09-20T12:26:35+01:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "But is he better than David Raya? 15) Alexander Isak (Liverpool) Isak has started well, but he has a long way to go to justify the £125m Liverpool paid to sign him in 2025. 14) Rayan Cherki (Manchester City) A true breath of fresh air.",
      "source": "Football365",
@@ -3723,7 +3740,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 19 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -3732,15 +3749,14 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-out-of-spain-squad-which-spurs-games-could-he-miss_605502.html",
     "https://avfc.co.uk/news/2026/september/19/postmatch-mcginn-reflects-on-tottenham-triumph/",
     "https://avfc.co.uk/news/2026/september/19/report-tottenham-v-aston-villa/",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-sorrow-spurs-defender-suffers-new-injury-as-three-replacements-identified_605479.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/19/spurs-v-aston-villa-team-news-porro-manzambi-start",
-    "https://www.101greatgoals.com/football/premier-league/tottenham-v-aston-villa-confirmed-team-news/",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "Aston Villa",
     "Fantasy Football Scout",
     "FourFourTwo FPL",
