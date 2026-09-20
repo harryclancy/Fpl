@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-20T14:43:07+00:00",
- "seconds": 152.5,
+ "ran_at": "2026-09-20T19:30:09+00:00",
+ "seconds": 160.7,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 624,
- "substantive_items": 218,
- "duplicates_removed": 21,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 14972,
+ "sources_readable": 61,
+ "candidates_discovered": 675,
+ "substantive_items": 289,
+ "duplicates_removed": 30,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 15169,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 218 articles"
+    "61/78 sources returned 289 articles"
    ]
   },
   "blackout": {
@@ -41,6 +41,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,7 +52,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -197,7 +199,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 3,
+   "evidence_count": 5,
    "source_count": 2,
    "latest_evidence": "2026-09-11T08:25:33+00:00",
    "official_source_found": true,
@@ -219,7 +221,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -244,6 +246,24 @@
     {
      "title": "Muharemovic picks up seasons first hero of the month award",
      "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Tarik muharemovic we will show even more of our qualities",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic on elland roads unbelievable atmosphere",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-on-elland-roads-unbelievable-atmosphere",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -883,9 +903,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 41,
+   "evidence_count": 42,
    "source_count": 16,
-   "latest_evidence": "2026-09-18T19:26:37+00:00",
+   "latest_evidence": "2026-09-20T16:20:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1010,22 +1030,22 @@
      "excerpt": "A report has claimed that two of Chelsea’s biggest stars are ready to move to Manchester United in the summer transfer window."
     },
     {
-     "title": "Tuchel vuelve a convocar a Trent y Palmer con Inglaterra, pero no a Foden",
-     "url": "https://www.si.com/mx/tuchel-vuelve-a-convocar-a-trent-y-palmer-con-inglaterra-pero-no-a-foden?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-18T19:26:37+00:00",
+     "title": "LEICESTER CITY 0 TOWN 1",
+     "url": "https://www.itfc.co.uk/news/2026/september/20/leicester-city-0-town-1/",
+     "source": "Ipswich Town",
+     "published": "2026-09-20T16:20:00+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "El entrenador alemán que dirige a la selección inglesa, también dejó fuera a Ollie Watkins, Ivan Toney y Noni Madueke, quienes estuvieron en el Mundial 2026."
+     "excerpt": "Town Women secured their first three points of the season following a hard-fought 1-0 win at Leicester City in the Barclays Women’s Super League 2. The visitors first chance of the game arrived in the 7th minute after Aimee Palmer’s corner eventually dropped to Georgia Timms near the penalty spot who sent an acrobatic effort over the crossbar. Both teams pushed to gain a real foothold in the match"
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 78,
+   "evidence_count": 81,
    "source_count": 17,
-   "latest_evidence": "2026-09-20T07:00:00+00:00",
+   "latest_evidence": "2026-09-20T17:50:31+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
