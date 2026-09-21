@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-21T01:10:16+00:00",
+ "generated": "2026-09-21T10:48:28+00:00",
  "gameweek": 6,
- "corpus_size": 15308,
+ "corpus_size": 15463,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1468,16 +1468,17 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "status": "Latest on Palmer — Sports Illustrated FPL, 18 Sep: “El lateral del Real Madrid, Alexander-Arnold, ex del Liverpool, no habÃ­a sido convocado por su selecciÃ³n desde junio de 2025, mientras que Palmer regresa despuÃ©s de haberse quedado fuera de la lista mundialista, una decisiÃ³n por la que Tuchel recibiÃ³ numerosas crÃ­ticas.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 42 retrieved item(s) from 16 source(s), the most recent dated 20 Sep.",
+   "status": "Latest on Palmer — Chelsea: “Palmer was outstanding in his first two campaigns at Stamford Bridge, but injury made it difficult for him to replicate that level of performance in 2025/26.”",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 45 retrieved item(s) from 16 source(s), the most recent dated 21 Sep.",
    "case_for": "What supports keeping him: Football365, 17 Sep: “Palmer was a notable absentee from England’s squad for this summer’s World Cup after he struggled for form and fitness during the 2025/26 campaign.” Sports Mole, 12 Sep: “Palmer has now recorded 71 Premier League goal involvements in his first 100 appearances for Chelsea, a remarkable return that places him ahead of club legends such as Didier Drogba , Eden Hazard and Cesc Fabregas at the same stage of their Blues careers.” Football365, 11 Sep: “Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined.”",
-   "case_against": "What argues against him: Ipswich Town, 20 Sep: “The visitors first chance of the game arrived in the 7th minute after Aimee Palmer’s corner eventually dropped to Georgia Timms near the penalty spot who sent an acrobatic effort over the crossbar.” Football365, 02 Sep: “Chelsea did have to sell Marc Cucurella to Real Madrid but players such as Joao Pedro and Cole Palmer have been deemed untouchable by the west Londoners.” Chelsea: “Palmer was outstanding in his first two campaigns at Stamford Bridge, but injury made it difficult for him to replicate that level of performance in 2025/26.”",
+   "case_against": "What argues against him: Football365, 21 Sep: “Still, Tuchel has refreshed his squad for this break, with Trent Alexander-Arnold and Palmer among the notable inclusions after they missed the World Cup.” Ipswich Town, 20 Sep: “The visitors first chance of the game arrived in the 7th minute after Aimee Palmer’s corner eventually dropped to Georgia Timms near the penalty spot who sent an acrobatic effort over the crossbar.” Football365, 02 Sep: “Chelsea did have to sell Marc Cucurella to Real Madrid but players such as Joao Pedro and Cole Palmer have been deemed untouchable by the west Londoners.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.” Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.”",
-   "developments": "Recent developments — FourFourTwo FPL, 18 Sep: “At his squad announcement today, the England boss has said that both Palmer and Alexander-Arnold show the best versions of themselves during the upcoming games.” 101 Great Goals — Fantasy, 18 Sep: “Chelsea forward Palmer and Real Madrid wideman Alexander-Arnold return for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.” Football365, 18 Sep: “England head coach Thomas Tuchel has recalled Trent Alexander-Arnold, Cole Palmer and Dominic Calvert-Lewin ahead of the upcoming international fixtures.”",
-   "outlook": "On the coming weeks — Tactical Football Analysis, 11 Sep: “Chelsea Vs Hull: Palmer’s Captaincy Appeal And Attacking Picks Fig. 2: Best projected triple captaincy weeks (Source: Solio Chelsea were 2 goals down after 48 minutes on Wednesday night at Stamford Bridge in their 3rd round Carabao Cup tie against Leeds United They won the match 6-3.” Fantasy Football Scout, 10 Sep: “Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).”",
-   "confidence": "high",
-   "evidence_count": 42,
+   "developments": "Recent developments — Soccerway, 21 Sep: “Palmer was recalled to the England squad by Tuchel for the upcoming Nations League games over the next two weeks in the season’s first international break.” Soccerway, 21 Sep: “Despite his changes, The Athletic ’s David Ornstein reports that Palmer is set to withdraw from the side due to load management.” Fantasy Football Scout, 21 Sep: “PALMER SET TO WITHDRAW FROM ENGLAND SQUAD Cole Palmer (£9.7m) is set to withdraw from England’s squad for the upcoming Nations League due to ‘load management’.”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 21 Sep: “Chelsea aren’t next in action until Saturday 10 October, so we should get updates on Palmer from both Tuchel and Xabi Alonso before the Gameweek 6 deadline.” Sports Illustrated FPL, 18 Sep: “El lateral del Real Madrid, Alexander-Arnold, ex del Liverpool, no habÃ­a sido convocado por su selecciÃ³n desde junio de 2025, mientras que Palmer regresa despuÃ©s de haberse quedado fuera de la lista mundialista, una decisiÃ³n por la que Tuchel recibiÃ³ numerosas crÃ­ticas.”",
+   "confidence": "medium",
+   "evidence_count": 45,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
     "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html",
     "https://www.fourfourtwo.com/team/chelsea-are-scoring-for-fun-but-theres-one-bad-habit-xabi-alonso-needs-to-break-to-turn-them-into-contenders",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
@@ -1488,8 +1489,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
     "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
     "https://www.fourfourtwo.com/competition/watch-arsenal-vs-chelsea-premier-league-2026-27-free",
-    "https://www.football365.com/news/chelsea-manchester-united-transfer",
-    "https://www.itfc.co.uk/news/2026/september/20/leicester-city-0-town-1/"
+    "https://www.football365.com/news/chelsea-manchester-united-transfer"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1510,6 +1510,58 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Palmer was recalled to the England squad by Tuchel for the upcoming Nations League games over the next two weeks in the season’s first international break.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/palmer-reportedly-set-to-withdraw-from-england-squad-due-to-load-management/rDuuifOk/",
+     "published": "2026-09-21T10:58:54+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Despite his changes, The Athletic ’s David Ornstein reports that Palmer is set to withdraw from the side due to load management.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/palmer-reportedly-set-to-withdraw-from-england-squad-due-to-load-management/rDuuifOk/",
+     "published": "2026-09-21T10:58:54+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "PALMER SET TO WITHDRAW FROM ENGLAND SQUAD Cole Palmer (£9.7m) is set to withdraw from England’s squad for the upcoming Nations League due to ‘load management’.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
+     "published": "2026-09-21T10:10:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Chelsea aren’t next in action until Saturday 10 October, so we should get updates on Palmer from both Tuchel and Xabi Alonso before the Gameweek 6 deadline.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
+     "published": "2026-09-21T10:10:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "statistics"
+     ]
+    },
+    {
+     "text": "Cole Palmer, Kobbie Mainoo and Marcus Rashford are ‘set to withdraw’ from the England squad, with David Ornstein revealing the reasoning.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/england-ornstein-reveals-man-utd-chelsea-stars-withdraw-squad",
+     "published": "2026-09-21T07:35:30+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Still, Tuchel has refreshed his squad for this break, with Trent Alexander-Arnold and Palmer among the notable inclusions after they missed the World Cup.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/england-ornstein-reveals-man-utd-chelsea-stars-withdraw-squad",
+     "published": "2026-09-21T07:35:30+00:00",
+     "tone": "negative",
+     "topics": [
+      "statistics"
+     ]
+    },
     {
      "text": "The visitors first chance of the game arrived in the 7th minute after Aimee Palmer’s corner eventually dropped to Georgia Timms near the penalty spot who sent an acrobatic effort over the crossbar.",
      "source": "Ipswich Town",
@@ -1955,14 +2007,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 80 retrieved item(s) from 16 source(s), the most recent dated 20 Sep.",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 81 retrieved item(s) from 16 source(s), the most recent dated 21 Sep.",
    "case_for": "What supports keeping him: Opta Analyst, 20 Sep: “With his goal against Sunderland in Manchester City ’s 5-3 win at the Etihad Stadium on Sunday, Haaland has now scored a goal against all of the 25 teams that he’s faced in the Premier League since his debut in August 2022.” Opta Analyst, 20 Sep: “His previous two games against Sunderland in the competition saw him end without a goal from his three shots across 159 minutes of action, and Haaland would have been nervous that his scoreless run against them was going to continue until he slid in to score at the back post in the 81st minute of Sunday’s clash.” Sports Mole, 20 Sep: “Haaland has now scored seven goals in as many appearances for Man City across all competitions this season, with five of those netted in the Premier League to put him top of the goalscorer charts heading into the international break.”",
    "case_against": "What argues against him: Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
-   "developments": "Recent developments — Football365, 20 Sep: “Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 20 goals A goal against Sunderland not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Sports Mole, 20 Sep: “Man City’s victory was sealed nine minutes from time when Josko Gvardiol beat the offside trap and rolled the ball across the penalty area for Haaland to tap home from close range.” Football365, 20 Sep: “Brian Brobbey ends 19-year PL wait as Erling Haaland sets another record Brian Brobbey leaves the Etihad with the match ball That was tremendously good fun from Manchester City But we do worry that if anything, for me, Clive, it was almost too much fun.”",
+   "developments": "Recent developments — Football365, 21 Sep: “Man Utd: INEOS plan ‘enormous proposal’ for Barcelona superstar and and pay more salary than Erling Haaland Manchester City striker Erling Haaland Manchester United are keen on adding Barcelona forward Raphinha to Michael Carrick’s squad and are ready to pay the former Leeds United star more salary than Erling Haaland gets at Manchester City, according to a report.” Football365, 21 Sep: “Man City striker Haaland gets paid the most in the Premier League, with the Norway international on £525,000-a-week at the Etihad Stadium.” Football365, 20 Sep: “Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 20 goals A goal against Sunderland not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.”",
    "outlook": "On the coming weeks — Sports Mole, 13 Sep: “While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.” Fantasy Football 247, 11 Sep: “To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, but it’s also not the dreaded blank that can so easily accompany a Single Gameweek Triple Captain.”",
    "confidence": "high",
-   "evidence_count": 80,
+   "evidence_count": 81,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
     "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
@@ -1975,7 +2027,7 @@
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
     "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
-    "https://www.football365.com/news/man-city-erling-haaland-barcelona-transfer-prospects-different"
+    "https://www.football365.com/news/manchester-united-barcelona-raphinha"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1996,6 +2048,22 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Man Utd: INEOS plan ‘enormous proposal’ for Barcelona superstar and and pay more salary than Erling Haaland Manchester City striker Erling Haaland Manchester United are keen on adding Barcelona forward Raphinha to Michael Carrick’s squad and are ready to pay the former Leeds United star more salary than Erling Haaland gets at Manchester City, according to a report.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/manchester-united-barcelona-raphinha",
+     "published": "2026-09-21T10:33:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Man City striker Haaland gets paid the most in the Premier League, with the Norway international on £525,000-a-week at the Etihad Stadium.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/manchester-united-barcelona-raphinha",
+     "published": "2026-09-21T10:33:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 20 goals A goal against Sunderland not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.",
      "source": "Football365",
@@ -3812,14 +3880,14 @@
    "player": "Hall",
    "club": "NEW",
    "status": "Latest on Hall — Sports Mole, 14 Sep: “However, no player ended up joining, despite long-standing interest in Lewis Hall and Alejandro Balde in particular.”",
-   "why_here": "Hall is on the bench this week at £5.2m as a DEF. The selection rests on 20 retrieved item(s) from 5 source(s), the most recent dated 14 Sep.",
-   "case_for": "Nothing retrieved this cycle makes a positive case for him. The evidence found is all cautionary.",
-   "case_against": "What argues against him: FourFourTwo FPL, 12 Sep: “But as Hall ’s message to Newcastle supporters inferred: “There’s never been a moment where I doubted how much I love being here,” — the Red Devils never stood a chance.” FourFourTwo FPL, 12 Sep: “In his own words, Hall is a born-and-bred Toon fan, albeit having grown up in the South, and his future with Newcastle was never in doubt.” Sports Mole, 09 Sep: “Manchester United have suffered a major setback in their pursuit of Lewis Hall, with the Newcastle United left‑back now set to sign a new long‑term contract that will keep him at St James’ Park.”",
+   "why_here": "Hall is on the bench this week at £5.2m as a DEF. The selection rests on 21 retrieved item(s) from 5 source(s), the most recent dated 21 Sep.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
+   "case_against": "What argues against him: FourFourTwo FPL, 21 Sep: “Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.” FourFourTwo FPL, 12 Sep: “But as Hall ’s message to Newcastle supporters inferred: “There’s never been a moment where I doubted how much I love being here,” — the Red Devils never stood a chance.” FourFourTwo FPL, 12 Sep: “In his own words, Hall is a born-and-bred Toon fan, albeit having grown up in the South, and his future with Newcastle was never in doubt.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Sports Mole, 14 Sep: “However, the Red Devils' top summer priority, Lewis Hall, has just signed a new contract with Newcastle .” Football365, 11 Sep: “Alan Shearer has explained why he thinks Newcastle United still have an “issue” with Lewis Hall despite the Manchester United target signing a new contract.” Football365, 11 Sep: “Manchester United believe that a France international is keen on a move to Old Trafford, as Lewis Hall decides to sign a new deal with Newcastle United.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 20,
+   "evidence_count": 21,
    "evidence_used": [
     "https://www.fourfourtwo.com/transfer/what-manchester-united-didnt-realise-about-gbp35m-transfer-target-and-why-they-never-stood-a-chance",
     "https://www.football365.com/news/man-utd-journalist-chances-signing-lewis-hall-four-defenders",
@@ -3842,6 +3910,26 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/i-always-knew-i-wanted-to-play-here-lewis-hall-buzzing-after-committing-future-to-newcastle-united",
+     "published": "2026-09-21T10:06:05+00:00",
+     "tone": "negative",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Hall scored in a 2-1 victory, marking his big week in the perfect way.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/i-always-knew-i-wanted-to-play-here-lewis-hall-buzzing-after-committing-future-to-newcastle-united",
+     "published": "2026-09-21T10:06:05+00:00",
+     "tone": "positive",
+     "topics": [
+      "match report"
+     ]
+    },
     {
      "text": "However, no player ended up joining, despite long-standing interest in Lewis Hall and Alejandro Balde in particular.",
      "source": "Sports Mole",

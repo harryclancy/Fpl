@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-21T01:10:16+00:00",
- "seconds": 140.4,
+ "ran_at": "2026-09-21T10:48:28+00:00",
+ "seconds": 123.9,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 587,
- "substantive_items": 211,
- "duplicates_removed": 10,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 15308,
+ "sources_readable": 62,
+ "candidates_discovered": 642,
+ "substantive_items": 252,
+ "duplicates_removed": 18,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 15463,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 211 articles"
+    "62/78 sources returned 252 articles"
    ]
   },
   "blackout": {
@@ -41,6 +41,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -901,9 +902,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 42,
+   "evidence_count": 45,
    "source_count": 16,
-   "latest_evidence": "2026-09-20T16:20:00+00:00",
+   "latest_evidence": "2026-09-21T10:58:54+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -928,6 +929,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Palmer injury latest after England international withdrawal",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-21T10:10:00+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Marcus Rashford and Kobbie Mainoo are injury doubts, too The post Palmer injury latest after England international withdrawal appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "England squad announcement LIVE: Thomas Tuchel makes Cole Palmer, Trent Alexander-Arnold decisions for Nations League",
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html",
@@ -1026,24 +1036,15 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "A report has claimed that two of Chelsea’s biggest stars are ready to move to Manchester United in the summer transfer window."
-    },
-    {
-     "title": "LEICESTER CITY 0 TOWN 1",
-     "url": "https://www.itfc.co.uk/news/2026/september/20/leicester-city-0-town-1/",
-     "source": "Ipswich Town",
-     "published": "2026-09-20T16:20:00+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Town Women secured their first three points of the season following a hard-fought 1-0 win at Leicester City in the Barclays Women’s Super League 2. The visitors first chance of the game arrived in the 7th minute after Aimee Palmer’s corner eventually dropped to Georgia Timms near the penalty spot who sent an acrobatic effort over the crossbar. Both teams pushed to gain a real foothold in the match"
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 80,
+   "evidence_count": 81,
    "source_count": 16,
-   "latest_evidence": "2026-09-20T19:42:59+00:00",
+   "latest_evidence": "2026-09-21T10:33:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1168,13 +1169,13 @@
      "excerpt": ""
     },
     {
-     "title": "Why prospect of Barcelona signing Man City star Erling Haaland are now ‘different’",
-     "url": "https://www.football365.com/news/man-city-erling-haaland-barcelona-transfer-prospects-different",
+     "title": "Man Utd plan enormous proposal for Barcelona superstar and pay more salary than Erling Haaland",
+     "url": "https://www.football365.com/news/manchester-united-barcelona-raphinha",
      "source": "Football365",
-     "published": "2026-09-19T13:28:18+00:00",
+     "published": "2026-09-21T10:33:00+00:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "The prospect of Barcelona signing Erling Haaland is “slightly different” now amid fresh rumours surrounding the Man City striker’s future."
+     "excerpt": "Manchester United want to sign a former Leeds United winger from Barcelona in 2027, according to a Spanish report."
     }
    ]
   },
@@ -1509,9 +1510,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 20,
+   "evidence_count": 21,
    "source_count": 5,
-   "latest_evidence": "2026-09-14T10:00:50+01:00",
+   "latest_evidence": "2026-09-21T10:06:05+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1519,9 +1520,11 @@
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": false,
+   "fixtures_assessed": true,
    "dimensions_covered": [
+    "fpl advice",
     "injury",
+    "match report",
     "press conference",
     "set pieces",
     "tactics",
