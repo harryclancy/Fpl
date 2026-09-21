@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-21T17:06:08+00:00",
+ "generated": "2026-09-21T21:07:10+00:00",
  "gameweek": 6,
- "corpus_size": 15651,
+ "corpus_size": 15780,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -294,16 +294,17 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "status": "Latest on Muharemović — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
-   "why_here": "Muharemović is in the starting eleven this week at £5.0m as a DEF. The selection rests on 5 retrieved item(s) from 2 source(s), the most recent dated 11 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
+   "status": "Latest on Muharemović — Fantasy Football Scout, 21 Sep: “MUHAREMOVIC THREAT The fact that Tarik Muharemovic (£5.0m) had more shots than any other player on the pitch pretty much sums it up.”",
+   "why_here": "Muharemović is in the starting eleven this week at £5.0m as a DEF. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 21 Sep.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 21 Sep: “Arguably Leeds’ best player again, Muharemovic is still yet to blank in FPL, with one assist, two clean sheets and six defensive contribution (DefCon) points in five matches.” FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
-   "outlook": "On the coming weeks — FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 5,
+   "evidence_count": 6,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/09/21/fpl-notes-muharemovic-threat-stach-defcon-defences-on-top",
     "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
@@ -311,10 +312,33 @@
     "https://www.leedsunited.com/en/news/muharemovic-on-elland-roads-unbelievable-atmosphere"
    ],
    "sources_used": [
+    "Fantasy Football Scout",
     "FourFourTwo FPL",
     "Leeds United"
    ],
    "quotes": [
+    {
+     "text": "MUHAREMOVIC THREAT The fact that Tarik Muharemovic (£5.0m) had more shots than any other player on the pitch pretty much sums it up.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/fpl-notes-muharemovic-threat-stach-defcon-defences-on-top",
+     "published": "2026-09-21T17:15:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "statistics"
+     ]
+    },
+    {
+     "text": "Arguably Leeds’ best player again, Muharemovic is still yet to blank in FPL, with one assist, two clean sheets and six defensive contribution (DefCon) points in five matches.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/fpl-notes-muharemovic-threat-stach-defcon-defences-on-top",
+     "published": "2026-09-21T17:15:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "statistics",
+      "fpl advice",
+      "fixtures"
+     ]
+    },
     {
      "text": "Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.",
      "source": "FourFourTwo FPL",
@@ -3524,7 +3548,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 19 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -3533,16 +3557,15 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://avfc.co.uk/news/2026/september/21/gallery-villans-celebrate-at-spurs/",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-out-of-spain-squad-which-spurs-games-could-he-miss_605502.html",
     "https://avfc.co.uk/news/2026/september/19/postmatch-mcginn-reflects-on-tottenham-triumph/",
     "https://avfc.co.uk/news/2026/september/19/report-tottenham-v-aston-villa/",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-sorrow-spurs-defender-suffers-new-injury-as-three-replacements-identified_605479.html",
-    "https://www.fantasyfootballscout.co.uk/2026/09/19/spurs-v-aston-villa-team-news-porro-manzambi-start",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [
     "Aston Villa",
-    "Fantasy Football Scout",
     "FourFourTwo FPL",
     "Sports Mole"
    ],
@@ -4195,7 +4218,7 @@
    "player": "Groß",
    "club": "BHA",
    "status": "Latest on Groß — Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
-   "why_here": "Groß is on the bench this week at £5.8m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 13 Sep.",
+   "why_here": "Groß is on the bench this week at £5.8m as a MID. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 13 Sep.",
    "case_for": "What supports keeping him: Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4205,16 +4228,15 @@
    "evidence_count": 6,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
+    "https://avfc.co.uk/news/2026/september/21/report-u18s--aston-villa-2-4-brighton/",
     "https://www.101greatgoals.com/football/brighton-v-arsenal-confirmed-team-news/",
     "https://www.101greatgoals.com/match-previews/brighton-v-arsenal-preview-expected-line-ups-stats-and-where-to-watch/",
     "https://www.fourfourtwo.com/person/coaches-managers/fabian-hurzeler-is-a-victim-of-roberto-de-zerbis-success-at-brighton",
-    "https://www.nbcsports.com/soccer/news/how-to-watch-brighton-vs-arsenal-live-stream-tv-team-news-prediction",
-    "https://www.fantasyfootballscout.co.uk/2026/09/18/brighton-v-arsenal-predicted-line-ups-fpl-team-news-2"
+    "https://www.nbcsports.com/soccer/news/how-to-watch-brighton-vs-arsenal-live-stream-tv-team-news-prediction"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Aston Villa",
-    "Fantasy Football Scout",
     "FourFourTwo FPL",
     "NBC Sports Rotoworld PL"
    ],

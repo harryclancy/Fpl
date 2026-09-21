@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-21T17:06:08+00:00",
- "seconds": 123.2,
+ "ran_at": "2026-09-21T21:07:10+00:00",
+ "seconds": 113.0,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 682,
- "substantive_items": 265,
- "duplicates_removed": 20,
- "deeply_analysed": 69,
- "deep_read_failed": 21,
- "corpus_size": 15651,
+ "sources_readable": 61,
+ "candidates_discovered": 579,
+ "substantive_items": 179,
+ "duplicates_removed": 5,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 15780,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 265 articles"
+    "61/78 sources returned 179 articles"
    ]
   },
   "blackout": {
@@ -49,7 +49,6 @@
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -200,9 +199,9 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 5,
-   "source_count": 2,
-   "latest_evidence": "2026-09-11T08:25:33+00:00",
+   "evidence_count": 6,
+   "source_count": 3,
+   "latest_evidence": "2026-09-21T17:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -226,6 +225,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "­FPL notes: Muharemovic threat, Stach DefCon + defences on top",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/fpl-notes-muharemovic-threat-stach-defcon-defences-on-top",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-21T17:15:00+00:00",
+     "matched_on": "muharemovic",
+     "kind": "team news",
+     "excerpt": "Notes from Leeds’ goalless draw with Palace The post ­FPL notes: Muharemovic threat, Stach DefCon + defences on top appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "'Bukayo Saka is the standout attacking option right now with strong fixtures and penalty duty' Expert tips for playing the perfect FPL Wildcard in Gameweek 4",
      "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
@@ -1066,7 +1074,7 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "low",
+   "priority": "high",
    "researched": true,
    "items": [
     {
@@ -1426,8 +1434,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-09-20T07:54:24+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-09-21T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1451,6 +1459,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Villans celebrate at Spurs",
+     "url": "https://avfc.co.uk/news/2026/september/21/gallery-villans-celebrate-at-spurs/",
+     "source": "Aston Villa",
+     "published": "2026-09-21T11:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 Aston Villa supporters were celebrating in north London on Saturday afternoon as Unai Emery’s side registered a 3-2 triumph at Tottenham Hotspur. Johan Manzambi, Nicolas Jackson and Emi Buendía put the Villans three goals to the good before Spurs launched a late comeback, but it was not enough as we claimed our first Premier Leag"
+    },
     {
      "title": "Tottenham games Pedro Porro could miss with hamstring injury as Spain withdrawal confirmed",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-out-of-spain-squad-which-spurs-games-could-he-miss_605502.html",
@@ -1486,15 +1503,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur suffer a crushing injury blow in their Premier League clash with Aston Villa, as Pedro Porro is taken off with an apparent leg problem."
-    },
-    {
-     "title": "Spurs v Aston Villa team news: Porro + Manzambi start",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/spurs-v-aston-villa-team-news-porro-manzambi-start",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-19T10:45:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "One change for Spurs, two for Villa The post Spurs v Aston Villa team news: Porro + Manzambi start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
@@ -1651,8 +1659,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-19T12:49:36+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-21T13:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1665,7 +1673,6 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1684,6 +1691,15 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "U18s: Aston Villa 2-4 Brighton",
+     "url": "https://avfc.co.uk/news/2026/september/21/report-u18s--aston-villa-2-4-brighton/",
+     "source": "Aston Villa",
+     "published": "2026-09-21T13:00:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Aston Villa U18 Vs. Brighton and Hove Albion U18 - Sat, Sep 19 2026, 11:00 Aston Villa were beaten in the Under-18 Premier League on Saturday, falling 4-2 to Brighton & Hove Albion at Bodymoor Heath. Richard Beale’s Young Lions fell behind in the opening period to Finn Dzekawong’s opener, though pulled level just after the hour mark through defender Vincely Mudame. But a second-half brace"
     },
     {
      "title": "Brighton v Arsenal: Confirmed team news and line-ups",
@@ -1720,15 +1736,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "Brighton v Arsenal predicted line-ups + FPL team news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brighton-v-arsenal-predicted-line-ups-fpl-team-news-2",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-18T15:35:19+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Team form, absentees and our predicted XIs The post Brighton v Arsenal predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
