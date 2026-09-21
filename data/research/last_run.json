@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-21T10:48:28+00:00",
- "seconds": 123.9,
+ "ran_at": "2026-09-21T17:06:08+00:00",
+ "seconds": 123.2,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 642,
- "substantive_items": 252,
- "duplicates_removed": 18,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 15463,
+ "sources_readable": 60,
+ "candidates_discovered": 682,
+ "substantive_items": 265,
+ "duplicates_removed": 20,
+ "deeply_analysed": 69,
+ "deep_read_failed": 21,
+ "corpus_size": 15651,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 252 articles"
+    "60/78 sources returned 265 articles"
    ]
   },
   "blackout": {
@@ -41,6 +41,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
   "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -48,6 +49,7 @@
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -351,7 +353,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 14,
+   "evidence_count": 13,
    "source_count": 7,
    "latest_evidence": "2026-09-16T16:00:04+00:00",
    "official_source_found": true,
@@ -469,15 +471,6 @@
      "excerpt": "Villa have announced the arrivals of two new stars on transfer deadline day, with a further £77m spent"
     },
     {
-     "title": "Aston Villa transfer news: Unai Emery 'getting closer' to centre-back signing despite £24m rejected offer",
-     "url": "https://www.sportsmole.co.uk/football/aston-villa/transfer-talk/news/aston-villa-getting-closer-to-centre-back-signing-despite-gbp24m-rejected-offer_603622.html",
-     "source": "Sports Mole",
-     "published": "2026-08-24T10:28:10+01:00",
-     "matched_on": "konsa",
-     "kind": "transfer",
-     "excerpt": "Unai Emery is allegedly 'getting closer' to signing a replacement for Ezri Konsa, despite Aston Villa seeing a fresh offer rejected over the weekend."
-    },
-    {
      "title": "Preview: Arsenal visit Wearside in Saturday night Premier League action",
      "url": "https://www.safc.com/news/2026/september/11/preview--arsenal-visit-wearside-in-saturday-night-premier-league-action/",
      "source": "Sunderland",
@@ -485,15 +478,162 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
+    },
+    {
+     "title": "Zopharâs Gameweek 3 Q&A: Top City picks, Triple Captain Haaland, buy Konsa?",
+     "url": "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
+     "source": "Fantasy Football Hub",
+     "published": "2026-09-03T11:45:59+00:00",
+     "matched_on": "konsa",
+     "kind": "general",
+     "excerpt": "FPL Gameweek 3 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whetherÂ Ezri KonsaÂ is one to buy this week, the top Manchester City picks amid their new signings, using the Triple Captain on Erling HaalandÂ and the case […]"
+    }
+   ]
+  },
+  "Hall": {
+   "player": "Hall",
+   "club": "NEW",
+   "evidence_count": 21,
+   "source_count": 5,
+   "latest_evidence": "2026-09-21T10:06:05+00:00",
+   "official_source_found": false,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fpl advice",
+    "injury",
+    "match report",
+    "press conference",
+    "set pieces",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "What Manchester United didn’t realise about £35m transfer target - and why they never stood a chance",
+     "url": "https://www.fourfourtwo.com/transfer/what-manchester-united-didnt-realise-about-gbp35m-transfer-target-and-why-they-never-stood-a-chance",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-12T06:00:00+00:00",
+     "matched_on": "hall",
+     "kind": "team news",
+     "excerpt": "Lewis Hall has signed a contract extension at Newcastle United, with the Englishman, who has made 107 appearances for the Magpies since arriving in 2023, tied down until 2031. Manchester United attempted to secure the left-back’s services this summer, having achieved Champions League football under Michael Carrick , and looking to go from strength-to-strength. But as Hall ’s message to Newcastle s"
+    },
+    {
+     "title": "Top journalist rates Man Utd chances of signing Lewis Hall as INEOS line up four defender deals",
+     "url": "https://www.football365.com/news/man-utd-journalist-chances-signing-lewis-hall-four-defenders",
+     "source": "Football365",
+     "published": "2026-09-05T13:22:20+00:00",
+     "matched_on": "hall",
+     "kind": "team news",
+     "excerpt": "Newcastle left-back Lewis Hall could be one of four defender signings in the next two transfer windows at Man Utd, according to reports."
+    },
+    {
+     "title": "Man United transfer news: after Lewis Hall, another summer left-back target off the table",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/after-lewis-hall-another-summer-left-back-target-off-the-table-for-man-united_605110.html",
+     "source": "Sports Mole",
+     "published": "2026-09-14T10:00:50+01:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "With Lewis Hall having just signed a new contract with Newcastle, another Manchester United left-back target looks set to follow suit."
+    },
+    {
+     "title": "£60m left-back wants to join Man Utd after Lewis Hall signs new Newcastle contract",
+     "url": "https://www.football365.com/news/adrien-truffert-manchester-united-bournemouth",
+     "source": "Football365",
+     "published": "2026-09-11T12:31:14+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Manchester United believe that a France international is keen on a move to Old Trafford, as Lewis Hall decides to sign a new deal with Newcastle United."
+    },
+    {
+     "title": "Man United's Lewis Hall position 'explained' as Newcastle United announce long-term deal for defensive star",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-uniteds-hall-position-explained-as-newcastle-announce-new-deal-for-defensive-star_604946.html",
+     "source": "Sports Mole",
+     "published": "2026-09-11T11:12:00+01:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Newcastle United reveal that Manchester United-linked Lewis Hall has signed a new long-term contract at the club."
+    },
+    {
+     "title": "'Really proud moment': Lewis Hall signs long-term deal with Newcastle United",
+     "url": "https://www.soccerway.com/news/really-proud-moment-lewis-hall-signs-long-term-deal-with-newcastle-united/bu6ZDU8s/",
+     "source": "Soccerway",
+     "published": "2026-09-11T11:39:32+02:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": ""
+    },
+    {
+     "title": "Fabrizio Romano reveals Lewis Hall to Man Utd still on despite Newcastle agreement",
+     "url": "https://www.football365.com/news/man-utd-news-lewis-hall-move-fabrizio-romano-still-on-new-newcastle-contract",
+     "source": "Football365",
+     "published": "2026-09-10T14:46:19+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Romano has revealed Man Utd could still snare top left-back target Hall even though he has agreed to pen a new contract with Newcastle"
+    },
+    {
+     "title": "Man Utd transfer news: Red Devils dealt 'hammer blow' over top January target as huge update emerges",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-utd-dealt-hammer-blow-over-top-january-transfer-target-as-huge-update-emerges_604755.html",
+     "source": "Sports Mole",
+     "published": "2026-09-09T07:14:40+01:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Manchester United have suffered a major setback in their pursuit of Lewis Hall, with the Newcastle United left‑back now set to sign a new long‑term contract that will keep him at St James’ Park."
+    },
+    {
+     "title": "Man United transfer news: Lewis Hall ‘close’ to Newcastle agreement as Red Devils ‘plot move’ for Magpies teammate",
+     "url": "https://www.sportsmole.co.uk/football/newcastle-united/transfer-talk/news/hall-closing-in-on-newcastle-agreement-as-man-utd-plot-move-for-magpies-teammate_604727.html",
+     "source": "Sports Mole",
+     "published": "2026-09-08T13:47:11+01:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Manchester United reportedly suffer a fresh blow in their pursuit of Newcastle United left-back Lewis Hall and could now target one of his Magpies teammates."
+    },
+    {
+     "title": "Man Utd want to sign £70m Newcastle centre-back as Lewis Hall reaches final decision",
+     "url": "https://www.football365.com/news/manchester-united-newcastle-united-malick-thiaw-lewis-hall",
+     "source": "Football365",
+     "published": "2026-09-08T11:51:26+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Manchester United and Liverpool are competing to sign a Newcastle United defender in the summer of 2027."
+    },
+    {
+     "title": "Man Utd forced to go back to the drawing board as £75m INEOS target makes Premier League contract call",
+     "url": "https://www.football365.com/news/man-utd-back-drawing-board-75m-ineos-target-premier-league-contract-call",
+     "source": "Football365",
+     "published": "2026-09-06T13:57:45+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Newcastle United have made it clear they want to keep Lewis Hall, as reports suggest the Manchester United target is set to sign a new contract extension."
+    },
+    {
+     "title": "‘I don’t think he’s a good defender’ – Keane hits out at Man Utd pursuit of £75m star",
+     "url": "https://www.football365.com/news/man-utd-keane-hits-out-lewis-hall-transfer",
+     "source": "Football365",
+     "published": "2026-09-03T09:23:41+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Roy Keane has explained why Newcastle star Lewis Hall would not be “the answer” for Man Utd as they continue their search for a new left-back."
     }
    ]
   },
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 18,
+   "evidence_count": 19,
    "source_count": 7,
-   "latest_evidence": "2026-09-20T20:15:00+00:00",
+   "latest_evidence": "2026-09-21T10:56:03+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -564,6 +704,15 @@
      "excerpt": "The big-money signing from PSG could play on Friday The post Barcola, Szoboszlai + Liverpool injury latest for FPL Gameweek 3 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Liverpool offer confirmed for new defensive midfielder: report",
+     "url": "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-21T10:56:03+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "transfer",
+     "excerpt": "A Liverpool offer for a defensive midfielder has been revealed, with the Reds seemingly overrun in the engine room at the start of the season. New manager Andoni Iraola has enjoyed an unbeaten start to his Anfield tenure – and hasn't lost in the Premier League since January – but there are huge concerns over his squad and the inbalance of profiles at the Basque's disposal. With several big-money t"
+    },
+    {
      "title": "Liverpool save millions in transfer bailout as risky manoeuvre eases pressure on hierarchy",
      "url": "https://www.fourfourtwo.com/team/liverpool-save-millions-in-transfer-bailout-as-risky-manoeuvre-eases-pressure-on-depleted-hierarchy",
      "source": "FourFourTwo FPL",
@@ -616,15 +765,137 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Andoni Iraola was full of praise for midfielder Dominik Szoboszlai on Tuesday night."
+    }
+   ]
+  },
+  "Barnes": {
+   "player": "Barnes",
+   "club": "NEW",
+   "evidence_count": 11,
+   "source_count": 7,
+   "latest_evidence": "2026-09-19T16:08:15+01:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "match report",
+    "press conference",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "Kentucky expects RB Jovantae Barnes to return against Alabama",
+     "url": "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-09T23:10:24+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Barnes has delt with an undisclosed injury since the spring."
     },
     {
-     "title": "Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16",
-     "url": "https://www.101greatgoals.com/football/liverpool-tottenham-report/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-15T21:08:55+00:00",
-     "matched_on": "szoboszlai",
+     "title": "Newcastle United demonstrated the power of the twelfth man – can Aston Villa overcome the empty North Stand?",
+     "url": "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-07T16:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Newcastle United found themselves in a hole against Bournemouth when they met in the Premier League last weekend. Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler. Eventually, Jacob Ramsey added a second to salvage a point. Anecdotally, it was one of those days when it"
+    },
+    {
+     "title": "Honours even following pulsating draw at St James' Park",
+     "url": "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
+     "source": "AFC Bournemouth",
+     "published": "2026-09-05T13:25:00+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
+    },
+    {
+     "title": "Newcastle vs Hull City: Magpies attacker sets new record in Premier League clash at St James' Park",
+     "url": "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
+     "source": "Sports Mole",
+     "published": "2026-09-19T16:08:15+01:00",
+     "matched_on": "barnes",
      "kind": "general",
-     "excerpt": "Liverpool were made to work hard before the tie was settled in stunning fashion."
+     "excerpt": "Newcastle United attacker Harvey Barnes registered two assists within the opening 10 minutes as the Magpies take a healthy 2-0 lead against Hull City."
+    },
+    {
+     "title": "Game4Hope Set For Goodison Park As Legends Return To Grand Old Lady",
+     "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
+     "source": "Everton",
+     "published": "2026-09-18T11:59:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Game4Hope will now take place at Goodison Park on Saturday 26 September, giving some of football’s biggest names – and a host of Everton and Liverpool favourite – the opportunity to return to one of the sport’s most iconic stadiums. The inaugural charity fixture, which will raise vital funds and awareness in the fight against homelessness, will see Tim Cahill’s star-studded Merseyside XI take on a"
+    },
+    {
+     "title": "FPL Gameweek 5 tips: Touré's personal milestone and a good time to buy Barnes",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
+     "source": "Newcastle United",
+     "published": "2026-09-17T12:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "What's Next for Raptors After Kawhi Leonard Trade?",
+     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-15T11:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
+    },
+    {
+     "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
+     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
+     "source": "Newcastle United",
+     "published": "2026-09-11T10:30:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Everton Icon Cahill To Return Alongside Brazil Great Rivaldo At Hill Dickinson Stadium",
+     "url": "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
+     "source": "Everton",
+     "published": "2026-09-10T08:59:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Everton icon Tim Cahill is set to grace Hill Dickinson Stadium as captain of Team Merseyside at #Game4Hope . And the Blues favourite is going head-to-head with Ballon d’Or and World Cup winner Rivaldo at the star-studded charity game on Saturday 26 September (4.45pm BST kick-off). An all-star Merseyside XI made up of Everton and Liverpool legends takes on a Rest of the World XI as football unites "
+    },
+    {
+     "title": "Gallery: Tav strikes again on Tyneside but Magpies grab a point",
+     "url": "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
+     "source": "AFC Bournemouth",
+     "published": "2026-09-05T14:10:34+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Marcus Tavernier made it two goals from as many games on the road in the Premier League this season, as AFC Bournemouth drew 2-2 with Newcastle at St James’ Park. The 27-year-old, who was on the books at Newcastle as a youngster, struck within nine minutes of the draw on Tyneside. It made it a hat-trick of goals for Tavernier at St James’ Park in the past nine months, while an own goal from Malick"
+    },
+    {
+     "title": "Barnes hits beauty but Bournemouth dominate at Newcastle",
+     "url": "https://www.101greatgoals.com/news/barnes-hits-beauty-but-bournemouth-dominate-at-newcastle/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-05T12:19:07+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Three goals in a thrilling first half"
     }
    ]
   },
@@ -768,143 +1039,12 @@
     }
    ]
   },
-  "Barnes": {
-   "player": "Barnes",
-   "club": "NEW",
-   "evidence_count": 11,
-   "source_count": 7,
-   "latest_evidence": "2026-09-19T16:08:15+01:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "Kentucky expects RB Jovantae Barnes to return against Alabama",
-     "url": "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-09T23:10:24+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Barnes has delt with an undisclosed injury since the spring."
-    },
-    {
-     "title": "Newcastle United demonstrated the power of the twelfth man – can Aston Villa overcome the empty North Stand?",
-     "url": "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-07T16:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Newcastle United found themselves in a hole against Bournemouth when they met in the Premier League last weekend. Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler. Eventually, Jacob Ramsey added a second to salvage a point. Anecdotally, it was one of those days when it"
-    },
-    {
-     "title": "Honours even following pulsating draw at St James' Park",
-     "url": "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
-     "source": "AFC Bournemouth",
-     "published": "2026-09-05T13:25:00+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
-    },
-    {
-     "title": "Newcastle vs Hull City: Magpies attacker sets new record in Premier League clash at St James' Park",
-     "url": "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
-     "source": "Sports Mole",
-     "published": "2026-09-19T16:08:15+01:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Newcastle United attacker Harvey Barnes registered two assists within the opening 10 minutes as the Magpies take a healthy 2-0 lead against Hull City."
-    },
-    {
-     "title": "Game4Hope Set For Goodison Park As Legends Return To Grand Old Lady",
-     "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
-     "source": "Everton",
-     "published": "2026-09-18T11:59:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Game4Hope will now take place at Goodison Park on Saturday 26 September, giving some of football’s biggest names – and a host of Everton and Liverpool favourite – the opportunity to return to one of the sport’s most iconic stadiums. The inaugural charity fixture, which will raise vital funds and awareness in the fight against homelessness, will see Tim Cahill’s star-studded Merseyside XI take on a"
-    },
-    {
-     "title": "FPL Gameweek 5 tips: Touré's personal milestone and a good time to buy Barnes",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-     "source": "Newcastle United",
-     "published": "2026-09-17T12:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "What's Next for Raptors After Kawhi Leonard Trade?",
-     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-15T11:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
-    },
-    {
-     "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-     "source": "Newcastle United",
-     "published": "2026-09-11T10:30:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Everton Icon Cahill To Return Alongside Brazil Great Rivaldo At Hill Dickinson Stadium",
-     "url": "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
-     "source": "Everton",
-     "published": "2026-09-10T08:59:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Everton icon Tim Cahill is set to grace Hill Dickinson Stadium as captain of Team Merseyside at #Game4Hope . And the Blues favourite is going head-to-head with Ballon d’Or and World Cup winner Rivaldo at the star-studded charity game on Saturday 26 September (4.45pm BST kick-off). An all-star Merseyside XI made up of Everton and Liverpool legends takes on a Rest of the World XI as football unites "
-    },
-    {
-     "title": "Gallery: Tav strikes again on Tyneside but Magpies grab a point",
-     "url": "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
-     "source": "AFC Bournemouth",
-     "published": "2026-09-05T14:10:34+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Marcus Tavernier made it two goals from as many games on the road in the Premier League this season, as AFC Bournemouth drew 2-2 with Newcastle at St James’ Park. The 27-year-old, who was on the books at Newcastle as a youngster, struck within nine minutes of the draw on Tyneside. It made it a hat-trick of goals for Tavernier at St James’ Park in the past nine months, while an own goal from Malick"
-    },
-    {
-     "title": "Barnes hits beauty but Bournemouth dominate at Newcastle",
-     "url": "https://www.101greatgoals.com/news/barnes-hits-beauty-but-bournemouth-dominate-at-newcastle/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-05T12:19:07+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Three goals in a thrilling first half"
-    }
-   ]
-  },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 45,
-   "source_count": 16,
-   "latest_evidence": "2026-09-21T10:58:54+02:00",
+   "evidence_count": 50,
+   "source_count": 17,
+   "latest_evidence": "2026-09-21T15:41:11+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -929,6 +1069,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Gibbs-White to be called up to England squad as injured Palmer withdraws",
+     "url": "https://www.101greatgoals.com/football/internationals/gibbs-white-england-squad-palmer-out/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-21T10:51:22+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Palmer reportedly has a minor injury."
+    },
     {
      "title": "Palmer injury latest after England international withdrawal",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
@@ -1027,15 +1176,6 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "Watch Arsenal vs Chelsea for free this weekend as both sides put their unbeaten records on the line at the Emirates Stadium. FourFourTwo has all the details on live streams and TV channels, wherever you are in the world. Arsenal vs Chelsea: key information Kick-off time: 4:30pm BST / 11:30am ET / 1:30am AEST (Mon) Free Stream: USA Network via YouTube TV's 21-day free trial TV & Streaming: Sky Spor"
-    },
-    {
-     "title": "Two Chelsea stars willing to move to Man Utd – Cole Palmer surely one of them",
-     "url": "https://www.football365.com/news/chelsea-manchester-united-transfer",
-     "source": "Football365",
-     "published": "2026-09-02T10:39:11+00:00",
-     "matched_on": "palmer",
-     "kind": "transfer",
-     "excerpt": "A report has claimed that two of Chelsea’s biggest stars are ready to move to Manchester United in the summer transfer window."
     }
    ]
   },
@@ -1176,146 +1316,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "Manchester United want to sign a former Leeds United winger from Barcelona in 2027, according to a Spanish report."
-    }
-   ]
-  },
-  "João Pedro": {
-   "player": "João Pedro",
-   "club": "CHE",
-   "evidence_count": 66,
-   "source_count": 15,
-   "latest_evidence": "2026-09-19T10:15:00+00:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "high",
-   "researched": true,
-   "items": [
-    {
-     "title": "Gomes starts at Spurs",
-     "url": "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
-     "source": "Aston Villa",
-     "published": "2026-09-19T10:15:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes returned to Aston Villa’s starting XI for Saturday’s Premier League clash at Tottenham Hotspur while there was also a full debut for Johan Manzambi. Midfielder Gomes completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening weekend of the season. He returned to Villa’s line-up f"
-    },
-    {
-     "title": "FPL notes: Pedro injury latest + why Sangare was benched",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-19T00:05:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "FPL lessons from Brentford 3-0 Chelsea The post FPL notes: Pedro injury latest + why Sangare was benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Brentford v Chelsea team news: Sangare benched, no Pedro",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-18T18:15:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Two changes for Brentford, five for Chelsea The post Brentford v Chelsea team news: Sangare benched, no Pedro appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Who's Missing: Chelsea's Joao Pedro injured, Foden suspended for Man City",
-     "url": "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
-     "source": "Soccerway",
-     "published": "2026-09-18T17:54:55+02:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
-     "title": "FPL Tips: Joao Pedro & Anthony Elanga Injury Updates and Best Replacements for GW5",
-     "url": "https://www.rotowire.com/soccer/article/fpl-tips-joao-pedro-anthony-elanga-injury-updates-and-best-replacements-for-gw5-134689",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-18T14:06:00+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Team news for Spurs showdown",
-     "url": "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
-     "source": "Aston Villa",
-     "published": "2026-09-18T13:15:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes is set to return to Aston Villa’s squad for Saturday’s Premier League trip to Tottenham Hotspur but Marco Bizot joins a lengthy injury list. Gomes has completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening day of the season and is poised to be back in the fold in north London"
-    },
-    {
-     "title": "Chelsea injury news: Thomas Tuchel provides Reece James update after England squad announcement",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-handed-another-major-injury-blow-ahead-of-brentford-game_605408.html",
-     "source": "Sports Mole",
-     "published": "2026-09-18T12:20:55+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea are seemingly handed another injury blow ahead of Friday's Premier League fixture against Brentford, less than 24 hours after it was reported that Joao Pedro had sustained a knee injury."
-    },
-    {
-     "title": "Is Joao Pedro injured this weekend? Chelsea sweat on fitness of star forward",
-     "url": "https://www.fourfourtwo.com/person/player/is-joao-pedro-injured-this-weekend-chelsea-sweat-on-fitness-of-star-forward",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-18T09:56:17+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea look set to be without striker Joao Pedro for tonight's clash with Brentford. The 24-year-old has started this season in tremendous form, scoring three goals and providing one assist. However, during last weekend's 2-2 draw with Hull City , the Brazilian picked up a knock that is expected to rule him out of this evening's game. Pedro has dropped out of Brazil squad Joao Pedro has withdrawn"
-    },
-    {
-     "title": "What to do with Joao Pedro in FPL + top 5 replacements",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/what-to-do-with-joao-pedro-in-fpl-top-5-replacements",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-17T19:50:00+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "FPL Meerkat looks at the options available to Joao Pedro owners The post What to do with Joao Pedro in FPL + top 5 replacements appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Chelsea injury news: Major Joao Pedro update amid 'surprise' Xabi Alonso comments on Brazil squad withdrawal",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/major-pedro-injury-update-amid-surprise-alonso-comments-on-chelsea-star_605304.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T17:42:21+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea forward Joao Pedro is allegedly suffering with a knee injury, despite claims from manager Xabi Alonso that he could feature against Brentford on Friday night."
-    },
-    {
-     "title": "Joao Pedro, James, Caicedo: Chelsea injury latest for FPL Gameweek 5",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/joao-pedro-james-caicedo-chelsea-injury-latest-for-fpl-gameweek-5",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-17T14:01:27+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "The most-owned FPL player has pulled out of Brazil's latest squad The post Joao Pedro, James, Caicedo: Chelsea injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-17T12:45:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Six managers face the media, including Chelsea's Xabi Alonso The post FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -1507,13 +1507,13 @@
     }
    ]
   },
-  "Hall": {
-   "player": "Hall",
-   "club": "NEW",
-   "evidence_count": 21,
-   "source_count": 5,
-   "latest_evidence": "2026-09-21T10:06:05+00:00",
-   "official_source_found": false,
+  "João Pedro": {
+   "player": "João Pedro",
+   "club": "CHE",
+   "evidence_count": 66,
+   "source_count": 15,
+   "latest_evidence": "2026-09-19T10:15:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1522,126 +1522,128 @@
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "fpl advice",
     "injury",
     "match report",
     "press conference",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
    "strength": "strong",
-   "priority": "low",
+   "priority": "high",
    "researched": true,
    "items": [
     {
-     "title": "What Manchester United didn’t realise about £35m transfer target - and why they never stood a chance",
-     "url": "https://www.fourfourtwo.com/transfer/what-manchester-united-didnt-realise-about-gbp35m-transfer-target-and-why-they-never-stood-a-chance",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-12T06:00:00+00:00",
-     "matched_on": "hall",
+     "title": "Gomes starts at Spurs",
+     "url": "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
+     "source": "Aston Villa",
+     "published": "2026-09-19T10:15:00+00:00",
+     "matched_on": "joao",
      "kind": "team news",
-     "excerpt": "Lewis Hall has signed a contract extension at Newcastle United, with the Englishman, who has made 107 appearances for the Magpies since arriving in 2023, tied down until 2031. Manchester United attempted to secure the left-back’s services this summer, having achieved Champions League football under Michael Carrick , and looking to go from strength-to-strength. But as Hall ’s message to Newcastle s"
+     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes returned to Aston Villa’s starting XI for Saturday’s Premier League clash at Tottenham Hotspur while there was also a full debut for Johan Manzambi. Midfielder Gomes completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening weekend of the season. He returned to Villa’s line-up f"
     },
     {
-     "title": "Top journalist rates Man Utd chances of signing Lewis Hall as INEOS line up four defender deals",
-     "url": "https://www.football365.com/news/man-utd-journalist-chances-signing-lewis-hall-four-defenders",
-     "source": "Football365",
-     "published": "2026-09-05T13:22:20+00:00",
-     "matched_on": "hall",
+     "title": "FPL notes: Pedro injury latest + why Sangare was benched",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-19T00:05:00+00:00",
+     "matched_on": "pedro",
      "kind": "team news",
-     "excerpt": "Newcastle left-back Lewis Hall could be one of four defender signings in the next two transfer windows at Man Utd, according to reports."
+     "excerpt": "FPL lessons from Brentford 3-0 Chelsea The post FPL notes: Pedro injury latest + why Sangare was benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Man United transfer news: after Lewis Hall, another summer left-back target off the table",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/after-lewis-hall-another-summer-left-back-target-off-the-table-for-man-united_605110.html",
-     "source": "Sports Mole",
-     "published": "2026-09-14T10:00:50+01:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "With Lewis Hall having just signed a new contract with Newcastle, another Manchester United left-back target looks set to follow suit."
+     "title": "Brentford v Chelsea team news: Sangare benched, no Pedro",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-18T18:15:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Two changes for Brentford, five for Chelsea The post Brentford v Chelsea team news: Sangare benched, no Pedro appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "£60m left-back wants to join Man Utd after Lewis Hall signs new Newcastle contract",
-     "url": "https://www.football365.com/news/adrien-truffert-manchester-united-bournemouth",
-     "source": "Football365",
-     "published": "2026-09-11T12:31:14+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Manchester United believe that a France international is keen on a move to Old Trafford, as Lewis Hall decides to sign a new deal with Newcastle United."
-    },
-    {
-     "title": "Man United's Lewis Hall position 'explained' as Newcastle United announce long-term deal for defensive star",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-uniteds-hall-position-explained-as-newcastle-announce-new-deal-for-defensive-star_604946.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T11:12:00+01:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Newcastle United reveal that Manchester United-linked Lewis Hall has signed a new long-term contract at the club."
-    },
-    {
-     "title": "'Really proud moment': Lewis Hall signs long-term deal with Newcastle United",
-     "url": "https://www.soccerway.com/news/really-proud-moment-lewis-hall-signs-long-term-deal-with-newcastle-united/bu6ZDU8s/",
+     "title": "Who's Missing: Chelsea's Joao Pedro injured, Foden suspended for Man City",
+     "url": "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
      "source": "Soccerway",
-     "published": "2026-09-11T11:39:32+02:00",
-     "matched_on": "hall",
-     "kind": "transfer",
+     "published": "2026-09-18T17:54:55+02:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
      "excerpt": ""
     },
     {
-     "title": "Fabrizio Romano reveals Lewis Hall to Man Utd still on despite Newcastle agreement",
-     "url": "https://www.football365.com/news/man-utd-news-lewis-hall-move-fabrizio-romano-still-on-new-newcastle-contract",
-     "source": "Football365",
-     "published": "2026-09-10T14:46:19+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Romano has revealed Man Utd could still snare top left-back target Hall even though he has agreed to pen a new contract with Newcastle"
+     "title": "FPL Tips: Joao Pedro & Anthony Elanga Injury Updates and Best Replacements for GW5",
+     "url": "https://www.rotowire.com/soccer/article/fpl-tips-joao-pedro-anthony-elanga-injury-updates-and-best-replacements-for-gw5-134689",
+     "source": "RotoWire Soccer",
+     "published": "2026-09-18T14:06:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": ""
     },
     {
-     "title": "Man Utd transfer news: Red Devils dealt 'hammer blow' over top January target as huge update emerges",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-utd-dealt-hammer-blow-over-top-january-transfer-target-as-huge-update-emerges_604755.html",
+     "title": "Team news for Spurs showdown",
+     "url": "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
+     "source": "Aston Villa",
+     "published": "2026-09-18T13:15:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes is set to return to Aston Villa’s squad for Saturday’s Premier League trip to Tottenham Hotspur but Marco Bizot joins a lengthy injury list. Gomes has completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening day of the season and is poised to be back in the fold in north London"
+    },
+    {
+     "title": "Chelsea injury news: Thomas Tuchel provides Reece James update after England squad announcement",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-handed-another-major-injury-blow-ahead-of-brentford-game_605408.html",
      "source": "Sports Mole",
-     "published": "2026-09-09T07:14:40+01:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Manchester United have suffered a major setback in their pursuit of Lewis Hall, with the Newcastle United left‑back now set to sign a new long‑term contract that will keep him at St James’ Park."
+     "published": "2026-09-18T12:20:55+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea are seemingly handed another injury blow ahead of Friday's Premier League fixture against Brentford, less than 24 hours after it was reported that Joao Pedro had sustained a knee injury."
     },
     {
-     "title": "Man United transfer news: Lewis Hall ‘close’ to Newcastle agreement as Red Devils ‘plot move’ for Magpies teammate",
-     "url": "https://www.sportsmole.co.uk/football/newcastle-united/transfer-talk/news/hall-closing-in-on-newcastle-agreement-as-man-utd-plot-move-for-magpies-teammate_604727.html",
+     "title": "Is Joao Pedro injured this weekend? Chelsea sweat on fitness of star forward",
+     "url": "https://www.fourfourtwo.com/person/player/is-joao-pedro-injured-this-weekend-chelsea-sweat-on-fitness-of-star-forward",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-18T09:56:17+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea look set to be without striker Joao Pedro for tonight's clash with Brentford. The 24-year-old has started this season in tremendous form, scoring three goals and providing one assist. However, during last weekend's 2-2 draw with Hull City , the Brazilian picked up a knock that is expected to rule him out of this evening's game. Pedro has dropped out of Brazil squad Joao Pedro has withdrawn"
+    },
+    {
+     "title": "What to do with Joao Pedro in FPL + top 5 replacements",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/what-to-do-with-joao-pedro-in-fpl-top-5-replacements",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-17T19:50:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "FPL Meerkat looks at the options available to Joao Pedro owners The post What to do with Joao Pedro in FPL + top 5 replacements appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Chelsea injury news: Major Joao Pedro update amid 'surprise' Xabi Alonso comments on Brazil squad withdrawal",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/major-pedro-injury-update-amid-surprise-alonso-comments-on-chelsea-star_605304.html",
      "source": "Sports Mole",
-     "published": "2026-09-08T13:47:11+01:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Manchester United reportedly suffer a fresh blow in their pursuit of Newcastle United left-back Lewis Hall and could now target one of his Magpies teammates."
+     "published": "2026-09-17T17:42:21+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea forward Joao Pedro is allegedly suffering with a knee injury, despite claims from manager Xabi Alonso that he could feature against Brentford on Friday night."
     },
     {
-     "title": "Man Utd want to sign £70m Newcastle centre-back as Lewis Hall reaches final decision",
-     "url": "https://www.football365.com/news/manchester-united-newcastle-united-malick-thiaw-lewis-hall",
-     "source": "Football365",
-     "published": "2026-09-08T11:51:26+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Manchester United and Liverpool are competing to sign a Newcastle United defender in the summer of 2027."
+     "title": "Joao Pedro, James, Caicedo: Chelsea injury latest for FPL Gameweek 5",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/joao-pedro-james-caicedo-chelsea-injury-latest-for-fpl-gameweek-5",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-17T14:01:27+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "The most-owned FPL player has pulled out of Brazil's latest squad The post Joao Pedro, James, Caicedo: Chelsea injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Man Utd forced to go back to the drawing board as £75m INEOS target makes Premier League contract call",
-     "url": "https://www.football365.com/news/man-utd-back-drawing-board-75m-ineos-target-premier-league-contract-call",
-     "source": "Football365",
-     "published": "2026-09-06T13:57:45+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Newcastle United have made it clear they want to keep Lewis Hall, as reports suggest the Manchester United target is set to sign a new contract extension."
-    },
-    {
-     "title": "‘I don’t think he’s a good defender’ – Keane hits out at Man Utd pursuit of £75m star",
-     "url": "https://www.football365.com/news/man-utd-keane-hits-out-lewis-hall-transfer",
-     "source": "Football365",
-     "published": "2026-09-03T09:23:41+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Roy Keane has explained why Newcastle star Lewis Hall would not be “the answer” for Man Utd as they continue their search for a new left-back."
+     "title": "FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-17T12:45:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Six managers face the media, including Chelsea's Xabi Alonso The post FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
