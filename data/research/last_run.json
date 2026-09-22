@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-22T01:37:57+00:00",
- "seconds": 167.3,
+ "ran_at": "2026-09-22T10:03:21+00:00",
+ "seconds": 131.2,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 557,
- "substantive_items": 160,
+ "sources_readable": 62,
+ "candidates_discovered": 604,
+ "substantive_items": 188,
  "duplicates_removed": 8,
- "deeply_analysed": 89,
- "deep_read_failed": 1,
- "corpus_size": 15891,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 16020,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 160 articles"
+    "62/78 sources returned 188 articles"
    ]
   },
   "blackout": {
@@ -46,7 +46,6 @@
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
-  "FPL Ranker: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
@@ -510,9 +509,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 21,
+   "evidence_count": 22,
    "source_count": 5,
-   "latest_evidence": "2026-09-21T10:06:05+00:00",
+   "latest_evidence": "2026-09-22T05:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -552,6 +551,15 @@
      "matched_on": "hall",
      "kind": "team news",
      "excerpt": "Newcastle left-back Lewis Hall could be one of four defender signings in the next two transfer windows at Man Utd, according to reports."
+    },
+    {
+     "title": "'Manchester United interest didn't affect me' Newcastle United star Lewis Hall reveals impact of summer transfer distraction",
+     "url": "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-22T05:00:00+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Hall, 22, signed a two-year extension with no release clause last week, tying him to the club until 2031 despite enquiries from the Red Devils and summer-long speculation linking him with a move to Old Trafford. He capped off a great few days, which also included an England recall, with a goal in Newcastle ’s 2-1 win over Hull City on Saturday. Newcastle fans could be forgiven for fearing Hall wou"
     },
     {
      "title": "Man United transfer news: after Lewis Hall, another summer left-back target off the table",
@@ -633,15 +641,6 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "Newcastle United have made it clear they want to keep Lewis Hall, as reports suggest the Manchester United target is set to sign a new contract extension."
-    },
-    {
-     "title": "‘I don’t think he’s a good defender’ – Keane hits out at Man Utd pursuit of £75m star",
-     "url": "https://www.football365.com/news/man-utd-keane-hits-out-lewis-hall-transfer",
-     "source": "Football365",
-     "published": "2026-09-03T09:23:41+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Roy Keane has explained why Newcastle star Lewis Hall would not be “the answer” for Man Utd as they continue their search for a new left-back."
     }
    ]
   },
@@ -919,9 +918,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 35,
+   "evidence_count": 36,
    "source_count": 15,
-   "latest_evidence": "2026-09-16T06:00:00+00:00",
+   "latest_evidence": "2026-09-22T07:19:48+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1046,13 +1045,13 @@
      "excerpt": ""
     },
     {
-     "title": "Could Arsenal match the Invincibles and go unbeaten in the Premier League again?",
-     "url": "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-16T06:00:00+00:00",
+     "title": "Ranking the 20 biggest PL summer signings from Andrey Santos to Morgan Rogers",
+     "url": "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings",
+     "source": "Football365",
+     "published": "2026-09-22T07:19:48+00:00",
      "matched_on": "rogers",
      "kind": "general",
-     "excerpt": "Morgan Rogers is the only player to have scored against Arsenal this season. Chelsea succeeded where Coventry City, Aston Villa, Napoli and Sunderland have failed, and the Gunners came back to beat them too. There are two teams without a goal in their first four Premier League matches of 2026/27 but Arsenal stand alone in having conceded only once. They've won all of their games and looked all but"
+     "excerpt": "It’s not been a bad start for the big summer signings with three £100m players in the top four of this ranking of the 20 most expensive. Tottenham’s highest of ..."
     }
    ]
   },

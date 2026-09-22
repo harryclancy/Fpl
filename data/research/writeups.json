@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-22T01:37:57+00:00",
+ "generated": "2026-09-22T10:03:21+00:00",
  "gameweek": 6,
- "corpus_size": 15891,
+ "corpus_size": 16020,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -594,18 +594,19 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "status": "Latest on Hall — Sports Mole, 14 Sep: “However, no player ended up joining, despite long-standing interest in Lewis Hall and Alejandro Balde in particular.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 21 retrieved item(s) from 5 source(s), the most recent dated 21 Sep.",
+   "status": "Latest on Hall — FourFourTwo FPL, 22 Sep: “Newcastle fans could be forgiven for fearing Hall would follow the likes of Bruno Guimaraes, Anthony Gordon and Sandro Tonali out of the door this summer, but he instead committed his future to the club he supported as a boy.”",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 22 retrieved item(s) from 5 source(s), the most recent dated 22 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
    "case_against": "What argues against him: FourFourTwo FPL, 21 Sep: “Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.” FourFourTwo FPL, 12 Sep: “But as Hall ’s message to Newcastle supporters inferred: “There’s never been a moment where I doubted how much I love being here,” — the Red Devils never stood a chance.” FourFourTwo FPL, 12 Sep: “In his own words, Hall is a born-and-bred Toon fan, albeit having grown up in the South, and his future with Newcastle was never in doubt.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Sports Mole, 14 Sep: “However, the Red Devils' top summer priority, Lewis Hall, has just signed a new contract with Newcastle .” Football365, 11 Sep: “Alan Shearer has explained why he thinks Newcastle United still have an “issue” with Lewis Hall despite the Manchester United target signing a new contract.” Football365, 11 Sep: “Manchester United believe that a France international is keen on a move to Old Trafford, as Lewis Hall decides to sign a new deal with Newcastle United.”",
+   "developments": "Recent developments — FourFourTwo FPL, 22 Sep: “Hall says Jaissle’s impact made signing a new deal a “no brainer” and is confident in the future with him in charge.” Sports Mole, 14 Sep: “However, no player ended up joining, despite long-standing interest in Lewis Hall and Alejandro Balde in particular.” Sports Mole, 14 Sep: “However, the Red Devils' top summer priority, Lewis Hall, has just signed a new contract with Newcastle .”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 21,
+   "evidence_count": 22,
    "evidence_used": [
     "https://www.fourfourtwo.com/transfer/what-manchester-united-didnt-realise-about-gbp35m-transfer-target-and-why-they-never-stood-a-chance",
     "https://www.football365.com/news/man-utd-journalist-chances-signing-lewis-hall-four-defenders",
+    "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/after-lewis-hall-another-summer-left-back-target-off-the-table-for-man-united_605110.html",
     "https://www.football365.com/news/adrien-truffert-manchester-united-bournemouth",
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-uniteds-hall-position-explained-as-newcastle-announce-new-deal-for-defensive-star_604946.html",
@@ -614,8 +615,7 @@
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-utd-dealt-hammer-blow-over-top-january-transfer-target-as-huge-update-emerges_604755.html",
     "https://www.sportsmole.co.uk/football/newcastle-united/transfer-talk/news/hall-closing-in-on-newcastle-agreement-as-man-utd-plot-move-for-magpies-teammate_604727.html",
     "https://www.football365.com/news/manchester-united-newcastle-united-malick-thiaw-lewis-hall",
-    "https://www.football365.com/news/man-utd-back-drawing-board-75m-ineos-target-premier-league-contract-call",
-    "https://www.football365.com/news/man-utd-keane-hits-out-lewis-hall-transfer"
+    "https://www.football365.com/news/man-utd-back-drawing-board-75m-ineos-target-premier-league-contract-call"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -625,6 +625,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Newcastle fans could be forgiven for fearing Hall would follow the likes of Bruno Guimaraes, Anthony Gordon and Sandro Tonali out of the door this summer, but he instead committed his future to the club he supported as a boy.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
+     "published": "2026-09-22T05:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Hall says Jaissle’s impact made signing a new deal a “no brainer” and is confident in the future with him in charge.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
+     "published": "2026-09-22T05:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.",
      "source": "FourFourTwo FPL",
@@ -1258,14 +1276,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Tactical Football Analysis, 26 Aug: “Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 35 retrieved item(s) from 15 source(s), the most recent dated 14 Sep.",
+   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 36 retrieved item(s) from 15 source(s), the most recent dated 22 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 14 Sep: “Only four players have surpassed Rogers’ total of 10 chances created this season.” Hull City, 14 Sep: “Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bridge.” Sports Mole, 12 Sep: “Morgan Rogers joins Chelsea heroes after early goal © Iconsport / PA Images Rogers collected Joao Pedro's pass before surging into the penalty area and unleashing a thunderous left-footed strike inside the opening seven minutes, giving Chelsea an early advantage at Stamford Bridge.”",
    "case_against": "What argues against him: Football365, 03 Sep: “Arsenal legend Ian Wright insists that he was “gutted” that the Gunners missed out on Morgan Rogers to Chelsea in the summer.”",
    "expected_minutes": "On minutes — Sports Mole, 11 Sep: “Why Morgan Rogers has changed Estevao's Chelsea pathway Alonso has predominantly favoured a 3-4-2-1 in which two attacking midfielders operate behind the centre-forward.” Fantasy Football Scout, 10 Sep: “So, I hope we can have Cody with us, but I cannot guarantee it.” – Andoni Iraola on Cody Gakpo But even if Gakpo is passed fit to start in Andoni Iraola’s Friday presser, I’d still put Rogers and Gibbs-White ahead.”",
-   "developments": "Recent developments — Fantasy Football Scout, 14 Sep: “MORGAN ROGERS Morgan Rogers (£7.7m) continues to tick along nicely for his 36.5% ownership.” NBC Sports Rotoworld PL, 13 Sep: “23 Home Run Derby champion, Guerrero connected off Baltimore’s Trevor Rogers in the fifth inning of Sunday’s 8-1 win His 350-foot drive into the left field bullpen was his ninth homer of the season.” Sports Mole, 12 Sep: “Rogers joined the Blues from Aston Villa during the summer transfer window for a club-record £117m fee and has wasted little time showing why Chelsea were prepared to break their transfer record for his signature.”",
+   "developments": "Recent developments — Football365, 22 Sep: “Barcola and Tonali spared bottom spot by Man Utd flop in ranking of 20 biggest PL summer signings Bradley Barcola, Morgan Rogers and Sandro Tonali A break from Premier League action for three interminable weeks offers time for managers and clubs to take stock while most of their players are away playing international fixtures that they, we, pretty much everyone actually, could do without.” Fantasy Football Scout, 14 Sep: “MORGAN ROGERS Morgan Rogers (£7.7m) continues to tick along nicely for his 36.5% ownership.” NBC Sports Rotoworld PL, 13 Sep: “23 Home Run Derby champion, Guerrero connected off Baltimore’s Trevor Rogers in the fifth inning of Sunday’s 8-1 win His 350-foot drive into the left field bullpen was his ninth homer of the season.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 10 Sep: “Given the schedule, I’d feel much more confident with Rogers or Gibbs-White, who aren’t playing in Europe.” Fantasy Football Scout, 10 Sep: “Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).”",
    "confidence": "high",
-   "evidence_count": 35,
+   "evidence_count": 36,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
@@ -1278,7 +1296,7 @@
     "https://www.football365.com/news/arsenal-wright-failed-sign-chelsea-rogers-arteta-not-happy",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
     "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
-    "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again"
+    "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1298,6 +1316,17 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Barcola and Tonali spared bottom spot by Man Utd flop in ranking of 20 biggest PL summer signings Bradley Barcola, Morgan Rogers and Sandro Tonali A break from Premier League action for three interminable weeks offers time for managers and clubs to take stock while most of their players are away playing international fixtures that they, we, pretty much everyone actually, could do without.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings",
+     "published": "2026-09-22T07:19:48+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer",
+      "fixtures"
+     ]
+    },
     {
      "text": "MORGAN ROGERS Morgan Rogers (£7.7m) continues to tick along nicely for his 36.5% ownership.",
      "source": "Fantasy Football Scout",
