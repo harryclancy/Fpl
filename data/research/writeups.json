@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-22T15:32:17+00:00",
+ "generated": "2026-09-22T20:13:08+00:00",
  "gameweek": 6,
- "corpus_size": 16175,
+ "corpus_size": 16334,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -584,18 +584,19 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "status": "Latest on Hall — Football365, 22 Sep: “Lewis Hall: Man Utd target admits he will leave Newcastle United on one condition after 'no-brainer' decision Newcastle United star Lewis Hall, who was a Manchester United target England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 23 retrieved item(s) from 5 source(s), the most recent dated 22 Sep.",
-   "case_for": "What supports keeping him: Football365, 22 Sep: “Hall is back in the England squad after making a strong start to the 2026/27 campaign.” FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
+   "status": "Latest on Hall — Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.”",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 24 retrieved item(s) from 5 source(s), the most recent dated 22 Sep.",
+   "case_for": "What supports keeping him: Sports Mole, 22 Sep: “The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.” Football365, 22 Sep: “Hall is back in the England squad after making a strong start to the 2026/27 campaign.” FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
    "case_against": "What argues against him: FourFourTwo FPL, 21 Sep: “Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.” FourFourTwo FPL, 12 Sep: “But as Hall ’s message to Newcastle supporters inferred: “There’s never been a moment where I doubted how much I love being here,” — the Red Devils never stood a chance.” FourFourTwo FPL, 12 Sep: “In his own words, Hall is a born-and-bred Toon fan, albeit having grown up in the South, and his future with Newcastle was never in doubt.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 22 Sep: “Newcastle fans could be forgiven for fearing Hall would follow the likes of Bruno Guimaraes, Anthony Gordon and Sandro Tonali out of the door this summer, but he instead committed his future to the club he supported as a boy.” FourFourTwo FPL, 22 Sep: “Hall says Jaissle’s impact made signing a new deal a “no brainer” and is confident in the future with him in charge.” Sports Mole, 14 Sep: “However, no player ended up joining, despite long-standing interest in Lewis Hall and Alejandro Balde in particular.”",
+   "developments": "Recent developments — Football365, 22 Sep: “Lewis Hall: Man Utd target admits he will leave Newcastle United on one condition after 'no-brainer' decision Newcastle United star Lewis Hall, who was a Manchester United target England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer.” FourFourTwo FPL, 22 Sep: “Newcastle fans could be forgiven for fearing Hall would follow the likes of Bruno Guimaraes, Anthony Gordon and Sandro Tonali out of the door this summer, but he instead committed his future to the club he supported as a boy.” FourFourTwo FPL, 22 Sep: “Hall says Jaissle’s impact made signing a new deal a “no brainer” and is confident in the future with him in charge.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 23,
+   "evidence_count": 24,
    "evidence_used": [
     "https://www.fourfourtwo.com/transfer/what-manchester-united-didnt-realise-about-gbp35m-transfer-target-and-why-they-never-stood-a-chance",
     "https://www.football365.com/news/man-utd-journalist-chances-signing-lewis-hall-four-defenders",
+    "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
     "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/after-lewis-hall-another-summer-left-back-target-off-the-table-for-man-united_605110.html",
     "https://www.football365.com/news/adrien-truffert-manchester-united-bournemouth",
@@ -604,8 +605,7 @@
     "https://www.football365.com/news/man-utd-news-lewis-hall-move-fabrizio-romano-still-on-new-newcastle-contract",
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-utd-dealt-hammer-blow-over-top-january-transfer-target-as-huge-update-emerges_604755.html",
     "https://www.sportsmole.co.uk/football/newcastle-united/transfer-talk/news/hall-closing-in-on-newcastle-agreement-as-man-utd-plot-move-for-magpies-teammate_604727.html",
-    "https://www.football365.com/news/manchester-united-newcastle-united-malick-thiaw-lewis-hall",
-    "https://www.football365.com/news/man-utd-back-drawing-board-75m-ineos-target-premier-league-contract-call"
+    "https://www.football365.com/news/manchester-united-newcastle-united-malick-thiaw-lewis-hall"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -615,6 +615,27 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
+     "published": "2026-09-22T18:13:00+01:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
+     "published": "2026-09-22T18:13:00+01:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer",
+      "tactics"
+     ]
+    },
     {
      "text": "Lewis Hall: Man Utd target admits he will leave Newcastle United on one condition after 'no-brainer' decision Newcastle United star Lewis Hall, who was a Manchester United target England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer.",
      "source": "Football365",
@@ -1282,14 +1303,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Tactical Football Analysis, 26 Aug: “Chelsea’s attacking trio was Cole Palmer Morgan Rogers and João Pedro Alonso made five changes to his starting XI over the course of the match.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 36 retrieved item(s) from 15 source(s), the most recent dated 22 Sep.",
+   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 35 retrieved item(s) from 14 source(s), the most recent dated 22 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 14 Sep: “Only four players have surpassed Rogers’ total of 10 chances created this season.” Hull City, 14 Sep: “Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bridge.” Sports Mole, 12 Sep: “Morgan Rogers joins Chelsea heroes after early goal © Iconsport / PA Images Rogers collected Joao Pedro's pass before surging into the penalty area and unleashing a thunderous left-footed strike inside the opening seven minutes, giving Chelsea an early advantage at Stamford Bridge.”",
    "case_against": "What argues against him: Football365, 03 Sep: “Arsenal legend Ian Wright insists that he was “gutted” that the Gunners missed out on Morgan Rogers to Chelsea in the summer.”",
    "expected_minutes": "On minutes — Sports Mole, 11 Sep: “Why Morgan Rogers has changed Estevao's Chelsea pathway Alonso has predominantly favoured a 3-4-2-1 in which two attacking midfielders operate behind the centre-forward.” Fantasy Football Scout, 10 Sep: “So, I hope we can have Cody with us, but I cannot guarantee it.” – Andoni Iraola on Cody Gakpo But even if Gakpo is passed fit to start in Andoni Iraola’s Friday presser, I’d still put Rogers and Gibbs-White ahead.”",
    "developments": "Recent developments — Football365, 22 Sep: “Barcola and Tonali spared bottom spot by Man Utd flop in ranking of 20 biggest PL summer signings Bradley Barcola, Morgan Rogers and Sandro Tonali A break from Premier League action for three interminable weeks offers time for managers and clubs to take stock while most of their players are away playing international fixtures that they, we, pretty much everyone actually, could do without.” Fantasy Football Scout, 14 Sep: “MORGAN ROGERS Morgan Rogers (£7.7m) continues to tick along nicely for his 36.5% ownership.” NBC Sports Rotoworld PL, 13 Sep: “23 Home Run Derby champion, Guerrero connected off Baltimore’s Trevor Rogers in the fifth inning of Sunday’s 8-1 win His 350-foot drive into the left field bullpen was his ninth homer of the season.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 10 Sep: “Given the schedule, I’d feel much more confident with Rogers or Gibbs-White, who aren’t playing in Europe.” Fantasy Football Scout, 10 Sep: “Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).”",
    "confidence": "high",
-   "evidence_count": 36,
+   "evidence_count": 35,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
@@ -1317,7 +1338,6 @@
     "Hull City",
     "NBC Sports Rotoworld PL",
     "OneFPL",
-    "Opta Analyst",
     "Sports Mole",
     "Tactical Football Analysis"
    ],
@@ -1756,16 +1776,17 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "status": "Latest on Palmer — Chelsea: “Palmer was outstanding in his first two campaigns at Stamford Bridge, but injury made it difficult for him to replicate that level of performance in 2025/26.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 49 retrieved item(s) from 17 source(s), the most recent dated 22 Sep.",
+   "status": "Latest on Palmer — Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.” Chelsea: “Palmer was outstanding in his first two campaigns at Stamford Bridge, but injury made it difficult for him to replicate that level of performance in 2025/26.”",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 50 retrieved item(s) from 17 source(s), the most recent dated 22 Sep.",
    "case_for": "What supports keeping him: Football365, 21 Sep: “Chelsea could not be blamed for being somewhat cautious with Palmer; he never seemed to fully recover from a groin injury last season and Tuchel spoke during the March break of the playmaker still having a niggle, despite having started 16 of the previous 17 Premier League matches.” 101 Great Goals — Fantasy, 21 Sep: “Chelsea forward Palmer was picked by Thomas Tuchel as England start their Nations League campaign with four games over the course of an elongated international break.” Football365, 17 Sep: “Palmer was a notable absentee from England’s squad for this summer’s World Cup after he struggled for form and fitness during the 2025/26 campaign.”",
-   "case_against": "What argues against him: 101 Great Goals — Fantasy, 21 Sep: “Both Palmer and Gibbs-White missed out on the England squad for this summer’s World Cup, which saw the Three Lions finish third after a dramatic semi-final defeat to Argentina.” Football365, 21 Sep: “Still, Tuchel has refreshed his squad for this break, with Trent Alexander-Arnold and Palmer among the notable inclusions after they missed the World Cup.” Ipswich Town, 20 Sep: “The visitors first chance of the game arrived in the 7th minute after Aimee Palmer’s corner eventually dropped to Georgia Timms near the penalty spot who sent an acrobatic effort over the crossbar.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.” Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.”",
+   "case_against": "What argues against him: Soccerway, 22 Sep: “Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.” Soccerway, 22 Sep: “In Palmer’s case, the decision is understood to be around caution and managing his workload, but it is believed the player is disappointed to miss out.” Football365, 22 Sep: “England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 22 Sep: “Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.” Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.”",
    "developments": "Recent developments — 101 Great Goals — Fantasy, 22 Sep: “Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.” Soccerway, 21 Sep: “On Monday morning, it was revealed that Cole Palmer had withdrawn from the England squad due to load management, with reports stating that the Chelsea star had a small muscular issue that meant he would use the three-week international break to rest.” Soccerway, 21 Sep: “Nottingham Forest’s Morgan Gibbs-White has since stepped in to replace Palmer as Tuchel prepares his side to face World Cup champions Spain on Saturday night, before clashes against the Czech Republic and Croatia in the Nations League.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 21 Sep: “Chelsea aren’t next in action until Saturday 10 October, so we should get updates on Palmer from both Tuchel and Xabi Alonso before the Gameweek 6 deadline.” Sports Illustrated FPL, 18 Sep: “El lateral del Real Madrid, Alexander-Arnold, ex del Liverpool, no habÃ­a sido convocado por su selecciÃ³n desde junio de 2025, mientras que Palmer regresa despuÃ©s de haberse quedado fuera de la lista mundialista, una decisiÃ³n por la que Tuchel recibiÃ³ numerosas crÃ­ticas.”",
-   "confidence": "medium",
-   "evidence_count": 49,
+   "outlook": "On the coming weeks — Fantasy Football Scout, 21 Sep: “Chelsea aren’t next in action until Saturday 10 October, so we should get updates on Palmer from both Tuchel and Xabi Alonso before the Gameweek 6 deadline.” Football365, 21 Sep: “Still, Tuchel has refreshed his squad for this break, with Trent Alexander-Arnold and Palmer among the notable inclusions after they missed the World Cup.”",
+   "confidence": "high",
+   "evidence_count": 50,
    "evidence_used": [
+    "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
     "https://www.101greatgoals.com/football/internationals/gibbs-white-england-squad-palmer-out/",
     "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
     "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html",
@@ -1776,8 +1797,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/09/triple-captain-palmer-in-fpl-gameweek-4-the-pros-cons",
     "https://www.itfc.co.uk/news/2026/september/03/early-liverpool-team-news/",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
-    "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
-    "https://www.fourfourtwo.com/competition/watch-arsenal-vs-chelsea-premier-league-2026-27-free"
+    "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1799,6 +1819,44 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-cole-palmer-determined-to-prove-england-and-chelsea-commitment/hGhJUjas/",
+     "published": "2026-09-22T18:40:17+02:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "In Palmer’s case, the decision is understood to be around caution and managing his workload, but it is believed the player is disappointed to miss out.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-cole-palmer-determined-to-prove-england-and-chelsea-commitment/hGhJUjas/",
+     "published": "2026-09-22T18:40:17+02:00",
+     "tone": "negative",
+     "topics": []
+    },
+    {
+     "text": "England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
+     "published": "2026-09-22T17:34:16+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
+     "published": "2026-09-22T17:34:16+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
     {
      "text": "Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.",
      "source": "101 Great Goals — Fantasy",
@@ -3605,14 +3663,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — Sports Mole, 18 Sep: “However, despite his comments to the media, a report quickly emerged which suggested that Joao Pedro had been ruled out of the trip to the Gtech Community Stadium with a knee injury.” Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.”",
-   "why_here": "João Pedro is on the bench this week at £7.7m as a FWD. The selection rests on 66 retrieved item(s) from 15 source(s), the most recent dated 19 Sep.",
+   "why_here": "João Pedro is on the bench this week at £7.7m as a FWD. The selection rests on 65 retrieved item(s) from 15 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).” Sports Mole, 17 Sep: “Pedro has enjoyed an outstanding start to the 2026-27 top-flight campaign, contributing three goals and three assists from four appearances.” Football365, 17 Sep: “Chelsea star man putting Erling Haaland in the shade with flying start Joao Pedro is on fire this season Joao Pedro was surprisingly left out of the Brazil squad for the World Cup.”",
    "case_against": "What argues against him: Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 18 Sep: “Chelsea are still without long-term absentees Jordan Henderson and Moises Caicedo, while Joao Pedro is a major doubt after withdrawing from Brazil duty.” RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.”",
    "developments": "Recent developments — Sports Mole, 18 Sep: “Joao Pedro is expected to miss Friday's Premier League trip to the Gtech Community Stadium because of a knee problem suffered against Hull City.” Sports Mole, 18 Sep: “What he cannot necessarily reproduce is the combination of movement, creativity and positional flexibility that has made Joao Pedro central to the relationship between Cole Palmer and Morgan Rogers.” RotoWire Soccer, 18 Sep: “ESPN Brasil's Bruno Andrade and Pedro Ivo Almeida report that Joao Pedro has swelling in the knee caused by a strain of the anterior cruciate and medial collateral ligaments, picked up in the draw with Hull City.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 17 Sep: “Joao Pedro is the highest-owned player in the game at 74.0% ownership.” Fantasy Football Scout, 17 Sep: ““He is getting closer and tomorrow, we will take a final decision in the team and in the squad that is coming to Brentford.” – Xabi Alonso on Moises Caicedo Reece James , along with Caicedo and Pedro, missed training on Tuesday , and Alonso was asked why.”",
    "confidence": "high",
-   "evidence_count": 66,
+   "evidence_count": 65,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
     "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",

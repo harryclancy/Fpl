@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-22T15:32:17+00:00",
- "seconds": 201.3,
+ "ran_at": "2026-09-22T20:13:08+00:00",
+ "seconds": 144.5,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 639,
- "substantive_items": 213,
- "duplicates_removed": 11,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 16175,
+ "sources_readable": 63,
+ "candidates_discovered": 655,
+ "substantive_items": 219,
+ "duplicates_removed": 15,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 16334,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 213 articles"
+    "63/78 sources returned 219 articles"
    ]
   },
   "blackout": {
@@ -49,10 +49,9 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: HTTP 403 for https://www.premierinjuries.com/post-sitemap.xml",
+  "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: timed out after 12s for https://thehardtackle.com/feed/",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -509,9 +508,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 23,
+   "evidence_count": 24,
    "source_count": 5,
-   "latest_evidence": "2026-09-22T13:32:01+00:00",
+   "latest_evidence": "2026-09-22T18:13:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -551,6 +550,15 @@
      "matched_on": "hall",
      "kind": "team news",
      "excerpt": "Newcastle left-back Lewis Hall could be one of four defender signings in the next two transfer windows at Man Utd, according to reports."
+    },
+    {
+     "title": "Man United transfer news: Newcastle United star Lewis Hall delivers verdict on Red Devils interest",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
+     "source": "Sports Mole",
+     "published": "2026-09-22T18:13:00+01:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Lewis Hall says that it was \"a no-brainer\" to reject interest from Manchester United and sign a new long-term contract with Newcastle United."
     },
     {
      "title": "'Manchester United interest didn't affect me' Newcastle United star Lewis Hall reveals impact of summer transfer distraction",
@@ -632,15 +640,6 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "Manchester United and Liverpool are competing to sign a Newcastle United defender in the summer of 2027."
-    },
-    {
-     "title": "Man Utd forced to go back to the drawing board as £75m INEOS target makes Premier League contract call",
-     "url": "https://www.football365.com/news/man-utd-back-drawing-board-75m-ineos-target-premier-league-contract-call",
-     "source": "Football365",
-     "published": "2026-09-06T13:57:45+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Newcastle United have made it clear they want to keep Lewis Hall, as reports suggest the Manchester United target is set to sign a new contract extension."
     }
    ]
   },
@@ -918,8 +917,8 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 36,
-   "source_count": 15,
+   "evidence_count": 35,
+   "source_count": 14,
    "latest_evidence": "2026-09-22T07:19:48+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1058,9 +1057,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 50,
    "source_count": 17,
-   "latest_evidence": "2026-09-22T14:12:31+00:00",
+   "latest_evidence": "2026-09-22T18:40:17+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1085,6 +1084,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "England: Cole Palmer accused of faking injury with ‘the hump’ as Xabi Alonso, Chelsea plan mooted",
+     "url": "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
+     "source": "Football365",
+     "published": "2026-09-22T17:34:16+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break."
+    },
     {
      "title": "Gibbs-White to be called up to England squad as injured Palmer withdraws",
      "url": "https://www.101greatgoals.com/football/internationals/gibbs-white-england-squad-palmer-out/",
@@ -1183,15 +1191,6 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "Planning an FPL Gameweek 4 wildcard? This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro."
-    },
-    {
-     "title": "How to watch Arsenal vs Chelsea for FREE: TV channels for the biggest game of the weekend in the Premier League",
-     "url": "https://www.fourfourtwo.com/competition/watch-arsenal-vs-chelsea-premier-league-2026-27-free",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-06T12:30:00+00:00",
-     "matched_on": "palmer",
-     "kind": "transfer",
-     "excerpt": "Watch Arsenal vs Chelsea for free this weekend as both sides put their unbeaten records on the line at the Emirates Stadium. FourFourTwo has all the details on live streams and TV channels, wherever you are in the world. Arsenal vs Chelsea: key information Kick-off time: 4:30pm BST / 11:30am ET / 1:30am AEST (Mon) Free Stream: USA Network via YouTube TV's 21-day free trial TV & Streaming: Sky Spor"
     }
    ]
   },
@@ -1526,7 +1525,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 66,
+   "evidence_count": 65,
    "source_count": 15,
    "latest_evidence": "2026-09-21T23:58:37+02:00",
    "official_source_found": true,
