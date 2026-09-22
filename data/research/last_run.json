@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-21T21:07:10+00:00",
- "seconds": 113.0,
+ "ran_at": "2026-09-22T01:37:57+00:00",
+ "seconds": 167.3,
  "sources_attempted": 78,
  "sources_readable": 61,
- "candidates_discovered": 579,
- "substantive_items": 179,
- "duplicates_removed": 5,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 15780,
+ "candidates_discovered": 557,
+ "substantive_items": 160,
+ "duplicates_removed": 8,
+ "deeply_analysed": 89,
+ "deep_read_failed": 1,
+ "corpus_size": 15891,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 179 articles"
+    "61/78 sources returned 160 articles"
    ]
   },
   "blackout": {
@@ -199,7 +199,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 6,
+   "evidence_count": 7,
    "source_count": 3,
    "latest_evidence": "2026-09-21T17:15:00+00:00",
    "official_source_found": true,
@@ -273,6 +273,15 @@
     {
      "title": "Muharemovic on elland roads unbelievable atmosphere",
      "url": "https://www.leedsunited.com/en/news/muharemovic-on-elland-roads-unbelievable-atmosphere",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic named hisense player of the match against palace",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-named-hisense-player-of-the-match-against-palace",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -910,7 +919,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 36,
+   "evidence_count": 35,
    "source_count": 15,
    "latest_evidence": "2026-09-16T06:00:00+00:00",
    "official_source_found": true,
@@ -1050,7 +1059,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 49,
    "source_count": 17,
    "latest_evidence": "2026-09-21T15:41:11+02:00",
    "official_source_found": true,
@@ -1520,7 +1529,7 @@
    "club": "CHE",
    "evidence_count": 66,
    "source_count": 15,
-   "latest_evidence": "2026-09-19T10:15:00+00:00",
+   "latest_evidence": "2026-09-21T23:58:37+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
