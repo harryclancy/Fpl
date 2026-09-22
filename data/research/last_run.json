@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-22T10:03:21+00:00",
- "seconds": 131.2,
+ "ran_at": "2026-09-22T15:32:17+00:00",
+ "seconds": 201.3,
  "sources_attempted": 78,
  "sources_readable": 62,
- "candidates_discovered": 604,
- "substantive_items": 188,
- "duplicates_removed": 8,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 16020,
+ "candidates_discovered": 639,
+ "substantive_items": 213,
+ "duplicates_removed": 11,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 16175,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 188 articles"
+    "62/78 sources returned 213 articles"
    ]
   },
   "blackout": {
@@ -42,7 +42,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,15 +49,16 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: nothing published in the last 10 days",
+  "Premier Injuries: HTTP 403 for https://www.premierinjuries.com/post-sitemap.xml",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: timed out after 12s for https://thehardtackle.com/feed/",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 14,
+   "evidence_count": 13,
    "source_count": 8,
    "latest_evidence": "2026-09-20T12:26:35+01:00",
    "official_source_found": true,
@@ -122,15 +122,6 @@
      "excerpt": "Are Arsenal simply unlucky with the goals they concede? Sports Mole explores that David Raya theory after the Gunners' 3-0 defeat to Brighton & Hove Albion."
     },
     {
-     "title": "Premier League Power Rankings: Haaland the boss but Raya, Odegaard, Rice impressing",
-     "url": "https://www.football365.com/news/premier-league-power-rankings-2026-27-haaland",
-     "source": "Football365",
-     "published": "2026-09-18T13:11:41+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Our Premier League Power Rankings return for 2026/27 and the early leader is Man City superstar Erling Haaland."
-    },
-    {
      "title": "Premier League goalkeepers ranked: David Raya sets the standard, Trafford falls, lowly Alisson",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
      "source": "Football365",
@@ -192,6 +183,15 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Bruno Guimarães and Bukayo Saka scored the goals as Premier League champions Arsenal maintained their 100% start to the season, but they also had their goalkeeper to thank. The post Sunderland 0-2 Arsenal Stats: Bruno Guimarães Back to Haunt Former Rivals After David Raya Penalty Heroics appeared first on Opta Analyst ."
+    },
+    {
+     "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
+     "url": "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-07T10:03:44+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Arsenal conceded a goal on Sunday. Yes, you read that correctly. After keeping out Coventry City and Aston Villa , the Premier League champions were breached by Chelsea in the second minute of their London derby. The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya. Arsenal's stifling defensive excellence is the stuff of champions Mikel Ar"
     }
    ]
   },
@@ -509,9 +509,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 22,
+   "evidence_count": 23,
    "source_count": 5,
-   "latest_evidence": "2026-09-22T05:00:00+00:00",
+   "latest_evidence": "2026-09-22T13:32:01+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1060,7 +1060,7 @@
    "club": "CHE",
    "evidence_count": 49,
    "source_count": 17,
-   "latest_evidence": "2026-09-21T15:41:11+02:00",
+   "latest_evidence": "2026-09-22T14:12:31+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1200,7 +1200,7 @@
    "club": "MCI",
    "evidence_count": 81,
    "source_count": 16,
-   "latest_evidence": "2026-09-21T10:33:00+00:00",
+   "latest_evidence": "2026-09-22T12:57:41+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1325,13 +1325,13 @@
      "excerpt": ""
     },
     {
-     "title": "Man Utd plan enormous proposal for Barcelona superstar and pay more salary than Erling Haaland",
-     "url": "https://www.football365.com/news/manchester-united-barcelona-raphinha",
+     "title": "Bayern Munich hatch Haaland plan after Kane reaches decision on joining Man Utd",
+     "url": "https://www.football365.com/news/man-utd-haaland-plan-kane-bayern-munich-man-city",
      "source": "Football365",
-     "published": "2026-09-21T10:33:00+00:00",
+     "published": "2026-09-22T12:29:57+00:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "Manchester United want to sign a former Leeds United winger from Barcelona in 2027, according to a Spanish report."
+     "excerpt": "Bayern Munich are reportedly positioning themselves in the race to sign Man City star Erling Haaland in a Harry Kane succession plan."
     }
    ]
   },
