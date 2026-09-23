@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-22T20:13:08+00:00",
- "seconds": 144.5,
+ "ran_at": "2026-09-23T01:32:06+00:00",
+ "seconds": 146.6,
  "sources_attempted": 78,
- "sources_readable": 63,
- "candidates_discovered": 655,
- "substantive_items": 219,
- "duplicates_removed": 15,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 16334,
+ "sources_readable": 62,
+ "candidates_discovered": 597,
+ "substantive_items": 186,
+ "duplicates_removed": 8,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 16464,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "63/78 sources returned 219 articles"
+    "62/78 sources returned 186 articles"
    ]
   },
   "blackout": {
@@ -51,7 +51,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -1667,7 +1668,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-21T13:00:00+00:00",
+   "latest_evidence": "2026-09-22T15:40:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1680,6 +1681,8 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1698,6 +1701,15 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "Brighton v Charlton Athletic | Arturo Ruiz pre-match press conference",
+     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-charlton-athletic-or-arturo-ruiz-pre-match-press-conference",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-09-22T15:40:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "🎬 Brighton v Charlton Athletic | Arturo Ruiz pre-match press conference"
     },
     {
      "title": "U18s: Aston Villa 2-4 Brighton",
@@ -1734,15 +1746,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "When any team is successful over a sustained period of time, it is natural to start taking it for granted. For the likes of Liverpool in the 1970s and 1980s, and Manchester United under Sir Alex Ferguson , it reached a point where you simply couldn’t imagine them not winning. While it is admittedly a stretch to compare these all-conquering sides to a club who have never lifted a major trophy, nor "
-    },
-    {
-     "title": "How to watch Brighton vs Arsenal live: Stream, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-brighton-vs-arsenal-live-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-18T23:24:00-04:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
