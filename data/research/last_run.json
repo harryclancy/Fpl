@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-23T15:28:10+00:00",
- "seconds": 154.0,
+ "ran_at": "2026-09-23T20:26:47+00:00",
+ "seconds": 144.4,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 638,
- "substantive_items": 233,
- "duplicates_removed": 20,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 16772,
+ "sources_readable": 61,
+ "candidates_discovered": 629,
+ "substantive_items": 200,
+ "duplicates_removed": 16,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 16917,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 233 articles"
+    "61/78 sources returned 200 articles"
    ]
   },
   "blackout": {
@@ -53,8 +53,7 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -789,9 +788,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "source_count": 7,
-   "latest_evidence": "2026-09-19T16:08:15+01:00",
+   "latest_evidence": "2026-09-23T16:06:31+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -842,6 +841,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
+    },
+    {
+     "title": "Event Guide: All You Need To Know Ahead Of Game4Hope",
+     "url": "https://www.evertonfc.com/news/2026/september/23/Event-Guide--All-You-Need-To-Know-Ahead-Of-Game4Hope/",
+     "source": "Everton",
+     "published": "2026-09-23T16:06:31+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "This Saturday sees Goodison Park host the Game 4 Hope charity fixture to raise vital funds and awareness in the fight against homelessness. Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST). For more information on the extraordinary collect"
     },
     {
      "title": "Newcastle vs Hull City: Magpies attacker sets new record in Premier League clash at St James' Park",
@@ -1060,9 +1068,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 50,
    "source_count": 17,
-   "latest_evidence": "2026-09-23T10:29:05+01:00",
+   "latest_evidence": "2026-09-23T15:34:08+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1087,6 +1095,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’",
+     "url": "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
+     "source": "Football365",
+     "published": "2026-09-23T15:34:08+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Steve Bruce hopes Cole Palmer and Co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country."
+    },
     {
      "title": "England: Cole Palmer accused of faking injury with ‘the hump’ as Xabi Alonso, Chelsea plan mooted",
      "url": "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
@@ -1185,15 +1202,6 @@
      "matched_on": "palmer",
      "kind": "team news",
      "excerpt": "Is it possible to house all of Cole Palmer, Bruno Fernandes and Erling Haaland in one squad? The post FPL Gameweek 3 Wildcard best team + pros/cons of using appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL Gameweek 4 Wildcard Guide 2026/27: Best Picks And Captaincy Options",
-     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-09-11T08:45:25+00:00",
-     "matched_on": "palmer",
-     "kind": "transfer",
-     "excerpt": "Planning an FPL Gameweek 4 wildcard? This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro."
     }
    ]
   },
@@ -1444,8 +1452,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-09-21T11:00:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-23T15:24:44+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1456,9 +1464,9 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1469,6 +1477,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham defender Pedro Porro set to miss four weeks with hamstring injury",
+     "url": "https://www.101greatgoals.com/football/premier-league/tottenham-pedro-porro-miss-four-weeks-hamstring-injury/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-23T15:18:30+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham will be without Pedro Porro for a month after he picked up an injury."
+    },
+    {
+     "title": "Tottenham's Pedro Porro to miss six games as Spurs 'learn extent' of hamstring injury",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/the-six-games-porro-will-miss-as-spurs-learn-extent-of-hamstring-injury_605667.html",
+     "source": "Sports Mole",
+     "published": "2026-09-23T15:24:44+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur's Pedro Porro will miss six games as Spurs learn how long the defender will be sidelined with a hamstring injury for."
+    },
     {
      "title": "Villans celebrate at Spurs",
      "url": "https://avfc.co.uk/news/2026/september/21/gallery-villans-celebrate-at-spurs/",
@@ -1495,24 +1521,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 John McGinn cut a delighted figure after Aston Villa clinched all three points at Tottenham Hotspur. The Villa captain admitted “it’s a relief” but we “deserved our win” after helping secure a 3-2 triumph in north London – our first Premier League victory of the campaign. Johan Manzambi, Nicolas Jackson and Emi Buendía put the vi"
-    },
-    {
-     "title": "Tottenham Hotspur 2-3 Aston Villa",
-     "url": "https://avfc.co.uk/news/2026/september/19/report-tottenham-v-aston-villa/",
-     "source": "Aston Villa",
-     "published": "2026-09-19T13:45:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 Johan Manzambi, Nicolas Jackson and Emi Buendía were on target as Aston Villa saw off Tottenham Hotspur 3-2 to record their first Premier League victory of the season. The trio each netted their first league goals of the campaign in the lunchtime kick-off in the capital, ensuring Villa head into the extended international break o"
-    },
-    {
-     "title": "Tottenham suffer new Pedro Porro injury blow against Aston Villa as three replacements identified",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-sorrow-spurs-defender-suffers-new-injury-as-three-replacements-identified_605479.html",
-     "source": "Sports Mole",
-     "published": "2026-09-19T13:09:51+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur suffer a crushing injury blow in their Premier League clash with Aston Villa, as Pedro Porro is taken off with an apparent leg problem."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",

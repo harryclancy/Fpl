@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-23T15:28:10+00:00",
+ "generated": "2026-09-23T20:26:47+00:00",
  "gameweek": 6,
- "corpus_size": 16772,
+ "corpus_size": 16917,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1175,18 +1175,19 @@
    "player": "Barnes",
    "club": "NEW",
    "status": "Latest on Barnes — Sports Illustrated FPL, 15 Sep: “Leonard's Arrival Could Change Scottie Barnes' Role Apr 23, 2026; Toronto, Ontario, CAN; Toronto Raptors guard Scottie Barnes (4) drives to the basket against the Cleveland Cavaliers during the first half of game three of the first round of the 2026 NBA Playoffs at Scotiabank Arena.”",
-   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 11 retrieved item(s) from 7 source(s), the most recent dated 19 Sep.",
-   "case_for": "What supports keeping him: Sports Mole, 19 Sep: “Harvey Barnes shines in Newcastle vs Hull City © Iconsport / Andrew Yates / Sportimage Barnes was the architect behind both goals, providing the assists for Joe Willock and Lewis Hall According to Opta Analyst , the two early assists were the earliest in a Premier League game that a Newcastle player has ever recorded.” Sports Mole, 19 Sep: “Barnes produced a smart pass inside the box for Willock, who unleashed a thunderous left-footed strike that left the goalkeeper with no chance.” Newcastle United, 11 Sep: “Barnes scooped an additional two bonus points to emerge from Saturday's clash with Bournemouth with a 12-point haul.”",
+   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 12 retrieved item(s) from 7 source(s), the most recent dated 23 Sep.",
+   "case_for": "What supports keeping him: Everton, 23 Sep: “Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST).” Sports Mole, 19 Sep: “Harvey Barnes shines in Newcastle vs Hull City © Iconsport / Andrew Yates / Sportimage Barnes was the architect behind both goals, providing the assists for Joe Willock and Lewis Hall According to Opta Analyst , the two early assists were the earliest in a Premier League game that a Newcastle player has ever recorded.” Sports Mole, 19 Sep: “Barnes produced a smart pass inside the box for Willock, who unleashed a thunderous left-footed strike that left the goalkeeper with no chance.”",
    "case_against": "What argues against him: Sports Illustrated FPL, 09 Sep: “Barnes has delt with an undisclosed injury since the spring.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Everton, 18 Sep: “Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides” Newcastle United, 17 Sep: “Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.” Newcastle United, 17 Sep: “Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "evidence_used": [
     "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
     "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
     "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
+    "https://www.evertonfc.com/news/2026/september/23/Event-Guide--All-You-Need-To-Know-Ahead-Of-Game4Hope/",
     "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
     "https://www.evertonfc.com/news/2026/september/18/game4hope/",
     "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
@@ -1206,6 +1207,16 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST).",
+     "source": "Everton",
+     "url": "https://www.evertonfc.com/news/2026/september/23/Event-Guide--All-You-Need-To-Know-Ahead-Of-Game4Hope/",
+     "published": "2026-09-23T16:06:31+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
     {
      "text": "Harvey Barnes shines in Newcastle vs Hull City © Iconsport / Andrew Yates / Sportimage Barnes was the architect behind both goals, providing the assists for Joe Willock and Lewis Hall According to Opta Analyst , the two early assists were the earliest in a Premier League game that a Newcastle player has ever recorded.",
      "source": "Sports Mole",
@@ -1796,16 +1807,17 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "status": "Latest on Palmer — Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.” Football365, 17 Sep: “Palmer was a notable absentee from England’s squad for this summer’s World Cup after he struggled for form and fitness during the 2025/26 campaign.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 49 retrieved item(s) from 17 source(s), the most recent dated 23 Sep.",
+   "status": "Latest on Palmer — Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.” Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.”",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 50 retrieved item(s) from 17 source(s), the most recent dated 23 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 23 Sep: “Cole Palmer England withdrawal: The undeniable benefit of load management © Iconsport / David Klein / Sportimage For those at Stamford Bridge, the prevailing emotion following Palmer's withdrawal will be one of sheer relief as the concept of load management comes to the forefront.” Football365, 21 Sep: “Chelsea could not be blamed for being somewhat cautious with Palmer; he never seemed to fully recover from a groin injury last season and Tuchel spoke during the March break of the playmaker still having a niggle, despite having started 16 of the previous 17 Premier League matches.” 101 Great Goals — Fantasy, 21 Sep: “Chelsea forward Palmer was picked by Thomas Tuchel as England start their Nations League campaign with four games over the course of an elongated international break.”",
-   "case_against": "What argues against him: Soccerway, 22 Sep: “Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.” Soccerway, 22 Sep: “In Palmer’s case, the decision is understood to be around caution and managing his workload, but it is believed the player is disappointed to miss out.” Football365, 22 Sep: “England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 22 Sep: “Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.” Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.”",
-   "developments": "Recent developments — Sports Mole, 23 Sep: “Seye Omidiora 23 Sep 2026 10:29 © Iconsport / SPI, PA Images It goes without saying that anyone with a Chelsea allegiance may have felt relieved to read that Cole Palmer had withdrawn from the England squad for the extended September-October international break.” 101 Great Goals — Fantasy, 22 Sep: “Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.” Soccerway, 21 Sep: “On Monday morning, it was revealed that Cole Palmer had withdrawn from the England squad due to load management, with reports stating that the Chelsea star had a small muscular issue that meant he would use the three-week international break to rest.”",
+   "case_against": "What argues against him: Football365, 23 Sep: “England: Pundit responds to claims Cole Palmer is faking injury - 'Genuinely...' Steve Bruce hopes Cole Palmer is not faking injury Steve Bruce hopes Cole Palmer and co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.” Football365, 23 Sep: “Palmer missed the World Cup, with Thomas Tuchel opting against taking him following a lean season.” Soccerway, 22 Sep: “Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 22 Sep: “England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.” Football365, 22 Sep: “Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.”",
+   "developments": "Recent developments — Sports Mole, 23 Sep: “Seye Omidiora 23 Sep 2026 10:29 © Iconsport / SPI, PA Images It goes without saying that anyone with a Chelsea allegiance may have felt relieved to read that Cole Palmer had withdrawn from the England squad for the extended September-October international break.” Soccerway, 22 Sep: “In Palmer’s case, the decision is understood to be around caution and managing his workload, but it is believed the player is disappointed to miss out.” 101 Great Goals — Fantasy, 22 Sep: “Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 21 Sep: “Chelsea aren’t next in action until Saturday 10 October, so we should get updates on Palmer from both Tuchel and Xabi Alonso before the Gameweek 6 deadline.” Football365, 21 Sep: “Still, Tuchel has refreshed his squad for this break, with Trent Alexander-Arnold and Palmer among the notable inclusions after they missed the World Cup.”",
    "confidence": "high",
-   "evidence_count": 49,
+   "evidence_count": 50,
    "evidence_used": [
+    "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
     "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
     "https://www.101greatgoals.com/football/internationals/gibbs-white-england-squad-palmer-out/",
     "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
@@ -1816,8 +1828,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-four-rogers-assists-palmer-brace-pedro-rested",
     "https://www.fantasyfootballscout.co.uk/2026/09/09/triple-captain-palmer-in-fpl-gameweek-4-the-pros-cons",
     "https://www.itfc.co.uk/news/2026/september/03/early-liverpool-team-news/",
-    "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
-    "https://tacticalfootballanalysis.com/fpl-gameweek-4-wildcard-guide-2026-27/"
+    "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1839,6 +1850,25 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "England: Pundit responds to claims Cole Palmer is faking injury - 'Genuinely...' Steve Bruce hopes Cole Palmer is not faking injury Steve Bruce hopes Cole Palmer and co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
+     "published": "2026-09-23T15:34:08+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury",
+      "transfer"
+     ]
+    },
+    {
+     "text": "Palmer missed the World Cup, with Thomas Tuchel opting against taking him following a lean season.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
+     "published": "2026-09-23T15:34:08+00:00",
+     "tone": "negative",
+     "topics": []
+    },
     {
      "text": "Seye Omidiora 23 Sep 2026 10:29 © Iconsport / SPI, PA Images It goes without saying that anyone with a Chelsea allegiance may have felt relieved to read that Cole Palmer had withdrawn from the England squad for the extended September-October international break.",
      "source": "Sports Mole",
@@ -3661,7 +3691,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 19 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -3670,14 +3700,15 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.101greatgoals.com/football/premier-league/tottenham-pedro-porro-miss-four-weeks-hamstring-injury/",
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/the-six-games-porro-will-miss-as-spurs-learn-extent-of-hamstring-injury_605667.html",
     "https://avfc.co.uk/news/2026/september/21/gallery-villans-celebrate-at-spurs/",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-out-of-spain-squad-which-spurs-games-could-he-miss_605502.html",
     "https://avfc.co.uk/news/2026/september/19/postmatch-mcginn-reflects-on-tottenham-triumph/",
-    "https://avfc.co.uk/news/2026/september/19/report-tottenham-v-aston-villa/",
-    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-sorrow-spurs-defender-suffers-new-injury-as-three-replacements-identified_605479.html",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "Aston Villa",
     "FourFourTwo FPL",
     "Sports Mole"
