@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-23T01:32:06+00:00",
- "seconds": 146.6,
+ "ran_at": "2026-09-23T10:03:09+00:00",
+ "seconds": 155.1,
  "sources_attempted": 78,
  "sources_readable": 62,
- "candidates_discovered": 597,
- "substantive_items": 186,
- "duplicates_removed": 8,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 16464,
+ "candidates_discovered": 605,
+ "substantive_items": 201,
+ "duplicates_removed": 13,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 16608,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 186 articles"
+    "62/78 sources returned 201 articles"
    ]
   },
   "blackout": {
@@ -47,12 +47,12 @@
   "Draft FC: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Brentford: timed out after 12s for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -60,7 +60,7 @@
    "club": "ARS",
    "evidence_count": 13,
    "source_count": 8,
-   "latest_evidence": "2026-09-20T12:26:35+01:00",
+   "latest_evidence": "2026-09-23T08:39:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -113,6 +113,15 @@
      "excerpt": "Régis Le Bris felt Sunderland were close to taking something from Saturday’s Premier League fixture against champions Arsenal, despite suffering a 2-0 defeat at the Stadium of Light. The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later. Bukayo Saka adde"
     },
     {
+     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs, Donnarumma falls",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "source": "Football365",
+     "published": "2026-09-23T08:39:35+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers."
+    },
+    {
      "title": "Are Arsenal unlucky with the goals they concede? What the numbers say",
      "url": "https://www.sportsmole.co.uk/football/arsenal/feature/are-arsenal-unlucky-with-the-goals-they-concede-what-the-numbers-say_605514.html",
      "source": "Sports Mole",
@@ -120,15 +129,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Are Arsenal simply unlucky with the goals they concede? Sports Mole explores that David Raya theory after the Gunners' 3-0 defeat to Brighton & Hove Albion."
-    },
-    {
-     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Trafford falls, lowly Alisson",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "source": "Football365",
-     "published": "2026-09-16T09:39:35+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers."
     },
     {
      "title": "Jamie Carragher names ‘Arsenal’s most important player’ – NOT Rice or Odegaard",
@@ -918,7 +918,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 35,
+   "evidence_count": 36,
    "source_count": 14,
    "latest_evidence": "2026-09-22T07:19:48+00:00",
    "official_source_found": true,
@@ -1058,9 +1058,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 51,
    "source_count": 17,
-   "latest_evidence": "2026-09-22T18:40:17+02:00",
+   "latest_evidence": "2026-09-23T10:29:05+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1198,9 +1198,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 81,
+   "evidence_count": 82,
    "source_count": 16,
-   "latest_evidence": "2026-09-22T12:57:41+00:00",
+   "latest_evidence": "2026-09-23T06:08:46+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1325,13 +1325,13 @@
      "excerpt": ""
     },
     {
-     "title": "Bayern Munich hatch Haaland plan after Kane reaches decision on joining Man Utd",
-     "url": "https://www.football365.com/news/man-utd-haaland-plan-kane-bayern-munich-man-city",
-     "source": "Football365",
-     "published": "2026-09-22T12:29:57+00:00",
+     "title": "Flashscore sources: Haaland will drive any decision over future transfer amid new links",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-haaland-will-drive-any-decision-over-future-transfer-amid-new-links/h0v4fKGb/",
+     "source": "Soccerway",
+     "published": "2026-09-23T06:08:46+02:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "Bayern Munich are reportedly positioning themselves in the race to sign Man City star Erling Haaland in a Harry Kane succession plan."
+     "excerpt": ""
     }
    ]
   },
@@ -1526,9 +1526,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 65,
+   "evidence_count": 66,
    "source_count": 15,
-   "latest_evidence": "2026-09-21T23:58:37+02:00",
+   "latest_evidence": "2026-09-23T07:07:18+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1553,6 +1553,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Joao Pedro issues unusual statement after signing new Chelsea contract amid latest injury update",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/joao-pedro-issues-unusual-statement-after-new-chelsea-contract-amid-injury-latest_605643.html",
+     "source": "Sports Mole",
+     "published": "2026-09-23T07:07:18+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea forward Joao Pedro has broken his silence on his new long-term contract, with the Brazilian also facing a spell on the sidelines."
+    },
     {
      "title": "Gomes starts at Spurs",
      "url": "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
@@ -1651,15 +1660,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "The most-owned FPL player has pulled out of Brazil's latest squad The post Joao Pedro, James, Caicedo: Chelsea injury latest for FPL Gameweek 5 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-17T12:45:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Six managers face the media, including Chelsea's Xabi Alonso The post FPL Gameweek 5 team news: Thurs’ live injury updates + Pedro latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
