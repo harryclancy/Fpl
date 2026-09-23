@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-23T10:03:09+00:00",
- "seconds": 155.1,
+ "ran_at": "2026-09-23T15:28:10+00:00",
+ "seconds": 154.0,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 605,
- "substantive_items": 201,
- "duplicates_removed": 13,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 16608,
+ "sources_readable": 60,
+ "candidates_discovered": 638,
+ "substantive_items": 233,
+ "duplicates_removed": 20,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 16772,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 201 articles"
+    "60/78 sources returned 233 articles"
    ]
   },
   "blackout": {
@@ -42,17 +42,19 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Brentford: timed out after 12s for https://www.brentfordfc.com/en/sitemap.xml",
+  "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -369,9 +371,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "source_count": 7,
-   "latest_evidence": "2026-09-16T16:00:04+00:00",
+   "latest_evidence": "2026-09-23T11:20:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -487,6 +489,15 @@
      "excerpt": "Villa have announced the arrivals of two new stars on transfer deadline day, with a further £77m spent"
     },
     {
+     "title": "Arsenal receive baffling VAR verdict on Sunderland penalty incident as Premier League explain 3-2 vote",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html",
+     "source": "Sports Mole",
+     "published": "2026-09-23T11:20:00+01:00",
+     "matched_on": "konsa",
+     "kind": "general",
+     "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
+    },
+    {
      "title": "Preview: Arsenal visit Wearside in Saturday night Premier League action",
      "url": "https://www.safc.com/news/2026/september/11/preview--arsenal-visit-wearside-in-saturday-night-premier-league-action/",
      "source": "Sunderland",
@@ -494,15 +505,6 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
-    },
-    {
-     "title": "Zopharâs Gameweek 3 Q&A: Top City picks, Triple Captain Haaland, buy Konsa?",
-     "url": "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-03T11:45:59+00:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "FPL Gameweek 3 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whetherÂ Ezri KonsaÂ is one to buy this week, the top Manchester City picks amid their new signings, using the Triple Captain on Erling HaalandÂ and the case […]"
     }
    ]
   },
@@ -919,8 +921,8 @@
    "player": "Rogers",
    "club": "CHE",
    "evidence_count": 36,
-   "source_count": 14,
-   "latest_evidence": "2026-09-22T07:19:48+00:00",
+   "source_count": 13,
+   "latest_evidence": "2026-09-23T11:06:21+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1000,6 +1002,15 @@
      "excerpt": "After waiting 22 years to win the Premier League again, Arsenal finally did it. Can Mikel Arteta’s side now defend their title? It will be interesting to see their mindset and approach; whether the relief of getting over the line at last has an impact, or if it only sparks even more fire to do it again now they’ve experienced the success they craved. With so much change to managers elsewhere in th"
     },
     {
+     "title": "Alejandro Garnacho could follow Aston Villa star in controversial exit: report",
+     "url": "https://www.fourfourtwo.com/transfer/alejandro-garnacho-could-follow-aston-villa-star-in-controversial-exit-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-23T11:06:21+00:00",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": "Alejandro Garnacho is facing an Aston Villa exit already. That's according to a new report, which says that the Argentine isn't favoured by manager Unai Emery, and has been offered an exit route from the Midlands already. Aston Villa signed Garnacho on loan from Chelsea with a £43 million buy clause over the summer, but with the winger limited to just half an hour in claret-and-blue so far, it app"
+    },
+    {
      "title": "Chelsea news: How £117m Morgan Rogers transfer has affected Estevao's role under Xabi Alonso",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-gbp117m-morgan-rogers-signing-has-complicated-estevaos-chelsea-pathway_604992.html",
      "source": "Sports Mole",
@@ -1043,22 +1054,13 @@
      "matched_on": "rogers",
      "kind": "transfer",
      "excerpt": ""
-    },
-    {
-     "title": "Ranking the 20 biggest PL summer signings from Andrey Santos to Morgan Rogers",
-     "url": "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings",
-     "source": "Football365",
-     "published": "2026-09-22T07:19:48+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "It’s not been a bad start for the big summer signings with three £100m players in the top four of this ranking of the 20 most expensive. Tottenham’s highest of ..."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 51,
+   "evidence_count": 49,
    "source_count": 17,
    "latest_evidence": "2026-09-23T10:29:05+01:00",
    "official_source_found": true,
@@ -1527,8 +1529,8 @@
    "player": "João Pedro",
    "club": "CHE",
    "evidence_count": 66,
-   "source_count": 15,
-   "latest_evidence": "2026-09-23T07:07:18+01:00",
+   "source_count": 16,
+   "latest_evidence": "2026-09-23T10:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
