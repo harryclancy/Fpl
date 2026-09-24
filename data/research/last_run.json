@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-24T01:28:24+00:00",
- "seconds": 130.1,
+ "ran_at": "2026-09-24T10:06:03+00:00",
+ "seconds": 157.8,
  "sources_attempted": 78,
  "sources_readable": 61,
- "candidates_discovered": 567,
- "substantive_items": 154,
- "duplicates_removed": 4,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 17021,
+ "candidates_discovered": 599,
+ "substantive_items": 187,
+ "duplicates_removed": 13,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 17154,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 154 articles"
+    "61/78 sources returned 187 articles"
    ]
   },
   "blackout": {
@@ -42,12 +42,12 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
