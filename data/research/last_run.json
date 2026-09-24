@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-24T15:50:13+00:00",
- "seconds": 126.7,
+ "ran_at": "2026-09-24T20:31:51+00:00",
+ "seconds": 124.8,
  "sources_attempted": 78,
  "sources_readable": 61,
- "candidates_discovered": 668,
- "substantive_items": 248,
- "duplicates_removed": 18,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 17332,
+ "candidates_discovered": 647,
+ "substantive_items": 215,
+ "duplicates_removed": 24,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 17470,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 248 articles"
+    "61/78 sources returned 215 articles"
    ]
   },
   "blackout": {
@@ -41,14 +41,14 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "FISO: ConnectionError for https://fiso.co.uk/feed/",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Brentford: HTTP 502 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -843,15 +843,6 @@
      "excerpt": "AFC Bournemouth shared the points with Newcastle United in a Premier League thriller which ended in a 2-2 draw at St James’ Park on Saturday. Marcus Tavernier opened the scoring in the ninth minute of what turned into a breathless first half, reacting quickest after Alex Scott’s shot had been deflected into his path. The Cherries doubled their lead when Magpies skipper Malick Thiaw glanced Scott’s"
     },
     {
-     "title": "Villans nominated for Premier League Goal of the Month",
-     "url": "https://avfc.co.uk/news/2026/september/24/villans-nominated-for-premier-league-goal-of-the-month-/",
-     "source": "Aston Villa",
-     "published": "2026-09-24T12:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Both Nicolas Jackson and Emi Buendía’s goals in Aston Villa’s victory over Tottenham Hotspur have been shortlisted for the Premier League September Guinness Goal of the Month award. The Villans came away from North London with all three points last weekend, with stunning strikes from Jackson and Buendía helping secure a 3-2 triumph. And both players have been nominated for the September prize, wit"
-    },
-    {
      "title": "Harvey Barnes nominated for Premier League Guinness Goal of the Month award",
      "url": "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
      "source": "Newcastle United",
@@ -859,6 +850,15 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "Villans nominated for Premier League Goal of the Month",
+     "url": "https://avfc.co.uk/news/2026/september/24/villans-nominated-for-premier-league-goal-of-the-month-/",
+     "source": "Aston Villa",
+     "published": "2026-09-24T12:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Both Nicolas Jackson and Emi Buendía’s goals in Aston Villa’s victory over Tottenham Hotspur have been shortlisted for the Premier League September Guinness Goal of the Month award. The Villans came away from North London with all three points last weekend, with stunning strikes from Jackson and Buendía helping secure a 3-2 triumph. And both players have been nominated for the September prize, wit"
     },
     {
      "title": "Event Guide: All You Need To Know Ahead Of Game4Hope",
@@ -1208,7 +1208,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 82,
+   "evidence_count": 81,
    "source_count": 16,
    "latest_evidence": "2026-09-23T06:08:46+02:00",
    "official_source_found": true,
@@ -1348,9 +1348,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 8,
-   "source_count": 6,
-   "latest_evidence": "2026-09-19T22:00:00+00:00",
+   "evidence_count": 9,
+   "source_count": 7,
+   "latest_evidence": "2026-09-24T18:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1374,6 +1374,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Wan-Bissaka features in DR Congo win",
+     "url": "https://avfc.co.uk/news/2026/september/24/internationals-wan-bissaka-features-in-dr-congo-win/",
+     "source": "Aston Villa",
+     "published": "2026-09-24T18:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Aaron Wan-Bissaka completed 90 minutes as DR Congo made a winning start to their 2027 African Cup of Nations qualifying campaign on Thursday. The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa. The victory places the Congolese side top of Group E "
+    },
     {
      "title": "FPL notes: Wissa pen miss + Newcastle the new DefCon kings?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
