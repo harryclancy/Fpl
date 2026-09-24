@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-24T10:06:03+00:00",
+ "generated": "2026-09-24T15:50:13+00:00",
  "gameweek": 6,
- "corpus_size": 17154,
+ "corpus_size": 17332,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1175,31 +1175,32 @@
    "player": "Barnes",
    "club": "NEW",
    "status": "Latest on Barnes — Sports Illustrated FPL, 15 Sep: “Leonard's Arrival Could Change Scottie Barnes' Role Apr 23, 2026; Toronto, Ontario, CAN; Toronto Raptors guard Scottie Barnes (4) drives to the basket against the Cleveland Cavaliers during the first half of game three of the first round of the 2026 NBA Playoffs at Scotiabank Arena.”",
-   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 12 retrieved item(s) from 7 source(s), the most recent dated 23 Sep.",
-   "case_for": "What supports keeping him: Everton, 23 Sep: “Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST).” Sports Mole, 19 Sep: “Harvey Barnes shines in Newcastle vs Hull City © Iconsport / Andrew Yates / Sportimage Barnes was the architect behind both goals, providing the assists for Joe Willock and Lewis Hall According to Opta Analyst , the two early assists were the earliest in a Premier League game that a Newcastle player has ever recorded.” Sports Mole, 19 Sep: “Barnes produced a smart pass inside the box for Willock, who unleashed a thunderous left-footed strike that left the goalkeeper with no chance.”",
+   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 14 retrieved item(s) from 8 source(s), the most recent dated 24 Sep.",
+   "case_for": "What supports keeping him: Newcastle United, 24 Sep: “With the Magpies trailing by two goals against Marco Rose's Cherries, Barnes quickly halved the deficit for the hosts after cutting inside from the left wing before curling a wonderful effort into the top right-hand corner.” Everton, 23 Sep: “Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST).” Sports Mole, 19 Sep: “Harvey Barnes shines in Newcastle vs Hull City © Iconsport / Andrew Yates / Sportimage Barnes was the architect behind both goals, providing the assists for Joe Willock and Lewis Hall According to Opta Analyst , the two early assists were the earliest in a Premier League game that a Newcastle player has ever recorded.”",
    "case_against": "What argues against him: Sports Illustrated FPL, 09 Sep: “Barnes has delt with an undisclosed injury since the spring.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Everton, 18 Sep: “Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides” Newcastle United, 17 Sep: “Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.” Newcastle United, 17 Sep: “Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.”",
+   "developments": "Recent developments — Newcastle United, 24 Sep: “Barnes' stunning strike against AFC Bournemouth in a 2-2 comeback draw at St. James' Park has been shortlisted.” Sports Mole, 19 Sep: “Barnes produced a smart pass inside the box for Willock, who unleashed a thunderous left-footed strike that left the goalkeeper with no chance.” Everton, 18 Sep: “Everton Giant Peter Reid and Liverpool legend John Barnes will jointly manage the Merseyside XI – bringing together two men synonymous with opposite sides”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 12,
+   "evidence_count": 14,
    "evidence_used": [
     "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
     "https://www.fourfourtwo.com/team/newcastle-united-demonstrated-the-power-of-the-twelfth-man-can-aston-villa-overcome-the-empty-north-stand",
     "https://www.afcb.co.uk/news/2026/september/05/match-report-v-newcastle/",
+    "https://avfc.co.uk/news/2026/september/24/villans-nominated-for-premier-league-goal-of-the-month-/",
+    "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
     "https://www.evertonfc.com/news/2026/september/23/Event-Guide--All-You-Need-To-Know-Ahead-Of-Game4Hope/",
     "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
     "https://www.evertonfc.com/news/2026/september/18/game4hope/",
     "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
     "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
     "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-    "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
-    "https://www.afcb.co.uk/news/2026/september/05/gallery--tav-strikes-again-on-tyneside-but-toon-grab-a-point/",
-    "https://www.101greatgoals.com/news/barnes-hits-beauty-but-bournemouth-dominate-at-newcastle/"
+    "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "AFC Bournemouth",
+    "Aston Villa",
     "Everton",
     "FourFourTwo FPL",
     "Newcastle United",
@@ -1207,6 +1208,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Barnes' stunning strike against AFC Bournemouth in a 2-2 comeback draw at St. James' Park has been shortlisted.",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
+     "published": "2026-09-24T12:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "With the Magpies trailing by two goals against Marco Rose's Cherries, Barnes quickly halved the deficit for the hosts after cutting inside from the left wing before curling a wonderful effort into the top right-hand corner.",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
+     "published": "2026-09-24T12:00:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "set pieces"
+     ]
+    },
     {
      "text": "Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST).",
      "source": "Everton",
@@ -1332,14 +1351,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — FourFourTwo FPL, 23 Sep: “While the Blues signed Morgan Rogers for a club-record fee in the summer, Villa took Nicolas Jackson and Garnacho off new manager Xabi Alonso's hands – but fellow Basque boss Emery has instead favoured youngster George Hemmings on the left flank.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 36 retrieved item(s) from 13 source(s), the most recent dated 23 Sep.",
+   "why_here": "Rogers is in the starting eleven this week at £7.7m as a MID. The selection rests on 37 retrieved item(s) from 13 source(s), the most recent dated 23 Sep.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 14 Sep: “Only four players have surpassed Rogers’ total of 10 chances created this season.” Hull City, 14 Sep: “Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bridge.” Sports Mole, 12 Sep: “Morgan Rogers joins Chelsea heroes after early goal © Iconsport / PA Images Rogers collected Joao Pedro's pass before surging into the penalty area and unleashing a thunderous left-footed strike inside the opening seven minutes, giving Chelsea an early advantage at Stamford Bridge.”",
    "case_against": "What argues against him: Football365, 03 Sep: “Arsenal legend Ian Wright insists that he was “gutted” that the Gunners missed out on Morgan Rogers to Chelsea in the summer.”",
    "expected_minutes": "On minutes — Sports Mole, 11 Sep: “Why Morgan Rogers has changed Estevao's Chelsea pathway Alonso has predominantly favoured a 3-4-2-1 in which two attacking midfielders operate behind the centre-forward.” Fantasy Football Scout, 10 Sep: “So, I hope we can have Cody with us, but I cannot guarantee it.” – Andoni Iraola on Cody Gakpo But even if Gakpo is passed fit to start in Andoni Iraola’s Friday presser, I’d still put Rogers and Gibbs-White ahead.”",
    "developments": "Recent developments — Football365, 22 Sep: “Barcola and Tonali spared bottom spot by Man Utd flop in ranking of 20 biggest PL summer signings Bradley Barcola, Morgan Rogers and Sandro Tonali A break from Premier League action for three interminable weeks offers time for managers and clubs to take stock while most of their players are away playing international fixtures that they, we, pretty much everyone actually, could do without.” Fantasy Football Scout, 14 Sep: “MORGAN ROGERS Morgan Rogers (£7.7m) continues to tick along nicely for his 36.5% ownership.” NBC Sports Rotoworld PL, 13 Sep: “23 Home Run Derby champion, Guerrero connected off Baltimore’s Trevor Rogers in the fifth inning of Sunday’s 8-1 win His 350-foot drive into the left field bullpen was his ninth homer of the season.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 10 Sep: “Given the schedule, I’d feel much more confident with Rogers or Gibbs-White, who aren’t playing in Europe.” Fantasy Football Scout, 10 Sep: “Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).”",
    "confidence": "high",
-   "evidence_count": 36,
+   "evidence_count": 37,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
@@ -1801,21 +1820,29 @@
      "published": "",
      "tone": "neutral",
      "topics": []
+    },
+    {
+     "text": "Morgan Rogers CFC Unlocked out now! | News | Official Site | Chelsea Football Club Rogers joined us in the CFC Unlocked studio at Cobham for an in-depth chat, showing off his Premier League knowledge with some quiz games and trying to solve Chelsea supporters’ personal dilemmas.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/morgan-rogers-cfc-unlocked-out-now",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "status": "Latest on Palmer — Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.” Sports Mole, 18 Sep: “Cole Palmer looks set for a recall after a strong start to the season, following an injury-hit campaign that cost him his World Cup place.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 50 retrieved item(s) from 17 source(s), the most recent dated 23 Sep.",
+   "status": "Latest on Palmer — Football365, 22 Sep: “Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.” Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.”",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 51 retrieved item(s) from 17 source(s), the most recent dated 24 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 23 Sep: “Cole Palmer England withdrawal: The undeniable benefit of load management © Iconsport / David Klein / Sportimage For those at Stamford Bridge, the prevailing emotion following Palmer's withdrawal will be one of sheer relief as the concept of load management comes to the forefront.” Football365, 21 Sep: “Chelsea could not be blamed for being somewhat cautious with Palmer; he never seemed to fully recover from a groin injury last season and Tuchel spoke during the March break of the playmaker still having a niggle, despite having started 16 of the previous 17 Premier League matches.” 101 Great Goals — Fantasy, 21 Sep: “Chelsea forward Palmer was picked by Thomas Tuchel as England start their Nations League campaign with four games over the course of an elongated international break.”",
-   "case_against": "What argues against him: Football365, 23 Sep: “England: Pundit responds to claims Cole Palmer is faking injury - 'Genuinely...' Steve Bruce hopes Cole Palmer is not faking injury Steve Bruce hopes Cole Palmer and co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.” Football365, 23 Sep: “Palmer missed the World Cup, with Thomas Tuchel opting against taking him following a lean season.” Soccerway, 22 Sep: “Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 22 Sep: “England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.” Football365, 22 Sep: “Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.”",
-   "developments": "Recent developments — Sports Mole, 23 Sep: “Seye Omidiora 23 Sep 2026 10:29 © Iconsport / SPI, PA Images It goes without saying that anyone with a Chelsea allegiance may have felt relieved to read that Cole Palmer had withdrawn from the England squad for the extended September-October international break.” Soccerway, 22 Sep: “In Palmer’s case, the decision is understood to be around caution and managing his workload, but it is believed the player is disappointed to miss out.” 101 Great Goals — Fantasy, 22 Sep: “Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 21 Sep: “Chelsea aren’t next in action until Saturday 10 October, so we should get updates on Palmer from both Tuchel and Xabi Alonso before the Gameweek 6 deadline.” Football365, 21 Sep: “Still, Tuchel has refreshed his squad for this break, with Trent Alexander-Arnold and Palmer among the notable inclusions after they missed the World Cup.”",
+   "case_against": "What argues against him: Football365, 24 Sep: “Mailbox Bruno Fernandes Ciaran McCarthy 23 Sep 2026 Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’ Steve Bruce hopes Cole Palmer and Co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.” Football365, 23 Sep: “England: Pundit responds to claims Cole Palmer is faking injury - 'Genuinely...' Steve Bruce hopes Cole Palmer is not faking injury Steve Bruce hopes Cole Palmer and co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.” Football365, 23 Sep: “Palmer missed the World Cup, with Thomas Tuchel opting against taking him following a lean season.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 22 Sep: “Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.” Football365, 22 Sep: “England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.”",
+   "developments": "Recent developments — Football365, 24 Sep: “Bruno Fernandes officially the worst decision-maker in Premier League Bruno Fernandes, Cole Palmer and Alex Scott don't always take the best option.” Sports Mole, 23 Sep: “Seye Omidiora 23 Sep 2026 10:29 © Iconsport / SPI, PA Images It goes without saying that anyone with a Chelsea allegiance may have felt relieved to read that Cole Palmer had withdrawn from the England squad for the extended September-October international break.” Soccerway, 22 Sep: “In Palmer’s case, the decision is understood to be around caution and managing his workload, but it is believed the player is disappointed to miss out.”",
+   "outlook": "On the coming weeks — 101 Great Goals — Fantasy, 22 Sep: “Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.” Fantasy Football Scout, 21 Sep: “Chelsea aren’t next in action until Saturday 10 October, so we should get updates on Palmer from both Tuchel and Xabi Alonso before the Gameweek 6 deadline.”",
    "confidence": "high",
-   "evidence_count": 50,
+   "evidence_count": 51,
    "evidence_used": [
     "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
     "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
@@ -1850,6 +1877,25 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Bruno Fernandes officially the worst decision-maker in Premier League Bruno Fernandes, Cole Palmer and Alex Scott don't always take the best option.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-decision-making-players-ranked",
+     "published": "2026-09-24T13:24:17+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Mailbox Bruno Fernandes Ciaran McCarthy 23 Sep 2026 Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’ Steve Bruce hopes Cole Palmer and Co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-decision-making-players-ranked",
+     "published": "2026-09-24T13:24:17+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury",
+      "transfer"
+     ]
+    },
     {
      "text": "England: Pundit responds to claims Cole Palmer is faking injury - 'Genuinely...' Steve Bruce hopes Cole Palmer is not faking injury Steve Bruce hopes Cole Palmer and co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.",
      "source": "Football365",
@@ -3729,14 +3775,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — Sports Mole, 18 Sep: “However, despite his comments to the media, a report quickly emerged which suggested that Joao Pedro had been ruled out of the trip to the Gtech Community Stadium with a knee injury.” Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.”",
-   "why_here": "João Pedro is on the bench this week at £7.7m as a FWD. The selection rests on 67 retrieved item(s) from 16 source(s), the most recent dated 24 Sep.",
+   "why_here": "João Pedro is on the bench this week at £7.7m as a FWD. The selection rests on 68 retrieved item(s) from 16 source(s), the most recent dated 24 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.” Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).” Sports Mole, 17 Sep: “Pedro has enjoyed an outstanding start to the 2026-27 top-flight campaign, contributing three goals and three assists from four appearances.”",
    "case_against": "What argues against him: Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 18 Sep: “Chelsea are still without long-term absentees Jordan Henderson and Moises Caicedo, while Joao Pedro is a major doubt after withdrawing from Brazil duty.” RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.”",
    "developments": "Recent developments — Sports Mole, 24 Sep: “Carlo Ancelotti set to lead his side out against Australia on Friday, but Chelsea forward Pedro was forced to withdraw from international duty due to a knee issue.” Sports Illustrated FPL, 23 Sep: “Pedro came out of his debut season in west London with his reputation enhanced, which is no mean feat in a campaign which saw the Blues cycle through three managers and sink to 10th in the Premier League.” Sports Illustrated FPL, 23 Sep: “Amid a global shortage of prolific center forwards, Pedro emerged as a figure of interest for a glut of elite clubs.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 17 Sep: “Joao Pedro is the highest-owned player in the game at 74.0% ownership.” Fantasy Football Scout, 17 Sep: ““He is getting closer and tomorrow, we will take a final decision in the team and in the squad that is coming to Brentford.” – Xabi Alonso on Moises Caicedo Reece James , along with Caicedo and Pedro, missed training on Tuesday , and Alonso was asked why.”",
    "confidence": "high",
-   "evidence_count": 67,
+   "evidence_count": 68,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/brazil/injury-news/predicted-lineups/who-replaces-joao-pedro-predicted-brazil-xi-vs-australia_605688.html",
     "https://www.sportsmole.co.uk/football/chelsea/news/joao-pedro-issues-unusual-statement-after-new-chelsea-contract-amid-injury-latest_605643.html",
