@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-25T15:50:38+00:00",
- "seconds": 160.4,
+ "ran_at": "2026-09-25T20:31:26+00:00",
+ "seconds": 144.0,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 679,
- "substantive_items": 277,
- "duplicates_removed": 21,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 17911,
+ "sources_readable": 62,
+ "candidates_discovered": 638,
+ "substantive_items": 234,
+ "duplicates_removed": 25,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 18057,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 277 articles"
+    "62/78 sources returned 234 articles"
    ]
   },
   "blackout": {
@@ -49,7 +49,6 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
-  "Newcastle United: timed out after 12s for https://www.newcastleunited.com/sitemaps/latest-news-sitemap.xml",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -929,8 +928,8 @@
    "player": "Rogers",
    "club": "CHE",
    "evidence_count": 37,
-   "source_count": 13,
-   "latest_evidence": "2026-09-23T11:06:21+00:00",
+   "source_count": 14,
+   "latest_evidence": "2026-09-25T17:20:33+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1001,15 +1000,6 @@
      "excerpt": "Morgan Rogers is set to line up for Chelsea against Arsenal at the Emirates Stadium in the Premier League on Sunday."
     },
     {
-     "title": "JULES BREACH: Arsenal are still the team to beat this season, Morgan Rogers can help Chelsea challenge for silverware and Matthias Jaissle will give Newcastle a fresh start",
-     "url": "https://www.fourfourtwo.com/competition/jules-breach-arsenal-are-still-the-team-to-beat-this-season-morgan-rogers-can-help-chelsea-challenge-for-silverware-and-matthias-jaissle-will-give-newcastle-a-fresh-start",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-28T11:59:21+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "After waiting 22 years to win the Premier League again, Arsenal finally did it. Can Mikel Arteta’s side now defend their title? It will be interesting to see their mindset and approach; whether the relief of getting over the line at last has an impact, or if it only sparks even more fire to do it again now they’ve experienced the success they craved. With so much change to managers elsewhere in th"
-    },
-    {
      "title": "Alejandro Garnacho could follow Aston Villa star in controversial exit: report",
      "url": "https://www.fourfourtwo.com/transfer/alejandro-garnacho-could-follow-aston-villa-star-in-controversial-exit-report",
      "source": "FourFourTwo FPL",
@@ -1062,15 +1052,24 @@
      "matched_on": "rogers",
      "kind": "transfer",
      "excerpt": ""
+    },
+    {
+     "title": "MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26",
+     "url": "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
+     "source": "DraftKings Network Soccer",
+     "published": "2026-09-25T17:20:33+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Orioles lefty Trevor Rogers, Tigers righty Jackson Jobe and Guardians righty Gavin Williams are among the starters set to take the mound Friday. Sam Connon shares his picks and predictions in regards to the three pitchers' strikeout prop bets. The post MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26 appeared first on DraftKings Network ."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 51,
+   "evidence_count": 55,
    "source_count": 17,
-   "latest_evidence": "2026-09-24T13:24:17+00:00",
+   "latest_evidence": "2026-09-25T19:19:26+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1095,6 +1094,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "England injury news: Thomas Tuchel reacts to Cole Palmer withdrawal, admits growing frustration",
+     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/he-misses-too-many-camps-tuchel-expresses-frustration-with-palmer-injuries_605794.html",
+     "source": "Sports Mole",
+     "published": "2026-09-25T16:54:28+01:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "England head coach Thomas Tuchel admits that he is frustrated with Cole Palmer's withdrawal from the Three Lions squad for the upcoming UEFA Nations League fixtures."
+    },
     {
      "title": "Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’",
      "url": "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
@@ -1193,15 +1201,6 @@
      "matched_on": "palmer",
      "kind": "team news",
      "excerpt": "Fixtures Ipswich Town Vs. Liverpool - Fri, Sep 4th 2026, 20:00 Gary O’Neil says his squad is in good health at the moment ahead of Friday evening’s Premier League clash with Liverpool at Portman Road. There are no new concerns after Sunday’s defeat to Manchester United and the Town manager has confirmed that Florentino Luís is in contention for Friday’s game having missed the start of the season “"
-    },
-    {
-     "title": "FPL Gameweek 3 Wildcard best team + pros/cons of using",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-03T11:40:00+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Is it possible to house all of Cole Palmer, Bruno Fernandes and Erling Haaland in one squad? The post FPL Gameweek 3 Wildcard best team + pros/cons of using appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
