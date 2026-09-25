@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-24T20:31:51+00:00",
- "seconds": 124.8,
+ "ran_at": "2026-09-25T01:34:37+00:00",
+ "seconds": 156.4,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 647,
- "substantive_items": 215,
- "duplicates_removed": 24,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 17470,
+ "sources_readable": 62,
+ "candidates_discovered": 602,
+ "substantive_items": 194,
+ "duplicates_removed": 14,
+ "deeply_analysed": 88,
+ "deep_read_failed": 2,
+ "corpus_size": 17604,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 215 articles"
+    "62/78 sources returned 194 articles"
    ]
   },
   "blackout": {
@@ -42,7 +42,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -1208,9 +1207,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 81,
+   "evidence_count": 83,
    "source_count": 16,
-   "latest_evidence": "2026-09-23T06:08:46+02:00",
+   "latest_evidence": "2026-09-24T22:47:02+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1545,9 +1544,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 68,
+   "evidence_count": 69,
    "source_count": 16,
-   "latest_evidence": "2026-09-24T15:32:00+00:00",
+   "latest_evidence": "2026-09-24T21:06:13+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1572,6 +1571,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Duo Defeated In Nations League Openers",
+     "url": "https://www.evertonfc.com/news/2026/september/24/duo-defeated-in-nations-league-openers/",
+     "source": "Everton",
+     "published": "2026-09-24T21:06:13+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Brennan Johnson and Jake O’Brien played 90 minutes for Wales and Republic of Ireland respectively, but their Nations League campaigns both began with narrow 1-0 away defeats. Johnson was named in Craig Bellamy’s starting XI in Lisbon, where the pre-match build-up was all about Cristiano Ronaldo seeking to win his 234th cap for Portugal at the stadium where his professional career began 24 years ag"
+    },
     {
      "title": "Brazil lineup vs. Australia: Predicted XI for friendly fixture as Joao Pedro injury forces Carlo Ancelotti rethink",
      "url": "https://www.sportsmole.co.uk/football/brazil/injury-news/predicted-lineups/who-replaces-joao-pedro-predicted-brazil-xi-vs-australia_605688.html",
@@ -1670,15 +1678,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "FPL Meerkat looks at the options available to Joao Pedro owners The post What to do with Joao Pedro in FPL + top 5 replacements appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Chelsea injury news: Major Joao Pedro update amid 'surprise' Xabi Alonso comments on Brazil squad withdrawal",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/major-pedro-injury-update-amid-surprise-alonso-comments-on-chelsea-star_605304.html",
-     "source": "Sports Mole",
-     "published": "2026-09-17T17:42:21+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea forward Joao Pedro is allegedly suffering with a knee injury, despite claims from manager Xabi Alonso that he could feature against Brentford on Friday night."
     }
    ]
   },
