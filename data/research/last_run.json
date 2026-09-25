@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-25T10:14:43+00:00",
- "seconds": 158.7,
+ "ran_at": "2026-09-25T15:50:38+00:00",
+ "seconds": 160.4,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 600,
- "substantive_items": 189,
- "duplicates_removed": 17,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 17723,
+ "sources_readable": 61,
+ "candidates_discovered": 679,
+ "substantive_items": 277,
+ "duplicates_removed": 21,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 17911,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 189 articles"
+    "61/78 sources returned 277 articles"
    ]
   },
   "blackout": {
@@ -42,8 +42,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
-  "Premier Fantasy Tools: timed out after 12s for https://premierfantasytools.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,19 +49,19 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
+  "Newcastle United: timed out after 12s for https://www.newcastleunited.com/sitemaps/latest-news-sitemap.xml",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "source_count": 8,
-   "latest_evidence": "2026-09-23T08:39:35+00:00",
+   "latest_evidence": "2026-09-25T13:18:39+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -114,6 +112,15 @@
      "matched_on": "raya",
      "kind": "transfer",
      "excerpt": "Régis Le Bris felt Sunderland were close to taking something from Saturday’s Premier League fixture against champions Arsenal, despite suffering a 2-0 defeat at the Stadium of Light. The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later. Bukayo Saka adde"
+    },
+    {
+     "title": "Aston Villa summer signing ‘miles better’ than Arsenal star David Raya as ‘best in the Premier League’",
+     "url": "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
+     "source": "Football365",
+     "published": "2026-09-25T13:18:39+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Arsenal star David Raya has been told that Aston Villa summer signing Zion Suzuki is ‘miles better’ as the “best in the Premier League”."
     },
     {
      "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs, Donnarumma falls",
@@ -186,15 +193,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Bruno Guimarães and Bukayo Saka scored the goals as Premier League champions Arsenal maintained their 100% start to the season, but they also had their goalkeeper to thank. The post Sunderland 0-2 Arsenal Stats: Bruno Guimarães Back to Haunt Former Rivals After David Raya Penalty Heroics appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Arsenal have one hand on another Premier League title and defence is the foundation again",
-     "url": "https://www.fourfourtwo.com/team/arsenal-have-one-hand-on-another-premier-league-title-and-defence-is-the-foundation-again",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-07T10:03:44+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Arsenal conceded a goal on Sunday. Yes, you read that correctly. After keeping out Coventry City and Aston Villa , the Premier League champions were breached by Chelsea in the second minute of their London derby. The location of Morgan Rogers' volley was as significant as the fact that it beat Arsenal goalkeeper David Raya. Arsenal's stifling defensive excellence is the stuff of champions Mikel Ar"
     }
    ]
   },
@@ -1211,8 +1209,8 @@
    "player": "Haaland",
    "club": "MCI",
    "evidence_count": 84,
-   "source_count": 17,
-   "latest_evidence": "2026-09-25T06:00:52+00:00",
+   "source_count": 16,
+   "latest_evidence": "2026-09-25T12:56:26+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1328,15 +1326,6 @@
      "excerpt": "Manchester City play Coventry City The post Should we Triple Captain Haaland in FPL Gameweek 3? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Braces for Haaland and Cherki ensure polished Palace win",
-     "url": "https://www.mancity.com/news/mens/crystal-palace-manchester-city-202627-match-report-63923537",
-     "source": "Manchester City",
-     "published": "2026-08-28T08:55:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
      "title": "Flashscore sources: Haaland will drive any decision over future transfer amid new links",
      "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-haaland-will-drive-any-decision-over-future-transfer-amid-new-links/h0v4fKGb/",
      "source": "Soccerway",
@@ -1344,6 +1333,15 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": ""
+    },
+    {
+     "title": "Bayern Munich hatch Haaland plan after Kane reaches decision on joining Man Utd",
+     "url": "https://www.football365.com/news/man-utd-haaland-plan-kane-bayern-munich-man-city",
+     "source": "Football365",
+     "published": "2026-09-22T12:29:57+00:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "Bayern Munich are reportedly positioning themselves in the race to sign Man City star Erling Haaland in a Harry Kane succession plan."
     }
    ]
   },
@@ -1556,9 +1554,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 70,
-   "source_count": 17,
-   "latest_evidence": "2026-09-25T07:38:34+00:00",
+   "evidence_count": 73,
+   "source_count": 18,
+   "latest_evidence": "2026-09-25T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
