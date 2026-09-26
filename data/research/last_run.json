@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-25T20:31:26+00:00",
- "seconds": 144.0,
+ "ran_at": "2026-09-26T01:38:00+00:00",
+ "seconds": 138.4,
  "sources_attempted": 78,
- "sources_readable": 62,
- "candidates_discovered": 638,
- "substantive_items": 234,
- "duplicates_removed": 25,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 18057,
+ "sources_readable": 61,
+ "candidates_discovered": 587,
+ "substantive_items": 198,
+ "duplicates_removed": 13,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18184,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "62/78 sources returned 234 articles"
+    "61/78 sources returned 198 articles"
    ]
   },
   "blackout": {
@@ -45,6 +45,7 @@
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
+  "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
@@ -927,9 +928,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 37,
+   "evidence_count": 38,
    "source_count": 14,
-   "latest_evidence": "2026-09-25T17:20:33+00:00",
+   "latest_evidence": "2026-09-26T01:58:29+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -954,6 +955,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "England vs. Spain: Morgan Rogers on \"emotions\" of Declan Rice clash as Chelsea star battles for Thomas Tuchel team selection",
+     "url": "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
+     "source": "Sports Mole",
+     "published": "2026-09-26T01:58:29+01:00",
+     "matched_on": "rogers",
+     "kind": "team news",
+     "excerpt": "England star Morgan Rogers clarifies his relationship with Declan Rice as the attacker vies for a place in Thomas Tuchel's starting frontline against Spain."
+    },
     {
      "title": "Rogers, Gross, Schade, Tzolis: Buy, keep or sell in Gameweek 5?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
@@ -1052,15 +1062,6 @@
      "matched_on": "rogers",
      "kind": "transfer",
      "excerpt": ""
-    },
-    {
-     "title": "MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26",
-     "url": "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
-     "source": "DraftKings Network Soccer",
-     "published": "2026-09-25T17:20:33+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Orioles lefty Trevor Rogers, Tigers righty Jackson Jobe and Guardians righty Gavin Williams are among the starters set to take the mound Friday. Sam Connon shares his picks and predictions in regards to the three pitchers' strikeout prop bets. The post MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26 appeared first on DraftKings Network ."
     }
    ]
   },
