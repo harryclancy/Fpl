@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-26T09:56:01+00:00",
- "seconds": 136.9,
+ "ran_at": "2026-09-26T14:59:21+00:00",
+ "seconds": 147.9,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 549,
- "substantive_items": 162,
- "duplicates_removed": 15,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 18272,
+ "sources_readable": 59,
+ "candidates_discovered": 591,
+ "substantive_items": 209,
+ "duplicates_removed": 25,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 18378,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 162 articles"
+    "59/78 sources returned 209 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -53,7 +54,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -648,7 +650,7 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 19,
+   "evidence_count": 18,
    "source_count": 7,
    "latest_evidence": "2026-09-21T10:56:03+00:00",
    "official_source_found": true,
@@ -748,15 +750,6 @@
      "excerpt": "A new report claims to reveal why Liverpool did not address their problematic midfield in the summer amid concerns about Dominik Szoboszlai and Ryan Gravenberch."
     },
     {
-     "title": "How to watch Liverpool vs Nottingham Forest for FREE: Live stream details as both sides look for first win of Premier League 2026/27",
-     "url": "https://www.fourfourtwo.com/competition/watch-liverpool-vs-nottingham-forest-premier-league-2026-27-free",
-     "source": "FourFourTwo FPL",
-     "published": "2026-08-29T08:00:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "transfer",
-     "excerpt": "Watch Liverpool vs Nottingham Forest as both teams go in search of a first win of the new Premier League season. Want to watch the game for FREE and in full? FourFourTwo is providing you with all the details on live streams and TV channels, wherever you are in the world. Liverpool vs Nottingham Forest: key information Kick-off time: 12:30pm BST / 7:30am ET / 9:30pm AEST FREE Stream: CazeTV's YouTu"
-    },
-    {
      "title": "FPL notes: Isak again, Szoboszlai set for further sales + Kluivert injury",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/20/fpl-notes-isak-again-szoboszlai-set-for-further-sales-kluivert-injury-latest",
      "source": "Fantasy Football Scout",
@@ -782,6 +775,15 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Andoni Iraola was full of praise for midfielder Dominik Szoboszlai on Tuesday night."
+    },
+    {
+     "title": "Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16",
+     "url": "https://www.101greatgoals.com/football/liverpool-tottenham-report/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-15T21:08:55+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "Liverpool were made to work hard before the tie was settled in stunning fashion."
     }
    ]
   },
@@ -1208,9 +1210,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 85,
+   "evidence_count": 87,
    "source_count": 16,
-   "latest_evidence": "2026-09-26T08:40:27+00:00",
+   "latest_evidence": "2026-09-26T12:58:21+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1326,6 +1328,15 @@
      "excerpt": "Manchester City play Coventry City The post Should we Triple Captain Haaland in FPL Gameweek 3? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Man City transfer news: Does Erling Haaland have relegation clause in contract?",
+     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/revealed-does-haaland-have-relegation-clause-in-man-city-contract_605827.html",
+     "source": "Sports Mole",
+     "published": "2026-09-26T12:26:49+01:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "Amid Manchester City being faced with the possibility of losing their place in the Premier League in the future, does Erling Haaland have a relegation clause in his contract?"
+    },
+    {
      "title": "Erling Haaland to Barcelona on for 2027 after Man City guilty verdict as release clause truth revealed",
      "url": "https://www.football365.com/news/erling-haaland-barcelona-on-2027-man-city-guilty-verdict",
      "source": "Football365",
@@ -1333,15 +1344,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "A potential move to FC Barcelona for Erling Haaland is reportedly now ‘on’ for next year following Manchester City’s guilty verdict."
-    },
-    {
-     "title": "Flashscore sources: Haaland will drive any decision over future transfer amid new links",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-haaland-will-drive-any-decision-over-future-transfer-amid-new-links/h0v4fKGb/",
-     "source": "Soccerway",
-     "published": "2026-09-23T06:08:46+02:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": ""
     }
    ]
   },
