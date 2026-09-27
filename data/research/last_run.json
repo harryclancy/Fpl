@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-26T19:54:35+00:00",
- "seconds": 135.4,
+ "ran_at": "2026-09-27T01:31:36+00:00",
+ "seconds": 133.4,
  "sources_attempted": 78,
  "sources_readable": 60,
- "candidates_discovered": 630,
- "substantive_items": 231,
- "duplicates_removed": 24,
- "deeply_analysed": 89,
- "deep_read_failed": 1,
- "corpus_size": 18511,
+ "candidates_discovered": 584,
+ "substantive_items": 205,
+ "duplicates_removed": 14,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 18639,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 231 articles"
+    "60/78 sources returned 205 articles"
    ]
   },
   "blackout": {
@@ -200,7 +200,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 3,
    "latest_evidence": "2026-09-21T17:15:00+00:00",
    "official_source_found": true,
@@ -222,8 +222,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -283,6 +283,15 @@
     {
      "title": "Muharemovic named hisense player of the match against palace",
      "url": "https://www.leedsunited.com/en/news/muharemovic-named-hisense-player-of-the-match-against-palace",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic impresses in nations league opener",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -929,7 +938,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 38,
+   "evidence_count": 39,
    "source_count": 14,
    "latest_evidence": "2026-09-26T01:58:29+01:00",
    "official_source_found": true,
@@ -1209,9 +1218,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 87,
+   "evidence_count": 88,
    "source_count": 16,
-   "latest_evidence": "2026-09-26T12:58:21+00:00",
+   "latest_evidence": "2026-09-27T00:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1349,8 +1358,8 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 10,
-   "source_count": 7,
+   "evidence_count": 9,
+   "source_count": 6,
    "latest_evidence": "2026-09-25T08:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1428,15 +1437,6 @@
      "matched_on": "wissa",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Tottenham 0-2 Newcastle Stats: Elanga and Wissa Give Jaissle First Premier League Win",
-     "url": "https://theanalyst.com/articles/tottenham-vs-newcastle-stats-premier-league-08-2026",
-     "source": "Opta Analyst",
-     "published": "2026-08-29T18:45:12+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": "Spurs still await their first point of the season, but Newcastle impressed again. Re-live this game with our Tottenham vs Newcastle stats page. The post Tottenham 0-2 Newcastle Stats: Elanga and Wissa Give Jaissle First Premier League Win appeared first on Opta Analyst ."
     },
     {
      "title": "Yoane wissa fpl newcastle striker battle 2026 27",
