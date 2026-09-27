@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-27T10:35:48+00:00",
- "seconds": 157.0,
+ "ran_at": "2026-09-27T15:40:48+00:00",
+ "seconds": 152.1,
  "sources_attempted": 78,
  "sources_readable": 59,
- "candidates_discovered": 571,
- "substantive_items": 179,
- "duplicates_removed": 13,
+ "candidates_discovered": 593,
+ "substantive_items": 217,
+ "duplicates_removed": 18,
  "deeply_analysed": 88,
  "deep_read_failed": 2,
- "corpus_size": 18732,
+ "corpus_size": 18864,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 179 articles"
+    "59/78 sources returned 217 articles"
    ]
   },
   "blackout": {
@@ -49,13 +49,13 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -939,7 +939,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 39,
+   "evidence_count": 38,
    "source_count": 14,
    "latest_evidence": "2026-09-26T01:58:29+01:00",
    "official_source_found": true,
@@ -1079,7 +1079,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 56,
+   "evidence_count": 55,
    "source_count": 17,
    "latest_evidence": "2026-09-26T07:36:36+00:00",
    "official_source_found": true,
