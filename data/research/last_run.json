@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-27T15:40:48+00:00",
- "seconds": 152.1,
+ "ran_at": "2026-09-27T20:11:18+00:00",
+ "seconds": 136.8,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 593,
- "substantive_items": 217,
- "duplicates_removed": 18,
- "deeply_analysed": 88,
- "deep_read_failed": 2,
- "corpus_size": 18864,
+ "sources_readable": 60,
+ "candidates_discovered": 620,
+ "substantive_items": 235,
+ "duplicates_removed": 20,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 19022,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 217 articles"
+    "60/78 sources returned 235 articles"
    ]
   },
   "blackout": {
@@ -49,7 +49,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -1079,8 +1078,8 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
-   "source_count": 17,
+   "evidence_count": 54,
+   "source_count": 16,
    "latest_evidence": "2026-09-26T07:36:36+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1219,9 +1218,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 91,
+   "evidence_count": 93,
    "source_count": 16,
-   "latest_evidence": "2026-09-27T10:19:32+00:00",
+   "latest_evidence": "2026-09-27T17:39:23+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1246,6 +1245,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Norway vs Portugal team news: Lineups confirmed as Haaland starts amid Manchester City charges verdict but Ronaldo benched",
+     "url": "https://www.101greatgoals.com/football/internationals/norway-vs-portugal-team-news-lineups-confirmed-as-haaland-starts-amid-manchester-city-charges-verdict-but-ronaldo-benched/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-27T17:39:23+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Check out the confirmed lineups and team news for the Nations League clash"
+    },
+    {
+     "title": "How to watch Norway vs Portugal: live stream Nations League game for free from anywhere",
+     "url": "https://www.fourfourtwo.com/competition/watch-norway-vs-portugal-nations-league-free",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-27T15:45:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Watch Norway vs Portugal as Erling Haaland and Cristiano Ronaldo face off in the Nations League. FourFourTwo brings you a comprehensive guide to free live streams and TV coverage wherever you are in the world. Norway vs Portugal: key information Kick-off time: 7:45pm BST / 2:45pm ET / 4:45am AEST (Mon.) FREE stream: Virgin Media Play (Ireland) , L'Equipe Live Foot (France) TV broadcasters: Prime V"
+    },
     {
      "title": "FPL notes: “Happy” Haaland, Foden red card + Shaw injury latest",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
@@ -1335,24 +1352,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Manchester City play Coventry City The post Should we Triple Captain Haaland in FPL Gameweek 3? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal make Erling Haaland move after Fabrizio Romano confirms striker plans and Man City FFP guilty verdict",
-     "url": "https://www.football365.com/news/arsenal-erling-haaland-fabrizio-romano-confirms-striker-plans-man-city-ffp-guilty-verdict",
-     "source": "Football365",
-     "published": "2026-09-27T10:19:32+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Arsenal have made contact for the signing of Erling Haaland, with Manchester City facing up to the prospect of playing non-league football."
-    },
-    {
-     "title": "Man City transfer news: Does Erling Haaland have relegation clause in contract?",
-     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/revealed-does-haaland-have-relegation-clause-in-man-city-contract_605827.html",
-     "source": "Sports Mole",
-     "published": "2026-09-26T12:26:49+01:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Amid Manchester City being faced with the possibility of losing their place in the Premier League in the future, does Erling Haaland have a relegation clause in his contract?"
     }
    ]
   },
@@ -1558,7 +1557,7 @@
    "club": "CHE",
    "evidence_count": 73,
    "source_count": 18,
-   "latest_evidence": "2026-09-25T11:00:00+00:00",
+   "latest_evidence": "2026-09-27T19:16:57+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,

@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-27T15:40:48+00:00",
+ "generated": "2026-09-27T20:11:18+00:00",
  "gameweek": 6,
- "corpus_size": 18864,
+ "corpus_size": 19022,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1914,14 +1914,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Football365, 22 Sep: “Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.” Football365, 18 Sep: “READ: Surprise names in form-based England squad among six new call-ups There was controversy before the World Cup at Chelsea attacker Palmer being left behind, while Real Madrid’s Alexander-Arnold would have proved valuable when Reece James picked up an injury in the tournament in North America.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 55 retrieved item(s) from 17 source(s), the most recent dated 26 Sep.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 54 retrieved item(s) from 16 source(s), the most recent dated 26 Sep.",
    "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 25 Sep: “Palmer was initially named in England’s squad for four Nations League matches, starting with Saturday’s meeting with world champions Spain at Wembley, but later pulled out alongside Declan Rice, Kobbie Mainoo, Marcus Rashford and Tino Livramento.” Sports Mole, 23 Sep: “Cole Palmer England withdrawal: The undeniable benefit of load management © Iconsport / David Klein / Sportimage For those at Stamford Bridge, the prevailing emotion following Palmer's withdrawal will be one of sheer relief as the concept of load management comes to the forefront.” Football365, 21 Sep: “Chelsea could not be blamed for being somewhat cautious with Palmer; he never seemed to fully recover from a groin injury last season and Tuchel spoke during the March break of the playmaker still having a niggle, despite having started 16 of the previous 17 Premier League matches.”",
    "case_against": "What argues against him: Soccerway, 25 Sep: “Palmer was one of the headline omissions from Tuchel's selection for the World Cup as the Three Lions reached the semi-finals.” Football365, 24 Sep: “Mailbox Bruno Fernandes Ciaran McCarthy 23 Sep 2026 Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’ Steve Bruce hopes Cole Palmer and Co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.” Football365, 23 Sep: “England: Pundit responds to claims Cole Palmer is faking injury - 'Genuinely...' Steve Bruce hopes Cole Palmer is not faking injury Steve Bruce hopes Cole Palmer and co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 22 Sep: “Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.” Football365, 22 Sep: “England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.”",
    "developments": "Recent developments — Football365, 26 Sep: “England: Thomas Tuchel issues brutal response to Cole Palmer withdrawal - 'it's hard to argue against that' Cole Palmer has pulled out of Thomas Tuchel's squad.” Football365, 26 Sep: “Thomas Tuchel has questioned Cole Palmer’s commitment after the Chelsea star withdrew from the England squad for the international break.” Football365, 25 Sep: “Cole Palmer: Superstar reaches decision on joining Man Utd from Chelsea Chelsea star Cole Palmer, who is a Manchester United target A reporter has revealed what Cole Palmer really thinks about leaving Chelsea to join the club he idolised as a child, Manchester United.”",
    "outlook": "On the coming weeks — Sports Mole, 25 Sep: “While an argument has been made that Palmer had a free summer and Chelsea have no European football on their schedule, he has still featured in seven games between August 24 and September 18.” 101 Great Goals — Fantasy, 22 Sep: “Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.”",
    "confidence": "high",
-   "evidence_count": 55,
+   "evidence_count": 54,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/injury-news/news/he-misses-too-many-camps-tuchel-expresses-frustration-with-palmer-injuries_605794.html",
     "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
@@ -1948,7 +1948,6 @@
     "Ipswich Town",
     "NBC Sports Rotoworld PL",
     "OneFPL",
-    "Opta Analyst",
     "Soccerway",
     "Sports Illustrated FPL",
     "Sports Mole",
@@ -2500,26 +2499,6 @@
      ]
     },
     {
-     "text": "Cole Palmer scored what proved to be the winner as Chelsea remained perfect in the Premier League under Xabi Alonso, beating Brighton 4-3 in a thriller at Stamford Bridge.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
-     "published": "2026-08-30T15:29:11+00:00",
-     "tone": "positive",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
-     "text": "Palmer gave Chelsea breathing room once more when he found the bottom-left corner in trademark fashion, though, and Pascal Gross’ header came too late for Brighton as the hosts climbed to third in the early-season table, with two wins from two matches.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
-     "published": "2026-08-30T15:29:11+00:00",
-     "tone": "neutral",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
      "text": "And it's the attacking trio of Joao Pedro, Cole Palmer and Morgan Rogers chiefly responsible for our dynamism in the final third.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-explains-why-his-connection-with-cole-palmer-and-morgan-rogers",
@@ -2637,15 +2616,17 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fulham, 25 Sep: “Haaland’s second restored the cushion after the break and, although the Danes did pull another goal back through Rasmus Hojlund, it was Ståle Solbakken’s team who came out on top – with a late red card for David Moller Wolfe doing little to impact the result.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 91 retrieved item(s) from 16 source(s), the most recent dated 27 Sep.",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 93 retrieved item(s) from 16 source(s), the most recent dated 27 Sep.",
    "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 27 Sep: “Manchester City man Erling Haaland moved on to 64 goals for Norway earlier in the week and will back himself to score against the holders Portugal.” FourFourTwo FPL, 27 Sep: “Erling Haaland’s 34th goal for Norway in 2024 broke an 87-year record, previously set by Jorgen Juve; Sven Rydell set Sweden's record in 1932, which survived until Zlatan Ibrahimovic broke it with his 50th goal in September 2014, 82 years later.” Soccerway, 25 Sep: “Haaland took his tally for ‌the national team to 64 goals in ‌56 appearances, eclipsing Ibrahimovic 's 62 goals in 122 matches for ‌Sweden The Manchester City striker completed his double in ‌the 74th minute, sealing Norway first competitive victory over Denmark \"It is not possible to explain, nor is it possible to ‌learn.”",
-   "case_against": "What argues against him: Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
+   "case_against": "What argues against him: FourFourTwo FPL, 27 Sep: “Haaland netted twice in Norway’s win over Denmark, while Ronaldo missed a sitter and had a goal ruled out for offside on Thursday.” Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — 101 Great Goals — Fantasy, 27 Sep: “Erling Haaland is now the highest scoring Scandinavian player of all-time in international football after overtaking Zlatan Ibrahimović 🇳🇴🤝🇸🇪 pic.twitter.com/7ipxNRZOd6 — Football on TNT Sports (@footballontnt) September 25, 2026 Norway are 13/8 to win on Sunday with Portugal at 15/8, while Bet365 make Haaland an 8/11 price to score and Ronaldo 21/20.” FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.”",
-   "developments": "Recent developments — Football365, 27 Sep: “Erling Haaland: Arsenal make move after Fabrizio Romano confirms striker plans and Man City FFP guilty verdict Arsenal badge, Man City striker Erling Haaland Arsenal have made contact for the signing of Erling Haaland, with Manchester City facing up to the prospect of playing non-league football.” Football365, 27 Sep: “In that scenario, it would appear unlikely in the extreme any of their recognised stars would stick around, and that includes Erling Haaland And according to the latest from Football Insider Arsenal have now made contact regarding the Norwegian’s transfer to north London.” Football365, 26 Sep: “Erling Haaland: Man City exit clause 'bombshell' revealed as Etihad chiefs make FFP 'doomsday scenario' claim There is an update on Erling Haaland's Manchester City contract.”",
+   "developments": "Recent developments — FourFourTwo FPL, 27 Sep: “The main narrative surrounding this one, though, will be Erling Haaland vs Cristiano Ronaldo.” Football365, 27 Sep: “Erling Haaland: Arsenal make move after Fabrizio Romano confirms striker plans and Man City FFP guilty verdict Arsenal badge, Man City striker Erling Haaland Arsenal have made contact for the signing of Erling Haaland, with Manchester City facing up to the prospect of playing non-league football.” Football365, 27 Sep: “In that scenario, it would appear unlikely in the extreme any of their recognised stars would stick around, and that includes Erling Haaland And according to the latest from Football Insider Arsenal have now made contact regarding the Norwegian’s transfer to north London.”",
    "outlook": "On the coming weeks — Opta Analyst, 20 Sep: “His previous two games against Sunderland in the competition saw him end without a goal from his three shots across 159 minutes of action, and Haaland would have been nervous that his scoreless run against them was going to continue until he slid in to score at the back post in the 81st minute of Sunday’s clash.” Sports Mole, 13 Sep: “While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.”",
    "confidence": "high",
-   "evidence_count": 91,
+   "evidence_count": 93,
    "evidence_used": [
+    "https://www.101greatgoals.com/football/internationals/norway-vs-portugal-team-news-lineups-confirmed-as-haaland-starts-amid-manchester-city-charges-verdict-but-ronaldo-benched/",
+    "https://www.fourfourtwo.com/competition/watch-norway-vs-portugal-nations-league-free",
     "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
     "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
@@ -2655,9 +2636,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
-    "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
-    "https://www.football365.com/news/arsenal-erling-haaland-fabrizio-romano-confirms-striker-plans-man-city-ffp-guilty-verdict",
-    "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/revealed-does-haaland-have-relegation-clause-in-man-city-contract_605827.html"
+    "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2678,6 +2657,24 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "The main narrative surrounding this one, though, will be Erling Haaland vs Cristiano Ronaldo.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/competition/watch-norway-vs-portugal-nations-league-free",
+     "published": "2026-09-27T15:45:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Haaland netted twice in Norway’s win over Denmark, while Ronaldo missed a sitter and had a goal ruled out for offside on Thursday.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/competition/watch-norway-vs-portugal-nations-league-free",
+     "published": "2026-09-27T15:45:00+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
     {
      "text": "Erling Haaland: Arsenal make move after Fabrizio Romano confirms striker plans and Man City FFP guilty verdict Arsenal badge, Man City striker Erling Haaland Arsenal have made contact for the signing of Erling Haaland, with Manchester City facing up to the prospect of playing non-league football.",
      "source": "Football365",
@@ -4593,22 +4590,6 @@
      "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
      "published": "2026-09-02T06:00:00+00:00",
      "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "It looked like being a routine outing for the Blues when Romeo Lavia, Pedro Neto and João Pedro struck to put them 3-0 up inside 32 minutes.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
-     "published": "2026-08-30T15:29:11+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "But former Brighton striker João Pedro also scored at the wrong end following a sumptuous volley from Malick Yalcouyé , as Brighton threatened a stunning comeback.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/chelsea-4-3-brighton-stats-palmer-joao-pedro-thriller",
-     "published": "2026-08-30T15:29:11+00:00",
-     "tone": "positive",
      "topics": []
     },
     {
