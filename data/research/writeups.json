@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-27T01:31:36+00:00",
+ "generated": "2026-09-27T10:35:48+00:00",
  "gameweek": 6,
- "corpus_size": 18639,
+ "corpus_size": 18732,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1831,6 +1831,22 @@
      "topics": []
     },
     {
+     "text": "Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/internationals-morgan-rogers-features-in-england-defeat",
+     "published": "",
+     "tone": "negative",
+     "topics": []
+    },
+    {
+     "text": "After the break, Alex Baena levelled for the World Cup holders and, with 20 minutes left to play, Rogers was introduced by former Blues manager and current England boss Thomas Tuchel.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/internationals-morgan-rogers-features-in-england-defeat",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
      "text": "How Morgan Rogers has fulfilled Xabi Alonso's expectations at Chelsea | News | Official Site | Chelsea Football Club Xabi Alonso admits he is a little surprised at Morgan Rogers' immediate impact at Chelsea, but believes it justifies why the England international was 'the number one target' for the Blues this summer.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/how-morgan-rogers-has-fulfilled-xabi-alonsos-expectations-at-chelsea",
@@ -1899,22 +1915,6 @@
      "text": "That matters because Palmer and Rogers did not play a full cup match.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/internationals-morgan-rogers-features-in-england-defeat",
-     "published": "",
-     "tone": "negative",
-     "topics": []
-    },
-    {
-     "text": "After the break, Alex Baena levelled for the World Cup holders and, with 20 minutes left to play, Rogers was introduced by former Blues manager and current England boss Thomas Tuchel.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/internationals-morgan-rogers-features-in-england-defeat",
      "published": "",
      "tone": "neutral",
      "topics": []
@@ -2658,15 +2658,15 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — Fulham, 25 Sep: “Haaland’s second restored the cushion after the break and, although the Danes did pull another goal back through Rasmus Hojlund, it was Ståle Solbakken’s team who came out on top – with a late red card for David Moller Wolfe doing little to impact the result.” Fantasy Football Scout, 05 Sep: “Even Erling Haaland (£15.5m) Triple Captainers, who at least got something from the game, will no doubt feel short-changed with nine points.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 88 retrieved item(s) from 16 source(s), the most recent dated 26 Sep.",
-   "case_for": "What supports keeping him: Soccerway, 25 Sep: “Haaland took his tally for ‌the national team to 64 goals in ‌56 appearances, eclipsing Ibrahimovic 's 62 goals in 122 matches for ‌Sweden The Manchester City striker completed his double in ‌the 74th minute, sealing Norway first competitive victory over Denmark \"It is not possible to explain, nor is it possible to ‌learn.” Soccerway, 25 Sep: “Haaland, who made his senior international debut in ​2019, has scored at a rate of more than 1.1 goals per game for Norway.” Sports Mole, 25 Sep: “Why Dominic Calvert-Lewin is \"a little bit like\" Erling Haaland © Iconsport / SUSA \"I'm very happy that he's available for England now,\" Hasselbaink said.”",
+   "status": "Latest on Haaland — Fulham, 25 Sep: “Haaland’s second restored the cushion after the break and, although the Danes did pull another goal back through Rasmus Hojlund, it was Ståle Solbakken’s team who came out on top – with a late red card for David Moller Wolfe doing little to impact the result.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 91 retrieved item(s) from 16 source(s), the most recent dated 27 Sep.",
+   "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 27 Sep: “Manchester City man Erling Haaland moved on to 64 goals for Norway earlier in the week and will back himself to score against the holders Portugal.” FourFourTwo FPL, 27 Sep: “Erling Haaland’s 34th goal for Norway in 2024 broke an 87-year record, previously set by Jorgen Juve; Sven Rydell set Sweden's record in 1932, which survived until Zlatan Ibrahimovic broke it with his 50th goal in September 2014, 82 years later.” Soccerway, 25 Sep: “Haaland took his tally for ‌the national team to 64 goals in ‌56 appearances, eclipsing Ibrahimovic 's 62 goals in 122 matches for ‌Sweden The Manchester City striker completed his double in ‌the 74th minute, sealing Norway first competitive victory over Denmark \"It is not possible to explain, nor is it possible to ‌learn.”",
    "case_against": "What argues against him: Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
-   "developments": "Recent developments — Football365, 26 Sep: “Erling Haaland: Man City exit clause 'bombshell' revealed as Etihad chiefs make FFP 'doomsday scenario' claim There is an update on Erling Haaland's Manchester City contract.” Football365, 26 Sep: “According to reports, Manchester City are adamant that the ‘doomsday scenario’ will not happen after their FFP verdict, while there is an update on Erling Haaland.” Sports Mole, 26 Sep: “Darren Plant 26 Sep 2026 12:26 © Imago / Photo Players Images Erling Haaland reportedly faces an anxious wait to see whether Manchester City receive significant punishment due to alleged Premier League rule breaches.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — 101 Great Goals — Fantasy, 27 Sep: “Erling Haaland is now the highest scoring Scandinavian player of all-time in international football after overtaking Zlatan Ibrahimović 🇳🇴🤝🇸🇪 pic.twitter.com/7ipxNRZOd6 — Football on TNT Sports (@footballontnt) September 25, 2026 Norway are 13/8 to win on Sunday with Portugal at 15/8, while Bet365 make Haaland an 8/11 price to score and Ronaldo 21/20.” FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.”",
+   "developments": "Recent developments — Football365, 27 Sep: “Erling Haaland: Arsenal make move after Fabrizio Romano confirms striker plans and Man City FFP guilty verdict Arsenal badge, Man City striker Erling Haaland Arsenal have made contact for the signing of Erling Haaland, with Manchester City facing up to the prospect of playing non-league football.” Football365, 27 Sep: “In that scenario, it would appear unlikely in the extreme any of their recognised stars would stick around, and that includes Erling Haaland And according to the latest from Football Insider Arsenal have now made contact regarding the Norwegian’s transfer to north London.” Football365, 26 Sep: “Erling Haaland: Man City exit clause 'bombshell' revealed as Etihad chiefs make FFP 'doomsday scenario' claim There is an update on Erling Haaland's Manchester City contract.”",
    "outlook": "On the coming weeks — Opta Analyst, 20 Sep: “His previous two games against Sunderland in the competition saw him end without a goal from his three shots across 159 minutes of action, and Haaland would have been nervous that his scoreless run against them was going to continue until he slid in to score at the back post in the 81st minute of Sunday’s clash.” Sports Mole, 13 Sep: “While the victory was important, it should be acknowledged that the Norwegian's goal should not have been awarded, with the refereeing body Pro Ref admitting that an error was made However, the controversial nature of the winner does not diminish the impressive performance of the Haaland, who had to be patient for much of the game.”",
    "confidence": "high",
-   "evidence_count": 88,
+   "evidence_count": 91,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
     "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
@@ -2678,8 +2678,8 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
     "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
     "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
-    "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/revealed-does-haaland-have-relegation-clause-in-man-city-contract_605827.html",
-    "https://www.football365.com/news/erling-haaland-barcelona-on-2027-man-city-guilty-verdict"
+    "https://www.football365.com/news/arsenal-erling-haaland-fabrizio-romano-confirms-striker-plans-man-city-ffp-guilty-verdict",
+    "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/revealed-does-haaland-have-relegation-clause-in-man-city-contract_605827.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2700,6 +2700,52 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Erling Haaland: Arsenal make move after Fabrizio Romano confirms striker plans and Man City FFP guilty verdict Arsenal badge, Man City striker Erling Haaland Arsenal have made contact for the signing of Erling Haaland, with Manchester City facing up to the prospect of playing non-league football.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-erling-haaland-fabrizio-romano-confirms-striker-plans-man-city-ffp-guilty-verdict",
+     "published": "2026-09-27T10:19:32+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "In that scenario, it would appear unlikely in the extreme any of their recognised stars would stick around, and that includes Erling Haaland And according to the latest from Football Insider Arsenal have now made contact regarding the Norwegian’s transfer to north London.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-erling-haaland-fabrizio-romano-confirms-striker-plans-man-city-ffp-guilty-verdict",
+     "published": "2026-09-27T10:19:32+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Manchester City man Erling Haaland moved on to 64 goals for Norway earlier in the week and will back himself to score against the holders Portugal.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/tip-of-the-day-haaland-to-outshine-ronaldo-and-klopp-to-get-first-win/",
+     "published": "2026-09-27T09:17:20+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland is now the highest scoring Scandinavian player of all-time in international football after overtaking Zlatan Ibrahimović 🇳🇴🤝🇸🇪 pic.twitter.com/7ipxNRZOd6 — Football on TNT Sports (@footballontnt) September 25, 2026 Norway are 13/8 to win on Sunday with Portugal at 15/8, while Bet365 make Haaland an 8/11 price to score and Ronaldo 21/20.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/tip-of-the-day-haaland-to-outshine-ronaldo-and-klopp-to-get-first-win/",
+     "published": "2026-09-27T09:17:20+00:00",
+     "tone": "neutral",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Erling Haaland’s 34th goal for Norway in 2024 broke an 87-year record, previously set by Jorgen Juve; Sven Rydell set Sweden's record in 1932, which survived until Zlatan Ibrahimovic broke it with his 50th goal in September 2014, 82 years later.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/quiz/pre-match-poser-no-46",
+     "published": "2026-09-27T07:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Erling Haaland: Man City exit clause 'bombshell' revealed as Etihad chiefs make FFP 'doomsday scenario' claim There is an update on Erling Haaland's Manchester City contract.",
      "source": "Football365",
