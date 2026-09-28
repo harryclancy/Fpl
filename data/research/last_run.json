@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-28T11:45:08+00:00",
- "seconds": 135.5,
+ "ran_at": "2026-09-28T22:33:54+00:00",
+ "seconds": 123.4,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 619,
- "substantive_items": 238,
- "duplicates_removed": 26,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 19275,
+ "sources_readable": 58,
+ "candidates_discovered": 671,
+ "substantive_items": 276,
+ "duplicates_removed": 30,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 19412,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 238 articles"
+    "58/78 sources returned 276 articles"
    ]
   },
   "blackout": {
@@ -37,7 +37,9 @@
   }
  },
  "failures": [
+  "All About FPL: nothing published in the last 10 days",
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
+  "Fantasy Football 247: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
@@ -200,9 +202,9 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 8,
-   "source_count": 3,
-   "latest_evidence": "2026-09-21T17:15:00+00:00",
+   "evidence_count": 9,
+   "source_count": 4,
+   "latest_evidence": "2026-09-28T12:55:07+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -243,6 +245,15 @@
      "matched_on": "muharemovic",
      "kind": "team news",
      "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
+    },
+    {
+     "title": "5 Leeds United New Signings to Consider in FPL",
+     "url": "https://www.premierfantasytools.com/5-leeds-united-new-signings-to-consider-in-fpl/",
+     "source": "Premier Fantasy Tools",
+     "published": "2026-09-28T12:55:07+00:00",
+     "matched_on": "muharemovic",
+     "kind": "transfer",
+     "excerpt": "Leeds United welcomed seven players to Daniel Farke’s squad during the summer 2026 transfer window. What does it mean for Fantasy Premier League managers? The question isn’t which signings improve Leeds but which ones offer points, reliable minutes, and value at their FPL prices. Harry Wilson, James Trafford, Tarik Muharemović, Nico Elvedi, and Jean-Mattéo Bahoya […] The post 5 Leeds United New Si"
     },
     {
      "title": "Tarik muharemovic we will show even more of our qualities",
@@ -382,7 +393,7 @@
    "club": "ARS",
    "evidence_count": 14,
    "source_count": 7,
-   "latest_evidence": "2026-09-23T11:20:00+01:00",
+   "latest_evidence": "2026-09-28T15:48:36+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -407,6 +418,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "England injury news: Three Lions duo be to missing vs. Czech Republic as defensive crisis worsens?",
+     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/defensive-issues-worsen-with-england-duo-major-doubts-for-czech-republic-trip_605927.html",
+     "source": "Sports Mole",
+     "published": "2026-09-28T15:48:36+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
+    },
     {
      "title": "White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/white-timber-mosquera-arsenal-injury-latest-for-fpl-gameweek-4",
@@ -469,15 +489,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "Arsenal are sweating over the fitness of midfielder Declan Rice after the England international limped off at Villa Park during the Gunners' 1-0 Premier League victory against Aston Villa. Bukayo Saka’s 59th-minute goal ultimately secured all three points for Mikel Arteta ’s side, but the win came at a cost. In the 85th minute, Rice was forced off while visibly limping, with Martin Zubimendi takin"
-    },
-    {
-     "title": "Villa v Arsenal team news: Jackson debut, Konsa a sub",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/08/31/villa-v-arsenal-team-news-jackson-debut-konsa-a-sub",
-     "source": "Fantasy Football Scout",
-     "published": "2026-08-31T06:30:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Two alterations for Villa, who taken on unchanged Arsenal The post Villa v Arsenal team news: Jackson debut, Konsa a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
@@ -1078,9 +1089,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 54,
+   "evidence_count": 55,
    "source_count": 16,
-   "latest_evidence": "2026-09-26T07:36:36+00:00",
+   "latest_evidence": "2026-09-28T14:03:09+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1218,9 +1229,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 97,
+   "evidence_count": 100,
    "source_count": 16,
-   "latest_evidence": "2026-09-28T11:14:02+00:00",
+   "latest_evidence": "2026-09-28T16:57:28+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1358,9 +1369,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 8,
-   "source_count": 6,
-   "latest_evidence": "2026-09-24T18:00:00+00:00",
+   "evidence_count": 9,
+   "source_count": 7,
+   "latest_evidence": "2026-09-28T21:11:43+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1410,6 +1421,15 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Plus, Marco Rose on Bournemouth's midweek exertions The post FPL notes: Jaissle on Fernandez-Pardo’s fitness + Wissa deeper appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Wissa stars as DR Congo spoil Zimbabwe homecoming in 2027 AFCON qualifying win",
+     "url": "https://www.soccerway.com/news/wissa-stars-as-dr-congo-spoil-zimbabwe-homecoming-in-2027-afcon-qualifying-win/GIVKcC4j/",
+     "source": "Soccerway",
+     "published": "2026-09-28T21:11:43+02:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "FPL | GAMEWEEK 5 HINTS AND TIPS",
@@ -1545,9 +1565,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 74,
+   "evidence_count": 75,
    "source_count": 18,
-   "latest_evidence": "2026-09-28T10:44:00+01:00",
+   "latest_evidence": "2026-09-28T18:54:23+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
