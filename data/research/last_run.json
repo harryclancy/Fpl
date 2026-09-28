@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-27T20:11:18+00:00",
- "seconds": 136.8,
+ "ran_at": "2026-09-28T01:43:05+00:00",
+ "seconds": 160.0,
  "sources_attempted": 78,
  "sources_readable": 60,
- "candidates_discovered": 620,
- "substantive_items": 235,
- "duplicates_removed": 20,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 19022,
+ "candidates_discovered": 573,
+ "substantive_items": 210,
+ "duplicates_removed": 10,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 19143,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 235 articles"
+    "60/78 sources returned 210 articles"
    ]
   },
   "blackout": {
@@ -1218,9 +1218,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 93,
+   "evidence_count": 95,
    "source_count": 16,
-   "latest_evidence": "2026-09-27T17:39:23+00:00",
+   "latest_evidence": "2026-09-27T22:49:29+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1472,7 +1472,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-23T18:13:44+02:00",
+   "latest_evidence": "2026-09-27T19:54:16+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1484,7 +1484,6 @@
    "dimensions_covered": [
     "fixtures",
     "injury",
-    "match report",
     "press conference",
     "set pieces",
     "statistics",
@@ -1496,6 +1495,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man United injury news: Major Michael Carrick blow as defender forced off sparking Premier League fears ahead of Spurs game",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/major-blow-united-defenders-injury-sparks-pl-fears-ahead-of-spurs-clash_605890.html",
+     "source": "Sports Mole",
+     "published": "2026-09-27T19:54:16+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "A Manchester United defender goes off injured during their country's game on Sunday in the international break, and here, Sports Mole assesses when they could return."
+    },
     {
      "title": "BIG PETE: Ryan Mason on his bond with Harry Kane, leaving Spurs, and his career-ending injury",
      "url": "https://www.soccerway.com/news/big-pete-ryan-mason-on-his-bond-with-harry-kane-leaving-spurs-and-his-career-ending-injury/AwMPeLbk/",
@@ -1531,15 +1539,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 Aston Villa supporters were celebrating in north London on Saturday afternoon as Unai Emery’s side registered a 3-2 triumph at Tottenham Hotspur. Johan Manzambi, Nicolas Jackson and Emi Buendía put the Villans three goals to the good before Spurs launched a late comeback, but it was not enough as we claimed our first Premier Leag"
-    },
-    {
-     "title": "Tottenham games Pedro Porro could miss with hamstring injury as Spain withdrawal confirmed",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/porro-out-of-spain-squad-which-spurs-games-could-he-miss_605502.html",
-     "source": "Sports Mole",
-     "published": "2026-09-20T07:54:24+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole looks at the Tottenham Hotspur games Pedro Porro could miss as the defender pulls out of the Spain squad with a hamstring injury."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
