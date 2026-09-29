@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-29T02:36:00+00:00",
- "seconds": 134.2,
+ "ran_at": "2026-09-29T11:24:09+00:00",
+ "seconds": 163.7,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 497,
- "substantive_items": 120,
- "duplicates_removed": 4,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 19472,
+ "candidates_discovered": 564,
+ "substantive_items": 191,
+ "duplicates_removed": 15,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 19510,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 120 articles"
+    "57/78 sources returned 191 articles"
    ]
   },
   "blackout": {
@@ -46,18 +46,18 @@
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
   "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
+  "FPL Oracle: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: HTTP 500 for https://fantasyfootballreports.com/feed/",
+  "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -392,9 +392,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 14,
+   "evidence_count": 15,
    "source_count": 7,
-   "latest_evidence": "2026-09-28T15:48:36+01:00",
+   "latest_evidence": "2026-09-29T07:53:51+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -419,6 +419,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal defender sits out England training but Mikel Arteta shouldn’t worry just yet",
+     "url": "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-29T07:53:51+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "The Gunners' summer signing sat out full group training ahead of the Three Lions' departure for their match against Czechia, sparking fears of another potential injury blow for Mikel Arteta's side. England released an official update detailing the squad's preparation arrangements, communicating the following message: \"Ezri Konsa and Nico O'Reilly are following their own individual programmes at To"
+    },
     {
      "title": "England injury news: Three Lions duo be to missing vs. Czech Republic as defensive crisis worsens?",
      "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/defensive-issues-worsen-with-england-duo-major-doubts-for-czech-republic-trip_605927.html",
@@ -517,15 +526,6 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
-    },
-    {
-     "title": "Preview: Arsenal visit Wearside in Saturday night Premier League action",
-     "url": "https://www.safc.com/news/2026/september/11/preview--arsenal-visit-wearside-in-saturday-night-premier-league-action/",
-     "source": "Sunderland",
-     "published": "2026-09-11T14:26:41+00:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
     }
    ]
   },
@@ -1092,7 +1092,7 @@
    "club": "CHE",
    "evidence_count": 55,
    "source_count": 16,
-   "latest_evidence": "2026-09-28T14:03:09+00:00",
+   "latest_evidence": "2026-09-29T10:03:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1230,9 +1230,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 100,
+   "evidence_count": 101,
    "source_count": 16,
-   "latest_evidence": "2026-09-28T16:57:28+00:00",
+   "latest_evidence": "2026-09-29T07:52:17+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1370,9 +1370,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "source_count": 7,
-   "latest_evidence": "2026-09-28T21:11:43+02:00",
+   "latest_evidence": "2026-09-29T09:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1422,6 +1422,15 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Plus, Marco Rose on Bournemouth's midweek exertions The post FPL notes: Jaissle on Fernandez-Pardo’s fitness + Wissa deeper appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "International Magpies: Wissa stars in DR Congo win",
+     "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
+     "source": "Newcastle United",
+     "published": "2026-09-29T09:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "Wissa stars as DR Congo spoil Zimbabwe homecoming in 2027 AFCON qualifying win",
@@ -1566,9 +1575,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 72,
+   "evidence_count": 73,
    "source_count": 18,
-   "latest_evidence": "2026-09-28T18:54:23+02:00",
+   "latest_evidence": "2026-09-29T10:32:38+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1593,6 +1602,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury news: Major Joao Pedro update as Brazil international sees 'specialist' over knee issue",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-star-sees-specialist-amid-bid-for-october-injury-return_605955.html",
+     "source": "Sports Mole",
+     "published": "2026-09-29T10:32:38+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "One of Chelsea's star players allegedly sees a specialist over the injury that has kept him sidelined during the international break."
+    },
     {
      "title": "Duo Defeated In Nations League Openers",
      "url": "https://www.evertonfc.com/news/2026/september/24/duo-defeated-in-nations-league-openers/",
@@ -1691,15 +1709,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "Chelsea look set to be without striker Joao Pedro for tonight's clash with Brentford. The 24-year-old has started this season in tremendous form, scoring three goals and providing one assist. However, during last weekend's 2-2 draw with Hull City , the Brazilian picked up a knock that is expected to rule him out of this evening's game. Pedro has dropped out of Brazil squad Joao Pedro has withdrawn"
-    },
-    {
-     "title": "What to do with Joao Pedro in FPL + top 5 replacements",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/what-to-do-with-joao-pedro-in-fpl-top-5-replacements",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-17T19:50:00+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "FPL Meerkat looks at the options available to Joao Pedro owners The post What to do with Joao Pedro in FPL + top 5 replacements appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
