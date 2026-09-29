@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-28T22:33:54+00:00",
- "seconds": 123.4,
+ "ran_at": "2026-09-29T02:36:00+00:00",
+ "seconds": 134.2,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 671,
- "substantive_items": 276,
- "duplicates_removed": 30,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 19412,
+ "sources_readable": 57,
+ "candidates_discovered": 497,
+ "substantive_items": 120,
+ "duplicates_removed": 4,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 19472,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 276 articles"
+    "57/78 sources returned 120 articles"
    ]
   },
   "blackout": {
@@ -44,19 +44,20 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: nothing published in the last 10 days",
+  "Fantasy Football Reports: HTTP 500 for https://fantasyfootballreports.com/feed/",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -1483,8 +1484,8 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-27T19:54:16+01:00",
-   "official_source_found": true,
+   "latest_evidence": "2026-09-28T15:25:47+00:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1506,6 +1507,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Bobby Zamora predicts where Tottenham will finish – if one player starts firing",
+     "url": "https://www.football365.com/news/bobby-zamora-predicts-where-tottenham-will-finish-solanke-starts-firing",
+     "source": "Football365",
+     "published": "2026-09-28T15:25:47+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Zamora is confident that goalscoring will not be an issue for Spurs once the players fully get used to De Zerbi’s system, and believes that one player in particular will ..."
+    },
     {
      "title": "Man United injury news: Major Michael Carrick blow as defender forced off sparking Premier League fears ahead of Spurs game",
      "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/major-blow-united-defenders-injury-sparks-pl-fears-ahead-of-spurs-clash_605890.html",
@@ -1543,15 +1553,6 @@
      "excerpt": "Tottenham Hotspur's Pedro Porro will miss six games as Spurs learn how long the defender will be sidelined with a hamstring injury for."
     },
     {
-     "title": "Villans celebrate at Spurs",
-     "url": "https://avfc.co.uk/news/2026/september/21/gallery-villans-celebrate-at-spurs/",
-     "source": "Aston Villa",
-     "published": "2026-09-21T11:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 Aston Villa supporters were celebrating in north London on Saturday afternoon as Unai Emery’s side registered a 3-2 triumph at Tottenham Hotspur. Johan Manzambi, Nicolas Jackson and Emi Buendía put the Villans three goals to the good before Spurs launched a late comeback, but it was not enough as we claimed our first Premier Leag"
-    },
-    {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
      "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
      "source": "FourFourTwo FPL",
@@ -1565,7 +1566,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 75,
+   "evidence_count": 72,
    "source_count": 18,
    "latest_evidence": "2026-09-28T18:54:23+02:00",
    "official_source_found": true,
