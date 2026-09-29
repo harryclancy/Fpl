@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-29T11:24:09+00:00",
- "seconds": 163.7,
+ "ran_at": "2026-09-29T21:26:03+00:00",
+ "seconds": 148.5,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 564,
- "substantive_items": 191,
- "duplicates_removed": 15,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 19510,
+ "sources_readable": 56,
+ "candidates_discovered": 654,
+ "substantive_items": 313,
+ "duplicates_removed": 29,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 19252,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 191 articles"
+    "56/78 sources returned 313 articles"
    ]
   },
   "blackout": {
@@ -43,8 +43,9 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "FPL Pilot: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
+  "Full90 FPL: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Oracle: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
@@ -203,7 +204,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "source_count": 4,
    "latest_evidence": "2026-09-28T12:55:07+00:00",
    "official_source_found": true,
@@ -304,6 +305,15 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -532,7 +542,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 24,
+   "evidence_count": 23,
    "source_count": 5,
    "latest_evidence": "2026-09-22T18:13:00+01:00",
    "official_source_found": false,
@@ -670,9 +680,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 18,
+   "evidence_count": 19,
    "source_count": 7,
-   "latest_evidence": "2026-09-21T10:56:03+00:00",
+   "latest_evidence": "2026-09-29T15:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -743,6 +753,15 @@
      "excerpt": "The big-money signing from PSG could play on Friday The post Barcola, Szoboszlai + Liverpool injury latest for FPL Gameweek 3 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Liverpool given pathway to sign Alex Scott, as perfect Andoni Iraola transfer shapes up: report",
+     "url": "https://www.fourfourtwo.com/transfer/liverpool-given-pathway-to-sign-alex-scott-as-perfect-andoni-iraola-transfer-shapes-up-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-29T15:00:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "transfer",
+     "excerpt": "Liverpool have been given fresh hope of landing Alex Scott next summer from Bournemouth. The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park. While youngster Trey Nyoni has featured in centra"
+    },
+    {
      "title": "Liverpool offer confirmed for new defensive midfielder: report",
      "url": "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
      "source": "FourFourTwo FPL",
@@ -795,15 +814,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Andoni Iraola was full of praise for midfielder Dominik Szoboszlai on Tuesday night."
-    },
-    {
-     "title": "Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16",
-     "url": "https://www.101greatgoals.com/football/liverpool-tottenham-report/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-15T21:08:55+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Liverpool were made to work hard before the tie was settled in stunning fashion."
     }
    ]
   },
@@ -1090,9 +1100,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 56,
    "source_count": 16,
-   "latest_evidence": "2026-09-29T10:03:20+00:00",
+   "latest_evidence": "2026-09-29T21:18:38+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1117,6 +1127,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea news: Cole Palmer described as scheduling \"victim\" in surprise defence of England international",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/palmer-described-as-scheduling-victim-in-surprise-defence-of-chelsea-star_605989.html",
+     "source": "Sports Mole",
+     "published": "2026-09-29T21:18:38+01:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Chelsea star Cole Palmer is described as a \"victim\" of the intense football schedule in a surprise defence of the England international."
+    },
     {
      "title": "England injury news: Thomas Tuchel reacts to Cole Palmer withdrawal, admits growing frustration",
      "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/he-misses-too-many-camps-tuchel-expresses-frustration-with-palmer-injuries_605794.html",
@@ -1215,15 +1234,6 @@
      "matched_on": "palmer",
      "kind": "team news",
      "excerpt": "Chelsea play Hull City in Gameweek 4 The post Triple Captain Palmer in FPL Gameweek 4? The pros + cons… appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "EARLY LIVERPOOL TEAM NEWS",
-     "url": "https://www.itfc.co.uk/news/2026/september/03/early-liverpool-team-news/",
-     "source": "Ipswich Town",
-     "published": "2026-09-03T15:14:04+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Fixtures Ipswich Town Vs. Liverpool - Fri, Sep 4th 2026, 20:00 Gary O’Neil says his squad is in good health at the moment ahead of Friday evening’s Premier League clash with Liverpool at Portman Road. There are no new concerns after Sunday’s defeat to Manchester United and the Town manager has confirmed that Florentino Luís is in contention for Friday’s game having missed the start of the season “"
     }
    ]
   },
