@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-30T11:12:11+00:00",
- "seconds": 137.7,
+ "ran_at": "2026-09-30T16:50:35+00:00",
+ "seconds": 207.1,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 516,
- "substantive_items": 206,
- "duplicates_removed": 20,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 19180,
+ "sources_readable": 54,
+ "candidates_discovered": 536,
+ "substantive_items": 228,
+ "duplicates_removed": 25,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 19112,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 206 articles"
+    "54/78 sources returned 228 articles"
    ]
   },
   "blackout": {
@@ -45,7 +45,7 @@
   "FPL Central: nothing published in the last 10 days",
   "FPL Pilot: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
+  "Draft Fantasy: ConnectionError for https://www.draftfantasy.com/sitemap.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Oracle: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
@@ -57,9 +57,10 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: nothing published in the last 10 days",
+  "Premier Injuries: TLS failure: SSLError for https://www.premierinjuries.com/post-sitemap.xml",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -205,7 +206,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 4,
    "latest_evidence": "2026-09-28T12:55:07+00:00",
    "official_source_found": true,
@@ -315,6 +316,15 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Tarik muharemovic reacts to second international goal and previews meeting with leeds united teammate",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-reacts-to-second-international-goal-and-previews-meeting-with-leeds-united-teammate",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -543,7 +553,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 24,
+   "evidence_count": 23,
    "source_count": 5,
    "latest_evidence": "2026-09-30T08:05:31+00:00",
    "official_source_found": false,
@@ -1102,7 +1112,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 56,
+   "evidence_count": 55,
    "source_count": 16,
    "latest_evidence": "2026-09-29T21:18:38+01:00",
    "official_source_found": true,
@@ -1242,7 +1252,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 103,
+   "evidence_count": 102,
    "source_count": 16,
    "latest_evidence": "2026-09-30T10:47:24+00:00",
    "official_source_found": true,
@@ -1369,13 +1379,13 @@
      "excerpt": "Is it possible to house all of Cole Palmer, Bruno Fernandes and Erling Haaland in one squad? The post FPL Gameweek 3 Wildcard best team + pros/cons of using appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Erling Haaland won’t win the Golden Boot this season, and Joao Pedro is the reason why",
-     "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-02T06:00:00+00:00",
+     "title": "Erling Haaland to Barcelona given go-ahead with £130m bid as Man City call emergency meeting",
+     "url": "https://www.football365.com/news/erling-haaland-barcelona-go-ahead-130m-bid-man-city-call-emergency-meeting",
+     "source": "Football365",
+     "published": "2026-09-30T07:35:36+00:00",
      "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Last season, much was made of Hugo Ekitike, a standout striker in a faltering Liverpool attack, whose season tragically ended with an achilles tear versus PSG in the Champions League. Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances. For all the noise surroundi"
+     "kind": "transfer",
+     "excerpt": "According to reports, Erling Haaland to FC Barcelona has been given the ‘go-ahead’ after Manchester City’s guilty FFP verdict was confirmed."
     }
    ]
   },
@@ -1579,7 +1589,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 73,
+   "evidence_count": 70,
    "source_count": 18,
    "latest_evidence": "2026-09-29T10:32:38+01:00",
    "official_source_found": true,
