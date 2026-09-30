@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-30T16:50:35+00:00",
- "seconds": 207.1,
+ "ran_at": "2026-09-30T21:26:44+00:00",
+ "seconds": 144.0,
  "sources_attempted": 78,
- "sources_readable": 54,
- "candidates_discovered": 536,
- "substantive_items": 228,
- "duplicates_removed": 25,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 19112,
+ "sources_readable": 56,
+ "candidates_discovered": 538,
+ "substantive_items": 220,
+ "duplicates_removed": 21,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 19106,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 228 articles"
+    "56/78 sources returned 220 articles"
    ]
   },
   "blackout": {
@@ -45,7 +45,6 @@
   "FPL Central: nothing published in the last 10 days",
   "FPL Pilot: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Draft Fantasy: ConnectionError for https://www.draftfantasy.com/sitemap.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Oracle: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
@@ -57,10 +56,9 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: TLS failure: SSLError for https://www.premierinjuries.com/post-sitemap.xml",
+  "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -278,6 +276,15 @@
      "excerpt": ""
     },
     {
+     "title": "Tarik muharemovic reacts to second international goal and previews meeting with leeds united teammate",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-reacts-to-second-international-goal-and-previews-meeting-with-leeds-united-teammate",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
      "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
      "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
      "source": "Leeds United",
@@ -316,15 +323,6 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Tarik muharemovic reacts to second international goal and previews meeting with leeds united teammate",
-     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-reacts-to-second-international-goal-and-previews-meeting-with-leeds-united-teammate",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -553,7 +551,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 23,
+   "evidence_count": 22,
    "source_count": 5,
    "latest_evidence": "2026-09-30T08:05:31+00:00",
    "official_source_found": false,
@@ -972,7 +970,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 39,
+   "evidence_count": 38,
    "source_count": 14,
    "latest_evidence": "2026-09-26T01:58:29+01:00",
    "official_source_found": true,
@@ -1112,7 +1110,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 53,
    "source_count": 16,
    "latest_evidence": "2026-09-29T21:18:38+01:00",
    "official_source_found": true,
@@ -1254,7 +1252,7 @@
    "club": "MCI",
    "evidence_count": 102,
    "source_count": 16,
-   "latest_evidence": "2026-09-30T10:47:24+00:00",
+   "latest_evidence": "2026-09-30T19:45:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1589,7 +1587,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 70,
+   "evidence_count": 69,
    "source_count": 18,
    "latest_evidence": "2026-09-29T10:32:38+01:00",
    "official_source_found": true,
