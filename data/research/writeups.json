@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-09-30T02:09:58+00:00",
+ "generated": "2026-09-30T11:12:11+00:00",
  "gameweek": 6,
- "corpus_size": 19175,
+ "corpus_size": 19180,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -624,15 +624,15 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "status": "Latest on Hall — Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 23 retrieved item(s) from 5 source(s), the most recent dated 22 Sep.",
+   "status": "Latest on Hall — Football365, 30 Sep: “Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England.”",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 24 retrieved item(s) from 5 source(s), the most recent dated 30 Sep.",
    "case_for": "What supports keeping him: Sports Mole, 22 Sep: “The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.” Football365, 22 Sep: “Hall is back in the England squad after making a strong start to the 2026/27 campaign.” FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
    "case_against": "What argues against him: FourFourTwo FPL, 21 Sep: “Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.” FourFourTwo FPL, 12 Sep: “But as Hall ’s message to Newcastle supporters inferred: “There’s never been a moment where I doubted how much I love being here,” — the Red Devils never stood a chance.” FourFourTwo FPL, 12 Sep: “In his own words, Hall is a born-and-bred Toon fan, albeit having grown up in the South, and his future with Newcastle was never in doubt.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Football365, 22 Sep: “Lewis Hall: Man Utd target admits he will leave Newcastle United on one condition after 'no-brainer' decision Newcastle United star Lewis Hall, who was a Manchester United target England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer.” FourFourTwo FPL, 22 Sep: “Newcastle fans could be forgiven for fearing Hall would follow the likes of Bruno Guimaraes, Anthony Gordon and Sandro Tonali out of the door this summer, but he instead committed his future to the club he supported as a boy.” FourFourTwo FPL, 22 Sep: “Hall says Jaissle’s impact made signing a new deal a “no brainer” and is confident in the future with him in charge.”",
+   "developments": "Recent developments — Football365, 30 Sep: “Hall was unlucky not to make Thomas Tuchel’ s England squad for this summer’s World Cup, but he’s been recalled for this international break.” Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.” Football365, 22 Sep: “Lewis Hall: Man Utd target admits he will leave Newcastle United on one condition after 'no-brainer' decision Newcastle United star Lewis Hall, who was a Manchester United target England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 23,
+   "evidence_count": 24,
    "evidence_used": [
     "https://www.fourfourtwo.com/transfer/what-manchester-united-didnt-realise-about-gbp35m-transfer-target-and-why-they-never-stood-a-chance",
     "https://www.football365.com/news/man-utd-journalist-chances-signing-lewis-hall-four-defenders",
@@ -655,6 +655,22 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/ian-wright-lauds-england-star-proving-worth-czechia-very-unlucky-world-cup-snub",
+     "published": "2026-09-30T08:05:31+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Hall was unlucky not to make Thomas Tuchel’ s England squad for this summer’s World Cup, but he’s been recalled for this international break.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/ian-wright-lauds-england-star-proving-worth-czechia-very-unlucky-world-cup-snub",
+     "published": "2026-09-30T08:05:31+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.",
      "source": "Sports Mole",
@@ -1819,6 +1835,24 @@
      "topics": []
     },
     {
+     "text": "Internationals: Rogers helps England to victory as young Blue scores | News | Official Site | Chelsea Football Club Morgan Rogers helped England secure their first Nations League win of the new campaign with a 2-0 victory over Czechia, while Chelsea striker Shim Mheuka found the net as our young Blues enjoyed a successful day on international duty.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/internationals-rogers-helps-england-to-victory-as-young-blue-scores",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/internationals-rogers-helps-england-to-victory-as-young-blue-scores",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "team news"
+     ]
+    },
+    {
      "text": "Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/internationals-morgan-rogers-features-in-england-defeat",
@@ -1906,24 +1940,6 @@
      "published": "",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Internationals: Rogers helps England to victory as young Blue scores | News | Official Site | Chelsea Football Club Morgan Rogers helped England secure their first Nations League win of the new campaign with a 2-0 victory over Czechia, while young Chelsea striker Shim Mheuka found the net as our young Blues enjoyed a successful day on international duty.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/internationals-rogers-helps-england-to-victory-as-young-blue-scores",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/internationals-rogers-helps-england-to-victory-as-young-blue-scores",
-     "published": "",
-     "tone": "positive",
-     "topics": [
-      "team news"
-     ]
     }
    ]
   },
@@ -2665,15 +2681,16 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fulham, 25 Sep: “Haaland’s second restored the cushion after the break and, although the Danes did pull another goal back through Rasmus Hojlund, it was Ståle Solbakken’s team who came out on top – with a late red card for David Moller Wolfe doing little to impact the result.” Sports Mole, 16 Sep: “The Citizens played for over an hour with 10 men following Phil Foden’s first-half red card , but they came away from Old Trafford with a narrow 1-0 victory after Haaland’s 60th-minute strike was allowed to stand.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 99 retrieved item(s) from 16 source(s), the most recent dated 29 Sep.",
-   "case_for": "What supports keeping him: Sports Mole, 28 Sep: “According to Bernabeu Digital , Real Madrid are set to face stern competition in the race for Haaland, who has already scored three goals for Norway in the UEFA Nations League during the ongoing international break.” Sports Mole, 28 Sep: “Although the Bavarians are confident that Harry Kane will sign a new contract at the Allianz Arena, Bayern are supposedly keen to chase Man City forward Haaland should he become available.” Soccerway, 27 Sep: “Anyone hoping to watch Erling Haaland and Cristiano Ronaldo share a pitch for 90 minutes at Oslo’s Ullevaal Stadion would have been disappointed to see the latter start on the bench, but it took nothing away from a contest that was played at a high tempo from the start.”",
-   "case_against": "What argues against him: FourFourTwo FPL, 27 Sep: “Haaland netted twice in Norway’s win over Denmark, while Ronaldo missed a sitter and had a goal ruled out for offside on Thursday.” Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.” Football365, 13 Sep: “Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.”",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 103 retrieved item(s) from 16 source(s), the most recent dated 30 Sep.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 30 Sep: “Haaland has scored 117 goals in 137 fixtures for the Sky Blues and won two league titles since joining in 2022 from Borussia Dortmund – but Barcelona have had previous talks with the star about him moving to Catalonia.” Sports Mole, 28 Sep: “According to Bernabeu Digital , Real Madrid are set to face stern competition in the race for Haaland, who has already scored three goals for Norway in the UEFA Nations League during the ongoing international break.” Sports Mole, 28 Sep: “Although the Bavarians are confident that Harry Kane will sign a new contract at the Allianz Arena, Bayern are supposedly keen to chase Man City forward Haaland should he become available.”",
+   "case_against": "What argues against him: FourFourTwo FPL, 30 Sep: “It leaves the future of the Citizens in doubt – with Erling Haaland , in particular, the highest-profile star who could well push for an exit.” FourFourTwo FPL, 27 Sep: “Haaland netted twice in Norway’s win over Denmark, while Ronaldo missed a sitter and had a goal ruled out for offside on Thursday.” Sports Mole, 13 Sep: “The goal was initially ruled out for an offside offence from Haaland, but while replays showed that the Norwegian was onside, defender Lisandro Martinez was clearly impacted by Enzo Fernandez , who was in an offside position.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — 101 Great Goals — Fantasy, 27 Sep: “Erling Haaland is now the highest scoring Scandinavian player of all-time in international football after overtaking Zlatan Ibrahimović 🇳🇴🤝🇸🇪 pic.twitter.com/7ipxNRZOd6 — Football on TNT Sports (@footballontnt) September 25, 2026 Norway are 13/8 to win on Sunday with Portugal at 15/8, while Bet365 make Haaland an 8/11 price to score and Ronaldo 21/20.” FourFourTwo FPL, 16 Sep: “Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.”",
-   "developments": "Recent developments — Football365, 29 Sep: “Erling Haaland: Arsenal 'serious' to 'get deal done' as decision reached on leaving Man City after guilty verdict Manchester City striker Erling Haaland, who has been linked with Arsenal According to reports, Arsenal will make a ‘serious play’ to sign Erling Haaland if Manchester City are relegated following the FFP case.” Football365, 29 Sep: “Haaland is among the Man City players who could leave after reports said the club was found guilty on 114 of 115 FFP charges.” Football365, 28 Sep: “Erling Haaland: Striker to quit Man City if they're relegated as Arsenal open talks - reports Arsenal badge, Man City striker Erling Haaland Erling Haaland does not intend to stick around at Manchester City in the event they’re relegated from the Premier League, and Arsenal have initiated contact for the mammoth transfer, per reports.”",
+   "developments": "Recent developments — Football365, 30 Sep: “Erling Haaland: Barcelona transfer given green light with massive 'bid' as Man City 'call emergency meeting' today Erling Haaland has been linked with a move to Barcelona.” Football365, 30 Sep: “According to reports, Erling Haaland to FC Barcelona has been given the ‘go-ahead’ after Manchester City ’s guilty FFP verdict was confirmed.” Football365, 30 Sep: “Manchester City destroyed in brutal takedown demanding expulsion - 'disgusting' Cracked-badge time for Haaland and Man City The idea that Manchester City were fighting the good fight against the Red Cartel is patently absurd; their cheating was ‘disgusting’.”",
    "outlook": "On the coming weeks — Football365, 28 Sep: “Haaland 'U-turn' immediately follows Man City FFP bombshell Alexander Isak in action for Liverpool Even with the Manchester City Situation rumbling on – and there’s plenty on that in here as well – there’s also time for a more traditional international break staple: the curse of players picking up injuries on international duty.” Opta Analyst, 20 Sep: “His previous two games against Sunderland in the competition saw him end without a goal from his three shots across 159 minutes of action, and Haaland would have been nervous that his scoreless run against them was going to continue until he slid in to score at the back post in the 81st minute of Sunday’s clash.”",
    "confidence": "high",
-   "evidence_count": 99,
+   "evidence_count": 103,
    "evidence_used": [
+    "https://www.fourfourtwo.com/transfer/manchester-city-star-erling-haaland-has-already-said-yes-to-barcelona-with-norwegian-not-staying-for-charges-aftermath-report",
     "https://www.101greatgoals.com/football/internationals/norway-vs-portugal-team-news-lineups-confirmed-as-haaland-starts-amid-manchester-city-charges-verdict-but-ronaldo-benched/",
     "https://www.fourfourtwo.com/competition/watch-norway-vs-portugal-nations-league-free",
     "https://www.fantasyfootballscout.co.uk/2026/09/14/fpl-notes-happy-haaland-foden-red-card-shaw-injury-latest",
@@ -2684,8 +2701,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
     "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
-    "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
-    "https://www.football365.com/news/arsenal-serious-erling-haaland-deal-done-man-city-relegated-ffp-verdict"
+    "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2706,6 +2722,70 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "It leaves the future of the Citizens in doubt – with Erling Haaland , in particular, the highest-profile star who could well push for an exit.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/transfer/manchester-city-star-erling-haaland-has-already-said-yes-to-barcelona-with-norwegian-not-staying-for-charges-aftermath-report",
+     "published": "2026-09-30T10:47:24+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Haaland has scored 117 goals in 137 fixtures for the Sky Blues and won two league titles since joining in 2022 from Borussia Dortmund – but Barcelona have had previous talks with the star about him moving to Catalonia.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/transfer/manchester-city-star-erling-haaland-has-already-said-yes-to-barcelona-with-norwegian-not-staying-for-charges-aftermath-report",
+     "published": "2026-09-30T10:47:24+00:00",
+     "tone": "positive",
+     "topics": [
+      "fixtures"
+     ]
+    },
+    {
+     "text": "Erling Haaland: Barcelona transfer given green light with massive 'bid' as Man City 'call emergency meeting' today Erling Haaland has been linked with a move to Barcelona.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-barcelona-go-ahead-130m-bid-man-city-call-emergency-meeting",
+     "published": "2026-09-30T07:35:36+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "According to reports, Erling Haaland to FC Barcelona has been given the ‘go-ahead’ after Manchester City ’s guilty FFP verdict was confirmed.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-barcelona-go-ahead-130m-bid-man-city-call-emergency-meeting",
+     "published": "2026-09-30T07:35:36+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Manchester City destroyed in brutal takedown demanding expulsion - 'disgusting' Cracked-badge time for Haaland and Man City The idea that Manchester City were fighting the good fight against the Red Cartel is patently absurd; their cheating was ‘disgusting’.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/manchester-city-cheating-disgusting-shouldnt-see-penny-haaland",
+     "published": "2026-09-30T06:38:09+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Haaland sent to Everton as Man City stars reassigned with Liverpool landing two Erling Haaland is about to learn The Everton Way The only fair punishment for Manchester City is to have literally all their first-team players reassigned; Erling Haaland is off to Everton.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/manchester-city-players-reassigned-haaland-everton-liverpool",
+     "published": "2026-09-30T06:17:05+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Mailbox Popular Lewis Oldham 30 Sep 2026 Erling Haaland to Barcelona given go-ahead with £130m bid as Man City call emergency meeting According to reports, Erling Haaland to FC Barcelona has been given the ‘go-ahead’ after Manchester City’s guilty FFP verdict was confirmed.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/manchester-city-players-reassigned-haaland-everton-liverpool",
+     "published": "2026-09-30T06:17:05+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "Erling Haaland: Arsenal 'serious' to 'get deal done' as decision reached on leaving Man City after guilty verdict Manchester City striker Erling Haaland, who has been linked with Arsenal According to reports, Arsenal will make a ‘serious play’ to sign Erling Haaland if Manchester City are relegated following the FFP case.",
      "source": "Football365",
@@ -4135,20 +4215,19 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "status": "Latest on Wissa — Newcastle United, 29 Sep: “International Magpies: Wissa stars in DR Congo win Published an hour ago Here, newcastleunited.com keeps you updated on how the the club's players are performing for their countries during the international break...”",
-   "why_here": "Wissa is in the starting eleven this week at £6.2m as a FWD. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 29 Sep.",
-   "case_for": "What supports keeping him: Newcastle United, 29 Sep: “Yoane Wissa The Magpies forward has helped DR Congo make a fine start to their Africa Cup of Nations qualifying campaign, creating a goal and assist in his country's 2-1 away win against Zimbabwe on Monday.” Aston Villa, 24 Sep: “The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa.”",
+   "status": "Latest on Wissa — Soccerway, 28 Sep: “DR Congo , last-32 losers to England at the 2026 World Cup, went further ahead in first-half added time when a Wissa pass sent Samuel Moutoussamy through to score from inside the box.”",
+   "why_here": "Wissa is in the starting eleven this week at £6.2m as a FWD. The selection rests on 9 retrieved item(s) from 7 source(s), the most recent dated 28 Sep.",
+   "case_for": "What supports keeping him: Aston Villa, 24 Sep: “The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa.”",
    "case_against": "What argues against him: Fantasy Football Scout, 19 Sep: “WISSA, PENALTY MISSA Newcastle had lost all three of last season’s penalty takers over the summer, so the question was over who would step up from 12 yards next.” Fantasy Football Scout, 06 Sep: “He took up a role up front alongside Yoane Wissa (£6.2m), who dropped a lot deeper in the second half.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Soccerway, 28 Sep: “DR Congo , last-32 losers to England at the 2026 World Cup, went further ahead in first-half added time when a Wissa pass sent Samuel Moutoussamy through to score from inside the box.” Fantasy Football Scout, 19 Sep: “Unfortunately for the striker’s owners in FPL, Wissa saw his first-half spot-kick saved.” Ipswich Town, 16 Sep: “Ranking fourth amongst forwards, Emersonn is just a point behind Alexander Isak (£9.1m) and ahead of the likes of Kai Havertz (£7.6m) and Yoane Wissa (£6.2m).”",
+   "developments": "Recent developments — Fantasy Football Scout, 19 Sep: “Unfortunately for the striker’s owners in FPL, Wissa saw his first-half spot-kick saved.” Ipswich Town, 16 Sep: “Ranking fourth amongst forwards, Emersonn is just a point behind Alexander Isak (£9.1m) and ahead of the likes of Kai Havertz (£7.6m) and Yoane Wissa (£6.2m).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 10,
+   "evidence_count": 9,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/september/24/internationals-wan-bissaka-features-in-dr-congo-win/",
     "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
     "https://www.fantasyfootballscout.co.uk/2026/09/06/fpl-notes-jaissle-on-fernandez-pardos-fitness-wissa-deeper",
-    "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
     "https://www.soccerway.com/news/wissa-stars-as-dr-congo-spoil-zimbabwe-homecoming-in-2027-afcon-qualifying-win/GIVKcC4j/",
     "https://www.itfc.co.uk/news/2026/september/16/fpl---gameweek-5-hints-and-tips/",
     "https://www.newcastleunited.com/en/news/wissa-shortlisted-for-premier-leagues-ea-sports-player-of-the-month-award-for-august",
@@ -4166,24 +4245,6 @@
     "Soccerway"
    ],
    "quotes": [
-    {
-     "text": "International Magpies: Wissa stars in DR Congo win Published an hour ago Here, newcastleunited.com keeps you updated on how the the club's players are performing for their countries during the international break...",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
-     "published": "2026-09-29T09:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Yoane Wissa The Magpies forward has helped DR Congo make a fine start to their Africa Cup of Nations qualifying campaign, creating a goal and assist in his country's 2-1 away win against Zimbabwe on Monday.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
-     "published": "2026-09-29T09:00:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "match report"
-     ]
-    },
     {
      "text": "DR Congo , last-32 losers to England at the 2026 World Cup, went further ahead in first-half added time when a Wissa pass sent Samuel Moutoussamy through to score from inside the box.",
      "source": "Soccerway",
