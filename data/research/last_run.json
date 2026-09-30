@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-29T21:26:03+00:00",
- "seconds": 148.5,
+ "ran_at": "2026-09-30T02:09:58+00:00",
+ "seconds": 116.5,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 654,
- "substantive_items": 313,
- "duplicates_removed": 29,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 19252,
+ "sources_readable": 55,
+ "candidates_discovered": 475,
+ "substantive_items": 182,
+ "duplicates_removed": 10,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 19175,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 313 articles"
+    "55/78 sources returned 182 articles"
    ]
   },
   "blackout": {
@@ -45,11 +45,12 @@
   "FPL Central: nothing published in the last 10 days",
   "FPL Pilot: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Oracle: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
+  "The Draft Society: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
@@ -276,6 +277,15 @@
      "excerpt": ""
     },
     {
+     "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
      "title": "Muharemovic picks up seasons first hero of the month award",
      "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
      "source": "Leeds United",
@@ -305,15 +315,6 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -402,8 +403,8 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 15,
-   "source_count": 7,
+   "evidence_count": 12,
+   "source_count": 5,
    "latest_evidence": "2026-09-29T07:53:51+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -502,15 +503,6 @@
      "excerpt": "Arsenal and Chelsea confirm their starting lineups for Sunday's Premier League London derby at the Emirates Stadium."
     },
     {
-     "title": "Is Declan Rice injured? Arsenal star gives Mikel Arteta new worry after limping off",
-     "url": "https://www.fourfourtwo.com/person/player/is-declan-rice-injured-arsenal-star-gives-mikel-arteta-new-worry-after-limping-off",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-01T16:00:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Arsenal are sweating over the fitness of midfielder Declan Rice after the England international limped off at Villa Park during the Gunners' 1-0 Premier League victory against Aston Villa. Bukayo Saka’s 59th-minute goal ultimately secured all three points for Mikel Arteta ’s side, but the win came at a cost. In the 85th minute, Rice was forced off while visibly limping, with Martin Zubimendi takin"
-    },
-    {
      "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
      "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
      "source": "Fantasy Football Hub",
@@ -520,15 +512,6 @@
      "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
     },
     {
-     "title": "Aston Villa complete £77m double swoop as Konsa replacement signed",
-     "url": "https://www.football365.com/news/aston-villa-transfers-news-ibrahim-mbaye-signing-taylor-harwood-bellis-joins",
-     "source": "Football365",
-     "published": "2026-09-01T12:09:54+00:00",
-     "matched_on": "konsa",
-     "kind": "transfer",
-     "excerpt": "Villa have announced the arrivals of two new stars on transfer deadline day, with a further £77m spent"
-    },
-    {
      "title": "Arsenal receive baffling VAR verdict on Sunderland penalty incident as Premier League explain 3-2 vote",
      "url": "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html",
      "source": "Sports Mole",
@@ -536,6 +519,24 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
+    },
+    {
+     "title": "Preview: Arsenal visit Wearside in Saturday night Premier League action",
+     "url": "https://www.safc.com/news/2026/september/11/preview--arsenal-visit-wearside-in-saturday-night-premier-league-action/",
+     "source": "Sunderland",
+     "published": "2026-09-11T14:26:41+00:00",
+     "matched_on": "konsa",
+     "kind": "general",
+     "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
+    },
+    {
+     "title": "Zopharâs Gameweek 3 Q&A: Top City picks, Triple Captain Haaland, buy Konsa?",
+     "url": "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
+     "source": "Fantasy Football Hub",
+     "published": "2026-09-03T11:45:59+00:00",
+     "matched_on": "konsa",
+     "kind": "general",
+     "excerpt": "FPL Gameweek 3 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whetherÂ Ezri KonsaÂ is one to buy this week, the top Manchester City picks amid their new signings, using the Triple Captain on Erling HaalandÂ and the case […]"
     }
    ]
   },
@@ -960,7 +961,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 38,
+   "evidence_count": 39,
    "source_count": 14,
    "latest_evidence": "2026-09-26T01:58:29+01:00",
    "official_source_found": true,
@@ -1240,7 +1241,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 101,
+   "evidence_count": 99,
    "source_count": 16,
    "latest_evidence": "2026-09-29T07:52:17+00:00",
    "official_source_found": true,
@@ -1367,13 +1368,13 @@
      "excerpt": "Last season, much was made of Hugo Ekitike, a standout striker in a faltering Liverpool attack, whose season tragically ended with an achilles tear versus PSG in the Champions League. Erling Haaland won the Golden Boot (for the third time in four seasons, with only Mohamed Salah able to disrupt his streak) and the Frenchman hit 11 Premier League goals in 28 appearances. For all the noise surroundi"
     },
     {
-     "title": "Should we Triple Captain Haaland in FPL Gameweek 3?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/01/should-we-triple-captain-haaland-in-fpl-gameweek-3",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-01T11:45:00+00:00",
+     "title": "Arsenal will make serious effort to get Erling Haaland deal done if Man City are relegated after FFP verdict",
+     "url": "https://www.football365.com/news/arsenal-serious-erling-haaland-deal-done-man-city-relegated-ffp-verdict",
+     "source": "Football365",
+     "published": "2026-09-29T07:52:17+00:00",
      "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Manchester City play Coventry City The post Should we Triple Captain Haaland in FPL Gameweek 3? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "kind": "transfer",
+     "excerpt": "According to reports, Arsenal will make a ‘serious play’ to sign Erling Haaland if Manchester City are relegated following the FFP case."
     }
    ]
   },
@@ -1503,8 +1504,8 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-28T15:25:47+00:00",
-   "official_source_found": false,
+   "latest_evidence": "2026-09-29T17:00:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1515,6 +1516,7 @@
    "dimensions_covered": [
     "fixtures",
     "injury",
+    "match report",
     "press conference",
     "set pieces",
     "statistics",
@@ -1526,6 +1528,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Brighton v Spurs | Arturo Ruiz pre match press conference",
+     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-spurs-or-arturo-ruiz-pre-match-press-conference",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-09-29T17:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "🎬 Brighton v Spurs | Arturo Ruiz pre match press conference"
+    },
     {
      "title": "Bobby Zamora predicts where Tottenham will finish – if one player starts firing",
      "url": "https://www.football365.com/news/bobby-zamora-predicts-where-tottenham-will-finish-solanke-starts-firing",
@@ -1552,15 +1563,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "Tottenham defender Pedro Porro set to miss four weeks with hamstring injury",
-     "url": "https://www.101greatgoals.com/football/premier-league/tottenham-pedro-porro-miss-four-weeks-hamstring-injury/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-23T15:18:30+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham will be without Pedro Porro for a month after he picked up an injury."
     },
     {
      "title": "Tottenham's Pedro Porro to miss six games as Spurs 'learn extent' of hamstring injury",
@@ -1726,10 +1728,10 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-09-28T07:56:27+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-09-29T17:00:00+00:00",
    "official_source_found": true,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1759,6 +1761,15 @@
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
     },
     {
+     "title": "Brighton v Spurs | Arturo Ruiz pre match press conference",
+     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-spurs-or-arturo-ruiz-pre-match-press-conference",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-09-29T17:00:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "🎬 Brighton v Spurs | Arturo Ruiz pre match press conference"
+    },
+    {
      "title": "London City Lionesses W vs Brighton & Hove Albion Women - prediction, team news, lineups",
      "url": "https://www.sportsmole.co.uk/football/london-city-lionesses-w/preview/london-city-lionesses-w-vs-brighton-prediction-team-news-lineups_605753.html",
      "source": "Sports Mole",
@@ -1784,15 +1795,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Fixtures Aston Villa U18 Vs. Brighton and Hove Albion U18 - Sat, Sep 19 2026, 11:00 Aston Villa were beaten in the Under-18 Premier League on Saturday, falling 4-2 to Brighton & Hove Albion at Bodymoor Heath. Richard Beale’s Young Lions fell behind in the opening period to Finn Dzekawong’s opener, though pulled level just after the hour mark through defender Vincely Mudame. But a second-half brace"
-    },
-    {
-     "title": "Brighton v Arsenal: Confirmed team news and line-ups",
-     "url": "https://www.101greatgoals.com/football/brighton-v-arsenal-confirmed-team-news/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-19T12:49:36+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal can move three points clear at the top of the Premier League with a win at Brighton this afternoon. Get all the team news from the Amex here..."
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
