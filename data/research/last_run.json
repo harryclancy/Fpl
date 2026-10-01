@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-01T02:11:53+00:00",
- "seconds": 145.6,
+ "ran_at": "2026-10-01T11:39:32+00:00",
+ "seconds": 132.7,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 469,
- "substantive_items": 160,
- "duplicates_removed": 5,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 19066,
+ "sources_readable": 55,
+ "candidates_discovered": 527,
+ "substantive_items": 216,
+ "duplicates_removed": 23,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 19013,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 160 articles"
+    "55/78 sources returned 216 articles"
    ]
   },
   "blackout": {
@@ -53,6 +53,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -1250,9 +1251,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 101,
+   "evidence_count": 106,
    "source_count": 16,
-   "latest_evidence": "2026-09-30T19:45:59+00:00",
+   "latest_evidence": "2026-10-01T10:09:39+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1377,13 +1378,13 @@
      "excerpt": "Is it possible to house all of Cole Palmer, Bruno Fernandes and Erling Haaland in one squad? The post FPL Gameweek 3 Wildcard best team + pros/cons of using appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Erling Haaland to Barcelona given go-ahead with £130m bid as Man City call emergency meeting",
-     "url": "https://www.football365.com/news/erling-haaland-barcelona-go-ahead-130m-bid-man-city-call-emergency-meeting",
+     "title": "Erling Haaland to Barcelona from Man City on as ‘estimated transfer fee and salary demands’ communicated",
+     "url": "https://www.football365.com/news/manchester-city-barcelona-erling-haaland-2027-transfer",
      "source": "Football365",
-     "published": "2026-09-30T07:35:36+00:00",
+     "published": "2026-10-01T10:09:39+00:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "According to reports, Erling Haaland to FC Barcelona has been given the ‘go-ahead’ after Manchester City’s guilty FFP verdict was confirmed."
+     "excerpt": "A Spanish journalist drops bombshell decision on Erling Haaland’s potential transfer to Barcelona from Manchester City."
     }
    ]
   },
