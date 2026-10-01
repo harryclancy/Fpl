@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-01T11:39:32+00:00",
- "seconds": 132.7,
+ "ran_at": "2026-10-01T21:51:14+00:00",
+ "seconds": 155.0,
  "sources_attempted": 78,
  "sources_readable": 55,
- "candidates_discovered": 527,
- "substantive_items": 216,
- "duplicates_removed": 23,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 19013,
+ "candidates_discovered": 635,
+ "substantive_items": 299,
+ "duplicates_removed": 29,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 18858,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 216 articles"
+    "55/78 sources returned 299 articles"
    ]
   },
   "blackout": {
@@ -37,6 +37,7 @@
   }
  },
  "failures": [
+  "Fantasy Football Hub: nothing published in the last 10 days",
   "All About FPL: nothing published in the last 10 days",
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "Fantasy Football 247: nothing published in the last 10 days",
@@ -53,7 +54,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -552,7 +552,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 22,
+   "evidence_count": 21,
    "source_count": 5,
    "latest_evidence": "2026-09-30T08:05:31+00:00",
    "official_source_found": false,
@@ -831,9 +831,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 15,
-   "source_count": 8,
-   "latest_evidence": "2026-09-26T09:56:24+00:00",
+   "evidence_count": 16,
+   "source_count": 9,
+   "latest_evidence": "2026-10-01T15:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -858,6 +858,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-01T15:30:00+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Kentucky expects RB Jovantae Barnes to return against Alabama",
      "url": "https://www.si.com/college/kentucky/football/kentucky-expects-rb-jovantae-barnes-to-return-against-alabama?utm_source=RSS",
@@ -956,15 +965,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
-    },
-    {
-     "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-     "source": "Newcastle United",
-     "published": "2026-09-11T10:30:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1111,8 +1111,8 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 53,
-   "source_count": 16,
+   "evidence_count": 51,
+   "source_count": 15,
    "latest_evidence": "2026-09-29T21:18:38+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1251,9 +1251,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 106,
+   "evidence_count": 105,
    "source_count": 16,
-   "latest_evidence": "2026-10-01T10:09:39+00:00",
+   "latest_evidence": "2026-10-01T21:20:15+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1369,13 +1369,13 @@
      "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "FPL Gameweek 3 Wildcard best team + pros/cons of using",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/fpl-gameweek-3-wildcard-team-pros-cons-of-using",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-03T11:40:00+00:00",
+     "title": "Haaland to Arsenal? Every Man City transfer rumour after being found guilty of cheating",
+     "url": "https://www.football365.com/news/man-city-transfer-rumours-guilty-cheating-115-charges-haaland-arsenal",
+     "source": "Football365",
+     "published": "2026-10-01T21:20:15+00:00",
      "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Is it possible to house all of Cole Palmer, Bruno Fernandes and Erling Haaland in one squad? The post FPL Gameweek 3 Wildcard best team + pros/cons of using appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "kind": "transfer",
+     "excerpt": "Man City players are being linked with transfers left, right and centre after being found guilty of cheating. Here is every single rumour."
     },
     {
      "title": "Erling Haaland to Barcelona from Man City on as ‘estimated transfer fee and salary demands’ communicated",
@@ -1391,8 +1391,8 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 9,
-   "source_count": 7,
+   "evidence_count": 8,
+   "source_count": 6,
    "latest_evidence": "2026-09-28T21:11:43+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1463,15 +1463,6 @@
      "excerpt": "Ipswich Town have teamed up with Fantasy Football Scout to help bring you hints, tips, and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in the overall game and your competitive mini-leagues. TOWN SPOTLIGHT: EMERSONN (£5.5m) Last week’s spotlight tipped Leif Davis (£4.0) to bring FPL "
     },
     {
-     "title": "Wissa shortlisted for Premier League's EA Sports Player of the Month award for August",
-     "url": "https://www.newcastleunited.com/en/news/wissa-shortlisted-for-premier-leagues-ea-sports-player-of-the-month-award-for-august",
-     "source": "Newcastle United",
-     "published": "2026-09-03T10:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
      "title": "Yoane wissa fpl newcastle striker battle 2026 27",
      "url": "https://onefpl.com/blog/yoane-wissa-fpl-newcastle-striker-battle-2026-27",
      "source": "OneFPL",
@@ -1505,7 +1496,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-09-29T17:00:00+00:00",
+   "latest_evidence": "2026-10-01T07:12:47+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1529,6 +1520,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Roberto De Zerbi dealt huge injury blow as key £52m Spurs star withdraws from international squad",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/roberto-de-zerbi-dealt-huge-injury-blow-as-key-spurs-star-picks-up-fresh-injury_606044.html",
+     "source": "Sports Mole",
+     "published": "2026-10-01T07:12:47+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur have been handed a fresh injury concern after Jan Paul van Hecke withdrew from the Netherlands squad."
+    },
     {
      "title": "Brighton v Spurs | Arturo Ruiz pre match press conference",
      "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-spurs-or-arturo-ruiz-pre-match-press-conference",
@@ -1566,15 +1566,6 @@
      "excerpt": ""
     },
     {
-     "title": "Tottenham's Pedro Porro to miss six games as Spurs 'learn extent' of hamstring injury",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/the-six-games-porro-will-miss-as-spurs-learn-extent-of-hamstring-injury_605667.html",
-     "source": "Sports Mole",
-     "published": "2026-09-23T15:24:44+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur's Pedro Porro will miss six games as Spurs learn how long the defender will be sidelined with a hamstring injury for."
-    },
-    {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
      "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
      "source": "FourFourTwo FPL",
@@ -1588,9 +1579,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 69,
+   "evidence_count": 70,
    "source_count": 18,
-   "latest_evidence": "2026-09-29T10:32:38+01:00",
+   "latest_evidence": "2026-10-01T12:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
