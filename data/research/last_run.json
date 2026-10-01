@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-09-30T21:26:44+00:00",
- "seconds": 144.0,
+ "ran_at": "2026-10-01T02:11:53+00:00",
+ "seconds": 145.6,
  "sources_attempted": 78,
  "sources_readable": 56,
- "candidates_discovered": 538,
- "substantive_items": 220,
- "duplicates_removed": 21,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 19106,
+ "candidates_discovered": 469,
+ "substantive_items": 160,
+ "duplicates_removed": 5,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 19066,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 220 articles"
+    "56/78 sources returned 160 articles"
    ]
   },
   "blackout": {
@@ -411,9 +411,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "source_count": 5,
-   "latest_evidence": "2026-09-29T07:53:51+00:00",
+   "latest_evidence": "2026-09-30T22:55:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -438,6 +438,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-30T22:55:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "The latest fitness updates from the ongoing international break The post Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal defender sits out England training but Mikel Arteta shouldn’t worry just yet",
      "url": "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
@@ -536,15 +545,6 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
-    },
-    {
-     "title": "Zopharâs Gameweek 3 Q&A: Top City picks, Triple Captain Haaland, buy Konsa?",
-     "url": "https://www.fantasyfootballhub.co.uk/fpl-questions-gameweek-3-article-26-27",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-03T11:45:59+00:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "FPL Gameweek 3 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers whetherÂ Ezri KonsaÂ is one to buy this week, the top Manchester City picks amid their new signings, using the Triple Captain on Erling HaalandÂ and the case […]"
     }
    ]
   },
@@ -1250,7 +1250,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 102,
+   "evidence_count": 101,
    "source_count": 16,
    "latest_evidence": "2026-09-30T19:45:59+00:00",
    "official_source_found": true,
