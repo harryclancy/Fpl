@@ -1,15 +1,15 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-02T16:40:35+00:00",
- "seconds": 156.1,
+ "ran_at": "2026-10-02T21:21:16+00:00",
+ "seconds": 167.8,
  "sources_attempted": 78,
  "sources_readable": 54,
- "candidates_discovered": 592,
- "substantive_items": 264,
- "duplicates_removed": 29,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
+ "candidates_discovered": 519,
+ "substantive_items": 197,
+ "duplicates_removed": 12,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
  "corpus_size": 18887,
  "players_researched": 15,
  "players_total": 15,
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 264 articles"
+    "54/78 sources returned 197 articles"
    ]
   },
   "blackout": {
@@ -422,9 +422,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "source_count": 5,
-   "latest_evidence": "2026-09-30T22:55:00+00:00",
+   "latest_evidence": "2026-10-02T19:15:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -449,6 +449,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal receive injury boost as Thomas Tuchel delivers Ezri Konsa update ahead of England's clash with Croatia",
+     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
+     "source": "Sports Mole",
+     "published": "2026-10-02T19:15:00+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England boss Thomas Tuchel provides an injury update on Arsenal defender Ezri Konsa ahead of Saturday's Nations League meeting with Croatia."
+    },
     {
      "title": "Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
@@ -547,15 +556,6 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
-    },
-    {
-     "title": "Preview: Arsenal visit Wearside in Saturday night Premier League action",
-     "url": "https://www.safc.com/news/2026/september/11/preview--arsenal-visit-wearside-in-saturday-night-premier-league-action/",
-     "source": "Sunderland",
-     "published": "2026-09-11T14:26:41+00:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
     }
    ]
   },
@@ -980,7 +980,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 36,
+   "evidence_count": 35,
    "source_count": 14,
    "latest_evidence": "2026-09-26T01:58:29+01:00",
    "official_source_found": true,
@@ -1053,15 +1053,6 @@
      "excerpt": "FPL notes from the nine-goal thriller in west London The post FPL notes: Four Rogers assists, Palmer brace + Pedro rested appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Xabi Alonso reveals how Morgan Rogers feels after rejecting Arsenal for Chelsea",
-     "url": "https://www.football365.com/news/xabi-alonso-morgan-rogers-arsenal-chelsea",
-     "source": "Football365",
-     "published": "2026-09-04T13:53:32+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Morgan Rogers is set to line up for Chelsea against Arsenal at the Emirates Stadium in the Premier League on Sunday."
-    },
-    {
      "title": "Alejandro Garnacho could follow Aston Villa star in controversial exit: report",
      "url": "https://www.fourfourtwo.com/transfer/alejandro-garnacho-could-follow-aston-villa-star-in-controversial-exit-report",
      "source": "FourFourTwo FPL",
@@ -1114,6 +1105,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Orioles lefty Trevor Rogers, Tigers righty Jackson Jobe and Guardians righty Gavin Williams are among the starters set to take the mound Friday. Sam Connon shares his picks and predictions in regards to the three pitchers' strikeout prop bets. The post MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26 appeared first on DraftKings Network ."
+    },
+    {
+     "title": "Ranking the 20 biggest PL summer signings from Andrey Santos to Morgan Rogers",
+     "url": "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings",
+     "source": "Football365",
+     "published": "2026-09-22T07:19:48+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "It’s not been a bad start for the big summer signings with three £100m players in the top four of this ranking of the 20 most expensive. Tottenham’s highest of ..."
     }
    ]
   },
@@ -1588,7 +1588,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 69,
+   "evidence_count": 67,
    "source_count": 19,
    "latest_evidence": "2026-10-02T08:00:00+00:00",
    "official_source_found": true,
@@ -1730,7 +1730,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-09-29T17:00:00+00:00",
+   "latest_evidence": "2026-10-02T14:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1762,6 +1762,15 @@
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
     },
     {
+     "title": "Brighton v Charlton Athletic | Arturo Ruiz pre match press conference",
+     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-charlton-or-arturo-ruiz-pre-match-press-conference",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-10-02T14:00:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "🎬 Brighton v Charlton Athletic | Arturo Ruiz pre match press conference"
+    },
+    {
      "title": "Brighton v Spurs | Arturo Ruiz pre match press conference",
      "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-spurs-or-arturo-ruiz-pre-match-press-conference",
      "source": "Brighton & Hove Albion",
@@ -1787,15 +1796,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "🎬 Brighton v Charlton Athletic | Arturo Ruiz pre-match press conference"
-    },
-    {
-     "title": "U18s: Aston Villa 2-4 Brighton",
-     "url": "https://avfc.co.uk/news/2026/september/21/report-u18s--aston-villa-2-4-brighton/",
-     "source": "Aston Villa",
-     "published": "2026-09-21T13:00:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Fixtures Aston Villa U18 Vs. Brighton and Hove Albion U18 - Sat, Sep 19 2026, 11:00 Aston Villa were beaten in the Under-18 Premier League on Saturday, falling 4-2 to Brighton & Hove Albion at Bodymoor Heath. Richard Beale’s Young Lions fell behind in the opening period to Finn Dzekawong’s opener, though pulled level just after the hour mark through defender Vincely Mudame. But a second-half brace"
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
