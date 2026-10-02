@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-01T21:51:14+00:00",
- "seconds": 155.0,
+ "ran_at": "2026-10-02T02:18:40+00:00",
+ "seconds": 140.4,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 635,
- "substantive_items": 299,
- "duplicates_removed": 29,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 18858,
+ "sources_readable": 53,
+ "candidates_discovered": 467,
+ "substantive_items": 148,
+ "duplicates_removed": 6,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 18866,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 299 articles"
+    "53/78 sources returned 148 articles"
    ]
   },
   "blackout": {
@@ -51,15 +51,17 @@
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "The Draft Society: nothing published in the last 10 days",
+  "FPLai: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: nothing published in the last 10 days",
+  "Fantasy Football Reports: timed out after 12s for https://fantasyfootballreports.com/feed/",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -412,7 +414,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 13,
+   "evidence_count": 12,
    "source_count": 5,
    "latest_evidence": "2026-09-30T22:55:00+00:00",
    "official_source_found": true,
@@ -691,7 +693,7 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 19,
+   "evidence_count": 17,
    "source_count": 7,
    "latest_evidence": "2026-09-29T15:00:00+00:00",
    "official_source_found": true,
@@ -707,7 +709,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -753,15 +754,6 @@
      "matched_on": "szoboszlai",
      "kind": "team news",
      "excerpt": "Fixtures Ipswich Town Vs. Liverpool - Fri, Sep 4th 2026, 20:00 Team news for Town’s Premier League clash against Liverpool can now be confirmed. Gary O’Neil has made one change from the defeat to Manchester United on Sunday as Exequiel Palacios comes in for his first Town start in place of Marcelino Núñez. Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Gr"
-    },
-    {
-     "title": "Barcola, Szoboszlai + Liverpool injury latest for FPL Gameweek 3",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/barcola-szoboszlai-liverpool-injury-latest-for-fpl-gameweek-3",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-03T15:35:56+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "The big-money signing from PSG could play on Friday The post Barcola, Szoboszlai + Liverpool injury latest for FPL Gameweek 3 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Liverpool given pathway to sign Alex Scott, as perfect Andoni Iraola transfer shapes up: report",
@@ -825,6 +817,15 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Andoni Iraola was full of praise for midfielder Dominik Szoboszlai on Tuesday night."
+    },
+    {
+     "title": "Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16",
+     "url": "https://www.101greatgoals.com/football/liverpool-tottenham-report/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-15T21:08:55+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "Liverpool were made to work hard before the tie was settled in stunning fashion."
     }
    ]
   },
@@ -971,7 +972,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 38,
+   "evidence_count": 36,
    "source_count": 14,
    "latest_evidence": "2026-09-26T01:58:29+01:00",
    "official_source_found": true,
@@ -1080,15 +1081,6 @@
      "excerpt": "Cole is excited for Chelsea’s season after an impressive summer transfer window in which they brought in top talent and sold very well"
     },
     {
-     "title": "Wright ‘gutted’ Arsenal didn’t seal deal for Chelsea star with Arteta ‘not happy’",
-     "url": "https://www.football365.com/news/arsenal-wright-failed-sign-chelsea-rogers-arteta-not-happy",
-     "source": "Football365",
-     "published": "2026-09-03T13:08:02+00:00",
-     "matched_on": "rogers",
-     "kind": "transfer",
-     "excerpt": "Arsenal legend Ian Wright insists that he was “gutted” that the Gunners missed out on Morgan Rogers to Chelsea in the summer."
-    },
-    {
      "title": "Morgan rogers chelsea transfer fpl",
      "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
      "source": "OneFPL",
@@ -1105,13 +1097,22 @@
      "matched_on": "rogers",
      "kind": "transfer",
      "excerpt": ""
+    },
+    {
+     "title": "MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26",
+     "url": "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
+     "source": "DraftKings Network Soccer",
+     "published": "2026-09-25T17:20:33+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Orioles lefty Trevor Rogers, Tigers righty Jackson Jobe and Guardians righty Gavin Williams are among the starters set to take the mound Friday. Sam Connon shares his picks and predictions in regards to the three pitchers' strikeout prop bets. The post MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26 appeared first on DraftKings Network ."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 51,
+   "evidence_count": 49,
    "source_count": 15,
    "latest_evidence": "2026-09-29T21:18:38+01:00",
    "official_source_found": true,
@@ -1251,7 +1252,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 105,
+   "evidence_count": 103,
    "source_count": 16,
    "latest_evidence": "2026-10-01T21:20:15+00:00",
    "official_source_found": true,
@@ -1360,15 +1361,6 @@
      "excerpt": "Plus, a so-so nine points for Triple Captain Erling Haaland The post FPL notes: O’Reilly injury latest, Cherki subbed + Ndiaye criticism appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/03/triple-captain-haaland-best-4-5m-defenders-keep-or-sell-ndiaye-fpl-qa",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-03T15:35:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Triple Captain Haaland, best £4.5m defenders + keep or sell Ndiaye? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "Haaland to Arsenal? Every Man City transfer rumour after being found guilty of cheating",
      "url": "https://www.football365.com/news/man-city-transfer-rumours-guilty-cheating-115-charges-haaland-arsenal",
      "source": "Football365",
@@ -1385,6 +1377,15 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "A Spanish journalist drops bombshell decision on Erling Haaland’s potential transfer to Barcelona from Manchester City."
+    },
+    {
+     "title": "Haaland for £132m and Semenyo for £48m – Man City discounts after Premier League relegation",
+     "url": "https://www.football365.com/news/man-city-discounts-premier-league-relegation-haaland-semenyo",
+     "source": "Football365",
+     "published": "2026-10-01T08:22:29+00:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "Interested clubs could sign Erling Haaland for a measly £132m and snap Elliot Anderson up for just £66m if Manchester City are relegated from the Premier League."
     }
    ]
   },
@@ -1579,7 +1580,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 70,
+   "evidence_count": 68,
    "source_count": 18,
    "latest_evidence": "2026-10-01T12:00:00+00:00",
    "official_source_found": true,
