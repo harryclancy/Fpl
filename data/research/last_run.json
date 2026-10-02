@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-02T02:18:40+00:00",
- "seconds": 140.4,
+ "ran_at": "2026-10-02T11:09:08+00:00",
+ "seconds": 122.3,
  "sources_attempted": 78,
  "sources_readable": 53,
- "candidates_discovered": 467,
- "substantive_items": 148,
- "duplicates_removed": 6,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 18866,
+ "candidates_discovered": 542,
+ "substantive_items": 215,
+ "duplicates_removed": 21,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 18846,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "53/78 sources returned 148 articles"
+    "53/78 sources returned 215 articles"
    ]
   },
   "blackout": {
@@ -46,22 +46,22 @@
   "FPL Central: nothing published in the last 10 days",
   "FPL Pilot: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
-  "FPL Oracle: nothing published in the last 10 days",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
   "The Draft Society: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
+  "FPL Ranker: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: timed out after 12s for https://fantasyfootballreports.com/feed/",
+  "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -1252,9 +1252,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 103,
+   "evidence_count": 104,
    "source_count": 16,
-   "latest_evidence": "2026-10-01T21:20:15+00:00",
+   "latest_evidence": "2026-10-02T11:05:57+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1361,6 +1361,15 @@
      "excerpt": "Plus, a so-so nine points for Triple Captain Erling Haaland The post FPL notes: O’Reilly injury latest, Cherki subbed + Ndiaye criticism appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "New favourite to sign Erling Haaland from Man City named – not Real Madrid or Barcelona",
+     "url": "https://www.football365.com/news/psg-favourite-sign-erling-haaland-from-man-city-not-real-madrid-barcelona",
+     "source": "Football365",
+     "published": "2026-10-02T11:05:57+00:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "There’s a new favourite to sign Erling Haaland if the punishment for breaking FFP results in a mass exodus at Manchester City."
+    },
+    {
      "title": "Haaland to Arsenal? Every Man City transfer rumour after being found guilty of cheating",
      "url": "https://www.football365.com/news/man-city-transfer-rumours-guilty-cheating-115-charges-haaland-arsenal",
      "source": "Football365",
@@ -1377,15 +1386,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "A Spanish journalist drops bombshell decision on Erling Haaland’s potential transfer to Barcelona from Manchester City."
-    },
-    {
-     "title": "Haaland for £132m and Semenyo for £48m – Man City discounts after Premier League relegation",
-     "url": "https://www.football365.com/news/man-city-discounts-premier-league-relegation-haaland-semenyo",
-     "source": "Football365",
-     "published": "2026-10-01T08:22:29+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Interested clubs could sign Erling Haaland for a measly £132m and snap Elliot Anderson up for just £66m if Manchester City are relegated from the Premier League."
     }
    ]
   },
@@ -1580,9 +1580,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 68,
-   "source_count": 18,
-   "latest_evidence": "2026-10-01T12:00:00+00:00",
+   "evidence_count": 69,
+   "source_count": 19,
+   "latest_evidence": "2026-10-02T08:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1607,6 +1607,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Internationals: Another Norway goal for Bobb",
+     "url": "https://www.fulhamfc.com/news/2026/october/02/internationals-another-norway-goal-for-bobb/",
+     "source": "Fulham",
+     "published": "2026-10-02T08:00:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "There was another goal for Oscar Bobb in Norway’s Nations League clash with Wales, although they fell to a 2-1 defeat in Cardiff. With Sander Berge also in the starting line-up, Bobb’s tidy finish after just 11 minutes had given his side the lead, but former Fulham man Dan James found an equaliser before the break. Just a minute into the second half, Torbjørn Heggem was shown a red card for draggi"
+    },
     {
      "title": "Chelsea injury news: Major Joao Pedro update as Brazil international sees 'specialist' over knee issue",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-star-sees-specialist-amid-bid-for-october-injury-return_605955.html",
@@ -1705,15 +1714,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "Chelsea are seemingly handed another injury blow ahead of Friday's Premier League fixture against Brentford, less than 24 hours after it was reported that Joao Pedro had sustained a knee injury."
-    },
-    {
-     "title": "Is Joao Pedro injured this weekend? Chelsea sweat on fitness of star forward",
-     "url": "https://www.fourfourtwo.com/person/player/is-joao-pedro-injured-this-weekend-chelsea-sweat-on-fitness-of-star-forward",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-18T09:56:17+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea look set to be without striker Joao Pedro for tonight's clash with Brentford. The 24-year-old has started this season in tremendous form, scoring three goals and providing one assist. However, during last weekend's 2-2 draw with Hull City , the Brazilian picked up a knock that is expected to rule him out of this evening's game. Pedro has dropped out of Brazil squad Joao Pedro has withdrawn"
     }
    ]
   },
