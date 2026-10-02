@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-02T11:09:08+00:00",
+ "generated": "2026-10-02T16:40:35+00:00",
  "gameweek": 6,
- "corpus_size": 18846,
+ "corpus_size": 18887,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -304,18 +304,19 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "status": "Latest on Muharemović — Fantasy Football Scout, 21 Sep: “MUHAREMOVIC THREAT The fact that Tarik Muharemovic (£5.0m) had more shots than any other player on the pitch pretty much sums it up.”",
-   "why_here": "Muharemović is in the starting eleven this week at £5.0m as a DEF. The selection rests on 11 retrieved item(s) from 4 source(s), the most recent dated 21 Sep.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 21 Sep: “Arguably Leeds’ best player again, Muharemovic is still yet to blank in FPL, with one assist, two clean sheets and six defensive contribution (DefCon) points in five matches.” FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
+   "status": "Latest on Muharemović — Sports Mole, 02 Oct: “According to TEAMtalk , two European powerhouses are eyeing up moves for Leeds defender Muharemovic in 2027, with the Elland Road club in danger of losing their centre-back to bigger fish in the market.”",
+   "why_here": "Muharemović is in the starting eleven this week at £5.0m as a DEF. The selection rests on 12 retrieved item(s) from 5 source(s), the most recent dated 02 Oct.",
+   "case_for": "What supports keeping him: Sports Mole, 02 Oct: “That unsuccessful swoop by Inter allowed Leeds to snatch Muharemovic from Sassuolo for around £34m - a price that must be considered a bargain given his impressive start to life in the Premier League.” Fantasy Football Scout, 21 Sep: “Arguably Leeds’ best player again, Muharemovic is still yet to blank in FPL, with one assist, two clean sheets and six defensive contribution (DefCon) points in five matches.” FourFourTwo FPL, 11 Sep: “Tarik Muharemovic has been a defensive contributions machine for Leeds United, brings aerial threat from set pieces and represents reasonable value for his price.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Fantasy Football Scout, 21 Sep: “MUHAREMOVIC THREAT The fact that Tarik Muharemovic (£5.0m) had more shots than any other player on the pitch pretty much sums it up.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/21/fpl-notes-muharemovic-threat-stach-defcon-defences-on-top",
     "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
+    "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
     "https://www.premierfantasytools.com/5-leeds-united-new-signings-to-consider-in-fpl/",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
@@ -330,9 +331,28 @@
     "Fantasy Football Scout",
     "FourFourTwo FPL",
     "Leeds United",
-    "Premier Fantasy Tools"
+    "Premier Fantasy Tools",
+    "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "According to TEAMtalk , two European powerhouses are eyeing up moves for Leeds defender Muharemovic in 2027, with the Elland Road club in danger of losing their centre-back to bigger fish in the market.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
+     "published": "2026-10-02T13:03:39+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "That unsuccessful swoop by Inter allowed Leeds to snatch Muharemovic from Sassuolo for around £34m - a price that must be considered a bargain given his impressive start to life in the Premier League.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
+     "published": "2026-10-02T13:03:39+01:00",
+     "tone": "positive",
+     "topics": [
+      "tactics"
+     ]
+    },
     {
      "text": "MUHAREMOVIC THREAT The fact that Tarik Muharemovic (£5.0m) had more shots than any other player on the pitch pretty much sums it up.",
      "source": "Fantasy Football Scout",
@@ -924,15 +944,15 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "status": "Latest on Szoboszlai — Fantasy Football Scout, 16 Sep: ““Cody gives us not just the goals and the assists, he gives us also some physicality, he gives us calmness on the ball.” – Andoni Iraola Dominik Szoboszlai (£7.0m) only played the final 28 minutes but still made his mark.”",
-   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 17 retrieved item(s) from 7 source(s), the most recent dated 29 Sep.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 29 Sep: “The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park.” FourFourTwo FPL, 19 Sep: “I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai.” Fantasy Football Scout, 16 Sep: “Mac Allister later helped create another big opening for Szoboszlai with Liverpool’s press, making this a timely reminder of his qualities as he pushes to regain his league starting spot.”",
+   "status": "Latest on Szoboszlai — FourFourTwo FPL, 19 Sep: “I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai.”",
+   "why_here": "Szoboszlai is in the starting eleven this week at £7.0m as a MID. The selection rests on 18 retrieved item(s) from 7 source(s), the most recent dated 02 Oct.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.” FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.” FourFourTwo FPL, 29 Sep: “The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park.”",
    "case_against": "What argues against him: 101 Great Goals — Fantasy, 16 Sep: “Alexis Mac Allister and Cody Gakpo had put Liverpool ahead before Tottenham threatened a comeback, but Szoboszlai’s finish ended any doubt and secured Liverpool’s place in the fourth round.” OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — 101 Great Goals — Fantasy, 16 Sep: “Szoboszlai came off the bench to settle the tie with a long-range effort from around 30 yards.” 101 Great Goals — Fantasy, 15 Sep: “1 Tottenham: Szoboszlai stunner sends Reds into last 16 Skip to content Football News Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16 Liverpool were made to work hard before the tie was settled in stunning fashion.” 101 Great Goals — Fantasy, 15 Sep: “Liverpool’s Giorgi Mamardashvili was the busier of the two goalkeepers as Tottenham pushed for an equaliser that would have forced penalties, but Szoboszlai removed that possibility from the equation with a remarkable swerving long-range volley that left Martin Dubravka with no chance and made it another disappointing evening for Roberto De Zerbi’s men.”",
+   "developments": "Recent developments — Fantasy Football Scout, 16 Sep: “Mac Allister later helped create another big opening for Szoboszlai with Liverpool’s press, making this a timely reminder of his qualities as he pushes to regain his league starting spot.” Fantasy Football Scout, 16 Sep: ““Cody gives us not just the goals and the assists, he gives us also some physicality, he gives us calmness on the ball.” – Andoni Iraola Dominik Szoboszlai (£7.0m) only played the final 28 minutes but still made his mark.” 101 Great Goals — Fantasy, 16 Sep: “Szoboszlai came off the bench to settle the tie with a long-range effort from around 30 yards.”",
    "outlook": "On the coming weeks — Football365, 14 Sep: “Wirtz, who signed in a deal worth £116m in 2025, is yet to find his best form in a Reds shirt since signing and now Nicol thinks the Germany international should sit their next game out and give Szoboszlai a chance in a more advanced midfield role.” Sports Mole, 13 Sep: “It should be remembered that Szoboszlai and Gravenberch both played key roles in delivering the club their 20th league title in 2024-25, so it is somewhat understandable that the Reds' hierarchy still have faith in the pair.”",
    "confidence": "high",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/16/fpl-notes-gakpo-impresses-szoboszlai-scores-porro-injury-boost",
     "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
@@ -942,10 +962,10 @@
     "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
     "https://www.fourfourtwo.com/team/liverpool-save-millions-in-transfer-bailout-as-risky-manoeuvre-eases-pressure-on-depleted-hierarchy",
     "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/why-problem-midfield-was-not-addressed-as-szoboszlai-gravenberch-exposed_605069.html",
+    "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league",
     "https://www.fantasyfootballscout.co.uk/2026/09/20/fpl-notes-isak-again-szoboszlai-set-for-further-sales-kluivert-injury-latest",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
-    "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/",
-    "https://www.101greatgoals.com/football/liverpool-tottenham-report/"
+    "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -957,6 +977,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league",
+     "published": "2026-10-02T15:45:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league",
+     "published": "2026-10-02T15:45:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
     {
      "text": "The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park.",
      "source": "FourFourTwo FPL",
@@ -2566,14 +2604,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — 101 Great Goals — Fantasy, 27 Sep: “Erling Haaland is now the highest scoring Scandinavian player of all-time in international football after overtaking Zlatan Ibrahimović 🇳🇴🤝🇸🇪 pic.twitter.com/7ipxNRZOd6 — Football on TNT Sports (@footballontnt) September 25, 2026 Norway are 13/8 to win on Sunday with Portugal at 15/8, while Bet365 make Haaland an 8/11 price to score and Ronaldo 21/20.” Fulham, 25 Sep: “Haaland’s second restored the cushion after the break and, although the Danes did pull another goal back through Rasmus Hojlund, it was Ståle Solbakken’s team who came out on top – with a late red card for David Moller Wolfe doing little to impact the result.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 104 retrieved item(s) from 16 source(s), the most recent dated 02 Oct.",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 105 retrieved item(s) from 16 source(s), the most recent dated 02 Oct.",
    "case_for": "What supports keeping him: Sports Mole, 01 Oct: “European heavyweights 'circle' Haaland © Iconsport / Mark Pain, Alamy Live News A potential demotion to the lower leagues would immediately alert the biggest clubs across Europe to the sudden availability of Erling Haaland The prolific Norwegian marksman has registered a breathtaking 169 goals in 205 appearances at the Etihad Stadium and would seamlessly slot into any elite attacking lineup.” FourFourTwo FPL, 30 Sep: “Haaland has scored 117 goals in 137 fixtures for the Sky Blues and won two league titles since joining in 2022 from Borussia Dortmund – but Barcelona have had previous talks with the star about him moving to Catalonia.” Sports Mole, 28 Sep: “According to Bernabeu Digital , Real Madrid are set to face stern competition in the race for Haaland, who has already scored three goals for Norway in the UEFA Nations League during the ongoing international break.”",
    "case_against": "What argues against him: Football365, 01 Oct: “Haaland is one of several Man City players whose future at the Etihad Stadium is in doubt at the moment.” Soccerway, 01 Oct: “\"We can confirm that, on behalf of York Promotions Ltd. and Erling Braut Haaland , we have filed a lawsuit against Norwegian Air Shuttle ASA,\" writes lawyer Thomas Hagen in an email to VG.no. \"The case concerns Norwegian’s unlawful use of Haaland’s identity and brand in its marketing of flight tickets during the World Cup,\" writes Hagen, of the law firm Schjødt.” Football365, 01 Oct: “Interested clubs could sign Erling Haaland for a measly £132m and snap Elliot Anderson up for just £66m if Manchester City are hit with a sanction that would see them relegated from the Premier League.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 30 Sep: “It leaves the future of the Citizens in doubt – with Erling Haaland , in particular, the highest-profile star who could well push for an exit.” FourFourTwo FPL, 27 Sep: “Haaland netted twice in Norway’s win over Denmark, while Ronaldo missed a sitter and had a goal ruled out for offside on Thursday.”",
-   "developments": "Recent developments — Football365, 02 Oct: “Erling Haaland: New favourite to sign Man City striker named - NOT Real Madrid or Barcelona Erling Haaland, Man City striker There’s a new favourite to sign Erling Haaland if the punishment for breaking FFP results in a mass exodus at Manchester City Man City have been found guilty of breaching FFP 114 times, though the club have launched an appeal.” Football365, 02 Oct: “Erling Haaland is amongst those who’ll go, with a recent update from Football Insider claiming the Norwegian has no intention of staying put for a rebuild .” Football365, 01 Oct: “Man City transfers: Haaland to Arsenal among potential exits after 115 charges Erling Haaland, Josko Gvardiol and Marc Guehi have all been linked with moves away from Man City Manchester City have been found guilty of an awful lot of cheating.”",
+   "developments": "Recent developments — Football365, 02 Oct: “He wrote on CF Bayern Insider : ‘It is NOT TRUE: Bayern are keeping an eye on Erling Haaland amid the Premier League’s ongoing case against Manchester City. ‘FC Bayern are focusing on contract talks with their own top striker, Harry Kane.” Football365, 02 Oct: “Don’t forget that there isn’t just the transfer fee to consider with a player like Haaland; there’s also the salary. ‘Bayern Munich doesn’t tend to pay salaries in the range of what the Norwegian international is earning in Manchester (about €35m [£29.8m], we heard).” Football365, 02 Oct: “Erling Haaland: New favourite to sign Man City striker named - NOT Real Madrid or Barcelona Erling Haaland, Man City striker There’s a new favourite to sign Erling Haaland if the punishment for breaking FFP results in a mass exodus at Manchester City Man City have been found guilty of breaching FFP 114 times, though the club have launched an appeal.”",
    "outlook": "On the coming weeks — Football365, 28 Sep: “Haaland 'U-turn' immediately follows Man City FFP bombshell Alexander Isak in action for Liverpool Even with the Manchester City Situation rumbling on – and there’s plenty on that in here as well – there’s also time for a more traditional international break staple: the curse of players picking up injuries on international duty.” Opta Analyst, 20 Sep: “His previous two games against Sunderland in the competition saw him end without a goal from his three shots across 159 minutes of action, and Haaland would have been nervous that his scoreless run against them was going to continue until he slid in to score at the back post in the 81st minute of Sunday’s clash.”",
    "confidence": "high",
-   "evidence_count": 104,
+   "evidence_count": 105,
    "evidence_used": [
     "https://www.fourfourtwo.com/transfer/manchester-city-star-erling-haaland-has-already-said-yes-to-barcelona-with-norwegian-not-staying-for-charges-aftermath-report",
     "https://www.101greatgoals.com/football/internationals/norway-vs-portugal-team-news-lineups-confirmed-as-haaland-starts-amid-manchester-city-charges-verdict-but-ronaldo-benched/",
@@ -2584,9 +2622,9 @@
     "https://theanalyst.com/articles/kylian-mbappe-erling-haaland-champions-league-goals-record-cristiano-ronaldo",
     "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
     "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
+    "https://www.football365.com/news/erling-haaland-bayern-munich-transfer-chance-clear-pep-guardiola-meeting",
     "https://www.football365.com/news/psg-favourite-sign-erling-haaland-from-man-city-not-real-madrid-barcelona",
-    "https://www.football365.com/news/man-city-transfer-rumours-guilty-cheating-115-charges-haaland-arsenal",
-    "https://www.football365.com/news/manchester-city-barcelona-erling-haaland-2027-transfer"
+    "https://www.football365.com/news/man-city-transfer-rumours-guilty-cheating-115-charges-haaland-arsenal"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2607,6 +2645,26 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "He wrote on CF Bayern Insider : ‘It is NOT TRUE: Bayern are keeping an eye on Erling Haaland amid the Premier League’s ongoing case against Manchester City. ‘FC Bayern are focusing on contract talks with their own top striker, Harry Kane.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-bayern-munich-transfer-chance-clear-pep-guardiola-meeting",
+     "published": "2026-10-02T13:43:16+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Don’t forget that there isn’t just the transfer fee to consider with a player like Haaland; there’s also the salary. ‘Bayern Munich doesn’t tend to pay salaries in the range of what the Norwegian international is earning in Manchester (about €35m [£29.8m], we heard).",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-bayern-munich-transfer-chance-clear-pep-guardiola-meeting",
+     "published": "2026-10-02T13:43:16+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "Erling Haaland: New favourite to sign Man City striker named - NOT Real Madrid or Barcelona Erling Haaland, Man City striker There’s a new favourite to sign Erling Haaland if the punishment for breaking FFP results in a mass exodus at Manchester City Man City have been found guilty of breaching FFP 114 times, though the club have launched an appeal.",
      "source": "Football365",
