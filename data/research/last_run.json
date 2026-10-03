@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-03T02:02:50+00:00",
- "seconds": 169.8,
+ "ran_at": "2026-10-03T10:27:04+00:00",
+ "seconds": 133.8,
  "sources_attempted": 78,
- "sources_readable": 53,
- "candidates_discovered": 459,
- "substantive_items": 145,
- "duplicates_removed": 4,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 18874,
+ "sources_readable": 55,
+ "candidates_discovered": 522,
+ "substantive_items": 177,
+ "duplicates_removed": 14,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18895,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "53/78 sources returned 145 articles"
+    "55/78 sources returned 177 articles"
    ]
   },
   "blackout": {
@@ -44,9 +44,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "FPL Pilot: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -55,7 +53,7 @@
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: timed out after 12s for https://fantasyfootballreports.com/feed/",
+  "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -67,9 +65,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 14,
+   "evidence_count": 15,
    "source_count": 8,
-   "latest_evidence": "2026-09-25T13:18:39+00:00",
+   "latest_evidence": "2026-10-03T08:40:33+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -111,6 +109,15 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Plus, Bukayo Saka benefits from Viktor Gyokeres' limited game-time The post FPL notes: White injury, Le Bris on Le Fee’s pen miss + Raya haul appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal deal to be done soon as surprising development means current starter could be replaced",
+     "url": "https://www.football365.com/news/arsenal-deal-done-soon-surprising-development-current-starter-replaced-arteta",
+     "source": "Football365",
+     "published": "2026-10-03T08:40:33+00:00",
+     "matched_on": "raya",
+     "kind": "transfer",
+     "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
     },
     {
      "title": "Le Bris: It was a game of fine margins",
@@ -192,15 +199,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Arsenal manager Mikel Arteta and Sunderland boss Regis Le Bris were blown away by the Spanish star."
-    },
-    {
-     "title": "Sunderland 0-2 Arsenal Stats: Bruno Guimarães Back to Haunt Former Rivals After David Raya Penalty Heroics",
-     "url": "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
-     "source": "Opta Analyst",
-     "published": "2026-09-12T21:25:06+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Bruno Guimarães and Bukayo Saka scored the goals as Premier League champions Arsenal maintained their 100% start to the season, but they also had their goalkeeper to thank. The post Sunderland 0-2 Arsenal Stats: Bruno Guimarães Back to Haunt Former Rivals After David Raya Penalty Heroics appeared first on Opta Analyst ."
     }
    ]
   },
@@ -1261,9 +1259,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 105,
+   "evidence_count": 107,
    "source_count": 16,
-   "latest_evidence": "2026-10-02T13:43:16+00:00",
+   "latest_evidence": "2026-10-03T09:14:16+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1370,6 +1368,15 @@
      "excerpt": "Plus, a so-so nine points for Triple Captain Erling Haaland The post FPL notes: O’Reilly injury latest, Cherki subbed + Ndiaye criticism appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Erling Haaland reaches decision on next move after Man City FFP verdict with all top stars tipped to go",
+     "url": "https://www.football365.com/news/erling-haaland-reaches-decision-man-city-ffp-verdict-arsenal",
+     "source": "Football365",
+     "published": "2026-10-03T09:14:16+00:00",
+     "matched_on": "haaland",
+     "kind": "transfer",
+     "excerpt": "According to reports, Arsenal have the financial means to sign Manchester City star Erling Haaland, but he “wants” to go somewhere else."
+    },
+    {
      "title": "Chances of Erling Haaland transfer clear after Pep Guardiola secretly meets with Bayern Munich",
      "url": "https://www.football365.com/news/erling-haaland-bayern-munich-transfer-chance-clear-pep-guardiola-meeting",
      "source": "Football365",
@@ -1386,15 +1393,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "There’s a new favourite to sign Erling Haaland if the punishment for breaking FFP results in a mass exodus at Manchester City."
-    },
-    {
-     "title": "Haaland to Arsenal? Every Man City transfer rumour after being found guilty of cheating",
-     "url": "https://www.football365.com/news/man-city-transfer-rumours-guilty-cheating-115-charges-haaland-arsenal",
-     "source": "Football365",
-     "published": "2026-10-01T21:20:15+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Man City players are being linked with transfers left, right and centre after being found guilty of cheating. Here is every single rumour."
     }
    ]
   },
@@ -1505,8 +1503,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-10-01T07:12:47+01:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-02T23:57:17+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1521,7 +1519,6 @@
     "match report",
     "press conference",
     "set pieces",
-    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -1530,6 +1527,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man United news: 'Significant' injury update as Carlos Baleba return assessed ahead of Michael Carrick's key Tottenham clash",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/return-date-significant-baleba-injury-update-ahead-of-key-spurs-clash_606145.html",
+     "source": "Sports Mole",
+     "published": "2026-10-02T23:57:17+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Manchester United reportedly receive a major injury update regarding newcomer Carlos Baleba, with Michael Carrick preparing for his side's game against Tottenham."
+    },
     {
      "title": "Roberto De Zerbi dealt huge injury blow as key £52m Spurs star withdraws from international squad",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/roberto-de-zerbi-dealt-huge-injury-blow-as-key-spurs-star-picks-up-fresh-injury_606044.html",
@@ -1565,15 +1571,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "A Manchester United defender goes off injured during their country's game on Sunday in the international break, and here, Sports Mole assesses when they could return."
-    },
-    {
-     "title": "BIG PETE: Ryan Mason on his bond with Harry Kane, leaving Spurs, and his career-ending injury",
-     "url": "https://www.soccerway.com/news/big-pete-ryan-mason-on-his-bond-with-harry-kane-leaving-spurs-and-his-career-ending-injury/AwMPeLbk/",
-     "source": "Soccerway",
-     "published": "2026-09-23T18:13:44+02:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
