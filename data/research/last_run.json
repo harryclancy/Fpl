@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-02T21:21:16+00:00",
- "seconds": 167.8,
+ "ran_at": "2026-10-03T02:02:50+00:00",
+ "seconds": 169.8,
  "sources_attempted": 78,
- "sources_readable": 54,
- "candidates_discovered": 519,
- "substantive_items": 197,
- "duplicates_removed": 12,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 18887,
+ "sources_readable": 53,
+ "candidates_discovered": 459,
+ "substantive_items": 145,
+ "duplicates_removed": 4,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 18874,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 197 articles"
+    "53/78 sources returned 145 articles"
    ]
   },
   "blackout": {
@@ -46,6 +46,7 @@
   "FPL Central: nothing published in the last 10 days",
   "FPL Pilot: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -54,7 +55,7 @@
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
-  "Fantasy Football Reports: nothing published in the last 10 days",
+  "Fantasy Football Reports: timed out after 12s for https://fantasyfootballreports.com/feed/",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -701,10 +702,10 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 18,
-   "source_count": 7,
+   "evidence_count": 17,
+   "source_count": 6,
    "latest_evidence": "2026-10-02T15:45:00+00:00",
-   "official_source_found": true,
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -753,15 +754,6 @@
      "matched_on": "szoboszlai",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Gakpo, Szoboszlai, Sangare, Konsa: Buy, keep or sell in Gameweek 4? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "TEAM NEWS | LIVERPOOL (H)",
-     "url": "https://www.itfc.co.uk/news/2026/september/04/team-news---liverpool/",
-     "source": "Ipswich Town",
-     "published": "2026-09-04T17:45:04+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Fixtures Ipswich Town Vs. Liverpool - Fri, Sep 4th 2026, 20:00 Team news for Town’s Premier League clash against Liverpool can now be confirmed. Gary O’Neil has made one change from the defeat to Manchester United on Sunday as Exequiel Palacios comes in for his first Town start in place of Marcelino Núñez. Kjell Scherpen continues in goal and will have a defence of Dara O’Shea, Issa Diop, Jacob Gr"
     },
     {
      "title": "Liverpool given pathway to sign Alex Scott, as perfect Andoni Iraola transfer shapes up: report",
@@ -834,6 +826,15 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Andoni Iraola was full of praise for midfielder Dominik Szoboszlai on Tuesday night."
+    },
+    {
+     "title": "Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16",
+     "url": "https://www.101greatgoals.com/football/liverpool-tottenham-report/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-09-15T21:08:55+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "Liverpool were made to work hard before the tie was settled in stunning fashion."
     }
    ]
   },
