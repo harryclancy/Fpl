@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-03T10:27:04+00:00",
- "seconds": 133.8,
+ "ran_at": "2026-10-03T15:09:37+00:00",
+ "seconds": 132.2,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 522,
- "substantive_items": 177,
- "duplicates_removed": 14,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18895,
+ "sources_readable": 53,
+ "candidates_discovered": 540,
+ "substantive_items": 197,
+ "duplicates_removed": 21,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18891,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 177 articles"
+    "53/78 sources returned 197 articles"
    ]
   },
   "blackout": {
@@ -45,6 +45,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -54,6 +55,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -65,9 +67,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "source_count": 8,
-   "latest_evidence": "2026-10-03T08:40:33+00:00",
+   "latest_evidence": "2026-10-03T14:29:16+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -109,6 +111,15 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Plus, Bukayo Saka benefits from Viktor Gyokeres' limited game-time The post FPL notes: White injury, Le Bris on Le Fee’s pen miss + Raya haul appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal closing in on Rice deal as three key contracts remain unresolved",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
+     "source": "Sports Mole",
+     "published": "2026-10-03T14:29:16+01:00",
+     "matched_on": "raya",
+     "kind": "transfer",
+     "excerpt": "Arsenal are progressing with a new Declan Rice contract, but the futures of Martin Odegaard, Kai Havertz and David Raya remain unresolved beyond 2028."
     },
     {
      "title": "Arsenal deal to be done soon as surprising development means current starter could be replaced",
@@ -190,15 +201,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’",
-     "url": "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
-     "source": "Football365",
-     "published": "2026-09-12T21:58:35+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Arsenal manager Mikel Arteta and Sunderland boss Regis Le Bris were blown away by the Spanish star."
     }
    ]
   },
@@ -1586,7 +1588,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 67,
+   "evidence_count": 66,
    "source_count": 19,
    "latest_evidence": "2026-10-02T08:00:00+00:00",
    "official_source_found": true,
