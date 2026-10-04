@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-03T19:57:53+00:00",
- "seconds": 150.6,
+ "ran_at": "2026-10-04T02:43:01+00:00",
+ "seconds": 139.0,
  "sources_attempted": 78,
- "sources_readable": 54,
- "candidates_discovered": 559,
- "substantive_items": 209,
- "duplicates_removed": 22,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 18875,
+ "sources_readable": 53,
+ "candidates_discovered": 526,
+ "substantive_items": 175,
+ "duplicates_removed": 10,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18872,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 209 articles"
+    "53/78 sources returned 175 articles"
    ]
   },
   "blackout": {
@@ -60,7 +60,8 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -1260,7 +1261,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 107,
+   "evidence_count": 104,
    "source_count": 16,
    "latest_evidence": "2026-10-03T09:14:16+00:00",
    "official_source_found": true,
@@ -1728,17 +1729,19 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-02T14:00:00+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-03T17:55:00+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
    "role_assessed": true,
-   "fixtures_assessed": false,
+   "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1759,6 +1762,15 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "The FPL half-term report: Brighton",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/03/the-fpl-half-term-report-brighton",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-03T17:55:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "With three wins and one draw, Brighton sit third in the table The post The FPL half-term report: Brighton appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Brighton v Charlton Athletic | Arturo Ruiz pre match press conference",
@@ -1786,15 +1798,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Saturday's Women's Super League clash between London City Lionesses W and Brighton & Hove Albion Women, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Brighton v Charlton Athletic | Arturo Ruiz pre-match press conference",
-     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-charlton-athletic-or-arturo-ruiz-pre-match-press-conference",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-22T15:40:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "🎬 Brighton v Charlton Athletic | Arturo Ruiz pre-match press conference"
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
