@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-04T02:43:01+00:00",
- "seconds": 139.0,
+ "ran_at": "2026-10-04T11:08:43+00:00",
+ "seconds": 114.6,
  "sources_attempted": 78,
- "sources_readable": 53,
- "candidates_discovered": 526,
- "substantive_items": 175,
- "duplicates_removed": 10,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18872,
+ "sources_readable": 54,
+ "candidates_discovered": 541,
+ "substantive_items": 195,
+ "duplicates_removed": 23,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 18861,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "53/78 sources returned 175 articles"
+    "54/78 sources returned 195 articles"
    ]
   },
   "blackout": {
@@ -60,8 +60,7 @@
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -841,9 +840,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "source_count": 7,
-   "latest_evidence": "2026-10-01T15:30:00+00:00",
+   "latest_evidence": "2026-10-04T11:00:04+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -894,6 +893,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "Newcastle United found themselves in a hole against Bournemouth when they met in the Premier League last weekend. Marcus Tavernier's early strike and a bizarre own goal from Malick Thiaw put the Cherries 2-0 up at St James' Park but Newcastle responded immediately with a Harvey Barnes pearler. Eventually, Jacob Ramsey added a second to salvage a point. Anecdotally, it was one of those days when it"
+    },
+    {
+     "title": "Kawhi Leonard Has Huge Impact On Scottie Barnes' Growth With Raptors",
+     "url": "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-04T11:00:04+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "The decision to bring back Kawhi Leonard is more than just an immediate championship play."
     },
     {
      "title": "Rick Barnes Makes it Clear Where He Stands With Tennessee vs. Texas",
@@ -966,15 +974,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
-    },
-    {
-     "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-     "source": "Newcastle United",
-     "published": "2026-09-11T10:30:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1261,9 +1260,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 104,
+   "evidence_count": 105,
    "source_count": 16,
-   "latest_evidence": "2026-10-03T09:14:16+00:00",
+   "latest_evidence": "2026-10-04T08:28:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1361,13 +1360,13 @@
      "excerpt": "We dissect Champions League wins for Aston Villa and Man City The post FPL notes: Haaland double, no Cash + Cherki subbed early again appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "FPL notes: O’Reilly injury latest, Cherki subbed + Ndiaye criticism",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/05/fpl-notes-reilly-injury-cherki-subbed-ndiaye-criticism",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-05T21:50:00+00:00",
+     "title": "Erling Haaland to Man Utd call emerges as INEOS urged to sign five Man City stars",
+     "url": "https://www.football365.com/news/manchester-united-manchester-city-erling-haaland",
+     "source": "Football365",
+     "published": "2026-10-04T07:17:32+00:00",
      "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Plus, a so-so nine points for Triple Captain Erling Haaland The post FPL notes: O’Reilly injury latest, Cherki subbed + Ndiaye criticism appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "kind": "transfer",
+     "excerpt": "Quinton Fortune has urged Manchester United to raid Manchester City for five of their best players, including Erling Haaland."
     },
     {
      "title": "Erling Haaland reaches decision on next move after Man City FFP verdict with all top stars tipped to go",
@@ -1588,9 +1587,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 66,
+   "evidence_count": 67,
    "source_count": 19,
-   "latest_evidence": "2026-10-03T17:36:52+02:00",
+   "latest_evidence": "2026-10-04T08:15:27+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
