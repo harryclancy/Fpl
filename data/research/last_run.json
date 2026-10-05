@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-05T02:03:13+00:00",
- "seconds": 150.3,
+ "ran_at": "2026-10-05T12:20:10+00:00",
+ "seconds": 128.2,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 556,
- "substantive_items": 197,
- "duplicates_removed": 12,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18937,
+ "sources_readable": 57,
+ "candidates_discovered": 626,
+ "substantive_items": 269,
+ "duplicates_removed": 21,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 18929,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 197 articles"
+    "57/78 sources returned 269 articles"
    ]
   },
   "blackout": {
@@ -44,7 +44,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -411,9 +410,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 11,
+   "evidence_count": 14,
    "source_count": 5,
-   "latest_evidence": "2026-10-02T19:15:00+01:00",
+   "latest_evidence": "2026-10-05T12:59:16+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -438,6 +437,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal learn of Ezri Konsa injury \"trauma\" as Thomas Tuchel explains England withdrawal",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/tuchel-explains-konsa-trauma-as-arsenal-receive-new-injury-update_606264.html",
+     "source": "Sports Mole",
+     "published": "2026-10-05T12:59:16+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England manager Thomas Tuchel reveals the \"trauma\" that forced Arsenal's Ezri Konsa to withdraw from the Three Lions squad."
+    },
+    {
+     "title": "Scott, Konsa, van de Ven: Latest international break injury news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/05/scott-konsa-van-de-ven-latest-international-break-injury-news",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-05T09:25:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "More team news updates from the October internationals The post Scott, Konsa, van de Ven: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal dealt new injury blow ahead of Leeds United showdown",
+     "url": "https://www.fourfourtwo.com/person/player/arsenal-dealt-new-injury-blow-ahead-of-leeds-united-showdown",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-05T09:18:35+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Ezri Konsa and Alex Scott have pulled out of the England squad ahead of Tuesday’s UEFA Nations League fixture against Czechia at Wembley. The pair have returned to their respective clubs for further assessment but the news comes at an inopportune time for Arsenal , given their lack of available defensive options. The Football Association confirmed the update in an official statement, revealing tha"
+    },
     {
      "title": "Arsenal receive injury boost as Thomas Tuchel delivers Ezri Konsa update ahead of England's clash with Croatia",
      "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
@@ -518,34 +544,16 @@
      "matched_on": "konsa",
      "kind": "transfer",
      "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
-    },
-    {
-     "title": "Arsenal receive baffling VAR verdict on Sunderland penalty incident as Premier League explain 3-2 vote",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html",
-     "source": "Sports Mole",
-     "published": "2026-09-23T11:20:00+01:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
-    },
-    {
-     "title": "Preview: Arsenal visit Wearside in Saturday night Premier League action",
-     "url": "https://www.safc.com/news/2026/september/11/preview--arsenal-visit-wearside-in-saturday-night-premier-league-action/",
-     "source": "Sunderland",
-     "published": "2026-09-11T14:26:41+00:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "Sunderland return to Premier League action on Saturday night, as champions Arsenal visit the Stadium of Light (8pm BST). The Black Cats are aiming to make it three league matches unbeaten following the 2-1 win over Fulham and last weekend’s 1-1 draw at Brentford. Régis Le Bris’ side progressed to the fourth round of the Carabao Cup on Tuesday night, as Chemsdine Talbi’s lobbed finish was enough to"
     }
    ]
   },
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 19,
-   "source_count": 5,
-   "latest_evidence": "2026-09-30T08:05:31+00:00",
-   "official_source_found": false,
+   "evidence_count": 20,
+   "source_count": 6,
+   "latest_evidence": "2026-10-05T10:00:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -554,6 +562,7 @@
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "fpl advice",
     "injury",
     "match report",
@@ -668,13 +677,13 @@
      "excerpt": "Manchester United and Liverpool are competing to sign a Newcastle United defender in the summer of 2027."
     },
     {
-     "title": "Ian Wright lauds England star for ‘proving his worth’ vs Czechia after ‘very unlucky’ World Cup snub",
-     "url": "https://www.football365.com/news/ian-wright-lauds-england-star-proving-worth-czechia-very-unlucky-world-cup-snub",
-     "source": "Football365",
-     "published": "2026-09-30T08:05:31+00:00",
+     "title": "International Magpies: Wins for Hall, Steur and Bamba",
+     "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
+     "source": "Newcastle United",
+     "published": "2026-10-05T10:00:00+00:00",
      "matched_on": "hall",
      "kind": "general",
-     "excerpt": "Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England."
+     "excerpt": ""
     }
    ]
   },
@@ -960,7 +969,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 35,
+   "evidence_count": 34,
    "source_count": 14,
    "latest_evidence": "2026-10-04T15:18:38+00:00",
    "official_source_found": true,
@@ -1240,9 +1249,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 107,
+   "evidence_count": 109,
    "source_count": 16,
-   "latest_evidence": "2026-10-05T02:39:54+01:00",
+   "latest_evidence": "2026-10-05T10:56:28+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1267,6 +1276,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Erling Haaland injury update: Latest on Manchester City star ahead of huge game at Liverpool",
+     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-injury-update-latest-on-manchester-city-star-ahead-of-huge-game-at-liverpool",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-05T07:25:38-04:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Manchester City star Haaland not injured but fatigued as he jets away for mini-break",
+     "url": "https://www.101greatgoals.com/football/premier-league/manchester-city-erling-haaland-not-injured-fatigued-as-he-jets-away-for-mini-break/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-05T10:56:28+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Erling Haaland will recharge his batteries with a mini-break before returning to the chaos surrounding Manchester City"
+    },
+    {
+     "title": "Concern over Haaland fitness after star striker requests substitution and limps off",
+     "url": "https://www.soccerway.com/news/soccer-uefa-nations-league-concern-over-haaland-fitness-after-star-requests-substitution-and-limps-off/jkZ1Dm0e/",
+     "source": "Soccerway",
+     "published": "2026-10-05T05:43:06+02:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "Erling Haaland injury latest: Man City forward hands club major scare after limping out of international duty",
      "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/limping-erling-will-haaland-be-fit-for-anfield-trip_606239.html",
@@ -1347,33 +1383,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Kylian Mbappé and Erling Haaland made goalscoring starts to the 2026-27 Champions League campaign on Tuesday. Both will have one eye on the competition's all-time goals record. The post When Will Kylian Mbappé or Erling Haaland Break Cristiano Ronaldo’s Champions League Goals Record? appeared first on Opta Analyst ."
-    },
-    {
-     "title": "FPL notes: Haaland double, no Cash + Cherki subbed early again",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-09T14:40:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "We dissect Champions League wins for Aston Villa and Man City The post FPL notes: Haaland double, no Cash + Cherki subbed early again appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Erling Haaland to Man Utd call emerges as INEOS urged to sign five Man City stars",
-     "url": "https://www.football365.com/news/manchester-united-manchester-city-erling-haaland",
-     "source": "Football365",
-     "published": "2026-10-04T07:17:32+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Quinton Fortune has urged Manchester United to raid Manchester City for five of their best players, including Erling Haaland."
-    },
-    {
-     "title": "Erling Haaland reaches decision on next move after Man City FFP verdict with all top stars tipped to go",
-     "url": "https://www.football365.com/news/erling-haaland-reaches-decision-man-city-ffp-verdict-arsenal",
-     "source": "Football365",
-     "published": "2026-10-03T09:14:16+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "According to reports, Arsenal have the financial means to sign Manchester City star Erling Haaland, but he “wants” to go somewhere else."
     }
    ]
   },
@@ -1558,9 +1567,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 68,
+   "evidence_count": 69,
    "source_count": 19,
-   "latest_evidence": "2026-10-04T17:35:01+01:00",
+   "latest_evidence": "2026-10-05T08:00:30+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1585,6 +1594,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Internationals: Joa's Denmark win against Wales",
+     "url": "https://www.fulhamfc.com/news/2026/october/05/internationals-joas-denmark-win-against-wales/",
+     "source": "Fulham",
+     "published": "2026-10-05T08:00:30+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Joachim Andersen helped Denmark keep a clean sheet as they rounded off their international break with a win over Wales. The defender played the full 90 minutes in the Nations League clash, which was settled by a Rasmus Højlund penalty in the 75th minute. Joa also wore the captain’s armband after Pierre-Emile Højbjerg was forced off through injury. The result saw Denmark finish second in Group 4. S"
+    },
     {
      "title": "Estevao clocks more Brazil minutes than Blues game time and returns a more confident player for Chelsea",
      "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/can-international-break-with-brazil-offer-new-life-to-estevao-at-chelsea-_606222.html",
@@ -1683,15 +1701,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": ""
-    },
-    {
-     "title": "Team news for Spurs showdown",
-     "url": "https://avfc.co.uk/news/2026/september/18/prematch-team-news-for-spurs-showdown/",
-     "source": "Aston Villa",
-     "published": "2026-09-18T13:15:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes is set to return to Aston Villa’s squad for Saturday’s Premier League trip to Tottenham Hotspur but Marco Bizot joins a lengthy injury list. Gomes has completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening day of the season and is poised to be back in the fold in north London"
     }
    ]
   },
@@ -1783,7 +1792,7 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 5,
+   "evidence_count": 4,
    "source_count": 3,
    "latest_evidence": "2026-09-16T16:00:04+00:00",
    "official_source_found": false,
@@ -1806,7 +1815,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -1827,15 +1836,6 @@
      "matched_on": "de cuyper",
      "kind": "team news",
      "excerpt": "News that might affect Maxim De Cuyper The post Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: £4.5m midfielder stars again + another De Cuyper return",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/07/fpl-notes-4-5m-midfielder-stars-again-another-de-cuyper-return",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-07T02:00:00+00:00",
-     "matched_on": "de cuyper",
-     "kind": "team news",
-     "excerpt": "Luka Vuskovic hauls and Dominic Calvert-Lewin spurns big chances in Brighton 1-1 Leeds The post FPL notes: £4.5m midfielder stars again + another De Cuyper return appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
