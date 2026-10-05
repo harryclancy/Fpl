@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-04T20:13:05+00:00",
- "seconds": 141.5,
+ "ran_at": "2026-10-05T02:03:13+00:00",
+ "seconds": 150.3,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 575,
- "substantive_items": 233,
- "duplicates_removed": 21,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 18930,
+ "sources_readable": 56,
+ "candidates_discovered": 556,
+ "substantive_items": 197,
+ "duplicates_removed": 12,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18937,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 233 articles"
+    "56/78 sources returned 197 articles"
    ]
   },
   "blackout": {
@@ -48,7 +48,6 @@
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
-  "The Draft Society: nothing published in the last 10 days",
   "FPLai: nothing published in the last 10 days",
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
@@ -344,8 +343,8 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 5,
-   "source_count": 4,
+   "evidence_count": 4,
+   "source_count": 3,
    "latest_evidence": "2026-09-11T08:25:33+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -367,7 +366,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -388,15 +387,6 @@
      "matched_on": "calafiori",
      "kind": "team news",
      "excerpt": "We dissect Champions League wins for Arsenal and Liverpool The post FPL notes: Calafiori rested, Gakpo, Barcola + White injury updates appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal vs Chelsea: Why VAR disallowed Riccardo Calafiori goal",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/why-var-disallowed-calafiori-goal-in-arsenal-vs-chelsea_604603.html",
-     "source": "Sports Mole",
-     "published": "2026-09-06T17:13:15+01:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Riccardo Calafiori scores in the first half to equalise for Arsenal but the goal has been ruled out by VAR."
     },
     {
      "title": "Forget right-backs in midfield, Arsenal’s five-on-two shows Chelsea’s system is the problem",
@@ -970,8 +960,8 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 37,
-   "source_count": 15,
+   "evidence_count": 35,
+   "source_count": 14,
    "latest_evidence": "2026-10-04T15:18:38+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1250,9 +1240,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 105,
+   "evidence_count": 107,
    "source_count": 16,
-   "latest_evidence": "2026-10-04T11:15:55+00:00",
+   "latest_evidence": "2026-10-05T02:39:54+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1277,6 +1267,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Erling Haaland injury latest: Man City forward hands club major scare after limping out of international duty",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/limping-erling-will-haaland-be-fit-for-anfield-trip_606239.html",
+     "source": "Sports Mole",
+     "published": "2026-10-05T02:39:54+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Erling Haaland injury update emerges after Manchester City forward limped out of Norway's UEFA Nations League defeat against Portugal."
+    },
+    {
+     "title": "Is Haaland injured after early Norway substitution?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/05/is-haaland-injured-after-early-norway-substitution",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-05T00:30:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "The Manchester City striker came off midway through the second half of Sunday's clash with Portugal The post Is Haaland injured after early Norway substitution? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Manchester City star Erling Haaland has already 'said yes' to Barcelona - with Norwegian NOT staying for charges aftermath: report",
      "url": "https://www.fourfourtwo.com/transfer/manchester-city-star-erling-haaland-has-already-said-yes-to-barcelona-with-norwegian-not-staying-for-charges-aftermath-report",
@@ -1366,24 +1374,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "According to reports, Arsenal have the financial means to sign Manchester City star Erling Haaland, but he “wants” to go somewhere else."
-    },
-    {
-     "title": "Chances of Erling Haaland transfer clear after Pep Guardiola secretly meets with Bayern Munich",
-     "url": "https://www.football365.com/news/erling-haaland-bayern-munich-transfer-chance-clear-pep-guardiola-meeting",
-     "source": "Football365",
-     "published": "2026-10-02T13:43:16+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Whether or not Bayern Munich will sign Erling Haaland has been revealed after his former Manchester City boss Pep Guardiola met with the club in ‘secret.’"
-    },
-    {
-     "title": "New favourite to sign Erling Haaland from Man City named – not Real Madrid or Barcelona",
-     "url": "https://www.football365.com/news/psg-favourite-sign-erling-haaland-from-man-city-not-real-madrid-barcelona",
-     "source": "Football365",
-     "published": "2026-10-02T11:05:57+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "There’s a new favourite to sign Erling Haaland if the punishment for breaking FFP results in a mass exodus at Manchester City."
     }
    ]
   },
