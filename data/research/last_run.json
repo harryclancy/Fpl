@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-05T12:20:10+00:00",
- "seconds": 128.2,
+ "ran_at": "2026-10-05T23:11:14+00:00",
+ "seconds": 159.3,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 626,
- "substantive_items": 269,
- "duplicates_removed": 21,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 18929,
+ "sources_readable": 56,
+ "candidates_discovered": 650,
+ "substantive_items": 288,
+ "duplicates_removed": 20,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 18854,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 269 articles"
+    "56/78 sources returned 288 articles"
    ]
   },
   "blackout": {
@@ -44,6 +44,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -63,7 +64,7 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 16,
+   "evidence_count": 15,
    "source_count": 8,
    "latest_evidence": "2026-10-03T14:29:16+01:00",
    "official_source_found": true,
@@ -434,7 +435,7 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "low",
+   "priority": "high",
    "researched": true,
    "items": [
     {
@@ -550,7 +551,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 20,
+   "evidence_count": 19,
    "source_count": 6,
    "latest_evidence": "2026-10-05T10:00:00+00:00",
    "official_source_found": true,
@@ -969,7 +970,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 34,
+   "evidence_count": 33,
    "source_count": 14,
    "latest_evidence": "2026-10-04T15:18:38+00:00",
    "official_source_found": true,
@@ -1249,9 +1250,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 109,
+   "evidence_count": 111,
    "source_count": 16,
-   "latest_evidence": "2026-10-05T10:56:28+00:00",
+   "latest_evidence": "2026-10-05T23:05:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1484,8 +1485,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-04T08:35:35+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-05T10:15:02+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1500,6 +1501,7 @@
     "match report",
     "press conference",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -1508,6 +1510,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham receive double injury boost before Man United as Micky van de Ven, Jan Paul van Hecke updates delivered",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/double-dutch-spurs-receive-van-hecke-van-de-ven-injury-updates-before-man-utd_606248.html",
+     "source": "Sports Mole",
+     "published": "2026-10-05T10:15:02+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur receive a new double injury update on Jan Paul van Hecke and Micky van de Ven before this weekend's Premier League showdown with Manchester United."
+    },
     {
      "title": "Tottenham prepared to accept £13.1m transfer hit as 'door opens' for defender exit",
      "url": "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-lose-again-door-opens-for-defender-exit-in-gbp13-1m-hit_606197.html",
@@ -1545,15 +1556,6 @@
      "excerpt": "🎬 Brighton v Spurs | Arturo Ruiz pre match press conference"
     },
     {
-     "title": "Bobby Zamora predicts where Tottenham will finish – if one player starts firing",
-     "url": "https://www.football365.com/news/bobby-zamora-predicts-where-tottenham-will-finish-solanke-starts-firing",
-     "source": "Football365",
-     "published": "2026-09-28T15:25:47+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Zamora is confident that goalscoring will not be an issue for Spurs once the players fully get used to De Zerbi’s system, and believes that one player in particular will ..."
-    },
-    {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
      "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
      "source": "FourFourTwo FPL",
@@ -1567,7 +1569,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 69,
+   "evidence_count": 68,
    "source_count": 19,
    "latest_evidence": "2026-10-05T08:00:30+00:00",
    "official_source_found": true,
