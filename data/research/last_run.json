@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-06T03:03:08+00:00",
- "seconds": 137.8,
+ "ran_at": "2026-10-06T12:04:11+00:00",
+ "seconds": 143.6,
  "sources_attempted": 78,
  "sources_readable": 56,
- "candidates_discovered": 492,
- "substantive_items": 129,
- "duplicates_removed": 3,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 18860,
+ "candidates_discovered": 628,
+ "substantive_items": 255,
+ "duplicates_removed": 23,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18872,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 129 articles"
+    "56/78 sources returned 255 articles"
    ]
   },
   "blackout": {
@@ -1109,9 +1109,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
-   "source_count": 15,
-   "latest_evidence": "2026-10-04T17:35:01+01:00",
+   "evidence_count": 50,
+   "source_count": 16,
+   "latest_evidence": "2026-10-06T08:03:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1136,6 +1136,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL GW6 Injury Updates: Gakpo, Palmer, Joao Pedro & Best Replacements",
+     "url": "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
+     "source": "RotoWire Soccer",
+     "published": "2026-10-06T08:03:00+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "Estevao clocks more Brazil minutes than Blues game time and returns a more confident player for Chelsea",
      "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/can-international-break-with-brazil-offer-new-life-to-estevao-at-chelsea-_606222.html",
@@ -1234,24 +1243,15 @@
      "matched_on": "palmer",
      "kind": "team news",
      "excerpt": "FPL Gameweek 4 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers City rotation, Triple Captain Palmer, and whether three Chelsea players is essentialÂ among other FPL tips. Check out our Ultimate Guide to FPL for all our […]"
-    },
-    {
-     "title": "FPL notes: Four Rogers assists, Palmer brace + Pedro rested",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-four-rogers-assists-palmer-brace-pedro-rested",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-10T17:45:00+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "FPL notes from the nine-goal thriller in west London The post FPL notes: Four Rogers assists, Palmer brace + Pedro rested appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 111,
+   "evidence_count": 113,
    "source_count": 16,
-   "latest_evidence": "2026-10-05T23:05:00+00:00",
+   "latest_evidence": "2026-10-06T10:41:56+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1280,7 +1280,7 @@
      "title": "Erling Haaland injury update: Latest on Manchester City star ahead of huge game at Liverpool",
      "url": "https://www.nbcsports.com/soccer/news/erling-haaland-injury-update-latest-on-manchester-city-star-ahead-of-huge-game-at-liverpool",
      "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-05T07:25:38-04:00",
+     "published": "2026-10-06T07:46:00-04:00",
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": ""
@@ -1389,9 +1389,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 7,
-   "source_count": 6,
-   "latest_evidence": "2026-09-28T21:11:43+02:00",
+   "evidence_count": 8,
+   "source_count": 7,
+   "latest_evidence": "2026-10-06T10:00:32+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1411,8 +1411,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -1432,6 +1432,15 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Plus, a £5.1m Hull winger is up to fourth in the FPL midfielder standings The post FPL notes: Wissa pen miss + Newcastle the new DefCon kings? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Newcastle United striker Yoane Wissa's DR Congo in new FIFA storm over ineligible player at World Cup",
+     "url": "https://www.fourfourtwo.com/team/newcastle-united-striker-yoane-wissas-dr-congo-in-new-fifa-storm-over-ineligible-player-at-world-cup",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-06T10:00:32+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": "FIFA has been drawn into fresh controversy following revelations that the governing body permitted the Democratic Republic of Congo to compete in the 2026 World Cup, despite internal findings that goalkeeper Lionel Mpasi was ineligible during qualifying. According to an investigation by the New York Times , internal FIFA reviews established that DR Congo breached eligibility rules regarding Mpasi,"
     },
     {
      "title": "Wissa stars as DR Congo spoil Zimbabwe homecoming in 2027 AFCON qualifying win",
@@ -1569,9 +1578,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 67,
+   "evidence_count": 68,
    "source_count": 19,
-   "latest_evidence": "2026-10-05T08:00:30+00:00",
+   "latest_evidence": "2026-10-06T08:03:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1596,6 +1605,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL GW6 Injury Updates: Gakpo, Palmer, Joao Pedro & Best Replacements",
+     "url": "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
+     "source": "RotoWire Soccer",
+     "published": "2026-10-06T08:03:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "Internationals: Joa's Denmark win against Wales",
      "url": "https://www.fulhamfc.com/news/2026/october/05/internationals-joas-denmark-win-against-wales/",
@@ -1691,15 +1709,6 @@
      "url": "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
      "source": "Soccerway",
      "published": "2026-09-18T17:54:55+02:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
-     "title": "FPL Tips: Joao Pedro & Anthony Elanga Injury Updates and Best Replacements for GW5",
-     "url": "https://www.rotowire.com/soccer/article/fpl-tips-joao-pedro-anthony-elanga-injury-updates-and-best-replacements-for-gw5-134689",
-     "source": "RotoWire Soccer",
-     "published": "2026-09-18T14:06:00+00:00",
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": ""
