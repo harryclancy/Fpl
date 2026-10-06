@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-06T12:04:11+00:00",
- "seconds": 143.6,
+ "ran_at": "2026-10-06T21:40:20+00:00",
+ "seconds": 162.9,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 628,
- "substantive_items": 255,
+ "sources_readable": 55,
+ "candidates_discovered": 638,
+ "substantive_items": 270,
  "duplicates_removed": 23,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18872,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 18788,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 255 articles"
+    "55/78 sources returned 270 articles"
    ]
   },
   "blackout": {
@@ -44,7 +44,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -53,12 +52,14 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -204,7 +205,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "source_count": 5,
    "latest_evidence": "2026-10-02T13:03:39+01:00",
    "official_source_found": true,
@@ -343,7 +344,7 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 4,
+   "evidence_count": 3,
    "source_count": 3,
    "latest_evidence": "2026-09-11T08:25:33+00:00",
    "official_source_found": false,
@@ -387,15 +388,6 @@
      "matched_on": "calafiori",
      "kind": "team news",
      "excerpt": "We dissect Champions League wins for Arsenal and Liverpool The post FPL notes: Calafiori rested, Gakpo, Barcola + White injury updates appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Forget right-backs in midfield, Arsenal’s five-on-two shows Chelsea’s system is the problem",
-     "url": "https://www.fourfourtwo.com/tactic/forget-right-backs-in-midfield-arsenals-five-on-two-shows-chelseas-system-is-the-problem",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-08T08:00:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "general",
-     "excerpt": "Lost in the noise that buzzes around Chelsea and Xabi Alonso is an obstacle that, to surmount, will require a radical rewriting of the Premier League tactical playbook. Alonso wants to challenge for honours using that so gauche, so ungodly formation: the dreaded three at the back. If you want to know what English football thinks of a 3-4-3 just ask Ruben Amorim’s ghost, which still haunts the Prem"
     },
     {
      "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
@@ -551,7 +543,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 19,
+   "evidence_count": 18,
    "source_count": 6,
    "latest_evidence": "2026-10-05T10:00:00+00:00",
    "official_source_found": true,
@@ -669,15 +661,6 @@
      "excerpt": "Manchester United reportedly suffer a fresh blow in their pursuit of Newcastle United left-back Lewis Hall and could now target one of his Magpies teammates."
     },
     {
-     "title": "Man Utd want to sign £70m Newcastle centre-back as Lewis Hall reaches final decision",
-     "url": "https://www.football365.com/news/manchester-united-newcastle-united-malick-thiaw-lewis-hall",
-     "source": "Football365",
-     "published": "2026-09-08T11:51:26+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Manchester United and Liverpool are competing to sign a Newcastle United defender in the summer of 2027."
-    },
-    {
      "title": "International Magpies: Wins for Hall, Steur and Bamba",
      "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
      "source": "Newcastle United",
@@ -685,6 +668,15 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "Ian Wright lauds England star for ‘proving his worth’ vs Czechia after ‘very unlucky’ World Cup snub",
+     "url": "https://www.football365.com/news/ian-wright-lauds-england-star-proving-worth-czechia-very-unlucky-world-cup-snub",
+     "source": "Football365",
+     "published": "2026-09-30T08:05:31+00:00",
+     "matched_on": "hall",
+     "kind": "general",
+     "excerpt": "Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England."
     }
    ]
   },
@@ -969,9 +961,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 32,
+   "evidence_count": 34,
    "source_count": 14,
-   "latest_evidence": "2026-10-04T15:18:38+00:00",
+   "latest_evidence": "2026-10-06T21:12:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1042,6 +1034,15 @@
      "excerpt": "FPL notes from the nine-goal thriller in west London The post FPL notes: Four Rogers assists, Palmer brace + Pedro rested appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "How Morgan Rogers went from £1m Middlesbrough signing to £117m British record at Chelsea",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
+     "source": "Sports Mole",
+     "published": "2026-10-06T21:06:56+01:00",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": "Chelsea signed Morgan Rogers for a British record £117m — the same player Man City sold to Middlesbrough for £1m in 2023 after failed loans at Bournemouth and Blackpool."
+    },
+    {
      "title": "Alejandro Garnacho could follow Aston Villa star in controversial exit: report",
      "url": "https://www.fourfourtwo.com/transfer/alejandro-garnacho-could-follow-aston-villa-star-in-controversial-exit-report",
      "source": "FourFourTwo FPL",
@@ -1087,29 +1088,20 @@
      "excerpt": ""
     },
     {
-     "title": "SHEFFIELD UNITED 1 TOWN 2",
-     "url": "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
-     "source": "Ipswich Town",
-     "published": "2026-10-04T15:18:38+00:00",
+     "title": "England player ratings from the 3-0 win over Czechia: Kane equals caps record, extends goals record",
+     "url": "https://www.football365.com/news/england-player-ratings-czechia-harry-kane-morgan-rogers-lewis-hall",
+     "source": "Football365",
+     "published": "2026-10-06T21:12:19+00:00",
      "matched_on": "rogers",
      "kind": "general",
-     "excerpt": "Fixtures Sheffield United Women Vs. Ipswich Town Women - Sun, Oct 4th 2026, 14:00 Town Women continued their fine start to the Barclays Women’s Super League 2 season with a 2-1 win away to Sheffield United. Goals from Megan Hornby and Princess Admeiluyi ensured the Blues remain unbeaten as a fine performance at both ends of the pitch earned the points at Bramall Lane. Hornby had Town’s first sight"
-    },
-    {
-     "title": "MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26",
-     "url": "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
-     "source": "DraftKings Network Soccer",
-     "published": "2026-09-25T17:20:33+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Orioles lefty Trevor Rogers, Tigers righty Jackson Jobe and Guardians righty Gavin Williams are among the starters set to take the mound Friday. Sam Connon shares his picks and predictions in regards to the three pitchers' strikeout prop bets. The post MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26 appeared first on DraftKings Network ."
+     "excerpt": "Harry Kane marked his record-equalling 125th England cap with a couple of record-extending goals as England swatted Czechia aside."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 49,
    "source_count": 16,
    "latest_evidence": "2026-10-06T08:03:00+00:00",
    "official_source_found": true,
@@ -1249,7 +1241,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 113,
+   "evidence_count": 112,
    "source_count": 16,
    "latest_evidence": "2026-10-06T10:41:56+00:00",
    "official_source_found": true,
