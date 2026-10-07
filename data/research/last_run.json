@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-07T02:26:50+00:00",
- "seconds": 123.5,
+ "ran_at": "2026-10-07T11:49:51+00:00",
+ "seconds": 137.0,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 519,
- "substantive_items": 144,
- "duplicates_removed": 5,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 18771,
+ "sources_readable": 58,
+ "candidates_discovered": 615,
+ "substantive_items": 249,
+ "duplicates_removed": 25,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18766,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 144 articles"
+    "58/78 sources returned 249 articles"
    ]
   },
   "blackout": {
@@ -54,8 +54,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: nothing published in the last 10 days",
-  "Premier Injuries: nothing published in the last 10 days",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
  ],
@@ -543,7 +542,7 @@
    "club": "NEW",
    "evidence_count": 17,
    "source_count": 6,
-   "latest_evidence": "2026-10-05T10:00:00+00:00",
+   "latest_evidence": "2026-10-07T08:40:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -650,10 +649,10 @@
      "excerpt": "Manchester United have suffered a major setback in their pursuit of Lewis Hall, with the Newcastle United left‑back now set to sign a new long‑term contract that will keep him at St James’ Park."
     },
     {
-     "title": "International Magpies: Wins for Hall, Steur and Bamba",
+     "title": "International Magpies: Hall's England defeat Horníček's Czechia",
      "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
      "source": "Newcastle United",
-     "published": "2026-10-05T10:00:00+00:00",
+     "published": "2026-10-07T08:40:00+00:00",
      "matched_on": "hall",
      "kind": "general",
      "excerpt": ""
@@ -1099,9 +1098,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 50,
    "source_count": 16,
-   "latest_evidence": "2026-10-06T08:03:00+00:00",
+   "latest_evidence": "2026-10-07T10:58:50+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1126,6 +1125,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury, suspension list and return dates vs. Bournemouth: Reece James, Moises Caicedo, Cole Palmer, Joao Pedro latest",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
+     "source": "Sports Mole",
+     "published": "2026-10-07T10:58:50+01:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Saturday's Premier League fixture against Bournemouth."
+    },
     {
      "title": "FPL GW6 Injury Updates: Gakpo, Palmer, Joao Pedro & Best Replacements",
      "url": "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
@@ -1224,24 +1232,15 @@
      "matched_on": "palmer",
      "kind": "team news",
      "excerpt": "Five Premier League matches kick off at 3pm BST The post 3pm team news: Pedro, Palmer + Rogers start as expected appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Zopharâs Gameweek 4 Q&A: City rotation, Triple Captain Palmer, are three Chelsea players essential?",
-     "url": "https://www.fantasyfootballhub.co.uk/zophars-fpl-gameweek-4-questions-article-26-27",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-10T18:00:35+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "FPL Gameweek 4 is fast approaching â and FPL Wire co-host Zophar is on hand to answer some of the biggest questions ahead of the deadline. This week, he covers City rotation, Triple Captain Palmer, and whether three Chelsea players is essentialÂ among other FPL tips. Check out our Ultimate Guide to FPL for all our […]"
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 107,
+   "evidence_count": 111,
    "source_count": 16,
-   "latest_evidence": "2026-10-06T10:41:56+00:00",
+   "latest_evidence": "2026-10-07T11:26:34+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1568,9 +1567,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 67,
+   "evidence_count": 69,
    "source_count": 19,
-   "latest_evidence": "2026-10-06T08:03:00+00:00",
+   "latest_evidence": "2026-10-07T10:58:50+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1595,6 +1594,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury, suspension list and return dates vs. Bournemouth: Reece James, Moises Caicedo, Cole Palmer, Joao Pedro latest",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
+     "source": "Sports Mole",
+     "published": "2026-10-07T10:58:50+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Saturday's Premier League fixture against Bournemouth."
+    },
     {
      "title": "FPL GW6 Injury Updates: Gakpo, Palmer, Joao Pedro & Best Replacements",
      "url": "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
@@ -1693,15 +1701,6 @@
      "matched_on": "pedro",
      "kind": "team news",
      "excerpt": "Two changes for Brentford, five for Chelsea The post Brentford v Chelsea team news: Sangare benched, no Pedro appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Who's Missing: Chelsea's Joao Pedro injured, Foden suspended for Man City",
-     "url": "https://www.soccerway.com/news/who-s-missing-chelsea-s-joao-pedro-injured-foden-suspended-for-man-city/OUsVWeAt/",
-     "source": "Soccerway",
-     "published": "2026-09-18T17:54:55+02:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": ""
     }
    ]
   },
