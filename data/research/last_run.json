@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-07T11:49:51+00:00",
- "seconds": 137.0,
+ "ran_at": "2026-10-07T22:02:15+00:00",
+ "seconds": 136.1,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 615,
- "substantive_items": 249,
- "duplicates_removed": 25,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18766,
+ "sources_readable": 59,
+ "candidates_discovered": 693,
+ "substantive_items": 310,
+ "duplicates_removed": 28,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 18720,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 249 articles"
+    "59/78 sources returned 310 articles"
    ]
   },
   "blackout": {
@@ -37,7 +37,7 @@
   }
  },
  "failures": [
-  "Fantasy Football Hub: nothing published in the last 10 days",
+  "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "Fantasy Football 247: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
@@ -47,7 +47,6 @@
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
-  "FPLai: nothing published in the last 10 days",
   "FPL Ranker: nothing published in the last 10 days",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
@@ -540,7 +539,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 17,
+   "evidence_count": 16,
    "source_count": 6,
    "latest_evidence": "2026-10-07T08:40:00+00:00",
    "official_source_found": true,
@@ -640,15 +639,6 @@
      "excerpt": "Romano has revealed Man Utd could still snare top left-back target Hall even though he has agreed to pen a new contract with Newcastle"
     },
     {
-     "title": "Man Utd transfer news: Red Devils dealt 'hammer blow' over top January target as huge update emerges",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-utd-dealt-hammer-blow-over-top-january-transfer-target-as-huge-update-emerges_604755.html",
-     "source": "Sports Mole",
-     "published": "2026-09-09T07:14:40+01:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Manchester United have suffered a major setback in their pursuit of Lewis Hall, with the Newcastle United left‑back now set to sign a new long‑term contract that will keep him at St James’ Park."
-    },
-    {
      "title": "International Magpies: Hall's England defeat Horníček's Czechia",
      "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
      "source": "Newcastle United",
@@ -674,6 +664,15 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": "England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer."
+    },
+    {
+     "title": "‘I always knew I wanted to play here’ Lewis Hall ‘buzzing’ after committing future to Newcastle United",
+     "url": "https://www.fourfourtwo.com/person/player/i-always-knew-i-wanted-to-play-here-lewis-hall-buzzing-after-committing-future-to-newcastle-united",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-21T10:06:05+00:00",
+     "matched_on": "hall",
+     "kind": "general",
+     "excerpt": "This past summer was in equal parts harrowing and exciting for Newcastle United fans, with the first phase of the Saudi Arabian-backed project coming to an abrupt end at St James’ Park. Newcastle ’s three most valuable assets - Anthony Gordon, Bruno Guimaraes and Sandro Tonali - all departed for huge profits as the club embarked on a new trading model to help combat financial restrictions. On top "
     }
    ]
   },
@@ -1098,9 +1097,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 51,
    "source_count": 16,
-   "latest_evidence": "2026-10-07T10:58:50+01:00",
+   "latest_evidence": "2026-10-07T12:53:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1238,9 +1237,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 111,
+   "evidence_count": 112,
    "source_count": 16,
-   "latest_evidence": "2026-10-07T11:26:34+00:00",
+   "latest_evidence": "2026-10-07T14:40:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1482,8 +1481,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-10-06T14:45:00+01:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-07T10:53:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1497,7 +1496,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1508,6 +1506,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Man United: Micky van de Ven, Pedro Porro, Jan Paul van Hecke latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/van-de-ven-porro-van-hecke-updates-spurs-injury-suspension-list-vs-man-united_606369.html",
+     "source": "Sports Mole",
+     "published": "2026-10-07T10:53:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of Saturday's Premier League clash with Manchester United."
+    },
+    {
+     "title": "Man United injury, suspension list and return dates vs. Tottenham: Benjamin Sesko, Marcus Rashford, Kobbie Mainoo latest",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/injuries-and-suspensions/sesko-rashford-mainoo-latest-man-united-injury-suspension-list-vs-spurs_606367.html",
+     "source": "Sports Mole",
+     "published": "2026-10-07T10:34:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up Manchester United's injury and suspension list ahead of Saturday's Premier League match against Tottenham Hotspur."
+    },
+    {
+     "title": "Manchester United vs Tottenham Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/manchester-united-vs-tottenham-prediction-predicted-lineups-team-news-139322",
+     "source": "RotoWire Soccer",
+     "published": "2026-10-07T08:03:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Man United injury news: Red Devils must 'assess fitness' of nine players ahead of Tottenham showdown",
      "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/nine-man-united-players-facing-fitness-tests-ahead-of-spurs-showdown_606332.html",
@@ -1527,33 +1552,6 @@
      "excerpt": "Micky van de Ven's injury he picked up on international duty is not believed to be too serious."
     },
     {
-     "title": "Tottenham Hotspur have lost BOTH starting centre-backs to injury: report",
-     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-have-lost-both-starting-centre-backs-to-injury-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-05T14:16:07+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur have suffered a nightmare scenario of both Micky van de Ven and Jan Paul van Hecke going off injured. Tottenham are still winless in the Premier League – but according to reports relayed by Sport Witness , they have been given scares by the Dutch duo, who both featured heavily in new manager Xavi Hernandez's first few fixtures as manager. Fortunately, it appears as if both of the"
-    },
-    {
-     "title": "Tottenham, Napoli and more: the teams with the worst starts to the European season",
-     "url": "https://www.sportsmole.co.uk/football/spurs/news/tottenham-napoli-and-more-the-teams-with-the-worst-starts-to-the-european-season_606269.html",
-     "source": "Sports Mole",
-     "published": "2026-10-05T14:00:17+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur are bottom of the Premier League, but they are not the only big European club struggling. We look at the worst starts to the season."
-    },
-    {
-     "title": "Tottenham receive double injury boost before Man United as Micky van de Ven, Jan Paul van Hecke updates delivered",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/double-dutch-spurs-receive-van-hecke-van-de-ven-injury-updates-before-man-utd_606248.html",
-     "source": "Sports Mole",
-     "published": "2026-10-05T10:15:02+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur receive a new double injury update on Jan Paul van Hecke and Micky van de Ven before this weekend's Premier League showdown with Manchester United."
-    },
-    {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
      "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
      "source": "FourFourTwo FPL",
@@ -1569,7 +1567,7 @@
    "club": "CHE",
    "evidence_count": 69,
    "source_count": 19,
-   "latest_evidence": "2026-10-07T10:58:50+01:00",
+   "latest_evidence": "2026-10-07T17:35:30+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1708,8 +1706,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-10-03T17:55:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-07T07:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1724,6 +1722,7 @@
     "injury",
     "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1741,6 +1740,15 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+    },
+    {
+     "title": "Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/07/brighton-players-saka-bruno-buy-keep-or-sell-in-gameweek-6",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-07T07:30:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "The FPL half-term report: Brighton",
@@ -1768,15 +1776,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "🎬 Brighton v Spurs | Arturo Ruiz pre match press conference"
-    },
-    {
-     "title": "London City Lionesses W vs Brighton & Hove Albion Women - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/london-city-lionesses-w/preview/london-city-lionesses-w-vs-brighton-prediction-team-news-lineups_605753.html",
-     "source": "Sports Mole",
-     "published": "2026-09-24T23:26:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Women's Super League clash between London City Lionesses W and Brighton & Hove Albion Women, including predictions, team news and possible lineups."
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
