@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-08T12:04:46+00:00",
- "seconds": 148.7,
+ "ran_at": "2026-10-08T22:08:38+00:00",
+ "seconds": 173.4,
  "sources_attempted": 78,
  "sources_readable": 59,
- "candidates_discovered": 639,
- "substantive_items": 260,
- "duplicates_removed": 15,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 18716,
+ "candidates_discovered": 698,
+ "substantive_items": 318,
+ "duplicates_removed": 31,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 18620,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 260 articles"
+    "59/78 sources returned 318 articles"
    ]
   },
   "blackout": {
@@ -38,12 +38,12 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "Fantasy Football 247: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -818,7 +818,7 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 12,
+   "evidence_count": 11,
    "source_count": 6,
    "latest_evidence": "2026-10-04T11:00:04+00:00",
    "official_source_found": true,
@@ -942,23 +942,14 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Everton Icon Cahill To Return Alongside Brazil Great Rivaldo At Hill Dickinson Stadium",
-     "url": "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium/",
-     "source": "Everton",
-     "published": "2026-09-10T08:59:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Everton icon Tim Cahill is set to grace Hill Dickinson Stadium as captain of Team Merseyside at #Game4Hope . And the Blues favourite is going head-to-head with Ballon d’Or and World Cup winner Rivaldo at the star-studded charity game on Saturday 26 September (4.45pm BST kick-off). An all-star Merseyside XI made up of Everton and Liverpool legends takes on a Rest of the World XI as football unites "
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 33,
-   "source_count": 14,
+   "evidence_count": 32,
+   "source_count": 13,
    "latest_evidence": "2026-10-06T21:12:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1237,9 +1228,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 108,
-   "source_count": 17,
-   "latest_evidence": "2026-10-08T09:00:00+00:00",
+   "evidence_count": 112,
+   "source_count": 18,
+   "latest_evidence": "2026-10-08T20:59:18+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1364,13 +1355,13 @@
      "excerpt": "FF247 Site Team News GW4 Welcome to FF247 Site Team GW4 GW3 – Triple Captain. Red Arrow. Obviously. Despite playing our Triple Captain, we somehow still ended the week staring at a red arrow. To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, […] The post FF247 Site Team News GW4 appeared first on Fantasy Football 247 - Premier League "
     },
     {
-     "title": "Julian Alvarez to Arsenal: Atletico Madrid forward 'makes U-turn' as Erling Haaland 'factor' comes to light",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/alvarez-makes-arsenal-u-turn-as-stunning-haaland-factor-comes-to-light_606412.html",
-     "source": "Sports Mole",
-     "published": "2026-10-08T01:17:13+01:00",
+     "title": "Erling Haaland gives transfer ‘green light’ after Man City FFP verdict as Euro giants ‘sent exact figures’",
+     "url": "https://www.football365.com/news/erling-haaland-transfer-green-light-man-city-ffp-verdict-euro-giants-sent-exact-figures",
+     "source": "Football365",
+     "published": "2026-10-08T20:59:18+00:00",
      "matched_on": "haaland",
      "kind": "transfer",
-     "excerpt": "Julian Alvarez reportedly reconsiders Arsenal move, and major Erling Haaland factor may have influenced change of heart."
+     "excerpt": "According to reports, three European giants are in the running to sign Manchester City star Erling Haaland, who has given the ‘green light’."
     }
    ]
   },
@@ -1481,8 +1472,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-07T10:53:00+01:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-08T12:03:16+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1496,6 +1487,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1507,49 +1499,49 @@
    "researched": true,
    "items": [
     {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Man United: Micky van de Ven, Pedro Porro, Jan Paul van Hecke latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/van-de-ven-porro-van-hecke-updates-spurs-injury-suspension-list-vs-man-united_606369.html",
+     "title": "Spurs Back in Action vs. Hawks: Preview, How to Watch Preseason Opener",
+     "url": "https://www.si.com/nba/spurs/onsi/san-antonio-spurs-back-in-action-vs-hawks-preview-how-to-watch-preseason-opener?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-08T12:03:16+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "The San Antonio Spurs return to the floor against the Atlanta Hawks with a slightly new roster, unsettled lineups and championship expectations still driving them."
+    },
+    {
+     "title": "The FPL half-term report: Spurs",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/08/the-fpl-half-term-report-spurs",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-08T10:10:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Spurs’ FPL season so far and the best assets to consider - if any! The post The FPL half-term report: Spurs appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Tottenham team news: Dejan Kulusevski makes 'comeback' after 515 days out in huge injury boost",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/515-days-later-kulusevski-makes-spurs-comeback-before-man-united_606447.html",
      "source": "Sports Mole",
-     "published": "2026-10-07T10:53:00+01:00",
+     "published": "2026-10-08T11:06:00+01:00",
      "matched_on": "TOT team news",
      "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of Saturday's Premier League clash with Manchester United."
+     "excerpt": "Tottenham Hotspur receive a huge injury boost before facing Manchester United this weekend as Dejan Kulusevski makes his Spurs 'comeback' after 515 days out."
     },
     {
-     "title": "Man United injury, suspension list and return dates vs. Tottenham: Benjamin Sesko, Marcus Rashford, Kobbie Mainoo latest",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/injuries-and-suspensions/sesko-rashford-mainoo-latest-man-united-injury-suspension-list-vs-spurs_606367.html",
+     "title": "Tottenham lineup vs. Man United: Predicted XI for Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/defensive-dilemmas-for-de-zerbi-predicted-spurs-lineup-vs-man-utd_606420.html",
      "source": "Sports Mole",
-     "published": "2026-10-07T10:34:00+01:00",
+     "published": "2026-10-08T10:35:00+01:00",
      "matched_on": "TOT team news",
      "kind": "club team news",
-     "excerpt": "Sports Mole rounds up Manchester United's injury and suspension list ahead of Saturday's Premier League match against Tottenham Hotspur."
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday’s Premier League clash with Manchester United."
     },
     {
-     "title": "Manchester United vs Tottenham Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/manchester-united-vs-tottenham-prediction-predicted-lineups-team-news-139322",
-     "source": "RotoWire Soccer",
-     "published": "2026-10-07T08:03:00+00:00",
+     "title": "Worst Premier League starts ever made by the Big Six: Lads, it’s Tottenham",
+     "url": "https://www.football365.com/news/worst-starts-premier-league-season-by-big-six",
+     "source": "Football365",
+     "published": "2026-10-08T07:22:00+00:00",
      "matched_on": "TOT team news",
      "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Man United injury news: Red Devils must 'assess fitness' of nine players ahead of Tottenham showdown",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/nine-man-united-players-facing-fitness-tests-ahead-of-spurs-showdown_606332.html",
-     "source": "Sports Mole",
-     "published": "2026-10-06T14:45:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Manchester United will reportedly need to assess the fitness of nine players ahead of Saturday's Premier League contest with Tottenham Hotspur."
-    },
-    {
-     "title": "Tottenham handed Micky van de Ven injury boost ahead of Manchester United clash",
-     "url": "https://www.101greatgoals.com/football/premier-league/tottenham-micky-van-de-ven-injury-boost/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-05T16:59:19+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Micky van de Ven's injury he picked up on international duty is not believed to be too serious."
+     "excerpt": "Shocking starts for the Big Six are not unheard of, with each of them having had a stinker in the 34 years since the Premier League began."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
@@ -1565,7 +1557,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 69,
+   "evidence_count": 68,
    "source_count": 19,
    "latest_evidence": "2026-10-07T17:35:30+00:00",
    "official_source_found": true,
