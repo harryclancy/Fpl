@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-09T02:58:24+00:00",
- "seconds": 134.2,
+ "ran_at": "2026-10-09T11:56:43+00:00",
+ "seconds": 161.4,
  "sources_attempted": 78,
  "sources_readable": 59,
- "candidates_discovered": 534,
- "substantive_items": 160,
- "duplicates_removed": 4,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18613,
+ "candidates_discovered": 629,
+ "substantive_items": 259,
+ "duplicates_removed": 22,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 18593,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 160 articles"
+    "59/78 sources returned 259 articles"
    ]
   },
   "blackout": {
@@ -38,12 +38,11 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Fantasy Football 247: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
+  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,6 +50,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -342,7 +342,7 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-10-08T20:08:04+00:00",
+   "latest_evidence": "2026-10-09T07:19:37+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -380,7 +380,7 @@
      "title": "Arsenal v Leeds: Preview, expected line-ups, stats and where to watch",
      "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/arsenal-leeds-preview-stats/",
      "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-08T20:08:04+00:00",
+     "published": "2026-10-09T07:19:37+00:00",
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "The Gunners were stunned at Brighton before the international break."
@@ -1255,9 +1255,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 112,
+   "evidence_count": 116,
    "source_count": 18,
-   "latest_evidence": "2026-10-09T00:42:00+01:00",
+   "latest_evidence": "2026-10-09T11:44:07+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1282,6 +1282,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Haaland fit for trip to Liverpool, says Maresca",
+     "url": "https://www.mancity.com/news/mens/enzo-maresca-liverpool-v-manchester-city-team-news-update-63927129",
+     "source": "Manchester City",
+     "published": "2026-10-09T11:15:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "Erling Haaland injury update: Latest on Manchester City star ahead of huge game at Liverpool",
      "url": "https://www.nbcsports.com/soccer/news/erling-haaland-injury-update-latest-on-manchester-city-star-ahead-of-huge-game-at-liverpool",
@@ -1380,15 +1389,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "FF247 Site Team News GW4 Welcome to FF247 Site Team GW4 GW3 – Triple Captain. Red Arrow. Obviously. Despite playing our Triple Captain, we somehow still ended the week staring at a red arrow. To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, […] The post FF247 Site Team News GW4 appeared first on Fantasy Football 247 - Premier League "
-    },
-    {
-     "title": "Erling Haaland gives transfer ‘green light’ after Man City FFP verdict as Euro giants ‘sent exact figures’",
-     "url": "https://www.football365.com/news/erling-haaland-transfer-green-light-man-city-ffp-verdict-euro-giants-sent-exact-figures",
-     "source": "Football365",
-     "published": "2026-10-08T20:59:18+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "According to reports, three European giants are in the running to sign Manchester City star Erling Haaland, who has given the ‘green light’."
     }
    ]
   },
@@ -1724,9 +1724,9 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-07T07:30:00+00:00",
+   "evidence_count": 3,
+   "source_count": 3,
+   "latest_evidence": "2026-10-09T10:25:07+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1740,17 +1740,24 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "FF247 Site Team News GW6",
+     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw6-2/",
+     "source": "Fantasy Football 247",
+     "published": "2026-10-09T10:25:07+00:00",
+     "matched_on": "gro",
+     "kind": "team news",
+     "excerpt": "FF247 Site Team News GW6 Welcome to FF247 Site Team News GW6 I feel we’ve turned point dodging into an art form. We finished on 42 points against an average of 48, and one look at the team makes it fairly easy to work out where things went wrong. Pascal Groß (14pts) was once again […] The post FF247 Site Team News GW6 appeared first on Fantasy Football 247 - Premier League Tips ."
+    },
     {
      "title": "Clark signs first professional contract with Villa",
      "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
@@ -1759,42 +1766,6 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
-    },
-    {
-     "title": "Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/07/brighton-players-saka-bruno-buy-keep-or-sell-in-gameweek-6",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-07T07:30:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "The FPL half-term report: Brighton",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/03/the-fpl-half-term-report-brighton",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-03T17:55:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "With three wins and one draw, Brighton sit third in the table The post The FPL half-term report: Brighton appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Brighton v Charlton Athletic | Arturo Ruiz pre match press conference",
-     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-charlton-or-arturo-ruiz-pre-match-press-conference",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-10-02T14:00:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "🎬 Brighton v Charlton Athletic | Arturo Ruiz pre match press conference"
-    },
-    {
-     "title": "Brighton v Spurs | Arturo Ruiz pre match press conference",
-     "url": "https://www.brightonandhovealbion.com/media-video/brighton-v-spurs-or-arturo-ruiz-pre-match-press-conference",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-09-29T17:00:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "🎬 Brighton v Spurs | Arturo Ruiz pre match press conference"
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
