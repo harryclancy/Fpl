@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-08T22:08:38+00:00",
+ "generated": "2026-10-09T02:58:24+00:00",
  "gameweek": 6,
- "corpus_size": 18620,
+ "corpus_size": 18613,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -416,26 +416,49 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "status": "Latest on Calafiori — FourFourTwo FPL, 11 Sep: “Riccardo Calafiori and Ezri Konsa give double Arsenal coverage in the best defensive unit in the league, with Konsa remaining an absolute steal following the Mosquera injury situation.”",
-   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 11 Sep.",
-   "case_for": "Nothing retrieved this cycle makes a positive case for him. The evidence found is all cautionary.",
+   "status": "Latest on Calafiori — Fantasy Football Scout, 08 Oct: “I’d probably opt for David Raya (£6.1m) and Riccardo Calafiori (£5.8m) on a Wildcard.”",
+   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 08 Oct.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 08 Oct: “It’s still unclear if Ezri Konsa (£4.6m) will play in Gameweek 6, but if he’s passed fit to start, I don’t mind pairing him with Calafiori either.”",
    "case_against": "What argues against him: FourFourTwo FPL, 11 Sep: “Riccardo Calafiori and Ezri Konsa give double Arsenal coverage in the best defensive unit in the league, with Konsa remaining an absolute steal following the Mosquera injury situation.”",
-   "expected_minutes": "On minutes — FourFourTwo FPL, 11 Sep: “Riccardo Calafiori and Ezri Konsa give double Arsenal coverage in the best defensive unit in the league, with Konsa remaining an absolute steal following the Mosquera injury situation.”",
-   "developments": "Recent developments — FourFourTwo FPL, 11 Sep: “Riccardo Calafiori and Ezri Konsa give double Arsenal coverage in the best defensive unit in the league, with Konsa remaining an absolute steal following the Mosquera injury situation.”",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 3,
+   "evidence_count": 6,
    "evidence_used": [
     "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-    "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-calafiori-rested-gakpo-barcola-white-injury-updates",
+    "https://www.101greatgoals.com/match-previews/premier-league-matches/arsenal-leeds-preview-stats/",
+    "https://www.football365.com/news/viktor-gyokeres-reaches-clear-decision-leaving-arsenal-update-kai-havertz-injury",
+    "https://www.fantasyfootballscout.co.uk/2026/10/08/best-arsenal-triple-up-what-to-do-with-man-city-players-fpl-qa",
+    "https://www.football365.com/match-preview/arsenal-v-leeds-prediction-preview",
     "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
     "FPL Captain",
     "Fantasy Football Scout",
+    "Football365",
     "FourFourTwo FPL"
    ],
    "quotes": [
+    {
+     "text": "I’d probably opt for David Raya (£6.1m) and Riccardo Calafiori (£5.8m) on a Wildcard.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/08/best-arsenal-triple-up-what-to-do-with-man-city-players-fpl-qa",
+     "published": "2026-10-08T15:40:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "It’s still unclear if Ezri Konsa (£4.6m) will play in Gameweek 6, but if he’s passed fit to start, I don’t mind pairing him with Calafiori either.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/08/best-arsenal-triple-up-what-to-do-with-man-city-players-fpl-qa",
+     "published": "2026-10-08T15:40:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Riccardo Calafiori and Ezri Konsa give double Arsenal coverage in the best defensive unit in the league, with Konsa remaining an absolute steal following the Mosquera injury situation.",
      "source": "FourFourTwo FPL",
@@ -452,14 +475,14 @@
    "player": "Konsa",
    "club": "ARS",
    "status": "Latest on Konsa — Sports Mole, 28 Sep: “Focusing on the centre of the back four for a moment, Konsa has sustained an injury issue which also makes him a doubt for Tuesday night, meaning that Marc Guehi may require a new partner at centre-back.” FourFourTwo FPL, 11 Sep: “Riccardo Calafiori and Ezri Konsa give double Arsenal coverage in the best defensive unit in the league, with Konsa remaining an absolute steal following the Mosquera injury situation.”",
-   "why_here": "Konsa is in the starting eleven this week at £4.6m as a DEF. The selection rests on 15 retrieved item(s) from 6 source(s), the most recent dated 07 Oct.",
+   "why_here": "Konsa is in the starting eleven this week at £4.6m as a DEF. The selection rests on 14 retrieved item(s) from 6 source(s), the most recent dated 07 Oct.",
    "case_for": "What supports keeping him: Sports Mole, 05 Oct: “Konsa started two of England's first three matches in the current international break, playing the full 90 in the 3-2 loss to Spain and 7-0 thumping of Croatia, either side of being an unused substitute in the 2-0 win over Czechia.” Fantasy Football Scout, 05 Oct: “KONSA RETURNS TO ARSENAL It’s been a rollercoaster international break for Ezri Konsa (£4.6m) and his owners in Fantasy Premier League (FPL).” Sports Mole, 02 Oct: “Arsenal and England fans will be pleased to hear that Konsa is already back in training and should be ready for the fixture in Rijeka. © Iconsport / PA Images England receive Konsa fitness boost Speaking at Friday's press conference, Tuchel said: \"It seems that Ezri Konsa is back.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Ezri Konsa © Imago / Sportimage Status: Major doubt Type of injury: Thigh Possible return date: October 10 (vs. Leeds) Ezri Konsa left the England camp to have treatment after taking another hit to his quad, and while Thomas Tuchel played down any serious concern, he did not want to risk the defender playing on through the pain.” Fantasy Football Scout, 05 Oct: “Konsa was sidelined ( as a non-playing substitute ) for last Tuesday’s win over Czechia with a muscular niggle.” FourFourTwo FPL, 05 Oct: “Konsa was brought to the Emirates Stadium to provide defensive reinforcement following a long-term back injury to star centre-back William Saliba.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 02 Oct: “Konsa sat out the midweek win over the Czech Republic as an unused substitute due to a minor injury issue.” Sports Mole, 28 Sep: “Carter White 28 Sep 2026 15:48 © Iconsport / PA Images England defenders Ezri Konsa and Nico O'Reilly have reportedly picked up injury problems ahead of Tuesday's trip to face the Czech Republic Thomas Tuchel 's troops head to Prague in the UEFA Nations League for their second match of the group, with the Three Lions losing their opening game of the section at Wembley Stadium on Saturday night.”",
    "developments": "Recent developments — Sports Mole, 05 Oct: “England released a statement on Monday morning confirming that Konsa and Bournemouth midfielder Alex Scott had both pulled out of the squad ahead of Tuesday's UEFA Nations League clash with the Czech Republic.” FourFourTwo FPL, 05 Oct: “The decision to release Konsa back to London is understood to be primarily a precautionary measure, aimed at preventing a minor issue from worsening.” Fantasy Football Scout, 30 Sep: “If nothing happens in training today, Bruno will play in the Denmark game.” – Portugal boss Jorge Jesus, speaking on Wednesday EZRI KONSA + NICO O’REILLY LATEST Nico O’Reilly (£6.3m) missed England’s win over Czechia on Tuesday, while Ezri Konsa (£4.6m) remained unused on the bench.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 10 Sep: “Konsa banked defensive contribution (DefCon) points in Gameweek 3, and I fully expect clean sheets to follow soon.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 15,
+   "evidence_count": 14,
    "evidence_used": [
     "https://www.football365.com/news/england-defence-tempers-expectations-mailbox",
     "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-havertz-tzolis-konsa-latest-arsenal-injury-suspension-list-vs-leeds_606408.html",
@@ -472,7 +495,7 @@
     "https://www.sportsmole.co.uk/football/england/injury-news/news/defensive-issues-worsen-with-england-duo-major-doubts-for-czech-republic-trip_605927.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/11/white-timber-mosquera-arsenal-injury-latest-for-fpl-gameweek-4",
     "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-    "https://www.fantasyfootballscout.co.uk/2026/09/10/gakpo-v-rogers-v-mgw-top-everton-picks-buy-konsa-fpl-qa"
+    "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article"
    ],
    "sources_used": [
     "Fantasy Football Hub",
@@ -666,26 +689,6 @@
      "topics": [
       "injury"
      ]
-    },
-    {
-     "text": "Via Pompel A: I don’t think people realise just how good Ezri Konsa (£4.4m) is.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/gakpo-v-rogers-v-mgw-top-everton-picks-buy-konsa-fpl-qa",
-     "published": "2026-09-10T19:30:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Konsa banked defensive contribution (DefCon) points in Gameweek 3, and I fully expect clean sheets to follow soon.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/gakpo-v-rogers-v-mgw-top-everton-picks-buy-konsa-fpl-qa",
-     "published": "2026-09-10T19:30:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "suspension",
-      "statistics",
-      "fixtures"
-     ]
     }
    ]
   },
@@ -693,14 +696,14 @@
    "player": "Hall",
    "club": "NEW",
    "status": "Latest on Hall — Newcastle United, 07 Oct: “Lewis Hall and Tino Livramento The defensive duo were initially named in the England squad ahead of four UEFA Nations League Group Stage fixtures.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 16 retrieved item(s) from 6 source(s), the most recent dated 07 Oct.",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 13 retrieved item(s) from 5 source(s), the most recent dated 07 Oct.",
    "case_for": "What supports keeping him: Newcastle United, 07 Oct: “Hall grabbed an assist for the Three Lions captain, earning a record-equalling 125th senior cap, before being substituted in the 71st minute.” Sports Mole, 22 Sep: “The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.” Football365, 22 Sep: “Hall is back in the England squad after making a strong start to the 2026/27 campaign.”",
    "case_against": "What argues against him: FourFourTwo FPL, 21 Sep: “Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.” FourFourTwo FPL, 12 Sep: “But as Hall ’s message to Newcastle supporters inferred: “There’s never been a moment where I doubted how much I love being here,” — the Red Devils never stood a chance.” FourFourTwo FPL, 12 Sep: “In his own words, Hall is a born-and-bred Toon fan, albeit having grown up in the South, and his future with Newcastle was never in doubt.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
    "developments": "Recent developments — Football365, 30 Sep: “Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England.” Football365, 30 Sep: “Hall was unlucky not to make Thomas Tuchel’ s England squad for this summer’s World Cup, but he’s been recalled for this international break.” Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 16,
+   "evidence_count": 13,
    "evidence_used": [
     "https://www.fourfourtwo.com/transfer/what-manchester-united-didnt-realise-about-gbp35m-transfer-target-and-why-they-never-stood-a-chance",
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
@@ -709,14 +712,13 @@
     "https://www.football365.com/news/adrien-truffert-manchester-united-bournemouth",
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-uniteds-hall-position-explained-as-newcastle-announce-new-deal-for-defensive-star_604946.html",
     "https://www.soccerway.com/news/really-proud-moment-lewis-hall-signs-long-term-deal-with-newcastle-united/bu6ZDU8s/",
-    "https://www.football365.com/news/man-utd-news-lewis-hall-move-fabrizio-romano-still-on-new-newcastle-contract",
     "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
     "https://www.football365.com/news/ian-wright-lauds-england-star-proving-worth-czechia-very-unlucky-world-cup-snub",
     "https://www.football365.com/news/man-utd-target-lewis-hall-claims-leave-newcastle-one-condition-no-brainer-decision",
-    "https://www.fourfourtwo.com/person/player/i-always-knew-i-wanted-to-play-here-lewis-hall-buzzing-after-committing-future-to-newcastle-united"
+    "https://www.fourfourtwo.com/person/player/i-always-knew-i-wanted-to-play-here-lewis-hall-buzzing-after-committing-future-to-newcastle-united",
+    "https://www.football365.com/news/newcastle-shearer-reveals-issue-lewis-hall-man-utd"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "Football365",
     "FourFourTwo FPL",
     "Newcastle United",
@@ -912,26 +914,6 @@
      "topics": [
       "transfer"
      ]
-    },
-    {
-     "text": "The reason for Lewis Hall signing a new contract at Newcastle United has surfaced, while Manchester United have hope of landing him.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/jacobs-reveals-main-reason-hall-contract-decision-man-utd-newcastle",
-     "published": "2026-09-10T17:15:31+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Romano has revealed Man Utd could still snare top left-back target Hall even though he has agreed to pen a new contract with Newcastle",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/man-utd-news-lewis-hall-move-fabrizio-romano-still-on-new-newcastle-contract",
-     "published": "2026-09-10T14:46:19+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
     }
    ]
   },
@@ -939,14 +921,14 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — FourFourTwo FPL, 19 Sep: “I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai.”",
-   "why_here": "Szoboszlai is in the starting eleven this week at £6.9m as a MID. The selection rests on 15 retrieved item(s) from 6 source(s), the most recent dated 02 Oct.",
+   "why_here": "Szoboszlai is in the starting eleven this week at £6.9m as a MID. The selection rests on 14 retrieved item(s) from 6 source(s), the most recent dated 02 Oct.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.” FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.” FourFourTwo FPL, 29 Sep: “The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park.”",
    "case_against": "What argues against him: 101 Great Goals — Fantasy, 16 Sep: “Alexis Mac Allister and Cody Gakpo had put Liverpool ahead before Tottenham threatened a comeback, but Szoboszlai’s finish ended any doubt and secured Liverpool’s place in the fourth round.” OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Scout, 16 Sep: “Mac Allister later helped create another big opening for Szoboszlai with Liverpool’s press, making this a timely reminder of his qualities as he pushes to regain his league starting spot.” Fantasy Football Scout, 16 Sep: ““Cody gives us not just the goals and the assists, he gives us also some physicality, he gives us calmness on the ball.” – Andoni Iraola Dominik Szoboszlai (£7.0m) only played the final 28 minutes but still made his mark.” 101 Great Goals — Fantasy, 16 Sep: “Szoboszlai came off the bench to settle the tie with a long-range effort from around 30 yards.”",
    "outlook": "On the coming weeks — Football365, 14 Sep: “Wirtz, who signed in a deal worth £116m in 2025, is yet to find his best form in a Reds shirt since signing and now Nicol thinks the Germany international should sit their next game out and give Szoboszlai a chance in a more advanced midfield role.” Sports Mole, 13 Sep: “It should be remembered that Szoboszlai and Gravenberch both played key roles in delivering the club their 20th league title in 2024-25, so it is somewhat understandable that the Reds' hierarchy still have faith in the pair.”",
    "confidence": "high",
-   "evidence_count": 15,
+   "evidence_count": 14,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/16/fpl-notes-gakpo-impresses-szoboszlai-scores-porro-injury-boost",
     "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
@@ -1130,22 +1112,6 @@
      "topics": [
       "statistics"
      ]
-    },
-    {
-     "text": "Andoni Iraola opted to start Alexis Mac Allister and Dominik Szoboszlai together in the middle, dropping Ryan Gravenberch to the bench for a third consecutive game.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/feature/why-iraola-has-dropped-gravenberch-for-mac-allister-and-szoboszlai_604887.html",
-     "published": "2026-09-10T19:51:27+01:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Both Szoboszlai and Mac Allister scored , and the pair were strong with and without the ball, and that is especially surprising for the former.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/feature/why-iraola-has-dropped-gravenberch-for-mac-allister-and-szoboszlai_604887.html",
-     "published": "2026-09-10T19:51:27+01:00",
-     "tone": "positive",
-     "topics": []
     },
     {
      "text": "Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.",
@@ -1355,28 +1321,28 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "status": "Latest on Rogers — Fantasy Football Scout, 10 Sep: “So, I hope we can have Cody with us, but I cannot guarantee it.” – Andoni Iraola on Cody Gakpo But even if Gakpo is passed fit to start in Andoni Iraola’s Friday presser, I’d still put Rogers and Gibbs-White ahead.” Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.8m as a MID. The selection rests on 32 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
+   "status": "Latest on Rogers — Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.” Chelsea: “Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.”",
+   "why_here": "Rogers is in the starting eleven this week at £7.8m as a MID. The selection rests on 30 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
    "case_for": "What supports keeping him: Football365, 06 Oct: “Had cut a frustrating figure for much of the first half despite doing his usual tidy job before a proper highlight-reel moment with his pass to release Morgan Rogers in the build-up to Kane’s goal.” Ipswich Town, 04 Oct: “Hornby had Town’s first sight of goal in the eighth minute after doing well to breeze past her marker and break through the defence, but her shot from the edge of the box was straight at Sian Rogers.” DraftKings Network Soccer, 25 Sep: “Best MLB Strikeout Prop Bets Today (September 25, 2026) New York Yankees vs. Baltimore Orioles: Orioles LHP Trevor Rogers 6+ strikeouts: Rogers has recorded 6+ K in 10 of his last 12 starts, plus NYY has allowed 3 of the last 4 starters they’ve faced to reach that mark.”",
    "case_against": "What argues against him: Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "On minutes — Hull City, 14 Sep: “Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bridge.” Sports Mole, 11 Sep: “Why Morgan Rogers has changed Estevao's Chelsea pathway Alonso has predominantly favoured a 3-4-2-1 in which two attacking midfielders operate behind the centre-forward.”",
    "developments": "Recent developments — Football365, 06 Oct: “Elliot Anderson The finish, blazed over the bar having been teed up by Morgan Rogers, was deeply disappointing but the significance was that Anderson had made that move into the penalty area at all.” Sports Mole, 06 Oct: “This summer, Chelsea signed Rogers for £117m , a club record that also made him the most expensive British footballer in history and Palmer's team-mate at Stamford Bridge.” Sports Mole, 06 Oct: “The distance between those two valuations is where the Rogers story sits: a career that included failed loan spells, a sacking that arrived a fortnight after he did, and a central midfielder at Bournemouth who did not know what to do with him.”",
    "outlook": "On the coming weeks — Sports Mole, 26 Sep: “There is scope for a new attacker to impress, and Rogers will hope he can influence the game on the weekend and claim a spot on the wings moving forward.” FourFourTwo FPL, 23 Sep: “While the Blues signed Morgan Rogers for a club-record fee in the summer, Villa took Nicolas Jackson and Garnacho off new manager Xabi Alonso's hands – but fellow Basque boss Emery has instead favoured youngster George Hemmings on the left flank.”",
-   "confidence": "high",
-   "evidence_count": 32,
+   "confidence": "medium",
+   "evidence_count": 30,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
     "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
-    "https://www.fantasyfootballscout.co.uk/2026/09/10/gakpo-v-rogers-v-mgw-top-everton-picks-buy-konsa-fpl-qa",
-    "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-four-rogers-assists-palmer-brace-pedro-rested",
     "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
     "https://www.fourfourtwo.com/transfer/alejandro-garnacho-could-follow-aston-villa-star-in-controversial-exit-report",
     "https://www.sportsmole.co.uk/football/chelsea/news/why-gbp117m-morgan-rogers-signing-has-complicated-estevaos-chelsea-pathway_604992.html",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
     "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
     "https://www.football365.com/news/england-player-ratings-czechia-harry-kane-morgan-rogers-lewis-hall",
-    "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/"
+    "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
+    "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
+    "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings"
    ],
    "sources_used": [
     "Brentford",
@@ -1577,48 +1543,6 @@
      "topics": []
     },
     {
-     "text": "So, I hope we can have Cody with us, but I cannot guarantee it.” – Andoni Iraola on Cody Gakpo But even if Gakpo is passed fit to start in Andoni Iraola’s Friday presser, I’d still put Rogers and Gibbs-White ahead.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/gakpo-v-rogers-v-mgw-top-everton-picks-buy-konsa-fpl-qa",
-     "published": "2026-09-10T19:30:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "press conference",
-      "tactics"
-     ]
-    },
-    {
-     "text": "Given the schedule, I’d feel much more confident with Rogers or Gibbs-White, who aren’t playing in Europe.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/gakpo-v-rogers-v-mgw-top-everton-picks-buy-konsa-fpl-qa",
-     "published": "2026-09-10T19:30:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer",
-      "fixtures"
-     ]
-    },
-    {
-     "text": "Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-four-rogers-assists-palmer-brace-pedro-rested",
-     "published": "2026-09-10T17:45:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
-     "text": "They knew they weren’t starting and they were ready to make an impact.” – Xabi Alonso Cole Palmer (£9.6m) and Morgan Rogers (£7.6m) made a massive difference, the former scoring two goals in three minutes, one from the spot, while the latter provided four assists – one of the Fantasy variety – as Chelsea ran riot in the second half.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-four-rogers-assists-palmer-brace-pedro-rested",
-     "published": "2026-09-10T17:45:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
      "text": "Why the FPL case is stronger than the points Three goals from roughly 1.39 xG means Rogers has finished well.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
@@ -1802,14 +1726,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Football365, 23 Sep: “England: Pundit responds to claims Cole Palmer is faking injury - 'Genuinely...' Steve Bruce hopes Cole Palmer is not faking injury Steve Bruce hopes Cole Palmer and co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.” Soccerway, 22 Sep: “Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 49 retrieved item(s) from 16 source(s), the most recent dated 08 Oct.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 47 retrieved item(s) from 15 source(s), the most recent dated 08 Oct.",
    "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 25 Sep: “Palmer was initially named in England’s squad for four Nations League matches, starting with Saturday’s meeting with world champions Spain at Wembley, but later pulled out alongside Declan Rice, Kobbie Mainoo, Marcus Rashford and Tino Livramento.” Sports Mole, 23 Sep: “Cole Palmer England withdrawal: The undeniable benefit of load management © Iconsport / David Klein / Sportimage For those at Stamford Bridge, the prevailing emotion following Palmer's withdrawal will be one of sheer relief as the concept of load management comes to the forefront.” Football365, 21 Sep: “Chelsea could not be blamed for being somewhat cautious with Palmer; he never seemed to fully recover from a groin injury last season and Tuchel spoke during the March break of the playmaker still having a niggle, despite having started 16 of the previous 17 Premier League matches.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.” RotoWire Soccer, 06 Oct: “Cole Palmer Injury Update for FPL GW6 Monday, Oct. 5: Playing Through Pain Per Tuchel Cole Palmer withdrew from England duty on Sept. 25, and Tuchel said \"my understanding is that he is playing with discomfort and pain.\" He played the full 90 in Chelsea's 3-0 loss to Brentford.” Soccerway, 25 Sep: “Palmer was one of the headline omissions from Tuchel's selection for the World Cup as the Three Lions reached the semi-finals.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.” Football365, 24 Sep: “Mailbox Bruno Fernandes Ciaran McCarthy 23 Sep 2026 Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’ Steve Bruce hopes Cole Palmer and Co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.”",
    "developments": "Recent developments — Sports Mole, 08 Oct: ““It was new for me and brilliant to see how everyone bought into the idea of the next steps and the details needed to adjust to maybe unlock the next level.” Palmer England future: Battle to regain places for November decider © Imago England's tactical transformation has prompted fresh debate over whether Palmer and Manchester City’s Phil Foden could slot smoothly into this high-intensity system.” Sports Mole, 04 Oct: “Chelsea news: why the next weeks at Stamford Bridge are significant Two of Alonso's preferred forward options — Cole Palmer and Joao Pedro — have withdrawn from their respective international squads with injuries, creating space that Estevao could fill when domestic football resumes.” Sports Mole, 29 Sep: “When Palmer pulled out of the latest England squad, Thomas Tuchel admitted that he was frustrated with the absence of the in-form playmaker.”",
    "outlook": "On the coming weeks — 101 Great Goals — Fantasy, 29 Sep: “Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.” Sports Mole, 25 Sep: “While an argument has been made that Palmer had a free summer and Chelsea have no European football on their schedule, he has still featured in seven games between August 24 and September 18.”",
    "confidence": "high",
-   "evidence_count": 49,
+   "evidence_count": 47,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
     "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
@@ -1829,7 +1753,6 @@
     "CBS Sports Soccer",
     "Chelsea",
     "Everton",
-    "Fantasy Football Hub",
     "Fantasy Football Scout",
     "Football365",
     "FourFourTwo FPL",
@@ -2337,26 +2260,6 @@
      ]
     },
     {
-     "text": "Xabi Alonso’s side rallied from two goals down to win 6-3 with the help of impactful half-time supersubs Cole Palmer (£9.6m) and Morgan Rogers (£7.6m).",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-four-rogers-assists-palmer-brace-pedro-rested",
-     "published": "2026-09-10T17:45:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
-     "text": "They knew they weren’t starting and they were ready to make an impact.” – Xabi Alonso Cole Palmer (£9.6m) and Morgan Rogers (£7.6m) made a massive difference, the former scoring two goals in three minutes, one from the spot, while the latter provided four assists – one of the Fantasy variety – as Chelsea ran riot in the second half.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-four-rogers-assists-palmer-brace-pedro-rested",
-     "published": "2026-09-10T17:45:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
      "text": "And it's the attacking trio of Joao Pedro, Cole Palmer and Morgan Rogers chiefly responsible for our dynamism in the final third.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-explains-why-his-connection-with-cole-palmer-and-morgan-rogers",
@@ -2473,12 +2376,12 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — Soccerway, 05 Oct: “Just days out from a crunch Premier League clash with Liverpool Manchester City are sweating on the fitness of star striker Erling Haaland after he was seen asking Norway head Stale Solbakken to withdraw him from Norway's 2-1 UEFA Nations League defeat to Portugal on Sunday evening.” Sports Mole, 01 Oct: “European heavyweights 'circle' Haaland © Iconsport / Mark Pain, Alamy Live News A potential demotion to the lower leagues would immediately alert the biggest clubs across Europe to the sudden availability of Erling Haaland The prolific Norwegian marksman has registered a breathtaking 169 goals in 205 appearances at the Etihad Stadium and would seamlessly slot into any elite attacking lineup.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 112 retrieved item(s) from 18 source(s), the most recent dated 08 Oct.",
+   "status": "Latest on Haaland — NBC Sports Rotoworld PL, 06 Oct: “Erling Haaland injury news, latest update on fatigue Haaland started up front for Norway on Sunday away at Portugal in their 2-1 defeat in the UEFA Nations League.” Soccerway, 05 Oct: “Just days out from a crunch Premier League clash with Liverpool Manchester City are sweating on the fitness of star striker Erling Haaland after he was seen asking Norway head Stale Solbakken to withdraw him from Norway's 2-1 UEFA Nations League defeat to Portugal on Sunday evening.”",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 112 retrieved item(s) from 18 source(s), the most recent dated 09 Oct.",
    "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 08 Oct: “Haaland, however, is focused on matters on the pitch and believes maintaining a positive atmosphere will be important as Enzo Maresca’s side attempt to continue their perfect start to the domestic season.” Football365, 07 Oct: “Alvarez’s willingness to join Arsenal in the middle of the season is also shaped by Barcelona’s interest in Haaland Barcelona are among the clubs keen on a deal for Haaland, should the Manchester City striker become available.” Sports Mole, 07 Oct: “The Spanish media have been hugely complimentary about Merino's performance. compared Merino to Erling Haaland for his two goals and noted the attacker's ability to consistently come up with big moments in the latter stages of matches.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “However, Haaland's future could ultimately depend on the punishment handed to City after the club were found guilty of 114 financial breaches Erling Haaland would prefer Barcelona over Arsenal © Iconsport / Andrew Yates / Sportimage According to emerging reports , Haaland would actually favour Barcelona over Arsenal should City be forced to sell or face relegation.” Football365, 01 Oct: “Haaland is one of several Man City players whose future at the Etihad Stadium is in doubt at the moment.” Soccerway, 01 Oct: “\"We can confirm that, on behalf of York Promotions Ltd. and Erling Braut Haaland , we have filed a lawsuit against Norwegian Air Shuttle ASA,\" writes lawyer Thomas Hagen in an email to VG.no. \"The case concerns Norwegian’s unlawful use of Haaland’s identity and brand in its marketing of flight tickets during the World Cup,\" writes Hagen, of the law firm Schjødt.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — 101 Great Goals — Fantasy, 08 Oct: “Speaking to Manchester City’s official website, Haaland encouraged supporters travelling to Anfield to enjoy the occasion and continue backing the team.” NBC Sports Rotoworld PL, 06 Oct: “Erling Haaland injury news, latest update on fatigue Haaland started up front for Norway on Sunday away at Portugal in their 2-1 defeat in the UEFA Nations League.”",
-   "developments": "Recent developments — Football365, 08 Oct: “Erling Haaland: Man City striker 'green lights' transfer as Euro giants 'sent exact figures' to seal massive signing There is an update on Erling Haaland's Manchester City future.” Football365, 08 Oct: “According to reports, three European giants are in the running to sign Manchester City star Erling Haaland, who has given the ‘green light’.” Flashscore, 08 Oct: “Congo player during World Cup qualifying 'We have to spread the love': Erling Haaland urges Man City to stick together AFP Haaland and Man City visit Liverpool this weekend Martin Rickett, PA Images / Alamy / Profimedia Erling Haaland said Manchester City must \"stick together\" in uncertain times after being found guilty of over 100 charges of breaking Premier League financial rules.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 09 Oct: “Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.” 101 Great Goals — Fantasy, 08 Oct: “Speaking to Manchester City’s official website, Haaland encouraged supporters travelling to Anfield to enjoy the occasion and continue backing the team.”",
+   "developments": "Recent developments — Sports Mole, 09 Oct: “Key figures at City have responded in a calm manner to the club's guilty verdict, with the likes of Enzo Maresca echoing the sentiment shared by Haaland.” Football365, 08 Oct: “Erling Haaland: Man City striker 'green lights' transfer as Euro giants 'sent exact figures' to seal massive signing There is an update on Erling Haaland's Manchester City future.” Football365, 08 Oct: “According to reports, three European giants are in the running to sign Manchester City star Erling Haaland, who has given the ‘green light’.”",
    "outlook": "On the coming weeks — Sports Mole, 08 Oct: “Haaland 'shapes' Barcelona’s transfer plans © Imago According to TEAMtalk , Barcelona’s changing recruitment strategy is said to have played a major part in Alvarez’s rethink.” Football365, 04 Oct: “Haaland is widely regarded as the best striker in the Premier League, if not world football, but Sheringham believes Liverpool’s Alexander Isak is the superior No.9.”",
    "confidence": "high",
    "evidence_count": 112,
@@ -2517,6 +2420,24 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/title-race/news/stay-positive-citizens-haaland-issues-rallying-cry-before-anfield-clash_606512.html",
+     "published": "2026-10-09T00:42:00+01:00",
+     "tone": "neutral",
+     "topics": [
+      "press conference"
+     ]
+    },
+    {
+     "text": "Key figures at City have responded in a calm manner to the club's guilty verdict, with the likes of Enzo Maresca echoing the sentiment shared by Haaland.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/title-race/news/stay-positive-citizens-haaland-issues-rallying-cry-before-anfield-clash_606512.html",
+     "published": "2026-10-09T00:42:00+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Erling Haaland: Man City striker 'green lights' transfer as Euro giants 'sent exact figures' to seal massive signing There is an update on Erling Haaland's Manchester City future.",
      "source": "Football365",
@@ -4071,22 +3992,6 @@
      ]
     },
     {
-     "text": "Yamal, Haaland, Vitinha and Kvaratskhelia are among the most valuable players in the world Eleven Premier League players rank among the top 20 – well, technically 26 – most valuable players in the world.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/yamal-mbappe-most-valuable-footballers-in-the-world",
-     "published": "2026-09-10T14:41:09+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Just take a look at these stats =1) Erling Haaland (Manchester City) – £189.1m (€220m) And these stats as well. =1) Lamine Yamal (FC Barcelona) – £189.1m (€220m) The generational talent of Lamine Yamal is the most valuable player in world football, tied with Haaland.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/yamal-mbappe-most-valuable-footballers-in-the-world",
-     "published": "2026-09-10T14:41:09+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
      "text": "The Premier League reported that more than 1.7 million managers activated Triple Captain , with the overwhelming majority backing Erling Haaland at home to Coventry.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/haaland-triple-captain-gw3-result-2026-27",
@@ -4302,11 +4207,11 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.football365.com/match-preview/man-utd-v-tottenham-prediction-preview",
     "https://www.si.com/nba/spurs/onsi/san-antonio-spurs-back-in-action-vs-hawks-preview-how-to-watch-preseason-opener?utm_source=RSS",
     "https://www.fantasyfootballscout.co.uk/2026/10/08/the-fpl-half-term-report-spurs",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/515-days-later-kulusevski-makes-spurs-comeback-before-man-united_606447.html",
     "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/defensive-dilemmas-for-de-zerbi-predicted-spurs-lineup-vs-man-utd_606420.html",
-    "https://www.football365.com/news/worst-starts-premier-league-season-by-big-six",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [
