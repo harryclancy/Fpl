@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-09T11:56:43+00:00",
- "seconds": 161.4,
+ "ran_at": "2026-10-09T21:43:27+00:00",
+ "seconds": 129.1,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 629,
- "substantive_items": 259,
- "duplicates_removed": 22,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 18593,
+ "sources_readable": 61,
+ "candidates_discovered": 717,
+ "substantive_items": 327,
+ "duplicates_removed": 28,
+ "deeply_analysed": 64,
+ "deep_read_failed": 26,
+ "corpus_size": 18529,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 259 articles"
+    "61/78 sources returned 327 articles"
    ]
   },
   "blackout": {
@@ -42,7 +42,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: timed out after 12s for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,7 +49,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -201,8 +199,8 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 13,
-   "source_count": 5,
+   "evidence_count": 12,
+   "source_count": 4,
    "latest_evidence": "2026-10-02T13:03:39+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -235,15 +233,6 @@
      "matched_on": "muharemovic",
      "kind": "team news",
      "excerpt": "Notes from Leeds’ goalless draw with Palace The post ­FPL notes: Muharemovic threat, Stach DefCon + defences on top appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "'Bukayo Saka is the standout attacking option right now with strong fixtures and penalty duty' Expert tips for playing the perfect FPL Wildcard in Gameweek 4",
-     "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-11T08:25:33+00:00",
-     "matched_on": "muharemovic",
-     "kind": "team news",
-     "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
     },
     {
      "title": "Barcelona, Inter Milan 'keen' on Leeds United star ahead of January transfer window",
@@ -334,6 +323,15 @@
      "matched_on": "muharemovic",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "How muharemovic helped bosnia and herzegovina to nations league victory",
+     "url": "https://www.leedsunited.com/en/news/how-muharemovic-helped-bosnia-and-herzegovina-to-nations-league-victory",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -341,8 +339,8 @@
    "player": "Calafiori",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-10-09T07:19:37+00:00",
+   "source_count": 6,
+   "latest_evidence": "2026-10-09T15:28:31+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -368,13 +366,13 @@
    "researched": true,
    "items": [
     {
-     "title": "'Bukayo Saka is the standout attacking option right now with strong fixtures and penalty duty' Expert tips for playing the perfect FPL Wildcard in Gameweek 4",
-     "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-11T08:25:33+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
+     "title": "Arsenal Have Hit Their First Bump in the Road – Here’s Why They Should Bounce Back",
+     "url": "https://theanalyst.com/articles/arsenal-injuries-title-race-brighton-leeds-bounce-back",
+     "source": "Opta Analyst",
+     "published": "2026-10-09T15:28:31+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "A heavy defeat to Brighton was followed by injuries to several key players, but Arsenal have spent years building a squad capable of absorbing such setbacks. Now it's time for their depth to deliver. The post Arsenal Have Hit Their First Bump in the Road – Here’s Why They Should Bounce Back appeared first on Opta Analyst ."
     },
     {
      "title": "Arsenal v Leeds: Preview, expected line-ups, stats and where to watch",
@@ -384,6 +382,15 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "The Gunners were stunned at Brighton before the international break."
+    },
+    {
+     "title": "Mikel Arteta handed Arsenal injury boost as £40m-rated gem spotted in training ahead of Leeds clash",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arteta-handed-arsenal-injury-boost-as-gbp40m-gem-spotted-in-training-before-leeds_606524.html",
+     "source": "Sports Mole",
+     "published": "2026-10-09T07:40:00+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal are handed a timely boost after highly-rated youngster Max Dowman returned to training following an injury concern."
     },
     {
      "title": "Viktor Gyokeres reaches ‘clear’ decision on leaving Arsenal as update on Kai Havertz injury revealed",
@@ -404,15 +411,6 @@
      "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Best Arsenal triple-up + what to do with Man City players: FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Arsenal v Leeds: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/arsenal-v-leeds-prediction-preview",
-     "source": "Football365",
-     "published": "2026-10-08T13:06:01+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Arsenal and Leeds."
-    },
-    {
      "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
      "url": "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials",
      "source": "FPL Captain",
@@ -426,7 +424,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 14,
+   "evidence_count": 13,
    "source_count": 6,
    "latest_evidence": "2026-10-08T06:39:43+00:00",
    "official_source_found": true,
@@ -544,15 +542,6 @@
      "excerpt": "Plus, positive words on Ezri Konsa The post White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "'Bukayo Saka is the standout attacking option right now with strong fixtures and penalty duty' Expert tips for playing the perfect FPL Wildcard in Gameweek 4",
-     "url": "https://www.fourfourtwo.com/tactic/bukayo-saka-is-the-standout-attacking-option-right-now-with-strong-fixtures-and-penalty-duty-expert-tips-for-playing-the-perfect-fpl-wildcard-in-gameweek-4",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-11T08:25:33+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "If Gameweek 3 was the week of the Wildcard, Gameweek 4 is the natural follow up window for those who held off. The transfer window is firmly shut, minutes are becoming clearer by the week and the fixture picture is sharp enough to build a squad with genuine long term conviction. Without further ado, here is the team worth constructing right now. GOALKEEPER Bart Verbruggen (Image credit: Getty Imag"
-    },
-    {
      "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
      "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
      "source": "Fantasy Football Hub",
@@ -560,14 +549,23 @@
      "matched_on": "konsa",
      "kind": "transfer",
      "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
+    },
+    {
+     "title": "Arsenal receive baffling VAR verdict on Sunderland penalty incident as Premier League explain 3-2 vote",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html",
+     "source": "Sports Mole",
+     "published": "2026-09-23T11:20:00+01:00",
+     "matched_on": "konsa",
+     "kind": "general",
+     "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
     }
    ]
   },
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 13,
-   "source_count": 5,
+   "evidence_count": 10,
+   "source_count": 4,
    "latest_evidence": "2026-10-07T08:40:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -637,24 +635,6 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "Manchester United believe that a France international is keen on a move to Old Trafford, as Lewis Hall decides to sign a new deal with Newcastle United."
-    },
-    {
-     "title": "Man United's Lewis Hall position 'explained' as Newcastle United announce long-term deal for defensive star",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/man-uniteds-hall-position-explained-as-newcastle-announce-new-deal-for-defensive-star_604946.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T11:12:00+01:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Newcastle United reveal that Manchester United-linked Lewis Hall has signed a new long-term contract at the club."
-    },
-    {
-     "title": "'Really proud moment': Lewis Hall signs long-term deal with Newcastle United",
-     "url": "https://www.soccerway.com/news/really-proud-moment-lewis-hall-signs-long-term-deal-with-newcastle-united/bu6ZDU8s/",
-     "source": "Soccerway",
-     "published": "2026-09-11T11:39:32+02:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": ""
     },
     {
      "title": "International Magpies: Hall's England defeat Horníček's Czechia",
@@ -845,7 +825,7 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 11,
+   "evidence_count": 10,
    "source_count": 6,
    "latest_evidence": "2026-10-04T11:00:04+00:00",
    "official_source_found": true,
@@ -960,15 +940,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
-    },
-    {
-     "title": "FPL Gameweek 4 tips: Harvey Barnes the star & all eyes on popular Lewis Hall",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-4-tips-harvey-barnes-the-star-and-all-eyes-on-popular-lewis-hall",
-     "source": "Newcastle United",
-     "published": "2026-09-11T10:30:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1116,7 +1087,7 @@
    "player": "Palmer",
    "club": "CHE",
    "evidence_count": 47,
-   "source_count": 15,
+   "source_count": 14,
    "latest_evidence": "2026-10-08T00:53:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1139,7 +1110,7 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "high",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -1255,9 +1226,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 116,
-   "source_count": 18,
-   "latest_evidence": "2026-10-09T11:44:07+00:00",
+   "evidence_count": 117,
+   "source_count": 17,
+   "latest_evidence": "2026-10-09T17:10:52+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1282,6 +1253,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man City lineup vs. Liverpool: Predicted XI as Erling Haaland decision made after Enzo Maresca update",
+     "url": "https://www.sportsmole.co.uk/football/man-city/predicted-lineups/haaland-starts-semenyo-decision-predicted-man-city-xi-vs-liverpool_606539.html",
+     "source": "Sports Mole",
+     "published": "2026-10-09T17:10:52+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Manchester City could line up for Sunday's Premier League game against Liverpool."
+    },
+    {
+     "title": "Is Erling Haaland fit for Liverpool vs Manchester City? Premier League injury update",
+     "url": "https://www.fourfourtwo.com/person/coaches-managers/is-erling-haaland-fit-for-manchester-city-vs-liverpool-premier-league-injury-update",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-09T15:03:03+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Erling Haaland is a doubt for Manchester City this weekend, with the Citizens making the short trip to Liverpool. This is the first time that Man City will play again in the Premier League following an independent commission finding the six-time champions of the competition guilty of all charges related to breaches of the Prem's financial rules over a nine-year period. With Haaland having picked u"
+    },
     {
      "title": "Haaland fit for trip to Liverpool, says Maresca",
      "url": "https://www.mancity.com/news/mens/enzo-maresca-liverpool-v-manchester-city-team-news-update-63927129",
@@ -1371,24 +1360,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Plus, Gvardiol the top-scoring FPL defender The post FPL notes: “Happy” Haaland, Foden red card + Shaw injury latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "‘It was completely clear’ – Maresca claims he knew Haaland goal was not offside",
-     "url": "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-13T19:29:50+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "The City boss never had any doubts."
-    },
-    {
-     "title": "FF247 Site Team News GW4",
-     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw4-2/",
-     "source": "Fantasy Football 247",
-     "published": "2026-09-11T13:56:05+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "FF247 Site Team News GW4 Welcome to FF247 Site Team GW4 GW3 – Triple Captain. Red Arrow. Obviously. Despite playing our Triple Captain, we somehow still ended the week staring at a red arrow. To be fair, Haaland did his part. 9 points wasn’t quite the monster haul we’d dreamed of when deploying the chip, […] The post FF247 Site Team News GW4 appeared first on Fantasy Football 247 - Premier League "
     }
    ]
   },
@@ -1584,7 +1555,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 68,
+   "evidence_count": 67,
    "source_count": 19,
    "latest_evidence": "2026-10-07T17:35:30+00:00",
    "official_source_found": true,
@@ -1608,7 +1579,7 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "high",
+   "priority": "low",
    "researched": true,
    "items": [
     {
