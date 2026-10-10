@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-10T16:15:23+00:00",
+ "generated": "2026-10-10T20:35:02+00:00",
  "gameweek": 7,
- "corpus_size": 18589,
+ "corpus_size": 18600,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -330,25 +330,57 @@
    "player": "De Cuyper",
    "club": "BHA",
    "status": "Latest on De Cuyper — Fantasy Football Scout, 13 Sep: “Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £5.0m as a DEF. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 13 Sep.",
-   "case_for": "",
-   "case_against": "",
+   "why_here": "De Cuyper is in the starting eleven this week at £5.0m as a DEF. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 10 Oct.",
+   "case_for": "What supports keeping him: Sunderland, 10 Oct: “The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.” Sunderland, 10 Oct: “Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.”",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Sunderland, 10 Oct: “Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.”",
    "outlook": "On the coming weeks — OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.” OneFPL: “De Cuyper is a defender in FPL but is regularly used in advanced areas.”",
    "confidence": "high",
-   "evidence_count": 3,
+   "evidence_count": 7,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+    "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
     "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
+    "https://www.safc.com/news/2026/october/10/le-bris--we-must-stick-to-our-plan-and-fight/",
+    "https://www.brightonandhovealbion.com/media-video/post-match-or-huerzeler-and-de-cuyper-or-sunderland-v-brighton",
+    "https://www.safc.com/news/2026/october/10/sunderland-defeat-at-home-to-brighton/",
     "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27"
    ],
    "sources_used": [
+    "Brighton & Hove Albion",
     "Fantasy Football Hub",
     "Fantasy Football Scout",
-    "OneFPL"
+    "OneFPL",
+    "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.",
+     "source": "Sunderland",
+     "url": "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
+     "published": "2026-10-10T17:31:38+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.",
+     "source": "Sunderland",
+     "url": "https://www.safc.com/news/2026/october/10/le-bris--we-must-stick-to-our-plan-and-fight/",
+     "published": "2026-10-10T16:41:32+00:00",
+     "tone": "positive",
+     "topics": [
+      "suspension"
+     ]
+    },
+    {
+     "text": "Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.",
+     "source": "Sunderland",
+     "url": "https://www.safc.com/news/2026/october/10/sunderland-defeat-at-home-to-brighton/",
+     "published": "2026-10-10T16:20:17+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.",
      "source": "Fantasy Football Scout",
@@ -395,31 +427,56 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "status": "6 article(s) reference Calafiori, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 6 retrieved item(s) from 5 source(s).",
-   "case_for": "",
-   "case_against": "",
+   "status": "Latest on Calafiori — 101 Great Goals — Fantasy, 10 Oct: “James Justin had given Leeds a deserved lead early in the second half, but Riccardo Calafiori equalised before Guimaraes completed the turnaround to secure all three points for Mikel Arteta’s side.”",
+   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 10 Oct.",
+   "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 10 Oct: “Ben White provided the assist as Calafiori arrived to volley home from close range in the 62nd minute, beating James Trafford to make it 1-1.” NBC Sports Rotoworld PL, 10 Oct: “But Riccardo Calafiori and Bruno Guimaraes scored eight minutes apart to put the champions on top and in control of the three points.”",
+   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
-   "confidence": "low",
+   "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
+    "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-manager-speaks-after-comeback-win-over-leeds",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
     "https://www.101greatgoals.com/football/premier-league/arsenal-vs-leeds-united-live-line-ups-teams-where-to-watch-match-tv-channel-online-stream/",
     "https://www.sportsmole.co.uk/football/arsenal/news/havertz-starts-as-eze-snubbed-arsenal-vs-leeds-team-news-confirmed_606616.html",
-    "https://www.fourfourtwo.com/team/viktor-gyokeres-still-shouldnt-start-for-arsenal-even-with-kai-havertz-injured",
-    "https://www.fantasyfootballscout.co.uk/2026/10/10/the-fpl-half-term-report-arsenal-2",
     "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "FPL Captain",
     "Fantasy Football Scout",
-    "FourFourTwo FPL",
+    "NBC Sports Rotoworld PL",
     "Sports Mole"
    ],
-   "quotes": []
+   "quotes": [
+    {
+     "text": "James Justin had given Leeds a deserved lead early in the second half, but Riccardo Calafiori equalised before Guimaraes completed the turnaround to secure all three points for Mikel Arteta’s side.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
+     "published": "2026-10-10T13:29:30+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Ben White provided the assist as Calafiori arrived to volley home from close range in the 62nd minute, beating James Trafford to make it 1-1.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
+     "published": "2026-10-10T13:29:30+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "But Riccardo Calafiori and Bruno Guimaraes scored eight minutes apart to put the champions on top and in control of the three points.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-manager-speaks-after-comeback-win-over-leeds",
+     "published": "2026-10-10T09:25:37-04:00",
+     "tone": "positive",
+     "topics": []
+    }
+   ]
   },
   "Hall": {
    "player": "Hall",
@@ -819,14 +876,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — RotoWire Soccer, 06 Oct: “Cole Palmer Injury Update for FPL GW6 Monday, Oct. 5: Playing Through Pain Per Tuchel Cole Palmer withdrew from England duty on Sept. 25, and Tuchel said \"my understanding is that he is playing with discomfort and pain.\" He played the full 90 in Chelsea's 3-0 loss to Brentford.” Soccerway, 25 Sep: “Palmer was one of the headline omissions from Tuchel's selection for the World Cup as the Three Lions reached the semi-finals.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 56 retrieved item(s) from 14 source(s), the most recent dated 10 Oct.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 55 retrieved item(s) from 14 source(s), the most recent dated 10 Oct.",
    "case_for": "What supports keeping him: Sports Mole, 10 Oct: “In the frontline, Pedro has already scored three times and produced three assists in the top flight, while Palmer has two goals and two assists in the Premier League so far.” Fantasy Football Scout, 10 Oct: “TEAM NEWS The big team news is that Cole Palmer and Joao Pedro start for Chelsea this afternoon.” 101 Great Goals — Fantasy, 25 Sep: “Palmer was initially named in England’s squad for four Nations League matches, starting with Saturday’s meeting with world champions Spain at Wembley, but later pulled out alongside Declan Rice, Kobbie Mainoo, Marcus Rashford and Tino Livramento.”",
    "case_against": "What argues against him: Sports Mole, 10 Oct: “There were doubts about the involvement of Caicedo and Pedro against Bournemouth, while Palmer missed international duty with England due to injury.” Soccerway, 10 Oct: “Palmer , left ‌out of England 's World Cup squad ‌this year after a persistent groin injury ‌affected his form, was called up ‌by Thomas Tuchel for Nations League fixtures against Spain, the Czech Republic and Croatia.” Soccerway, 10 Oct: “However, ‌Palmer was forced to pull ⁠out of the ‌squad due to a recurrence of the ​issue, with Tuchel saying the 24-year-old \"misses too many opportunities\" to play ​in an England shirt.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
    "developments": "Recent developments — Sports Mole, 10 Oct: “Chelsea star Cole Palmer announces a new long-term deal in unique fashion, offering a boost to the Blues ahead of their Premier League clash with Bournemouth.” Sports Illustrated FPL, 10 Oct: “Despite already being tied down until 2033, Palmer has added an extra 12 months to that contract to commit himself to Chelsea for the next eight years.” Sports Illustrated FPL, 10 Oct: “This is now the second new contract Palmer has signed since joining Chelsea three years ago.”",
    "outlook": "On the coming weeks — Sports Mole, 10 Oct: “Tuchel left Palmer at home for the 2026 World Cup, but he decided to call up the Chelsea star for the first four fixtures of the UEFA Nations League.” Sports Mole, 08 Oct: ““It was new for me and brilliant to see how everyone bought into the idea of the next steps and the details needed to adjust to maybe unlock the next level.” Palmer England future: Battle to regain places for November decider © Imago England's tactical transformation has prompted fresh debate over whether Palmer and Manchester City’s Phil Foden could slot smoothly into this high-intensity system.”",
    "confidence": "high",
-   "evidence_count": 56,
+   "evidence_count": 55,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/palmer-and-two-others-who-returns-from-injury-for-the-blues-against-cherries_606629.html",
@@ -1482,6 +1539,22 @@
      "topics": []
     },
     {
+     "text": "Since joining the Blues in August 2023, Palmer has established himself as one of the world’s finest attacking players.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/cole-palmer-signs-new-chelsea-contract-2034",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "'Chelsea means a lot to me and I think the club is going in the right direction, so I'm delighted to sign and I’m obviously very happy,' Palmer said.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/cole-palmer-signs-new-chelsea-contract-2034",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
      "text": "Cole Palmer signs new Chelsea contract | News | Official Site | Chelsea Football Club Chelsea is thrilled to announce Cole Palmer has signed a two-year contract extension until 2033.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/cole-palmer-signs-new-chelsea-contract",
@@ -1586,22 +1659,6 @@
      "published": "",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Since joining the Blues in August 2023, Palmer has established himself as one of the world’s finest attacking players.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/cole-palmer-signs-new-chelsea-contract-2034",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "'Chelsea means a lot to me and I think the club is going in the right direction, so I'm delighted to sign and I’m obviously very happy,' Palmer said.",
-     "source": "Chelsea",
-     "url": "https://www.chelseafc.com/en/news/article/cole-palmer-signs-new-chelsea-contract-2034",
-     "published": "",
-     "tone": "neutral",
-     "topics": []
     }
    ]
   },
@@ -1609,18 +1666,17 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Chelsea: “Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.8m as a MID. The selection rests on 29 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
+   "why_here": "Rogers is in the starting eleven this week at £7.8m as a MID. The selection rests on 27 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
    "case_for": "What supports keeping him: Football365, 06 Oct: “Had cut a frustrating figure for much of the first half despite doing his usual tidy job before a proper highlight-reel moment with his pass to release Morgan Rogers in the build-up to Kane’s goal.” Ipswich Town, 04 Oct: “Hornby had Town’s first sight of goal in the eighth minute after doing well to breeze past her marker and break through the defence, but her shot from the edge of the box was straight at Sian Rogers.” DraftKings Network Soccer, 25 Sep: “Best MLB Strikeout Prop Bets Today (September 25, 2026) New York Yankees vs. Baltimore Orioles: Orioles LHP Trevor Rogers 6+ strikeouts: Rogers has recorded 6+ K in 10 of his last 12 starts, plus NYY has allowed 3 of the last 4 starters they’ve faced to reach that mark.”",
    "case_against": "What argues against him: Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "On minutes — Hull City, 14 Sep: “Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bridge.” Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.”",
    "developments": "Recent developments — Football365, 06 Oct: “Elliot Anderson The finish, blazed over the bar having been teed up by Morgan Rogers, was deeply disappointing but the significance was that Anderson had made that move into the penalty area at all.” Sports Mole, 06 Oct: “This summer, Chelsea signed Rogers for £117m , a club record that also made him the most expensive British footballer in history and Palmer's team-mate at Stamford Bridge.” Sports Mole, 06 Oct: “The distance between those two valuations is where the Rogers story sits: a career that included failed loan spells, a sacking that arrived a fortnight after he did, and a central midfielder at Bournemouth who did not know what to do with him.”",
    "outlook": "On the coming weeks — Sports Mole, 26 Sep: “There is scope for a new attacker to impress, and Rogers will hope he can influence the game on the weekend and claim a spot on the wings moving forward.” FourFourTwo FPL, 23 Sep: “While the Blues signed Morgan Rogers for a club-record fee in the summer, Villa took Nicolas Jackson and Garnacho off new manager Xabi Alonso's hands – but fellow Basque boss Emery has instead favoured youngster George Hemmings on the left flank.”",
    "confidence": "medium",
-   "evidence_count": 29,
+   "evidence_count": 27,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
-    "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
     "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
     "https://www.fourfourtwo.com/transfer/alejandro-garnacho-could-follow-aston-villa-star-in-controversial-exit-report",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
@@ -1629,7 +1685,8 @@
     "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
     "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
     "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings",
-    "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again"
+    "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again",
+    "https://www.wearehullcity.co.uk/news/2026/september/14/gallery-belloumi-brace-earns-point-at-bridge/"
    ],
    "sources_used": [
     "Brentford",
@@ -1790,26 +1847,6 @@
      "published": "2026-09-13T19:20:21-04:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Rogers joined the Blues from Aston Villa during the summer transfer window for a club-record £117m fee and has wasted little time showing why Chelsea were prepared to break their transfer record for his signature.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/morgan-rogers-stat-emerges-after-early-chelsea-goal-vs-hull-city_605026.html",
-     "published": "2026-09-12T15:53:01+01:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Morgan Rogers joins Chelsea heroes after early goal © Iconsport / PA Images Rogers collected Joao Pedro's pass before surging into the penalty area and unleashing a thunderous left-footed strike inside the opening seven minutes, giving Chelsea an early advantage at Stamford Bridge.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/morgan-rogers-stat-emerges-after-early-chelsea-goal-vs-hull-city_605026.html",
-     "published": "2026-09-12T15:53:01+01:00",
-     "tone": "positive",
-     "topics": [
-      "set pieces"
-     ]
     },
     {
      "text": "Why the FPL case is stronger than the points Three goals from roughly 1.39 xG means Rogers has finished well.",
@@ -1995,14 +2032,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 62 retrieved item(s) from 19 source(s), the most recent dated 07 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 59 retrieved item(s) from 19 source(s), the most recent dated 07 Oct.",
    "case_for": "What supports keeping him: Soccerway, 28 Sep: “Joao Felix's recent career stats Flashscore Two goals in two games, but little else in terms of work rate or attacking force perfectly sum up his contributions.” Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.” Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.” RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.”",
    "developments": "Recent developments — 101 Great Goals — Fantasy, 07 Oct: ““I feel that now is the moment,” Pedro wrote on social media alongside a video featuring the best moments from his career.” 101 Great Goals — Fantasy, 07 Oct: ““Thank you, football, for making me so happy.” Credit: Instagram / _ pedro17 Pedro arrived at Stamford Bridge from Barcelona in August 2015 for a fee of £21.4 million, instantly announcing himself to English football by scoring on his debut in a 3-2 victory away at West Brom.” Sports Mole, 04 Oct: “Chelsea news: why the next weeks at Stamford Bridge are significant Two of Alonso's preferred forward options — Cole Palmer and Joao Pedro — have withdrawn from their respective international squads with injuries, creating space that Estevao could fill when domestic football resumes.”",
    "outlook": "On the coming weeks — RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.” Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.”",
    "confidence": "high",
-   "evidence_count": 62,
+   "evidence_count": 59,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
     "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
@@ -2416,22 +2453,6 @@
      "topics": []
     },
     {
-     "text": "Nonetheless, Chelsea continued to push and levelled the game once more in the 66th minute when Joao Pedro rifled in from close range, setting up an intriguing finale.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-joao-pedro-spares-chelsea-s-blushes-as-hull-city-earn-point-at-stamford-bridge/tGPKgNY2/",
-     "published": "2026-09-12T18:09:00+02:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Pedro goal sequence Reuters/Peter Cziborra/Opta by Stats Perform It was end-to-end at points as the clock ticked down, but Rogers could only shoot straight at Tzolakis, and Mohamed-Ali Cho was unable to turn past Martinez as both sides wasted opportunities.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-joao-pedro-spares-chelsea-s-blushes-as-hull-city-earn-point-at-stamford-bridge/tGPKgNY2/",
-     "published": "2026-09-12T18:09:00+02:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
      "text": "2 Hull Stats: João Pedro Adds Another Goal and Assist But Hull Still Maintain Unbeaten Start | Opta Analyst Mohamed Belloumi gave Hull City a surprise advantage at Stamford Bridge, but João Pedro’s second-half goal earned a draw for Chelsea João Pedro salvaged a point with a second-half equaliser, but Chelsea were held in another chaotic contest on Saturday, drawing 2-2 with Hull City.",
      "source": "Opta Analyst",
      "url": "https://theanalyst.com/articles/chelsea-vs-hull-stats-premier-league-09-2026",
@@ -2447,16 +2468,6 @@
      "tone": "neutral",
      "topics": [
       "tactics"
-     ]
-    },
-    {
-     "text": "Chelsea head coach Xabi Alonso sent on Pep Chavarria for Jorrel Hato at half-time and, after Kostantinos Tzolakis turned Blues wideman Reece James’ strike behind, Joao Pedro levelled following Cole Palmer’s electric run along the right and pass inside the box.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/premier-league/chelsea-hull-city-report-result-goals-joao-pedro-belloumi/",
-     "published": "2026-09-12T15:56:35+00:00",
-     "tone": "neutral",
-     "topics": [
-      "statistics"
      ]
     },
     {
@@ -4489,7 +4500,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 6 source(s), the most recent dated 19 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4498,17 +4509,16 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.101greatgoals.com/football/premier-league/manchester-united-v-tottenham-confirmed-team-news-and-line-ups/",
+    "https://www.sportsmole.co.uk/football/man-utd/news/baleba-rashford-maddison-decisions-man-utd-vs-spurs-team-news-confirmed_606633.html",
+    "https://www.sportsmole.co.uk/football/spurs/news/morale-booster-tottenham-to-fly-out-for-unusual-training-camp-after-man-united-clash_606626.html",
     "https://www.nbcsports.com/soccer/news/how-to-watch-manchester-united-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/man-united-v-tottenham-predicted-line-ups-fpl-team-news-2",
-    "https://www.sportsmole.co.uk/football/man-utd/injury-news/team-news/man-utd-vs-spurs-injury-suspension-list-predicted-xis_606421.html",
-    "https://www.101greatgoals.com/football/premier-league/roberto-de-zerbi-delivers-dejan-kulusevski-injury-update-tottenham/",
-    "https://www.football365.com/match-preview/man-utd-v-tottenham-prediction-preview",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Fantasy Football Scout",
-    "Football365",
     "FourFourTwo FPL",
     "NBC Sports Rotoworld PL",
     "Sports Mole"

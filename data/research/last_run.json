@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-10T16:15:23+00:00",
- "seconds": 152.4,
+ "ran_at": "2026-10-10T20:35:02+00:00",
+ "seconds": 128.9,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 640,
- "substantive_items": 258,
- "duplicates_removed": 18,
- "deeply_analysed": 71,
- "deep_read_failed": 19,
- "corpus_size": 18589,
+ "sources_readable": 60,
+ "candidates_discovered": 617,
+ "substantive_items": 246,
+ "duplicates_removed": 13,
+ "deeply_analysed": 73,
+ "deep_read_failed": 17,
+ "corpus_size": 18600,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 258 articles"
+    "60/78 sources returned 246 articles"
    ]
   },
   "blackout": {
@@ -49,9 +49,10 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
  ],
@@ -199,10 +200,10 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 3,
-   "source_count": 3,
-   "latest_evidence": "2026-09-16T16:00:04+00:00",
-   "official_source_found": false,
+   "evidence_count": 7,
+   "source_count": 5,
+   "latest_evidence": "2026-10-10T17:31:38+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -215,13 +216,14 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -235,6 +237,15 @@
      "excerpt": "Coventry are yet to score this season, having lost all four matches The post FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Danso reflects on Brighton defeat",
+     "url": "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
+     "source": "Sunderland",
+     "published": "2026-10-10T17:31:38+00:00",
+     "matched_on": "de cuyper",
+     "kind": "transfer",
+     "excerpt": "Kevin Danso says Sunderland must learn from their 2-0 defeat to Brighton & Hove Albion and quickly turn their attention to Thursday’s UEFA Europa League trip to SCU Torreense. The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points. “We didn’t create enough clear-cut chances and, "
+    },
+    {
      "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
      "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
      "source": "Fantasy Football Hub",
@@ -242,6 +253,33 @@
      "matched_on": "de cuyper",
      "kind": "transfer",
      "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
+    },
+    {
+     "title": "Le Bris: We must stick to our plan and fight",
+     "url": "https://www.safc.com/news/2026/october/10/le-bris--we-must-stick-to-our-plan-and-fight/",
+     "source": "Sunderland",
+     "published": "2026-10-10T16:41:32+00:00",
+     "matched_on": "de cuyper",
+     "kind": "general",
+     "excerpt": "Régis Le Bris called on Sunderland to remain committed to their principles after suffering a 2-0 defeat to Brighton & Hove Albion at the Stadium of Light. The Black Cats were beaten by two second-half goals as Brighton extended their winning run to three Premier League matches. Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal St"
+    },
+    {
+     "title": "Post-match | Hurzeler & De Cuyper | Sunderland v Brighton",
+     "url": "https://www.brightonandhovealbion.com/media-video/post-match-or-huerzeler-and-de-cuyper-or-sunderland-v-brighton",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-10-10T16:30:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "general",
+     "excerpt": "🎬 Post-match | Hurzeler & De Cuyper | Sunderland v Brighton"
+    },
+    {
+     "title": "Sunderland defeat at home to Brighton",
+     "url": "https://www.safc.com/news/2026/october/10/sunderland-defeat-at-home-to-brighton/",
+     "source": "Sunderland",
+     "published": "2026-10-10T16:20:17+00:00",
+     "matched_on": "de cuyper",
+     "kind": "general",
+     "excerpt": "Sunderland 0-2 Brighton Sunderland suffered a 2-0 defeat to Brighton & Hove Albion at the Stadium of Light on Saturday afternoon. The Black Cats were made to pay for two moments in the second half as Brighton extended their winning run to three Premier League matches. Fabian Hurzeler’s side broke the deadlock eight minutes after the restart. Pascal Gross found Maxim De Cuyper with a precise pass i"
     },
     {
      "title": "Maxim de cuyper fpl 2026 27",
@@ -259,7 +297,7 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-10-10T11:18:00+01:00",
+   "latest_evidence": "2026-10-10T13:29:30+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -283,6 +321,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal 2-1 Leeds: Report, result and goals as Gunners fight back for big win",
+     "url": "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-10T13:29:30+00:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the action from Arsenal vs Leeds in the Premier League."
+    },
+    {
+     "title": "Mikel Arteta reaction: Arsenal 'wanted to prove we are something special and unique' in win over Leeds",
+     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-manager-speaks-after-comeback-win-over-leeds",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-10T09:25:37-04:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Arsenal v Leeds team news: Konsa + Havertz fit to start",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
@@ -309,24 +365,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Arsenal and Leeds United confirm their starting lineups for Saturday's Premier League early kickoff at the Emirates Stadium."
-    },
-    {
-     "title": "Viktor Gyokeres still shouldn't start for Arsenal - even with Kai Havertz injured",
-     "url": "https://www.fourfourtwo.com/team/viktor-gyokeres-still-shouldnt-start-for-arsenal-even-with-kai-havertz-injured",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-10T06:00:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "The international break is as dreary for football fans as it is for clubs. Supporters missed the regularity and unpredictability that comes with watching their team in action. International football, major tournaments aside, doesn’t have the same pizazz as the domestic or continental game. The major risk to club teams, however, is the possibility of seeing a player sustain a knock while representi"
-    },
-    {
-     "title": "The FPL half-term report: Arsenal",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/the-fpl-half-term-report-arsenal-2",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-10T04:30:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Assessing the reigning champions' start to 2026/27 The post The FPL half-term report: Arsenal appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
@@ -614,7 +652,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 56,
+   "evidence_count": 55,
    "source_count": 14,
    "latest_evidence": "2026-10-10T14:35:27+01:00",
    "official_source_found": true,
@@ -754,7 +792,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 29,
+   "evidence_count": 27,
    "source_count": 13,
    "latest_evidence": "2026-10-06T21:12:19+00:00",
    "official_source_found": true,
@@ -798,15 +836,6 @@
      "matched_on": "rogers",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Rogers, Gross, Schade, Tzolis: Buy, keep or sell in Gameweek 5? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "3pm team news: Pedro, Palmer + Rogers start as expected",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/12/3pm-team-news-pedro-palmer-rogers-start-as-expected",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-12T13:00:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Five Premier League matches kick off at 3pm BST The post 3pm team news: Pedro, Palmer + Rogers start as expected appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "How Morgan Rogers went from £1m Middlesbrough signing to £117m British record at Chelsea",
@@ -888,13 +917,22 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers is the only player to have scored against Arsenal this season. Chelsea succeeded where Coventry City, Aston Villa, Napoli and Sunderland have failed, and the Gunners came back to beat them too. There are two teams without a goal in their first four Premier League matches of 2026/27 but Arsenal stand alone in having conceded only once. They've won all of their games and looked all but"
+    },
+    {
+     "title": "Gallery: Belloumi Brace Earns Point at Bridge",
+     "url": "https://www.wearehullcity.co.uk/news/2026/september/14/gallery-belloumi-brace-earns-point-at-bridge/",
+     "source": "Hull City",
+     "published": "2026-09-14T13:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Fixtures Chelsea FC Vs. Hull City - Sat, Sep 12 2026, 15:00 Hull City’s unbeaten start to the 2026/27 Premier League campaign continued with an impressive 2-2 draw away at Chelsea. Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bri"
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 62,
+   "evidence_count": 59,
    "source_count": 19,
    "latest_evidence": "2026-10-07T17:35:30+00:00",
    "official_source_found": true,
@@ -1278,8 +1316,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 6,
-   "latest_evidence": "2026-10-10T03:12:12+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-10T16:19:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1305,6 +1343,33 @@
    "researched": true,
    "items": [
     {
+     "title": "Manchester United v Tottenham: Confirmed team news and line-ups",
+     "url": "https://www.101greatgoals.com/football/premier-league/manchester-united-v-tottenham-confirmed-team-news-and-line-ups/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-10T15:20:17+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the team news ahead of Manchester United vs Tottenham in the Premier League."
+    },
+    {
+     "title": "Man United vs. Tottenham lineups confirmed as Carlos Baleba, Marcus Rashford, James Maddison decisions made",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/news/baleba-rashford-maddison-decisions-man-utd-vs-spurs-team-news-confirmed_606633.html",
+     "source": "Sports Mole",
+     "published": "2026-10-10T16:19:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Manchester United and Tottenham Hotspur have confirmed their starting lineups for Saturday's Premier League evening kickoff at Old Trafford."
+    },
+    {
+     "title": "Tottenham to fly out for Roberto De Zerbi's team-bonding training camp after Man United clash",
+     "url": "https://www.sportsmole.co.uk/football/spurs/news/morale-booster-tottenham-to-fly-out-for-unusual-training-camp-after-man-united-clash_606626.html",
+     "source": "Sports Mole",
+     "published": "2026-10-10T14:26:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur will reportedly travel to Spain for a training camp after Saturday's Premier League clash with Manchester United."
+    },
+    {
      "title": "How to watch Manchester United vs Tottenham Hotspur live: Stream, TV, team news, prediction",
      "url": "https://www.nbcsports.com/soccer/news/how-to-watch-manchester-united-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
      "source": "NBC Sports Rotoworld PL",
@@ -1321,33 +1386,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Team form, absentees and our predicted XIs The post Man United v Tottenham predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Man United vs. Tottenham injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/team-news/man-utd-vs-spurs-injury-suspension-list-predicted-xis_606421.html",
-     "source": "Sports Mole",
-     "published": "2026-10-09T17:30:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Manchester United and Tottenham Hotspur."
-    },
-    {
-     "title": "Roberto De Zerbi delivers Dejan Kulusevski injury update as Tottenham star finally prepares for return",
-     "url": "https://www.101greatgoals.com/football/premier-league/roberto-de-zerbi-delivers-dejan-kulusevski-injury-update-tottenham/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-09T14:43:10+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Dejan Kulusevski is closing in on a return to Tottenham after a year-and-a-half with injury."
-    },
-    {
-     "title": "Man Utd v Tottenham: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/man-utd-v-tottenham-prediction-preview",
-     "source": "Football365",
-     "published": "2026-10-08T16:39:59+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Man Utd and Tottenham."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
