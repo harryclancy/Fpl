@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-09T21:43:27+00:00",
- "seconds": 129.1,
+ "ran_at": "2026-10-10T02:23:35+00:00",
+ "seconds": 174.1,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 717,
- "substantive_items": 327,
- "duplicates_removed": 28,
- "deeply_analysed": 64,
- "deep_read_failed": 26,
- "corpus_size": 18529,
+ "sources_readable": 60,
+ "candidates_discovered": 548,
+ "substantive_items": 178,
+ "duplicates_removed": 4,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18535,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 327 articles"
+    "60/78 sources returned 178 articles"
    ]
   },
   "blackout": {
@@ -53,7 +53,8 @@
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -340,7 +341,7 @@
    "club": "ARS",
    "evidence_count": 6,
    "source_count": 6,
-   "latest_evidence": "2026-10-09T15:28:31+00:00",
+   "latest_evidence": "2026-10-09T18:38:39+02:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -365,6 +366,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Who's Missing: Isak & Gakpo to miss Liverpool's clash with City, Tzolis out for Arsenal",
+     "url": "https://www.soccerway.com/news/who-s-missing-isak-and-gakpo-to-miss-liverpool-s-clash-with-city-tzolis-out-for-arsenal/IZksM2h4/",
+     "source": "Soccerway",
+     "published": "2026-10-09T18:38:39+02:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Arsenal Have Hit Their First Bump in the Road – Here’s Why They Should Bounce Back",
      "url": "https://theanalyst.com/articles/arsenal-injuries-title-race-brighton-leeds-bounce-back",
@@ -402,15 +412,6 @@
      "excerpt": "Arsenal striker Viktor Gyokeres has reportedly made the ‘clear’ decision to remain at the club, while there is an update on Kai Havertz’s injury."
     },
     {
-     "title": "Best Arsenal triple-up + what to do with Man City players: FPL Q&A",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/08/best-arsenal-triple-up-what-to-do-with-man-city-players-fpl-qa",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-08T15:40:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Best Arsenal triple-up + what to do with Man City players: FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
      "url": "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials",
      "source": "FPL Captain",
@@ -424,10 +425,10 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 13,
-   "source_count": 6,
+   "evidence_count": 11,
+   "source_count": 5,
    "latest_evidence": "2026-10-08T06:39:43+00:00",
-   "official_source_found": true,
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -533,15 +534,6 @@
      "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
     },
     {
-     "title": "White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/white-timber-mosquera-arsenal-injury-latest-for-fpl-gameweek-4",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-11T14:56:09+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Plus, positive words on Ezri Konsa The post White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
      "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
      "source": "Fantasy Football Hub",
@@ -564,7 +556,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 10,
+   "evidence_count": 8,
    "source_count": 4,
    "latest_evidence": "2026-10-07T08:40:00+00:00",
    "official_source_found": true,
@@ -628,15 +620,6 @@
      "excerpt": "With Lewis Hall having just signed a new contract with Newcastle, another Manchester United left-back target looks set to follow suit."
     },
     {
-     "title": "£60m left-back wants to join Man Utd after Lewis Hall signs new Newcastle contract",
-     "url": "https://www.football365.com/news/adrien-truffert-manchester-united-bournemouth",
-     "source": "Football365",
-     "published": "2026-09-11T12:31:14+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Manchester United believe that a France international is keen on a move to Old Trafford, as Lewis Hall decides to sign a new deal with Newcastle United."
-    },
-    {
      "title": "International Magpies: Hall's England defeat Horníček's Czechia",
      "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
      "source": "Newcastle United",
@@ -671,15 +654,6 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": "This past summer was in equal parts harrowing and exciting for Newcastle United fans, with the first phase of the Saudi Arabian-backed project coming to an abrupt end at St James’ Park. Newcastle ’s three most valuable assets - Anthony Gordon, Bruno Guimaraes and Sandro Tonali - all departed for huge profits as the club embarked on a new trading model to help combat financial restrictions. On top "
-    },
-    {
-     "title": "Newcastle: Alan Shearer reveals ‘issue’ with Lewis Hall new contract after Man Utd interest",
-     "url": "https://www.football365.com/news/newcastle-shearer-reveals-issue-lewis-hall-man-utd",
-     "source": "Football365",
-     "published": "2026-09-11T14:46:50+00:00",
-     "matched_on": "hall",
-     "kind": "general",
-     "excerpt": "Alan Shearer has explained why he thinks Newcastle United still have an “issue” with Lewis Hall despite the Manchester United target signing a new contract."
     }
    ]
   },
@@ -946,7 +920,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 30,
+   "evidence_count": 29,
    "source_count": 13,
    "latest_evidence": "2026-10-06T21:12:19+00:00",
    "official_source_found": true,
@@ -1019,15 +993,6 @@
      "excerpt": "Alejandro Garnacho is facing an Aston Villa exit already. That's according to a new report, which says that the Argentine isn't favoured by manager Unai Emery, and has been offered an exit route from the Midlands already. Aston Villa signed Garnacho on loan from Chelsea with a £43 million buy clause over the summer, but with the winger limited to just half an hour in claret-and-blue so far, it app"
     },
     {
-     "title": "Chelsea news: How £117m Morgan Rogers transfer has affected Estevao's role under Xabi Alonso",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-gbp117m-morgan-rogers-signing-has-complicated-estevaos-chelsea-pathway_604992.html",
-     "source": "Sports Mole",
-     "published": "2026-09-11T20:39:00+01:00",
-     "matched_on": "rogers",
-     "kind": "transfer",
-     "excerpt": "Estevao has barely featured for Chelsea this season, with Morgan Rogers's £117m arrival complicating his preferred central pathway under Xabi Alonso."
-    },
-    {
      "title": "Morgan rogers chelsea transfer fpl",
      "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
      "source": "OneFPL",
@@ -1080,6 +1045,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "It’s not been a bad start for the big summer signings with three £100m players in the top four of this ranking of the 20 most expensive. Tottenham’s highest of ..."
+    },
+    {
+     "title": "Could Arsenal match the Invincibles and go unbeaten in the Premier League again?",
+     "url": "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-16T06:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Morgan Rogers is the only player to have scored against Arsenal this season. Chelsea succeeded where Coventry City, Aston Villa, Napoli and Sunderland have failed, and the Gunners came back to beat them too. There are two teams without a goal in their first four Premier League matches of 2026/27 but Arsenal stand alone in having conceded only once. They've won all of their games and looked all but"
     }
    ]
   },
@@ -1088,7 +1062,7 @@
    "club": "CHE",
    "evidence_count": 47,
    "source_count": 14,
-   "latest_evidence": "2026-10-08T00:53:00+01:00",
+   "latest_evidence": "2026-10-10T00:02:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1226,8 +1200,8 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 117,
-   "source_count": 17,
+   "evidence_count": 116,
+   "source_count": 16,
    "latest_evidence": "2026-10-09T17:10:52+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1471,7 +1445,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-10-08T16:39:59+00:00",
+   "latest_evidence": "2026-10-09T17:30:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1497,6 +1471,24 @@
    "researched": true,
    "items": [
     {
+     "title": "Man United vs. Tottenham injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/team-news/man-utd-vs-spurs-injury-suspension-list-predicted-xis_606421.html",
+     "source": "Sports Mole",
+     "published": "2026-10-09T17:30:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Manchester United and Tottenham Hotspur."
+    },
+    {
+     "title": "Roberto De Zerbi delivers Dejan Kulusevski injury update as Tottenham star finally prepares for return",
+     "url": "https://www.101greatgoals.com/football/premier-league/roberto-de-zerbi-delivers-dejan-kulusevski-injury-update-tottenham/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-09T14:43:10+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Dejan Kulusevski is closing in on a return to Tottenham after a year-and-a-half with injury."
+    },
+    {
      "title": "Man Utd v Tottenham: Prediction, team news, lineups and odds",
      "url": "https://www.football365.com/match-preview/man-utd-v-tottenham-prediction-preview",
      "source": "Football365",
@@ -1515,15 +1507,6 @@
      "excerpt": "The San Antonio Spurs return to the floor against the Atlanta Hawks with a slightly new roster, unsettled lineups and championship expectations still driving them."
     },
     {
-     "title": "The FPL half-term report: Spurs",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/08/the-fpl-half-term-report-spurs",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-08T10:10:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Spurs’ FPL season so far and the best assets to consider - if any! The post The FPL half-term report: Spurs appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "Tottenham team news: Dejan Kulusevski makes 'comeback' after 515 days out in huge injury boost",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/515-days-later-kulusevski-makes-spurs-comeback-before-man-united_606447.html",
      "source": "Sports Mole",
@@ -1531,15 +1514,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur receive a huge injury boost before facing Manchester United this weekend as Dejan Kulusevski makes his Spurs 'comeback' after 515 days out."
-    },
-    {
-     "title": "Tottenham lineup vs. Man United: Predicted XI for Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/defensive-dilemmas-for-de-zerbi-predicted-spurs-lineup-vs-man-utd_606420.html",
-     "source": "Sports Mole",
-     "published": "2026-10-08T10:35:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday’s Premier League clash with Manchester United."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
@@ -1555,7 +1529,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 67,
+   "evidence_count": 63,
    "source_count": 19,
    "latest_evidence": "2026-10-07T17:35:30+00:00",
    "official_source_found": true,
@@ -1752,7 +1726,7 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 4,
+   "evidence_count": 3,
    "source_count": 3,
    "latest_evidence": "2026-09-16T16:00:04+00:00",
    "official_source_found": false,
@@ -1768,7 +1742,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1787,15 +1760,6 @@
      "matched_on": "de cuyper",
      "kind": "team news",
      "excerpt": "Coventry are yet to score this season, having lost all four matches The post FPL notes: Gross 17-pointer, another De Cuyper assist + Awoniyi ban appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/11/mitoma-minteh-rutter-brighton-injury-latest-for-fpl-gameweek-4",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-11T14:43:04+00:00",
-     "matched_on": "de cuyper",
-     "kind": "team news",
-     "excerpt": "News that might affect Maxim De Cuyper The post Mitoma, Minteh, Rutter: Brighton injury latest for FPL Gameweek 4 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
