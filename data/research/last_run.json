@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 6,
- "ran_at": "2026-10-10T02:23:35+00:00",
- "seconds": 174.1,
+ "ran_at": "2026-10-10T11:13:10+00:00",
+ "seconds": 155.7,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 548,
- "substantive_items": 178,
- "duplicates_removed": 4,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18535,
+ "sources_readable": 59,
+ "candidates_discovered": 621,
+ "substantive_items": 238,
+ "duplicates_removed": 20,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 18541,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 178 articles"
+    "59/78 sources returned 238 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -49,12 +50,12 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -425,9 +426,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "source_count": 5,
-   "latest_evidence": "2026-10-08T06:39:43+00:00",
+   "latest_evidence": "2026-10-10T10:35:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -452,6 +453,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal v Leeds team news: Konsa + Havertz fit to start",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-10T10:35:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Gameweek 6 of Fantasy Premier League (FPL) kicks off with Arsenal v Leeds United this Saturday lunchtime. The ... The post Arsenal v Leeds team news: Konsa + Havertz fit to start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "England defence tempers expectations with Guehi and Konsa only ‘decent’",
      "url": "https://www.football365.com/news/england-defence-tempers-expectations-mailbox",
@@ -1060,9 +1070,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 47,
+   "evidence_count": 52,
    "source_count": 14,
-   "latest_evidence": "2026-10-10T00:02:00+01:00",
+   "latest_evidence": "2026-10-10T11:10:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
