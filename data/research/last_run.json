@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-11T01:57:46+00:00",
- "seconds": 127.1,
+ "ran_at": "2026-10-11T11:26:37+00:00",
+ "seconds": 140.9,
  "sources_attempted": 78,
- "sources_readable": 61,
- "candidates_discovered": 547,
- "substantive_items": 181,
- "duplicates_removed": 14,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 18603,
+ "sources_readable": 58,
+ "candidates_discovered": 578,
+ "substantive_items": 207,
+ "duplicates_removed": 13,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 18602,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "61/78 sources returned 181 articles"
+    "58/78 sources returned 207 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -49,20 +50,22 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
+  "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 15,
-   "source_count": 8,
+   "evidence_count": 10,
+   "source_count": 5,
    "latest_evidence": "2026-10-03T14:29:16+01:00",
-   "official_source_found": true,
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -123,15 +126,6 @@
      "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
     },
     {
-     "title": "Le Bris: It was a game of fine margins",
-     "url": "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
-     "source": "Sunderland",
-     "published": "2026-09-12T21:45:15+00:00",
-     "matched_on": "raya",
-     "kind": "transfer",
-     "excerpt": "Régis Le Bris felt Sunderland were close to taking something from Saturday’s Premier League fixture against champions Arsenal, despite suffering a 2-0 defeat at the Stadium of Light. The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later. Bukayo Saka adde"
-    },
-    {
      "title": "Aston Villa summer signing ‘miles better’ than Arsenal star David Raya as ‘best in the Premier League’",
      "url": "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
      "source": "Football365",
@@ -177,19 +171,10 @@
      "excerpt": "Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland."
     },
     {
-     "title": "Raya and Arsenal exorcise Sunderland demons to show strength of champions",
-     "url": "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
-     "source": "Football365",
-     "published": "2026-09-12T22:14:33+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Arsenal’s last Saturday night in Sunderland reinforced the view they might never win the title. This one illustrated why they might p*ss it this time…"
-    },
-    {
-     "title": "Mikel Arteta furious with Sunderland 'judo roll' penalty vs Arsenal: 'No penalty in any game, any league'",
-     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-09-12T17:59:00-04:00",
+     "title": "David raya fpl 2026 27",
+     "url": "https://onefpl.com/blog/david-raya-fpl-2026-27",
+     "source": "OneFPL",
+     "published": "",
      "matched_on": "raya",
      "kind": "general",
      "excerpt": ""
@@ -791,7 +776,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 27,
+   "evidence_count": 28,
    "source_count": 13,
    "latest_evidence": "2026-10-06T21:12:19+00:00",
    "official_source_found": true,
@@ -1400,7 +1385,7 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 14,
+   "evidence_count": 13,
    "source_count": 6,
    "latest_evidence": "2026-10-02T15:45:00+00:00",
    "official_source_found": false,
@@ -1434,15 +1419,6 @@
      "matched_on": "szoboszlai",
      "kind": "team news",
      "excerpt": "Notes from the midweek cup ties involving Brentford, Liverpool and Spurs The post FPL notes: Gakpo impresses, Szoboszlai goal + Porro injury boost appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Iraola on fatigue + Barcola fitness, Fulham improve",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-12T23:05:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "It's close but no cigar for Alexander Isak and Dominik Szoboszlai at Anfield The post FPL notes: Iraola on fatigue + Barcola fitness, Fulham improve appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Liverpool given pathway to sign Alex Scott, as perfect Andoni Iraola transfer shapes up: report",
@@ -1533,6 +1509,15 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Steve Nicol reckons Liverpool boss Andoni Iraola should drop Florian Wirtz to the bench and push Dominik Szoboszlai further forward."
+    },
+    {
+     "title": "Liverpool legend urges Iraola to drop Wirtz to help Reds teammate with Szoboszlai ‘rationale’",
+     "url": "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale",
+     "source": "Football365",
+     "published": "2026-09-13T14:46:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "general",
+     "excerpt": "Former Liverpool defender Steve Nicol has told Reds boss Andoni Iraola why he should drop Florian Wirtz to get his attack firing this season."
     }
    ]
   },

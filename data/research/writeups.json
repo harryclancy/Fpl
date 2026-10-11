@@ -1,44 +1,39 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-11T01:57:46+00:00",
+ "generated": "2026-10-11T11:26:37+00:00",
  "gameweek": 7,
- "corpus_size": 18603,
+ "corpus_size": 18602,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — Sports Mole, 03 Oct: “The Gunners still have several important deals expiring in 2028 , and there is currently no indication that Odegaard, Havertz or Raya are seeking exits.”",
-   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 15 retrieved item(s) from 8 source(s), the most recent dated 03 Oct.",
+   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 10 retrieved item(s) from 5 source(s), the most recent dated 03 Oct.",
    "case_for": "What supports keeping him: Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.” Football365, 03 Oct: “Arsenal: Huge deal 'done soon' as Arteta starter could be set for brutal axe after 'surprising development' Arsenal manager Mikel Arteta According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’.” Football365, 03 Oct: “The same report claims new deals are also possible for Martin Odegaard, Kai Havertz and Raya, though there has been a ‘surprising development’ with the goalkeeper.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “The Gunners would have been 1-0 down after 56 minutes, had David Raya (£6.0m) not earned his crust with a superb penalty save.”",
    "developments": "Recent developments — Football365, 25 Sep: “Arsenal: David Raya told £30m summer signing is 'miles better' as 'best in the Premier League' David Raya in action for Arsenal.” Football365, 25 Sep: “Arsenal star David Raya has been told that Aston Villa summer signing Zion Suzuki is ‘miles better’ as the “best in the Premier League”.” Football365, 23 Sep: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while four new signings feature among the top 10 Premier League goalkeepers.”",
-   "outlook": "On the coming weeks — FourFourTwo FPL, 14 Sep: “The likes of David Raya, Declan Rice and Bruno Fernandes were shoo-ins in their respective roles, and so too was Jurrien Timber at right-back.” Football365, 12 Sep: “After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.”",
+   "outlook": "On the coming weeks — FourFourTwo FPL, 14 Sep: “The likes of David Raya, Declan Rice and Bruno Fernandes were shoo-ins in their respective roles, and so too was Jurrien Timber at right-back.” OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
    "confidence": "high",
-   "evidence_count": 15,
+   "evidence_count": 10,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/arsenal-have-the-best-player-in-his-position-in-the-premier-league-but-he-shouldnt-start",
     "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-white-injury-le-bris-on-le-fee-pen-miss-raya-haul",
     "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
     "https://www.football365.com/news/arsenal-deal-done-soon-surprising-development-current-starter-replaced-arteta",
-    "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
     "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
     "https://www.sportsmole.co.uk/football/arsenal/feature/are-arsenal-unlucky-with-the-goals-they-concede-what-the-numbers-say_605514.html",
     "https://www.football365.com/news/david-raya-jamie-carragher-arsenal-verdict",
     "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
-    "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
-    "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes"
+    "https://onefpl.com/blog/david-raya-fpl-2026-27"
    ],
    "sources_used": [
     "Fantasy Football Scout",
     "Football365",
     "FourFourTwo FPL",
-    "NBC Sports Rotoworld PL",
     "OneFPL",
-    "Opta Analyst",
-    "Sports Mole",
-    "Sunderland"
+    "Sports Mole"
    ],
    "quotes": [
     {
@@ -202,101 +197,6 @@
      "source": "Football365",
      "url": "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
      "published": "2026-09-13T07:12:05+00:00",
-     "tone": "neutral",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
-     "text": "2 Arsenal: Bruno, bench, brilliant Raya help Arsenal show strength of champions Bruno Guimaraes enjoys scoring for Arsenal at Sunderland Arsenal ’s last Saturday night in Sunderland highlighted the flaws that many thought would stop them from winning the Premier League title.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
-     "published": "2026-09-12T22:14:33+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "REACTION: Mikel Arteta and Regis Le Bris wowed by Arsenal star vs Sunderland – ‘one of the best’ Raya did it again in added time.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/sunderland-0-2-arsenal-raya-bruno-guimaraes-arteta",
-     "published": "2026-09-12T22:14:33+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Enzo Le Fee stepped up to take the penalty, but Arsenal and Spain international goalkeeper Raya saved it with a superb save low to his left.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
-     "published": "2026-09-12T21:58:35+00:00",
-     "tone": "positive",
-     "topics": [
-      "transfer",
-      "set pieces"
-     ]
-    },
-    {
-     "text": "After the match, Arsenal boss Arteta raved about Raya, whose heroics also impressed Sunderland manager Le Bris.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/david-raya-arsenal-sunderland-mikel-arteta-regis-le-bris-verdict",
-     "published": "2026-09-12T21:58:35+00:00",
-     "tone": "positive",
-     "topics": [
-      "tactics"
-     ]
-    },
-    {
-     "text": "The Black Cats had an opportunity to take the lead early in the second half, but Enzo Le Fée’s penalty was saved by David Raya before Bruno Guimarães opened the scoring for the visitors moments later.",
-     "source": "Sunderland",
-     "url": "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
-     "published": "2026-09-12T21:45:15+00:00",
-     "tone": "neutral",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
-     "text": "“Raya was one of the best players on the pitch.",
-     "source": "Sunderland",
-     "url": "https://www.safc.com/news/2026/september/12/le-bris--it-was-a-game-of-fine-margins/",
-     "published": "2026-09-12T21:45:15+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "David Raya’s penalty save and a stunning goal from former Newcastle United midfielder Bruno Guimarães proved crucial as Arsenal beat Sunderland 2-0 at the Stadium of Light.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
-     "published": "2026-09-12T21:25:06+00:00",
-     "tone": "positive",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
-     "text": "It was Guimarães who made the breakthrough with a curling strike into the top-right corner in the 58 minute, only 121 seconds after Raya had brilliantly turned Enzo Le Feé’s spot-kick against the post.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/sunderland-vs-arsenal-stats-bruno-guimaraes-david-raya-penalty-save",
-     "published": "2026-09-12T21:25:06+00:00",
-     "tone": "neutral",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
-     "text": "But he was left angry with the fact that Raya had to save a penalty in the first place, as Arteta felt Daniel Ballard used a ‘judo roll’ to win a penalty off Ezri Konsa as Arsenal were penalized for physical play in the box.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
-     "published": "2026-09-12T17:59:00-04:00",
-     "tone": "neutral",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
-     "text": "“They could’ve changed the game.” Bruno Guimaraes came off the bench and slammed the Gunners in front, moments after Sunderland saw a penalty saved by Raya, and Guimaraes was asked whether Raya was the best keeper in the world.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-after-arsenal-scrape-win-at-sunderland-thanks-to-raya-guimaraes",
-     "published": "2026-09-12T17:59:00-04:00",
      "tone": "neutral",
      "topics": [
       "set pieces"
@@ -845,7 +745,7 @@
    "player": "Groß",
    "club": "BHA",
    "status": "Latest on Groß — Tactical Football Analysis, 28 Sep: “Groß is therefore expected to be extremely useful to Brighton this season, especially after failing to get the desired playing time at Borussia Dortmund last term before his Amex return.”",
-   "why_here": "Groß is in the starting eleven this week at £5.9m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 09 Oct.",
+   "why_here": "Groß is in the starting eleven this week at £6.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 09 Oct.",
    "case_for": "What supports keeping him: Fantasy Football 247, 09 Oct: “Pascal Groß (14pts) was once again the saviour for many, and unlike GW2 we actually started him this time.” Tactical Football Analysis, 28 Sep: “Pascal Groß Scout Report At Brighton 2026/2027 – Analysis Pascal Groß has started the 2026/2027 Premier League season impressively for Brighton & Hove Albion His goal contribution numbers have been outstanding, as he has scored four goals and provided four assists in all competitions so far.” Aston Villa, 13 Sep: “The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1678,14 +1578,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Chelsea: “Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.8m as a MID. The selection rests on 27 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
+   "why_here": "Rogers is in the starting eleven this week at £7.8m as a MID. The selection rests on 28 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
    "case_for": "What supports keeping him: Football365, 06 Oct: “Had cut a frustrating figure for much of the first half despite doing his usual tidy job before a proper highlight-reel moment with his pass to release Morgan Rogers in the build-up to Kane’s goal.” Ipswich Town, 04 Oct: “Hornby had Town’s first sight of goal in the eighth minute after doing well to breeze past her marker and break through the defence, but her shot from the edge of the box was straight at Sian Rogers.” DraftKings Network Soccer, 25 Sep: “Best MLB Strikeout Prop Bets Today (September 25, 2026) New York Yankees vs. Baltimore Orioles: Orioles LHP Trevor Rogers 6+ strikeouts: Rogers has recorded 6+ K in 10 of his last 12 starts, plus NYY has allowed 3 of the last 4 starters they’ve faced to reach that mark.”",
    "case_against": "What argues against him: Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "On minutes — Hull City, 14 Sep: “Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bridge.” Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.”",
    "developments": "Recent developments — Football365, 06 Oct: “Elliot Anderson The finish, blazed over the bar having been teed up by Morgan Rogers, was deeply disappointing but the significance was that Anderson had made that move into the penalty area at all.” Sports Mole, 06 Oct: “This summer, Chelsea signed Rogers for £117m , a club record that also made him the most expensive British footballer in history and Palmer's team-mate at Stamford Bridge.” Sports Mole, 06 Oct: “The distance between those two valuations is where the Rogers story sits: a career that included failed loan spells, a sacking that arrived a fortnight after he did, and a central midfielder at Bournemouth who did not know what to do with him.”",
    "outlook": "On the coming weeks — Sports Mole, 26 Sep: “There is scope for a new attacker to impress, and Rogers will hope he can influence the game on the weekend and claim a spot on the wings moving forward.” FourFourTwo FPL, 23 Sep: “While the Blues signed Morgan Rogers for a club-record fee in the summer, Villa took Nicolas Jackson and Garnacho off new manager Xabi Alonso's hands – but fellow Basque boss Emery has instead favoured youngster George Hemmings on the left flank.”",
    "confidence": "medium",
-   "evidence_count": 27,
+   "evidence_count": 28,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
@@ -2034,6 +1934,25 @@
      "text": "That matters because Palmer and Rogers did not play a full cup match.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/chelsea-leeds-fpl-lessons-palmer-rogers-joao-pedro-gw4-2026-27",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Xabi Alonso highlights impact of 'very complete modern player' Morgan Rogers | News | Official Site | Chelsea Football Club Xabi Alonso described Morgan Rogers as a ‘very complete modern player’ after the England international struck his fourth Chelsea goal in our 5-1 win against Bournemouth.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers",
+     "published": "",
+     "tone": "positive",
+     "topics": [
+      "match report",
+      "statistics"
+     ]
+    },
+    {
+     "text": "Signed from Aston Villa this summer, Rogers has needed little time to settle into his new surroundings at Stamford Bridge despite undertaking a truncated pre-season after helping the Three Lions finish third at this summer's World Cup.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers",
      "published": "",
      "tone": "neutral",
      "topics": []
@@ -4394,7 +4313,7 @@
    "player": "Wissa",
    "club": "NEW",
    "status": "Latest on Wissa — FourFourTwo FPL, 06 Oct: “The decision enabled DR Congo, whose squad included Newcastle United striker Yoane Wissa, to advance to the intercontinental play-off.”",
-   "why_here": "Wissa is in the starting eleven this week at £6.2m as a FWD. The selection rests on 8 retrieved item(s) from 7 source(s), the most recent dated 06 Oct.",
+   "why_here": "Wissa is in the starting eleven this week at £6.3m as a FWD. The selection rests on 8 retrieved item(s) from 7 source(s), the most recent dated 06 Oct.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 06 Oct: “During the tournament in North America, Mpasi remained DR Congo's starting goalkeeper while Wissa spearheaded the attack.” Aston Villa, 24 Sep: “The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa.”",
    "case_against": "What argues against him: Fantasy Football Scout, 19 Sep: “WISSA, PENALTY MISSA Newcastle had lost all three of last season’s penalty takers over the summer, so the question was over who would step up from 12 yards next.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4531,17 +4450,16 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — FourFourTwo FPL, 19 Sep: “I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai.”",
-   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 14 retrieved item(s) from 6 source(s), the most recent dated 02 Oct.",
+   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 13 retrieved item(s) from 6 source(s), the most recent dated 02 Oct.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.” FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.” FourFourTwo FPL, 29 Sep: “The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park.”",
    "case_against": "What argues against him: 101 Great Goals — Fantasy, 16 Sep: “Alexis Mac Allister and Cody Gakpo had put Liverpool ahead before Tottenham threatened a comeback, but Szoboszlai’s finish ended any doubt and secured Liverpool’s place in the fourth round.” OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Scout, 16 Sep: “Mac Allister later helped create another big opening for Szoboszlai with Liverpool’s press, making this a timely reminder of his qualities as he pushes to regain his league starting spot.” Fantasy Football Scout, 16 Sep: ““Cody gives us not just the goals and the assists, he gives us also some physicality, he gives us calmness on the ball.” – Andoni Iraola Dominik Szoboszlai (£7.0m) only played the final 28 minutes but still made his mark.” 101 Great Goals — Fantasy, 16 Sep: “Szoboszlai came off the bench to settle the tie with a long-range effort from around 30 yards.”",
    "outlook": "On the coming weeks — Football365, 14 Sep: “Wirtz, who signed in a deal worth £116m in 2025, is yet to find his best form in a Reds shirt since signing and now Nicol thinks the Germany international should sit their next game out and give Szoboszlai a chance in a more advanced midfield role.” Sports Mole, 13 Sep: “It should be remembered that Szoboszlai and Gravenberch both played key roles in delivering the club their 20th league title in 2024-25, so it is somewhat understandable that the Reds' hierarchy still have faith in the pair.”",
    "confidence": "high",
-   "evidence_count": 14,
+   "evidence_count": 13,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/09/16/fpl-notes-gakpo-impresses-szoboszlai-scores-porro-injury-boost",
-    "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
     "https://www.fourfourtwo.com/transfer/liverpool-given-pathway-to-sign-alex-scott-as-perfect-andoni-iraola-transfer-shapes-up-report",
     "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
     "https://www.fourfourtwo.com/team/liverpool-save-millions-in-transfer-bailout-as-risky-manoeuvre-eases-pressure-on-depleted-hierarchy",
@@ -4551,7 +4469,8 @@
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
     "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/",
     "https://www.101greatgoals.com/football/liverpool-tottenham-report/",
-    "https://www.football365.com/news/liverpool-iraola-wirtz-nicol-drop-promote-szoboszlai"
+    "https://www.football365.com/news/liverpool-iraola-wirtz-nicol-drop-promote-szoboszlai",
+    "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -4701,24 +4620,6 @@
      "url": "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale",
      "published": "2026-09-13T14:46:00+00:00",
      "tone": "neutral",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
-     "text": "Isak was often isolated and looked short on energy himself, while Szoboszlai was one part of yet another unconvincing central midfield display.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
-     "published": "2026-09-12T23:05:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Above: Alexander Isak’s xG shot graph in Gameweek 4 (the bigger the circle, the better the chance) Szoboszlai, meanwhile, racked up three big chances created (BCC, below), one for Isak’s aforementioned header.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-iraola-on-fatigue-barcola-fitness-fulham-improve",
-     "published": "2026-09-12T23:05:00+00:00",
-     "tone": "positive",
      "topics": [
       "statistics"
      ]
