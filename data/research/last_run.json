@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-11T11:26:37+00:00",
- "seconds": 140.9,
+ "ran_at": "2026-10-11T20:58:58+00:00",
+ "seconds": 150.6,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 578,
- "substantive_items": 207,
- "duplicates_removed": 13,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 18602,
+ "candidates_discovered": 646,
+ "substantive_items": 283,
+ "duplicates_removed": 23,
+ "deeply_analysed": 70,
+ "deep_read_failed": 20,
+ "corpus_size": 18587,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 207 articles"
+    "58/78 sources returned 283 articles"
    ]
   },
   "blackout": {
@@ -50,19 +50,19 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 10,
+   "evidence_count": 9,
    "source_count": 5,
    "latest_evidence": "2026-10-03T14:29:16+01:00",
    "official_source_found": false,
@@ -160,15 +160,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Sky Sports pundit Jamie Carragher picks the most important player for Arsenal at the moment."
-    },
-    {
-     "title": "Bruno Guimaraes hails Arsenal star as ‘best in the world’ after Sunderland win – ‘he is unbelievable’",
-     "url": "https://www.football365.com/news/bruno-guimaraes-hails-arsenal-star-best-world-sunderland-win-unbelievable",
-     "source": "Football365",
-     "published": "2026-09-13T07:12:05+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland."
     },
     {
      "title": "David raya fpl 2026 27",
@@ -279,9 +270,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-11T00:44:40+01:00",
+   "evidence_count": 3,
+   "source_count": 3,
+   "latest_evidence": "2026-10-11T19:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -301,10 +292,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-11T19:00:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal injury news: Why Piero Hincapie 'ankle' problem could be bad news for Riccardo Calafiori after Leeds win",
      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
@@ -313,42 +313,6 @@
      "matched_on": "calafiori",
      "kind": "team news",
      "excerpt": "After Piero Hincapie reportedly suffered an injury for Arsenal, Sports Mole explains why an absence could seriously impact Riccardo Calafiori."
-    },
-    {
-     "title": "Arsenal suffer new injury blow straight after Leeds win as substitute 'carried off'",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arsenal-substitute-carried-off-after-leeds-win-as-arteta-dealt-new-blow_606637.html",
-     "source": "Sports Mole",
-     "published": "2026-10-10T18:08:44+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal suffer a new injury blow straight after their 2-1 Premier League win over Leeds United, as one of Mikel Arteta's substitutes is 'carried off'."
-    },
-    {
-     "title": "Arsenal 2-1 Leeds: Report, result and goals as Gunners fight back for big win",
-     "url": "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-10T13:29:30+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Catch up with all the action from Arsenal vs Leeds in the Premier League."
-    },
-    {
-     "title": "Arsenal v Leeds team news: Konsa + Havertz fit to start",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-10T10:35:00+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Gameweek 6 of Fantasy Premier League (FPL) kicks off with Arsenal v Leeds United this Saturday lunchtime. The ... The post Arsenal v Leeds team news: Konsa + Havertz fit to start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal vs. Leeds lineups confirmed: Kai Havertz, Noni Madueke start as Declan Rice call made",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/havertz-starts-as-eze-snubbed-arsenal-vs-leeds-team-news-confirmed_606616.html",
-     "source": "Sports Mole",
-     "published": "2026-10-10T11:18:00+01:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Arsenal and Leeds United confirm their starting lineups for Saturday's Premier League early kickoff at the Emirates Stadium."
     },
     {
      "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
@@ -364,9 +328,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 7,
-   "source_count": 4,
-   "latest_evidence": "2026-10-07T08:40:00+00:00",
+   "evidence_count": 8,
+   "source_count": 5,
+   "latest_evidence": "2026-10-11T16:08:02+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -386,8 +350,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -416,6 +380,15 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "With Lewis Hall having just signed a new contract with Newcastle, another Manchester United left-back target looks set to follow suit."
+    },
+    {
+     "title": "Hull City 2-2 Everton",
+     "url": "https://www.wearehullcity.co.uk/news/2026/october/11/hull-city-2-2-everton/",
+     "source": "Hull City",
+     "published": "2026-10-11T16:08:02+00:00",
+     "matched_on": "hall",
+     "kind": "general",
+     "excerpt": "Fixtures Hull City Vs. Everton - Sun, Oct 11 2026, 14:00 Hull City played out a thrilling 2-2 draw with Everton at the MKM Stadium in their first game back after the international break. In the shadow of nearby Hull Fair, Joe Gelhardt scored his first goal of the season just after half-time to give City the lead, neatly finishing beyond Jordan Pickford. Kiernan Dewsbury-Hall levelled for the Toffe"
     },
     {
      "title": "International Magpies: Hall's England defeat Horníček's Czechia",
@@ -579,9 +552,9 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "evidence_count": 3,
-   "source_count": 3,
-   "latest_evidence": "2026-10-09T10:25:07+00:00",
+   "evidence_count": 6,
+   "source_count": 4,
+   "latest_evidence": "2026-10-10T07:04:06+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -595,12 +568,13 @@
     "fpl advice",
     "injury",
     "match report",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -614,13 +588,40 @@
      "excerpt": "FF247 Site Team News GW6 Welcome to FF247 Site Team News GW6 I feel we’ve turned point dodging into an art form. We finished on 42 points against an average of 48, and one look at the team makes it fairly easy to work out where things went wrong. Pascal Groß (14pts) was once again […] The post FF247 Site Team News GW6 appeared first on Fantasy Football 247 - Premier League Tips ."
     },
     {
-     "title": "Clark signs first professional contract with Villa",
-     "url": "https://avfc.co.uk/news/2026/september/13/women-clark-signs-first-professional-contract/",
-     "source": "Aston Villa",
-     "published": "2026-09-13T10:00:00+00:00",
-     "matched_on": "gro",
-     "kind": "transfer",
-     "excerpt": "Aston Villa are delighted to confirm that following her 18 th birthday celebrated today, Lily Clark has signed her first professional contract with the club. The now 18 - year-old joined Villa in October 2025 and has become a regular member of the senior squad , gaining valuable experience on the training field within our goalkeeper gro up. Clark was named in the matchday squad for three of our Wo"
+     "title": "Where to go for live coverage and highlights of Sunderland vs Brighton",
+     "url": "https://www.safc.com/news/2026/october/10/where-to-go-for-live-coverage-and-highlights-of-sunderland-vs-brighton/",
+     "source": "Sunderland",
+     "published": "2026-10-10T07:04:06+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "After a three-week break, Sunderland AFC are back on home soil today as the Black Cats welcome Brighton & Hove Albion to the Stadium of Light for a 3pm BST kick-off - follow all the action, with full coverage across safc.com and the Club’s official channels. Black Cat Members can tune in for live commentary here on safc.com, while our Match Centre will keep you updated with a live blog, in-game st"
+    },
+    {
+     "title": "Le Bris on Brighton, squad rotation and Sunderland’s busy schedule",
+     "url": "https://www.safc.com/news/2026/october/09/le-bris-on-brighton--squad-rotation-and-sunderland-s-busy-schedule/",
+     "source": "Sunderland",
+     "published": "2026-10-09T12:46:02+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Régis Le Bris says Sunderland are relishing the challenge of facing Brighton & Hove Albion as the Black Cats prepare to return to Premier League action at the Stadium of Light on Saturday. The Lads welcome Fabian Hürzeler’s side to Wearside for a 3pm BST kick-off, with Le Bris reflecting on the benefits of the recent international break and the importance of maintaining high standards during a dem"
+    },
+    {
+     "title": "Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/07/brighton-players-saka-bruno-buy-keep-or-sell-in-gameweek-6",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-07T07:30:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "The FPL half-term report: Brighton",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/03/the-fpl-half-term-report-brighton",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-03T17:55:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "With three wins and one draw, Brighton sit third in the table The post The FPL half-term report: Brighton appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
@@ -1056,9 +1057,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 114,
+   "evidence_count": 119,
    "source_count": 16,
-   "latest_evidence": "2026-10-09T17:10:52+01:00",
+   "latest_evidence": "2026-10-11T19:15:07+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1385,9 +1386,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 13,
+   "evidence_count": 17,
    "source_count": 6,
-   "latest_evidence": "2026-10-02T15:45:00+00:00",
+   "latest_evidence": "2026-10-11T17:56:36+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1408,9 +1409,36 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "low",
+   "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Liverpool v Man City team news: Gvardiol benched, Szoboszlai absent",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/liverpool-v-man-city-team-news-gvardiol-benched-szoboszlai-absent",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-11T15:15:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Three changes for the hosts, one for City The post Liverpool v Man City team news: Gvardiol benched, Szoboszlai absent appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Liverpool games Dominik Szoboszlai could miss as Man City absence explained",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/why-is-szoboszlai-not-playing-for-liverpool-against-man-city_606682.html",
+     "source": "Sports Mole",
+     "published": "2026-10-11T15:49:00+01:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Sports Mole looks at the Liverpool games Dominik Szoboszlai could miss through injury as his absence against Manchester City is explained."
+    },
+    {
+     "title": "Liverpool vs. Man City confirmed lineups: Huge Szoboszlai, Semenyo, Mac Allister, O'Reilly decisions made for Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/news/liverpool-vs-man-city-confirmed-xis-huge-szoboszlai-semenyo-koumas-mac-allister-decisions-made_606676.html",
+     "source": "Sports Mole",
+     "published": "2026-10-11T15:21:00+01:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Liverpool and Manchester City confirm their starting lineups for this afternoon’s eagerly-anticipated Premier League showdown at Anfield."
+    },
     {
      "title": "FPL notes: Gakpo impresses, Szoboszlai goal + Porro injury boost",
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/16/fpl-notes-gakpo-impresses-szoboszlai-scores-porro-injury-boost",
@@ -1419,6 +1447,15 @@
      "matched_on": "szoboszlai",
      "kind": "team news",
      "excerpt": "Notes from the midweek cup ties involving Brentford, Liverpool and Spurs The post FPL notes: Gakpo impresses, Szoboszlai goal + Porro injury boost appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "HENRY WINTER: Manchester City triumph with a 'pointless' Anfield win - and show they have the character to deal with the noise",
+     "url": "https://www.fourfourtwo.com/team/manchester-city-triumph-with-a-pointless-anfield-win-and-show-they-have-the-character-to-deal-with-the-noise",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-11T17:56:36+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "transfer",
+     "excerpt": "Manchester City took all three points here at Anfield but could it all be pointless? Does this victory actually mean anything? “Going down” chorused the Kop towards the City players as they celebrated with their fans. They’re going top - for now. This is the Premier League season that will be decided by lawyers. The season fast turns into a farce. As Liverpool fans bayed “cheats, cheats, cheats”, "
     },
     {
      "title": "Liverpool given pathway to sign Alex Scott, as perfect Andoni Iraola transfer shapes up: report",
@@ -1482,42 +1519,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "I’ll start today by looking back at that brilliant goal from Dominik Szoboszlai in an important 3-1 win for Liverpool against Tottenham. I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai. He's got one of the best techniques I've seen in Europe at the moment, when you consider his ability in shooting from distance. He jus"
-    },
-    {
-     "title": "Iraola hails Szoboszlai after rocket seals Liverpool’s win over Tottenham",
-     "url": "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-16T08:16:27+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Andoni Iraola was full of praise for midfielder Dominik Szoboszlai on Tuesday night."
-    },
-    {
-     "title": "Liverpool 3-1 Tottenham: Szoboszlai stunner sends Reds into last 16",
-     "url": "https://www.101greatgoals.com/football/liverpool-tottenham-report/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-15T21:08:55+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Liverpool were made to work hard before the tie was settled in stunning fashion."
-    },
-    {
-     "title": "Iraola told to drop big-money Liverpool signing and promote superstar to advanced role",
-     "url": "https://www.football365.com/news/liverpool-iraola-wirtz-nicol-drop-promote-szoboszlai",
-     "source": "Football365",
-     "published": "2026-09-14T08:03:02+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Steve Nicol reckons Liverpool boss Andoni Iraola should drop Florian Wirtz to the bench and push Dominik Szoboszlai further forward."
-    },
-    {
-     "title": "Liverpool legend urges Iraola to drop Wirtz to help Reds teammate with Szoboszlai ‘rationale’",
-     "url": "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale",
-     "source": "Football365",
-     "published": "2026-09-13T14:46:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Former Liverpool defender Steve Nicol has told Reds boss Andoni Iraola why he should drop Florian Wirtz to get his attack firing this season."
     }
    ]
   },
@@ -1663,9 +1664,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "source_count": 5,
-   "latest_evidence": "2026-10-10T10:35:00+00:00",
+   "latest_evidence": "2026-10-11T19:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1690,6 +1691,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-11T19:00:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal v Leeds team news: Konsa + Havertz fit to start",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
@@ -1788,15 +1798,6 @@
      "matched_on": "konsa",
      "kind": "transfer",
      "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
-    },
-    {
-     "title": "Arsenal receive baffling VAR verdict on Sunderland penalty incident as Premier League explain 3-2 vote",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html",
-     "source": "Sports Mole",
-     "published": "2026-09-23T11:20:00+01:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
     }
    ]
   }
