@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-10T20:35:02+00:00",
- "seconds": 128.9,
+ "ran_at": "2026-10-11T01:57:46+00:00",
+ "seconds": 127.1,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 617,
- "substantive_items": 246,
- "duplicates_removed": 13,
- "deeply_analysed": 73,
- "deep_read_failed": 17,
- "corpus_size": 18600,
+ "sources_readable": 61,
+ "candidates_discovered": 547,
+ "substantive_items": 181,
+ "duplicates_removed": 14,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 18603,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 246 articles"
+    "61/78 sources returned 181 articles"
    ]
   },
   "blackout": {
@@ -49,7 +49,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -296,8 +295,8 @@
    "player": "Calafiori",
    "club": "ARS",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-10-10T13:29:30+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-11T00:44:40+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -322,6 +321,24 @@
    "researched": true,
    "items": [
     {
+     "title": "Arsenal injury news: Why Piero Hincapie 'ankle' problem could be bad news for Riccardo Calafiori after Leeds win",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
+     "source": "Sports Mole",
+     "published": "2026-10-11T00:44:40+01:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "After Piero Hincapie reportedly suffered an injury for Arsenal, Sports Mole explains why an absence could seriously impact Riccardo Calafiori."
+    },
+    {
+     "title": "Arsenal suffer new injury blow straight after Leeds win as substitute 'carried off'",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arsenal-substitute-carried-off-after-leeds-win-as-arteta-dealt-new-blow_606637.html",
+     "source": "Sports Mole",
+     "published": "2026-10-10T18:08:44+01:00",
+     "matched_on": "ARS team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal suffer a new injury blow straight after their 2-1 Premier League win over Leeds United, as one of Mikel Arteta's substitutes is 'carried off'."
+    },
+    {
      "title": "Arsenal 2-1 Leeds: Report, result and goals as Gunners fight back for big win",
      "url": "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
      "source": "101 Great Goals — Fantasy",
@@ -331,15 +348,6 @@
      "excerpt": "Catch up with all the action from Arsenal vs Leeds in the Premier League."
     },
     {
-     "title": "Mikel Arteta reaction: Arsenal 'wanted to prove we are something special and unique' in win over Leeds",
-     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-manager-speaks-after-comeback-win-over-leeds",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-10T09:25:37-04:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
      "title": "Arsenal v Leeds team news: Konsa + Havertz fit to start",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
      "source": "Fantasy Football Scout",
@@ -347,15 +355,6 @@
      "matched_on": "ARS team news",
      "kind": "club team news",
      "excerpt": "Gameweek 6 of Fantasy Premier League (FPL) kicks off with Arsenal v Leeds United this Saturday lunchtime. The ... The post Arsenal v Leeds team news: Konsa + Havertz fit to start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal vs Leeds: Line-ups confirmed for Premier League match at Emirates Stadium",
-     "url": "https://www.101greatgoals.com/football/premier-league/arsenal-vs-leeds-united-live-line-ups-teams-where-to-watch-match-tv-channel-online-stream/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-10T10:23:23+00:00",
-     "matched_on": "ARS team news",
-     "kind": "club team news",
-     "excerpt": "Catch up with all the team news ahead of Arsenal vs Leeds in the Premier League."
     },
     {
      "title": "Arsenal vs. Leeds lineups confirmed: Kai Havertz, Noni Madueke start as Declan Rice call made",
@@ -652,7 +651,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 54,
    "source_count": 14,
    "latest_evidence": "2026-10-10T14:35:27+01:00",
    "official_source_found": true,
@@ -932,8 +931,8 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 59,
-   "source_count": 19,
+   "evidence_count": 58,
+   "source_count": 18,
    "latest_evidence": "2026-10-07T17:35:30+00:00",
    "official_source_found": true,
    "fpl_source_found": true,

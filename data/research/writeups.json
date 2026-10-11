@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-10T20:35:02+00:00",
+ "generated": "2026-10-11T01:57:46+00:00",
  "gameweek": 7,
- "corpus_size": 18600,
+ "corpus_size": 18603,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -427,20 +427,20 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "status": "Latest on Calafiori — 101 Great Goals — Fantasy, 10 Oct: “James Justin had given Leeds a deserved lead early in the second half, but Riccardo Calafiori equalised before Guimaraes completed the turnaround to secure all three points for Mikel Arteta’s side.”",
-   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 10 Oct.",
-   "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 10 Oct: “Ben White provided the assist as Calafiori arrived to volley home from close range in the 62nd minute, beating James Trafford to make it 1-1.” NBC Sports Rotoworld PL, 10 Oct: “But Riccardo Calafiori and Bruno Guimaraes scored eight minutes apart to put the champions on top and in control of the three points.”",
+   "status": "Latest on Calafiori — Sports Mole, 11 Oct: “That Premier League victory was hard fought, with their opponents initially taking a lead 55th minute, only for Riccardo Calafiori and Bruno Guimaraes to score and win the match.”",
+   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 11 Oct.",
+   "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 10 Oct: “Ben White provided the assist as Calafiori arrived to volley home from close range in the 62nd minute, beating James Trafford to make it 1-1.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "expected_minutes": "On minutes — Sports Mole, 11 Oct: “Since signing for Arsenal in the summer of 2024, Calafiori has missed 44 games for club and country through injury, and he has started just 39 of the the Gunners' last 84 Premier League matches.”",
+   "developments": "Recent developments — Sports Mole, 10 Oct: “The reigning champions returned to triumphant ways at the Emirates Stadium on Saturday lunchtime, as Riccardo Calafiori and Bruno Guimaraes cancelled out James Justin's opener.” Sports Mole, 10 Oct: “Arsenal also appeared to come through the game itself unscathed, all five substitutions being tactical, including Hincapie's introduction for Calafiori in the 82nd minute.” 101 Great Goals — Fantasy, 10 Oct: “James Justin had given Leeds a deserved lead early in the second half, but Riccardo Calafiori equalised before Guimaraes completed the turnaround to secure all three points for Mikel Arteta’s side.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
+    "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arsenal-substitute-carried-off-after-leeds-win-as-arteta-dealt-new-blow_606637.html",
     "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
-    "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-manager-speaks-after-comeback-win-over-leeds",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
-    "https://www.101greatgoals.com/football/premier-league/arsenal-vs-leeds-united-live-line-ups-teams-where-to-watch-match-tv-channel-online-stream/",
     "https://www.sportsmole.co.uk/football/arsenal/news/havertz-starts-as-eze-snubbed-arsenal-vs-leeds-team-news-confirmed_606616.html",
     "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials"
    ],
@@ -448,10 +448,46 @@
     "101 Great Goals — Fantasy",
     "FPL Captain",
     "Fantasy Football Scout",
-    "NBC Sports Rotoworld PL",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "That Premier League victory was hard fought, with their opponents initially taking a lead 55th minute, only for Riccardo Calafiori and Bruno Guimaraes to score and win the match.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
+     "published": "2026-10-11T00:44:40+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Since signing for Arsenal in the summer of 2024, Calafiori has missed 44 games for club and country through injury, and he has started just 39 of the the Gunners' last 84 Premier League matches.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
+     "published": "2026-10-11T00:44:40+01:00",
+     "tone": "neutral",
+     "topics": [
+      "injury",
+      "transfer"
+     ]
+    },
+    {
+     "text": "The reigning champions returned to triumphant ways at the Emirates Stadium on Saturday lunchtime, as Riccardo Calafiori and Bruno Guimaraes cancelled out James Justin's opener.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arsenal-substitute-carried-off-after-leeds-win-as-arteta-dealt-new-blow_606637.html",
+     "published": "2026-10-10T18:08:44+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Arsenal also appeared to come through the game itself unscathed, all five substitutions being tactical, including Hincapie's introduction for Calafiori in the 82nd minute.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arsenal-substitute-carried-off-after-leeds-win-as-arteta-dealt-new-blow_606637.html",
+     "published": "2026-10-10T18:08:44+01:00",
+     "tone": "neutral",
+     "topics": [
+      "tactics"
+     ]
+    },
     {
      "text": "James Justin had given Leeds a deserved lead early in the second half, but Riccardo Calafiori equalised before Guimaraes completed the turnaround to secure all three points for Mikel Arteta’s side.",
      "source": "101 Great Goals — Fantasy",
@@ -465,14 +501,6 @@
      "source": "101 Great Goals — Fantasy",
      "url": "https://www.101greatgoals.com/match-reports/arsenal-2-1-leeds-report-result-goals/",
      "published": "2026-10-10T13:29:30+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "But Riccardo Calafiori and Bruno Guimaraes scored eight minutes apart to put the champions on top and in control of the three points.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-arsenal-manager-speaks-after-comeback-win-over-leeds",
-     "published": "2026-10-10T09:25:37-04:00",
      "tone": "positive",
      "topics": []
     }
@@ -876,14 +904,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — RotoWire Soccer, 06 Oct: “Cole Palmer Injury Update for FPL GW6 Monday, Oct. 5: Playing Through Pain Per Tuchel Cole Palmer withdrew from England duty on Sept. 25, and Tuchel said \"my understanding is that he is playing with discomfort and pain.\" He played the full 90 in Chelsea's 3-0 loss to Brentford.” Soccerway, 25 Sep: “Palmer was one of the headline omissions from Tuchel's selection for the World Cup as the Three Lions reached the semi-finals.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 55 retrieved item(s) from 14 source(s), the most recent dated 10 Oct.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 54 retrieved item(s) from 14 source(s), the most recent dated 10 Oct.",
    "case_for": "What supports keeping him: Sports Mole, 10 Oct: “In the frontline, Pedro has already scored three times and produced three assists in the top flight, while Palmer has two goals and two assists in the Premier League so far.” Fantasy Football Scout, 10 Oct: “TEAM NEWS The big team news is that Cole Palmer and Joao Pedro start for Chelsea this afternoon.” 101 Great Goals — Fantasy, 25 Sep: “Palmer was initially named in England’s squad for four Nations League matches, starting with Saturday’s meeting with world champions Spain at Wembley, but later pulled out alongside Declan Rice, Kobbie Mainoo, Marcus Rashford and Tino Livramento.”",
    "case_against": "What argues against him: Sports Mole, 10 Oct: “There were doubts about the involvement of Caicedo and Pedro against Bournemouth, while Palmer missed international duty with England due to injury.” Soccerway, 10 Oct: “Palmer , left ‌out of England 's World Cup squad ‌this year after a persistent groin injury ‌affected his form, was called up ‌by Thomas Tuchel for Nations League fixtures against Spain, the Czech Republic and Croatia.” Soccerway, 10 Oct: “However, ‌Palmer was forced to pull ⁠out of the ‌squad due to a recurrence of the ​issue, with Tuchel saying the 24-year-old \"misses too many opportunities\" to play ​in an England shirt.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
    "developments": "Recent developments — Sports Mole, 10 Oct: “Chelsea star Cole Palmer announces a new long-term deal in unique fashion, offering a boost to the Blues ahead of their Premier League clash with Bournemouth.” Sports Illustrated FPL, 10 Oct: “Despite already being tied down until 2033, Palmer has added an extra 12 months to that contract to commit himself to Chelsea for the next eight years.” Sports Illustrated FPL, 10 Oct: “This is now the second new contract Palmer has signed since joining Chelsea three years ago.”",
    "outlook": "On the coming weeks — Sports Mole, 10 Oct: “Tuchel left Palmer at home for the 2026 World Cup, but he decided to call up the Chelsea star for the first four fixtures of the UEFA Nations League.” Sports Mole, 08 Oct: ““It was new for me and brilliant to see how everyone bought into the idea of the next steps and the details needed to adjust to maybe unlock the next level.” Palmer England future: Battle to regain places for November decider © Imago England's tactical transformation has prompted fresh debate over whether Palmer and Manchester City’s Phil Foden could slot smoothly into this high-intensity system.”",
    "confidence": "high",
-   "evidence_count": 55,
+   "evidence_count": 54,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/palmer-and-two-others-who-returns-from-injury-for-the-blues-against-cherries_606629.html",
@@ -1507,22 +1535,6 @@
      ]
     },
     {
-     "text": "Cole Palmer stats: Attacker making history for Chelsea © Iconsport / David Klein / Sportimage Palmer endured a relatively underwhelming 2025-26 campaign by his lofty standards, but the left-footed wizard appears to have rediscovered his best form under Alonso and is once again looking like the player who can make Stamford Bridge tick.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/better-than-drogba-chelsea-attacker-proves-his-class-as-fantastic-stat-emerges_605031.html",
-     "published": "2026-09-12T17:40:52+01:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Palmer has now recorded 71 Premier League goal involvements in his first 100 appearances for Chelsea, a remarkable return that places him ahead of club legends such as Didier Drogba , Eden Hazard and Cesc Fabregas at the same stage of their Blues careers.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/better-than-drogba-chelsea-attacker-proves-his-class-as-fantastic-stat-emerges_605031.html",
-     "published": "2026-09-12T17:40:52+01:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
      "text": "And it's the attacking trio of Joao Pedro, Cole Palmer and Morgan Rogers chiefly responsible for our dynamism in the final third.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-explains-why-his-connection-with-cole-palmer-and-morgan-rogers",
@@ -2032,14 +2044,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 59 retrieved item(s) from 19 source(s), the most recent dated 07 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 58 retrieved item(s) from 18 source(s), the most recent dated 07 Oct.",
    "case_for": "What supports keeping him: Soccerway, 28 Sep: “Joao Felix's recent career stats Flashscore Two goals in two games, but little else in terms of work rate or attacking force perfectly sum up his contributions.” Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.” Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.” RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.”",
    "developments": "Recent developments — 101 Great Goals — Fantasy, 07 Oct: ““I feel that now is the moment,” Pedro wrote on social media alongside a video featuring the best moments from his career.” 101 Great Goals — Fantasy, 07 Oct: ““Thank you, football, for making me so happy.” Credit: Instagram / _ pedro17 Pedro arrived at Stamford Bridge from Barcelona in August 2015 for a fee of £21.4 million, instantly announcing himself to English football by scoring on his debut in a 3-2 victory away at West Brom.” Sports Mole, 04 Oct: “Chelsea news: why the next weeks at Stamford Bridge are significant Two of Alonso's preferred forward options — Cole Palmer and Joao Pedro — have withdrawn from their respective international squads with injuries, creating space that Estevao could fill when domestic football resumes.”",
    "outlook": "On the coming weeks — RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.” Fantasy Football Scout, 17 Sep: “Here, FPL Meerkat reacts to Joao Pedro’s (£7.8m) injury – and Xabi Alonso’s clear-as-mud update – by looking at some potential replacements, as well as offering some advice to his owners.”",
    "confidence": "high",
-   "evidence_count": 59,
+   "evidence_count": 58,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
     "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
@@ -2068,7 +2080,6 @@
     "Ipswich Town",
     "Nottingham Forest",
     "OneFPL",
-    "Opta Analyst",
     "RotoWire Soccer",
     "Soccerway",
     "Sports Illustrated FPL",
@@ -2451,24 +2462,6 @@
      "published": "2026-09-14T08:30:00+00:00",
      "tone": "positive",
      "topics": []
-    },
-    {
-     "text": "2 Hull Stats: João Pedro Adds Another Goal and Assist But Hull Still Maintain Unbeaten Start | Opta Analyst Mohamed Belloumi gave Hull City a surprise advantage at Stamford Bridge, but João Pedro’s second-half goal earned a draw for Chelsea João Pedro salvaged a point with a second-half equaliser, but Chelsea were held in another chaotic contest on Saturday, drawing 2-2 with Hull City.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/chelsea-vs-hull-stats-premier-league-09-2026",
-     "published": "2026-09-12T16:38:01+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Brazil international João Pedro fired in a powerful finish after 66 minutes, denying Hull what would have been another impressive scalp early in their return to the Premier League – and the chance to sit top of the early league table.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/chelsea-vs-hull-stats-premier-league-09-2026",
-     "published": "2026-09-12T16:38:01+00:00",
-     "tone": "neutral",
-     "topics": [
-      "tactics"
-     ]
     },
     {
      "text": "João Pedro has been withdrawn from Brazil's upcoming internationals because of an unspecified injury Chelsea have not yet confirmed that he will miss Friday's trip to Brentford.",
