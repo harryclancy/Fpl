@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-11T20:58:58+00:00",
+ "generated": "2026-10-12T02:27:38+00:00",
  "gameweek": 7,
- "corpus_size": 18587,
+ "corpus_size": 18561,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -208,17 +208,17 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "status": "Latest on De Cuyper — Fantasy Football Scout, 13 Sep: “Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £5.0m as a DEF. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 10 Oct.",
-   "case_for": "What supports keeping him: Sunderland, 10 Oct: “The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.” Sunderland, 10 Oct: “Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.”",
-   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
-   "expected_minutes": "On minutes — Fantasy Football Scout, 13 Sep: “Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.”",
-   "developments": "Recent developments — Sunderland, 10 Oct: “Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.”",
+   "status": "Latest on De Cuyper — Sunderland, 10 Oct: “Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.”",
+   "why_here": "De Cuyper is in the starting eleven this week at £5.1m as a DEF. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 12 Oct.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “We were really brilliant at the basics, and then you are able to compete with these kinds of teams.” – Fabian Hurzeler, via the Argus De Cuyper and Gross now, fittingly, sit joint-top of the FPL standings: There’ll be games in which the in-form duo enjoy more attacking freedom (next weekend, for example) but they still came up with the goods.” Sunderland, 10 Oct: “The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.” Sunderland, 10 Oct: “Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.”",
+   "case_against": "What argues against him: Fantasy Football Scout, 12 Oct: “Two nicely threaded passes, from that man Pascal Gross (£6.0m) and substitute Georginio Rutter (£5.3m), set up the advancing Maxim De Cuyper (£5.0m) and replacement left-back Jaouen Hadjam (£4.5m) to finish.”",
+   "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
+   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
    "outlook": "On the coming weeks — OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.” OneFPL: “De Cuyper is a defender in FPL but is regularly used in advanced areas.”",
    "confidence": "high",
    "evidence_count": 7,
    "evidence_used": [
-    "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
+    "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
     "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
     "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
     "https://www.safc.com/news/2026/october/10/le-bris--we-must-stick-to-our-plan-and-fight/",
@@ -234,6 +234,25 @@
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "Two nicely threaded passes, from that man Pascal Gross (£6.0m) and substitute Georginio Rutter (£5.3m), set up the advancing Maxim De Cuyper (£5.0m) and replacement left-back Jaouen Hadjam (£4.5m) to finish.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
+     "published": "2026-10-12T00:00:00+00:00",
+     "tone": "negative",
+     "topics": []
+    },
+    {
+     "text": "We were really brilliant at the basics, and then you are able to compete with these kinds of teams.” – Fabian Hurzeler, via the Argus De Cuyper and Gross now, fittingly, sit joint-top of the FPL standings: There’ll be games in which the in-form duo enjoy more attacking freedom (next weekend, for example) but they still came up with the goods.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
+     "published": "2026-10-12T00:00:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "statistics",
+      "fpl advice"
+     ]
+    },
     {
      "text": "The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.",
      "source": "Sunderland",
@@ -259,27 +278,6 @@
      "published": "2026-10-10T16:20:17+00:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Fabian Hurzeler subsequently named an unchanged line-up, with Maxim De Cuyper (£4.8m) once more deployed in an ‘out-of-position’ role as a left winger.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
-     "published": "2026-09-13T20:30:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "team news",
-      "tactics"
-     ]
-    },
-    {
-     "text": "Taiwo Awoniyi (£5.5m) was shown a straight red card for elbowing De Cuyper in the face.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/13/fpl-notes-gross-17-pointer-another-de-cuyper-assist-awoniyi-ban",
-     "published": "2026-09-13T20:30:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "suspension"
-     ]
     },
     {
      "text": "Why De Cuyper is valuable in FPL His classification is the key.",
@@ -1546,7 +1544,7 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.” Chelsea: “Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.8m as a MID. The selection rests on 28 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
+   "why_here": "Rogers is in the starting eleven this week at £7.9m as a MID. The selection rests on 28 retrieved item(s) from 13 source(s), the most recent dated 06 Oct.",
    "case_for": "What supports keeping him: Football365, 06 Oct: “Had cut a frustrating figure for much of the first half despite doing his usual tidy job before a proper highlight-reel moment with his pass to release Morgan Rogers in the build-up to Kane’s goal.” Ipswich Town, 04 Oct: “Hornby had Town’s first sight of goal in the eighth minute after doing well to breeze past her marker and break through the defence, but her shot from the edge of the box was straight at Sian Rogers.” DraftKings Network Soccer, 25 Sep: “Best MLB Strikeout Prop Bets Today (September 25, 2026) New York Yankees vs. Baltimore Orioles: Orioles LHP Trevor Rogers 6+ strikeouts: Rogers has recorded 6+ K in 10 of his last 12 starts, plus NYY has allowed 3 of the last 4 starters they’ve faced to reach that mark.”",
    "case_against": "What argues against him: Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "On minutes — Hull City, 14 Sep: “Despite conceding our first goal in the league when England international Morgan Rogers netted the opening goal after seven minutes, a quickfire brace from Mohamed Belloumi saw City lead 2-1 at half-time at Stamford Bridge.” Chelsea: “Xabi Alonso highlights impact of 'very complete modern player' Morgan Rogers | News | Official Site | Chelsea Football Club Xabi Alonso described Morgan Rogers as a ‘very complete modern player’ after the England international struck his fourth Chelsea goal in our 5-1 win against Bournemouth.”",
@@ -1931,7 +1929,7 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.” Soccerway, 18 Sep: “Elsewhere, Joao Pedro is a doubt for Chelsea's clash against Brentford, after the striker pulled out of international duty for Brazil.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.7m as a FWD. The selection rests on 58 retrieved item(s) from 18 source(s), the most recent dated 07 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 58 retrieved item(s) from 18 source(s), the most recent dated 07 Oct.",
    "case_for": "What supports keeping him: Soccerway, 28 Sep: “Joao Felix's recent career stats Flashscore Two goals in two games, but little else in terms of work rate or attacking force perfectly sum up his contributions.” Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.” Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.” RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.”",
@@ -2531,14 +2529,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — 101 Great Goals — Fantasy, 08 Oct: “Speaking to Manchester City’s official website, Haaland encouraged supporters travelling to Anfield to enjoy the occasion and continue backing the team.” NBC Sports Rotoworld PL, 06 Oct: “Erling Haaland injury news, latest update on fatigue Haaland started up front for Norway on Sunday away at Portugal in their 2-1 defeat in the UEFA Nations League.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 119 retrieved item(s) from 16 source(s), the most recent dated 11 Oct.",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 112 retrieved item(s) from 16 source(s), the most recent dated 11 Oct.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 11 Oct: “City had plenty of it and showed their attacking skills with goals from Erling Haaland, Doku himself and a gem from Rayan Cherki.” 101 Great Goals — Fantasy, 11 Oct: “WATCH: Haaland breaks deadlock against 10-man Liverpool Skip to content News WATCH: Haaland breaks deadlock against 10-man Liverpool Watch the goals from Liverpool vs Manchester City in the Premier League.” FourFourTwo FPL, 09 Oct: “Haaland is in red-hot form for City this season, having scored five in five games in the Premier League – which the Sky Blues have won all of – and notching a brace in the opening Champions League fixture against Porto While Maresca doesn't have a natural replacement for Haaland as a target man , the availability of his centre-forward does mean that he's avoided a potential crisis in attack.”",
    "case_against": "What argues against him: Sports Mole, 09 Oct: “Sky Blues supporters had hearts in mouths during the international break when Haaland suffered an injury scare in Norway's Nations League loss to Portugal, and there was uncertainty as to whether fans would be given an update in Maresca's pre-game press conference.” FourFourTwo FPL, 09 Oct: “And Haaland , as always, is the comfort blanket if none of the above feel right.” Sports Mole, 07 Oct: “However, Haaland's future could ultimately depend on the punishment handed to City after the club were found guilty of 114 financial breaches Erling Haaland would prefer Barcelona over Arsenal © Iconsport / Andrew Yates / Sportimage According to emerging reports , Haaland would actually favour Barcelona over Arsenal should City be forced to sell or face relegation.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “Speaking to BILD , Bayern president Hainer refused to rule out Haaland as a target in the coming seasons, saying: \"We have Kane, Olise, Diaz and more.” Sports Mole, 09 Oct: “Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.”",
    "developments": "Recent developments — Sports Mole, 11 Oct: “However, the Bayern star is now 33 and cannot continue to play at an elite level forever, so it is understandable that the club have been linked to the likes of Haaland.” FourFourTwo FPL, 11 Oct: “Doku crossed from the left, the ball deflected off Mac Allister and was met with brutal force by Haaland.” Football365, 11 Oct: “Erling Haaland broke the deadlock, before Doku curled a wonderful shot into the corner for an old-fashioned one-two.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 09 Oct: “Joao Pedro (£7.7m) has been brilliant this season, second only to Haaland among forwards for FPL points, and the fixture looks good on paper.” Football365, 08 Oct: “Erling Haaland: Man City striker 'green lights' transfer as Euro giants 'sent exact figures' to seal massive signing There is an update on Erling Haaland's Manchester City future.”",
    "confidence": "high",
-   "evidence_count": 119,
+   "evidence_count": 112,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/man-city/predicted-lineups/haaland-starts-semenyo-decision-predicted-man-city-xi-vs-liverpool_606539.html",
     "https://www.fourfourtwo.com/person/coaches-managers/is-erling-haaland-fit-for-manchester-city-vs-liverpool-premier-league-injury-update",
@@ -4123,22 +4121,6 @@
      "topics": []
     },
     {
-     "text": "Video ‌reviews showed Haaland was onside when the ball was played, ‌but an attempt by City midfielder Enzo Fernandez to head it into ‌the net was seemingly ignored in the VAR deliberations, with the ‌Argentinian appearing to be in an offside position when Josko Gvardiol played the initial ball in.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-carrick-slams-var-after-controversial-haaland-goal-clinches-manchester-derby/GrXxGbr1/",
-     "published": "2026-09-13T21:52:24+02:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "I ‌went to him because he was there in front of me; ​that's why Haaland was free at the back,\" he explained.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-carrick-slams-var-after-controversial-haaland-goal-clinches-manchester-derby/GrXxGbr1/",
-     "published": "2026-09-13T21:52:24+02:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
      "text": "The crucial moment came on the hour mark as Haaland steered the ball into the top-left corner from Josko Gvardiol’s deflected left-wing cross.",
      "source": "101 Great Goals — Fantasy",
      "url": "https://www.101greatgoals.com/football/premier-league/proref-acknowledge-error-of-judgement-over-haaland-manchester-derby-winning-goal/",
@@ -4154,101 +4136,6 @@
      "url": "https://www.101greatgoals.com/football/premier-league/proref-acknowledge-error-of-judgement-over-haaland-manchester-derby-winning-goal/",
      "published": "2026-09-13T21:43:35+00:00",
      "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "VAR gets both big calls wrong in Manchester derby as United suffer twice Erling Haaland's winner was initially disallowed for offside The first Manchester derby of the 2026/27 season is in the books, and what a relief to just be able to focus on the football after City ran out deserved 1-0 winners.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/manchester-derby-two-var-decisions-wrong-united-pay-price-city-16-conclusions",
-     "published": "2026-09-13T20:38:30+00:00",
-     "tone": "neutral",
-     "topics": [
-      "match report"
-     ]
-    },
-    {
-     "text": "Because we’re fairly sure the assistant referee (perfectly understandably) reckons both Erling Haaland and Enzo Fernandez were offside, rendering the subjective matter of the latter’s involvement moot.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/manchester-derby-two-var-decisions-wrong-united-pay-price-city-16-conclusions",
-     "published": "2026-09-13T20:38:30+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Controversy surrounded the goal too, as after being initially deemed to be offside, Erling Haaland was allowed to celebrate for a second time after he was confirmed to have been onside as he converted Josko Gvardiol ’s delivery despite Enzo Fernandez ’s unsuccessful attempt to make contact with the cross from an offside position.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-manchester-united-manchester-city-report-september-13-2026/O08D1jAO/",
-     "published": "2026-09-13T19:36:13+02:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Haaland secured a 1-0 victory for City over arch rivals Manchester United , which maintained their perfect Premier League start under Maresca, as he netted the game’s only goal on the hour mark, steering Josko Gvardiol’s deflected cross to the far post into the top-left corner.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
-     "published": "2026-09-13T19:29:50+00:00",
-     "tone": "positive",
-     "topics": [
-      "match report",
-      "set pieces"
-     ]
-    },
-    {
-     "text": "It looked as if it would not be allowed to stand as the offside flag cut short Haaland’s celebrations.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/premier-league/maresca-knew-haaland-goal-was-not-offside/",
-     "published": "2026-09-13T19:29:50+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "But the Red Devils failed to make the extra man count, though Marcus Rashford and Kobbie Mainoo each hit the post, and they were punished as Haaland produced a fine close-range finish to steer Josko Gvardiol’s deflected cross to the far post back across goal and into the top-left corner.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/premier-league/carrick-confused-haaland-goal/",
-     "published": "2026-09-13T18:46:48+00:00",
-     "tone": "positive",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
-     "text": "Haaland’s celebrations were initially cut short by the offside flag but, after a lengthy VAR review, it was ruled that the Norway talisman was onside.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/premier-league/carrick-confused-haaland-goal/",
-     "published": "2026-09-13T18:46:48+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Man Utd: Carrick makes 'staggering' admission as Haaland winner settles controversial derby Michael Carrick downcast after Man Utd defeat to Man City.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/michael-carrick-staggered-erling-haalands-man-city-winner-gary-neville-lost-man-utd-call",
-     "published": "2026-09-13T18:29:22+00:00",
-     "tone": "negative",
-     "topics": []
-    },
-    {
-     "text": "But the Red Devils didn’t create enough clear-cut chances, and Erling Haaland capitalised on the hour mark with a back-post finish from Josko Gvardiol’s deflected cross.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/michael-carrick-staggered-erling-haalands-man-city-winner-gary-neville-lost-man-utd-call",
-     "published": "2026-09-13T18:29:22+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Erling Haaland ‘s controversially awarded goal saw 10-man Manchester City edge out Manchester United in a tense and fiery derby at Old Trafford.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/man-utd-vs-man-city-stats-premier-league-09-2026",
-     "published": "2026-09-13T17:55:33+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Yet, on the hour mark, Haaland steered in at the back post from Josko Gvardiol ‘s deflected cross.",
-     "source": "Opta Analyst",
-     "url": "https://theanalyst.com/articles/man-utd-vs-man-city-stats-premier-league-09-2026",
-     "published": "2026-09-13T17:55:33+00:00",
-     "tone": "neutral",
      "topics": []
     },
     {
@@ -4458,7 +4345,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 19 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4467,10 +4354,10 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.fourfourtwo.com/person/player/to-kill-the-dream-of-my-former-club-was-a-strange-feeling-ill-always-be-grateful-to-ajax-but-football-is-like-that-toby-alderweireld-on-tottenham-hotspurs-incredible-champions-league-semi-final-win-in-2019",
     "https://www.101greatgoals.com/football/premier-league/manchester-united-v-tottenham-confirmed-team-news-and-line-ups/",
     "https://www.sportsmole.co.uk/football/man-utd/news/baleba-rashford-maddison-decisions-man-utd-vs-spurs-team-news-confirmed_606633.html",
     "https://www.sportsmole.co.uk/football/spurs/news/morale-booster-tottenham-to-fly-out-for-unusual-training-camp-after-man-united-clash_606626.html",
-    "https://www.nbcsports.com/soccer/news/how-to-watch-manchester-united-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/man-united-v-tottenham-predicted-line-ups-fpl-team-news-2",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
@@ -4478,7 +4365,6 @@
     "101 Great Goals — Fantasy",
     "Fantasy Football Scout",
     "FourFourTwo FPL",
-    "NBC Sports Rotoworld PL",
     "Sports Mole"
    ],
    "quotes": [
@@ -4496,14 +4382,14 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — Sports Mole, 11 Oct: “However, Szoboszlai was nowhere to be seen when Liverpool confirmed their XI , and Iraola explained the midfielder's absence to the media before the match.”",
-   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 17 retrieved item(s) from 6 source(s), the most recent dated 11 Oct.",
+   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 15 retrieved item(s) from 6 source(s), the most recent dated 11 Oct.",
    "case_for": "What supports keeping him: Sports Mole, 11 Oct: “A video on social media showed Liverpool players arriving at the team hotel, but Szoboszlai was not seen in the footage , and nor was teammate Alexis Mac Allister The latter's situation was clarified in a separate report, though, as it was revealed that Mac Allister had arrived at the hotel the day before, and the Argentine was named in Andoni Iraola 's starting lineup.” FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.” FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.”",
    "case_against": "What argues against him: Sports Mole, 11 Oct: “Concerns had emerged over the availability of both Szoboszlai and Alexis Mac Allister , who were not seen with their Reds teammates arriving at their team hotel on Sunday morning.” 101 Great Goals — Fantasy, 16 Sep: “Alexis Mac Allister and Cody Gakpo had put Liverpool ahead before Tottenham threatened a comeback, but Szoboszlai’s finish ended any doubt and secured Liverpool’s place in the fourth round.” OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “While Mac Allister’s situation has been clarified and he is available to start, Szoboszlai will not be involved against the Citizens due to a hamstring injury.”",
    "developments": "Recent developments — FourFourTwo FPL, 29 Sep: “The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park.” FourFourTwo FPL, 19 Sep: “I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai.” Fantasy Football Scout, 16 Sep: “Mac Allister later helped create another big opening for Szoboszlai with Liverpool’s press, making this a timely reminder of his qualities as he pushes to regain his league starting spot.”",
-   "outlook": "On the coming weeks — Football365, 14 Sep: “Wirtz, who signed in a deal worth £116m in 2025, is yet to find his best form in a Reds shirt since signing and now Nicol thinks the Germany international should sit their next game out and give Szoboszlai a chance in a more advanced midfield role.” Sports Mole, 13 Sep: “It should be remembered that Szoboszlai and Gravenberch both played key roles in delivering the club their 20th league title in 2024-25, so it is somewhat understandable that the Reds' hierarchy still have faith in the pair.”",
+   "outlook": "On the coming weeks — Football365, 14 Sep: “Wirtz, who signed in a deal worth £116m in 2025, is yet to find his best form in a Reds shirt since signing and now Nicol thinks the Germany international should sit their next game out and give Szoboszlai a chance in a more advanced midfield role.”",
    "confidence": "high",
-   "evidence_count": 17,
+   "evidence_count": 15,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/11/liverpool-v-man-city-team-news-gvardiol-benched-szoboszlai-absent",
     "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/why-is-szoboszlai-not-playing-for-liverpool-against-man-city_606682.html",
@@ -4513,10 +4399,10 @@
     "https://www.fourfourtwo.com/transfer/liverpool-given-pathway-to-sign-alex-scott-as-perfect-andoni-iraola-transfer-shapes-up-report",
     "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
     "https://www.fourfourtwo.com/team/liverpool-save-millions-in-transfer-bailout-as-risky-manoeuvre-eases-pressure-on-depleted-hierarchy",
-    "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/why-problem-midfield-was-not-addressed-as-szoboszlai-gravenberch-exposed_605069.html",
     "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league",
     "https://www.fantasyfootballscout.co.uk/2026/09/20/fpl-notes-isak-again-szoboszlai-set-for-further-sales-kluivert-injury-latest",
-    "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
+    "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
+    "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -4668,42 +4554,6 @@
      "topics": [
       "transfer",
       "tactics"
-     ]
-    },
-    {
-     "text": "Dominik Szoboszlai and Ryan Gravenberch were poor throughout against Fulham, and both have been disappointing all season, which makes the decision to not sign a midfielder in the summer even more problematic.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/why-problem-midfield-was-not-addressed-as-szoboszlai-gravenberch-exposed_605069.html",
-     "published": "2026-09-13T17:34:45+01:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "It should be remembered that Szoboszlai and Gravenberch both played key roles in delivering the club their 20th league title in 2024-25, so it is somewhat understandable that the Reds' hierarchy still have faith in the pair.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/transfer-talk/news/why-problem-midfield-was-not-addressed-as-szoboszlai-gravenberch-exposed_605069.html",
-     "published": "2026-09-13T17:34:45+01:00",
-     "tone": "neutral",
-     "topics": [
-      "tactics"
-     ]
-    },
-    {
-     "text": "“Personally I would have Gravenberch, Mac Allister and Szoboszlai, that would be my three with Barcola, Isak and Gakpo, Munoz or Ngumoha, one of those three.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale",
-     "published": "2026-09-13T14:46:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Sozboszlai ‘rationale’ Nicol believes that Szoboszlai’s famed ability to strike the ball from distance should give him the edge over Wirtz in the No.10 position for Liverpool, as it would free up space for Alexander Isak ahead of him.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/liverpool-iraols-wirtz-szoboszlai-rationale",
-     "published": "2026-09-13T14:46:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "statistics"
      ]
     },
     {
