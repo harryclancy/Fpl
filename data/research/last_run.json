@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-12T13:14:00+00:00",
- "seconds": 131.7,
+ "ran_at": "2026-10-12T23:38:41+00:00",
+ "seconds": 169.1,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 658,
- "substantive_items": 286,
- "duplicates_removed": 25,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 18560,
+ "candidates_discovered": 677,
+ "substantive_items": 283,
+ "duplicates_removed": 29,
+ "deeply_analysed": 78,
+ "deep_read_failed": 12,
+ "corpus_size": 18501,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 286 articles"
+    "58/78 sources returned 283 articles"
    ]
   },
   "blackout": {
@@ -53,7 +53,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -62,8 +62,8 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 8,
-   "source_count": 4,
+   "evidence_count": 7,
+   "source_count": 3,
    "latest_evidence": "2026-10-03T14:29:16+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -85,19 +85,10 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
-    {
-     "title": "Arsenal have the best player in his position in the Premier League - but he shouldn't start",
-     "url": "https://www.fourfourtwo.com/person/player/arsenal-have-the-best-player-in-his-position-in-the-premier-league-but-he-shouldnt-start",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-14T06:00:00+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Last month’s publication of the 2025/26 PFA Team of the Year generated ample debate, but certain positions were beyond doubt. The likes of David Raya, Declan Rice and Bruno Fernandes were shoo-ins in their respective roles, and so too was Jurrien Timber at right-back. The Dutchman enjoyed a magnificent campaign last time out. He was a key part of the Arsenal rearguard that underpinned the club's f"
-    },
     {
      "title": "Arsenal closing in on Rice deal as three key contracts remain unresolved",
      "url": "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
@@ -319,7 +310,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 5,
    "latest_evidence": "2026-10-11T16:08:02+00:00",
    "official_source_found": true,
@@ -341,8 +332,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -362,15 +353,6 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "Hall, 22, signed a two-year extension with no release clause last week, tying him to the club until 2031 despite enquiries from the Red Devils and summer-long speculation linking him with a move to Old Trafford. He capped off a great few days, which also included an England recall, with a goal in Newcastle ’s 2-1 win over Hull City on Saturday. Newcastle fans could be forgiven for fearing Hall wou"
-    },
-    {
-     "title": "Man United transfer news: after Lewis Hall, another summer left-back target off the table",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/after-lewis-hall-another-summer-left-back-target-off-the-table-for-man-united_605110.html",
-     "source": "Sports Mole",
-     "published": "2026-09-14T10:00:50+01:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "With Lewis Hall having just signed a new contract with Newcastle, another Manchester United left-back target looks set to follow suit."
     },
     {
      "title": "Hull City 2-2 Everton",
@@ -628,7 +610,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 54,
    "source_count": 14,
    "latest_evidence": "2026-10-12T13:01:05+00:00",
    "official_source_found": true,
@@ -768,8 +750,8 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 28,
-   "source_count": 12,
+   "evidence_count": 27,
+   "source_count": 11,
    "latest_evidence": "2026-10-12T13:01:05+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -908,9 +890,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 58,
-   "source_count": 18,
-   "latest_evidence": "2026-10-07T17:35:30+00:00",
+   "evidence_count": 57,
+   "source_count": 17,
+   "latest_evidence": "2026-10-12T17:20:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -935,6 +917,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Rayan OOP, clinical Chelsea, Kluivert + Kroupi injury latest",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-rayan-oop-clinical-chelsea-kluivert-kroupi-injury-latest",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-12T17:20:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Benched by a million of his owners, Joao Pedro hauls in Chelsea's 5-1 win The post FPL notes: Rayan OOP, clinical Chelsea, Kluivert + Kroupi injury latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Chelsea injury, suspension list and return dates vs. Bournemouth: Reece James, Moises Caicedo, Cole Palmer, Joao Pedro latest",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
@@ -1033,24 +1024,15 @@
      "matched_on": "pedro",
      "kind": "team news",
      "excerpt": "FPL lessons from Brentford 3-0 Chelsea The post FPL notes: Pedro injury latest + why Sangare was benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Brentford v Chelsea team news: Sangare benched, no Pedro",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/18/brentford-v-chelsea-team-news-sangare-benched-no-pedro",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-18T18:15:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Two changes for Brentford, five for Chelsea The post Brentford v Chelsea team news: Sangare benched, no Pedro appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 115,
+   "evidence_count": 113,
    "source_count": 16,
-   "latest_evidence": "2026-10-12T12:19:59+00:00",
+   "latest_evidence": "2026-10-12T21:00:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1292,8 +1274,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-11T15:00:00+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-12T13:00:05+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1318,6 +1300,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Preview, How to Watch San Antonio Spurs Seek First Preseason Win vs. Jazz",
+     "url": "https://www.si.com/nba/spurs/onsi/preview-how-to-watch-san-antonio-spurs-seek-first-preseason-win-vs-jazz?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-12T13:00:05+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "The San Antonio Spurs head to Utah still searching for their first preseason win as lineup questions, young players and a motivated roster remain in focus."
+    },
+    {
+     "title": "FPL notes: Spurs improve, Bruno’s two-year low + DefCon frenzy",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-spurs-improve-brunos-two-year-low-defcon-frenzy",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-12T04:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Scout Notes from Man Utd 1-1 Spurs The post FPL notes: Spurs improve, Bruno’s two-year low + DefCon frenzy appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Toby Alderweireld on Tottenham Hotspur’s incredible Champions League semi-final win in 2019",
      "url": "https://www.fourfourtwo.com/person/player/to-kill-the-dream-of-my-former-club-was-a-strange-feeling-ill-always-be-grateful-to-ajax-but-football-is-like-that-toby-alderweireld-on-tottenham-hotspurs-incredible-champions-league-semi-final-win-in-2019",
@@ -1346,24 +1346,6 @@
      "excerpt": "Manchester United and Tottenham Hotspur have confirmed their starting lineups for Saturday's Premier League evening kickoff at Old Trafford."
     },
     {
-     "title": "Tottenham to fly out for Roberto De Zerbi's team-bonding training camp after Man United clash",
-     "url": "https://www.sportsmole.co.uk/football/spurs/news/morale-booster-tottenham-to-fly-out-for-unusual-training-camp-after-man-united-clash_606626.html",
-     "source": "Sports Mole",
-     "published": "2026-10-10T14:26:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur will reportedly travel to Spain for a training camp after Saturday's Premier League clash with Manchester United."
-    },
-    {
-     "title": "Man United v Tottenham predicted line-ups + FPL team news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/man-united-v-tottenham-predicted-line-ups-fpl-team-news-2",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-10T03:12:12+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Team form, absentees and our predicted XIs The post Man United v Tottenham predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
      "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
      "source": "FourFourTwo FPL",
@@ -1377,8 +1359,8 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 16,
-   "source_count": 6,
+   "evidence_count": 15,
+   "source_count": 5,
    "latest_evidence": "2026-10-12T06:30:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
