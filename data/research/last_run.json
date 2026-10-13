@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-13T12:45:27+00:00",
- "seconds": 180.9,
+ "ran_at": "2026-10-13T21:52:41+00:00",
+ "seconds": 150.2,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 686,
- "substantive_items": 304,
- "duplicates_removed": 28,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 18506,
+ "sources_readable": 58,
+ "candidates_discovered": 682,
+ "substantive_items": 296,
+ "duplicates_removed": 25,
+ "deeply_analysed": 78,
+ "deep_read_failed": 12,
+ "corpus_size": 18474,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 304 articles"
+    "58/78 sources returned 296 articles"
    ]
   },
   "blackout": {
@@ -38,11 +38,11 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,6 +50,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -61,9 +62,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-10-03T14:29:16+01:00",
+   "evidence_count": 7,
+   "source_count": 4,
+   "latest_evidence": "2026-10-13T15:17:49+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -88,6 +89,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal rocked by David Raya transfer plan: report",
+     "url": "https://www.fourfourtwo.com/transfer/arsenal-rocked-by-david-raya-transfer-plan-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-13T15:17:49+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Arsenal goalkeeper David Raya is a target for a club he holds dear in his heart. The World Cup winner has been in fine form once again this season, off the back of winning the past three Golden Glove awards in the Premier League. But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime. Real Madrid want to sign David Raya from Arsenal Thibaut "
+    },
     {
      "title": "Arsenal closing in on Rice deal as three key contracts remain unresolved",
      "url": "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
@@ -395,8 +405,8 @@
    "player": "Barnes",
    "club": "NEW",
    "evidence_count": 10,
-   "source_count": 6,
-   "latest_evidence": "2026-10-04T11:00:04+00:00",
+   "source_count": 7,
+   "latest_evidence": "2026-10-13T17:09:44+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -428,6 +438,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "RSPCA to carry out a full assessment of Maurice Barnes after the ex-trainer was given an eight-year ban over multiple welfare breaches",
+     "url": "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
+     "source": "Racing Post Football Tips",
+     "published": "2026-10-13T17:09:44+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "Kawhi Leonard Has Huge Impact On Scottie Barnes' Growth With Raptors",
@@ -500,15 +519,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "What's Next for Raptors After Kawhi Leonard Trade?",
-     "url": "https://www.si.com/nba/raptors/onsi/whats-next-toronto-raptors-after-kawhi-leonard-trade?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-15T11:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The blockbuster trade is finally official, and the Toronto Raptors now have to figure out how Kawhi Leonard changes the way it uses Scottie Barnes and the rest of its core."
     }
    ]
   },
@@ -600,9 +610,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 54,
-   "source_count": 14,
-   "latest_evidence": "2026-10-12T13:01:05+00:00",
+   "evidence_count": 55,
+   "source_count": 15,
+   "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -740,9 +750,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 27,
-   "source_count": 10,
-   "latest_evidence": "2026-10-12T13:01:05+00:00",
+   "evidence_count": 28,
+   "source_count": 11,
+   "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -813,6 +823,15 @@
      "excerpt": ""
     },
     {
+     "title": "Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist after Bournemouth brace",
+     "url": "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
+     "source": "FISO",
+     "published": "2026-10-13T14:47:52+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Photo by Vienna Reyes on Unsplash Chelsea travel to Everton on Saturday, 17 October, with João Pedro, Cole Palmer and Morgan Rogers the leading Fantasy Premier League options from the fixture. Kick-off time and TV coverage can be found on TNT Sports and HBO Max. Everton v Chelsea is one of the most useful Gameweek … Continue reading Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist"
+    },
+    {
      "title": "Chelsea expect to complete £100m signing in January, with Palmer, Rogers, Alonso to thank",
      "url": "https://www.football365.com/news/chelsea-expect-complete-100m-alex-scott-signing-january",
      "source": "Football365",
@@ -865,24 +884,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers is the only player to have scored against Arsenal this season. Chelsea succeeded where Coventry City, Aston Villa, Napoli and Sunderland have failed, and the Gunners came back to beat them too. There are two teams without a goal in their first four Premier League matches of 2026/27 but Arsenal stand alone in having conceded only once. They've won all of their games and looked all but"
-    },
-    {
-     "title": "Xabi alonso highlights impact of very complete modern player morgan rogers",
-     "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers",
-     "source": "Chelsea",
-     "published": "",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 58,
-   "source_count": 17,
-   "latest_evidence": "2026-10-13T07:00:00+00:00",
+   "evidence_count": 59,
+   "source_count": 18,
+   "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1020,9 +1030,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 115,
+   "evidence_count": 112,
    "source_count": 16,
-   "latest_evidence": "2026-10-13T12:11:45+00:00",
+   "latest_evidence": "2026-10-13T20:38:25+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1349,9 +1359,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 16,
+   "evidence_count": 17,
    "source_count": 5,
-   "latest_evidence": "2026-10-13T01:46:00+01:00",
+   "latest_evidence": "2026-10-13T16:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1365,6 +1375,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1375,6 +1386,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Szoboszlai, Isak, Gakpo: Latest FPL team news ahead of Gameweek 7",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/13/szoboszlai-isak-gakpo-latest-fpl-team-news-ahead-of-gameweek-7",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-13T16:00:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "The managers of Man City, Liverpool and Aston Villa face the media today The post Szoboszlai, Isak, Gakpo: Latest FPL team news ahead of Gameweek 7 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Liverpool injury, suspension list and return dates for LASK: Alexander Isak, Cody Gakpo, Dominik Szoboszlai latest",
      "url": "https://www.sportsmole.co.uk/football/liverpool/champions-league/injuries-and-suspensions/isak-gakpo-szoboszlai-latest-liverpool-injury-suspension-list-vs-lask_606774.html",
@@ -1473,15 +1493,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Watch Hungary vs Georgia for free from anywhere in the world as Group B2 continues in the Nations League . Read on as FourFourTwo brings you all the live stream details and TV channels wherever you are in the world. Hungary vs Georgia: key information Kick-Off Time: 7:45pm BST / 2:45pm ET / 4:45am AEST (Sat) Free Stream: M4 Sport (Hungary) | 1TV (Georgia) TV Channels: Fubo TV (US) | beIN Sports (A"
-    },
-    {
-     "title": "FPL notes: Isak again, Szoboszlai set for further sales + Kluivert injury",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/20/fpl-notes-isak-again-szoboszlai-set-for-further-sales-kluivert-injury-latest",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-20T20:15:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Plus, Jacquet superb as Liverpool secure another clean sheet The post FPL notes: Isak again, Szoboszlai set for further sales + Kluivert injury appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
