@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-12T23:38:41+00:00",
- "seconds": 169.1,
+ "ran_at": "2026-10-13T12:45:27+00:00",
+ "seconds": 180.9,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 677,
- "substantive_items": 283,
- "duplicates_removed": 29,
- "deeply_analysed": 78,
- "deep_read_failed": 12,
- "corpus_size": 18501,
+ "sources_readable": 59,
+ "candidates_discovered": 686,
+ "substantive_items": 304,
+ "duplicates_removed": 28,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 18506,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 283 articles"
+    "59/78 sources returned 304 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -53,7 +52,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -62,7 +61,7 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 7,
+   "evidence_count": 6,
    "source_count": 3,
    "latest_evidence": "2026-10-03T14:29:16+01:00",
    "official_source_found": false,
@@ -133,15 +132,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Are Arsenal simply unlucky with the goals they concede? Sports Mole explores that David Raya theory after the Gunners' 3-0 defeat to Brighton & Hove Albion."
-    },
-    {
-     "title": "Jamie Carragher names ‘Arsenal’s most important player’ – NOT Rice or Odegaard",
-     "url": "https://www.football365.com/news/david-raya-jamie-carragher-arsenal-verdict",
-     "source": "Football365",
-     "published": "2026-09-14T18:58:09+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Sky Sports pundit Jamie Carragher picks the most important player for Arsenal at the moment."
     },
     {
      "title": "David raya fpl 2026 27",
@@ -751,7 +741,7 @@
    "player": "Rogers",
    "club": "CHE",
    "evidence_count": 27,
-   "source_count": 11,
+   "source_count": 10,
    "latest_evidence": "2026-10-12T13:01:05+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -785,15 +775,6 @@
      "matched_on": "rogers",
      "kind": "team news",
      "excerpt": "England star Morgan Rogers clarifies his relationship with Declan Rice as the attacker vies for a place in Thomas Tuchel's starting frontline against Spain."
-    },
-    {
-     "title": "Rogers, Gross, Schade, Tzolis: Buy, keep or sell in Gameweek 5?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/14/rogers-gross-schade-tzolis-buy-keep-or-sell-in-gameweek-5",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-14T16:30:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Rogers, Gross, Schade, Tzolis: Buy, keep or sell in Gameweek 5? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "How Morgan Rogers went from £1m Middlesbrough signing to £117m British record at Chelsea",
@@ -884,15 +865,24 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers is the only player to have scored against Arsenal this season. Chelsea succeeded where Coventry City, Aston Villa, Napoli and Sunderland have failed, and the Gunners came back to beat them too. There are two teams without a goal in their first four Premier League matches of 2026/27 but Arsenal stand alone in having conceded only once. They've won all of their games and looked all but"
+    },
+    {
+     "title": "Xabi alonso highlights impact of very complete modern player morgan rogers",
+     "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers",
+     "source": "Chelsea",
+     "published": "",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 57,
+   "evidence_count": 58,
    "source_count": 17,
-   "latest_evidence": "2026-10-12T17:20:00+00:00",
+   "latest_evidence": "2026-10-13T07:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -917,6 +907,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "International action and back to business",
+     "url": "https://avfc.co.uk/news/2026/october/13/feature-international-action-and-back-to-business/",
+     "source": "Aston Villa",
+     "published": "2026-10-13T07:00:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Aston Villa returned to action after a lengthy international break over the weekend, putting a point on the board with a 2-2 draw against Brentford. The outing at Villa Park was a first competitive clash in three weeks for Unai Emery’s men, who were in their first game back out of an extended window over September and October – new for 2026/27. During which, a number of Villans were away on intern"
+    },
     {
      "title": "FPL notes: Rayan OOP, clinical Chelsea, Kluivert + Kroupi injury latest",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-rayan-oop-clinical-chelsea-kluivert-kroupi-injury-latest",
@@ -1015,24 +1014,15 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes returned to Aston Villa’s starting XI for Saturday’s Premier League clash at Tottenham Hotspur while there was also a full debut for Johan Manzambi. Midfielder Gomes completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening weekend of the season. He returned to Villa’s line-up f"
-    },
-    {
-     "title": "FPL notes: Pedro injury latest + why Sangare was benched",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-pedro-injury-latest-why-sangare-was-benched",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-19T00:05:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "FPL lessons from Brentford 3-0 Chelsea The post FPL notes: Pedro injury latest + why Sangare was benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 113,
+   "evidence_count": 115,
    "source_count": 16,
-   "latest_evidence": "2026-10-12T21:00:00+01:00",
+   "latest_evidence": "2026-10-13T12:11:45+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1359,9 +1349,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "source_count": 5,
-   "latest_evidence": "2026-10-12T06:30:00+00:00",
+   "latest_evidence": "2026-10-13T01:46:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1385,6 +1375,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Liverpool injury, suspension list and return dates for LASK: Alexander Isak, Cody Gakpo, Dominik Szoboszlai latest",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/champions-league/injuries-and-suspensions/isak-gakpo-szoboszlai-latest-liverpool-injury-suspension-list-vs-lask_606774.html",
+     "source": "Sports Mole",
+     "published": "2026-10-13T01:46:00+01:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Liverpool's latest injury and suspension news ahead of Wednesday's Champions League clash against LASK."
+    },
     {
      "title": "FPL notes: Szoboszlai injury latest, Haaland again + Doku impact",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
@@ -1483,15 +1482,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Plus, Jacquet superb as Liverpool secure another clean sheet The post FPL notes: Isak again, Szoboszlai set for further sales + Kluivert injury appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
-     "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-19T06:00:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "I’ll start today by looking back at that brilliant goal from Dominik Szoboszlai in an important 3-1 win for Liverpool against Tottenham. I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai. He's got one of the best techniques I've seen in Europe at the moment, when you consider his ability in shooting from distance. He jus"
     }
    ]
   },
