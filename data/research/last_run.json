@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-14T10:17:11+00:00",
- "seconds": 179.2,
+ "ran_at": "2026-10-14T15:50:51+00:00",
+ "seconds": 147.7,
  "sources_attempted": 78,
  "sources_readable": 59,
- "candidates_discovered": 556,
- "substantive_items": 176,
- "duplicates_removed": 14,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 18490,
+ "candidates_discovered": 624,
+ "substantive_items": 251,
+ "duplicates_removed": 23,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18536,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 176 articles"
+    "59/78 sources returned 251 articles"
    ]
   },
   "blackout": {
@@ -38,11 +38,11 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -52,7 +52,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Tottenham Hotspur: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -63,7 +63,7 @@
    "club": "ARS",
    "evidence_count": 8,
    "source_count": 4,
-   "latest_evidence": "2026-10-13T22:46:54+00:00",
+   "latest_evidence": "2026-10-14T12:04:35+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -125,6 +125,15 @@
      "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
     },
     {
+     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "source": "Football365",
+     "published": "2026-10-14T12:04:35+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "David Raya has started 2026/27 where he left off last season, while Alisson, Jordan Pickford and James Trafford languish in the lower rankings…"
+    },
+    {
      "title": "Aston Villa summer signing ‘miles better’ than Arsenal star David Raya as ‘best in the Premier League’",
      "url": "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
      "source": "Football365",
@@ -132,15 +141,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Arsenal star David Raya has been told that Aston Villa summer signing Zion Suzuki is ‘miles better’ as the “best in the Premier League”."
-    },
-    {
-     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs, Donnarumma falls",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "source": "Football365",
-     "published": "2026-09-23T08:39:35+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers."
     },
     {
      "title": "Are Arsenal unlucky with the goals they concede? What the numbers say",
@@ -269,9 +269,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 3,
+   "evidence_count": 4,
    "source_count": 3,
-   "latest_evidence": "2026-10-11T19:00:00+00:00",
+   "latest_evidence": "2026-10-14T13:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -295,6 +295,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Calafiori rested, Saka sub impact + Bruno on the right",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/fpl-notes-calafiori-rested-saka-nets-again-bruno-on-the-right",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-14T13:00:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Arsenal and Man Utd were in UCL action on Tuesday The post FPL notes: Calafiori rested, Saka sub impact + Bruno on the right appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
@@ -551,10 +560,10 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-10-13T18:26:00+01:00",
-   "official_source_found": true,
+   "evidence_count": 3,
+   "source_count": 3,
+   "latest_evidence": "2026-10-14T14:00:04+00:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -567,13 +576,13 @@
     "fpl advice",
     "injury",
     "match report",
-    "set pieces",
+    "press conference",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -587,40 +596,13 @@
      "excerpt": "FF247 Site Team News GW6 Welcome to FF247 Site Team News GW6 I feel we’ve turned point dodging into an art form. We finished on 42 points against an average of 48, and one look at the team makes it fairly easy to work out where things went wrong. Pascal Groß (14pts) was once again […] The post FF247 Site Team News GW6 appeared first on Fantasy Football 247 - Premier League Tips ."
     },
     {
-     "title": "Brighton & Hove Albion vs Kauno Zalgiris - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/europa-conference-league/preview/brighton-vs-kauno-zalgiris-prediction-team-news-lineups_606829.html",
-     "source": "Sports Mole",
-     "published": "2026-10-13T18:26:00+01:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Thursday's Conference League clash between Brighton & Hove Albion and Kauno Zalgiris, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Where to go for live coverage and highlights of Sunderland vs Brighton",
-     "url": "https://www.safc.com/news/2026/october/10/where-to-go-for-live-coverage-and-highlights-of-sunderland-vs-brighton/",
-     "source": "Sunderland",
-     "published": "2026-10-10T07:04:06+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "After a three-week break, Sunderland AFC are back on home soil today as the Black Cats welcome Brighton & Hove Albion to the Stadium of Light for a 3pm BST kick-off - follow all the action, with full coverage across safc.com and the Club’s official channels. Black Cat Members can tune in for live commentary here on safc.com, while our Match Centre will keep you updated with a live blog, in-game st"
-    },
-    {
-     "title": "Le Bris on Brighton, squad rotation and Sunderland’s busy schedule",
-     "url": "https://www.safc.com/news/2026/october/09/le-bris-on-brighton--squad-rotation-and-sunderland-s-busy-schedule/",
-     "source": "Sunderland",
-     "published": "2026-10-09T12:46:02+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Régis Le Bris says Sunderland are relishing the challenge of facing Brighton & Hove Albion as the Black Cats prepare to return to Premier League action at the Stadium of Light on Saturday. The Lads welcome Fabian Hürzeler’s side to Wearside for a 3pm BST kick-off, with Le Bris reflecting on the benefits of the recent international break and the importance of maintaining high standards during a dem"
-    },
-    {
-     "title": "Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/07/brighton-players-saka-bruno-buy-keep-or-sell-in-gameweek-6",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-07T07:30:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "title": "Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start",
+     "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
+     "source": "Opta Analyst",
+     "published": "2026-10-14T14:00:04+00:00",
+     "matched_on": "gro",
+     "kind": "general",
+     "excerpt": "Brighton & Hove Albion have made an excellent start to the 2026-27 season, and their 35-year-old creative spark has been at the centre of it. The post Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start appeared first on Opta Analyst ."
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
@@ -776,7 +758,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 28,
+   "evidence_count": 27,
    "source_count": 11,
    "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
@@ -903,20 +885,20 @@
      "excerpt": "It’s not been a bad start for the big summer signings with three £100m players in the top four of this ranking of the 20 most expensive. Tottenham’s highest of ..."
     },
     {
-     "title": "Could Arsenal match the Invincibles and go unbeaten in the Premier League again?",
-     "url": "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-16T06:00:00+00:00",
+     "title": "Xabi alonso highlights impact of very complete modern player morgan rogers",
+     "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers",
+     "source": "Chelsea",
+     "published": "",
      "matched_on": "rogers",
      "kind": "general",
-     "excerpt": "Morgan Rogers is the only player to have scored against Arsenal this season. Chelsea succeeded where Coventry City, Aston Villa, Napoli and Sunderland have failed, and the Gunners came back to beat them too. There are two teams without a goal in their first four Premier League matches of 2026/27 but Arsenal stand alone in having conceded only once. They've won all of their games and looked all but"
+     "excerpt": ""
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 58,
+   "evidence_count": 57,
    "source_count": 18,
    "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
@@ -1056,7 +1038,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 110,
+   "evidence_count": 109,
    "source_count": 16,
    "latest_evidence": "2026-10-14T06:00:00+00:00",
    "official_source_found": true,
@@ -1300,8 +1282,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-10-12T13:00:05+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-14T08:19:34+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1326,6 +1308,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Spurs 'ready' to launch £70m move for World Cup winner in January after latest Xavi Simons update",
+     "url": "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-ready-to-launch-gbp70m-move-for-world-cup-winner-after-xavi-simons-update_606861.html",
+     "source": "Sports Mole",
+     "published": "2026-10-14T08:19:34+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur are considering a move for Alex Baena as Roberto De Zerbi looks to strengthen his attack amid Xavi Simons' injury absence."
+    },
     {
      "title": "Preview, How to Watch San Antonio Spurs Seek First Preseason Win vs. Jazz",
      "url": "https://www.si.com/nba/spurs/onsi/preview-how-to-watch-san-antonio-spurs-seek-first-preseason-win-vs-jazz?utm_source=RSS",
@@ -1354,15 +1345,6 @@
      "excerpt": "European nights under the floodlights have a habit of hitting harder than your usual run-of-the-mill domestic encounter. For former Tottenham defender Toby Alderweireld , the 2019 Champions League semi-final against his old side Ajax certainly falls under that category. Spurs arrived in Amsterdam on the back of a 1-0 defeat in the first leg and soon found themselves with a mountain to climb after "
     },
     {
-     "title": "Manchester United v Tottenham: Confirmed team news and line-ups",
-     "url": "https://www.101greatgoals.com/football/premier-league/manchester-united-v-tottenham-confirmed-team-news-and-line-ups/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-10T15:20:17+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Catch up with all the team news ahead of Manchester United vs Tottenham in the Premier League."
-    },
-    {
      "title": "Man United vs. Tottenham lineups confirmed as Carlos Baleba, Marcus Rashford, James Maddison decisions made",
      "url": "https://www.sportsmole.co.uk/football/man-utd/news/baleba-rashford-maddison-decisions-man-utd-vs-spurs-team-news-confirmed_606633.html",
      "source": "Sports Mole",
@@ -1385,8 +1367,8 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 16,
-   "source_count": 5,
+   "evidence_count": 15,
+   "source_count": 4,
    "latest_evidence": "2026-10-13T16:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,

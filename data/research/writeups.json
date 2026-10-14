@@ -1,18 +1,18 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-14T10:17:11+00:00",
+ "generated": "2026-10-14T15:50:51+00:00",
  "gameweek": 7,
- "corpus_size": 18490,
+ "corpus_size": 18536,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — FourFourTwo FPL, 13 Oct: “But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime.”",
-   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 8 retrieved item(s) from 4 source(s), the most recent dated 13 Oct.",
-   "case_for": "What supports keeping him: Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.” Football365, 03 Oct: “Arsenal: Huge deal 'done soon' as Arteta starter could be set for brutal axe after 'surprising development' Arsenal manager Mikel Arteta According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’.” Football365, 03 Oct: “The same report claims new deals are also possible for Martin Odegaard, Kai Havertz and Raya, though there has been a ‘surprising development’ with the goalkeeper.”",
+   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 8 retrieved item(s) from 4 source(s), the most recent dated 14 Oct.",
+   "case_for": "What supports keeping him: Football365, 14 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while four new signings feature among the top 10 Premier League goalkeepers.” Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.” Football365, 03 Oct: “Arsenal: Huge deal 'done soon' as Arteta starter could be set for brutal axe after 'surprising development' Arsenal manager Mikel Arteta According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — FourFourTwo FPL, 13 Oct: “That's according to a new report from Fichajes , which claims that David Raya is heading up the shortlist at the Bernabeu.” Sports Mole, 03 Oct: “The Gunners still have several important deals expiring in 2028 , and there is currently no indication that Odegaard, Havertz or Raya are seeking exits.” Football365, 25 Sep: “Arsenal: David Raya told £30m summer signing is 'miles better' as 'best in the Premier League' David Raya in action for Arsenal.”",
+   "developments": "Recent developments — FourFourTwo FPL, 13 Oct: “That's according to a new report from Fichajes , which claims that David Raya is heading up the shortlist at the Bernabeu.” Sports Mole, 03 Oct: “The Gunners still have several important deals expiring in 2028 , and there is currently no indication that Odegaard, Havertz or Raya are seeking exits.” Football365, 03 Oct: “The same report claims new deals are also possible for Martin Odegaard, Kai Havertz and Raya, though there has been a ‘surprising development’ with the goalkeeper.”",
    "outlook": "On the coming weeks — OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
    "confidence": "high",
    "evidence_count": 8,
@@ -21,8 +21,8 @@
     "https://www.fourfourtwo.com/person/player/everything-manchester-united-star-lisandro-martinez-said-as-defender-rips-into-club-directors-in-extraordinary-interview",
     "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
     "https://www.football365.com/news/arsenal-deal-done-soon-surprising-development-current-starter-replaced-arteta",
-    "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+    "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
     "https://www.sportsmole.co.uk/football/arsenal/feature/are-arsenal-unlucky-with-the-goals-they-concede-what-the-numbers-say_605514.html",
     "https://onefpl.com/blog/david-raya-fpl-2026-27"
    ],
@@ -33,6 +33,16 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while four new signings feature among the top 10 Premier League goalkeepers.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "published": "2026-10-14T12:04:35+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime.",
      "source": "FourFourTwo FPL",
@@ -106,26 +116,6 @@
      "url": "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
      "published": "2026-09-25T13:18:39+00:00",
      "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while four new signings feature among the top 10 Premier League goalkeepers.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "published": "2026-09-23T08:39:35+00:00",
-     "tone": "positive",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Arsenal David Raya Lewis Oldham 13 Sep 2026 Bruno Guimaraes hails Arsenal star as ‘best in the world’ after Sunderland win – ‘he is unbelievable’ Arsenal summer signing Bruno Guimaraes has lauded goalkeeper David Raya after Saturday’s 2-0 win against Sunderland.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "published": "2026-09-23T08:39:35+00:00",
-     "tone": "positive",
      "topics": [
       "transfer"
      ]
@@ -290,15 +280,16 @@
    "player": "Calafiori",
    "club": "ARS",
    "status": "Latest on Calafiori — Fantasy Football Scout, 11 Oct: “It’s a bit more study in the back but I think [attacking] is my best quality and he knows, he told me, and I can still improve a lot.” – Riccardo Calafiori There are downsides to Calafiori: he’s never banked DefCon points since their inception over a year ago, and his minutes are sometimes managed in busy periods.”",
-   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 11 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 11 Oct: “ANOTHER ATTACKING RETURN FOR CALAFIORI Riccardo Calafiori (£5.9m) made it three attacking returns in six matches with Arsenal’s first goal on Saturday.”",
+   "why_here": "Calafiori is in the starting eleven this week at £5.9m as a DEF. The selection rests on 4 retrieved item(s) from 3 source(s), the most recent dated 14 Oct.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 14 Oct: “Deputising at left-back, he created a team-best three chances, but Riccardo Calafiori (£5.9m) will be back for the trip to the City Ground.” Fantasy Football Scout, 11 Oct: “ANOTHER ATTACKING RETURN FOR CALAFIORI Riccardo Calafiori (£5.9m) made it three attacking returns in six matches with Arsenal’s first goal on Saturday.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Sports Mole, 11 Oct: “Since signing for Arsenal in the summer of 2024, Calafiori has missed 44 games for club and country through injury, and he has started just 39 of the the Gunners' last 84 Premier League matches.”",
    "developments": "Recent developments — Sports Mole, 11 Oct: “That Premier League victory was hard fought, with their opponents initially taking a lead 55th minute, only for Riccardo Calafiori and Bruno Guimaraes to score and win the match.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 3,
+   "evidence_count": 4,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/10/14/fpl-notes-calafiori-rested-saka-nets-again-bruno-on-the-right",
     "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
     "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
     "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials"
@@ -309,6 +300,14 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Deputising at left-back, he created a team-best three chances, but Riccardo Calafiori (£5.9m) will be back for the trip to the City Ground.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/fpl-notes-calafiori-rested-saka-nets-again-bruno-on-the-right",
+     "published": "2026-10-14T13:00:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "ANOTHER ATTACKING RETURN FOR CALAFIORI Riccardo Calafiori (£5.9m) made it three attacking returns in six matches with Arsenal’s first goal on Saturday.",
      "source": "Fantasy Football Scout",
@@ -682,31 +681,44 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "status": "Latest on Groß — Tactical Football Analysis, 28 Sep: “Groß is therefore expected to be extremely useful to Brighton this season, especially after failing to get the desired playing time at Borussia Dortmund last term before his Amex return.”",
-   "why_here": "Groß is in the starting eleven this week at £6.0m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 09 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football 247, 09 Oct: “Pascal Groß (14pts) was once again the saviour for many, and unlike GW2 we actually started him this time.” Tactical Football Analysis, 28 Sep: “Pascal Groß Scout Report At Brighton 2026/2027 – Analysis Pascal Groß has started the 2026/2027 Premier League season impressively for Brighton & Hove Albion His goal contribution numbers have been outstanding, as he has scored four goals and provided four assists in all competitions so far.”",
+   "status": "Latest on Groß — Opta Analyst, 14 Oct: “Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.”",
+   "why_here": "Groß is in the starting eleven this week at £6.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 14 Oct.",
+   "case_for": "What supports keeping him: Opta Analyst, 14 Oct: “After producing two assists in the 5-0 thrashing of Coventry City, and another in the 3-0 win over Arsenal before the international break, at 35 years and 117 days, Groß became the oldest player to provide an assist in three successive Premier League games since Ryan Giggs in February 2012 (38y 68d) when he set up Maxim De Cuyper for the opener in a 2-0 win at Sunderland.” Fantasy Football 247, 09 Oct: “Pascal Groß (14pts) was once again the saviour for many, and unlike GW2 we actually started him this time.” Tactical Football Analysis, 28 Sep: “Pascal Groß Scout Report At Brighton 2026/2027 – Analysis Pascal Groß has started the 2026/2027 Premier League season impressively for Brighton & Hove Albion His goal contribution numbers have been outstanding, as he has scored four goals and provided four assists in all competitions so far.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Tactical Football Analysis, 28 Sep: “Groß is therefore expected to be extremely useful to Brighton this season, especially after failing to get the desired playing time at Borussia Dortmund last term before his Amex return.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 3,
    "evidence_used": [
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw6-2/",
-    "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/europa-conference-league/preview/brighton-vs-kauno-zalgiris-prediction-team-news-lineups_606829.html",
-    "https://www.safc.com/news/2026/october/10/where-to-go-for-live-coverage-and-highlights-of-sunderland-vs-brighton/",
-    "https://www.safc.com/news/2026/october/09/le-bris-on-brighton--squad-rotation-and-sunderland-s-busy-schedule/",
-    "https://www.fantasyfootballscout.co.uk/2026/10/07/brighton-players-saka-bruno-buy-keep-or-sell-in-gameweek-6",
+    "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
     "https://tacticalfootballanalysis.com/pascal-gross-scout-report-brighton-2026-2027-analysis-tactics/"
    ],
    "sources_used": [
     "Fantasy Football 247",
-    "Fantasy Football Scout",
-    "Sports Mole",
-    "Sunderland",
+    "Opta Analyst",
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
+     "published": "2026-10-14T14:00:04+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "After producing two assists in the 5-0 thrashing of Coventry City, and another in the 3-0 win over Arsenal before the international break, at 35 years and 117 days, Groß became the oldest player to provide an assist in three successive Premier League games since Ryan Giggs in February 2012 (38y 68d) when he set up Maxim De Cuyper for the opener in a 2-0 win at Sunderland.",
+     "source": "Opta Analyst",
+     "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
+     "published": "2026-10-14T14:00:04+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Pascal Groß (14pts) was once again the saviour for many, and unlike GW2 we actually started him this time.",
      "source": "Fantasy Football 247",
@@ -1541,14 +1553,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Chelsea: “Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.”",
-   "why_here": "Rogers is in the starting eleven this week at £7.9m as a MID. The selection rests on 28 retrieved item(s) from 11 source(s), the most recent dated 13 Oct.",
+   "why_here": "Rogers is in the starting eleven this week at £7.9m as a MID. The selection rests on 27 retrieved item(s) from 11 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: FISO, 13 Oct: “In classic FPL, João Pedro is the best buy, Palmer the safest premium hold and Rogers the best mid-price Chelsea alternative.” Football365, 06 Oct: “Had cut a frustrating figure for much of the first half despite doing his usual tidy job before a proper highlight-reel moment with his pass to release Morgan Rogers in the build-up to Kane’s goal.” Ipswich Town, 04 Oct: “Hornby had Town’s first sight of goal in the eighth minute after doing well to breeze past her marker and break through the defence, but her shot from the edge of the box was straight at Sian Rogers.”",
    "case_against": "What argues against him: Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "On minutes — Chelsea: “Xabi Alonso highlights impact of 'very complete modern player' Morgan Rogers | News | Official Site | Chelsea Football Club Xabi Alonso described Morgan Rogers as a ‘very complete modern player’ after the England international struck his fourth Chelsea goal in our 5-1 win against Bournemouth.” Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.”",
    "developments": "Recent developments — Football365, 12 Oct: “Fletcher namechecked Cole Palmer and Morgan Rogers as two stars he’s been informed Scott would love to play with on a regular basis.” Football365, 06 Oct: “Elliot Anderson The finish, blazed over the bar having been teed up by Morgan Rogers, was deeply disappointing but the significance was that Anderson had made that move into the penalty area at all.” Sports Mole, 06 Oct: “This summer, Chelsea signed Rogers for £117m , a club record that also made him the most expensive British footballer in history and Palmer's team-mate at Stamford Bridge.”",
    "outlook": "On the coming weeks — Sports Mole, 26 Sep: “There is scope for a new attacker to impress, and Rogers will hope he can influence the game on the weekend and claim a spot on the wings moving forward.” FourFourTwo FPL, 23 Sep: “While the Blues signed Morgan Rogers for a club-record fee in the summer, Villa took Nicolas Jackson and Garnacho off new manager Xabi Alonso's hands – but fellow Basque boss Emery has instead favoured youngster George Hemmings on the left flank.”",
    "confidence": "medium",
-   "evidence_count": 28,
+   "evidence_count": 27,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
     "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
@@ -1561,7 +1573,7 @@
     "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
     "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
     "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings",
-    "https://www.fourfourtwo.com/team/could-arsenal-match-the-invincibles-and-go-unbeaten-in-the-premier-league-again"
+    "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers"
    ],
    "sources_used": [
     "Brentford",
@@ -1922,14 +1934,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.” Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 58 retrieved item(s) from 18 source(s), the most recent dated 13 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 57 retrieved item(s) from 18 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “Only one of their five goals was a gilt-edged chance, specifically Pedro’s second.” Soccerway, 28 Sep: “Joao Felix's recent career stats Flashscore Two goals in two games, but little else in terms of work rate or attacking force perfectly sum up his contributions.” Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
    "developments": "Recent developments — FISO, 13 Oct: “Chelsea attackers lead the FPL conversation João Pedro is the standout pick.” Fantasy Football Scout, 12 Oct: “The others, Jordan Henderson ‘s (£4.9m) edge-of-box effort, Morgan Rogers ‘ (£7.9m) deflected curler, Pedro’s clinical finish from a cut-back and Henderson’s free-kick, were just great strikes: Henderson ended up with 18 points, his second-highest-ever FPL score since his 2008 debut!” 101 Great Goals — Fantasy, 07 Oct: ““I feel that now is the moment,” Pedro wrote on social media alongside a video featuring the best moments from his career.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).” RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.”",
    "confidence": "high",
-   "evidence_count": 58,
+   "evidence_count": 57,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/october/13/feature-international-action-and-back-to-business/",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-rayan-oop-clinical-chelsea-kluivert-kroupi-injury-latest",
@@ -2537,14 +2549,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — FourFourTwo FPL, 12 Oct: “Watching Haaland recast as a battering ram old-school number nine, and watching Man City fans Poznan with inflatable bananas in hand, it seems both manager and supporters have come to the same conclusion: if this whole thing is about to come crashing down, if fans are going to boo and hiss your every move, well, you may as well let go and have some fun with it.” Sports Mole, 09 Oct: “Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 110 retrieved item(s) from 16 source(s), the most recent dated 13 Oct.",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 109 retrieved item(s) from 16 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: Football365, 13 Oct: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.” Sports Mole, 12 Oct: “Unsurprisingly, Haaland is the leading goalscorer in the Premier League after six matches, scoring his sixth of the campaign in Man City’s statement 3-0 victory against Liverpool at Anfield on Sunday.” Sports Mole, 12 Oct: “Haaland also netted a brace in the Citizens’ opening Champions League fixture at the beginning of September, helping Enzo Maresca ’s side secure a 2-0 win in a feisty contest away against Porto.”",
    "case_against": "What argues against him: Fantasy Football Scout, 12 Oct: “He is important but only just back from injury.” – Enzo Maresca on Jeremy Doku Image from Legomane Elsewhere, Haaland – who was subbed off for a partial breather in the 80th minute – netted for the fifth Gameweek in a row.” Sports Mole, 09 Oct: “Sky Blues supporters had hearts in mouths during the international break when Haaland suffered an injury scare in Norway's Nations League loss to Portugal, and there was uncertainty as to whether fans would be given an update in Maresca's pre-game press conference.” FourFourTwo FPL, 09 Oct: “And Haaland , as always, is the comfort blanket if none of the above feel right.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “Speaking to BILD , Bayern president Hainer refused to rule out Haaland as a target in the coming seasons, saying: \"We have Kane, Olise, Diaz and more.” FourFourTwo FPL, 09 Oct: “Haaland is in red-hot form for City this season, having scored five in five games in the Premier League – which the Sky Blues have won all of – and notching a brace in the opening Champions League fixture against Porto While Maresca doesn't have a natural replacement for Haaland as a target man , the availability of his centre-forward does mean that he's avoided a potential crisis in attack.”",
    "developments": "Recent developments — Football365, 13 Oct: “What a season he’s having for Fabian Hurzeler’s super Seagulls. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 13 Oct: “Manchester United Antonio Valencia Editor F365 13 Oct 2026 Erling Haaland to Fulham as Man City players get drafted Man City are making people turn off their TVs but we prefer to look at it all as great fun.” Football365, 13 Oct: “Erling Haaland to Fulham as Man City players get drafted Erling Haaland in a Fulham shirt looks good Man City are making people turn off their TVs but we prefer to look at it all as great fun.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 12 Oct: “Haaland's shot conversion rate currently stands at 27.3% - exactly double Barry's 13.6%.” FourFourTwo FPL, 12 Oct: “Last season, Haaland missed 30 big chances in the Premier League - a full 10 clear of the second-placed player in the division.”",
    "confidence": "high",
-   "evidence_count": 110,
+   "evidence_count": 109,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
     "https://www.sportsmole.co.uk/football/man-city/predicted-lineups/haaland-starts-semenyo-decision-predicted-man-city-xi-vs-liverpool_606539.html",
@@ -4096,24 +4108,6 @@
      "topics": []
     },
     {
-     "text": "Having tormented Borussia Dortmund 's opponents between 2020 and 2022, Manchester City persuaded Haaland to sign for a fee of just £51m (€60m), a deal that has since looked more like highway robbery than a transfer.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/erling-haaland-exit-date-becoming-increasingly-clear_605211.html",
-     "published": "2026-09-16T07:18:07+01:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "This season, under new manager Enzo Maresca, Haaland remains firmly on his own extraordinary standards, having scored six goals in six appearances.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/erling-haaland-exit-date-becoming-increasingly-clear_605211.html",
-     "published": "2026-09-16T07:18:07+01:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
      "text": "The Premier League reported that more than 1.7 million managers activated Triple Captain , with the overwhelming majority backing Erling Haaland at home to Coventry.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/haaland-triple-captain-gw3-result-2026-27",
@@ -4320,7 +4314,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "Latest on Dubravka — FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 19 Sep.",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s), the most recent dated 19 Sep.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 19 Sep: “He just caught the ball so sweetly and it just arrowed past Martin Dubravka in the Tottenham goal - it was a fantastic strike.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4329,15 +4323,14 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-ready-to-launch-gbp70m-move-for-world-cup-winner-after-xavi-simons-update_606861.html",
     "https://www.si.com/nba/spurs/onsi/preview-how-to-watch-san-antonio-spurs-seek-first-preseason-win-vs-jazz?utm_source=RSS",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-spurs-improve-brunos-two-year-low-defcon-frenzy",
     "https://www.fourfourtwo.com/person/player/to-kill-the-dream-of-my-former-club-was-a-strange-feeling-ill-always-be-grateful-to-ajax-but-football-is-like-that-toby-alderweireld-on-tottenham-hotspurs-incredible-champions-league-semi-final-win-in-2019",
-    "https://www.101greatgoals.com/football/premier-league/manchester-united-v-tottenham-confirmed-team-news-and-line-ups/",
     "https://www.sportsmole.co.uk/football/man-utd/news/baleba-rashford-maddison-decisions-man-utd-vs-spurs-team-news-confirmed_606633.html",
     "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "Fantasy Football Scout",
     "FourFourTwo FPL",
     "Sports Illustrated FPL",
@@ -4358,14 +4351,14 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — Fantasy Football Scout, 13 Oct: “The three of them are not far, I would say, but I don’t know if they are going to be ready for Brentford, for Villarreal, for Brighton, I don’t know.” – Andoni Iraola on Dominik Szoboszlai, Cody Gakpo and Alexander Isak Long-term absentees Hugo Ekitike (Achilles), Conor Bradley (knee) and Giovanni Leoni (knee) also remain out.”",
-   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 16 retrieved item(s) from 5 source(s), the most recent dated 13 Oct.",
+   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 15 retrieved item(s) from 4 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “He was superb in the middle of the park and supplied the assist for Doku’s goal, but missed out on defensive contribution (DefCon) points, with eight… KOUMAS UP FRONT With Isak, Gakpo and Szoboszlai injured, Lewis Koumas (£5.0m) started up front for Liverpool.” Fantasy Football Scout, 12 Oct: “They are also in the bottom four for big chances… The sooner they can recover Isak, Gakpo and Szoboszlai the better, then, particularly with a tricky run of Premier League matches to come, with Brentford, Brighton and Hove Albion and Arsenal up next. 74 Comments Login to Post a Comment Gandalf 5 hours, 45 mins ago A.” Sports Mole, 11 Oct: “A video on social media showed Liverpool players arriving at the team hotel, but Szoboszlai was not seen in the footage , and nor was teammate Alexis Mac Allister The latter's situation was clarified in a separate report, though, as it was revealed that Mac Allister had arrived at the hotel the day before, and the Argentine was named in Andoni Iraola 's starting lineup.”",
    "case_against": "What argues against him: Fantasy Football Scout, 13 Oct: “LIVERPOOL Dominik Szoboszlai (hamstring), Cody Gakpo (ankle) and Alexander Isak (quad) will all miss the clash with LASK on Wednesday.” Sports Mole, 13 Oct: “DOMINIK SZOBOSZLAI © Iconsport / Marcus Nichols/Sipa USA Status : Major doubt Type of injury : Hamstring Possible return date : October 14 (vs. LASK) Dominik Szoboszlai's running power is a key part of his game, but that intensity caused the number eight to develop a hamstring 'overload' that sidelined him on Sunday.” Sports Mole, 11 Oct: “Concerns had emerged over the availability of both Szoboszlai and Alexis Mac Allister , who were not seen with their Reds teammates arriving at their team hotel on Sunday morning.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “While Mac Allister’s situation has been clarified and he is available to start, Szoboszlai will not be involved against the Citizens due to a hamstring injury.” 101 Great Goals — Fantasy, 16 Sep: “Alexis Mac Allister and Cody Gakpo had put Liverpool ahead before Tottenham threatened a comeback, but Szoboszlai’s finish ended any doubt and secured Liverpool’s place in the fourth round.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “While Mac Allister’s situation has been clarified and he is available to start, Szoboszlai will not be involved against the Citizens due to a hamstring injury.”",
    "developments": "Recent developments — Sports Mole, 11 Oct: “However, Szoboszlai was nowhere to be seen when Liverpool confirmed their XI , and Iraola explained the midfielder's absence to the media before the match.” FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.” FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 16 Sep: “Mac Allister later helped create another big opening for Szoboszlai with Liverpool’s press, making this a timely reminder of his qualities as he pushes to regain his league starting spot.” OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "confidence": "high",
-   "evidence_count": 16,
+   "evidence_count": 15,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/13/szoboszlai-isak-gakpo-latest-fpl-team-news-ahead-of-gameweek-7",
     "https://www.sportsmole.co.uk/football/liverpool/champions-league/injuries-and-suspensions/isak-gakpo-szoboszlai-latest-liverpool-injury-suspension-list-vs-lask_606774.html",
@@ -4381,7 +4374,6 @@
     "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "Fantasy Football Scout",
     "FourFourTwo FPL",
     "OneFPL",
@@ -4527,24 +4519,6 @@
      "published": "2026-09-16T13:45:00+00:00",
      "tone": "positive",
      "topics": []
-    },
-    {
-     "text": "Szoboszlai came off the bench to settle the tie with a long-range effort from around 30 yards.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/",
-     "published": "2026-09-16T08:16:27+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Alexis Mac Allister and Cody Gakpo had put Liverpool ahead before Tottenham threatened a comeback, but Szoboszlai’s finish ended any doubt and secured Liverpool’s place in the fourth round.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/premier-league/iraola-hails-szoboszlai-rocket-liverpools-win-tottenham/",
-     "published": "2026-09-16T08:16:27+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
     },
     {
      "text": "Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.",
