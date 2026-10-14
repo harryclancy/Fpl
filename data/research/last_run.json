@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-13T21:52:41+00:00",
- "seconds": 150.2,
+ "ran_at": "2026-10-14T01:56:51+00:00",
+ "seconds": 144.9,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 682,
- "substantive_items": 296,
- "duplicates_removed": 25,
- "deeply_analysed": 78,
- "deep_read_failed": 12,
- "corpus_size": 18474,
+ "sources_readable": 60,
+ "candidates_discovered": 509,
+ "substantive_items": 130,
+ "duplicates_removed": 3,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18486,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 296 articles"
+    "60/78 sources returned 130 articles"
    ]
   },
   "blackout": {
@@ -42,7 +42,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,7 +49,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -62,9 +60,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 4,
-   "latest_evidence": "2026-10-13T15:17:49+00:00",
+   "latest_evidence": "2026-10-13T22:46:54+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -85,8 +83,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -97,6 +95,15 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Arsenal goalkeeper David Raya is a target for a club he holds dear in his heart. The World Cup winner has been in fine form once again this season, off the back of winning the past three Golden Glove awards in the Premier League. But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime. Real Madrid want to sign David Raya from Arsenal Thibaut "
+    },
+    {
+     "title": "Everything Manchester United star Lisandro Martinez said, as defender rips into club directors in extraordinary interview",
+     "url": "https://www.fourfourtwo.com/person/player/everything-manchester-united-star-lisandro-martinez-said-as-defender-rips-into-club-directors-in-extraordinary-interview",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-13T22:46:54+00:00",
+     "matched_on": "raya",
+     "kind": "transfer",
+     "excerpt": "Manchester United defender Lisandro Martinez has delivered an explosive post-match interview after yet another defeat with the Red Devils to Atletico Madrid Michael Carrick's side lost 2-0 at the Metropolitano, and Martinez – criticised at the weekend for his part in a late Dominic Solanke equaliser – came out to face the music at full-time, and delivered an honest assessment of Manchester United'"
     },
     {
      "title": "Arsenal closing in on Rice deal as three key contracts remain unresolved",
@@ -526,8 +533,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-10T07:04:06+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-13T18:26:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -561,6 +568,15 @@
      "excerpt": "FF247 Site Team News GW6 Welcome to FF247 Site Team News GW6 I feel we’ve turned point dodging into an art form. We finished on 42 points against an average of 48, and one look at the team makes it fairly easy to work out where things went wrong. Pascal Groß (14pts) was once again […] The post FF247 Site Team News GW6 appeared first on Fantasy Football 247 - Premier League Tips ."
     },
     {
+     "title": "Brighton & Hove Albion vs Kauno Zalgiris - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/europa-conference-league/preview/brighton-vs-kauno-zalgiris-prediction-team-news-lineups_606829.html",
+     "source": "Sports Mole",
+     "published": "2026-10-13T18:26:00+01:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Thursday's Conference League clash between Brighton & Hove Albion and Kauno Zalgiris, including predictions, team news and possible lineups."
+    },
+    {
      "title": "Where to go for live coverage and highlights of Sunderland vs Brighton",
      "url": "https://www.safc.com/news/2026/october/10/where-to-go-for-live-coverage-and-highlights-of-sunderland-vs-brighton/",
      "source": "Sunderland",
@@ -586,15 +602,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Brighton players, Saka, Bruno: Buy, keep or sell in Gameweek 6? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "The FPL half-term report: Brighton",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/03/the-fpl-half-term-report-brighton",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-03T17:55:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "With three wins and one draw, Brighton sit third in the table The post The FPL half-term report: Brighton appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
@@ -890,7 +897,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 59,
+   "evidence_count": 58,
    "source_count": 18,
    "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
@@ -1030,7 +1037,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 112,
+   "evidence_count": 110,
    "source_count": 16,
    "latest_evidence": "2026-10-13T20:38:25+00:00",
    "official_source_found": true,
@@ -1359,7 +1366,7 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 17,
+   "evidence_count": 16,
    "source_count": 5,
    "latest_evidence": "2026-10-13T16:00:00+00:00",
    "official_source_found": false,
