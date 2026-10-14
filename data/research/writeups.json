@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-14T01:56:51+00:00",
+ "generated": "2026-10-14T10:17:11+00:00",
  "gameweek": 7,
- "corpus_size": 18486,
+ "corpus_size": 18490,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -173,16 +173,17 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "status": "Latest on De Cuyper — Sunderland, 10 Oct: “Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £5.1m as a DEF. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 12 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “We were really brilliant at the basics, and then you are able to compete with these kinds of teams.” – Fabian Hurzeler, via the Argus De Cuyper and Gross now, fittingly, sit joint-top of the FPL standings: There’ll be games in which the in-form duo enjoy more attacking freedom (next weekend, for example) but they still came up with the goods.” Sunderland, 10 Oct: “The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.” Sunderland, 10 Oct: “Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.”",
+   "status": "Latest on De Cuyper — Sunderland, 10 Oct: “Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.”",
+   "why_here": "De Cuyper is in the starting eleven this week at £5.1m as a DEF. The selection rests on 8 retrieved item(s) from 5 source(s), the most recent dated 14 Oct.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 14 Oct: “Their open-play shots conceded and chances created conceded maps add further encouragement… The next three matches after Palace are tricky, but De Cuyper should still offer attacking threat even if Brighton concede.” Fantasy Football Scout, 12 Oct: “We were really brilliant at the basics, and then you are able to compete with these kinds of teams.” – Fabian Hurzeler, via the Argus De Cuyper and Gross now, fittingly, sit joint-top of the FPL standings: There’ll be games in which the in-form duo enjoy more attacking freedom (next weekend, for example) but they still came up with the goods.” Sunderland, 10 Oct: “The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.”",
    "case_against": "What argues against him: Fantasy Football Scout, 12 Oct: “Two nicely threaded passes, from that man Pascal Gross (£6.0m) and substitute Georginio Rutter (£5.3m), set up the advancing Maxim De Cuyper (£5.0m) and replacement left-back Jaouen Hadjam (£4.5m) to finish.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Nothing dated was retrieved, so no change can be reported. Undated pages were found but cannot be placed in time.",
+   "developments": "Recent developments — Fantasy Football Scout, 14 Oct: “MAXIM DE CUYPER We said last week that there may be better medium-term options to consider than Maxim De Cuyper (£5.1m).” Sunderland, 10 Oct: “Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.”",
    "outlook": "On the coming weeks — OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.” OneFPL: “De Cuyper is a defender in FPL but is regularly used in advanced areas.”",
    "confidence": "high",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
     "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
     "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
@@ -199,6 +200,25 @@
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "MAXIM DE CUYPER We said last week that there may be better medium-term options to consider than Maxim De Cuyper (£5.1m).",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
+     "published": "2026-10-14T03:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Their open-play shots conceded and chances created conceded maps add further encouragement… The next three matches after Palace are tricky, but De Cuyper should still offer attacking threat even if Brighton concede.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
+     "published": "2026-10-14T03:00:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "statistics",
+      "fixtures"
+     ]
+    },
     {
      "text": "Two nicely threaded passes, from that man Pascal Gross (£6.0m) and substitute Georginio Rutter (£5.3m), set up the advancing Maxim De Cuyper (£5.0m) and replacement left-back Jaouen Hadjam (£4.5m) to finish.",
      "source": "Fantasy Football Scout",
@@ -332,18 +352,19 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "status": "Latest on Hall — Newcastle United, 07 Oct: “Lewis Hall and Tino Livramento The defensive duo were initially named in the England squad ahead of four UEFA Nations League Group Stage fixtures.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 11 Oct.",
+   "status": "Latest on Hall — Soccerway, 14 Oct: “Action Images via Reuters / Andrew Boyers Newcastle United are expected to double down on their stance over Lewis Hall if Manchester United attempt to make new attempts to fix their left-back problem.”",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 8 retrieved item(s) from 6 source(s), the most recent dated 14 Oct.",
    "case_for": "What supports keeping him: Hull City, 11 Oct: “Kiernan Dewsbury-Hall levelled for the Toffees in the 55 th minute, converting Ainsley Maitland-Niles’ cross, before he provided the assist for Thierno Barry to put Everton ahead.” Newcastle United, 07 Oct: “Hall grabbed an assist for the Three Lions captain, earning a record-equalling 125th senior cap, before being substituted in the 71st minute.” Sports Mole, 22 Sep: “The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.”",
    "case_against": "What argues against him: FourFourTwo FPL, 21 Sep: “Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.”",
-   "expected_minutes": "On minutes — FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
-   "developments": "Recent developments — Football365, 30 Sep: “Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England.” Football365, 30 Sep: “Hall was unlucky not to make Thomas Tuchel’ s England squad for this summer’s World Cup, but he’s been recalled for this international break.” Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.”",
-   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
+   "expected_minutes": "On minutes — Soccerway, 14 Oct: “The flashpoint reignites particular questions over their decision not to sign Hall The left-back area remains a big problem for United, where doubts over Luke Shaw 's ability to remain fit for a full campaign were already well established before the season began.” FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
+   "developments": "Recent developments — Newcastle United, 07 Oct: “Lewis Hall and Tino Livramento The defensive duo were initially named in the England squad ahead of four UEFA Nations League Group Stage fixtures.” Football365, 30 Sep: “Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England.” Football365, 30 Sep: “Hall was unlucky not to make Thomas Tuchel’ s England squad for this summer’s World Cup, but he’s been recalled for this international break.”",
+   "outlook": "On the coming weeks — Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.”",
    "confidence": "high",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
     "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
+    "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
     "https://www.wearehullcity.co.uk/news/2026/october/11/hull-city-2-2-everton/",
     "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
     "https://www.football365.com/news/ian-wright-lauds-england-star-proving-worth-czechia-very-unlucky-world-cup-snub",
@@ -355,9 +376,28 @@
     "FourFourTwo FPL",
     "Hull City",
     "Newcastle United",
+    "Soccerway",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Action Images via Reuters / Andrew Boyers Newcastle United are expected to double down on their stance over Lewis Hall if Manchester United attempt to make new attempts to fix their left-back problem.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
+     "published": "2026-10-14T09:51:04+02:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "The flashpoint reignites particular questions over their decision not to sign Hall The left-back area remains a big problem for United, where doubts over Luke Shaw 's ability to remain fit for a full campaign were already well established before the season began.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
+     "published": "2026-10-14T09:51:04+02:00",
+     "tone": "neutral",
+     "topics": [
+      "injury"
+     ]
+    },
     {
      "text": "Kiernan Dewsbury-Hall levelled for the Toffees in the 55 th minute, converting Ainsley Maitland-Niles’ cross, before he provided the assist for Thierno Barry to put Everton ahead.",
      "source": "Hull City",

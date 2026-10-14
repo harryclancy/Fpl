@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-14T01:56:51+00:00",
- "seconds": 144.9,
+ "ran_at": "2026-10-14T10:17:11+00:00",
+ "seconds": 179.2,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 509,
- "substantive_items": 130,
- "duplicates_removed": 3,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 18486,
+ "sources_readable": 59,
+ "candidates_discovered": 556,
+ "substantive_items": 176,
+ "duplicates_removed": 14,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 18490,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 130 articles"
+    "59/78 sources returned 176 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
@@ -164,9 +165,9 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 5,
-   "latest_evidence": "2026-10-12T00:00:00+00:00",
+   "latest_evidence": "2026-10-14T03:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -187,10 +188,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "De Cuyper, Pedro, Cherki, Gibbs-White: Buy, keep or sell in Gameweek 7?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-14T03:00:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post De Cuyper, Pedro, Cherki, Gibbs-White: Buy, keep or sell in Gameweek 7? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: De Cuyper + Gross share top spot in points table",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
@@ -317,9 +327,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 7,
-   "source_count": 5,
-   "latest_evidence": "2026-10-11T16:08:02+00:00",
+   "evidence_count": 8,
+   "source_count": 6,
+   "latest_evidence": "2026-10-14T09:51:04+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -339,8 +349,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -360,6 +370,15 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "Hall, 22, signed a two-year extension with no release clause last week, tying him to the club until 2031 despite enquiries from the Red Devils and summer-long speculation linking him with a move to Old Trafford. He capped off a great few days, which also included an England recall, with a goal in Newcastle ’s 2-1 win over Hull City on Saturday. Newcastle fans could be forgiven for fearing Hall wou"
+    },
+    {
+     "title": "Flashscore sources: Newcastle set to double down on Hall valuation if Man Utd return",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
+     "source": "Soccerway",
+     "published": "2026-10-14T09:51:04+02:00",
+     "matched_on": "hall",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "Hull City 2-2 Everton",
@@ -1039,7 +1058,7 @@
    "club": "MCI",
    "evidence_count": 110,
    "source_count": 16,
-   "latest_evidence": "2026-10-13T20:38:25+00:00",
+   "latest_evidence": "2026-10-14T06:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
