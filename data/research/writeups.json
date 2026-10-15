@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-15T15:37:37+00:00",
+ "generated": "2026-10-15T20:22:18+00:00",
  "gameweek": 7,
- "corpus_size": 18571,
+ "corpus_size": 18582,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -538,17 +538,18 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "status": "Latest on Barnes — Sports Illustrated FPL, 04 Oct: “It’s also been documented that Leonard is of the understanding that the focus is on Scottie Barnes and the team built around him.”",
-   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 04 Oct.",
+   "status": "Latest on Barnes — Sports Illustrated FPL, 15 Oct: “Mandatory Credit: Jim Dedmon-USA TODAY Sports | USA TODAY Sports via Reuters Connect The Tennessee Volunteers are set for their next season under head basketball coach Rick Barnes , who is by far one of the better basketball coaches in the country.”",
+   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 15 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 01 Oct: “It goes without saying, of course, that Pascal Gross here GOAL THREAT Goals Shots Shots in the box Big chances Expected goals (xG) Schade 1.52 Barnes 0.62 Tavernier 1.70 Schade and Tavernier have both produced three goals from 13 shots in Gameweeks 1-5.” Fantasy Football Scout, 01 Oct: “Above: Kevin Schade and Marcus Tavernier’s shot maps in 2026/27 As for Barnes, he’s recorded eight shots so far, so his goal threat has been more limited than Schade and Tavernier.” Newcastle United, 24 Sep: “With the Magpies trailing by two goals against Marco Rose's Cherries, Barnes quickly halved the deficit for the hosts after cutting inside from the left wing before curling a wonderful effort into the top right-hand corner.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Sports Illustrated FPL, 04 Oct: “If it’s Scottie’s team, it’s his team and I want to do whatever to help you guys.” It’s clear as day that the bigger picture was built around Scottie Barnes.” Sports Illustrated FPL, 26 Sep: “The Rick Barnes Bowl As many know, Tennessee’s Men’s Basketball coach, Rick Barnes, originally made his name being the head coach of the Longhorns.” Sports Illustrated FPL, 26 Sep: “Barnes is still considered a Texas legend after spending 17 years as the leader of the program.”",
-   "outlook": "On the coming weeks — Everton, 23 Sep: “Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST).”",
+   "developments": "Recent developments — Sports Illustrated FPL, 15 Oct: “While some coaches could be bitter, Barnes was the complete opposite.” Sports Illustrated FPL, 04 Oct: “It’s also been documented that Leonard is of the understanding that the focus is on Scottie Barnes and the team built around him.” Sports Illustrated FPL, 04 Oct: “If it’s Scottie’s team, it’s his team and I want to do whatever to help you guys.” It’s clear as day that the bigger picture was built around Scottie Barnes.”",
+   "outlook": "On the coming weeks — Sports Illustrated FPL, 26 Sep: “Barnes is still considered a Texas legend after spending 17 years as the leader of the program.” Everton, 23 Sep: “Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST).”",
    "confidence": "high",
    "evidence_count": 10,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
+    "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
     "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
     "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
     "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-makes-it-clear-where-he-stands-with-tennessee-vs-texas-01m3aytv069e?utm_source=RSS",
@@ -556,8 +557,7 @@
     "https://avfc.co.uk/news/2026/september/24/villans-nominated-for-premier-league-goal-of-the-month-/",
     "https://www.evertonfc.com/news/2026/september/23/Event-Guide--All-You-Need-To-Know-Ahead-Of-Game4Hope/",
     "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
-    "https://www.evertonfc.com/news/2026/september/18/game4hope/",
-    "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes"
+    "https://www.evertonfc.com/news/2026/september/18/game4hope/"
    ],
    "sources_used": [
     "Aston Villa",
@@ -569,6 +569,22 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Mandatory Credit: Jim Dedmon-USA TODAY Sports | USA TODAY Sports via Reuters Connect The Tennessee Volunteers are set for their next season under head basketball coach Rick Barnes , who is by far one of the better basketball coaches in the country.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
+     "published": "2026-10-15T20:00:25+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "While some coaches could be bitter, Barnes was the complete opposite.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
+     "published": "2026-10-15T20:00:25+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "It’s also been documented that Leonard is of the understanding that the focus is on Scottie Barnes and the team built around him.",
      "source": "Sports Illustrated FPL",
@@ -672,22 +688,6 @@
      "source": "Everton",
      "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
      "published": "2026-09-18T11:59:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Harvey Barnes While the old adage of there being ‘no easy games in the Premier League’ holds true more than ever, Newcastle’s upcoming run is one of the more appealing.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-     "published": "2026-09-17T12:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Now is a good time to invest in Newcastle players, then, and Harvey Barnes (£6.0m) is one of the stand-out picks.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-     "published": "2026-09-17T12:00:00+00:00",
      "tone": "neutral",
      "topics": []
     }
@@ -1967,14 +1967,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.” Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 52 retrieved item(s) from 17 source(s), the most recent dated 13 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 49 retrieved item(s) from 17 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “Only one of their five goals was a gilt-edged chance, specifically Pedro’s second.” Soccerway, 28 Sep: “Joao Felix's recent career stats Flashscore Two goals in two games, but little else in terms of work rate or attacking force perfectly sum up his contributions.” Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
    "developments": "Recent developments — FISO, 13 Oct: “Chelsea attackers lead the FPL conversation João Pedro is the standout pick.” Fantasy Football Scout, 12 Oct: “The others, Jordan Henderson ‘s (£4.9m) edge-of-box effort, Morgan Rogers ‘ (£7.9m) deflected curler, Pedro’s clinical finish from a cut-back and Henderson’s free-kick, were just great strikes: Henderson ended up with 18 points, his second-highest-ever FPL score since his 2008 debut!” 101 Great Goals — Fantasy, 07 Oct: ““I feel that now is the moment,” Pedro wrote on social media alongside a video featuring the best moments from his career.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).” RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.”",
    "confidence": "high",
-   "evidence_count": 52,
+   "evidence_count": 49,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/october/13/feature-international-action-and-back-to-business/",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-rayan-oop-clinical-chelsea-kluivert-kroupi-injury-latest",
@@ -2317,44 +2317,6 @@
      "topics": []
     },
     {
-     "text": "Pedro not ruled out Alonso first gave an update on his team ahead of the clash, revealing details on a number of players, including striker Joao Pedro , who missed training this weekend and missed out on the Brazil squad.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/chelsea-boss-alonso-says-joao-pedro-james-caicedo-could-be-fit-for-brentford-game/CfKE2OtR/",
-     "published": "2026-09-17T15:36:25+02:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
-     "text": "In fact, he said it was possible that Pedro could play tomorrow despite pulling out of the Brazil squad.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/joao-pedro-james-caicedo-chelsea-injury-latest-for-fpl-gameweek-5",
-     "published": "2026-09-17T14:01:27+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "“He is getting closer and tomorrow, we will take a final decision in the team and in the squad that is coming to Brentford.” – Xabi Alonso on Moises Caicedo Reece James , along with Caicedo and Pedro, missed training on Tuesday , and Alonso was asked why.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/joao-pedro-james-caicedo-chelsea-injury-latest-for-fpl-gameweek-5",
-     "published": "2026-09-17T14:01:27+00:00",
-     "tone": "negative",
-     "topics": [
-      "statistics"
-     ]
-    },
-    {
-     "text": "He didn’t clarify what Joao Pedro ‘s injury is (reports suggest it’s a knee problem), either, and said it was possible that the striker could play tomorrow despite pulling out of the Brazil squad.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest",
-     "published": "2026-09-17T12:45:00+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
      "text": "João Pedro has been withdrawn from Brazil's upcoming internationals because of an unspecified injury Chelsea have not yet confirmed that he will miss Friday's trip to Brentford.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/joao-pedro-injury-fpl-best-replacements-gameweek-5-2026-27",
@@ -2535,14 +2497,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — FourFourTwo FPL, 12 Oct: “Watching Haaland recast as a battering ram old-school number nine, and watching Man City fans Poznan with inflatable bananas in hand, it seems both manager and supporters have come to the same conclusion: if this whole thing is about to come crashing down, if fans are going to boo and hiss your every move, well, you may as well let go and have some fun with it.” Sports Mole, 09 Oct: “Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 107 retrieved item(s) from 16 source(s), the most recent dated 14 Oct.",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 106 retrieved item(s) from 15 source(s), the most recent dated 14 Oct.",
    "case_for": "What supports keeping him: Football365, 14 Oct: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.” Football365, 14 Oct: “Steven Gerrard (120) and Romelu Lukaku (121) won’t be ahead of him for long, while seven more goals will take him beyond Raheem Sterling and into the all-time top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).” Football365, 13 Oct: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.”",
    "case_against": "What argues against him: Fantasy Football Scout, 12 Oct: “He is important but only just back from injury.” – Enzo Maresca on Jeremy Doku Image from Legomane Elsewhere, Haaland – who was subbed off for a partial breather in the 80th minute – netted for the fifth Gameweek in a row.” Sports Mole, 09 Oct: “Sky Blues supporters had hearts in mouths during the international break when Haaland suffered an injury scare in Norway's Nations League loss to Portugal, and there was uncertainty as to whether fans would be given an update in Maresca's pre-game press conference.” FourFourTwo FPL, 09 Oct: “And Haaland , as always, is the comfort blanket if none of the above feel right.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 12 Oct: “Haaland also netted a brace in the Citizens’ opening Champions League fixture at the beginning of September, helping Enzo Maresca ’s side secure a 2-0 win in a feisty contest away against Porto.” Sports Mole, 11 Oct: “Speaking to BILD , Bayern president Hainer refused to rule out Haaland as a target in the coming seasons, saying: \"We have Kane, Olise, Diaz and more.”",
    "developments": "Recent developments — Football365, 14 Oct: “Definitely shouldn’t win him the Ballon d’Or , mind. 7) Erling Haaland – 23 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Football365, 13 Oct: “What a season he’s having for Fabian Hurzeler’s super Seagulls. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 13 Oct: “Manchester United Antonio Valencia Editor F365 13 Oct 2026 Erling Haaland to Fulham as Man City players get drafted Man City are making people turn off their TVs but we prefer to look at it all as great fun.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 12 Oct: “Haaland's shot conversion rate currently stands at 27.3% - exactly double Barry's 13.6%.” FourFourTwo FPL, 12 Oct: “Last season, Haaland missed 30 big chances in the Premier League - a full 10 clear of the second-placed player in the division.”",
    "confidence": "high",
-   "evidence_count": 107,
+   "evidence_count": 106,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
     "https://www.sportsmole.co.uk/football/man-city/predicted-lineups/haaland-starts-semenyo-decision-predicted-man-city-xi-vs-liverpool_606539.html",
@@ -2561,7 +2523,6 @@
     "101 Great Goals — Fantasy",
     "FPL Captain",
     "FPL360",
-    "Fantasy Football Hub",
     "Fantasy Football Scout",
     "Flashscore",
     "Football365",

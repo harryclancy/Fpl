@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-15T15:37:37+00:00",
- "seconds": 151.2,
+ "ran_at": "2026-10-15T20:22:18+00:00",
+ "seconds": 165.3,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 644,
- "substantive_items": 266,
- "duplicates_removed": 39,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18571,
+ "sources_readable": 57,
+ "candidates_discovered": 604,
+ "substantive_items": 240,
+ "duplicates_removed": 29,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18582,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 266 articles"
+    "57/78 sources returned 240 articles"
    ]
   },
   "blackout": {
@@ -38,10 +38,12 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,10 +53,11 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -440,7 +443,7 @@
    "club": "NEW",
    "evidence_count": 10,
    "source_count": 7,
-   "latest_evidence": "2026-10-13T17:09:44+00:00",
+   "latest_evidence": "2026-10-15T20:00:25+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -472,6 +475,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Rick Barnes Gets Real When Discussing Justin Gainey's Decision to Leave Tennessee",
+     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-15T20:00:25+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Justin Gainey left to join the North Carolina State Wolfpack as the head basketball coach. To no surprise, Rick Barnes approves of this decision."
     },
     {
      "title": "RSPCA to carry out a full assessment of Maurice Barnes after the ex-trainer was given an eight-year ban over multiple welfare breaches",
@@ -544,15 +556,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "Game4Hope will now take place at Goodison Park on Saturday 26 September, giving some of football’s biggest names – and a host of Everton and Liverpool favourite – the opportunity to return to one of the sport’s most iconic stadiums. The inaugural charity fixture, which will raise vital funds and awareness in the fight against homelessness, will see Tim Cahill’s star-studded Merseyside XI take on a"
-    },
-    {
-     "title": "FPL Gameweek 5 tips: Touré's personal milestone and a good time to buy Barnes",
-     "url": "https://www.newcastleunited.com/en/news/fpl-gameweek-5-tips-toures-personal-milestone-and-a-good-time-to-buy-barnes",
-     "source": "Newcastle United",
-     "published": "2026-09-17T12:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -897,7 +900,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 52,
+   "evidence_count": 49,
    "source_count": 17,
    "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
@@ -1037,8 +1040,8 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 107,
-   "source_count": 16,
+   "evidence_count": 106,
+   "source_count": 15,
    "latest_evidence": "2026-10-14T22:02:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
