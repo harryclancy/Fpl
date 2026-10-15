@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-14T20:44:23+00:00",
+ "generated": "2026-10-15T01:31:24+00:00",
  "gameweek": 7,
- "corpus_size": 18549,
+ "corpus_size": 18541,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -164,19 +164,18 @@
    "player": "De Cuyper",
    "club": "BHA",
    "status": "Latest on De Cuyper — Sunderland, 10 Oct: “Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £5.1m as a DEF. The selection rests on 8 retrieved item(s) from 5 source(s), the most recent dated 14 Oct.",
+   "why_here": "De Cuyper is in the starting eleven this week at £5.1m as a DEF. The selection rests on 7 retrieved item(s) from 4 source(s), the most recent dated 14 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 14 Oct: “Their open-play shots conceded and chances created conceded maps add further encouragement… The next three matches after Palace are tricky, but De Cuyper should still offer attacking threat even if Brighton concede.” Fantasy Football Scout, 12 Oct: “We were really brilliant at the basics, and then you are able to compete with these kinds of teams.” – Fabian Hurzeler, via the Argus De Cuyper and Gross now, fittingly, sit joint-top of the FPL standings: There’ll be games in which the in-form duo enjoy more attacking freedom (next weekend, for example) but they still came up with the goods.” Sunderland, 10 Oct: “The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.”",
    "case_against": "What argues against him: Fantasy Football Scout, 12 Oct: “Two nicely threaded passes, from that man Pascal Gross (£6.0m) and substitute Georginio Rutter (£5.3m), set up the advancing Maxim De Cuyper (£5.0m) and replacement left-back Jaouen Hadjam (£4.5m) to finish.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Scout, 14 Oct: “MAXIM DE CUYPER We said last week that there may be better medium-term options to consider than Maxim De Cuyper (£5.1m).” Sunderland, 10 Oct: “Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.”",
    "outlook": "On the coming weeks — OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.” OneFPL: “De Cuyper is a defender in FPL but is regularly used in advanced areas.”",
    "confidence": "high",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
     "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
-    "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
     "https://www.safc.com/news/2026/october/10/le-bris--we-must-stick-to-our-plan-and-fight/",
     "https://www.brightonandhovealbion.com/media-video/post-match-or-huerzeler-and-de-cuyper-or-sunderland-v-brighton",
     "https://www.safc.com/news/2026/october/10/sunderland-defeat-at-home-to-brighton/",
@@ -184,7 +183,6 @@
    ],
    "sources_used": [
     "Brighton & Hove Albion",
-    "Fantasy Football Hub",
     "Fantasy Football Scout",
     "OneFPL",
     "Sunderland"
@@ -750,16 +748,17 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "status": "Latest on Palmer — RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.” RotoWire Soccer, 06 Oct: “Cole Palmer Injury Update for FPL GW6 Monday, Oct. 5: Playing Through Pain Per Tuchel Cole Palmer withdrew from England duty on Sept. 25, and Tuchel said \"my understanding is that he is playing with discomfort and pain.\" He played the full 90 in Chelsea's 3-0 loss to Brentford.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 55 retrieved item(s) from 15 source(s), the most recent dated 13 Oct.",
-   "case_for": "What supports keeping him: FISO, 13 Oct: “He scored early against Bournemouth and also rose in price this week, making him a sensible option for managers who cannot stretch to Palmer but still want a route into Chelsea’s front line.” Sports Mole, 10 Oct: “In the frontline, Pedro has already scored three times and produced three assists in the top flight, while Palmer has two goals and two assists in the Premier League so far.” Fantasy Football Scout, 10 Oct: “TEAM NEWS The big team news is that Cole Palmer and Joao Pedro start for Chelsea this afternoon.”",
-   "case_against": "What argues against him: Sports Mole, 10 Oct: “There were doubts about the involvement of Caicedo and Pedro against Bournemouth, while Palmer missed international duty with England due to injury.” Soccerway, 10 Oct: “Palmer , left ‌out of England 's World Cup squad ‌this year after a persistent groin injury ‌affected his form, was called up ‌by Thomas Tuchel for Nations League fixtures against Spain, the Czech Republic and Croatia.” Soccerway, 10 Oct: “However, ‌Palmer was forced to pull ⁠out of the ‌squad due to a recurrence of the ​issue, with Tuchel saying the 24-year-old \"misses too many opportunities\" to play ​in an England shirt.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.”",
+   "status": "Latest on Palmer — Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 56 retrieved item(s) from 15 source(s), the most recent dated 15 Oct.",
+   "case_for": "What supports keeping him: Sports Illustrated FPL, 15 Oct: “Although Brady was specifically answering a question about starting right tackle Spencer Brown, who left Monday's win after 16 snaps , the statement also applies to Moore and Palmer.” FISO, 13 Oct: “He scored early against Bournemouth and also rose in price this week, making him a sensible option for managers who cannot stretch to Palmer but still want a route into Chelsea’s front line.” Sports Mole, 10 Oct: “In the frontline, Pedro has already scored three times and produced three assists in the top flight, while Palmer has two goals and two assists in the Premier League so far.”",
+   "case_against": "What argues against him: Sports Illustrated FPL, 15 Oct: “After initially appearing on the injury report as limited , Palmer missed Saturday's practice and was ruled out for the game \"He got kind of twisted up yesterday in practice.” Sports Mole, 10 Oct: “There were doubts about the involvement of Caicedo and Pedro against Bournemouth, while Palmer missed international duty with England due to injury.” Soccerway, 10 Oct: “Palmer , left ‌out of England 's World Cup squad ‌this year after a persistent groin injury ‌affected his form, was called up ‌by Thomas Tuchel for Nations League fixtures against Spain, the Czech Republic and Croatia.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” Fantasy Football Scout, 10 Oct: “TEAM NEWS The big team news is that Cole Palmer and Joao Pedro start for Chelsea this afternoon.”",
    "developments": "Recent developments — Football365, 12 Oct: “Fletcher namechecked Cole Palmer and Morgan Rogers as two stars he’s been informed Scott would love to play with on a regular basis.” Sports Mole, 10 Oct: “Chelsea star Cole Palmer announces a new long-term deal in unique fashion, offering a boost to the Blues ahead of their Premier League clash with Bournemouth.” Sports Illustrated FPL, 10 Oct: “Despite already being tied down until 2033, Palmer has added an extra 12 months to that contract to commit himself to Chelsea for the next eight years.”",
    "outlook": "On the coming weeks — Sports Mole, 10 Oct: “Tuchel left Palmer at home for the 2026 World Cup, but he decided to call up the Chelsea star for the first four fixtures of the UEFA Nations League.” Sports Mole, 08 Oct: ““It was new for me and brilliant to see how everyone bought into the idea of the next steps and the details needed to adjust to maybe unlock the next level.” Palmer England future: Battle to regain places for November decider © Imago England's tactical transformation has prompted fresh debate over whether Palmer and Manchester City’s Phil Foden could slot smoothly into this high-intensity system.”",
    "confidence": "high",
-   "evidence_count": 55,
+   "evidence_count": 56,
    "evidence_used": [
+    "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/palmer-and-two-others-who-returns-from-injury-for-the-blues-against-cherries_606629.html",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
@@ -770,8 +769,7 @@
     "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
     "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
     "https://www.101greatgoals.com/football/internationals/gibbs-white-england-squad-palmer-out/",
-    "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
-    "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html"
+    "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -791,6 +789,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Although Brady was specifically answering a question about starting right tackle Spencer Brown, who left Monday's win after 16 snaps , the statement also applies to Moore and Palmer.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
+     "published": "2026-10-15T01:07:06+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "After initially appearing on the injury report as limited , Palmer missed Saturday's practice and was ruled out for the game \"He got kind of twisted up yesterday in practice.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
+     "published": "2026-10-15T01:07:06+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
     {
      "text": "He scored early against Bournemouth and also rose in price this week, making him a sensible option for managers who cannot stretch to Palmer but still want a route into Chelsea’s front line.",
      "source": "FISO",
@@ -1934,14 +1950,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.” Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 57 retrieved item(s) from 18 source(s), the most recent dated 13 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 55 retrieved item(s) from 18 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “Only one of their five goals was a gilt-edged chance, specifically Pedro’s second.” Soccerway, 28 Sep: “Joao Felix's recent career stats Flashscore Two goals in two games, but little else in terms of work rate or attacking force perfectly sum up his contributions.” Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
    "developments": "Recent developments — FISO, 13 Oct: “Chelsea attackers lead the FPL conversation João Pedro is the standout pick.” Fantasy Football Scout, 12 Oct: “The others, Jordan Henderson ‘s (£4.9m) edge-of-box effort, Morgan Rogers ‘ (£7.9m) deflected curler, Pedro’s clinical finish from a cut-back and Henderson’s free-kick, were just great strikes: Henderson ended up with 18 points, his second-highest-ever FPL score since his 2008 debut!” 101 Great Goals — Fantasy, 07 Oct: ““I feel that now is the moment,” Pedro wrote on social media alongside a video featuring the best moments from his career.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).” RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.”",
    "confidence": "high",
-   "evidence_count": 57,
+   "evidence_count": 55,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/october/13/feature-international-action-and-back-to-business/",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-rayan-oop-clinical-chelsea-kluivert-kroupi-injury-latest",
@@ -2549,14 +2565,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — FourFourTwo FPL, 12 Oct: “Watching Haaland recast as a battering ram old-school number nine, and watching Man City fans Poznan with inflatable bananas in hand, it seems both manager and supporters have come to the same conclusion: if this whole thing is about to come crashing down, if fans are going to boo and hiss your every move, well, you may as well let go and have some fun with it.” Sports Mole, 09 Oct: “Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 108 retrieved item(s) from 16 source(s), the most recent dated 13 Oct.",
-   "case_for": "What supports keeping him: Football365, 13 Oct: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.” Sports Mole, 12 Oct: “Unsurprisingly, Haaland is the leading goalscorer in the Premier League after six matches, scoring his sixth of the campaign in Man City’s statement 3-0 victory against Liverpool at Anfield on Sunday.” Sports Mole, 12 Oct: “Haaland also netted a brace in the Citizens’ opening Champions League fixture at the beginning of September, helping Enzo Maresca ’s side secure a 2-0 win in a feisty contest away against Porto.”",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 107 retrieved item(s) from 16 source(s), the most recent dated 14 Oct.",
+   "case_for": "What supports keeping him: Football365, 14 Oct: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.” Football365, 14 Oct: “Steven Gerrard (120) and Romelu Lukaku (121) won’t be ahead of him for long, while seven more goals will take him beyond Raheem Sterling and into the all-time top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).” Football365, 13 Oct: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.”",
    "case_against": "What argues against him: Fantasy Football Scout, 12 Oct: “He is important but only just back from injury.” – Enzo Maresca on Jeremy Doku Image from Legomane Elsewhere, Haaland – who was subbed off for a partial breather in the 80th minute – netted for the fifth Gameweek in a row.” Sports Mole, 09 Oct: “Sky Blues supporters had hearts in mouths during the international break when Haaland suffered an injury scare in Norway's Nations League loss to Portugal, and there was uncertainty as to whether fans would be given an update in Maresca's pre-game press conference.” FourFourTwo FPL, 09 Oct: “And Haaland , as always, is the comfort blanket if none of the above feel right.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “Speaking to BILD , Bayern president Hainer refused to rule out Haaland as a target in the coming seasons, saying: \"We have Kane, Olise, Diaz and more.” FourFourTwo FPL, 09 Oct: “Haaland is in red-hot form for City this season, having scored five in five games in the Premier League – which the Sky Blues have won all of – and notching a brace in the opening Champions League fixture against Porto While Maresca doesn't have a natural replacement for Haaland as a target man , the availability of his centre-forward does mean that he's avoided a potential crisis in attack.”",
-   "developments": "Recent developments — Football365, 13 Oct: “What a season he’s having for Fabian Hurzeler’s super Seagulls. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 13 Oct: “Manchester United Antonio Valencia Editor F365 13 Oct 2026 Erling Haaland to Fulham as Man City players get drafted Man City are making people turn off their TVs but we prefer to look at it all as great fun.” Football365, 13 Oct: “Erling Haaland to Fulham as Man City players get drafted Erling Haaland in a Fulham shirt looks good Man City are making people turn off their TVs but we prefer to look at it all as great fun.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 12 Oct: “Haaland also netted a brace in the Citizens’ opening Champions League fixture at the beginning of September, helping Enzo Maresca ’s side secure a 2-0 win in a feisty contest away against Porto.” Sports Mole, 11 Oct: “Speaking to BILD , Bayern president Hainer refused to rule out Haaland as a target in the coming seasons, saying: \"We have Kane, Olise, Diaz and more.”",
+   "developments": "Recent developments — Football365, 14 Oct: “Definitely shouldn’t win him the Ballon d’Or , mind. 7) Erling Haaland – 23 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Football365, 13 Oct: “What a season he’s having for Fabian Hurzeler’s super Seagulls. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 13 Oct: “Manchester United Antonio Valencia Editor F365 13 Oct 2026 Erling Haaland to Fulham as Man City players get drafted Man City are making people turn off their TVs but we prefer to look at it all as great fun.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 12 Oct: “Haaland's shot conversion rate currently stands at 27.3% - exactly double Barry's 13.6%.” FourFourTwo FPL, 12 Oct: “Last season, Haaland missed 30 big chances in the Premier League - a full 10 clear of the second-placed player in the division.”",
    "confidence": "high",
-   "evidence_count": 108,
+   "evidence_count": 107,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
     "https://www.sportsmole.co.uk/football/man-city/predicted-lineups/haaland-starts-semenyo-decision-predicted-man-city-xi-vs-liverpool_606539.html",
@@ -2590,6 +2606,30 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
+     "published": "2026-10-14T22:02:20+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Steven Gerrard (120) and Romelu Lukaku (121) won’t be ahead of him for long, while seven more goals will take him beyond Raheem Sterling and into the all-time top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
+     "published": "2026-10-14T22:02:20+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Definitely shouldn’t win him the Ballon d’Or , mind. 7) Erling Haaland – 23 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-10-14T21:38:59+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.",
      "source": "Football365",
@@ -3913,22 +3953,6 @@
      "topics": []
     },
     {
-     "text": "Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "published": "2026-09-24T20:36:20+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Steven Gerrard (120) and Romelu Lukaku (121) won’t be ahead of him for long, while seven more goals will take him beyond Raheem Sterling and into the all-time top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-ridiculous-stats-half-decent-start-premier-league-life",
-     "published": "2026-09-24T20:36:20+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
      "text": "Haaland remaining settled, productive and fully committed has been an important part of making that change as smooth as possible.",
      "source": "Soccerway",
      "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-haaland-will-drive-any-decision-over-future-transfer-amid-new-links/h0v4fKGb/",
@@ -3975,14 +3999,6 @@
      "source": "Football365",
      "url": "https://www.football365.com/news/manchester-united-barcelona-raphinha",
      "published": "2026-09-21T10:33:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Who are the top scorers of 2026 from across Europe? 10) Erling Haaland – 20 goals A goal against Sunderland not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-09-20T19:42:59+00:00",
      "tone": "neutral",
      "topics": []
     },
@@ -4076,16 +4092,6 @@
      "tone": "neutral",
      "topics": [
       "transfer"
-     ]
-    },
-    {
-     "text": "Gullit said: “Kylian Mbappe was the top scorer at the World Cup , Harry Kane was the top scorer in the Bundesliga , but Erling Haaland was top scorer in the Premier League and won two trophies.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/person/player/former-ballon-dor-winner-explains-how-kylian-mbappe-could-win-france-football-award",
-     "published": "2026-09-16T16:30:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "press conference"
      ]
     },
     {
@@ -4579,14 +4585,14 @@
    "player": "Konsa",
    "club": "ARS",
    "status": "Latest on Konsa — Sports Mole, 28 Sep: “Carter White 28 Sep 2026 15:48 © Iconsport / PA Images England defenders Ezri Konsa and Nico O'Reilly have reportedly picked up injury problems ahead of Tuesday's trip to face the Czech Republic Thomas Tuchel 's troops head to Prague in the UEFA Nations League for their second match of the group, with the Three Lions losing their opening game of the section at Wembley Stadium on Saturday night.” Sports Mole, 28 Sep: “Focusing on the centre of the back four for a moment, Konsa has sustained an injury issue which also makes him a doubt for Tuesday night, meaning that Marc Guehi may require a new partner at centre-back.”",
-   "why_here": "Konsa is on the bench this week at £4.6m as a DEF. The selection rests on 13 retrieved item(s) from 5 source(s), the most recent dated 11 Oct.",
+   "why_here": "Konsa is on the bench this week at £4.6m as a DEF. The selection rests on 12 retrieved item(s) from 4 source(s), the most recent dated 11 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 11 Oct: “Dowman is named on the bench for the first team against Leeds, with Mosquera the extra man. — Jeorge Bird (@jeorgebird) October 10, 2026 Really, only when William Saliba (£5.9m) returns – likely in November – will we fear Konsa’s minutes.” Fantasy Football Scout, 10 Oct: “TEAM NEWS Kai Havertz and Ezri Konsa have recovered from the injuries they picked up on international duty to start for the hosts.” Sports Mole, 05 Oct: “Konsa started two of England's first three matches in the current international break, playing the full 90 in the 3-2 loss to Spain and 7-0 thumping of Croatia, either side of being an unused substitute in the 2-0 win over Czechia.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Ezri Konsa © Imago / Sportimage Status: Major doubt Type of injury: Thigh Possible return date: October 10 (vs. Leeds) Ezri Konsa left the England camp to have treatment after taking another hit to his quad, and while Thomas Tuchel played down any serious concern, he did not want to risk the defender playing on through the pain.” Fantasy Football Scout, 05 Oct: “Konsa was sidelined ( as a non-playing substitute ) for last Tuesday’s win over Czechia with a muscular niggle.” FourFourTwo FPL, 05 Oct: “Konsa was brought to the Emirates Stadium to provide defensive reinforcement following a long-term back injury to star centre-back William Saliba.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 02 Oct: “Konsa sat out the midweek win over the Czech Republic as an unused substitute due to a minor injury issue.” Sports Mole, 02 Oct: “Arsenal and England fans will be pleased to hear that Konsa is already back in training and should be ready for the fixture in Rijeka. © Iconsport / PA Images England receive Konsa fitness boost Speaking at Friday's press conference, Tuchel said: \"It seems that Ezri Konsa is back.”",
    "developments": "Recent developments — Fantasy Football Scout, 10 Oct: “The betting markets think Pedro is benched and this is a nailed on clean for Konsa as Mother Farke will park the bus.” Sports Mole, 05 Oct: “England released a statement on Monday morning confirming that Konsa and Bournemouth midfielder Alex Scott had both pulled out of the squad ahead of Tuesday's UEFA Nations League clash with the Czech Republic.” Fantasy Football Scout, 05 Oct: “KONSA RETURNS TO ARSENAL It’s been a rollercoaster international break for Ezri Konsa (£4.6m) and his owners in Fantasy Premier League (FPL).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 13,
+   "evidence_count": 12,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
@@ -4599,10 +4605,9 @@
     "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
     "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
     "https://www.sportsmole.co.uk/football/england/injury-news/news/defensive-issues-worsen-with-england-duo-major-doubts-for-czech-republic-trip_605927.html",
-    "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article"
+    "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html"
    ],
    "sources_used": [
-    "Fantasy Football Hub",
     "Fantasy Football Scout",
     "Football365",
     "FourFourTwo FPL",

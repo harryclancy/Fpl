@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-14T20:44:23+00:00",
- "seconds": 149.9,
+ "ran_at": "2026-10-15T01:31:24+00:00",
+ "seconds": 151.4,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 611,
- "substantive_items": 231,
- "duplicates_removed": 16,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 18549,
+ "sources_readable": 60,
+ "candidates_discovered": 562,
+ "substantive_items": 190,
+ "duplicates_removed": 10,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18541,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 231 articles"
+    "60/78 sources returned 190 articles"
    ]
   },
   "blackout": {
@@ -42,7 +42,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -52,7 +51,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: nothing published in the last 10 days",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -165,8 +164,8 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 8,
-   "source_count": 5,
+   "evidence_count": 7,
+   "source_count": 4,
    "latest_evidence": "2026-10-14T03:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -188,8 +187,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -218,15 +217,6 @@
      "matched_on": "de cuyper",
      "kind": "transfer",
      "excerpt": "Kevin Danso says Sunderland must learn from their 2-0 defeat to Brighton & Hove Albion and quickly turn their attention to Thursday’s UEFA Europa League trip to SCU Torreense. The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points. “We didn’t create enough clear-cut chances and, "
-    },
-    {
-     "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
-     "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-16T16:00:04+00:00",
-     "matched_on": "de cuyper",
-     "kind": "transfer",
-     "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
     },
     {
      "title": "Le Bris: We must stick to our plan and fight",
@@ -618,9 +608,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 56,
    "source_count": 15,
-   "latest_evidence": "2026-10-13T14:47:52+00:00",
+   "latest_evidence": "2026-10-15T01:07:06+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -645,6 +635,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Bills' WR Week 6 Injury Outlook: When Will DJ Moore, Josh Palmer Return to Action?",
+     "url": "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-15T01:07:06+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Preparing to visit the Las Vegas Raiders in Week 6, the Buffalo Bills held a walkthrough practice on Wednesday in Irvine, and one of their veteran WRs was missing."
+    },
     {
      "title": "3pm team news: Pedro + Palmer start, James absent",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
@@ -743,15 +742,6 @@
      "matched_on": "palmer",
      "kind": "team news",
      "excerpt": "Marcus Rashford and Kobbie Mainoo are injury doubts, too The post Palmer injury latest after England international withdrawal appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "England squad announcement LIVE: Thomas Tuchel makes Cole Palmer, Trent Alexander-Arnold decisions for Nations League",
-     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html",
-     "source": "Sports Mole",
-     "published": "2026-09-18T09:34:00+01:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Follow Sports Mole's live blog of Thomas Tuchel's England squad announcement, as the Three Lions boss names his September/October Nations League group."
     }
    ]
   },
@@ -898,7 +888,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 57,
+   "evidence_count": 55,
    "source_count": 18,
    "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
@@ -1038,9 +1028,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 108,
+   "evidence_count": 107,
    "source_count": 16,
-   "latest_evidence": "2026-10-14T06:00:00+00:00",
+   "latest_evidence": "2026-10-14T22:02:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1647,8 +1637,8 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 13,
-   "source_count": 5,
+   "evidence_count": 12,
+   "source_count": 4,
    "latest_evidence": "2026-10-11T19:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -1774,13 +1764,13 @@
      "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
     },
     {
-     "title": "FPL tips: Popular defenders, midfielders and forwards compared | Squawka",
-     "url": "https://www.fantasyfootballhub.co.uk/fpl-tips-squawka-gameweek-5-26-27-article",
-     "source": "Fantasy Football Hub",
-     "published": "2026-09-16T16:00:04+00:00",
+     "title": "Arsenal receive baffling VAR verdict on Sunderland penalty incident as Premier League explain 3-2 vote",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html",
+     "source": "Sports Mole",
+     "published": "2026-09-23T11:20:00+01:00",
      "matched_on": "konsa",
-     "kind": "transfer",
-     "excerpt": "FPL managers are making varied transfer decisions this week, with several players attracting attention in each area. In this article,Â Squawka use their Comparison Matrix to assess the key differences between some of the most popular defenders, midfielders and forwards ahead of Gameweek 5. Gvardiol v De Cuyper v Konsa Maxim De Cuyper continues to be […]"
+     "kind": "general",
+     "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
     }
    ]
   }
