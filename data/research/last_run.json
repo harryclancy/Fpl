@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-15T01:31:24+00:00",
- "seconds": 151.4,
+ "ran_at": "2026-10-15T10:00:07+00:00",
+ "seconds": 141.4,
  "sources_attempted": 78,
  "sources_readable": 60,
- "candidates_discovered": 562,
- "substantive_items": 190,
- "duplicates_removed": 10,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18541,
+ "candidates_discovered": 578,
+ "substantive_items": 207,
+ "duplicates_removed": 17,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 18561,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 190 articles"
+    "60/78 sources returned 207 articles"
    ]
   },
   "blackout": {
@@ -50,7 +50,7 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
-  "Liverpool: nothing published in the last 10 days",
+  "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -326,9 +326,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "source_count": 6,
-   "latest_evidence": "2026-10-14T09:51:04+02:00",
+   "latest_evidence": "2026-10-15T08:26:47+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -352,6 +352,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "‘Europe’s best’ Lewis Hall on fast track to become first £100m defender",
+     "url": "https://www.football365.com/news/lewis-hall-newcastle-stats-first-100m-defender-man-utd",
+     "source": "Football365",
+     "published": "2026-10-15T08:26:47+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Man Utd have missed their chance to sign Lewis Hall for a reasonable price since the Newcastle star is the highest-graded defender in Europe this season…"
+    },
     {
      "title": "Man United transfer news: Newcastle United star Lewis Hall delivers verdict on Red Devils interest",
      "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
@@ -552,7 +561,7 @@
    "club": "BHA",
    "evidence_count": 3,
    "source_count": 3,
-   "latest_evidence": "2026-10-14T18:03:10+00:00",
+   "latest_evidence": "2026-10-15T06:25:11+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -589,7 +598,7 @@
      "title": "Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start",
      "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
      "source": "Opta Analyst",
-     "published": "2026-10-14T18:03:10+00:00",
+     "published": "2026-10-15T06:25:11+00:00",
      "matched_on": "gro",
      "kind": "general",
      "excerpt": "Brighton & Hove Albion have made an excellent start to the 2026-27 season, and their 35-year-old creative spark has been at the centre of it. The post Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start appeared first on Opta Analyst ."
@@ -888,7 +897,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 54,
    "source_count": 18,
    "latest_evidence": "2026-10-13T14:47:52+00:00",
    "official_source_found": true,
@@ -1358,9 +1367,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "source_count": 4,
-   "latest_evidence": "2026-10-13T16:00:00+00:00",
+   "latest_evidence": "2026-10-15T09:10:35+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1385,6 +1394,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "£100m January Liverpool move given green light - and Florian Wirtz could make way: report",
+     "url": "https://www.fourfourtwo.com/transfer/gbp100m-january-liverpool-move-given-green-light-and-florian-wirtz-could-make-way-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-15T09:10:35+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Liverpool have been given an indication that another nine-figure move is on for January. Florian Wirtz – the first of three £100 million signings that Liverpool have made in the last 18 months – could well make way in manager Andoni Iraola's line-up, too, with the German struggling to adapt to English football since his arrival last summer, despite an excellent performance in Europe last night, si"
+    },
     {
      "title": "Szoboszlai, Isak, Gakpo: Latest FPL team news ahead of Gameweek 7",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/13/szoboszlai-isak-gakpo-latest-fpl-team-news-ahead-of-gameweek-7",
@@ -1483,15 +1501,6 @@
      "matched_on": "szoboszlai",
      "kind": "general",
      "excerpt": "Plus, Jacquet superb as Liverpool secure another clean sheet The post FPL notes: Isak again, Szoboszlai set for further sales + Kluivert injury appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
-     "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-19T06:00:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "I’ll start today by looking back at that brilliant goal from Dominik Szoboszlai in an important 3-1 win for Liverpool against Tottenham. I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai. He's got one of the best techniques I've seen in Europe at the moment, when you consider his ability in shooting from distance. He jus"
     }
    ]
   },

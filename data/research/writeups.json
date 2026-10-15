@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-15T01:31:24+00:00",
+ "generated": "2026-10-15T10:00:07+00:00",
  "gameweek": 7,
- "corpus_size": 18541,
+ "corpus_size": 18561,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -349,16 +349,17 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "status": "Latest on Hall — Soccerway, 14 Oct: “Action Images via Reuters / Andrew Boyers Newcastle United are expected to double down on their stance over Lewis Hall if Manchester United attempt to make new attempts to fix their left-back problem.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 8 retrieved item(s) from 6 source(s), the most recent dated 14 Oct.",
+   "status": "Latest on Hall — Football365, 15 Oct: “Even if Manchester United lacked the intent to move decisively in the summer for Lewis Hall, the Newcastle star’s form this season at least proves they can still spot a player.”",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 9 retrieved item(s) from 6 source(s), the most recent dated 15 Oct.",
    "case_for": "What supports keeping him: Hull City, 11 Oct: “Kiernan Dewsbury-Hall levelled for the Toffees in the 55 th minute, converting Ainsley Maitland-Niles’ cross, before he provided the assist for Thierno Barry to put Everton ahead.” Newcastle United, 07 Oct: “Hall grabbed an assist for the Three Lions captain, earning a record-equalling 125th senior cap, before being substituted in the 71st minute.” Sports Mole, 22 Sep: “The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.”",
    "case_against": "What argues against him: FourFourTwo FPL, 21 Sep: “Keeping fullback Lewis Hall, who signed a new contract until 2031 last week before being recalled to the England squad having missed out on the World Cup, was critical for restoring faith.”",
    "expected_minutes": "On minutes — Soccerway, 14 Oct: “The flashpoint reignites particular questions over their decision not to sign Hall The left-back area remains a big problem for United, where doubts over Luke Shaw 's ability to remain fit for a full campaign were already well established before the season began.” FourFourTwo FPL, 21 Sep: “Hall scored in a 2-1 victory, marking his big week in the perfect way.”",
-   "developments": "Recent developments — Newcastle United, 07 Oct: “Lewis Hall and Tino Livramento The defensive duo were initially named in the England squad ahead of four UEFA Nations League Group Stage fixtures.” Football365, 30 Sep: “Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England.” Football365, 30 Sep: “Hall was unlucky not to make Thomas Tuchel’ s England squad for this summer’s World Cup, but he’s been recalled for this international break.”",
+   "developments": "Recent developments — Football365, 15 Oct: “United are said to have made enquiries to Newcastle over Hall’s availability.” Soccerway, 14 Oct: “Action Images via Reuters / Andrew Boyers Newcastle United are expected to double down on their stance over Lewis Hall if Manchester United attempt to make new attempts to fix their left-back problem.” Newcastle United, 07 Oct: “Lewis Hall and Tino Livramento The defensive duo were initially named in the England squad ahead of four UEFA Nations League Group Stage fixtures.”",
    "outlook": "On the coming weeks — Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.”",
    "confidence": "high",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "evidence_used": [
+    "https://www.football365.com/news/lewis-hall-newcastle-stats-first-100m-defender-man-utd",
     "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
     "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
     "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
@@ -377,6 +378,22 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Even if Manchester United lacked the intent to move decisively in the summer for Lewis Hall, the Newcastle star’s form this season at least proves they can still spot a player.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/lewis-hall-newcastle-stats-first-100m-defender-man-utd",
+     "published": "2026-10-15T08:26:47+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "United are said to have made enquiries to Newcastle over Hall’s availability.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/lewis-hall-newcastle-stats-first-100m-defender-man-utd",
+     "published": "2026-10-15T08:26:47+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Action Images via Reuters / Andrew Boyers Newcastle United are expected to double down on their stance over Lewis Hall if Manchester United attempt to make new attempts to fix their left-back problem.",
      "source": "Soccerway",
@@ -679,9 +696,9 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "status": "Latest on Groß — Opta Analyst, 14 Oct: “Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.”",
-   "why_here": "Groß is in the starting eleven this week at £6.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 14 Oct.",
-   "case_for": "What supports keeping him: Opta Analyst, 14 Oct: “After producing two assists in the 5-0 thrashing of Coventry City, and another in the 3-0 win over Arsenal before the international break, at 35 years and 117 days, Groß became the oldest player to provide an assist in three successive Premier League games since Ryan Giggs in February 2012 (38y 68d) when he set up Maxim De Cuyper for the opener in a 2-0 win at Sunderland.” Fantasy Football 247, 09 Oct: “Pascal Groß (14pts) was once again the saviour for many, and unlike GW2 we actually started him this time.” Tactical Football Analysis, 28 Sep: “Pascal Groß Scout Report At Brighton 2026/2027 – Analysis Pascal Groß has started the 2026/2027 Premier League season impressively for Brighton & Hove Albion His goal contribution numbers have been outstanding, as he has scored four goals and provided four assists in all competitions so far.”",
+   "status": "Latest on Groß — Opta Analyst, 15 Oct: “Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.”",
+   "why_here": "Groß is in the starting eleven this week at £6.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 15 Oct.",
+   "case_for": "What supports keeping him: Opta Analyst, 15 Oct: “After producing two assists in the 5-0 thrashing of Coventry City, and another in the 3-0 win over Arsenal before the international break, at 35 years and 117 days, Groß became the oldest player to provide an assist in three successive Premier League games since Ryan Giggs in February 2012 (38y 68d) when he set up Maxim De Cuyper for the opener in a 2-0 win at Sunderland.” Fantasy Football 247, 09 Oct: “Pascal Groß (14pts) was once again the saviour for many, and unlike GW2 we actually started him this time.” Tactical Football Analysis, 28 Sep: “Pascal Groß Scout Report At Brighton 2026/2027 – Analysis Pascal Groß has started the 2026/2027 Premier League season impressively for Brighton & Hove Albion His goal contribution numbers have been outstanding, as he has scored four goals and provided four assists in all competitions so far.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Tactical Football Analysis, 28 Sep: “Groß is therefore expected to be extremely useful to Brighton this season, especially after failing to get the desired playing time at Borussia Dortmund last term before his Amex return.”",
@@ -703,7 +720,7 @@
      "text": "Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.",
      "source": "Opta Analyst",
      "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
-     "published": "2026-10-14T18:03:10+00:00",
+     "published": "2026-10-15T06:25:11+00:00",
      "tone": "neutral",
      "topics": [
       "transfer"
@@ -713,7 +730,7 @@
      "text": "After producing two assists in the 5-0 thrashing of Coventry City, and another in the 3-0 win over Arsenal before the international break, at 35 years and 117 days, Groß became the oldest player to provide an assist in three successive Premier League games since Ryan Giggs in February 2012 (38y 68d) when he set up Maxim De Cuyper for the opener in a 2-0 win at Sunderland.",
      "source": "Opta Analyst",
      "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
-     "published": "2026-10-14T18:03:10+00:00",
+     "published": "2026-10-15T06:25:11+00:00",
      "tone": "positive",
      "topics": []
     },
@@ -1950,14 +1967,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.” Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 55 retrieved item(s) from 18 source(s), the most recent dated 13 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.8m as a FWD. The selection rests on 54 retrieved item(s) from 18 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “Only one of their five goals was a gilt-edged chance, specifically Pedro’s second.” Soccerway, 28 Sep: “Joao Felix's recent career stats Flashscore Two goals in two games, but little else in terms of work rate or attacking force perfectly sum up his contributions.” Sports Mole, 23 Sep: “What has Joao Pedro said about his new Chelsea contract? © Imago / News Images Pedro joined Chelsea from Brighton & Hove Albion for £60m and enjoyed an outstanding 2025-26 campaign, scoring 20 goals across all competitions.”",
    "case_against": "What argues against him: Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” Fantasy Football Scout, 19 Sep: “PEDRO INJURY LATEST Joao Pedro (£7.8m) missed out for Chelsea as expected, having been left out of the Brazil squad earlier this week with a reported knee injury.” Fantasy Football Scout, 18 Sep: “Reece James and Joao Pedro both miss out due to injury, while Malo Gusto Romeo Lavia and Jorrel Hato have to make do with substitute duty.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
    "developments": "Recent developments — FISO, 13 Oct: “Chelsea attackers lead the FPL conversation João Pedro is the standout pick.” Fantasy Football Scout, 12 Oct: “The others, Jordan Henderson ‘s (£4.9m) edge-of-box effort, Morgan Rogers ‘ (£7.9m) deflected curler, Pedro’s clinical finish from a cut-back and Henderson’s free-kick, were just great strikes: Henderson ended up with 18 points, his second-highest-ever FPL score since his 2008 debut!” 101 Great Goals — Fantasy, 07 Oct: ““I feel that now is the moment,” Pedro wrote on social media alongside a video featuring the best moments from his career.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 19 Sep: ““Joao, we tried, but we expect to use the international break for him to be back in the next game against Bournemouth.” – Xabi Alonso on Joao Pedro Danny Welbeck (£5.9m) started in his place on Friday (more on that later).” RotoWire Soccer, 18 Sep: “FPL Tips: Joao Pedro Anthony Elanga Injury Updates and Best Replacements for GW5 Joao Pedro is owned by 70.1 percent of FPL managers and he isn't playing on Friday.”",
    "confidence": "high",
-   "evidence_count": 55,
+   "evidence_count": 54,
    "evidence_used": [
     "https://avfc.co.uk/news/2026/october/13/feature-international-action-and-back-to-business/",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-rayan-oop-clinical-chelsea-kluivert-kroupi-injury-latest",
@@ -2363,26 +2380,6 @@
      "published": "2026-09-17T06:11:48+00:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Joao Pedro initially appeared to emerge from the frustrating Premier League fixture completely unscathed.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html",
-     "published": "2026-09-16T21:47:00+01:00",
-     "tone": "neutral",
-     "topics": [
-      "fixtures"
-     ]
-    },
-    {
-     "text": "\"The player will replace Chelsea striker Joao Pedro, who is injured,\" the governing body explained to supporters.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/joao-crocked-how-many-games-will-joao-pedro-miss-for-chelsea-after-huge-blow_605263.html",
-     "published": "2026-09-16T21:47:00+01:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
     },
     {
      "text": "João Pedro has been withdrawn from Brazil's upcoming internationals because of an unspecified injury Chelsea have not yet confirmed that he will miss Friday's trip to Brentford.",
@@ -4343,15 +4340,16 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — Fantasy Football Scout, 13 Oct: “The three of them are not far, I would say, but I don’t know if they are going to be ready for Brentford, for Villarreal, for Brighton, I don’t know.” – Andoni Iraola on Dominik Szoboszlai, Cody Gakpo and Alexander Isak Long-term absentees Hugo Ekitike (Achilles), Conor Bradley (knee) and Giovanni Leoni (knee) also remain out.”",
-   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 13 retrieved item(s) from 4 source(s), the most recent dated 13 Oct.",
+   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 14 retrieved item(s) from 4 source(s), the most recent dated 13 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “He was superb in the middle of the park and supplied the assist for Doku’s goal, but missed out on defensive contribution (DefCon) points, with eight… KOUMAS UP FRONT With Isak, Gakpo and Szoboszlai injured, Lewis Koumas (£5.0m) started up front for Liverpool.” Fantasy Football Scout, 12 Oct: “They are also in the bottom four for big chances… The sooner they can recover Isak, Gakpo and Szoboszlai the better, then, particularly with a tricky run of Premier League matches to come, with Brentford, Brighton and Hove Albion and Arsenal up next. 74 Comments Login to Post a Comment Gandalf 5 hours, 45 mins ago A.” Sports Mole, 11 Oct: “A video on social media showed Liverpool players arriving at the team hotel, but Szoboszlai was not seen in the footage , and nor was teammate Alexis Mac Allister The latter's situation was clarified in a separate report, though, as it was revealed that Mac Allister had arrived at the hotel the day before, and the Argentine was named in Andoni Iraola 's starting lineup.”",
    "case_against": "What argues against him: Fantasy Football Scout, 13 Oct: “LIVERPOOL Dominik Szoboszlai (hamstring), Cody Gakpo (ankle) and Alexander Isak (quad) will all miss the clash with LASK on Wednesday.” Sports Mole, 13 Oct: “DOMINIK SZOBOSZLAI © Iconsport / Marcus Nichols/Sipa USA Status : Major doubt Type of injury : Hamstring Possible return date : October 14 (vs. LASK) Dominik Szoboszlai's running power is a key part of his game, but that intensity caused the number eight to develop a hamstring 'overload' that sidelined him on Sunday.” Sports Mole, 11 Oct: “Concerns had emerged over the availability of both Szoboszlai and Alexis Mac Allister , who were not seen with their Reds teammates arriving at their team hotel on Sunday morning.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “While Mac Allister’s situation has been clarified and he is available to start, Szoboszlai will not be involved against the Citizens due to a hamstring injury.”",
    "developments": "Recent developments — Sports Mole, 11 Oct: “However, Szoboszlai was nowhere to be seen when Liverpool confirmed their XI , and Iraola explained the midfielder's absence to the media before the match.” FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.” FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.”",
    "outlook": "On the coming weeks — OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "confidence": "high",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "evidence_used": [
+    "https://www.fourfourtwo.com/transfer/gbp100m-january-liverpool-move-given-green-light-and-florian-wirtz-could-make-way-report",
     "https://www.fantasyfootballscout.co.uk/2026/10/13/szoboszlai-isak-gakpo-latest-fpl-team-news-ahead-of-gameweek-7",
     "https://www.sportsmole.co.uk/football/liverpool/champions-league/injuries-and-suspensions/isak-gakpo-szoboszlai-latest-liverpool-injury-suspension-list-vs-lask_606774.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
@@ -4362,8 +4360,7 @@
     "https://www.fourfourtwo.com/transfer/liverpool-given-pathway-to-sign-alex-scott-as-perfect-andoni-iraola-transfer-shapes-up-report",
     "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
     "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league",
-    "https://www.fantasyfootballscout.co.uk/2026/09/20/fpl-notes-isak-again-szoboszlai-set-for-further-sales-kluivert-injury-latest",
-    "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss"
+    "https://www.fantasyfootballscout.co.uk/2026/09/20/fpl-notes-isak-again-szoboszlai-set-for-further-sales-kluivert-injury-latest"
    ],
    "sources_used": [
     "Fantasy Football Scout",
