@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-16T01:26:03+00:00",
+ "generated": "2026-10-16T09:53:48+00:00",
  "gameweek": 7,
- "corpus_size": 18603,
+ "corpus_size": 18597,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -696,17 +696,18 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "status": "Latest on Groß — Opta Analyst, 15 Oct: “Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.”",
-   "why_here": "Groß is in the starting eleven this week at £6.0m as a MID. The selection rests on 3 retrieved item(s) from 3 source(s), the most recent dated 15 Oct.",
+   "status": "Latest on Groß — Tactical Football Analysis, 16 Oct: “Teams with the most FPL points (Source: FFHub Pascal Groß £6.0m (MID) 53 points, joint-top of the game.”",
+   "why_here": "Groß is in the starting eleven this week at £6.0m as a MID. The selection rests on 4 retrieved item(s) from 3 source(s), the most recent dated 16 Oct.",
    "case_for": "What supports keeping him: Opta Analyst, 15 Oct: “After producing two assists in the 5-0 thrashing of Coventry City, and another in the 3-0 win over Arsenal before the international break, at 35 years and 117 days, Groß became the oldest player to provide an assist in three successive Premier League games since Ryan Giggs in February 2012 (38y 68d) when he set up Maxim De Cuyper for the opener in a 2-0 win at Sunderland.” Fantasy Football 247, 09 Oct: “Pascal Groß (14pts) was once again the saviour for many, and unlike GW2 we actually started him this time.” Tactical Football Analysis, 28 Sep: “Pascal Groß Scout Report At Brighton 2026/2027 – Analysis Pascal Groß has started the 2026/2027 Premier League season impressively for Brighton & Hove Albion His goal contribution numbers have been outstanding, as he has scored four goals and provided four assists in all competitions so far.”",
-   "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
+   "case_against": "What argues against him: Tactical Football Analysis, 16 Oct: “Selling him will free up the cash for midfield alternatives like Pascal Groß, Rayan Cherki, Cole Palmer Bukayo Saka Dominik Szoboszlai £6.9m (MID) The second most-sold player this week (over 360 000 transfers out).”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Tactical Football Analysis, 28 Sep: “Groß is therefore expected to be extremely useful to Brighton this season, especially after failing to get the desired playing time at Borussia Dortmund last term before his Amex return.”",
+   "developments": "Recent developments — Opta Analyst, 15 Oct: “Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.” Tactical Football Analysis, 28 Sep: “Groß is therefore expected to be extremely useful to Brighton this season, especially after failing to get the desired playing time at Borussia Dortmund last term before his Amex return.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 3,
+   "evidence_count": 4,
    "evidence_used": [
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw6-2/",
+    "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
     "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
     "https://tacticalfootballanalysis.com/pascal-gross-scout-report-brighton-2026-2027-analysis-tactics/"
    ],
@@ -716,6 +717,26 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Teams with the most FPL points (Source: FFHub Pascal Groß £6.0m (MID) 53 points, joint-top of the game.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
+     "published": "2026-10-16T09:08:43+00:00",
+     "tone": "neutral",
+     "topics": [
+      "fpl advice"
+     ]
+    },
+    {
+     "text": "Selling him will free up the cash for midfield alternatives like Pascal Groß, Rayan Cherki, Cole Palmer Bukayo Saka Dominik Szoboszlai £6.9m (MID) The second most-sold player this week (over 360 000 transfers out).",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
+     "published": "2026-10-16T09:08:43+00:00",
+     "tone": "negative",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "Like Henderson, Brighton’s Pascal Groß probably sometimes feels a bit like the famous Steve Buscemi ‘how do you do fellow kids?’ meme from 30 Rock when lining up alongside his much younger teammates.",
      "source": "Opta Analyst",
@@ -766,14 +787,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 56 retrieved item(s) from 15 source(s), the most recent dated 15 Oct.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 54 retrieved item(s) from 14 source(s), the most recent dated 15 Oct.",
    "case_for": "What supports keeping him: Sports Illustrated FPL, 15 Oct: “Although Brady was specifically answering a question about starting right tackle Spencer Brown, who left Monday's win after 16 snaps , the statement also applies to Moore and Palmer.” FISO, 13 Oct: “He scored early against Bournemouth and also rose in price this week, making him a sensible option for managers who cannot stretch to Palmer but still want a route into Chelsea’s front line.” Sports Mole, 10 Oct: “In the frontline, Pedro has already scored three times and produced three assists in the top flight, while Palmer has two goals and two assists in the Premier League so far.”",
    "case_against": "What argues against him: Sports Illustrated FPL, 15 Oct: “After initially appearing on the injury report as limited , Palmer missed Saturday's practice and was ruled out for the game \"He got kind of twisted up yesterday in practice.” Sports Mole, 10 Oct: “There were doubts about the involvement of Caicedo and Pedro against Bournemouth, while Palmer missed international duty with England due to injury.” Soccerway, 10 Oct: “Palmer , left ‌out of England 's World Cup squad ‌this year after a persistent groin injury ‌affected his form, was called up ‌by Thomas Tuchel for Nations League fixtures against Spain, the Czech Republic and Croatia.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” Fantasy Football Scout, 10 Oct: “TEAM NEWS The big team news is that Cole Palmer and Joao Pedro start for Chelsea this afternoon.”",
    "developments": "Recent developments — Football365, 12 Oct: “Fletcher namechecked Cole Palmer and Morgan Rogers as two stars he’s been informed Scott would love to play with on a regular basis.” Sports Mole, 10 Oct: “Chelsea star Cole Palmer announces a new long-term deal in unique fashion, offering a boost to the Blues ahead of their Premier League clash with Bournemouth.” Sports Illustrated FPL, 10 Oct: “Despite already being tied down until 2033, Palmer has added an extra 12 months to that contract to commit himself to Chelsea for the next eight years.”",
    "outlook": "On the coming weeks — Sports Mole, 10 Oct: “Tuchel left Palmer at home for the 2026 World Cup, but he decided to call up the Chelsea star for the first four fixtures of the UEFA Nations League.” Sports Mole, 08 Oct: ““It was new for me and brilliant to see how everyone bought into the idea of the next steps and the details needed to adjust to maybe unlock the next level.” Palmer England future: Battle to regain places for November decider © Imago England's tactical transformation has prompted fresh debate over whether Palmer and Manchester City’s Phil Foden could slot smoothly into this high-intensity system.”",
    "confidence": "high",
-   "evidence_count": 56,
+   "evidence_count": 54,
    "evidence_used": [
     "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
@@ -798,7 +819,6 @@
     "Football365",
     "FourFourTwo FPL",
     "Ipswich Town",
-    "NBC Sports Rotoworld PL",
     "OneFPL",
     "RotoWire Soccer",
     "Soccerway",
@@ -1420,24 +1440,6 @@
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/england-squad-announcement-live-tuchel-names-selection-for-nations-league_605395.html",
      "published": "2026-09-18T09:34:00+01:00",
      "tone": "neutral",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
-     "text": "England squad: Palmer 'set' for call-up with two uncapped stars as Tuchel 'considering five exciting talents' Thomas Tuchel in England training According to reports, Chelsea star Cole Palmer is ‘set’ to be part of England’s squad for this international break with two uncapped players.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/palmer-set-england-call-up-two-uncapped-stars-tuchel-considers-five-exciting-talents",
-     "published": "2026-09-17T20:37:34+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Palmer was a notable absentee from England’s squad for this summer’s World Cup after he struggled for form and fitness during the 2025/26 campaign.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/palmer-set-england-call-up-two-uncapped-stars-tuchel-considers-five-exciting-talents",
-     "published": "2026-09-17T20:37:34+00:00",
-     "tone": "positive",
      "topics": [
       "injury"
      ]
@@ -2470,14 +2472,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — FourFourTwo FPL, 12 Oct: “Watching Haaland recast as a battering ram old-school number nine, and watching Man City fans Poznan with inflatable bananas in hand, it seems both manager and supporters have come to the same conclusion: if this whole thing is about to come crashing down, if fans are going to boo and hiss your every move, well, you may as well let go and have some fun with it.” Sports Mole, 09 Oct: “Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.”",
-   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 107 retrieved item(s) from 16 source(s), the most recent dated 15 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football 247, 15 Oct: “FF247 Site Team News GW7 - Fantasy Football 247 - Premier League Tips Share This Post FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at the double.” Football365, 14 Oct: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.” Football365, 14 Oct: “Steven Gerrard (120) and Romelu Lukaku (121) won’t be ahead of him for long, while seven more goals will take him beyond Raheem Sterling and into the all-time top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).”",
+   "why_here": "Haaland is captained this week at £15.6m as a FWD. The selection rests on 108 retrieved item(s) from 17 source(s), the most recent dated 16 Oct.",
+   "case_for": "What supports keeping him: Tactical Football Analysis, 16 Oct: “The Bottom Line Erling Haaland looks like the best captaincy option by some margin this gameweek.” Fantasy Football 247, 15 Oct: “FF247 Site Team News GW7 - Fantasy Football 247 - Premier League Tips Share This Post FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at the double.” Football365, 14 Oct: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.”",
    "case_against": "What argues against him: Fantasy Football Scout, 12 Oct: “He is important but only just back from injury.” – Enzo Maresca on Jeremy Doku Image from Legomane Elsewhere, Haaland – who was subbed off for a partial breather in the 80th minute – netted for the fifth Gameweek in a row.” Sports Mole, 09 Oct: “Sky Blues supporters had hearts in mouths during the international break when Haaland suffered an injury scare in Norway's Nations League loss to Portugal, and there was uncertainty as to whether fans would be given an update in Maresca's pre-game press conference.” FourFourTwo FPL, 09 Oct: “And Haaland , as always, is the comfort blanket if none of the above feel right.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 12 Oct: “Haaland also netted a brace in the Citizens’ opening Champions League fixture at the beginning of September, helping Enzo Maresca ’s side secure a 2-0 win in a feisty contest away against Porto.” Sports Mole, 11 Oct: “Speaking to BILD , Bayern president Hainer refused to rule out Haaland as a target in the coming seasons, saying: \"We have Kane, Olise, Diaz and more.”",
-   "developments": "Recent developments — Fantasy Football 247, 15 Oct: “With only Haaland in-situ from an attacking perspective from either of the ‘top 2’ teams we have gone route one with Saka and Cherki.” Football365, 14 Oct: “Definitely shouldn’t win him the Ballon d’Or , mind. 7) Erling Haaland – 23 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Football365, 13 Oct: “Erling Haaland has pipped Kevin de Bruyne for Manchester City Premier League goals against the Big Six, with an obvious leader in front.”",
+   "developments": "Recent developments — Tactical Football Analysis, 16 Oct: “Pascal Groß is the creative hub of the team, and at 40% owned, he still offers a swing against the Erling Haaland crowd.” Fantasy Football 247, 15 Oct: “With only Haaland in-situ from an attacking perspective from either of the ‘top 2’ teams we have gone route one with Saka and Cherki.” Football365, 14 Oct: “Steven Gerrard (120) and Romelu Lukaku (121) won’t be ahead of him for long, while seven more goals will take him beyond Raheem Sterling and into the all-time top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 12 Oct: “Haaland's shot conversion rate currently stands at 27.3% - exactly double Barry's 13.6%.” FourFourTwo FPL, 12 Oct: “Last season, Haaland missed 30 big chances in the Premier League - a full 10 clear of the second-placed player in the division.”",
    "confidence": "high",
-   "evidence_count": 107,
+   "evidence_count": 108,
    "evidence_used": [
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw7-2/",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
@@ -2508,9 +2510,28 @@
     "Opta Analyst",
     "Soccerway",
     "Sports Illustrated FPL",
-    "Sports Mole"
+    "Sports Mole",
+    "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Pascal Groß is the creative hub of the team, and at 40% owned, he still offers a swing against the Erling Haaland crowd.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
+     "published": "2026-10-16T09:08:43+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "The Bottom Line Erling Haaland looks like the best captaincy option by some margin this gameweek.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
+     "published": "2026-10-16T09:08:43+00:00",
+     "tone": "positive",
+     "topics": [
+      "fpl advice"
+     ]
+    },
     {
      "text": "FF247 Site Team News GW7 - Fantasy Football 247 - Premier League Tips Share This Post FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at the double.",
      "source": "Fantasy Football 247",
@@ -4125,18 +4146,19 @@
    "player": "Wissa",
    "club": "NEW",
    "status": "Latest on Wissa — Fantasy Football Scout, 14 Oct: “Above: Yoane Wissa’s touch heatmap in Gameweeks 4-6 It’s a shame, because if we knew that Wissa would lead the line on Saturday, he’d be an easy hold.”",
-   "why_here": "Wissa is in the starting eleven this week at £6.3m as a FWD. The selection rests on 8 retrieved item(s) from 6 source(s), the most recent dated 14 Oct.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 06 Oct: “During the tournament in North America, Mpasi remained DR Congo's starting goalkeeper while Wissa spearheaded the attack.” Aston Villa, 24 Sep: “The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa.”",
+   "why_here": "Wissa is in the starting eleven this week at £6.3m as a FWD. The selection rests on 9 retrieved item(s) from 6 source(s), the most recent dated 16 Oct.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 16 Oct: “Solanke could be a very smart Yoane Wissa replacement for those looking to freshen up their forward options, and with penalty duties likely to come his way and a good run of home fixtures starting against Coventry City this week, the timing feels right to get ahead of the curve on him.” FourFourTwo FPL, 06 Oct: “During the tournament in North America, Mpasi remained DR Congo's starting goalkeeper while Wissa spearheaded the attack.” Aston Villa, 24 Sep: “The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa.”",
    "case_against": "What argues against him: Fantasy Football Scout, 14 Oct: “Q: Hold or sell Yoane Wissa (£6.3m) and Malick Thiaw (£5.0m)? (via @BedoMohmad1 A: While I don’t think Monday’s 4-1 defeat at Coventry City was a fair result, the Newcastle United defence was really poor.” Fantasy Football Scout, 19 Sep: “WISSA, PENALTY MISSA Newcastle had lost all three of last season’s penalty takers over the summer, so the question was over who would step up from 12 yards next.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — FourFourTwo FPL, 06 Oct: “The decision enabled DR Congo, whose squad included Newcastle United striker Yoane Wissa, to advance to the intercontinental play-off.” Soccerway, 28 Sep: “DR Congo , last-32 losers to England at the 2026 World Cup, went further ahead in first-half added time when a Wissa pass sent Samuel Moutoussamy through to score from inside the box.” Fantasy Football Scout, 19 Sep: “Unfortunately for the striker’s owners in FPL, Wissa saw his first-half spot-kick saved.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/14/best-schade-replacements-keep-or-sell-wissa-thiaw-fpl-qa",
     "https://avfc.co.uk/news/2026/september/24/internationals-wan-bissaka-features-in-dr-congo-win/",
     "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
+    "https://www.fourfourtwo.com/competition/triple-up-on-tottenham-hotspur-players-five-of-the-best-fpl-differential-options-for-gameweek-7",
     "https://www.fourfourtwo.com/team/newcastle-united-striker-yoane-wissas-dr-congo-in-new-fifa-storm-over-ineligible-player-at-world-cup",
     "https://www.soccerway.com/news/wissa-stars-as-dr-congo-spoil-zimbabwe-homecoming-in-2027-afcon-qualifying-win/GIVKcC4j/",
     "https://onefpl.com/blog/yoane-wissa-fpl-newcastle-striker-battle-2026-27",
@@ -4152,6 +4174,18 @@
     "Soccerway"
    ],
    "quotes": [
+    {
+     "text": "Solanke could be a very smart Yoane Wissa replacement for those looking to freshen up their forward options, and with penalty duties likely to come his way and a good run of home fixtures starting against Coventry City this week, the timing feels right to get ahead of the curve on him.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/competition/triple-up-on-tottenham-hotspur-players-five-of-the-best-fpl-differential-options-for-gameweek-7",
+     "published": "2026-10-16T09:32:02+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer",
+      "set pieces",
+      "fixtures"
+     ]
+    },
     {
      "text": "Q: Hold or sell Yoane Wissa (£6.3m) and Malick Thiaw (£5.0m)? (via @BedoMohmad1 A: While I don’t think Monday’s 4-1 defeat at Coventry City was a fair result, the Newcastle United defence was really poor.",
      "source": "Fantasy Football Scout",
@@ -4266,15 +4300,16 @@
    "player": "Szoboszlai",
    "club": "LIV",
    "status": "Latest on Szoboszlai — Fantasy Football Scout, 13 Oct: “The three of them are not far, I would say, but I don’t know if they are going to be ready for Brentford, for Villarreal, for Brighton, I don’t know.” – Andoni Iraola on Dominik Szoboszlai, Cody Gakpo and Alexander Isak Long-term absentees Hugo Ekitike (Achilles), Conor Bradley (knee) and Giovanni Leoni (knee) also remain out.”",
-   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 14 retrieved item(s) from 4 source(s), the most recent dated 13 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 12 Oct: “He was superb in the middle of the park and supplied the assist for Doku’s goal, but missed out on defensive contribution (DefCon) points, with eight… KOUMAS UP FRONT With Isak, Gakpo and Szoboszlai injured, Lewis Koumas (£5.0m) started up front for Liverpool.” Fantasy Football Scout, 12 Oct: “They are also in the bottom four for big chances… The sooner they can recover Isak, Gakpo and Szoboszlai the better, then, particularly with a tricky run of Premier League matches to come, with Brentford, Brighton and Hove Albion and Arsenal up next. 74 Comments Login to Post a Comment Gandalf 5 hours, 45 mins ago A.” Sports Mole, 11 Oct: “A video on social media showed Liverpool players arriving at the team hotel, but Szoboszlai was not seen in the footage , and nor was teammate Alexis Mac Allister The latter's situation was clarified in a separate report, though, as it was revealed that Mac Allister had arrived at the hotel the day before, and the Argentine was named in Andoni Iraola 's starting lineup.”",
-   "case_against": "What argues against him: Fantasy Football Scout, 13 Oct: “LIVERPOOL Dominik Szoboszlai (hamstring), Cody Gakpo (ankle) and Alexander Isak (quad) will all miss the clash with LASK on Wednesday.” Sports Mole, 13 Oct: “DOMINIK SZOBOSZLAI © Iconsport / Marcus Nichols/Sipa USA Status : Major doubt Type of injury : Hamstring Possible return date : October 14 (vs. LASK) Dominik Szoboszlai's running power is a key part of his game, but that intensity caused the number eight to develop a hamstring 'overload' that sidelined him on Sunday.” Sports Mole, 11 Oct: “Concerns had emerged over the availability of both Szoboszlai and Alexis Mac Allister , who were not seen with their Reds teammates arriving at their team hotel on Sunday morning.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “While Mac Allister’s situation has been clarified and he is available to start, Szoboszlai will not be involved against the Citizens due to a hamstring injury.”",
-   "developments": "Recent developments — Sports Mole, 11 Oct: “However, Szoboszlai was nowhere to be seen when Liverpool confirmed their XI , and Iraola explained the midfielder's absence to the media before the match.” FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.” FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.”",
-   "outlook": "On the coming weeks — OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
+   "why_here": "Szoboszlai is on the bench this week at £6.9m as a MID. The selection rests on 15 retrieved item(s) from 4 source(s), the most recent dated 16 Oct.",
+   "case_for": "What supports keeping him: Sports Mole, 16 Oct: “If Szoboszlai is unavailable, then youngster Trey Nyoni looks set to replace the Dutchman alongside Alexis Mac Allister in midfield.” Fantasy Football Scout, 12 Oct: “He was superb in the middle of the park and supplied the assist for Doku’s goal, but missed out on defensive contribution (DefCon) points, with eight… KOUMAS UP FRONT With Isak, Gakpo and Szoboszlai injured, Lewis Koumas (£5.0m) started up front for Liverpool.” Fantasy Football Scout, 12 Oct: “They are also in the bottom four for big chances… The sooner they can recover Isak, Gakpo and Szoboszlai the better, then, particularly with a tricky run of Premier League matches to come, with Brentford, Brighton and Hove Albion and Arsenal up next. 74 Comments Login to Post a Comment Gandalf 5 hours, 45 mins ago A.”",
+   "case_against": "What argues against him: Sports Mole, 16 Oct: “DOMINIK SZOBOSZLAI © Iconsport / PA Images Status : Major doubt Type of injury : Hamstring Possible return date : October 17 (vs. Brentford) Dominik Szoboszlai missed the games against Man City and LASK, and is a major doubt for Saturday due to a hamstring overload.” Fantasy Football Scout, 13 Oct: “LIVERPOOL Dominik Szoboszlai (hamstring), Cody Gakpo (ankle) and Alexander Isak (quad) will all miss the clash with LASK on Wednesday.” Sports Mole, 13 Oct: “DOMINIK SZOBOSZLAI © Iconsport / Marcus Nichols/Sipa USA Status : Major doubt Type of injury : Hamstring Possible return date : October 14 (vs. LASK) Dominik Szoboszlai's running power is a key part of his game, but that intensity caused the number eight to develop a hamstring 'overload' that sidelined him on Sunday.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 11 Oct: “A video on social media showed Liverpool players arriving at the team hotel, but Szoboszlai was not seen in the footage , and nor was teammate Alexis Mac Allister The latter's situation was clarified in a separate report, though, as it was revealed that Mac Allister had arrived at the hotel the day before, and the Argentine was named in Andoni Iraola 's starting lineup.” Sports Mole, 11 Oct: “While Mac Allister’s situation has been clarified and he is available to start, Szoboszlai will not be involved against the Citizens due to a hamstring injury.”",
+   "developments": "Recent developments — Sports Mole, 11 Oct: “However, Szoboszlai was nowhere to be seen when Liverpool confirmed their XI , and Iraola explained the midfielder's absence to the media before the match.” Sports Mole, 11 Oct: “Concerns had emerged over the availability of both Szoboszlai and Alexis Mac Allister , who were not seen with their Reds teammates arriving at their team hotel on Sunday morning.” FourFourTwo FPL, 02 Oct: “Dominik Szoboszlai's side will be disappointed with their start to Group B2, and a win in Budapest is a necessity.”",
+   "outlook": "On the coming weeks — FourFourTwo FPL, 02 Oct: “Marco Rossi's squad contains plenty of international experience, with Liverpool left-back Milos Kerkez and captain Dominik Szoboszlai among the key players available.” OneFPL: “Wirtz vs Szoboszlai FPL After Fulham Blank | OneFPL Loading OneFPL page In this article sections GW4 did not settle the debate Neither Wirtz nor Szoboszlai returned against Fulham.”",
    "confidence": "high",
-   "evidence_count": 14,
+   "evidence_count": 15,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/liverpool/injury-news/injuries-and-suspensions/are-gakpo-isak-szoboszlai-back-liverpool-injury-suspension-list-vs-brentford_607012.html",
     "https://www.fourfourtwo.com/transfer/gbp100m-january-liverpool-move-given-green-light-and-florian-wirtz-could-make-way-report",
     "https://www.fantasyfootballscout.co.uk/2026/10/13/szoboszlai-isak-gakpo-latest-fpl-team-news-ahead-of-gameweek-7",
     "https://www.sportsmole.co.uk/football/liverpool/champions-league/injuries-and-suspensions/isak-gakpo-szoboszlai-latest-liverpool-injury-suspension-list-vs-lask_606774.html",
@@ -4285,8 +4320,7 @@
     "https://www.fourfourtwo.com/team/manchester-city-triumph-with-a-pointless-anfield-win-and-show-they-have-the-character-to-deal-with-the-noise",
     "https://www.fourfourtwo.com/transfer/liverpool-given-pathway-to-sign-alex-scott-as-perfect-andoni-iraola-transfer-shapes-up-report",
     "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
-    "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league",
-    "https://www.fantasyfootballscout.co.uk/2026/09/20/fpl-notes-isak-again-szoboszlai-set-for-further-sales-kluivert-injury-latest"
+    "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league"
    ],
    "sources_used": [
     "Fantasy Football Scout",
@@ -4295,6 +4329,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "DOMINIK SZOBOSZLAI © Iconsport / PA Images Status : Major doubt Type of injury : Hamstring Possible return date : October 17 (vs. Brentford) Dominik Szoboszlai missed the games against Man City and LASK, and is a major doubt for Saturday due to a hamstring overload.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/injuries-and-suspensions/are-gakpo-isak-szoboszlai-back-liverpool-injury-suspension-list-vs-brentford_607012.html",
+     "published": "2026-10-16T05:22:04+01:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "If Szoboszlai is unavailable, then youngster Trey Nyoni looks set to replace the Dutchman alongside Alexis Mac Allister in midfield.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/injuries-and-suspensions/are-gakpo-isak-szoboszlai-back-liverpool-injury-suspension-list-vs-brentford_607012.html",
+     "published": "2026-10-16T05:22:04+01:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "LIVERPOOL Dominik Szoboszlai (hamstring), Cody Gakpo (ankle) and Alexander Isak (quad) will all miss the clash with LASK on Wednesday.",
      "source": "Fantasy Football Scout",
