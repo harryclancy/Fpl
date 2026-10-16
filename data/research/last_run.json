@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-16T15:23:37+00:00",
- "seconds": 133.1,
+ "ran_at": "2026-10-16T19:58:27+00:00",
+ "seconds": 139.2,
  "sources_attempted": 78,
- "sources_readable": 60,
- "candidates_discovered": 639,
- "substantive_items": 255,
- "duplicates_removed": 21,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 18589,
+ "sources_readable": 59,
+ "candidates_discovered": 599,
+ "substantive_items": 210,
+ "duplicates_removed": 17,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18588,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "60/78 sources returned 255 articles"
+    "59/78 sources returned 210 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -49,9 +50,9 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
+  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -438,7 +439,7 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 10,
+   "evidence_count": 9,
    "source_count": 7,
    "latest_evidence": "2026-10-15T20:00:25+00:00",
    "official_source_found": true,
@@ -544,15 +545,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "Newcastle United attacker Harvey Barnes registered two assists within the opening 10 minutes as the Magpies take a healthy 2-0 lead against Hull City."
-    },
-    {
-     "title": "Game4Hope Set For Goodison Park As Legends Return To Grand Old Lady",
-     "url": "https://www.evertonfc.com/news/2026/september/18/game4hope/",
-     "source": "Everton",
-     "published": "2026-09-18T11:59:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Game4Hope will now take place at Goodison Park on Saturday 26 September, giving some of football’s biggest names – and a host of Everton and Liverpool favourite – the opportunity to return to one of the sport’s most iconic stadiums. The inaugural charity fixture, which will raise vital funds and awareness in the fight against homelessness, will see Tim Cahill’s star-studded Merseyside XI take on a"
     }
    ]
   },
@@ -627,8 +619,8 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 53,
-   "source_count": 15,
+   "evidence_count": 51,
+   "source_count": 14,
    "latest_evidence": "2026-10-16T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -767,9 +759,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 28,
+   "evidence_count": 29,
    "source_count": 12,
-   "latest_evidence": "2026-10-15T20:45:39+00:00",
+   "latest_evidence": "2026-10-16T16:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -794,6 +786,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
+     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-16T16:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "team news",
+     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
+    },
     {
      "title": "FF247 Site Team News GW7",
      "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw7-2/",
@@ -892,24 +893,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Orioles lefty Trevor Rogers, Tigers righty Jackson Jobe and Guardians righty Gavin Williams are among the starters set to take the mound Friday. Sam Connon shares his picks and predictions in regards to the three pitchers' strikeout prop bets. The post MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26 appeared first on DraftKings Network ."
-    },
-    {
-     "title": "Ranking the 20 biggest PL summer signings from Andrey Santos to Morgan Rogers",
-     "url": "https://www.football365.com/news/feature-ranking-20-biggest-premier-league-signings",
-     "source": "Football365",
-     "published": "2026-09-22T07:19:48+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "It’s not been a bad start for the big summer signings with three £100m players in the top four of this ranking of the 20 most expensive. Tottenham’s highest of ..."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 47,
+   "evidence_count": 44,
    "source_count": 17,
-   "latest_evidence": "2026-10-13T14:47:52+00:00",
+   "latest_evidence": "2026-10-16T16:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -934,6 +926,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
+     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-16T16:00:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
+    },
     {
      "title": "International action and back to business",
      "url": "https://avfc.co.uk/news/2026/october/13/feature-international-action-and-back-to-business/",
@@ -1032,15 +1033,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "Chelsea forward Joao Pedro has broken his silence on his new long-term contract, with the Brazilian also facing a spell on the sidelines."
-    },
-    {
-     "title": "Gomes starts at Spurs",
-     "url": "https://avfc.co.uk/news/2026/september/19/prematch-tottenham-v-aston-villa-team-news/",
-     "source": "Aston Villa",
-     "published": "2026-09-19T10:15:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Tottenham Hotspur Vs. Aston Villa - Sat, Sep 19 2026, 12:30 João Gomes returned to Aston Villa’s starting XI for Saturday’s Premier League clash at Tottenham Hotspur while there was also a full debut for Johan Manzambi. Midfielder Gomes completed his three-match suspension having been sent off at Brighton & Hove Albion on the opening weekend of the season. He returned to Villa’s line-up f"
     }
    ]
   },
@@ -1385,9 +1377,9 @@
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "source_count": 4,
-   "latest_evidence": "2026-10-16T05:22:04+01:00",
+   "latest_evidence": "2026-10-16T16:51:54+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1412,6 +1404,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Premier League injury, suspension list: Every out and doubtful player including Reece James, Benjamin Sesko, Dominik Szoboszlai",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-injury-list-every-out-and-doubtful-player-for-gw7_607068.html",
+     "source": "Sports Mole",
+     "published": "2026-10-16T16:51:54+01:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Sports Mole brings you a full Premier League injury and suspension list for gameweek seven, listing every player out or doubtful for all 20 clubs."
+    },
     {
      "title": "Liverpool injury, suspension list and return dates for Brentford: Are Alexander Isak, Cody Gakpo, Dominik Szoboszlai back?",
      "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/injuries-and-suspensions/are-gakpo-isak-szoboszlai-back-liverpool-injury-suspension-list-vs-brentford_607012.html",
@@ -1510,15 +1511,6 @@
      "matched_on": "szoboszlai",
      "kind": "transfer",
      "excerpt": "A Liverpool offer for a defensive midfielder has been revealed, with the Reds seemingly overrun in the engine room at the start of the season. New manager Andoni Iraola has enjoyed an unbeaten start to his Anfield tenure – and hasn't lost in the Premier League since January – but there are huge concerns over his squad and the inbalance of profiles at the Basque's disposal. With several big-money t"
-    },
-    {
-     "title": "Watch Hungary vs Georgia for FREE: Live stream details",
-     "url": "https://www.fourfourtwo.com/competition/watch-hungary-vs-georgia-free-nations-league",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-02T15:45:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "general",
-     "excerpt": "Watch Hungary vs Georgia for free from anywhere in the world as Group B2 continues in the Nations League . Read on as FourFourTwo brings you all the live stream details and TV channels wherever you are in the world. Hungary vs Georgia: key information Kick-Off Time: 7:45pm BST / 2:45pm ET / 4:45am AEST (Sat) Free Stream: M4 Sport (Hungary) | 1TV (Georgia) TV Channels: Fubo TV (US) | beIN Sports (A"
     }
    ]
   },
@@ -1651,8 +1643,8 @@
      "excerpt": ""
     },
     {
-     "title": "How muharemovic helped bosnia and herzegovina to nations league victory",
-     "url": "https://www.leedsunited.com/en/news/how-muharemovic-helped-bosnia-and-herzegovina-to-nations-league-victory",
+     "title": "Muharemovic claims second hero of the month award in a row",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
@@ -1664,9 +1656,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "source_count": 4,
-   "latest_evidence": "2026-10-11T19:00:00+00:00",
+   "latest_evidence": "2026-10-16T16:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1691,6 +1683,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
+     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-16T16:00:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
+    },
     {
      "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
@@ -1789,15 +1790,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
-    },
-    {
-     "title": "Arsenal receive baffling VAR verdict on Sunderland penalty incident as Premier League explain 3-2 vote",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/incorrect-but-correct-arsenal-receive-baffling-var-verdict-on-sunderland-penalty_605658.html",
-     "source": "Sports Mole",
-     "published": "2026-09-23T11:20:00+01:00",
-     "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "Arsenal receive a bizarre VAR verdict from the Premier League Key Match Incidents panel over the Ezri Konsa-Daniel Ballard penalty incident in their 2-0 win over Sunderland."
     }
    ]
   }
