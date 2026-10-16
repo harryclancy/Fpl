@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-16T09:53:48+00:00",
- "seconds": 146.6,
+ "ran_at": "2026-10-16T15:23:37+00:00",
+ "seconds": 133.1,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 570,
- "substantive_items": 183,
- "duplicates_removed": 15,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18597,
+ "sources_readable": 60,
+ "candidates_discovered": 639,
+ "substantive_items": 255,
+ "duplicates_removed": 21,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 18589,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 183 articles"
+    "60/78 sources returned 255 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
@@ -50,9 +49,9 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -628,9 +627,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 54,
-   "source_count": 14,
-   "latest_evidence": "2026-10-15T01:07:06+00:00",
+   "evidence_count": 53,
+   "source_count": 15,
+   "latest_evidence": "2026-10-16T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1048,9 +1047,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 108,
+   "evidence_count": 111,
    "source_count": 17,
-   "latest_evidence": "2026-10-16T09:08:43+00:00",
+   "latest_evidence": "2026-10-16T15:07:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1075,6 +1074,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man City injury news: Erling Haaland among stars needing “rest” as Enzo Maresca offers update before Ipswich",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/haaland-among-man-city-stars-needing-rest-as-maresca-offers-fitness-update_607059.html",
+     "source": "Sports Mole",
+     "published": "2026-10-16T15:07:00+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Manchester City manager Enzo Maresca admits that he will consider giving star striker Erling Haaland a rest after a busy start to the season."
+    },
     {
      "title": "FF247 Site Team News GW7",
      "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw7-2/",
@@ -1173,15 +1181,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Manchester City striker Erling Haaland could leave following an independent commission finding the club guilty of all charges related to breaches of Premier League financial rules. Yesterday, the Premier League confirmed the verdict, noting that “ Manchester City failed to accurately report its income and expenditure for the purposes of the Premier League’s Profitability and Sustainability Rules a"
-    },
-    {
-     "title": "Norway vs Portugal team news: Lineups confirmed as Haaland starts amid Manchester City charges verdict but Ronaldo benched",
-     "url": "https://www.101greatgoals.com/football/internationals/norway-vs-portugal-team-news-lineups-confirmed-as-haaland-starts-amid-manchester-city-charges-verdict-but-ronaldo-benched/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-27T17:39:23+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Check out the confirmed lineups and team news for the Nations League clash"
     }
    ]
   },
@@ -1302,8 +1301,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-14T08:19:34+01:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-16T07:52:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1317,7 +1316,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1328,6 +1326,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Coventry: Pedro Porro, Dejan Kulusevski latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-kulusevski-updates-spurs-injury-suspension-list-vs-coventry_607017.html",
+     "source": "Sports Mole",
+     "published": "2026-10-16T07:52:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of Monday's Premier League clash with Coventry City."
+    },
+    {
+     "title": "Tottenham vs Coventry City Prediction, Predicted Lineups & Team News",
+     "url": "https://www.rotowire.com/soccer/article/tottenham-vs-coventry-city-prediction-predicted-lineups-team-news-141414",
+     "source": "RotoWire Soccer",
+     "published": "2026-10-16T05:03:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Spurs 'ready' to launch £70m move for World Cup winner in January after latest Xavi Simons update",
      "url": "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-ready-to-launch-gbp70m-move-for-world-cup-winner-after-xavi-simons-update_606861.html",
@@ -1354,24 +1370,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Scout Notes from Man Utd 1-1 Spurs The post FPL notes: Spurs improve, Bruno’s two-year low + DefCon frenzy appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Toby Alderweireld on Tottenham Hotspur’s incredible Champions League semi-final win in 2019",
-     "url": "https://www.fourfourtwo.com/person/player/to-kill-the-dream-of-my-former-club-was-a-strange-feeling-ill-always-be-grateful-to-ajax-but-football-is-like-that-toby-alderweireld-on-tottenham-hotspurs-incredible-champions-league-semi-final-win-in-2019",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-11T15:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "European nights under the floodlights have a habit of hitting harder than your usual run-of-the-mill domestic encounter. For former Tottenham defender Toby Alderweireld , the 2019 Champions League semi-final against his old side Ajax certainly falls under that category. Spurs arrived in Amsterdam on the back of a 1-0 defeat in the first leg and soon found themselves with a mountain to climb after "
-    },
-    {
-     "title": "Man United vs. Tottenham lineups confirmed as Carlos Baleba, Marcus Rashford, James Maddison decisions made",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/news/baleba-rashford-maddison-decisions-man-utd-vs-spurs-team-news-confirmed_606633.html",
-     "source": "Sports Mole",
-     "published": "2026-10-10T16:19:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Manchester United and Tottenham Hotspur have confirmed their starting lineups for Saturday's Premier League evening kickoff at Old Trafford."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
@@ -1527,7 +1525,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "source_count": 4,
    "latest_evidence": "2026-10-02T13:03:39+01:00",
    "official_source_found": true,
