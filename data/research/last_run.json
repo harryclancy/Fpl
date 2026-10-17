@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
- "gameweek": 7,
- "ran_at": "2026-10-17T09:26:43+00:00",
- "seconds": 135.9,
+ "gameweek": 8,
+ "ran_at": "2026-10-17T14:14:11+00:00",
+ "seconds": 137.3,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 536,
- "substantive_items": 145,
- "duplicates_removed": 12,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 18606,
+ "candidates_discovered": 569,
+ "substantive_items": 181,
+ "duplicates_removed": 6,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 18627,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 145 articles"
+    "58/78 sources returned 181 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -54,6 +53,7 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -760,9 +760,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 29,
-   "source_count": 12,
-   "latest_evidence": "2026-10-16T16:00:00+00:00",
+   "evidence_count": 30,
+   "source_count": 13,
+   "latest_evidence": "2026-10-17T13:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -787,6 +787,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton Taste First Loss Of The Season To Chelsea",
+     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
+     "source": "Everton",
+     "published": "2026-10-17T13:35:00+00:00",
+     "matched_on": "rogers",
+     "kind": "team news",
+     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
+    },
     {
      "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
      "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
@@ -885,24 +894,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Fixtures Sheffield United Women Vs. Ipswich Town Women - Sun, Oct 4th 2026, 14:00 Town Women continued their fine start to the Barclays Women’s Super League 2 season with a 2-1 win away to Sheffield United. Goals from Megan Hornby and Princess Admeiluyi ensured the Blues remain unbeaten as a fine performance at both ends of the pitch earned the points at Bramall Lane. Hornby had Town’s first sight"
-    },
-    {
-     "title": "MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26",
-     "url": "https://dknetwork.draftkings.com/2026/09/25/mlb-picks-best-strikeout-prop-bets-for-friday-9-25-26/",
-     "source": "DraftKings Network Soccer",
-     "published": "2026-09-25T17:20:33+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Orioles lefty Trevor Rogers, Tigers righty Jackson Jobe and Guardians righty Gavin Williams are among the starters set to take the mound Friday. Sam Connon shares his picks and predictions in regards to the three pitchers' strikeout prop bets. The post MLB Picks: Best Strikeout Prop Bets for Friday 9/25/26 appeared first on DraftKings Network ."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 40,
-   "source_count": 17,
-   "latest_evidence": "2026-10-16T16:00:00+00:00",
+   "evidence_count": 44,
+   "source_count": 18,
+   "latest_evidence": "2026-10-17T14:08:18+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -927,6 +927,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea Player Ratings vs. Everton: Ugly Injury Sours Blues Victory",
+     "url": "https://www.si.com/soccer/chelsea-player-ratings-vs-everton-10-17-26?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-17T14:01:08+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Pedro Neto scored a first-ever Premier League brace to seal victory for Chelsea over Everton."
+    },
+    {
+     "title": "Everton Taste First Loss Of The Season To Chelsea",
+     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
+     "source": "Everton",
+     "published": "2026-10-17T13:35:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
+    },
     {
      "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
      "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
@@ -1016,33 +1034,15 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Brennan Johnson and Jake O’Brien played 90 minutes for Wales and Republic of Ireland respectively, but their Nations League campaigns both began with narrow 1-0 away defeats. Johnson was named in Craig Bellamy’s starting XI in Lisbon, where the pre-match build-up was all about Cristiano Ronaldo seeking to win his 234th cap for Portugal at the stadium where his professional career began 24 years ag"
-    },
-    {
-     "title": "Brazil lineup vs. Australia: Predicted XI for friendly fixture as Joao Pedro injury forces Carlo Ancelotti rethink",
-     "url": "https://www.sportsmole.co.uk/football/brazil/injury-news/predicted-lineups/who-replaces-joao-pedro-predicted-brazil-xi-vs-australia_605688.html",
-     "source": "Sports Mole",
-     "published": "2026-09-24T00:41:39+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Brazil could line up for Friday's friendly match against Australia."
-    },
-    {
-     "title": "Joao Pedro issues unusual statement after signing new Chelsea contract amid latest injury update",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/joao-pedro-issues-unusual-statement-after-new-chelsea-contract-amid-injury-latest_605643.html",
-     "source": "Sports Mole",
-     "published": "2026-09-23T07:07:18+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea forward Joao Pedro has broken his silence on his new long-term contract, with the Brazilian also facing a spell on the sidelines."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 112,
-   "source_count": 17,
-   "latest_evidence": "2026-10-17T08:45:48+00:00",
+   "evidence_count": 113,
+   "source_count": 18,
+   "latest_evidence": "2026-10-17T12:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1067,6 +1067,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "TEAM NEWS | MANCHESTER CITY (A)",
+     "url": "https://www.itfc.co.uk/news/2026/october/17/team-news---manchester-city--a-/",
+     "source": "Ipswich Town",
+     "published": "2026-10-17T12:45:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Fixtures Manchester City Vs. Ipswich Town - Sat, Oct 17th 2026, 15:00 Team news has been confirmed for Town's away clash with Manchester City. Christian Walton starts in goal, with captain Dara O'Shea, Issa Diop, and Jacob Greaves all starting in defence. Abdoul Ouattara and Leif Davis are operating in wide areas with Florentino Luís and Exequiel Palacios expected to be in central midfield. Julio "
+    },
     {
      "title": "Man City injury news: Erling Haaland among stars needing “rest” as Enzo Maresca offers update before Ipswich",
      "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/haaland-among-man-city-stars-needing-rest-as-maresca-offers-fitness-update_607059.html",
@@ -1165,15 +1174,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "The Manchester City striker came off midway through the second half of Sunday's clash with Portugal The post Is Haaland injured after early Norway substitution? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Manchester City star Erling Haaland has already 'said yes' to Barcelona - with Norwegian NOT staying for charges aftermath: report",
-     "url": "https://www.fourfourtwo.com/transfer/manchester-city-star-erling-haaland-has-already-said-yes-to-barcelona-with-norwegian-not-staying-for-charges-aftermath-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-30T10:47:24+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Manchester City striker Erling Haaland could leave following an independent commission finding the club guilty of all charges related to breaches of Premier League financial rules. Yesterday, the Premier League confirmed the verdict, noting that “ Manchester City failed to accurately report its income and expenditure for the purposes of the Premier League’s Profitability and Sustainability Rules a"
     }
    ]
   },
@@ -1294,7 +1294,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
+   "source_count": 4,
    "latest_evidence": "2026-10-16T19:42:56+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -1365,22 +1365,22 @@
      "excerpt": "Tottenham Hotspur are considering a move for Alex Baena as Roberto De Zerbi looks to strengthen his attack amid Xavi Simons' injury absence."
     },
     {
-     "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
-     "url": "https://www.fourfourtwo.com/person/tottenham-hotspur-will-get-it-right-eventually-i-have-faith-in-roberto-de-zerbi-to-turn-things-around-clinton-morrison-tells-spurs-hierarchy-to-stick-with-under-pressure-boss",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-19T06:00:00+00:00",
-     "matched_on": "dubravka",
-     "kind": "general",
-     "excerpt": "I’ll start today by looking back at that brilliant goal from Dominik Szoboszlai in an important 3-1 win for Liverpool against Tottenham. I was actually covering the game for Sky , and I thought: ‘Wow, what a goal that is!’ But that’s not surprising from Szoboszlai. He's got one of the best techniques I've seen in Europe at the moment, when you consider his ability in shooting from distance. He jus"
+     "title": "Preview, How to Watch San Antonio Spurs Seek First Preseason Win vs. Jazz",
+     "url": "https://www.si.com/nba/spurs/onsi/preview-how-to-watch-san-antonio-spurs-seek-first-preseason-win-vs-jazz?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-12T13:00:05+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "The San Antonio Spurs head to Utah still searching for their first preseason win as lineup questions, young players and a motivated roster remain in focus."
     }
    ]
   },
   "Szoboszlai": {
    "player": "Szoboszlai",
    "club": "LIV",
-   "evidence_count": 16,
-   "source_count": 4,
-   "latest_evidence": "2026-10-16T16:51:54+01:00",
+   "evidence_count": 18,
+   "source_count": 5,
+   "latest_evidence": "2026-10-17T13:48:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1405,6 +1405,33 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "3pm team news: Szoboszlai + Isak start, six Man City changes, Schade a sub",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/17/3pm-team-news-szoboszlai-isak-start-six-city-changes-schade-a-sub",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-17T13:35:00+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Three matches kick off at 15:00 BST The post 3pm team news: Szoboszlai + Isak start, six Man City changes, Schade a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Brentford vs Liverpool: Confirmed teams and line ups as Isak, Szoboszlai start",
+     "url": "https://www.101greatgoals.com/football/premier-league/brentford-vs-liverpool-live-teams-line-ups-where-to-watch-tv-channel-online-stream/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-17T13:04:58+00:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Team news as Brentford host Liverpool in the Premier League"
+    },
+    {
+     "title": "Brentford vs. Liverpool lineups confirmed as Dominik Szoboszlai, Alexander Isak, Trey Nyoni decisions revealed",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/news/szoboszlai-isak-nyoni-decisions-brentford-liverpool-team-news-confirmed_607121.html",
+     "source": "Sports Mole",
+     "published": "2026-10-17T13:48:00+01:00",
+     "matched_on": "szoboszlai",
+     "kind": "team news",
+     "excerpt": "Brentford and Liverpool reveal their starting lineups for Saturday's Premier League clash at the Gtech Community Stadium."
+    },
     {
      "title": "Premier League injury, suspension list: Every out and doubtful player including Reece James, Benjamin Sesko, Dominik Szoboszlai",
      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-injury-list-every-out-and-doubtful-player-for-gw7_607068.html",
@@ -1485,33 +1512,6 @@
      "matched_on": "szoboszlai",
      "kind": "team news",
      "excerpt": "Liverpool and Manchester City confirm their starting lineups for this afternoon’s eagerly-anticipated Premier League showdown at Anfield."
-    },
-    {
-     "title": "HENRY WINTER: Manchester City triumph with a 'pointless' Anfield win - and show they have the character to deal with the noise",
-     "url": "https://www.fourfourtwo.com/team/manchester-city-triumph-with-a-pointless-anfield-win-and-show-they-have-the-character-to-deal-with-the-noise",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-11T17:56:36+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "transfer",
-     "excerpt": "Manchester City took all three points here at Anfield but could it all be pointless? Does this victory actually mean anything? “Going down” chorused the Kop towards the City players as they celebrated with their fans. They’re going top - for now. This is the Premier League season that will be decided by lawyers. The season fast turns into a farce. As Liverpool fans bayed “cheats, cheats, cheats”, "
-    },
-    {
-     "title": "Liverpool given pathway to sign Alex Scott, as perfect Andoni Iraola transfer shapes up: report",
-     "url": "https://www.fourfourtwo.com/transfer/liverpool-given-pathway-to-sign-alex-scott-as-perfect-andoni-iraola-transfer-shapes-up-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-29T15:00:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "transfer",
-     "excerpt": "Liverpool have been given fresh hope of landing Alex Scott next summer from Bournemouth. The Reds have started the season positively and are yet to lose a game under new manager Andoni Iraola, but the midfield remains a concern, with Ryan Gravenberch, Dominik Szoboszlai and Alexis Mac Allister all forward-thinking players in the centre of the park. While youngster Trey Nyoni has featured in centra"
-    },
-    {
-     "title": "Liverpool offer confirmed for new defensive midfielder: report",
-     "url": "https://www.fourfourtwo.com/transfer/liverpool-offer-confirmed-for-new-defensive-midfielder-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-21T10:56:03+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "transfer",
-     "excerpt": "A Liverpool offer for a defensive midfielder has been revealed, with the Reds seemingly overrun in the engine room at the start of the season. New manager Andoni Iraola has enjoyed an unbeaten start to his Anfield tenure – and hasn't lost in the Premier League since January – but there are huge concerns over his squad and the inbalance of profiles at the Basque's disposal. With several big-money t"
     }
    ]
   },
