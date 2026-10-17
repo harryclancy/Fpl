@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-17T01:20:55+00:00",
- "seconds": 157.4,
+ "ran_at": "2026-10-17T09:26:43+00:00",
+ "seconds": 135.9,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 541,
- "substantive_items": 157,
- "duplicates_removed": 5,
- "deeply_analysed": 89,
- "deep_read_failed": 1,
- "corpus_size": 18589,
+ "candidates_discovered": 536,
+ "substantive_items": 145,
+ "duplicates_removed": 12,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 18606,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 157 articles"
+    "58/78 sources returned 145 articles"
    ]
   },
   "blackout": {
@@ -38,11 +38,12 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
+  "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,10 +51,9 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
   "The Hard Tackle: nothing published in the last 10 days"
@@ -900,7 +900,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 41,
+   "evidence_count": 40,
    "source_count": 17,
    "latest_evidence": "2026-10-16T16:00:00+00:00",
    "official_source_found": true,
@@ -1040,9 +1040,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 111,
+   "evidence_count": 112,
    "source_count": 17,
-   "latest_evidence": "2026-10-16T15:07:00+01:00",
+   "latest_evidence": "2026-10-17T08:45:48+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1294,7 +1294,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
+   "source_count": 5,
    "latest_evidence": "2026-10-16T19:42:56+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -1319,6 +1319,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "How to watch Tottenham Hotspur vs Coventry City live: Stream, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-coventry-city-live-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-16T16:03:01-04:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Spurs Are Quickly Learning What It Takes to Make 3-Guard Starting Lineup Work",
      "url": "https://www.si.com/nba/spurs/onsi/san-antonio-spurs-are-quickly-learning-what-it-takes-to-make-3-guard-starting-lineup-work?utm_source=RSS",
@@ -1354,15 +1363,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur are considering a move for Alex Baena as Roberto De Zerbi looks to strengthen his attack amid Xavi Simons' injury absence."
-    },
-    {
-     "title": "Preview, How to Watch San Antonio Spurs Seek First Preseason Win vs. Jazz",
-     "url": "https://www.si.com/nba/spurs/onsi/preview-how-to-watch-san-antonio-spurs-seek-first-preseason-win-vs-jazz?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-12T13:00:05+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "The San Antonio Spurs head to Utah still searching for their first preseason win as lineup questions, young players and a motivated roster remain in focus."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
