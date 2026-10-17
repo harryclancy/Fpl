@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 7,
- "ran_at": "2026-10-16T19:58:27+00:00",
- "seconds": 139.2,
+ "ran_at": "2026-10-17T01:20:55+00:00",
+ "seconds": 157.4,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 599,
- "substantive_items": 210,
- "duplicates_removed": 17,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 18588,
+ "sources_readable": 58,
+ "candidates_discovered": 541,
+ "substantive_items": 157,
+ "duplicates_removed": 5,
+ "deeply_analysed": 89,
+ "deep_read_failed": 1,
+ "corpus_size": 18589,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 210 articles"
+    "58/78 sources returned 157 articles"
    ]
   },
   "blackout": {
@@ -38,11 +38,11 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,6 +50,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
@@ -619,7 +620,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 51,
+   "evidence_count": 50,
    "source_count": 14,
    "latest_evidence": "2026-10-16T11:00:00+00:00",
    "official_source_found": true,
@@ -899,7 +900,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 44,
+   "evidence_count": 41,
    "source_count": 17,
    "latest_evidence": "2026-10-16T16:00:00+00:00",
    "official_source_found": true,
@@ -1293,8 +1294,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-10-16T07:52:00+01:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-16T19:42:56+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1318,6 +1319,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Spurs Are Quickly Learning What It Takes to Make 3-Guard Starting Lineup Work",
+     "url": "https://www.si.com/nba/spurs/onsi/san-antonio-spurs-are-quickly-learning-what-it-takes-to-make-3-guard-starting-lineup-work?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-16T19:42:56+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "The San Antonio Spurs' unconventional starting five has shown plenty of promise, but shooting, rebounding and chemistry remain key to unlocking its potential."
+    },
     {
      "title": "Tottenham Hotspur injury, suspension list and return dates vs. Coventry: Pedro Porro, Dejan Kulusevski latest",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-kulusevski-updates-spurs-injury-suspension-list-vs-coventry_607017.html",
@@ -1353,15 +1363,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "The San Antonio Spurs head to Utah still searching for their first preseason win as lineup questions, young players and a motivated roster remain in focus."
-    },
-    {
-     "title": "FPL notes: Spurs improve, Bruno’s two-year low + DefCon frenzy",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-spurs-improve-brunos-two-year-low-defcon-frenzy",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-12T04:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Scout Notes from Man Utd 1-1 Spurs The post FPL notes: Spurs improve, Bruno’s two-year low + DefCon frenzy appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "'Tottenham Hotspur will get it right eventually. I have faith in Roberto De Zerbi to turn things around' Clinton Morrison tells Spurs hierarchy to stick with under-pressure boss",
