@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-17T14:14:11+00:00",
- "seconds": 137.3,
+ "ran_at": "2026-10-17T19:26:56+00:00",
+ "seconds": 169.1,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 569,
- "substantive_items": 181,
- "duplicates_removed": 6,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 18627,
+ "sources_readable": 57,
+ "candidates_discovered": 603,
+ "substantive_items": 232,
+ "duplicates_removed": 14,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 18619,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,14 +18,14 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 181 articles"
+    "57/78 sources returned 232 articles"
    ]
   },
   "blackout": {
    "ok": true,
    "headline": "",
    "reasons": [
-    "4/4 bellwether players evidenced"
+    "3/3 bellwether players evidenced"
    ]
   },
   "coverage": {
@@ -56,7 +56,8 @@
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -760,9 +761,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 30,
+   "evidence_count": 31,
    "source_count": 13,
-   "latest_evidence": "2026-10-17T13:35:00+00:00",
+   "latest_evidence": "2026-10-17T15:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -860,6 +861,15 @@
      "excerpt": ""
     },
     {
+     "title": "Moyes' Blunt Everton Assessment After Chelsea Defeat",
+     "url": "https://www.evertonfc.com/news/2026/october/17/moyes--blunt-everton-assessment-after-chelsea-defeat/",
+     "source": "Everton",
+     "published": "2026-10-17T15:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "David Moyes says Everton's past two performances have not been at the level he expects as the Blues' unbeaten start to the season came to an end in a 2-0 loss to Chelsea at Hill Dickinson Stadium on Saturday. Following a 2-2 draw at Hull City last weekend – where Moyes was unhappy with the manner of the goals conceded – the Toffees boss was unimpressed with Pedro Neto's opener just seconds after t"
+    },
+    {
      "title": "Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist after Bournemouth brace",
      "url": "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
      "source": "FISO",
@@ -885,24 +895,81 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Harry Kane marked his record-equalling 125th England cap with a couple of record-extending goals as England swatted Czechia aside."
+    }
+   ]
+  },
+  "Tavernier": {
+   "player": "Tavernier",
+   "club": "BOU",
+   "evidence_count": 4,
+   "source_count": 2,
+   "latest_evidence": "2026-10-15T20:55:00+00:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "press conference",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "minimum",
+   "priority": "normal",
+   "researched": true,
+   "items": [
+    {
+     "title": "Cherries living the European dream with win over Sturm Graz",
+     "url": "https://www.afcb.co.uk/news/2026/october/15/match-report-v-sturm/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-15T20:55:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Evanilson, Rayan and Álvaro Rodríguez were on target as AFC Bournemouth capped a memorable night by triumphing 3-0 against Sturm Graz in the first European game at Vitality Stadium. The Cherries followed up their impressive 2-1 win against Real Sociedad in their opening Europa League clash with another impressive showing against the Austrian Bundesliga outfit. To mark the occasion, a giant tifo wa"
     },
     {
-     "title": "SHEFFIELD UNITED 1 TOWN 2",
-     "url": "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
-     "source": "Ipswich Town",
-     "published": "2026-10-04T15:18:38+00:00",
-     "matched_on": "rogers",
+     "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-01T15:30:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Christie returns for Liverpool clash as Rose makes one change",
+     "url": "https://www.afcb.co.uk/news/2026/september/20/christie-returns-for-liverpool-clash/",
+     "source": "AFC Bournemouth",
+     "published": "2026-09-20T11:56:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Ryan Christie returns to AFC Bournemouth's starting XI for this afternoon's Premier League encounter with Liverpool at Vitality Stadium. Head coach Marco Rose makes just one change from the side that secured the Cherries' historic first victory in European competition against Real Sociedad on Thursday evening. Christie comes into the starting line-up in place of Justin Kluivert, who was not named "
+    },
+    {
+     "title": "Cherries FPL International Break Review",
+     "url": "https://www.afcb.co.uk/news/2026/september/25/cherries-fpl-international-break-review/",
+     "source": "AFC Bournemouth",
+     "published": "2026-09-25T09:48:58+00:00",
+     "matched_on": "tavernier",
      "kind": "general",
-     "excerpt": "Fixtures Sheffield United Women Vs. Ipswich Town Women - Sun, Oct 4th 2026, 14:00 Town Women continued their fine start to the Barclays Women’s Super League 2 season with a 2-1 win away to Sheffield United. Goals from Megan Hornby and Princess Admeiluyi ensured the Blues remain unbeaten as a fine performance at both ends of the pitch earned the points at Bramall Lane. Hornby had Town’s first sight"
+     "excerpt": "Bournemouth have teamed up with Fantasy Football Scout to bring you hints, tips and advice throughout the 2026/27 Fantasy Premier League (FPL) season. Scout will use its expertise to provide information, advice and Gameweek tips that could help you stay on top of your mini-leagues. With the opening five gameweeks now in the books, FPL managers are starting to see clearer trends emerge from the dat"
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 44,
+   "evidence_count": 46,
    "source_count": 18,
-   "latest_evidence": "2026-10-17T14:08:18+00:00",
+   "latest_evidence": "2026-10-17T16:56:39+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -927,6 +994,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Alysson set for full debut against Newcastle",
+     "url": "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/",
+     "source": "Aston Villa",
+     "published": "2026-10-17T15:23:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Fixtures Newcastle United Vs. Aston Villa - Sat, Oct 17 2026, 17:30 Unai Emery has named his Aston Villa side to take on Newcastle United at St. James’ Park on Saturday evening. The Villans travel to the North East to face the Magpies, looking to continue building momentum after an emphatic 6-0 UEFA Champions League victory over Fenerbahçe in midweek. And Emery makes four changes to the starting 1"
+    },
     {
      "title": "Chelsea Player Ratings vs. Everton: Ugly Injury Sours Blues Victory",
      "url": "https://www.si.com/soccer/chelsea-player-ratings-vs-everton-10-17-26?utm_source=RSS",
@@ -1025,24 +1101,15 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "One of Chelsea's star players allegedly sees a specialist over the injury that has kept him sidelined during the international break."
-    },
-    {
-     "title": "Duo Defeated In Nations League Openers",
-     "url": "https://www.evertonfc.com/news/2026/september/24/duo-defeated-in-nations-league-openers/",
-     "source": "Everton",
-     "published": "2026-09-24T21:06:13+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Brennan Johnson and Jake O’Brien played 90 minutes for Wales and Republic of Ireland respectively, but their Nations League campaigns both began with narrow 1-0 away defeats. Johnson was named in Craig Bellamy’s starting XI in Lisbon, where the pre-match build-up was all about Cristiano Ronaldo seeking to win his 234th cap for Portugal at the stadium where his professional career began 24 years ag"
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 113,
+   "evidence_count": 118,
    "source_count": 18,
-   "latest_evidence": "2026-10-17T12:45:00+00:00",
+   "latest_evidence": "2026-10-17T19:25:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1067,6 +1134,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Erling Haaland injury news: Man City star limps off at full-time after scoring two goals",
+     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-injury-news-man-city-star-limps-off-at-full-time-after-scoring-two-goals",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-17T12:31:00-04:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Erling Haaland suffers new injury scare after breaking Premier League record in Man City win over Ipswich",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/haaland-suffers-new-injury-scare-after-breaking-pl-record-in-man-city-win_607130.html",
+     "source": "Sports Mole",
+     "published": "2026-10-17T17:22:38+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Erling Haaland breaks a new Premier League record in Man City's 3-2 win over Ipswich Town, before limping off with an apparent injury."
+    },
+    {
+     "title": "MANCHESTER CITY 3 TOWN 2",
+     "url": "https://www.itfc.co.uk/news/2026/october/17/manchester-city-v-Ipswich-town-match-report/",
+     "source": "Ipswich Town",
+     "published": "2026-10-17T16:08:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Fixtures Manchester City Vs. Ipswich Town - Sat, Oct 17th 2026, 15:00 Town were beaten 3-2 at Manchester City this afternoon. The Blues showed resilience to immediately battle back and equalise through Daizen Maeda, after Phil Foden had opened the scoring, but the hosts went on to open up a 3-1 lead thanks to an Erling Haaland brace either side of half-time. There was a late push, though, as Town "
+    },
     {
      "title": "TEAM NEWS | MANCHESTER CITY (A)",
      "url": "https://www.itfc.co.uk/news/2026/october/17/team-news---manchester-city--a-/",
@@ -1147,146 +1241,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Erling Haaland will recharge his batteries with a mini-break before returning to the chaos surrounding Manchester City"
-    },
-    {
-     "title": "Concern over Haaland fitness after star striker requests substitution and limps off",
-     "url": "https://www.soccerway.com/news/soccer-uefa-nations-league-concern-over-haaland-fitness-after-star-requests-substitution-and-limps-off/jkZ1Dm0e/",
-     "source": "Soccerway",
-     "published": "2026-10-05T05:43:06+02:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Erling Haaland injury latest: Man City forward hands club major scare after limping out of international duty",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/limping-erling-will-haaland-be-fit-for-anfield-trip_606239.html",
-     "source": "Sports Mole",
-     "published": "2026-10-05T02:39:54+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Erling Haaland injury update emerges after Manchester City forward limped out of Norway's UEFA Nations League defeat against Portugal."
-    },
-    {
-     "title": "Is Haaland injured after early Norway substitution?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/05/is-haaland-injured-after-early-norway-substitution",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-05T00:30:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "The Manchester City striker came off midway through the second half of Sunday's clash with Portugal The post Is Haaland injured after early Norway substitution? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    }
-   ]
-  },
-  "Wissa": {
-   "player": "Wissa",
-   "club": "NEW",
-   "evidence_count": 9,
-   "source_count": 6,
-   "latest_evidence": "2026-10-16T09:32:02+00:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/best-schade-replacements-keep-or-sell-wissa-thiaw-fpl-qa",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-14T16:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Wan-Bissaka features in DR Congo win",
-     "url": "https://avfc.co.uk/news/2026/september/24/internationals-wan-bissaka-features-in-dr-congo-win/",
-     "source": "Aston Villa",
-     "published": "2026-09-24T18:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Aaron Wan-Bissaka completed 90 minutes as DR Congo made a winning start to their 2027 African Cup of Nations qualifying campaign on Thursday. The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa. The victory places the Congolese side top of Group E "
-    },
-    {
-     "title": "FPL notes: Wissa pen miss + Newcastle the new DefCon kings?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-19T22:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Plus, a £5.1m Hull winger is up to fourth in the FPL midfielder standings The post FPL notes: Wissa pen miss + Newcastle the new DefCon kings? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "'Triple up on Tottenham Hotspur players' Five of the best FPL differential options for Gameweek 7",
-     "url": "https://www.fourfourtwo.com/competition/triple-up-on-tottenham-hotspur-players-five-of-the-best-fpl-differential-options-for-gameweek-7",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-16T09:32:02+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": "Six Gameweeks in and the data is telling a very clear story. The managers who are pulling away from their FPL mini leagues are not just owning the template, they are finding the players nobody else has thought about yet. A differential here means anyone owned by 15% or fewer managers, and right now there are some genuinely compelling options sitting well under that threshold. Here are six worth ta"
-    },
-    {
-     "title": "Newcastle United striker Yoane Wissa's DR Congo in new FIFA storm over ineligible player at World Cup",
-     "url": "https://www.fourfourtwo.com/team/newcastle-united-striker-yoane-wissas-dr-congo-in-new-fifa-storm-over-ineligible-player-at-world-cup",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-06T10:00:32+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": "FIFA has been drawn into fresh controversy following revelations that the governing body permitted the Democratic Republic of Congo to compete in the 2026 World Cup, despite internal findings that goalkeeper Lionel Mpasi was ineligible during qualifying. According to an investigation by the New York Times , internal FIFA reviews established that DR Congo breached eligibility rules regarding Mpasi,"
-    },
-    {
-     "title": "Wissa stars as DR Congo spoil Zimbabwe homecoming in 2027 AFCON qualifying win",
-     "url": "https://www.soccerway.com/news/wissa-stars-as-dr-congo-spoil-zimbabwe-homecoming-in-2027-afcon-qualifying-win/GIVKcC4j/",
-     "source": "Soccerway",
-     "published": "2026-09-28T21:11:43+02:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Yoane wissa fpl newcastle striker battle 2026 27",
-     "url": "https://onefpl.com/blog/yoane-wissa-fpl-newcastle-striker-battle-2026-27",
-     "source": "OneFPL",
-     "published": "",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Fpl price changes wissa rises as semenyo and rice values drop",
-     "url": "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
-     "source": "FPL Captain",
-     "published": "",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
-     "url": "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
-     "source": "FPL Captain",
-     "published": "",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1294,8 +1248,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-16T19:42:56+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-17T11:49:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1306,10 +1260,8 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1319,6 +1271,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Coventry predicted lineup vs. Tottenham: Frank Lampard makes one change amid Taiwo Awoniyi return",
+     "url": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/one-change-amid-awoniyi-return-predicted-coventry-xi-vs-spurs_607113.html",
+     "source": "Sports Mole",
+     "published": "2026-10-17T11:49:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Coventry City could line up for Monday's Premier League game against Tottenham Hotspur."
+    },
+    {
+     "title": "Tottenham predicted lineup vs. Coventry: James Maddison decision made amid Pedro Porro injury doubt",
+     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/maddison-decision-porro-status-predicted-spurs-xi-vs-coventry_607111.html",
+     "source": "Sports Mole",
+     "published": "2026-10-17T11:41:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Monday's Premier League game against Coventry City."
+    },
+    {
+     "title": "Tottenham Hotspur vs Coventry City - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-coventry-prediction-team-news-lineups_607110.html",
+     "source": "Sports Mole",
+     "published": "2026-10-17T11:32:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Monday's Premier League clash between Tottenham Hotspur and Coventry City, including predictions, team news and possible lineups."
+    },
     {
      "title": "How to watch Tottenham Hotspur vs Coventry City live: Stream, TV, team news, prediction",
      "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-coventry-city-live-stream-tv-team-news-prediction",
@@ -1345,312 +1324,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of Monday's Premier League clash with Coventry City."
-    },
-    {
-     "title": "Tottenham vs Coventry City Prediction, Predicted Lineups & Team News",
-     "url": "https://www.rotowire.com/soccer/article/tottenham-vs-coventry-city-prediction-predicted-lineups-team-news-141414",
-     "source": "RotoWire Soccer",
-     "published": "2026-10-16T05:03:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Spurs 'ready' to launch £70m move for World Cup winner in January after latest Xavi Simons update",
-     "url": "https://www.sportsmole.co.uk/football/spurs/transfer-talk/news/spurs-ready-to-launch-gbp70m-move-for-world-cup-winner-after-xavi-simons-update_606861.html",
-     "source": "Sports Mole",
-     "published": "2026-10-14T08:19:34+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur are considering a move for Alex Baena as Roberto De Zerbi looks to strengthen his attack amid Xavi Simons' injury absence."
-    },
-    {
-     "title": "Preview, How to Watch San Antonio Spurs Seek First Preseason Win vs. Jazz",
-     "url": "https://www.si.com/nba/spurs/onsi/preview-how-to-watch-san-antonio-spurs-seek-first-preseason-win-vs-jazz?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-12T13:00:05+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "The San Antonio Spurs head to Utah still searching for their first preseason win as lineup questions, young players and a motivated roster remain in focus."
-    }
-   ]
-  },
-  "Szoboszlai": {
-   "player": "Szoboszlai",
-   "club": "LIV",
-   "evidence_count": 18,
-   "source_count": 5,
-   "latest_evidence": "2026-10-17T13:48:00+01:00",
-   "official_source_found": false,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "high",
-   "researched": true,
-   "items": [
-    {
-     "title": "3pm team news: Szoboszlai + Isak start, six Man City changes, Schade a sub",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/17/3pm-team-news-szoboszlai-isak-start-six-city-changes-schade-a-sub",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-17T13:35:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Three matches kick off at 15:00 BST The post 3pm team news: Szoboszlai + Isak start, six Man City changes, Schade a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Brentford vs Liverpool: Confirmed teams and line ups as Isak, Szoboszlai start",
-     "url": "https://www.101greatgoals.com/football/premier-league/brentford-vs-liverpool-live-teams-line-ups-where-to-watch-tv-channel-online-stream/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-17T13:04:58+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Team news as Brentford host Liverpool in the Premier League"
-    },
-    {
-     "title": "Brentford vs. Liverpool lineups confirmed as Dominik Szoboszlai, Alexander Isak, Trey Nyoni decisions revealed",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/news/szoboszlai-isak-nyoni-decisions-brentford-liverpool-team-news-confirmed_607121.html",
-     "source": "Sports Mole",
-     "published": "2026-10-17T13:48:00+01:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Brentford and Liverpool reveal their starting lineups for Saturday's Premier League clash at the Gtech Community Stadium."
-    },
-    {
-     "title": "Premier League injury, suspension list: Every out and doubtful player including Reece James, Benjamin Sesko, Dominik Szoboszlai",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-injury-list-every-out-and-doubtful-player-for-gw7_607068.html",
-     "source": "Sports Mole",
-     "published": "2026-10-16T16:51:54+01:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Sports Mole brings you a full Premier League injury and suspension list for gameweek seven, listing every player out or doubtful for all 20 clubs."
-    },
-    {
-     "title": "Liverpool injury, suspension list and return dates for Brentford: Are Alexander Isak, Cody Gakpo, Dominik Szoboszlai back?",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/injuries-and-suspensions/are-gakpo-isak-szoboszlai-back-liverpool-injury-suspension-list-vs-brentford_607012.html",
-     "source": "Sports Mole",
-     "published": "2026-10-16T05:22:04+01:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Liverpool's latest injury and suspension news ahead of Saturday's Premier League clash against Brentford."
-    },
-    {
-     "title": "£100m January Liverpool move given green light - and Florian Wirtz could make way: report",
-     "url": "https://www.fourfourtwo.com/transfer/gbp100m-january-liverpool-move-given-green-light-and-florian-wirtz-could-make-way-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-15T09:10:35+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Liverpool have been given an indication that another nine-figure move is on for January. Florian Wirtz – the first of three £100 million signings that Liverpool have made in the last 18 months – could well make way in manager Andoni Iraola's line-up, too, with the German struggling to adapt to English football since his arrival last summer, despite an excellent performance in Europe last night, si"
-    },
-    {
-     "title": "Szoboszlai, Isak, Gakpo: Latest FPL team news ahead of Gameweek 7",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/13/szoboszlai-isak-gakpo-latest-fpl-team-news-ahead-of-gameweek-7",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-13T16:00:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "The managers of Man City, Liverpool and Aston Villa face the media today The post Szoboszlai, Isak, Gakpo: Latest FPL team news ahead of Gameweek 7 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Liverpool injury, suspension list and return dates for LASK: Alexander Isak, Cody Gakpo, Dominik Szoboszlai latest",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/champions-league/injuries-and-suspensions/isak-gakpo-szoboszlai-latest-liverpool-injury-suspension-list-vs-lask_606774.html",
-     "source": "Sports Mole",
-     "published": "2026-10-13T01:46:00+01:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Liverpool's latest injury and suspension news ahead of Wednesday's Champions League clash against LASK."
-    },
-    {
-     "title": "FPL notes: Szoboszlai injury latest, Haaland again + Doku impact",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-12T06:30:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Plus, Gravenberch ban + Liverpool’s attack issue The post FPL notes: Szoboszlai injury latest, Haaland again + Doku impact appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Liverpool v Man City team news: Gvardiol benched, Szoboszlai absent",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/liverpool-v-man-city-team-news-gvardiol-benched-szoboszlai-absent",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-11T15:15:00+00:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Three changes for the hosts, one for City The post Liverpool v Man City team news: Gvardiol benched, Szoboszlai absent appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Liverpool games Dominik Szoboszlai could miss as Man City absence explained",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/why-is-szoboszlai-not-playing-for-liverpool-against-man-city_606682.html",
-     "source": "Sports Mole",
-     "published": "2026-10-11T15:49:00+01:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Sports Mole looks at the Liverpool games Dominik Szoboszlai could miss through injury as his absence against Manchester City is explained."
-    },
-    {
-     "title": "Liverpool vs. Man City confirmed lineups: Huge Szoboszlai, Semenyo, Mac Allister, O'Reilly decisions made for Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/liverpool/news/liverpool-vs-man-city-confirmed-xis-huge-szoboszlai-semenyo-koumas-mac-allister-decisions-made_606676.html",
-     "source": "Sports Mole",
-     "published": "2026-10-11T15:21:00+01:00",
-     "matched_on": "szoboszlai",
-     "kind": "team news",
-     "excerpt": "Liverpool and Manchester City confirm their starting lineups for this afternoon’s eagerly-anticipated Premier League showdown at Anfield."
-    }
-   ]
-  },
-  "Muharemović": {
-   "player": "Muharemović",
-   "club": "LEE",
-   "evidence_count": 13,
-   "source_count": 4,
-   "latest_evidence": "2026-10-02T13:03:39+01:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "­FPL notes: Muharemovic threat, Stach DefCon + defences on top",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/fpl-notes-muharemovic-threat-stach-defcon-defences-on-top",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-21T17:15:00+00:00",
-     "matched_on": "muharemovic",
-     "kind": "team news",
-     "excerpt": "Notes from Leeds’ goalless draw with Palace The post ­FPL notes: Muharemovic threat, Stach DefCon + defences on top appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Barcelona, Inter Milan 'keen' on Leeds United star ahead of January transfer window",
-     "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
-     "source": "Sports Mole",
-     "published": "2026-10-02T13:03:39+01:00",
-     "matched_on": "muharemovic",
-     "kind": "transfer",
-     "excerpt": "Barcelona and Inter Milan are reportedly eyeing up respective moves for Leeds United defender Tarik Muharemovic in 2027."
-    },
-    {
-     "title": "5 Leeds United New Signings to Consider in FPL",
-     "url": "https://www.premierfantasytools.com/5-leeds-united-new-signings-to-consider-in-fpl/",
-     "source": "Premier Fantasy Tools",
-     "published": "2026-09-28T12:55:07+00:00",
-     "matched_on": "muharemovic",
-     "kind": "transfer",
-     "excerpt": "Leeds United welcomed seven players to Daniel Farke’s squad during the summer 2026 transfer window. What does it mean for Fantasy Premier League managers? The question isn’t which signings improve Leeds but which ones offer points, reliable minutes, and value at their FPL prices. Harry Wilson, James Trafford, Tarik Muharemović, Nico Elvedi, and Jean-Mattéo Bahoya […] The post 5 Leeds United New Si"
-    },
-    {
-     "title": "Tarik muharemovic we will show even more of our qualities",
-     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Tarik muharemovic we have to be ready",
-     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Tarik muharemovic reacts to second international goal and previews meeting with leeds united teammate",
-     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-reacts-to-second-international-goal-and-previews-meeting-with-leeds-united-teammate",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic picks up seasons first hero of the month award",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic on elland roads unbelievable atmosphere",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-on-elland-roads-unbelievable-atmosphere",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic named hisense player of the match against palace",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-named-hisense-player-of-the-match-against-palace",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic impresses in nations league opener",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic claims second hero of the month award in a row",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1791,6 +1464,258 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
+    }
+   ]
+  },
+  "Wissa": {
+   "player": "Wissa",
+   "club": "NEW",
+   "evidence_count": 9,
+   "source_count": 6,
+   "latest_evidence": "2026-10-16T09:32:02+00:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "match report",
+    "press conference",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/best-schade-replacements-keep-or-sell-wissa-thiaw-fpl-qa",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-14T16:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Wan-Bissaka features in DR Congo win",
+     "url": "https://avfc.co.uk/news/2026/september/24/internationals-wan-bissaka-features-in-dr-congo-win/",
+     "source": "Aston Villa",
+     "published": "2026-09-24T18:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Aaron Wan-Bissaka completed 90 minutes as DR Congo made a winning start to their 2027 African Cup of Nations qualifying campaign on Thursday. The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa. The victory places the Congolese side top of Group E "
+    },
+    {
+     "title": "FPL notes: Wissa pen miss + Newcastle the new DefCon kings?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-19T22:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Plus, a £5.1m Hull winger is up to fourth in the FPL midfielder standings The post FPL notes: Wissa pen miss + Newcastle the new DefCon kings? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "'Triple up on Tottenham Hotspur players' Five of the best FPL differential options for Gameweek 7",
+     "url": "https://www.fourfourtwo.com/competition/triple-up-on-tottenham-hotspur-players-five-of-the-best-fpl-differential-options-for-gameweek-7",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-16T09:32:02+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": "Six Gameweeks in and the data is telling a very clear story. The managers who are pulling away from their FPL mini leagues are not just owning the template, they are finding the players nobody else has thought about yet. A differential here means anyone owned by 15% or fewer managers, and right now there are some genuinely compelling options sitting well under that threshold. Here are six worth ta"
+    },
+    {
+     "title": "Newcastle United striker Yoane Wissa's DR Congo in new FIFA storm over ineligible player at World Cup",
+     "url": "https://www.fourfourtwo.com/team/newcastle-united-striker-yoane-wissas-dr-congo-in-new-fifa-storm-over-ineligible-player-at-world-cup",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-06T10:00:32+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": "FIFA has been drawn into fresh controversy following revelations that the governing body permitted the Democratic Republic of Congo to compete in the 2026 World Cup, despite internal findings that goalkeeper Lionel Mpasi was ineligible during qualifying. According to an investigation by the New York Times , internal FIFA reviews established that DR Congo breached eligibility rules regarding Mpasi,"
+    },
+    {
+     "title": "Wissa stars as DR Congo spoil Zimbabwe homecoming in 2027 AFCON qualifying win",
+     "url": "https://www.soccerway.com/news/wissa-stars-as-dr-congo-spoil-zimbabwe-homecoming-in-2027-afcon-qualifying-win/GIVKcC4j/",
+     "source": "Soccerway",
+     "published": "2026-09-28T21:11:43+02:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Yoane wissa fpl newcastle striker battle 2026 27",
+     "url": "https://onefpl.com/blog/yoane-wissa-fpl-newcastle-striker-battle-2026-27",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Fpl price changes wissa rises as semenyo and rice values drop",
+     "url": "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
+     "url": "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    }
+   ]
+  },
+  "Muharemović": {
+   "player": "Muharemović",
+   "club": "LEE",
+   "evidence_count": 13,
+   "source_count": 4,
+   "latest_evidence": "2026-10-02T13:03:39+01:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "match report",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "­FPL notes: Muharemovic threat, Stach DefCon + defences on top",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/fpl-notes-muharemovic-threat-stach-defcon-defences-on-top",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-21T17:15:00+00:00",
+     "matched_on": "muharemovic",
+     "kind": "team news",
+     "excerpt": "Notes from Leeds’ goalless draw with Palace The post ­FPL notes: Muharemovic threat, Stach DefCon + defences on top appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Barcelona, Inter Milan 'keen' on Leeds United star ahead of January transfer window",
+     "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
+     "source": "Sports Mole",
+     "published": "2026-10-02T13:03:39+01:00",
+     "matched_on": "muharemovic",
+     "kind": "transfer",
+     "excerpt": "Barcelona and Inter Milan are reportedly eyeing up respective moves for Leeds United defender Tarik Muharemovic in 2027."
+    },
+    {
+     "title": "5 Leeds United New Signings to Consider in FPL",
+     "url": "https://www.premierfantasytools.com/5-leeds-united-new-signings-to-consider-in-fpl/",
+     "source": "Premier Fantasy Tools",
+     "published": "2026-09-28T12:55:07+00:00",
+     "matched_on": "muharemovic",
+     "kind": "transfer",
+     "excerpt": "Leeds United welcomed seven players to Daniel Farke’s squad during the summer 2026 transfer window. What does it mean for Fantasy Premier League managers? The question isn’t which signings improve Leeds but which ones offer points, reliable minutes, and value at their FPL prices. Harry Wilson, James Trafford, Tarik Muharemović, Nico Elvedi, and Jean-Mattéo Bahoya […] The post 5 Leeds United New Si"
+    },
+    {
+     "title": "Tarik muharemovic we will show even more of our qualities",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Tarik muharemovic we have to be ready",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Tarik muharemovic reacts to second international goal and previews meeting with leeds united teammate",
+     "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-reacts-to-second-international-goal-and-previews-meeting-with-leeds-united-teammate",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic picks up seasons first hero of the month award",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic on elland roads unbelievable atmosphere",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-on-elland-roads-unbelievable-atmosphere",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic named hisense player of the match against palace",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-named-hisense-player-of-the-match-against-palace",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic impresses in nations league opener",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic claims second hero of the month award in a row",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   }
