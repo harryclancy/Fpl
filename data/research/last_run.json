@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-17T19:26:56+00:00",
- "seconds": 169.1,
+ "ran_at": "2026-10-18T01:07:48+00:00",
+ "seconds": 150.9,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 603,
- "substantive_items": 232,
- "duplicates_removed": 14,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 18619,
+ "candidates_discovered": 535,
+ "substantive_items": 173,
+ "duplicates_removed": 9,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18618,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 232 articles"
+    "57/78 sources returned 173 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -52,12 +53,11 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -441,8 +441,8 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 9,
-   "source_count": 7,
+   "evidence_count": 8,
+   "source_count": 6,
    "latest_evidence": "2026-10-15T20:00:25+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -538,15 +538,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "This Saturday sees Goodison Park host the Game 4 Hope charity fixture to raise vital funds and awareness in the fight against homelessness. Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST). For more information on the extraordinary collect"
-    },
-    {
-     "title": "Newcastle vs Hull City: Magpies attacker sets new record in Premier League clash at St James' Park",
-     "url": "https://www.sportsmole.co.uk/football/newcastle-united/news/newcastle-attacker-sets-new-record-in-pl-clash-vs-hull-city_605485.html",
-     "source": "Sports Mole",
-     "published": "2026-09-19T16:08:15+01:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Newcastle United attacker Harvey Barnes registered two assists within the opening 10 minutes as the Magpies take a healthy 2-0 lead against Hull City."
     }
    ]
   },
@@ -1107,9 +1098,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 118,
+   "evidence_count": 119,
    "source_count": 18,
-   "latest_evidence": "2026-10-17T19:25:59+00:00",
+   "latest_evidence": "2026-10-17T21:25:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1134,6 +1125,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Haaland, Semenyo + O’Reilly injury latest",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/17/fpl-notes-haaland-semenyo-oreilly-injury-latest",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-17T21:25:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Plus, Maresca on Foden + Ipswich system change The post FPL notes: Haaland, Semenyo + O’Reilly injury latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Erling Haaland injury news: Man City star limps off at full-time after scoring two goals",
      "url": "https://www.nbcsports.com/soccer/news/erling-haaland-injury-news-man-city-star-limps-off-at-full-time-after-scoring-two-goals",
@@ -1232,15 +1232,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": ""
-    },
-    {
-     "title": "Manchester City star Haaland not injured but fatigued as he jets away for mini-break",
-     "url": "https://www.101greatgoals.com/football/premier-league/manchester-city-erling-haaland-not-injured-fatigued-as-he-jets-away-for-mini-break/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-05T10:56:28+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Erling Haaland will recharge his batteries with a mini-break before returning to the chaos surrounding Manchester City"
     }
    ]
   },
@@ -1583,7 +1574,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 13,
+   "evidence_count": 14,
    "source_count": 4,
    "latest_evidence": "2026-10-02T13:03:39+01:00",
    "official_source_found": true,
@@ -1599,6 +1590,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
