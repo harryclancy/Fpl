@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-18T14:38:20+00:00",
- "seconds": 163.9,
+ "ran_at": "2026-10-18T19:27:22+00:00",
+ "seconds": 160.6,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 574,
- "substantive_items": 205,
- "duplicates_removed": 23,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 18633,
+ "sources_readable": 58,
+ "candidates_discovered": 625,
+ "substantive_items": 244,
+ "duplicates_removed": 20,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 18644,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 205 articles"
+    "58/78 sources returned 244 articles"
    ]
   },
   "blackout": {
@@ -50,7 +50,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 404 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -64,9 +63,9 @@
    "player": "Raya",
    "club": "ARS",
    "evidence_count": 8,
-   "source_count": 4,
-   "latest_evidence": "2026-10-14T12:04:35+00:00",
-   "official_source_found": false,
+   "source_count": 5,
+   "latest_evidence": "2026-10-18T17:23:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -127,6 +126,15 @@
      "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
     },
     {
+     "title": "FOREST SUFFER NARROW DEFEAT AGAINST ARSENAL",
+     "url": "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
+     "source": "Nottingham Forest",
+     "published": "2026-10-18T17:23:00+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Nottingham Forest slipped to a narrow home defeat against Arsenal. Despite creating a number of chances on the afternoon, Noni Madueke’s strike in the final 10 minutes proved to be the difference between the sides at the City Ground. Forest dominated the chances in the first half and the start of the second, but those missed opportunities proved costly as the Premier League holders scored for the "
+    },
+    {
      "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
      "source": "Football365",
@@ -143,15 +151,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Arsenal star David Raya has been told that Aston Villa summer signing Zion Suzuki is ‘miles better’ as the “best in the Premier League”."
-    },
-    {
-     "title": "Are Arsenal unlucky with the goals they concede? What the numbers say",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/feature/are-arsenal-unlucky-with-the-goals-they-concede-what-the-numbers-say_605514.html",
-     "source": "Sports Mole",
-     "published": "2026-09-20T12:26:35+01:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Are Arsenal simply unlucky with the goals they concede? Sports Mole explores that David Raya theory after the Gunners' 3-0 defeat to Brighton & Hove Albion."
     },
     {
      "title": "David raya fpl 2026 27",
@@ -892,9 +891,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 4,
-   "source_count": 2,
-   "latest_evidence": "2026-10-15T20:55:00+00:00",
+   "evidence_count": 9,
+   "source_count": 3,
+   "latest_evidence": "2026-10-18T17:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -913,10 +912,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Evanilson on century duty in Rose's first Premier League win",
+     "url": "https://www.afcb.co.uk/news/2026/october/18/match-report-v-sunderland/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-18T14:57:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Evanilson bagged his 100th career goal as Marco Rose celebrated his first Premier League win courtesy of a 2-0 victory over Sunderland at Vitality Stadium. The Brazilian added to the 66 goals he scored for Porto and the 13 for first club Fluminense by registering his 21st for the Cherries and his third in as many games. His second-half solo effort doubled the Cherries’ lead after he had assisted M"
+    },
     {
      "title": "Cherries living the European dream with win over Sturm Graz",
      "url": "https://www.afcb.co.uk/news/2026/october/15/match-report-v-sturm/",
@@ -936,13 +944,49 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Christie returns for Liverpool clash as Rose makes one change",
-     "url": "https://www.afcb.co.uk/news/2026/september/20/christie-returns-for-liverpool-clash/",
+     "title": "Gallery: Pictures from first Premier League win of the season",
+     "url": "https://www.afcb.co.uk/news/2026/october/18/gallery--pictures-from-first-premier-league-win-of-the-season/",
      "source": "AFC Bournemouth",
-     "published": "2026-09-20T11:56:00+00:00",
+     "published": "2026-10-18T17:00:00+00:00",
      "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Ryan Christie returns to AFC Bournemouth's starting XI for this afternoon's Premier League encounter with Liverpool at Vitality Stadium. Head coach Marco Rose makes just one change from the side that secured the Cherries' historic first victory in European competition against Real Sociedad on Thursday evening. Christie comes into the starting line-up in place of Justin Kluivert, who was not named "
+     "kind": "general",
+     "excerpt": "Marcus Tavernier and Evanilson maintained their impressive form in front of goal as AFC Bournemouth triumphed 2-0 against Sunderland at Vitality Stadium on Sunday. Their goals, which came either side of half-time, saw the Cherries register a first Premier League win and clean sheet under head coach Marco Rose. Tavernier drew first blood with his fourth goal of the season, his diving header from Ev"
+    },
+    {
+     "title": "Tavernier: Evanilson is so important to us",
+     "url": "https://www.afcb.co.uk/news/2026/october/18/tavernier-praises-evanilson-after-sunderland-win/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-18T16:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Marcus Tavernier hailed the impact of Evanilson after the Brazilian played a starring role in AFC Bournemouth’s 2-0 victory over Sunderland. The forward was instrumental in both goals at Vitality Stadium, first showing strength and composure before providing the cross for Tavernier to head home the opener. Evanilson then got his reward after the break, adding the second goal to help the Cherries s"
+    },
+    {
+     "title": "Le Bris: “We were not Sunderland today”",
+     "url": "https://www.safc.com/news/2026/october/18/le-bris-we-were-not-sunderland-today-/",
+     "source": "Sunderland",
+     "published": "2026-10-18T15:50:43+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Régis Le Bris admitted Sunderland were below the required level following Sunday’s 2-0 Premier League defeat to AFC Bournemouth at the Vitality Stadium. The Black Cats fell behind in the sixth minute when Marcus Tavernier headed home Evanilson’s cross, before Kevin Danso was shown a straight red card 11 minutes later, leaving the visitors to play the majority of the contest with 10 men. Robin Roef"
+    },
+    {
+     "title": "Hill proud of Cherries after Sunderland response",
+     "url": "https://www.afcb.co.uk/news/2026/october/18/hill-proud-of-cherries-after-sunderland-response/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-18T15:45:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "James Hill praised AFC Bournemouth’s response after the Cherries secured a 2-0 victory over Sunderland at Vitality Stadium. Goals from Marcus Tavernier and Evanilson earned Marco Rose’s side their first Premier League win of the season, with the visitors reduced to ten men following Kevin Danso’s first-half dismissal. Tavernier opened the scoring after just six minutes, heading home after excellen"
+    },
+    {
+     "title": "Sunderland defeated at Bournemouth",
+     "url": "https://www.safc.com/news/2026/october/18/Sunderland-defeated-at-Bournemouth/",
+     "source": "Sunderland",
+     "published": "2026-10-18T15:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "AFC Bournemouth 2-0 Sunderland Sunderland were beaten 2-0 by AFC Bournemouth at the Vitality Stadium on Sunday afternoon, with first-half and second-half goals settling the Premier League fixture. The Black Cats arrived on the south coast following Thursday night’s UEFA Europa League win in Portugal, looking to translate their European form into a positive domestic result. Bournemouth took the lea"
     },
     {
      "title": "Cherries FPL International Break Review",
@@ -1239,8 +1283,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-10-17T11:49:00+01:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-18T13:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1250,7 +1294,7 @@
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
-    "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "statistics",
@@ -1262,6 +1306,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham v Coventry: Preview, expected line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/tottenham-v-coventry-preview-expected-line-ups-stats-stream-where-to-watch/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-18T13:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham have an excellent chance to record their maiden Premier League win of the season when they face Coventry on Monday Night Football."
+    },
+    {
+     "title": "Tottenham v Coventry City: Prediction, team news, lineups and odds",
+     "url": "https://www.football365.com/match-preview/tottenham-v-coventry-city-prediction-preview",
+     "source": "Football365",
+     "published": "2026-10-18T12:59:21+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Premier League clash between Tottenham and Coventry City."
+    },
     {
      "title": "Coventry predicted lineup vs. Tottenham: Frank Lampard makes one change amid Taiwo Awoniyi return",
      "url": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/one-change-amid-awoniyi-return-predicted-coventry-xi-vs-spurs_607113.html",
@@ -1290,15 +1352,6 @@
      "excerpt": "Sports Mole previews Monday's Premier League clash between Tottenham Hotspur and Coventry City, including predictions, team news and possible lineups."
     },
     {
-     "title": "How to watch Tottenham Hotspur vs Coventry City live: Stream, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-coventry-city-live-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-16T16:03:01-04:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
      "title": "Spurs Are Quickly Learning What It Takes to Make 3-Guard Starting Lineup Work",
      "url": "https://www.si.com/nba/spurs/onsi/san-antonio-spurs-are-quickly-learning-what-it-takes-to-make-3-guard-starting-lineup-work?utm_source=RSS",
      "source": "Sports Illustrated FPL",
@@ -1306,15 +1359,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "The San Antonio Spurs' unconventional starting five has shown plenty of promise, but shooting, rebounding and chemistry remain key to unlocking its potential."
-    },
-    {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Coventry: Pedro Porro, Dejan Kulusevski latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-kulusevski-updates-spurs-injury-suspension-list-vs-coventry_607017.html",
-     "source": "Sports Mole",
-     "published": "2026-10-16T07:52:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of Monday's Premier League clash with Coventry City."
     }
    ]
   },
