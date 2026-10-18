@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-18T01:07:48+00:00",
- "seconds": 150.9,
+ "ran_at": "2026-10-18T09:40:55+00:00",
+ "seconds": 174.2,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 535,
- "substantive_items": 173,
- "duplicates_removed": 9,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 18618,
+ "sources_readable": 56,
+ "candidates_discovered": 529,
+ "substantive_items": 170,
+ "duplicates_removed": 14,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18627,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 173 articles"
+    "56/78 sources returned 170 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,13 +50,15 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -958,7 +959,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 46,
+   "evidence_count": 47,
    "source_count": 18,
    "latest_evidence": "2026-10-17T16:56:39+00:00",
    "official_source_found": true,
@@ -1098,9 +1099,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 119,
+   "evidence_count": 120,
    "source_count": 18,
-   "latest_evidence": "2026-10-17T21:25:00+00:00",
+   "latest_evidence": "2026-10-18T02:12:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1125,6 +1126,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Manchester City injury news: Enzo Maresca issues updates on Erling Haaland and Antoine Semenyo after Ipswich Town win",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/five-scares-maresca-issues-haaland-and-semenyo-injury-updates_607137.html",
+     "source": "Sports Mole",
+     "published": "2026-10-18T02:12:00+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Manchester City boss Enzo Maresca provides updates on Erling Haaland, Antoine Semenyo, Mateo Kovacic, Matheus Nunes and Nico O'Reilly after injury scares against Ipswich Town."
+    },
     {
      "title": "FPL notes: Haaland, Semenyo + O’Reilly injury latest",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/17/fpl-notes-haaland-semenyo-oreilly-injury-latest",
@@ -1220,15 +1230,6 @@
      "url": "https://www.mancity.com/news/mens/enzo-maresca-liverpool-v-manchester-city-team-news-update-63927129",
      "source": "Manchester City",
      "published": "2026-10-09T11:15:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Erling Haaland injury update: Latest on Manchester City star ahead of huge game at Liverpool",
-     "url": "https://www.nbcsports.com/soccer/news/erling-haaland-injury-update-latest-on-manchester-city-star-ahead-of-huge-game-at-liverpool",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-06T07:46:00-04:00",
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": ""
@@ -1461,7 +1462,7 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 8,
    "source_count": 6,
    "latest_evidence": "2026-10-16T09:32:02+00:00",
    "official_source_found": true,
@@ -1505,15 +1506,6 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Aaron Wan-Bissaka completed 90 minutes as DR Congo made a winning start to their 2027 African Cup of Nations qualifying campaign on Thursday. The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa. The victory places the Congolese side top of Group E "
-    },
-    {
-     "title": "FPL notes: Wissa pen miss + Newcastle the new DefCon kings?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/19/fpl-notes-wissa-pen-miss-newcastle-the-new-defcon-kings",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-19T22:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Plus, a £5.1m Hull winger is up to fourth in the FPL midfielder standings The post FPL notes: Wissa pen miss + Newcastle the new DefCon kings? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "'Triple up on Tottenham Hotspur players' Five of the best FPL differential options for Gameweek 7",
@@ -1656,6 +1648,15 @@
      "excerpt": ""
     },
     {
+     "title": "Speed and batty prank muharemovic wrestling and the leeds united photo tradition",
+     "url": "https://www.leedsunited.com/en/news/speed-and-batty-prank-muharemovic-wrestling-and-the-leeds-united-photo-tradition",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
      "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
      "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
      "source": "Leeds United",
@@ -1694,15 +1695,6 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic claims second hero of the month award in a row",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
