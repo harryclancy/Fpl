@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-18T09:40:55+00:00",
- "seconds": 174.2,
+ "ran_at": "2026-10-18T14:38:20+00:00",
+ "seconds": 163.9,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 529,
- "substantive_items": 170,
- "duplicates_removed": 14,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18627,
+ "sources_readable": 57,
+ "candidates_discovered": 574,
+ "substantive_items": 205,
+ "duplicates_removed": 23,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 18633,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 170 articles"
+    "57/78 sources returned 205 articles"
    ]
   },
   "blackout": {
@@ -50,15 +50,14 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
+  "Arsenal: HTTP 404 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -1099,7 +1098,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 120,
+   "evidence_count": 119,
    "source_count": 18,
    "latest_evidence": "2026-10-18T02:12:00+01:00",
    "official_source_found": true,
