@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-19T01:20:23+00:00",
- "seconds": 177.1,
+ "ran_at": "2026-10-19T10:50:30+00:00",
+ "seconds": 142.3,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 540,
- "substantive_items": 188,
- "duplicates_removed": 13,
+ "sources_readable": 57,
+ "candidates_discovered": 573,
+ "substantive_items": 206,
+ "duplicates_removed": 15,
  "deeply_analysed": 84,
  "deep_read_failed": 6,
- "corpus_size": 18664,
+ "corpus_size": 18658,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 188 articles"
+    "57/78 sources returned 206 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -52,7 +53,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -611,9 +612,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
-   "source_count": 13,
-   "latest_evidence": "2026-10-16T11:00:00+00:00",
+   "evidence_count": 50,
+   "source_count": 14,
+   "latest_evidence": "2026-10-19T12:06:21+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1142,9 +1143,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 117,
+   "evidence_count": 119,
    "source_count": 17,
-   "latest_evidence": "2026-10-19T00:22:00+01:00",
+   "latest_evidence": "2026-10-19T09:52:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1169,6 +1170,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man City injury, suspension list and return dates vs. AEK Athens: Erling Haaland, Antoine Semenyo latest",
+     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/injuries-and-suspensions/haaland-semenyo-oreilly-latest-man-city-injury-suspension-list-vs-aek-athens_607199.html",
+     "source": "Sports Mole",
+     "published": "2026-10-19T04:56:00+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Manchester City's latest injury and suspension news ahead of Tuesday's Champions League clash with AEK Athens."
+    },
     {
      "title": "Man City predicted lineup vs. AEK Athens: Erling Haaland decision made as Enzo Maresca rings changes",
      "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/predicted-lineups/rest-for-haaland-predicted-man-city-xi-vs-aek-athens_607193.html",
@@ -1267,15 +1277,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Sports Mole takes an in-depth look at how Manchester City could line up for Sunday's Premier League game against Liverpool."
-    },
-    {
-     "title": "Is Erling Haaland fit for Liverpool vs Manchester City? Premier League injury update",
-     "url": "https://www.fourfourtwo.com/person/coaches-managers/is-erling-haaland-fit-for-manchester-city-vs-liverpool-premier-league-injury-update",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-09T15:03:03+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Erling Haaland is a doubt for Manchester City this weekend, with the Citizens making the short trip to Liverpool. This is the first time that Man City will play again in the Premier League following an independent commission finding the six-time champions of the competition guilty of all charges related to breaches of the Prem's financial rules over a nine-year period. With Haaland having picked u"
     }
    ]
   },
@@ -1284,7 +1285,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-10-18T19:18:00+01:00",
+   "latest_evidence": "2026-10-19T09:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1308,6 +1309,15 @@
    "researched": true,
    "items": [
     {
+     "title": "Tottenham v Coventry: Preview, expected line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/tottenham-v-coventry-preview-expected-line-ups-stats-stream-where-to-watch/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-19T09:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham have an excellent chance to record their maiden Premier League win of the season when they face Coventry on Monday Night Football."
+    },
+    {
      "title": "San Antonio Spurs vs. Oklahoma City Thunder: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-oklahoma-city-thunder-player-props-injury-report-and-prediction--nba_607184.html",
      "source": "Sports Mole",
@@ -1315,15 +1325,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "San Antonio Spurs host Oklahoma City Thunder in a Western Conference finals rematch on opening night. Player props, injury news and a score prediction."
-    },
-    {
-     "title": "Tottenham v Coventry: Preview, expected line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/tottenham-v-coventry-preview-expected-line-ups-stats-stream-where-to-watch/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-18T13:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham have an excellent chance to record their maiden Premier League win of the season when they face Coventry on Monday Night Football."
     },
     {
      "title": "Tottenham v Coventry City: Prediction, team news, lineups and odds",
