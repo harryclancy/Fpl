@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-18T19:27:22+00:00",
- "seconds": 160.6,
+ "ran_at": "2026-10-19T01:20:23+00:00",
+ "seconds": 177.1,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 625,
- "substantive_items": 244,
- "duplicates_removed": 20,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 18644,
+ "candidates_discovered": 540,
+ "substantive_items": 188,
+ "duplicates_removed": 13,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 18664,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 244 articles"
+    "58/78 sources returned 188 articles"
    ]
   },
   "blackout": {
@@ -52,7 +52,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -611,8 +611,8 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 50,
-   "source_count": 14,
+   "evidence_count": 49,
+   "source_count": 13,
    "latest_evidence": "2026-10-16T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1142,9 +1142,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 119,
-   "source_count": 18,
-   "latest_evidence": "2026-10-18T02:12:00+01:00",
+   "evidence_count": 117,
+   "source_count": 17,
+   "latest_evidence": "2026-10-19T00:22:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1169,6 +1169,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man City predicted lineup vs. AEK Athens: Erling Haaland decision made as Enzo Maresca rings changes",
+     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/predicted-lineups/rest-for-haaland-predicted-man-city-xi-vs-aek-athens_607193.html",
+     "source": "Sports Mole",
+     "published": "2026-10-19T00:22:00+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Manchester City could line up for Tuesday's Champions League match against AEK Athens."
+    },
     {
      "title": "Manchester City injury news: Enzo Maresca issues updates on Erling Haaland and Antoine Semenyo after Ipswich Town win",
      "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/five-scares-maresca-issues-haaland-and-semenyo-injury-updates_607137.html",
@@ -1267,15 +1276,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Erling Haaland is a doubt for Manchester City this weekend, with the Citizens making the short trip to Liverpool. This is the first time that Man City will play again in the Premier League following an independent commission finding the six-time champions of the competition guilty of all charges related to breaches of the Prem's financial rules over a nine-year period. With Haaland having picked u"
-    },
-    {
-     "title": "Haaland fit for trip to Liverpool, says Maresca",
-     "url": "https://www.mancity.com/news/mens/enzo-maresca-liverpool-v-manchester-city-team-news-update-63927129",
-     "source": "Manchester City",
-     "published": "2026-10-09T11:15:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": ""
     }
    ]
   },
@@ -1283,8 +1283,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-18T13:00:00+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-18T19:18:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1294,6 +1294,7 @@
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
+    "fixtures",
     "fpl advice",
     "injury",
     "match report",
@@ -1306,6 +1307,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "San Antonio Spurs vs. Oklahoma City Thunder: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-oklahoma-city-thunder-player-props-injury-report-and-prediction--nba_607184.html",
+     "source": "Sports Mole",
+     "published": "2026-10-18T19:18:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "San Antonio Spurs host Oklahoma City Thunder in a Western Conference finals rematch on opening night. Player props, injury news and a score prediction."
+    },
     {
      "title": "Tottenham v Coventry: Preview, expected line-ups, stats and where to watch",
      "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/tottenham-v-coventry-preview-expected-line-ups-stats-stream-where-to-watch/",
@@ -1350,15 +1360,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Monday's Premier League clash between Tottenham Hotspur and Coventry City, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Spurs Are Quickly Learning What It Takes to Make 3-Guard Starting Lineup Work",
-     "url": "https://www.si.com/nba/spurs/onsi/san-antonio-spurs-are-quickly-learning-what-it-takes-to-make-3-guard-starting-lineup-work?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-16T19:42:56+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "The San Antonio Spurs' unconventional starting five has shown plenty of promise, but shooting, rebounding and chemistry remain key to unlocking its potential."
     }
    ]
   },
@@ -1609,7 +1610,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 14,
+   "evidence_count": 16,
    "source_count": 4,
    "latest_evidence": "2026-10-02T13:03:39+01:00",
    "official_source_found": true,
