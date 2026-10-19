@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-19T10:50:30+00:00",
- "seconds": 142.3,
+ "ran_at": "2026-10-19T17:31:29+00:00",
+ "seconds": 187.9,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 573,
- "substantive_items": 206,
- "duplicates_removed": 15,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 18658,
+ "candidates_discovered": 608,
+ "substantive_items": 231,
+ "duplicates_removed": 13,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 18652,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 206 articles"
+    "57/78 sources returned 231 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -53,6 +52,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
+  "Manchester United: timed out after 12s for https://www.manutd.com/sitemaps/sitemap/0.xml",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -63,9 +63,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 8,
-   "source_count": 5,
-   "latest_evidence": "2026-10-18T17:23:00+00:00",
+   "evidence_count": 10,
+   "source_count": 6,
+   "latest_evidence": "2026-10-19T15:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -90,6 +90,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Mikel Merino reveals how Arsenal have battled internal doubts",
+     "url": "https://www.fourfourtwo.com/person/player/same-old-arsenal-there-were-doubts-inside-the-team-but-the-day-after-the-players-had-a-meeting-without-the-boss-everyone-spoke-up-nobody-talked-about-tactics-this-was-about-handling-adversity-mikel-merino-on-the-game-that-won-arsenal-the-league",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-19T15:00:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Arsenal star Mikel Merino has opened up about the moment that he believed the Gunners would win their first Premier League title in 22 years. The Spaniard picked up a serious injury in January that looked to rule him out of the season, but miraculously fought to play in Arsenal's final league game of the season and earn a place in Luis de la Fuente's World Cup squad. Speaking now to The Player's T"
+    },
     {
      "title": "Arsenal rocked by David Raya transfer plan: report",
      "url": "https://www.fourfourtwo.com/transfer/arsenal-rocked-by-david-raya-transfer-plan-report",
@@ -125,6 +134,15 @@
      "matched_on": "raya",
      "kind": "transfer",
      "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
+    },
+    {
+     "title": "'We came back very strong': Raya hails Arsenal response to bruising Brighton loss",
+     "url": "https://www.flashscore.com/news/soccer-premier-league-david-raya-hails-arsenal-response-to-bruising-brighton-loss/Igxf9IUQ/",
+     "source": "Flashscore",
+     "published": "2026-10-19T12:52:35+02:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "FOREST SUFFER NARROW DEFEAT AGAINST ARSENAL",
@@ -329,7 +347,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 8,
    "source_count": 6,
    "latest_evidence": "2026-10-15T08:26:47+00:00",
    "official_source_found": true,
@@ -426,15 +444,6 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": "England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer."
-    },
-    {
-     "title": "‘I always knew I wanted to play here’ Lewis Hall ‘buzzing’ after committing future to Newcastle United",
-     "url": "https://www.fourfourtwo.com/person/player/i-always-knew-i-wanted-to-play-here-lewis-hall-buzzing-after-committing-future-to-newcastle-united",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-21T10:06:05+00:00",
-     "matched_on": "hall",
-     "kind": "general",
-     "excerpt": "This past summer was in equal parts harrowing and exciting for Newcastle United fans, with the first phase of the Saudi Arabian-backed project coming to an abrupt end at St James’ Park. Newcastle ’s three most valuable assets - Anthony Gordon, Bruno Guimaraes and Sandro Tonali - all departed for huge profits as the club embarked on a new trading model to help combat financial restrictions. On top "
     }
    ]
   },
@@ -544,9 +553,9 @@
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "evidence_count": 4,
-   "source_count": 3,
-   "latest_evidence": "2026-10-16T09:08:43+00:00",
+   "evidence_count": 5,
+   "source_count": 4,
+   "latest_evidence": "2026-10-19T15:36:36+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -567,7 +576,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -588,6 +597,15 @@
      "matched_on": "gro",
      "kind": "transfer",
      "excerpt": "Our FPL Gameweek 7 guide covers the key fixtures, in-form players, transfer sells, differentials and captaincy options before Saturday’s deadline, including Erling Haaland, Pascal Groß, Bruno Fernandes and Thierno Barry."
+    },
+    {
+     "title": "Pascal Groß is Not Essential",
+     "url": "https://full90fpl.com/pascal-gros-is-not-essential/?utm_source=rss&utm_medium=rss&utm_campaign=pascal-gros-is-not-essential",
+     "source": "Full90 FPL",
+     "published": "2026-10-19T15:36:36+00:00",
+     "matched_on": "gro",
+     "kind": "general",
+     "excerpt": "Pascal Groß is Not Essential Today, I’m looking at Groß. He’s the highest scoring midfielder with tons of transfers in, but when a player becomes that popular, I think it’s worth stepping back. In FPL, it’s easy to fixate on points already scored, but past points aren’t future points. So, in this piece, I want […] The post Pascal Groß is Not Essential appeared first on Full90 FPL ."
     },
     {
      "title": "Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start",
@@ -612,7 +630,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 47,
    "source_count": 14,
    "latest_evidence": "2026-10-19T12:06:21+02:00",
    "official_source_found": true,
@@ -730,22 +748,22 @@
      "excerpt": "Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break."
     },
     {
-     "title": "Gibbs-White to be called up to England squad as injured Palmer withdraws",
-     "url": "https://www.101greatgoals.com/football/internationals/gibbs-white-england-squad-palmer-out/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-09-21T10:51:22+00:00",
+     "title": "Chelsea news: Cole Palmer announces new long-term contract in his own unique way ahead of Bournemouth clash",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
+     "source": "Sports Mole",
+     "published": "2026-10-10T13:18:00+01:00",
      "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Palmer reportedly has a minor injury."
+     "kind": "transfer",
+     "excerpt": "Chelsea star Cole Palmer announces a new long-term deal in unique fashion, offering a boost to the Blues ahead of their Premier League clash with Bournemouth."
     },
     {
-     "title": "Palmer injury latest after England international withdrawal",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/21/palmer-set-to-withdraw-from-international-duty",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-21T10:10:00+00:00",
+     "title": "‘Big Role’—Cole Palmer Makes Bold Prediction After Signing New Chelsea Contract",
+     "url": "https://www.si.com/soccer/cole-palmer-bold-prediction-signing-new-chelsea-contract?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-10T11:10:00+00:00",
      "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Marcus Rashford and Kobbie Mainoo are injury doubts, too The post Palmer injury latest after England international withdrawal appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "kind": "transfer",
+     "excerpt": "The Blues talisman has added an extra year onto his existing deal."
     }
    ]
   },
@@ -1003,9 +1021,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 47,
+   "evidence_count": 48,
    "source_count": 18,
-   "latest_evidence": "2026-10-17T16:56:39+00:00",
+   "latest_evidence": "2026-10-19T11:09:13+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1143,9 +1161,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 119,
+   "evidence_count": 122,
    "source_count": 17,
-   "latest_evidence": "2026-10-19T09:52:00+01:00",
+   "latest_evidence": "2026-10-19T16:13:47+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1170,6 +1188,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man City injury news: Latest Haaland, Nunes, O'Reilly, Kovacic update after Maresca confirms huge Semenyo blow",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/is-haaland-injured-maresca-delivers-big-update-on-man-city-goal-machine_607237.html",
+     "source": "Sports Mole",
+     "published": "2026-10-19T13:48:00+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Manchester City manager Enzo Maresca provides a fresh injury update on star striker Erling Haaland ahead of Tuesday’s Champions League home clash with AEK Athens."
+    },
+    {
+     "title": "Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/19/haaland-semenyo-latest-fpl-team-news-ahead-of-gameweek-8",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-19T12:30:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Enzo Maresca and Andoni Iraola face the media on Monday The post Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Man City injury, suspension list and return dates vs. AEK Athens: Erling Haaland, Antoine Semenyo latest",
      "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/injuries-and-suspensions/haaland-semenyo-oreilly-latest-man-city-injury-suspension-list-vs-aek-athens_607199.html",
@@ -1259,24 +1295,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at […] The post FF247 Site Team News GW7 appeared first on Fantasy Football 247 - Premier League Tips ."
-    },
-    {
-     "title": "FPL notes: Szoboszlai injury latest, Haaland again + Doku impact",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-szoboszlai-injury-latest-haaland-again-doku-impact",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-12T06:30:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Plus, Gravenberch ban + Liverpool’s attack issue The post FPL notes: Szoboszlai injury latest, Haaland again + Doku impact appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Man City lineup vs. Liverpool: Predicted XI as Erling Haaland decision made after Enzo Maresca update",
-     "url": "https://www.sportsmole.co.uk/football/man-city/predicted-lineups/haaland-starts-semenyo-decision-predicted-man-city-xi-vs-liverpool_606539.html",
-     "source": "Sports Mole",
-     "published": "2026-10-09T17:10:52+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Manchester City could line up for Sunday's Premier League game against Liverpool."
     }
    ]
   },
@@ -1299,6 +1317,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "statistics",
     "tactics",
     "team news",
@@ -1316,6 +1335,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham have an excellent chance to record their maiden Premier League win of the season when they face Coventry on Monday Night Football."
+    },
+    {
+     "title": "Tottenham: De Zerbi reaches decision on Maddison starting vs Coventry as Marbella ban revealed",
+     "url": "https://www.football365.com/news/de-zerbi-decision-maddison-starting-tottenham-vs-coventry-marbella-ban-revealed",
+     "source": "Football365",
+     "published": "2026-10-19T08:42:13+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "The attacking midfielder has played a total of 90 minutes from the bench in five substitute appearances so far this season, but could finally earn his first start against Coventry ..."
     },
     {
      "title": "San Antonio Spurs vs. Oklahoma City Thunder: Player props, injury report and prediction | NBA",
@@ -1352,15 +1380,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Monday's Premier League game against Coventry City."
-    },
-    {
-     "title": "Tottenham Hotspur vs Coventry City - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-coventry-prediction-team-news-lineups_607110.html",
-     "source": "Sports Mole",
-     "published": "2026-10-17T11:32:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Monday's Premier League clash between Tottenham Hotspur and Coventry City, including predictions, team news and possible lineups."
     }
    ]
   },
@@ -1507,9 +1526,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "source_count": 6,
-   "latest_evidence": "2026-10-16T09:32:02+00:00",
+   "latest_evidence": "2026-10-19T15:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1534,6 +1553,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/19/fpl-notes-manzambi-wan-bissaka-injury-latest-wissa-up-front",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-19T15:30:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Plus, concerns for Newcastle at both ends of the pitch The post FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/best-schade-replacements-keep-or-sell-wissa-thiaw-fpl-qa",
