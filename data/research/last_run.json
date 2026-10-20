@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-20T10:07:58+00:00",
- "seconds": 148.0,
+ "ran_at": "2026-10-20T15:40:22+00:00",
+ "seconds": 132.0,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 545,
- "substantive_items": 165,
- "duplicates_removed": 11,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 18622,
+ "sources_readable": 58,
+ "candidates_discovered": 595,
+ "substantive_items": 209,
+ "duplicates_removed": 15,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18641,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 165 articles"
+    "58/78 sources returned 209 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -356,11 +355,11 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 8,
-   "source_count": 6,
+   "evidence_count": 7,
+   "source_count": 5,
    "latest_evidence": "2026-10-15T08:26:47+00:00",
    "official_source_found": true,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -378,8 +377,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -399,15 +398,6 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "Lewis Hall says that it was \"a no-brainer\" to reject interest from Manchester United and sign a new long-term contract with Newcastle United."
-    },
-    {
-     "title": "'Manchester United interest didn't affect me' Newcastle United star Lewis Hall reveals impact of summer transfer distraction",
-     "url": "https://www.fourfourtwo.com/person/player/manchester-united-interest-didnt-affect-me-newcastle-united-star-lewis-hall-reveals-impact-of-summer-transfer-distraction",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-22T05:00:00+00:00",
-     "matched_on": "hall",
-     "kind": "transfer",
-     "excerpt": "Hall, 22, signed a two-year extension with no release clause last week, tying him to the club until 2031 despite enquiries from the Red Devils and summer-long speculation linking him with a move to Old Trafford. He capped off a great few days, which also included an England recall, with a goal in Newcastle ’s 2-1 win over Hull City on Saturday. Newcastle fans could be forgiven for fearing Hall wou"
     },
     {
      "title": "Flashscore sources: Newcastle set to double down on Hall valuation if Man Utd return",
@@ -779,7 +769,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 31,
+   "evidence_count": 30,
    "source_count": 13,
    "latest_evidence": "2026-10-17T15:00:00+00:00",
    "official_source_found": true,
@@ -1180,9 +1170,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 122,
+   "evidence_count": 123,
    "source_count": 17,
-   "latest_evidence": "2026-10-19T16:13:47+02:00",
+   "latest_evidence": "2026-10-20T14:16:41+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1321,8 +1311,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 6,
-   "latest_evidence": "2026-10-20T00:56:37+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-20T07:05:19+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1346,6 +1336,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Roberto De Zerbi provides latest Spurs injury update after triple injury scare in Coventry win",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-provides-latest-spurs-injury-update-after-triple-injury-scare-vs-coventry_607272.html",
+     "source": "Sports Mole",
+     "published": "2026-10-20T07:05:19+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur have received a positive injury update after Roberto De Zerbi eased concerns over Andy Robertson, Tosin Adarabioyo and Omar Marmoush."
+    },
     {
      "title": "Analyzing All 92 Minutes of the Spurs' Three Guard Lineup",
      "url": "https://www.si.com/nba/spurs/onsi/analyzing-all-92-minutes-of-the-spurs-three-guard-lineup?utm_source=RSS",
@@ -1390,15 +1389,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Five Spurs changes, one for Coventry The post Spurs v Coventry team news: Maddison starts, Kulusevski a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "How to watch Tottenham Hotspur vs Coventry City live: Stream, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-coventry-city-live-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-19T11:58:00-04:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
