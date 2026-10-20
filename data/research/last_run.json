@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-20T01:52:29+00:00",
- "seconds": 160.6,
+ "ran_at": "2026-10-20T10:07:58+00:00",
+ "seconds": 148.0,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 566,
- "substantive_items": 196,
- "duplicates_removed": 19,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 18605,
+ "candidates_discovered": 545,
+ "substantive_items": 165,
+ "duplicates_removed": 11,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18622,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 196 articles"
+    "57/78 sources returned 165 articles"
    ]
   },
   "blackout": {
@@ -63,9 +63,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 6,
-   "latest_evidence": "2026-10-19T15:00:00+00:00",
+   "latest_evidence": "2026-10-20T06:28:03+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -134,6 +134,15 @@
      "matched_on": "raya",
      "kind": "transfer",
      "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
+    },
+    {
+     "title": "Arsenal would be ‘nowhere near the title’ without £27m star, claims Schmeichel",
+     "url": "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
+     "source": "Football365",
+     "published": "2026-10-20T06:28:03+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya."
     },
     {
      "title": "'We came back very strong': Raya hails Arsenal response to bruising Brighton loss",
@@ -1032,8 +1041,8 @@
    "player": "João Pedro",
    "club": "CHE",
    "evidence_count": 48,
-   "source_count": 18,
-   "latest_evidence": "2026-10-19T11:09:13+00:00",
+   "source_count": 17,
+   "latest_evidence": "2026-10-20T10:23:03+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1312,9 +1321,9 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-19T11:58:00-04:00",
-   "official_source_found": false,
+   "source_count": 6,
+   "latest_evidence": "2026-10-20T00:56:37+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1338,6 +1347,51 @@
    "researched": true,
    "items": [
     {
+     "title": "Analyzing All 92 Minutes of the Spurs' Three Guard Lineup",
+     "url": "https://www.si.com/nba/spurs/onsi/analyzing-all-92-minutes-of-the-spurs-three-guard-lineup?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-20T00:56:37+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Coach Mitch Johnson knows that trio of De'Aaron Fox, Dylan Harper and Steph Castle didn't play much last season, but a deep dive on the data reveals how they went from a passing thought to priority number one."
+    },
+    {
+     "title": "Tottenham injury news: Why Destiny Udogie missed long-awaited Premier League win over Coventry",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/revealed-why-udogie-missed-tottenhams-win-over-coventry_607267.html",
+     "source": "Sports Mole",
+     "published": "2026-10-20T00:13:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur boss Roberto De Zerbi explains why Destiny Udogie was unavailable for Monday's 3-1 win over Coventry City."
+    },
+    {
+     "title": "Tottenham Hotspur 3-1 Coventry City",
+     "url": "https://www.ccfc.co.uk/news/2026/october/19/tottenham-hotspur-3-1-coventry-city/",
+     "source": "Coventry City",
+     "published": "2026-10-19T21:49:13+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Coventry City’s winning sequence came to an end as Tottenham Hotspur came out on top in a competitive encounter at the Tottenham Hotspur Stadium. James Maddison scored a screamer to give Spurs the lead, but Jack Rudoni levelled the contest early in the second half after a spirited response from the Sky Blues. Omar Marmoush restored the hosts’ lead before Ben Davies made sure deep into injury time."
+    },
+    {
+     "title": "Tottenham vs Coventry: Confirmed teams and line ups in Premier League",
+     "url": "https://www.101greatgoals.com/football/premier-league/tottenham-vs-coventry-city-live-teams-line-ups-where-to-watch-tv-channel-online-stream/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-19T18:54:22+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Team news as Tottenham host Coventry in the Premier League"
+    },
+    {
+     "title": "Spurs v Coventry team news: Maddison starts, Kulusevski a sub",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/19/spurs-v-coventry-team-news-maddison-starts-kulusevski-a-sub",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-19T18:30:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Five Spurs changes, one for Coventry The post Spurs v Coventry team news: Maddison starts, Kulusevski a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
      "title": "How to watch Tottenham Hotspur vs Coventry City live: Stream, TV, team news, prediction",
      "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-coventry-city-live-stream-tv-team-news-prediction",
      "source": "NBC Sports Rotoworld PL",
@@ -1345,51 +1399,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": ""
-    },
-    {
-     "title": "Tottenham v Coventry: Preview, expected line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/tottenham-v-coventry-preview-expected-line-ups-stats-stream-where-to-watch/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-19T09:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham have an excellent chance to record their maiden Premier League win of the season when they face Coventry on Monday Night Football."
-    },
-    {
-     "title": "Tottenham: De Zerbi reaches decision on Maddison starting vs Coventry as Marbella ban revealed",
-     "url": "https://www.football365.com/news/de-zerbi-decision-maddison-starting-tottenham-vs-coventry-marbella-ban-revealed",
-     "source": "Football365",
-     "published": "2026-10-19T08:42:13+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "The attacking midfielder has played a total of 90 minutes from the bench in five substitute appearances so far this season, but could finally earn his first start against Coventry ..."
-    },
-    {
-     "title": "San Antonio Spurs vs. Oklahoma City Thunder: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-oklahoma-city-thunder-player-props-injury-report-and-prediction--nba_607184.html",
-     "source": "Sports Mole",
-     "published": "2026-10-18T19:18:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "San Antonio Spurs host Oklahoma City Thunder in a Western Conference finals rematch on opening night. Player props, injury news and a score prediction."
-    },
-    {
-     "title": "Tottenham v Coventry City: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/tottenham-v-coventry-city-prediction-preview",
-     "source": "Football365",
-     "published": "2026-10-18T12:59:21+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Tottenham and Coventry City."
-    },
-    {
-     "title": "Coventry predicted lineup vs. Tottenham: Frank Lampard makes one change amid Taiwo Awoniyi return",
-     "url": "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/one-change-amid-awoniyi-return-predicted-coventry-xi-vs-spurs_607113.html",
-     "source": "Sports Mole",
-     "published": "2026-10-17T11:49:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Coventry City could line up for Monday's Premier League game against Tottenham Hotspur."
     }
    ]
   },

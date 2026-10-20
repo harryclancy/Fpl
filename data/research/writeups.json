@@ -1,27 +1,28 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-20T01:52:29+00:00",
+ "generated": "2026-10-20T10:07:58+00:00",
  "gameweek": 8,
- "corpus_size": 18605,
+ "corpus_size": 18622,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — Flashscore, 19 Oct: “\"We came back very, very strong, especially after that tough defeat against Brighton and having 19 days since then to play a game,\" Raya told Arsenal 's website.”",
-   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 10 retrieved item(s) from 6 source(s), the most recent dated 19 Oct.",
-   "case_for": "What supports keeping him: Football365, 14 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while four new signings feature among the top 10 Premier League goalkeepers.” Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.” Football365, 03 Oct: “Arsenal: Huge deal 'done soon' as Arteta starter could be set for brutal axe after 'surprising development' Arsenal manager Mikel Arteta According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’.”",
+   "status": "Latest on Raya — Football365, 20 Oct: “Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya.”",
+   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 11 retrieved item(s) from 6 source(s), the most recent dated 20 Oct.",
+   "case_for": "What supports keeping him: Football365, 20 Oct: “And former Man Utd goalkeeper Schmeichel insists that Arsenal would not have been able to get near winning a Premier League title without Raya, who they signed from Brentford for £27m in 2024 after an initial season-long loan spell.” Football365, 14 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while four new signings feature among the top 10 Premier League goalkeepers.” Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.” FourFourTwo FPL, 13 Oct: “But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime.” FourFourTwo FPL, 13 Oct: “That's according to a new report from Fichajes , which claims that David Raya is heading up the shortlist at the Bernabeu.”",
+   "developments": "Recent developments — Flashscore, 19 Oct: “\"We came back very, very strong, especially after that tough defeat against Brighton and having 19 days since then to play a game,\" Raya told Arsenal 's website.” Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.” FourFourTwo FPL, 13 Oct: “But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime.”",
    "outlook": "On the coming weeks — OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
    "confidence": "high",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/same-old-arsenal-there-were-doubts-inside-the-team-but-the-day-after-the-players-had-a-meeting-without-the-boss-everyone-spoke-up-nobody-talked-about-tactics-this-was-about-handling-adversity-mikel-merino-on-the-game-that-won-arsenal-the-league",
     "https://www.fourfourtwo.com/transfer/arsenal-rocked-by-david-raya-transfer-plan-report",
     "https://www.fourfourtwo.com/person/player/everything-manchester-united-star-lisandro-martinez-said-as-defender-rips-into-club-directors-in-extraordinary-interview",
     "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
     "https://www.football365.com/news/arsenal-deal-done-soon-surprising-development-current-starter-replaced-arteta",
+    "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
     "https://www.flashscore.com/news/soccer-premier-league-david-raya-hails-arsenal-response-to-bruising-brighton-loss/Igxf9IUQ/",
     "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
@@ -37,6 +38,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
+     "published": "2026-10-20T06:28:03+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "And former Man Utd goalkeeper Schmeichel insists that Arsenal would not have been able to get near winning a Premier League title without Raya, who they signed from Brentford for £27m in 2024 after an initial season-long loan spell.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
+     "published": "2026-10-20T06:28:03+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "\"We came back very, very strong, especially after that tough defeat against Brighton and having 19 days since then to play a game,\" Raya told Arsenal 's website.",
      "source": "Flashscore",
@@ -2025,7 +2044,7 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.” Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.9m as a FWD. The selection rests on 48 retrieved item(s) from 18 source(s), the most recent dated 19 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.9m as a FWD. The selection rests on 48 retrieved item(s) from 17 source(s), the most recent dated 19 Oct.",
    "case_for": "What supports keeping him: Everton, 19 Oct: “Pedro Neto’s brace downed the Toffees, with the Portugal international winger’s first goal arriving moments after the start of the second period.” Everton, 17 Oct: “Following a 2-2 draw at Hull City last weekend – where Moyes was unhappy with the manner of the goals conceded – the Toffees boss was unimpressed with Pedro Neto's opener just seconds after the restart against Chelsea, along with Everton's performances overall following an encouraging opening half.” Fantasy Football Scout, 12 Oct: “Only one of their five goals was a gilt-edged chance, specifically Pedro’s second.”",
    "case_against": "What argues against him: Opta Analyst, 17 Oct: “Martinez was stretchered off in the 75th minute with a head injury following a clash with Jarrad Branthwaite , and though Everton tried to apply late pressure to substitute Mike Penders , they were instead almost caught out at the other end as Pickford had to make himself big to deny João Pedro following a Palmer-led counter-attack.” Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” OneFPL: “João Pedro has been withdrawn from Brazil's upcoming internationals because of an unspecified injury Chelsea have not yet confirmed that he will miss Friday's trip to Brentford.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
@@ -2054,7 +2073,6 @@
     "Everton",
     "FISO",
     "Fantasy Football Scout",
-    "Flashscore",
     "FourFourTwo FPL",
     "Fulham",
     "Ipswich Town",
@@ -4362,7 +4380,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 6 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4371,17 +4389,19 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
-    "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-coventry-city-live-stream-tv-team-news-prediction",
-    "https://www.101greatgoals.com/match-previews/premier-league-matches/tottenham-v-coventry-preview-expected-line-ups-stats-stream-where-to-watch/",
-    "https://www.football365.com/news/de-zerbi-decision-maddison-starting-tottenham-vs-coventry-marbella-ban-revealed",
-    "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-oklahoma-city-thunder-player-props-injury-report-and-prediction--nba_607184.html",
-    "https://www.football365.com/match-preview/tottenham-v-coventry-city-prediction-preview",
-    "https://www.sportsmole.co.uk/football/coventry-city/predicted-lineups/one-change-amid-awoniyi-return-predicted-coventry-xi-vs-spurs_607113.html"
+    "https://www.si.com/nba/spurs/onsi/analyzing-all-92-minutes-of-the-spurs-three-guard-lineup?utm_source=RSS",
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/revealed-why-udogie-missed-tottenhams-win-over-coventry_607267.html",
+    "https://www.ccfc.co.uk/news/2026/october/19/tottenham-hotspur-3-1-coventry-city/",
+    "https://www.101greatgoals.com/football/premier-league/tottenham-vs-coventry-city-live-teams-line-ups-where-to-watch-tv-channel-online-stream/",
+    "https://www.fantasyfootballscout.co.uk/2026/10/19/spurs-v-coventry-team-news-maddison-starts-kulusevski-a-sub",
+    "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-coventry-city-live-stream-tv-team-news-prediction"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
-    "Football365",
+    "Coventry City",
+    "Fantasy Football Scout",
     "NBC Sports Rotoworld PL",
+    "Sports Illustrated FPL",
     "Sports Mole"
    ],
    "quotes": []
