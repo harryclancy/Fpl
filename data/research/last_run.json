@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-20T15:40:22+00:00",
- "seconds": 132.0,
+ "ran_at": "2026-10-20T20:39:14+00:00",
+ "seconds": 175.2,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 595,
- "substantive_items": 209,
- "duplicates_removed": 15,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18641,
+ "sources_readable": 54,
+ "candidates_discovered": 588,
+ "substantive_items": 215,
+ "duplicates_removed": 19,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18649,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 209 articles"
+    "54/78 sources returned 215 articles"
    ]
   },
   "blackout": {
@@ -38,11 +38,13 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,13 +52,15 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -355,7 +359,7 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 7,
+   "evidence_count": 6,
    "source_count": 5,
    "latest_evidence": "2026-10-15T08:26:47+00:00",
    "official_source_found": true,
@@ -434,15 +438,6 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": "Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England."
-    },
-    {
-     "title": "Man Utd target Lewis Hall claims he will only leave Newcastle on one condition after ‘no-brainer’ decision",
-     "url": "https://www.football365.com/news/man-utd-target-lewis-hall-claims-leave-newcastle-one-condition-no-brainer-decision",
-     "source": "Football365",
-     "published": "2026-09-22T13:32:01+00:00",
-     "matched_on": "hall",
-     "kind": "general",
-     "excerpt": "England international Lewis Hall has revealed what would make him leave Newcastle United after he was linked with Manchester United in the summer."
     }
    ]
   },
@@ -909,9 +904,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 3,
-   "latest_evidence": "2026-10-20T00:20:00+00:00",
+   "latest_evidence": "2026-10-20T16:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -935,6 +930,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-20T16:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: Brobbey injury latest + Tavernier third in midfielder table",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/fpl-notes-brobbey-injury-latest-tavernier-third-in-midfielder-table",
@@ -1170,9 +1174,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 123,
+   "evidence_count": 124,
    "source_count": 17,
-   "latest_evidence": "2026-10-20T14:16:41+00:00",
+   "latest_evidence": "2026-10-20T20:19:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1194,9 +1198,18 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "high",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Without Haaland and Semenyo, Maresca faces striker dilemma for Champions League clash",
+     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/maresca-faces-number-nine-crisis-man-citys-lack-of-cover-exposed_607310.html",
+     "source": "Sports Mole",
+     "published": "2026-10-20T18:06:11+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Haaland is doubtful for Man City’s Champions League clash with AEK after a foot knock, and Semenyo’s knee injury adds a two-month absence — Maresca admits replacing the Norwegian is difficult."
+    },
     {
      "title": "Man City injury news: Latest Haaland, Nunes, O'Reilly, Kovacic update after Maresca confirms huge Semenyo blow",
      "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/is-haaland-injured-maresca-delivers-big-update-on-man-city-goal-machine_607237.html",
@@ -1295,15 +1308,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Manchester City manager Enzo Maresca admits that he will consider giving star striker Erling Haaland a rest after a busy start to the season."
-    },
-    {
-     "title": "FF247 Site Team News GW7",
-     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw7-2/",
-     "source": "Fantasy Football 247",
-     "published": "2026-10-15T20:45:39+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at […] The post FF247 Site Team News GW7 appeared first on Fantasy Football 247 - Premier League Tips ."
     }
    ]
   },
@@ -1535,9 +1539,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "source_count": 6,
-   "latest_evidence": "2026-10-19T15:30:00+00:00",
+   "latest_evidence": "2026-10-20T16:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1562,6 +1566,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-20T16:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/19/fpl-notes-manzambi-wan-bissaka-injury-latest-wissa-up-front",
