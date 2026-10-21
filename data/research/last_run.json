@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-21T10:15:02+00:00",
- "seconds": 167.4,
+ "ran_at": "2026-10-21T15:58:52+00:00",
+ "seconds": 199.7,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 549,
- "substantive_items": 173,
- "duplicates_removed": 12,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 18673,
+ "sources_readable": 57,
+ "candidates_discovered": 613,
+ "substantive_items": 238,
+ "duplicates_removed": 19,
+ "deeply_analysed": 78,
+ "deep_read_failed": 12,
+ "corpus_size": 18702,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 173 articles"
+    "57/78 sources returned 238 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -64,7 +65,7 @@
    "club": "ARS",
    "evidence_count": 13,
    "source_count": 6,
-   "latest_evidence": "2026-10-21T08:41:49+00:00",
+   "latest_evidence": "2026-10-21T11:14:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -144,6 +145,15 @@
      "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
     },
     {
+     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "source": "Football365",
+     "published": "2026-10-21T11:14:35+00:00",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": "David Raya has started 2026/27 where he left off last season, while Alisson, Jordan Pickford and James Trafford languish in the lower rankings…"
+    },
+    {
      "title": "Arsenal news: David Raya reveals dream destination, ‘in the future, I could play there’",
      "url": "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
      "source": "Sports Mole",
@@ -178,15 +188,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Nottingham Forest slipped to a narrow home defeat against Arsenal. Despite creating a number of chances on the afternoon, Noni Madueke’s strike in the final 10 minutes proved to be the difference between the sides at the City Ground. Forest dominated the chances in the first half and the start of the second, but those missed opportunities proved costly as the Premier League holders scored for the "
-    },
-    {
-     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "source": "Football365",
-     "published": "2026-10-14T12:04:35+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "David Raya has started 2026/27 where he left off last season, while Alisson, Jordan Pickford and James Trafford languish in the lower rankings…"
     },
     {
      "title": "Aston Villa summer signing ‘miles better’ than Arsenal star David Raya as ‘best in the Premier League’",
@@ -364,9 +365,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 5,
+   "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-10-15T08:26:47+00:00",
+   "latest_evidence": "2026-10-21T14:57:09+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -390,6 +391,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Lewis Hall reacts after learning Man Utd want to sign him from Newcastle",
+     "url": "https://www.football365.com/news/manchester-united-newcastle-united-lewis-hall-2027-transfer-decision-reached",
+     "source": "Football365",
+     "published": "2026-10-21T14:57:09+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Manchester United want to sign Lewis Hall from Premier League rivals Newcastle United in 2027."
+    },
     {
      "title": "‘Europe’s best’ Lewis Hall on fast track to become first £100m defender",
      "url": "https://www.football365.com/news/lewis-hall-newcastle-stats-first-100m-defender-man-utd",
@@ -620,7 +630,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 40,
+   "evidence_count": 39,
    "source_count": 13,
    "latest_evidence": "2026-10-19T12:06:21+02:00",
    "official_source_found": true,
@@ -1032,7 +1042,7 @@
    "club": "CHE",
    "evidence_count": 48,
    "source_count": 17,
-   "latest_evidence": "2026-10-20T10:23:03+01:00",
+   "latest_evidence": "2026-10-21T11:53:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1057,6 +1067,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Chelsea: Pedro Porro, Savio, Lucas Bergvall latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
+     "source": "Sports Mole",
+     "published": "2026-10-21T11:53:00+01:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
+    },
     {
      "title": "Alysson set for full debut against Newcastle",
      "url": "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/",
@@ -1155,24 +1174,15 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "There was another goal for Oscar Bobb in Norway’s Nations League clash with Wales, although they fell to a 2-1 defeat in Cardiff. With Sander Berge also in the starting line-up, Bobb’s tidy finish after just 11 minutes had given his side the lead, but former Fulham man Dan James found an equaliser before the break. Just a minute into the second half, Torbjørn Heggem was shown a red card for draggi"
-    },
-    {
-     "title": "Chelsea injury news: Major Joao Pedro update as Brazil international sees 'specialist' over knee issue",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-star-sees-specialist-amid-bid-for-october-injury-return_605955.html",
-     "source": "Sports Mole",
-     "published": "2026-09-29T10:32:38+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "One of Chelsea's star players allegedly sees a specialist over the injury that has kept him sidelined during the international break."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 127,
+   "evidence_count": 128,
    "source_count": 17,
-   "latest_evidence": "2026-10-21T10:31:32+01:00",
+   "latest_evidence": "2026-10-21T12:07:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1197,6 +1207,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Man City injury, suspension list and return dates vs. Aston Villa: Erling Haaland, Antoine Semenyo, Nico O'Reilly latest",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/haaland-semenyo-oreilly-latest-man-city-injury-suspension-list-vs-villa_607357.html",
+     "source": "Sports Mole",
+     "published": "2026-10-21T12:07:00+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Manchester City's latest injury and suspension news ahead of their Premier League clash with Aston Villa."
+    },
     {
      "title": "FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
@@ -1295,15 +1314,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": ""
-    },
-    {
-     "title": "Erling Haaland suffers new injury scare after breaking Premier League record in Man City win over Ipswich",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/haaland-suffers-new-injury-scare-after-breaking-pl-record-in-man-city-win_607130.html",
-     "source": "Sports Mole",
-     "published": "2026-10-17T17:22:38+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Erling Haaland breaks a new Premier League record in Man City's 3-2 win over Ipswich Town, before limping off with an apparent injury."
     }
    ]
   },
