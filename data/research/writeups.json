@@ -1,33 +1,34 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-21T01:39:12+00:00",
+ "generated": "2026-10-21T10:15:02+00:00",
  "gameweek": 8,
  "corpus_size": 18673,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — Football365, 20 Oct: “Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya.”",
-   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 11 retrieved item(s) from 6 source(s), the most recent dated 20 Oct.",
-   "case_for": "What supports keeping him: Football365, 20 Oct: “And former Man Utd goalkeeper Schmeichel insists that Arsenal would not have been able to get near winning a Premier League title without Raya, who they signed from Brentford for £27m in 2024 after an initial season-long loan spell.” Football365, 14 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while four new signings feature among the top 10 Premier League goalkeepers.” Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.”",
+   "status": "Latest on Raya — Football365, 21 Oct: “Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.”",
+   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 13 retrieved item(s) from 6 source(s), the most recent dated 21 Oct.",
+   "case_for": "What supports keeping him: Football365, 21 Oct: “Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.” Football365, 20 Oct: “And former Man Utd goalkeeper Schmeichel insists that Arsenal would not have been able to get near winning a Premier League title without Raya, who they signed from Brentford for £27m in 2024 after an initial season-long loan spell.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Flashscore, 19 Oct: “\"We came back very, very strong, especially after that tough defeat against Brighton and having 19 days since then to play a game,\" Raya told Arsenal 's website.” Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.” FourFourTwo FPL, 13 Oct: “But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime.”",
-   "outlook": "On the coming weeks — OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
+   "developments": "Recent developments — Sports Mole, 21 Oct: “Raya open to a future La Liga move © Imago / STEINSIEK.CH In an interview with Marca , Raya was asked about playing in Spain, given that he turned professional in English football at the age of 16, when he joined Blackburn.” Football365, 20 Oct: “Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya.” Flashscore, 19 Oct: “\"We came back very, very strong, especially after that tough defeat against Brighton and having 19 days since then to play a game,\" Raya told Arsenal 's website.”",
+   "outlook": "On the coming weeks — Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.” Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.”",
    "confidence": "high",
-   "evidence_count": 11,
+   "evidence_count": 13,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/same-old-arsenal-there-were-doubts-inside-the-team-but-the-day-after-the-players-had-a-meeting-without-the-boss-everyone-spoke-up-nobody-talked-about-tactics-this-was-about-handling-adversity-mikel-merino-on-the-game-that-won-arsenal-the-league",
     "https://www.fourfourtwo.com/transfer/arsenal-rocked-by-david-raya-transfer-plan-report",
+    "https://www.football365.com/news/arsenal-raya-wants-la-liga-transfer",
     "https://www.fourfourtwo.com/person/player/everything-manchester-united-star-lisandro-martinez-said-as-defender-rips-into-club-directors-in-extraordinary-interview",
     "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
     "https://www.football365.com/news/arsenal-deal-done-soon-surprising-development-current-starter-replaced-arteta",
+    "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
     "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
     "https://www.flashscore.com/news/soccer-premier-league-david-raya-hails-arsenal-response-to-bruising-brighton-loss/Igxf9IUQ/",
     "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-    "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league",
-    "https://onefpl.com/blog/david-raya-fpl-2026-27"
+    "https://www.football365.com/news/aston-villa-signing-miles-better-arsenal-star-david-raya-best-premier-league"
    ],
    "sources_used": [
     "Flashscore",
@@ -38,6 +39,40 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-raya-wants-la-liga-transfer",
+     "published": "2026-10-21T08:41:49+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-raya-wants-la-liga-transfer",
+     "published": "2026-10-21T08:41:49+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
+     "published": "2026-10-21T08:03:35+01:00",
+     "tone": "positive",
+     "topics": [
+      "fixtures"
+     ]
+    },
+    {
+     "text": "Raya open to a future La Liga move © Imago / STEINSIEK.CH In an interview with Marca , Raya was asked about playing in Spain, given that he turned professional in English football at the age of 16, when he joined Blackburn.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
+     "published": "2026-10-21T08:03:35+01:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya.",
      "source": "Football365",
@@ -2396,16 +2431,19 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "status": "Latest on Haaland — Fantasy Football Scout, 17 Oct: “Enzo Maresca eased any injury fears after the match, saying that he had been told by Haaland himself that he was “okay”.” Sports Mole, 17 Oct: “After completing 90 minutes in Man City's 4-2 loss to Paris Saint-Germain in the Champions League, Enzo Maresca suggested that Haaland could be dropped from the starting lineup at home to the Tractor Boys.”",
-   "why_here": "Haaland is captained this week at £15.7m as a FWD. The selection rests on 124 retrieved item(s) from 17 source(s), the most recent dated 20 Oct.",
-   "case_for": "What supports keeping him: Football365, 20 Oct: “Arsenal Bukayo Saka Joe Williams 19 Oct 2026 Man City FFP: Barcelona ‘begin talks’ to sign Haaland as City star reaches exit decision Barcelona have started negotiations to sign Man City star Erling Haaland after the club’s guilty verdict, according to reports.” Flashscore, 20 Oct: “Pedro Neto vs Everton Flashscore Mateo Kovacic Manchester City ) 8.4 Kovacic's hard work earned him an assist for Erling Haaland's first goal as City fended off a spirited Ipswich display.” Flashscore, 20 Oct: “Erling Haaland (Manchester City) 9.3 Two goals for Haaland against Ipswich took the Norwegian's tally up to eight in the first seven league games.”",
-   "case_against": "What argues against him: Fantasy Football Scout, 19 Oct: “When he’s back, probably, I don’t know, around December, we have like a new player in terms of energy.” – Enzo Maresca on Antoine Semenyo Erling Haaland is much less of a concern, at least.” Sports Mole, 19 Oct: “Erling Haaland © Iconsport / Andrew Yates / Sportimage Status: Minor doubt Type of issue: Knock Possible return date: October 20 (vs. AEK Athens) Erling Haaland appeared to be struggling after the Ipswich match, though Maresca later issued an update to allay supporters' fears.” Sports Mole, 18 Oct: “Semenyo awaits assessment amid five Man City injury scares © Imago / News Images Speaking during his post-match press conference, Maresca revealed that Haaland personally reassured him that the late knock was nothing serious.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 19 Oct: “There had also been suggestions that Haaland may have also been nursing a knee issue, raising concerns over his fitness for the AEK Athens clash and future matches.” Fantasy Football Scout, 19 Oct: “Team News Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8 October 19 49 comments 19 October 2026 49 comments Nine Premier League teams are in European action this midweek, with two of them, Liverpool and Manchester City , contesting UEFA Champions League ties on Tuesday.”",
-   "developments": "Recent developments — Sports Mole, 20 Oct: “Boss Enzo Maresca is expected to make a final decision on Haaland after Monday’s training session.” Sports Mole, 20 Oct: “City have won all seven of their Premier League matches this season but face a genuine structural problem in attack should Haaland require any absence.” Football365, 20 Oct: “What a season he’s having for Fabian Hurzeler’s soaring Seagulls. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.”",
-   "outlook": "On the coming weeks — Sports Mole, 18 Oct: “Maresca's side host AEK Athens in the Champions League on Tuesday evening, a fixture in which Haaland was already under consideration for a rest following a heavy workload for club and country.” Fantasy Football Scout, 17 Oct: “FPL Gameweek 7: Saturday’s goals, assists, bonus + DefCon points MARESCA ON HAALAND… Erling Haaland (£15.7m) limped off and went straight down the tunnel after Man City’s 3-2 win, not even stopping to clap the fans.”",
+   "status": "Latest on Haaland — Sports Mole, 19 Oct: “There had also been suggestions that Haaland may have also been nursing a knee issue, raising concerns over his fitness for the AEK Athens clash and future matches.” Fantasy Football Scout, 19 Oct: “Team News Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8 October 19 49 comments 19 October 2026 49 comments Nine Premier League teams are in European action this midweek, with two of them, Liverpool and Manchester City , contesting UEFA Champions League ties on Tuesday.”",
+   "why_here": "Haaland is captained this week at £15.7m as a FWD. The selection rests on 127 retrieved item(s) from 17 source(s), the most recent dated 21 Oct.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 21 Oct: “The last two seasons in particular have produced a stark drop-off, with Haaland adding just eight goals from January to May in the 24/25 and 25/26 seasons.” Football365, 20 Oct: “Arsenal Bukayo Saka Joe Williams 19 Oct 2026 Man City FFP: Barcelona ‘begin talks’ to sign Haaland as City star reaches exit decision Barcelona have started negotiations to sign Man City star Erling Haaland after the club’s guilty verdict, according to reports.” Flashscore, 20 Oct: “Pedro Neto vs Everton Flashscore Mateo Kovacic Manchester City ) 8.4 Kovacic's hard work earned him an assist for Erling Haaland's first goal as City fended off a spirited Ipswich display.”",
+   "case_against": "What argues against him: Sports Mole, 21 Oct: “Haaland remained as an unused substitute as the Premier League leaders recorded a 5-1 victory over AEK Athens in the Champions League.” Football365, 21 Oct: “We think he might be truly recovered from injury. 5) Erling Haaland – 25 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Fantasy Football Scout, 19 Oct: “When he’s back, probably, I don’t know, around December, we have like a new player in terms of energy.” – Enzo Maresca on Antoine Semenyo Erling Haaland is much less of a concern, at least.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 21 Oct: “With Man City having gone into Tuesday's game with AEK Athens having already suffered one Champions League defeat this season, Maresca could have theoretically selected Haaland to only use him if necessary.” Fantasy Football Scout, 21 Oct: “Scout Notes FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update October 21 0 comments 21 October 2026 0 comments Liverpool and Manchester City were involved in high-scoring matches on Tuesday night, both pulling out home victories in the UEFA Champions League.”",
+   "developments": "Recent developments — Fantasy Football Scout, 21 Oct: “It’s just to manage a little bit [his] minutes.” – Enzo Maresca on Erling Haaland, speaking before Tuesday’s win over AEK Athens “Yeah, he’s okay.” FourFourTwo FPL, 21 Oct: “Erling Haaland is one of the world's best, most deadly finishers of all time, to the point that it's boring.” Sports Mole, 20 Oct: “Boss Enzo Maresca is expected to make a final decision on Haaland after Monday’s training session.”",
+   "outlook": "On the coming weeks — Sports Mole, 18 Oct: “Semenyo awaits assessment amid five Man City injury scares © Imago / News Images Speaking during his post-match press conference, Maresca revealed that Haaland personally reassured him that the late knock was nothing serious.” Sports Mole, 18 Oct: “Maresca's side host AEK Athens in the Champions League on Tuesday evening, a fixture in which Haaland was already under consideration for a rest following a heavy workload for club and country.”",
    "confidence": "high",
-   "evidence_count": 124,
+   "evidence_count": 127,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/maresca-delivers-haaland-injury-update-ahead-of-aston-villa-pl-showdown_607344.html",
+    "https://www.fourfourtwo.com/person/player/why-does-erling-haaland-score-less-premier-league-goals-after-december",
     "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/maresca-faces-number-nine-crisis-man-citys-lack-of-cover-exposed_607310.html",
     "https://www.sportsmole.co.uk/football/man-city/injury-news/news/is-haaland-injured-maresca-delivers-big-update-on-man-city-goal-machine_607237.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/19/haaland-semenyo-latest-fpl-team-news-ahead-of-gameweek-8",
@@ -2414,10 +2452,7 @@
     "https://www.sportsmole.co.uk/football/man-city/injury-news/news/five-scares-maresca-issues-haaland-and-semenyo-injury-updates_607137.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/17/fpl-notes-haaland-semenyo-oreilly-injury-latest",
     "https://www.nbcsports.com/soccer/news/erling-haaland-injury-news-man-city-star-limps-off-at-full-time-after-scoring-two-goals",
-    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/haaland-suffers-new-injury-scare-after-breaking-pl-record-in-man-city-win_607130.html",
-    "https://www.itfc.co.uk/news/2026/october/17/manchester-city-v-Ipswich-town-match-report/",
-    "https://www.itfc.co.uk/news/2026/october/17/team-news---manchester-city--a-/",
-    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/haaland-among-man-city-stars-needing-rest-as-maresca-offers-fitness-update_607059.html"
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/haaland-suffers-new-injury-scare-after-breaking-pl-record-in-man-city-win_607130.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2439,6 +2474,72 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Haaland remained as an unused substitute as the Premier League leaders recorded a 5-1 victory over AEK Athens in the Champions League.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/maresca-delivers-haaland-injury-update-ahead-of-aston-villa-pl-showdown_607344.html",
+     "published": "2026-10-21T10:31:32+01:00",
+     "tone": "negative",
+     "topics": [
+      "rotation"
+     ]
+    },
+    {
+     "text": "With Man City having gone into Tuesday's game with AEK Athens having already suffered one Champions League defeat this season, Maresca could have theoretically selected Haaland to only use him if necessary.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/maresca-delivers-haaland-injury-update-ahead-of-aston-villa-pl-showdown_607344.html",
+     "published": "2026-10-21T10:31:32+01:00",
+     "tone": "neutral",
+     "topics": [
+      "rotation"
+     ]
+    },
+    {
+     "text": "Scout Notes FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update October 21 0 comments 21 October 2026 0 comments Liverpool and Manchester City were involved in high-scoring matches on Tuesday night, both pulling out home victories in the UEFA Champions League.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
+     "published": "2026-10-21T10:05:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "injury",
+      "fpl advice",
+      "rotation"
+     ]
+    },
+    {
+     "text": "It’s just to manage a little bit [his] minutes.” – Enzo Maresca on Erling Haaland, speaking before Tuesday’s win over AEK Athens “Yeah, he’s okay.",
+     "source": "Fantasy Football Scout",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
+     "published": "2026-10-21T10:05:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Erling Haaland is one of the world's best, most deadly finishers of all time, to the point that it's boring.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/why-does-erling-haaland-score-less-premier-league-goals-after-december",
+     "published": "2026-10-21T09:29:49+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "The last two seasons in particular have produced a stark drop-off, with Haaland adding just eight goals from January to May in the 24/25 and 25/26 seasons.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/why-does-erling-haaland-score-less-premier-league-goals-after-december",
+     "published": "2026-10-21T09:29:49+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "We think he might be truly recovered from injury. 5) Erling Haaland – 25 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "published": "2026-10-21T06:00:59+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
     {
      "text": "Boss Enzo Maresca is expected to make a final decision on Haaland after Monday’s training session.",
      "source": "Sports Mole",
@@ -2565,14 +2666,6 @@
      "url": "https://www.sportsmole.co.uk/football/man-utd/premier-league-team/feature/man-utd-at-the-back-man-city-in-attack-premier-league-team-of-the-week_607214.html",
      "published": "2026-10-19T09:52:00+01:00",
      "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Definitely shouldn’t win him the Ballon d’Or , mind. 5) Erling Haaland – 25 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
-     "published": "2026-10-19T06:25:59+00:00",
-     "tone": "neutral",
      "topics": []
     },
     {
@@ -4302,7 +4395,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4311,17 +4404,16 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.si.com/nba/thunder/onsi/okc-thunder-make-starting-lineup-decision-for-season-opener-vs-spurs-?utm_source=RSS",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-provides-latest-spurs-injury-update-after-triple-injury-scare-vs-coventry_607272.html",
     "https://www.si.com/nba/spurs/onsi/analyzing-all-92-minutes-of-the-spurs-three-guard-lineup?utm_source=RSS",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/news/revealed-why-udogie-missed-tottenhams-win-over-coventry_607267.html",
     "https://www.ccfc.co.uk/news/2026/october/19/tottenham-hotspur-3-1-coventry-city/",
-    "https://www.101greatgoals.com/football/premier-league/tottenham-vs-coventry-city-live-teams-line-ups-where-to-watch-tv-channel-online-stream/",
-    "https://www.fantasyfootballscout.co.uk/2026/10/19/spurs-v-coventry-team-news-maddison-starts-kulusevski-a-sub"
+    "https://www.101greatgoals.com/football/premier-league/tottenham-vs-coventry-city-live-teams-line-ups-where-to-watch-tv-channel-online-stream/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Coventry City",
-    "Fantasy Football Scout",
     "Sports Illustrated FPL",
     "Sports Mole"
    ],
