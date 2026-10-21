@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-20T20:39:14+00:00",
+ "generated": "2026-10-21T01:39:12+00:00",
  "gameweek": 8,
- "corpus_size": 18649,
+ "corpus_size": 18673,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -375,17 +375,16 @@
    "player": "Hall",
    "club": "NEW",
    "status": "Latest on Hall — Football365, 15 Oct: “Even if Manchester United lacked the intent to move decisively in the summer for Lewis Hall, the Newcastle star’s form this season at least proves they can still spot a player.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 15 Oct.",
-   "case_for": "What supports keeping him: Hull City, 11 Oct: “Kiernan Dewsbury-Hall levelled for the Toffees in the 55 th minute, converting Ainsley Maitland-Niles’ cross, before he provided the assist for Thierno Barry to put Everton ahead.” Newcastle United, 07 Oct: “Hall grabbed an assist for the Three Lions captain, earning a record-equalling 125th senior cap, before being substituted in the 71st minute.” Sports Mole, 22 Sep: “The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.”",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 5 retrieved item(s) from 4 source(s), the most recent dated 15 Oct.",
+   "case_for": "What supports keeping him: Hull City, 11 Oct: “Kiernan Dewsbury-Hall levelled for the Toffees in the 55 th minute, converting Ainsley Maitland-Niles’ cross, before he provided the assist for Thierno Barry to put Everton ahead.” Newcastle United, 07 Oct: “Hall grabbed an assist for the Three Lions captain, earning a record-equalling 125th senior cap, before being substituted in the 71st minute.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — Soccerway, 14 Oct: “The flashpoint reignites particular questions over their decision not to sign Hall The left-back area remains a big problem for United, where doubts over Luke Shaw 's ability to remain fit for a full campaign were already well established before the season began.”",
    "developments": "Recent developments — Football365, 15 Oct: “United are said to have made enquiries to Newcastle over Hall’s availability.” Soccerway, 14 Oct: “Action Images via Reuters / Andrew Boyers Newcastle United are expected to double down on their stance over Lewis Hall if Manchester United attempt to make new attempts to fix their left-back problem.” Newcastle United, 07 Oct: “Lewis Hall and Tino Livramento The defensive duo were initially named in the England squad ahead of four UEFA Nations League Group Stage fixtures.”",
-   "outlook": "On the coming weeks — Sports Mole, 22 Sep: “New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.”",
+   "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 6,
+   "evidence_count": 5,
    "evidence_used": [
     "https://www.football365.com/news/lewis-hall-newcastle-stats-first-100m-defender-man-utd",
-    "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
     "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
     "https://www.wearehullcity.co.uk/news/2026/october/11/hull-city-2-2-everton/",
     "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
@@ -395,8 +394,7 @@
     "Football365",
     "Hull City",
     "Newcastle United",
-    "Soccerway",
-    "Sports Mole"
+    "Soccerway"
    ],
    "quotes": [
     {
@@ -478,27 +476,6 @@
      "published": "2026-09-30T08:05:31+00:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "The defender has been with Newcastle since July 2024, arriving from Chelsea, and he has represented the Magpies on 109 occasions, scoring four goals and registering nine assists. © Imago Man United-linked Hall recently signed new Newcastle deal Hall has been in strong form for the Magpies this season, scoring once and registering two assists in seven appearances in all competitions.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
-     "published": "2026-09-22T18:13:00+01:00",
-     "tone": "positive",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "New Newcastle head coach Matthias Jaissle is believed to have played a vital role in Hall remaining at the club in the latter stages of the transfer market.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/transfer-talk/news/a-no-brainer-newcastle-star-hall-delivers-verdict-on-man-united-interest_605627.html",
-     "published": "2026-09-22T18:13:00+01:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer",
-      "tactics"
-     ]
     }
    ]
   },
@@ -748,14 +725,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 42 retrieved item(s) from 13 source(s), the most recent dated 19 Oct.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 40 retrieved item(s) from 13 source(s), the most recent dated 19 Oct.",
    "case_for": "What supports keeping him: Sports Illustrated FPL, 15 Oct: “Although Brady was specifically answering a question about starting right tackle Spencer Brown, who left Monday's win after 16 snaps , the statement also applies to Moore and Palmer.” FISO, 13 Oct: “He scored early against Bournemouth and also rose in price this week, making him a sensible option for managers who cannot stretch to Palmer but still want a route into Chelsea’s front line.” Sports Mole, 10 Oct: “In the frontline, Pedro has already scored three times and produced three assists in the top flight, while Palmer has two goals and two assists in the Premier League so far.”",
    "case_against": "What argues against him: Sports Illustrated FPL, 15 Oct: “After initially appearing on the injury report as limited , Palmer missed Saturday's practice and was ruled out for the game \"He got kind of twisted up yesterday in practice.” Sports Mole, 10 Oct: “There were doubts about the involvement of Caicedo and Pedro against Bournemouth, while Palmer missed international duty with England due to injury.” Soccerway, 10 Oct: “Palmer , left ‌out of England 's World Cup squad ‌this year after a persistent groin injury ‌affected his form, was called up ‌by Thomas Tuchel for Nations League fixtures against Spain, the Czech Republic and Croatia.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” Fantasy Football Scout, 10 Oct: “TEAM NEWS The big team news is that Cole Palmer and Joao Pedro start for Chelsea this afternoon.”",
    "developments": "Recent developments — Flashscore, 19 Oct: “\"The game does not want to see that type of challenge, and James Garner , on the receiving end of the challenge, had to go off for treatment.\" Later in the game, Cole Palmer needlessly involved himself in a situation for no apparent reason, and was dealt with accordingly.” Flashscore, 19 Oct: “Harrison Armstrong was pulled down by Moises Caicedo ; however, Cole Palmer decided he wanted to tell the referee he was wrong and received a yellow card,\" Hackett raged.” Football365, 12 Oct: “Fletcher namechecked Cole Palmer and Morgan Rogers as two stars he’s been informed Scott would love to play with on a regular basis.”",
    "outlook": "On the coming weeks — Sports Mole, 10 Oct: “Tuchel left Palmer at home for the 2026 World Cup, but he decided to call up the Chelsea star for the first four fixtures of the UEFA Nations League.” Sports Mole, 08 Oct: ““It was new for me and brilliant to see how everyone bought into the idea of the next steps and the details needed to adjust to maybe unlock the next level.” Palmer England future: Battle to regain places for November decider © Imago England's tactical transformation has prompted fresh debate over whether Palmer and Manchester City’s Phil Foden could slot smoothly into this high-intensity system.”",
    "confidence": "high",
-   "evidence_count": 42,
+   "evidence_count": 40,
    "evidence_used": [
     "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
@@ -766,9 +743,9 @@
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/palmer-described-as-scheduling-victim-in-surprise-defence-of-chelsea-star_605989.html",
     "https://www.sportsmole.co.uk/football/england/injury-news/news/he-misses-too-many-camps-tuchel-expresses-frustration-with-palmer-injuries_605794.html",
     "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
-    "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
     "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
-    "https://www.si.com/soccer/cole-palmer-bold-prediction-signing-new-chelsea-contract?utm_source=RSS"
+    "https://www.si.com/soccer/cole-palmer-bold-prediction-signing-new-chelsea-contract?utm_source=RSS",
+    "https://www.flashscore.com/news/the-verdict-ex-ref-hackett-slams-weekend-s-var-calls-tells-palmer-to-keep-his-mouth-shut/E743z0hn/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1203,44 +1180,6 @@
      "published": "2026-09-23T10:29:05+01:00",
      "tone": "positive",
      "topics": []
-    },
-    {
-     "text": "Palmer has withdrawn from the England squad for the current international break alongside Tino Livramento Kobbie Mainoo Marcus Rashford and Declan Rice , with the FA confirming that the players were ruled out because of injury issues.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-cole-palmer-determined-to-prove-england-and-chelsea-commitment/hGhJUjas/",
-     "published": "2026-09-22T18:40:17+02:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
-     "text": "In Palmer’s case, the decision is understood to be around caution and managing his workload, but it is believed the player is disappointed to miss out.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-cole-palmer-determined-to-prove-england-and-chelsea-commitment/hGhJUjas/",
-     "published": "2026-09-22T18:40:17+02:00",
-     "tone": "negative",
-     "topics": []
-    },
-    {
-     "text": "England: Cole Palmer 'faking' injury with 'the hump' after Thomas Tuchel call ahead of 'meaningless games' Cole Palmer in Chelsea defeat to Brentford.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
-     "published": "2026-09-22T17:34:16+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
-     "text": "Chelsea star Cole Palmer has been accused of ‘faking’ an injury to miss out on playing for England during this international break.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/england-cole-palmer-accused-faking-injury-hump-alonso-chelsea-plan",
-     "published": "2026-09-22T17:34:16+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
     },
     {
      "text": "And it's the attacking trio of Joao Pedro, Cole Palmer and Morgan Rogers chiefly responsible for our dynamism in the final third.",
