@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-21T15:58:52+00:00",
- "seconds": 199.7,
+ "ran_at": "2026-10-21T20:40:06+00:00",
+ "seconds": 174.7,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 613,
- "substantive_items": 238,
- "duplicates_removed": 19,
- "deeply_analysed": 78,
- "deep_read_failed": 12,
- "corpus_size": 18702,
+ "sources_readable": 58,
+ "candidates_discovered": 606,
+ "substantive_items": 226,
+ "duplicates_removed": 14,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 18749,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 238 articles"
+    "58/78 sources returned 226 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -630,7 +629,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 39,
+   "evidence_count": 38,
    "source_count": 13,
    "latest_evidence": "2026-10-19T12:06:21+02:00",
    "official_source_found": true,
@@ -730,15 +729,6 @@
      "excerpt": "England head coach Thomas Tuchel admits that he is frustrated with Cole Palmer's withdrawal from the Three Lions squad for the upcoming UEFA Nations League fixtures."
     },
     {
-     "title": "Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’",
-     "url": "https://www.football365.com/news/steve-bruce-claims-cole-palmer-faking-injury",
-     "source": "Football365",
-     "published": "2026-09-23T15:34:08+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Steve Bruce hopes Cole Palmer and Co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country."
-    },
-    {
      "title": "Chelsea news: Cole Palmer announces new long-term contract in his own unique way ahead of Bournemouth clash",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
      "source": "Sports Mole",
@@ -764,13 +754,22 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "Steve Palmer: Premier League chiefs need to act quickly but justice is already being served between the players' ears",
+     "url": "https://www.racingpost.com/sport/opinion/steve-palmer/steve-palmer-premier-league-chiefs-need-to-act-quickly-but-justice-is-already-being-served-between-the-players-ears-adaKt3F40vBE/",
+     "source": "Racing Post Football Tips",
+     "published": "2026-10-16T11:00:00+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 30,
+   "evidence_count": 29,
    "source_count": 13,
    "latest_evidence": "2026-10-17T15:00:00+00:00",
    "official_source_found": true,
@@ -843,15 +842,6 @@
      "excerpt": "Chelsea signed Morgan Rogers for a British record £117m — the same player Man City sold to Middlesbrough for £1m in 2023 after failed loans at Bournemouth and Blackpool."
     },
     {
-     "title": "Alejandro Garnacho could follow Aston Villa star in controversial exit: report",
-     "url": "https://www.fourfourtwo.com/transfer/alejandro-garnacho-could-follow-aston-villa-star-in-controversial-exit-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-23T11:06:21+00:00",
-     "matched_on": "rogers",
-     "kind": "transfer",
-     "excerpt": "Alejandro Garnacho is facing an Aston Villa exit already. That's according to a new report, which says that the Argentine isn't favoured by manager Unai Emery, and has been offered an exit route from the Midlands already. Aston Villa signed Garnacho on loan from Chelsea with a £43 million buy clause over the summer, but with the winger limited to just half an hour in claret-and-blue so far, it app"
-    },
-    {
      "title": "Morgan rogers chelsea transfer fpl",
      "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
      "source": "OneFPL",
@@ -904,6 +894,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Harry Kane marked his record-equalling 125th England cap with a couple of record-extending goals as England swatted Czechia aside."
+    },
+    {
+     "title": "SHEFFIELD UNITED 1 TOWN 2",
+     "url": "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
+     "source": "Ipswich Town",
+     "published": "2026-10-04T15:18:38+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Fixtures Sheffield United Women Vs. Ipswich Town Women - Sun, Oct 4th 2026, 14:00 Town Women continued their fine start to the Barclays Women’s Super League 2 season with a 2-1 win away to Sheffield United. Goals from Megan Hornby and Princess Admeiluyi ensured the Blues remain unbeaten as a fine performance at both ends of the pitch earned the points at Bramall Lane. Hornby had Town’s first sight"
     }
    ]
   },
@@ -1041,8 +1040,8 @@
    "player": "João Pedro",
    "club": "CHE",
    "evidence_count": 48,
-   "source_count": 17,
-   "latest_evidence": "2026-10-21T11:53:00+01:00",
+   "source_count": 18,
+   "latest_evidence": "2026-10-21T18:07:24+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1321,8 +1320,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-21T01:21:56+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-21T11:53:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1334,7 +1333,6 @@
    "dimensions_covered": [
     "fixtures",
     "injury",
-    "match report",
     "press conference",
     "statistics",
     "tactics",
@@ -1345,6 +1343,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Chelsea: Pedro Porro, Savio, Lucas Bergvall latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
+     "source": "Sports Mole",
+     "published": "2026-10-21T11:53:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
+    },
     {
      "title": "OKC Thunder Make Starting Lineup Decision For Season Opener vs. Spurs",
      "url": "https://www.si.com/nba/thunder/onsi/okc-thunder-make-starting-lineup-decision-for-season-opener-vs-spurs-?utm_source=RSS",
@@ -1389,22 +1396,13 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Coventry City’s winning sequence came to an end as Tottenham Hotspur came out on top in a competitive encounter at the Tottenham Hotspur Stadium. James Maddison scored a screamer to give Spurs the lead, but Jack Rudoni levelled the contest early in the second half after a spirited response from the Sky Blues. Omar Marmoush restored the hosts’ lead before Ben Davies made sure deep into injury time."
-    },
-    {
-     "title": "Tottenham vs Coventry: Confirmed teams and line ups in Premier League",
-     "url": "https://www.101greatgoals.com/football/premier-league/tottenham-vs-coventry-city-live-teams-line-ups-where-to-watch-tv-channel-online-stream/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-19T18:54:22+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Team news as Tottenham host Coventry in the Premier League"
     }
    ]
   },
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 13,
+   "evidence_count": 12,
    "source_count": 4,
    "latest_evidence": "2026-10-16T16:00:00+00:00",
    "official_source_found": false,
