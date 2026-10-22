@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-21T20:40:06+00:00",
- "seconds": 174.7,
+ "ran_at": "2026-10-22T01:34:06+00:00",
+ "seconds": 134.3,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 606,
- "substantive_items": 226,
- "duplicates_removed": 14,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 18749,
+ "candidates_discovered": 551,
+ "substantive_items": 176,
+ "duplicates_removed": 13,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 18770,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 226 articles"
+    "58/78 sources returned 176 articles"
    ]
   },
   "blackout": {
@@ -449,8 +449,8 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 8,
-   "source_count": 6,
+   "evidence_count": 7,
+   "source_count": 5,
    "latest_evidence": "2026-10-15T20:00:25+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -471,8 +471,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -537,15 +537,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "Both Nicolas Jackson and Emi Buendía’s goals in Aston Villa’s victory over Tottenham Hotspur have been shortlisted for the Premier League September Guinness Goal of the Month award. The Villans came away from North London with all three points last weekend, with stunning strikes from Jackson and Buendía helping secure a 3-2 triumph. And both players have been nominated for the September prize, wit"
-    },
-    {
-     "title": "Event Guide: All You Need To Know Ahead Of Game4Hope",
-     "url": "https://www.evertonfc.com/news/2026/september/23/Event-Guide--All-You-Need-To-Know-Ahead-Of-Game4Hope/",
-     "source": "Everton",
-     "published": "2026-09-23T16:06:31+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "This Saturday sees Goodison Park host the Game 4 Hope charity fixture to raise vital funds and awareness in the fight against homelessness. Tim Cahill’s star-studded Merseyside XI, jointly managed by Everton Giant Peter Reid and Liverpool legend John Barnes, take on a Rest of the World XI captained by Brazilian great Rivaldo. (Kick-off 4.45pm BST). For more information on the extraordinary collect"
     }
    ]
   },
@@ -1039,9 +1030,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 48,
+   "evidence_count": 49,
    "source_count": 18,
-   "latest_evidence": "2026-10-21T18:07:24+00:00",
+   "latest_evidence": "2026-10-21T21:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1181,7 +1172,7 @@
    "club": "MCI",
    "evidence_count": 128,
    "source_count": 17,
-   "latest_evidence": "2026-10-21T12:07:00+01:00",
+   "latest_evidence": "2026-10-21T23:08:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1320,9 +1311,9 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-10-21T11:53:00+01:00",
-   "official_source_found": true,
+   "source_count": 2,
+   "latest_evidence": "2026-10-21T20:56:00+01:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1332,6 +1323,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "press conference",
     "statistics",
@@ -1343,6 +1335,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury, suspension list and return dates vs. Tottenham Hotspur: Emiliano Martinez, Reece James, Pep Chavarria latest",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/martinez-james-chavarria-updates-chelsea-injury-suspension-list-vs-spurs_607365.html",
+     "source": "Sports Mole",
+     "published": "2026-10-21T20:56:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of their Premier League clash with Tottenham Hotspur."
+    },
     {
      "title": "Tottenham Hotspur injury, suspension list and return dates vs. Chelsea: Pedro Porro, Savio, Lucas Bergvall latest",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
@@ -1387,15 +1388,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur boss Roberto De Zerbi explains why Destiny Udogie was unavailable for Monday's 3-1 win over Coventry City."
-    },
-    {
-     "title": "Tottenham Hotspur 3-1 Coventry City",
-     "url": "https://www.ccfc.co.uk/news/2026/october/19/tottenham-hotspur-3-1-coventry-city/",
-     "source": "Coventry City",
-     "published": "2026-10-19T21:49:13+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Coventry City’s winning sequence came to an end as Tottenham Hotspur came out on top in a competitive encounter at the Tottenham Hotspur Stadium. James Maddison scored a screamer to give Spurs the lead, but Jack Rudoni levelled the contest early in the second half after a spirited response from the Sky Blues. Omar Marmoush restored the hosts’ lead before Ben Davies made sure deep into injury time."
     }
    ]
   },
