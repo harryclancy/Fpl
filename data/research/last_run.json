@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-22T01:34:06+00:00",
- "seconds": 134.3,
+ "ran_at": "2026-10-22T10:16:12+00:00",
+ "seconds": 133.9,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 551,
- "substantive_items": 176,
- "duplicates_removed": 13,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 18770,
+ "sources_readable": 57,
+ "candidates_discovered": 575,
+ "substantive_items": 191,
+ "duplicates_removed": 15,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18792,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 176 articles"
+    "57/78 sources returned 191 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -50,9 +51,9 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -1030,7 +1031,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 48,
    "source_count": 18,
    "latest_evidence": "2026-10-21T21:00:00+00:00",
    "official_source_found": true,
@@ -1170,9 +1171,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 128,
+   "evidence_count": 129,
    "source_count": 17,
-   "latest_evidence": "2026-10-21T23:08:59+00:00",
+   "latest_evidence": "2026-10-22T10:03:48+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
