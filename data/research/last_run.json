@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-22T10:16:12+00:00",
- "seconds": 133.9,
+ "ran_at": "2026-10-22T15:54:31+00:00",
+ "seconds": 161.2,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 575,
- "substantive_items": 191,
- "duplicates_removed": 15,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18792,
+ "candidates_discovered": 637,
+ "substantive_items": 250,
+ "duplicates_removed": 26,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 18804,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 191 articles"
+    "57/78 sources returned 250 articles"
    ]
   },
   "blackout": {
@@ -51,9 +51,9 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -1313,7 +1313,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 2,
-   "latest_evidence": "2026-10-21T20:56:00+01:00",
+   "latest_evidence": "2026-10-22T07:59:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1326,7 +1326,7 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "press conference",
+    "match report",
     "statistics",
     "tactics",
     "team news",
@@ -1336,6 +1336,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Houston Rockets vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/houston-rockets/preview/houston-rockets-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_607405.html",
+     "source": "Sports Mole",
+     "published": "2026-10-22T07:59:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Houston Rockets vs. San Antonio Spurs preview with injury news, key matchups, player props and our NBA prediction for Saturdays game at Moody Center."
+    },
     {
      "title": "Chelsea injury, suspension list and return dates vs. Tottenham Hotspur: Emiliano Martinez, Reece James, Pep Chavarria latest",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/martinez-james-chavarria-updates-chelsea-injury-suspension-list-vs-spurs_607365.html",
@@ -1380,15 +1389,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Coach Mitch Johnson knows that trio of De'Aaron Fox, Dylan Harper and Steph Castle didn't play much last season, but a deep dive on the data reveals how they went from a passing thought to priority number one."
-    },
-    {
-     "title": "Tottenham injury news: Why Destiny Udogie missed long-awaited Premier League win over Coventry",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/revealed-why-udogie-missed-tottenhams-win-over-coventry_607267.html",
-     "source": "Sports Mole",
-     "published": "2026-10-20T00:13:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur boss Roberto De Zerbi explains why Destiny Udogie was unavailable for Monday's 3-1 win over Coventry City."
     }
    ]
   },
