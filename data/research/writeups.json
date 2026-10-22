@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-22T15:54:31+00:00",
+ "generated": "2026-10-22T20:35:09+00:00",
  "gameweek": 8,
- "corpus_size": 18804,
+ "corpus_size": 18844,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -539,27 +539,23 @@
    "player": "Barnes",
    "club": "NEW",
    "status": "Latest on Barnes — Sports Illustrated FPL, 15 Oct: “Mandatory Credit: Jim Dedmon-USA TODAY Sports | USA TODAY Sports via Reuters Connect The Tennessee Volunteers are set for their next season under head basketball coach Rick Barnes , who is by far one of the better basketball coaches in the country.”",
-   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 15 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 01 Oct: “It goes without saying, of course, that Pascal Gross here GOAL THREAT Goals Shots Shots in the box Big chances Expected goals (xG) Schade 1.52 Barnes 0.62 Tavernier 1.70 Schade and Tavernier have both produced three goals from 13 shots in Gameweeks 1-5.” Fantasy Football Scout, 01 Oct: “Above: Kevin Schade and Marcus Tavernier’s shot maps in 2026/27 As for Barnes, he’s recorded eight shots so far, so his goal threat has been more limited than Schade and Tavernier.” Newcastle United, 24 Sep: “With the Magpies trailing by two goals against Marco Rose's Cherries, Barnes quickly halved the deficit for the hosts after cutting inside from the left wing before curling a wonderful effort into the top right-hand corner.”",
+   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 5 retrieved item(s) from 3 source(s), the most recent dated 15 Oct.",
+   "case_for": "What supports keeping him: Fantasy Football Scout, 01 Oct: “It goes without saying, of course, that Pascal Gross here GOAL THREAT Goals Shots Shots in the box Big chances Expected goals (xG) Schade 1.52 Barnes 0.62 Tavernier 1.70 Schade and Tavernier have both produced three goals from 13 shots in Gameweeks 1-5.” Fantasy Football Scout, 01 Oct: “Above: Kevin Schade and Marcus Tavernier’s shot maps in 2026/27 As for Barnes, he’s recorded eight shots so far, so his goal threat has been more limited than Schade and Tavernier.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Sports Illustrated FPL, 15 Oct: “While some coaches could be bitter, Barnes was the complete opposite.” Sports Illustrated FPL, 04 Oct: “It’s also been documented that Leonard is of the understanding that the focus is on Scottie Barnes and the team built around him.” Sports Illustrated FPL, 04 Oct: “If it’s Scottie’s team, it’s his team and I want to do whatever to help you guys.” It’s clear as day that the bigger picture was built around Scottie Barnes.”",
    "outlook": "On the coming weeks — Sports Illustrated FPL, 26 Sep: “Barnes is still considered a Texas legend after spending 17 years as the leader of the program.”",
    "confidence": "high",
-   "evidence_count": 7,
+   "evidence_count": 5,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
     "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
     "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
     "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
-    "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-makes-it-clear-where-he-stands-with-tennessee-vs-texas-01m3aytv069e?utm_source=RSS",
-    "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
-    "https://avfc.co.uk/news/2026/september/24/villans-nominated-for-premier-league-goal-of-the-month-/"
+    "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-makes-it-clear-where-he-stands-with-tennessee-vs-texas-01m3aytv069e?utm_source=RSS"
    ],
    "sources_used": [
-    "Aston Villa",
     "Fantasy Football Scout",
-    "Newcastle United",
     "Racing Post Football Tips",
     "Sports Illustrated FPL"
    ],
@@ -632,24 +628,6 @@
      "tone": "neutral",
      "topics": [
       "statistics"
-     ]
-    },
-    {
-     "text": "Barnes' stunning strike against AFC Bournemouth in a 2-2 comeback draw at St. James' Park has been shortlisted.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
-     "published": "2026-09-24T12:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "With the Magpies trailing by two goals against Marco Rose's Cherries, Barnes quickly halved the deficit for the hosts after cutting inside from the left wing before curling a wonderful effort into the top right-hand corner.",
-     "source": "Newcastle United",
-     "url": "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
-     "published": "2026-09-24T12:00:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "set pieces"
      ]
     }
    ]
@@ -769,14 +747,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Sports Mole, 07 Oct: “Cole Palmer © Iconsport / David Klein / Sportimage Status: Major doubt Type of injury: Unspecified Possible return date: October 10 (vs. Bournemouth) Cole Palmer had been due to represent England in the UEFA Nations League until his withdrawal, either through load management or a minor fitness issue.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 38 retrieved item(s) from 13 source(s), the most recent dated 19 Oct.",
+   "why_here": "Palmer is in the starting eleven this week at £9.7m as a MID. The selection rests on 37 retrieved item(s) from 13 source(s), the most recent dated 19 Oct.",
    "case_for": "What supports keeping him: Sports Illustrated FPL, 15 Oct: “Although Brady was specifically answering a question about starting right tackle Spencer Brown, who left Monday's win after 16 snaps , the statement also applies to Moore and Palmer.” FISO, 13 Oct: “He scored early against Bournemouth and also rose in price this week, making him a sensible option for managers who cannot stretch to Palmer but still want a route into Chelsea’s front line.” Sports Mole, 10 Oct: “In the frontline, Pedro has already scored three times and produced three assists in the top flight, while Palmer has two goals and two assists in the Premier League so far.”",
    "case_against": "What argues against him: Sports Illustrated FPL, 15 Oct: “After initially appearing on the injury report as limited , Palmer missed Saturday's practice and was ruled out for the game \"He got kind of twisted up yesterday in practice.” Sports Mole, 10 Oct: “There were doubts about the involvement of Caicedo and Pedro against Bournemouth, while Palmer missed international duty with England due to injury.” Soccerway, 10 Oct: “Palmer , left ‌out of England 's World Cup squad ‌this year after a persistent groin injury ‌affected his form, was called up ‌by Thomas Tuchel for Nations League fixtures against Spain, the Czech Republic and Croatia.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” Fantasy Football Scout, 10 Oct: “TEAM NEWS The big team news is that Cole Palmer and Joao Pedro start for Chelsea this afternoon.”",
    "developments": "Recent developments — Flashscore, 19 Oct: “\"The game does not want to see that type of challenge, and James Garner , on the receiving end of the challenge, had to go off for treatment.\" Later in the game, Cole Palmer needlessly involved himself in a situation for no apparent reason, and was dealt with accordingly.” Flashscore, 19 Oct: “Harrison Armstrong was pulled down by Moises Caicedo ; however, Cole Palmer decided he wanted to tell the referee he was wrong and received a yellow card,\" Hackett raged.” Football365, 12 Oct: “Fletcher namechecked Cole Palmer and Morgan Rogers as two stars he’s been informed Scott would love to play with on a regular basis.”",
    "outlook": "On the coming weeks — Sports Mole, 10 Oct: “Tuchel left Palmer at home for the 2026 World Cup, but he decided to call up the Chelsea star for the first four fixtures of the UEFA Nations League.” Sports Mole, 08 Oct: ““It was new for me and brilliant to see how everyone bought into the idea of the next steps and the details needed to adjust to maybe unlock the next level.” Palmer England future: Battle to regain places for November decider © Imago England's tactical transformation has prompted fresh debate over whether Palmer and Manchester City’s Phil Foden could slot smoothly into this high-intensity system.”",
    "confidence": "high",
-   "evidence_count": 38,
+   "evidence_count": 37,
    "evidence_used": [
     "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
     "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
@@ -1169,25 +1147,6 @@
      "tone": "neutral",
      "topics": [
       "fixtures"
-     ]
-    },
-    {
-     "text": "Bruno Fernandes officially the worst decision-maker in Premier League Bruno Fernandes, Cole Palmer and Alex Scott don't always take the best option.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/premier-league-decision-making-players-ranked",
-     "published": "2026-09-24T13:24:17+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Mailbox Bruno Fernandes Ciaran McCarthy 23 Sep 2026 Steve Bruce responds to claims Cole Palmer is faking injury to skip England duty – ‘Genuinely…’ Steve Bruce hopes Cole Palmer and Co aren’t faking injury to get out of England duty, feeling it’s a huge honour to represent your country.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/premier-league-decision-making-players-ranked",
-     "published": "2026-09-24T13:24:17+00:00",
-     "tone": "negative",
-     "topics": [
-      "injury",
-      "transfer"
      ]
     },
     {
@@ -1950,14 +1909,14 @@
    "player": "João Pedro",
    "club": "CHE",
    "status": "Latest on João Pedro — RotoWire Soccer, 06 Oct: “He's 9.7 and 25.5 percent owned, so he's the biggest name here after Joao Pedro Unless Alonso describes him as a serious doubt, I'd hold rather than move a premium asset who could still start against Bournemouth.” Everton, 24 Sep: “The contest was ultimately decided by Joao Felix’s deflected strike midway through the first half, but after Ronaldo had a goal of his own ruled out by VAR for offside, the Welsh looked to ruin the homecoming party.”",
-   "why_here": "João Pedro is in the starting eleven this week at £7.9m as a FWD. The selection rests on 48 retrieved item(s) from 18 source(s), the most recent dated 21 Oct.",
+   "why_here": "João Pedro is in the starting eleven this week at £7.9m as a FWD. The selection rests on 47 retrieved item(s) from 18 source(s), the most recent dated 21 Oct.",
    "case_for": "What supports keeping him: Everton, 19 Oct: “Pedro Neto’s brace downed the Toffees, with the Portugal international winger’s first goal arriving moments after the start of the second period.” Everton, 17 Oct: “Following a 2-2 draw at Hull City last weekend – where Moyes was unhappy with the manner of the goals conceded – the Toffees boss was unimpressed with Pedro Neto's opener just seconds after the restart against Chelsea, along with Everton's performances overall following an encouraging opening half.” Fantasy Football Scout, 12 Oct: “Only one of their five goals was a gilt-edged chance, specifically Pedro’s second.”",
    "case_against": "What argues against him: Opta Analyst, 17 Oct: “Martinez was stretchered off in the 75th minute with a head injury following a clash with Jarrad Branthwaite , and though Everton tried to apply late pressure to substitute Mike Penders , they were instead almost caught out at the other end as Pickford had to make himself big to deny João Pedro following a Palmer-led counter-attack.” Sports Mole, 07 Oct: “Joao Pedro © Imago / AAP Status: Major doubt Type of injury: Knee Possible return date: October 10 (vs. Bournemouth) Having pulled out of the Brazil squad, it was suggested that Joao Pedro could be sidelined for up to four weeks with a knee issue.” OneFPL: “João Pedro has been withdrawn from Brazil's upcoming internationals because of an unspecified injury Chelsea have not yet confirmed that he will miss Friday's trip to Brentford.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FISO, 13 Oct: “Team news to watch For Chelsea, João Pedro, Palmer and Moises Caicedo all came through the Bournemouth match after recent fitness concerns.” RotoWire Soccer, 06 Oct: “Cody Gakpo is dealing with an ankle problem, Cole Palmer remains flagged after withdrawing from England, Joao Pedro is still working back from a knee issue and Arsenal have multiple players carrying fitness concerns.”",
    "developments": "Recent developments — Football365, 21 Oct: “Tottenham Hotspur Pedro Porro Subhankar Mondal 26 Sep 2026 Pedro Porro reacts after learning Barcelona want to sign him from Tottenham in January Pedro Porro’s stance on leaving Tottenham Hotspur for Barcelona in the January transfer window emerges.” Sports Illustrated FPL, 17 Oct: “ST: JoÃ£o Pedro — 6.8: A quiet afternoon for the Brazilian striker, who was often left isolated up front and struggled to get involved in the game.” Sports Illustrated FPL, 17 Oct: “Against a combative Everton side that gave him little time or space to operate, JoÃ£o Pedro looked incredibly isolated.”",
    "outlook": "On the coming weeks — FISO, 13 Oct: “Chelsea attackers lead the FPL conversation João Pedro is the standout pick.” Fantasy Football Scout, 12 Oct: “The others, Jordan Henderson ‘s (£4.9m) edge-of-box effort, Morgan Rogers ‘ (£7.9m) deflected curler, Pedro’s clinical finish from a cut-back and Henderson’s free-kick, were just great strikes: Henderson ended up with 18 points, his second-highest-ever FPL score since his 2008 debut!”",
    "confidence": "high",
-   "evidence_count": 48,
+   "evidence_count": 47,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
     "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/",
@@ -2364,14 +2323,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Sports Mole, 19 Oct: “There had also been suggestions that Haaland may have also been nursing a knee issue, raising concerns over his fitness for the AEK Athens clash and future matches.” Fantasy Football Scout, 19 Oct: “Team News Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8 October 19 49 comments 19 October 2026 49 comments Nine Premier League teams are in European action this midweek, with two of them, Liverpool and Manchester City , contesting UEFA Champions League ties on Tuesday.”",
-   "why_here": "Haaland is captained this week at £15.7m as a FWD. The selection rests on 129 retrieved item(s) from 17 source(s), the most recent dated 22 Oct.",
+   "why_here": "Haaland is captained this week at £15.7m as a FWD. The selection rests on 130 retrieved item(s) from 17 source(s), the most recent dated 22 Oct.",
    "case_for": "What supports keeping him: 101 Great Goals — Fantasy, 22 Oct: “Asked for an update on the fitness of Matheus Nunes, Nico O’Reilly, Mateo Kovacic and Haaland, City boss Enzo Maresca said: “We have a session this afternoon.” 101 Great Goals — Fantasy, 22 Oct: ““Erling is the only one 100% available, and the other three we need to wait for today’s session.” I know how good Foden is, says City boss Maresca Haaland, who is the Premier League’s top scorer with eight goals in seven appearances this season , is likely to link-up with Phil Foden at the weekend with the England midfielder the inspiration behind the win over AEK with a hat-trick.” FourFourTwo FPL, 21 Oct: “The last two seasons in particular have produced a stark drop-off, with Haaland adding just eight goals from January to May in the 24/25 and 25/26 seasons.”",
    "case_against": "What argues against him: Football365, 21 Oct: “We think he might be truly recovered from injury. 6) Erling Haaland – 25 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Sports Mole, 21 Oct: “Erling Haaland © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Status: Minor doubt Type of issue: Knock Possible return date: October 24 (vs. Aston Villa) Haaland was rested against AEK Athens in the Champions League on Tuesday due to a knock, but he was still named on the bench and is set to return against Villa.” Sports Mole, 21 Oct: “Haaland remained as an unused substitute as the Premier League leaders recorded a 5-1 victory over AEK Athens in the Champions League.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 21 Oct: “With Man City having gone into Tuesday's game with AEK Athens having already suffered one Champions League defeat this season, Maresca could have theoretically selected Haaland to only use him if necessary.” Fantasy Football Scout, 21 Oct: “Scout Notes FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update October 21 0 comments 21 October 2026 0 comments Liverpool and Manchester City were involved in high-scoring matches on Tuesday night, both pulling out home victories in the UEFA Champions League.”",
-   "developments": "Recent developments — Football365, 21 Oct: “Arsenal Harry Kane Joe Williams 21 Oct 2026 Man City FFP: Haaland makes stunning transfer U-turn after making a decision on future Man City striker Erling Haaland is now willing to join Kylian Mbappe at Real Madrid after previously being reluctant, according to reports.” Football365, 21 Oct: “Man City striker Erling Haaland is now willing to join Kylian Mbappe at Real Madrid after previously being reluctant, according to reports.” Football365, 21 Oct: “The main player who has everyone talking is Haaland with the Man City striker already linked to clubs in Spain before the guilty verdict was announced.”",
+   "developments": "Recent developments — Football365, 22 Oct: “READ: Man City FFP: Kyle Walker reveals punishment could force him to take drastic action And there are other clubs putting themselves in position to pounce if that scenario happens with reports in Spain claiming that Barcelona are eyeing both Haaland and Cherki.” Football365, 22 Oct: “It is understood that both Haaland and Cherki ‘will say yes’ to a move to Barcelona ‘if a sporting sanction forces Manchester City to offload some of its key players’.” Football365, 21 Oct: “Arsenal Harry Kane Joe Williams 21 Oct 2026 Man City FFP: Haaland makes stunning transfer U-turn after making a decision on future Man City striker Erling Haaland is now willing to join Kylian Mbappe at Real Madrid after previously being reluctant, according to reports.”",
    "outlook": "On the coming weeks — Sports Mole, 18 Oct: “Semenyo awaits assessment amid five Man City injury scares © Imago / News Images Speaking during his post-match press conference, Maresca revealed that Haaland personally reassured him that the late knock was nothing serious.” Sports Mole, 18 Oct: “Maresca's side host AEK Athens in the Champions League on Tuesday evening, a fixture in which Haaland was already under consideration for a rest following a heavy workload for club and country.”",
    "confidence": "high",
-   "evidence_count": 129,
+   "evidence_count": 130,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/haaland-semenyo-oreilly-latest-man-city-injury-suspension-list-vs-villa_607357.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
@@ -2406,6 +2365,22 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "READ: Man City FFP: Kyle Walker reveals punishment could force him to take drastic action And there are other clubs putting themselves in position to pounce if that scenario happens with reports in Spain claiming that Barcelona are eyeing both Haaland and Cherki.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/man-city-ffp-haaland-cherki-say-yes-barcelona-transfer",
+     "published": "2026-10-22T18:28:30+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "It is understood that both Haaland and Cherki ‘will say yes’ to a move to Barcelona ‘if a sporting sanction forces Manchester City to offload some of its key players’.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/man-city-ffp-haaland-cherki-say-yes-barcelona-transfer",
+     "published": "2026-10-22T18:28:30+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Asked for an update on the fitness of Matheus Nunes, Nico O’Reilly, Mateo Kovacic and Haaland, City boss Enzo Maresca said: “We have a session this afternoon.",
      "source": "101 Great Goals — Fantasy",
@@ -4368,7 +4343,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 2 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4377,14 +4352,15 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.nbcsports.com/soccer/news/how-to-watch-chelsea-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
     "https://www.sportsmole.co.uk/basketball/houston-rockets/preview/houston-rockets-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_607405.html",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/martinez-james-chavarria-updates-chelsea-injury-suspension-list-vs-spurs_607365.html",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
     "https://www.si.com/nba/thunder/onsi/okc-thunder-make-starting-lineup-decision-for-season-opener-vs-spurs-?utm_source=RSS",
-    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-provides-latest-spurs-injury-update-after-triple-injury-scare-vs-coventry_607272.html",
-    "https://www.si.com/nba/spurs/onsi/analyzing-all-92-minutes-of-the-spurs-three-guard-lineup?utm_source=RSS"
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-provides-latest-spurs-injury-update-after-triple-injury-scare-vs-coventry_607272.html"
    ],
    "sources_used": [
+    "NBC Sports Rotoworld PL",
     "Sports Illustrated FPL",
     "Sports Mole"
    ],

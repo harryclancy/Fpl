@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-22T15:54:31+00:00",
- "seconds": 161.2,
+ "ran_at": "2026-10-22T20:35:09+00:00",
+ "seconds": 183.1,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 637,
- "substantive_items": 250,
- "duplicates_removed": 26,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 18804,
+ "candidates_discovered": 633,
+ "substantive_items": 248,
+ "duplicates_removed": 25,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 18844,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 250 articles"
+    "57/78 sources returned 248 articles"
    ]
   },
   "blackout": {
@@ -450,10 +450,10 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 7,
-   "source_count": 5,
+   "evidence_count": 5,
+   "source_count": 3,
    "latest_evidence": "2026-10-15T20:00:25+00:00",
-   "official_source_found": true,
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -466,7 +466,6 @@
     "fpl advice",
     "injury",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -520,24 +519,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "The Tennessee basketball head coach talks about Tennessee vs Texas."
-    },
-    {
-     "title": "Harvey Barnes nominated for Premier League Guinness Goal of the Month award",
-     "url": "https://www.newcastleunited.com/en/news/harvey-barnes-nominated-for-premier-league-guinness-goal-of-the-month-award",
-     "source": "Newcastle United",
-     "published": "2026-09-24T12:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Villans nominated for Premier League Goal of the Month",
-     "url": "https://avfc.co.uk/news/2026/september/24/villans-nominated-for-premier-league-goal-of-the-month-/",
-     "source": "Aston Villa",
-     "published": "2026-09-24T12:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Both Nicolas Jackson and Emi Buendía’s goals in Aston Villa’s victory over Tottenham Hotspur have been shortlisted for the Premier League September Guinness Goal of the Month award. The Villans came away from North London with all three points last weekend, with stunning strikes from Jackson and Buendía helping secure a 3-2 triumph. And both players have been nominated for the September prize, wit"
     }
    ]
   },
@@ -621,7 +602,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 38,
+   "evidence_count": 37,
    "source_count": 13,
    "latest_evidence": "2026-10-19T12:06:21+02:00",
    "official_source_found": true,
@@ -1031,7 +1012,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 48,
+   "evidence_count": 47,
    "source_count": 18,
    "latest_evidence": "2026-10-21T21:00:00+00:00",
    "official_source_found": true,
@@ -1171,9 +1152,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 129,
+   "evidence_count": 130,
    "source_count": 17,
-   "latest_evidence": "2026-10-22T10:03:48+00:00",
+   "latest_evidence": "2026-10-22T18:28:30+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1312,8 +1293,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 2,
-   "latest_evidence": "2026-10-22T07:59:00+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-22T10:22:15-04:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1336,6 +1317,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "How to watch Chelsea vs Tottenham Hotspur live: Stream, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-chelsea-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-22T10:22:15-04:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
     {
      "title": "Houston Rockets vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/houston-rockets/preview/houston-rockets-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_607405.html",
@@ -1380,15 +1370,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur have received a positive injury update after Roberto De Zerbi eased concerns over Andy Robertson, Tosin Adarabioyo and Omar Marmoush."
-    },
-    {
-     "title": "Analyzing All 92 Minutes of the Spurs' Three Guard Lineup",
-     "url": "https://www.si.com/nba/spurs/onsi/analyzing-all-92-minutes-of-the-spurs-three-guard-lineup?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-20T00:56:37+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Coach Mitch Johnson knows that trio of De'Aaron Fox, Dylan Harper and Steph Castle didn't play much last season, but a deep dive on the data reveals how they went from a passing thought to priority number one."
     }
    ]
   },
