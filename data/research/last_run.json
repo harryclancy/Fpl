@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-22T20:35:09+00:00",
- "seconds": 183.1,
+ "ran_at": "2026-10-23T01:34:34+00:00",
+ "seconds": 172.5,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 633,
- "substantive_items": 248,
- "duplicates_removed": 25,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 18844,
+ "sources_readable": 58,
+ "candidates_discovered": 567,
+ "substantive_items": 186,
+ "duplicates_removed": 19,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18848,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 248 articles"
+    "58/78 sources returned 186 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -203,9 +202,9 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 4,
-   "latest_evidence": "2026-10-14T03:00:00+00:00",
+   "latest_evidence": "2026-10-23T01:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -226,10 +225,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Gross + De Cuyper: Bench or start in FPL Gameweek 8?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/23/gross-de-cuyper-bench-or-start-in-fpl-gameweek-8",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-23T01:15:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "team news",
+     "excerpt": "Brighton's in-form pair have tricky fixtures in the next two Gameweeks The post Gross + De Cuyper: Bench or start in FPL Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "De Cuyper, Pedro, Cherki, Gibbs-White: Buy, keep or sell in Gameweek 7?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
@@ -882,9 +890,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 11,
+   "evidence_count": 13,
    "source_count": 3,
-   "latest_evidence": "2026-10-20T16:00:00+00:00",
+   "latest_evidence": "2026-10-22T23:02:04+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -908,6 +916,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Match gallery: Pictures from memorable win over AC Milan",
+     "url": "https://www.afcb.co.uk/news/2026/october/22/match-gallery--pictures-from-memorable-win-over-ac-milan/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-22T23:02:04+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "AFC Bournemouth capped another memorable night under the lights at Vitality Stadium by triumphing 3-0 against seven-time European champions AC Milan on Thursday. Victory saw the Cherries maintain their 100 per cent winning start to their UEFA Europa League campaign after defeating Real Sociedad and Sturm Graz in the league phase. Penalties from Justin Kluivert and Marcus Tavernier, coupled with a "
+    },
     {
      "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
@@ -954,6 +971,15 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Kluivert: We know what we’re capable of",
+     "url": "https://www.afcb.co.uk/news/2026/october/22/kluivert--we-know-what-we-re-capable-of/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-22T22:35:23+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Justin Kluivert says AFC Bournemouth believe in their own ability whoever they face, after the Cherries recorded a historic 3-0 win over AC Milan at Vitality Stadium. Kluivert opened the scoring from the penalty spot, with Marcus Tavernier and Amine Adli also on target as Marco Rose’s side made it three wins from three in the UEFA Europa League. “I think it means a lot,” he said. “We come from two"
+    },
+    {
      "title": "Gallery: Pictures from first Premier League win of the season",
      "url": "https://www.afcb.co.uk/news/2026/october/18/gallery--pictures-from-first-premier-league-win-of-the-season/",
      "source": "AFC Bournemouth",
@@ -997,15 +1023,6 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "AFC Bournemouth 2-0 Sunderland Sunderland were beaten 2-0 by AFC Bournemouth at the Vitality Stadium on Sunday afternoon, with first-half and second-half goals settling the Premier League fixture. The Black Cats arrived on the south coast following Thursday night’s UEFA Europa League win in Portugal, looking to translate their European form into a positive domestic result. Bournemouth took the lea"
-    },
-    {
-     "title": "Cherries FPL International Break Review",
-     "url": "https://www.afcb.co.uk/news/2026/september/25/cherries-fpl-international-break-review/",
-     "source": "AFC Bournemouth",
-     "published": "2026-09-25T09:48:58+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Bournemouth have teamed up with Fantasy Football Scout to bring you hints, tips and advice throughout the 2026/27 Fantasy Premier League (FPL) season. Scout will use its expertise to provide information, advice and Gameweek tips that could help you stay on top of your mini-leagues. With the opening five gameweeks now in the books, FPL managers are starting to see clearer trends emerge from the dat"
     }
    ]
   },
@@ -1293,10 +1310,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-10-22T10:22:15-04:00",
+   "source_count": 2,
+   "latest_evidence": "2026-10-22T18:05:00+01:00",
    "official_source_found": false,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1317,6 +1334,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham lineup vs. Chelsea: Predicted XI for Premier League London derby",
+     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/gallagher-kulusevski-udogie-decisions-predicted-spurs-lineup-vs-chelsea_607413.html",
+     "source": "Sports Mole",
+     "published": "2026-10-22T18:05:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday’s Premier League clash with Chelsea."
+    },
+    {
+     "title": "Chelsea vs Tottenham Hotspur - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/preview/chelsea-vs-spurs-prediction-team-news-lineups_607411.html",
+     "source": "Sports Mole",
+     "published": "2026-10-22T18:00:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Saturday's Premier League clash between Chelsea and Tottenham Hotspur, including predictions, team news and possible lineups."
+    },
     {
      "title": "How to watch Chelsea vs Tottenham Hotspur live: Stream, TV, team news, prediction",
      "url": "https://www.nbcsports.com/soccer/news/how-to-watch-chelsea-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
@@ -1352,24 +1387,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
-    },
-    {
-     "title": "OKC Thunder Make Starting Lineup Decision For Season Opener vs. Spurs",
-     "url": "https://www.si.com/nba/thunder/onsi/okc-thunder-make-starting-lineup-decision-for-season-opener-vs-spurs-?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-21T01:21:56+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "The Oklahoma City Thunder make starting lineup decision ahead of Season Opener vs. Spurs."
-    },
-    {
-     "title": "Roberto De Zerbi provides latest Spurs injury update after triple injury scare in Coventry win",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-provides-latest-spurs-injury-update-after-triple-injury-scare-vs-coventry_607272.html",
-     "source": "Sports Mole",
-     "published": "2026-10-20T07:05:19+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur have received a positive injury update after Roberto De Zerbi eased concerns over Andy Robertson, Tosin Adarabioyo and Omar Marmoush."
     }
    ]
   },
@@ -1516,10 +1533,10 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 10,
-   "source_count": 6,
+   "evidence_count": 9,
+   "source_count": 5,
    "latest_evidence": "2026-10-20T16:00:00+00:00",
-   "official_source_found": true,
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1569,15 +1586,6 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Wan-Bissaka features in DR Congo win",
-     "url": "https://avfc.co.uk/news/2026/september/24/internationals-wan-bissaka-features-in-dr-congo-win/",
-     "source": "Aston Villa",
-     "published": "2026-09-24T18:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Aaron Wan-Bissaka completed 90 minutes as DR Congo made a winning start to their 2027 African Cup of Nations qualifying campaign on Thursday. The Aston Villa right-back helped his nation keep a clean sheet in a 2-0 triumph over Equatorial Guinea in Kinshasa, courtesy of goals from captain Chancel Mbemba and Newcastle United striker Yoane Wissa. The victory places the Congolese side top of Group E "
     },
     {
      "title": "'Triple up on Tottenham Hotspur players' Five of the best FPL differential options for Gameweek 7",
