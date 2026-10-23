@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 8,
- "ran_at": "2026-10-23T10:09:24+00:00",
- "seconds": 166.1,
+ "ran_at": "2026-10-23T15:46:15+00:00",
+ "seconds": 166.8,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 579,
- "substantive_items": 192,
- "duplicates_removed": 21,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 18867,
+ "candidates_discovered": 674,
+ "substantive_items": 288,
+ "duplicates_removed": 37,
+ "deeply_analysed": 72,
+ "deep_read_failed": 18,
+ "corpus_size": 18903,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 192 articles"
+    "57/78 sources returned 288 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -51,6 +50,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -751,7 +751,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 29,
+   "evidence_count": 30,
    "source_count": 13,
    "latest_evidence": "2026-10-17T15:00:00+00:00",
    "official_source_found": true,
@@ -893,7 +893,7 @@
    "club": "BOU",
    "evidence_count": 15,
    "source_count": 4,
-   "latest_evidence": "2026-10-23T09:27:20+00:00",
+   "latest_evidence": "2026-10-23T10:20:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -990,6 +990,15 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Cherries FPL Gameweek 8 Preview",
+     "url": "https://www.afcb.co.uk/news/2026/october/23/cherries-fpl-gameweek-8-preview/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-23T10:20:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "AFC Bournemouth have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Best of the Cherries The past week has been an outstanding week for the Cherries with victories in Europe a"
+    },
+    {
      "title": "Kluivert: We know what we’re capable of",
      "url": "https://www.afcb.co.uk/news/2026/october/22/kluivert--we-know-what-we-re-capable-of/",
      "source": "AFC Bournemouth",
@@ -1015,23 +1024,14 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "Marcus Tavernier hailed the impact of Evanilson after the Brazilian played a starring role in AFC Bournemouth’s 2-0 victory over Sunderland. The forward was instrumental in both goals at Vitality Stadium, first showing strength and composure before providing the cross for Tavernier to head home the opener. Evanilson then got his reward after the break, adding the second goal to help the Cherries s"
-    },
-    {
-     "title": "Le Bris: “We were not Sunderland today”",
-     "url": "https://www.safc.com/news/2026/october/18/le-bris-we-were-not-sunderland-today-/",
-     "source": "Sunderland",
-     "published": "2026-10-18T15:50:43+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Régis Le Bris admitted Sunderland were below the required level following Sunday’s 2-0 Premier League defeat to AFC Bournemouth at the Vitality Stadium. The Black Cats fell behind in the sixth minute when Marcus Tavernier headed home Evanilson’s cross, before Kevin Danso was shown a straight red card 11 minutes later, leaving the visitors to play the majority of the contest with 10 men. Robin Roef"
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 47,
-   "source_count": 18,
+   "evidence_count": 46,
+   "source_count": 17,
    "latest_evidence": "2026-10-23T08:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1171,8 +1171,8 @@
    "player": "Haaland",
    "club": "MCI",
    "evidence_count": 130,
-   "source_count": 17,
-   "latest_evidence": "2026-10-23T06:37:51+00:00",
+   "source_count": 16,
+   "latest_evidence": "2026-10-23T13:20:41+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1311,10 +1311,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 2,
-   "latest_evidence": "2026-10-22T18:05:00+01:00",
+   "source_count": 4,
+   "latest_evidence": "2026-10-23T09:36:27+00:00",
    "official_source_found": false,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1335,6 +1335,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea v Tottenham: Prediction, team news, lineups and odds",
+     "url": "https://www.football365.com/match-preview/chelsea-v-tottenham-prediction-preview-2026-27",
+     "source": "Football365",
+     "published": "2026-10-23T09:36:27+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Premier League clash between Chelsea and Tottenham."
+    },
+    {
+     "title": "Chelsea v Tottenham: Preview, expected line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/chelsea-v-tottenham-preview-expected-line-ups-stats-stream-where-to-watch/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-23T07:18:31+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "London rivals Chelsea and Tottenham clash at Stamford Bridge on Saturday evening. Read our preview here..."
+    },
     {
      "title": "Tottenham lineup vs. Chelsea: Predicted XI for Premier League London derby",
      "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/gallagher-kulusevski-udogie-decisions-predicted-spurs-lineup-vs-chelsea_607413.html",
@@ -1370,24 +1388,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Houston Rockets vs. San Antonio Spurs preview with injury news, key matchups, player props and our NBA prediction for Saturdays game at Moody Center."
-    },
-    {
-     "title": "Chelsea injury, suspension list and return dates vs. Tottenham Hotspur: Emiliano Martinez, Reece James, Pep Chavarria latest",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/martinez-james-chavarria-updates-chelsea-injury-suspension-list-vs-spurs_607365.html",
-     "source": "Sports Mole",
-     "published": "2026-10-21T20:56:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of their Premier League clash with Tottenham Hotspur."
-    },
-    {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Chelsea: Pedro Porro, Savio, Lucas Bergvall latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
-     "source": "Sports Mole",
-     "published": "2026-10-21T11:53:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
     }
    ]
   },
