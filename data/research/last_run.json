@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
- "gameweek": 8,
- "ran_at": "2026-10-23T20:29:47+00:00",
- "seconds": 146.9,
+ "gameweek": 9,
+ "ran_at": "2026-10-24T01:38:49+00:00",
+ "seconds": 163.4,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 628,
- "substantive_items": 231,
- "duplicates_removed": 22,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 18941,
+ "sources_readable": 56,
+ "candidates_discovered": 546,
+ "substantive_items": 163,
+ "duplicates_removed": 10,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 18943,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 231 articles"
+    "56/78 sources returned 163 articles"
    ]
   },
   "blackout": {
@@ -57,7 +57,8 @@
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -456,12 +457,12 @@
     }
    ]
   },
-  "Barnes": {
-   "player": "Barnes",
-   "club": "NEW",
-   "evidence_count": 5,
-   "source_count": 3,
-   "latest_evidence": "2026-10-15T20:00:25+00:00",
+  "Konsa": {
+   "player": "Konsa",
+   "club": "ARS",
+   "evidence_count": 12,
+   "source_count": 4,
+   "latest_evidence": "2026-10-16T16:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -474,60 +475,125 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
-     "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-01T15:30:00+00:00",
-     "matched_on": "barnes",
+     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
+     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-16T16:00:00+00:00",
+     "matched_on": "konsa",
      "kind": "team news",
-     "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
     },
     {
-     "title": "Rick Barnes Gets Real When Discussing Justin Gainey's Decision to Leave Tennessee",
-     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-15T20:00:25+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Justin Gainey left to join the North Carolina State Wolfpack as the head basketball coach. To no surprise, Rick Barnes approves of this decision."
+     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-11T19:00:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "RSPCA to carry out a full assessment of Maurice Barnes after the ex-trainer was given an eight-year ban over multiple welfare breaches",
-     "url": "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
-     "source": "Racing Post Football Tips",
-     "published": "2026-10-13T17:09:44+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": ""
+     "title": "Arsenal v Leeds team news: Konsa + Havertz fit to start",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-10T10:35:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Gameweek 6 of Fantasy Premier League (FPL) kicks off with Arsenal v Leeds United this Saturday lunchtime. The ... The post Arsenal v Leeds team news: Konsa + Havertz fit to start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Kawhi Leonard Has Huge Impact On Scottie Barnes' Growth With Raptors",
-     "url": "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-04T11:00:04+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The decision to bring back Kawhi Leonard is more than just an immediate championship play."
+     "title": "England defence tempers expectations with Guehi and Konsa only ‘decent’",
+     "url": "https://www.football365.com/news/england-defence-tempers-expectations-mailbox",
+     "source": "Football365",
+     "published": "2026-10-08T06:39:43+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England are nowhere near good enough to win the Euros with that selection of centre-backs, while Jude Bellingham critics vindicated."
     },
     {
-     "title": "Rick Barnes Makes it Clear Where He Stands With Tennessee vs. Texas",
-     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-makes-it-clear-where-he-stands-with-tennessee-vs-texas-01m3aytv069e?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-26T09:56:24+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The Tennessee basketball head coach talks about Tennessee vs Texas."
+     "title": "Arsenal injury, suspension list and return dates vs. Leeds United: Declan Rice, Christos Tzolis, Kai Havertz, Ezri Konsa",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-havertz-tzolis-konsa-latest-arsenal-injury-suspension-list-vs-leeds_606408.html",
+     "source": "Sports Mole",
+     "published": "2026-10-07T23:44:04+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League game against Leeds United."
+    },
+    {
+     "title": "Arsenal learn of Ezri Konsa injury \"trauma\" as Thomas Tuchel explains England withdrawal",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/tuchel-explains-konsa-trauma-as-arsenal-receive-new-injury-update_606264.html",
+     "source": "Sports Mole",
+     "published": "2026-10-05T12:59:16+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England manager Thomas Tuchel reveals the \"trauma\" that forced Arsenal's Ezri Konsa to withdraw from the Three Lions squad."
+    },
+    {
+     "title": "Scott, Konsa, van de Ven: Latest international break injury news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/05/scott-konsa-van-de-ven-latest-international-break-injury-news",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-05T09:25:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "More team news updates from the October internationals The post Scott, Konsa, van de Ven: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal dealt new injury blow ahead of Leeds United showdown",
+     "url": "https://www.fourfourtwo.com/person/player/arsenal-dealt-new-injury-blow-ahead-of-leeds-united-showdown",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-05T09:18:35+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Ezri Konsa and Alex Scott have pulled out of the England squad ahead of Tuesday’s UEFA Nations League fixture against Czechia at Wembley. The pair have returned to their respective clubs for further assessment but the news comes at an inopportune time for Arsenal , given their lack of available defensive options. The Football Association confirmed the update in an official statement, revealing tha"
+    },
+    {
+     "title": "Arsenal receive injury boost as Thomas Tuchel delivers Ezri Konsa update ahead of England's clash with Croatia",
+     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
+     "source": "Sports Mole",
+     "published": "2026-10-02T19:15:00+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England boss Thomas Tuchel provides an injury update on Arsenal defender Ezri Konsa ahead of Saturday's Nations League meeting with Croatia."
+    },
+    {
+     "title": "Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
+     "source": "Fantasy Football Scout",
+     "published": "2026-09-30T22:55:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "The latest fitness updates from the ongoing international break The post Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal defender sits out England training but Mikel Arteta shouldn’t worry just yet",
+     "url": "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
+     "source": "FourFourTwo FPL",
+     "published": "2026-09-29T07:53:51+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "The Gunners' summer signing sat out full group training ahead of the Three Lions' departure for their match against Czechia, sparking fears of another potential injury blow for Mikel Arteta's side. England released an official update detailing the squad's preparation arrangements, communicating the following message: \"Ezri Konsa and Nico O'Reilly are following their own individual programmes at To"
+    },
+    {
+     "title": "England injury news: Three Lions duo be to missing vs. Czech Republic as defensive crisis worsens?",
+     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/defensive-issues-worsen-with-england-duo-major-doubts-for-czech-republic-trip_605927.html",
+     "source": "Sports Mole",
+     "published": "2026-09-28T15:48:36+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
     }
    ]
   },
@@ -611,7 +677,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 37,
+   "evidence_count": 33,
    "source_count": 13,
    "latest_evidence": "2026-10-19T12:06:21+02:00",
    "official_source_found": true,
@@ -702,15 +768,6 @@
      "excerpt": "Chelsea star Cole Palmer is described as a \"victim\" of the intense football schedule in a surprise defence of the England international."
     },
     {
-     "title": "England injury news: Thomas Tuchel reacts to Cole Palmer withdrawal, admits growing frustration",
-     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/he-misses-too-many-camps-tuchel-expresses-frustration-with-palmer-injuries_605794.html",
-     "source": "Sports Mole",
-     "published": "2026-09-25T16:54:28+01:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "England head coach Thomas Tuchel admits that he is frustrated with Cole Palmer's withdrawal from the Three Lions squad for the upcoming UEFA Nations League fixtures."
-    },
-    {
      "title": "Chelsea news: Cole Palmer announces new long-term contract in his own unique way ahead of Bournemouth clash",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
      "source": "Sports Mole",
@@ -745,14 +802,23 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist after Bournemouth brace",
+     "url": "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
+     "source": "FISO",
+     "published": "2026-10-13T14:47:52+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Photo by Vienna Reyes on Unsplash Chelsea travel to Everton on Saturday, 17 October, with João Pedro, Cole Palmer and Morgan Rogers the leading Fantasy Premier League options from the fixture. Kick-off time and TV coverage can be found on TNT Sports and HBO Max. Everton v Chelsea is one of the most useful Gameweek … Continue reading Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist"
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 30,
-   "source_count": 13,
+   "evidence_count": 29,
+   "source_count": 12,
    "latest_evidence": "2026-10-17T15:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1311,8 +1377,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-23T14:45:20+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-23T17:30:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1325,7 +1391,6 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "match report",
     "press conference",
     "statistics",
     "tactics",
@@ -1336,6 +1401,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea vs. Tottenham injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/team-news/chelsea-vs-spurs-injury-suspension-list-predicted-xis_607414.html",
+     "source": "Sports Mole",
+     "published": "2026-10-23T17:30:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Chelsea and Tottenham Hotspur."
+    },
+    {
+     "title": "Tottenham injury news: Roberto De Zerbi provides mixed fitness update ahead of Chelsea trip",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/maddison-nightmare-continues-de-zerbi-provides-concerning-injury-update_607569.html",
+     "source": "Sports Mole",
+     "published": "2026-10-23T16:58:24+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur head coach Roberto de Zerbi provides multiple injury updates ahead of his side's Premier League trip to Chelsea on Saturday afternoon."
+    },
     {
      "title": "Chelsea injury news: Xabi Alonso delivers double blow ahead of Spurs London derby showdown",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/we-must-wait-alonso-delivers-double-chelsea-injury-blow-ahead-of-spurs-game_607560.html",
@@ -1371,33 +1454,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday’s Premier League clash with Chelsea."
-    },
-    {
-     "title": "Chelsea vs Tottenham Hotspur - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/preview/chelsea-vs-spurs-prediction-team-news-lineups_607411.html",
-     "source": "Sports Mole",
-     "published": "2026-10-22T18:00:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Saturday's Premier League clash between Chelsea and Tottenham Hotspur, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "How to watch Chelsea vs Tottenham Hotspur live: Stream, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-chelsea-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-22T10:22:15-04:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     }
    ]
   },
-  "Konsa": {
-   "player": "Konsa",
-   "club": "ARS",
-   "evidence_count": 12,
-   "source_count": 4,
-   "latest_evidence": "2026-10-16T16:00:00+00:00",
+  "Barnes": {
+   "player": "Barnes",
+   "club": "NEW",
+   "evidence_count": 5,
+   "source_count": 3,
+   "latest_evidence": "2026-10-15T20:00:25+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1410,125 +1475,60 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "match report",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
-     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
-     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-16T16:00:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
-    },
-    {
-     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
+     "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
      "source": "Fantasy Football Scout",
-     "published": "2026-10-11T19:00:00+00:00",
-     "matched_on": "konsa",
+     "published": "2026-10-01T15:30:00+00:00",
+     "matched_on": "barnes",
      "kind": "team news",
-     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Arsenal v Leeds team news: Konsa + Havertz fit to start",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-10T10:35:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Gameweek 6 of Fantasy Premier League (FPL) kicks off with Arsenal v Leeds United this Saturday lunchtime. The ... The post Arsenal v Leeds team news: Konsa + Havertz fit to start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "title": "Rick Barnes Gets Real When Discussing Justin Gainey's Decision to Leave Tennessee",
+     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-15T20:00:25+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Justin Gainey left to join the North Carolina State Wolfpack as the head basketball coach. To no surprise, Rick Barnes approves of this decision."
     },
     {
-     "title": "England defence tempers expectations with Guehi and Konsa only ‘decent’",
-     "url": "https://www.football365.com/news/england-defence-tempers-expectations-mailbox",
-     "source": "Football365",
-     "published": "2026-10-08T06:39:43+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England are nowhere near good enough to win the Euros with that selection of centre-backs, while Jude Bellingham critics vindicated."
+     "title": "RSPCA to carry out a full assessment of Maurice Barnes after the ex-trainer was given an eight-year ban over multiple welfare breaches",
+     "url": "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
+     "source": "Racing Post Football Tips",
+     "published": "2026-10-13T17:09:44+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": ""
     },
     {
-     "title": "Arsenal injury, suspension list and return dates vs. Leeds United: Declan Rice, Christos Tzolis, Kai Havertz, Ezri Konsa",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-havertz-tzolis-konsa-latest-arsenal-injury-suspension-list-vs-leeds_606408.html",
-     "source": "Sports Mole",
-     "published": "2026-10-07T23:44:04+01:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League game against Leeds United."
+     "title": "Kawhi Leonard Has Huge Impact On Scottie Barnes' Growth With Raptors",
+     "url": "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-04T11:00:04+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "The decision to bring back Kawhi Leonard is more than just an immediate championship play."
     },
     {
-     "title": "Arsenal learn of Ezri Konsa injury \"trauma\" as Thomas Tuchel explains England withdrawal",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/tuchel-explains-konsa-trauma-as-arsenal-receive-new-injury-update_606264.html",
-     "source": "Sports Mole",
-     "published": "2026-10-05T12:59:16+01:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England manager Thomas Tuchel reveals the \"trauma\" that forced Arsenal's Ezri Konsa to withdraw from the Three Lions squad."
-    },
-    {
-     "title": "Scott, Konsa, van de Ven: Latest international break injury news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/05/scott-konsa-van-de-ven-latest-international-break-injury-news",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-05T09:25:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "More team news updates from the October internationals The post Scott, Konsa, van de Ven: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal dealt new injury blow ahead of Leeds United showdown",
-     "url": "https://www.fourfourtwo.com/person/player/arsenal-dealt-new-injury-blow-ahead-of-leeds-united-showdown",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-05T09:18:35+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Ezri Konsa and Alex Scott have pulled out of the England squad ahead of Tuesday’s UEFA Nations League fixture against Czechia at Wembley. The pair have returned to their respective clubs for further assessment but the news comes at an inopportune time for Arsenal , given their lack of available defensive options. The Football Association confirmed the update in an official statement, revealing tha"
-    },
-    {
-     "title": "Arsenal receive injury boost as Thomas Tuchel delivers Ezri Konsa update ahead of England's clash with Croatia",
-     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
-     "source": "Sports Mole",
-     "published": "2026-10-02T19:15:00+01:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England boss Thomas Tuchel provides an injury update on Arsenal defender Ezri Konsa ahead of Saturday's Nations League meeting with Croatia."
-    },
-    {
-     "title": "Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-30T22:55:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "The latest fitness updates from the ongoing international break The post Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal defender sits out England training but Mikel Arteta shouldn’t worry just yet",
-     "url": "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-29T07:53:51+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "The Gunners' summer signing sat out full group training ahead of the Three Lions' departure for their match against Czechia, sparking fears of another potential injury blow for Mikel Arteta's side. England released an official update detailing the squad's preparation arrangements, communicating the following message: \"Ezri Konsa and Nico O'Reilly are following their own individual programmes at To"
-    },
-    {
-     "title": "England injury news: Three Lions duo be to missing vs. Czech Republic as defensive crisis worsens?",
-     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/defensive-issues-worsen-with-england-duo-major-doubts-for-czech-republic-trip_605927.html",
-     "source": "Sports Mole",
-     "published": "2026-09-28T15:48:36+01:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
+     "title": "Rick Barnes Makes it Clear Where He Stands With Tennessee vs. Texas",
+     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-makes-it-clear-where-he-stands-with-tennessee-vs-texas-01m3aytv069e?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-09-26T09:56:24+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "The Tennessee basketball head coach talks about Tennessee vs Texas."
     }
    ]
   },
