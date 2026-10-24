@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-24T01:38:49+00:00",
- "seconds": 163.4,
+ "ran_at": "2026-10-24T09:35:50+00:00",
+ "seconds": 154.2,
  "sources_attempted": 78,
  "sources_readable": 56,
- "candidates_discovered": 546,
- "substantive_items": 163,
- "duplicates_removed": 10,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 18943,
+ "candidates_discovered": 537,
+ "substantive_items": 152,
+ "duplicates_removed": 12,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 18975,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 163 articles"
+    "56/78 sources returned 152 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -57,16 +58,15 @@
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "source_count": 6,
-   "latest_evidence": "2026-10-21T11:14:35+00:00",
+   "latest_evidence": "2026-10-24T09:25:48+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -108,6 +108,15 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Arsenal goalkeeper David Raya is a target for a club he holds dear in his heart. The World Cup winner has been in fine form once again this season, off the back of winning the past three Golden Glove awards in the Premier League. But with the stopper now 31, it appears that Arsenal have competition in keeping Raya for the rest of his prime. Real Madrid want to sign David Raya from Arsenal Thibaut "
+    },
+    {
+     "title": "Arsenal react to leading star revealing he wants La Liga transfer as huge update on new deal emerges",
+     "url": "https://www.football365.com/news/arsenal-react-leading-star-revealing-wants-la-liga-transfer-huge-update-new-deal",
+     "source": "Football365",
+     "published": "2026-10-24T09:25:48+00:00",
+     "matched_on": "raya",
+     "kind": "transfer",
+     "excerpt": "Arsenal’s hierarchy have reportedly reacted to David Raya admitting that he wants to join a La Liga side before he retires."
     },
     {
      "title": "Arsenal: Key Arteta starter reveals he wants La Liga transfer – ‘I would love to’",
@@ -189,24 +198,15 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Nottingham Forest slipped to a narrow home defeat against Arsenal. Despite creating a number of chances on the afternoon, Noni Madueke’s strike in the final 10 minutes proved to be the difference between the sides at the City Ground. Forest dominated the chances in the first half and the start of the second, but those missed opportunities proved costly as the Premier League holders scored for the "
-    },
-    {
-     "title": "David raya fpl 2026 27",
-     "url": "https://onefpl.com/blog/david-raya-fpl-2026-27",
-     "source": "OneFPL",
-     "published": "",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "source_count": 4,
-   "latest_evidence": "2026-10-23T01:15:00+00:00",
+   "latest_evidence": "2026-10-24T06:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -266,6 +266,15 @@
      "matched_on": "de cuyper",
      "kind": "transfer",
      "excerpt": "Kevin Danso says Sunderland must learn from their 2-0 defeat to Brighton & Hove Albion and quickly turn their attention to Thursday’s UEFA Europa League trip to SCU Torreense. The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points. “We didn’t create enough clear-cut chances and, "
+    },
+    {
+     "title": "De Cuyper: 'There's a great togetherness in the squad'",
+     "url": "https://www.brightonandhovealbion.com/media-article/de-cuyper-theres-a-great-togetherness-in-the-squad",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-10-24T06:00:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "general",
+     "excerpt": "Albion's squad has evolved after some experienced faces left in the summer, according to our Dutch defender."
     },
     {
      "title": "Le Bris: We must stick to our plan and fight",
@@ -817,7 +826,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 29,
+   "evidence_count": 28,
    "source_count": 12,
    "latest_evidence": "2026-10-17T15:00:00+00:00",
    "official_source_found": true,
@@ -870,15 +879,6 @@
      "matched_on": "rogers",
      "kind": "team news",
      "excerpt": "FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at […] The post FF247 Site Team News GW7 appeared first on Fantasy Football 247 - Premier League Tips ."
-    },
-    {
-     "title": "England vs. Spain: Morgan Rogers on \"emotions\" of Declan Rice clash as Chelsea star battles for Thomas Tuchel team selection",
-     "url": "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
-     "source": "Sports Mole",
-     "published": "2026-09-26T01:58:29+01:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "England star Morgan Rogers clarifies his relationship with Declan Rice as the attacker vies for a place in Thomas Tuchel's starting frontline against Spain."
     },
     {
      "title": "How Morgan Rogers went from £1m Middlesbrough signing to £117m British record at Chelsea",
@@ -951,15 +951,24 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Fixtures Sheffield United Women Vs. Ipswich Town Women - Sun, Oct 4th 2026, 14:00 Town Women continued their fine start to the Barclays Women’s Super League 2 season with a 2-1 win away to Sheffield United. Goals from Megan Hornby and Princess Admeiluyi ensured the Blues remain unbeaten as a fine performance at both ends of the pitch earned the points at Bramall Lane. Hornby had Town’s first sight"
+    },
+    {
+     "title": "Xabi alonso highlights impact of very complete modern player morgan rogers",
+     "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers",
+     "source": "Chelsea",
+     "published": "",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "source_count": 4,
-   "latest_evidence": "2026-10-23T10:20:00+00:00",
+   "latest_evidence": "2026-10-24T05:49:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1056,6 +1065,15 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Tavernier: It’s always an entertaining game against United",
+     "url": "https://www.afcb.co.uk/news/2026/october/24/tavernier--it-s-always-an-entertaining-game-against-united/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-24T05:49:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Marcus Tavernier is hoping for another entertaining afternoon when AFC Bournemouth travel to Old Trafford on Sunday. The Cherries face Manchester United in a 2pm kick-off, and Tavernier is expecting a tough test against a side looking for their second Premier League win of the season. “We know them as a club and as a team, they’re a very strong side and they always do well in the Premier League,” "
+    },
+    {
      "title": "Cherries FPL Gameweek 8 Preview",
      "url": "https://www.afcb.co.uk/news/2026/october/23/cherries-fpl-gameweek-8-preview/",
      "source": "AFC Bournemouth",
@@ -1081,15 +1099,6 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "Marcus Tavernier and Evanilson maintained their impressive form in front of goal as AFC Bournemouth triumphed 2-0 against Sunderland at Vitality Stadium on Sunday. Their goals, which came either side of half-time, saw the Cherries register a first Premier League win and clean sheet under head coach Marco Rose. Tavernier drew first blood with his fourth goal of the season, his diving header from Ev"
-    },
-    {
-     "title": "Tavernier: Evanilson is so important to us",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/tavernier-praises-evanilson-after-sunderland-win/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-18T16:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Marcus Tavernier hailed the impact of Evanilson after the Brazilian played a starring role in AFC Bournemouth’s 2-0 victory over Sunderland. The forward was instrumental in both goals at Vitality Stadium, first showing strength and composure before providing the cross for Tavernier to head home the opener. Evanilson then got his reward after the break, adding the second goal to help the Cherries s"
     }
    ]
   },

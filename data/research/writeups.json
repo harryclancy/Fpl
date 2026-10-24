@@ -1,24 +1,25 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-24T01:38:49+00:00",
+ "generated": "2026-10-24T09:35:50+00:00",
  "gameweek": 9,
- "corpus_size": 18943,
+ "corpus_size": 18975,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — Football365, 21 Oct: “Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.”",
-   "why_here": "Raya is in the starting eleven this week at £6.1m as a GKP. The selection rests on 12 retrieved item(s) from 6 source(s), the most recent dated 21 Oct.",
-   "case_for": "What supports keeping him: Football365, 21 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.” Football365, 21 Oct: “Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.”",
+   "status": "Latest on Raya — Football365, 21 Oct: “Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.”",
+   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 13 retrieved item(s) from 6 source(s), the most recent dated 24 Oct.",
+   "case_for": "What supports keeping him: Football365, 24 Oct: “Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.” Football365, 24 Oct: “I’m Spanish, and naturally, I’d love to play there.” READ: Arsenal ‘boast’ £200m quartet in Underplayed Premier League XI When asked what his goals are for this year, Raya added: “To win everything.” Football365, 21 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Sports Mole, 21 Oct: “Raya open to a future La Liga move © Imago / STEINSIEK.CH In an interview with Marca , Raya was asked about playing in Spain, given that he turned professional in English football at the age of 16, when he joined Blackburn.” Football365, 20 Oct: “Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya.” Football365, 20 Oct: “And former Man Utd goalkeeper Schmeichel insists that Arsenal would not have been able to get near winning a Premier League title without Raya, who they signed from Brentford for £27m in 2024 after an initial season-long loan spell.”",
+   "developments": "Recent developments — Football365, 21 Oct: “Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.” Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.” Sports Mole, 21 Oct: “Raya open to a future La Liga move © Imago / STEINSIEK.CH In an interview with Marca , Raya was asked about playing in Spain, given that he turned professional in English football at the age of 16, when he joined Blackburn.”",
    "outlook": "On the coming weeks — Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.” Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.”",
    "confidence": "high",
-   "evidence_count": 12,
+   "evidence_count": 13,
    "evidence_used": [
     "https://www.fourfourtwo.com/person/player/same-old-arsenal-there-were-doubts-inside-the-team-but-the-day-after-the-players-had-a-meeting-without-the-boss-everyone-spoke-up-nobody-talked-about-tactics-this-was-about-handling-adversity-mikel-merino-on-the-game-that-won-arsenal-the-league",
     "https://www.fourfourtwo.com/transfer/arsenal-rocked-by-david-raya-transfer-plan-report",
+    "https://www.football365.com/news/arsenal-react-leading-star-revealing-wants-la-liga-transfer-huge-update-new-deal",
     "https://www.football365.com/news/arsenal-raya-wants-la-liga-transfer",
     "https://www.fourfourtwo.com/person/player/everything-manchester-united-star-lisandro-martinez-said-as-defender-rips-into-club-directors-in-extraordinary-interview",
     "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
@@ -27,8 +28,7 @@
     "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
     "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
     "https://www.flashscore.com/news/soccer-premier-league-david-raya-hails-arsenal-response-to-bruising-brighton-loss/Igxf9IUQ/",
-    "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
-    "https://onefpl.com/blog/david-raya-fpl-2026-27"
+    "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/"
    ],
    "sources_used": [
     "Flashscore",
@@ -39,6 +39,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-react-leading-star-revealing-wants-la-liga-transfer-huge-update-new-deal",
+     "published": "2026-10-24T09:25:48+00:00",
+     "tone": "positive",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "I’m Spanish, and naturally, I’d love to play there.” READ: Arsenal ‘boast’ £200m quartet in Underplayed Premier League XI When asked what his goals are for this year, Raya added: “To win everything.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/arsenal-react-leading-star-revealing-wants-la-liga-transfer-huge-update-new-deal",
+     "published": "2026-10-24T09:25:48+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.",
      "source": "Football365",
@@ -204,19 +222,20 @@
    "player": "De Cuyper",
    "club": "BHA",
    "status": "Latest on De Cuyper — Sunderland, 10 Oct: “Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal Struijk was shown a straight red card following a VAR review for bringing down Wilson Isidor.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £5.3m as a DEF. The selection rests on 8 retrieved item(s) from 4 source(s), the most recent dated 23 Oct.",
+   "why_here": "De Cuyper is in the starting eleven this week at £5.3m as a DEF. The selection rests on 9 retrieved item(s) from 4 source(s), the most recent dated 24 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 14 Oct: “Their open-play shots conceded and chances created conceded maps add further encouragement… The next three matches after Palace are tricky, but De Cuyper should still offer attacking threat even if Brighton concede.” Fantasy Football Scout, 12 Oct: “We were really brilliant at the basics, and then you are able to compete with these kinds of teams.” – Fabian Hurzeler, via the Argus De Cuyper and Gross now, fittingly, sit joint-top of the FPL standings: There’ll be games in which the in-form duo enjoy more attacking freedom (next weekend, for example) but they still came up with the goods.” Sunderland, 10 Oct: “The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points.”",
    "case_against": "What argues against him: Fantasy Football Scout, 23 Oct: “De Cuyper had to content himself with ‘just’ six points against the Gunners, and his sole blank so far came against the Blues.” Fantasy Football Scout, 12 Oct: “Two nicely threaded passes, from that man Pascal Gross (£6.0m) and substitute Georginio Rutter (£5.3m), set up the advancing Maxim De Cuyper (£5.0m) and replacement left-back Jaouen Hadjam (£4.5m) to finish.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Scout, 23 Oct: “Brighton and Hove Albion duo Maxim De Cuyper (£5.3m) and Pascal Gross (£6.2m) are at the summit of FPL’s points table: But up next for the pair: two potentially tricky away days at Liverpool and Manchester City.” Fantasy Football Scout, 14 Oct: “MAXIM DE CUYPER We said last week that there may be better medium-term options to consider than Maxim De Cuyper (£5.1m).” Sunderland, 10 Oct: “Pascal Gross found Maxim De Cuyper with a precise pass into the left channel, with the Brighton defender keeping his composure to slide a low finish beyond Robin Roefs.”",
+   "developments": "Recent developments — Brighton & Hove Albion, 24 Oct: “De Cuyper: 'There's a great togetherness in the squad' CLUB TICKETS SHOP Main Club Sponsor TICKETS SHOP De Cuyper: 'There's a great togetherness in the squad' Albion's squad has evolved after some experienced faces left in the summer, according to our Dutch defender.” Brighton & Hove Albion, 24 Oct: “Bruce Talbot 2026-10-24T07:00+01:00 Maxim De Cuyper prepares for Sunday's test at Anfield. ð·Paul Hazlewood Maxim De Cuyper believes the turnover of players during the summer has fostered an even better level of collective maturity in Albion's squad.” Fantasy Football Scout, 23 Oct: “Brighton and Hove Albion duo Maxim De Cuyper (£5.3m) and Pascal Gross (£6.2m) are at the summit of FPL’s points table: But up next for the pair: two potentially tricky away days at Liverpool and Manchester City.”",
    "outlook": "On the coming weeks — OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.” OneFPL: “De Cuyper is a defender in FPL but is regularly used in advanced areas.”",
    "confidence": "high",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/23/gross-de-cuyper-bench-or-start-in-fpl-gameweek-8",
     "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
     "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
     "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
+    "https://www.brightonandhovealbion.com/media-article/de-cuyper-theres-a-great-togetherness-in-the-squad",
     "https://www.safc.com/news/2026/october/10/le-bris--we-must-stick-to-our-plan-and-fight/",
     "https://www.brightonandhovealbion.com/media-video/post-match-or-huerzeler-and-de-cuyper-or-sunderland-v-brighton",
     "https://www.safc.com/news/2026/october/10/sunderland-defeat-at-home-to-brighton/",
@@ -229,6 +248,22 @@
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "De Cuyper: 'There's a great togetherness in the squad' CLUB TICKETS SHOP Main Club Sponsor TICKETS SHOP De Cuyper: 'There's a great togetherness in the squad' Albion's squad has evolved after some experienced faces left in the summer, according to our Dutch defender.",
+     "source": "Brighton & Hove Albion",
+     "url": "https://www.brightonandhovealbion.com/media-article/de-cuyper-theres-a-great-togetherness-in-the-squad",
+     "published": "2026-10-24T06:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Bruce Talbot 2026-10-24T07:00+01:00 Maxim De Cuyper prepares for Sunday's test at Anfield. ð·Paul Hazlewood Maxim De Cuyper believes the turnover of players during the summer has fostered an even better level of collective maturity in Albion's squad.",
+     "source": "Brighton & Hove Albion",
+     "url": "https://www.brightonandhovealbion.com/media-article/de-cuyper-theres-a-great-togetherness-in-the-squad",
+     "published": "2026-10-24T06:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Brighton and Hove Albion duo Maxim De Cuyper (£5.3m) and Pascal Gross (£6.2m) are at the summit of FPL’s points table: But up next for the pair: two potentially tricky away days at Liverpool and Manchester City.",
      "source": "Fantasy Football Scout",
@@ -1346,19 +1381,18 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Chelsea: “Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.”",
-   "why_here": "Rogers is in the starting eleven this week at £8.0m as a MID. The selection rests on 29 retrieved item(s) from 12 source(s), the most recent dated 17 Oct.",
+   "why_here": "Rogers is in the starting eleven this week at £8.0m as a MID. The selection rests on 28 retrieved item(s) from 12 source(s), the most recent dated 17 Oct.",
    "case_for": "What supports keeping him: Everton, 17 Oct: “Moyes also gave his verdict on a Morgan Rogers challenge on James Garner when the game was goalless, with the England forward already on a yellow card.” Fantasy Football 247, 15 Oct: “FF247 Site Team News GW7 - Fantasy Football 247 - Premier League Tips Share This Post FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at the double.” FISO, 13 Oct: “In classic FPL, João Pedro is the best buy, Palmer the safest premium hold and Rogers the best mid-price Chelsea alternative.”",
    "case_against": "What argues against him: FourFourTwo FPL, 16 Oct: “It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea .” Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Chelsea: “Xabi Alonso highlights impact of 'very complete modern player' Morgan Rogers | News | Official Site | Chelsea Football Club Xabi Alonso described Morgan Rogers as a ‘very complete modern player’ after the England international struck his fourth Chelsea goal in our 5-1 win against Bournemouth.” Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.”",
    "developments": "Recent developments — Everton, 17 Oct: “There was a big talking point just before the interval, too, when Morgan Rogers – already on a yellow card – escaped another booking going into a challenge with fellow England international James Garner.” Everton, 17 Oct: “Just seconds after the break, Rogers played in Josh Acheampong down the left byline as the defender picked out Neto inside the area to hit a first-time finish beyond Jordan Pickford.” FourFourTwo FPL, 16 Oct: “Yet the departures of Tielemans, Rogers and Watkins required a tactical rethink.”",
-   "outlook": "On the coming weeks — Sports Mole, 26 Sep: “There is scope for a new attacker to impress, and Rogers will hope he can influence the game on the weekend and claim a spot on the wings moving forward.” OneFPL: “Why the FPL case is stronger than the points Three goals from roughly 1.39 xG means Rogers has finished well.”",
+   "outlook": "On the coming weeks — OneFPL: “Why the FPL case is stronger than the points Three goals from roughly 1.39 xG means Rogers has finished well.” Chelsea: “Rogers also explains how those experiences have shaped him as a person and a player, resulting in the creative playmaker who can now be seen making a big impact on the pitch for the Blues and the England national team.”",
    "confidence": "medium",
-   "evidence_count": 29,
+   "evidence_count": 28,
    "evidence_used": [
     "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
     "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw7-2/",
-    "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
     "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
     "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
@@ -1366,7 +1400,8 @@
     "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
     "https://www.football365.com/news/chelsea-expect-complete-100m-alex-scott-signing-january",
     "https://www.football365.com/news/england-player-ratings-czechia-harry-kane-morgan-rogers-lewis-hall",
-    "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/"
+    "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
+    "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers"
    ],
    "sources_used": [
     "Brentford",
@@ -1504,24 +1539,6 @@
      "source": "Ipswich Town",
      "url": "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
      "published": "2026-10-04T15:18:38+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "There is scope for a new attacker to impress, and Rogers will hope he can influence the game on the weekend and claim a spot on the wings moving forward.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
-     "published": "2026-09-26T01:58:29+01:00",
-     "tone": "neutral",
-     "topics": [
-      "tactics"
-     ]
-    },
-    {
-     "text": "Perhaps the biggest threat to Rogers this international break is Rio Ngumoha, who has been included by Tuchel in the squad despite only being 18.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/england/news/rogers-on-emotions-of-rice-clash-as-blues-star-battles-for-tuchel-selection_605808.html",
-     "published": "2026-09-26T01:58:29+01:00",
      "tone": "neutral",
      "topics": []
     },
@@ -1764,14 +1781,14 @@
    "player": "Tavernier",
    "club": "BOU",
    "status": "Latest on Tavernier — Fantasy Football Scout, 20 Oct: “EARLY RED CARD KILLS CONTEST An early Marcus Tavernier (£6.2m) goal put Bournemouth in a great position but it was Kevin Danso’ s (£5.0m) 16th-minute, last-man moment of madness – hauling back Evanilson (£6.1m) – that pretty much settled this contest, with Sunderland trailing and numerically disadvantaged for a huge chunk of the match.” Sunderland, 18 Oct: “The Black Cats fell behind in the sixth minute when Marcus Tavernier headed home Evanilson’s cross, before Kevin Danso was shown a straight red card 11 minutes later, leaving the visitors to play the majority of the contest with 10 men.”",
-   "why_here": "Tavernier is in the starting eleven this week at £6.2m as a MID. The selection rests on 15 retrieved item(s) from 4 source(s), the most recent dated 23 Oct.",
+   "why_here": "Tavernier is in the starting eleven this week at £6.3m as a MID. The selection rests on 16 retrieved item(s) from 4 source(s), the most recent dated 24 Oct.",
    "case_for": "What supports keeping him: AFC Bournemouth, 23 Oct: “Midfielder Marcus Tavernier (£6.2m) also had an impressive week registering a 10-point return, which was his third double digit haul of the season.” AFC Bournemouth, 23 Oct: “Tavernier was top for expected goals (xG) across Gameweek 7.” AFC Bournemouth, 23 Oct: “Adli’s set-piece, plus penalties from Justin Kluivert and Marcus Tavernier secured all three points for the Cherries, in a dominant performance from Marco Rose’s men.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — AFC Bournemouth, 22 Oct: “Kluivert opened the scoring from the penalty spot, with Marcus Tavernier and Amine Adli also on target as Marco Rose’s side made it three wins from three in the UEFA Europa League.” Fantasy Football Scout, 20 Oct: “Scout Notes FPL notes: Brobbey injury latest + Tavernier third in midfielder table October 20 5 comments 20 October 2026 5 comments Bournemouth earned their first Premier League win and clean sheet of 2026/27 with a comfortable victory over 10-man Sunderland on Sunday.”",
-   "developments": "Recent developments — Tactical Football Analysis, 23 Oct: “Marcus Tavernier (£6.2m): Bournemouth Form And Fixtures Marcus Tavernier is on 42 points, with 4 goals, 10/16 shots on target and 10 bonus points already.” Tactical Football Analysis, 23 Oct: “Bournemouth turn the corner after this week, with Leeds (H), Ipswich Town (A) and Nottingham Forest (H) in GW9-11, which is the case for Tavernier.” AFC Bournemouth, 22 Oct: “Penalties from Justin Kluivert and Marcus Tavernier, coupled with a stunning late free-kick from substitute Amine Adli, helped Marco Rose’s team to a dominant victory over the Serie A visitors.”",
+   "developments": "Recent developments — AFC Bournemouth, 24 Oct: “Marcus Tavernier is hoping for another entertaining afternoon when AFC Bournemouth travel to Old Trafford on Sunday.” AFC Bournemouth, 24 Oct: “The Cherries face Manchester United in a 2pm kick-off, and Tavernier is expecting a tough test against a side looking for their second Premier League win of the season.” Tactical Football Analysis, 23 Oct: “Marcus Tavernier (£6.2m): Bournemouth Form And Fixtures Marcus Tavernier is on 42 points, with 4 goals, 10/16 shots on target and 10 bonus points already.”",
    "outlook": "On the coming weeks — AFC Bournemouth, 18 Oct: “Marcus Tavernier and Evanilson maintained their impressive form in front of goal as AFC Bournemouth triumphed 2-0 against Sunderland at Vitality Stadium on Sunday.” AFC Bournemouth, 18 Oct: “Marcus Tavernier hailed the impact of Evanilson after the Brazilian played a starring role in AFC Bournemouth’s 2-0 victory over Sunderland.”",
    "confidence": "high",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "evidence_used": [
     "https://www.afcb.co.uk/news/2026/october/23/amine-adli-reflects-on--special-night--for-afc-bournemouth/",
     "https://tacticalfootballanalysis.com/fpl-gameweek-8-guide-2026-27/",
@@ -1781,10 +1798,10 @@
     "https://www.afcb.co.uk/news/2026/october/18/match-report-v-sunderland/",
     "https://www.afcb.co.uk/news/2026/october/15/match-report-v-sturm/",
     "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
+    "https://www.afcb.co.uk/news/2026/october/24/tavernier--it-s-always-an-entertaining-game-against-united/",
     "https://www.afcb.co.uk/news/2026/october/23/cherries-fpl-gameweek-8-preview/",
     "https://www.afcb.co.uk/news/2026/october/22/kluivert--we-know-what-we-re-capable-of/",
-    "https://www.afcb.co.uk/news/2026/october/18/gallery--pictures-from-first-premier-league-win-of-the-season/",
-    "https://www.afcb.co.uk/news/2026/october/18/tavernier-praises-evanilson-after-sunderland-win/"
+    "https://www.afcb.co.uk/news/2026/october/18/gallery--pictures-from-first-premier-league-win-of-the-season/"
    ],
    "sources_used": [
     "AFC Bournemouth",
@@ -1793,6 +1810,22 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Marcus Tavernier is hoping for another entertaining afternoon when AFC Bournemouth travel to Old Trafford on Sunday.",
+     "source": "AFC Bournemouth",
+     "url": "https://www.afcb.co.uk/news/2026/october/24/tavernier--it-s-always-an-entertaining-game-against-united/",
+     "published": "2026-10-24T05:49:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "The Cherries face Manchester United in a 2pm kick-off, and Tavernier is expecting a tough test against a side looking for their second Premier League win of the season.",
+     "source": "AFC Bournemouth",
+     "url": "https://www.afcb.co.uk/news/2026/october/24/tavernier--it-s-always-an-entertaining-game-against-united/",
+     "published": "2026-10-24T05:49:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Midfielder Marcus Tavernier (£6.2m) also had an impressive week registering a 10-point return, which was his third double digit haul of the season.",
      "source": "AFC Bournemouth",
