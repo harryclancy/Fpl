@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-24T14:36:37+00:00",
- "seconds": 147.6,
+ "ran_at": "2026-10-24T19:32:05+00:00",
+ "seconds": 234.6,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 606,
- "substantive_items": 220,
- "duplicates_removed": 16,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 19043,
+ "sources_readable": 56,
+ "candidates_discovered": 617,
+ "substantive_items": 228,
+ "duplicates_removed": 17,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 19044,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 220 articles"
+    "56/78 sources returned 228 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -63,9 +64,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 13,
-   "source_count": 6,
-   "latest_evidence": "2026-10-24T09:25:48+00:00",
+   "evidence_count": 14,
+   "source_count": 7,
+   "latest_evidence": "2026-10-24T15:56:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -90,6 +91,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton Defeated At Arsenal",
+     "url": "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
+     "source": "Everton",
+     "published": "2026-10-24T15:56:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Goals from Ezri Konsa and Gabriel consigned Everton to a 2-0 defeat at the home of reigning Premier League champions Arsenal on Saturday. Konsa opened the scoring inside seven minutes in north London, prodding home from close range after Martin Odegaard's dangerous corner popped up and was clawed on to the crossbar by Jordan Pickford. The Blues responded relatively well to that early setback, thou"
+    },
     {
      "title": "Mikel Merino reveals how Arsenal have battled internal doubts",
      "url": "https://www.fourfourtwo.com/person/player/same-old-arsenal-there-were-doubts-inside-the-team-but-the-day-after-the-players-had-a-meeting-without-the-boss-everyone-spoke-up-nobody-talked-about-tactics-this-was-about-handling-adversity-mikel-merino-on-the-game-that-won-arsenal-the-league",
@@ -188,15 +198,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "FOREST SUFFER NARROW DEFEAT AGAINST ARSENAL",
-     "url": "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
-     "source": "Nottingham Forest",
-     "published": "2026-10-18T17:23:00+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Nottingham Forest slipped to a narrow home defeat against Arsenal. Despite creating a number of chances on the afternoon, Noni Madueke’s strike in the final 10 minutes proved to be the difference between the sides at the City Ground. Forest dominated the chances in the first half and the start of the second, but those missed opportunities proved costly as the Premier League holders scored for the "
     }
    ]
   },
@@ -477,10 +478,10 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 12,
-   "source_count": 4,
-   "latest_evidence": "2026-10-16T16:00:00+00:00",
-   "official_source_found": false,
+   "evidence_count": 17,
+   "source_count": 7,
+   "latest_evidence": "2026-10-24T18:10:04+02:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -504,6 +505,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton Defeated At Arsenal",
+     "url": "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
+     "source": "Everton",
+     "published": "2026-10-24T15:56:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Goals from Ezri Konsa and Gabriel consigned Everton to a 2-0 defeat at the home of reigning Premier League champions Arsenal on Saturday. Konsa opened the scoring inside seven minutes in north London, prodding home from close range after Martin Odegaard's dangerous corner popped up and was clawed on to the crossbar by Jordan Pickford. The Blues responded relatively well to that early setback, thou"
+    },
     {
      "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
      "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
@@ -602,15 +612,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "The Gunners' summer signing sat out full group training ahead of the Three Lions' departure for their match against Czechia, sparking fears of another potential injury blow for Mikel Arteta's side. England released an official update detailing the squad's preparation arrangements, communicating the following message: \"Ezri Konsa and Nico O'Reilly are following their own individual programmes at To"
-    },
-    {
-     "title": "England injury news: Three Lions duo be to missing vs. Czech Republic as defensive crisis worsens?",
-     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/defensive-issues-worsen-with-england-duo-major-doubts-for-czech-republic-trip_605927.html",
-     "source": "Sports Mole",
-     "published": "2026-09-28T15:48:36+01:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England defensive duo Ezri Konsa and Nico O'Reilly are reportedly major doubts for the UEFA Nations League trip to the Czech Republic on Tuesday night."
     }
    ]
   },
@@ -694,9 +695,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 32,
-   "source_count": 13,
-   "latest_evidence": "2026-10-19T12:06:21+02:00",
+   "evidence_count": 36,
+   "source_count": 15,
+   "latest_evidence": "2026-10-24T20:30:33+02:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -803,31 +804,31 @@
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
     },
     {
-     "title": "The Verdict: Ex-ref Hackett on weekend's VAR calls & why Palmer should 'keep his mouth shut'",
-     "url": "https://www.flashscore.com/news/the-verdict-ex-ref-hackett-slams-weekend-s-var-calls-tells-palmer-to-keep-his-mouth-shut/E743z0hn/",
-     "source": "Flashscore",
-     "published": "2026-10-19T12:06:21+02:00",
+     "title": "Xabi Alonso reacts Chelsea's rain-soaked loss at Tottenham Hotspur as Blues struggle without Joao Pedro",
+     "url": "https://www.nbcsports.com/soccer/news/xabi-alonso-reacts-to-cole-palmer-red-card-chelseas-rain-soaked-loss-at-tottenham-hotspur",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-24T15:01:00-04:00",
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
     },
     {
-     "title": "Steve Palmer: Premier League chiefs need to act quickly but justice is already being served between the players' ears",
-     "url": "https://www.racingpost.com/sport/opinion/steve-palmer/steve-palmer-premier-league-chiefs-need-to-act-quickly-but-justice-is-already-being-served-between-the-players-ears-adaKt3F40vBE/",
-     "source": "Racing Post Football Tips",
-     "published": "2026-10-16T11:00:00+00:00",
+     "title": "Chelsea 0-2 Tottenham Stats: Palmer Sees Red as Penders Error Helps Gift Spurs Victory",
+     "url": "https://theanalyst.com/articles/chelsea-vs-tottenham-stats-premier-league-10-2026",
+     "source": "Opta Analyst",
+     "published": "2026-10-24T18:46:30+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Mike Penders' calamitous own goal and a late strike from Mathys Tel saw Tottenham beat 10-man Chelsea 2-0 in the Premier League at Stamford Bridge on Saturday evening. The post Chelsea 0-2 Tottenham Stats: Palmer Sees Red as Penders Error Helps Gift Spurs Victory appeared first on Opta Analyst ."
+    },
+    {
+     "title": "Palmer sees red as Spurs stun Chelsea for rare victory at Stamford Bridge",
+     "url": "https://www.soccerway.com/news/palmer-sees-red-as-spurs-stun-10-man-chelsea-for-rare-win-at-stamford-bridge/W0reIGwK/",
+     "source": "Soccerway",
+     "published": "2026-10-24T20:30:33+02:00",
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist after Bournemouth brace",
-     "url": "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
-     "source": "FISO",
-     "published": "2026-10-13T14:47:52+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Photo by Vienna Reyes on Unsplash Chelsea travel to Everton on Saturday, 17 October, with João Pedro, Cole Palmer and Morgan Rogers the leading Fantasy Premier League options from the fixture. Kick-off time and TV coverage can be found on TNT Sports and HBO Max. Everton v Chelsea is one of the most useful Gameweek … Continue reading Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist"
     }
    ]
   },
@@ -1113,9 +1114,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 45,
-   "source_count": 17,
-   "latest_evidence": "2026-10-24T13:30:00+00:00",
+   "evidence_count": 51,
+   "source_count": 18,
+   "latest_evidence": "2026-10-24T17:51:00+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1140,6 +1141,42 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Joao Pedro injury news: Latest update as Chelsea star out against Tottenham Hotspur",
+     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-24T13:44:00-04:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Chelsea injury news: Why Joao Pedro is not in Blues squad to face Tottenham as Xabi Alonso offers explanation",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-joao-pedro-is-not-in-chelsea-squad-to-face-tottenham-as-alonso-offers-explanation_607646.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T17:51:00+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea forward Joao Pedro has been ruled out for the London derby clash against Tottenham Hotspur on Saturday."
+    },
+    {
+     "title": "Chelsea v Spurs team news: Why Pedro misses out, Quenda starts",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/chelsea-v-spurs-team-news-why-pedro-misses-out-quenda-starts",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-24T16:15:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Two changes apiece at Stamford Bridge tonight The post Chelsea v Spurs team news: Why Pedro misses out, Quenda starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Chelsea vs. Tottenham lineups confirmed as Joao Pedro, Dominic Solanke, Geovany Quenda decisions revealed",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/pedro-solanke-quenda-calls-chelsea-spurs-lineups-confirmed_607642.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T16:20:00+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea and Tottenham Hotspur confirm their starting lineups for Saturday's Premier League London derby at Stamford Bridge."
+    },
     {
      "title": "Man City FPL preview",
      "url": "https://avfc.co.uk/news/2026/october/23/prematch-man-city-fpl-preview/",
@@ -1211,49 +1248,13 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "Benched by a million of his owners, Joao Pedro hauls in Chelsea's 5-1 win The post FPL notes: Rayan OOP, clinical Chelsea, Kluivert + Kroupi injury latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Chelsea injury, suspension list and return dates vs. Bournemouth: Reece James, Moises Caicedo, Cole Palmer, Joao Pedro latest",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
-     "source": "Sports Mole",
-     "published": "2026-10-07T10:58:50+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Saturday's Premier League fixture against Bournemouth."
-    },
-    {
-     "title": "FPL GW6 Injury Updates: Gakpo, Palmer, Joao Pedro & Best Replacements",
-     "url": "https://www.rotowire.com/soccer/article/fpl-gw6-injury-updates-cody-gakpo-cole-palmer-joao-pedro-best-replacements-139086",
-     "source": "RotoWire Soccer",
-     "published": "2026-10-06T08:03:00+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Internationals: Joa's Denmark win against Wales",
-     "url": "https://www.fulhamfc.com/news/2026/october/05/internationals-joas-denmark-win-against-wales/",
-     "source": "Fulham",
-     "published": "2026-10-05T08:00:30+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Joachim Andersen helped Denmark keep a clean sheet as they rounded off their international break with a win over Wales. The defender played the full 90 minutes in the Nations League clash, which was settled by a Rasmus Højlund penalty in the 75th minute. Joa also wore the captain’s armband after Pierre-Emile Højbjerg was forced off through injury. The result saw Denmark finish second in Group 4. S"
-    },
-    {
-     "title": "Estevao clocks more Brazil minutes than Blues game time and returns a more confident player for Chelsea",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/can-international-break-with-brazil-offer-new-life-to-estevao-at-chelsea-_606222.html",
-     "source": "Sports Mole",
-     "published": "2026-10-04T17:35:01+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Estevao logged 172 minutes with Brazil across three games — more than his entire Chelsea playing time this season — and returns ahead of Saturday's trip to Bournemouth with Palmer and Joao Pedro injured."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 132,
+   "evidence_count": 130,
    "source_count": 17,
    "latest_evidence": "2026-10-24T13:44:20+00:00",
    "official_source_found": true,
@@ -1394,10 +1395,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-10-24T09:10:00+01:00",
+   "source_count": 2,
+   "latest_evidence": "2026-10-24T11:31:27+01:00",
    "official_source_found": false,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1408,7 +1409,9 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1418,6 +1421,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "How to watch Chelsea vs Tottenham Hotspur live: Stream, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-chelsea-vs-tottenham-hotspur-live-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-24T08:41:00-04:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Chelsea vs. Tottenham: One Spurs player must start \"every game\" as Roberto De Zerbi sent selection demand",
+     "url": "https://www.sportsmole.co.uk/football/spurs/news/the-spurs-player-who-must-start-every-game-as-de-zerbi-sent-chelsea-demand_607628.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T11:31:27+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "As Tottenham Hotspur prepare for a mouth-watering Premier League London derby away to Chelsea on Saturday night, Sports Mole site coordinator Ben Knapton highlights the Spurs player who must start \"every game\" for the Lilywhites moving forward."
+    },
     {
      "title": "San Antonio Spurs vs. Dallas Mavericks: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-dallas-mavericks-player-props-injury-report-and-prediction--nba_607615.html",
@@ -1453,31 +1474,13 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Xabi Alonso reveals a double Chelsea injury blow ahead of Saturday's Premier League fixture against Tottenham Hotspur."
-    },
-    {
-     "title": "Chelsea v Tottenham: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/chelsea-v-tottenham-prediction-preview-2026-27",
-     "source": "Football365",
-     "published": "2026-10-23T09:36:27+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Chelsea and Tottenham."
-    },
-    {
-     "title": "Chelsea v Tottenham: Preview, expected line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/chelsea-v-tottenham-preview-expected-line-ups-stats-stream-where-to-watch/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-23T07:18:31+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "London rivals Chelsea and Tottenham clash at Stamford Bridge on Saturday evening. Read our preview here..."
     }
    ]
   },
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 5,
+   "evidence_count": 4,
    "source_count": 3,
    "latest_evidence": "2026-10-15T20:00:25+00:00",
    "official_source_found": false,
@@ -1498,7 +1501,7 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "minimum",
    "priority": "normal",
    "researched": true,
    "items": [
@@ -1537,15 +1540,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": "The decision to bring back Kawhi Leonard is more than just an immediate championship play."
-    },
-    {
-     "title": "Rick Barnes Makes it Clear Where He Stands With Tennessee vs. Texas",
-     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-makes-it-clear-where-he-stands-with-tennessee-vs-texas-01m3aytv069e?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-09-26T09:56:24+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The Tennessee basketball head coach talks about Tennessee vs Texas."
     }
    ]
   },
