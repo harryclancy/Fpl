@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-24T09:35:50+00:00",
- "seconds": 154.2,
+ "ran_at": "2026-10-24T14:36:37+00:00",
+ "seconds": 147.6,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 537,
- "substantive_items": 152,
- "duplicates_removed": 12,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 18975,
+ "sources_readable": 57,
+ "candidates_discovered": 606,
+ "substantive_items": 220,
+ "duplicates_removed": 16,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 19043,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 152 articles"
+    "57/78 sources returned 220 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -317,9 +316,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 4,
+   "evidence_count": 5,
    "source_count": 3,
-   "latest_evidence": "2026-10-14T13:00:00+00:00",
+   "latest_evidence": "2026-10-24T13:35:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -339,10 +338,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "3pm team news: Calafiori + Havertz benched",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/3pm-team-news-calafiori-havertz-benched",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-24T13:35:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Arsenal v Everton and Coventry v Fulham are the only two 3pm BST games The post 3pm team news: Calafiori + Havertz benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: Calafiori rested, Saka sub impact + Bruno on the right",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/fpl-notes-calafiori-rested-saka-nets-again-bruno-on-the-right",
@@ -686,7 +694,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 33,
+   "evidence_count": 32,
    "source_count": 13,
    "latest_evidence": "2026-10-19T12:06:21+02:00",
    "official_source_found": true,
@@ -1105,9 +1113,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 44,
+   "evidence_count": 45,
    "source_count": 17,
-   "latest_evidence": "2026-10-23T08:30:00+00:00",
+   "latest_evidence": "2026-10-24T13:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1245,9 +1253,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 128,
-   "source_count": 16,
-   "latest_evidence": "2026-10-23T13:20:41+00:00",
+   "evidence_count": 132,
+   "source_count": 17,
+   "latest_evidence": "2026-10-24T13:44:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1272,6 +1280,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Aston Villa 2-1 Man City",
+     "url": "https://avfc.co.uk/news/2026/october/24/report-aston-villa-2-1-man-city/",
+     "source": "Aston Villa",
+     "published": "2026-10-24T13:27:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Fixtures Aston Villa Vs. Manchester City - Sat, Oct 24 2026, 12:30 Aston Villa claimed a fourth successive victory in Saturday’s early kick-off at Villa Park, defeating Premier League leaders Manchester City 2-1. Nicolas Jackson’s brilliant brace in B6 – either side of Erling Haaland’s equaliser – marked a perfect way for Unai Emery to celebrate the four-year anniversary of his appointment as Vill"
+    },
+    {
+     "title": "Villa v Man City team news: Haaland + Manzambi start, Foden sub",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/villa-v-man-city-team-news-haaland-manzambi-start-foden-sub",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-24T11:20:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Both sides make four changes from midweek The post Villa v Man City team news: Haaland + Manzambi start, Foden sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Aston Villa vs. Man City team news: Johan Manzambi, Erling Haaland decisions made as starting lineups confirmed",
+     "url": "https://www.sportsmole.co.uk/football/aston-villa/news/aston-villa-man-city-starting-lineups-confirmed-manzambi-haaland-decisions-made-for-pl-game_607626.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T11:19:00+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Aston Villa and Manchester City announce their starting lineups for Saturday's Premier League fixture in the West Midlands."
+    },
     {
      "title": "FPL Gameweek 8 Guide 2026/27: Injuries, Fixtures And Captaincy Picks Ahead Of FPL GW8",
      "url": "https://tacticalfootballanalysis.com/fpl-gameweek-8-guide-2026-27/",
@@ -1352,33 +1387,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Enzo Maresca and Andoni Iraola face the media on Monday The post Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Man City injury, suspension list and return dates vs. AEK Athens: Erling Haaland, Antoine Semenyo latest",
-     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/injuries-and-suspensions/haaland-semenyo-oreilly-latest-man-city-injury-suspension-list-vs-aek-athens_607199.html",
-     "source": "Sports Mole",
-     "published": "2026-10-19T04:56:00+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Manchester City's latest injury and suspension news ahead of Tuesday's Champions League clash with AEK Athens."
-    },
-    {
-     "title": "Man City predicted lineup vs. AEK Athens: Erling Haaland decision made as Enzo Maresca rings changes",
-     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/predicted-lineups/rest-for-haaland-predicted-man-city-xi-vs-aek-athens_607193.html",
-     "source": "Sports Mole",
-     "published": "2026-10-19T00:22:00+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Manchester City could line up for Tuesday's Champions League match against AEK Athens."
-    },
-    {
-     "title": "Manchester City injury news: Enzo Maresca issues updates on Erling Haaland and Antoine Semenyo after Ipswich Town win",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/five-scares-maresca-issues-haaland-and-semenyo-injury-updates_607137.html",
-     "source": "Sports Mole",
-     "published": "2026-10-18T02:12:00+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Manchester City boss Enzo Maresca provides updates on Erling Haaland, Antoine Semenyo, Mateo Kovacic, Matheus Nunes and Nico O'Reilly after injury scares against Ipswich Town."
     }
    ]
   },
@@ -1387,7 +1395,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-10-23T17:30:00+01:00",
+   "latest_evidence": "2026-10-24T09:10:00+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1410,6 +1418,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "San Antonio Spurs vs. Dallas Mavericks: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-dallas-mavericks-player-props-injury-report-and-prediction--nba_607615.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T09:10:00+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "San Antonio Spurs vs Dallas Mavericks prediction, player props and injury report as the Western Conference champions face a depleted Dallas side missing Flagg on a back-to-back Saturday night."
+    },
     {
      "title": "Chelsea vs. Tottenham injury, suspension list, predicted XIs",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/team-news/chelsea-vs-spurs-injury-suspension-list-predicted-xis_607414.html",
@@ -1454,15 +1471,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "London rivals Chelsea and Tottenham clash at Stamford Bridge on Saturday evening. Read our preview here..."
-    },
-    {
-     "title": "Tottenham lineup vs. Chelsea: Predicted XI for Premier League London derby",
-     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/gallagher-kulusevski-udogie-decisions-predicted-spurs-lineup-vs-chelsea_607413.html",
-     "source": "Sports Mole",
-     "published": "2026-10-22T18:05:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday’s Premier League clash with Chelsea."
     }
    ]
   },
