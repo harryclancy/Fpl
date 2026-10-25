@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-25T14:58:00+00:00",
- "seconds": 140.2,
+ "ran_at": "2026-10-25T19:42:09+00:00",
+ "seconds": 156.6,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 593,
- "substantive_items": 209,
- "duplicates_removed": 27,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 19092,
+ "sources_readable": 56,
+ "candidates_discovered": 638,
+ "substantive_items": 256,
+ "duplicates_removed": 22,
+ "deeply_analysed": 68,
+ "deep_read_failed": 22,
+ "corpus_size": 19156,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 209 articles"
+    "56/78 sources returned 256 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -713,9 +714,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 40,
-   "source_count": 15,
-   "latest_evidence": "2026-10-25T14:45:00+00:00",
+   "evidence_count": 41,
+   "source_count": 16,
+   "latest_evidence": "2026-10-25T16:10:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -840,13 +841,13 @@
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
     },
     {
-     "title": "Why Cole Palmer Will Be Allowed to Face Man Utd After Chelsea Red Card",
-     "url": "https://www.si.com/soccer/why-cole-palmer-allowed-to-face-man-utd-after-red-card?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-25T14:45:00+00:00",
+     "title": "TOWN 3 SUNDERLAND 1",
+     "url": "https://www.itfc.co.uk/news/2026/october/25/town-3-sunderland-1/",
+     "source": "Ipswich Town",
+     "published": "2026-10-25T16:10:00+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Palmer took to social media to respond to his dismissal against Tottenham."
+     "excerpt": "The Blues put in a brilliant performance to beat high-flying Sunderland 3-1 in the Barclays Women’s Super League 2 on Sunday. Town went behind early but Georgia Timms’ first goal for the club along with a brace from Princess Ademiluyi completed the turnaround at the JobServe Community Stadium. The visitors took the lead after four minutes when Tess Laplacette’s corner was met by Elise Hughes who s"
     }
    ]
   },
@@ -993,9 +994,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 17,
+   "evidence_count": 20,
    "source_count": 5,
-   "latest_evidence": "2026-10-25T14:45:36+00:00",
+   "latest_evidence": "2026-10-25T16:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1019,6 +1020,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "History repeats itself as Cherries bring up hat-trick of Old Trafford wins",
+     "url": "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-25T15:55:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "AFC Bournemouth marked their 350th Premier League game with a mightily impressive 3-0 win over 20-time top-flight champions Manchester United. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries repeat the scoreline at Old Trafford from visits in 2023/24 and 2024/25. Rayan opened the scoring with a fine finish in the 38th minute before Tavernier doubled their lead on the stroke of ha"
+    },
     {
      "title": "Amine Adli reflects on \"special night\" for AFC Bournemouth",
      "url": "https://www.afcb.co.uk/news/2026/october/23/amine-adli-reflects-on--special-night--for-afc-bournemouth/",
@@ -1092,6 +1102,24 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Hill hails really special performance at Old Trafford",
+     "url": "https://www.afcb.co.uk/news/2026/october/25/hill-hails-really-special-performance-at-old-trafford/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-25T16:30:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Defender James Hill played his part in AFC Bournemouth’s 3-0 win over Manchester United and described it as “a really special performance”. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries celebrate their 350th Premier League game in style at Old Trafford. Hill, who came off the bench in the 3-0 win at Old Trafford in 2024/25 and in the 4-4 draw last season, played the full 90 min"
+    },
+    {
+     "title": "Match gallery: Pictures from win at Old Trafford",
+     "url": "https://www.afcb.co.uk/news/2026/october/25/match-gallery--pictures-from-win-at-old-trafford/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-25T16:30:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Goals from Rayan, Marcus Tavernier and Evanilson helped AFC Bournemouth celebrate their 350th Premier League game in some style, winning 3-0 against Manchester United. The trio were on target as the Cherries repeated the scoreline from Old Trafford in 2023/24 and 2024/25, a fourth victory in 11 days following wins over Sunderland in the Premier League and Sturm Graz and AC Milan in the UEFA Europa"
+    },
+    {
      "title": "Man Utd 0-2 Bournemouth: Rayan and Tavernier put Cherries ahead at Old Trafford",
      "url": "https://www.101greatgoals.com/football/man-utd-0-2-bournemouth-rayan-and-tavernier-put-cherries-ahead-at-old-trafford/",
      "source": "101 Great Goals — Fantasy",
@@ -1099,33 +1127,6 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "Two goals in five minutes sink United once more"
-    },
-    {
-     "title": "Tavernier: It’s always an entertaining game against United",
-     "url": "https://www.afcb.co.uk/news/2026/october/24/tavernier--it-s-always-an-entertaining-game-against-united/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-24T05:49:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Marcus Tavernier is hoping for another entertaining afternoon when AFC Bournemouth travel to Old Trafford on Sunday. The Cherries face Manchester United in a 2pm kick-off, and Tavernier is expecting a tough test against a side looking for their second Premier League win of the season. “We know them as a club and as a team, they’re a very strong side and they always do well in the Premier League,” "
-    },
-    {
-     "title": "Cherries FPL Gameweek 8 Preview",
-     "url": "https://www.afcb.co.uk/news/2026/october/23/cherries-fpl-gameweek-8-preview/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-23T10:20:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "AFC Bournemouth have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Best of the Cherries The past week has been an outstanding week for the Cherries with victories in Europe a"
-    },
-    {
-     "title": "Kluivert: We know what we’re capable of",
-     "url": "https://www.afcb.co.uk/news/2026/october/22/kluivert--we-know-what-we-re-capable-of/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-22T22:35:23+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Justin Kluivert says AFC Bournemouth believe in their own ability whoever they face, after the Cherries recorded a historic 3-0 win over AC Milan at Vitality Stadium. Kluivert opened the scoring from the penalty spot, with Marcus Tavernier and Amine Adli also on target as Marco Rose’s side made it three wins from three in the UEFA Europa League. “I think it means a lot,” he said. “We come from two"
     }
    ]
   },
@@ -1274,7 +1275,7 @@
    "club": "MCI",
    "evidence_count": 127,
    "source_count": 17,
-   "latest_evidence": "2026-10-24T21:28:59+00:00",
+   "latest_evidence": "2026-10-25T15:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
