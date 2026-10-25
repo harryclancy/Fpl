@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-25T01:14:41+00:00",
- "seconds": 187.7,
+ "ran_at": "2026-10-25T09:52:02+00:00",
+ "seconds": 157.8,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 558,
- "substantive_items": 177,
- "duplicates_removed": 13,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 19047,
+ "sources_readable": 55,
+ "candidates_discovered": 540,
+ "substantive_items": 159,
+ "duplicates_removed": 12,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 19067,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 177 articles"
+    "55/78 sources returned 159 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -57,7 +58,8 @@
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -205,7 +207,7 @@
    "club": "BHA",
    "evidence_count": 9,
    "source_count": 4,
-   "latest_evidence": "2026-10-24T06:00:00+00:00",
+   "latest_evidence": "2026-10-25T07:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -270,7 +272,7 @@
      "title": "De Cuyper: 'There's a great togetherness in the squad'",
      "url": "https://www.brightonandhovealbion.com/media-article/de-cuyper-theres-a-great-togetherness-in-the-squad",
      "source": "Brighton & Hove Albion",
-     "published": "2026-10-24T06:00:00+00:00",
+     "published": "2026-10-25T07:30:00+00:00",
      "matched_on": "de cuyper",
      "kind": "general",
      "excerpt": "Albion's squad has evolved after some experienced faces left in the summer, according to our Dutch defender."
@@ -316,9 +318,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 6,
+   "evidence_count": 7,
    "source_count": 3,
-   "latest_evidence": "2026-10-24T23:29:03+01:00",
+   "latest_evidence": "2026-10-25T07:45:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -332,6 +334,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -342,6 +345,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Calafiori injury, Saka latest + Everton fitness updates",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-calafiori-injury-saka-latest-everton-fitness-updates",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-25T07:45:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Mikel Arteta also discusses rotation after Arsenal see off Everton The post FPL notes: Calafiori injury, Saka latest + Everton fitness updates appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal injury news: Watch key Mikel Arteta star hold hamstring against Everton to join Riccardo Calafiori on treatment table",
      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/another-injury-watch-gunners-star-hold-hamstring-to-add-worry-after-calafiori_607653.html",
@@ -703,9 +715,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 38,
+   "evidence_count": 39,
    "source_count": 15,
-   "latest_evidence": "2026-10-24T22:00:00+00:00",
+   "latest_evidence": "2026-10-25T07:58:13+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -730,6 +742,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea's Cole Palmer sent England selection message after senseless red card vs. Tottenham",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
+     "source": "Sports Mole",
+     "published": "2026-10-25T07:58:13+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Exclusive: A former Chelsea winger sends Cole Palmer a fresh England message after the attacker's senseless red card against Tottenham Hotspur."
+    },
     {
      "title": "FPL notes: Pedro injury latest + why Palmer isn’t flagged",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/fpl-notes-pedro-injury-latest-why-palmer-isnt-flagged",
@@ -828,15 +849,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Xabi Alonso admits that Chelsea star Cole Palmer must learn from his red card during the 2-0 defeat to Tottenham Hotspur on Saturday evening."
-    },
-    {
-     "title": "Xabi Alonso reacts Chelsea's rain-soaked loss at Tottenham Hotspur as Blues struggle without Joao Pedro",
-     "url": "https://www.nbcsports.com/soccer/news/xabi-alonso-reacts-to-cole-palmer-red-card-chelseas-rain-soaked-loss-at-tottenham-hotspur",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-24T15:01:00-04:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1262,7 +1274,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 130,
+   "evidence_count": 129,
    "source_count": 17,
    "latest_evidence": "2026-10-24T21:28:59+00:00",
    "official_source_found": true,
@@ -1404,7 +1416,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-10-24T17:51:00+01:00",
+   "latest_evidence": "2026-10-24T23:01:09+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1418,7 +1430,7 @@
     "fpl advice",
     "injury",
     "match report",
-    "set pieces",
+    "press conference",
     "statistics",
     "tactics",
     "team news",
@@ -1428,6 +1440,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Joao Pedro injury latest: Who could replace Chelsea striker as Xabi Alonso gives update after 2-0 Spurs loss?",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T23:01:09+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes a look at the lates on Joao Pedro's injury, and how Xabi Alonso could replace the Brazilian striker after Chelsea lost 2-0 to Spurs."
+    },
     {
      "title": "Joao Pedro injury news: Latest update as Chelsea star out against Tottenham Hotspur",
      "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
@@ -1472,15 +1493,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "The Blues have an excellent record against Spurs in the Premier League."
-    },
-    {
-     "title": "Chelsea vs. Tottenham: One Spurs player must start \"every game\" as Roberto De Zerbi sent selection demand",
-     "url": "https://www.sportsmole.co.uk/football/spurs/news/the-spurs-player-who-must-start-every-game-as-de-zerbi-sent-chelsea-demand_607628.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T11:31:27+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "As Tottenham Hotspur prepare for a mouth-watering Premier League London derby away to Chelsea on Saturday night, Sports Mole site coordinator Ben Knapton highlights the Spurs player who must start \"every game\" for the Lilywhites moving forward."
     }
    ]
   },
