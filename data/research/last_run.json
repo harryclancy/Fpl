@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-25T09:52:02+00:00",
- "seconds": 157.8,
+ "ran_at": "2026-10-25T14:58:00+00:00",
+ "seconds": 140.2,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 540,
- "substantive_items": 159,
- "duplicates_removed": 12,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 19067,
+ "sources_readable": 57,
+ "candidates_discovered": 593,
+ "substantive_items": 209,
+ "duplicates_removed": 27,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 19092,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 159 articles"
+    "57/78 sources returned 209 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -58,8 +57,7 @@
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -715,9 +713,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 39,
+   "evidence_count": 40,
    "source_count": 15,
-   "latest_evidence": "2026-10-25T07:58:13+00:00",
+   "latest_evidence": "2026-10-25T14:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -842,13 +840,13 @@
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
     },
     {
-     "title": "Cole Palmer red card: Chelsea boss Xabi Alonso admits disappointment over Blues star's dismissal against Spurs",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/one-to-learn-from-alonso-admits-disappointment-over-palmer-red-versus-spurs_607650.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T20:58:24+01:00",
+     "title": "Why Cole Palmer Will Be Allowed to Face Man Utd After Chelsea Red Card",
+     "url": "https://www.si.com/soccer/why-cole-palmer-allowed-to-face-man-utd-after-red-card?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-25T14:45:00+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Xabi Alonso admits that Chelsea star Cole Palmer must learn from his red card during the 2-0 defeat to Tottenham Hotspur on Saturday evening."
+     "excerpt": "Palmer took to social media to respond to his dismissal against Tottenham."
     }
    ]
   },
@@ -995,9 +993,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 16,
-   "source_count": 4,
-   "latest_evidence": "2026-10-24T05:49:00+00:00",
+   "evidence_count": 17,
+   "source_count": 5,
+   "latest_evidence": "2026-10-25T14:45:36+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1094,6 +1092,15 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Man Utd 0-2 Bournemouth: Rayan and Tavernier put Cherries ahead at Old Trafford",
+     "url": "https://www.101greatgoals.com/football/man-utd-0-2-bournemouth-rayan-and-tavernier-put-cherries-ahead-at-old-trafford/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-25T14:45:36+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Two goals in five minutes sink United once more"
+    },
+    {
      "title": "Tavernier: It’s always an entertaining game against United",
      "url": "https://www.afcb.co.uk/news/2026/october/24/tavernier--it-s-always-an-entertaining-game-against-united/",
      "source": "AFC Bournemouth",
@@ -1119,15 +1126,6 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "Justin Kluivert says AFC Bournemouth believe in their own ability whoever they face, after the Cherries recorded a historic 3-0 win over AC Milan at Vitality Stadium. Kluivert opened the scoring from the penalty spot, with Marcus Tavernier and Amine Adli also on target as Marco Rose’s side made it three wins from three in the UEFA Europa League. “I think it means a lot,” he said. “We come from two"
-    },
-    {
-     "title": "Gallery: Pictures from first Premier League win of the season",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/gallery--pictures-from-first-premier-league-win-of-the-season/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-18T17:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Marcus Tavernier and Evanilson maintained their impressive form in front of goal as AFC Bournemouth triumphed 2-0 against Sunderland at Vitality Stadium on Sunday. Their goals, which came either side of half-time, saw the Cherries register a first Premier League win and clean sheet under head coach Marco Rose. Tavernier drew first blood with his fourth goal of the season, his diving header from Ev"
     }
    ]
   },
@@ -1274,7 +1272,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 129,
+   "evidence_count": 127,
    "source_count": 17,
    "latest_evidence": "2026-10-24T21:28:59+00:00",
    "official_source_found": true,
@@ -1415,8 +1413,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-10-24T23:01:09+01:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-25T07:58:13+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1431,6 +1429,7 @@
     "injury",
     "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1441,6 +1440,15 @@
    "researched": true,
    "items": [
     {
+     "title": "Chelsea's Cole Palmer sent England selection message after senseless red card vs. Tottenham",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
+     "source": "Sports Mole",
+     "published": "2026-10-25T07:58:13+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Exclusive: A former Chelsea winger sends Cole Palmer a fresh England message after the attacker's senseless red card against Tottenham Hotspur."
+    },
+    {
      "title": "Joao Pedro injury latest: Who could replace Chelsea striker as Xabi Alonso gives update after 2-0 Spurs loss?",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
      "source": "Sports Mole",
@@ -1448,15 +1456,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes a look at the lates on Joao Pedro's injury, and how Xabi Alonso could replace the Brazilian striker after Chelsea lost 2-0 to Spurs."
-    },
-    {
-     "title": "Joao Pedro injury news: Latest update as Chelsea star out against Tottenham Hotspur",
-     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-24T13:44:00-04:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     },
     {
      "title": "Chelsea injury news: Why Joao Pedro is not in Blues squad to face Tottenham as Xabi Alonso offers explanation",
@@ -1565,9 +1564,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "source_count": 5,
-   "latest_evidence": "2026-10-20T16:00:00+00:00",
+   "latest_evidence": "2026-10-25T13:20:33+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1592,6 +1591,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/2pm-team-news-bruno-wissa-thiaw-benched-as-schade-sangare-start",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-25T13:20:33+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Big decisions made before these four matches The post 2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
