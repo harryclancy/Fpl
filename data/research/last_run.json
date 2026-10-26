@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-25T19:42:09+00:00",
- "seconds": 156.6,
+ "ran_at": "2026-10-26T01:15:40+00:00",
+ "seconds": 171.8,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 638,
- "substantive_items": 256,
- "duplicates_removed": 22,
- "deeply_analysed": 68,
- "deep_read_failed": 22,
- "corpus_size": 19156,
+ "sources_readable": 57,
+ "candidates_discovered": 564,
+ "substantive_items": 201,
+ "duplicates_removed": 13,
+ "deeply_analysed": 75,
+ "deep_read_failed": 15,
+ "corpus_size": 19122,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 256 articles"
+    "57/78 sources returned 201 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -994,9 +993,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 20,
+   "evidence_count": 21,
    "source_count": 5,
-   "latest_evidence": "2026-10-25T16:30:00+00:00",
+   "latest_evidence": "2026-10-25T21:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1020,6 +1019,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-tavernier-goal-more-silva-defcon-why-bruno-wasnt-used",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-25T21:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Fantasy takeaways from Man United 0-3 Bournemouth. The post FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "History repeats itself as Cherries bring up hat-trick of Old Trafford wins",
      "url": "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
@@ -1102,15 +1110,6 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Hill hails really special performance at Old Trafford",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/hill-hails-really-special-performance-at-old-trafford/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-25T16:30:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Defender James Hill played his part in AFC Bournemouth’s 3-0 win over Manchester United and described it as “a really special performance”. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries celebrate their 350th Premier League game in style at Old Trafford. Hill, who came off the bench in the 3-0 win at Old Trafford in 2024/25 and in the 4-4 draw last season, played the full 90 min"
-    },
-    {
      "title": "Match gallery: Pictures from win at Old Trafford",
      "url": "https://www.afcb.co.uk/news/2026/october/25/match-gallery--pictures-from-win-at-old-trafford/",
      "source": "AFC Bournemouth",
@@ -1120,20 +1119,20 @@
      "excerpt": "Goals from Rayan, Marcus Tavernier and Evanilson helped AFC Bournemouth celebrate their 350th Premier League game in some style, winning 3-0 against Manchester United. The trio were on target as the Cherries repeated the scoreline from Old Trafford in 2023/24 and 2024/25, a fourth victory in 11 days following wins over Sunderland in the Premier League and Sturm Graz and AC Milan in the UEFA Europa"
     },
     {
-     "title": "Man Utd 0-2 Bournemouth: Rayan and Tavernier put Cherries ahead at Old Trafford",
-     "url": "https://www.101greatgoals.com/football/man-utd-0-2-bournemouth-rayan-and-tavernier-put-cherries-ahead-at-old-trafford/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-25T14:45:36+00:00",
+     "title": "Hill hails really special performance at Old Trafford",
+     "url": "https://www.afcb.co.uk/news/2026/october/25/hill-hails-really-special-performance-at-old-trafford/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-25T16:30:00+00:00",
      "matched_on": "tavernier",
      "kind": "general",
-     "excerpt": "Two goals in five minutes sink United once more"
+     "excerpt": "Defender James Hill played his part in AFC Bournemouth’s 3-0 win over Manchester United and described it as “a really special performance”. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries celebrate their 350th Premier League game in style at Old Trafford. Hill, who came off the bench in the 3-0 win at Old Trafford in 2024/25 and in the 4-4 draw last season, played the full 90 min"
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 53,
+   "evidence_count": 52,
    "source_count": 18,
    "latest_evidence": "2026-10-24T23:01:09+01:00",
    "official_source_found": true,
@@ -1273,9 +1272,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 127,
+   "evidence_count": 125,
    "source_count": 17,
-   "latest_evidence": "2026-10-25T15:30:00+00:00",
+   "latest_evidence": "2026-10-26T00:50:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1415,7 +1414,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-10-25T07:58:13+00:00",
+   "latest_evidence": "2026-10-25T15:42:40+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1440,6 +1439,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Martin Keown ‘hopes’ Tottenham star returns soon as Roberto De Zerbi worries revealed",
+     "url": "https://www.football365.com/news/martin-keown-hopes-tottenham-star-james-maddison-back-soon-roberto-de-zerbi-worries",
+     "source": "Football365",
+     "published": "2026-10-25T15:42:40+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Arsenal legend Martin Keown “hopes” Tottenham star James Maddison isn’t out for long, as Roberto De Zerbi has revealed his fears for the midfielder’s injury."
+    },
     {
      "title": "Chelsea's Cole Palmer sent England selection message after senseless red card vs. Tottenham",
      "url": "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
@@ -1484,15 +1492,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Chelsea and Tottenham Hotspur confirm their starting lineups for Saturday's Premier League London derby at Stamford Bridge."
-    },
-    {
-     "title": "Chelsea v Tottenham: Confirmed line-ups for London derby",
-     "url": "https://www.101greatgoals.com/football/premier-league/chelsea-v-tottenham-confirmed-line-ups-for-london-derby/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-24T15:19:03+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "The Blues have an excellent record against Spurs in the Premier League."
     }
    ]
   },
