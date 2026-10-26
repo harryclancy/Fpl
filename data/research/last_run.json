@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-26T01:15:40+00:00",
- "seconds": 171.8,
+ "ran_at": "2026-10-26T11:11:05+00:00",
+ "seconds": 140.8,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 564,
- "substantive_items": 201,
- "duplicates_removed": 13,
+ "sources_readable": 56,
+ "candidates_discovered": 574,
+ "substantive_items": 197,
+ "duplicates_removed": 9,
  "deeply_analysed": 75,
  "deep_read_failed": 15,
- "corpus_size": 19122,
+ "corpus_size": 19119,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 201 articles"
+    "56/78 sources returned 197 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -713,9 +714,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 41,
+   "evidence_count": 43,
    "source_count": 16,
-   "latest_evidence": "2026-10-25T16:10:00+00:00",
+   "latest_evidence": "2026-10-26T08:43:49+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -740,6 +741,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury, suspension list and return dates for Liverpool: Joao Pedro, Cole Palmer latest",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
+     "source": "Sports Mole",
+     "published": "2026-10-26T05:55:03+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Wednesday's EFL Cup clash with Liverpool."
+    },
     {
      "title": "Chelsea's Cole Palmer sent England selection message after senseless red card vs. Tottenham",
      "url": "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
@@ -838,15 +848,6 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
-    },
-    {
-     "title": "TOWN 3 SUNDERLAND 1",
-     "url": "https://www.itfc.co.uk/news/2026/october/25/town-3-sunderland-1/",
-     "source": "Ipswich Town",
-     "published": "2026-10-25T16:10:00+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "The Blues put in a brilliant performance to beat high-flying Sunderland 3-1 in the Barclays Women’s Super League 2 on Sunday. Town went behind early but Georgia Timms’ first goal for the club along with a brace from Princess Ademiluyi completed the turnaround at the JobServe Community Stadium. The visitors took the lead after four minutes when Tess Laplacette’s corner was met by Elise Hughes who s"
     }
    ]
   },
@@ -993,9 +994,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 21,
-   "source_count": 5,
-   "latest_evidence": "2026-10-25T21:00:00+00:00",
+   "evidence_count": 22,
+   "source_count": 6,
+   "latest_evidence": "2026-10-26T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1110,6 +1111,15 @@
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "'The Manchester United players have conned Michael Carrick' Gary Neville's extraordinary rant against Bruno Fernandes and co",
+     "url": "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-26T11:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Manchester United legend Gary Neville has spoken out in support of Red Devils head coach and former teammate Michael Carrick in the aftermath of Sunday's 3-0 loss against Bournemouth. Neville expects Man United to sack Carrick , who was appointed as head coach after a positive second interim spell last season, but places the blame for the club's difficulties on decisions behind the scenes and the "
+    },
+    {
      "title": "Match gallery: Pictures from win at Old Trafford",
      "url": "https://www.afcb.co.uk/news/2026/october/25/match-gallery--pictures-from-win-at-old-trafford/",
      "source": "AFC Bournemouth",
@@ -1117,24 +1127,15 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "Goals from Rayan, Marcus Tavernier and Evanilson helped AFC Bournemouth celebrate their 350th Premier League game in some style, winning 3-0 against Manchester United. The trio were on target as the Cherries repeated the scoreline from Old Trafford in 2023/24 and 2024/25, a fourth victory in 11 days following wins over Sunderland in the Premier League and Sturm Graz and AC Milan in the UEFA Europa"
-    },
-    {
-     "title": "Hill hails really special performance at Old Trafford",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/hill-hails-really-special-performance-at-old-trafford/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-25T16:30:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Defender James Hill played his part in AFC Bournemouth’s 3-0 win over Manchester United and described it as “a really special performance”. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries celebrate their 350th Premier League game in style at Old Trafford. Hill, who came off the bench in the 3-0 win at Old Trafford in 2024/25 and in the 4-4 draw last season, played the full 90 min"
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 52,
+   "evidence_count": 53,
    "source_count": 18,
-   "latest_evidence": "2026-10-24T23:01:09+01:00",
+   "latest_evidence": "2026-10-26T05:55:03+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1159,6 +1160,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury, suspension list and return dates for Liverpool: Joao Pedro, Cole Palmer latest",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
+     "source": "Sports Mole",
+     "published": "2026-10-26T05:55:03+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Wednesday's EFL Cup clash with Liverpool."
+    },
     {
      "title": "Joao Pedro injury latest: Who could replace Chelsea striker as Xabi Alonso gives update after 2-0 Spurs loss?",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
@@ -1257,22 +1267,13 @@
      "matched_on": "pedro",
      "kind": "team news",
      "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
-    },
-    {
-     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
-     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-16T16:00:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 125,
+   "evidence_count": 123,
    "source_count": 17,
    "latest_evidence": "2026-10-26T00:50:59+00:00",
    "official_source_found": true,
@@ -1498,9 +1499,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 4,
+   "evidence_count": 5,
    "source_count": 3,
-   "latest_evidence": "2026-10-15T20:00:25+00:00",
+   "latest_evidence": "2026-10-26T10:25:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1519,10 +1520,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "minimum",
+   "strength": "good",
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-26T10:25:00+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
@@ -1564,9 +1574,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 5,
-   "latest_evidence": "2026-10-25T13:20:33+00:00",
+   "latest_evidence": "2026-10-26T10:25:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1591,6 +1601,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-26T10:25:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/2pm-team-news-bruno-wissa-thiaw-benched-as-schade-sangare-start",
