@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-26T11:11:05+00:00",
- "seconds": 140.8,
+ "ran_at": "2026-10-26T17:25:28+00:00",
+ "seconds": 165.7,
  "sources_attempted": 78,
  "sources_readable": 56,
- "candidates_discovered": 574,
- "substantive_items": 197,
- "duplicates_removed": 9,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 19119,
+ "candidates_discovered": 634,
+ "substantive_items": 240,
+ "duplicates_removed": 14,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 19227,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 197 articles"
+    "56/78 sources returned 240 articles"
    ]
   },
   "blackout": {
@@ -44,6 +44,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -54,7 +55,6 @@
   "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -201,6 +201,101 @@
     }
    ]
   },
+  "Calafiori": {
+   "player": "Calafiori",
+   "club": "ARS",
+   "evidence_count": 7,
+   "source_count": 3,
+   "latest_evidence": "2026-10-25T07:45:00+00:00",
+   "official_source_found": false,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "match report",
+    "press conference",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "good",
+   "priority": "high",
+   "researched": true,
+   "items": [
+    {
+     "title": "FPL notes: Calafiori injury, Saka latest + Everton fitness updates",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-calafiori-injury-saka-latest-everton-fitness-updates",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-25T07:45:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Mikel Arteta also discusses rotation after Arsenal see off Everton The post FPL notes: Calafiori injury, Saka latest + Everton fitness updates appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal injury news: Watch key Mikel Arteta star hold hamstring against Everton to join Riccardo Calafiori on treatment table",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/another-injury-watch-gunners-star-hold-hamstring-to-add-worry-after-calafiori_607653.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T23:29:03+01:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "An Arsenal star was seen holding their hamstring before being brought off against Everton, making him a second injury worry from the game after Riccardo Calafiori."
+    },
+    {
+     "title": "3pm team news: Calafiori + Havertz benched",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/3pm-team-news-calafiori-havertz-benched",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-24T13:35:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Arsenal v Everton and Coventry v Fulham are the only two 3pm BST games The post 3pm team news: Calafiori + Havertz benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL notes: Calafiori rested, Saka sub impact + Bruno on the right",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/fpl-notes-calafiori-rested-saka-nets-again-bruno-on-the-right",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-14T13:00:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Arsenal and Man Utd were in UCL action on Tuesday The post FPL notes: Calafiori rested, Saka sub impact + Bruno on the right appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-11T19:00:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal injury news: Why Piero Hincapie 'ankle' problem could be bad news for Riccardo Calafiori after Leeds win",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
+     "source": "Sports Mole",
+     "published": "2026-10-11T00:44:40+01:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "After Piero Hincapie reportedly suffered an injury for Arsenal, Sports Mole explains why an absence could seriously impact Riccardo Calafiori."
+    },
+    {
+     "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
+     "url": "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "calafiori",
+     "kind": "general",
+     "excerpt": ""
+    }
+   ]
+  },
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
@@ -314,107 +409,12 @@
     }
    ]
   },
-  "Calafiori": {
-   "player": "Calafiori",
-   "club": "ARS",
-   "evidence_count": 7,
-   "source_count": 3,
-   "latest_evidence": "2026-10-25T07:45:00+00:00",
-   "official_source_found": false,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "good",
-   "priority": "high",
-   "researched": true,
-   "items": [
-    {
-     "title": "FPL notes: Calafiori injury, Saka latest + Everton fitness updates",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-calafiori-injury-saka-latest-everton-fitness-updates",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-25T07:45:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Mikel Arteta also discusses rotation after Arsenal see off Everton The post FPL notes: Calafiori injury, Saka latest + Everton fitness updates appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal injury news: Watch key Mikel Arteta star hold hamstring against Everton to join Riccardo Calafiori on treatment table",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/another-injury-watch-gunners-star-hold-hamstring-to-add-worry-after-calafiori_607653.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T23:29:03+01:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "An Arsenal star was seen holding their hamstring before being brought off against Everton, making him a second injury worry from the game after Riccardo Calafiori."
-    },
-    {
-     "title": "3pm team news: Calafiori + Havertz benched",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/3pm-team-news-calafiori-havertz-benched",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-24T13:35:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Arsenal v Everton and Coventry v Fulham are the only two 3pm BST games The post 3pm team news: Calafiori + Havertz benched appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Calafiori rested, Saka sub impact + Bruno on the right",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/fpl-notes-calafiori-rested-saka-nets-again-bruno-on-the-right",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-14T13:00:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Arsenal and Man Utd were in UCL action on Tuesday The post FPL notes: Calafiori rested, Saka sub impact + Bruno on the right appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-11T19:00:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal injury news: Why Piero Hincapie 'ankle' problem could be bad news for Riccardo Calafiori after Leeds win",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/why-hincapie-ankle-injury-could-be-major-issue-for-calafiori-and-arteta_606646.html",
-     "source": "Sports Mole",
-     "published": "2026-10-11T00:44:40+01:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "After Piero Hincapie reportedly suffered an injury for Arsenal, Sports Mole explains why an absence could seriously impact Riccardo Calafiori."
-    },
-    {
-     "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
-     "url": "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials",
-     "source": "FPL Captain",
-     "published": "",
-     "matched_on": "calafiori",
-     "kind": "general",
-     "excerpt": ""
-    }
-   ]
-  },
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 6,
+   "evidence_count": 7,
    "source_count": 4,
-   "latest_evidence": "2026-10-21T14:57:09+00:00",
+   "latest_evidence": "2026-10-26T11:56:55+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -438,6 +438,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "£70m Man Utd bid to seal deal for first Eddie Howe signing",
+     "url": "https://www.football365.com/news/eddie-howe-next-man-utd-manager-first-signing-lewis-hall-70-million-bid-newcastle",
+     "source": "Football365",
+     "published": "2026-10-26T11:56:55+00:00",
+     "matched_on": "hall",
+     "kind": "transfer",
+     "excerpt": "Howe is the current favourite to take over at United, and his first addition could arrive in a £70m January deal, as per a report"
+    },
     {
      "title": "Lewis Hall reacts after learning Man Utd want to sign him from Newcastle",
      "url": "https://www.football365.com/news/manchester-united-newcastle-united-lewis-hall-2027-transfer-decision-reached",
@@ -634,13 +643,152 @@
     }
    ]
   },
-  "Groß": {
-   "player": "Groß",
-   "club": "BHA",
-   "evidence_count": 5,
-   "source_count": 4,
-   "latest_evidence": "2026-10-19T15:36:36+00:00",
-   "official_source_found": false,
+  "Tavernier": {
+   "player": "Tavernier",
+   "club": "BOU",
+   "evidence_count": 23,
+   "source_count": 6,
+   "latest_evidence": "2026-10-26T14:00:00+00:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "press conference",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "Gary Neville accuses Manchester United of 'absolute negligence' in the transfer window",
+     "url": "https://www.fourfourtwo.com/team/gary-neville-accuses-manchester-united-of-absolute-negligence-in-the-transfer-window",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-26T14:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Former Manchester United captain Gary Neville has criticised the club's recruitment over a number of years in a brutal assessment of the line-up beaten by Bournemouth in the Premier League on Sunday. United lost 3-0 thanks to goals from Rayan, Marcus Tavernier and Evanilson, with defensive errors making life easy for the Cherries at Old Trafford. The Red Devils have won two of their 12 matches in "
+    },
+    {
+     "title": "FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-tavernier-goal-more-silva-defcon-why-bruno-wasnt-used",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-25T21:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Fantasy takeaways from Man United 0-3 Bournemouth. The post FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "History repeats itself as Cherries bring up hat-trick of Old Trafford wins",
+     "url": "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-25T15:55:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "AFC Bournemouth marked their 350th Premier League game with a mightily impressive 3-0 win over 20-time top-flight champions Manchester United. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries repeat the scoreline at Old Trafford from visits in 2023/24 and 2024/25. Rayan opened the scoring with a fine finish in the 38th minute before Tavernier doubled their lead on the stroke of ha"
+    },
+    {
+     "title": "Amine Adli reflects on \"special night\" for AFC Bournemouth",
+     "url": "https://www.afcb.co.uk/news/2026/october/23/amine-adli-reflects-on--special-night--for-afc-bournemouth/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-23T09:27:20+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Amine Adli branded his long-range free kick “the best goal of my career” as his effort helped the Cherries to victory over Italian giants AC Milan. Adli’s set-piece, plus penalties from Justin Kluivert and Marcus Tavernier secured all three points for the Cherries, in a dominant performance from Marco Rose’s men. After the game, the Moroccan reflected on a special night for the fans: “I know the s"
+    },
+    {
+     "title": "FPL Gameweek 8 Guide 2026/27: Injuries, Fixtures And Captaincy Picks Ahead Of FPL GW8",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-8-guide-2026-27/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-10-23T06:37:51+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Our FPL Gameweek 8 guide covers the latest injury news, Saka replacements, captaincy picks, defenders and fixture swings. We assess Mbeumo, Tavernier, Ødegaard, Haaland and more ahead of the deadline."
+    },
+    {
+     "title": "Match gallery: Pictures from memorable win over AC Milan",
+     "url": "https://www.afcb.co.uk/news/2026/october/22/match-gallery--pictures-from-memorable-win-over-ac-milan/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-22T23:02:04+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "AFC Bournemouth capped another memorable night under the lights at Vitality Stadium by triumphing 3-0 against seven-time European champions AC Milan on Thursday. Victory saw the Cherries maintain their 100 per cent winning start to their UEFA Europa League campaign after defeating Real Sociedad and Sturm Graz in the league phase. Penalties from Justin Kluivert and Marcus Tavernier, coupled with a "
+    },
+    {
+     "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-20T16:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL notes: Brobbey injury latest + Tavernier third in midfielder table",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/fpl-notes-brobbey-injury-latest-tavernier-third-in-midfielder-table",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-20T00:20:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Notes from Bournemouth 2-0 Sunderland The post FPL notes: Brobbey injury latest + Tavernier third in midfielder table appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Evanilson on century duty in Rose's first Premier League win",
+     "url": "https://www.afcb.co.uk/news/2026/october/18/match-report-v-sunderland/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-18T14:57:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Evanilson bagged his 100th career goal as Marco Rose celebrated his first Premier League win courtesy of a 2-0 victory over Sunderland at Vitality Stadium. The Brazilian added to the 66 goals he scored for Porto and the 13 for first club Fluminense by registering his 21st for the Cherries and his third in as many games. His second-half solo effort doubled the Cherries’ lead after he had assisted M"
+    },
+    {
+     "title": "Cherries living the European dream with win over Sturm Graz",
+     "url": "https://www.afcb.co.uk/news/2026/october/15/match-report-v-sturm/",
+     "source": "AFC Bournemouth",
+     "published": "2026-10-15T20:55:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Evanilson, Rayan and Álvaro Rodríguez were on target as AFC Bournemouth capped a memorable night by triumphing 3-0 against Sturm Graz in the first European game at Vitality Stadium. The Cherries followed up their impressive 2-1 win against Real Sociedad in their opening Europa League clash with another impressive showing against the Austrian Bundesliga outfit. To mark the occasion, a giant tifo wa"
+    },
+    {
+     "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-01T15:30:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "'The Manchester United players have conned Michael Carrick' Gary Neville's extraordinary rant against Bruno Fernandes and co",
+     "url": "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-26T11:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Manchester United legend Gary Neville has spoken out in support of Red Devils head coach and former teammate Michael Carrick in the aftermath of Sunday's 3-0 loss against Bournemouth. Neville expects Man United to sack Carrick , who was appointed as head coach after a positive second interim spell last season, but places the blame for the club's difficulties on decisions behind the scenes and the "
+    }
+   ]
+  },
+  "Rogers": {
+   "player": "Rogers",
+   "club": "CHE",
+   "evidence_count": 30,
+   "source_count": 12,
+   "latest_evidence": "2026-10-26T17:00:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -660,63 +808,126 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
-     "title": "FF247 Site Team News GW6",
-     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw6-2/",
-     "source": "Fantasy Football 247",
-     "published": "2026-10-09T10:25:07+00:00",
-     "matched_on": "gro",
+     "title": "Everton Taste First Loss Of The Season To Chelsea",
+     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
+     "source": "Everton",
+     "published": "2026-10-17T13:35:00+00:00",
+     "matched_on": "rogers",
      "kind": "team news",
-     "excerpt": "FF247 Site Team News GW6 Welcome to FF247 Site Team News GW6 I feel we’ve turned point dodging into an art form. We finished on 42 points against an average of 48, and one look at the team makes it fairly easy to work out where things went wrong. Pascal Groß (14pts) was once again […] The post FF247 Site Team News GW6 appeared first on Fantasy Football 247 - Premier League Tips ."
+     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
     },
     {
-     "title": "FPL Gameweek 7 Guide 2026/27: Fixtures, Captaincy And Players To Target For GW7",
-     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-10-16T09:08:43+00:00",
-     "matched_on": "gro",
+     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
+     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-16T16:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "team news",
+     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
+    },
+    {
+     "title": "FF247 Site Team News GW7",
+     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw7-2/",
+     "source": "Fantasy Football 247",
+     "published": "2026-10-15T20:45:39+00:00",
+     "matched_on": "rogers",
+     "kind": "team news",
+     "excerpt": "FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at […] The post FF247 Site Team News GW7 appeared first on Fantasy Football 247 - Premier League Tips ."
+    },
+    {
+     "title": "Chelsea to continue transfer spree with £100m move for new forward: report",
+     "url": "https://www.fourfourtwo.com/transfer/chelsea-want-to-continue-transfer-spree-with-blockbuster-move-for-serie-a-superstar-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-26T15:00:00+00:00",
+     "matched_on": "rogers",
      "kind": "transfer",
-     "excerpt": "Our FPL Gameweek 7 guide covers the key fixtures, in-form players, transfer sells, differentials and captaincy options before Saturday’s deadline, including Erling Haaland, Pascal Groß, Bruno Fernandes and Thierno Barry."
+     "excerpt": "Chelsea are eyeing up a battle with Spanish capital giants Real Madrid for their next headline-grabbing transfer, according to reporting in Italy. The Blues invested heavily in new players during the summer transfer window, equipping new manager Xabi Alonso with a squad boasting the likes of Morgan Rogers, Emiliano Martinez, Maxence Lacrois and Valentin Barco, as well as the senior influence of Jo"
     },
     {
-     "title": "Pascal Groß is Not Essential",
-     "url": "https://full90fpl.com/pascal-gros-is-not-essential/?utm_source=rss&utm_medium=rss&utm_campaign=pascal-gros-is-not-essential",
-     "source": "Full90 FPL",
-     "published": "2026-10-19T15:36:36+00:00",
-     "matched_on": "gro",
-     "kind": "general",
-     "excerpt": "Pascal Groß is Not Essential Today, I’m looking at Groß. He’s the highest scoring midfielder with tons of transfers in, but when a player becomes that popular, I think it’s worth stepping back. In FPL, it’s easy to fixate on points already scored, but past points aren’t future points. So, in this piece, I want […] The post Pascal Groß is Not Essential appeared first on Full90 FPL ."
+     "title": "How Morgan Rogers went from £1m Middlesbrough signing to £117m British record at Chelsea",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
+     "source": "Sports Mole",
+     "published": "2026-10-06T21:06:56+01:00",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": "Chelsea signed Morgan Rogers for a British record £117m — the same player Man City sold to Middlesbrough for £1m in 2023 after failed loans at Bournemouth and Blackpool."
     },
     {
-     "title": "Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start",
-     "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
-     "source": "Opta Analyst",
-     "published": "2026-10-15T06:25:11+00:00",
-     "matched_on": "gro",
-     "kind": "general",
-     "excerpt": "Brighton & Hove Albion have made an excellent start to the 2026-27 season, and their 35-year-old creative spark has been at the centre of it. The post Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start appeared first on Opta Analyst ."
+     "title": "Morgan rogers chelsea transfer fpl",
+     "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": ""
     },
     {
-     "title": "Pascal Groß Scout Report At Brighton 2026/2027: Why Is The 35-Year-Old Midfielder Back To His Best Under Fabian Hürzeler Tactics? - Player Analysis",
-     "url": "https://tacticalfootballanalysis.com/pascal-gross-scout-report-brighton-2026-2027-analysis-tactics/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-09-28T07:56:27+00:00",
-     "matched_on": "gro",
+     "title": "Fpl gw4 transfer targets alexander isak and morgan rogers analysis",
+     "url": "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": ""
+    },
+    {
+     "title": "Roberto De Zerbi’s false-nine fury shows Tottenham are up and running, while Xabi Alonso is still adapting to Premier League life with Chelsea",
+     "url": "https://www.fourfourtwo.com/tactic/roberto-de-zerbis-false-nine-fury-shows-tottenham-are-up-and-running-while-xabi-alonso-is-still-adapting-to-premier-league-life-with-chelsea",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-26T17:00:00+00:00",
+     "matched_on": "rogers",
      "kind": "general",
-     "excerpt": "Pascal Groß has made an outstanding start since returning to Brighton. This scout report analyses his playmaking, crossing, long-range shooting and box movement, while explaining his role within Fabian Hürzeler’s tactics and the weaknesses that shape his game."
+     "excerpt": "Tottenham Hotspur’s victory in the howling wind and rain was forged in a single destructive intervention. Cole Palmer slamming his knee into Matheus Fernandes was a bolt of electricity sparking this game into life. Within 15 minutes, Spurs had scored twice and Palmer had received his second yellow card. Fully De Zerb'd victory (Image credit: Getty Images) It was a gritty, muscular, emotional win f"
+    },
+    {
+     "title": "Moyes' Blunt Everton Assessment After Chelsea Defeat",
+     "url": "https://www.evertonfc.com/news/2026/october/17/moyes--blunt-everton-assessment-after-chelsea-defeat/",
+     "source": "Everton",
+     "published": "2026-10-17T15:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "David Moyes says Everton's past two performances have not been at the level he expects as the Blues' unbeaten start to the season came to an end in a 2-0 loss to Chelsea at Hill Dickinson Stadium on Saturday. Following a 2-2 draw at Hull City last weekend – where Moyes was unhappy with the manner of the goals conceded – the Toffees boss was unimpressed with Pedro Neto's opener just seconds after t"
+    },
+    {
+     "title": "Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist after Bournemouth brace",
+     "url": "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
+     "source": "FISO",
+     "published": "2026-10-13T14:47:52+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Photo by Vienna Reyes on Unsplash Chelsea travel to Everton on Saturday, 17 October, with João Pedro, Cole Palmer and Morgan Rogers the leading Fantasy Premier League options from the fixture. Kick-off time and TV coverage can be found on TNT Sports and HBO Max. Everton v Chelsea is one of the most useful Gameweek … Continue reading Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist"
+    },
+    {
+     "title": "Chelsea expect to complete £100m signing in January, with Palmer, Rogers, Alonso to thank",
+     "url": "https://www.football365.com/news/chelsea-expect-complete-100m-alex-scott-signing-january",
+     "source": "Football365",
+     "published": "2026-10-12T13:01:05+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Chelsea fully expect to complete the signing of a midfielder who’ll cost around £100m in January, and Blues fans have Alonso, Palmer and Rogers to thank."
+    },
+    {
+     "title": "England player ratings from the 3-0 win over Czechia: Kane equals caps record, extends goals record",
+     "url": "https://www.football365.com/news/england-player-ratings-czechia-harry-kane-morgan-rogers-lewis-hall",
+     "source": "Football365",
+     "published": "2026-10-06T21:12:19+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Harry Kane marked his record-equalling 125th England cap with a couple of record-extending goals as England swatted Czechia aside."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 43,
-   "source_count": 16,
-   "latest_evidence": "2026-10-26T08:43:49+00:00",
+   "evidence_count": 44,
+   "source_count": 17,
+   "latest_evidence": "2026-10-26T17:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -851,13 +1062,13 @@
     }
    ]
   },
-  "Rogers": {
-   "player": "Rogers",
-   "club": "CHE",
-   "evidence_count": 28,
-   "source_count": 12,
-   "latest_evidence": "2026-10-17T15:00:00+00:00",
-   "official_source_found": true,
+  "Groß": {
+   "player": "Groß",
+   "club": "BHA",
+   "evidence_count": 4,
+   "source_count": 4,
+   "latest_evidence": "2026-10-19T15:36:36+00:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -869,7 +1080,6 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "match report",
     "press conference",
     "set pieces",
     "statistics",
@@ -877,127 +1087,55 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "minimum",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
-     "title": "Everton Taste First Loss Of The Season To Chelsea",
-     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
-     "source": "Everton",
-     "published": "2026-10-17T13:35:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
-    },
-    {
-     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
-     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-16T16:00:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
-    },
-    {
-     "title": "FF247 Site Team News GW7",
-     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw7-2/",
+     "title": "FF247 Site Team News GW6",
+     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw6-2/",
      "source": "Fantasy Football 247",
-     "published": "2026-10-15T20:45:39+00:00",
-     "matched_on": "rogers",
+     "published": "2026-10-09T10:25:07+00:00",
+     "matched_on": "gro",
      "kind": "team news",
-     "excerpt": "FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at […] The post FF247 Site Team News GW7 appeared first on Fantasy Football 247 - Premier League Tips ."
+     "excerpt": "FF247 Site Team News GW6 Welcome to FF247 Site Team News GW6 I feel we’ve turned point dodging into an art form. We finished on 42 points against an average of 48, and one look at the team makes it fairly easy to work out where things went wrong. Pascal Groß (14pts) was once again […] The post FF247 Site Team News GW6 appeared first on Fantasy Football 247 - Premier League Tips ."
     },
     {
-     "title": "How Morgan Rogers went from £1m Middlesbrough signing to £117m British record at Chelsea",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
-     "source": "Sports Mole",
-     "published": "2026-10-06T21:06:56+01:00",
-     "matched_on": "rogers",
+     "title": "FPL Gameweek 7 Guide 2026/27: Fixtures, Captaincy And Players To Target For GW7",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-10-16T09:08:43+00:00",
+     "matched_on": "gro",
      "kind": "transfer",
-     "excerpt": "Chelsea signed Morgan Rogers for a British record £117m — the same player Man City sold to Middlesbrough for £1m in 2023 after failed loans at Bournemouth and Blackpool."
+     "excerpt": "Our FPL Gameweek 7 guide covers the key fixtures, in-form players, transfer sells, differentials and captaincy options before Saturday’s deadline, including Erling Haaland, Pascal Groß, Bruno Fernandes and Thierno Barry."
     },
     {
-     "title": "Morgan rogers chelsea transfer fpl",
-     "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
-     "source": "OneFPL",
-     "published": "",
-     "matched_on": "rogers",
-     "kind": "transfer",
-     "excerpt": ""
-    },
-    {
-     "title": "Fpl gw4 transfer targets alexander isak and morgan rogers analysis",
-     "url": "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
-     "source": "FPL Captain",
-     "published": "",
-     "matched_on": "rogers",
-     "kind": "transfer",
-     "excerpt": ""
-    },
-    {
-     "title": "Moyes' Blunt Everton Assessment After Chelsea Defeat",
-     "url": "https://www.evertonfc.com/news/2026/october/17/moyes--blunt-everton-assessment-after-chelsea-defeat/",
-     "source": "Everton",
-     "published": "2026-10-17T15:00:00+00:00",
-     "matched_on": "rogers",
+     "title": "Pascal Groß is Not Essential",
+     "url": "https://full90fpl.com/pascal-gros-is-not-essential/?utm_source=rss&utm_medium=rss&utm_campaign=pascal-gros-is-not-essential",
+     "source": "Full90 FPL",
+     "published": "2026-10-19T15:36:36+00:00",
+     "matched_on": "gro",
      "kind": "general",
-     "excerpt": "David Moyes says Everton's past two performances have not been at the level he expects as the Blues' unbeaten start to the season came to an end in a 2-0 loss to Chelsea at Hill Dickinson Stadium on Saturday. Following a 2-2 draw at Hull City last weekend – where Moyes was unhappy with the manner of the goals conceded – the Toffees boss was unimpressed with Pedro Neto's opener just seconds after t"
+     "excerpt": "Pascal Groß is Not Essential Today, I’m looking at Groß. He’s the highest scoring midfielder with tons of transfers in, but when a player becomes that popular, I think it’s worth stepping back. In FPL, it’s easy to fixate on points already scored, but past points aren’t future points. So, in this piece, I want […] The post Pascal Groß is Not Essential appeared first on Full90 FPL ."
     },
     {
-     "title": "Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist after Bournemouth brace",
-     "url": "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
-     "source": "FISO",
-     "published": "2026-10-13T14:47:52+00:00",
-     "matched_on": "rogers",
+     "title": "Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start",
+     "url": "https://theanalyst.com/articles/pascal-gross-brighton-impressive-start-premier-league",
+     "source": "Opta Analyst",
+     "published": "2026-10-15T06:25:11+00:00",
+     "matched_on": "gro",
      "kind": "general",
-     "excerpt": "Photo by Vienna Reyes on Unsplash Chelsea travel to Everton on Saturday, 17 October, with João Pedro, Cole Palmer and Morgan Rogers the leading Fantasy Premier League options from the fixture. Kick-off time and TV coverage can be found on TNT Sports and HBO Max. Everton v Chelsea is one of the most useful Gameweek … Continue reading Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist"
-    },
-    {
-     "title": "Chelsea expect to complete £100m signing in January, with Palmer, Rogers, Alonso to thank",
-     "url": "https://www.football365.com/news/chelsea-expect-complete-100m-alex-scott-signing-january",
-     "source": "Football365",
-     "published": "2026-10-12T13:01:05+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Chelsea fully expect to complete the signing of a midfielder who’ll cost around £100m in January, and Blues fans have Alonso, Palmer and Rogers to thank."
-    },
-    {
-     "title": "England player ratings from the 3-0 win over Czechia: Kane equals caps record, extends goals record",
-     "url": "https://www.football365.com/news/england-player-ratings-czechia-harry-kane-morgan-rogers-lewis-hall",
-     "source": "Football365",
-     "published": "2026-10-06T21:12:19+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Harry Kane marked his record-equalling 125th England cap with a couple of record-extending goals as England swatted Czechia aside."
-    },
-    {
-     "title": "SHEFFIELD UNITED 1 TOWN 2",
-     "url": "https://www.itfc.co.uk/news/2026/october/04/sheffield-united-1-town-2/",
-     "source": "Ipswich Town",
-     "published": "2026-10-04T15:18:38+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Fixtures Sheffield United Women Vs. Ipswich Town Women - Sun, Oct 4th 2026, 14:00 Town Women continued their fine start to the Barclays Women’s Super League 2 season with a 2-1 win away to Sheffield United. Goals from Megan Hornby and Princess Admeiluyi ensured the Blues remain unbeaten as a fine performance at both ends of the pitch earned the points at Bramall Lane. Hornby had Town’s first sight"
-    },
-    {
-     "title": "Xabi alonso highlights impact of very complete modern player morgan rogers",
-     "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-highlights-impact-of-very-complete-modern-player-morgan-rogers",
-     "source": "Chelsea",
-     "published": "",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": ""
+     "excerpt": "Brighton & Hove Albion have made an excellent start to the 2026-27 season, and their 35-year-old creative spark has been at the centre of it. The post Breaking Lines and Building Bonds: Pascal Groß is Leading Brighton’s Impressive Start appeared first on Opta Analyst ."
     }
    ]
   },
-  "Tavernier": {
-   "player": "Tavernier",
-   "club": "BOU",
-   "evidence_count": 22,
-   "source_count": 6,
-   "latest_evidence": "2026-10-26T11:00:00+00:00",
-   "official_source_found": true,
+  "Barnes": {
+   "player": "Barnes",
+   "club": "NEW",
+   "evidence_count": 5,
+   "source_count": 3,
+   "latest_evidence": "2026-10-26T10:25:00+00:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1010,263 +1148,59 @@
     "fpl advice",
     "injury",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
-     "title": "FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-tavernier-goal-more-silva-defcon-why-bruno-wasnt-used",
+     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
      "source": "Fantasy Football Scout",
-     "published": "2026-10-25T21:00:00+00:00",
-     "matched_on": "tavernier",
+     "published": "2026-10-26T10:25:00+00:00",
+     "matched_on": "barnes",
      "kind": "team news",
-     "excerpt": "Fantasy takeaways from Man United 0-3 Bournemouth. The post FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "History repeats itself as Cherries bring up hat-trick of Old Trafford wins",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-25T15:55:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "AFC Bournemouth marked their 350th Premier League game with a mightily impressive 3-0 win over 20-time top-flight champions Manchester United. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries repeat the scoreline at Old Trafford from visits in 2023/24 and 2024/25. Rayan opened the scoring with a fine finish in the 38th minute before Tavernier doubled their lead on the stroke of ha"
-    },
-    {
-     "title": "Amine Adli reflects on \"special night\" for AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/23/amine-adli-reflects-on--special-night--for-afc-bournemouth/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-23T09:27:20+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Amine Adli branded his long-range free kick “the best goal of my career” as his effort helped the Cherries to victory over Italian giants AC Milan. Adli’s set-piece, plus penalties from Justin Kluivert and Marcus Tavernier secured all three points for the Cherries, in a dominant performance from Marco Rose’s men. After the game, the Moroccan reflected on a special night for the fans: “I know the s"
-    },
-    {
-     "title": "FPL Gameweek 8 Guide 2026/27: Injuries, Fixtures And Captaincy Picks Ahead Of FPL GW8",
-     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-8-guide-2026-27/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-10-23T06:37:51+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Our FPL Gameweek 8 guide covers the latest injury news, Saka replacements, captaincy picks, defenders and fixture swings. We assess Mbeumo, Tavernier, Ødegaard, Haaland and more ahead of the deadline."
-    },
-    {
-     "title": "Match gallery: Pictures from memorable win over AC Milan",
-     "url": "https://www.afcb.co.uk/news/2026/october/22/match-gallery--pictures-from-memorable-win-over-ac-milan/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-22T23:02:04+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "AFC Bournemouth capped another memorable night under the lights at Vitality Stadium by triumphing 3-0 against seven-time European champions AC Milan on Thursday. Victory saw the Cherries maintain their 100 per cent winning start to their UEFA Europa League campaign after defeating Real Sociedad and Sturm Graz in the league phase. Penalties from Justin Kluivert and Marcus Tavernier, coupled with a "
-    },
-    {
-     "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-20T16:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Brobbey injury latest + Tavernier third in midfielder table",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/fpl-notes-brobbey-injury-latest-tavernier-third-in-midfielder-table",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-20T00:20:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Notes from Bournemouth 2-0 Sunderland The post FPL notes: Brobbey injury latest + Tavernier third in midfielder table appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Evanilson on century duty in Rose's first Premier League win",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/match-report-v-sunderland/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-18T14:57:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Evanilson bagged his 100th career goal as Marco Rose celebrated his first Premier League win courtesy of a 2-0 victory over Sunderland at Vitality Stadium. The Brazilian added to the 66 goals he scored for Porto and the 13 for first club Fluminense by registering his 21st for the Cherries and his third in as many games. His second-half solo effort doubled the Cherries’ lead after he had assisted M"
-    },
-    {
-     "title": "Cherries living the European dream with win over Sturm Graz",
-     "url": "https://www.afcb.co.uk/news/2026/october/15/match-report-v-sturm/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-15T20:55:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Evanilson, Rayan and Álvaro Rodríguez were on target as AFC Bournemouth capped a memorable night by triumphing 3-0 against Sturm Graz in the first European game at Vitality Stadium. The Cherries followed up their impressive 2-1 win against Real Sociedad in their opening Europa League clash with another impressive showing against the Austrian Bundesliga outfit. To mark the occasion, a giant tifo wa"
+     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
      "source": "Fantasy Football Scout",
      "published": "2026-10-01T15:30:00+00:00",
-     "matched_on": "tavernier",
+     "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "'The Manchester United players have conned Michael Carrick' Gary Neville's extraordinary rant against Bruno Fernandes and co",
-     "url": "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-26T11:00:00+00:00",
-     "matched_on": "tavernier",
+     "title": "Rick Barnes Gets Real When Discussing Justin Gainey's Decision to Leave Tennessee",
+     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-15T20:00:25+00:00",
+     "matched_on": "barnes",
      "kind": "general",
-     "excerpt": "Manchester United legend Gary Neville has spoken out in support of Red Devils head coach and former teammate Michael Carrick in the aftermath of Sunday's 3-0 loss against Bournemouth. Neville expects Man United to sack Carrick , who was appointed as head coach after a positive second interim spell last season, but places the blame for the club's difficulties on decisions behind the scenes and the "
+     "excerpt": "Justin Gainey left to join the North Carolina State Wolfpack as the head basketball coach. To no surprise, Rick Barnes approves of this decision."
     },
     {
-     "title": "Match gallery: Pictures from win at Old Trafford",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/match-gallery--pictures-from-win-at-old-trafford/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-25T16:30:00+00:00",
-     "matched_on": "tavernier",
+     "title": "RSPCA to carry out a full assessment of Maurice Barnes after the ex-trainer was given an eight-year ban over multiple welfare breaches",
+     "url": "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
+     "source": "Racing Post Football Tips",
+     "published": "2026-10-13T17:09:44+00:00",
+     "matched_on": "barnes",
      "kind": "general",
-     "excerpt": "Goals from Rayan, Marcus Tavernier and Evanilson helped AFC Bournemouth celebrate their 350th Premier League game in some style, winning 3-0 against Manchester United. The trio were on target as the Cherries repeated the scoreline from Old Trafford in 2023/24 and 2024/25, a fourth victory in 11 days following wins over Sunderland in the Premier League and Sturm Graz and AC Milan in the UEFA Europa"
-    }
-   ]
-  },
-  "João Pedro": {
-   "player": "João Pedro",
-   "club": "CHE",
-   "evidence_count": 53,
-   "source_count": 18,
-   "latest_evidence": "2026-10-26T05:55:03+00:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "high",
-   "researched": true,
-   "items": [
-    {
-     "title": "Chelsea injury, suspension list and return dates for Liverpool: Joao Pedro, Cole Palmer latest",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
-     "source": "Sports Mole",
-     "published": "2026-10-26T05:55:03+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Wednesday's EFL Cup clash with Liverpool."
-    },
-    {
-     "title": "Joao Pedro injury latest: Who could replace Chelsea striker as Xabi Alonso gives update after 2-0 Spurs loss?",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T23:01:09+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Sports Mole takes a look at the lates on Joao Pedro's injury, and how Xabi Alonso could replace the Brazilian striker after Chelsea lost 2-0 to Spurs."
-    },
-    {
-     "title": "FPL notes: Pedro injury latest + why Palmer isn’t flagged",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/fpl-notes-pedro-injury-latest-why-palmer-isnt-flagged",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-24T22:00:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Plus, an update on James Maddison after Spurs beat Chelsea The post FPL notes: Pedro injury latest + why Palmer isn’t flagged appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Joao Pedro injury news: Latest update as Chelsea star out against Tottenham Hotspur",
-     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-24T13:44:00-04:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
      "excerpt": ""
     },
     {
-     "title": "Chelsea injury news: Why Joao Pedro is not in Blues squad to face Tottenham as Xabi Alonso offers explanation",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-joao-pedro-is-not-in-chelsea-squad-to-face-tottenham-as-alonso-offers-explanation_607646.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T17:51:00+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea forward Joao Pedro has been ruled out for the London derby clash against Tottenham Hotspur on Saturday."
-    },
-    {
-     "title": "Chelsea v Spurs team news: Why Pedro misses out, Quenda starts",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/chelsea-v-spurs-team-news-why-pedro-misses-out-quenda-starts",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-24T16:15:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Two changes apiece at Stamford Bridge tonight The post Chelsea v Spurs team news: Why Pedro misses out, Quenda starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Chelsea vs. Tottenham lineups confirmed as Joao Pedro, Dominic Solanke, Geovany Quenda decisions revealed",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/pedro-solanke-quenda-calls-chelsea-spurs-lineups-confirmed_607642.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T16:20:00+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea and Tottenham Hotspur confirm their starting lineups for Saturday's Premier League London derby at Stamford Bridge."
-    },
-    {
-     "title": "Man City FPL preview",
-     "url": "https://avfc.co.uk/news/2026/october/23/prematch-man-city-fpl-preview/",
-     "source": "Aston Villa",
-     "published": "2026-10-23T08:30:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Aston Villa have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Aston Villa’s João Gomes (£5.5m) could be a solid under-the-radar pick for FPL managers. His return from suspension i"
-    },
-    {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Chelsea: Pedro Porro, Savio, Lucas Bergvall latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
-     "source": "Sports Mole",
-     "published": "2026-10-21T11:53:00+01:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
-    },
-    {
-     "title": "Alysson set for full debut against Newcastle",
-     "url": "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/",
-     "source": "Aston Villa",
-     "published": "2026-10-17T15:23:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Newcastle United Vs. Aston Villa - Sat, Oct 17 2026, 17:30 Unai Emery has named his Aston Villa side to take on Newcastle United at St. James’ Park on Saturday evening. The Villans travel to the North East to face the Magpies, looking to continue building momentum after an emphatic 6-0 UEFA Champions League victory over Fenerbahçe in midweek. And Emery makes four changes to the starting 1"
-    },
-    {
-     "title": "Chelsea Player Ratings vs. Everton: Ugly Injury Sours Blues Victory",
-     "url": "https://www.si.com/soccer/chelsea-player-ratings-vs-everton-10-17-26?utm_source=RSS",
+     "title": "Kawhi Leonard Has Huge Impact On Scottie Barnes' Growth With Raptors",
+     "url": "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
      "source": "Sports Illustrated FPL",
-     "published": "2026-10-17T14:01:08+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Pedro Neto scored a first-ever Premier League brace to seal victory for Chelsea over Everton."
-    },
-    {
-     "title": "Everton Taste First Loss Of The Season To Chelsea",
-     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
-     "source": "Everton",
-     "published": "2026-10-17T13:35:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
+     "published": "2026-10-04T11:00:04+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "The decision to bring back Kawhi Leonard is more than just an immediate championship play."
     }
    ]
   },
@@ -1275,7 +1209,7 @@
    "club": "MCI",
    "evidence_count": 123,
    "source_count": 17,
-   "latest_evidence": "2026-10-26T00:50:59+00:00",
+   "latest_evidence": "2026-10-26T16:43:32+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1496,13 +1430,13 @@
     }
    ]
   },
-  "Barnes": {
-   "player": "Barnes",
-   "club": "NEW",
-   "evidence_count": 5,
-   "source_count": 3,
-   "latest_evidence": "2026-10-26T10:25:00+00:00",
-   "official_source_found": false,
+  "João Pedro": {
+   "player": "João Pedro",
+   "club": "CHE",
+   "evidence_count": 53,
+   "source_count": 18,
+   "latest_evidence": "2026-10-26T16:43:32+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1514,60 +1448,125 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "high",
    "researched": true,
    "items": [
     {
-     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-26T10:25:00+00:00",
-     "matched_on": "barnes",
+     "title": "Chelsea injury, suspension list and return dates for Liverpool: Joao Pedro, Cole Palmer latest",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
+     "source": "Sports Mole",
+     "published": "2026-10-26T05:55:03+00:00",
+     "matched_on": "joao pedro",
      "kind": "team news",
-     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Wednesday's EFL Cup clash with Liverpool."
     },
     {
-     "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-01T15:30:00+00:00",
-     "matched_on": "barnes",
+     "title": "Joao Pedro injury latest: Who could replace Chelsea striker as Xabi Alonso gives update after 2-0 Spurs loss?",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T23:01:09+01:00",
+     "matched_on": "joao pedro",
      "kind": "team news",
-     "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "excerpt": "Sports Mole takes a look at the lates on Joao Pedro's injury, and how Xabi Alonso could replace the Brazilian striker after Chelsea lost 2-0 to Spurs."
     },
     {
-     "title": "Rick Barnes Gets Real When Discussing Justin Gainey's Decision to Leave Tennessee",
-     "url": "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-15T20:00:25+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Justin Gainey left to join the North Carolina State Wolfpack as the head basketball coach. To no surprise, Rick Barnes approves of this decision."
+     "title": "FPL notes: Pedro injury latest + why Palmer isn’t flagged",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/fpl-notes-pedro-injury-latest-why-palmer-isnt-flagged",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-24T22:00:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Plus, an update on James Maddison after Spurs beat Chelsea The post FPL notes: Pedro injury latest + why Palmer isn’t flagged appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "RSPCA to carry out a full assessment of Maurice Barnes after the ex-trainer was given an eight-year ban over multiple welfare breaches",
-     "url": "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
-     "source": "Racing Post Football Tips",
-     "published": "2026-10-13T17:09:44+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
+     "title": "Joao Pedro injury news: Latest update as Chelsea star out against Tottenham Hotspur",
+     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-24T13:44:00-04:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
      "excerpt": ""
     },
     {
-     "title": "Kawhi Leonard Has Huge Impact On Scottie Barnes' Growth With Raptors",
-     "url": "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
+     "title": "Chelsea injury news: Why Joao Pedro is not in Blues squad to face Tottenham as Xabi Alonso offers explanation",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-joao-pedro-is-not-in-chelsea-squad-to-face-tottenham-as-alonso-offers-explanation_607646.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T17:51:00+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea forward Joao Pedro has been ruled out for the London derby clash against Tottenham Hotspur on Saturday."
+    },
+    {
+     "title": "Chelsea v Spurs team news: Why Pedro misses out, Quenda starts",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/chelsea-v-spurs-team-news-why-pedro-misses-out-quenda-starts",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-24T16:15:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Two changes apiece at Stamford Bridge tonight The post Chelsea v Spurs team news: Why Pedro misses out, Quenda starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Chelsea vs. Tottenham lineups confirmed as Joao Pedro, Dominic Solanke, Geovany Quenda decisions revealed",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/pedro-solanke-quenda-calls-chelsea-spurs-lineups-confirmed_607642.html",
+     "source": "Sports Mole",
+     "published": "2026-10-24T16:20:00+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea and Tottenham Hotspur confirm their starting lineups for Saturday's Premier League London derby at Stamford Bridge."
+    },
+    {
+     "title": "Man City FPL preview",
+     "url": "https://avfc.co.uk/news/2026/october/23/prematch-man-city-fpl-preview/",
+     "source": "Aston Villa",
+     "published": "2026-10-23T08:30:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Aston Villa have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Aston Villa’s João Gomes (£5.5m) could be a solid under-the-radar pick for FPL managers. His return from suspension i"
+    },
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Chelsea: Pedro Porro, Savio, Lucas Bergvall latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
+     "source": "Sports Mole",
+     "published": "2026-10-21T11:53:00+01:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
+    },
+    {
+     "title": "Alysson set for full debut against Newcastle",
+     "url": "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/",
+     "source": "Aston Villa",
+     "published": "2026-10-17T15:23:00+00:00",
+     "matched_on": "joao",
+     "kind": "team news",
+     "excerpt": "Fixtures Newcastle United Vs. Aston Villa - Sat, Oct 17 2026, 17:30 Unai Emery has named his Aston Villa side to take on Newcastle United at St. James’ Park on Saturday evening. The Villans travel to the North East to face the Magpies, looking to continue building momentum after an emphatic 6-0 UEFA Champions League victory over Fenerbahçe in midweek. And Emery makes four changes to the starting 1"
+    },
+    {
+     "title": "Chelsea Player Ratings vs. Everton: Ugly Injury Sours Blues Victory",
+     "url": "https://www.si.com/soccer/chelsea-player-ratings-vs-everton-10-17-26?utm_source=RSS",
      "source": "Sports Illustrated FPL",
-     "published": "2026-10-04T11:00:04+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The decision to bring back Kawhi Leonard is more than just an immediate championship play."
+     "published": "2026-10-17T14:01:08+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Pedro Neto scored a first-ever Premier League brace to seal victory for Chelsea over Everton."
+    },
+    {
+     "title": "Everton Taste First Loss Of The Season To Chelsea",
+     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
+     "source": "Everton",
+     "published": "2026-10-17T13:35:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
     }
    ]
   },
@@ -1705,9 +1704,9 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 15,
-   "source_count": 3,
-   "latest_evidence": "2026-10-02T13:03:39+01:00",
+   "evidence_count": 16,
+   "source_count": 4,
+   "latest_evidence": "2026-10-26T14:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1732,6 +1731,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: More Muharemovic + Trafford joy, but DCL quiet",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-more-muharemovic-trafford-joy-but-dcl-quiet",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-26T14:15:00+00:00",
+     "matched_on": "muharemovic",
+     "kind": "team news",
+     "excerpt": "Key Fantasy talking points from Sunderland 0-0 Leeds The post FPL notes: More Muharemovic + Trafford joy, but DCL quiet appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Barcelona, Inter Milan 'keen' on Leeds United star ahead of January transfer window",
      "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
@@ -1825,15 +1833,6 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic claims second hero of the month award in a row",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
