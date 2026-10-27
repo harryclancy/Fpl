@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-27T02:07:46+00:00",
+ "generated": "2026-10-27T10:39:11+00:00",
  "gameweek": 9,
- "corpus_size": 19201,
+ "corpus_size": 19226,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -2454,18 +2454,19 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "status": "Latest on Barnes — Fantasy Football Scout, 26 Oct: “Goals from William Osula (£5.8m) and Harvey Barnes (£6.1m) secured the points, although the biggest FPL talking point came before kick-off, with Yoane Wissa (£6.1m) and Malick Thiaw (£5.0m) both benched.”",
-   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 5 retrieved item(s) from 3 source(s), the most recent dated 26 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 01 Oct: “It goes without saying, of course, that Pascal Gross here GOAL THREAT Goals Shots Shots in the box Big chances Expected goals (xG) Schade 1.52 Barnes 0.62 Tavernier 1.70 Schade and Tavernier have both produced three goals from 13 shots in Gameweeks 1-5.” Fantasy Football Scout, 01 Oct: “Above: Kevin Schade and Marcus Tavernier’s shot maps in 2026/27 As for Barnes, he’s recorded eight shots so far, so his goal threat has been more limited than Schade and Tavernier.”",
+   "status": "Latest on Barnes — Sports Illustrated FPL, 27 Oct: “In his first real test without Kawhi Leonard on the floor, Barnes was held in check, finishing the night with 0 points while shooting 0-of-12 from the field.”",
+   "why_here": "Barnes is in the starting eleven this week at £6.1m as a MID. The selection rests on 6 retrieved item(s) from 3 source(s), the most recent dated 27 Oct.",
+   "case_for": "What supports keeping him: Sports Illustrated FPL, 27 Oct: “With a traditional box score stat line of 17 points, 7.7 rebounds and 4.3 assists with three stocks per game, most wouldn’t classify Barnes’ start to the season as “rough.” But one glaring stat peels the curtain back on an early trend in Barnes’ game that actually reveals that he isn’t even playing up to his full potential.” Fantasy Football Scout, 01 Oct: “It goes without saying, of course, that Pascal Gross here GOAL THREAT Goals Shots Shots in the box Big chances Expected goals (xG) Schade 1.52 Barnes 0.62 Tavernier 1.70 Schade and Tavernier have both produced three goals from 13 shots in Gameweeks 1-5.” Fantasy Football Scout, 01 Oct: “Above: Kevin Schade and Marcus Tavernier’s shot maps in 2026/27 As for Barnes, he’s recorded eight shots so far, so his goal threat has been more limited than Schade and Tavernier.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Scout, 26 Oct: “The same goes for Barnes, although they’ll both be on the chopping block from Gameweek 11: GAME OF TWO HALVES It was the proverbial game of two halves at Selhurst Park.” Sports Illustrated FPL, 15 Oct: “Mandatory Credit: Jim Dedmon-USA TODAY Sports | USA TODAY Sports via Reuters Connect The Tennessee Volunteers are set for their next season under head basketball coach Rick Barnes , who is by far one of the better basketball coaches in the country.” Sports Illustrated FPL, 15 Oct: “While some coaches could be bitter, Barnes was the complete opposite.”",
+   "developments": "Recent developments — Fantasy Football Scout, 26 Oct: “Goals from William Osula (£5.8m) and Harvey Barnes (£6.1m) secured the points, although the biggest FPL talking point came before kick-off, with Yoane Wissa (£6.1m) and Malick Thiaw (£5.0m) both benched.” Fantasy Football Scout, 26 Oct: “The same goes for Barnes, although they’ll both be on the chopping block from Gameweek 11: GAME OF TWO HALVES It was the proverbial game of two halves at Selhurst Park.” Sports Illustrated FPL, 15 Oct: “Mandatory Credit: Jim Dedmon-USA TODAY Sports | USA TODAY Sports via Reuters Connect The Tennessee Volunteers are set for their next season under head basketball coach Rick Barnes , who is by far one of the better basketball coaches in the country.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 5,
+   "evidence_count": 6,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
     "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
+    "https://www.si.com/nba/raptors/onsi/scottie-barnes-new-bad-habit-killing-toronto-raptors-offense?utm_source=RSS",
     "https://www.si.com/college/tennessee/men-s-basketball/rick-barnes-gets-real-when-discussing-justin-gainey-s-decision-to-leave-tennessee-01m504zb1f0d?utm_source=RSS",
     "https://www.racingpost.com/news/people/trainers/rspca-to-carry-out-a-full-assessment-of-maurice-barnes-after-the-ex-trainer-was-given-an-eight-year-ban-over-multiple-welfare-breaches-amfMU9E5zHkg/",
     "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS"
@@ -2476,6 +2477,22 @@
     "Sports Illustrated FPL"
    ],
    "quotes": [
+    {
+     "text": "In his first real test without Kawhi Leonard on the floor, Barnes was held in check, finishing the night with 0 points while shooting 0-of-12 from the field.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/nba/raptors/onsi/scottie-barnes-new-bad-habit-killing-toronto-raptors-offense?utm_source=RSS",
+     "published": "2026-10-27T10:00:03+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "With a traditional box score stat line of 17 points, 7.7 rebounds and 4.3 assists with three stocks per game, most wouldn’t classify Barnes’ start to the season as “rough.” But one glaring stat peels the curtain back on an early trend in Barnes’ game that actually reveals that he isn’t even playing up to his full potential.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/nba/raptors/onsi/scottie-barnes-new-bad-habit-killing-toronto-raptors-offense?utm_source=RSS",
+     "published": "2026-10-27T10:00:03+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Goals from William Osula (£5.8m) and Harvey Barnes (£6.1m) secured the points, although the biggest FPL talking point came before kick-off, with Yoane Wissa (£6.1m) and Malick Thiaw (£5.0m) both benched.",
      "source": "Fantasy Football Scout",
@@ -4933,14 +4950,14 @@
    "player": "Wissa",
    "club": "NEW",
    "status": "Latest on Wissa — Fantasy Football Scout, 26 Oct: “Goals from William Osula (£5.8m) and Harvey Barnes (£6.1m) secured the points, although the biggest FPL talking point came before kick-off, with Yoane Wissa (£6.1m) and Malick Thiaw (£5.0m) both benched.”",
-   "why_here": "Wissa is on the bench this week at £6.0m as a FWD. The selection rests on 11 retrieved item(s) from 5 source(s), the most recent dated 26 Oct.",
+   "why_here": "Wissa is on the bench this week at £6.0m as a FWD. The selection rests on 10 retrieved item(s) from 4 source(s), the most recent dated 26 Oct.",
    "case_for": "What supports keeping him: Fantasy Football Scout, 26 Oct: “Matthias Jaissle made five changes to his starting XI, with Wissa, Thiaw and Sven Botman (£5.0m) among those dropping to the bench.” Fantasy Football Scout, 20 Oct: “While it may be tough to ditch Wissa before he faces Crystal Palace on Sunday, there are no guarantees that he will continue in a number nine role at Selhurst Park, particularly with Will Osula (£5.8m) building his fitness.” Fantasy Football Scout, 19 Oct: “Scout Notes FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front October 19 42 comments 19 October 2026 42 comments Johan Manzambi (£6.0m) scored the only goal of the game as Aston Villa secured a 1-0 win over Newcastle United.”",
    "case_against": "What argues against him: Fantasy Football Scout, 14 Oct: “Q: Hold or sell Yoane Wissa (£6.3m) and Malick Thiaw (£5.0m)? (via @BedoMohmad1 A: While I don’t think Monday’s 4-1 defeat at Coventry City was a fair result, the Newcastle United defence was really poor.”",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Fantasy Football Scout, 20 Oct: “You get the feeling that things could quickly unravel for Newcastle if they fall behind, too, so there are surely safer bets than Wissa for the upcoming period, like Dominic Calvert-Lewin (£6.0m) and Nicolas Jackson (£6.6m).” Fantasy Football Scout, 19 Oct: “But we are going to find another solution like we did with Tyrone Mings the last 10 minutes.” – Unai Emery on Aaron Wan-Bissaka WISSA UP FRONT As for Newcastle, Yoane Wissa (£6.1m) played up front here, with Matias Fernandez-Pardo (£6.0m) deployed on the right.” FourFourTwo FPL, 16 Oct: “Solanke could be a very smart Yoane Wissa replacement for those looking to freshen up their forward options, and with penalty duties likely to come his way and a good run of home fixtures starting against Coventry City this week, the timing feels right to get ahead of the curve on him.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 11,
+   "evidence_count": 10,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
     "https://www.fantasyfootballscout.co.uk/2026/10/25/2pm-team-news-bruno-wissa-thiaw-benched-as-schade-sangare-start",
@@ -4949,7 +4966,6 @@
     "https://www.fantasyfootballscout.co.uk/2026/10/14/best-schade-replacements-keep-or-sell-wissa-thiaw-fpl-qa",
     "https://www.fourfourtwo.com/competition/triple-up-on-tottenham-hotspur-players-five-of-the-best-fpl-differential-options-for-gameweek-7",
     "https://www.fourfourtwo.com/team/newcastle-united-striker-yoane-wissas-dr-congo-in-new-fifa-storm-over-ineligible-player-at-world-cup",
-    "https://www.soccerway.com/news/wissa-stars-as-dr-congo-spoil-zimbabwe-homecoming-in-2027-afcon-qualifying-win/GIVKcC4j/",
     "https://onefpl.com/blog/yoane-wissa-fpl-newcastle-striker-battle-2026-27",
     "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
     "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets"
@@ -4958,8 +4974,7 @@
     "FPL Captain",
     "Fantasy Football Scout",
     "FourFourTwo FPL",
-    "OneFPL",
-    "Soccerway"
+    "OneFPL"
    ],
    "quotes": [
     {
@@ -5065,14 +5080,6 @@
      "url": "https://www.fourfourtwo.com/team/newcastle-united-striker-yoane-wissas-dr-congo-in-new-fifa-storm-over-ineligible-player-at-world-cup",
      "published": "2026-10-06T10:00:32+00:00",
      "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "DR Congo , last-32 losers to England at the 2026 World Cup, went further ahead in first-half added time when a Wissa pass sent Samuel Moutoussamy through to score from inside the box.",
-     "source": "Soccerway",
-     "url": "https://www.soccerway.com/news/wissa-stars-as-dr-congo-spoil-zimbabwe-homecoming-in-2027-afcon-qualifying-win/GIVKcC4j/",
-     "published": "2026-09-28T21:11:43+02:00",
-     "tone": "neutral",
      "topics": []
     }
    ]
