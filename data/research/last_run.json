@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-27T10:39:11+00:00",
- "seconds": 142.6,
+ "ran_at": "2026-10-27T16:43:16+00:00",
+ "seconds": 179.3,
  "sources_attempted": 78,
- "sources_readable": 54,
- "candidates_discovered": 542,
- "substantive_items": 157,
- "duplicates_removed": 11,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 19226,
+ "sources_readable": 55,
+ "candidates_discovered": 630,
+ "substantive_items": 244,
+ "duplicates_removed": 18,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 19298,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 157 articles"
+    "55/78 sources returned 244 articles"
    ]
   },
   "blackout": {
@@ -44,7 +44,6 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -53,7 +52,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -68,7 +67,7 @@
    "club": "ARS",
    "evidence_count": 14,
    "source_count": 7,
-   "latest_evidence": "2026-10-24T15:56:00+00:00",
+   "latest_evidence": "2026-10-27T12:14:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -84,7 +83,6 @@
     "match report",
     "press conference",
     "set pieces",
-    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -166,10 +164,10 @@
      "excerpt": "According to reports, Declan Rice is closing in on signing a new Arsenal contract, though David Raya’s future is uncertain after a ‘surprising development’."
     },
     {
-     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Lammens climbs",
+     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Suzuki on podium",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
      "source": "Football365",
-     "published": "2026-10-21T11:14:35+00:00",
+     "published": "2026-10-27T12:14:35+00:00",
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "David Raya has started 2026/27 where he left off last season, while Alisson, Jordan Pickford and James Trafford languish in the lower rankings…"
@@ -517,7 +515,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 16,
+   "evidence_count": 15,
    "source_count": 7,
    "latest_evidence": "2026-10-24T18:10:04+02:00",
    "official_source_found": true,
@@ -644,13 +642,13 @@
      "excerpt": "The latest fitness updates from the ongoing international break The post Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Arsenal defender sits out England training but Mikel Arteta shouldn’t worry just yet",
-     "url": "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
-     "source": "FourFourTwo FPL",
-     "published": "2026-09-29T07:53:51+00:00",
+     "title": "Moyes’ Assessment Of Arsenal Loss",
+     "url": "https://www.evertonfc.com/news/2026/october/24/moyes--assessment-of-arsenal-loss/",
+     "source": "Everton",
+     "published": "2026-10-24T17:46:39+00:00",
      "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "The Gunners' summer signing sat out full group training ahead of the Three Lions' departure for their match against Czechia, sparking fears of another potential injury blow for Mikel Arteta's side. England released an official update detailing the squad's preparation arrangements, communicating the following message: \"Ezri Konsa and Nico O'Reilly are following their own individual programmes at To"
+     "kind": "general",
+     "excerpt": "David Moyes says he “wants more” from his Everton side after Saturday’s 2-0 defeat at Arsenal – but believes there were positives from the performance. Ezri Konsa’s early goal opened the scoring for the hosts, before Gabriel doubled the lead in the second half. Speaking to evertontv after the loss to Mikel Arteta’s reigning Premier League champions, Moyes remarked: “I thought there were better bit"
     }
    ]
   },
@@ -936,7 +934,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 43,
+   "evidence_count": 42,
    "source_count": 17,
    "latest_evidence": "2026-10-26T17:00:00+00:00",
    "official_source_found": true,
@@ -1228,9 +1226,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 119,
+   "evidence_count": 120,
    "source_count": 17,
-   "latest_evidence": "2026-10-26T16:43:32+00:00",
+   "latest_evidence": "2026-10-27T13:55:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1255,6 +1253,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Pedro, Haaland, Mitoma: Latest team news ahead of FPL Gameweek 9",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/27/pedro-haaland-szoboszlai-latest-team-news-ahead-of-fpl-gameweek-9",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-27T13:55:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Premier League managers are facing the media ahead of midweek EFL Cup ties The post Pedro, Haaland, Mitoma: Latest team news ahead of FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Man City vs. Brighton team news: Erling Haaland among five players to miss EFL Cup tie as Enzo Maresca issues update",
+     "url": "https://www.sportsmole.co.uk/football/man-city/league-cup/news/explained-haaland-among-five-man-city-players-to-miss-brighton-efl-cup-tie_607802.html",
+     "source": "Sports Mole",
+     "published": "2026-10-27T11:18:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Enzo Maresca explains why Erling Haaland is one of five Manchester City players who will miss Wednesday’s EFL Cup fourth-round tie against Brighton & Hove Albion."
+    },
     {
      "title": "Aston Villa 2-1 Man City",
      "url": "https://avfc.co.uk/news/2026/october/24/report-aston-villa-2-1-man-city/",
@@ -1344,24 +1360,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Haaland is doubtful for Man City’s Champions League clash with AEK after a foot knock, and Semenyo’s knee injury adds a two-month absence — Maresca admits replacing the Norwegian is difficult."
-    },
-    {
-     "title": "Man City injury news: Latest Haaland, Nunes, O'Reilly, Kovacic update after Maresca confirms huge Semenyo blow",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/is-haaland-injured-maresca-delivers-big-update-on-man-city-goal-machine_607237.html",
-     "source": "Sports Mole",
-     "published": "2026-10-19T13:48:00+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Manchester City manager Enzo Maresca provides a fresh injury update on star striker Erling Haaland ahead of Tuesday’s Champions League home clash with AEK Athens."
-    },
-    {
-     "title": "Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/19/haaland-semenyo-latest-fpl-team-news-ahead-of-gameweek-8",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-19T12:30:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Enzo Maresca and Andoni Iraola face the media on Monday The post Haaland, Semenyo, Szoboszlai: Latest FPL team news ahead of Gameweek 8 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -1369,10 +1367,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 2,
-   "latest_evidence": "2026-10-26T15:19:39+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-10-27T08:06:15+00:00",
    "official_source_found": false,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1381,6 +1379,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1394,6 +1393,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Roberto De Zerbi left 'concerned' by latest Spurs injury blow as fresh update now emerges",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-concerned-by-latest-spurs-injury-blow-as-fresh-update-now-emerges_607791.html",
+     "source": "Sports Mole",
+     "published": "2026-10-27T08:06:15+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur manager Roberto De Zerbi has been left 'concerned' after latest injury blow during Chelsea win."
+    },
+    {
+     "title": "Tottenham Hotspur need the infectious joy of James Maddison – his new injury is a big blow for Roberto De Zerbi",
+     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-the-infectious-joy-of-james-maddison-his-new-injury-is-a-big-blow-for-roberto-de-zerbi",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-27T07:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur supporters have become accustomed to the nervous wait for injury news. There aren’t many places in football where the words ‘scan this week’ are more feared. Spurs are crossed their fingers and thumbs that attacking midfielder James Maddison will be back from his latest injury setback rather faster than usual. In these Kaneless, Son-free years, they need a spark more than ever. B"
+    },
     {
      "title": "Sacramento Kings vs San Antonio Spurs: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/sacramento-kings-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_607754.html",
@@ -1429,33 +1446,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes a look at the lates on Joao Pedro's injury, and how Xabi Alonso could replace the Brazilian striker after Chelsea lost 2-0 to Spurs."
-    },
-    {
-     "title": "Chelsea injury news: Why Joao Pedro is not in Blues squad to face Tottenham as Xabi Alonso offers explanation",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/why-joao-pedro-is-not-in-chelsea-squad-to-face-tottenham-as-alonso-offers-explanation_607646.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T17:51:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Chelsea forward Joao Pedro has been ruled out for the London derby clash against Tottenham Hotspur on Saturday."
-    },
-    {
-     "title": "Chelsea vs. Tottenham lineups confirmed as Joao Pedro, Dominic Solanke, Geovany Quenda decisions revealed",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/pedro-solanke-quenda-calls-chelsea-spurs-lineups-confirmed_607642.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T16:20:00+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Chelsea and Tottenham Hotspur confirm their starting lineups for Saturday's Premier League London derby at Stamford Bridge."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 52,
-   "source_count": 18,
-   "latest_evidence": "2026-10-26T16:43:32+00:00",
+   "evidence_count": 53,
+   "source_count": 19,
+   "latest_evidence": "2026-10-27T16:18:30+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1480,6 +1479,33 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury news: Joao Pedro blow confirmed by Xabi Alonso ahead of Liverpool EFL Cup tie",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/alonso-reveals-pedro-injury-blow-ahead-of-chelseas-trip-to-liverpool_607819.html",
+     "source": "Sports Mole",
+     "published": "2026-10-27T15:23:53+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Chelsea manager Xabi Alonso confirms that Joao Pedro faces a spell on the sidelines with an injury sustained in training last week."
+    },
+    {
+     "title": "Alonso admits Chelsea's Joao Pedro out for 'a few weeks' with thigh injury",
+     "url": "https://www.flashscore.com/news/alonso-admits-chelsea-s-joao-pedro-out-for-a-few-weeks-with-thigh-injury/nPEDTPPi/",
+     "source": "Flashscore",
+     "published": "2026-10-27T16:18:30+01:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Joao Pedro injury news: Latest update as Chelsea star ruled out by Xabi Alonso",
+     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-10-27T09:55:00-04:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "Chelsea injury, suspension list and return dates for Liverpool: Joao Pedro, Cole Palmer latest",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
@@ -1506,15 +1532,6 @@
      "matched_on": "pedro",
      "kind": "team news",
      "excerpt": "Plus, an update on James Maddison after Spurs beat Chelsea The post FPL notes: Pedro injury latest + why Palmer isn’t flagged appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Joao Pedro injury news: Latest update as Chelsea star out against Tottenham Hotspur",
-     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-10-24T13:44:00-04:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": ""
     },
     {
      "title": "Chelsea injury news: Why Joao Pedro is not in Blues squad to face Tottenham as Xabi Alonso offers explanation",
@@ -1569,24 +1586,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Fixtures Newcastle United Vs. Aston Villa - Sat, Oct 17 2026, 17:30 Unai Emery has named his Aston Villa side to take on Newcastle United at St. James’ Park on Saturday evening. The Villans travel to the North East to face the Magpies, looking to continue building momentum after an emphatic 6-0 UEFA Champions League victory over Fenerbahçe in midweek. And Emery makes four changes to the starting 1"
-    },
-    {
-     "title": "Chelsea Player Ratings vs. Everton: Ugly Injury Sours Blues Victory",
-     "url": "https://www.si.com/soccer/chelsea-player-ratings-vs-everton-10-17-26?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-17T14:01:08+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Pedro Neto scored a first-ever Premier League brace to seal victory for Chelsea over Everton."
-    },
-    {
-     "title": "Everton Taste First Loss Of The Season To Chelsea",
-     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
-     "source": "Everton",
-     "published": "2026-10-17T13:35:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
     }
    ]
   },

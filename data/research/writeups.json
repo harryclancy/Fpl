@@ -1,19 +1,19 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-27T10:39:11+00:00",
+ "generated": "2026-10-27T16:43:16+00:00",
  "gameweek": 9,
- "corpus_size": 19226,
+ "corpus_size": 19298,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "status": "Latest on Raya — Football365, 21 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.”",
-   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 14 retrieved item(s) from 7 source(s), the most recent dated 24 Oct.",
-   "case_for": "What supports keeping him: Everton, 24 Oct: “Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.” Football365, 24 Oct: “Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.” Football365, 24 Oct: “I’m Spanish, and naturally, I’d love to play there.” READ: Arsenal ‘boast’ £200m quartet in Underplayed Premier League XI When asked what his goals are for this year, Raya added: “To win everything.”",
+   "status": "Latest on Raya — Football365, 24 Oct: “Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.”",
+   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 14 retrieved item(s) from 7 source(s), the most recent dated 27 Oct.",
+   "case_for": "What supports keeping him: Football365, 27 Oct: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.” Football365, 27 Oct: “Arsenal David Raya Joe Williams 21 Oct 2026 Arsenal: Key Arteta starter reveals he wants La Liga transfer – ‘I would love to’ Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Everton, 24 Oct: “Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Football365, 21 Oct: “Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Football365, 21 Oct: “Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.” Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.”",
-   "outlook": "On the coming weeks — Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.” Sports Mole, 03 Oct: “It would not, though, finish the job. © Imago / ActionPlus Odegaard, Havertz and Raya deals remain unresolved Three other established members of Arteta's side are also contracted until 2028: captain Odegaard, forward Havertz and goalkeeper Raya.”",
+   "developments": "Recent developments — Football365, 24 Oct: “I’m Spanish, and naturally, I’d love to play there.” READ: Arsenal ‘boast’ £200m quartet in Underplayed Premier League XI When asked what his goals are for this year, Raya added: “To win everything.” Football365, 21 Oct: “Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Football365, 21 Oct: “Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.”",
+   "outlook": "On the coming weeks — Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.” Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.”",
    "confidence": "high",
    "evidence_count": 14,
    "evidence_used": [
@@ -41,6 +41,26 @@
    ],
    "quotes": [
     {
+     "text": "Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "published": "2026-10-27T12:14:35+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
+     "text": "Arsenal David Raya Joe Williams 21 Oct 2026 Arsenal: Key Arteta starter reveals he wants La Liga transfer – ‘I would love to’ Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
+     "published": "2026-10-27T12:14:35+00:00",
+     "tone": "positive",
+     "topics": [
+      "transfer"
+     ]
+    },
+    {
      "text": "Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.",
      "source": "Everton",
      "url": "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
@@ -65,16 +85,6 @@
      "published": "2026-10-24T09:25:48+00:00",
      "tone": "positive",
      "topics": []
-    },
-    {
-     "text": "Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "published": "2026-10-21T11:14:35+00:00",
-     "tone": "positive",
-     "topics": [
-      "transfer"
-     ]
     },
     {
      "text": "Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.",
@@ -674,14 +684,14 @@
    "player": "Konsa",
    "club": "ARS",
    "status": "Latest on Konsa — Sports Mole, 02 Oct: “Konsa sat out the midweek win over the Czech Republic as an unused substitute due to a minor injury issue.” Sports Mole, 02 Oct: “Arsenal and England fans will be pleased to hear that Konsa is already back in training and should be ready for the fixture in Rijeka. © Iconsport / PA Images England receive Konsa fitness boost Speaking at Friday's press conference, Tuchel said: \"It seems that Ezri Konsa is back.”",
-   "why_here": "Konsa is in the starting eleven this week at £4.7m as a DEF. The selection rests on 16 retrieved item(s) from 7 source(s), the most recent dated 24 Oct.",
+   "why_here": "Konsa is in the starting eleven this week at £4.7m as a DEF. The selection rests on 15 retrieved item(s) from 7 source(s), the most recent dated 24 Oct.",
    "case_for": "What supports keeping him: Everton, 24 Oct: “Ezri Konsa’s early goal opened the scoring for the hosts, before Gabriel doubled the lead in the second half.” Opta Analyst, 24 Oct: “Goals from Ezri Konsa and Gabriel Magalhães helped Arsenal to a 2-0 win over Everton , taking them level on points with Manchester City at the top of the Premier League.” Opta Analyst, 24 Oct: “In teeming rain at the Emirates Stadium, Arsenal’s centre-backs provided the key moments in front of goal, with Konsa netting for the first time since his arrival from Aston Villa and Gabriel making the points safe midway through the second half.”",
    "case_against": "What argues against him: FourFourTwo FPL, 16 Oct: “It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea .” Sports Mole, 07 Oct: “Ezri Konsa © Imago / Sportimage Status: Major doubt Type of injury: Thigh Possible return date: October 10 (vs. Leeds) Ezri Konsa left the England camp to have treatment after taking another hit to his quad, and while Thomas Tuchel played down any serious concern, he did not want to risk the defender playing on through the pain.” Fantasy Football Scout, 05 Oct: “Konsa was sidelined ( as a non-playing substitute ) for last Tuesday’s win over Czechia with a muscular niggle.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Fantasy Football Scout, 10 Oct: “TEAM NEWS Kai Havertz and Ezri Konsa have recovered from the injuries they picked up on international duty to start for the hosts.” FourFourTwo FPL, 05 Oct: “Konsa was brought to the Emirates Stadium to provide defensive reinforcement following a long-term back injury to star centre-back William Saliba.”",
    "developments": "Recent developments — Flashscore, 24 Oct: “Arsenal corner caused confusion in the box, and after Jordan Pickford and Vitali Mykolenko both failed to clear, Ezri Konsa turned home his first Gunners goal from point-blank range, marking the first time Everton have conceded from a corner this season.” Sports Mole, 24 Oct: “However, the North London giants belatedly bagged their first corner goal of the campaign to draw first blood against Everton on October 24, as Konsa struck his first Gunners goal at the back stick following an episode of penalty-box pinball.” Everton, 24 Oct: “Konsa opened the scoring inside seven minutes in north London, prodding home from close range after Martin Odegaard's dangerous corner popped up and was clawed on to the crossbar by Jordan Pickford.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 05 Oct: “KONSA RETURNS TO ARSENAL It’s been a rollercoaster international break for Ezri Konsa (£4.6m) and his owners in Fantasy Premier League (FPL).”",
    "confidence": "high",
-   "evidence_count": 16,
+   "evidence_count": 15,
    "evidence_used": [
     "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
     "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
@@ -694,7 +704,7 @@
     "https://www.fourfourtwo.com/person/player/arsenal-dealt-new-injury-blow-ahead-of-leeds-united-showdown",
     "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
     "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
-    "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet"
+    "https://www.evertonfc.com/news/2026/october/24/moyes--assessment-of-arsenal-loss/"
    ],
    "sources_used": [
     "Everton",
@@ -898,22 +908,6 @@
      "url": "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
      "published": "2026-09-30T22:55:00+00:00",
      "tone": "negative",
-     "topics": []
-    },
-    {
-     "text": "England released an official update detailing the squad's preparation arrangements, communicating the following message: \"Ezri Konsa and Nico O'Reilly are following their own individual programmes at Tottenham Hotspur's training ground this morning.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
-     "published": "2026-09-29T07:53:51+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "The fact that Konsa remained with the squad and boarded the flight to Prague indicates that he remains in contention to feature for Thomas Tuchel 's side.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/person/player/arsenal-defender-sits-out-england-training-but-mikel-arteta-shouldnt-worry-just-yet",
-     "published": "2026-09-29T07:53:51+00:00",
-     "tone": "neutral",
      "topics": []
     }
    ]
@@ -1703,14 +1697,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Football365, 26 Oct: “Can’t wait to hear Mike Dean explain how neither of Palmer’s yellows were straight red cards.” Sports Mole, 25 Oct: “After escaping a straight red card for barging into Mateus Fernandes face, Palmer picked up a second yellow for treading on Conor Gallagher's leg, as Xabi Alonso's men slipped to a dreadful 2-0 defeat against their London rivals.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 43 retrieved item(s) from 17 source(s), the most recent dated 26 Oct.",
+   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 42 retrieved item(s) from 17 source(s), the most recent dated 26 Oct.",
    "case_for": "What supports keeping him: Ipswich Town, 25 Oct: “Town looked more likely to score the next goal of the game, however Hornby’s free-kick from distance was tipped over before Palmer sent a flicked header against t” Sports Illustrated FPL, 25 Oct: “Palmer may have collected the first red card of his senior career, but he wasn’t even Chelsea’s worst performer in a toothless 2–0 defeat to the club’s hated London rivals Stand-in goalkeeper Mike Penders punched the visitors in front with a disastrous own goal in the 77th minute, shortly before Palmer collected his second, entirely unnecessary, yellow card.” Sports Illustrated FPL, 15 Oct: “Although Brady was specifically answering a question about starting right tackle Spencer Brown, who left Monday's win after 16 snaps , the statement also applies to Moore and Palmer.”",
    "case_against": "What argues against him: Sports Mole, 26 Oct: “CHELSEA'S SUSPENSION LIST Cole Palmer © Imago / Visionhaus Status: Suspended Return date: October 31 (vs. Man United) Cole Palmer was sent off after being shown two yellow cards against Spurs, though in truth he was lucky to avoid a straight red.” Sports Mole, 25 Oct: “Tuchel has made no bones about his frustration regarding Palmer's situation, admitting that the Chelsea attacker misses too many England camps , and he did himself no favours of a November call-up on Saturday evening.” Fantasy Football Scout, 24 Oct: “PALMER SUSPENDED… BUT NOT FOR GAMEWEEK 9 Chelsea ended the match with only one of their first-choice attacking trident on the pitch.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — NBC Sports Rotoworld PL, 24 Oct: “Alonso will regret his inability to deploy an injured Joao Pedro and then rue the lack of attacking prowess well before Cole Palmer was sent off.” Sports Illustrated FPL, 15 Oct: “After initially appearing on the injury report as limited , Palmer missed Saturday's practice and was ruled out for the game \"He got kind of twisted up yesterday in practice.”",
    "developments": "Recent developments — FourFourTwo FPL, 26 Oct: “Cole Palmer slamming his knee into Matheus Fernandes was a bolt of electricity sparking this game into life.” FourFourTwo FPL, 26 Oct: “The tactical pattern at Stamford Bridge meant Palmer’s aggressive act was only ever going to help Spurs.” Football365, 26 Oct: “Cole Palmer the fraud Pardon my french but Cole Palmer is a horrible little c**t when he’s got the hump.”",
    "outlook": "On the coming weeks — Sports Illustrated FPL, 25 Oct: “The quirk of the fixture list and the FA handbook has spared Palmer any Premier League absence, but he will sit out Chelsea ’s next game: a daunting trip to Anfield.” Opta Analyst, 24 Oct: “Palmer’s dismissal, which came between Spurs’ goals, compounded a miserable day for Xabi Alonso, who suffered his first home defeat as Chelsea boss.”",
    "confidence": "high",
-   "evidence_count": 43,
+   "evidence_count": 42,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
     "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
@@ -2210,16 +2204,6 @@
      "topics": []
     },
     {
-     "text": "Chelsea forward Palmer, Newcastle full-back Tino Livramento and Manchester United pair Kobbir Mainoo and Marcus Rashford then withdrew from the squad for the Three Lions’ opening Nations League fixtures, in which they host Spain, visit Croatia and play the Czech Republic home and away.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/internationals/england-squad-nations-league-spain-czech-republic-croatia-cole-palmer-trent-alexander-arnold/",
-     "published": "2026-09-29T10:03:20+00:00",
-     "tone": "neutral",
-     "topics": [
-      "fixtures"
-     ]
-    },
-    {
      "text": "And it's the attacking trio of Joao Pedro, Cole Palmer and Morgan Rogers chiefly responsible for our dynamism in the final third.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-explains-why-his-connection-with-cole-palmer-and-morgan-rogers",
@@ -2569,15 +2553,17 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Sports Mole, 21 Oct: “Erling Haaland © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Status: Minor doubt Type of issue: Knock Possible return date: October 24 (vs. Aston Villa) Haaland was rested against AEK Athens in the Champions League on Tuesday due to a knock, but he was still named on the bench and is set to return against Villa.” Fantasy Football Scout, 21 Oct: “Scout Notes FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update October 21 0 comments 21 October 2026 0 comments Liverpool and Manchester City were involved in high-scoring matches on Tuesday night, both pulling out home victories in the UEFA Champions League.”",
-   "why_here": "Haaland is captained this week at £15.7m as a FWD. The selection rests on 119 retrieved item(s) from 17 source(s), the most recent dated 26 Oct.",
-   "case_for": "What supports keeping him: Aston Villa, 25 Oct: “Nicolas Jackson’s brace, either side of Erling Haaland’s leveller, took his tally for the season to seven goals in all competitions.” Football365, 24 Oct: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.” Football365, 24 Oct: “Three more goals will take him past Raheem Sterling and into the all-time top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).”",
+   "why_here": "Haaland is captained this week at £15.7m as a FWD. The selection rests on 120 retrieved item(s) from 17 source(s), the most recent dated 27 Oct.",
+   "case_for": "What supports keeping him: Sports Mole, 27 Oct: “It was also a memorable night for 17-year-old academy graduate Floyd Samba, who scored a brace on his full Man City debut, and he could be handed another start up front in Haaland’s absence against Brighton.” Aston Villa, 25 Oct: “Nicolas Jackson’s brace, either side of Erling Haaland’s leveller, took his tally for the season to seven goals in all competitions.” Football365, 24 Oct: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.”",
    "case_against": "What argues against him: Football365, 26 Oct: “We think he might be truly recovered from injury. 6) Erling Haaland – 26 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Sports Mole, 24 Oct: “Emery has also chosen to name 17-year-old forward Brian Madjo on the substitutes' bench instead of Tammy Abraham. © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Haaland returns for Man City against Aston Villa Meanwhile, as expected, Erling Haaland returns to the Man City XI after a minor ankle knock.” Football365, 23 Oct: “If this happens, a knock-on effect would be a mass player exodus, with Haaland among those who would inevitably leave if Man City fall below the Premier League.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Tactical Football Analysis, 23 Oct: “Erling Haaland (£15.7m): Fit For Aston Villa Erling Haaland limped off after the GW7 win over Ipswich Town, but made the bench for Manchester City 's midweek win over AEK Athens.” 101 Great Goals — Fantasy, 22 Oct: “Asked for an update on the fitness of Matheus Nunes, Nico O’Reilly, Mateo Kovacic and Haaland, City boss Enzo Maresca said: “We have a session this afternoon.”",
-   "developments": "Recent developments — Football365, 26 Oct: “NOTHING. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 26 Oct: “Arsenal Harry Kane Joe Williams 21 Oct 2026 Man City FFP: Haaland makes stunning transfer U-turn after making a decision on future Man City striker Erling Haaland is now willing to join Kylian Mbappe at Real Madrid after previously being reluctant, according to reports.” Aston Villa, 24 Oct: “Nicolas Jackson’s brilliant brace in B6 – either side of Erling Haaland’s equaliser – marked a perfect way for Unai Emery to celebrate the four-year anniversary of his appointment as Villa manager.”",
+   "developments": "Recent developments — Sports Mole, 27 Oct: “Haaland, who finished eighth in the 2026 Ballon d’Or rankings , also has an impressive scoring record against Brighton , netting seven times in his last seven encounters with the Seagulls.” Football365, 26 Oct: “NOTHING. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.” Football365, 26 Oct: “Arsenal Harry Kane Joe Williams 21 Oct 2026 Man City FFP: Haaland makes stunning transfer U-turn after making a decision on future Man City striker Erling Haaland is now willing to join Kylian Mbappe at Real Madrid after previously being reluctant, according to reports.”",
    "outlook": "On the coming weeks — Tactical Football Analysis, 23 Oct: “FPL GW8 Captaincy: Haaland And The Alternatives Captaincy matrix GW8 to GW13 (Source: Rob T On the numbers, GW8 is the tightest captaincy call of the season so far.” FourFourTwo FPL, 23 Oct: “Joao Pedro ( £7.9m ) has created more per start than Palmer and sits second to Haaland among forwards for FPL points.”",
    "confidence": "high",
-   "evidence_count": 119,
+   "evidence_count": 120,
    "evidence_used": [
+    "https://www.fantasyfootballscout.co.uk/2026/10/27/pedro-haaland-szoboszlai-latest-team-news-ahead-of-fpl-gameweek-9",
+    "https://www.sportsmole.co.uk/football/man-city/league-cup/news/explained-haaland-among-five-man-city-players-to-miss-brighton-efl-cup-tie_607802.html",
     "https://avfc.co.uk/news/2026/october/24/report-aston-villa-2-1-man-city/",
     "https://www.fantasyfootballscout.co.uk/2026/10/24/villa-v-man-city-team-news-haaland-manzambi-start-foden-sub",
     "https://www.sportsmole.co.uk/football/aston-villa/news/aston-villa-man-city-starting-lineups-confirmed-manzambi-haaland-decisions-made-for-pl-game_607626.html",
@@ -2587,9 +2573,7 @@
     "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
     "https://www.sportsmole.co.uk/football/man-city/injury-news/news/maresca-delivers-haaland-injury-update-ahead-of-aston-villa-pl-showdown_607344.html",
     "https://www.fourfourtwo.com/person/player/why-does-erling-haaland-score-less-premier-league-goals-after-december",
-    "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/maresca-faces-number-nine-crisis-man-citys-lack-of-cover-exposed_607310.html",
-    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/is-haaland-injured-maresca-delivers-big-update-on-man-city-goal-machine_607237.html",
-    "https://www.fantasyfootballscout.co.uk/2026/10/19/haaland-semenyo-latest-fpl-team-news-ahead-of-gameweek-8"
+    "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/maresca-faces-number-nine-crisis-man-citys-lack-of-cover-exposed_607310.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2611,6 +2595,24 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Haaland, who finished eighth in the 2026 Ballon d’Or rankings , also has an impressive scoring record against Brighton , netting seven times in his last seven encounters with the Seagulls.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/league-cup/news/explained-haaland-among-five-man-city-players-to-miss-brighton-efl-cup-tie_607802.html",
+     "published": "2026-10-27T11:18:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "tactics"
+     ]
+    },
+    {
+     "text": "It was also a memorable night for 17-year-old academy graduate Floyd Samba, who scored a brace on his full Man City debut, and he could be handed another start up front in Haaland’s absence against Brighton.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/man-city/league-cup/news/explained-haaland-among-five-man-city-players-to-miss-brighton-efl-cup-tie_607802.html",
+     "published": "2026-10-27T11:18:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "NOTHING. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.",
      "source": "Football365",
@@ -4253,24 +4255,6 @@
      ]
     },
     {
-     "text": "Erling Haaland: Arsenal 'serious' to 'get deal done' as decision reached on leaving Man City after guilty verdict Manchester City striker Erling Haaland, who has been linked with Arsenal According to reports, Arsenal will make a ‘serious play’ to sign Erling Haaland if Manchester City are relegated following the FFP case.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/arsenal-serious-erling-haaland-deal-done-man-city-relegated-ffp-verdict",
-     "published": "2026-09-29T07:52:17+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Haaland is among the Man City players who could leave after reports said the club was found guilty on 114 of 115 FFP charges.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/arsenal-serious-erling-haaland-deal-done-man-city-relegated-ffp-verdict",
-     "published": "2026-09-29T07:52:17+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
      "text": "The Premier League reported that more than 1.7 million managers activated Triple Captain , with the overwhelming majority backing Erling Haaland at home to Coventry.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/haaland-triple-captain-gw3-result-2026-27",
@@ -4378,7 +4362,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 2 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4387,15 +4371,16 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-concerned-by-latest-spurs-injury-blow-as-fresh-update-now-emerges_607791.html",
+    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-the-infectious-joy-of-james-maddison-his-new-injury-is-a-big-blow-for-roberto-de-zerbi",
     "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/sacramento-kings-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_607754.html",
     "https://www.football365.com/news/martin-keown-hopes-tottenham-star-james-maddison-back-soon-roberto-de-zerbi-worries",
     "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
-    "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
-    "https://www.sportsmole.co.uk/football/chelsea/news/why-joao-pedro-is-not-in-chelsea-squad-to-face-tottenham-as-alonso-offers-explanation_607646.html",
-    "https://www.sportsmole.co.uk/football/chelsea/news/pedro-solanke-quenda-calls-chelsea-spurs-lineups-confirmed_607642.html"
+    "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html"
    ],
    "sources_used": [
     "Football365",
+    "FourFourTwo FPL",
     "Sports Mole"
    ],
    "quotes": []
@@ -4403,28 +4388,28 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "status": "Latest on João Pedro — Fantasy Football Scout, 24 Oct: “Joao Pedro , who sits in 73.8% of FPL squads, unexpectedly misses out on Chelsea’s clash with Tottenham Hotspur due to injury.” NBC Sports Rotoworld PL, 24 Oct: “Alonso will regret his inability to deploy an injured Joao Pedro and then rue the lack of attacking prowess well before Cole Palmer was sent off.”",
-   "why_here": "João Pedro is on the bench this week at £7.9m as a FWD. The selection rests on 52 retrieved item(s) from 18 source(s), the most recent dated 26 Oct.",
-   "case_for": "What supports keeping him: Sports Mole, 24 Oct: “Pedro experienced discomfort during training on Friday and was not fit enough to feature against Spurs.” Sports Mole, 24 Oct: “Pedro's omission deprives Chelsea of a man with five goals and three assists in six Premier League matches this season, but rather than replace him with a like-for-like striker in Danny Welbeck, Alonso has handed a surprise start to Geovany Quenda.” Everton, 19 Oct: “Pedro Neto’s brace downed the Toffees, with the Portugal international winger’s first goal arriving moments after the start of the second period.”",
-   "case_against": "What argues against him: Sports Mole, 26 Oct: “Joao Pedro © Imago / Sportimage Status: Out Type of injury: Unknown Possible return date: Unknown Alonso revealed in the buildup to the Spurs defeat that Joao Pedro would miss the game, before adding that the club would find out the severity of his injury after tests on Sunday.” Sports Mole, 24 Oct: “Anthony Nolan 24 Oct 2026 23:01 © Iconsport / Mark Pain, Alamy Live News, Paul Terry, Sportimage Chelsea were beaten 2-0 by London rivals Tottenham Hotspur on Saturday evening, but the Blues' biggest concern of the weekend will be the injury that caused Joao Pedro to miss the match.” Sports Mole, 24 Oct: “Here, Sports Mole takes a look at the latest on Pedro's injury, and Chelsea's options for replacing the striker while he is sidelined.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Fantasy Football Scout, 24 Oct: “JOAO PEDRO INJURY LATEST While the diminishing projected goals were a red herring in Gameweek 6, Saturday’s gradual dip hinted that one of Chelsea’s main attackers was going to miss out.” Sports Mole, 24 Oct: “Chelsea injury news: Joao Pedro update emerges © Imago / AAP Alonso confirmed the news shortly before kick-off, describing Pedro's absence as a major disappointment for the Blues given the importance of the Brazilian attacker in such a high-stakes encounter.”",
-   "developments": "Recent developments — Fantasy Football Scout, 24 Oct: “And so it was, with Pedro nowhere to be seen.” Sports Mole, 24 Oct: “Blues boss Xabi Alonso has made two changes to the team that began last weekend's 2-0 win over Everton, and there is no Joao Pedro in the hosts' squad to face Spurs.” Fantasy Football Scout, 24 Oct: “For sure, it’s disappointment, but we need to carry on.” – Xabi Alonso on Joao Pedro Kick-off in the closing Gameweek 8 fixture of the day is at 17:30 BST.”",
-   "outlook": "On the coming weeks — NBC Sports Rotoworld PL, 24 Oct: “Xabi Alonso has confirmed that Joao Pedro was injured in training on Friday.” Everton, 17 Oct: “Following a 2-2 draw at Hull City last weekend – where Moyes was unhappy with the manner of the goals conceded – the Toffees boss was unimpressed with Pedro Neto's opener just seconds after the restart against Chelsea, along with Everton's performances overall following an encouraging opening half.”",
+   "status": "Latest on João Pedro — Sports Mole, 24 Oct: “Here, Sports Mole takes a look at the latest on Pedro's injury, and Chelsea's options for replacing the striker while he is sidelined.” Fantasy Football Scout, 24 Oct: “JOAO PEDRO INJURY LATEST While the diminishing projected goals were a red herring in Gameweek 6, Saturday’s gradual dip hinted that one of Chelsea’s main attackers was going to miss out.”",
+   "why_here": "João Pedro is on the bench this week at £7.9m as a FWD. The selection rests on 53 retrieved item(s) from 19 source(s), the most recent dated 27 Oct.",
+   "case_for": "What supports keeping him: Flashscore, 27 Oct: “\"Let's ⁠see ​how many; we don't want to predict on that, but he's not ready for the ‌next games.\" Pedro has made a bright start to the season, scoring five goals and providing three assists in seven appearances across all competitions.” Sports Mole, 27 Oct: “On Saturday evening, Pedro - the Blues top goalscorer - was a surprise absentee from the team that went on to lose 2-0 at home to Tottenham Hotspur in the Premier League.” Sports Mole, 24 Oct: “Pedro experienced discomfort during training on Friday and was not fit enough to feature against Spurs.”",
+   "case_against": "What argues against him: NBC Sports Rotoworld PL, 27 Oct: “Chelsea didn’t look the same without Joao Pedro, and this injury news is a massive blow.” NBC Sports Rotoworld PL, 27 Oct: “Joao Pedro injury news, latest update Chelsea boss Xabi Alonso has been speaking about Joao Pedro’s injury ahead of their League Cup last 16 trip to Liverpool on Wednesday, and confirmed that the Brazilian will be out for a while.” Sports Mole, 26 Oct: “Joao Pedro © Imago / Sportimage Status: Out Type of injury: Unknown Possible return date: Unknown Alonso revealed in the buildup to the Spurs defeat that Joao Pedro would miss the game, before adding that the club would find out the severity of his injury after tests on Sunday.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 27 Oct: “Speaking at a press conference ahead of Wednesday's EFL Cup fourth tie against Liverpool , Alonso said that Pedro was suffering with a thigh issue.” Sports Mole, 24 Oct: “Anthony Nolan 24 Oct 2026 23:01 © Iconsport / Mark Pain, Alamy Live News, Paul Terry, Sportimage Chelsea were beaten 2-0 by London rivals Tottenham Hotspur on Saturday evening, but the Blues' biggest concern of the weekend will be the injury that caused Joao Pedro to miss the match.”",
+   "developments": "Recent developments — Fantasy Football Scout, 24 Oct: “And so it was, with Pedro nowhere to be seen.” Sports Mole, 24 Oct: “Chelsea injury news: Joao Pedro update emerges © Imago / AAP Alonso confirmed the news shortly before kick-off, describing Pedro's absence as a major disappointment for the Blues given the importance of the Brazilian attacker in such a high-stakes encounter.” Sports Mole, 24 Oct: “Blues boss Xabi Alonso has made two changes to the team that began last weekend's 2-0 win over Everton, and there is no Joao Pedro in the hosts' squad to face Spurs.”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 24 Oct: “Joao Pedro , who sits in 73.8% of FPL squads, unexpectedly misses out on Chelsea’s clash with Tottenham Hotspur due to injury.” Fantasy Football Scout, 24 Oct: “For sure, it’s disappointment, but we need to carry on.” – Xabi Alonso on Joao Pedro Kick-off in the closing Gameweek 8 fixture of the day is at 17:30 BST.”",
    "confidence": "high",
-   "evidence_count": 52,
+   "evidence_count": 53,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/alonso-reveals-pedro-injury-blow-ahead-of-chelseas-trip-to-liverpool_607819.html",
+    "https://www.flashscore.com/news/alonso-admits-chelsea-s-joao-pedro-out-for-a-few-weeks-with-thigh-injury/nPEDTPPi/",
+    "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/24/fpl-notes-pedro-injury-latest-why-palmer-isnt-flagged",
-    "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
     "https://www.sportsmole.co.uk/football/chelsea/news/why-joao-pedro-is-not-in-chelsea-squad-to-face-tottenham-as-alonso-offers-explanation_607646.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/24/chelsea-v-spurs-team-news-why-pedro-misses-out-quenda-starts",
     "https://www.sportsmole.co.uk/football/chelsea/news/pedro-solanke-quenda-calls-chelsea-spurs-lineups-confirmed_607642.html",
     "https://avfc.co.uk/news/2026/october/23/prematch-man-city-fpl-preview/",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
-    "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/",
-    "https://www.si.com/soccer/chelsea-player-ratings-vs-everton-10-17-26?utm_source=RSS",
-    "https://www.evertonfc.com/news/2026/october/17/chelsea-report/"
+    "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -4433,6 +4418,7 @@
     "Everton",
     "FISO",
     "Fantasy Football Scout",
+    "Flashscore",
     "Football365",
     "FourFourTwo FPL",
     "Fulham",
@@ -4447,6 +4433,54 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "\"Let's ⁠see ​how many; we don't want to predict on that, but he's not ready for the ‌next games.\" Pedro has made a bright start to the season, scoring five goals and providing three assists in seven appearances across all competitions.",
+     "source": "Flashscore",
+     "url": "https://www.flashscore.com/news/alonso-admits-chelsea-s-joao-pedro-out-for-a-few-weeks-with-thigh-injury/nPEDTPPi/",
+     "published": "2026-10-27T16:18:30+01:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "On Saturday evening, Pedro - the Blues top goalscorer - was a surprise absentee from the team that went on to lose 2-0 at home to Tottenham Hotspur in the Premier League.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/alonso-reveals-pedro-injury-blow-ahead-of-chelseas-trip-to-liverpool_607819.html",
+     "published": "2026-10-27T15:23:53+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Speaking at a press conference ahead of Wednesday's EFL Cup fourth tie against Liverpool , Alonso said that Pedro was suffering with a thigh issue.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/alonso-reveals-pedro-injury-blow-ahead-of-chelseas-trip-to-liverpool_607819.html",
+     "published": "2026-10-27T15:23:53+00:00",
+     "tone": "neutral",
+     "topics": [
+      "press conference",
+      "tactics"
+     ]
+    },
+    {
+     "text": "Chelsea didn’t look the same without Joao Pedro, and this injury news is a massive blow.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
+     "published": "2026-10-27T09:55:00-04:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Joao Pedro injury news, latest update Chelsea boss Xabi Alonso has been speaking about Joao Pedro’s injury ahead of their League Cup last 16 trip to Liverpool on Wednesday, and confirmed that the Brazilian will be out for a while.",
+     "source": "NBC Sports Rotoworld PL",
+     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
+     "published": "2026-10-27T09:55:00-04:00",
+     "tone": "negative",
+     "topics": [
+      "injury",
+      "statistics"
+     ]
+    },
     {
      "text": "Joao Pedro © Imago / Sportimage Status: Out Type of injury: Unknown Possible return date: Unknown Alonso revealed in the buildup to the Spurs defeat that Joao Pedro would miss the game, before adding that the club would find out the severity of his injury after tests on Sunday.",
      "source": "Sports Mole",
@@ -4562,27 +4596,6 @@
      "topics": [
       "injury",
       "suspension"
-     ]
-    },
-    {
-     "text": "Joao Pedro injury news, latest update Chelsea have confirmed that Joao Pedro has suffered an injury and is currently being assessed.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
-     "published": "2026-10-24T13:44:00-04:00",
-     "tone": "negative",
-     "topics": [
-      "injury"
-     ]
-    },
-    {
-     "text": "Xabi Alonso has confirmed that Joao Pedro was injured in training on Friday.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/soccer/news/joao-pedro-injury-news-latest-update-as-chelsea-star-out-against-tottenham-hotspur",
-     "published": "2026-10-24T13:44:00-04:00",
-     "tone": "negative",
-     "topics": [
-      "injury",
-      "statistics"
      ]
     },
     {
@@ -4738,14 +4751,6 @@
      "source": "Sports Mole",
      "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/can-international-break-with-brazil-offer-new-life-to-estevao-at-chelsea-_606222.html",
      "published": "2026-10-04T17:35:01+01:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "At this point in time, Chelsea are yet to determine when Pedro will be in a position to return to first-team action.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/chelsea-star-sees-specialist-amid-bid-for-october-injury-return_605955.html",
-     "published": "2026-09-29T10:32:38+01:00",
      "tone": "neutral",
      "topics": []
     },
