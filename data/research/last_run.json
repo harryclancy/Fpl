@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-27T21:22:19+00:00",
- "seconds": 165.3,
+ "ran_at": "2026-10-28T02:21:10+00:00",
+ "seconds": 146.7,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 571,
- "substantive_items": 173,
- "duplicates_removed": 8,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 19314,
+ "sources_readable": 56,
+ "candidates_discovered": 529,
+ "substantive_items": 134,
+ "duplicates_removed": 12,
+ "deeply_analysed": 88,
+ "deep_read_failed": 2,
+ "corpus_size": 19313,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 173 articles"
+    "56/78 sources returned 134 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -934,7 +933,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 42,
+   "evidence_count": 41,
    "source_count": 17,
    "latest_evidence": "2026-10-26T17:00:00+00:00",
    "official_source_found": true,
@@ -1043,15 +1042,6 @@
      "excerpt": "Estevao logged 172 minutes with Brazil across three games — more than his entire Chelsea playing time this season — and returns ahead of Saturday's trip to Bournemouth with Palmer and Joao Pedro injured."
     },
     {
-     "title": "Chelsea news: Cole Palmer described as scheduling \"victim\" in surprise defence of England international",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/palmer-described-as-scheduling-victim-in-surprise-defence-of-chelsea-star_605989.html",
-     "source": "Sports Mole",
-     "published": "2026-09-29T21:18:38+01:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Chelsea star Cole Palmer is described as a \"victim\" of the intense football schedule in a surprise defence of the England international."
-    },
-    {
      "title": "Chelsea news: Cole Palmer announces new long-term contract in his own unique way ahead of Bournemouth clash",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
      "source": "Sports Mole",
@@ -1068,6 +1058,15 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
+    },
+    {
+     "title": "Roberto De Zerbi’s false-nine fury shows Tottenham are up and running, while Xabi Alonso is still adapting to Premier League life with Chelsea",
+     "url": "https://www.fourfourtwo.com/tactic/roberto-de-zerbis-false-nine-fury-shows-tottenham-are-up-and-running-while-xabi-alonso-is-still-adapting-to-premier-league-life-with-chelsea",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-26T17:00:00+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Tottenham Hotspur’s victory in the howling wind and rain was forged in a single destructive intervention. Cole Palmer slamming his knee into Matheus Fernandes was a bolt of electricity sparking this game into life. Within 15 minutes, Spurs had scored twice and Palmer had received his second yellow card. Fully De Zerb'd victory (Image credit: Getty Images) It was a gritty, muscular, emotional win f"
     }
    ]
   },
