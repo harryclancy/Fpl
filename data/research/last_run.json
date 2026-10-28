@@ -1,15 +1,15 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-28T02:21:10+00:00",
- "seconds": 146.7,
+ "ran_at": "2026-10-28T11:23:47+00:00",
+ "seconds": 155.0,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 529,
- "substantive_items": 134,
- "duplicates_removed": 12,
- "deeply_analysed": 88,
- "deep_read_failed": 2,
+ "sources_readable": 55,
+ "candidates_discovered": 554,
+ "substantive_items": 158,
+ "duplicates_removed": 14,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
  "corpus_size": 19313,
  "players_researched": 15,
  "players_total": 15,
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 134 articles"
+    "55/78 sources returned 158 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -203,9 +204,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 7,
-   "source_count": 3,
-   "latest_evidence": "2026-10-25T07:45:00+00:00",
+   "evidence_count": 9,
+   "source_count": 4,
+   "latest_evidence": "2026-10-28T10:06:14+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -226,10 +227,28 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
+   "strength": "strong",
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Triple Arsenal injury update issued after Carabao Cup upset against Fleetwood Town",
+     "url": "https://www.fourfourtwo.com/team/triple-arsenal-injury-update-issued-after-carabao-cup-upset-against-fleetwood-town",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-28T10:06:14+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Arsenal comfortably won their Premier League fixture at home against Everton on Saturday but exited the Carabao Cup in shambolic fashion on Tuesday evening. The Gunners needed an equaliser from Viktor Gyokeres to take League Two side Fleetwood Town to penalties in their fourth round tie, losing 5-3 on spot kicks after Bruno Guimaraes failed to score. Teenager Max Dowman was sent off for retaliatin"
+    },
+    {
+     "title": "Arsenal handed triple injury concern ahead of Liverpool clash as Mikel Arteta drops latest update",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arsenal-handed-triple-injury-concern-ahead-of-liverpool-as-arteta-drops-update_607842.html",
+     "source": "Sports Mole",
+     "published": "2026-10-28T07:09:13+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Arsenal have been handed fresh injury concerns ahead of Liverpool, with Mikel Arteta providing updates on Declan Rice, Noni Madueke and Riccardo Calafiori."
+    },
     {
      "title": "FPL notes: Calafiori injury, Saka latest + Everton fitness updates",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-calafiori-injury-saka-latest-everton-fitness-updates",
@@ -1451,9 +1470,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 53,
+   "evidence_count": 54,
    "source_count": 19,
-   "latest_evidence": "2026-10-27T16:18:30+01:00",
+   "latest_evidence": "2026-10-28T04:40:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1478,6 +1497,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Best Pedro replacements in FPL – and is he a definite ‘sell’?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/28/best-pedro-replacements-in-fpl-and-is-he-a-definite-sell",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-28T04:40:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "The Chelsea forward is ruled out for a \"few weeks\" The post Best Pedro replacements in FPL – and is he a definite ‘sell’? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Chelsea injury news: Joao Pedro blow confirmed by Xabi Alonso ahead of Liverpool EFL Cup tie",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/alonso-reveals-pedro-injury-blow-ahead-of-chelseas-trip-to-liverpool_607819.html",
@@ -1576,15 +1604,6 @@
      "matched_on": "pedro",
      "kind": "team news",
      "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
-    },
-    {
-     "title": "Alysson set for full debut against Newcastle",
-     "url": "https://avfc.co.uk/news/2026/october/17/prematch-alysson-set-for-full-debut-against-newcastle/",
-     "source": "Aston Villa",
-     "published": "2026-10-17T15:23:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Fixtures Newcastle United Vs. Aston Villa - Sat, Oct 17 2026, 17:30 Unai Emery has named his Aston Villa side to take on Newcastle United at St. James’ Park on Saturday evening. The Villans travel to the North East to face the Magpies, looking to continue building momentum after an emphatic 6-0 UEFA Champions League victory over Fenerbahçe in midweek. And Emery makes four changes to the starting 1"
     }
    ]
   },
