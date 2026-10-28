@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-28T11:23:47+00:00",
- "seconds": 155.0,
+ "ran_at": "2026-10-28T21:42:18+00:00",
+ "seconds": 149.1,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 554,
- "substantive_items": 158,
- "duplicates_removed": 14,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 19313,
+ "sources_readable": 57,
+ "candidates_discovered": 671,
+ "substantive_items": 275,
+ "duplicates_removed": 24,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 19256,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 158 articles"
+    "57/78 sources returned 275 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -52,7 +51,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
@@ -204,9 +202,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "source_count": 4,
-   "latest_evidence": "2026-10-28T10:06:14+00:00",
+   "latest_evidence": "2026-10-28T14:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -231,6 +229,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Calafiori + Rice injury updates as Arsenal crash out",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/28/fpl-notes-calafiori-rice-injury-updates-as-arsenal-crash-out",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-28T14:00:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "FPL takeaways from Arsenal's shock EFL Cup exit The post FPL notes: Calafiori + Rice injury updates as Arsenal crash out appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Triple Arsenal injury update issued after Carabao Cup upset against Fleetwood Town",
      "url": "https://www.fourfourtwo.com/team/triple-arsenal-injury-update-issued-after-carabao-cup-upset-against-fleetwood-town",
@@ -430,12 +437,12 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 5,
    "latest_evidence": "2026-10-26T18:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
-   "team_news_found": true,
+   "team_news_found": false,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
@@ -446,14 +453,12 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "statistics",
     "tactics",
-    "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -518,15 +523,6 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Ian Wright lauds England star for ‘proving his worth’ vs Czechia after ‘very unlucky’ World Cup snub",
-     "url": "https://www.football365.com/news/ian-wright-lauds-england-star-proving-worth-czechia-very-unlucky-world-cup-snub",
-     "source": "Football365",
-     "published": "2026-09-30T08:05:31+00:00",
-     "matched_on": "hall",
-     "kind": "general",
-     "excerpt": "Arsenal legend Ian Wright has reserved praise for Newcastle United star Lewis Hall for “proving his worth” for England."
     }
    ]
   },
@@ -812,9 +808,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 30,
-   "source_count": 12,
-   "latest_evidence": "2026-10-26T17:00:00+00:00",
+   "evidence_count": 31,
+   "source_count": 13,
+   "latest_evidence": "2026-10-28T20:51:38+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -903,6 +899,15 @@
      "excerpt": ""
     },
     {
+     "title": "WATCH: Liverpool vs Chelsea sparks into life as Rogers and Gakpo score penalties before half-time",
+     "url": "https://www.101greatgoals.com/news/watch-liverpool-chelsea-goals-penalty-carabao-cup/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-28T20:51:38+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "The game was lacking in action before Rogers and Gakpo scored"
+    },
+    {
      "title": "Roberto De Zerbi’s false-nine fury shows Tottenham are up and running, while Xabi Alonso is still adapting to Premier League life with Chelsea",
      "url": "https://www.fourfourtwo.com/tactic/roberto-de-zerbis-false-nine-fury-shows-tottenham-are-up-and-running-while-xabi-alonso-is-still-adapting-to-premier-league-life-with-chelsea",
      "source": "FourFourTwo FPL",
@@ -937,24 +942,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Chelsea fully expect to complete the signing of a midfielder who’ll cost around £100m in January, and Blues fans have Alonso, Palmer and Rogers to thank."
-    },
-    {
-     "title": "England player ratings from the 3-0 win over Czechia: Kane equals caps record, extends goals record",
-     "url": "https://www.football365.com/news/england-player-ratings-czechia-harry-kane-morgan-rogers-lewis-hall",
-     "source": "Football365",
-     "published": "2026-10-06T21:12:19+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Harry Kane marked his record-equalling 125th England cap with a couple of record-extending goals as England swatted Czechia aside."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 41,
+   "evidence_count": 42,
    "source_count": 17,
-   "latest_evidence": "2026-10-26T17:00:00+00:00",
+   "latest_evidence": "2026-10-28T19:50:51+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1079,13 +1075,13 @@
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
     },
     {
-     "title": "Roberto De Zerbi’s false-nine fury shows Tottenham are up and running, while Xabi Alonso is still adapting to Premier League life with Chelsea",
-     "url": "https://www.fourfourtwo.com/tactic/roberto-de-zerbis-false-nine-fury-shows-tottenham-are-up-and-running-while-xabi-alonso-is-still-adapting-to-premier-league-life-with-chelsea",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-26T17:00:00+00:00",
+     "title": "Alonso makes brutal Liverpool decision as concerns over personal rift with Chelsea star emerge",
+     "url": "https://www.football365.com/news/alonso-brutal-decision-liverpool-clash-push-chelsea-star-psg",
+     "source": "Football365",
+     "published": "2026-10-28T19:50:51+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Tottenham Hotspur’s victory in the howling wind and rain was forged in a single destructive intervention. Cole Palmer slamming his knee into Matheus Fernandes was a bolt of electricity sparking this game into life. Within 15 minutes, Spurs had scored twice and Palmer had received his second yellow card. Fully De Zerb'd victory (Image credit: Getty Images) It was a gritty, muscular, emotional win f"
+     "excerpt": "Estevao might have been the only Chelsea stakeholder secretly pleased to see Palmer sent off vs Tottenham. And he still can’t get a game. What’s that about?"
     }
    ]
   },
@@ -1244,9 +1240,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 121,
+   "evidence_count": 118,
    "source_count": 17,
-   "latest_evidence": "2026-10-27T17:00:00+00:00",
+   "latest_evidence": "2026-10-28T15:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1386,7 +1382,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-10-27T08:06:15+00:00",
+   "latest_evidence": "2026-10-28T10:15:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1401,7 +1397,6 @@
     "injury",
     "match report",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1411,6 +1406,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "San Antonio Spurs vs. Utah Jazz: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-utah-jazz-player-props-injury-report-and-prediction--nba_607855.html",
+     "source": "Sports Mole",
+     "published": "2026-10-28T10:15:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Spurs visit Utah Jazz with Victor Wembanyama in red-hot form. Preview, injury report, player props and prediction."
+    },
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Crystal Palace: James Maddison, Savio, Lucas Bergvall latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-savio-bergvall-updates-spurs-injury-suspension-list-vs-palace_607847.html",
+     "source": "Sports Mole",
+     "published": "2026-10-28T08:45:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Crystal Palace."
+    },
     {
      "title": "Roberto De Zerbi left 'concerned' by latest Spurs injury blow as fresh update now emerges",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-concerned-by-latest-spurs-injury-blow-as-fresh-update-now-emerges_607791.html",
@@ -1446,33 +1459,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Arsenal legend Martin Keown “hopes” Tottenham star James Maddison isn’t out for long, as Roberto De Zerbi has revealed his fears for the midfielder’s injury."
-    },
-    {
-     "title": "Chelsea's Cole Palmer sent England selection message after senseless red card vs. Tottenham",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
-     "source": "Sports Mole",
-     "published": "2026-10-25T07:58:13+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Exclusive: A former Chelsea winger sends Cole Palmer a fresh England message after the attacker's senseless red card against Tottenham Hotspur."
-    },
-    {
-     "title": "Joao Pedro injury latest: Who could replace Chelsea striker as Xabi Alonso gives update after 2-0 Spurs loss?",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/feature/how-can-chelsea-replace-pedro-as-alonso-gives-injury-update-after-spurs-loss_607654.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T23:01:09+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes a look at the lates on Joao Pedro's injury, and how Xabi Alonso could replace the Brazilian striker after Chelsea lost 2-0 to Spurs."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 54,
+   "evidence_count": 55,
    "source_count": 19,
-   "latest_evidence": "2026-10-28T04:40:00+00:00",
+   "latest_evidence": "2026-10-28T14:14:32+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1497,6 +1492,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea asked ‘why the hell’ they sold seven-goal striker as Joao Pedro injury confirmed",
+     "url": "https://www.football365.com/news/joao-pedro-injury-why-the-hell-sell-nicolas-jackson-chelsea",
+     "source": "Football365",
+     "published": "2026-10-28T14:14:32+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Xabi Alonso has confirmed the general length of the injury suffered by Joao Pedro, as Chelsea have been asked “why the hell” they sold his perfect replacement."
+    },
     {
      "title": "Best Pedro replacements in FPL – and is he a definite ‘sell’?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/28/best-pedro-replacements-in-fpl-and-is-he-a-definite-sell",
@@ -1595,15 +1599,6 @@
      "matched_on": "joao",
      "kind": "team news",
      "excerpt": "Aston Villa have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Aston Villa’s João Gomes (£5.5m) could be a solid under-the-radar pick for FPL managers. His return from suspension i"
-    },
-    {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Chelsea: Pedro Porro, Savio, Lucas Bergvall latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html",
-     "source": "Sports Mole",
-     "published": "2026-10-21T11:53:00+01:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Chelsea."
     }
    ]
   },
@@ -1732,9 +1727,9 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "source_count": 3,
-   "latest_evidence": "2026-10-26T14:15:00+00:00",
+   "latest_evidence": "2026-10-28T15:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1767,6 +1762,15 @@
      "matched_on": "muharemovic",
      "kind": "team news",
      "excerpt": "Key Fantasy talking points from Sunderland 0-0 Leeds The post FPL notes: More Muharemovic + Trafford joy, but DCL quiet appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Barcelona transfer news: La Liga champions learn 'substantial' asking price for Leeds star Tarik Muharemovic",
+     "url": "https://www.sportsmole.co.uk/football/barcelona/transfer-talk/news/barca-learn-substantial-asking-price-for-leeds-star-muharemovic_607867.html",
+     "source": "Sports Mole",
+     "published": "2026-10-28T15:00:00+00:00",
+     "matched_on": "muharemovic",
+     "kind": "transfer",
+     "excerpt": "Barcelona reportedly consider making a move for Leeds United centre-back Tarik Muharemovic during next summer's transfer window."
     },
     {
      "title": "Barcelona, Inter Milan 'keen' on Leeds United star ahead of January transfer window",
@@ -1852,15 +1856,6 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic claims second hero of the month award in a row",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
