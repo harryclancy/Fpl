@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-29T11:34:09+00:00",
- "seconds": 161.4,
+ "ran_at": "2026-10-29T21:49:58+00:00",
+ "seconds": 162.0,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 571,
- "substantive_items": 186,
- "duplicates_removed": 14,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 19304,
+ "sources_readable": 56,
+ "candidates_discovered": 701,
+ "substantive_items": 310,
+ "duplicates_removed": 34,
+ "deeply_analysed": 70,
+ "deep_read_failed": 20,
+ "corpus_size": 19334,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 186 articles"
+    "56/78 sources returned 310 articles"
    ]
   },
   "blackout": {
@@ -52,8 +52,9 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -202,9 +203,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 11,
-   "source_count": 4,
-   "latest_evidence": "2026-10-29T10:32:22+00:00",
+   "evidence_count": 12,
+   "source_count": 5,
+   "latest_evidence": "2026-10-29T11:58:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -229,6 +230,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL Gameweek 9 Guide 2026/27: Injury News, Players To Target And Captaincy Picks Ahead Of FPL GW9",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-10-29T11:58:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
+    },
     {
      "title": "Arsenal injury, suspension list and return dates vs. Liverpool: Declan Rice, Noni Madueke, Riccardo Calafiori latest",
      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-madueke-calafiori-latest-arsenal-injury-suspension-list-vs-liverpool_607944.html",
@@ -446,12 +456,12 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 7,
-   "source_count": 5,
-   "latest_evidence": "2026-10-26T18:00:00+00:00",
+   "evidence_count": 8,
+   "source_count": 6,
+   "latest_evidence": "2026-10-29T18:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
-   "team_news_found": false,
+   "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
@@ -464,12 +474,22 @@
     "match report",
     "statistics",
     "tactics",
+    "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton Team News Confirmed For Newcastle Cup Clash",
+     "url": "https://www.evertonfc.com/news/2026/october/29/everton-team-news-confirmed-for-newcastle-cup-clash/",
+     "source": "Everton",
+     "published": "2026-10-29T18:30:00+00:00",
+     "matched_on": "hall",
+     "kind": "team news",
+     "excerpt": "Hayden Hackney and Tyler Dibling are named in the starting line-up for Everton's Carabao Cup fourth round clash with Newcastle United at Hill Dickinson Stadium. The Blues take on the Magpies on Thursday evening (7.45pm GMT) knowing a win would set up a quarter-final date at Fleetwood Town. Harrison Armstrong and Brennan Johnson make way for Hackney and Dibling, as David Moyes makes two changes fro"
+    },
     {
      "title": "Manchester United target Eddie Howe already has a £70 million first transfer in mind: report",
      "url": "https://www.fourfourtwo.com/transfer/manchester-united-target-eddie-howe-already-has-a-gbp70-million-first-transfer-in-mind-report",
@@ -678,9 +698,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 23,
+   "evidence_count": 25,
    "source_count": 6,
-   "latest_evidence": "2026-10-26T14:00:00+00:00",
+   "latest_evidence": "2026-10-29T16:47:52+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -693,6 +713,7 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
     "press conference",
     "set pieces",
     "statistics",
@@ -704,6 +725,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tavernier, Kroupi, Scott: Bournemouth injury latest for FPL Gameweek 9",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/29/tavernier-kroupi-scott-bournemouth-injury-latest-for-fpl-gameweek-9",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-29T16:47:52+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Marco Rose gave updates on Thursday The post Tavernier, Kroupi, Scott: Bournemouth injury latest for FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL Gameweek 9 Guide 2026/27: Injury News, Players To Target And Captaincy Picks Ahead Of FPL GW9",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-10-29T11:58:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
+    },
     {
      "title": "Gary Neville accuses Manchester United of 'absolute negligence' in the transfer window",
      "url": "https://www.fourfourtwo.com/team/gary-neville-accuses-manchester-united-of-absolute-negligence-in-the-transfer-window",
@@ -793,33 +832,15 @@
      "matched_on": "tavernier",
      "kind": "team news",
      "excerpt": "Evanilson, Rayan and Álvaro Rodríguez were on target as AFC Bournemouth capped a memorable night by triumphing 3-0 against Sturm Graz in the first European game at Vitality Stadium. The Cherries followed up their impressive 2-1 win against Real Sociedad in their opening Europa League clash with another impressive showing against the Austrian Bundesliga outfit. To mark the occasion, a giant tifo wa"
-    },
-    {
-     "title": "Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/01/schade-v-barnes-v-tavernier-who-is-the-best-midfielder-to-own-in-fpl",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-01T15:30:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "We look at the data to find out The post Schade v Barnes v Tavernier: Who is the best midfielder to own in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "'The Manchester United players have conned Michael Carrick' Gary Neville's extraordinary rant against Bruno Fernandes and co",
-     "url": "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-26T11:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Manchester United legend Gary Neville has spoken out in support of Red Devils head coach and former teammate Michael Carrick in the aftermath of Sunday's 3-0 loss against Bournemouth. Neville expects Man United to sack Carrick , who was appointed as head coach after a positive second interim spell last season, but places the blame for the club's difficulties on decisions behind the scenes and the "
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 32,
-   "source_count": 13,
-   "latest_evidence": "2026-10-29T11:00:00+00:00",
+   "evidence_count": 33,
+   "source_count": 14,
+   "latest_evidence": "2026-10-29T12:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -844,6 +865,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Pedro latest, Lacroix injury, Rogers pen + Isak rested",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/29/fpl-notes-pedro-latest-lacroix-injury-rogers-pen-isak-rested",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-29T12:15:00+00:00",
+     "matched_on": "rogers",
+     "kind": "team news",
+     "excerpt": "It was all about the penalties as Liverpool edged past Chelsea on Wednesday The post FPL notes: Pedro latest, Lacroix injury, Rogers pen + Isak rested appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Victor Lindelof is thriving and it says everything about Aston Villa and Manchester United",
      "url": "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
@@ -942,15 +972,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "David Moyes says Everton's past two performances have not been at the level he expects as the Blues' unbeaten start to the season came to an end in a 2-0 loss to Chelsea at Hill Dickinson Stadium on Saturday. Following a 2-2 draw at Hull City last weekend – where Moyes was unhappy with the manner of the goals conceded – the Toffees boss was unimpressed with Pedro Neto's opener just seconds after t"
-    },
-    {
-     "title": "Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist after Bournemouth brace",
-     "url": "https://www.fiso.co.uk/everton-v-chelsea-fpl-picks-joao-pedro-tops-gameweek-7-shortlist-after-bournemouth-brace/",
-     "source": "FISO",
-     "published": "2026-10-13T14:47:52+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Photo by Vienna Reyes on Unsplash Chelsea travel to Everton on Saturday, 17 October, with João Pedro, Cole Palmer and Morgan Rogers the leading Fantasy Premier League options from the fixture. Kick-off time and TV coverage can be found on TNT Sports and HBO Max. Everton v Chelsea is one of the most useful Gameweek … Continue reading Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist"
     }
    ]
   },
@@ -1249,9 +1270,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 117,
+   "evidence_count": 114,
    "source_count": 17,
-   "latest_evidence": "2026-10-28T15:00:00+00:00",
+   "latest_evidence": "2026-10-29T11:58:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1276,6 +1297,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL Gameweek 9 Guide 2026/27: Injury News, Players To Target And Captaincy Picks Ahead Of FPL GW9",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-10-29T11:58:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
+    },
     {
      "title": "Pedro, Haaland, Mitoma: Latest team news ahead of FPL Gameweek 9",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/27/pedro-haaland-szoboszlai-latest-team-news-ahead-of-fpl-gameweek-9",
@@ -1374,15 +1404,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "It's often an eye-rolling experience checking who the top goalscorers in the Premier League are, and sometimes I give my own award for the 'non-Haaland' top goalscorer. Erling Haaland is one of the world's best, most deadly finishers of all time, to the point that it's boring. But how many of those league goals are scored after winter? It always feels like he slows down each season after January, "
-    },
-    {
-     "title": "Without Haaland and Semenyo, Maresca faces striker dilemma for Champions League clash",
-     "url": "https://www.sportsmole.co.uk/football/man-city/transfer-talk/news/maresca-faces-number-nine-crisis-man-citys-lack-of-cover-exposed_607310.html",
-     "source": "Sports Mole",
-     "published": "2026-10-20T18:06:11+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Haaland is doubtful for Man City’s Champions League clash with AEK after a foot knock, and Semenyo’s knee injury adds a two-month absence — Maresca admits replacing the Norwegian is difficult."
     }
    ]
   },
@@ -1474,9 +1495,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 56,
+   "evidence_count": 58,
    "source_count": 19,
-   "latest_evidence": "2026-10-29T10:10:53+00:00",
+   "latest_evidence": "2026-10-29T12:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1501,6 +1522,24 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Pedro latest, Lacroix injury, Rogers pen + Isak rested",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/29/fpl-notes-pedro-latest-lacroix-injury-rogers-pen-isak-rested",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-29T12:15:00+00:00",
+     "matched_on": "pedro",
+     "kind": "team news",
+     "excerpt": "It was all about the penalties as Liverpool edged past Chelsea on Wednesday The post FPL notes: Pedro latest, Lacroix injury, Rogers pen + Isak rested appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL Gameweek 9 Guide 2026/27: Injury News, Players To Target And Captaincy Picks Ahead Of FPL GW9",
+     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-10-29T11:58:00+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
+    },
     {
      "title": "Chelsea injury, suspension list and return dates vs. Man United: Maxence Lacroix, Moises Caicedo, Joao Pedro latest",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/lacroix-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-man-united_607940.html",
@@ -1590,24 +1629,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "Chelsea forward Joao Pedro has been ruled out for the London derby clash against Tottenham Hotspur on Saturday."
-    },
-    {
-     "title": "Chelsea v Spurs team news: Why Pedro misses out, Quenda starts",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/chelsea-v-spurs-team-news-why-pedro-misses-out-quenda-starts",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-24T16:15:00+00:00",
-     "matched_on": "pedro",
-     "kind": "team news",
-     "excerpt": "Two changes apiece at Stamford Bridge tonight The post Chelsea v Spurs team news: Why Pedro misses out, Quenda starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Chelsea vs. Tottenham lineups confirmed as Joao Pedro, Dominic Solanke, Geovany Quenda decisions revealed",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/pedro-solanke-quenda-calls-chelsea-spurs-lineups-confirmed_607642.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T16:20:00+01:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea and Tottenham Hotspur confirm their starting lineups for Saturday's Premier League London derby at Stamford Bridge."
     }
    ]
   },
