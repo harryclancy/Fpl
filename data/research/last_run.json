@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-29T02:28:46+00:00",
- "seconds": 213.1,
+ "ran_at": "2026-10-29T11:34:09+00:00",
+ "seconds": 161.4,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 554,
- "substantive_items": 172,
- "duplicates_removed": 9,
- "deeply_analysed": 71,
- "deep_read_failed": 19,
- "corpus_size": 19295,
+ "sources_readable": 57,
+ "candidates_discovered": 571,
+ "substantive_items": 186,
+ "duplicates_removed": 14,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 19304,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 172 articles"
+    "57/78 sources returned 186 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -203,9 +202,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 4,
-   "latest_evidence": "2026-10-28T14:00:00+00:00",
+   "latest_evidence": "2026-10-29T10:32:22+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -230,6 +229,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal injury, suspension list and return dates vs. Liverpool: Declan Rice, Noni Madueke, Riccardo Calafiori latest",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-madueke-calafiori-latest-arsenal-injury-suspension-list-vs-liverpool_607944.html",
+     "source": "Sports Mole",
+     "published": "2026-10-29T10:32:22+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Sunday's Premier League clash with Liverpool."
+    },
     {
      "title": "FPL notes: Calafiori + Rice injury updates as Arsenal crash out",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/28/fpl-notes-calafiori-rice-injury-updates-as-arsenal-crash-out",
@@ -532,7 +540,7 @@
    "club": "ARS",
    "evidence_count": 15,
    "source_count": 7,
-   "latest_evidence": "2026-10-24T18:10:04+02:00",
+   "latest_evidence": "2026-10-29T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -557,6 +565,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Victor Lindelof is thriving and it says everything about Aston Villa and Manchester United",
+     "url": "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-29T11:00:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Aston Villa are not a normal football club. After what felt like an eternity of matches against teams that somehow seemed to be playing a more advanced sport altogether, Villa have become competitive by doing things differently. Manager Unai Emery maintained his poker face throughout pre-season. It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martin"
+    },
     {
      "title": "Everton Defeated At Arsenal",
      "url": "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
@@ -646,15 +663,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "England boss Thomas Tuchel provides an injury update on Arsenal defender Ezri Konsa ahead of Saturday's Nations League meeting with Croatia."
-    },
-    {
-     "title": "Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/09/30/odegaard-van-hecke-bruno-konsa-latest-international-break-injury-news",
-     "source": "Fantasy Football Scout",
-     "published": "2026-09-30T22:55:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "The latest fitness updates from the ongoing international break The post Odegaard, van Hecke, Bruno, Konsa: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Moyes’ Assessment Of Arsenal Loss",
@@ -809,9 +817,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 31,
+   "evidence_count": 32,
    "source_count": 13,
-   "latest_evidence": "2026-10-28T20:51:38+00:00",
+   "latest_evidence": "2026-10-29T11:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -836,6 +844,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Victor Lindelof is thriving and it says everything about Aston Villa and Manchester United",
+     "url": "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-29T11:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "team news",
+     "excerpt": "Aston Villa are not a normal football club. After what felt like an eternity of matches against teams that somehow seemed to be playing a more advanced sport altogether, Villa have become competitive by doing things differently. Manager Unai Emery maintained his poker face throughout pre-season. It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martin"
+    },
     {
      "title": "Everton Taste First Loss Of The Season To Chelsea",
      "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
@@ -934,15 +951,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Photo by Vienna Reyes on Unsplash Chelsea travel to Everton on Saturday, 17 October, with João Pedro, Cole Palmer and Morgan Rogers the leading Fantasy Premier League options from the fixture. Kick-off time and TV coverage can be found on TNT Sports and HBO Max. Everton v Chelsea is one of the most useful Gameweek … Continue reading Everton v Chelsea FPL picks: João Pedro tops Gameweek 7 shortlist"
-    },
-    {
-     "title": "Chelsea expect to complete £100m signing in January, with Palmer, Rogers, Alonso to thank",
-     "url": "https://www.football365.com/news/chelsea-expect-complete-100m-alex-scott-signing-january",
-     "source": "Football365",
-     "published": "2026-10-12T13:01:05+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Chelsea fully expect to complete the signing of a midfielder who’ll cost around £100m in January, and Blues fans have Alonso, Palmer and Rogers to thank."
     }
    ]
   },
@@ -1466,9 +1474,9 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 56,
    "source_count": 19,
-   "latest_evidence": "2026-10-28T14:14:32+00:00",
+   "latest_evidence": "2026-10-29T10:10:53+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1493,6 +1501,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Chelsea injury, suspension list and return dates vs. Man United: Maxence Lacroix, Moises Caicedo, Joao Pedro latest",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/lacroix-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-man-united_607940.html",
+     "source": "Sports Mole",
+     "published": "2026-10-29T10:10:53+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Saturday's Premier League clash with Manchester United."
+    },
     {
      "title": "Chelsea asked ‘why the hell’ they sold seven-goal striker as Joao Pedro injury confirmed",
      "url": "https://www.football365.com/news/joao-pedro-injury-why-the-hell-sell-nicolas-jackson-chelsea",
@@ -1591,15 +1608,6 @@
      "matched_on": "joao pedro",
      "kind": "team news",
      "excerpt": "Chelsea and Tottenham Hotspur confirm their starting lineups for Saturday's Premier League London derby at Stamford Bridge."
-    },
-    {
-     "title": "Man City FPL preview",
-     "url": "https://avfc.co.uk/news/2026/october/23/prematch-man-city-fpl-preview/",
-     "source": "Aston Villa",
-     "published": "2026-10-23T08:30:00+00:00",
-     "matched_on": "joao",
-     "kind": "team news",
-     "excerpt": "Aston Villa have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Aston Villa’s João Gomes (£5.5m) could be a solid under-the-radar pick for FPL managers. His return from suspension i"
     }
    ]
   },
