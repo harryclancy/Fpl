@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-31T02:27:52+00:00",
- "seconds": 164.1,
+ "ran_at": "2026-10-31T10:57:35+00:00",
+ "seconds": 159.9,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 525,
- "substantive_items": 138,
- "duplicates_removed": 7,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 19326,
+ "sources_readable": 57,
+ "candidates_discovered": 553,
+ "substantive_items": 152,
+ "duplicates_removed": 11,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 19341,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 138 articles"
+    "57/78 sources returned 152 articles"
    ]
   },
   "blackout": {
@@ -57,8 +57,7 @@
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
@@ -1194,9 +1193,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 5,
-   "source_count": 3,
-   "latest_evidence": "2026-10-27T10:00:03+00:00",
+   "evidence_count": 7,
+   "source_count": 4,
+   "latest_evidence": "2026-10-31T10:00:03+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1221,6 +1220,15 @@
    "researched": true,
    "items": [
     {
+     "title": "Los Angeles Lakers vs. Toronto Raptors: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/toronto-raptors/preview/los-angeles-lakers-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_608134.html",
+     "source": "Sports Mole",
+     "published": "2026-10-31T09:35:54+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Los Angeles Lakers vs Toronto Raptors prediction, player props and injury report, with Doncic and Barnes in focus and Leonard out for Toronto."
+    },
+    {
      "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
      "source": "Fantasy Football Scout",
@@ -1228,6 +1236,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "3 Winners, 1 Loser in Raptors Loss vs. Magic",
+     "url": "https://www.si.com/nba/raptors/onsi/3-winners-1-loser-toronto-raptors-loss-vs-orlando-magic?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-31T10:00:03+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Toronto Raptors forward Scottie Barnes scored a career-high 41 points in the team's loss against the Orlando Magic."
     },
     {
      "title": "Scottie Barnes New Bad Habit Is Killing the Raptors Offense",
@@ -1635,9 +1652,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 10,
-   "source_count": 4,
-   "latest_evidence": "2026-10-26T10:25:00+00:00",
+   "evidence_count": 11,
+   "source_count": 5,
+   "latest_evidence": "2026-10-31T09:51:47+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1662,6 +1679,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Newcastle predicted lineup vs. Everton: Four changes as Yoane Wissa returns",
+     "url": "https://www.sportsmole.co.uk/football/newcastle-united/predicted-lineups/wissa-returns-in-quadruple-change-predicted-newcastle-xi-vs-everton_608135.html",
+     "source": "Sports Mole",
+     "published": "2026-10-31T09:51:47+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Newcastle United could line up for Monday's Premier League clash with Everton."
+    },
     {
      "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
