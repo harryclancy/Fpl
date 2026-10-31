@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-10-30T21:33:12+00:00",
+ "generated": "2026-10-31T02:27:52+00:00",
  "gameweek": 9,
- "corpus_size": 19317,
+ "corpus_size": 19326,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -818,15 +818,15 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "status": "Latest on Konsa — FourFourTwo FPL, 05 Oct: “Konsa was brought to the Emirates Stadium to provide defensive reinforcement following a long-term back injury to star centre-back William Saliba.” Sports Mole, 02 Oct: “Konsa sat out the midweek win over the Czech Republic as an unused substitute due to a minor injury issue.”",
-   "why_here": "Konsa is in the starting eleven this week at £4.7m as a DEF. The selection rests on 18 retrieved item(s) from 9 source(s), the most recent dated 30 Oct.",
+   "status": "Latest on Konsa — FourFourTwo FPL, 05 Oct: “Konsa was brought to the Emirates Stadium to provide defensive reinforcement following a long-term back injury to star centre-back William Saliba.”",
+   "why_here": "Konsa is in the starting eleven this week at £4.7m as a DEF. The selection rests on 17 retrieved item(s) from 9 source(s), the most recent dated 30 Oct.",
    "case_for": "What supports keeping him: Fantasy Football 247, 30 Oct: “Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband.” Everton, 24 Oct: “Ezri Konsa’s early goal opened the scoring for the hosts, before Gabriel doubled the lead in the second half.” Opta Analyst, 24 Oct: “Goals from Ezri Konsa and Gabriel Magalhães helped Arsenal to a 2-0 win over Everton , taking them level on points with Manchester City at the top of the Premier League.”",
    "case_against": "What argues against him: FourFourTwo FPL, 16 Oct: “It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea .” Sports Mole, 07 Oct: “Ezri Konsa © Imago / Sportimage Status: Major doubt Type of injury: Thigh Possible return date: October 10 (vs. Leeds) Ezri Konsa left the England camp to have treatment after taking another hit to his quad, and while Thomas Tuchel played down any serious concern, he did not want to risk the defender playing on through the pain.” Fantasy Football Scout, 05 Oct: “Konsa was sidelined ( as a non-playing substitute ) for last Tuesday’s win over Czechia with a muscular niggle.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 30 Oct: “Konsa has slotted seamlessly into an excellent Gunners defence, maintaining last season’s standards as he fills the void left by the injured William Saliba.” Fantasy Football Scout, 10 Oct: “TEAM NEWS Kai Havertz and Ezri Konsa have recovered from the injuries they picked up on international duty to start for the hosts.”",
    "developments": "Recent developments — Football365, 30 Oct: “Without further ado, here are our top 10 signings of the season so far. 10) Ezri Konsa (Arsenal) Tenth place was between four players who were very difficult to separate, but Konsa just edges out Anderson, Johan Manzambi (Aston Villa) and Julio Enciso (Ipswich).” FourFourTwo FPL, 29 Oct: “It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martinez, Ezri Konsa and Ollie Watkins – the transfer fees those players attracted were vital – but the turnover meant that their recruitment had to be all but perfect just for the club to stand still.” FourFourTwo FPL, 29 Oct: “Konsa has been replaced not by new signing Taylor Harwood-Bellis, but by 32-year-old Victor Lindelof He joined the club on a free transfer on deadline day last summer after leaving Manchester United but his acquisition was not a stroke of genius on the part of Emery, previous recruitment head Monchi, or anyone else.”",
-   "outlook": "On the coming weeks — Fantasy Football Scout, 05 Oct: “KONSA RETURNS TO ARSENAL It’s been a rollercoaster international break for Ezri Konsa (£4.6m) and his owners in Fantasy Premier League (FPL).” Sports Mole, 02 Oct: “Arsenal and England fans will be pleased to hear that Konsa is already back in training and should be ready for the fixture in Rijeka. © Iconsport / PA Images England receive Konsa fitness boost Speaking at Friday's press conference, Tuchel said: \"It seems that Ezri Konsa is back.”",
+   "outlook": "On the coming weeks — Fantasy Football Scout, 05 Oct: “KONSA RETURNS TO ARSENAL It’s been a rollercoaster international break for Ezri Konsa (£4.6m) and his owners in Fantasy Premier League (FPL).”",
    "confidence": "high",
-   "evidence_count": 18,
+   "evidence_count": 17,
    "evidence_used": [
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw9-2/",
     "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
@@ -839,7 +839,7 @@
     "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/tuchel-explains-konsa-trauma-as-arsenal-receive-new-injury-update_606264.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/05/scott-konsa-van-de-ven-latest-international-break-injury-news",
     "https://www.fourfourtwo.com/person/player/arsenal-dealt-new-injury-blow-ahead-of-leeds-united-showdown",
-    "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html"
+    "https://fulhamfc.co.uk/news/2026/october/30/cottage-tactico-new-faces-same-aston-villa/"
    ],
    "sources_used": [
     "Everton",
@@ -1064,30 +1064,6 @@
      "tone": "negative",
      "topics": [
       "injury"
-     ]
-    },
-    {
-     "text": "Konsa sat out the midweek win over the Czech Republic as an unused substitute due to a minor injury issue.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
-     "published": "2026-10-02T19:15:00+01:00",
-     "tone": "negative",
-     "topics": [
-      "injury",
-      "rotation"
-     ]
-    },
-    {
-     "text": "Arsenal and England fans will be pleased to hear that Konsa is already back in training and should be ready for the fixture in Rijeka. © Iconsport / PA Images England receive Konsa fitness boost Speaking at Friday's press conference, Tuchel said: \"It seems that Ezri Konsa is back.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
-     "published": "2026-10-02T19:15:00+01:00",
-     "tone": "positive",
-     "topics": [
-      "press conference",
-      "injury",
-      "tactics",
-      "fixtures"
      ]
     }
    ]
@@ -1462,15 +1438,15 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "status": "Latest on Rogers — FourFourTwo FPL, 26 Oct: “Xabi Alonso, who has quietly abandoned his 3-4-3 recently, played a 4-4-2 with Morgan Rogers and Cole Palmer deployed as false nines, although they were so false they were more like ghosts, pressing erratically to leave Chelsea’s two-man midfield repeatedly exposed.” Chelsea: “Rogers came into Thomas Tuchel’s starting XI at the Fortuna Arena in Prague and was involved in the move which led to Harry Kane’s second-half goal, after Anthony Gordon had opened the scoring.”",
-   "why_here": "Rogers is in the starting eleven this week at £8.0m as a MID. The selection rests on 35 retrieved item(s) from 15 source(s), the most recent dated 30 Oct.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 29 Oct: “And we need a couple of days to check what’s going to be the injury.” – Xabi Alonso on Maxence Lacroix “Well, we have started with Pedro [Neto], with Danny [Welbeck] and with Morgan [Rogers] up front.” Everton, 17 Oct: “Moyes also gave his verdict on a Morgan Rogers challenge on James Garner when the game was goalless, with the England forward already on a yellow card.” Fantasy Football 247, 15 Oct: “FF247 Site Team News GW7 - Fantasy Football 247 - Premier League Tips Share This Post FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at the double.”",
+   "status": "Latest on Rogers — FourFourTwo FPL, 26 Oct: “Xabi Alonso, who has quietly abandoned his 3-4-3 recently, played a 4-4-2 with Morgan Rogers and Cole Palmer deployed as false nines, although they were so false they were more like ghosts, pressing erratically to leave Chelsea’s two-man midfield repeatedly exposed.” Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.”",
+   "why_here": "Rogers is in the starting eleven this week at £8.0m as a MID. The selection rests on 36 retrieved item(s) from 16 source(s), the most recent dated 31 Oct.",
+   "case_for": "What supports keeping him: Sports Illustrated FPL, 31 Oct: “Kennedi Rogers did all she could with 18 kills across the first two sets and was set up by Caroline Kerr, who had 32 assists.” Fantasy Football Scout, 29 Oct: “And we need a couple of days to check what’s going to be the injury.” – Xabi Alonso on Maxence Lacroix “Well, we have started with Pedro [Neto], with Danny [Welbeck] and with Morgan [Rogers] up front.” Everton, 17 Oct: “Moyes also gave his verdict on a Morgan Rogers challenge on James Garner when the game was goalless, with the England forward already on a yellow card.”",
    "case_against": "What argues against him: FourFourTwo FPL, 16 Oct: “It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea .” Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Chelsea: “Xabi Alonso highlights impact of 'very complete modern player' Morgan Rogers | News | Official Site | Chelsea Football Club Xabi Alonso described Morgan Rogers as a ‘very complete modern player’ after the England international struck his fourth Chelsea goal in our 5-1 win against Bournemouth.” Chelsea: “Having started Tuesday’s victory over Czechia, Rogers was among the substitutes for this encounter as former Chelsea head coach Thomas Tuchel made five changes to his starting XI.”",
-   "developments": "Recent developments — Football365, 30 Oct: “Bournemouth’s new centre-back has made 59 clearances , a tally bettered only by Bobby Thomas (Coventry) and Tarik Muharemovic (Leeds), while he also ranks sixth for aerial duels won (32) this season. 6) Morgan Rogers (Chelsea) Living up to a £117million price tag is impossible for the vast majority of footballers, but Rogers is doing about as well as anyone could have expected so far.” Fantasy Football Scout, 29 Oct: “So we were a little bit forced with substitutions.” – Xabi Alonso on why he didn’t bring Estevao on In the absence of Palmer and Pedro, Rogers stepped up from the spot to convert Chelsea’s first-half penalty.” FourFourTwo FPL, 29 Oct: “It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martinez, Ezri Konsa and Ollie Watkins – the transfer fees those players attracted were vital – but the turnover meant that their recruitment had to be all but perfect just for the club to stand still.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Fantasy Football 247, 15 Oct: “FF247 Site Team News GW7 - Fantasy Football 247 - Premier League Tips Share This Post FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at the double.” Chelsea: “Xabi Alonso highlights impact of 'very complete modern player' Morgan Rogers | News | Official Site | Chelsea Football Club Xabi Alonso described Morgan Rogers as a ‘very complete modern player’ after the England international struck his fourth Chelsea goal in our 5-1 win against Bournemouth.”",
+   "developments": "Recent developments — Sports Illustrated FPL, 31 Oct: “Rogers reached her career high with her 22nd kill to put Tennessee up 4-1, but Stowers and Ring would not go away.” Football365, 30 Oct: “Bournemouth’s new centre-back has made 59 clearances , a tally bettered only by Bobby Thomas (Coventry) and Tarik Muharemovic (Leeds), while he also ranks sixth for aerial duels won (32) this season. 6) Morgan Rogers (Chelsea) Living up to a £117million price tag is impossible for the vast majority of footballers, but Rogers is doing about as well as anyone could have expected so far.” Fantasy Football Scout, 29 Oct: “So we were a little bit forced with substitutions.” – Xabi Alonso on why he didn’t bring Estevao on In the absence of Palmer and Pedro, Rogers stepped up from the spot to convert Chelsea’s first-half penalty.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 26 Oct: “The Blues invested heavily in new players during the summer transfer window, equipping new manager Xabi Alonso with a squad boasting the likes of Morgan Rogers, Emiliano Martinez, Maxence Lacrois and Valentin Barco, as well as the senior influence of Jordan Henderson and Danny Welbeck.” FourFourTwo FPL, 16 Oct: “Yet the departures of Tielemans, Rogers and Watkins required a tactical rethink.”",
    "confidence": "high",
-   "evidence_count": 35,
+   "evidence_count": 36,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/29/fpl-notes-pedro-latest-lacroix-injury-rogers-pen-isak-rested",
     "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
@@ -1481,9 +1457,9 @@
     "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
     "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
+    "https://www.si.com/college/tennessee/volleyball/no-6-tennessee-volleyball-falls-3-1-at-no-17-texas-a-m-01m67v1gh19c?utm_source=RSS",
     "https://fulhamfc.co.uk/news/2026/october/30/cottage-tactico-new-faces-same-aston-villa/",
-    "https://www.football365.com/news/ranking-top-10-premier-league-signings-of-the-season",
-    "https://www.101greatgoals.com/news/watch-liverpool-chelsea-goals-penalty-carabao-cup/"
+    "https://www.football365.com/news/ranking-top-10-premier-league-signings-of-the-season"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1500,9 +1476,26 @@
     "Fulham",
     "Ipswich Town",
     "OneFPL",
+    "Sports Illustrated FPL",
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Kennedi Rogers did all she could with 18 kills across the first two sets and was set up by Caroline Kerr, who had 32 assists.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/college/tennessee/volleyball/no-6-tennessee-volleyball-falls-3-1-at-no-17-texas-a-m-01m67v1gh19c?utm_source=RSS",
+     "published": "2026-10-31T02:22:10+00:00",
+     "tone": "positive",
+     "topics": []
+    },
+    {
+     "text": "Rogers reached her career high with her 22nd kill to put Tennessee up 4-1, but Stowers and Ring would not go away.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/college/tennessee/volleyball/no-6-tennessee-volleyball-falls-3-1-at-no-17-texas-a-m-01m67v1gh19c?utm_source=RSS",
+     "published": "2026-10-31T02:22:10+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Bournemouth’s new centre-back has made 59 clearances , a tally bettered only by Bobby Thomas (Coventry) and Tarik Muharemovic (Leeds), while he also ranks sixth for aerial duels won (32) this season. 6) Morgan Rogers (Chelsea) Living up to a £117million price tag is impossible for the vast majority of footballers, but Rogers is doing about as well as anyone could have expected so far.",
      "source": "Football365",
@@ -2803,14 +2796,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — 101 Great Goals — Fantasy, 22 Oct: “Asked for an update on the fitness of Matheus Nunes, Nico O’Reilly, Mateo Kovacic and Haaland, City boss Enzo Maresca said: “We have a session this afternoon.” Sports Mole, 21 Oct: “Erling Haaland © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Status: Minor doubt Type of issue: Knock Possible return date: October 24 (vs. Aston Villa) Haaland was rested against AEK Athens in the Champions League on Tuesday due to a knock, but he was still named on the bench and is set to return against Villa.”",
-   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 115 retrieved item(s) from 17 source(s), the most recent dated 30 Oct.",
+   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 114 retrieved item(s) from 17 source(s), the most recent dated 30 Oct.",
    "case_for": "What supports keeping him: Sports Mole, 30 Oct: “Citizens supporters are keen to see the return of Haaland who has made a prolific start to the 2026-27 campaign, scoring 13 goals in just 11 appearances across all competitions.” Fantasy Football 247, 30 Oct: “Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband.” Tactical Football Analysis, 29 Oct: “This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro.”",
    "case_against": "What argues against him: Sports Mole, 30 Oct: “Haaland was among five senior stars who were rested for that game, and after delivering a positive injury update on Friday , manager Enzo Maresca is expected to revert to a strong lineup including Man City’s No.9.” Football365, 26 Oct: “We think he might be truly recovered from injury. 6) Erling Haaland – 26 goals A goal against Sunderland before the international break not only took Haaland to 20 for the calendar year, but also meant he ticked off a rare blank on his CV.” Sports Mole, 24 Oct: “Emery has also chosen to name 17-year-old forward Brian Madjo on the substitutes' bench instead of Tammy Abraham. © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Haaland returns for Man City against Aston Villa Meanwhile, as expected, Erling Haaland returns to the Man City XI after a minor ankle knock.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 30 Oct: “Tresoldi is currently joint-top of the Champions League scoring charts, level with Bayern Munich forward Harry Kane and Manchester City striker Erling Haaland.” Football365, 23 Oct: “If this happens, a knock-on effect would be a mass player exodus, with Haaland among those who would inevitably leave if Man City fall below the Premier League.”",
    "developments": "Recent developments — Tactical Football Analysis, 29 Oct: “We assess Mbeumo, Tavernier, Ødegaard, Haaland and more ahead of the deadline.” FourFourTwo FPL, 28 Oct: “Haaland is committed to Manchester City until 2034 after signing a blockbuster new contract early last year but is sure to be a target for any club that gets a realistic sniff of signing him in the meantime.” FourFourTwo FPL, 28 Oct: “Football is a short career and City players, Haaland included, are sure to be reviewing their options if multiple seasons outside the Premier League became definite or likely as a result of the charges.”",
    "outlook": "On the coming weeks — Sports Mole, 27 Oct: “Haaland, who finished eighth in the 2026 Ballon d’Or rankings , also has an impressive scoring record against Brighton , netting seven times in his last seven encounters with the Seagulls.” Tactical Football Analysis, 23 Oct: “FPL GW8 Captaincy: Haaland And The Alternatives Captaincy matrix GW8 to GW13 (Source: Rob T On the numbers, GW8 is the tightest captaincy call of the season so far.”",
    "confidence": "high",
-   "evidence_count": 115,
+   "evidence_count": 114,
    "evidence_used": [
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw9-2/",
     "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
@@ -4402,26 +4395,6 @@
      "topics": []
     },
     {
-     "text": "He wrote on CF Bayern Insider : ‘It is NOT TRUE: Bayern are keeping an eye on Erling Haaland amid the Premier League’s ongoing case against Manchester City. ‘FC Bayern are focusing on contract talks with their own top striker, Harry Kane.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-bayern-munich-transfer-chance-clear-pep-guardiola-meeting",
-     "published": "2026-10-02T13:43:16+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
-     "text": "Don’t forget that there isn’t just the transfer fee to consider with a player like Haaland; there’s also the salary. ‘Bayern Munich doesn’t tend to pay salaries in the range of what the Norwegian international is earning in Manchester (about €35m [£29.8m], we heard).",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-bayern-munich-transfer-chance-clear-pep-guardiola-meeting",
-     "published": "2026-10-02T13:43:16+00:00",
-     "tone": "neutral",
-     "topics": [
-      "transfer"
-     ]
-    },
-    {
      "text": "The Premier League reported that more than 1.7 million managers activated Triple Captain , with the overwhelming majority backing Erling Haaland at home to Coventry.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/haaland-triple-captain-gw3-result-2026-27",
@@ -4529,7 +4502,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -4538,16 +4511,18 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.flashscore.com/news/tottenham-receive-maddison-fitness-boost-ahead-of-crystal-palace-clash/WCOTfLuJ/",
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/spurs-vs-crystal-palace-injury-suspension-list-predicted-xis_607928.html",
+    "https://www.fantasyfootballscout.co.uk/2026/10/30/maddison-udogie-tottenham-injury-latest-for-fpl-gameweek-9",
+    "https://www.101greatgoals.com/football/premier-league/roberto-de-zerbi-james-maddison-tottenham-injury-update/",
     "https://www.football365.com/match-preview/tottenham-v-crystal-palace-prediction-preview",
-    "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-utah-jazz-player-props-injury-report-and-prediction--nba_607855.html",
-    "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-savio-bergvall-updates-spurs-injury-suspension-list-vs-palace_607847.html",
-    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-concerned-by-latest-spurs-injury-blow-as-fresh-update-now-emerges_607791.html",
-    "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-the-infectious-joy-of-james-maddison-his-new-injury-is-a-big-blow-for-roberto-de-zerbi",
-    "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/sacramento-kings-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_607754.html"
+    "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-utah-jazz-player-props-injury-report-and-prediction--nba_607855.html"
    ],
    "sources_used": [
+    "101 Great Goals — Fantasy",
+    "Fantasy Football Scout",
+    "Flashscore",
     "Football365",
-    "FourFourTwo FPL",
     "Sports Mole"
    ],
    "quotes": []
@@ -5405,18 +5380,17 @@
    "player": "Muharemović",
    "club": "LEE",
    "status": "Latest on Muharemović — Sports Mole, 28 Oct: “Leeds paid £34m to sign Muharemovic, and it is understood that his form has led to a number of clubs expressing an interest in his services.”",
-   "why_here": "Muharemović is on the bench this week at £5.1m as a DEF. The selection rests on 16 retrieved item(s) from 3 source(s), the most recent dated 28 Oct.",
-   "case_for": "What supports keeping him: Sports Mole, 28 Oct: “Muharemovic, 23, made the move to Leeds from Sassuolo over the summer, and he has been in excellent form for Daniel Farke's side during the 2026-27 campaign.” Fantasy Football Scout, 26 Oct: “MASTERFUL MUHAREMOVIC Of course, part of Trafford’s success is because there’s an excellent defence in front of him.” Sports Mole, 02 Oct: “That unsuccessful swoop by Inter allowed Leeds to snatch Muharemovic from Sassuolo for around £34m - a price that must be considered a bargain given his impressive start to life in the Premier League.”",
+   "why_here": "Muharemović is on the bench this week at £5.1m as a DEF. The selection rests on 15 retrieved item(s) from 3 source(s), the most recent dated 28 Oct.",
+   "case_for": "What supports keeping him: Sports Mole, 28 Oct: “Muharemovic, 23, made the move to Leeds from Sassuolo over the summer, and he has been in excellent form for Daniel Farke's side during the 2026-27 campaign.” Fantasy Football Scout, 26 Oct: “MASTERFUL MUHAREMOVIC Of course, part of Trafford’s success is because there’s an excellent defence in front of him.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
-   "developments": "Recent developments — Fantasy Football Scout, 26 Oct: “A rearguard that improved throughout 2025/26 has been further enhanced by the arrival of Tarik Muharemovic (£5.1m).” Sports Mole, 02 Oct: “According to TEAMtalk , two European powerhouses are eyeing up moves for Leeds defender Muharemovic in 2027, with the Elland Road club in danger of losing their centre-back to bigger fish in the market.”",
+   "developments": "Recent developments — Fantasy Football Scout, 26 Oct: “A rearguard that improved throughout 2025/26 has been further enhanced by the arrival of Tarik Muharemovic (£5.1m).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 16,
+   "evidence_count": 15,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-more-muharemovic-trafford-joy-but-dcl-quiet",
     "https://www.sportsmole.co.uk/football/barcelona/transfer-talk/news/barca-learn-substantial-asking-price-for-leeds-star-muharemovic_607867.html",
-    "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-we-have-to-be-ready",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-reacts-to-second-international-goal-and-previews-meeting-with-leeds-united-teammate",
@@ -5425,7 +5399,8 @@
     "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
     "https://www.leedsunited.com/en/news/muharemovic-on-elland-roads-unbelievable-atmosphere",
     "https://www.leedsunited.com/en/news/muharemovic-named-hisense-player-of-the-match-against-palace",
-    "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener"
+    "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
+    "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row"
    ],
    "sources_used": [
     "Fantasy Football Scout",
@@ -5466,24 +5441,6 @@
      "published": "2026-10-26T14:15:00+00:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "According to TEAMtalk , two European powerhouses are eyeing up moves for Leeds defender Muharemovic in 2027, with the Elland Road club in danger of losing their centre-back to bigger fish in the market.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
-     "published": "2026-10-02T13:03:39+01:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "That unsuccessful swoop by Inter allowed Leeds to snatch Muharemovic from Sassuolo for around £34m - a price that must be considered a bargain given his impressive start to life in the Premier League.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
-     "published": "2026-10-02T13:03:39+01:00",
-     "tone": "positive",
-     "topics": [
-      "tactics"
-     ]
     }
    ]
   }

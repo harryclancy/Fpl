@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 9,
- "ran_at": "2026-10-30T21:33:12+00:00",
- "seconds": 179.5,
+ "ran_at": "2026-10-31T02:27:52+00:00",
+ "seconds": 164.1,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 692,
- "substantive_items": 312,
- "duplicates_removed": 25,
- "deeply_analysed": 70,
- "deep_read_failed": 20,
- "corpus_size": 19317,
+ "sources_readable": 56,
+ "candidates_discovered": 525,
+ "substantive_items": 138,
+ "duplicates_removed": 7,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 19326,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 312 articles"
+    "56/78 sources returned 138 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -51,8 +50,8 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -568,7 +567,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 18,
+   "evidence_count": 17,
    "source_count": 9,
    "latest_evidence": "2026-10-30T12:31:18+00:00",
    "official_source_found": true,
@@ -695,13 +694,13 @@
      "excerpt": "Ezri Konsa and Alex Scott have pulled out of the England squad ahead of Tuesday’s UEFA Nations League fixture against Czechia at Wembley. The pair have returned to their respective clubs for further assessment but the news comes at an inopportune time for Arsenal , given their lack of available defensive options. The Football Association confirmed the update in an official statement, revealing tha"
     },
     {
-     "title": "Arsenal receive injury boost as Thomas Tuchel delivers Ezri Konsa update ahead of England's clash with Croatia",
-     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-injury-boost-as-tuchel-delivers-konsa-update_606139.html",
-     "source": "Sports Mole",
-     "published": "2026-10-02T19:15:00+01:00",
+     "title": "Cottage Tactico: New faces, same Villa",
+     "url": "https://fulhamfc.co.uk/news/2026/october/30/cottage-tactico-new-faces-same-aston-villa/",
+     "source": "Fulham",
+     "published": "2026-10-30T11:30:00+00:00",
      "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England boss Thomas Tuchel provides an injury update on Arsenal defender Ezri Konsa ahead of Saturday's Nations League meeting with Croatia."
+     "kind": "general",
+     "excerpt": "Unai Emery marked four years in charge at Aston Villa with a statement win against Manchester City last weekend. And for what it’s worth, I think it is very hard to find a more consistent and impressive coaching tenure at a Premier League club in that time. Given it was our dismantling of Steven Gerrard’s Villa in 2022 at the Cottage that saw him sacked before they even got home, perhaps Fulham fa"
     }
    ]
   },
@@ -848,9 +847,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 35,
-   "source_count": 15,
-   "latest_evidence": "2026-10-30T11:30:00+00:00",
+   "evidence_count": 36,
+   "source_count": 16,
+   "latest_evidence": "2026-10-31T02:22:10+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -957,6 +956,15 @@
      "excerpt": ""
     },
     {
+     "title": "No. 6 Tennessee volleyball falls 3-1 at No. 17 Texas A&M",
+     "url": "https://www.si.com/college/tennessee/volleyball/no-6-tennessee-volleyball-falls-3-1-at-no-17-texas-a-m-01m67v1gh19c?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-31T02:22:10+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Kennedi Rogers posted a career-high 24 kills, but No. 17 Texas A&M rallied late in the fourth set to beat No. 6 Tennessee 3-1 without Chelsea Sutton."
+    },
+    {
      "title": "Cottage Tactico: New faces, same Villa",
      "url": "https://fulhamfc.co.uk/news/2026/october/30/cottage-tactico-new-faces-same-aston-villa/",
      "source": "Fulham",
@@ -973,15 +981,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers is among the top 10 Premier League signings of the season, with two Aston Villa players in ahead of Elliot Anderson."
-    },
-    {
-     "title": "WATCH: Liverpool vs Chelsea sparks into life as Rogers and Gakpo score penalties before half-time",
-     "url": "https://www.101greatgoals.com/news/watch-liverpool-chelsea-goals-penalty-carabao-cup/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-28T20:51:38+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "The game was lacking in action before Rogers and Gakpo scored"
     }
    ]
   },
@@ -1271,7 +1270,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 115,
+   "evidence_count": 114,
    "source_count": 17,
    "latest_evidence": "2026-10-30T18:17:11+00:00",
    "official_source_found": true,
@@ -1412,8 +1411,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-10-29T20:07:40+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-10-30T20:03:04+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1438,6 +1437,42 @@
    "researched": true,
    "items": [
     {
+     "title": "Tottenham receive Maddison fitness boost ahead of Crystal Palace clash",
+     "url": "https://www.flashscore.com/news/tottenham-receive-maddison-fitness-boost-ahead-of-crystal-palace-clash/WCOTfLuJ/",
+     "source": "Flashscore",
+     "published": "2026-10-30T20:03:04+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Tottenham vs. Crystal Palace injury, suspension list, predicted XIs",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/spurs-vs-crystal-palace-injury-suspension-list-predicted-xis_607928.html",
+     "source": "Sports Mole",
+     "published": "2026-10-30T17:30:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Tottenham Hotspur and Crystal Palace."
+    },
+    {
+     "title": "Maddison + Udogie: Tottenham injury latest for FPL Gameweek 9",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/30/maddison-udogie-tottenham-injury-latest-for-fpl-gameweek-9",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-30T16:44:47+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Roberto De Zerbi spoke on Friday The post Maddison + Udogie: Tottenham injury latest for FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "De Zerbi warns Tottenham must avoid ‘taking risks’ with injuries but Maddison available after Chelsea knock",
+     "url": "https://www.101greatgoals.com/football/premier-league/roberto-de-zerbi-james-maddison-tottenham-injury-update/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-30T15:47:24+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham head coach Roberto De Zerbi has confirmed James Maddison is available for selection after picking up a knock against Chelsea."
+    },
+    {
      "title": "Tottenham v Crystal Palace: Prediction, team news, lineups and odds",
      "url": "https://www.football365.com/match-preview/tottenham-v-crystal-palace-prediction-preview",
      "source": "Football365",
@@ -1454,42 +1489,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Spurs visit Utah Jazz with Victor Wembanyama in red-hot form. Preview, injury report, player props and prediction."
-    },
-    {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Crystal Palace: James Maddison, Savio, Lucas Bergvall latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/maddison-savio-bergvall-updates-spurs-injury-suspension-list-vs-palace_607847.html",
-     "source": "Sports Mole",
-     "published": "2026-10-28T08:45:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Crystal Palace."
-    },
-    {
-     "title": "Roberto De Zerbi left 'concerned' by latest Spurs injury blow as fresh update now emerges",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-concerned-by-latest-spurs-injury-blow-as-fresh-update-now-emerges_607791.html",
-     "source": "Sports Mole",
-     "published": "2026-10-27T08:06:15+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur manager Roberto De Zerbi has been left 'concerned' after latest injury blow during Chelsea win."
-    },
-    {
-     "title": "Tottenham Hotspur need the infectious joy of James Maddison – his new injury is a big blow for Roberto De Zerbi",
-     "url": "https://www.fourfourtwo.com/person/player/tottenham-hotspur-need-the-infectious-joy-of-james-maddison-his-new-injury-is-a-big-blow-for-roberto-de-zerbi",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-27T07:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur supporters have become accustomed to the nervous wait for injury news. There aren’t many places in football where the words ‘scan this week’ are more feared. Spurs are crossed their fingers and thumbs that attacking midfielder James Maddison will be back from his latest injury setback rather faster than usual. In these Kaneless, Son-free years, they need a spark more than ever. B"
-    },
-    {
-     "title": "Sacramento Kings vs San Antonio Spurs: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/sacramento-kings-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_607754.html",
-     "source": "Sports Mole",
-     "published": "2026-10-26T15:19:39+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Kings face Spurs at Frost Bank Center in their first regular-season meeting of 2026-27. Preview, injury report, player props and prediction."
     }
    ]
   },
@@ -1758,7 +1757,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 16,
+   "evidence_count": 15,
    "source_count": 3,
    "latest_evidence": "2026-10-28T15:00:00+00:00",
    "official_source_found": true,
@@ -1802,15 +1801,6 @@
      "matched_on": "muharemovic",
      "kind": "transfer",
      "excerpt": "Barcelona reportedly consider making a move for Leeds United centre-back Tarik Muharemovic during next summer's transfer window."
-    },
-    {
-     "title": "Barcelona, Inter Milan 'keen' on Leeds United star ahead of January transfer window",
-     "url": "https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/news/barca-inter-keen-swoop-for-leeds-star-in-2027_606128.html",
-     "source": "Sports Mole",
-     "published": "2026-10-02T13:03:39+01:00",
-     "matched_on": "muharemovic",
-     "kind": "transfer",
-     "excerpt": "Barcelona and Inter Milan are reportedly eyeing up respective moves for Leeds United defender Tarik Muharemovic in 2027."
     },
     {
      "title": "Tarik muharemovic we will show even more of our qualities",
@@ -1887,6 +1877,15 @@
     {
      "title": "Muharemovic impresses in nations league opener",
      "url": "https://www.leedsunited.com/en/news/muharemovic-impresses-in-nations-league-opener",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Muharemovic claims second hero of the month award in a row",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-claims-second-hero-of-the-month-award-in-a-row",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
