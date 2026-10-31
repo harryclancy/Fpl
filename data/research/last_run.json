@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-10-31T16:08:33+00:00",
- "seconds": 198.3,
+ "ran_at": "2026-10-31T20:28:28+00:00",
+ "seconds": 143.6,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 583,
- "substantive_items": 193,
- "duplicates_removed": 13,
- "deeply_analysed": 72,
- "deep_read_failed": 18,
- "corpus_size": 19360,
+ "sources_readable": 57,
+ "candidates_discovered": 628,
+ "substantive_items": 231,
+ "duplicates_removed": 17,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 19416,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 193 articles"
+    "57/78 sources returned 231 articles"
    ]
   },
   "blackout": {
@@ -50,22 +50,20 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days",
-  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
+  "The Hard Tackle: nothing published in the last 10 days"
  ],
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 13,
+   "evidence_count": 12,
    "source_count": 7,
    "latest_evidence": "2026-10-27T12:14:35+00:00",
    "official_source_found": true,
@@ -146,15 +144,6 @@
      "excerpt": "Manchester United defender Lisandro Martinez has delivered an explosive post-match interview after yet another defeat with the Red Devils to Atletico Madrid Michael Carrick's side lost 2-0 at the Metropolitano, and Martinez – criticised at the weekend for his part in a late Dominic Solanke equaliser – came out to face the music at full-time, and delivered an honest assessment of Manchester United'"
     },
     {
-     "title": "Arsenal closing in on Rice deal as three key contracts remain unresolved",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-closing-in-on-rice-deal-but-three-key-2028-contracts-remain-unresolved_606166.html",
-     "source": "Sports Mole",
-     "published": "2026-10-03T14:29:16+01:00",
-     "matched_on": "raya",
-     "kind": "transfer",
-     "excerpt": "Arsenal are progressing with a new Declan Rice contract, but the futures of Martin Odegaard, Kai Havertz and David Raya remain unresolved beyond 2028."
-    },
-    {
      "title": "Premier League goalkeepers ranked: David Raya sets the standard, Suzuki on podium",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
      "source": "Football365",
@@ -198,6 +187,15 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Nottingham Forest slipped to a narrow home defeat against Arsenal. Despite creating a number of chances on the afternoon, Noni Madueke’s strike in the final 10 minutes proved to be the difference between the sides at the City Ground. Forest dominated the chances in the first half and the start of the second, but those missed opportunities proved costly as the Premier League holders scored for the "
+    },
+    {
+     "title": "David raya fpl 2026 27",
+     "url": "https://onefpl.com/blog/david-raya-fpl-2026-27",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "raya",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -775,9 +773,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 45,
+   "evidence_count": 48,
    "source_count": 17,
-   "latest_evidence": "2026-10-31T15:11:37+01:00",
+   "latest_evidence": "2026-10-31T18:38:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -902,22 +900,22 @@
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
     },
     {
-     "title": "Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red",
-     "url": "https://theanalyst.com/articles/chelsea-vs-man-utd-stats-premier-league-10-2026",
-     "source": "Opta Analyst",
-     "published": "2026-10-31T14:56:27+00:00",
+     "title": "Chelsea top scorers against the Big Six: Palmer has more than rest of squad combined",
+     "url": "https://www.football365.com/news/chelsea-top-scorers-premier-league-big-six-games-hazard-alonso",
+     "source": "Football365",
+     "published": "2026-10-31T18:38:20+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Two second-half goals and a sending off for Lisandro Martínez turned the game in Chelsea's favour at Stamford Bridge. Re-live this Premier League game with our Chelsea vs Man Utd stats page. The post Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red appeared first on Opta Analyst ."
+     "excerpt": "Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined."
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 38,
+   "evidence_count": 40,
    "source_count": 17,
-   "latest_evidence": "2026-10-31T14:56:27+00:00",
+   "latest_evidence": "2026-10-31T16:44:37+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1024,6 +1022,15 @@
      "excerpt": ""
     },
     {
+     "title": "Michael Carrick admits Man Utd problems have ‘happened too often’ after Chelsea defeat",
+     "url": "https://www.101greatgoals.com/football/premier-league/michael-carrick-admits-man-utd-problems-have-happened-too-often-chelsea-defeat/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-31T16:44:37+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Manchester United manager Michael Carrick has admitted his side are making the same mistakes too often after watching them collapse in a 2-0 defeat to Chelsea at Stamford Bridge. United produced an encouraging first-half performance but failed to make their chances count before Morgan Rogers and Cole Palmer struck after the break to condemn the […]"
+    },
+    {
      "title": "Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red",
      "url": "https://theanalyst.com/articles/chelsea-vs-man-utd-stats-premier-league-10-2026",
      "source": "Opta Analyst",
@@ -1040,15 +1047,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "United shaded the first half, but their response to Chelsea’s opener will ultimately cost Carrick his job."
-    },
-    {
-     "title": "No. 6 Tennessee volleyball falls 3-1 at No. 17 Texas A&M",
-     "url": "https://www.si.com/college/tennessee/volleyball/no-6-tennessee-volleyball-falls-3-1-at-no-17-texas-a-m-01m67v1gh19c?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-31T02:22:10+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Kennedi Rogers posted a career-high 24 kills, but No. 17 Texas A&M rallied late in the fourth set to beat No. 6 Tennessee 3-1 without Chelsea Sutton."
     }
    ]
   },
@@ -1195,7 +1193,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 60,
+   "evidence_count": 59,
    "source_count": 18,
    "latest_evidence": "2026-10-30T19:25:21+01:00",
    "official_source_found": true,
@@ -1559,9 +1557,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 7,
+   "evidence_count": 8,
    "source_count": 4,
-   "latest_evidence": "2026-10-31T10:00:03+00:00",
+   "latest_evidence": "2026-10-31T20:05:58+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1576,13 +1574,14 @@
     "injury",
     "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -1602,6 +1601,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Two Lions Receive Unnecessary Roughness Fines Against Packers",
+     "url": "https://www.si.com/nfl/lions/onsi/two-lions-receive-unnecessary-roughness-fines-against-packers?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-31T20:05:58+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Detroit Lions Brian Branch, Derrick Barnes fined for actions against Green Bay Packers."
     },
     {
      "title": "3 Winners, 1 Loser in Raptors Loss vs. Magic",
