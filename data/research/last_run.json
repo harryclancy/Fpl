@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-10-31T20:28:28+00:00",
- "seconds": 143.6,
+ "ran_at": "2026-11-01T02:16:45+00:00",
+ "seconds": 164.9,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 628,
- "substantive_items": 231,
- "duplicates_removed": 17,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 19416,
+ "sources_readable": 56,
+ "candidates_discovered": 570,
+ "substantive_items": 194,
+ "duplicates_removed": 15,
+ "deeply_analysed": 73,
+ "deep_read_failed": 17,
+ "corpus_size": 19463,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 231 articles"
+    "56/78 sources returned 194 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -53,7 +54,7 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+  "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -202,9 +203,9 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 5,
-   "latest_evidence": "2026-10-30T08:00:00+00:00",
+   "latest_evidence": "2026-10-31T23:55:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -229,6 +230,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Gross on cusp of ban + Maresca on benching Cherki",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/31/fpl-notes-gross-on-cusp-of-ban-maresca-on-benching-cherki",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-31T23:55:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "team news",
+     "excerpt": "Maxim De Cuyper returns to the FPL summit as Brighton beat Man City The post FPL notes: Gross on cusp of ban + Maresca on benching Cherki appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Gross + De Cuyper: Bench or start in FPL Gameweek 8?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/23/gross-de-cuyper-bench-or-start-in-fpl-gameweek-8",
@@ -1475,8 +1485,8 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-10-31T08:23:37+00:00",
-   "official_source_found": false,
+   "latest_evidence": "2026-10-31T19:22:17+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1488,7 +1498,9 @@
     "fixtures",
     "fpl advice",
     "injury",
+    "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1499,58 +1511,58 @@
    "researched": true,
    "items": [
     {
-     "title": "Minnesota Timberwolves vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/minnesota-timberwolves/preview/minnesota-timberwolves-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608127.html",
-     "source": "Sports Mole",
-     "published": "2026-10-31T08:23:37+00:00",
+     "title": "Report: Eagles beaten at Tottenham after early setback",
+     "url": "https://www.cpfc.co.uk/news/match-reports/report-highlights-palace-tottenham-spurs-october-2026/",
+     "source": "Crystal Palace",
+     "published": "2026-10-31T19:22:17+00:00",
      "matched_on": "TOT team news",
      "kind": "club team news",
-     "excerpt": "Minnesota Timberwolves vs. San Antonio Spurs prediction, player props and injury report as Spurs host a Wolves side without Anthony Edwards."
+     "excerpt": "Crystal Palace slipped to a 2-0 defeat at Tottenham having played much of the game a man down after an early red card for Jean-Philippe Mateta."
     },
     {
-     "title": "Tottenham v Crystal Palace predicted line-ups + FPL team news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/31/tottenham-v-crystal-palace-predicted-line-ups-fpl-team-news-2",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-31T08:20:36+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Team form, absentees and our predicted XIs The post Tottenham v Crystal Palace predicted line-ups + FPL team news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Tottenham receive Maddison fitness boost ahead of Crystal Palace clash",
-     "url": "https://www.flashscore.com/news/tottenham-receive-maddison-fitness-boost-ahead-of-crystal-palace-clash/WCOTfLuJ/",
-     "source": "Flashscore",
-     "published": "2026-10-30T20:03:04+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Tottenham vs. Crystal Palace injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/spurs-vs-crystal-palace-injury-suspension-list-predicted-xis_607928.html",
-     "source": "Sports Mole",
-     "published": "2026-10-30T17:30:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all the latest team news ahead of Saturday’s Premier League clash between Tottenham Hotspur and Crystal Palace."
-    },
-    {
-     "title": "Maddison + Udogie: Tottenham injury latest for FPL Gameweek 9",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/30/maddison-udogie-tottenham-injury-latest-for-fpl-gameweek-9",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-30T16:44:47+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Roberto De Zerbi spoke on Friday The post Maddison + Udogie: Tottenham injury latest for FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "De Zerbi warns Tottenham must avoid ‘taking risks’ with injuries but Maddison available after Chelsea knock",
-     "url": "https://www.101greatgoals.com/football/premier-league/roberto-de-zerbi-james-maddison-tottenham-injury-update/",
+     "title": "Tottenham 2-0 Crystal Palace: Spurs surge continues as third straight win piles pressure on Sage",
+     "url": "https://www.101greatgoals.com/match-reports/tottenham-2-0-crystal-palace-spurs-surge-continues-as-third-straight-win-piles-pressure-on-sage/",
      "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-30T15:47:24+00:00",
+     "published": "2026-10-31T19:22:00+00:00",
      "matched_on": "TOT team news",
      "kind": "club team news",
-     "excerpt": "Tottenham head coach Roberto De Zerbi has confirmed James Maddison is available for selection after picking up a knock against Chelsea."
+     "excerpt": "Tottenham moved into the top half of the Premier League as they claimed a third straight win by beating 10-man Crystal Palace 2-0. Spurs cause was aided in the 13th minute when Palace striker Jean-Philippe Mateta was shown a straight red card for a poor challenge on Micky van de Ven. Archie Gray headed Tottenham […]"
+    },
+    {
+     "title": "Tottenham: Shocking James Maddison 90-minute stat sparks \"concern\" from Gus Poyet",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/exclusive-poyet-concerned-about-maddison-as-shocking-90-minute-stat-emerges_608159.html",
+     "source": "Sports Mole",
+     "published": "2026-10-31T17:50:22+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Exclusive: Ex-Tottenham Hotspur man Gus Poyet is 'concerned' about James Maddison as a shocking 90-minute stat emerges."
+    },
+    {
+     "title": "Spurs v Crystal Palace team news: Maddison a sub, Solanke in",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/31/spurs-v-crystal-palace-team-news-maddison-a-sub-solanke-in",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-31T17:00:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "One change for Spurs from last weekend, two for Palace The post Spurs v Crystal Palace team news: Maddison a sub, Solanke in appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Tottenham v Crystal Palace: Confirmed team news and line-ups for North London clash",
+     "url": "https://www.101greatgoals.com/football/premier-league/tottenham-v-crystal-palace-confirmed-team-news-and-line-ups/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-31T16:19:51+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the team news ahead of Tottenham vs Crystal Palace in the Premier League."
+    },
+    {
+     "title": "Spurs vs. Crystal Palace lineups confirmed: James Maddison benched as Pedro Porro, Dominic Solanke decisions revealed",
+     "url": "https://www.sportsmole.co.uk/football/spurs/news/maddison-solanke-porro-decisions-spurs-palace-team-news-confirmed_608154.html",
+     "source": "Sports Mole",
+     "published": "2026-10-31T16:19:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur and Crystal Palace reveal their starting lineups for Saturday's Premier League 5.30pm kickoff at the Tottenham Hotspur Stadium."
     }
    ]
   },
