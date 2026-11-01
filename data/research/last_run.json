@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-01T11:52:40+00:00",
- "seconds": 196.7,
+ "ran_at": "2026-11-01T21:13:09+00:00",
+ "seconds": 167.4,
  "sources_attempted": 78,
  "sources_readable": 56,
- "candidates_discovered": 532,
- "substantive_items": 158,
- "duplicates_removed": 9,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 19450,
+ "candidates_discovered": 655,
+ "substantive_items": 275,
+ "duplicates_removed": 28,
+ "deeply_analysed": 73,
+ "deep_read_failed": 17,
+ "corpus_size": 19396,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 158 articles"
+    "56/78 sources returned 275 articles"
    ]
   },
   "blackout": {
@@ -343,9 +343,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 15,
+   "evidence_count": 16,
    "source_count": 6,
-   "latest_evidence": "2026-10-30T16:10:53+00:00",
+   "latest_evidence": "2026-11-01T15:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -367,9 +367,18 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "high",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Liverpool v Arsenal team news: Calafiori + Tzolis start",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/01/liverpool-v-arsenal-team-news-calafiori-tzolis-start",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-01T15:30:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "Dominik Szoboszlai is back on the bench for Liverpool The post Liverpool v Arsenal team news: Calafiori + Tzolis start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Calafiori, Rice, Madueke: Arsenal injury latest for FPL Gameweek 9",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/30/calafiori-rice-madueke-arsenal-injury-latest-for-fpl-gameweek-9",
@@ -468,15 +477,6 @@
      "matched_on": "calafiori",
      "kind": "team news",
      "excerpt": "Arsenal and Man Utd were in UCL action on Tuesday The post FPL notes: Calafiori rested, Saka sub impact + Bruno on the right appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-11T19:00:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -792,7 +792,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 48,
+   "evidence_count": 49,
    "source_count": 17,
    "latest_evidence": "2026-10-31T18:38:20+00:00",
    "official_source_found": true,
@@ -1212,7 +1212,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 59,
+   "evidence_count": 58,
    "source_count": 18,
    "latest_evidence": "2026-10-30T19:25:21+01:00",
    "official_source_found": true,
@@ -1352,7 +1352,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 114,
+   "evidence_count": 111,
    "source_count": 17,
    "latest_evidence": "2026-11-01T07:00:00+00:00",
    "official_source_found": true,
@@ -1578,7 +1578,7 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 4,
    "latest_evidence": "2026-10-31T20:05:58+00:00",
    "official_source_found": false,
@@ -1601,8 +1601,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -1667,15 +1667,6 @@
      "matched_on": "barnes",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Kawhi Leonard Has Huge Impact On Scottie Barnes' Growth With Raptors",
-     "url": "https://www.si.com/nba/raptors/onsi/kawhi-leonard-has-huge-impact-on-scottie-barnes-growth-with-raptors?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-04T11:00:04+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "The decision to bring back Kawhi Leonard is more than just an immediate championship play."
     }
    ]
   },
