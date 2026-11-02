@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-01T21:13:09+00:00",
- "seconds": 167.4,
+ "ran_at": "2026-11-02T02:34:23+00:00",
+ "seconds": 165.3,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 655,
- "substantive_items": 275,
- "duplicates_removed": 28,
- "deeply_analysed": 73,
- "deep_read_failed": 17,
- "corpus_size": 19396,
+ "sources_readable": 57,
+ "candidates_discovered": 523,
+ "substantive_items": 165,
+ "duplicates_removed": 11,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 19394,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 275 articles"
+    "57/78 sources returned 165 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -54,7 +53,7 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -792,7 +791,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 48,
    "source_count": 17,
    "latest_evidence": "2026-10-31T18:38:20+00:00",
    "official_source_found": true,
@@ -892,15 +891,6 @@
      "excerpt": ""
     },
     {
-     "title": "Estevao clocks more Brazil minutes than Blues game time and returns a more confident player for Chelsea",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/can-international-break-with-brazil-offer-new-life-to-estevao-at-chelsea-_606222.html",
-     "source": "Sports Mole",
-     "published": "2026-10-04T17:35:01+01:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Estevao logged 172 minutes with Brazil across three games — more than his entire Chelsea playing time this season — and returns ahead of Saturday's trip to Bournemouth with Palmer and Joao Pedro injured."
-    },
-    {
      "title": "Chelsea news: Cole Palmer announces new long-term contract in his own unique way ahead of Bournemouth clash",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
      "source": "Sports Mole",
@@ -926,14 +916,23 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined."
+    },
+    {
+     "title": "Michael Carrick admits Man Utd problems have ‘happened too often’ after Chelsea defeat",
+     "url": "https://www.101greatgoals.com/football/premier-league/michael-carrick-admits-man-utd-problems-have-happened-too-often-chelsea-defeat/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-10-31T16:44:37+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Manchester United manager Michael Carrick has admitted his side are making the same mistakes too often after watching them collapse in a 2-0 defeat to Chelsea at Stamford Bridge. United produced an encouraging first-half performance but failed to make their chances count before Morgan Rogers and Cole Palmer struck after the break to condemn the […]"
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 40,
-   "source_count": 17,
+   "evidence_count": 39,
+   "source_count": 16,
    "latest_evidence": "2026-10-31T16:44:37+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1212,7 +1211,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 58,
+   "evidence_count": 57,
    "source_count": 18,
    "latest_evidence": "2026-10-30T19:25:21+01:00",
    "official_source_found": true,
@@ -1354,7 +1353,7 @@
    "club": "MCI",
    "evidence_count": 111,
    "source_count": 17,
-   "latest_evidence": "2026-11-01T07:00:00+00:00",
+   "latest_evidence": "2026-11-01T22:30:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1494,7 +1493,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-10-31T19:22:17+00:00",
+   "latest_evidence": "2026-11-01T13:25:24+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1519,6 +1518,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Utah Jazz vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/utah-jazz/preview/utah-jazz-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608201.html",
+     "source": "Sports Mole",
+     "published": "2026-11-01T13:25:24+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Injury news, player props, key matchups and a score prediction for the NBA clash between San Antonio Spurs and Utah Jazz at Frost Bank Center on Tuesday."
+    },
     {
      "title": "Report: Eagles beaten at Tottenham after early setback",
      "url": "https://www.cpfc.co.uk/news/match-reports/report-highlights-palace-tottenham-spurs-october-2026/",
@@ -1563,15 +1571,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Catch up with all the team news ahead of Tottenham vs Crystal Palace in the Premier League."
-    },
-    {
-     "title": "Spurs vs. Crystal Palace lineups confirmed: James Maddison benched as Pedro Porro, Dominic Solanke decisions revealed",
-     "url": "https://www.sportsmole.co.uk/football/spurs/news/maddison-solanke-porro-decisions-spurs-palace-team-news-confirmed_608154.html",
-     "source": "Sports Mole",
-     "published": "2026-10-31T16:19:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur and Crystal Palace reveal their starting lineups for Saturday's Premier League 5.30pm kickoff at the Tottenham Hotspur Stadium."
     }
    ]
   },
