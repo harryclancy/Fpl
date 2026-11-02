@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-02T13:34:40+00:00",
- "seconds": 147.8,
+ "ran_at": "2026-11-02T23:54:20+00:00",
+ "seconds": 142.4,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 611,
- "substantive_items": 243,
- "duplicates_removed": 16,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 19384,
+ "sources_readable": 58,
+ "candidates_discovered": 667,
+ "substantive_items": 292,
+ "duplicates_removed": 23,
+ "deeply_analysed": 72,
+ "deep_read_failed": 18,
+ "corpus_size": 19442,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 243 articles"
+    "58/78 sources returned 292 articles"
    ]
   },
   "blackout": {
@@ -38,12 +38,10 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,8 +49,8 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Premier Injuries: nothing published in the last 10 days",
@@ -483,9 +481,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "source_count": 6,
-   "latest_evidence": "2026-10-29T18:30:00+00:00",
+   "latest_evidence": "2026-11-02T18:44:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -499,6 +497,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "statistics",
     "tactics",
     "team news",
@@ -508,6 +507,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton XI Revealed For Clash At Newcastle",
+     "url": "https://www.evertonfc.com/news/2026/november/02/everton-xi-revealed-for-clash-at-newcastle/",
+     "source": "Everton",
+     "published": "2026-11-02T18:44:00+00:00",
+     "matched_on": "hall",
+     "kind": "team news",
+     "excerpt": "Jarrad Branthwaite and Harrison Armstrong return to the Everton starting XI as two changes for the Premier League encounter against Newcastle United at St James' Park (8pm GMT). England international Branthwaite has missed the Blues' past two matches due to concussion protocols following a clash of heads with Chelsea keeper Emiliano Martinez last month, but is back in central defence alongside cap"
+    },
     {
      "title": "Everton Team News Confirmed For Newcastle Cup Clash",
      "url": "https://www.evertonfc.com/news/2026/october/29/everton-team-news-confirmed-for-newcastle-cup-clash/",
@@ -585,9 +593,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 17,
+   "evidence_count": 16,
    "source_count": 9,
-   "latest_evidence": "2026-10-30T12:31:18+00:00",
+   "latest_evidence": "2026-11-02T19:29:03+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -612,6 +620,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Ezri Konsa, the best Arsenal signing of last window, gives Mikel Arteta a welcome selection headache",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/konsa-shines-at-anfield-and-gives-arteta-a-headache-with-william-saliba-set-to-return_608287.html",
+     "source": "Sports Mole",
+     "published": "2026-11-02T19:29:03+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Arsenal centre-back Ezri Konsa wins eight of nine duels in a historic Anfield clean sheet and gives Mikel Arteta a welcome selection headache with William Saliba’s return nearing."
+    },
+    {
+     "title": "Evanilson, van Hecke, Konsa, DCL: Buy, keep or sell in Gameweek 10?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/02/evanilson-van-hecke-konsa-dcl-buy-keep-or-sell-in-gameweek-10",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-02T17:00:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Evanilson, van Hecke, Konsa, DCL: Buy, keep or sell in Gameweek 10? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FF247 Site Team News GW9",
      "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw9-2/",
@@ -685,33 +711,6 @@
      "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League game against Leeds United."
     },
     {
-     "title": "Arsenal learn of Ezri Konsa injury \"trauma\" as Thomas Tuchel explains England withdrawal",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/tuchel-explains-konsa-trauma-as-arsenal-receive-new-injury-update_606264.html",
-     "source": "Sports Mole",
-     "published": "2026-10-05T12:59:16+01:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England manager Thomas Tuchel reveals the \"trauma\" that forced Arsenal's Ezri Konsa to withdraw from the Three Lions squad."
-    },
-    {
-     "title": "Scott, Konsa, van de Ven: Latest international break injury news",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/05/scott-konsa-van-de-ven-latest-international-break-injury-news",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-05T09:25:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "More team news updates from the October internationals The post Scott, Konsa, van de Ven: Latest international break injury news appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal dealt new injury blow ahead of Leeds United showdown",
-     "url": "https://www.fourfourtwo.com/person/player/arsenal-dealt-new-injury-blow-ahead-of-leeds-united-showdown",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-05T09:18:35+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Ezri Konsa and Alex Scott have pulled out of the England squad ahead of Tuesday’s UEFA Nations League fixture against Czechia at Wembley. The pair have returned to their respective clubs for further assessment but the news comes at an inopportune time for Arsenal , given their lack of available defensive options. The Football Association confirmed the update in an official statement, revealing tha"
-    },
-    {
      "title": "Cottage Tactico: New faces, same Villa",
      "url": "https://fulhamfc.co.uk/news/2026/october/30/cottage-tactico-new-faces-same-aston-villa/",
      "source": "Fulham",
@@ -719,6 +718,15 @@
      "matched_on": "konsa",
      "kind": "general",
      "excerpt": "Unai Emery marked four years in charge at Aston Villa with a statement win against Manchester City last weekend. And for what it’s worth, I think it is very hard to find a more consistent and impressive coaching tenure at a Premier League club in that time. Given it was our dismantling of Steven Gerrard’s Villa in 2022 at the Cottage that saw him sacked before they even got home, perhaps Fulham fa"
+    },
+    {
+     "title": "Premier League signings of the season: Jacquet, Konsa, Rogers in but no Anderson",
+     "url": "https://www.football365.com/news/ranking-top-10-premier-league-signings-of-the-season",
+     "source": "Football365",
+     "published": "2026-10-30T07:19:22+00:00",
+     "matched_on": "konsa",
+     "kind": "general",
+     "excerpt": "Morgan Rogers is among the top 10 Premier League signings of the season, with two Aston Villa players in ahead of Elliot Anderson."
     }
    ]
   },
@@ -792,9 +800,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 48,
+   "evidence_count": 49,
    "source_count": 17,
-   "latest_evidence": "2026-10-31T18:38:20+00:00",
+   "latest_evidence": "2026-11-02T15:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -892,6 +900,15 @@
      "excerpt": ""
     },
     {
+     "title": "Xabi Alonso’s overthinking isn’t helping a Chelsea side already defined by muddled thoughts",
+     "url": "https://www.fourfourtwo.com/tactic/xabi-alonsos-overthinking-isnt-helping-a-chelsea-side-already-defined-by-muddled-thoughts",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-02T15:15:00+00:00",
+     "matched_on": "palmer",
+     "kind": "transfer",
+     "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
+    },
+    {
      "title": "Chelsea news: Cole Palmer announces new long-term contract in his own unique way ahead of Bournemouth clash",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
      "source": "Sports Mole",
@@ -917,15 +934,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined."
-    },
-    {
-     "title": "Michael Carrick admits Man Utd problems have ‘happened too often’ after Chelsea defeat",
-     "url": "https://www.101greatgoals.com/football/premier-league/michael-carrick-admits-man-utd-problems-have-happened-too-often-chelsea-defeat/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-31T16:44:37+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Manchester United manager Michael Carrick has admitted his side are making the same mistakes too often after watching them collapse in a 2-0 defeat to Chelsea at Stamford Bridge. United produced an encouraging first-half performance but failed to make their chances count before Morgan Rogers and Cole Palmer struck after the break to condemn the […]"
     }
    ]
   },
@@ -1212,8 +1220,8 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 57,
-   "source_count": 18,
+   "evidence_count": 56,
+   "source_count": 17,
    "latest_evidence": "2026-10-30T19:25:21+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1352,7 +1360,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 110,
+   "evidence_count": 107,
    "source_count": 17,
    "latest_evidence": "2026-11-02T13:00:02+00:00",
    "official_source_found": true,
@@ -1578,9 +1586,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 7,
-   "source_count": 4,
-   "latest_evidence": "2026-10-31T20:05:58+00:00",
+   "evidence_count": 8,
+   "source_count": 5,
+   "latest_evidence": "2026-11-02T15:00:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1601,8 +1609,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
     {
@@ -1622,6 +1630,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Tip of the Day: Barnes to star with goals for both sides at St James’ Park",
+     "url": "https://www.101greatgoals.com/football/premier-league/tip-of-the-day-harvey-barnes-to-star-with-goals-for-both-sides-at-st-james-park/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-02T15:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Today's Tip of the Day is predicting at least two goals between Newcastle and Everton tonight"
     },
     {
      "title": "Two Lions Receive Unnecessary Roughness Fines Against Packers",
@@ -1673,10 +1690,10 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 11,
-   "source_count": 5,
-   "latest_evidence": "2026-10-31T09:51:47+00:00",
-   "official_source_found": false,
+   "evidence_count": 12,
+   "source_count": 6,
+   "latest_evidence": "2026-11-02T15:45:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1753,6 +1770,15 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Read Yoane Wissa's first 'Leadership Group' notes ahead of Everton",
+     "url": "https://www.newcastleunited.com/en/news/read-yoane-wissas-first-leadership-group-notes-ahead-of-everton",
+     "source": "Newcastle United",
+     "published": "2026-11-02T15:45:00+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
     },
     {
      "title": "'Triple up on Tottenham Hotspur players' Five of the best FPL differential options for Gameweek 7",
