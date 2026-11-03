@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-02T23:54:20+00:00",
- "seconds": 142.4,
+ "ran_at": "2026-11-03T12:50:57+00:00",
+ "seconds": 140.4,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 667,
- "substantive_items": 292,
- "duplicates_removed": 23,
- "deeply_analysed": 72,
- "deep_read_failed": 18,
- "corpus_size": 19442,
+ "candidates_discovered": 638,
+ "substantive_items": 265,
+ "duplicates_removed": 22,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 19417,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 292 articles"
+    "58/78 sources returned 265 articles"
    ]
   },
   "blackout": {
@@ -481,9 +481,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "source_count": 6,
-   "latest_evidence": "2026-11-02T18:44:00+00:00",
+   "latest_evidence": "2026-11-03T11:01:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -560,6 +560,15 @@
      "matched_on": "hall",
      "kind": "transfer",
      "excerpt": "Man Utd have missed their chance to sign Lewis Hall for a reasonable price since the Newcastle star is the highest-graded defender in Europe this season…"
+    },
+    {
+     "title": "Tarkowski Backs Everton Teammate For England Call-Up",
+     "url": "https://www.evertonfc.com/news/2026/november/03/tarkowski-backs-everton-teammate-for-england-call-up/",
+     "source": "Everton",
+     "published": "2026-11-03T11:01:00+00:00",
+     "matched_on": "hall",
+     "kind": "general",
+     "excerpt": "Everton captain James Tarkowski has backed Kiernan Dewsbury-Hall for an England call-up, insisting the Blues midfielder should “already” be among Thomas Tuchel’s Three Lions squad. Dewsbury-Hall has been in outstanding form for the Toffees, picking up the Player of the Match award for Monday night’s 1-0 victory at Newcastle United – just days after another fine display in Everton’s 3-1 win over th"
     },
     {
      "title": "Flashscore sources: Newcastle set to double down on Hall valuation if Man Utd return",
@@ -800,7 +809,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 50,
    "source_count": 17,
    "latest_evidence": "2026-11-02T15:15:00+00:00",
    "official_source_found": true,
@@ -1360,7 +1369,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 107,
+   "evidence_count": 105,
    "source_count": 17,
    "latest_evidence": "2026-11-02T13:00:02+00:00",
    "official_source_found": true,
