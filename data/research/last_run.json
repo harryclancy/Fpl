@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-03T22:20:19+00:00",
- "seconds": 188.4,
+ "ran_at": "2026-11-04T03:01:57+00:00",
+ "seconds": 124.5,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 671,
- "substantive_items": 285,
- "duplicates_removed": 18,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 19465,
+ "sources_readable": 56,
+ "candidates_discovered": 505,
+ "substantive_items": 137,
+ "duplicates_removed": 7,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 19487,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 285 articles"
+    "56/78 sources returned 137 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -892,9 +893,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 40,
+   "evidence_count": 39,
    "source_count": 16,
-   "latest_evidence": "2026-10-31T16:44:37+00:00",
+   "latest_evidence": "2026-11-04T00:30:38+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -974,15 +975,6 @@
      "excerpt": "Chelsea are eyeing up a battle with Spanish capital giants Real Madrid for their next headline-grabbing transfer, according to reporting in Italy. The Blues invested heavily in new players during the summer transfer window, equipping new manager Xabi Alonso with a squad boasting the likes of Morgan Rogers, Emiliano Martinez, Maxence Lacrois and Valentin Barco, as well as the senior influence of Jo"
     },
     {
-     "title": "How Morgan Rogers went from £1m Middlesbrough signing to £117m British record at Chelsea",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/transfer-talk/news/rogers-went-from-gbp1m-to-gbp117m-british-record-in-three-years_606348.html",
-     "source": "Sports Mole",
-     "published": "2026-10-06T21:06:56+01:00",
-     "matched_on": "rogers",
-     "kind": "transfer",
-     "excerpt": "Chelsea signed Morgan Rogers for a British record £117m — the same player Man City sold to Middlesbrough for £1m in 2023 after failed loans at Bournemouth and Blackpool."
-    },
-    {
      "title": "Morgan rogers chelsea transfer fpl",
      "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
      "source": "OneFPL",
@@ -999,6 +991,15 @@
      "matched_on": "rogers",
      "kind": "transfer",
      "excerpt": ""
+    },
+    {
+     "title": "Who Won the Michigan Senate Race? Abdul El-Sayed vs. Mike Rogers Election Results",
+     "url": "https://dknetwork.draftkings.com/2026/11/03/who-won-the-michigan-senate-race-abdul-el-sayed-vs-mike-rogers-election-results/",
+     "source": "DraftKings Network Soccer",
+     "published": "2026-11-04T00:30:38+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Michigan voters are choosing a successor to retiring Democratic Sen. Gary Peters in one of the nation’s most closely watched Senate races. Democrat Abdul El-Sayed faces Republican Mike Rogers in a contest that could help determine control of the U.S. Senate. Follow along for the latest U.S. election results to find out who won the […] The post Who Won the Michigan Senate Race? Abdul El-Sayed vs. M"
     },
     {
      "title": "Michael Carrick admits Man Utd problems have ‘happened too often’ after Chelsea defeat",
