@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-04T03:01:57+00:00",
- "seconds": 124.5,
+ "ran_at": "2026-11-04T13:02:00+00:00",
+ "seconds": 153.1,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 505,
- "substantive_items": 137,
- "duplicates_removed": 7,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 19487,
+ "sources_readable": 57,
+ "candidates_discovered": 621,
+ "substantive_items": 232,
+ "duplicates_removed": 21,
+ "deeply_analysed": 78,
+ "deep_read_failed": 12,
+ "corpus_size": 19513,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 137 articles"
+    "57/78 sources returned 232 articles"
    ]
   },
   "blackout": {
@@ -38,11 +38,11 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,7 +50,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
@@ -613,9 +612,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 16,
+   "evidence_count": 18,
    "source_count": 9,
-   "latest_evidence": "2026-11-02T19:29:03+00:00",
+   "latest_evidence": "2026-11-04T12:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -731,22 +730,22 @@
      "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League game against Leeds United."
     },
     {
-     "title": "Cottage Tactico: New faces, same Villa",
-     "url": "https://fulhamfc.co.uk/news/2026/october/30/cottage-tactico-new-faces-same-aston-villa/",
-     "source": "Fulham",
-     "published": "2026-10-30T11:30:00+00:00",
+     "title": "The final straw for Unai Emery at Aston Villa? New transfer emerges, that could force Basque out",
+     "url": "https://www.fourfourtwo.com/transfer/the-final-straw-for-unai-emery-at-aston-villa-new-transfer-emerges-that-could-force-basque-out",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-04T12:00:00+00:00",
      "matched_on": "konsa",
-     "kind": "general",
-     "excerpt": "Unai Emery marked four years in charge at Aston Villa with a statement win against Manchester City last weekend. And for what it’s worth, I think it is very hard to find a more consistent and impressive coaching tenure at a Premier League club in that time. Given it was our dismantling of Steven Gerrard’s Villa in 2022 at the Cottage that saw him sacked before they even got home, perhaps Fulham fa"
+     "kind": "transfer",
+     "excerpt": "Aston Villa manager Unai Emery has rebuilt the Midlands outfit, and has his team looking steady on all fronts after a crazy summer. After winning the Europa League, the Basque boss saw the spine of his side ripped out, with Emiliano Martinez, Ezri Konsa, Lucas Digne, Youri Tielemans, Morgan Rogers and Ollie Watkins all sold – and Aston Villa started the season understandably poorly as a result. Em"
     },
     {
-     "title": "Premier League signings of the season: Jacquet, Konsa, Rogers in but no Anderson",
-     "url": "https://www.football365.com/news/ranking-top-10-premier-league-signings-of-the-season",
+     "title": "Arsenal: Arteta makes shock Konsa decision ahead of Saliba return in sale hint",
+     "url": "https://www.football365.com/news/arsenal-arteta-shock-konsa-decision-saliba-return-white-sale",
      "source": "Football365",
-     "published": "2026-10-30T07:19:22+00:00",
+     "published": "2026-11-04T11:01:06+00:00",
      "matched_on": "konsa",
      "kind": "general",
-     "excerpt": "Morgan Rogers is among the top 10 Premier League signings of the season, with two Aston Villa players in ahead of Elliot Anderson."
+     "excerpt": "Arsenal boss Mikel Arteta is reportedly planning to convert Ezri Konsa to a full-back as the Gunners prepare to welcome back William Saliba."
     }
    ]
   },
@@ -893,9 +892,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 39,
+   "evidence_count": 40,
    "source_count": 16,
-   "latest_evidence": "2026-11-04T00:30:38+00:00",
+   "latest_evidence": "2026-11-04T12:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -966,6 +965,15 @@
      "excerpt": "FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at […] The post FF247 Site Team News GW7 appeared first on Fantasy Football 247 - Premier League Tips ."
     },
     {
+     "title": "The final straw for Unai Emery at Aston Villa? New transfer emerges, that could force Basque out",
+     "url": "https://www.fourfourtwo.com/transfer/the-final-straw-for-unai-emery-at-aston-villa-new-transfer-emerges-that-could-force-basque-out",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-04T12:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": "Aston Villa manager Unai Emery has rebuilt the Midlands outfit, and has his team looking steady on all fronts after a crazy summer. After winning the Europa League, the Basque boss saw the spine of his side ripped out, with Emiliano Martinez, Ezri Konsa, Lucas Digne, Youri Tielemans, Morgan Rogers and Ollie Watkins all sold – and Aston Villa started the season understandably poorly as a result. Em"
+    },
+    {
      "title": "Chelsea to continue transfer spree with £100m move for new forward: report",
      "url": "https://www.fourfourtwo.com/transfer/chelsea-want-to-continue-transfer-spree-with-blockbuster-move-for-serie-a-superstar-report",
      "source": "FourFourTwo FPL",
@@ -1018,15 +1026,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Two second-half goals and a sending off for Lisandro Martínez turned the game in Chelsea's favour at Stamford Bridge. Re-live this Premier League game with our Chelsea vs Man Utd stats page. The post Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red appeared first on Opta Analyst ."
-    },
-    {
-     "title": "Man Utd crumble once again after Morgan Rogers scores a straight-line worldie",
-     "url": "https://www.football365.com/news/man-utd-crumble-once-again-after-morgan-rogers-scores-a-straight-line-worldie",
-     "source": "Football365",
-     "published": "2026-10-31T14:47:56+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "United shaded the first half, but their response to Chelsea’s opener will ultimately cost Carrick his job."
     }
    ]
   },
