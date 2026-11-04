@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-04T13:02:00+00:00",
- "seconds": 153.1,
+ "ran_at": "2026-11-04T22:39:35+00:00",
+ "seconds": 159.1,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 621,
- "substantive_items": 232,
- "duplicates_removed": 21,
- "deeply_analysed": 78,
- "deep_read_failed": 12,
- "corpus_size": 19513,
+ "sources_readable": 56,
+ "candidates_discovered": 659,
+ "substantive_items": 263,
+ "duplicates_removed": 15,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 19528,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 232 articles"
+    "56/78 sources returned 263 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -50,6 +49,8 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
+  "Aston Villa: HTTP 403 for https://avfc.co.uk/rss.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
@@ -65,7 +66,7 @@
    "club": "ARS",
    "evidence_count": 12,
    "source_count": 7,
-   "latest_evidence": "2026-10-27T12:14:35+00:00",
+   "latest_evidence": "2026-11-04T14:14:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -81,6 +82,7 @@
     "match report",
     "press conference",
     "set pieces",
+    "statistics",
     "tactics",
     "team news",
     "transfer"
@@ -144,10 +146,10 @@
      "excerpt": "Manchester United defender Lisandro Martinez has delivered an explosive post-match interview after yet another defeat with the Red Devils to Atletico Madrid Michael Carrick's side lost 2-0 at the Metropolitano, and Martinez – criticised at the weekend for his part in a late Dominic Solanke equaliser – came out to face the music at full-time, and delivered an honest assessment of Manchester United'"
     },
     {
-     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Suzuki on podium",
+     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Verbruggen on the march",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
      "source": "Football365",
-     "published": "2026-10-27T12:14:35+00:00",
+     "published": "2026-11-04T14:14:35+00:00",
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "David Raya has started 2026/27 where he left off last season, while Alisson, Jordan Pickford and James Trafford languish in the lower rankings…"
@@ -482,8 +484,8 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 11,
-   "source_count": 7,
+   "evidence_count": 10,
+   "source_count": 6,
    "latest_evidence": "2026-11-03T14:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -597,15 +599,6 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": "Fixtures Hull City Vs. Everton - Sun, Oct 11 2026, 14:00 Hull City played out a thrilling 2-2 draw with Everton at the MKM Stadium in their first game back after the international break. In the shadow of nearby Hull Fair, Joe Gelhardt scored his first goal of the season just after half-time to give City the lead, neatly finishing beyond Jordan Pickford. Kiernan Dewsbury-Hall levelled for the Toffe"
-    },
-    {
-     "title": "International Magpies: Hall's England defeat Horníček's Czechia",
-     "url": "https://www.newcastleunited.com/en/news/international-call-ups-september-october-2026",
-     "source": "Newcastle United",
-     "published": "2026-10-07T08:40:00+00:00",
-     "matched_on": "hall",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -892,9 +885,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 40,
-   "source_count": 16,
-   "latest_evidence": "2026-11-04T12:00:00+00:00",
+   "evidence_count": 41,
+   "source_count": 17,
+   "latest_evidence": "2026-11-04T13:42:22+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1001,6 +994,15 @@
      "excerpt": ""
     },
     {
+     "title": "Chelsea: Morgan Rogers names area to improve despite superb start",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/feature/morgan-rogers-names-area-to-improve-despite-superb-chelsea-start_608387.html",
+     "source": "Sports Mole",
+     "published": "2026-11-04T13:42:22+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Morgan Rogers did not need long to justify Chelsea’s investment. With six goals and four assists in 12 matches, he has become one of Chelsea’s key players this season."
+    },
+    {
      "title": "Who Won the Michigan Senate Race? Abdul El-Sayed vs. Mike Rogers Election Results",
      "url": "https://dknetwork.draftkings.com/2026/11/03/who-won-the-michigan-senate-race-abdul-el-sayed-vs-mike-rogers-election-results/",
      "source": "DraftKings Network Soccer",
@@ -1017,22 +1019,13 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Manchester United manager Michael Carrick has admitted his side are making the same mistakes too often after watching them collapse in a 2-0 defeat to Chelsea at Stamford Bridge. United produced an encouraging first-half performance but failed to make their chances count before Morgan Rogers and Cole Palmer struck after the break to condemn the […]"
-    },
-    {
-     "title": "Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red",
-     "url": "https://theanalyst.com/articles/chelsea-vs-man-utd-stats-premier-league-10-2026",
-     "source": "Opta Analyst",
-     "published": "2026-10-31T14:56:27+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Two second-half goals and a sending off for Lisandro Martínez turned the game in Chelsea's favour at Stamford Bridge. Re-live this Premier League game with our Chelsea vs Man Utd stats page. The post Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red appeared first on Opta Analyst ."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 49,
+   "evidence_count": 47,
    "source_count": 16,
    "latest_evidence": "2026-11-02T15:15:00+00:00",
    "official_source_found": true,
@@ -1114,15 +1107,6 @@
      "excerpt": "Chelsea are set to take on Bournemouth at Stamford Bridge on Saturday, and despite injury fears, Cole Palmer and two other stars make the starting XI."
     },
     {
-     "title": "Chelsea injury, suspension list and return dates vs. Bournemouth: Reece James, Moises Caicedo, Cole Palmer, Joao Pedro latest",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/palmer-caicedo-pedro-latest-chelsea-injury-suspension-list-vs-bournemouth_606368.html",
-     "source": "Sports Mole",
-     "published": "2026-10-07T10:58:50+01:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Saturday's Premier League fixture against Bournemouth."
-    },
-    {
      "title": "Xabi Alonso’s overthinking isn’t helping a Chelsea side already defined by muddled thoughts",
      "url": "https://www.fourfourtwo.com/tactic/xabi-alonsos-overthinking-isnt-helping-a-chelsea-side-already-defined-by-muddled-thoughts",
      "source": "FourFourTwo FPL",
@@ -1166,6 +1150,15 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Manchester United manager Michael Carrick has admitted his side are making the same mistakes too often after watching them collapse in a 2-0 defeat to Chelsea at Stamford Bridge. United produced an encouraging first-half performance but failed to make their chances count before Morgan Rogers and Cole Palmer struck after the break to condemn the […]"
+    },
+    {
+     "title": "Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red",
+     "url": "https://theanalyst.com/articles/chelsea-vs-man-utd-stats-premier-league-10-2026",
+     "source": "Opta Analyst",
+     "published": "2026-10-31T14:56:27+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Two second-half goals and a sending off for Lisandro Martínez turned the game in Chelsea's favour at Stamford Bridge. Re-live this Premier League game with our Chelsea vs Man Utd stats page. The post Chelsea 2-0 Man Utd Stats: Rogers and Palmer Leave Carrick on the Brink as Martínez Sees Red appeared first on Opta Analyst ."
     }
    ]
   },
@@ -1343,9 +1336,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 102,
+   "evidence_count": 100,
    "source_count": 17,
-   "latest_evidence": "2026-11-03T16:24:41+00:00",
+   "latest_evidence": "2026-11-04T22:11:51+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1370,6 +1363,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "RB Leipzig vs. Man City lineups confirmed: Captain Haaland as Cherki, Foden, Guehi decisions made for Champions League game",
+     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/leipzig-vs-man-city-confirmed-xis-captain-haaland-as-cherki-foden-guehi-decisions-made_608404.html",
+     "source": "Sports Mole",
+     "published": "2026-11-04T18:52:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "RB Leipzig and Manchester City confirm their starting lineups for tonight’s Champions League clash at the Red Bull Arena."
+    },
     {
      "title": "FF247 Site Team News GW9",
      "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw9-2/",
@@ -1468,15 +1470,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Fantasy takeaways from Man City 5-1 AEK Athens The post FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Man City injury news: Erling Haaland update provided by Enzo Maresca ahead of Aston Villa Premier League game",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/maresca-delivers-haaland-injury-update-ahead-of-aston-villa-pl-showdown_607344.html",
-     "source": "Sports Mole",
-     "published": "2026-10-21T10:31:32+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Manchester City boss Enzo Maresca provides an update on the status of Erling Haaland ahead of Saturday's Premier League fixture against Aston Villa."
     }
    ]
   },
@@ -1484,8 +1477,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-11-03T11:16:00+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-11-04T11:40:06+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1499,7 +1492,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -1510,6 +1502,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Leeds injury, suspension list and return dates vs. Tottenham Hotspur: Joe Rodon, Noah Okafor latest",
+     "url": "https://www.sportsmole.co.uk/football/leeds-united/injury-news/injuries-and-suspensions/rodon-okafor-latest-leeds-injury-suspension-list-vs-spurs_608380.html",
+     "source": "Sports Mole",
+     "published": "2026-11-04T11:40:06+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Leeds United's latest injury and suspension news ahead of Saturday's Premier League fixture against Tottenham Hotspur."
+    },
+    {
+     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Leeds United: Savio, Lucas Bergvall, Mykhaylo Mudryk latest",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/savio-bergvall-mudryk-updates-spurs-injury-suspension-list-vs-leeds_608369.html",
+     "source": "Sports Mole",
+     "published": "2026-11-04T09:37:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Leeds United."
+    },
     {
      "title": "Dallas Mavericks vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/dallas-mavericks/preview/dallas-mavericks-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608315.html",
@@ -1545,33 +1555,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham moved into the top half of the Premier League as they claimed a third straight win by beating 10-man Crystal Palace 2-0. Spurs cause was aided in the 13th minute when Palace striker Jean-Philippe Mateta was shown a straight red card for a poor challenge on Micky van de Ven. Archie Gray headed Tottenham […]"
-    },
-    {
-     "title": "Tottenham: Shocking James Maddison 90-minute stat sparks \"concern\" from Gus Poyet",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/exclusive-poyet-concerned-about-maddison-as-shocking-90-minute-stat-emerges_608159.html",
-     "source": "Sports Mole",
-     "published": "2026-10-31T17:50:22+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Exclusive: Ex-Tottenham Hotspur man Gus Poyet is 'concerned' about James Maddison as a shocking 90-minute stat emerges."
-    },
-    {
-     "title": "Spurs v Crystal Palace team news: Maddison a sub, Solanke in",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/31/spurs-v-crystal-palace-team-news-maddison-a-sub-solanke-in",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-31T17:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "One change for Spurs from last weekend, two for Palace The post Spurs v Crystal Palace team news: Maddison a sub, Solanke in appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 56,
+   "evidence_count": 55,
    "source_count": 16,
-   "latest_evidence": "2026-11-03T18:45:00+00:00",
+   "latest_evidence": "2026-11-04T18:52:21+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
