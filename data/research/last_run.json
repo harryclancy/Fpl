@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-04T22:39:35+00:00",
- "seconds": 159.1,
+ "ran_at": "2026-11-05T03:31:01+00:00",
+ "seconds": 165.9,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 659,
- "substantive_items": 263,
- "duplicates_removed": 15,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 19528,
+ "sources_readable": 54,
+ "candidates_discovered": 519,
+ "substantive_items": 135,
+ "duplicates_removed": 4,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 19536,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 263 articles"
+    "54/78 sources returned 135 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -54,11 +55,12 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
-  "The Hard Tackle: nothing published in the last 10 days"
+  "The Hard Tackle: nothing published in the last 10 days",
+  "Racing Post Football Tips: HTTP 406 for https://www.racingpost.com/sitemaps/news-sitemap.xml"
  ],
  "players": {
   "Raya": {
@@ -1336,7 +1338,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 100,
+   "evidence_count": 98,
    "source_count": 17,
    "latest_evidence": "2026-11-04T22:11:51+00:00",
    "official_source_found": true,
@@ -1561,7 +1563,7 @@
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 54,
    "source_count": 16,
    "latest_evidence": "2026-11-04T18:52:21+00:00",
    "official_source_found": true,
