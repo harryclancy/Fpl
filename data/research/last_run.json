@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-05T13:15:45+00:00",
- "seconds": 139.2,
+ "ran_at": "2026-11-05T22:41:47+00:00",
+ "seconds": 161.8,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 654,
- "substantive_items": 254,
+ "sources_readable": 57,
+ "candidates_discovered": 709,
+ "substantive_items": 302,
  "duplicates_removed": 21,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 19570,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 19617,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 254 articles"
+    "57/78 sources returned 302 articles"
    ]
   },
   "blackout": {
@@ -38,24 +38,22 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
-  "FISO: ConnectionError for https://fiso.co.uk/feed/",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
-  "FPL Ranker: nothing published in the last 10 days",
+  "FPL Ranker: HTTP 402 for https://fplranker.com/sitemap.xml",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
-  "Aston Villa: HTTP 403 for https://avfc.co.uk/rss.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
+  "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
   "CBS Sports Soccer: nothing published in the last 10 days",
@@ -485,9 +483,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 6,
-   "latest_evidence": "2026-11-03T14:30:00+00:00",
+   "latest_evidence": "2026-11-05T13:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -511,6 +509,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Branthwaite Fitness Update & Team News For Coventry Test",
+     "url": "https://www.evertonfc.com/news/2026/november/05/branthwaite-fitness-update---team-news-for-coventry-test/",
+     "source": "Everton",
+     "published": "2026-11-05T13:35:00+00:00",
+     "matched_on": "hall",
+     "kind": "team news",
+     "excerpt": "David Moyes hopes to have Jarrad Branthwaite fit and available for Everton's Friday night clash with Coventry City at Hill Dickinson Stadium. The Toffees head into the fixture on the back of two wins in quick succession over Newcastle United – in the Carabao Cup and Premier League respectively – and currently sit seventh in the league table. Branthwaite was withdrawn after 82 minutes of the 1-0 vi"
+    },
     {
      "title": "FPL notes: Dewsbury-Hall unlucky, Barry’s xG + poor Newcastle",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/03/fpl-notes-dewsbury-hall-unlucky-barrys-xg-poor-newcastle",
@@ -607,8 +614,8 @@
    "player": "Konsa",
    "club": "ARS",
    "evidence_count": 20,
-   "source_count": 10,
-   "latest_evidence": "2026-11-05T10:59:00+00:00",
+   "source_count": 11,
+   "latest_evidence": "2026-11-05T22:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -633,6 +640,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Mikel Arteta’s Damning Ezri Konsa Injury Update Comes With a Silver Lining",
+     "url": "https://www.si.com/soccer/mikel-arteta-damning-ezri-konsa-injury-update-silver-lining?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-11-05T22:30:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "The center back was forced off the pitch in Czechia with a knee problem."
+    },
+    {
+     "title": "What to do with Konsa + is Isak worth £9.2m? FPL Q&A",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/05/what-to-do-with-konsa-is-isak-worth-9-2m-fpl-qa",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-05T18:30:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post What to do with Konsa + is Isak worth £9.2m? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal injury, suspension list and return dates vs. Hull City: Ezri Konsa, Bukayo Saka latest",
      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/konsa-saka-latest-arsenal-injury-suspension-list-vs-hull_608457.html",
@@ -722,33 +747,15 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "Gameweek 6 of Fantasy Premier League (FPL) kicks off with Arsenal v Leeds United this Saturday lunchtime. The ... The post Arsenal v Leeds team news: Konsa + Havertz fit to start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "England defence tempers expectations with Guehi and Konsa only ‘decent’",
-     "url": "https://www.football365.com/news/england-defence-tempers-expectations-mailbox",
-     "source": "Football365",
-     "published": "2026-10-08T06:39:43+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "England are nowhere near good enough to win the Euros with that selection of centre-backs, while Jude Bellingham critics vindicated."
-    },
-    {
-     "title": "The final straw for Unai Emery at Aston Villa? New transfer emerges, that could force Basque out",
-     "url": "https://www.fourfourtwo.com/transfer/the-final-straw-for-unai-emery-at-aston-villa-new-transfer-emerges-that-could-force-basque-out",
-     "source": "FourFourTwo FPL",
-     "published": "2026-11-04T12:00:00+00:00",
-     "matched_on": "konsa",
-     "kind": "transfer",
-     "excerpt": "Aston Villa manager Unai Emery has rebuilt the Midlands outfit, and has his team looking steady on all fronts after a crazy summer. After winning the Europa League, the Basque boss saw the spine of his side ripped out, with Emiliano Martinez, Ezri Konsa, Lucas Digne, Youri Tielemans, Morgan Rogers and Ollie Watkins all sold – and Aston Villa started the season understandably poorly as a result. Em"
     }
    ]
   },
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 26,
-   "source_count": 6,
-   "latest_evidence": "2026-10-31T13:48:46+00:00",
+   "evidence_count": 27,
+   "source_count": 7,
+   "latest_evidence": "2026-11-05T13:24:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -888,7 +895,7 @@
    "club": "CHE",
    "evidence_count": 41,
    "source_count": 17,
-   "latest_evidence": "2026-11-04T13:42:22+00:00",
+   "latest_evidence": "2026-11-05T15:19:22+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -995,6 +1002,15 @@
      "excerpt": ""
     },
     {
+     "title": "Premier League signings of the season: Liverpool duo Jacquet and Araujo in top 10",
+     "url": "https://www.football365.com/news/ranking-top-10-premier-league-signings-of-the-season",
+     "source": "Football365",
+     "published": "2026-11-05T15:19:22+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Morgan Rogers is among the top 10 Premier League signings of the season, with two Aston Villa players in ahead of Elliot Anderson."
+    },
+    {
      "title": "Chelsea: Morgan Rogers names area to improve despite superb start",
      "url": "https://www.sportsmole.co.uk/football/chelsea/feature/morgan-rogers-names-area-to-improve-despite-superb-chelsea-start_608387.html",
      "source": "Sports Mole",
@@ -1011,15 +1027,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Michigan voters are choosing a successor to retiring Democratic Sen. Gary Peters in one of the nation’s most closely watched Senate races. Democrat Abdul El-Sayed faces Republican Mike Rogers in a contest that could help determine control of the U.S. Senate. Follow along for the latest U.S. election results to find out who won the […] The post Who Won the Michigan Senate Race? Abdul El-Sayed vs. M"
-    },
-    {
-     "title": "Michael Carrick admits Man Utd problems have ‘happened too often’ after Chelsea defeat",
-     "url": "https://www.101greatgoals.com/football/premier-league/michael-carrick-admits-man-utd-problems-have-happened-too-often-chelsea-defeat/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-31T16:44:37+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Manchester United manager Michael Carrick has admitted his side are making the same mistakes too often after watching them collapse in a 2-0 defeat to Chelsea at Stamford Bridge. United produced an encouraging first-half performance but failed to make their chances count before Morgan Rogers and Cole Palmer struck after the break to condemn the […]"
     }
    ]
   },
@@ -1337,7 +1344,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 99,
+   "evidence_count": 98,
    "source_count": 17,
    "latest_evidence": "2026-11-05T10:32:12+00:00",
    "official_source_found": true,
@@ -1478,10 +1485,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-11-04T11:40:06+00:00",
+   "source_count": 2,
+   "latest_evidence": "2026-11-05T10:06:01+00:00",
    "official_source_found": true,
-   "fpl_source_found": true,
+   "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1503,6 +1510,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "San Antonio Spurs vs. Sacramento Kings: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-sacramento-kings-player-props-injury-report-and-prediction--nba_608469.html",
+     "source": "Sports Mole",
+     "published": "2026-11-05T10:06:01+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Kings vs. Spurs preview with player props, injury report and prediction as Wembanyama’s Spurs visit a Sacramento side yet to win at home."
+    },
     {
      "title": "Leeds injury, suspension list and return dates vs. Tottenham Hotspur: Joe Rodon, Noah Okafor latest",
      "url": "https://www.sportsmole.co.uk/football/leeds-united/injury-news/injuries-and-suspensions/rodon-okafor-latest-leeds-injury-suspension-list-vs-spurs_608380.html",
@@ -1547,15 +1563,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Crystal Palace slipped to a 2-0 defeat at Tottenham having played much of the game a man down after an early red card for Jean-Philippe Mateta."
-    },
-    {
-     "title": "Tottenham 2-0 Crystal Palace: Spurs surge continues as third straight win piles pressure on Sage",
-     "url": "https://www.101greatgoals.com/match-reports/tottenham-2-0-crystal-palace-spurs-surge-continues-as-third-straight-win-piles-pressure-on-sage/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-10-31T19:22:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham moved into the top half of the Premier League as they claimed a third straight win by beating 10-man Crystal Palace 2-0. Spurs cause was aided in the 13th minute when Palace striker Jean-Philippe Mateta was shown a straight red card for a poor challenge on Micky van de Ven. Archie Gray headed Tottenham […]"
     }
    ]
   },
