@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
- "gameweek": 10,
- "ran_at": "2026-11-06T12:59:35+00:00",
- "seconds": 149.6,
+ "gameweek": 11,
+ "ran_at": "2026-11-06T22:09:02+00:00",
+ "seconds": 197.7,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 648,
- "substantive_items": 243,
- "duplicates_removed": 22,
- "deeply_analysed": 75,
- "deep_read_failed": 15,
- "corpus_size": 19669,
+ "sources_readable": 57,
+ "candidates_discovered": 679,
+ "substantive_items": 284,
+ "duplicates_removed": 17,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 19698,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 243 articles"
+    "57/78 sources returned 284 articles"
    ]
   },
   "blackout": {
@@ -41,7 +41,7 @@
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
-  "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
+  "Onside Arena: timed out after 12s for https://onsidearena.com/sitemaps/predictions.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,8 +50,9 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -482,9 +483,9 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "evidence_count": 13,
+   "evidence_count": 15,
    "source_count": 8,
-   "latest_evidence": "2026-11-06T10:00:00+00:00",
+   "latest_evidence": "2026-11-06T21:53:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -509,6 +510,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton Team Revealed To Take On Coventry",
+     "url": "https://www.evertonfc.com/news/2026/november/06/everton-team-revealed-to-take-on-coventry/",
+     "source": "Everton",
+     "published": "2026-11-06T18:44:00+00:00",
+     "matched_on": "hall",
+     "kind": "team news",
+     "excerpt": "Tyler Dibling comes into the starting XI as the only change for Everton's clash against Coventry at Hill Dickinson Stadium (8pm GMT). Manager David Moyes – taking charge of the Blues for a record-equalling 592nd time to go level with Harry Catterick – gives the nod to Dibling on the right wing, with Merlin Röhl dropping to right-back in place of Jake O'Brien, who is named among the substitutes. Th"
+    },
     {
      "title": "Branthwaite Fitness Update & Team News For Coventry Test",
      "url": "https://www.evertonfc.com/news/2026/november/05/branthwaite-fitness-update---team-news-for-coventry-test/",
@@ -582,6 +592,15 @@
      "excerpt": "Man Utd have missed their chance to sign Lewis Hall for a reasonable price since the Newcastle star is the highest-graded defender in Europe this season…"
     },
     {
+     "title": "Barry Hits Double As Everton Win Moyes' Landmark Match",
+     "url": "https://www.evertonfc.com/news/2026/november/06/coventry-report/",
+     "source": "Everton",
+     "published": "2026-11-06T21:53:00+00:00",
+     "matched_on": "hall",
+     "kind": "general",
+     "excerpt": "Thierno Barry scored two and created the other as Everton made it three wins on the spin to beat Coventry 3-1 in David Moyes' record-equalling match as Blues manager. The Toffees had to recover from Yann Gboho's 52nd-minute opener as Barry headed home Vitalii Mykolenko's cross four minutes later, before taking his goal tally to 10 for the season when he bundled in Tyrique George's centre just past"
+    },
+    {
      "title": "International Magpies: Hall in England squad",
      "url": "https://www.newcastleunited.com/en/news/international-call-ups-november-2026",
      "source": "Newcastle United",
@@ -598,33 +617,15 @@
      "matched_on": "hall",
      "kind": "general",
      "excerpt": "Lewis Hall has become a key two-way presence for Newcastle United. This scout report analyses his defensive workload, ball recoveries, progressive passing, build-up role and set-piece delivery while identifying areas for improvement."
-    },
-    {
-     "title": "Tarkowski Backs Everton Teammate For England Call-Up",
-     "url": "https://www.evertonfc.com/news/2026/november/03/tarkowski-backs-everton-teammate-for-england-call-up/",
-     "source": "Everton",
-     "published": "2026-11-03T11:01:00+00:00",
-     "matched_on": "hall",
-     "kind": "general",
-     "excerpt": "Everton captain James Tarkowski has backed Kiernan Dewsbury-Hall for an England call-up, insisting the Blues midfielder should “already” be among Thomas Tuchel’s Three Lions squad. Dewsbury-Hall has been in outstanding form for the Toffees, picking up the Player of the Match award for Monday night’s 1-0 victory at Newcastle United – just days after another fine display in Everton’s 3-1 win over th"
-    },
-    {
-     "title": "Flashscore sources: Newcastle set to double down on Hall valuation if Man Utd return",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
-     "source": "Soccerway",
-     "published": "2026-10-14T09:51:04+02:00",
-     "matched_on": "hall",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 21,
-   "source_count": 11,
-   "latest_evidence": "2026-11-06T12:45:00+00:00",
+   "evidence_count": 27,
+   "source_count": 12,
+   "latest_evidence": "2026-11-06T19:19:39+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -646,9 +647,45 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "high",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal boss Arteta confirms Saka out for 'weeks' as Konsa fit to face Hull",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-arsenal-boss-arteta-confirms-saka-out-for-weeks-as-konsa-fit-to-face-hull/MaADWoV6/",
+     "source": "Soccerway",
+     "published": "2026-11-06T16:56:16+01:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Is Ezri Konsa injured this weekend? Arsenal injury update",
+     "url": "https://www.fourfourtwo.com/person/player/is-ezri-konsa-injured-this-weekend-arsenal-injury-update",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-06T15:09:12+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Arsenal manager Mikel Arteta has spoken about Ezri Konsa's availability this weekend. The defender was taken off in Arsenal's 2-1 win away at Slavia Prague in the Champions League this week, as the Gunners made hard work of the second half, after cruising into a two-goal lead. With William Saliba now available once more, Arteta has confirmed Konsa's status ahead of action this Saturday. Arsenal ha"
+    },
+    {
+     "title": "Konsa, Saliba, Saka: Arsenal injury latest for FPL Gameweek 10",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/06/konsa-saliba-saka-arsenal-injury-latest-for-fpl-gameweek-10",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-06T14:28:56+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "A Friday afternoon update from Mikel Arteta The post Konsa, Saliba, Saka: Arsenal injury latest for FPL Gameweek 10 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL Gameweek 10 team news: Friday’s live injury updates + Konsa latest",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/06/fpl-gameweek-10-team-news-fridays-live-injury-updates-3",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-06T13:40:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "We're hoping to hear from 13 Premier League managers on Friday The post FPL Gameweek 10 team news: Friday’s live injury updates + Konsa latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal Predicted Lineup vs. Hull: Havertz Restored, Konsa Injury Forces Change",
      "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-hull-11-7-26?utm_source=RSS",
@@ -720,42 +757,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "FF247 Site Team News GW9 Welcome to FF247 Site Team GW9 Gameweek 8 was a painful one for many, and we very much include ourselves among them. Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband. Other […] The post FF247 Site Team News GW9 appeared first on Fantasy Football 247 - Premier League Tips ."
-    },
-    {
-     "title": "Victor Lindelof is thriving and it says everything about Aston Villa and Manchester United",
-     "url": "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-29T11:00:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Aston Villa are not a normal football club. After what felt like an eternity of matches against teams that somehow seemed to be playing a more advanced sport altogether, Villa have become competitive by doing things differently. Manager Unai Emery maintained his poker face throughout pre-season. It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martin"
-    },
-    {
-     "title": "Everton Defeated At Arsenal",
-     "url": "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
-     "source": "Everton",
-     "published": "2026-10-24T15:56:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Goals from Ezri Konsa and Gabriel consigned Everton to a 2-0 defeat at the home of reigning Premier League champions Arsenal on Saturday. Konsa opened the scoring inside seven minutes in north London, prodding home from close range after Martin Odegaard's dangerous corner popped up and was clawed on to the crossbar by Jordan Pickford. The Blues responded relatively well to that early setback, thou"
-    },
-    {
-     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
-     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-16T16:00:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
-    },
-    {
-     "title": "FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-11T19:00:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Leeds impress despite defeat at the Emirates The post FPL notes: Calafiori’s threat, Saka’s big chances + Konsa’s DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -902,9 +903,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 41,
+   "evidence_count": 42,
    "source_count": 17,
-   "latest_evidence": "2026-11-05T15:19:22+00:00",
+   "latest_evidence": "2026-11-06T14:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -975,6 +976,15 @@
      "excerpt": "FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at […] The post FF247 Site Team News GW7 appeared first on Fantasy Football 247 - Premier League Tips ."
     },
     {
+     "title": "Aston Villa rocked by Real Madrid interest in new signing: report",
+     "url": "https://www.fourfourtwo.com/transfer/aston-villa-rocked-by-real-madrid-interest-in-new-signing-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-06T14:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": "Aston Villa are bracing themselves for Real Madrid and Paris Saint-Germain interest in one of their newest recruits. Villa are in a strong position for the future, with Guillem Balague writing for the BBC this week that manager Unai Emery is close to agreeing a contract extension in the Midlands that will see him given even more responsibility over the long-term development of the club. But the Eu"
+    },
+    {
      "title": "The final straw for Unai Emery at Aston Villa? New transfer emerges, that could force Basque out",
      "url": "https://www.fourfourtwo.com/transfer/the-final-straw-for-unai-emery-at-aston-villa-new-transfer-emerges-that-could-force-basque-out",
      "source": "FourFourTwo FPL",
@@ -1027,24 +1037,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers did not need long to justify Chelsea’s investment. With six goals and four assists in 12 matches, he has become one of Chelsea’s key players this season."
-    },
-    {
-     "title": "Who Won the Michigan Senate Race? Abdul El-Sayed vs. Mike Rogers Election Results",
-     "url": "https://dknetwork.draftkings.com/2026/11/03/who-won-the-michigan-senate-race-abdul-el-sayed-vs-mike-rogers-election-results/",
-     "source": "DraftKings Network Soccer",
-     "published": "2026-11-04T00:30:38+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Michigan voters are choosing a successor to retiring Democratic Sen. Gary Peters in one of the nation’s most closely watched Senate races. Democrat Abdul El-Sayed faces Republican Mike Rogers in a contest that could help determine control of the U.S. Senate. Follow along for the latest U.S. election results to find out who won the […] The post Who Won the Michigan Senate Race? Abdul El-Sayed vs. M"
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 53,
+   "evidence_count": 56,
    "source_count": 16,
-   "latest_evidence": "2026-11-06T12:46:47+00:00",
+   "latest_evidence": "2026-11-06T20:52:53+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1069,6 +1070,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "England squad: Three players who should and shouldn't be in Thomas Tuchel's group - there's no Cole Palmer",
+     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/no-palmer-three-players-who-should-and-shouldnt-be-in-england-squad_608613.html",
+     "source": "Sports Mole",
+     "published": "2026-11-06T20:52:53+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Sports Mole discusses England's 25-man squad for the November international break, highlighting the lucky and unlucky players following Thomas Tuchel's selection."
+    },
     {
      "title": "Thomas Tuchel makes surprise England Bellingham announcement: Three Lions' November squad in full",
      "url": "https://www.fourfourtwo.com/team/thomas-tuchel-makes-surprise-england-bellingham-announcement-three-lions-november-squad-in-full",
@@ -1160,30 +1170,21 @@
      "excerpt": "The Blues talisman has added an extra year onto his existing deal."
     },
     {
-     "title": "Tuchel aims seven-word ‘attitude’ dig at Palmer as England mask slips",
-     "url": "https://www.football365.com/news/opinion-palmer-tuchel-seven-word-dig-mask-slips",
-     "source": "Football365",
-     "published": "2026-11-06T12:46:47+00:00",
+     "title": "Chelsea news: Xabi Alonso reacts to Cole Palmer's England squad omission, Thomas Tuchel comments",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/chelsea-boss-alonso-reacts-to-palmers-england-squad-omission_608617.html",
+     "source": "Sports Mole",
+     "published": "2026-11-06T17:37:44+00:00",
      "matched_on": "palmer",
      "kind": "general",
-     "excerpt": "Tuchel laid the ‘camp’ camaraderie stuff on with a trowel before the mask slipped and he revealed a damning seven-word reason for Palmer’s England exclusion."
-    },
-    {
-     "title": "Why Fully Fit Cole Palmer Has Been Snubbed by England Boss Thomas Tuchel",
-     "url": "https://www.si.com/soccer/why-fit-cole-palmer-snubbed-england-boss-thomas-tuchel?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-11-06T12:30:00+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Tuchel also ruled on the long-term England future of a player who hasn’t made an international appearance since March."
+     "excerpt": "Chelsea manager Xabi Alonso suggests that he does not discuss Cole Palmer's situation with England with the Blues playmaker."
     }
    ]
   },
   "Groß": {
    "player": "Groß",
    "club": "BHA",
-   "evidence_count": 4,
-   "source_count": 4,
+   "evidence_count": 3,
+   "source_count": 3,
    "latest_evidence": "2026-10-19T15:36:36+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -1208,15 +1209,6 @@
    "priority": "normal",
    "researched": true,
    "items": [
-    {
-     "title": "FF247 Site Team News GW6",
-     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw6-2/",
-     "source": "Fantasy Football 247",
-     "published": "2026-10-09T10:25:07+00:00",
-     "matched_on": "gro",
-     "kind": "team news",
-     "excerpt": "FF247 Site Team News GW6 Welcome to FF247 Site Team News GW6 I feel we’ve turned point dodging into an art form. We finished on 42 points against an average of 48, and one look at the team makes it fairly easy to work out where things went wrong. Pascal Groß (14pts) was once again […] The post FF247 Site Team News GW6 appeared first on Fantasy Football 247 - Premier League Tips ."
-    },
     {
      "title": "FPL Gameweek 7 Guide 2026/27: Fixtures, Captaincy And Players To Target For GW7",
      "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
@@ -1353,8 +1345,8 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 94,
-   "source_count": 17,
+   "evidence_count": 90,
+   "source_count": 16,
    "latest_evidence": "2026-11-06T07:45:24+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1494,10 +1486,10 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 2,
-   "latest_evidence": "2026-11-06T00:00:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-11-06T12:54:58+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -1509,6 +1501,7 @@
     "injury",
     "match report",
     "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1518,6 +1511,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Leeds v Tottenham: Prediction, team news, lineups and odds",
+     "url": "https://www.football365.com/match-preview/leeds-v-tottenham-prediction-preview",
+     "source": "Football365",
+     "published": "2026-11-06T12:54:58+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Premier League clash between Leeds and Tottenham."
+    },
+    {
+     "title": "Leeds v Tottenham: Preview, expected line-ups, stats and where to watch",
+     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/leeds-v-tottenham-preview-expected-line-ups-stats-stream-where-to-watch/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-06T09:36:13+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "In-form Tottenham head to Leeds on Saturday for the lunchtime kick-off in the Premier League. Read our preview here..."
+    },
     {
      "title": "Spurs v Albion | Ruiz pre-match press conference",
      "url": "https://www.brightonandhovealbion.com/media-video/spurs-v-albion-or-ruiz-pre-match-press-conference",
@@ -1553,33 +1564,15 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Leeds United."
-    },
-    {
-     "title": "Dallas Mavericks vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/dallas-mavericks/preview/dallas-mavericks-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608315.html",
-     "source": "Sports Mole",
-     "published": "2026-11-03T11:16:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Dallas Mavericks vs San Antonio Spurs prediction, player props and injury report as the five-game-streak Spurs host Dallas on Thursday 5 November."
-    },
-    {
-     "title": "Utah Jazz vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/utah-jazz/preview/utah-jazz-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608201.html",
-     "source": "Sports Mole",
-     "published": "2026-11-01T13:25:24+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Injury news, player props, key matchups and a score prediction for the NBA clash between San Antonio Spurs and Utah Jazz at Frost Bank Center on Tuesday."
     }
    ]
   },
   "João Pedro": {
    "player": "João Pedro",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 56,
    "source_count": 16,
-   "latest_evidence": "2026-11-05T09:23:34+00:00",
+   "latest_evidence": "2026-11-06T15:04:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1604,6 +1597,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Lacroix, Martinez, Joao Pedro: Chelsea injury latest for FPL Gameweek 10",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/06/lacroix-martinez-joao-pedro-chelsea-injury-latest-for-fpl-gameweek-10",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-06T15:04:35+00:00",
+     "matched_on": "joao pedro",
+     "kind": "team news",
+     "excerpt": "Xabi Alonso spoke to the media on Friday afternoon The post Lacroix, Martinez, Joao Pedro: Chelsea injury latest for FPL Gameweek 10 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Chelsea injury, suspension list and return dates vs. Sunderland: Emiliano Martinez, Joao Pedro, Jorrel Hato latest",
      "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/martinez-pedro-hato-latest-chelsea-injury-suspension-list-vs-sunderland_608400.html",
@@ -1702,15 +1704,6 @@
      "matched_on": "pedro",
      "kind": "team news",
      "excerpt": "The Chelsea forward is ruled out for a \"few weeks\" The post Best Pedro replacements in FPL – and is he a definite ‘sell’? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Chelsea injury news: Joao Pedro blow confirmed by Xabi Alonso ahead of Liverpool EFL Cup tie",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/alonso-reveals-pedro-injury-blow-ahead-of-chelseas-trip-to-liverpool_607819.html",
-     "source": "Sports Mole",
-     "published": "2026-10-27T15:23:53+00:00",
-     "matched_on": "joao pedro",
-     "kind": "team news",
-     "excerpt": "Chelsea manager Xabi Alonso confirms that Joao Pedro faces a spell on the sidelines with an injury sustained in training last week."
     }
    ]
   },
