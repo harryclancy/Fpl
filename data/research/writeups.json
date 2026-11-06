@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-11-06T03:27:55+00:00",
+ "generated": "2026-11-06T12:59:35+00:00",
  "gameweek": 10,
- "corpus_size": 19638,
+ "corpus_size": 19669,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -708,15 +708,15 @@
   "Hall": {
    "player": "Hall",
    "club": "NEW",
-   "status": "Latest on Hall — Fantasy Football Scout, 03 Nov: ““If you just play long balls, that’s for sure not the style [William Osula] prefers and it was not the plan.” – Matthias Jaissle Even Lewis Hall (£5.3m), a genuine star in an average side, had a stinker.”",
-   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 11 retrieved item(s) from 6 source(s), the most recent dated 03 Nov.",
-   "case_for": "What supports keeping him: Hull City, 11 Oct: “Kiernan Dewsbury-Hall levelled for the Toffees in the 55 th minute, converting Ainsley Maitland-Niles’ cross, before he provided the assist for Thierno Barry to put Everton ahead.”",
+   "status": "Latest on Hall — Newcastle United, 06 Nov: “International Magpies: Hall in England squad Published 3 hours ago Team Men newcastleunited.com rounds up the latest international call-ups ahead of November's fixture window...”",
+   "why_here": "Hall is in the starting eleven this week at £5.3m as a DEF. The selection rests on 13 retrieved item(s) from 8 source(s), the most recent dated 06 Nov.",
+   "case_for": "What supports keeping him: Tactical Football Analysis, 06 Nov: “This Lewis Hall scout report and player analysis looks at how those contributions fit together.” Hull City, 11 Oct: “Kiernan Dewsbury-Hall levelled for the Toffees in the 55 th minute, converting Ainsley Maitland-Niles’ cross, before he provided the assist for Thierno Barry to put Everton ahead.”",
    "case_against": "What argues against him: Everton, 02 Nov: “Merlin Röhl, who featured on the right side of defence in Thursday night's 3-1 Carabao Cup win over Newcastle at Hill Dickinson Stadium, switches to right midfield tonight ahead of Tyler Dibling, while Armstrong is back in central midfield with James Garner and Kiernan Dewsbury-Hall, as Hayden Hackney is named among the substitutes.”",
    "expected_minutes": "On minutes — Everton, 03 Nov: “Dewsbury-Hall has been in outstanding form for the Toffees, picking up the Player of the Match award for Monday night’s 1-0 victory at Newcastle United – just days after another fine display in Everton’s 3-1 win over the Magpies in the Carabao Cup.” Soccerway, 14 Oct: “The flashpoint reignites particular questions over their decision not to sign Hall The left-back area remains a big problem for United, where doubts over Luke Shaw 's ability to remain fit for a full campaign were already well established before the season began.”",
-   "developments": "Recent developments — Fantasy Football Scout, 03 Nov: “DEWSBURY-HALL EXCELLENT + UNLUCKY TO BLANK Kiernan Dewsbury-Hall (£6.6m) was named Man of the Match, and few would argue with that.” Everton, 03 Nov: “Skipper Tarkowski says his teammate has “developed a confidence to want to make the difference” – and Dewsbury-Hall epitomised that throughout a well-rounded showing last night at St James’ Park.” Everton, 29 Oct: “Hackney joins James Garner and Kiernan Dewsbury-Hall in central midfield, while Dibling and Tyrique George are deployed on the flanks.”",
+   "developments": "Recent developments — Newcastle United, 06 Nov: “Lewis Hall The United left back is part of Thomas Tuchel's England squad for their UEFA Nations League games against Croatia and Spain this month.” Tactical Football Analysis, 06 Nov: “Lewis Hall Scout Report At Newcastle 2026/2027 - Analysis Lewis Hall ’s defensive work is central to understanding what he offers Newcastle United Alongside recovering possession and helping the team play forward, the left-back carries a substantial workload inside his own penalty area.” Fantasy Football Scout, 03 Nov: ““If you just play long balls, that’s for sure not the style [William Osula] prefers and it was not the plan.” – Matthias Jaissle Even Lewis Hall (£5.3m), a genuine star in an average side, had a stinker.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 11,
+   "evidence_count": 13,
    "evidence_used": [
     "https://www.evertonfc.com/news/2026/november/05/branthwaite-fitness-update---team-news-for-coventry-test/",
     "https://www.fantasyfootballscout.co.uk/2026/11/03/fpl-notes-dewsbury-hall-unlucky-barrys-xg-poor-newcastle",
@@ -726,9 +726,10 @@
     "https://www.football365.com/news/eddie-howe-next-man-utd-manager-first-signing-lewis-hall-70-million-bid-newcastle",
     "https://www.football365.com/news/manchester-united-newcastle-united-lewis-hall-2027-transfer-decision-reached",
     "https://www.football365.com/news/lewis-hall-newcastle-stats-first-100m-defender-man-utd",
+    "https://www.newcastleunited.com/en/news/international-call-ups-november-2026",
+    "https://tacticalfootballanalysis.com/lewis-hall-scout-report-newcastle-united-2026-2027-analysis/",
     "https://www.evertonfc.com/news/2026/november/03/tarkowski-backs-everton-teammate-for-england-call-up/",
-    "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/",
-    "https://www.wearehullcity.co.uk/news/2026/october/11/hull-city-2-2-everton/"
+    "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-newcastle-set-to-double-down-on-hall-valuation-if-man-utd-return/nHxFxQFr/"
    ],
    "sources_used": [
     "Everton",
@@ -736,9 +737,47 @@
     "Football365",
     "FourFourTwo FPL",
     "Hull City",
-    "Soccerway"
+    "Newcastle United",
+    "Soccerway",
+    "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "International Magpies: Hall in England squad Published 3 hours ago Team Men newcastleunited.com rounds up the latest international call-ups ahead of November's fixture window...",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/international-call-ups-november-2026",
+     "published": "2026-11-06T10:00:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "fixtures"
+     ]
+    },
+    {
+     "text": "Lewis Hall The United left back is part of Thomas Tuchel's England squad for their UEFA Nations League games against Croatia and Spain this month.",
+     "source": "Newcastle United",
+     "url": "https://www.newcastleunited.com/en/news/international-call-ups-november-2026",
+     "published": "2026-11-06T10:00:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Lewis Hall Scout Report At Newcastle 2026/2027 - Analysis Lewis Hall ’s defensive work is central to understanding what he offers Newcastle United Alongside recovering possession and helping the team play forward, the left-back carries a substantial workload inside his own penalty area.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/lewis-hall-scout-report-newcastle-united-2026-2027-analysis/",
+     "published": "2026-11-06T09:54:17+00:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces"
+     ]
+    },
+    {
+     "text": "This Lewis Hall scout report and player analysis looks at how those contributions fit together.",
+     "source": "Tactical Football Analysis",
+     "url": "https://tacticalfootballanalysis.com/lewis-hall-scout-report-newcastle-united-2026-2027-analysis/",
+     "published": "2026-11-06T09:54:17+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "“If you just play long balls, that’s for sure not the style [William Osula] prefers and it was not the plan.” – Matthias Jaissle Even Lewis Hall (£5.3m), a genuine star in an average side, had a stinker.",
      "source": "Fantasy Football Scout",
@@ -898,16 +937,17 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "status": "Latest on Konsa — Fantasy Football 247, 30 Oct: “Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband.” FourFourTwo FPL, 16 Oct: “It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea .”",
-   "why_here": "Konsa is in the starting eleven this week at £4.8m as a DEF. The selection rests on 20 retrieved item(s) from 11 source(s), the most recent dated 05 Nov.",
+   "status": "Latest on Konsa — Fantasy Football Scout, 05 Nov: “From Viktor Gyokeres ‘ (£7.0m) two attacking returns to an Ezri Konsa (£4.8m) injury concern, here are our latest Scout Notes from the midweek UEFA Champions League games.” Fantasy Football 247, 30 Oct: “Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband.”",
+   "why_here": "Konsa is in the starting eleven this week at £4.8m as a DEF. The selection rests on 21 retrieved item(s) from 11 source(s), the most recent dated 06 Nov.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 04 Nov: “After winning the Europa League, the Basque boss saw the spine of his side ripped out, with Emiliano Martinez, Ezri Konsa, Lucas Digne, Youri Tielemans, Morgan Rogers and Ollie Watkins all sold – and Aston Villa started the season understandably poorly as a result.” Sports Mole, 02 Nov: “The result was built on superb organisation and discipline in front of David Raya’s goal, and one of the standout names was Ezri Konsa The England defender produced a top-level performance to secure the clean sheet.” Fantasy Football Scout, 02 Nov: “VERDICT: BUY EZRI KONSA Ezri Konsa (£4.7m) has served up 33 points in his last three matches for Arsenal, having scored once, kept three clean sheets and picked up two DefCon points, as well as seven bonus.”",
    "case_against": "What argues against him: Fantasy Football Scout, 05 Nov: “Q: At what point does Ezri Konsa (£4.8m) become too much of a minute’s risk, and who are the standout options to replace him? (via Obi 1 Kenobi 0 A: With William Saliba (£5.9m) back on the bench in midweek, plus a potential injury , Konsa could soon become a problem for his owners.” Fantasy Football Scout, 05 Nov: “If there are any minutes concerns for Konsa, which I think there probably will be, he’s a straightforward sell.” Sports Mole, 05 Nov: “Ezri Konsa © Iconsport / PA Images Status: Minor doubt Type of injury: Unspecified Possible return date: November 7 (vs. Hull) Defensive stalwart Ezri Konsa came off just past the hour mark against Slavia Prague due to an unspecified problem, rendering him doubtful for Saturday, but William Saliba's recent return from a back injury has given Arteta a welcome and extremely timely boost.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Illustrated FPL, 05 Nov: “Konsa only lasted 62 minutes in the Champions League clash on Wednesday.” Fantasy Football Scout, 05 Nov: “From Viktor Gyokeres ‘ (£7.0m) two attacking returns to an Ezri Konsa (£4.8m) injury concern, here are our latest Scout Notes from the midweek UEFA Champions League games.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Illustrated FPL, 06 Nov: “CB: Cristhian Mosquera — With Ezri Konsa suffering an injury midweek and William Saliba unlikely to be immediately restored to the starting XI, Arteta might turn to Mosquera this weekend.” Sports Illustrated FPL, 05 Nov: “Konsa only lasted 62 minutes in the Champions League clash on Wednesday.”",
    "developments": "Recent developments — Sports Illustrated FPL, 05 Nov: “He’s played so many games in the last few weeks,” the Spanish boss said of Konsa. “He had some issues and we decided to take him off.” Konsa is expected to undergo further testing in the build-up to Arsenal ’s clash with Hull City on Saturday.” Fantasy Football Scout, 05 Nov: “If we’re trying to cling on to some optimism, Arteta did cite the workload initially when asked about Konsa’s withdrawal.” Football365, 04 Nov: “Arsenal boss Mikel Arteta is planning to convert Ezri Konsa to a full-back as the Gunners prepare to welcome back William Saliba, according to reports.”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 20,
+   "evidence_count": 21,
    "evidence_used": [
+    "https://www.si.com/soccer/arsenal-predicted-lineup-vs-hull-11-7-26?utm_source=RSS",
     "https://www.si.com/soccer/mikel-arteta-damning-ezri-konsa-injury-update-silver-lining?utm_source=RSS",
     "https://www.fantasyfootballscout.co.uk/2026/11/05/what-to-do-with-konsa-is-isak-worth-9-2m-fpl-qa",
     "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/konsa-saka-latest-arsenal-injury-suspension-list-vs-hull_608457.html",
@@ -918,8 +958,7 @@
     "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
     "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
     "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
-    "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon",
-    "https://www.fantasyfootballscout.co.uk/2026/10/10/arsenal-v-leeds-team-news-konsa-havertz-fit-to-start"
+    "https://www.fantasyfootballscout.co.uk/2026/10/11/fpl-notes-calafioris-threat-sakas-big-chances-konsa-defcon"
    ],
    "sources_used": [
     "Coventry City",
@@ -935,6 +974,18 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "CB: Cristhian Mosquera — With Ezri Konsa suffering an injury midweek and William Saliba unlikely to be immediately restored to the starting XI, Arteta might turn to Mosquera this weekend.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/soccer/arsenal-predicted-lineup-vs-hull-11-7-26?utm_source=RSS",
+     "published": "2026-11-06T12:45:00+00:00",
+     "tone": "neutral",
+     "topics": [
+      "team news",
+      "injury",
+      "rotation"
+     ]
+    },
     {
      "text": "Konsa only lasted 62 minutes in the Champions League clash on Wednesday.",
      "source": "Sports Illustrated FPL",
@@ -2167,16 +2218,17 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "status": "Latest on Palmer — Football365, 26 Oct: “Can’t wait to hear Mike Dean explain how neither of Palmer’s yellows were straight red cards.” Sports Illustrated FPL, 25 Oct: “Palmer may have collected the first red card of his senior career, but he wasn’t even Chelsea’s worst performer in a toothless 2–0 defeat to the club’s hated London rivals Stand-in goalkeeper Mike Penders punched the visitors in front with a disastrous own goal in the 77th minute, shortly before Palmer collected his second, entirely unnecessary, yellow card.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 46 retrieved item(s) from 16 source(s), the most recent dated 02 Nov.",
-   "case_for": "What supports keeping him: Football365, 31 Oct: “Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined.” Flashscore, 31 Oct: “Match stats Flashscore 15:27 CET - Cole Palmer 's goal was his 50th in the Premier League, coming in 105 games.” Flashscore, 31 Oct: “Cole Palmer has scored from the penalty spot for Chelsea to make it 2-0, after Lisandro Martinez was sent off for a second yellow card after some truly abysmal, cowardly defending.”",
-   "case_against": "What argues against him: Football365, 30 Oct: “He was the boyhood United fan who grew up worshipping Wayne Rooney. ‘That was what we were seeing while scrolling social media in the build-up to a summer when England manager Thomas Tuchel excluded the 24-year-old from his World Cup squad. ‘In fairness, the original suggestion that Palmer might be interested in United was not plucked out of thin air.” Football365, 28 Oct: “Chelsea: Alonso makes brutal Liverpool decision as concerns over personal rift with key star emerge Chelsea manager Xabi Alonso Estevao might have been the only Chelsea stakeholder secretly pleased to see Cole Palmer shown a second yellow card in their 2-0 defeat to Tottenham on Saturday.” Sports Mole, 26 Oct: “CHELSEA'S SUSPENSION LIST Cole Palmer © Imago / Visionhaus Status: Suspended Return date: October 31 (vs. Man United) Cole Palmer was sent off after being shown two yellow cards against Spurs, though in truth he was lucky to avoid a straight red.”",
-   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — NBC Sports Rotoworld PL, 24 Oct: “Alonso will regret his inability to deploy an injured Joao Pedro and then rue the lack of attacking prowess well before Cole Palmer was sent off.” Sports Illustrated FPL, 15 Oct: “After initially appearing on the injury report as limited , Palmer missed Saturday's practice and was ruled out for the game \"He got kind of twisted up yesterday in practice.”",
-   "developments": "Recent developments — FourFourTwo FPL, 02 Nov: “Chelsea were a shambles in the first half thanks to a strange use of Cole Palmer that scrambled brains in the middle of the park.” FourFourTwo FPL, 02 Nov: “In that chaotic end-to-end first half, Chelsea consistently lost possession in the middle of the park (leading to quick United transitions, then quick Chelsea counters back the other way, hence the carnage) because Palmer’s position meant the passing lanes weren’t open.” 101 Great Goals — Fantasy, 31 Oct: “United produced an encouraging first-half performance but failed to make their chances count before Morgan Rogers and Cole Palmer struck after the break to condemn the visitors to another Premier League defeat.”",
-   "outlook": "On the coming weeks — FourFourTwo FPL, 26 Oct: “The tactical pattern at Stamford Bridge meant Palmer’s aggressive act was only ever going to help Spurs.” Sports Illustrated FPL, 25 Oct: “The quirk of the fixture list and the FA handbook has spared Palmer any Premier League absence, but he will sit out Chelsea ’s next game: a daunting trip to Anfield.”",
+   "status": "Latest on Palmer — Flashscore, 31 Oct: “Cole Palmer has scored from the penalty spot for Chelsea to make it 2-0, after Lisandro Martinez was sent off for a second yellow card after some truly abysmal, cowardly defending.” Football365, 26 Oct: “Can’t wait to hear Mike Dean explain how neither of Palmer’s yellows were straight red cards.”",
+   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 53 retrieved item(s) from 16 source(s), the most recent dated 06 Nov.",
+   "case_for": "What supports keeping him: Sports Mole, 06 Nov: “Even though Palmer is fully fit and available, the 24-year-old has been snubbed by Tuchel, who has instead handed senior call-ups to Josh King and Jobe Bellingham.” Football365, 31 Oct: “Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined.” Flashscore, 31 Oct: “Match stats Flashscore 15:27 CET - Cole Palmer 's goal was his 50th in the Premier League, coming in 105 games.”",
+   "case_against": "What argues against him: Sports Illustrated FPL, 06 Nov: “Tuchel called Palmer up for his first post-World Cup roster only to be disappointed by his swift withdrawal through injury .” 101 Great Goals — Fantasy, 06 Nov: “Palmer was the headline omission from the group named this morning for the Nations League games with Croatia and Spain and has seemingly paid the price for withdrawing from the last camp with a minor injury.” Soccerway, 06 Nov: “Tuchel said Palmer \"misses too many opportunities\" to impress at international level after pulling out of England 's last squad due to injury.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — 101 Great Goals — Fantasy, 06 Nov: ““So it’s not personal and of course we will never assume that Cole is not in the mindset to come and desperate to play for his country, but the competition is on and the players who were in camp did an amazing job and kept their place.” Tuchel made squad unity a major priority in his World Cup selection – with Palmer excluded – and has remained faithful to that idea.” Sports Mole, 06 Nov: “All eyes would have been on whether Chelsea's Cole Palmer would return to the squad, having been criticised by Tuchel after withdrawing from the September/October selection through injury.”",
+   "developments": "Recent developments — Football365, 06 Nov: “Cole Palmer: Tuchel aims seven-word 'attitude' dig at Chelsea star as England mask slips Cole Palmer has been left out of the England squad by Thomas Tuchel.” Football365, 06 Nov: “Thomas Tuchel trotted out the same “camp” camaraderie lines to explain Cole Palmer’s exclusion from the England squad before the mask slipped and he delivered seven damning words to corroborate claims that the Chelsea star is being punished for a lack of commitment to the cause.” Sports Illustrated FPL, 06 Nov: “At the time, the blunt German coach explained that Palmer had been overlooked because of “a lack of individual form” for Chelsea and the opinion that he was “just not outstanding” on a rare set of outings in the March international break.”",
+   "outlook": "On the coming weeks — Football365, 28 Oct: “Chelsea: Alonso makes brutal Liverpool decision as concerns over personal rift with key star emerge Chelsea manager Xabi Alonso Estevao might have been the only Chelsea stakeholder secretly pleased to see Cole Palmer shown a second yellow card in their 2-0 defeat to Tottenham on Saturday.” FourFourTwo FPL, 26 Oct: “The tactical pattern at Stamford Bridge meant Palmer’s aggressive act was only ever going to help Spurs.”",
    "confidence": "high",
-   "evidence_count": 46,
+   "evidence_count": 53,
    "evidence_used": [
+    "https://www.fourfourtwo.com/team/thomas-tuchel-makes-surprise-england-bellingham-announcement-three-lions-november-squad-in-full",
     "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
     "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
     "https://www.fantasyfootballscout.co.uk/2026/10/24/fpl-notes-pedro-injury-latest-why-palmer-isnt-flagged",
@@ -2186,9 +2238,8 @@
     "https://www.fourfourtwo.com/tactic/xabi-alonsos-overthinking-isnt-helping-a-chelsea-side-already-defined-by-muddled-thoughts",
     "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
     "https://www.si.com/soccer/cole-palmer-bold-prediction-signing-new-chelsea-contract?utm_source=RSS",
-    "https://www.football365.com/news/chelsea-top-scorers-premier-league-big-six-games-hazard-alonso",
-    "https://www.101greatgoals.com/football/premier-league/michael-carrick-admits-man-utd-problems-have-happened-too-often-chelsea-defeat/",
-    "https://theanalyst.com/articles/chelsea-vs-man-utd-stats-premier-league-10-2026"
+    "https://www.football365.com/news/opinion-palmer-tuchel-seven-word-dig-mask-slips",
+    "https://www.si.com/soccer/why-fit-cole-palmer-snubbed-england-boss-thomas-tuchel?utm_source=RSS"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2209,6 +2260,106 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Cole Palmer: Tuchel aims seven-word 'attitude' dig at Chelsea star as England mask slips Cole Palmer has been left out of the England squad by Thomas Tuchel.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/opinion-palmer-tuchel-seven-word-dig-mask-slips",
+     "published": "2026-11-06T12:46:47+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Thomas Tuchel trotted out the same “camp” camaraderie lines to explain Cole Palmer’s exclusion from the England squad before the mask slipped and he delivered seven damning words to corroborate claims that the Chelsea star is being punished for a lack of commitment to the cause.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/opinion-palmer-tuchel-seven-word-dig-mask-slips",
+     "published": "2026-11-06T12:46:47+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "At the time, the blunt German coach explained that Palmer had been overlooked because of “a lack of individual form” for Chelsea and the opinion that he was “just not outstanding” on a rare set of outings in the March international break.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/soccer/why-fit-cole-palmer-snubbed-england-boss-thomas-tuchel?utm_source=RSS",
+     "published": "2026-11-06T12:30:00+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Tuchel called Palmer up for his first post-World Cup roster only to be disappointed by his swift withdrawal through injury .",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/soccer/why-fit-cole-palmer-snubbed-england-boss-thomas-tuchel?utm_source=RSS",
+     "published": "2026-11-06T12:30:00+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Palmer was the headline omission from the group named this morning for the Nations League games with Croatia and Spain and has seemingly paid the price for withdrawing from the last camp with a minor injury.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/internationals/thomas-tuchel-aims-barb-cole-palmer/",
+     "published": "2026-11-06T12:10:25+00:00",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "“So it’s not personal and of course we will never assume that Cole is not in the mindset to come and desperate to play for his country, but the competition is on and the players who were in camp did an amazing job and kept their place.” Tuchel made squad unity a major priority in his World Cup selection – with Palmer excluded – and has remained faithful to that idea.",
+     "source": "101 Great Goals — Fantasy",
+     "url": "https://www.101greatgoals.com/football/internationals/thomas-tuchel-aims-barb-cole-palmer/",
+     "published": "2026-11-06T12:10:25+00:00",
+     "tone": "neutral",
+     "topics": [
+      "team news"
+     ]
+    },
+    {
+     "text": "Tuchel said Palmer \"misses too many opportunities\" to impress at international level after pulling out of England 's last squad due to injury.",
+     "source": "Soccerway",
+     "url": "https://www.soccerway.com/news/palmer-left-out-of-england-squad-as-jobe-bellingham-receives-first-call-up/dlkysn1d/",
+     "published": "2026-11-06T12:09:10+01:00",
+     "tone": "negative",
+     "topics": [
+      "injury",
+      "tactics"
+     ]
+    },
+    {
+     "text": "England boss Thomas Tuchel once again left Chelsea star Cole Palmer out of his squad with Jobe Bellingham and Josh King getting their first call-ups.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/england-palmer-out-jobe-bellingham-king-first-call-ups",
+     "published": "2026-11-06T10:54:27+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Chelsea attacking midfielder Palmer has missed out on the England squad once again after not being selected in the squad for the World Cup over the summer.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/england-palmer-out-jobe-bellingham-king-first-call-ups",
+     "published": "2026-11-06T10:54:27+00:00",
+     "tone": "negative",
+     "topics": []
+    },
+    {
+     "text": "All eyes would have been on whether Chelsea's Cole Palmer would return to the squad, having been criticised by Tuchel after withdrawing from the September/October selection through injury.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/palmer-white-king-decisions-england-squad-for-november-confirmed_608569.html",
+     "published": "2026-11-06T10:01:00+00:00",
+     "tone": "negative",
+     "topics": [
+      "team news",
+      "injury"
+     ]
+    },
+    {
+     "text": "Even though Palmer is fully fit and available, the 24-year-old has been snubbed by Tuchel, who has instead handed senior call-ups to Josh King and Jobe Bellingham.",
+     "source": "Sports Mole",
+     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/palmer-white-king-decisions-england-squad-for-november-confirmed_608569.html",
+     "published": "2026-11-06T10:01:00+00:00",
+     "tone": "positive",
+     "topics": []
+    },
     {
      "text": "Chelsea were a shambles in the first half thanks to a strange use of Cole Palmer that scrambled brains in the middle of the park.",
      "source": "FourFourTwo FPL",
@@ -3154,11 +3305,11 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football 247, 30 Oct: “Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband.” Football365, 23 Oct: “If this happens, a knock-on effect would be a mass player exodus, with Haaland among those who would inevitably leave if Man City fall below the Premier League.”",
-   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 94 retrieved item(s) from 17 source(s), the most recent dated 04 Nov.",
-   "case_for": "What supports keeping him: NBC Sports Rotoworld PL, 04 Nov: “Erling Haaland’s Premier League goal video highlights: 2026-27 season Week 8 — Goal at Aston Villa Haaland's towering header brings Man City level It was only a matter of time for Erling Haaland to put his stamp on the match as he rises highest to the cross to score Manchester City's equalizer at Villa Park.” NBC Sports Rotoworld PL, 04 Nov: “2 goals vs Ipswich Town Haaland heads Man City 2-1 in front of Ipswich Erling Haaland scores his seventh goal of the season to reestablish Manchester City's lead over Ipswich Town.” Sports Mole, 30 Oct: “Citizens supporters are keen to see the return of Haaland who has made a prolific start to the 2026-27 campaign, scoring 13 goals in just 11 appearances across all competitions.”",
+   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 94 retrieved item(s) from 17 source(s), the most recent dated 06 Nov.",
+   "case_for": "What supports keeping him: Football365, 06 Nov: “MORE: The ridiculous stats of Man City goalbot Erling Haaland 4) Marcus Tavernier (Bournemouth) – 84.9 The Bournemouth attacker is graded highest in the Premier League for free-kick shooting and unpressured shooting.” NBC Sports Rotoworld PL, 04 Nov: “Erling Haaland’s Premier League goal video highlights: 2026-27 season Week 8 — Goal at Aston Villa Haaland's towering header brings Man City level It was only a matter of time for Erling Haaland to put his stamp on the match as he rises highest to the cross to score Manchester City's equalizer at Villa Park.” NBC Sports Rotoworld PL, 04 Nov: “2 goals vs Ipswich Town Haaland heads Man City 2-1 in front of Ipswich Erling Haaland scores his seventh goal of the season to reestablish Manchester City's lead over Ipswich Town.”",
    "case_against": "What argues against him: Football365, 03 Nov: “F365 Features Erling Haaland Subhankar Mondal 02 Nov 2026 Man City: Alf-Inge Haaland responds when asked whether Erling Haaland could leave after Arsenal contact Arsenal are among the clubs interested in signing Erling Haaland should Manchester City be thrown out of the Premier League.” Sports Mole, 30 Oct: “Haaland was among five senior stars who were rested for that game, and after delivering a positive injury update on Friday , manager Enzo Maresca is expected to revert to a strong lineup including Man City’s No.9.” Sports Mole, 24 Oct: “Emery has also chosen to name 17-year-old forward Brian Madjo on the substitutes' bench instead of Tammy Abraham. © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Haaland returns for Man City against Aston Villa Meanwhile, as expected, Erling Haaland returns to the Man City XI after a minor ankle knock.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 04 Nov: “Haaland will wear the captain’s armband in the absence of Dias, who will begin on the substitutes’ bench for the first time this season in either the Champions League or Premier League.” Sports Mole, 30 Oct: “Tresoldi is currently joint-top of the Champions League scoring charts, level with Bayern Munich forward Harry Kane and Manchester City striker Erling Haaland.”",
-   "developments": "Recent developments — 101 Great Goals — Fantasy, 04 Nov: “Haaland had found the net 12 times across his previous meetings with Leipzig and, despite being a largely peripheral figure on Wednesday, it was his far-post finish from Elliot Anderson’s superb cross that gave City a 3-2 away win, making them the first team to beat Leipzig at home this season.” 101 Great Goals — Fantasy, 04 Nov: “Unsurprisingly, Haaland was City’s saviour, putting them in a strong position as they seek a top-eight finish in the league phase.” Football365, 03 Nov: “We might be looking at the 2026/27 Player of the Season. 1) Erling Haaland (Manchester City) Haaland’s production has not slowed down since Enzo Maresca replaced Pep Guardiola.”",
+   "developments": "Recent developments — Football365, 06 Nov: “There’s also quality with the quantity with Haaland also having the highest number of shots above expectation and most unsaveable shots.” 101 Great Goals — Fantasy, 04 Nov: “Haaland had found the net 12 times across his previous meetings with Leipzig and, despite being a largely peripheral figure on Wednesday, it was his far-post finish from Elliot Anderson’s superb cross that gave City a 3-2 away win, making them the first team to beat Leipzig at home this season.” 101 Great Goals — Fantasy, 04 Nov: “Unsurprisingly, Haaland was City’s saviour, putting them in a strong position as they seek a top-eight finish in the league phase.”",
    "outlook": "On the coming weeks — Tactical Football Analysis, 29 Oct: “This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro.” Sports Mole, 27 Oct: “Haaland, who finished eighth in the 2026 Ballon d’Or rankings , also has an impressive scoring record against Brighton , netting seven times in his last seven encounters with the Seagulls.”",
    "confidence": "high",
    "evidence_count": 94,
@@ -3196,6 +3347,26 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "There’s also quality with the quantity with Haaland also having the highest number of shots above expectation and most unsaveable shots.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-top-10-shooting-grades-stats",
+     "published": "2026-11-06T07:45:24+00:00",
+     "tone": "neutral",
+     "topics": [
+      "statistics"
+     ]
+    },
+    {
+     "text": "MORE: The ridiculous stats of Man City goalbot Erling Haaland 4) Marcus Tavernier (Bournemouth) – 84.9 The Bournemouth attacker is graded highest in the Premier League for free-kick shooting and unpressured shooting.",
+     "source": "Football365",
+     "url": "https://www.football365.com/news/premier-league-top-10-shooting-grades-stats",
+     "published": "2026-11-06T07:45:24+00:00",
+     "tone": "positive",
+     "topics": [
+      "tactics"
+     ]
+    },
     {
      "text": "Haaland had found the net 12 times across his previous meetings with Leipzig and, despite being a largely peripheral figure on Wednesday, it was his far-post finish from Elliot Anderson’s superb cross that gave City a 3-2 away win, making them the first team to beat Leipzig at home this season.",
      "source": "101 Great Goals — Fantasy",
@@ -4357,24 +4528,6 @@
      ]
     },
     {
-     "text": "Speaking to Sky Sports , City's Haaland called for unity amongst all associated with the club, saying: \"We need to stick together.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-city/title-race/news/stay-positive-citizens-haaland-issues-rallying-cry-before-anfield-clash_606512.html",
-     "published": "2026-10-09T00:42:00+01:00",
-     "tone": "neutral",
-     "topics": [
-      "press conference"
-     ]
-    },
-    {
-     "text": "Key figures at City have responded in a calm manner to the club's guilty verdict, with the likes of Enzo Maresca echoing the sentiment shared by Haaland.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-city/title-race/news/stay-positive-citizens-haaland-issues-rallying-cry-before-anfield-clash_606512.html",
-     "published": "2026-10-09T00:42:00+01:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
      "text": "The Premier League reported that more than 1.7 million managers activated Triple Captain , with the overwhelming majority backing Erling Haaland at home to Coventry.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/haaland-triple-captain-gw3-result-2026-27",
@@ -4491,15 +4644,15 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.brightonandhovealbion.com/media-video/spurs-v-albion-or-ruiz-pre-match-press-conference",
     "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-sacramento-kings-player-props-injury-report-and-prediction--nba_608469.html",
     "https://www.sportsmole.co.uk/football/leeds-united/injury-news/injuries-and-suspensions/rodon-okafor-latest-leeds-injury-suspension-list-vs-spurs_608380.html",
     "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/savio-bergvall-mudryk-updates-spurs-injury-suspension-list-vs-leeds_608369.html",
     "https://www.sportsmole.co.uk/basketball/dallas-mavericks/preview/dallas-mavericks-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608315.html",
-    "https://www.sportsmole.co.uk/basketball/utah-jazz/preview/utah-jazz-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608201.html",
-    "https://www.cpfc.co.uk/news/match-reports/report-highlights-palace-tottenham-spurs-october-2026/"
+    "https://www.sportsmole.co.uk/basketball/utah-jazz/preview/utah-jazz-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608201.html"
    ],
    "sources_used": [
-    "Crystal Palace",
+    "Brighton & Hove Albion",
     "Sports Mole"
    ],
    "quotes": []
