@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 10,
- "ran_at": "2026-11-05T22:41:47+00:00",
- "seconds": 161.8,
+ "ran_at": "2026-11-06T03:27:55+00:00",
+ "seconds": 154.1,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 709,
- "substantive_items": 302,
- "duplicates_removed": 21,
- "deeply_analysed": 74,
- "deep_read_failed": 16,
- "corpus_size": 19617,
+ "sources_readable": 54,
+ "candidates_discovered": 530,
+ "substantive_items": 141,
+ "duplicates_removed": 6,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 19638,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 302 articles"
+    "54/78 sources returned 141 articles"
    ]
   },
   "blackout": {
@@ -41,6 +41,8 @@
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
+  "FPL Central: nothing published in the last 10 days",
+  "FISO: ConnectionError for https://fiso.co.uk/feed/",
   "Statz.ai FPL: HTTP 403 for https://statz.ai/blog/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -49,6 +51,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
@@ -637,7 +640,7 @@
     "transfer"
    ],
    "strength": "strong",
-   "priority": "low",
+   "priority": "high",
    "researched": true,
    "items": [
     {
@@ -1344,7 +1347,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 98,
+   "evidence_count": 94,
    "source_count": 17,
    "latest_evidence": "2026-11-05T10:32:12+00:00",
    "official_source_found": true,
