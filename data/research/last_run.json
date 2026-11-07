@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-07T02:51:55+00:00",
- "seconds": 149.4,
+ "ran_at": "2026-11-07T11:46:11+00:00",
+ "seconds": 171.3,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 542,
- "substantive_items": 147,
- "duplicates_removed": 8,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 19716,
+ "candidates_discovered": 562,
+ "substantive_items": 167,
+ "duplicates_removed": 9,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 19694,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 147 articles"
+    "58/78 sources returned 167 articles"
    ]
   },
   "blackout": {
@@ -774,7 +774,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 56,
+   "evidence_count": 55,
    "source_count": 16,
    "latest_evidence": "2026-11-06T20:52:53+00:00",
    "official_source_found": true,
@@ -1194,7 +1194,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 132,
+   "evidence_count": 131,
    "source_count": 19,
    "latest_evidence": "2026-11-06T14:00:00+00:00",
    "official_source_found": true,
@@ -1476,7 +1476,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-11-06T12:54:58+00:00",
+   "latest_evidence": "2026-11-07T00:15:26+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1500,6 +1500,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Spurs boss Roberto De Zerbi makes Pedro Porro selection admission ahead of Leeds clash",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-makes-porro-selection-admission-ahead-of-leeds-clash_608652.html",
+     "source": "Sports Mole",
+     "published": "2026-11-07T00:15:26+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur boss Roberto De Zerbi makes an admission over a key selection decision ahead of Saturday's Premier League clash with Leeds United."
+    },
     {
      "title": "Leeds v Tottenham: Prediction, team news, lineups and odds",
      "url": "https://www.football365.com/match-preview/leeds-v-tottenham-prediction-preview",
@@ -1544,15 +1553,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole rounds up all of Leeds United's latest injury and suspension news ahead of Saturday's Premier League fixture against Tottenham Hotspur."
-    },
-    {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Leeds United: Savio, Lucas Bergvall, Mykhaylo Mudryk latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/savio-bergvall-mudryk-updates-spurs-injury-suspension-list-vs-leeds_608369.html",
-     "source": "Sports Mole",
-     "published": "2026-11-04T09:37:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Leeds United."
     }
    ]
   },
