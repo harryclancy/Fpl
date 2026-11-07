@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-07T11:46:11+00:00",
- "seconds": 171.3,
+ "ran_at": "2026-11-07T20:56:26+00:00",
+ "seconds": 199.8,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 562,
- "substantive_items": 167,
- "duplicates_removed": 9,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 19694,
+ "candidates_discovered": 674,
+ "substantive_items": 287,
+ "duplicates_removed": 18,
+ "deeply_analysed": 69,
+ "deep_read_failed": 21,
+ "corpus_size": 19614,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 167 articles"
+    "58/78 sources returned 287 articles"
    ]
   },
   "blackout": {
@@ -51,7 +51,7 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -578,7 +578,7 @@
    "club": "ARS",
    "evidence_count": 27,
    "source_count": 12,
-   "latest_evidence": "2026-11-06T19:19:39+01:00",
+   "latest_evidence": "2026-11-07T14:40:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -603,6 +603,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal v Hull + Fulham v Newcastle team news: Konsa starts",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/07/arsenal-v-hull-fulham-v-newcastle-team-news-konsa-starts",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-07T14:40:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Mikel Arteta explain William Saliba's absence ahead of kick-off The post Arsenal v Hull + Fulham v Newcastle team news: Konsa starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal boss Arteta confirms Saka out for 'weeks' as Konsa fit to face Hull",
      "url": "https://www.soccerway.com/news/soccer-premier-league-arsenal-boss-arteta-confirms-saka-out-for-weeks-as-konsa-fit-to-face-hull/MaADWoV6/",
@@ -701,15 +710,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Evanilson, van Hecke, Konsa, DCL: Buy, keep or sell in Gameweek 10? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FF247 Site Team News GW9",
-     "url": "https://fantasyfootball247.co.uk/ff247-site-team-news-gw9-2/",
-     "source": "Fantasy Football 247",
-     "published": "2026-10-30T12:31:18+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "FF247 Site Team News GW9 Welcome to FF247 Site Team GW9 Gameweek 8 was a painful one for many, and we very much include ourselves among them. Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband. Other […] The post FF247 Site Team News GW9 appeared first on Fantasy Football 247 - Premier League Tips ."
     }
    ]
   },
@@ -774,7 +774,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 51,
    "source_count": 16,
    "latest_evidence": "2026-11-06T20:52:53+00:00",
    "official_source_found": true,
@@ -892,15 +892,6 @@
      "excerpt": "Chelsea star Cole Palmer announces a new long-term deal in unique fashion, offering a boost to the Blues ahead of their Premier League clash with Bournemouth."
     },
     {
-     "title": "‘Big Role’—Cole Palmer Makes Bold Prediction After Signing New Chelsea Contract",
-     "url": "https://www.si.com/soccer/cole-palmer-bold-prediction-signing-new-chelsea-contract?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-10T11:10:00+00:00",
-     "matched_on": "palmer",
-     "kind": "transfer",
-     "excerpt": "The Blues talisman has added an extra year onto his existing deal."
-    },
-    {
      "title": "Chelsea news: Xabi Alonso reacts to Cole Palmer's England squad omission, Thomas Tuchel comments",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/chelsea-boss-alonso-reacts-to-palmers-england-squad-omission_608617.html",
      "source": "Sports Mole",
@@ -908,15 +899,24 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Chelsea manager Xabi Alonso suggests that he does not discuss Cole Palmer's situation with England with the Blues playmaker."
+    },
+    {
+     "title": "Cole Palmer must focus on Chelsea form after England rejection, says Xabi Alonso",
+     "url": "https://www.soccerway.com/news/cole-palmer-must-focus-on-chelsea-form-after-england-rejection-says-xabi-alonso/QVVOnJx2/",
+     "source": "Soccerway",
+     "published": "2026-11-06T17:19:21+01:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 43,
-   "source_count": 17,
-   "latest_evidence": "2026-11-07T02:40:34+00:00",
+   "evidence_count": 44,
+   "source_count": 18,
+   "latest_evidence": "2026-11-07T13:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1032,6 +1032,15 @@
      "excerpt": ""
     },
     {
+     "title": "Preview: Black Cats host the Blues",
+     "url": "https://www.safc.com/news/2026/november/07/preview--black-cats-host-the-blues/",
+     "source": "Sunderland",
+     "published": "2026-11-07T13:00:00+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Fixtures Sunderland Vs. Chelsea - Sun, Nov 08 2026, 14:00 Sunderland return to Premier League action on Sunday as they welcome Chelsea to the Stadium of Light for the final game before the November international window. The Black Cats' relentless schedule in the first few months of the season shows no signs of slowing down. They were last in action on Thursday night in the UEFA Europa League. We h"
+    },
+    {
      "title": "Kennedi Rogers’ 19 kills lead No. 10 Tennessee volleyball to sweep of Mississippi State",
      "url": "https://www.si.com/college/tennessee/volleyball/kennedi-rogers-19-kills-lead-no-10-tennessee-volleyball-to-sweep-of-mississippi-state-01m6sx30kzat?utm_source=RSS",
      "source": "Sports Illustrated FPL",
@@ -1039,15 +1048,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Kennedi Rogers had 19 kills as No. 10 Tennessee volleyball swept Mississippi State 25-20, 25-14, 29-27 at Food City Center to snap a two-match skid."
-    },
-    {
-     "title": "Premier League signings of the season: Liverpool duo Jacquet and Araujo in top 10",
-     "url": "https://www.football365.com/news/ranking-top-10-premier-league-signings-of-the-season",
-     "source": "Football365",
-     "published": "2026-11-05T15:19:22+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Morgan Rogers is among the top 10 Premier League signings of the season, with two Aston Villa players in ahead of Elliot Anderson."
     }
    ]
   },
@@ -1196,7 +1196,7 @@
    "club": "AVL",
    "evidence_count": 131,
    "source_count": 19,
-   "latest_evidence": "2026-11-06T14:00:00+00:00",
+   "latest_evidence": "2026-11-07T15:00:00-05:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1222,19 +1222,19 @@
    "researched": true,
    "items": [
     {
-     "title": "Lamar Jackson's latest injury raises obvious questions about his future in Baltimore",
-     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jacksons-latest-injury-raises-obvious-questions-about-his-future-in-baltimore",
+     "title": "NFL Week 9 Injury Report: Jordyn Tyson to debut, Garrett Wilson ruled out, Kyler hamstring injury",
+     "url": "https://www.nbcsports.com/fantasy/football/news/nfl-week-8-injury-report-jeremiyah-love-hits-ir-lamar-jackson-likely-done-for-season-and-more",
      "source": "NBC Sports Rotoworld PL",
-     "published": "2026-11-05T06:42:15-05:00",
+     "published": "2026-11-07T15:00:00-05:00",
      "matched_on": "jackson",
      "kind": "team news",
      "excerpt": ""
     },
     {
-     "title": "NFL Week 9 Injury Report: Jeremiyah Love hits IR, Lamar Jackson likely done for season, and more",
-     "url": "https://www.nbcsports.com/fantasy/football/news/nfl-week-8-injury-report-jeremiyah-love-hits-ir-lamar-jackson-likely-done-for-season-and-more",
+     "title": "Lamar Jackson's latest injury raises obvious questions about his future in Baltimore",
+     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jacksons-latest-injury-raises-obvious-questions-about-his-future-in-baltimore",
      "source": "NBC Sports Rotoworld PL",
-     "published": "2026-11-04T20:00:00-05:00",
+     "published": "2026-11-05T06:42:15-05:00",
      "matched_on": "jackson",
      "kind": "team news",
      "excerpt": ""
@@ -1334,9 +1334,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 88,
+   "evidence_count": 89,
    "source_count": 16,
-   "latest_evidence": "2026-11-06T07:45:24+00:00",
+   "latest_evidence": "2026-11-07T13:42:40+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1476,8 +1476,8 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-11-07T00:15:26+00:00",
-   "official_source_found": true,
+   "latest_evidence": "2026-11-07T11:40:00+00:00",
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1487,6 +1487,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1500,6 +1501,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Leeds v Spurs team news: Calvert-Lewin starts, no Stach",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/07/leeds-v-spurs-team-news-calvert-lewin-starts-no-stach",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-07T11:40:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Two changes for Leeds, one for Spurs The post Leeds v Spurs team news: Calvert-Lewin starts, no Stach appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Leeds v Tottenham: Confirmed team news and line-ups for early clash in Yorkshire",
+     "url": "https://www.101greatgoals.com/football/premier-league/leeds-v-tottenham-confirmed-team-news-line-ups/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-07T11:18:50+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the team news ahead of Leeds vs Tottenham in the Premier League."
+    },
+    {
+     "title": "San Antonio Spurs vs. Portland Trail Blazers: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-portland-trail-blazers-player-props-injury-report-and-prediction--nba_608671.html",
+     "source": "Sports Mole",
+     "published": "2026-11-07T10:01:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Spurs vs. Trail Blazers preview with player props, injury report and prediction for Saturday’s NBA game at Moda Center, plus form and matchups."
+    },
     {
      "title": "Spurs boss Roberto De Zerbi makes Pedro Porro selection admission ahead of Leeds clash",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-makes-porro-selection-admission-ahead-of-leeds-clash_608652.html",
@@ -1526,33 +1554,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "In-form Tottenham head to Leeds on Saturday for the lunchtime kick-off in the Premier League. Read our preview here..."
-    },
-    {
-     "title": "Spurs v Albion | Ruiz pre-match press conference",
-     "url": "https://www.brightonandhovealbion.com/media-video/spurs-v-albion-or-ruiz-pre-match-press-conference",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-11-06T00:00:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "🎬 Spurs v Albion | Ruiz pre-match press conference"
-    },
-    {
-     "title": "San Antonio Spurs vs. Sacramento Kings: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-sacramento-kings-player-props-injury-report-and-prediction--nba_608469.html",
-     "source": "Sports Mole",
-     "published": "2026-11-05T10:06:01+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Kings vs. Spurs preview with player props, injury report and prediction as Wembanyama’s Spurs visit a Sacramento side yet to win at home."
-    },
-    {
-     "title": "Leeds injury, suspension list and return dates vs. Tottenham Hotspur: Joe Rodon, Noah Okafor latest",
-     "url": "https://www.sportsmole.co.uk/football/leeds-united/injury-news/injuries-and-suspensions/rodon-okafor-latest-leeds-injury-suspension-list-vs-spurs_608380.html",
-     "source": "Sports Mole",
-     "published": "2026-11-04T11:40:06+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Leeds United's latest injury and suspension news ahead of Saturday's Premier League fixture against Tottenham Hotspur."
     }
    ]
   },
