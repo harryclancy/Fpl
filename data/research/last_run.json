@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-07T20:56:26+00:00",
- "seconds": 199.8,
+ "ran_at": "2026-11-08T02:32:01+00:00",
+ "seconds": 153.4,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 674,
- "substantive_items": 287,
- "duplicates_removed": 18,
- "deeply_analysed": 69,
- "deep_read_failed": 21,
- "corpus_size": 19614,
+ "candidates_discovered": 562,
+ "substantive_items": 188,
+ "duplicates_removed": 14,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 19643,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 287 articles"
+    "58/78 sources returned 188 articles"
    ]
   },
   "blackout": {
@@ -51,7 +51,7 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: timed out after 12s for https://www.tottenhamhotspur.com/sitemap/news_3.xml",
+  "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -202,8 +202,8 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 12,
-   "source_count": 6,
+   "evidence_count": 8,
+   "source_count": 5,
    "latest_evidence": "2026-11-01T08:46:32+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -218,7 +218,6 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -266,15 +265,6 @@
      "excerpt": "Sunderland look limp without Brian Brobbey as Brighton consolidate third The post FPL notes: De Cuyper + Gross share top spot in points table appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Danso reflects on Brighton defeat",
-     "url": "https://www.safc.com/news/2026/october/10/danso-reflects-on-brighton-defeat/",
-     "source": "Sunderland",
-     "published": "2026-10-10T17:31:38+00:00",
-     "matched_on": "de cuyper",
-     "kind": "transfer",
-     "excerpt": "Kevin Danso says Sunderland must learn from their 2-0 defeat to Brighton & Hove Albion and quickly turn their attention to Thursday’s UEFA Europa League trip to SCU Torreense. The Black Cats were beaten at the Stadium of Light on Saturday afternoon, with second-half goals from Maxim De Cuyper and Jaouen Hadjam securing the visitors all three points. “We didn’t create enough clear-cut chances and, "
-    },
-    {
      "title": "Maxim De Cuyper Scout Report At Brighton 2026/2027: From Club Brugge Prospect To Premier League Difference-Maker - Player Analysis",
      "url": "https://tacticalfootballanalysis.com/maxim-de-cuyper-scout-report-brighton-2026-2027-analysis/",
      "source": "Tactical Football Analysis",
@@ -300,33 +290,6 @@
      "matched_on": "de cuyper",
      "kind": "general",
      "excerpt": "Albion's squad has evolved after some experienced faces left in the summer, according to our Dutch defender."
-    },
-    {
-     "title": "Le Bris: We must stick to our plan and fight",
-     "url": "https://www.safc.com/news/2026/october/10/le-bris--we-must-stick-to-our-plan-and-fight/",
-     "source": "Sunderland",
-     "published": "2026-10-10T16:41:32+00:00",
-     "matched_on": "de cuyper",
-     "kind": "general",
-     "excerpt": "Régis Le Bris called on Sunderland to remain committed to their principles after suffering a 2-0 defeat to Brighton & Hove Albion at the Stadium of Light. The Black Cats were beaten by two second-half goals as Brighton extended their winning run to three Premier League matches. Maxim De Cuyper opened the scoring eight minutes after the restart, before Brighton were reduced to 10 men when Pascal St"
-    },
-    {
-     "title": "Post-match | Hurzeler & De Cuyper | Sunderland v Brighton",
-     "url": "https://www.brightonandhovealbion.com/media-video/post-match-or-huerzeler-and-de-cuyper-or-sunderland-v-brighton",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-10-10T16:30:00+00:00",
-     "matched_on": "de cuyper",
-     "kind": "general",
-     "excerpt": "🎬 Post-match | Hurzeler & De Cuyper | Sunderland v Brighton"
-    },
-    {
-     "title": "Sunderland defeat at home to Brighton",
-     "url": "https://www.safc.com/news/2026/october/10/sunderland-defeat-at-home-to-brighton/",
-     "source": "Sunderland",
-     "published": "2026-10-10T16:20:17+00:00",
-     "matched_on": "de cuyper",
-     "kind": "general",
-     "excerpt": "Sunderland 0-2 Brighton Sunderland suffered a 2-0 defeat to Brighton & Hove Albion at the Stadium of Light on Saturday afternoon. The Black Cats were made to pay for two moments in the second half as Brighton extended their winning run to three Premier League matches. Fabian Hurzeler’s side broke the deadlock eight minutes after the restart. Pascal Gross found Maxim De Cuyper with a precise pass i"
     },
     {
      "title": "Maxim de cuyper fpl 2026 27",
@@ -774,7 +737,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 51,
+   "evidence_count": 48,
    "source_count": 16,
    "latest_evidence": "2026-11-06T20:52:53+00:00",
    "official_source_found": true,
@@ -856,24 +819,6 @@
      "excerpt": "Preparing to visit the Las Vegas Raiders in Week 6, the Buffalo Bills held a walkthrough practice on Wednesday in Irvine, and one of their veteran WRs was missing."
     },
     {
-     "title": "3pm team news: Pedro + Palmer start, James absent",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/10/3pm-team-news-pedro-palmer-start-james-absent",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-10T13:50:00+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Four matches kick off at 15:00 BST The post 3pm team news: Pedro + Palmer start, James absent appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Chelsea vs. Bournemouth: Major injury boost as Cole Palmer declared fit for starting XI alongside two key Xabi Alonso stars",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/palmer-and-two-others-who-returns-from-injury-for-the-blues-against-cherries_606629.html",
-     "source": "Sports Mole",
-     "published": "2026-10-10T14:35:27+01:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Chelsea are set to take on Bournemouth at Stamford Bridge on Saturday, and despite injury fears, Cole Palmer and two other stars make the starting XI."
-    },
-    {
      "title": "Xabi Alonso’s overthinking isn’t helping a Chelsea side already defined by muddled thoughts",
      "url": "https://www.fourfourtwo.com/tactic/xabi-alonsos-overthinking-isnt-helping-a-chelsea-side-already-defined-by-muddled-thoughts",
      "source": "FourFourTwo FPL",
@@ -881,15 +826,6 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
-    },
-    {
-     "title": "Chelsea news: Cole Palmer announces new long-term contract in his own unique way ahead of Bournemouth clash",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/here-to-stay-palmer-announces-new-chelsea-deal-in-his-own-unique-way_606621.html",
-     "source": "Sports Mole",
-     "published": "2026-10-10T13:18:00+01:00",
-     "matched_on": "palmer",
-     "kind": "transfer",
-     "excerpt": "Chelsea star Cole Palmer announces a new long-term deal in unique fashion, offering a boost to the Blues ahead of their Premier League clash with Bournemouth."
     },
     {
      "title": "Chelsea news: Xabi Alonso reacts to Cole Palmer's England squad omission, Thomas Tuchel comments",
@@ -908,6 +844,33 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "Tuchel aims seven-word ‘attitude’ dig at Palmer as England mask slips",
+     "url": "https://www.football365.com/news/opinion-palmer-tuchel-seven-word-dig-mask-slips",
+     "source": "Football365",
+     "published": "2026-11-06T12:46:47+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Tuchel laid the ‘camp’ camaraderie stuff on with a trowel before the mask slipped and he revealed a damning seven-word reason for Palmer’s England exclusion."
+    },
+    {
+     "title": "Why Fully Fit Cole Palmer Has Been Snubbed by England Boss Thomas Tuchel",
+     "url": "https://www.si.com/soccer/why-fit-cole-palmer-snubbed-england-boss-thomas-tuchel?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-11-06T12:30:00+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Tuchel also ruled on the long-term England future of a player who hasn’t made an international appearance since March."
+    },
+    {
+     "title": "Thomas Tuchel takes aim at Cole Palmer and says he wants players to show it ‘matters’ to play for England",
+     "url": "https://www.101greatgoals.com/football/internationals/thomas-tuchel-aims-barb-cole-palmer/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-06T12:10:25+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Cole Palmer was left out of the England squad named this morning by Thomas Tuchel"
     }
    ]
   },
@@ -1196,7 +1159,7 @@
    "club": "AVL",
    "evidence_count": 131,
    "source_count": 19,
-   "latest_evidence": "2026-11-07T15:00:00-05:00",
+   "latest_evidence": "2026-11-08T02:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1476,7 +1439,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-11-07T11:40:00+00:00",
+   "latest_evidence": "2026-11-07T14:38:02+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1501,6 +1464,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Leeds 1-0 Tottenham: Report, result and goals as Okafor gives hosts much-needed win",
+     "url": "https://www.101greatgoals.com/match-reports/leeds-1-0-tottenham-report-result-goals/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-07T14:38:02+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the action from Leeds vs Tottenham in the Premier League."
+    },
     {
      "title": "Leeds v Spurs team news: Calvert-Lewin starts, no Stach",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/07/leeds-v-spurs-team-news-calvert-lewin-starts-no-stach",
@@ -1545,15 +1517,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "All the team news and predictions ahead of the Premier League clash between Leeds and Tottenham."
-    },
-    {
-     "title": "Leeds v Tottenham: Preview, expected line-ups, stats and where to watch",
-     "url": "https://www.101greatgoals.com/match-previews/premier-league-matches/leeds-v-tottenham-preview-expected-line-ups-stats-stream-where-to-watch/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-11-06T09:36:13+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "In-form Tottenham head to Leeds on Saturday for the lunchtime kick-off in the Premier League. Read our preview here..."
     }
    ]
   },
