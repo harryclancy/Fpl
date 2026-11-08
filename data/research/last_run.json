@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-08T11:58:19+00:00",
- "seconds": 158.8,
+ "ran_at": "2026-11-08T21:12:59+00:00",
+ "seconds": 186.7,
  "sources_attempted": 78,
- "sources_readable": 59,
- "candidates_discovered": 577,
- "substantive_items": 193,
- "duplicates_removed": 18,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 19633,
+ "sources_readable": 57,
+ "candidates_discovered": 699,
+ "substantive_items": 317,
+ "duplicates_removed": 22,
+ "deeply_analysed": 71,
+ "deep_read_failed": 19,
+ "corpus_size": 19705,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "59/78 sources returned 193 articles"
+    "57/78 sources returned 317 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -49,6 +50,7 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -1016,9 +1018,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 27,
+   "evidence_count": 28,
    "source_count": 7,
-   "latest_evidence": "2026-11-05T13:24:35+00:00",
+   "latest_evidence": "2026-11-08T12:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1043,6 +1045,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Scott returns for Portman Road encounter",
+     "url": "https://www.afcb.co.uk/news/2026/november/08/scott-returns-for-portman-road-encounter/",
+     "source": "AFC Bournemouth",
+     "published": "2026-11-08T12:45:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Alex Scott makes a welcome return to the AFC Bournemouth squad for today’s Premier League encounter with Ipswich Town at Portman Road. The midfielder has missed the Cherries’ past eight games since suffering a thigh injury while on duty with England in the last international break. Scott is named on the bench by head coach Marco Rose as the Cherries go in search of a club-record equalling eighth s"
+    },
     {
      "title": "One change for visit of Leeds",
      "url": "https://www.afcb.co.uk/news/2026/october/31/one-change-for-visit-of-leeds/",
@@ -1141,24 +1152,15 @@
      "matched_on": "tavernier",
      "kind": "team news",
      "excerpt": "Notes from Bournemouth 2-0 Sunderland The post FPL notes: Brobbey injury latest + Tavernier third in midfielder table appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Evanilson on century duty in Rose's first Premier League win",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/match-report-v-sunderland/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-18T14:57:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Evanilson bagged his 100th career goal as Marco Rose celebrated his first Premier League win courtesy of a 2-0 victory over Sunderland at Vitality Stadium. The Brazilian added to the 66 goals he scored for Porto and the 13 for first club Fluminense by registering his 21st for the Cherries and his third in as many games. His second-half solo effort doubled the Cherries’ lead after he had assisted M"
     }
    ]
   },
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 131,
+   "evidence_count": 133,
    "source_count": 19,
-   "latest_evidence": "2026-11-08T02:30:00+00:00",
+   "latest_evidence": "2026-11-08T18:44:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1183,6 +1185,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Manchester United 4-4 Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/november/08/report-manchester-united-4-4-aston-villa/",
+     "source": "Aston Villa",
+     "published": "2026-11-08T18:44:00+00:00",
+     "matched_on": "jackson",
+     "kind": "team news",
+     "excerpt": "Fixtures Manchester United Vs. Aston Villa - Sun, Nov 08 2026, 16:30 Aston Villa were denied all three points by late heartbreak at Old Trafford, being held to a 4-4 draw by Manchester United on Sunday. Despite taking 2-0 and 4-2 leads early into both halves thanks to goals from Alysson, Nicolas Jackson, John McGinn and Leon Goretzka, the Villans were pegged back late in each period by Bruno Ferna"
+    },
     {
      "title": "NFL Week 9 Injury Report: Jordyn Tyson to debut, Garrett Wilson ruled out, Kyler hamstring injury",
      "url": "https://www.nbcsports.com/fantasy/football/news/nfl-week-8-injury-report-jeremiyah-love-hits-ir-lamar-jackson-likely-done-for-season-and-more",
@@ -1281,15 +1292,6 @@
      "matched_on": "jackson",
      "kind": "team news",
      "excerpt": "It's one change apiece for Villa and Fulham compared to last weekend The post Aston Villa v Fulham team news: Jackson starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Goretzka starts against Fulham",
-     "url": "https://avfc.co.uk/news/2026/october/31/prematch-goretzka-starts-against-fulham/",
-     "source": "Aston Villa",
-     "published": "2026-10-31T18:50:00+00:00",
-     "matched_on": "jackson",
-     "kind": "team news",
-     "excerpt": "Fixtures Aston Villa Vs. Fulham - Sat, Oct 31 2026, 20:00 Unai Emery has submitted his Aston Villa side to take on Fulham at Villa Park on Saturday evening. The Villans go in search of a third successive league win on Halloween, while bouncing back from midweek defeat to Bournemouth in the Carabao Cup. And Emery names a further nine changes to his starting line-up from Wednesday, as Leon Goretzka "
     }
    ]
   },
@@ -1522,9 +1524,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 10,
    "source_count": 6,
-   "latest_evidence": "2026-11-08T09:07:56+00:00",
+   "latest_evidence": "2026-11-08T14:22:38+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1566,6 +1568,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Royal Caribbean Legend of the Match Result: Newcastle",
+     "url": "https://fulhamfc.co.uk/news/2026/november/08/royal-caribbean-legend-of-the-match-result-newcastle/",
+     "source": "Fulham",
+     "published": "2026-11-08T14:22:38+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Bernd Leno has been voted Royal Caribbean Legend of the Match against Newcastle United. Our big German was superb throughout our 1-1 draw on Saturday afternoon, with only a special Jacob Murphy strike getting past him. Of the numerous saves he made throughout the encounter, the reaction stop to deny Harvey Barnes from close range stands out, as does the vital low block he made at the death to prev"
     },
     {
      "title": "Leno: On the right track",
