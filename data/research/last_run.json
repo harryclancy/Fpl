@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-08T02:32:01+00:00",
- "seconds": 153.4,
+ "ran_at": "2026-11-08T11:58:19+00:00",
+ "seconds": 158.8,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 562,
- "substantive_items": 188,
- "duplicates_removed": 14,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 19643,
+ "sources_readable": 59,
+ "candidates_discovered": 577,
+ "substantive_items": 193,
+ "duplicates_removed": 18,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 19633,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 188 articles"
+    "59/78 sources returned 193 articles"
    ]
   },
   "blackout": {
@@ -49,9 +49,8 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -305,7 +304,7 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 19,
+   "evidence_count": 18,
    "source_count": 7,
    "latest_evidence": "2026-11-05T04:10:00+00:00",
    "official_source_found": true,
@@ -1297,9 +1296,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 89,
+   "evidence_count": 91,
    "source_count": 16,
-   "latest_evidence": "2026-11-07T13:42:40+00:00",
+   "latest_evidence": "2026-11-08T08:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1438,8 +1437,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-11-07T14:38:02+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-11-07T22:23:59+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1464,6 +1463,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham to lodge 'formal complaint' over Jayden Bogle VAR decision after Mathys Tel injury update",
+     "url": "https://www.sportsmole.co.uk/football/spurs/news/spurs-make-decision-on-formal-complaint-over-bogletel-incident_608698.html",
+     "source": "Sports Mole",
+     "published": "2026-11-07T22:23:59+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Tottenham Hotspur will reportedly lodge a formal complaint after Leeds United's Jayden Bogle escaped a red card for a horror challenge on Mathys Tel."
+    },
     {
      "title": "Leeds 1-0 Tottenham: Report, result and goals as Okafor gives hosts much-needed win",
      "url": "https://www.101greatgoals.com/match-reports/leeds-1-0-tottenham-report-result-goals/",
@@ -1508,25 +1516,16 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur boss Roberto De Zerbi makes an admission over a key selection decision ahead of Saturday's Premier League clash with Leeds United."
-    },
-    {
-     "title": "Leeds v Tottenham: Prediction, team news, lineups and odds",
-     "url": "https://www.football365.com/match-preview/leeds-v-tottenham-prediction-preview",
-     "source": "Football365",
-     "published": "2026-11-06T12:54:58+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Leeds and Tottenham."
     }
    ]
   },
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 8,
-   "source_count": 5,
-   "latest_evidence": "2026-11-02T15:00:00+00:00",
-   "official_source_found": false,
+   "evidence_count": 9,
+   "source_count": 6,
+   "latest_evidence": "2026-11-08T09:07:56+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1567,6 +1566,15 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Leno: On the right track",
+     "url": "https://fulhamfc.co.uk/news/2026/november/08/leno-on-the-right-track/",
+     "source": "Fulham",
+     "published": "2026-11-08T09:07:56+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Following his imperious display between the sticks on Saturday afternoon, fulhamfc.com caught up with Bernd Leno for a Newcastle United debrief. With the chance both sides had, is a draw maybe the correct result? I would say it’s fair. It was possible to win the game, but Newcastle had some chances as well. It was not our best game, but in the end we were playing against a good team, so one point "
     },
     {
      "title": "Tip of the Day: Barnes to star with goals for both sides at St James’ Park",
