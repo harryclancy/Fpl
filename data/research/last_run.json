@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-09T02:42:36+00:00",
- "seconds": 131.1,
+ "ran_at": "2026-11-09T13:57:54+00:00",
+ "seconds": 172.8,
  "sources_attempted": 78,
  "sources_readable": 58,
- "candidates_discovered": 554,
- "substantive_items": 177,
- "duplicates_removed": 13,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 19718,
+ "candidates_discovered": 646,
+ "substantive_items": 264,
+ "duplicates_removed": 17,
+ "deeply_analysed": 76,
+ "deep_read_failed": 14,
+ "corpus_size": 19716,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 177 articles"
+    "58/78 sources returned 264 articles"
    ]
   },
   "blackout": {
@@ -41,6 +41,7 @@
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -49,9 +50,8 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: nothing published in the last 10 days",
+  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -202,7 +202,7 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 5,
    "latest_evidence": "2026-11-01T08:46:32+00:00",
    "official_source_found": true,
@@ -224,8 +224,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -254,15 +254,6 @@
      "matched_on": "de cuyper",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post De Cuyper, Pedro, Cherki, Gibbs-White: Buy, keep or sell in Gameweek 7? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: De Cuyper + Gross share top spot in points table",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/12/fpl-notes-de-cuyper-gross-share-top-spot-in-points-table",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-12T00:00:00+00:00",
-     "matched_on": "de cuyper",
-     "kind": "team news",
-     "excerpt": "Sunderland look limp without Brian Brobbey as Brighton consolidate third The post FPL notes: De Cuyper + Gross share top spot in points table appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Maxim De Cuyper Scout Report At Brighton 2026/2027: From Club Brugge Prospect To Premier League Difference-Maker - Player Analysis",
@@ -1017,9 +1008,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 28,
+   "evidence_count": 29,
    "source_count": 7,
-   "latest_evidence": "2026-11-08T12:45:00+00:00",
+   "latest_evidence": "2026-11-09T08:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1044,6 +1035,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Silva + Tavernier near bans, Evanilson scores again",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-silva-tavernier-near-bans-evanilson-scores-again",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-09T08:30:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Notes from Ipswich 1-2 Bournemouth The post FPL notes: Silva + Tavernier near bans, Evanilson scores again appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Scott returns for Portman Road encounter",
      "url": "https://www.afcb.co.uk/news/2026/november/08/scott-returns-for-portman-road-encounter/",
@@ -1142,24 +1142,15 @@
      "matched_on": "tavernier",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Brobbey injury latest + Tavernier third in midfielder table",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/fpl-notes-brobbey-injury-latest-tavernier-third-in-midfielder-table",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-20T00:20:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Notes from Bournemouth 2-0 Sunderland The post FPL notes: Brobbey injury latest + Tavernier third in midfielder table appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 132,
+   "evidence_count": 133,
    "source_count": 19,
-   "latest_evidence": "2026-11-08T18:44:00+00:00",
+   "latest_evidence": "2026-11-09T11:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1297,9 +1288,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 86,
+   "evidence_count": 87,
    "source_count": 16,
-   "latest_evidence": "2026-11-08T22:30:59+00:00",
+   "latest_evidence": "2026-11-09T12:12:52+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
