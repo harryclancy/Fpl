@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-08T21:12:59+00:00",
- "seconds": 186.7,
+ "ran_at": "2026-11-09T02:42:36+00:00",
+ "seconds": 131.1,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 699,
- "substantive_items": 317,
- "duplicates_removed": 22,
- "deeply_analysed": 71,
- "deep_read_failed": 19,
- "corpus_size": 19705,
+ "sources_readable": 58,
+ "candidates_discovered": 554,
+ "substantive_items": 177,
+ "duplicates_removed": 13,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 19718,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 317 articles"
+    "58/78 sources returned 177 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -52,7 +51,7 @@
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -306,7 +305,7 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 18,
+   "evidence_count": 17,
    "source_count": 7,
    "latest_evidence": "2026-11-05T04:10:00+00:00",
    "official_source_found": true,
@@ -540,7 +539,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 27,
+   "evidence_count": 26,
    "source_count": 12,
    "latest_evidence": "2026-11-07T14:40:00+00:00",
    "official_source_found": true,
@@ -1158,7 +1157,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 133,
+   "evidence_count": 132,
    "source_count": 19,
    "latest_evidence": "2026-11-08T18:44:00+00:00",
    "official_source_found": true,
@@ -1298,9 +1297,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 91,
+   "evidence_count": 86,
    "source_count": 16,
-   "latest_evidence": "2026-11-08T08:00:00+00:00",
+   "latest_evidence": "2026-11-08T22:30:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1439,9 +1438,9 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-11-07T22:23:59+00:00",
-   "official_source_found": false,
+   "source_count": 4,
+   "latest_evidence": "2026-11-08T15:50:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -1465,6 +1464,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Tottenham Hotspur 2 Albion 1: Spurs hit back after Kirby opener",
+     "url": "https://www.brightonandhovealbion.com/media-article/wft-match-report-tottenham-hotspur-bha-pl-november-2026",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-11-08T15:50:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Albion suffer their first defeat in four despite going ahead through Fran Kirby."
+    },
+    {
+     "title": "San Antonio Spurs vs. Phoenix Suns: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-phoenix-suns-player-props-injury-report-and-prediction--nba_608729.html",
+     "source": "Sports Mole",
+     "published": "2026-11-08T14:23:51+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Spurs vs. Suns preview with injury report, player props, head-to-head record and a score prediction as San Antonio bring an eight-game winning streak to Phoenix."
+    },
     {
      "title": "Tottenham to lodge 'formal complaint' over Jayden Bogle VAR decision after Mathys Tel injury update",
      "url": "https://www.sportsmole.co.uk/football/spurs/news/spurs-make-decision-on-formal-complaint-over-bogletel-incident_608698.html",
@@ -1500,24 +1517,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Catch up with all the team news ahead of Leeds vs Tottenham in the Premier League."
-    },
-    {
-     "title": "San Antonio Spurs vs. Portland Trail Blazers: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-portland-trail-blazers-player-props-injury-report-and-prediction--nba_608671.html",
-     "source": "Sports Mole",
-     "published": "2026-11-07T10:01:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Spurs vs. Trail Blazers preview with player props, injury report and prediction for Saturday’s NBA game at Moda Center, plus form and matchups."
-    },
-    {
-     "title": "Spurs boss Roberto De Zerbi makes Pedro Porro selection admission ahead of Leeds clash",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/de-zerbi-makes-porro-selection-admission-ahead-of-leeds-clash_608652.html",
-     "source": "Sports Mole",
-     "published": "2026-11-07T00:15:26+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur boss Roberto De Zerbi makes an admission over a key selection decision ahead of Saturday's Premier League clash with Leeds United."
     }
    ]
   },
