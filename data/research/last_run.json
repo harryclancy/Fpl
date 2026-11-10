@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-09T13:57:54+00:00",
- "seconds": 172.8,
+ "ran_at": "2026-11-10T00:43:07+00:00",
+ "seconds": 120.5,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 646,
- "substantive_items": 264,
- "duplicates_removed": 17,
- "deeply_analysed": 76,
- "deep_read_failed": 14,
- "corpus_size": 19716,
+ "sources_readable": 57,
+ "candidates_discovered": 653,
+ "substantive_items": 253,
+ "duplicates_removed": 20,
+ "deeply_analysed": 70,
+ "deep_read_failed": 20,
+ "corpus_size": 19701,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 264 articles"
+    "57/78 sources returned 253 articles"
    ]
   },
   "blackout": {
@@ -38,10 +38,10 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,8 +50,9 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
-  "Tottenham Hotspur: sitemap at https://www.tottenhamhotspur.com/sitemap/news_3.xml listed no pages",
+  "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
   "PhysioRoom: nothing published in the last 10 days",
@@ -728,9 +729,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 48,
+   "evidence_count": 49,
    "source_count": 16,
-   "latest_evidence": "2026-11-06T20:52:53+00:00",
+   "latest_evidence": "2026-11-09T17:36:14+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -819,6 +820,24 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "Bills place Joshua Palmer on IR, elevate Geno Stone, Trent Sherfield",
+     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bills-place-joshua-palmer-on-ir-elevate-geno-stone-trent-sherfield",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-11-09T17:04:39-05:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Cole Palmer given England lifeline as Chelsea legend makes Thomas Tuchel claim (exclusive)",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/news/exclusive-palmer-given-england-lifeline-as-chelsea-legend-makes-tuchel-claim_608798.html",
+     "source": "Sports Mole",
+     "published": "2026-11-09T17:36:14+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Cole Palmer is given a England lifeline as a Chelsea legend makes a new claim about Thomas Tuchel (exclusive)."
+    },
+    {
      "title": "Chelsea news: Xabi Alonso reacts to Cole Palmer's England squad omission, Thomas Tuchel comments",
      "url": "https://www.sportsmole.co.uk/football/chelsea/news/chelsea-boss-alonso-reacts-to-palmers-england-squad-omission_608617.html",
      "source": "Sports Mole",
@@ -844,31 +863,13 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Tuchel laid the ‘camp’ camaraderie stuff on with a trowel before the mask slipped and he revealed a damning seven-word reason for Palmer’s England exclusion."
-    },
-    {
-     "title": "Why Fully Fit Cole Palmer Has Been Snubbed by England Boss Thomas Tuchel",
-     "url": "https://www.si.com/soccer/why-fit-cole-palmer-snubbed-england-boss-thomas-tuchel?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-11-06T12:30:00+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Tuchel also ruled on the long-term England future of a player who hasn’t made an international appearance since March."
-    },
-    {
-     "title": "Thomas Tuchel takes aim at Cole Palmer and says he wants players to show it ‘matters’ to play for England",
-     "url": "https://www.101greatgoals.com/football/internationals/thomas-tuchel-aims-barb-cole-palmer/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-11-06T12:10:25+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Cole Palmer was left out of the England squad named this morning by Thomas Tuchel"
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 44,
+   "evidence_count": 43,
    "source_count": 18,
    "latest_evidence": "2026-11-07T13:00:00+00:00",
    "official_source_found": true,
@@ -1148,9 +1149,9 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 133,
+   "evidence_count": 134,
    "source_count": 19,
-   "latest_evidence": "2026-11-09T11:30:00+00:00",
+   "latest_evidence": "2026-11-09T16:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1175,6 +1176,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Jesse Minter does not address Lamar Jackson's injury, says he'll keep conversations with QB private",
+     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jesse-minter-does-not-address-lamar-jacksons-injury-says-hell-keep-conversations-with-qb-private",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-11-09T15:51:09-05:00",
+     "matched_on": "jackson",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "FPL notes: Jackson in demand + two poor defences",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-jackson-in-demand-two-poor-defences",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-09T16:30:00+00:00",
+     "matched_on": "jackson",
+     "kind": "team news",
+     "excerpt": "Plus, McGinn on pens + Bruno returns for the first time since Gameweek 2 The post FPL notes: Jackson in demand + two poor defences appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Manchester United 4-4 Aston Villa",
      "url": "https://avfc.co.uk/news/2026/november/08/report-manchester-united-4-4-aston-villa/",
@@ -1264,31 +1283,13 @@
      "matched_on": "jackson",
      "kind": "team news",
      "excerpt": "Lamar Jackson (thumb) is questionable to return to Sunday's game between the Ravens and the Bills. The post What happened to Lamar Jackson? Live injury updates for Bills vs. Ravens on Sunday 11/01/26 appeared first on DraftKings Network ."
-    },
-    {
-     "title": "Post-Aston Villa Press Conference",
-     "url": "https://fulhamfc.co.uk/news/2026/october/31/post-aston-villa-press-conference/",
-     "source": "Fulham",
-     "published": "2026-10-31T22:23:49+00:00",
-     "matched_on": "jackson",
-     "kind": "team news",
-     "excerpt": "Álvaro Arbeloa praised the second half response of his team in Saturday night’s 1-1 draw with Aston Villa. The home side had edged in front by half-time courtesy of Nicolas Jackson’s strike, but Fulham were dominant after the break and duly forced a deserved equaliser courtesy of Zion Suzuki’s own goal. Asked what was said at the midway point, Arbeloa replied: “We have to be more aggressive. That'"
-    },
-    {
-     "title": "Aston Villa v Fulham team news: Jackson starts",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/31/aston-villa-v-fulham-team-news-jackson-starts",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-31T19:25:00+00:00",
-     "matched_on": "jackson",
-     "kind": "team news",
-     "excerpt": "It's one change apiece for Villa and Fulham compared to last weekend The post Aston Villa v Fulham team news: Jackson starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 87,
+   "evidence_count": 80,
    "source_count": 16,
    "latest_evidence": "2026-11-09T12:12:52+01:00",
    "official_source_found": true,
@@ -1767,7 +1768,7 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 16,
+   "evidence_count": 17,
    "source_count": 4,
    "latest_evidence": "2026-10-31T13:48:46+00:00",
    "official_source_found": true,
