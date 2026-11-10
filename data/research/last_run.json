@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-10T13:31:06+00:00",
- "seconds": 130.4,
+ "ran_at": "2026-11-10T22:24:24+00:00",
+ "seconds": 170.2,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 638,
- "substantive_items": 247,
- "duplicates_removed": 17,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 19698,
+ "sources_readable": 56,
+ "candidates_discovered": 627,
+ "substantive_items": 249,
+ "duplicates_removed": 19,
+ "deeply_analysed": 74,
+ "deep_read_failed": 16,
+ "corpus_size": 19676,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 247 articles"
+    "56/78 sources returned 249 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,7 @@
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
+  "FPL Pilot: HTTP 402 for https://www.fplpilot.com/sitemap-0.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,6 +51,7 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -64,7 +66,7 @@
    "club": "ARS",
    "evidence_count": 12,
    "source_count": 7,
-   "latest_evidence": "2026-11-04T14:14:35+00:00",
+   "latest_evidence": "2026-11-10T14:54:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -144,10 +146,10 @@
      "excerpt": "Manchester United defender Lisandro Martinez has delivered an explosive post-match interview after yet another defeat with the Red Devils to Atletico Madrid Michael Carrick's side lost 2-0 at the Metropolitano, and Martinez – criticised at the weekend for his part in a late Dominic Solanke equaliser – came out to face the music at full-time, and delivered an honest assessment of Manchester United'"
     },
     {
-     "title": "Premier League goalkeepers ranked: David Raya sets the standard, Verbruggen on the march",
+     "title": "Premier League goalkeepers ranked: Lammens slips out of top 10 as Alisson climbs",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
      "source": "Football365",
-     "published": "2026-11-04T14:14:35+00:00",
+     "published": "2026-11-10T14:54:35+00:00",
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "David Raya has started 2026/27 where he left off last season, while Alisson, Jordan Pickford and James Trafford languish in the lower rankings…"
@@ -539,9 +541,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 29,
+   "evidence_count": 30,
    "source_count": 13,
-   "latest_evidence": "2026-11-10T11:23:47+00:00",
+   "latest_evidence": "2026-11-10T17:01:41+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1157,9 +1159,9 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 134,
+   "evidence_count": 133,
    "source_count": 19,
-   "latest_evidence": "2026-11-10T08:00:00+00:00",
+   "latest_evidence": "2026-11-10T15:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1297,9 +1299,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 81,
+   "evidence_count": 80,
    "source_count": 17,
-   "latest_evidence": "2026-11-10T12:25:49+00:00",
+   "latest_evidence": "2026-11-10T14:22:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1438,8 +1440,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-11-10T00:39:18+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-11-10T10:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1450,7 +1452,6 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1464,6 +1465,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "San Antonio Spurs vs. Chicago Bulls: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-chicago-bulls-player-props-injury-report-and-prediction--nba_608830.html",
+     "source": "Sports Mole",
+     "published": "2026-11-10T10:30:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Spurs vs. Bulls prediction, player props and injury report. San Antonio bring a nine-game winning streak to a Chicago side that has lost seven straight."
+    },
     {
      "title": "Suns Make Final Jordan Goodwin Injury Call vs Spurs",
      "url": "https://www.si.com/nba/suns/onsi/phoenix-suns-make-final-jordan-goodwin-injury-call-san-antonio-spurs?utm_source=RSS",
@@ -1508,15 +1518,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Catch up with all the action from Leeds vs Tottenham in the Premier League."
-    },
-    {
-     "title": "Leeds v Spurs team news: Calvert-Lewin starts, no Stach",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/07/leeds-v-spurs-team-news-calvert-lewin-starts-no-stach",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-07T11:40:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Two changes for Leeds, one for Spurs The post Leeds v Spurs team news: Calvert-Lewin starts, no Stach appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },

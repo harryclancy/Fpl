@@ -1,15 +1,15 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-11-10T13:31:06+00:00",
+ "generated": "2026-11-10T22:24:24+00:00",
  "gameweek": 11,
- "corpus_size": 19698,
+ "corpus_size": 19676,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — Football365, 24 Oct: “Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.”",
-   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 12 retrieved item(s) from 7 source(s), the most recent dated 04 Nov.",
-   "case_for": "What supports keeping him: Football365, 04 Nov: “Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.” Football365, 04 Nov: “Arsenal David Raya Joe Williams 21 Oct 2026 Arsenal: Key Arteta starter reveals he wants La Liga transfer – ‘I would love to’ Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Everton, 24 Oct: “Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.”",
+   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 12 retrieved item(s) from 7 source(s), the most recent dated 10 Nov.",
+   "case_for": "What supports keeping him: Football365, 10 Nov: “Senne Lammens falls, Alisson climbs into a top 10 led by David Raya David Raya has started 2026/27 where he left off last season, while Senne Lammens is slipping behind Man Utd ’s dreadful defence.” Football365, 10 Nov: “Arsenal stopper Raya was hugely influential in the Gunners’ Premier League coronation last term and he has been an important figure during the start of the defence of their title.” Everton, 24 Oct: “Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Football365, 24 Oct: “I’m Spanish, and naturally, I’d love to play there.” READ: Arsenal ‘boast’ £200m quartet in Underplayed Premier League XI When asked what his goals are for this year, Raya added: “To win everything.” Football365, 21 Oct: “Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Football365, 21 Oct: “Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.”",
@@ -41,24 +41,20 @@
    ],
    "quotes": [
     {
-     "text": "Raya and Lammens are close to the top while Donnarumma slips David Raya has started 2026/27 where he left off last season, while three new signings feature among the top 10 Premier League goalkeepers.",
+     "text": "Senne Lammens falls, Alisson climbs into a top 10 led by David Raya David Raya has started 2026/27 where he left off last season, while Senne Lammens is slipping behind Man Utd ’s dreadful defence.",
      "source": "Football365",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "published": "2026-11-04T14:14:35+00:00",
+     "published": "2026-11-10T14:54:35+00:00",
      "tone": "positive",
-     "topics": [
-      "transfer"
-     ]
+     "topics": []
     },
     {
-     "text": "Arsenal David Raya Joe Williams 21 Oct 2026 Arsenal: Key Arteta starter reveals he wants La Liga transfer – ‘I would love to’ Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.",
+     "text": "Arsenal stopper Raya was hugely influential in the Gunners’ Premier League coronation last term and he has been an important figure during the start of the defence of their title.",
      "source": "Football365",
      "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "published": "2026-11-04T14:14:35+00:00",
+     "published": "2026-11-10T14:54:35+00:00",
      "tone": "positive",
-     "topics": [
-      "transfer"
-     ]
+     "topics": []
     },
     {
      "text": "Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.",
@@ -759,14 +755,14 @@
    "player": "Konsa",
    "club": "ARS",
    "status": "Latest on Konsa — Sports Mole, 05 Nov: “Ezri Konsa © Iconsport / PA Images Status: Minor doubt Type of injury: Unspecified Possible return date: November 7 (vs. Hull) Defensive stalwart Ezri Konsa came off just past the hour mark against Slavia Prague due to an unspecified problem, rendering him doubtful for Saturday, but William Saliba's recent return from a back injury has given Arteta a welcome and extremely timely boost.” Fantasy Football Scout, 05 Nov: “From Viktor Gyokeres ‘ (£7.0m) two attacking returns to an Ezri Konsa (£4.8m) injury concern, here are our latest Scout Notes from the midweek UEFA Champions League games.”",
-   "why_here": "Konsa is in the starting eleven this week at £4.8m as a DEF. The selection rests on 29 retrieved item(s) from 13 source(s), the most recent dated 10 Nov.",
+   "why_here": "Konsa is in the starting eleven this week at £4.8m as a DEF. The selection rests on 30 retrieved item(s) from 13 source(s), the most recent dated 10 Nov.",
    "case_for": "What supports keeping him: Sports Mole, 10 Nov: “Konsa was originally expected to start for England at Wembley on Thursday evening, but the Three Lions released a statement on Tuesday morning confirming that he was out of contention.” Fantasy Football Scout, 10 Nov: “With Konsa unavailable on Thursday, Bournemouth’s James Hill (£5.6m) has received his first call-up to the England squad. 0 Comments Login to Post a Comment No comments have been submitted for this post yet.” Fantasy Football Scout, 07 Nov: “Ezri Konsa starts for the Gunners after a brief midweek fitness scare.”",
    "case_against": "What argues against him: 101 Great Goals — Fantasy, 10 Nov: “Hill gets his chance after Ezri Konsa was ruled out for Thursday’s Nations League game against Croatia.” Fantasy Football Scout, 10 Nov: “The Three Lions say that Konsa will miss the game as “he continues to follow his own programme”.” Fantasy Football Scout, 05 Nov: “Q: At what point does Ezri Konsa (£4.8m) become too much of a minute’s risk, and who are the standout options to replace him? (via Obi 1 Kenobi 0 A: With William Saliba (£5.9m) back on the bench in midweek, plus a potential injury , Konsa could soon become a problem for his owners.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 10 Nov: “Arsenal defender Konsa picked up a small injury in the Gunners' recent Champions League win over Slavia Prague, but he was fit enough to return against Hull City a few days later.” Sports Illustrated FPL, 06 Nov: “CB: Cristhian Mosquera — With Ezri Konsa suffering an injury midweek and William Saliba unlikely to be immediately restored to the starting XI, Arteta might turn to Mosquera this weekend.”",
-   "developments": "Recent developments — Soccerway, 06 Nov: “It's a new manager, a really exciting one as well, so whatever he's decided is fine for us.\" Despite the absence of Saka, Tuchel's squad includes five Arsenal players - Ben White Myles Lewis-Skelly Eberechi Eze Declan Rice and Konsa.” FourFourTwo FPL, 06 Nov: “With William Saliba now available once more, Arteta has confirmed Konsa's status ahead of action this Saturday.” FourFourTwo FPL, 06 Nov: “Cristhian Mosquera filled in – starting for the first three matches of the season, including a Community Shield win in Cardiff over FA Cup winners, Manchester City – before Konsa made his debut against former employers Aston Villa off the bench in the second match of the Premier League campaign.”",
+   "developments": "Recent developments — FourFourTwo FPL, 10 Nov: “The Gunners enjoyed a solid if not spectacular summer transfer window, bringing in Bruno Guimaraes, Ezri Konsa and Christos Tzolis to add quality and depth to a title-winning side.” Soccerway, 06 Nov: “It's a new manager, a really exciting one as well, so whatever he's decided is fine for us.\" Despite the absence of Saka, Tuchel's squad includes five Arsenal players - Ben White Myles Lewis-Skelly Eberechi Eze Declan Rice and Konsa.” FourFourTwo FPL, 06 Nov: “With William Saliba now available once more, Arteta has confirmed Konsa's status ahead of action this Saturday.”",
    "outlook": "On the coming weeks — Sports Mole, 02 Nov: “The result was built on superb organisation and discipline in front of David Raya’s goal, and one of the standout names was Ezri Konsa The England defender produced a top-level performance to secure the clean sheet.” Fantasy Football Scout, 02 Nov: “VERDICT: BUY EZRI KONSA Ezri Konsa (£4.7m) has served up 33 points in his last three matches for Arsenal, having scored once, kept three clean sheets and picked up two DefCon points, as well as seven bonus.”",
    "confidence": "high",
-   "evidence_count": 29,
+   "evidence_count": 30,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/11/10/konsa-fitness-update-as-defender-ruled-out-of-england-v-croatia",
     "https://www.fantasyfootballscout.co.uk/2026/11/07/arsenal-v-hull-fulham-v-newcastle-team-news-konsa-starts",
@@ -797,6 +793,16 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "The Gunners enjoyed a solid if not spectacular summer transfer window, bringing in Bruno Guimaraes, Ezri Konsa and Christos Tzolis to add quality and depth to a title-winning side.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/transfer/arsenal-star-close-to-bombshell-january-exit-after-friction-with-mikel-arteta-report",
+     "published": "2026-11-10T17:01:41+00:00",
+     "tone": "neutral",
+     "topics": [
+      "transfer"
+     ]
+    },
     {
      "text": "Hill gets his chance after Ezri Konsa was ruled out for Thursday’s Nations League game against Croatia.",
      "source": "101 Great Goals — Fantasy",
@@ -3026,14 +3032,14 @@
    "player": "N.Jackson",
    "club": "AVL",
    "status": "Latest on N.Jackson — Fantasy Football Scout, 01 Nov: “FPL Gameweek 9: Saturday’s goals, assists, bonus + DefCon points FPL notes: Gross on cusp of ban + Maresca on benching Cherki FIVE IN FIVE FOR JACKSON Jackson, who was bought by over 2.3m Fantasy managers in the lead-up to Gameweek 9’s deadline, was fit to start, then.” Football365, 30 Oct: “He could go on a run at Villa, it’s up to him now where he goes.” Chelsea sale decision questioned Chelsea made the decision to sell Jackson for an initial £47.5million in the summer, and have since seen fellow striker Joao Pedro go down with an injury, which led to Morgan Rogers playing up top in their 2-0 Premier League loss to Tottenham.”",
-   "why_here": "N.Jackson is in the starting eleven this week at £7.1m as a FWD. The selection rests on 134 retrieved item(s) from 19 source(s), the most recent dated 09 Nov.",
-   "case_for": "What supports keeping him: Fantasy Football Scout, 09 Nov: “Unai Emery’s men made a flying start at Old Trafford, with Alysson (£4.9m) and Jackson both on the scoresheet in the first four minutes.” Fantasy Football Scout, 09 Nov: “Jackson has now scored six goals and supplied one assist in his last six league matches.” Aston Villa, 08 Nov: “First, with just 60 seconds on the clock, Jackson had shifted the ball onto McGinn who in turn found Alysson, the Brazilian nutmegging Senne Lammens in the United net with a first-time finish to score his first goal for the club.”",
-   "case_against": "What argues against him: NBC Sports Rotoworld PL, 09 Nov: “Jackson is reportedly out for 6-9 weeks with a fractured and dislocated thumb.” Aston Villa, 08 Nov: “Less than three minutes later, things had got even better for Emery’s charges, as Lammens could only block Alysson’s effort out to the feet of Jackson, who having beaten the offside trap, had the simple task of tapping into the gaping net from point-blank range for his ninth of the season.” Sports Illustrated FPL, 08 Nov: “Arkansas Razorbacks quarterback KJ Jackson looks to throw against Missouri. | Nilsen Roman, Hogs On SI Images With the struggles of KJ Jackson, its forced many Arkansas fans to have concerns about whether the Razorbacks should consider making a change at quarterback.”",
+   "why_here": "N.Jackson is in the starting eleven this week at £7.1m as a FWD. The selection rests on 133 retrieved item(s) from 19 source(s), the most recent dated 10 Nov.",
+   "case_for": "What supports keeping him: Aston Villa, 10 Nov: “Villa more than made up for it in B6 four days later, however, when braces from both Jackson and Ross Barkley came in between goals from Johan Manzambi and Tammy Abraham to tie up an emphatic 6-0 success against Fenerbahçe, as Champions League football returned to Villa Park.” Fantasy Football Scout, 09 Nov: “Unai Emery’s men made a flying start at Old Trafford, with Alysson (£4.9m) and Jackson both on the scoresheet in the first four minutes.” Fantasy Football Scout, 09 Nov: “Jackson has now scored six goals and supplied one assist in his last six league matches.”",
+   "case_against": "What argues against him: Aston Villa, 10 Nov: “Manchester City were the visitors to Villa Park that weekend, and the table toppers dropped points for the first time in the Premier League season in B6, as Jackson’s well-taken double either side of Erling Haaland’s equaliser made it three wins in a row for the Villans.” NBC Sports Rotoworld PL, 09 Nov: “Jackson is reportedly out for 6-9 weeks with a fractured and dislocated thumb.” Aston Villa, 08 Nov: “Less than three minutes later, things had got even better for Emery’s charges, as Lammens could only block Alysson’s effort out to the feet of Jackson, who having beaten the offside trap, had the simple task of tapping into the gaping net from point-blank range for his ninth of the season.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — NBC Sports Rotoworld PL, 07 Nov: “Mitchell is an intriguing FLEX option in a difficult matchup against a stingy Kansas City secondary that returns to health for Week 9. 🏈 AFC North ◆ Baltimore Ravens Lamar Jackson - QB (thumb) Jackson returned from an ankle injury in Week 8 and made it all of one offensive snap before suffering a thumb injury that is likely to sideline him for the remainder of the regular season.” NBC Sports Rotoworld PL, 02 Nov: “Jackson signed to the practice squad after being released from the Commanders’ injured reserve list in September.”",
-   "developments": "Recent developments — NBC Sports Rotoworld PL, 09 Nov: “Minter was asked what the chance is that Jackson will be able to return this season.” Sports Mole, 08 Nov: “Jackson's strike marked a shocking new low for Man United, who broke their record for the quickest time to fall 2-0 down in a Premier League game at three minutes and 40 seconds.” Sports Mole, 08 Nov: “Slumber. https://t.co/76iMwVLhTK — OptaJoe (@OptaJoe) November 8, 2026 Boos rang out around an already febrile Old Trafford following Jackson's goal, the ground already awash with a sea of green and yellow in protest against the Glazer family's ownership of the club.”",
-   "outlook": "On the coming weeks — NBC Sports Rotoworld PL, 05 Nov: “It didn’t happen, for reasons that never became clear because neither Jackson nor the Ravens (at Jackson’s behest) share information about the negotiations.” DraftKings Network Soccer, 04 Nov: “ET: Jackson ahead, but lead narrows Troy Jackson is still ahead of incumbent Susan Collins with 9% of voting results reported, according to the Associated Press.”",
+   "developments": "Recent developments — NBC Sports Rotoworld PL, 09 Nov: “Minter was asked what the chance is that Jackson will be able to return this season.” Aston Villa, 08 Nov: “First, with just 60 seconds on the clock, Jackson had shifted the ball onto McGinn who in turn found Alysson, the Brazilian nutmegging Senne Lammens in the United net with a first-time finish to score his first goal for the club.” Sports Mole, 08 Nov: “Jackson's strike marked a shocking new low for Man United, who broke their record for the quickest time to fall 2-0 down in a Premier League game at three minutes and 40 seconds.”",
+   "outlook": "On the coming weeks — Sports Mole, 08 Nov: “Slumber. https://t.co/76iMwVLhTK — OptaJoe (@OptaJoe) November 8, 2026 Boos rang out around an already febrile Old Trafford following Jackson's goal, the ground already awash with a sea of green and yellow in protest against the Glazer family's ownership of the club.” NBC Sports Rotoworld PL, 05 Nov: “It didn’t happen, for reasons that never became clear because neither Jackson nor the Ravens (at Jackson’s behest) share information about the negotiations.”",
    "confidence": "high",
-   "evidence_count": 134,
+   "evidence_count": 133,
    "evidence_used": [
     "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jesse-minter-does-not-address-lamar-jacksons-injury-says-hell-keep-conversations-with-qb-private",
     "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-jackson-in-demand-two-poor-defences",
@@ -3070,6 +3076,24 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Villa more than made up for it in B6 four days later, however, when braces from both Jackson and Ross Barkley came in between goals from Johan Manzambi and Tammy Abraham to tie up an emphatic 6-0 success against Fenerbahçe, as Champions League football returned to Villa Park.",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/november/10/news-vote-for-your-october-2026-player-of-the-month-/",
+     "published": "2026-11-10T15:00:00+00:00",
+     "tone": "positive",
+     "topics": [
+      "rotation"
+     ]
+    },
+    {
+     "text": "Manchester City were the visitors to Villa Park that weekend, and the table toppers dropped points for the first time in the Premier League season in B6, as Jackson’s well-taken double either side of Erling Haaland’s equaliser made it three wins in a row for the Villans.",
+     "source": "Aston Villa",
+     "url": "https://avfc.co.uk/news/2026/november/10/news-vote-for-your-october-2026-player-of-the-month-/",
+     "published": "2026-11-10T15:00:00+00:00",
+     "tone": "negative",
+     "topics": []
+    },
     {
      "text": "Unai Emery’s men made a flying start at Old Trafford, with Alysson (£4.9m) and Jackson both on the scoresheet in the first four minutes.",
      "source": "Fantasy Football Scout",
@@ -4058,14 +4082,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football 247, 30 Oct: “Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband.” Football365, 23 Oct: “If this happens, a knock-on effect would be a mass player exodus, with Haaland among those who would inevitably leave if Man City fall below the Premier League.”",
-   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 81 retrieved item(s) from 17 source(s), the most recent dated 10 Nov.",
+   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 80 retrieved item(s) from 17 source(s), the most recent dated 10 Nov.",
    "case_for": "What supports keeping him: Everton, 10 Nov: “Barry’s goals took him to double figures across all competitions for the campaign, with only Erling Haaland (nine) and Alexander Isak (seven) having struck more Premier League goals this season than Barry (six).” FourFourTwo FPL, 08 Nov: “Haaland netted three in the same Manchester derby as Phil Foden; Pires scored his treble alongside Jermaine Pennant for the first game of Arsenal’s invincible run; Vardy and team-mate Ayoze Perez both scored hat-tricks in the infamous 9-0 rout of Southampton; and Santa Cruz scored three for Blackburn Rovers against Wigan Athletic – though opponent Marcus Bent also scored three goals that day.” Football365, 06 Nov: “MORE: The ridiculous stats of Man City goalbot Erling Haaland 4) Marcus Tavernier (Bournemouth) – 84.9 The Bournemouth attacker is graded highest in the Premier League for free-kick shooting and unpressured shooting.”",
    "case_against": "What argues against him: Football365, 03 Nov: “F365 Features Erling Haaland Subhankar Mondal 02 Nov 2026 Man City: Alf-Inge Haaland responds when asked whether Erling Haaland could leave after Arsenal contact Arsenal are among the clubs interested in signing Erling Haaland should Manchester City be thrown out of the Premier League.” Sports Mole, 30 Oct: “Haaland was among five senior stars who were rested for that game, and after delivering a positive injury update on Friday , manager Enzo Maresca is expected to revert to a strong lineup including Man City’s No.9.” Sports Mole, 24 Oct: “Emery has also chosen to name 17-year-old forward Brian Madjo on the substitutes' bench instead of Tammy Abraham. © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Haaland returns for Man City against Aston Villa Meanwhile, as expected, Erling Haaland returns to the Man City XI after a minor ankle knock.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 10 Nov: “Haaland has been a huge success at Man City, winning the Premier League title and the FA Cup twice each and the Champions League and the EFL Cup once each.” Sports Mole, 04 Nov: “Haaland will wear the captain’s armband in the absence of Dias, who will begin on the substitutes’ bench for the first time this season in either the Champions League or Premier League.”",
    "developments": "Recent developments — Football365, 10 Nov: “Haaland has been at Man City since 2022 and is under contract at the Etihad Stadium until the summer of 2034.” Flashscore, 09 Nov: “Haaland has given the only surviving copy to the library in Bryne so it can be displayed and made accessible to the public.” Flashscore, 09 Nov: “\"I want the book always to lie open so that people can read about those who came from where I come from, from Bryne and Jaeren,\" Haaland said to Norwegian media.”",
    "outlook": "On the coming weeks — Football365, 06 Nov: “There’s also quality with the quantity with Haaland also having the highest number of shots above expectation and most unsaveable shots.” Tactical Football Analysis, 29 Oct: “This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro.”",
    "confidence": "high",
-   "evidence_count": 81,
+   "evidence_count": 80,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/man-city/champions-league/news/leipzig-vs-man-city-confirmed-xis-captain-haaland-as-cherki-foden-guehi-decisions-made_608404.html",
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw9-2/",
@@ -5006,30 +5030,6 @@
      "topics": []
     },
     {
-     "text": "Erling Haaland to Fulham as Man City players get drafted Erling Haaland in a Fulham shirt looks good Man City are making people turn off their TVs but we prefer to look at it all as great fun.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/erling-haaland-fulham-man-city-players-drafted-mailbox",
-     "published": "2026-10-13T12:11:45+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "And Snodgrass has also argued that world-class striker Erling Haaland will “100%” join one of three teams if/when he leaves Man City.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/man-city-ffp-city-punished-not-destroyed-sanction-haaland-next-move",
-     "published": "2026-10-13T09:30:13+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "“No matter where Erling Haaland goes, I think clubs need to be focusing on how quick they can get the ball to Haaland, and having good wingers and number 10s around him that can slip him in,” Snodgrass told Snabbare.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/man-city-ffp-city-punished-not-destroyed-sanction-haaland-next-move",
-     "published": "2026-10-13T09:30:13+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
      "text": "The Premier League reported that more than 1.7 million managers activated Triple Captain , with the overwhelming majority backing Erling Haaland at home to Coventry.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/haaland-triple-captain-gw3-result-2026-27",
@@ -5137,7 +5137,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 5 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -5146,17 +5146,16 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-chicago-bulls-player-props-injury-report-and-prediction--nba_608830.html",
     "https://www.si.com/nba/suns/onsi/phoenix-suns-make-final-jordan-goodwin-injury-call-san-antonio-spurs?utm_source=RSS",
     "https://www.brightonandhovealbion.com/media-article/wft-match-report-tottenham-hotspur-bha-pl-november-2026",
     "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-phoenix-suns-player-props-injury-report-and-prediction--nba_608729.html",
     "https://www.sportsmole.co.uk/football/spurs/news/spurs-make-decision-on-formal-complaint-over-bogletel-incident_608698.html",
-    "https://www.101greatgoals.com/match-reports/leeds-1-0-tottenham-report-result-goals/",
-    "https://www.fantasyfootballscout.co.uk/2026/11/07/leeds-v-spurs-team-news-calvert-lewin-starts-no-stach"
+    "https://www.101greatgoals.com/match-reports/leeds-1-0-tottenham-report-result-goals/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
     "Brighton & Hove Albion",
-    "Fantasy Football Scout",
     "Sports Illustrated FPL",
     "Sports Mole"
    ],
