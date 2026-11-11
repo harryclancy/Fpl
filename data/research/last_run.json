@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-11T02:50:24+00:00",
- "seconds": 132.7,
+ "ran_at": "2026-11-11T12:46:15+00:00",
+ "seconds": 181.2,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 479,
- "substantive_items": 108,
- "duplicates_removed": 3,
- "deeply_analysed": 70,
- "deep_read_failed": 20,
- "corpus_size": 19671,
+ "sources_readable": 57,
+ "candidates_discovered": 593,
+ "substantive_items": 219,
+ "duplicates_removed": 21,
+ "deeply_analysed": 77,
+ "deep_read_failed": 13,
+ "corpus_size": 19678,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 108 articles"
+    "57/78 sources returned 219 articles"
    ]
   },
   "blackout": {
@@ -51,7 +51,6 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -64,7 +63,7 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 11,
+   "evidence_count": 10,
    "source_count": 7,
    "latest_evidence": "2026-11-10T14:54:35+00:00",
    "official_source_found": true,
@@ -126,15 +125,6 @@
      "matched_on": "raya",
      "kind": "transfer",
      "excerpt": "Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga."
-    },
-    {
-     "title": "Everything Manchester United star Lisandro Martinez said, as defender rips into club directors in extraordinary interview",
-     "url": "https://www.fourfourtwo.com/person/player/everything-manchester-united-star-lisandro-martinez-said-as-defender-rips-into-club-directors-in-extraordinary-interview",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-13T22:46:54+00:00",
-     "matched_on": "raya",
-     "kind": "transfer",
-     "excerpt": "Manchester United defender Lisandro Martinez has delivered an explosive post-match interview after yet another defeat with the Red Devils to Atletico Madrid Michael Carrick's side lost 2-0 at the Metropolitano, and Martinez – criticised at the weekend for his part in a late Dominic Solanke equaliser – came out to face the music at full-time, and delivered an honest assessment of Manchester United'"
     },
     {
      "title": "Premier League goalkeepers ranked: Lammens slips out of top 10 as Alisson climbs",
@@ -1152,7 +1142,7 @@
    "club": "AVL",
    "evidence_count": 131,
    "source_count": 19,
-   "latest_evidence": "2026-11-10T15:00:00+00:00",
+   "latest_evidence": "2026-11-11T06:03:17-05:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
