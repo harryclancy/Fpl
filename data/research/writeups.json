@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-11-11T12:46:15+00:00",
+ "generated": "2026-11-11T23:29:25+00:00",
  "gameweek": 11,
- "corpus_size": 19678,
+ "corpus_size": 19564,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -178,18 +178,17 @@
    "player": "De Cuyper",
    "club": "BHA",
    "status": "Latest on De Cuyper — Tactical Football Analysis, 01 Nov: “Fabian Hürzeler had moved De Cuyper into the front line, and it paid off straight away.”",
-   "why_here": "De Cuyper is in the starting eleven this week at £5.5m as a DEF. The selection rests on 8 retrieved item(s) from 5 source(s), the most recent dated 10 Nov.",
-   "case_for": "What supports keeping him: Tactical Football Analysis, 01 Nov: “He had two goal involvements in 18 minutes and a hand in a third in the opening 4-0 win against Aston Villa Matty Cash spent the whole first half caught between two jobs: following De Cuyper inside or holding his line.” Fantasy Football Scout, 14 Oct: “Their open-play shots conceded and chances created conceded maps add further encouragement… The next three matches after Palace are tricky, but De Cuyper should still offer attacking threat even if Brighton concede.”",
+   "why_here": "De Cuyper is in the starting eleven this week at £5.5m as a DEF. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 10 Nov.",
+   "case_for": "What supports keeping him: Tactical Football Analysis, 01 Nov: “He had two goal involvements in 18 minutes and a hand in a third in the opening 4-0 win against Aston Villa Matty Cash spent the whole first half caught between two jobs: following De Cuyper inside or holding his line.”",
    "case_against": "What argues against him: Fantasy Football Scout, 23 Oct: “De Cuyper had to content himself with ‘just’ six points against the Gunners, and his sole blank so far came against the Blues.”",
    "expected_minutes": "On minutes — Brighton & Hove Albion, 10 Nov: “De Cuyper: Let's stay humble CLUB TICKETS SHOP Main Club Sponsor TICKETS SHOP De Cuyper: Let's stay humble Albion ace is aware of the noise around qualifying for the Champions League but insists it's business as usual for the squad.” Brighton & Hove Albion, 10 Nov: “Maxim De Cuyper admits that the Albion squad are aware of talk on social media about the team achieving Champions League qualification or better.”",
    "developments": "Recent developments — Fantasy Football Scout, 31 Oct: “It’s been a whirlwind ‘out of position’ ride with De Cuyper this season, and there’s little sign of a slowdown.” Fantasy Football Scout, 31 Oct: “De Cuyper’s not an issue for now, then, even if Luka Vuskovic (£5.2m) will likely end up being the long, long-term best pick at the back.” Aston Villa, 30 Oct: “With well-owned defenders Riccardo Calafiori (£6.0m) and Maxim De Cuyper (£5.3m) set to face tricky away fixtures at Liverpool and Manchester City in Gameweek 9, plenty of Fantasy managers will be in the market for a new defender ahead of Saturday’s deadline.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 23 Oct: “Brighton and Hove Albion duo Maxim De Cuyper (£5.3m) and Pascal Gross (£6.2m) are at the summit of FPL’s points table: But up next for the pair: two potentially tricky away days at Liverpool and Manchester City.” OneFPL: “Why De Cuyper is valuable in FPL His classification is the key.”",
    "confidence": "high",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/31/fpl-notes-gross-on-cusp-of-ban-maresca-on-benching-cherki",
     "https://www.fantasyfootballscout.co.uk/2026/10/23/gross-de-cuyper-bench-or-start-in-fpl-gameweek-8",
-    "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
     "https://www.brightonandhovealbion.com/media-article/de-cuyper-lets-stay-humble",
     "https://tacticalfootballanalysis.com/maxim-de-cuyper-scout-report-brighton-2026-2027-analysis/",
     "https://avfc.co.uk/news/2026/october/30/prematch-fulham-fpl-preview/",
@@ -299,25 +298,6 @@
      "published": "2026-10-23T01:15:00+00:00",
      "tone": "negative",
      "topics": []
-    },
-    {
-     "text": "MAXIM DE CUYPER We said last week that there may be better medium-term options to consider than Maxim De Cuyper (£5.1m).",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
-     "published": "2026-10-14T03:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Their open-play shots conceded and chances created conceded maps add further encouragement… The next three matches after Palace are tricky, but De Cuyper should still offer attacking threat even if Brighton concede.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
-     "published": "2026-10-14T03:00:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "statistics",
-      "fixtures"
-     ]
     },
     {
      "text": "Why De Cuyper is valuable in FPL His classification is the key.",
@@ -1203,14 +1183,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — 101 Great Goals — Fantasy, 06 Nov: “Palmer was the headline omission from the group named this morning for the Nations League games with Croatia and Spain and has seemingly paid the price for withdrawing from the last camp with a minor injury.” 101 Great Goals — Fantasy, 06 Nov: ““So it’s not personal and of course we will never assume that Cole is not in the mindset to come and desperate to play for his country, but the competition is on and the players who were in camp did an amazing job and kept their place.” Tuchel made squad unity a major priority in his World Cup selection – with Palmer excluded – and has remained faithful to that idea.”",
-   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 50 retrieved item(s) from 15 source(s), the most recent dated 10 Nov.",
+   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 51 retrieved item(s) from 15 source(s), the most recent dated 11 Nov.",
    "case_for": "What supports keeping him: Sports Mole, 06 Nov: “Even though Palmer is fully fit and available, the 24-year-old has been snubbed by Tuchel, who has instead handed senior call-ups to Josh King and Jobe Bellingham.” Football365, 31 Oct: “Cole Palmer has scored at least one Premier League goal against every member of the Big Six, and can beat the rest of the squad combined.” Flashscore, 31 Oct: “Match stats Flashscore 15:27 CET - Cole Palmer 's goal was his 50th in the Premier League, coming in 105 games.”",
    "case_against": "What argues against him: Soccerway, 10 Nov: “Palmer overlooked by Tuchel once again Anything can, and often does, happen where football is concerned, though the Spaniards would need to have an off day, and the Three Lions be at their very best to earn the points required.” Sports Mole, 09 Nov: “Palmer previously withdrew from the September/October squad for load management reasons, a decision which did not go down well with Tuchel, who professed that the 24-year-old misses too many chances to impress.” NBC Sports Rotoworld PL, 09 Nov: “Buffalo announced that the club has placed receiver Joshua Palmer on injured reserve.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 06 Nov: “England manager Thomas Tuchel said in September that Palmer had missed \"too many opportunities\" to play for the national team after he pulled out of the squad with an injury.” Sports Illustrated FPL, 06 Nov: “Tuchel called Palmer up for his first post-World Cup roster only to be disappointed by his swift withdrawal through injury .”",
-   "developments": "Recent developments — Soccerway, 10 Nov: “Some might say that the best way to beat such a machine is for England to produce some moments of genuine creativity, and the one player who can provide just that, Cole Palmer , has been overlooked by Tuchel once again.” Football365, 10 Nov: “Pochettino to sign Kane in five-player Manchester United swoop despite 'worrying omen' Mauricio Pochettino has a grand plan for Manchester United Mauricio Pochettino is about to sign Harry Kane and Cole Palmer for Manchester United – but only if they can overcome a ‘worrying omen’.” Football365, 10 Nov: “Which is saying something, because up front in this Pochettino XI is Harry Kane, with Cole Palmer behind him.”",
+   "developments": "Recent developments — FourFourTwo FPL, 11 Nov: “Beyond that, Morgan Rogers, Morgan Gibbs-White, Eberechi Eze, Cole Palmer and Phil Foden have all competed for that position over the past 18 months.” FourFourTwo FPL, 11 Nov: “Each of them offers something a little different to Bellingham: Eze and Palmer, for example, have the deftness of pass, while Foden and Rogers are capable of arriving at the edge of the box for a finesse finish into the bottom corner.” Soccerway, 10 Nov: “Some might say that the best way to beat such a machine is for England to produce some moments of genuine creativity, and the one player who can provide just that, Cole Palmer , has been overlooked by Tuchel once again.”",
    "outlook": "On the coming weeks — Soccerway, 06 Nov: “Tuchel said Palmer \"misses too many opportunities\" to impress at international level after pulling out of England 's last squad due to injury.” Football365, 28 Oct: “Chelsea: Alonso makes brutal Liverpool decision as concerns over personal rift with key star emerge Chelsea manager Xabi Alonso Estevao might have been the only Chelsea stakeholder secretly pleased to see Cole Palmer shown a second yellow card in their 2-0 defeat to Tottenham on Saturday.”",
    "confidence": "high",
-   "evidence_count": 50,
+   "evidence_count": 51,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/no-palmer-three-players-who-should-and-shouldnt-be-in-england-squad_608613.html",
     "https://www.fourfourtwo.com/team/thomas-tuchel-makes-surprise-england-bellingham-announcement-three-lions-november-squad-in-full",
@@ -1220,10 +1200,10 @@
     "https://www.si.com/nfl/bills/onsi/injuries-bills-wr-week-6-outlook-when-will-dj-moore-josh-palmer-return-to-action?utm_source=RSS",
     "https://www.football365.com/news/pochettino-sign-kane-palmer-five-player-manchester-united-swoop",
     "https://www.fourfourtwo.com/tactic/xabi-alonsos-overthinking-isnt-helping-a-chelsea-side-already-defined-by-muddled-thoughts",
+    "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
     "https://www.soccerway.com/news/soccer-uefa-nations-league-why-thomas-tuchel-s-reasoning-for-selecting-jobe-bellingham-ahead-of-cole-palmer-is-flawed/phGBLkKD/",
     "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bills-place-joshua-palmer-on-ir-elevate-geno-stone-trent-sherfield",
-    "https://www.sportsmole.co.uk/football/chelsea/news/exclusive-palmer-given-england-lifeline-as-chelsea-legend-makes-tuchel-claim_608798.html",
-    "https://www.sportsmole.co.uk/football/chelsea/news/chelsea-boss-alonso-reacts-to-palmers-england-squad-omission_608617.html"
+    "https://www.sportsmole.co.uk/football/chelsea/news/exclusive-palmer-given-england-lifeline-as-chelsea-legend-makes-tuchel-claim_608798.html"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -1243,6 +1223,25 @@
     "Sports Mole"
    ],
    "quotes": [
+    {
+     "text": "Beyond that, Morgan Rogers, Morgan Gibbs-White, Eberechi Eze, Cole Palmer and Phil Foden have all competed for that position over the past 18 months.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
+     "published": "2026-11-11T13:30:19+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Each of them offers something a little different to Bellingham: Eze and Palmer, for example, have the deftness of pass, while Foden and Rogers are capable of arriving at the edge of the box for a finesse finish into the bottom corner.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
+     "published": "2026-11-11T13:30:19+00:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces",
+      "statistics"
+     ]
+    },
     {
      "text": "Palmer overlooked by Tuchel once again Anything can, and often does, happen where football is concerned, though the Spaniards would need to have an off day, and the Three Lions be at their very best to earn the points required.",
      "source": "Soccerway",
@@ -1994,14 +1993,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — FourFourTwo FPL, 26 Oct: “Xabi Alonso, who has quietly abandoned his 3-4-3 recently, played a 4-4-2 with Morgan Rogers and Cole Palmer deployed as false nines, although they were so false they were more like ghosts, pressing erratically to leave Chelsea’s two-man midfield repeatedly exposed.” Fantasy Football 247, 15 Oct: “FF247 Site Team News GW7 - Fantasy Football 247 - Premier League Tips Share This Post FF247 Site Team News GW7 Welcome to FF247 Site Team GW7 We felt like we were half way there to a decent enough score in GW6 with a star performance from our keeper, decent hauls from our Arsenal backline, including a goal, a GroB assist and then goals from Rogers, Haaland and Jaoa Pedro at the double.”",
-   "why_here": "Rogers is in the starting eleven this week at £8.2m as a MID. The selection rests on 42 retrieved item(s) from 17 source(s), the most recent dated 07 Nov.",
+   "why_here": "Rogers is in the starting eleven this week at £8.2m as a MID. The selection rests on 43 retrieved item(s) from 17 source(s), the most recent dated 11 Nov.",
    "case_for": "What supports keeping him: Sunderland, 07 Nov: “Joao Pedro and Morgan Rogers are the joint-top scorers for the Blues with five goals.” Sports Mole, 04 Nov: “Rogers’ start becomes even more significant when the context of his arrival is considered.” Sports Mole, 04 Nov: “Nico Paz: 5 goals, 6 assists All making their mark! ? https://t.co/o1GsWqphG7 — Sholy Nation Sports (@Sholynationsp) November 1, 2026 Rogers’ attacking contribution helps explain why he has already won over part of the stands.”",
    "case_against": "What argues against him: FourFourTwo FPL, 16 Oct: “It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea .” Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — FourFourTwo FPL, 04 Nov: “After winning the Europa League, the Basque boss saw the spine of his side ripped out, with Emiliano Martinez, Ezri Konsa, Lucas Digne, Youri Tielemans, Morgan Rogers and Ollie Watkins all sold – and Aston Villa started the season understandably poorly as a result.” Fantasy Football Scout, 29 Oct: “And we need a couple of days to check what’s going to be the injury.” – Xabi Alonso on Maxence Lacroix “Well, we have started with Pedro [Neto], with Danny [Welbeck] and with Morgan [Rogers] up front.”",
-   "developments": "Recent developments — Sports Illustrated FPL, 07 Nov: “Kennedi Rogers found open spots to attack but sent a couple of swings long.” Sports Illustrated FPL, 07 Nov: “Rogers found success with an off-speed shot for her third kill of the set.” Football365, 05 Nov: “Bournemouth’s new centre-back has made 65 clearances , a tally bettered only by Tarik Muharemovic (Leeds), while he also ranks sixth for aerial duels won (34) this season. 6) Morgan Rogers (Chelsea) Living up to a £117million price tag is impossible for the vast majority of footballers, but Rogers is doing about as well as anyone could have expected so far.”",
+   "developments": "Recent developments — FourFourTwo FPL, 11 Nov: “Beyond that, Morgan Rogers, Morgan Gibbs-White, Eberechi Eze, Cole Palmer and Phil Foden have all competed for that position over the past 18 months.” FourFourTwo FPL, 11 Nov: “Each of them offers something a little different to Bellingham: Eze and Palmer, for example, have the deftness of pass, while Foden and Rogers are capable of arriving at the edge of the box for a finesse finish into the bottom corner.” Sports Illustrated FPL, 07 Nov: “Kennedi Rogers found open spots to attack but sent a couple of swings long.”",
    "outlook": "On the coming weeks — Fantasy Football Scout, 29 Oct: “So we were a little bit forced with substitutions.” – Xabi Alonso on why he didn’t bring Estevao on In the absence of Palmer and Pedro, Rogers stepped up from the spot to convert Chelsea’s first-half penalty.” FourFourTwo FPL, 26 Oct: “The Blues invested heavily in new players during the summer transfer window, equipping new manager Xabi Alonso with a squad boasting the likes of Morgan Rogers, Emiliano Martinez, Maxence Lacrois and Valentin Barco, as well as the senior influence of Jordan Henderson and Danny Welbeck.”",
    "confidence": "high",
-   "evidence_count": 42,
+   "evidence_count": 43,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/10/29/fpl-notes-pedro-latest-lacroix-injury-rogers-pen-isak-rested",
     "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
@@ -2013,8 +2012,8 @@
     "https://www.fourfourtwo.com/transfer/chelsea-want-to-continue-transfer-spree-with-blockbuster-move-for-serie-a-superstar-report",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
     "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
-    "https://www.safc.com/news/2026/november/07/preview--black-cats-host-the-blues/",
-    "https://www.si.com/college/tennessee/volleyball/kennedi-rogers-19-kills-lead-no-10-tennessee-volleyball-to-sweep-of-mississippi-state-01m6sx30kzat?utm_source=RSS"
+    "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
+    "https://www.safc.com/news/2026/november/07/preview--black-cats-host-the-blues/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2036,6 +2035,25 @@
     "Sunderland"
    ],
    "quotes": [
+    {
+     "text": "Beyond that, Morgan Rogers, Morgan Gibbs-White, Eberechi Eze, Cole Palmer and Phil Foden have all competed for that position over the past 18 months.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
+     "published": "2026-11-11T13:30:19+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Each of them offers something a little different to Bellingham: Eze and Palmer, for example, have the deftness of pass, while Foden and Rogers are capable of arriving at the edge of the box for a finesse finish into the bottom corner.",
+     "source": "FourFourTwo FPL",
+     "url": "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
+     "published": "2026-11-11T13:30:19+00:00",
+     "tone": "neutral",
+     "topics": [
+      "set pieces",
+      "statistics"
+     ]
+    },
     {
      "text": "Joao Pedro and Morgan Rogers are the joint-top scorers for the Blues with five goals.",
      "source": "Sunderland",
@@ -2983,14 +3001,14 @@
    "player": "N.Jackson",
    "club": "AVL",
    "status": "Latest on N.Jackson — Fantasy Football Scout, 01 Nov: “FPL Gameweek 9: Saturday’s goals, assists, bonus + DefCon points FPL notes: Gross on cusp of ban + Maresca on benching Cherki FIVE IN FIVE FOR JACKSON Jackson, who was bought by over 2.3m Fantasy managers in the lead-up to Gameweek 9’s deadline, was fit to start, then.” Football365, 30 Oct: “He could go on a run at Villa, it’s up to him now where he goes.” Chelsea sale decision questioned Chelsea made the decision to sell Jackson for an initial £47.5million in the summer, and have since seen fellow striker Joao Pedro go down with an injury, which led to Morgan Rogers playing up top in their 2-0 Premier League loss to Tottenham.”",
-   "why_here": "N.Jackson is in the starting eleven this week at £7.1m as a FWD. The selection rests on 131 retrieved item(s) from 19 source(s), the most recent dated 11 Nov.",
+   "why_here": "N.Jackson is in the starting eleven this week at £7.1m as a FWD. The selection rests on 130 retrieved item(s) from 19 source(s), the most recent dated 11 Nov.",
    "case_for": "What supports keeping him: Aston Villa, 10 Nov: “Villa more than made up for it in B6 four days later, however, when braces from both Jackson and Ross Barkley came in between goals from Johan Manzambi and Tammy Abraham to tie up an emphatic 6-0 success against Fenerbahçe, as Champions League football returned to Villa Park.” Fantasy Football Scout, 09 Nov: “Unai Emery’s men made a flying start at Old Trafford, with Alysson (£4.9m) and Jackson both on the scoresheet in the first four minutes.” Fantasy Football Scout, 09 Nov: “Jackson has now scored six goals and supplied one assist in his last six league matches.”",
    "case_against": "What argues against him: Aston Villa, 10 Nov: “Manchester City were the visitors to Villa Park that weekend, and the table toppers dropped points for the first time in the Premier League season in B6, as Jackson’s well-taken double either side of Erling Haaland’s equaliser made it three wins in a row for the Villans.” NBC Sports Rotoworld PL, 09 Nov: “Jackson is reportedly out for 6-9 weeks with a fractured and dislocated thumb.” Aston Villa, 08 Nov: “Less than three minutes later, things had got even better for Emery’s charges, as Lammens could only block Alysson’s effort out to the feet of Jackson, who having beaten the offside trap, had the simple task of tapping into the gaping net from point-blank range for his ninth of the season.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — NBC Sports Rotoworld PL, 07 Nov: “Mitchell is an intriguing FLEX option in a difficult matchup against a stingy Kansas City secondary that returns to health for Week 9. 🏈 AFC North ◆ Baltimore Ravens Lamar Jackson - QB (thumb) Jackson returned from an ankle injury in Week 8 and made it all of one offensive snap before suffering a thumb injury that is likely to sideline him for the remainder of the regular season.” NBC Sports Rotoworld PL, 02 Nov: “Jackson signed to the practice squad after being released from the Commanders’ injured reserve list in September.”",
    "developments": "Recent developments — NBC Sports Rotoworld PL, 11 Nov: ““The guys on his team tried to launch themselves at us on every play ,” Jackson said on 104.3 The Score.” NBC Sports Rotoworld PL, 09 Nov: “Minter was asked what the chance is that Jackson will be able to return this season.” Aston Villa, 08 Nov: “First, with just 60 seconds on the clock, Jackson had shifted the ball onto McGinn who in turn found Alysson, the Brazilian nutmegging Senne Lammens in the United net with a first-time finish to score his first goal for the club.”",
    "outlook": "On the coming weeks — Sports Mole, 08 Nov: “Slumber. https://t.co/76iMwVLhTK — OptaJoe (@OptaJoe) November 8, 2026 Boos rang out around an already febrile Old Trafford following Jackson's goal, the ground already awash with a sea of green and yellow in protest against the Glazer family's ownership of the club.” NBC Sports Rotoworld PL, 05 Nov: “It didn’t happen, for reasons that never became clear because neither Jackson nor the Ravens (at Jackson’s behest) share information about the negotiations.”",
    "confidence": "high",
-   "evidence_count": 131,
+   "evidence_count": 130,
    "evidence_used": [
     "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jesse-minter-does-not-address-lamar-jacksons-injury-says-hell-keep-conversations-with-qb-private",
     "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-jackson-in-demand-two-poor-defences",
@@ -3965,27 +3983,6 @@
      "topics": []
     },
     {
-     "text": "After the suspension was imposed, Rams coach Sean McVay addressed the expectations for Jackson.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sean-mcvay-on-alaric-jackson-he-has-to-consistently-do-a-better-job",
-     "published": "2026-10-14T05:33:52-04:00",
-     "tone": "neutral",
-     "topics": [
-      "suspension"
-     ]
-    },
-    {
-     "text": "He has to make more consistent decisions that are in alignment with being available and representing the things that we want to be about without a doubt.” McVay also explained that David Quesenberry will replace Jackson during the suspension.",
-     "source": "NBC Sports Rotoworld PL",
-     "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sean-mcvay-on-alaric-jackson-he-has-to-consistently-do-a-better-job",
-     "published": "2026-10-14T05:33:52-04:00",
-     "tone": "neutral",
-     "topics": [
-      "injury",
-      "suspension"
-     ]
-    },
-    {
      "text": "Jackson was signed by the Lions in mid-June and played well in the team's preseason finale against the Colts on Friday, when he caught five passes on as many targets for 94 yards.",
      "source": "CBS Sports Soccer",
      "url": "https://www.cbssports.com/fantasy/football/news/lucky-jackson-signs-with-detroits-practice-squad/",
@@ -4025,14 +4022,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Fantasy Football 247, 30 Oct: “Konsa grabbed a goal, clean sheet and 2 bonus, while Haaland also found the net and picked up 2 bonus – giving us 16pts with the armband.” Football365, 23 Oct: “If this happens, a knock-on effect would be a mass player exodus, with Haaland among those who would inevitably leave if Man City fall below the Premier League.”",
-   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 79 retrieved item(s) from 17 source(s), the most recent dated 10 Nov.",
+   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 78 retrieved item(s) from 17 source(s), the most recent dated 10 Nov.",
    "case_for": "What supports keeping him: Everton, 10 Nov: “Barry’s goals took him to double figures across all competitions for the campaign, with only Erling Haaland (nine) and Alexander Isak (seven) having struck more Premier League goals this season than Barry (six).” FourFourTwo FPL, 08 Nov: “Haaland netted three in the same Manchester derby as Phil Foden; Pires scored his treble alongside Jermaine Pennant for the first game of Arsenal’s invincible run; Vardy and team-mate Ayoze Perez both scored hat-tricks in the infamous 9-0 rout of Southampton; and Santa Cruz scored three for Blackburn Rovers against Wigan Athletic – though opponent Marcus Bent also scored three goals that day.” Football365, 06 Nov: “MORE: The ridiculous stats of Man City goalbot Erling Haaland 4) Marcus Tavernier (Bournemouth) – 84.9 The Bournemouth attacker is graded highest in the Premier League for free-kick shooting and unpressured shooting.”",
    "case_against": "What argues against him: Football365, 03 Nov: “F365 Features Erling Haaland Subhankar Mondal 02 Nov 2026 Man City: Alf-Inge Haaland responds when asked whether Erling Haaland could leave after Arsenal contact Arsenal are among the clubs interested in signing Erling Haaland should Manchester City be thrown out of the Premier League.” Sports Mole, 30 Oct: “Haaland was among five senior stars who were rested for that game, and after delivering a positive injury update on Friday , manager Enzo Maresca is expected to revert to a strong lineup including Man City’s No.9.” Sports Mole, 24 Oct: “Emery has also chosen to name 17-year-old forward Brian Madjo on the substitutes' bench instead of Tammy Abraham. © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Haaland returns for Man City against Aston Villa Meanwhile, as expected, Erling Haaland returns to the Man City XI after a minor ankle knock.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 10 Nov: “Haaland has been a huge success at Man City, winning the Premier League title and the FA Cup twice each and the Champions League and the EFL Cup once each.” Sports Mole, 04 Nov: “Haaland will wear the captain’s armband in the absence of Dias, who will begin on the substitutes’ bench for the first time this season in either the Champions League or Premier League.”",
    "developments": "Recent developments — Football365, 10 Nov: “Haaland has been at Man City since 2022 and is under contract at the Etihad Stadium until the summer of 2034.” Flashscore, 09 Nov: “Haaland has given the only surviving copy to the library in Bryne so it can be displayed and made accessible to the public.” Flashscore, 09 Nov: “\"I want the book always to lie open so that people can read about those who came from where I come from, from Bryne and Jaeren,\" Haaland said to Norwegian media.”",
    "outlook": "On the coming weeks — Football365, 06 Nov: “There’s also quality with the quantity with Haaland also having the highest number of shots above expectation and most unsaveable shots.” Tactical Football Analysis, 29 Oct: “This guide assesses transfer targets, Chelsea captaincy options and DEFCON defenders, compares Igor Thiago with Thierno Barry, and sets out a 15-player draft built around Haaland, Palmer and João Pedro.”",
    "confidence": "high",
-   "evidence_count": 79,
+   "evidence_count": 78,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/man-city/champions-league/news/leipzig-vs-man-city-confirmed-xis-captain-haaland-as-cherki-foden-guehi-decisions-made_608404.html",
     "https://fantasyfootball247.co.uk/ff247-site-team-news-gw9-2/",

@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-11T12:46:15+00:00",
- "seconds": 181.2,
+ "ran_at": "2026-11-11T23:29:25+00:00",
+ "seconds": 157.2,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 593,
- "substantive_items": 219,
- "duplicates_removed": 21,
- "deeply_analysed": 77,
- "deep_read_failed": 13,
- "corpus_size": 19678,
+ "candidates_discovered": 673,
+ "substantive_items": 292,
+ "duplicates_removed": 36,
+ "deeply_analysed": 81,
+ "deep_read_failed": 9,
+ "corpus_size": 19564,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 219 articles"
+    "57/78 sources returned 292 articles"
    ]
   },
   "blackout": {
@@ -45,7 +45,7 @@
   "FPL Pilot: HTTP 402 for https://www.fplpilot.com/sitemap-0.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
-  "Draft FC: nothing published in the last 10 days",
+  "Draft FC: TLS failure: SSLError for https://draftfc.co.uk/sitemap.xml",
   "FPL Ranker: HTTP 402 for https://fplranker.com/sitemap.xml",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
@@ -185,7 +185,7 @@
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 5,
    "latest_evidence": "2026-11-10T06:00:00+00:00",
    "official_source_found": true,
@@ -207,8 +207,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -228,15 +228,6 @@
      "matched_on": "de cuyper",
      "kind": "team news",
      "excerpt": "Brighton's in-form pair have tricky fixtures in the next two Gameweeks The post Gross + De Cuyper: Bench or start in FPL Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "De Cuyper, Pedro, Cherki, Gibbs-White: Buy, keep or sell in Gameweek 7?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/de-cuyper-pedro-cherki-gibbs-white-buy-keep-or-sell-in-gameweek-7",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-14T03:00:00+00:00",
-     "matched_on": "de cuyper",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post De Cuyper, Pedro, Cherki, Gibbs-White: Buy, keep or sell in Gameweek 7? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "De Cuyper: Let's stay humble",
@@ -720,9 +711,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 51,
    "source_count": 15,
-   "latest_evidence": "2026-11-10T12:56:45+01:00",
+   "latest_evidence": "2026-11-11T13:30:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -820,6 +811,15 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "Why England called up Jobe Bellingham ahead of Cole Palmer or Phil Foden - both players of a bygone era",
+     "url": "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-11T13:30:19+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Jobe Bellingham's England call-up isn't the first to come under scrutiny, and it certainly won't be the last. But it is somewhat cruel that the midfielder's first-ever international appearance looks to be met with weary suspicion that it's down to connections rather than what he can actually do on the pitch. Because the truth is, England could actually do with Jobe Bellingham – despite the embarra"
+    },
+    {
      "title": "Why Thomas Tuchel's reasoning for selecting Jobe Bellingham ahead of Cole Palmer is flawed",
      "url": "https://www.soccerway.com/news/soccer-uefa-nations-league-why-thomas-tuchel-s-reasoning-for-selecting-jobe-bellingham-ahead-of-cole-palmer-is-flawed/phGBLkKD/",
      "source": "Soccerway",
@@ -845,24 +845,15 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Cole Palmer is given a England lifeline as a Chelsea legend makes a new claim about Thomas Tuchel (exclusive)."
-    },
-    {
-     "title": "Chelsea news: Xabi Alonso reacts to Cole Palmer's England squad omission, Thomas Tuchel comments",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/news/chelsea-boss-alonso-reacts-to-palmers-england-squad-omission_608617.html",
-     "source": "Sports Mole",
-     "published": "2026-11-06T17:37:44+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Chelsea manager Xabi Alonso suggests that he does not discuss Cole Palmer's situation with England with the Blues playmaker."
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 42,
+   "evidence_count": 43,
    "source_count": 17,
-   "latest_evidence": "2026-11-07T13:00:00+00:00",
+   "latest_evidence": "2026-11-11T13:30:19+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -978,6 +969,15 @@
      "excerpt": ""
     },
     {
+     "title": "Why England called up Jobe Bellingham ahead of Cole Palmer or Phil Foden - both players of a bygone era",
+     "url": "https://www.fourfourtwo.com/person/player/why-england-called-up-jobe-bellingham-ahead-of-cole-palmer-or-phil-foden-both-players-of-a-bygone-era",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-11T13:30:19+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Jobe Bellingham's England call-up isn't the first to come under scrutiny, and it certainly won't be the last. But it is somewhat cruel that the midfielder's first-ever international appearance looks to be met with weary suspicion that it's down to connections rather than what he can actually do on the pitch. Because the truth is, England could actually do with Jobe Bellingham – despite the embarra"
+    },
+    {
      "title": "Preview: Black Cats host the Blues",
      "url": "https://www.safc.com/news/2026/november/07/preview--black-cats-host-the-blues/",
      "source": "Sunderland",
@@ -985,15 +985,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Fixtures Sunderland Vs. Chelsea - Sun, Nov 08 2026, 14:00 Sunderland return to Premier League action on Sunday as they welcome Chelsea to the Stadium of Light for the final game before the November international window. The Black Cats' relentless schedule in the first few months of the season shows no signs of slowing down. They were last in action on Thursday night in the UEFA Europa League. We h"
-    },
-    {
-     "title": "Kennedi Rogers’ 19 kills lead No. 10 Tennessee volleyball to sweep of Mississippi State",
-     "url": "https://www.si.com/college/tennessee/volleyball/kennedi-rogers-19-kills-lead-no-10-tennessee-volleyball-to-sweep-of-mississippi-state-01m6sx30kzat?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-11-07T02:40:34+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Kennedi Rogers had 19 kills as No. 10 Tennessee volleyball swept Mississippi State 25-20, 25-14, 29-27 at Food City Center to snap a two-match skid."
     }
    ]
   },
@@ -1140,7 +1131,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 131,
+   "evidence_count": 130,
    "source_count": 19,
    "latest_evidence": "2026-11-11T06:03:17-05:00",
    "official_source_found": true,
@@ -1280,7 +1271,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 79,
+   "evidence_count": 78,
    "source_count": 17,
    "latest_evidence": "2026-11-10T14:22:00+00:00",
    "official_source_found": true,
