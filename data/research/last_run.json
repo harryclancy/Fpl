@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-11T23:29:25+00:00",
- "seconds": 157.2,
+ "ran_at": "2026-11-12T13:49:00+00:00",
+ "seconds": 138.6,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 673,
- "substantive_items": 292,
- "duplicates_removed": 36,
- "deeply_analysed": 81,
- "deep_read_failed": 9,
- "corpus_size": 19564,
+ "sources_readable": 56,
+ "candidates_discovered": 664,
+ "substantive_items": 290,
+ "duplicates_removed": 21,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 19520,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 292 articles"
+    "56/78 sources returned 290 articles"
    ]
   },
   "blackout": {
@@ -45,12 +45,13 @@
   "FPL Pilot: HTTP 402 for https://www.fplpilot.com/sitemap-0.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
-  "Draft FC: TLS failure: SSLError for https://draftfc.co.uk/sitemap.xml",
+  "Draft FC: nothing published in the last 10 days",
   "FPL Ranker: HTTP 402 for https://fplranker.com/sitemap.xml",
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -279,7 +280,7 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 17,
+   "evidence_count": 16,
    "source_count": 7,
    "latest_evidence": "2026-11-05T04:10:00+00:00",
    "official_source_found": true,
@@ -1131,7 +1132,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 130,
+   "evidence_count": 121,
    "source_count": 19,
    "latest_evidence": "2026-11-11T06:03:17-05:00",
    "official_source_found": true,
@@ -1271,9 +1272,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 78,
+   "evidence_count": 79,
    "source_count": 17,
-   "latest_evidence": "2026-11-10T14:22:00+00:00",
+   "latest_evidence": "2026-11-12T12:32:09+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1413,30 +1414,48 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-11-10T10:30:00+00:00",
+   "latest_evidence": "2026-11-11T23:19:57+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
-   "transfer_status_assessed": true,
+   "transfer_status_assessed": false,
    "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
     "set pieces",
     "statistics",
     "tactics",
-    "team news",
-    "transfer"
+    "team news"
    ],
    "strength": "good",
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Bulls vs. Spurs (7:00 PM CT): 3 Things to Know, Starting Lineups, Injury Report",
+     "url": "https://www.si.com/nba/bulls/onsi/bulls-vs-spurs-7-00-pm-ct-3-things-to-know-starting-lineups-injury-report-11?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-11-11T23:19:57+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "The Chicago Bulls will welcome arguably the best player in the NBA into the United Center tonight."
+    },
+    {
+     "title": "Report: Palace Women beat Spurs on penalties in Subway Players Cup",
+     "url": "https://www.cpfc.co.uk/news/match-reports/report-palace-women-beat-spurs-on-penalties-in-subway-players-cup/",
+     "source": "Crystal Palace",
+     "published": "2026-11-11T21:54:59+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Jo Potter's side secured an extra point in the Subway Players Cup, after winning 5-3 on penalties following a 1-1 draw at Brisbane Road."
+    },
     {
      "title": "San Antonio Spurs vs. Chicago Bulls: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-chicago-bulls-player-props-injury-report-and-prediction--nba_608830.html",
@@ -1472,24 +1491,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Spurs vs. Suns preview with injury report, player props, head-to-head record and a score prediction as San Antonio bring an eight-game winning streak to Phoenix."
-    },
-    {
-     "title": "Tottenham to lodge 'formal complaint' over Jayden Bogle VAR decision after Mathys Tel injury update",
-     "url": "https://www.sportsmole.co.uk/football/spurs/news/spurs-make-decision-on-formal-complaint-over-bogletel-incident_608698.html",
-     "source": "Sports Mole",
-     "published": "2026-11-07T22:23:59+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur will reportedly lodge a formal complaint after Leeds United's Jayden Bogle escaped a red card for a horror challenge on Mathys Tel."
-    },
-    {
-     "title": "Leeds 1-0 Tottenham: Report, result and goals as Okafor gives hosts much-needed win",
-     "url": "https://www.101greatgoals.com/match-reports/leeds-1-0-tottenham-report-result-goals/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-11-07T14:38:02+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Catch up with all the action from Leeds vs Tottenham in the Premier League."
     }
    ]
   },
@@ -1609,7 +1610,7 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 11,
+   "evidence_count": 10,
    "source_count": 6,
    "latest_evidence": "2026-11-02T15:45:00+00:00",
    "official_source_found": true,
@@ -1680,15 +1681,6 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Plus, concerns for Newcastle at both ends of the pitch The post FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/14/best-schade-replacements-keep-or-sell-wissa-thiaw-fpl-qa",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-14T16:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Best Schade replacements, keep or sell Wissa + Thiaw? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Read Yoane Wissa's first 'Leadership Group' notes ahead of Everton",
