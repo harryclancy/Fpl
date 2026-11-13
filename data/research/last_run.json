@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-13T13:10:25+00:00",
- "seconds": 142.2,
+ "ran_at": "2026-11-13T22:41:24+00:00",
+ "seconds": 155.0,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 616,
- "substantive_items": 233,
- "duplicates_removed": 19,
+ "sources_readable": 54,
+ "candidates_discovered": 658,
+ "substantive_items": 289,
+ "duplicates_removed": 31,
  "deeply_analysed": 82,
  "deep_read_failed": 8,
- "corpus_size": 19414,
+ "corpus_size": 19335,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 233 articles"
+    "54/78 sources returned 289 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Pilot: HTTP 402 for https://www.fplpilot.com/sitemap-0.xml",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -50,7 +51,9 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -654,7 +657,7 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
+   "source_count": 4,
    "latest_evidence": "2026-11-09T09:30:28+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
@@ -679,15 +682,6 @@
    "priority": "normal",
    "researched": true,
    "items": [
-    {
-     "title": "FPL Gameweek 7 Guide 2026/27: Fixtures, Captaincy And Players To Target For GW7",
-     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-7-tips-2026/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-10-16T09:08:43+00:00",
-     "matched_on": "gro",
-     "kind": "transfer",
-     "excerpt": "Our FPL Gameweek 7 guide covers the key fixtures, in-form players, transfer sells, differentials and captaincy options before Saturday’s deadline, including Erling Haaland, Pascal Groß, Bruno Fernandes and Thierno Barry."
-    },
     {
      "title": "HENRY WINTER: Fabian Hurzeler's Brighton & Hove Albion are perfectly set up for success - on and off the pitch",
      "url": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
@@ -725,6 +719,15 @@
      "excerpt": "Sports Mole takes an in-depth look at how Brighton could line up for Sunday's Premier League clash against Brentford."
     },
     {
+     "title": "Predicted Brentford XI vs. Brighton: Yehor Yarmoliuk returns as one attacking change made",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/one-attacking-change-yarmoliuk-returns-predicted-brentford-xi-vs-brighton_608635.html",
+     "source": "Sports Mole",
+     "published": "2026-11-06T22:39:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Brentford could line up for Sunday's Premier League clash against Brighton."
+    },
+    {
      "title": "Pascal Groß is Not Essential",
      "url": "https://full90fpl.com/pascal-gros-is-not-essential/?utm_source=rss&utm_medium=rss&utm_campaign=pascal-gros-is-not-essential",
      "source": "Full90 FPL",
@@ -739,8 +742,8 @@
    "player": "Palmer",
    "club": "CHE",
    "evidence_count": 53,
-   "source_count": 15,
-   "latest_evidence": "2026-11-13T10:25:06+00:00",
+   "source_count": 14,
+   "latest_evidence": "2026-11-13T19:44:43+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -829,6 +832,15 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "Thomas Tuchel responds to Morgan Rogers' Cole Palmer defence",
+     "url": "https://www.sportsmole.co.uk/football/england/news/thomas-tuchel-responds-as-morgan-rogers-brands-cole-palmer-england-claims-a-lie_609074.html",
+     "source": "Sports Mole",
+     "published": "2026-11-13T19:44:43+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Thomas Tuchel responds after Morgan Rogers calls claims about Cole Palmer's England commitment \"a lie\" following the Croatia victory."
+    },
+    {
      "title": "Chelsea news: Morgan Rogers hits out at Cole Palmer England 'lies' in staunch defence of teammate",
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/rogers-defends-chelsea-teammate-palmer-over-england-lies_609043.html",
      "source": "Sports Mole",
@@ -863,24 +875,15 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Jobe Bellingham's England call-up isn't the first to come under scrutiny, and it certainly won't be the last. But it is somewhat cruel that the midfielder's first-ever international appearance looks to be met with weary suspicion that it's down to connections rather than what he can actually do on the pitch. Because the truth is, England could actually do with Jobe Bellingham – despite the embarra"
-    },
-    {
-     "title": "Why Thomas Tuchel's reasoning for selecting Jobe Bellingham ahead of Cole Palmer is flawed",
-     "url": "https://www.soccerway.com/news/soccer-uefa-nations-league-why-thomas-tuchel-s-reasoning-for-selecting-jobe-bellingham-ahead-of-cole-palmer-is-flawed/phGBLkKD/",
-     "source": "Soccerway",
-     "published": "2026-11-10T12:56:45+01:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 47,
+   "evidence_count": 48,
    "source_count": 17,
-   "latest_evidence": "2026-11-13T10:25:06+00:00",
+   "latest_evidence": "2026-11-13T19:44:43+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -996,6 +999,15 @@
      "excerpt": ""
     },
     {
+     "title": "Thomas Tuchel responds to Morgan Rogers' Cole Palmer defence",
+     "url": "https://www.sportsmole.co.uk/football/england/news/thomas-tuchel-responds-as-morgan-rogers-brands-cole-palmer-england-claims-a-lie_609074.html",
+     "source": "Sports Mole",
+     "published": "2026-11-13T19:44:43+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Thomas Tuchel responds after Morgan Rogers calls claims about Cole Palmer's England commitment \"a lie\" following the Croatia victory."
+    },
+    {
      "title": "Chelsea news: Morgan Rogers hits out at Cole Palmer England 'lies' in staunch defence of teammate",
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/rogers-defends-chelsea-teammate-palmer-over-england-lies_609043.html",
      "source": "Sports Mole",
@@ -1003,15 +1015,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers hits out at the \"nonsense\" over claims that Chelsea teammate Cole Palmer is not interested in representing England."
-    },
-    {
-     "title": "Rogers plays down 'nonsense' that Palmer does not want to play for England",
-     "url": "https://www.soccerway.com/news/soccer-uefa-nations-league-rogers-plays-down-nonsense-that-palmer-does-not-want-to-play-for-england/0t2U4lMO/",
-     "source": "Soccerway",
-     "published": "2026-11-13T08:53:27+01:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1158,9 +1161,9 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 115,
+   "evidence_count": 117,
    "source_count": 19,
-   "latest_evidence": "2026-11-13T11:00:52+00:00",
+   "latest_evidence": "2026-11-13T18:14:46+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1298,9 +1301,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 80,
+   "evidence_count": 79,
    "source_count": 17,
-   "latest_evidence": "2026-11-13T12:42:27+00:00",
+   "latest_evidence": "2026-11-13T15:17:47+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1628,9 +1631,9 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 12,
+   "evidence_count": 10,
    "source_count": 6,
-   "latest_evidence": "2026-11-13T09:00:00+00:00",
+   "latest_evidence": "2026-11-12T16:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1701,15 +1704,6 @@
      "excerpt": "Plus, concerns for Newcastle at both ends of the pitch The post FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "International Magpies: Wissa strikes early in DR Congo win, Burn and Hall help England to victory",
-     "url": "https://www.newcastleunited.com/en/news/international-call-ups-november-2026",
-     "source": "Newcastle United",
-     "published": "2026-11-13T09:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
      "title": "Newcastle United desperately lack the cut-and-thrust in attack that’ll keep them out of relegation trouble",
      "url": "https://www.fourfourtwo.com/person/player/newcastle-united-desperately-lack-the-cut-and-thrust-in-attack-thatll-keep-them-out-of-relegation-trouble",
      "source": "FourFourTwo FPL",
@@ -1726,15 +1720,6 @@
      "matched_on": "wissa",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "'Triple up on Tottenham Hotspur players' Five of the best FPL differential options for Gameweek 7",
-     "url": "https://www.fourfourtwo.com/competition/triple-up-on-tottenham-hotspur-players-five-of-the-best-fpl-differential-options-for-gameweek-7",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-16T09:32:02+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": "Six Gameweeks in and the data is telling a very clear story. The managers who are pulling away from their FPL mini leagues are not just owning the template, they are finding the players nobody else has thought about yet. A differential here means anyone owned by 15% or fewer managers, and right now there are some genuinely compelling options sitting well under that threshold. Here are six worth ta"
     },
     {
      "title": "Yoane wissa fpl newcastle striker battle 2026 27",
