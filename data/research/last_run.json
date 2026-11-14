@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-13T22:41:24+00:00",
- "seconds": 155.0,
+ "ran_at": "2026-11-14T03:21:13+00:00",
+ "seconds": 159.8,
  "sources_attempted": 78,
- "sources_readable": 54,
- "candidates_discovered": 658,
- "substantive_items": 289,
- "duplicates_removed": 31,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 19335,
+ "sources_readable": 55,
+ "candidates_discovered": 489,
+ "substantive_items": 130,
+ "duplicates_removed": 9,
+ "deeply_analysed": 80,
+ "deep_read_failed": 10,
+ "corpus_size": 19334,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 289 articles"
+    "55/78 sources returned 130 articles"
    ]
   },
   "blackout": {
@@ -43,7 +43,6 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Pilot: HTTP 402 for https://www.fplpilot.com/sitemap-0.xml",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,7 +50,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
+  "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
@@ -516,7 +515,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 32,
+   "evidence_count": 31,
    "source_count": 13,
    "latest_evidence": "2026-11-13T11:27:05+00:00",
    "official_source_found": true,
@@ -881,7 +880,7 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 48,
+   "evidence_count": 47,
    "source_count": 17,
    "latest_evidence": "2026-11-13T19:44:43+00:00",
    "official_source_found": true,
@@ -945,15 +944,6 @@
      "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
     },
     {
-     "title": "Losing Ollie Watkins could have broken Aston Villa but Nicolas Jackson has made them better",
-     "url": "https://www.fourfourtwo.com/person/player/losing-ollie-watkins-could-have-broken-aston-villa-but-nicolas-jackson-has-made-them-better",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-16T16:00:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Aston Villa essentially signed a brand new starting XI over the summer - they almost had to. It was a period of substantial change for the Villans, who lost Amadou Onana to an ACL injury during the World Cup, Youri Tielemans to Manchester United , Ezri Konsa to Arsenal, Ollie Watkins to Al-Hilal, and Morgan Rogers and Emiliano Martinez to Chelsea . The spine of the squad was ripped out. With a raf"
-    },
-    {
      "title": "Aston Villa rocked by Real Madrid interest in new signing: report",
      "url": "https://www.fourfourtwo.com/transfer/aston-villa-rocked-by-real-madrid-interest-in-new-signing-report",
      "source": "FourFourTwo FPL",
@@ -1015,6 +1005,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "Morgan Rogers hits out at the \"nonsense\" over claims that Chelsea teammate Cole Palmer is not interested in representing England."
+    },
+    {
+     "title": "Rogers plays down 'nonsense' that Palmer does not want to play for England",
+     "url": "https://www.soccerway.com/news/soccer-uefa-nations-league-rogers-plays-down-nonsense-that-palmer-does-not-want-to-play-for-england/0t2U4lMO/",
+     "source": "Soccerway",
+     "published": "2026-11-13T08:53:27+01:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -1161,7 +1160,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 117,
+   "evidence_count": 114,
    "source_count": 19,
    "latest_evidence": "2026-11-13T18:14:46+00:00",
    "official_source_found": true,
@@ -1303,7 +1302,7 @@
    "club": "MCI",
    "evidence_count": 79,
    "source_count": 17,
-   "latest_evidence": "2026-11-13T15:17:47+00:00",
+   "latest_evidence": "2026-11-14T00:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
