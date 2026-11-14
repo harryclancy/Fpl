@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-14T12:15:36+00:00",
- "seconds": 150.8,
+ "ran_at": "2026-11-14T21:32:28+00:00",
+ "seconds": 149.1,
  "sources_attempted": 78,
  "sources_readable": 55,
- "candidates_discovered": 548,
- "substantive_items": 185,
- "duplicates_removed": 14,
+ "candidates_discovered": 637,
+ "substantive_items": 277,
+ "duplicates_removed": 31,
  "deeply_analysed": 86,
  "deep_read_failed": 4,
- "corpus_size": 19330,
+ "corpus_size": 19258,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 185 articles"
+    "55/78 sources returned 277 articles"
    ]
   },
   "blackout": {
@@ -515,9 +515,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 31,
+   "evidence_count": 32,
    "source_count": 13,
-   "latest_evidence": "2026-11-13T11:27:05+00:00",
+   "latest_evidence": "2026-11-14T13:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -542,6 +542,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "England injury news: Arsenal receive Ezri Konsa update as Thomas Tuchel gets double fitness boost ahead of Spain clash",
+     "url": "https://www.sportsmole.co.uk/football/england/injury-news/news/arsenal-receive-konsa-update-in-double-england-fitness-boost_609098.html",
+     "source": "Sports Mole",
+     "published": "2026-11-14T13:45:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "England head coach Thomas Tuchel receives a double fitness boost ahead of Sunday's UEFA Nations League encounter against Spain."
+    },
     {
      "title": "England predicted lineup vs. Spain: Ezri Konsa returns, Myles Lewis-Skelly decision made",
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/predicted-lineups/konsa-returns-mls-call-how-england-could-line-up-against-spain_609048.html",
@@ -640,15 +649,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Saturday's Premier League clash with Hull City."
-    },
-    {
-     "title": "FPL notes: Konsa injury update, Calafiori rest + Rice’s 90 mins",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/05/fpl-notes-konsa-injury-update-calafiori-rest-rices-90-mins",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-05T04:10:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "William Saliba remains unused as Arsenal edge Slavia Prague The post FPL notes: Konsa injury update, Calafiori rest + Rice’s 90 mins appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -1300,9 +1300,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 79,
+   "evidence_count": 80,
    "source_count": 17,
-   "latest_evidence": "2026-11-14T00:00:00+00:00",
+   "latest_evidence": "2026-11-14T20:11:43+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1526,9 +1526,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "source_count": 5,
-   "latest_evidence": "2026-11-08T14:22:38+00:00",
+   "latest_evidence": "2026-11-14T18:40:57+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1553,6 +1553,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "New York Knicks vs. Toronto Raptors: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/new-york-knicks/preview/new-york-knicks-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_609112.html",
+     "source": "Sports Mole",
+     "published": "2026-11-14T18:40:57+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Knicks vs Raptors preview for Sunday: team news, Scottie Barnes injury status, player props, head-to-head record, betting tips and our score prediction."
+    },
     {
      "title": "Los Angeles Lakers vs. Toronto Raptors: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/toronto-raptors/preview/los-angeles-lakers-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_608134.html",
