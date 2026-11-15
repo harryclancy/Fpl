@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-15T02:44:45+00:00",
- "seconds": 144.8,
+ "ran_at": "2026-11-15T12:47:52+00:00",
+ "seconds": 136.2,
  "sources_attempted": 78,
  "sources_readable": 55,
- "candidates_discovered": 519,
- "substantive_items": 176,
- "duplicates_removed": 12,
- "deeply_analysed": 89,
- "deep_read_failed": 1,
- "corpus_size": 19275,
+ "candidates_discovered": 553,
+ "substantive_items": 197,
+ "duplicates_removed": 19,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 19254,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 176 articles"
+    "55/78 sources returned 197 articles"
    ]
   },
   "blackout": {
@@ -53,7 +53,7 @@
   "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
-  "Liverpool: timed out after 12s for https://www.liverpoolfc.com/sitemap.xml?page=1",
+  "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
@@ -740,9 +740,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 54,
+   "evidence_count": 55,
    "source_count": 14,
-   "latest_evidence": "2026-11-14T06:42:41+00:00",
+   "latest_evidence": "2026-11-15T10:43:36+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -831,6 +831,15 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "England given 10% chance of Spain Nations League win as Ben White/Cole Palmer claim made",
+     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/why-england-only-have-a-10-percent-chance-of-beating-spain_609142.html",
+     "source": "Sports Mole",
+     "published": "2026-11-15T10:43:36+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "England are given just a 10% chance of beating Spain in Sunday's UEFA Nations League clash as a new Ben White/Cole Palmer claim is made."
+    },
+    {
      "title": "Manchester United under Pochettino will be ‘slow and painful’ – but Palmer can vouch for the results",
      "url": "https://www.football365.com/news/manchester-united-pochettino-slow-painful-palmer-results",
      "source": "Football365",
@@ -865,15 +874,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "‘It’s a lie’ – Rogers hits back at Palmer ‘nonsense’ in passionate 232-word defence of Chelsea teammate",
-     "url": "https://www.football365.com/news/rogers-hits-back-palmer-nonsense-passionate-232-word-defence",
-     "source": "Football365",
-     "published": "2026-11-13T07:52:14+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Morgan Rogers has hit out at the “lies” being spread about Chelsea teammate Cole Palmer and his commitment to England."
     }
    ]
   },
@@ -1162,7 +1162,7 @@
    "club": "AVL",
    "evidence_count": 114,
    "source_count": 19,
-   "latest_evidence": "2026-11-14T11:03:12+01:00",
+   "latest_evidence": "2026-11-15T12:30:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1300,7 +1300,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 75,
+   "evidence_count": 74,
    "source_count": 16,
    "latest_evidence": "2026-11-15T01:29:34+00:00",
    "official_source_found": true,
@@ -1526,9 +1526,9 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 9,
-   "source_count": 5,
-   "latest_evidence": "2026-11-14T18:40:57+00:00",
+   "evidence_count": 10,
+   "source_count": 6,
+   "latest_evidence": "2026-11-15T04:55:52+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1553,6 +1553,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Scottie Barnes Headlines Today’s NBA Injury Report: Sunday, 11/15/26",
+     "url": "https://dknetwork.draftkings.com/2026/11/14/austin-reaves-headlines-todays-nba-injury-report-sunday-11-15-26/",
+     "source": "DraftKings Network Soccer",
+     "published": "2026-11-15T04:55:52+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "DraftKings Network has you covered with the latest NBA injury report, news and top plays for Sunday, 11/15/26. The post Scottie Barnes Headlines Today’s NBA Injury Report: Sunday, 11/15/26 appeared first on DraftKings Network ."
+    },
     {
      "title": "New York Knicks vs. Toronto Raptors: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/new-york-knicks/preview/new-york-knicks-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_609112.html",
