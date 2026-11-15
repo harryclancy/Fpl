@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-14T21:32:28+00:00",
- "seconds": 149.1,
+ "ran_at": "2026-11-15T02:44:45+00:00",
+ "seconds": 144.8,
  "sources_attempted": 78,
  "sources_readable": 55,
- "candidates_discovered": 637,
- "substantive_items": 277,
- "duplicates_removed": 31,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 19258,
+ "candidates_discovered": 519,
+ "substantive_items": 176,
+ "duplicates_removed": 12,
+ "deeply_analysed": 89,
+ "deep_read_failed": 1,
+ "corpus_size": 19275,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 277 articles"
+    "55/78 sources returned 176 articles"
    ]
   },
   "blackout": {
@@ -53,7 +53,7 @@
   "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
-  "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
+  "Liverpool: timed out after 12s for https://www.liverpoolfc.com/sitemap.xml?page=1",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
   "Premier Injuries: nothing published in the last 10 days",
@@ -656,9 +656,9 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-11-09T09:30:28+00:00",
-   "official_source_found": false,
+   "source_count": 5,
+   "latest_evidence": "2026-11-14T19:00:00+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -681,6 +681,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Albion 0 Liverpool 3: Seagulls well beaten at the Amex",
+     "url": "https://www.brightonandhovealbion.com/media-article/wft-wsl-match-report-bhaliv-brighton-liverpool",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-11-14T19:00:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Two goals by Beata Olsson ease visitors to a comfortable victory."
+    },
     {
      "title": "HENRY WINTER: Fabian Hurzeler's Brighton & Hove Albion are perfectly set up for success - on and off the pitch",
      "url": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
@@ -716,15 +725,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Brighton could line up for Sunday's Premier League clash against Brentford."
-    },
-    {
-     "title": "Predicted Brentford XI vs. Brighton: Yehor Yarmoliuk returns as one attacking change made",
-     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/predicted-lineups/one-attacking-change-yarmoliuk-returns-predicted-brentford-xi-vs-brighton_608635.html",
-     "source": "Sports Mole",
-     "published": "2026-11-06T22:39:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Brentford could line up for Sunday's Premier League clash against Brighton."
     },
     {
      "title": "Pascal Groß is Not Essential",
@@ -880,8 +880,8 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 47,
-   "source_count": 17,
+   "evidence_count": 45,
+   "source_count": 16,
    "latest_evidence": "2026-11-13T19:44:43+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -933,15 +933,6 @@
      "matched_on": "rogers",
      "kind": "team news",
      "excerpt": "Aston Villa are not a normal football club. After what felt like an eternity of matches against teams that somehow seemed to be playing a more advanced sport altogether, Villa have become competitive by doing things differently. Manager Unai Emery maintained his poker face throughout pre-season. It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martin"
-    },
-    {
-     "title": "Everton Taste First Loss Of The Season To Chelsea",
-     "url": "https://www.evertonfc.com/news/2026/october/17/chelsea-report/",
-     "source": "Everton",
-     "published": "2026-10-17T13:35:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Everton tasted defeat for the first time this season as a second-half double from Pedro Neto proved the difference in a 2-0 loss to Chelsea at Hill Dickinson Stadium. The Blues were competitive in the opening 45 minutes and carved out the best opportunity when Thierno Barry headed a wicked delivery from Jack Grealish into the arms of Emiliano Martinez from six yards out. There was a big talking po"
     },
     {
      "title": "Aston Villa rocked by Real Madrid interest in new signing: report",
@@ -1014,6 +1005,15 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "‘It’s a lie’ – Rogers hits back at Palmer ‘nonsense’ in passionate 232-word defence of Chelsea teammate",
+     "url": "https://www.football365.com/news/rogers-hits-back-palmer-nonsense-passionate-232-word-defence",
+     "source": "Football365",
+     "published": "2026-11-13T07:52:14+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Morgan Rogers has hit out at the “lies” being spread about Chelsea teammate Cole Palmer and his commitment to England."
     }
    ]
   },
@@ -1160,7 +1160,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 115,
+   "evidence_count": 114,
    "source_count": 19,
    "latest_evidence": "2026-11-14T11:03:12+01:00",
    "official_source_found": true,
@@ -1300,9 +1300,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 80,
-   "source_count": 17,
-   "latest_evidence": "2026-11-14T20:11:43+00:00",
+   "evidence_count": 75,
+   "source_count": 16,
+   "latest_evidence": "2026-11-15T01:29:34+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1327,6 +1327,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Everton Trio In Nations League Action As Forward Earns Milestone Cap",
+     "url": "https://www.evertonfc.com/news/2026/november/14/everton-trio-in-nations-league-action-as-forward-earns-milestone-cap/",
+     "source": "Everton",
+     "published": "2026-11-14T22:07:08+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Brennan Johnson, Vitalii Mykolenko and Jake O’Brien all featured for their international sides in the UEFA Nations League on Saturday evening. Johnson and Mykolenko both earned starts, with Johnson’s appearance against Norway marking his 50 th senior international cap for Wales. Facing a tough test in Oslo, they fell to a 3-1 defeat after Antonio Nusa, Andreas Schjelderup and Erling Haaland all st"
+    },
     {
      "title": "RB Leipzig vs. Man City lineups confirmed: Captain Haaland as Cherki, Foden, Guehi decisions made for Champions League game",
      "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/leipzig-vs-man-city-confirmed-xis-captain-haaland-as-cherki-foden-guehi-decisions-made_608404.html",
@@ -1425,15 +1434,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Sports Mole rounds up all of Manchester City's latest injury and suspension news ahead of their Premier League clash with Aston Villa."
-    },
-    {
-     "title": "FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-21T10:05:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Fantasy takeaways from Man City 5-1 AEK Athens The post FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -1442,7 +1442,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-11-12T14:47:55+00:00",
+   "latest_evidence": "2026-11-14T18:37:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1467,6 +1467,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "San Antonio Spurs vs. Utah Jazz: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/utah-jazz/preview/san-antonio-spurs-vs-utah-jazz-player-props-injury-report-and-prediction--nba_609111.html",
+     "source": "Sports Mole",
+     "published": "2026-11-14T18:37:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Spurs vs. Jazz preview with player props, injury report, form guide and score prediction for Sunday’s NBA game at the Delta Center."
+    },
     {
      "title": "Phelan's Momentum Ahead of Spurs Test",
      "url": "https://www.evertonfc.com/news/2026/november/12/phelan--/",
@@ -1511,15 +1520,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Jo Potter's side secured an extra point in the Subway Players Cup, after winning 5-3 on penalties following a 1-1 draw at Brisbane Road."
-    },
-    {
-     "title": "San Antonio Spurs vs. Chicago Bulls: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-chicago-bulls-player-props-injury-report-and-prediction--nba_608830.html",
-     "source": "Sports Mole",
-     "published": "2026-11-10T10:30:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Spurs vs. Bulls prediction, player props and injury report. San Antonio bring a nine-game winning streak to a Chicago side that has lost seven straight."
     }
    ]
   },
