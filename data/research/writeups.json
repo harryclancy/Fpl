@@ -1,21 +1,21 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-11-15T21:51:43+00:00",
+ "generated": "2026-11-16T02:47:53+00:00",
  "gameweek": 11,
- "corpus_size": 19173,
+ "corpus_size": 19172,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — Football365, 24 Oct: “Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.”",
-   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 10 retrieved item(s) from 7 source(s), the most recent dated 10 Nov.",
+   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 9 retrieved item(s) from 6 source(s), the most recent dated 10 Nov.",
    "case_for": "What supports keeping him: Football365, 10 Nov: “Senne Lammens falls, Alisson climbs into a top 10 led by David Raya David Raya has started 2026/27 where he left off last season, while Senne Lammens is slipping behind Man Utd ’s dreadful defence.” Football365, 10 Nov: “Arsenal stopper Raya was hugely influential in the Gunners’ Premier League coronation last term and he has been an important figure during the start of the defence of their title.” Everton, 24 Oct: “Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — Football365, 24 Oct: “I’m Spanish, and naturally, I’d love to play there.” READ: Arsenal ‘boast’ £200m quartet in Underplayed Premier League XI When asked what his goals are for this year, Raya added: “To win everything.” Football365, 21 Oct: “Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.” Football365, 21 Oct: “Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.”",
-   "outlook": "On the coming weeks — Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.” Nottingham Forest, 18 Oct: “Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.”",
+   "outlook": "On the coming weeks — Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.” OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
    "confidence": "high",
-   "evidence_count": 10,
+   "evidence_count": 9,
    "evidence_used": [
     "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
     "https://www.fourfourtwo.com/person/player/same-old-arsenal-there-were-doubts-inside-the-team-but-the-day-after-the-players-had-a-meeting-without-the-boss-everyone-spoke-up-nobody-talked-about-tactics-this-was-about-handling-adversity-mikel-merino-on-the-game-that-won-arsenal-the-league",
@@ -25,7 +25,6 @@
     "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
     "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
     "https://www.flashscore.com/news/soccer-premier-league-david-raya-hails-arsenal-response-to-bruising-brighton-loss/Igxf9IUQ/",
-    "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
     "https://onefpl.com/blog/david-raya-fpl-2026-27"
    ],
    "sources_used": [
@@ -33,7 +32,6 @@
     "Flashscore",
     "Football365",
     "FourFourTwo FPL",
-    "Nottingham Forest",
     "OneFPL",
     "Sports Mole"
    ],
@@ -139,16 +137,6 @@
      "published": "2026-10-19T12:52:35+02:00",
      "tone": "neutral",
      "topics": []
-    },
-    {
-     "text": "Forest pressed the Arsenal rearguard, which ended with Dan Ndoye’s driven effort being tipped round the post by David Raya.",
-     "source": "Nottingham Forest",
-     "url": "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
-     "published": "2026-10-18T17:23:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "tactics"
-     ]
     },
     {
      "text": "David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.",
@@ -2079,14 +2067,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Soccerway, 13 Nov: “It's a lie.\" In his post-match press ​conference, Tuchel told reporters it was \"totally fine\" for Rogers ‌to defend Palmer.” Fantasy Football Scout, 29 Oct: “And we need a couple of days to check what’s going to be the injury.” – Xabi Alonso on Maxence Lacroix “Well, we have started with Pedro [Neto], with Danny [Welbeck] and with Morgan [Rogers] up front.”",
-   "why_here": "Rogers is in the starting eleven this week at £8.2m as a MID. The selection rests on 46 retrieved item(s) from 16 source(s), the most recent dated 13 Nov.",
+   "why_here": "Rogers is in the starting eleven this week at £8.2m as a MID. The selection rests on 47 retrieved item(s) from 16 source(s), the most recent dated 13 Nov.",
    "case_for": "What supports keeping him: Soccerway, 13 Nov: “Asked about Palmer's exclusion ‌after England's 2-1 win over Croatia at Wembley, goalscorer Rogers told ​the BBC: \"He wants to be here.” 101 Great Goals — Fantasy, 12 Nov: “Rogers was waiting to pounce, meeting the loose ball with a right-footed volley that bounced into the ground before squirming past Croatia goalkeeper Dominik Livakovic.” Sunderland, 07 Nov: “Joao Pedro and Morgan Rogers are the joint-top scorers for the Blues with five goals.”",
-   "case_against": "What argues against him: Sports Mole, 13 Nov: “However, when Rogers' comments were put to Tuchel after the Croatia victory, the German appeared unconcerned by his player's public intervention.” Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
-   "expected_minutes": "On minutes — Sports Mole, 13 Nov: “Rogers spoke out following England's 2-1 Nations League victory over Croatia at Wembley on Thursday, a result that secured the Three Lions' place in the quarter-finals of the competition.” Sports Mole, 13 Nov: “On Thursday night, Rogers got on the scoresheet as the Three Lions recorded a 2-1 victory over Croatia at Wembley Stadium.”",
+   "case_against": "What argues against him: Sports Mole, 13 Nov: “However, when Rogers' comments were put to Tuchel after the Croatia victory, the German appeared unconcerned by his player's public intervention.” Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.” Chelsea: “Internationals: Rogers helps England win epic as Belgium and France advance | News | Official Site | Chelsea Football Club Morgan Rogers’ played throughout England’s dramatic 3-2 win against Spain in Madrid, while Romeo Lavia helped Belgium progress to the UEFA Nations League knockout stages.”",
+   "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 13 Nov: “Rogers spoke out following England's 2-1 Nations League victory over Croatia at Wembley on Thursday, a result that secured the Three Lions' place in the quarter-finals of the competition.” Sports Mole, 13 Nov: “On Thursday night, Rogers got on the scoresheet as the Three Lions recorded a 2-1 victory over Croatia at Wembley Stadium.”",
    "developments": "Recent developments — Sports Mole, 13 Nov: “Sports Mole has recently spoken to a Chelsea legend to discuss the subject, while Rogers was quizzed on the matter after Thursday's game.” Football365, 13 Nov: “People just see it as news and say the easy thing,” Rogers told BBC Radio 5 Live.” FourFourTwo FPL, 11 Nov: “Beyond that, Morgan Rogers, Morgan Gibbs-White, Eberechi Eze, Cole Palmer and Phil Foden have all competed for that position over the past 18 months.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 11 Nov: “Each of them offers something a little different to Bellingham: Eze and Palmer, for example, have the deftness of pass, while Foden and Rogers are capable of arriving at the edge of the box for a finesse finish into the bottom corner.” Fantasy Football Scout, 29 Oct: “So we were a little bit forced with substitutions.” – Xabi Alonso on why he didn’t bring Estevao on In the absence of Palmer and Pedro, Rogers stepped up from the spot to convert Chelsea’s first-half penalty.”",
    "confidence": "high",
-   "evidence_count": 46,
+   "evidence_count": 47,
    "evidence_used": [
     "https://www.fourfourtwo.com/competition/watch-spain-vs-england-nations-league-2026-27-free",
     "https://www.fourfourtwo.com/competition/watch-england-vs-croatia-nations-league-2026-27-free",
@@ -2684,6 +2672,24 @@
      "published": "",
      "tone": "neutral",
      "topics": []
+    },
+    {
+     "text": "Internationals: Rogers helps England win epic as Belgium and France advance | News | Official Site | Chelsea Football Club Morgan Rogers’ played throughout England’s dramatic 3-2 win against Spain in Madrid, while Romeo Lavia helped Belgium progress to the UEFA Nations League knockout stages.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/internationals-rogers-helps-england-win-epic-as-belgium-and-france-advance",
+     "published": "",
+     "tone": "negative",
+     "topics": [
+      "injury"
+     ]
+    },
+    {
+     "text": "Rogers played on the right of England’s attack as Thomas Tuchel’s side outplayed the world champions for the best part of an hour.",
+     "source": "Chelsea",
+     "url": "https://www.chelseafc.com/en/news/article/internationals-rogers-helps-england-win-epic-as-belgium-and-france-advance",
+     "published": "",
+     "tone": "neutral",
+     "topics": []
     }
    ]
   },
@@ -2691,14 +2697,14 @@
    "player": "Tavernier",
    "club": "BOU",
    "status": "Latest on Tavernier — Fantasy Football Scout, 09 Nov: “That is why we have eight wins in a row.” – Marco Rose SILVA + TAVERNIER NEAR BANS Booked on Sunday, Antonio Silva (£5.1m) and Tavernier are now on four bookings for the season, so one more in Bournemouth’s next nine league matches will earn them a one-match ban.” Fantasy Football Scout, 20 Oct: “Scout Notes FPL notes: Brobbey injury latest + Tavernier third in midfielder table October 20 5 comments 20 October 2026 5 comments Bournemouth earned their first Premier League win and clean sheet of 2026/27 with a comfortable victory over 10-man Sunderland on Sunday.”",
-   "why_here": "Tavernier is in the starting eleven this week at £6.7m as a MID. The selection rests on 28 retrieved item(s) from 7 source(s), the most recent dated 09 Nov.",
+   "why_here": "Tavernier is in the starting eleven this week at £6.7m as a MID. The selection rests on 22 retrieved item(s) from 6 source(s), the most recent dated 09 Nov.",
    "case_for": "What supports keeping him: FourFourTwo FPL, 26 Oct: “United lost 3-0 thanks to goals from Rayan, Marcus Tavernier and Evanilson, with defensive errors making life easy for the Cherries at Old Trafford.” FourFourTwo FPL, 26 Oct: “Goals from Rayan, Marcus Tavernier and Evanilson concluded a miserable week for United after a dismal Champions League loss at Como and the subsequent comments of captain Bruno Fernandes .” Fantasy Football Scout, 25 Oct: “GOAL FOR TAVERNIER The team hasn’t won in eight matches (all competitions) and are still without a Premier League clean sheet.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — AFC Bournemouth, 31 Oct: “Rose makes eight changes from the team which beat Aston Villa in the Carabao Cup on Wednesday, with Christie, António Silva and Marcus Tavernier the three survivors.” AFC Bournemouth, 22 Oct: “Kluivert opened the scoring from the penalty spot, with Marcus Tavernier and Amine Adli also on target as Marco Rose’s side made it three wins from three in the UEFA Europa League.”",
    "developments": "Recent developments — Fantasy Football Scout, 09 Nov: “Prior to that, Walton blocked a scuffed attempt by Marcus Tavernier (£6.7m) from only a few yards out, before a brilliant strike from Justin Kluivert (£5.9m) was tipped over the bar.” Football365, 05 Nov: “According to reports, Manchester United have turned to Bournemouth star Marcus Tavernier amid competition from rivals Arsenal.” Football365, 05 Nov: “Manchester United turn to Arsenal target Marcus Tavernier The same report claims Man Utd are ‘smitten’ by Bournemouth star Tavernier and could ruin Arsenal’s double deal for the forward and Junior Kroupi.”",
    "outlook": "On the coming weeks — Tactical Football Analysis, 29 Oct: “Bournemouth: Tavernier, Evanilson And Favourable Fixtures Three weeks ago, Marco Rose was under pressure after a 5-1 hammering at Stamford Bridge.” Tactical Football Analysis, 29 Oct: “Most Shots, GW1 to GW8 (Source: FF Hub If you want to go against him, Tavernier at home to Leeds is the best alternative.”",
    "confidence": "high",
-   "evidence_count": 28,
+   "evidence_count": 22,
    "evidence_used": [
     "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-silva-tavernier-near-bans-evanilson-scores-again",
     "https://www.afcb.co.uk/news/2026/november/08/scott-returns-for-portman-road-encounter/",
@@ -2719,7 +2725,6 @@
     "Fantasy Football Scout",
     "Football365",
     "FourFourTwo FPL",
-    "Sunderland",
     "Tactical Football Analysis"
    ],
    "quotes": [
@@ -3004,96 +3009,6 @@
      "source": "Fantasy Football Scout",
      "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/fpl-notes-brobbey-injury-latest-tavernier-third-in-midfielder-table",
      "published": "2026-10-20T00:20:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "suspension"
-     ]
-    },
-    {
-     "text": "Marcus Tavernier and Evanilson maintained their impressive form in front of goal as AFC Bournemouth triumphed 2-0 against Sunderland at Vitality Stadium on Sunday.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/gallery--pictures-from-first-premier-league-win-of-the-season/",
-     "published": "2026-10-18T17:00:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "tactics"
-     ]
-    },
-    {
-     "text": "Tavernier drew first blood with his fourth goal of the season, his diving header from Evanilson’s cross giving the Cherries the lead in the sixth minute.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/gallery--pictures-from-first-premier-league-win-of-the-season/",
-     "published": "2026-10-18T17:00:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Marcus Tavernier hailed the impact of Evanilson after the Brazilian played a starring role in AFC Bournemouth’s 2-0 victory over Sunderland.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/tavernier-praises-evanilson-after-sunderland-win/",
-     "published": "2026-10-18T16:00:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "tactics"
-     ]
-    },
-    {
-     "text": "The forward was instrumental in both goals at Vitality Stadium, first showing strength and composure before providing the cross for Tavernier to head home the opener.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/tavernier-praises-evanilson-after-sunderland-win/",
-     "published": "2026-10-18T16:00:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "The Black Cats fell behind in the sixth minute when Marcus Tavernier headed home Evanilson’s cross, before Kevin Danso was shown a straight red card 11 minutes later, leaving the visitors to play the majority of the contest with 10 men.",
-     "source": "Sunderland",
-     "url": "https://www.safc.com/news/2026/october/18/le-bris-we-were-not-sunderland-today-/",
-     "published": "2026-10-18T15:50:43+00:00",
-     "tone": "neutral",
-     "topics": [
-      "suspension"
-     ]
-    },
-    {
-     "text": "Goals from Marcus Tavernier and Evanilson earned Marco Rose’s side their first Premier League win of the season, with the visitors reduced to ten men following Kevin Danso’s first-half dismissal.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/hill-proud-of-cherries-after-sunderland-response/",
-     "published": "2026-10-18T15:45:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Tavernier opened the scoring after just six minutes, heading home after excellent work from Evanilson, before the Brazilian added the second shortly after half-time.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/hill-proud-of-cherries-after-sunderland-response/",
-     "published": "2026-10-18T15:45:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Bournemouth took the lead in the sixth minute when Evanilson broke into the penalty area and delivered a cross for Marcus Tavernier, who headed into an unguarded net.",
-     "source": "Sunderland",
-     "url": "https://www.safc.com/news/2026/october/18/Sunderland-defeated-at-Bournemouth/",
-     "published": "2026-10-18T15:00:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "set pieces"
-     ]
-    },
-    {
-     "text": "His second-half solo effort doubled the Cherries’ lead after he had assisted Marcus Tavernier for their sixth-minute opener.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/match-report-v-sunderland/",
-     "published": "2026-10-18T14:57:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "After Tavernier had headed home his fourth goal of the season, Sunderland were reduced to ten men when defender Kevin Danso was sent off for hauling down Evanilson in the 17th minute.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/18/match-report-v-sunderland/",
-     "published": "2026-10-18T14:57:00+00:00",
      "tone": "positive",
      "topics": [
       "suspension"
