@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-17T00:50:16+00:00",
- "seconds": 163.6,
+ "ran_at": "2026-11-17T14:31:45+00:00",
+ "seconds": 153.1,
  "sources_attempted": 78,
  "sources_readable": 54,
- "candidates_discovered": 625,
- "substantive_items": 288,
- "duplicates_removed": 27,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 19146,
+ "candidates_discovered": 638,
+ "substantive_items": 306,
+ "duplicates_removed": 21,
+ "deeply_analysed": 86,
+ "deep_read_failed": 4,
+ "corpus_size": 19127,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 288 articles"
+    "54/78 sources returned 306 articles"
    ]
   },
   "blackout": {
@@ -44,6 +44,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Pilot: HTTP 402 for https://www.fplpilot.com/sitemap-0.xml",
+  "Statz.ai FPL: timed out after 12s for https://statz.ai/blog/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,7 +52,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
@@ -68,7 +68,7 @@
    "club": "ARS",
    "evidence_count": 8,
    "source_count": 5,
-   "latest_evidence": "2026-11-10T14:54:35+00:00",
+   "latest_evidence": "2026-11-17T10:49:38+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -103,13 +103,13 @@
      "excerpt": "Goals from Ezri Konsa and Gabriel consigned Everton to a 2-0 defeat at the home of reigning Premier League champions Arsenal on Saturday. Konsa opened the scoring inside seven minutes in north London, prodding home from close range after Martin Odegaard's dangerous corner popped up and was clawed on to the crossbar by Jordan Pickford. The Blues responded relatively well to that early setback, thou"
     },
     {
-     "title": "Mikel Merino reveals how Arsenal have battled internal doubts",
-     "url": "https://www.fourfourtwo.com/person/player/same-old-arsenal-there-were-doubts-inside-the-team-but-the-day-after-the-players-had-a-meeting-without-the-boss-everyone-spoke-up-nobody-talked-about-tactics-this-was-about-handling-adversity-mikel-merino-on-the-game-that-won-arsenal-the-league",
+     "title": "Arsenal star David Raya close to deal, following La Liga wish comments: report",
+     "url": "https://www.fourfourtwo.com/transfer/arsenal-star-david-raya-close-to-deal-following-la-liga-wish-comments-report",
      "source": "FourFourTwo FPL",
-     "published": "2026-10-19T15:00:00+00:00",
+     "published": "2026-11-17T10:49:38+00:00",
      "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Arsenal star Mikel Merino has opened up about the moment that he believed the Gunners would win their first Premier League title in 22 years. The Spaniard picked up a serious injury in January that looked to rule him out of the season, but miraculously fought to play in Arsenal's final league game of the season and earn a place in Luis de la Fuente's World Cup squad. Speaking now to The Player's T"
+     "kind": "transfer",
+     "excerpt": "Arsenal goalkeeper David Raya is the subject of interest from La Liga – with a new contract on the table. The 31-year-old has established himself as arguably England's best goalkeeper since moving to North London, winning the Golden Glove in every season since he's been at Arsenal . But with a contract expiring in 2028 and recent comments about his desire to move back to his native Spain, Raya's f"
     },
     {
      "title": "Arsenal react to leading star revealing he wants La Liga transfer as huge update on new deal emerges",
@@ -423,8 +423,8 @@
    "player": "Van Hecke",
    "club": "TOT",
    "evidence_count": 8,
-   "source_count": 5,
-   "latest_evidence": "2026-11-16T16:45:00+00:00",
+   "source_count": 6,
+   "latest_evidence": "2026-11-17T10:07:27+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -438,6 +438,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -485,13 +486,13 @@
      "excerpt": "Plus, a £4.9m midfielder on the scoresheet again The post FPL notes: Maddison returns, injury fears eased + van Hecke hits DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Tottenham Hotspur 3-1 Coventry City",
-     "url": "https://www.ccfc.co.uk/news/2026/october/19/tottenham-hotspur-3-1-coventry-city/",
-     "source": "Coventry City",
-     "published": "2026-10-19T21:49:13+00:00",
+     "title": "Van Hecke ‘ashamed’ as Netherlands ‘fold like a pack of cards’ on memorable night for Wirtz and Germany",
+     "url": "https://www.101greatgoals.com/football/internationals/jan-paul-van-hecke-ashamed-netherlands-fold-like-pack-of-cards-florian-wirtz-germany/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-17T10:07:27+00:00",
      "matched_on": "van hecke",
-     "kind": "team news",
-     "excerpt": "Coventry City’s winning sequence came to an end as Tottenham Hotspur came out on top in a competitive encounter at the Tottenham Hotspur Stadium. James Maddison scored a screamer to give Spurs the lead, but Jack Rudoni levelled the contest early in the second half after a spirited response from the Sky Blues. Omar Marmoush restored the hosts’ lead before Ben Davies made sure deep into injury time."
+     "kind": "general",
+     "excerpt": "It was a sobering night for the Netherlands in Berlin and defender Jan Paul van Hecke says the players need to do much better"
     },
     {
      "title": "Jack Rudoni nominated for Premier League October Player of the Month award",
@@ -666,8 +667,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-11-14T19:00:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-11-16T17:58:21+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -678,9 +679,9 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -691,6 +692,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Hull injury news: Nobel Mendy update on “problem” ahead of Brighton Premier League clash",
+     "url": "https://www.sportsmole.co.uk/football/hull-city/injury-news/news/hull-dealt-fresh-gbp21m-injury-problem-before-brighton-clash_609225.html",
+     "source": "Sports Mole",
+     "published": "2026-11-16T17:58:21+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Hull City are sweating over the fitness of defender Nobel Mendy ahead of Sunday’s Premier League clash with Brighton & Hove Albion."
+    },
     {
      "title": "Albion 0 Liverpool 3: Seagulls well beaten at the Amex",
      "url": "https://www.brightonandhovealbion.com/media-article/wft-wsl-match-report-bhaliv-brighton-liverpool",
@@ -735,24 +745,15 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Brighton could line up for Sunday's Premier League clash against Brentford."
-    },
-    {
-     "title": "Pascal Groß is Not Essential",
-     "url": "https://full90fpl.com/pascal-gros-is-not-essential/?utm_source=rss&utm_medium=rss&utm_campaign=pascal-gros-is-not-essential",
-     "source": "Full90 FPL",
-     "published": "2026-10-19T15:36:36+00:00",
-     "matched_on": "gro",
-     "kind": "general",
-     "excerpt": "Pascal Groß is Not Essential Today, I’m looking at Groß. He’s the highest scoring midfielder with tons of transfers in, but when a player becomes that popular, I think it’s worth stepping back. In FPL, it’s easy to fixate on points already scored, but past points aren’t future points. So, in this piece, I want […] The post Pascal Groß is Not Essential appeared first on Full90 FPL ."
     }
    ]
   },
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 57,
+   "evidence_count": 59,
    "source_count": 14,
-   "latest_evidence": "2026-11-16T20:37:07+00:00",
+   "latest_evidence": "2026-11-17T12:00:41+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -823,6 +824,15 @@
      "excerpt": "Plus, an update on James Maddison after Spurs beat Chelsea The post FPL notes: Pedro injury latest + why Palmer isn’t flagged appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
+     "title": "Man Utd fully-costed plan to sign entire USA squad plus Palmer, Kane and 11 defenders emerges",
+     "url": "https://www.football365.com/news/man-utd-usa-palmer-kane-transfer-plan-pochettino-mediawatch",
+     "source": "Football365",
+     "published": "2026-11-17T12:00:41+00:00",
+     "matched_on": "palmer",
+     "kind": "transfer",
+     "excerpt": "Mauricio Pochettino is going to sign all the USA lads as well as all his other former players for Manchester United in a very busy January."
+    },
+    {
      "title": "Pochettino to sign Kane and Palmer in five-player Manchester United swoop despite ‘worrying omen’",
      "url": "https://www.football365.com/news/pochettino-sign-kane-palmer-five-player-manchester-united-swoop",
      "source": "Football365",
@@ -875,15 +885,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Thomas Tuchel responds after Morgan Rogers calls claims about Cole Palmer's England commitment \"a lie\" following the Croatia victory."
-    },
-    {
-     "title": "Chelsea news: Morgan Rogers hits out at Cole Palmer England 'lies' in staunch defence of teammate",
-     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/rogers-defends-chelsea-teammate-palmer-over-england-lies_609043.html",
-     "source": "Sports Mole",
-     "published": "2026-11-13T10:25:06+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Morgan Rogers hits out at the \"nonsense\" over claims that Chelsea teammate Cole Palmer is not interested in representing England."
     }
    ]
   },
@@ -1030,7 +1031,7 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 22,
+   "evidence_count": 21,
    "source_count": 6,
    "latest_evidence": "2026-11-09T08:30:00+00:00",
    "official_source_found": true,
@@ -1312,7 +1313,7 @@
    "club": "MCI",
    "evidence_count": 75,
    "source_count": 16,
-   "latest_evidence": "2026-11-17T00:05:00+00:00",
+   "latest_evidence": "2026-11-17T08:49:13+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1657,7 +1658,7 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 10,
+   "evidence_count": 9,
    "source_count": 6,
    "latest_evidence": "2026-11-12T16:00:00+00:00",
    "official_source_found": true,
@@ -1672,7 +1673,6 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "match report",
     "press conference",
     "set pieces",
     "statistics",
@@ -1719,15 +1719,6 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/19/fpl-notes-manzambi-wan-bissaka-injury-latest-wissa-up-front",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-19T15:30:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Plus, concerns for Newcastle at both ends of the pitch The post FPL notes: Manzambi + Wan-Bissaka injury latest, Wissa up front appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Newcastle United desperately lack the cut-and-thrust in attack that’ll keep them out of relegation trouble",
