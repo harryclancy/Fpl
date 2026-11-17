@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-17T14:31:45+00:00",
- "seconds": 153.1,
+ "ran_at": "2026-11-17T23:52:03+00:00",
+ "seconds": 141.8,
  "sources_attempted": 78,
- "sources_readable": 54,
- "candidates_discovered": 638,
- "substantive_items": 306,
- "duplicates_removed": 21,
- "deeply_analysed": 86,
- "deep_read_failed": 4,
- "corpus_size": 19127,
+ "sources_readable": 58,
+ "candidates_discovered": 649,
+ "substantive_items": 268,
+ "duplicates_removed": 17,
+ "deeply_analysed": 87,
+ "deep_read_failed": 3,
+ "corpus_size": 19055,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "54/78 sources returned 306 articles"
+    "58/78 sources returned 268 articles"
    ]
   },
   "blackout": {
@@ -38,13 +38,10 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "Fantasy Football 247: nothing published in the last 10 days",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
-  "FPL Pilot: HTTP 402 for https://www.fplpilot.com/sitemap-0.xml",
-  "Statz.ai FPL: timed out after 12s for https://statz.ai/blog/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -53,7 +50,6 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
-  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -68,7 +64,7 @@
    "club": "ARS",
    "evidence_count": 8,
    "source_count": 5,
-   "latest_evidence": "2026-11-17T10:49:38+00:00",
+   "latest_evidence": "2026-11-17T20:53:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -101,6 +97,15 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Goals from Ezri Konsa and Gabriel consigned Everton to a 2-0 defeat at the home of reigning Premier League champions Arsenal on Saturday. Konsa opened the scoring inside seven minutes in north London, prodding home from close range after Martin Odegaard's dangerous corner popped up and was clawed on to the crossbar by Jordan Pickford. The Blues responded relatively well to that early setback, thou"
+    },
+    {
+     "title": "Arsenal lock down defence as Hincapie joins Rice and Raya in contract talks",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/a-new-and-surprising-contract-extension-coming-at-arsenal_609288.html",
+     "source": "Sports Mole",
+     "published": "2026-11-17T20:53:20+00:00",
+     "matched_on": "raya",
+     "kind": "transfer",
+     "excerpt": "Arsenal are in advanced talks over a new deal with a 24-year-old defender who has more than four years left, the third key player to be tied down in a week."
     },
     {
      "title": "Arsenal star David Raya close to deal, following La Liga wish comments: report",
@@ -146,15 +151,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "The Arsenal goalkeeper has revealed where he would love to play before retiring, after a title-winning season and a World Cup spent on the bench."
-    },
-    {
-     "title": "Arsenal would be ‘nowhere near the title’ without £27m star, claims Schmeichel",
-     "url": "https://www.football365.com/news/arsenal-schmeichel-nowhere-near-tittle-without-raya",
-     "source": "Football365",
-     "published": "2026-10-20T06:28:03+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya."
     },
     {
      "title": "David raya fpl 2026 27",
@@ -422,7 +418,7 @@
   "Van Hecke": {
    "player": "Van Hecke",
    "club": "TOT",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 6,
    "latest_evidence": "2026-11-17T10:07:27+00:00",
    "official_source_found": true,
@@ -445,8 +441,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -475,15 +471,6 @@
      "matched_on": "van hecke",
      "kind": "team news",
      "excerpt": "Plus, Mateta set to miss the next three Gameweeks The post FPL notes: van Hecke haul + De Zerbi on Porro’s fitness appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "FPL notes: Maddison returns, injury fears eased + van Hecke hits DefCon",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/fpl-notes-maddison-returns-injury-fears-eased-van-hecke-hits-defcon",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-20T13:30:00+00:00",
-     "matched_on": "van hecke",
-     "kind": "team news",
-     "excerpt": "Plus, a £4.9m midfielder on the scoresheet again The post FPL notes: Maddison returns, injury fears eased + van Hecke hits DefCon appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Van Hecke ‘ashamed’ as Netherlands ‘fold like a pack of cards’ on memorable night for Wirtz and Germany",
@@ -526,9 +513,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 33,
+   "evidence_count": 35,
    "source_count": 13,
-   "latest_evidence": "2026-11-15T16:45:00+00:00",
+   "latest_evidence": "2026-11-17T15:46:57+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1171,7 +1158,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 113,
+   "evidence_count": 112,
    "source_count": 20,
    "latest_evidence": "2026-11-16T22:35:46+00:00",
    "official_source_found": true,
@@ -1311,9 +1298,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 75,
+   "evidence_count": 78,
    "source_count": 16,
-   "latest_evidence": "2026-11-17T08:49:13+00:00",
+   "latest_evidence": "2026-11-17T22:45:24+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1338,6 +1325,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Last-gasp Haaland penalty completes amazing comeback to secure quarter-final for Norway",
+     "url": "https://www.soccerway.com/news/last-gasp-haaland-penalty-completes-amazing-comeback-to-secure-quarter-final-for-norway/b76oArbC/",
+     "source": "Soccerway",
+     "published": "2026-11-17T22:45:24+01:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "How to watch Denmark vs Norway: Live Streams, TV Channels, Team News & Predictions for winner-takes-all Nations League clash",
+     "url": "https://www.fourfourtwo.com/competition/watch-denmark-vs-norway-nations-league-2026-27-free",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-17T16:45:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Watch Denmark vs Norway for free from anywhere, as two Scandinavian countries meet in Copenhagen with a Nations League quarter-final place up for grabs. FourFourTwo has all the live stream details and TV channels, wherever you are in the world. Denmark's eye-catching 4-1 win away to Portugal on Saturday put them in pole position for the second quarter-final place in Group A4, with the hosts needin"
+    },
     {
      "title": "Everton Trio In Nations League Action As Forward Earns Milestone Cap",
      "url": "https://www.evertonfc.com/news/2026/november/14/everton-trio-in-nations-league-action-as-forward-earns-milestone-cap/",
@@ -1427,24 +1432,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Our FPL Gameweek 8 guide covers the latest injury news, Saka replacements, captaincy picks, defenders and fixture swings. We assess Mbeumo, Tavernier, Ødegaard, Haaland and more ahead of the deadline."
-    },
-    {
-     "title": "'Do you REALLY trust Erling Haaland away at Aston Villa?' The FPL armband debate is fierce heading into Gameweek 8",
-     "url": "https://www.fourfourtwo.com/tactic/do-you-really-trust-erling-haaland-away-at-aston-villa-the-fpl-armband-debate-is-fierce-heading-into-gameweek-8",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-23T06:00:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Every so often a Gameweek comes along where the armband refuses to pick itself, and this is one of them. Manchester City travel to Aston Villa, Chelsea welcome Spurs, Arsenal host Everton and Manchester United face Bournemouth at Old Trafford. Each of those fixtures has a fair argument behind it, and I have changed my mind more than once already. Here is how I see the six main options. The catch I"
-    },
-    {
-     "title": "Man City injury, suspension list and return dates vs. Aston Villa: Erling Haaland, Antoine Semenyo, Nico O'Reilly latest",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/haaland-semenyo-oreilly-latest-man-city-injury-suspension-list-vs-villa_607357.html",
-     "source": "Sports Mole",
-     "published": "2026-10-21T12:07:00+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Manchester City's latest injury and suspension news ahead of their Premier League clash with Aston Villa."
     }
    ]
   },
@@ -1770,9 +1757,9 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 18,
-   "source_count": 4,
-   "latest_evidence": "2026-10-31T13:48:46+00:00",
+   "evidence_count": 19,
+   "source_count": 5,
+   "latest_evidence": "2026-11-17T14:46:33+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1823,6 +1810,15 @@
      "matched_on": "muharemovic",
      "kind": "transfer",
      "excerpt": "Barcelona reportedly consider making a move for Leeds United centre-back Tarik Muharemovic during next summer's transfer window."
+    },
+    {
+     "title": "Leeds United star joins vaunted Arsenal and Liverpool men in Premier League's top bracket",
+     "url": "https://www.fourfourtwo.com/person/player/leeds-united-star-joins-vaunted-arsenal-and-liverpool-men-in-premier-leagues-top-bracket",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-17T14:46:33+00:00",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": "Leeds United defender Tarik Muharemovic has emerged as one of the Premier League’s most complete centre-backs this season, ranking alongside Arsenal’s Gabriel and Ezri Konsa, and Liverpool’s Virgil van Dijk. Data published by football analytics platform Ballity Insight Lab evaluated 54 qualifying Premier League centre-backs across the opening 10 league games of 2026/27, plotting each player’s perc"
     },
     {
      "title": "Tarik muharemovic we will show even more of our qualities",
@@ -1890,15 +1886,6 @@
     {
      "title": "Muharemovic picks up seasons first hero of the month award",
      "url": "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic on elland roads unbelievable atmosphere",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-on-elland-roads-unbelievable-atmosphere",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
