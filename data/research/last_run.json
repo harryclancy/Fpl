@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-16T13:43:31+00:00",
- "seconds": 154.4,
+ "ran_at": "2026-11-17T00:50:16+00:00",
+ "seconds": 163.6,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 567,
- "substantive_items": 232,
- "duplicates_removed": 18,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 19163,
+ "sources_readable": 54,
+ "candidates_discovered": 625,
+ "substantive_items": 288,
+ "duplicates_removed": 27,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 19146,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 232 articles"
+    "54/78 sources returned 288 articles"
    ]
   },
   "blackout": {
@@ -39,6 +39,7 @@
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
   "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
+  "Fantasy Football 247: nothing published in the last 10 days",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -52,6 +53,7 @@
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Arsenal: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Ipswich Town: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -64,8 +66,8 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 9,
-   "source_count": 6,
+   "evidence_count": 8,
+   "source_count": 5,
    "latest_evidence": "2026-11-10T14:54:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -153,15 +155,6 @@
      "matched_on": "raya",
      "kind": "general",
      "excerpt": "Manchester United legend Peter Schmeichel insists that Arsenal “would have been nowhere near” the Premier League title without David Raya."
-    },
-    {
-     "title": "'We came back very strong': Raya hails Arsenal response to bruising Brighton loss",
-     "url": "https://www.flashscore.com/news/soccer-premier-league-david-raya-hails-arsenal-response-to-bruising-brighton-loss/Igxf9IUQ/",
-     "source": "Flashscore",
-     "published": "2026-10-19T12:52:35+02:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": ""
     },
     {
      "title": "David raya fpl 2026 27",
@@ -289,9 +282,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 17,
+   "evidence_count": 18,
    "source_count": 7,
-   "latest_evidence": "2026-11-15T16:45:00+00:00",
+   "latest_evidence": "2026-11-16T19:10:53+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -429,9 +422,9 @@
   "Van Hecke": {
    "player": "Van Hecke",
    "club": "TOT",
-   "evidence_count": 7,
-   "source_count": 4,
-   "latest_evidence": "2026-11-05T10:59:00+00:00",
+   "evidence_count": 8,
+   "source_count": 5,
+   "latest_evidence": "2026-11-16T16:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -451,10 +444,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Watch Germany vs Netherlands: Free streams & TV channels",
+     "url": "https://www.fourfourtwo.com/competition/watch-germany-vs-netherlands-nations-league-2026-27-free",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-16T16:45:00+00:00",
+     "matched_on": "van hecke",
+     "kind": "team news",
+     "excerpt": "Watch Germany vs Netherlands for free from anywhere, as two old rivals look to book their place in the Nations League quarter-finals at Berlin's iconic Olympiastadion. FourFourTwo has all the live stream details and TV channels, wherever you are in the world. Die Mannschaft strengthened their bid for a last-eight spot with a 3-1 victory in Serbia on Friday and are guaranteed to progress if they wi"
+    },
     {
      "title": "Evanilson, van Hecke, Konsa, DCL: Buy, keep or sell in Gameweek 10?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/02/evanilson-van-hecke-konsa-dcl-buy-keep-or-sell-in-gameweek-10",
@@ -748,9 +750,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 57,
    "source_count": 14,
-   "latest_evidence": "2026-11-15T10:43:36+00:00",
+   "latest_evidence": "2026-11-16T20:37:07+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -839,6 +841,15 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "Gerrard says Cole Palmer’s ‘ego’ has cost him England place under Tuchel",
+     "url": "https://www.football365.com/news/gerrard-cole-palmer-ego-cost-him-england-place-tuchel",
+     "source": "Football365",
+     "published": "2026-11-16T20:37:07+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Gerrard reckons Cole Palmer’s “ego” has cost him his England place under Tuchel but “Cole needs Thomas, and Thomas needs Cole”."
+    },
+    {
      "title": "England given 10% chance of Spain Nations League win as Ben White/Cole Palmer claim made",
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/why-england-only-have-a-10-percent-chance-of-beating-spain_609142.html",
      "source": "Sports Mole",
@@ -873,15 +884,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Morgan Rogers hits out at the \"nonsense\" over claims that Chelsea teammate Cole Palmer is not interested in representing England."
-    },
-    {
-     "title": "Rogers plays down 'nonsense' that Palmer does not want to play for England",
-     "url": "https://www.soccerway.com/news/soccer-uefa-nations-league-rogers-plays-down-nonsense-that-palmer-does-not-want-to-play-for-england/0t2U4lMO/",
-     "source": "Soccerway",
-     "published": "2026-11-13T08:53:27+01:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1168,9 +1170,9 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 110,
-   "source_count": 19,
-   "latest_evidence": "2026-11-15T12:30:00+00:00",
+   "evidence_count": 113,
+   "source_count": 20,
+   "latest_evidence": "2026-11-16T22:35:46+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1195,6 +1197,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Jackson and Madjo on target",
+     "url": "https://avfc.co.uk/news/2026/november/16/internationals-jackson-and-madjo-on-target/",
+     "source": "Aston Villa",
+     "published": "2026-11-16T22:35:46+00:00",
+     "matched_on": "jackson",
+     "kind": "team news",
+     "excerpt": "Aston Villa strikers Nicolas Jackson and Brian Madjo each found the net for their respective nations on Monday. Jackson converted from close range via Ibrahim Mbaye ’s corner to open the scoring after just four minutes as Senegal recorded a 4-2 victory over Sudan. The in-form frontman, who also scored against Sudan in last Thursday’s reverse fixture , enjoyed 77 minutes, while Villa team-mate and "
+    },
+    {
+     "title": "Jackson, Barry, Mbeumo, Hall: Buy, keep or sell in Gameweek 11?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/16/jackson-barry-mbeumo-hall-buy-keep-or-sell-in-gameweek-11",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-16T18:00:00+00:00",
+     "matched_on": "jackson",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Jackson, Barry, Mbeumo, Hall: Buy, keep or sell in Gameweek 11? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Jesse Minter does not address Lamar Jackson's injury, says he'll keep conversations with QB private",
      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jesse-minter-does-not-address-lamar-jacksons-injury-says-hell-keep-conversations-with-qb-private",
@@ -1284,33 +1304,15 @@
      "matched_on": "jackson",
      "kind": "team news",
      "excerpt": "Lamar Jackson left Sunday's game between the Ravens and the Bills in the first quarter; read more about his DraftKings bet refund status here. The post Will Lamar Jackson bets be refunded after injury during Ravens vs. Bills NFL Week 8? appeared first on DraftKings Network ."
-    },
-    {
-     "title": "FPL notes: McGinn pen miss, Jackson nets again + Cash ban",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/01/fpl-notes-mcginn-pen-miss-jackson-nets-again-cash-ban",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-01T18:30:00+00:00",
-     "matched_on": "jackson",
-     "kind": "team news",
-     "excerpt": "Notes from Aston Villa 1-1 Fulham The post FPL notes: McGinn pen miss, Jackson nets again + Cash ban appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "What happened to Lamar Jackson? Live injury updates for Bills vs. Ravens on Sunday 11/01/26",
-     "url": "https://dknetwork.draftkings.com/2026/11/01/what-happened-to-lamar-jackson-live-injury-updates-for-bills-vs-ravens-on-sunday-11-01-26/",
-     "source": "DraftKings Network Soccer",
-     "published": "2026-11-01T18:22:27+00:00",
-     "matched_on": "jackson",
-     "kind": "team news",
-     "excerpt": "Lamar Jackson (thumb) is questionable to return to Sunday's game between the Ravens and the Bills. The post What happened to Lamar Jackson? Live injury updates for Bills vs. Ravens on Sunday 11/01/26 appeared first on DraftKings Network ."
     }
    ]
   },
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 77,
+   "evidence_count": 75,
    "source_count": 16,
-   "latest_evidence": "2026-11-15T19:43:27+00:00",
+   "latest_evidence": "2026-11-17T00:05:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1449,8 +1451,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-11-14T18:37:00+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-11-16T10:27:03+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1465,7 +1467,6 @@
     "injury",
     "match report",
     "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1475,6 +1476,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Detroit Pistons vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/detroit-pistons-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_609201.html",
+     "source": "Sports Mole",
+     "published": "2026-11-16T10:27:03+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Detroit Pistons visit the 12-0 streaking San Antonio Spurs. Team news, key matchups, player props, head-to-head and our NBA prediction."
+    },
     {
      "title": "San Antonio Spurs vs. Utah Jazz: Player props, injury report and prediction | NBA",
      "url": "https://www.sportsmole.co.uk/basketball/utah-jazz/preview/san-antonio-spurs-vs-utah-jazz-player-props-injury-report-and-prediction--nba_609111.html",
@@ -1519,15 +1529,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "The Chicago Bulls will welcome arguably the best player in the NBA into the United Center tonight."
-    },
-    {
-     "title": "Report: Palace Women beat Spurs on penalties in Subway Players Cup",
-     "url": "https://www.cpfc.co.uk/news/match-reports/report-palace-women-beat-spurs-on-penalties-in-subway-players-cup/",
-     "source": "Crystal Palace",
-     "published": "2026-11-11T21:54:59+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Jo Potter's side secured an extra point in the Subway Players Cup, after winning 5-3 on penalties following a 1-1 draw at Brisbane Road."
     }
    ]
   },
