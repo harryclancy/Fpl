@@ -1,30 +1,28 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-11-18T14:07:55+00:00",
+ "generated": "2026-11-18T23:25:02+00:00",
  "gameweek": 11,
- "corpus_size": 19018,
+ "corpus_size": 18908,
  "players": {
   "Raya": {
    "player": "Raya",
    "club": "ARS",
    "status": "Latest on Raya — FourFourTwo FPL, 18 Nov: “Sam Dean The Telegraph has reported that while David Raya, Kai Havertz, Martin Odegaard, Ben White, Declan Rice, Mikel Merino and Jurrien Timber are all out of contract within 18 months, only three – Rice, Raya and Timber – are close to signing extensions.”",
-   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 9 retrieved item(s) from 5 source(s), the most recent dated 18 Nov.",
+   "why_here": "Raya is in the starting eleven this week at £6.2m as a GKP. The selection rests on 7 retrieved item(s) from 5 source(s), the most recent dated 18 Nov.",
    "case_for": "What supports keeping him: Sports Mole, 17 Nov: “On Tuesday morning, Sky Sports , citing The Athletic , reported in its live coverage that goalkeeper Raya, 31, had also agreed a new long-term contract.” Football365, 10 Nov: “Senne Lammens falls, Alisson climbs into a top 10 led by David Raya David Raya has started 2026/27 where he left off last season, while Senne Lammens is slipping behind Man Utd ’s dreadful defence.” Football365, 10 Nov: “Arsenal stopper Raya was hugely influential in the Gunners’ Premier League coronation last term and he has been an important figure during the start of the defence of their title.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — FourFourTwo FPL, 17 Nov: “The Spaniard joined from Brentford in 2023, initially on loan, to the confusion of some fans who felt that then-keeper Aaron Ramsdale didn't need replacing, but Raya won over doubters with excellent reflex saves, superb cross-claiming and world-class distribution.”",
    "developments": "Recent developments — Sports Mole, 17 Nov: “The Ecuador international, 24, is the third key player to be tied down in a single week after Declan Rice and David Raya.” FourFourTwo FPL, 17 Nov: “Raya is listed, too, as a star “very close” to agreeing a new deal, which will likely reflect his status as one of the best in English football and highlight his importance to Arteta's football.” Everton, 24 Oct: “Thierno Barry also went close as the opening period drew to a close, but his glancing first-time effort was well stopped by David Raya after an under-hit header back to the Arsenal goalkeeper.”",
-   "outlook": "On the coming weeks — Football365, 24 Oct: “Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.” Sports Mole, 21 Oct: “The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.”",
+   "outlook": "On the coming weeks — Football365, 24 Oct: “Since joining Arsenal, Raya has established himself as one of the best goalkeepers in the world, and he played a key role in the Gunners winning the Premier League title last season.” OneFPL: “David Raya FPL: Is Arsenal's £6.0m GK Worth It? | OneFPL Loading OneFPL page In this article sections The short answer David Raya (£6.0m) strengthened his case as FPL's premium goalkeeper with a penalty save and clean sheet at Sunderland.”",
    "confidence": "high",
-   "evidence_count": 9,
+   "evidence_count": 7,
    "evidence_used": [
     "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
     "https://www.fourfourtwo.com/transfer/arsenal-to-make-unpopular-decisions-over-contract-renewal-situation-report",
     "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/a-new-and-surprising-contract-extension-coming-at-arsenal_609288.html",
     "https://www.fourfourtwo.com/transfer/arsenal-star-david-raya-close-to-deal-following-la-liga-wish-comments-report",
     "https://www.football365.com/news/arsenal-react-leading-star-revealing-wants-la-liga-transfer-huge-update-new-deal",
-    "https://www.football365.com/news/arsenal-raya-wants-la-liga-transfer",
     "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-    "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
     "https://onefpl.com/blog/david-raya-fpl-2026-27"
    ],
    "sources_used": [
@@ -124,40 +122,6 @@
      "url": "https://www.football365.com/news/arsenal-react-leading-star-revealing-wants-la-liga-transfer-huge-update-new-deal",
      "published": "2026-10-24T09:25:48+00:00",
      "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Arsenal goalkeeper David Raya has revealed that he would “love” to move back to Spain in the future and play in La Liga.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/arsenal-raya-wants-la-liga-transfer",
-     "published": "2026-10-21T08:41:49+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Raya, who has spent his whole career in England at Blackburn Rovers and Brentford, helped Arsenal win their first Premier League title in 22 years last season.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/arsenal-raya-wants-la-liga-transfer",
-     "published": "2026-10-21T08:41:49+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "The man who made the difference in Mikel Arteta’s side was David Raya , who won the Golden Glove for keeping 19 clean sheets.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
-     "published": "2026-10-21T08:03:35+01:00",
-     "tone": "positive",
-     "topics": [
-      "fixtures"
-     ]
-    },
-    {
-     "text": "Raya open to a future La Liga move © Imago / STEINSIEK.CH In an interview with Marca , Raya was asked about playing in Spain, given that he turned professional in English football at the age of 16, when he joined Blackburn.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/david-raya-reveals-dream-destination-in-the-future-i-could-play-there_607341.html",
-     "published": "2026-10-21T08:03:35+01:00",
-     "tone": "neutral",
      "topics": []
     },
     {
@@ -4037,14 +4001,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Soccerway, 16 Nov: “Riemer stated on a press conference on Tuesday that he is certain that Haaland and the Norwegian national team will arrive in Copenhagen fully motivated to beat Denmark.” 101 Great Goals — Fantasy, 15 Nov: “Speaking to Norwegian broadcaster TV2 after scoring in Norway’s 3-1 Nations League win over Wales, Haaland admitted he was uncomfortable discussing the ongoing legal proceedings.”",
-   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 79 retrieved item(s) from 17 source(s), the most recent dated 18 Nov.",
+   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 74 retrieved item(s) from 17 source(s), the most recent dated 18 Nov.",
    "case_for": "What supports keeping him: Fulham, 18 Nov: “Things started brilliantly for the hosts who were two goals up inside 14 minutes, but an Erling Haaland tap-in before half-time made things interesting.” Soccerway, 18 Nov: “He pointed to an intense upcoming run of fixtures for Manchester City—facing Fulham, Napoli, and Arsenal in quick succession—calling it \"an absolutely relentless schedule.\" NRK pundit Kristoffer Lokberg argued that Haaland looked mentally and physically exhausted and suggested Norway should start Alexander Sorloth instead.” Football365, 18 Nov: “Erling Haaland's ridiculous goalscoring stats at Manchester City and Norway Erling Haaland scores 100th Premier League goal We started to collate the astonishing stats that made Erling Haaland’s start to life in the Premier League utterly extraordinary a long time ago.”",
    "case_against": "What argues against him: Soccerway, 16 Nov: “Following Norway 's 3–1 win over Wales on Saturday, Haaland told tv2.no that he was struggling to find motivation for the trip to Copenhagen.” 101 Great Goals — Fantasy, 15 Nov: “However, Haaland has dismissed suggestions that the uncertainty could affect his future, pointing to the long-term contract he signed in 2024 as evidence of his commitment.” Football365, 14 Nov: “Doubts have been raised about the future of many Man City stars, including Haaland Haaland is a superstar of the global game and is a truly world-class player.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Football365, 18 Nov: “Manchester City Phil Foden Lewis Oldham 15 Sep 2026 Howard Webb reveals reason for decision on Haaland goal vs Man Utd, gives verdict on Foden red card Pro Ref chief Howard Webb has revealed why Erling Haaland’s winning goal in Manchester City’s 1-0 win against Manchester United wrongly stood.” Soccerway, 17 Nov: “Denmark - Norway - Momentum Flashscore Moments later, Haaland had the ball in the back of the net, yet his goal was retrospectively ruled out by VAR for a handball.”",
    "developments": "Recent developments — Soccerway, 18 Nov: “Immediately after Norway 's 3–1 win over Wales on Saturday, 14 November, Haaland told Norwegian broadcaster TV 2 that he was feeling drained by a congested fixture calendar.” Football365, 18 Nov: “Three more goals will take him past Raheem Sterling and into that top 20. * Haaland has also scored more Premier League goals than eight Premier League clubs : Oldham (105), Bradford (68), Cardiff (66), Blackpool (55), Huddersfield Town (50), Luton (49), Swindon (47) and Barnsley (37).” Soccerway, 17 Nov: “The visitors started the match on the front foot and almost secured an early lead through Erling Haaland after only six minutes, but his effort from a promising position inside the box was aimed straight at Mads Hermansen to the Danish fans’ relief.”",
    "outlook": "On the coming weeks — Soccerway, 14 Nov: “After netting his first League A goal, Nusa then played a key role in Norway’s second, as he raced onto a long ball before feeding Erling Haaland , who quickly squared it for Andreas Schjelderup to slot home a simple finish within two minutes of his arrival on the pitch.” Sports Mole, 13 Nov: “Jair Cunha's Nottingham Forest transformation highlighted by Erling Haaland heroics Cunha's emergence has been particularly impressive considering how slowly his Premier League career began.”",
    "confidence": "high",
-   "evidence_count": 79,
+   "evidence_count": 74,
    "evidence_used": [
     "https://www.soccerway.com/news/last-gasp-haaland-penalty-completes-amazing-comeback-to-secure-quarter-final-for-norway/b76oArbC/",
     "https://www.fourfourtwo.com/competition/watch-denmark-vs-norway-nations-league-2026-27-free",
@@ -4886,90 +4850,6 @@
      "topics": []
     },
     {
-     "text": "Erling Haaland © Iconsport / Koby Abbott, Sports Press Photo, Alamy Live News Status: Minor doubt Type of issue: Knock Possible return date: October 24 (vs. Aston Villa) Haaland was rested against AEK Athens in the Champions League on Tuesday due to a knock, but he was still named on the bench and is set to return against Villa.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/haaland-semenyo-oreilly-latest-man-city-injury-suspension-list-vs-villa_607357.html",
-     "published": "2026-10-21T12:07:00+01:00",
-     "tone": "negative",
-     "topics": [
-      "injury",
-      "tactics",
-      "rotation"
-     ]
-    },
-    {
-     "text": "Haaland remained as an unused substitute as the Premier League leaders recorded a 5-1 victory over AEK Athens in the Champions League.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/maresca-delivers-haaland-injury-update-ahead-of-aston-villa-pl-showdown_607344.html",
-     "published": "2026-10-21T10:31:32+01:00",
-     "tone": "negative",
-     "topics": [
-      "rotation"
-     ]
-    },
-    {
-     "text": "With Man City having gone into Tuesday's game with AEK Athens having already suffered one Champions League defeat this season, Maresca could have theoretically selected Haaland to only use him if necessary.",
-     "source": "Sports Mole",
-     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/news/maresca-delivers-haaland-injury-update-ahead-of-aston-villa-pl-showdown_607344.html",
-     "published": "2026-10-21T10:31:32+01:00",
-     "tone": "neutral",
-     "topics": [
-      "rotation"
-     ]
-    },
-    {
-     "text": "Man City striker Erling Haaland is now willing to join Kylian Mbappe at Real Madrid after previously being reluctant, according to reports.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/man-city-ffp-erling-haaland-transfer-u-turn-mbappe-real-madrid",
-     "published": "2026-10-21T10:27:22+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "The main player who has everyone talking is Haaland with the Man City striker already linked to clubs in Spain before the guilty verdict was announced.",
-     "source": "Football365",
-     "url": "https://www.football365.com/news/man-city-ffp-erling-haaland-transfer-u-turn-mbappe-real-madrid",
-     "published": "2026-10-21T10:27:22+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Scout Notes FPL notes: Haaland “OK to start”, key rests + Gvardiol injury update October 21 0 comments 21 October 2026 0 comments Liverpool and Manchester City were involved in high-scoring matches on Tuesday night, both pulling out home victories in the UEFA Champions League.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
-     "published": "2026-10-21T10:05:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "injury",
-      "fpl advice",
-      "rotation"
-     ]
-    },
-    {
-     "text": "It’s just to manage a little bit [his] minutes.” – Enzo Maresca on Erling Haaland, speaking before Tuesday’s win over AEK Athens “Yeah, he’s okay.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/21/fpl-notes-haaland-ok-to-start-key-rests-gvardiol-injury-update",
-     "published": "2026-10-21T10:05:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Erling Haaland is one of the world's best, most deadly finishers of all time, to the point that it's boring.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/person/player/why-does-erling-haaland-score-less-premier-league-goals-after-december",
-     "published": "2026-10-21T09:29:49+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "The last two seasons in particular have produced a stark drop-off, with Haaland adding just eight goals from January to May in the 24/25 and 25/26 seasons.",
-     "source": "FourFourTwo FPL",
-     "url": "https://www.fourfourtwo.com/person/player/why-does-erling-haaland-score-less-premier-league-goals-after-december",
-     "published": "2026-10-21T09:29:49+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
      "text": "The Premier League reported that more than 1.7 million managers activated Triple Captain , with the overwhelming majority backing Erling Haaland at home to Coventry.",
      "source": "OneFPL",
      "url": "https://onefpl.com/blog/haaland-triple-captain-gw3-result-2026-27",
@@ -5077,7 +4957,7 @@
    "player": "Dubravka",
    "club": "TOT",
    "status": "6 article(s) reference Dubravka, but none carries a sentence specifically about him — they are club-level pieces where his name appears in passing. Treat the assessment below as club context, not as reporting on him.",
-   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 4 source(s).",
+   "why_here": "Dubravka is on the bench this week at £4.0m as a GKP. The selection rests on 6 retrieved item(s) from 3 source(s).",
    "case_for": "",
    "case_against": "",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -5086,17 +4966,16 @@
    "confidence": "low",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/savio-tel-mudryk-updates-spurs-injury-suspension-list-vs-ipswich_609268.html",
+    "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/los-angeles-clippers-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_609306.html",
+    "https://www.flashscore.com/news/basketball-nba-nba-roundup-pistons-upset-spurs-knicks-pick-up-comeback-road-win/l891GVfR/",
     "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/detroit-pistons-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_609201.html",
     "https://www.sportsmole.co.uk/basketball/utah-jazz/preview/san-antonio-spurs-vs-utah-jazz-player-props-injury-report-and-prediction--nba_609111.html",
-    "https://www.evertonfc.com/news/2026/november/12/phelan--/",
-    "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/golden-state-warriors-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608976.html",
-    "https://dknetwork.draftkings.com/2026/11/11/what-happened-to-caleb-wilson-live-injury-updates-for-bulls-vs-spurs-on-wednesday-11-11-26/",
-    "https://www.si.com/nba/bulls/onsi/bulls-vs-spurs-7-00-pm-ct-3-things-to-know-starting-lineups-injury-report-11?utm_source=RSS"
+    "https://www.evertonfc.com/news/2026/november/12/phelan--/"
    ],
    "sources_used": [
-    "DraftKings Network Soccer",
     "Everton",
-    "Sports Illustrated FPL",
+    "Flashscore",
     "Sports Mole"
    ],
    "quotes": []
@@ -5336,17 +5215,18 @@
    "player": "Muharemović",
    "club": "LEE",
    "status": "Latest on Muharemović — FourFourTwo FPL, 17 Nov: “Alongside established title contenders Van Dijk and Gabriel, as well as England international Konsa, sits Elland Road favourite Muharemovic.”",
-   "why_here": "Muharemović is on the bench this week at £5.1m as a DEF. The selection rests on 19 retrieved item(s) from 5 source(s), the most recent dated 17 Nov.",
+   "why_here": "Muharemović is on the bench this week at £5.1m as a DEF. The selection rests on 20 retrieved item(s) from 5 source(s), the most recent dated 17 Nov.",
    "case_for": "What supports keeping him: Sports Mole, 28 Oct: “Muharemovic, 23, made the move to Leeds from Sassuolo over the summer, and he has been in excellent form for Daniel Farke's side during the 2026-27 campaign.” Fantasy Football Scout, 26 Oct: “MASTERFUL MUHAREMOVIC Of course, part of Trafford’s success is because there’s an excellent defence in front of him.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
    "developments": "Recent developments — FourFourTwo FPL, 17 Nov: “Muharemovic sits comfortably around the 77th percentile in both the stopper and cover pools, demonstrating an ability to step aggressively into challenges while also sweeping up danger in transition.” Sports Mole, 28 Oct: “Leeds paid £34m to sign Muharemovic, and it is understood that his form has led to a number of clubs expressing an interest in his services.” Fantasy Football Scout, 26 Oct: “A rearguard that improved throughout 2025/26 has been further enhanced by the arrival of Tarik Muharemovic (£5.1m).”",
    "outlook": "No retrieved item discusses his next few gameweeks, so the outlook below rests on the fixture list alone rather than on anyone's analysis.",
    "confidence": "high",
-   "evidence_count": 19,
+   "evidence_count": 20,
    "evidence_used": [
     "https://www.afcb.co.uk/news/2026/october/31/one-change-for-visit-of-leeds/",
     "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-more-muharemovic-trafford-joy-but-dcl-quiet",
+    "https://www.leedsunited.com/en/news/muharemovic-captains-bosnia-and-herzegovina-to-comeback-victory-over-romania",
     "https://www.sportsmole.co.uk/football/barcelona/transfer-talk/news/barca-learn-substantial-asking-price-for-leeds-star-muharemovic_607867.html",
     "https://www.fourfourtwo.com/person/player/leeds-united-star-joins-vaunted-arsenal-and-liverpool-men-in-premier-leagues-top-bracket",
     "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
@@ -5355,8 +5235,7 @@
     "https://www.leedsunited.com/en/news/speed-and-batty-prank-muharemovic-wrestling-and-the-leeds-united-photo-tradition",
     "https://www.leedsunited.com/en/news/proud-to-see-my-leeds-shirt-tarik-muharemovic-joins-us-on-the-latest-podcast",
     "https://www.leedsunited.com/en/news/muharemovic-wins-hisense-player-of-the-match-with-34-of-vote",
-    "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
-    "https://www.leedsunited.com/en/news/muharemovic-picks-up-seasons-first-hero-of-the-month-award"
+    "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win"
    ],
    "sources_used": [
     "AFC Bournemouth",
