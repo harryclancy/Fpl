@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-17T23:52:03+00:00",
- "seconds": 141.8,
+ "ran_at": "2026-11-18T14:07:55+00:00",
+ "seconds": 107.6,
  "sources_attempted": 78,
- "sources_readable": 58,
- "candidates_discovered": 649,
- "substantive_items": 268,
- "duplicates_removed": 17,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 19055,
+ "sources_readable": 56,
+ "candidates_discovered": 671,
+ "substantive_items": 281,
+ "duplicates_removed": 23,
+ "deeply_analysed": 78,
+ "deep_read_failed": 12,
+ "corpus_size": 19018,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "58/78 sources returned 268 articles"
+    "56/78 sources returned 281 articles"
    ]
   },
   "blackout": {
@@ -42,6 +42,8 @@
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
+  "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -62,9 +64,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 8,
+   "evidence_count": 9,
    "source_count": 5,
-   "latest_evidence": "2026-11-17T20:53:20+00:00",
+   "latest_evidence": "2026-11-18T11:31:50+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -97,6 +99,15 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Goals from Ezri Konsa and Gabriel consigned Everton to a 2-0 defeat at the home of reigning Premier League champions Arsenal on Saturday. Konsa opened the scoring inside seven minutes in north London, prodding home from close range after Martin Odegaard's dangerous corner popped up and was clawed on to the crossbar by Jordan Pickford. The Blues responded relatively well to that early setback, thou"
+    },
+    {
+     "title": "Arsenal to make 'unpopular decisions' over contract renewal situation: report",
+     "url": "https://www.fourfourtwo.com/transfer/arsenal-to-make-unpopular-decisions-over-contract-renewal-situation-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-18T11:31:50+00:00",
+     "matched_on": "raya",
+     "kind": "transfer",
+     "excerpt": "Arsenal are set to make difficult choices behind the scenes that may not go down well with fans. Supporter satisfaction is arguably the highest it has been since the days of the Invincibles, with manager Mikel Arteta leading Arsenal to a first Premier League title in 22 years and just a second Champions League final earlier this year. FourFourTwo understands that with rivals undergoing uncertainty"
     },
     {
      "title": "Arsenal lock down defence as Hincapie joins Rice and Raya in contract talks",
@@ -513,9 +524,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 35,
-   "source_count": 13,
-   "latest_evidence": "2026-11-17T15:46:57+00:00",
+   "evidence_count": 36,
+   "source_count": 14,
+   "latest_evidence": "2026-11-18T00:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -540,6 +551,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "William Saliba or Ezri Konsa? Mikel Arteta has tough Arsenal selection dilemma when French defender returns to full fitness",
+     "url": "https://www.skysports.com/football/news/11095/13610324/william-saliba-or-ezri-konsa-mikel-arteta-has-tough-arsenal-selection-dilemma-when-french-defender-returns-to-full-fitness",
+     "source": "Sky Sports Premier League",
+     "published": "2026-11-18T00:00:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "How to watch Spain vs England for FREE: Live Streams, TV Channels, Team News & Predictions for HUGE Nations League Clash",
      "url": "https://www.fourfourtwo.com/competition/watch-spain-vs-england-nations-league-2026-27-free",
@@ -638,15 +658,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "The center back was forced off the pitch in Czechia with a knee problem."
-    },
-    {
-     "title": "What to do with Konsa + is Isak worth £9.2m? FPL Q&A",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/05/what-to-do-with-konsa-is-isak-worth-9-2m-fpl-qa",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-05T18:30:00+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post What to do with Konsa + is Isak worth £9.2m? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -1018,7 +1029,7 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 21,
+   "evidence_count": 20,
    "source_count": 6,
    "latest_evidence": "2026-11-09T08:30:00+00:00",
    "official_source_found": true,
@@ -1145,13 +1156,13 @@
      "excerpt": "AFC Bournemouth capped another memorable night under the lights at Vitality Stadium by triumphing 3-0 against seven-time European champions AC Milan on Thursday. Victory saw the Cherries maintain their 100 per cent winning start to their UEFA Europa League campaign after defeating Real Sociedad and Sturm Graz in the league phase. Penalties from Justin Kluivert and Marcus Tavernier, coupled with a "
     },
     {
-     "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-20T16:00:00+00:00",
+     "title": "Man Utd now want hijack to destroy Arsenal double deal as INEOS choose two ‘priority’ January signings",
+     "url": "https://www.football365.com/news/man-utd-now-want-hijack-destroy-arsenal-double-deal-two-priority-january-signings",
+     "source": "Football365",
+     "published": "2026-11-05T13:24:35+00:00",
      "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+     "kind": "transfer",
+     "excerpt": "According to reports, Manchester United have turned to Bournemouth star Marcus Tavernier amid competition from rivals Arsenal."
     }
    ]
   },
@@ -1160,7 +1171,7 @@
    "club": "AVL",
    "evidence_count": 112,
    "source_count": 20,
-   "latest_evidence": "2026-11-16T22:35:46+00:00",
+   "latest_evidence": "2026-11-18T14:00:01+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1298,9 +1309,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 78,
-   "source_count": 16,
-   "latest_evidence": "2026-11-17T22:45:24+01:00",
+   "evidence_count": 79,
+   "source_count": 17,
+   "latest_evidence": "2026-11-18T10:13:38+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1645,7 +1656,7 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 9,
+   "evidence_count": 8,
    "source_count": 6,
    "latest_evidence": "2026-11-12T16:00:00+00:00",
    "official_source_found": true,
@@ -1660,8 +1671,6 @@
     "fixtures",
     "fpl advice",
     "injury",
-    "press conference",
-    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -1697,15 +1706,6 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Big decisions made before these four matches The post 2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/20/tavernier-bruno-isak-wissa-buy-keep-or-sell-in-gameweek-8",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-20T16:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Tavernier, Bruno, Isak, Wissa: Buy, keep or sell in Gameweek 8? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Newcastle United desperately lack the cut-and-thrust in attack that’ll keep them out of relegation trouble",
