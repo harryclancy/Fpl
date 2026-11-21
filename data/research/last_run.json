@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-20T23:07:21+00:00",
- "seconds": 146.2,
+ "ran_at": "2026-11-21T04:00:13+00:00",
+ "seconds": 106.0,
  "sources_attempted": 78,
  "sources_readable": 57,
- "candidates_discovered": 654,
- "substantive_items": 262,
- "duplicates_removed": 7,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18645,
+ "candidates_discovered": 503,
+ "substantive_items": 136,
+ "duplicates_removed": 3,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 18662,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 262 articles"
+    "57/78 sources returned 136 articles"
    ]
   },
   "blackout": {
@@ -63,9 +63,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 7,
-   "source_count": 5,
-   "latest_evidence": "2026-11-18T11:31:50+00:00",
+   "evidence_count": 8,
+   "source_count": 6,
+   "latest_evidence": "2026-11-21T03:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -86,10 +86,19 @@
     "team news",
     "transfer"
    ],
-   "strength": "good",
-   "priority": "normal",
+   "strength": "strong",
+   "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "No Raya? 3 FPL goalkeeper pairings who rotate well",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/21/no-raya-3-fpl-goalkeeper-pairings-who-rotate-well",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-21T03:00:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Three duos whose fixtures dovetail rather nicely The post No Raya? 3 FPL goalkeeper pairings who rotate well appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Everton Defeated At Arsenal",
      "url": "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
@@ -674,7 +683,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 5,
-   "latest_evidence": "2026-11-20T13:06:29+00:00",
+   "latest_evidence": "2026-11-20T14:27:27+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -699,6 +708,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Hull vs Brighton prediction: Gross to play key role as team news confirmed",
+     "url": "https://www.football365.com/match-preview/hull-vs-brighton-prediction-preview",
+     "source": "Football365",
+     "published": "2026-11-20T14:27:27+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "All the team news and predictions ahead of the Premier League clash between Hull and Brighton."
+    },
     {
      "title": "Mitoma, Minteh, Yohanna: Brighton injury latest for FPL Gameweek 11",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/20/mitoma-minteh-yohanna-brighton-injury-latest-for-fpl-gameweek-11",
@@ -734,15 +752,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Two goals by Beata Olsson ease visitors to a comfortable victory."
-    },
-    {
-     "title": "HENRY WINTER: Fabian Hurzeler's Brighton & Hove Albion are perfectly set up for success - on and off the pitch",
-     "url": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
-     "source": "FourFourTwo FPL",
-     "published": "2026-11-09T09:30:28+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Fabian Hurzeler has Brighton & Hove Albion second in the Premier League with a starting XI that cost only £150 million against Brentford. He’s inevitably being linked with wealthier clubs, even the theatre of chaos that is Manchester United, but Hurzeler is far too smart to jump ship yet. He’s only 33, building something special at Brighton , enhancing his reputation with every game, and knowing t"
     },
     {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
@@ -1178,7 +1187,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 112,
+   "evidence_count": 109,
    "source_count": 21,
    "latest_evidence": "2026-11-20T16:00:00+00:00",
    "official_source_found": true,
@@ -1838,6 +1847,15 @@
      "excerpt": "Leeds United defender Tarik Muharemovic has emerged as one of the Premier League’s most complete centre-backs this season, ranking alongside Arsenal’s Gabriel and Ezri Konsa, and Liverpool’s Virgil van Dijk. Data published by football analytics platform Ballity Insight Lab evaluated 54 qualifying Premier League centre-backs across the opening 10 league games of 2026/27, plotting each player’s perc"
     },
     {
+     "title": "The future of children is not written tarik muharemovic backs global campaign",
+     "url": "https://www.leedsunited.com/en/news/the-future-of-children-is-not-written-tarik-muharemovic-backs-global-campaign",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
      "title": "Tarik muharemovic we will show even more of our qualities",
      "url": "https://www.leedsunited.com/en/news/tarik-muharemovic-we-will-show-even-more-of-our-qualities",
      "source": "Leeds United",
@@ -1885,15 +1903,6 @@
     {
      "title": "Muharemovic wins hisense player of the match with 34 of vote",
      "url": "https://www.leedsunited.com/en/news/muharemovic-wins-hisense-player-of-the-match-with-34-of-vote",
-     "source": "Leeds United",
-     "published": "",
-     "matched_on": "muharemovic",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
-     "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
      "source": "Leeds United",
      "published": "",
      "matched_on": "muharemovic",
