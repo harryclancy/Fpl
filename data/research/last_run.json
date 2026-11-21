@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
- "gameweek": 11,
- "ran_at": "2026-11-21T13:31:17+00:00",
- "seconds": 123.6,
+ "gameweek": 12,
+ "ran_at": "2026-11-21T22:12:00+00:00",
+ "seconds": 130.5,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 565,
- "substantive_items": 220,
- "duplicates_removed": 21,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 18651,
+ "sources_readable": 56,
+ "candidates_discovered": 661,
+ "substantive_items": 302,
+ "duplicates_removed": 25,
+ "deeply_analysed": 65,
+ "deep_read_failed": 25,
+ "corpus_size": 18633,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 220 articles"
+    "56/78 sources returned 302 articles"
    ]
   },
   "blackout": {
@@ -37,7 +37,6 @@
   }
  },
  "failures": [
-  "Premier League Official Fantasy: HTTP 403 for https://www.premierleague.com/en/sitemap/global.xml",
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
@@ -65,9 +64,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 8,
-   "source_count": 6,
-   "latest_evidence": "2026-11-21T03:00:00+00:00",
+   "evidence_count": 12,
+   "source_count": 9,
+   "latest_evidence": "2026-11-21T22:13:20+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -92,6 +91,51 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "David Raya injury news, latest update: \"Obviously it's not good\" says Arteta - How big of a problem is this?",
+     "url": "https://www.nbcsports.com/soccer/news/david-raya-injury-news-latest-update-as-arsenal-star-goes-off-vs-newcastle",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-11-21T16:38:00-05:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Arteta says Arsenal lacked 'magic' in Newcastle draw, unsure about extent of Raya's injury",
+     "url": "https://www.soccerway.com/news/arteta-says-arsenal-lacked-magic-in-newcastle-draw-unsure-about-extent-of-raya-s-injury/QuB32np2/",
+     "source": "Soccerway",
+     "published": "2026-11-21T22:13:20+01:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Newcastle 2-2 Arsenal: Report, result, goals as Madueke salvages draw",
+     "url": "https://www.101greatgoals.com/football/premier-league/newcastle-arsenal-report-result-goals-madueke-goal-david-raya-injury/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-21T20:22:53+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Arsenal salvaged a draw at Newcastle in the Premier League"
+    },
+    {
+     "title": "Arsenal injury, suspension list and return dates vs. Borussia Dortmund: David Raya, Bukayo Saka, Martin Zubimendi latest",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/raya-saka-zubimendi-latest-arsenal-injury-suspension-list-vs-borussia-dortmund_609585.html",
+     "source": "Sports Mole",
+     "published": "2026-11-21T20:21:08+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Tuesday's Champions League clash with Borussia Dortmund."
+    },
+    {
+     "title": "Arsenal: Jamie Redknapp makes brutal Kepa prediction after David Raya injury v Newcastle",
+     "url": "https://www.football365.com/news/david-raya-injury-kepa-arrizabalaga-arsenal-newcastle-jamie-redknapp-verdict",
+     "source": "Football365",
+     "published": "2026-11-21T20:06:53+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Kepa Arrizabalaga replaced David Raya for Arsenal in the Premier League game against Newcastle United on Saturday."
+    },
     {
      "title": "No Raya? 3 FPL goalkeeper pairings who rotate well",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/21/no-raya-3-fpl-goalkeeper-pairings-who-rotate-well",
@@ -136,15 +180,6 @@
      "matched_on": "raya",
      "kind": "transfer",
      "excerpt": "Arsenal goalkeeper David Raya is the subject of interest from La Liga – with a new contract on the table. The 31-year-old has established himself as arguably England's best goalkeeper since moving to North London, winning the Golden Glove in every season since he's been at Arsenal . But with a contract expiring in 2028 and recent comments about his desire to move back to his native Spain, Raya's f"
-    },
-    {
-     "title": "Arsenal react to leading star revealing he wants La Liga transfer as huge update on new deal emerges",
-     "url": "https://www.football365.com/news/arsenal-react-leading-star-revealing-wants-la-liga-transfer-huge-update-new-deal",
-     "source": "Football365",
-     "published": "2026-10-24T09:25:48+00:00",
-     "matched_on": "raya",
-     "kind": "transfer",
-     "excerpt": "Arsenal’s hierarchy have reportedly reacted to David Raya admitting that he wants to join a La Liga side before he retires."
     },
     {
      "title": "Premier League goalkeepers ranked: Lammens slips out of top 10 as Alisson climbs",
@@ -439,9 +474,9 @@
   "Van Hecke": {
    "player": "Van Hecke",
    "club": "TOT",
-   "evidence_count": 8,
-   "source_count": 6,
-   "latest_evidence": "2026-11-20T07:00:00+00:00",
+   "evidence_count": 9,
+   "source_count": 7,
+   "latest_evidence": "2026-11-21T13:44:57+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -466,6 +501,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "TEAM NEWS | SPURS (A)",
+     "url": "https://www.itfc.co.uk/news/2026/november/21/Ipswich-Town-team-news-Tottenham-Hotspur-Premier-League/",
+     "source": "Ipswich Town",
+     "published": "2026-11-21T13:44:57+00:00",
+     "matched_on": "van hecke",
+     "kind": "team news",
+     "excerpt": "Team news has been confirmed for Town's Premier League clash away to Tottenham Hotspur. Gary O'Neil has made three changes to the side which faced AFC Bournemouth before the international break, with Zian Flemming, Darnell Furlong and Saša Lukić all coming into the starting XI in North London. Christian Walton starts in goal for the Blues and the defensive unit consists of Abdoul Ouattara, Furlong"
+    },
     {
      "title": "Watch Germany vs Netherlands: Free streams & TV channels",
      "url": "https://www.fourfourtwo.com/competition/watch-germany-vs-netherlands-nations-league-2026-27-free",
@@ -543,9 +587,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 41,
+   "evidence_count": 42,
    "source_count": 15,
-   "latest_evidence": "2026-11-20T12:57:53+00:00",
+   "latest_evidence": "2026-11-21T17:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -570,6 +614,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Newcastle v Arsenal team news: Konsa starts, Saliba a sub",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/21/newcastle-v-arsenal-team-news-konsa-starts-saliba-a-sub",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-21T17:00:00+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Two changes for Newcastle, one for Arsenal The post Newcastle v Arsenal team news: Konsa starts, Saliba a sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Saliba, Saka, Zubimendi: Arsenal injury latest for FPL Gameweek 11",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/20/saliba-saka-zubimendi-arsenal-injury-latest-for-fpl-gameweek-11",
@@ -668,15 +721,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": "Arsenal manager Mikel Arteta has spoken about Ezri Konsa's availability this weekend. The defender was taken off in Arsenal's 2-1 win away at Slavia Prague in the Champions League this week, as the Gunners made hard work of the second half, after cruising into a two-goal lead. With William Saliba now available once more, Arteta has confirmed Konsa's status ahead of action this Saturday. Arsenal ha"
-    },
-    {
-     "title": "Konsa, Saliba, Saka: Arsenal injury latest for FPL Gameweek 10",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/06/konsa-saliba-saka-arsenal-injury-latest-for-fpl-gameweek-10",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-06T14:28:56+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "A Friday afternoon update from Mikel Arteta The post Konsa, Saliba, Saka: Arsenal injury latest for FPL Gameweek 10 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -1049,9 +1093,9 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 15,
-   "source_count": 6,
-   "latest_evidence": "2026-11-09T08:30:00+00:00",
+   "evidence_count": 16,
+   "source_count": 7,
+   "latest_evidence": "2026-11-21T16:53:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1076,6 +1120,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Cherries on cloud nine after club-record win",
+     "url": "https://www.afcb.co.uk/news/2026/november/21/match-report-v-forest/",
+     "source": "AFC Bournemouth",
+     "published": "2026-11-21T16:53:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "team news",
+     "excerpt": "Goals from Evanilson and Justin Kluivert earned AFC Bournemouth a 2-0 win over Nottingham Forest as Marco Rose’s team celebrated a club record ninth consecutive victory in all competitions. It followed top-flight triumphs over Sunderland, Manchester United, Leeds United and Ipswich Town, successes in the UEFA Europa League against Sturm Graz, AC Milan and Sparta Praha as well as a win over Aston V"
+    },
     {
      "title": "FPL notes: Silva + Tavernier near bans, Evanilson scores again",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-silva-tavernier-near-bans-evanilson-scores-again",
@@ -1158,6 +1211,15 @@
      "excerpt": "According to reports, Manchester United have turned to Bournemouth star Marcus Tavernier amid competition from rivals Arsenal."
     },
     {
+     "title": "FOREST FALL TO BOURNEMOUTH LOSS",
+     "url": "https://www.nottinghamforest.co.uk/news/2026/november/21/afc-bournemouth-report/",
+     "source": "Nottingham Forest",
+     "published": "2026-11-21T16:52:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Nottingham Forest slipped to defeat on the road against AFC Bournemouth in the return of Premier League football. The Cherries took a two-goal lead going into the break, and while Oliver Glasner’s side searched for a way back into the contest, they were met with a resilient Bournemouth defence at every turn. Evanilson opened the scoring before Justin Kluivert added a second just moments before the"
+    },
+    {
      "title": "FPL Gameweek 9: Why James Hill could be the perfect differential",
      "url": "https://www.afcb.co.uk/news/2026/october/30/fpl-gameweek-9-tips-bournemouth-picks/",
      "source": "AFC Bournemouth",
@@ -1165,33 +1227,15 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "AFC Bournemouth have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Best of the Cherries Gameweek 8 was a particularly strong one for the Cherries both on the pitch and in FPL"
-    },
-    {
-     "title": "'The Manchester United players have conned Michael Carrick' Gary Neville's extraordinary rant against Bruno Fernandes and co",
-     "url": "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-26T11:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Manchester United legend Gary Neville has spoken out in support of Red Devils head coach and former teammate Michael Carrick in the aftermath of Sunday's 3-0 loss against Bournemouth. Neville expects Man United to sack Carrick , who was appointed as head coach after a positive second interim spell last season, but places the blame for the club's difficulties on decisions behind the scenes and the "
-    },
-    {
-     "title": "Match gallery: Pictures from win at Old Trafford",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/match-gallery--pictures-from-win-at-old-trafford/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-25T16:30:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Goals from Rayan, Marcus Tavernier and Evanilson helped AFC Bournemouth celebrate their 350th Premier League game in some style, winning 3-0 against Manchester United. The trio were on target as the Cherries repeated the scoreline from Old Trafford in 2023/24 and 2024/25, a fourth victory in 11 days following wins over Sunderland in the Premier League and Sturm Graz and AC Milan in the UEFA Europa"
     }
    ]
   },
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 109,
+   "evidence_count": 106,
    "source_count": 21,
-   "latest_evidence": "2026-11-20T16:00:00+00:00",
+   "latest_evidence": "2026-11-21T16:32:11-05:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1329,9 +1373,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 75,
+   "evidence_count": 76,
    "source_count": 18,
-   "latest_evidence": "2026-11-21T09:00:00+00:00",
+   "latest_evidence": "2026-11-21T19:12:22+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1356,6 +1400,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Watch: Fulham lead Man City as Haaland has goal ruled out",
+     "url": "https://www.101greatgoals.com/football/premier-league/watch-fulham-lead-man-city-as-haaland-has-goal-ruled-out/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-21T13:41:40+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "City are hoping to avoid a fourth-straight Premier League defeat."
+    },
     {
      "title": "How to watch Manchester City vs Fulham: FREE streams",
      "url": "https://www.fourfourtwo.com/competition/watch-manchester-city-vs-fulham-premier-league-2026-27-free",
@@ -1438,31 +1491,22 @@
      "excerpt": "Enzo Maresca explains why Erling Haaland is one of five Manchester City players who will miss Wednesday’s EFL Cup fourth-round tie against Brighton & Hove Albion."
     },
     {
-     "title": "Aston Villa 2-1 Man City",
-     "url": "https://avfc.co.uk/news/2026/october/24/report-aston-villa-2-1-man-city/",
-     "source": "Aston Villa",
-     "published": "2026-10-24T13:27:00+00:00",
+     "title": "Huge Erling Haaland to Liverpool update revealed as Man City set terms for sale after guilty FFP verdict",
+     "url": "https://www.football365.com/news/erling-haaland-liverpool-man-city-set-terms-sale-guilty-ffp-verdict",
+     "source": "Football365",
+     "published": "2026-11-19T21:23:46+00:00",
      "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Fixtures Aston Villa Vs. Manchester City - Sat, Oct 24 2026, 12:30 Aston Villa claimed a fourth successive victory in Saturday’s early kick-off at Villa Park, defeating Premier League leaders Manchester City 2-1. Nicolas Jackson’s brilliant brace in B6 – either side of Erling Haaland’s equaliser – marked a perfect way for Unai Emery to celebrate the four-year anniversary of his appointment as Vill"
+     "kind": "transfer",
+     "excerpt": "According to reports, Liverpool are plotting a move for Erling Haaland, with Manchester City setting the terms for his sale."
     },
     {
-     "title": "Villa v Man City team news: Haaland + Manzambi start, Foden sub",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/24/villa-v-man-city-team-news-haaland-manzambi-start-foden-sub",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-24T11:20:00+00:00",
+     "title": "Transfer Rumors: Pochettino Faces Man Utd Setback; Felix’s Surprise Chelsea Return",
+     "url": "https://www.si.com/soccer/transfer-rumors-pochettino-man-utd-setback-felix-chelsea-return?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-11-17T00:05:00+00:00",
      "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Both sides make four changes from midweek The post Villa v Man City team news: Haaland + Manzambi start, Foden sub appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Aston Villa vs. Man City team news: Johan Manzambi, Erling Haaland decisions made as starting lineups confirmed",
-     "url": "https://www.sportsmole.co.uk/football/aston-villa/news/aston-villa-man-city-starting-lineups-confirmed-manzambi-haaland-decisions-made-for-pl-game_607626.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T11:19:00+01:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Aston Villa and Manchester City announce their starting lineups for Saturday's Premier League fixture in the West Midlands."
+     "kind": "transfer",
+     "excerpt": "Virgil van Dijk, Erling Haaland, Martín Zubimendi, Alessandro Bastoni and Rodrygo all feature in the gossip."
     }
    ]
   },
@@ -1470,8 +1514,8 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-11-20T13:54:58+00:00",
+   "source_count": 3,
+   "latest_evidence": "2026-11-21T13:44:57+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1482,9 +1526,8 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
-    "press conference",
+    "match report",
     "statistics",
     "tactics",
     "team news",
@@ -1494,6 +1537,33 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "TEAM NEWS | SPURS (A)",
+     "url": "https://www.itfc.co.uk/news/2026/november/21/Ipswich-Town-team-news-Tottenham-Hotspur-Premier-League/",
+     "source": "Ipswich Town",
+     "published": "2026-11-21T13:44:57+00:00",
+     "matched_on": "dubravka",
+     "kind": "team news",
+     "excerpt": "Team news has been confirmed for Town's Premier League clash away to Tottenham Hotspur. Gary O'Neil has made three changes to the side which faced AFC Bournemouth before the international break, with Zian Flemming, Darnell Furlong and Saša Lukić all coming into the starting XI in North London. Christian Walton starts in goal for the Blues and the defensive unit consists of Abdoul Ouattara, Furlong"
+    },
+    {
+     "title": "How to watch Tottenham Hotspur vs Ipswich Town live: Stream, TV, team news, prediction",
+     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-ipswich-town-live-stream-tv-team-news-prediction",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-11-21T05:49:00-05:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "New Orleans Pelicans vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/new-orleans-pelicans-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_609550.html",
+     "source": "Sports Mole",
+     "published": "2026-11-21T09:07:26+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Spurs vs Pelicans prediction, player props and injury report for Sunday's NBA game, with Wembanyama and Zion Williamson in focus."
+    },
     {
      "title": "EARLY SPURS TEAM NEWS",
      "url": "https://www.itfc.co.uk/news/2026/november/20/Early-Ipswich-Town-team-news-for-Tottenham-fixture/",
@@ -1520,256 +1590,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League clash with Ipswich Town."
-    },
-    {
-     "title": "Mauricio Pochettino's first words at Tottenham, PSG, Chelsea and USA reveal Man United approach",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/feature/mauricio-pochettinos-first-words-at-four-former-jobs-reveal-what-man-united-can-expect_609341.html",
-     "source": "Sports Mole",
-     "published": "2026-11-18T19:40:07+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Pochettino's first press conferences at Tottenham, PSG, Chelsea and USA reveal what Man United could expect from their new manager."
-    },
-    {
-     "title": "Tottenham Hotspur injury, suspension list and return dates vs. Ipswich Town: Savio, Mathys Tel, Mykhaylo Mudryk latest",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/savio-tel-mudryk-updates-spurs-injury-suspension-list-vs-ipswich_609268.html",
-     "source": "Sports Mole",
-     "published": "2026-11-18T11:45:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of Tottenham Hotspur's latest injury and suspension news ahead of their Premier League clash with Ipswich Town."
-    },
-    {
-     "title": "NBA roundup: Pistons upset Spurs, Knicks come back late & Lakers win in overtime",
-     "url": "https://www.flashscore.com/news/basketball-nba-nba-roundup-pistons-upset-spurs-knicks-pick-up-comeback-road-win/l891GVfR/",
-     "source": "Flashscore",
-     "published": "2026-11-18T10:12:01+01:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
-    }
-   ]
-  },
-  "Barnes": {
-   "player": "Barnes",
-   "club": "NEW",
-   "evidence_count": 10,
-   "source_count": 6,
-   "latest_evidence": "2026-11-15T04:55:52+00:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "match report",
-    "press conference",
-    "set pieces",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "Scottie Barnes Headlines Today’s NBA Injury Report: Sunday, 11/15/26",
-     "url": "https://dknetwork.draftkings.com/2026/11/14/austin-reaves-headlines-todays-nba-injury-report-sunday-11-15-26/",
-     "source": "DraftKings Network Soccer",
-     "published": "2026-11-15T04:55:52+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "DraftKings Network has you covered with the latest NBA injury report, news and top plays for Sunday, 11/15/26. The post Scottie Barnes Headlines Today’s NBA Injury Report: Sunday, 11/15/26 appeared first on DraftKings Network ."
-    },
-    {
-     "title": "New York Knicks vs. Toronto Raptors: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/new-york-knicks/preview/new-york-knicks-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_609112.html",
-     "source": "Sports Mole",
-     "published": "2026-11-14T18:40:57+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Knicks vs Raptors preview for Sunday: team news, Scottie Barnes injury status, player props, head-to-head record, betting tips and our score prediction."
-    },
-    {
-     "title": "Los Angeles Lakers vs. Toronto Raptors: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/toronto-raptors/preview/los-angeles-lakers-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_608134.html",
-     "source": "Sports Mole",
-     "published": "2026-10-31T09:35:54+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Los Angeles Lakers vs Toronto Raptors prediction, player props and injury report, with Doncic and Barnes in focus and Leonard out for Toronto."
-    },
-    {
-     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-26T10:25:00+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Royal Caribbean Legend of the Match Result: Newcastle",
-     "url": "https://fulhamfc.co.uk/news/2026/november/08/royal-caribbean-legend-of-the-match-result-newcastle/",
-     "source": "Fulham",
-     "published": "2026-11-08T14:22:38+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Bernd Leno has been voted Royal Caribbean Legend of the Match against Newcastle United. Our big German was superb throughout our 1-1 draw on Saturday afternoon, with only a special Jacob Murphy strike getting past him. Of the numerous saves he made throughout the encounter, the reaction stop to deny Harvey Barnes from close range stands out, as does the vital low block he made at the death to prev"
-    },
-    {
-     "title": "Leno: On the right track",
-     "url": "https://fulhamfc.co.uk/news/2026/november/08/leno-on-the-right-track/",
-     "source": "Fulham",
-     "published": "2026-11-08T09:07:56+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Following his imperious display between the sticks on Saturday afternoon, fulhamfc.com caught up with Bernd Leno for a Newcastle United debrief. With the chance both sides had, is a draw maybe the correct result? I would say it’s fair. It was possible to win the game, but Newcastle had some chances as well. It was not our best game, but in the end we were playing against a good team, so one point "
-    },
-    {
-     "title": "Tip of the Day: Barnes to star with goals for both sides at St James’ Park",
-     "url": "https://www.101greatgoals.com/football/premier-league/tip-of-the-day-harvey-barnes-to-star-with-goals-for-both-sides-at-st-james-park/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-11-02T15:00:00+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Today's Tip of the Day is predicting at least two goals between Newcastle and Everton tonight"
-    },
-    {
-     "title": "Two Lions Receive Unnecessary Roughness Fines Against Packers",
-     "url": "https://www.si.com/nfl/lions/onsi/two-lions-receive-unnecessary-roughness-fines-against-packers?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-31T20:05:58+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Detroit Lions Brian Branch, Derrick Barnes fined for actions against Green Bay Packers."
-    },
-    {
-     "title": "3 Winners, 1 Loser in Raptors Loss vs. Magic",
-     "url": "https://www.si.com/nba/raptors/onsi/3-winners-1-loser-toronto-raptors-loss-vs-orlando-magic?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-31T10:00:03+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Toronto Raptors forward Scottie Barnes scored a career-high 41 points in the team's loss against the Orlando Magic."
-    },
-    {
-     "title": "Scottie Barnes New Bad Habit Is Killing the Raptors Offense",
-     "url": "https://www.si.com/nba/raptors/onsi/scottie-barnes-new-bad-habit-killing-toronto-raptors-offense?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-10-27T10:00:03+00:00",
-     "matched_on": "barnes",
-     "kind": "general",
-     "excerpt": "Scottie Barnes is quietly changing his game and unfortunately it might not what's best for the Toronto Raptors."
-    }
-   ]
-  },
-  "Wissa": {
-   "player": "Wissa",
-   "club": "NEW",
-   "evidence_count": 8,
-   "source_count": 6,
-   "latest_evidence": "2026-11-12T16:00:00+00:00",
-   "official_source_found": true,
-   "fpl_source_found": true,
-   "team_news_found": true,
-   "starting_status_assessed": true,
-   "injury_status_assessed": true,
-   "transfer_status_assessed": true,
-   "role_assessed": true,
-   "fixtures_assessed": true,
-   "dimensions_covered": [
-    "fixtures",
-    "fpl advice",
-    "injury",
-    "statistics",
-    "tactics",
-    "team news",
-    "transfer"
-   ],
-   "strength": "strong",
-   "priority": "low",
-   "researched": true,
-   "items": [
-    {
-     "title": "Newcastle predicted lineup vs. Everton: Four changes as Yoane Wissa returns",
-     "url": "https://www.sportsmole.co.uk/football/newcastle-united/predicted-lineups/wissa-returns-in-quadruple-change-predicted-newcastle-xi-vs-everton_608135.html",
-     "source": "Sports Mole",
-     "published": "2026-10-31T09:51:47+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Newcastle United could line up for Monday's Premier League clash with Everton."
-    },
-    {
-     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-26T10:25:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/2pm-team-news-bruno-wissa-thiaw-benched-as-schade-sangare-start",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-25T13:20:33+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Big decisions made before these four matches The post 2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Newcastle United desperately lack the cut-and-thrust in attack that’ll keep them out of relegation trouble",
-     "url": "https://www.fourfourtwo.com/person/player/newcastle-united-desperately-lack-the-cut-and-thrust-in-attack-thatll-keep-them-out-of-relegation-trouble",
-     "source": "FourFourTwo FPL",
-     "published": "2026-11-12T16:00:00+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": "Sitting bottom of the Premier League’s Expected Points (xPTS) table is cause for concern at St James' Park this season. Newcastle United ’s high-risk tactical approach under new head coach Matthias Jaissle has left them exposed in transition, but their biggest structural weakness appears when they are forced onto the back foot. The team has largely relied on a single way of playing so far, with li"
-    },
-    {
-     "title": "Read Yoane Wissa's first 'Leadership Group' notes ahead of Everton",
-     "url": "https://www.newcastleunited.com/en/news/read-yoane-wissas-first-leadership-group-notes-ahead-of-everton",
-     "source": "Newcastle United",
-     "published": "2026-11-02T15:45:00+00:00",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Yoane wissa fpl newcastle striker battle 2026 27",
-     "url": "https://onefpl.com/blog/yoane-wissa-fpl-newcastle-striker-battle-2026-27",
-     "source": "OneFPL",
-     "published": "",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Fpl price changes wissa rises as semenyo and rice values drop",
-     "url": "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
-     "source": "FPL Captain",
-     "published": "",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
-    },
-    {
-     "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
-     "url": "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
-     "source": "FPL Captain",
-     "published": "",
-     "matched_on": "wissa",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1910,6 +1730,229 @@
      "matched_on": "muharemovic",
      "kind": "general",
      "excerpt": ""
+    }
+   ]
+  },
+  "Wissa": {
+   "player": "Wissa",
+   "club": "NEW",
+   "evidence_count": 8,
+   "source_count": 6,
+   "latest_evidence": "2026-11-12T16:00:00+00:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "Newcastle predicted lineup vs. Everton: Four changes as Yoane Wissa returns",
+     "url": "https://www.sportsmole.co.uk/football/newcastle-united/predicted-lineups/wissa-returns-in-quadruple-change-predicted-newcastle-xi-vs-everton_608135.html",
+     "source": "Sports Mole",
+     "published": "2026-10-31T09:51:47+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Newcastle United could line up for Monday's Premier League clash with Everton."
+    },
+    {
+     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-26T10:25:00+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/2pm-team-news-bruno-wissa-thiaw-benched-as-schade-sangare-start",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-25T13:20:33+00:00",
+     "matched_on": "wissa",
+     "kind": "team news",
+     "excerpt": "Big decisions made before these four matches The post 2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Newcastle United desperately lack the cut-and-thrust in attack that’ll keep them out of relegation trouble",
+     "url": "https://www.fourfourtwo.com/person/player/newcastle-united-desperately-lack-the-cut-and-thrust-in-attack-thatll-keep-them-out-of-relegation-trouble",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-12T16:00:00+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": "Sitting bottom of the Premier League’s Expected Points (xPTS) table is cause for concern at St James' Park this season. Newcastle United ’s high-risk tactical approach under new head coach Matthias Jaissle has left them exposed in transition, but their biggest structural weakness appears when they are forced onto the back foot. The team has largely relied on a single way of playing so far, with li"
+    },
+    {
+     "title": "Read Yoane Wissa's first 'Leadership Group' notes ahead of Everton",
+     "url": "https://www.newcastleunited.com/en/news/read-yoane-wissas-first-leadership-group-notes-ahead-of-everton",
+     "source": "Newcastle United",
+     "published": "2026-11-02T15:45:00+00:00",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Yoane wissa fpl newcastle striker battle 2026 27",
+     "url": "https://onefpl.com/blog/yoane-wissa-fpl-newcastle-striker-battle-2026-27",
+     "source": "OneFPL",
+     "published": "",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Fpl price changes wissa rises as semenyo and rice values drop",
+     "url": "https://fplcaptain.com/news/fpl-price-changes-wissa-rises-as-semenyo-and-rice-values-drop",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
+     "title": "Fpl gw3 strategy using semenyo and wissa to enable premium assets",
+     "url": "https://fplcaptain.com/news/fpl-gw3-strategy-using-semenyo-and-wissa-to-enable-premium-assets",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "wissa",
+     "kind": "general",
+     "excerpt": ""
+    }
+   ]
+  },
+  "Barnes": {
+   "player": "Barnes",
+   "club": "NEW",
+   "evidence_count": 10,
+   "source_count": 6,
+   "latest_evidence": "2026-11-15T04:55:52+00:00",
+   "official_source_found": true,
+   "fpl_source_found": true,
+   "team_news_found": true,
+   "starting_status_assessed": true,
+   "injury_status_assessed": true,
+   "transfer_status_assessed": true,
+   "role_assessed": true,
+   "fixtures_assessed": true,
+   "dimensions_covered": [
+    "fixtures",
+    "fpl advice",
+    "injury",
+    "match report",
+    "press conference",
+    "set pieces",
+    "statistics",
+    "tactics",
+    "team news",
+    "transfer"
+   ],
+   "strength": "strong",
+   "priority": "low",
+   "researched": true,
+   "items": [
+    {
+     "title": "Scottie Barnes Headlines Today’s NBA Injury Report: Sunday, 11/15/26",
+     "url": "https://dknetwork.draftkings.com/2026/11/14/austin-reaves-headlines-todays-nba-injury-report-sunday-11-15-26/",
+     "source": "DraftKings Network Soccer",
+     "published": "2026-11-15T04:55:52+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "DraftKings Network has you covered with the latest NBA injury report, news and top plays for Sunday, 11/15/26. The post Scottie Barnes Headlines Today’s NBA Injury Report: Sunday, 11/15/26 appeared first on DraftKings Network ."
+    },
+    {
+     "title": "New York Knicks vs. Toronto Raptors: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/new-york-knicks/preview/new-york-knicks-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_609112.html",
+     "source": "Sports Mole",
+     "published": "2026-11-14T18:40:57+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Knicks vs Raptors preview for Sunday: team news, Scottie Barnes injury status, player props, head-to-head record, betting tips and our score prediction."
+    },
+    {
+     "title": "Los Angeles Lakers vs. Toronto Raptors: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/toronto-raptors/preview/los-angeles-lakers-vs-toronto-raptors-player-props-injury-report-and-prediction--nba_608134.html",
+     "source": "Sports Mole",
+     "published": "2026-10-31T09:35:54+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Los Angeles Lakers vs Toronto Raptors prediction, player props and injury report, with Doncic and Barnes in focus and Leonard out for Toronto."
+    },
+    {
+     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
+     "source": "Fantasy Football Scout",
+     "published": "2026-10-26T10:25:00+00:00",
+     "matched_on": "barnes",
+     "kind": "team news",
+     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Royal Caribbean Legend of the Match Result: Newcastle",
+     "url": "https://fulhamfc.co.uk/news/2026/november/08/royal-caribbean-legend-of-the-match-result-newcastle/",
+     "source": "Fulham",
+     "published": "2026-11-08T14:22:38+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Bernd Leno has been voted Royal Caribbean Legend of the Match against Newcastle United. Our big German was superb throughout our 1-1 draw on Saturday afternoon, with only a special Jacob Murphy strike getting past him. Of the numerous saves he made throughout the encounter, the reaction stop to deny Harvey Barnes from close range stands out, as does the vital low block he made at the death to prev"
+    },
+    {
+     "title": "Leno: On the right track",
+     "url": "https://fulhamfc.co.uk/news/2026/november/08/leno-on-the-right-track/",
+     "source": "Fulham",
+     "published": "2026-11-08T09:07:56+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Following his imperious display between the sticks on Saturday afternoon, fulhamfc.com caught up with Bernd Leno for a Newcastle United debrief. With the chance both sides had, is a draw maybe the correct result? I would say it’s fair. It was possible to win the game, but Newcastle had some chances as well. It was not our best game, but in the end we were playing against a good team, so one point "
+    },
+    {
+     "title": "Tip of the Day: Barnes to star with goals for both sides at St James’ Park",
+     "url": "https://www.101greatgoals.com/football/premier-league/tip-of-the-day-harvey-barnes-to-star-with-goals-for-both-sides-at-st-james-park/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-02T15:00:00+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Today's Tip of the Day is predicting at least two goals between Newcastle and Everton tonight"
+    },
+    {
+     "title": "Two Lions Receive Unnecessary Roughness Fines Against Packers",
+     "url": "https://www.si.com/nfl/lions/onsi/two-lions-receive-unnecessary-roughness-fines-against-packers?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-31T20:05:58+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Detroit Lions Brian Branch, Derrick Barnes fined for actions against Green Bay Packers."
+    },
+    {
+     "title": "3 Winners, 1 Loser in Raptors Loss vs. Magic",
+     "url": "https://www.si.com/nba/raptors/onsi/3-winners-1-loser-toronto-raptors-loss-vs-orlando-magic?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-31T10:00:03+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Toronto Raptors forward Scottie Barnes scored a career-high 41 points in the team's loss against the Orlando Magic."
+    },
+    {
+     "title": "Scottie Barnes New Bad Habit Is Killing the Raptors Offense",
+     "url": "https://www.si.com/nba/raptors/onsi/scottie-barnes-new-bad-habit-killing-toronto-raptors-offense?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-10-27T10:00:03+00:00",
+     "matched_on": "barnes",
+     "kind": "general",
+     "excerpt": "Scottie Barnes is quietly changing his game and unfortunately it might not what's best for the Toronto Raptors."
     }
    ]
   }
