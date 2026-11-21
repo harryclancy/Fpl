@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 11,
- "ran_at": "2026-11-21T04:00:13+00:00",
- "seconds": 106.0,
+ "ran_at": "2026-11-21T13:31:17+00:00",
+ "seconds": 123.6,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 503,
- "substantive_items": 136,
- "duplicates_removed": 3,
+ "sources_readable": 55,
+ "candidates_discovered": 565,
+ "substantive_items": 220,
+ "duplicates_removed": 21,
  "deeply_analysed": 60,
  "deep_read_failed": 0,
- "corpus_size": 18662,
+ "corpus_size": 18651,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 136 articles"
+    "55/78 sources returned 220 articles"
    ]
   },
   "blackout": {
@@ -37,6 +37,7 @@
   }
  },
  "failures": [
+  "Premier League Official Fantasy: HTTP 403 for https://www.premierleague.com/en/sitemap/global.xml",
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
@@ -50,6 +51,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -1327,9 +1329,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 74,
+   "evidence_count": 75,
    "source_count": 18,
-   "latest_evidence": "2026-11-20T11:48:28+00:00",
+   "latest_evidence": "2026-11-21T09:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1354,6 +1356,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "How to watch Manchester City vs Fulham: FREE streams",
+     "url": "https://www.fourfourtwo.com/competition/watch-manchester-city-vs-fulham-premier-league-2026-27-free",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-21T09:00:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Watch Manchester City vs Fulham for free from anywhere, as Enzo Maresca's men look to end their three-match losing run in the Premier League . FourFourTwo has all the details on live streams and TV channels, wherever you are in the world. The international break came at a good time for City, after defeats against Aston Villa, Brighton & Hove Albion and Nottingham Forest saw them fall off the pace "
+    },
     {
      "title": "Last-gasp Haaland penalty completes amazing comeback to secure quarter-final for Norway",
      "url": "https://www.soccerway.com/news/last-gasp-haaland-penalty-completes-amazing-comeback-to-secure-quarter-final-for-norway/b76oArbC/",
@@ -1452,15 +1463,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Aston Villa and Manchester City announce their starting lineups for Saturday's Premier League fixture in the West Midlands."
-    },
-    {
-     "title": "Huge Erling Haaland to Liverpool update revealed as Man City set terms for sale after guilty FFP verdict",
-     "url": "https://www.football365.com/news/erling-haaland-liverpool-man-city-set-terms-sale-guilty-ffp-verdict",
-     "source": "Football365",
-     "published": "2026-11-19T21:23:46+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "According to reports, Liverpool are plotting a move for Erling Haaland, with Manchester City setting the terms for his sale."
     }
    ]
   },
