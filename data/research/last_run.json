@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-22T03:15:04+00:00",
- "seconds": 143.8,
+ "ran_at": "2026-11-22T13:24:33+00:00",
+ "seconds": 137.1,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 506,
- "substantive_items": 157,
- "duplicates_removed": 7,
- "deeply_analysed": 88,
- "deep_read_failed": 2,
- "corpus_size": 18629,
+ "sources_readable": 57,
+ "candidates_discovered": 609,
+ "substantive_items": 250,
+ "duplicates_removed": 25,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18647,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 157 articles"
+    "57/78 sources returned 250 articles"
    ]
   },
   "blackout": {
@@ -42,7 +42,6 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -66,7 +65,7 @@
    "club": "ARS",
    "evidence_count": 13,
    "source_count": 8,
-   "latest_evidence": "2026-11-22T02:59:25+00:00",
+   "latest_evidence": "2026-11-22T05:22:00-05:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -92,6 +91,15 @@
    "researched": true,
    "items": [
     {
+     "title": "David Raya injury news, latest update: \"Obviously it's not good\" says Arteta - How big of a problem is this?",
+     "url": "https://www.nbcsports.com/soccer/news/david-raya-injury-news-latest-update-as-arsenal-star-goes-off-vs-newcastle",
+     "source": "NBC Sports Rotoworld PL",
+     "published": "2026-11-22T05:22:00-05:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
      "title": "David Raya injury: Mikel Arteta's \"not good news\" update leaves Arsenal facing anxious wait",
      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/not-good-news-arteta-issues-raya-update-after-injury-scare_609593.html",
      "source": "Sports Mole",
@@ -108,15 +116,6 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Newcastle show spirit to fight back against Arsenal The post FPL notes: Raya + Hall injury latest, Saliba unused again appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "David Raya injury news, latest update: \"Obviously it's not good\" says Arteta - How big of a problem is this?",
-     "url": "https://www.nbcsports.com/soccer/news/david-raya-injury-news-latest-update-as-arsenal-star-goes-off-vs-newcastle",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-11-21T16:38:00-05:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": ""
     },
     {
      "title": "Arteta says Arsenal lacked 'magic' in Newcastle draw, unsure about extent of Raya's injury",
@@ -334,7 +333,7 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 18,
+   "evidence_count": 17,
    "source_count": 8,
    "latest_evidence": "2026-11-19T07:21:53+00:00",
    "official_source_found": true,
@@ -461,13 +460,13 @@
      "excerpt": "Mikel Arteta also discusses rotation after Arsenal see off Everton The post FPL notes: Calafiori injury, Saka latest + Everton fitness updates appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Arsenal injury news: Watch key Mikel Arteta star hold hamstring against Everton to join Riccardo Calafiori on treatment table",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/another-injury-watch-gunners-star-hold-hamstring-to-add-worry-after-calafiori_607653.html",
-     "source": "Sports Mole",
-     "published": "2026-10-24T23:29:03+01:00",
+     "title": "Arsenal star Riccardo Calafiori linked with bombshell exit following enquiry: report",
+     "url": "https://www.fourfourtwo.com/transfer/arsenal-star-riccardo-calafiori-linked-with-bombshell-exit-following-enquiry-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-02T13:04:10+00:00",
      "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "An Arsenal star was seen holding their hamstring before being brought off against Everton, making him a second injury worry from the game after Riccardo Calafiori."
+     "kind": "transfer",
+     "excerpt": "Arsenal full-back Riccardo Calafiori could leave the club in a shock move. That's according to a new report, which claims that the champions have to be wary that their superstar Italian could be about to depart North London after three years. Calafiori has been excellent for Arsenal this season – but with the star's contract reaching the two-year mark next summer, the Gunners might have to conside"
     }
    ]
   },
@@ -1232,7 +1231,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 102,
+   "evidence_count": 101,
    "source_count": 21,
    "latest_evidence": "2026-11-21T16:32:11-05:00",
    "official_source_found": true,
@@ -1372,9 +1371,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 76,
-   "source_count": 18,
-   "latest_evidence": "2026-11-21T19:12:22+01:00",
+   "evidence_count": 78,
+   "source_count": 19,
+   "latest_evidence": "2026-11-22T10:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1399,6 +1398,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Manchester City vs Napoli Predictions, Team News and Betting Tips",
+     "url": "https://statz.ai/news/19872613-man-city-vs-napoli-predictions-betting-tips",
+     "source": "Statz.ai FPL",
+     "published": "2026-11-22T07:04:51+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Manchester City host Napoli at the Etihad Stadium on Tuesday 24 November in the Champions League league stage, with kick-off at 8pm UK. We predict a 2-0 City win, with Erling Haaland on a run of 3+ shots in three straight games."
+    },
     {
      "title": "Watch: Fulham lead Man City as Haaland has goal ruled out",
      "url": "https://www.101greatgoals.com/football/premier-league/watch-fulham-lead-man-city-as-haaland-has-goal-ruled-out/",
@@ -1497,15 +1505,6 @@
      "matched_on": "haaland",
      "kind": "transfer",
      "excerpt": "According to reports, Liverpool are plotting a move for Erling Haaland, with Manchester City setting the terms for his sale."
-    },
-    {
-     "title": "Transfer Rumors: Pochettino Faces Man Utd Setback; Felix’s Surprise Chelsea Return",
-     "url": "https://www.si.com/soccer/transfer-rumors-pochettino-man-utd-setback-felix-chelsea-return?utm_source=RSS",
-     "source": "Sports Illustrated FPL",
-     "published": "2026-11-17T00:05:00+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "Virgil van Dijk, Erling Haaland, Martín Zubimendi, Alessandro Bastoni and Rodrygo all feature in the gossip."
     }
    ]
   },
