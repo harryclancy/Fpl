@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-22T13:24:33+00:00",
- "seconds": 137.1,
+ "ran_at": "2026-11-22T22:29:36+00:00",
+ "seconds": 159.6,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 609,
- "substantive_items": 250,
- "duplicates_removed": 25,
- "deeply_analysed": 85,
- "deep_read_failed": 5,
- "corpus_size": 18647,
+ "sources_readable": 56,
+ "candidates_discovered": 655,
+ "substantive_items": 297,
+ "duplicates_removed": 29,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 18584,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 250 articles"
+    "56/78 sources returned 297 articles"
    ]
   },
   "blackout": {
@@ -38,6 +38,7 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
+  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -204,8 +205,8 @@
    "player": "De Cuyper",
    "club": "BHA",
    "evidence_count": 11,
-   "source_count": 7,
-   "latest_evidence": "2026-11-20T07:00:00+00:00",
+   "source_count": 8,
+   "latest_evidence": "2026-11-22T20:19:08+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -255,6 +256,15 @@
      "matched_on": "de cuyper",
      "kind": "team news",
      "excerpt": "Maxim De Cuyper returns to the FPL summit as Brighton beat Man City The post FPL notes: Gross on cusp of ban + Maresca on benching Cherki appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "PSG eye Brighton left-back Maxim De Cuyper as cover for Nuno Mendes",
+     "url": "https://www.sportsmole.co.uk/football/psg/transfer-talk/news/liverpool-and-arsenal-face-psg-competition-for-brighton-defender_609644.html",
+     "source": "Sports Mole",
+     "published": "2026-11-22T20:19:08+00:00",
+     "matched_on": "de cuyper",
+     "kind": "transfer",
+     "excerpt": "PSG are one of six top European clubs reportedly watching Brighton left-back Maxim De Cuyper as they consider cover for Nuno Mendes in January."
     },
     {
      "title": "Buy, Hold or Sell: FPL expert reveals GW11 transfers cheat sheet amid controversial Chelsea verdict",
@@ -311,15 +321,6 @@
      "excerpt": "Fixtures Aston Villa Vs. Fulham - Sat, Oct 31 2026, 20:00 Aston Villa have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Could Aston Villa's Matty Cash (£4.3m) be a solid option fo"
     },
     {
-     "title": "De Cuyper: 'There's a great togetherness in the squad'",
-     "url": "https://www.brightonandhovealbion.com/media-article/de-cuyper-theres-a-great-togetherness-in-the-squad",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-10-25T07:30:00+00:00",
-     "matched_on": "de cuyper",
-     "kind": "general",
-     "excerpt": "Albion's squad has evolved after some experienced faces left in the summer, according to our Dutch defender."
-    },
-    {
      "title": "Maxim de cuyper fpl 2026 27",
      "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
      "source": "OneFPL",
@@ -333,7 +334,7 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 17,
+   "evidence_count": 16,
    "source_count": 8,
    "latest_evidence": "2026-11-19T07:21:53+00:00",
    "official_source_found": true,
@@ -451,15 +452,6 @@
      "excerpt": "Arsenal have been handed fresh injury concerns ahead of Liverpool, with Mikel Arteta providing updates on Declan Rice, Noni Madueke and Riccardo Calafiori."
     },
     {
-     "title": "FPL notes: Calafiori injury, Saka latest + Everton fitness updates",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-calafiori-injury-saka-latest-everton-fitness-updates",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-25T07:45:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Mikel Arteta also discusses rotation after Arsenal see off Everton The post FPL notes: Calafiori injury, Saka latest + Everton fitness updates appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "Arsenal star Riccardo Calafiori linked with bombshell exit following enquiry: report",
      "url": "https://www.fourfourtwo.com/transfer/arsenal-star-riccardo-calafiori-linked-with-bombshell-exit-following-enquiry-report",
      "source": "FourFourTwo FPL",
@@ -467,6 +459,15 @@
      "matched_on": "calafiori",
      "kind": "transfer",
      "excerpt": "Arsenal full-back Riccardo Calafiori could leave the club in a shock move. That's according to a new report, which claims that the champions have to be wary that their superstar Italian could be about to depart North London after three years. Calafiori has been excellent for Arsenal this season – but with the star's contract reaching the two-year mark next summer, the Gunners might have to conside"
+    },
+    {
+     "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
+     "url": "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
+     "source": "FISO",
+     "published": "2026-11-19T07:21:53+00:00",
+     "matched_on": "calafiori",
+     "kind": "general",
+     "excerpt": "I set the 15 most-owned players that fit in £100m against the best squad the same money buys. The gap is in midfield and defence, and three transfers win back half of it. By Noel Morgan Rogers is owned by 54.0% of FPL managers. Pascal Groß, Riccardo Calafiori and Maxim De Cuyper are each close … Continue reading FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks "
     }
    ]
   },
@@ -727,8 +728,8 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 4,
-   "latest_evidence": "2026-11-21T14:00:00+00:00",
+   "source_count": 5,
+   "latest_evidence": "2026-11-22T14:06:01+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -752,6 +753,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Hull vs Brighton: Confirmed teams, full line ups in Premier League",
+     "url": "https://www.101greatgoals.com/football/premier-league/hull-vs-brighton-live-team-news-starting-line-ups-tv-channel-online-stream-where-to-watch/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-22T14:06:01+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Team news as Hull host Brighton in the Premier League"
+    },
     {
      "title": "Hull City vs. Brighton & Hove Albion injury, suspension list, predicted XIs",
      "url": "https://www.sportsmole.co.uk/football/hull-city/injury-news/team-news/hull-vs-brighton-injury-suspension-list-predicted-xis_609499.html",
@@ -789,15 +799,6 @@
      "excerpt": "Sports Mole previews Sunday's Premier League clash between Hull City and Brighton & Hove Albion, including predictions, team news and possible lineups."
     },
     {
-     "title": "Hull injury news: Nobel Mendy update on “problem” ahead of Brighton Premier League clash",
-     "url": "https://www.sportsmole.co.uk/football/hull-city/injury-news/news/hull-dealt-fresh-gbp21m-injury-problem-before-brighton-clash_609225.html",
-     "source": "Sports Mole",
-     "published": "2026-11-16T17:58:21+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Hull City are sweating over the fitness of defender Nobel Mendy ahead of Sunday’s Premier League clash with Brighton & Hove Albion."
-    },
-    {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
      "url": "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
      "source": "FISO",
@@ -813,7 +814,7 @@
    "club": "CHE",
    "evidence_count": 54,
    "source_count": 14,
-   "latest_evidence": "2026-11-20T12:00:00+00:00",
+   "latest_evidence": "2026-11-22T17:23:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -866,15 +867,6 @@
      "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Wednesday's EFL Cup clash with Liverpool."
     },
     {
-     "title": "Chelsea's Cole Palmer sent England selection message after senseless red card vs. Tottenham",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/uefa-nations-league/news/exclusive-palmer-sent-england-selection-message-after-senseless-spurs-red_607662.html",
-     "source": "Sports Mole",
-     "published": "2026-10-25T07:58:13+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Exclusive: A former Chelsea winger sends Cole Palmer a fresh England message after the attacker's senseless red card against Tottenham Hotspur."
-    },
-    {
      "title": "Man Utd fully-costed plan to sign entire USA squad plus Palmer, Kane and 11 defenders emerges",
      "url": "https://www.football365.com/news/man-utd-usa-palmer-kane-transfer-plan-pochettino-mediawatch",
      "source": "Football365",
@@ -900,6 +892,15 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
+    },
+    {
+     "title": "TOWN 1 SOUTHAMPTON 0",
+     "url": "https://www.itfc.co.uk/news/2026/november/22/town-1-southampton/",
+     "source": "Ipswich Town",
+     "published": "2026-11-22T17:23:00+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Town Women secured another three points in the Subway Players Cup with a 1-0 win against Southampton. The Blues had the first chance of the game when Kit Graham picked up the ball in the final third and floated it over the top of the defence to Georgia Timms who was denied by a low save from Grace Moloney. The two sides continued to battle for a foothold in the game, with the next best opportuniti"
     },
     {
      "title": "Steve Palmer: Hints and tips for more peaceful punting from a grizzled veteran who has seen it all before",
@@ -1231,9 +1232,9 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 101,
+   "evidence_count": 100,
    "source_count": 21,
-   "latest_evidence": "2026-11-21T16:32:11-05:00",
+   "latest_evidence": "2026-11-22T17:59:42+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1373,7 +1374,7 @@
    "club": "MCI",
    "evidence_count": 78,
    "source_count": 19,
-   "latest_evidence": "2026-11-22T10:35:00+00:00",
+   "latest_evidence": "2026-11-22T20:30:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1398,6 +1399,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Who is the top scorer of 2026? Harry Kane lead down to eight before year-ending injury",
+     "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
+     "source": "Football365",
+     "published": "2026-11-22T20:30:59+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Harry Kane is miles clear as the leading scorer in 2026 among players from Europe’s top leagues, scoring his Bayern Munich goals at a daft rate."
+    },
     {
      "title": "Manchester City vs Napoli Predictions, Team News and Betting Tips",
      "url": "https://statz.ai/news/19872613-man-city-vs-napoli-predictions-betting-tips",
@@ -1496,15 +1506,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Enzo Maresca explains why Erling Haaland is one of five Manchester City players who will miss Wednesday’s EFL Cup fourth-round tie against Brighton & Hove Albion."
-    },
-    {
-     "title": "Huge Erling Haaland to Liverpool update revealed as Man City set terms for sale after guilty FFP verdict",
-     "url": "https://www.football365.com/news/erling-haaland-liverpool-man-city-set-terms-sale-guilty-ffp-verdict",
-     "source": "Football365",
-     "published": "2026-11-19T21:23:46+00:00",
-     "matched_on": "haaland",
-     "kind": "transfer",
-     "excerpt": "According to reports, Liverpool are plotting a move for Erling Haaland, with Manchester City setting the terms for his sale."
     }
    ]
   },
@@ -1513,7 +1514,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-11-21T14:40:00+00:00",
+   "latest_evidence": "2026-11-22T08:52:38+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1524,6 +1525,7 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
+    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1545,6 +1547,15 @@
      "matched_on": "dubravka",
      "kind": "team news",
      "excerpt": "Team news has been confirmed for Town's Premier League clash away to Tottenham Hotspur. Gary O'Neil has made three changes to the side which faced AFC Bournemouth before the international break, with Zian Flemming, Darnell Furlong and Saša Lukić all coming into the starting XI in North London. Christian Walton starts in goal for the Blues and the defensive unit consists of Abdoul Ouattara, Furlong"
+    },
+    {
+     "title": "San Antonio Spurs vs. Sacramento Kings: Player props, injury report and prediction | NBA",
+     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-sacramento-kings-player-props-injury-report-and-prediction--nba_609601.html",
+     "source": "Sports Mole",
+     "published": "2026-11-22T08:52:38+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "San Antonio Spurs vs. Sacramento Kings preview with player props, injury report, Wembanyama and Acuff matchups and our NBA prediction."
     },
     {
      "title": "Why Sandro Tonali is out for Tottenham against Ipswich as Roberto De Zerbi offers explanation",
@@ -1581,15 +1592,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Gary O'Neil says there are no injury concerns ahead of Town's Premier League trip to Tottenham Hotspur Stadium on Saturday. The Blues return to league action following the November international break, with a number of the club's first-team players involved for their respective national sides since Town's most recent outing against AFC Bournemouth. One player involved for his country was Saša Luki"
-    },
-    {
-     "title": "Tottenham predicted lineup vs. Ipswich Town: James Maddison uncertainty for Roberto De Zerbi",
-     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/is-maddison-back-predicted-tottenham-xi-vs-ipswich_609441.html",
-     "source": "Sports Mole",
-     "published": "2026-11-19T21:32:08+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Saturday's Premier League clash with Ipswich Town."
     }
    ]
   },
@@ -1736,7 +1738,7 @@
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 6,
    "latest_evidence": "2026-11-12T16:00:00+00:00",
    "official_source_found": true,
@@ -1756,8 +1758,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -1777,15 +1779,6 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/2pm-team-news-bruno-wissa-thiaw-benched-as-schade-sangare-start",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-25T13:20:33+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Big decisions made before these four matches The post 2pm team news: Bruno, Wissa + Thiaw benched, as Schade + Sangare start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Newcastle United desperately lack the cut-and-thrust in attack that’ll keep them out of relegation trouble",
