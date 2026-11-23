@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-23T03:44:40+00:00",
- "seconds": 113.6,
+ "ran_at": "2026-11-23T16:03:54+00:00",
+ "seconds": 121.5,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 497,
- "substantive_items": 152,
- "duplicates_removed": 4,
- "deeply_analysed": 60,
- "deep_read_failed": 0,
- "corpus_size": 18558,
+ "sources_readable": 56,
+ "candidates_discovered": 670,
+ "substantive_items": 305,
+ "duplicates_removed": 21,
+ "deeply_analysed": 82,
+ "deep_read_failed": 8,
+ "corpus_size": 18556,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 152 articles"
+    "56/78 sources returned 305 articles"
    ]
   },
   "blackout": {
@@ -38,7 +38,6 @@
  },
  "failures": [
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
-  "Never Manage Alone: sitemap at https://nevermanagealone.com/sitemaps/google_news listed no pages",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
@@ -65,9 +64,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 13,
-   "source_count": 8,
-   "latest_evidence": "2026-11-22T05:22:00-05:00",
+   "evidence_count": 22,
+   "source_count": 10,
+   "latest_evidence": "2026-11-23T15:49:29+01:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -92,6 +91,87 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "David Raya Injury Update Offers Fresh Concern for Arsenal",
+     "url": "https://www.si.com/soccer/david-raya-injury-update-fresh-concern-arsenal?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-11-23T15:30:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Arsenal’s shot stopper went down with what looked like a shoulder injury against Newcastle United."
+    },
+    {
+     "title": "Arteta says Raya injury 'doesn't look too serious' despite initial concerns",
+     "url": "https://www.flashscore.com/news/soccer-premier-league-arteta-says-raya-s-injury-doesn-t-look-too-serious-despite-initial-concerns/v7orXc7K/",
+     "source": "Flashscore",
+     "published": "2026-11-23T15:49:29+01:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Relief for Arteta and Arsenal as Raya avoids surgery on injured arm",
+     "url": "https://www.101greatgoals.com/football/champions-league/relief-for-mikel-arteta-arsenal-david-raya-avoids-surgery-on-injured-arm/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-23T14:40:07+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "David Raya will not undergo surgery on the arm injury he sustained at Newcastle on Saturday, Arsenal boss Mikel Arteta said today"
+    },
+    {
+     "title": "Arsenal vs Borussia Dortmund preview: Gunners vulnerable with David Raya set to miss out",
+     "url": "https://www.football365.com/match-preview/arsenal-vs-borussia-dortmund-preview-gunners-vulnerable-with-david-raya-set-to-miss-out",
+     "source": "Football365",
+     "published": "2026-11-23T14:28:55+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Arsenal vs Dortmund without David Raya leaves us fancying Felix Nmecha to score at the Emirates. Team news and predictions here."
+    },
+    {
+     "title": "Arsenal: Arteta gives shock Raya injury update as the goalkeeper is ruled out of Dortmund clash",
+     "url": "https://www.football365.com/news/arsenal-arteta-raya-injury-update-dortmund",
+     "source": "Football365",
+     "published": "2026-11-23T14:22:50+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Arsenal boss Mikel Arteta has revealed that David Raya won’t be fit to face Borussia Dortmund but his injury “doesn’t look too serious”."
+    },
+    {
+     "title": "Arsenal: Mikel Arteta issues David Raya injury update after worrying photo emerges",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/news/could-not-handle-the-pain-arteta-issues-raya-update-after-worrying-photo_609696.html",
+     "source": "Sports Mole",
+     "published": "2026-11-23T14:15:11+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Arsenal manager Mikel Arteta issues an injury update on David Raya after a worrying photo emerges of the Gunners' number one."
+    },
+    {
+     "title": "Raya injury latest: Latest FPL team news pre-Gameweek 12",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/raya-injury-latest-latest-fpl-team-news-pre-gameweek-12",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-23T13:40:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Mikel Arteta, Enzo Maresca and Unai Emery face the media today The post Raya injury latest: Latest FPL team news pre-Gameweek 12 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "What to do with injured Raya in FPL?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/what-to-do-with-injured-raya-in-fpl",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-23T13:30:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "FPL's top-scoring and most-owned 'keeper picked up a shoulder injury on Saturday The post What to do with injured Raya in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Injured Raya absent from training session ahead of Arsenal's Champions League clash",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-injured-raya-absent-from-training-session-ahead-of-arsenal-s-champions-league-clash/hSCCBe43/",
+     "source": "Soccerway",
+     "published": "2026-11-23T13:57:24+01:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": ""
+    },
     {
      "title": "David Raya injury news, latest update: \"Obviously it's not good\" says Arteta - How big of a problem is this?",
      "url": "https://www.nbcsports.com/soccer/news/david-raya-injury-news-latest-update-as-arsenal-star-goes-off-vs-newcastle",
@@ -118,87 +198,6 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Newcastle show spirit to fight back against Arsenal The post FPL notes: Raya + Hall injury latest, Saliba unused again appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arteta says Arsenal lacked 'magic' in Newcastle draw, unsure about extent of Raya's injury",
-     "url": "https://www.soccerway.com/news/arteta-says-arsenal-lacked-magic-in-newcastle-draw-unsure-about-extent-of-raya-s-injury/QuB32np2/",
-     "source": "Soccerway",
-     "published": "2026-11-21T22:13:20+01:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": ""
-    },
-    {
-     "title": "Newcastle 2-2 Arsenal: Report, result, goals as Madueke salvages draw",
-     "url": "https://www.101greatgoals.com/football/premier-league/newcastle-arsenal-report-result-goals-madueke-goal-david-raya-injury/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-11-21T20:22:53+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Arsenal salvaged a draw at Newcastle in the Premier League"
-    },
-    {
-     "title": "Arsenal injury, suspension list and return dates vs. Borussia Dortmund: David Raya, Bukayo Saka, Martin Zubimendi latest",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/raya-saka-zubimendi-latest-arsenal-injury-suspension-list-vs-borussia-dortmund_609585.html",
-     "source": "Sports Mole",
-     "published": "2026-11-21T20:21:08+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Tuesday's Champions League clash with Borussia Dortmund."
-    },
-    {
-     "title": "Arsenal: Jamie Redknapp makes brutal Kepa prediction after David Raya injury v Newcastle",
-     "url": "https://www.football365.com/news/david-raya-injury-kepa-arrizabalaga-arsenal-newcastle-jamie-redknapp-verdict",
-     "source": "Football365",
-     "published": "2026-11-21T20:06:53+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Kepa Arrizabalaga replaced David Raya for Arsenal in the Premier League game against Newcastle United on Saturday."
-    },
-    {
-     "title": "No Raya? 3 FPL goalkeeper pairings who rotate well",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/21/no-raya-3-fpl-goalkeeper-pairings-who-rotate-well",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-21T03:00:00+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Three duos whose fixtures dovetail rather nicely The post No Raya? 3 FPL goalkeeper pairings who rotate well appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Arsenal to make 'unpopular decisions' over contract renewal situation: report",
-     "url": "https://www.fourfourtwo.com/transfer/arsenal-to-make-unpopular-decisions-over-contract-renewal-situation-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-11-18T11:31:50+00:00",
-     "matched_on": "raya",
-     "kind": "transfer",
-     "excerpt": "Arsenal are set to make difficult choices behind the scenes that may not go down well with fans. Supporter satisfaction is arguably the highest it has been since the days of the Invincibles, with manager Mikel Arteta leading Arsenal to a first Premier League title in 22 years and just a second Champions League final earlier this year. FourFourTwo understands that with rivals undergoing uncertainty"
-    },
-    {
-     "title": "Arsenal lock down defence as Hincapie joins Rice and Raya in contract talks",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/transfer-talk/news/a-new-and-surprising-contract-extension-coming-at-arsenal_609288.html",
-     "source": "Sports Mole",
-     "published": "2026-11-17T20:53:20+00:00",
-     "matched_on": "raya",
-     "kind": "transfer",
-     "excerpt": "Arsenal are in advanced talks over a new deal with a 24-year-old defender who has more than four years left, the third key player to be tied down in a week."
-    },
-    {
-     "title": "Arsenal star David Raya close to deal, following La Liga wish comments: report",
-     "url": "https://www.fourfourtwo.com/transfer/arsenal-star-david-raya-close-to-deal-following-la-liga-wish-comments-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-11-17T10:49:38+00:00",
-     "matched_on": "raya",
-     "kind": "transfer",
-     "excerpt": "Arsenal goalkeeper David Raya is the subject of interest from La Liga – with a new contract on the table. The 31-year-old has established himself as arguably England's best goalkeeper since moving to North London, winning the Golden Glove in every season since he's been at Arsenal . But with a contract expiring in 2028 and recent comments about his desire to move back to his native Spain, Raya's f"
-    },
-    {
-     "title": "Premier League goalkeepers ranked: Lammens slips out of top 10 as Alisson climbs",
-     "url": "https://www.football365.com/news/premier-league-goalkeepers-ranking-2026-27",
-     "source": "Football365",
-     "published": "2026-11-10T14:54:35+00:00",
-     "matched_on": "raya",
-     "kind": "general",
-     "excerpt": "David Raya has started 2026/27 where he left off last season, while Alisson, Jordan Pickford and James Trafford languish in the lower rankings…"
     }
    ]
   },
@@ -588,9 +587,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 37,
+   "evidence_count": 38,
    "source_count": 12,
-   "latest_evidence": "2026-11-21T17:00:00+00:00",
+   "latest_evidence": "2026-11-23T11:19:35+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -615,6 +614,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal dealt major transfer headache with ACL injury",
+     "url": "https://www.fourfourtwo.com/transfer/arsenal-dealt-major-transfer-headache-with-acl-injury",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-23T11:19:35+00:00",
+     "matched_on": "konsa",
+     "kind": "team news",
+     "excerpt": "Arsenal's January transfer plans have been thrown into chaos following an anterior cruciate ligament injury. The Gunners strengthened over the summer to bring in Ezri Konsa and Bruno Guimaraes in defence and midfield respectively, but with Gabriel Jesus, Gabriel Martinelli and Leandro Trossard all leaving in attack, only Christos Tzolis came into replace the trio. With Arsenal manager Mikel Arteta"
+    },
     {
      "title": "Newcastle v Arsenal team news: Konsa starts, Saliba a sub",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/21/newcastle-v-arsenal-team-news-konsa-starts-saliba-a-sub",
@@ -713,15 +721,6 @@
      "matched_on": "konsa",
      "kind": "team news",
      "excerpt": ""
-    },
-    {
-     "title": "Is Ezri Konsa injured this weekend? Arsenal injury update",
-     "url": "https://www.fourfourtwo.com/person/player/is-ezri-konsa-injured-this-weekend-arsenal-injury-update",
-     "source": "FourFourTwo FPL",
-     "published": "2026-11-06T15:09:12+00:00",
-     "matched_on": "konsa",
-     "kind": "team news",
-     "excerpt": "Arsenal manager Mikel Arteta has spoken about Ezri Konsa's availability this weekend. The defender was taken off in Arsenal's 2-1 win away at Slavia Prague in the Champions League this week, as the Gunners made hard work of the second half, after cruising into a two-goal lead. With William Saliba now available once more, Arteta has confirmed Konsa's status ahead of action this Saturday. Arsenal ha"
     }
    ]
   },
@@ -813,9 +812,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 52,
-   "source_count": 14,
-   "latest_evidence": "2026-11-22T17:23:00+00:00",
+   "evidence_count": 53,
+   "source_count": 15,
+   "latest_evidence": "2026-11-23T12:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -840,6 +839,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Chelsea collapse, Palmer poor + why no DCL bonus?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/fpl-notes-chelsea-collapse-palmer-anonymous-no-dcl-bonus",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-23T12:45:00+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "FPL takeaways from Chelsea 1-4 Leeds The post FPL notes: Chelsea collapse, Palmer poor + why no DCL bonus? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "England squad: Three players who should and shouldn't be in Thomas Tuchel's group - there's no Cole Palmer",
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/no-palmer-three-players-who-should-and-shouldnt-be-in-england-squad_608613.html",
@@ -938,15 +946,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Manchester United must give Mauricio Pochettino time to properly embed his proven modern tactics on this embarrassing group of players."
-    },
-    {
-     "title": "Thomas Tuchel responds to Morgan Rogers' Cole Palmer defence",
-     "url": "https://www.sportsmole.co.uk/football/england/news/thomas-tuchel-responds-as-morgan-rogers-brands-cole-palmer-england-claims-a-lie_609074.html",
-     "source": "Sports Mole",
-     "published": "2026-11-13T19:44:43+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Thomas Tuchel responds after Morgan Rogers calls claims about Cole Palmer's England commitment \"a lie\" following the Croatia victory."
     }
    ]
   },
@@ -1224,9 +1223,9 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 99,
+   "evidence_count": 100,
    "source_count": 21,
-   "latest_evidence": "2026-11-22T17:59:42+01:00",
+   "latest_evidence": "2026-11-23T10:35:12-05:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1364,9 +1363,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 77,
+   "evidence_count": 78,
    "source_count": 18,
-   "latest_evidence": "2026-11-22T20:30:59+00:00",
+   "latest_evidence": "2026-11-23T10:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
