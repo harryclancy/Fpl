@@ -1,8 +1,8 @@
 {
  "note": "Homepage prose, composed from data/research/corpus.json. Every claim is a sentence quoted from a retrieved article and attributed to its outlet; `evidence_used` holds the URLs behind each write-up. No language model and no paid API is involved — see analysis/writeup.py.",
- "generated": "2026-11-22T22:29:36+00:00",
+ "generated": "2026-11-23T03:44:40+00:00",
  "gameweek": 12,
- "corpus_size": 18584,
+ "corpus_size": 18558,
  "players": {
   "Raya": {
    "player": "Raya",
@@ -1281,7 +1281,7 @@
    "player": "Groß",
    "club": "BHA",
    "status": "Latest on Groß — FISO, 19 Nov: “Groß’s start to the campaign is impressive, 70 points with six assists from chances worth about two.”",
-   "why_here": "Groß is in the starting eleven this week at £6.3m as a MID. The selection rests on 6 retrieved item(s) from 5 source(s), the most recent dated 19 Nov.",
+   "why_here": "Groß is in the starting eleven this week at £6.3m as a MID. The selection rests on 6 retrieved item(s) from 6 source(s), the most recent dated 19 Nov.",
    "case_for": "What supports keeping him: FISO, 19 Nov: “Groß’s start to the campaign is impressive, 70 points with six assists from chances worth about two.” FISO, 19 Nov: “Mbeumo has four goals and a higher expected goal involvement than Rogers, Groß or Cherki, at 5.92.”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "No retrieved article addresses his selection or fitness. Minutes are unassessed rather than secure — the difference matters, and the old system used to report the second when it meant the first.",
@@ -1290,19 +1290,20 @@
    "confidence": "high",
    "evidence_count": 6,
    "evidence_used": [
+    "https://www.evertonfc.com/news/2026/november/22/blues-beaten-by-brighton-under-goodison-sun/",
+    "https://www.wearehullcity.co.uk/news/2026/november/22/hull-city-2-0-brighton-hove-albion/",
+    "https://www.brightonandhovealbion.com/media-article/wft-match-report-everton-bha-wsl-november-2026",
     "https://www.101greatgoals.com/football/premier-league/hull-vs-brighton-live-team-news-starting-line-ups-tv-channel-online-stream-where-to-watch/",
-    "https://www.sportsmole.co.uk/football/hull-city/injury-news/team-news/hull-vs-brighton-injury-suspension-list-predicted-xis_609499.html",
-    "https://www.football365.com/match-preview/hull-vs-brighton-prediction-preview",
-    "https://www.fantasyfootballscout.co.uk/2026/11/20/mitoma-minteh-yohanna-brighton-injury-latest-for-fpl-gameweek-11",
-    "https://www.sportsmole.co.uk/football/hull-city/preview/hull-city-vs-brighton-prediction-team-news-lineups_609478.html",
+    "https://www.fantasyfootballscout.co.uk/2026/11/22/hull-v-brighton-team-news-kostoulas-benched-belloumi-starts",
     "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
+    "Brighton & Hove Albion",
+    "Everton",
     "FISO",
     "Fantasy Football Scout",
-    "Football365",
-    "Sports Mole"
+    "Hull City"
    ],
    "quotes": [
     {
@@ -1329,14 +1330,14 @@
    "player": "Palmer",
    "club": "CHE",
    "status": "Latest on Palmer — Soccerway, 06 Nov: “England manager Thomas Tuchel said in September that Palmer had missed \"too many opportunities\" to play for the national team after he pulled out of the squad with an injury.” Sports Illustrated FPL, 06 Nov: “Tuchel called Palmer up for his first post-World Cup roster only to be disappointed by his swift withdrawal through injury .”",
-   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 54 retrieved item(s) from 14 source(s), the most recent dated 22 Nov.",
+   "why_here": "Palmer is in the starting eleven this week at £9.8m as a MID. The selection rests on 52 retrieved item(s) from 14 source(s), the most recent dated 22 Nov.",
    "case_for": "What supports keeping him: Soccerway, 13 Nov: “Asked about Palmer's exclusion ‌after England's 2-1 win over Croatia at Wembley, goalscorer Rogers told ​the BBC: \"He wants to be here.” Football365, 13 Nov: “It’s been suggested that Palmer – who’s got five goals and three assists for the Blues this season – is being punished by Tuchel, who said the forward “misses too many opportunities” to impress for England when he pulled out of the previous squad due to ‘load management’.” Football365, 13 Nov: “Palmer was in and out of the Chelsea team last season as he suffered from niggling injuries and has said he never truly felt 100% fit.”",
    "case_against": "What argues against him: Football365, 16 Nov: “Palmer was left out of the England squad for the World Cup in the summer after an injury-plagued season for Chelsea and then pulled out of the squad in September on the basis of ‘load management’.” Sports Mole, 13 Nov: “Palmer was omitted from Tuchel's latest squad despite featuring regularly for Chelsea under Xabi Alonso this season, having previously withdrawn from international duty because of injury concerns.” Sports Mole, 13 Nov: “The England manager had suggested that Palmer was missing too many opportunities to impress, prompting further questions about the 24-year-old's standing within the national team.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Soccerway, 13 Nov: “Palmer , left ‌out of England 's World Cup squad this year after a persistent groin ‌injury affected his form, was called up by coach ‌Thomas Tuchel for Nations League fixtures against Spain, the Czech ‌Republic and Croatia in September and October.” NBC Sports Rotoworld PL, 09 Nov: “Buffalo announced that the club has placed receiver Joshua Palmer on injured reserve.”",
    "developments": "Recent developments — Ipswich Town, 22 Nov: “Town responded with a chance of their own as Aimee Palmer delivered a corner towards Graham at the front post who sent her header over the crossbar while under pressure from the away side’s defence.” Football365, 17 Nov: “Palm reading The Sun’s Martin Lipton is particularly keen that United go all out to sign Cole Palmer.” Football365, 17 Nov: “Eventually, the point is reached. …new manager Poch and the Old Trafford hierarchy must make it clear to Chelsea’s top brass that they are willing to pay whatever it takes to bring Palmer, 24, back to his home city.”",
    "outlook": "On the coming weeks — Sports Mole, 13 Nov: “Despite Chelsea star Palmer not being missed by England, his absence remains a talking point, with Thomas Tuchel having claimed that the playmaker 'misses too many opportunities to impress him'.” FourFourTwo FPL, 11 Nov: “Each of them offers something a little different to Bellingham: Eze and Palmer, for example, have the deftness of pass, while Foden and Rogers are capable of arriving at the edge of the box for a finesse finish into the bottom corner.”",
    "confidence": "high",
-   "evidence_count": 54,
+   "evidence_count": 52,
    "evidence_used": [
     "https://www.sportsmole.co.uk/football/england/uefa-nations-league/feature/no-palmer-three-players-who-should-and-shouldnt-be-in-england-squad_608613.html",
     "https://www.fourfourtwo.com/team/thomas-tuchel-makes-surprise-england-bellingham-announcement-three-lions-november-squad-in-full",
@@ -1890,34 +1891,6 @@
      ]
     },
     {
-     "text": "Town looked more likely to score the next goal of the game, however Hornby’s free-kick from distance was tipped over before Palmer sent a flicked header against t",
-     "source": "Ipswich Town",
-     "url": "https://www.itfc.co.uk/news/2026/october/25/town-3-sunderland-1/",
-     "published": "2026-10-25T16:10:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Palmer may have collected the first red card of his senior career, but he wasn’t even Chelsea’s worst performer in a toothless 2–0 defeat to the club’s hated London rivals Stand-in goalkeeper Mike Penders punched the visitors in front with a disastrous own goal in the 77th minute, shortly before Palmer collected his second, entirely unnecessary, yellow card.",
-     "source": "Sports Illustrated FPL",
-     "url": "https://www.si.com/soccer/why-cole-palmer-allowed-to-face-man-utd-after-red-card?utm_source=RSS",
-     "published": "2026-10-25T14:45:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "suspension"
-     ]
-    },
-    {
-     "text": "The quirk of the fixture list and the FA handbook has spared Palmer any Premier League absence, but he will sit out Chelsea ’s next game: a daunting trip to Anfield.",
-     "source": "Sports Illustrated FPL",
-     "url": "https://www.si.com/soccer/why-cole-palmer-allowed-to-face-man-utd-after-red-card?utm_source=RSS",
-     "published": "2026-10-25T14:45:00+00:00",
-     "tone": "neutral",
-     "topics": [
-      "fixtures"
-     ]
-    },
-    {
      "text": "And it's the attacking trio of Joao Pedro, Cole Palmer and Morgan Rogers chiefly responsible for our dynamism in the final third.",
      "source": "Chelsea",
      "url": "https://www.chelseafc.com/en/news/article/joao-pedro-explains-why-his-connection-with-cole-palmer-and-morgan-rogers",
@@ -2137,14 +2110,14 @@
    "player": "Rogers",
    "club": "CHE",
    "status": "Latest on Rogers — Soccerway, 13 Nov: “It's a lie.\" In his post-match press ​conference, Tuchel told reporters it was \"totally fine\" for Rogers ‌to defend Palmer.” Fantasy Football Scout, 29 Oct: “And we need a couple of days to check what’s going to be the injury.” – Xabi Alonso on Maxence Lacroix “Well, we have started with Pedro [Neto], with Danny [Welbeck] and with Morgan [Rogers] up front.”",
-   "why_here": "Rogers is in the starting eleven this week at £8.3m as a MID. The selection rests on 50 retrieved item(s) from 18 source(s), the most recent dated 19 Nov.",
+   "why_here": "Rogers is in the starting eleven this week at £8.3m as a MID. The selection rests on 51 retrieved item(s) from 18 source(s), the most recent dated 23 Nov.",
    "case_for": "What supports keeping him: FISO, 19 Nov: “Rogers has 52 points and five goals from chances worth about three goals.” FISO, 19 Nov: “Mbeumo has four goals and a higher expected goal involvement than Rogers, Groß or Cherki, at 5.92.” Soccerway, 13 Nov: “Asked about Palmer's exclusion ‌after England's 2-1 win over Croatia at Wembley, goalscorer Rogers told ​the BBC: \"He wants to be here.”",
    "case_against": "What argues against him: Sports Mole, 13 Nov: “However, when Rogers' comments were put to Tuchel after the Croatia victory, the German appeared unconcerned by his player's public intervention.” Chelsea: “Internationals: Rogers helps England win epic as Belgium and France advance | News | Official Site | Chelsea Football Club Morgan Rogers’ played throughout England’s dramatic 3-2 win against Spain in Madrid, while Romeo Lavia helped Belgium progress to the UEFA Nations League knockout stages.” Chelsea: “Internationals: Morgan Rogers features in England defeat | News | Official Site | Chelsea Football Club Blues forward Morgan Rogers was a second-half substitute as the Three Lions fell to a 3-2 defeat to world champions Spain at Wembley.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — Sports Mole, 13 Nov: “Rogers spoke out following England's 2-1 Nations League victory over Croatia at Wembley on Thursday, a result that secured the Three Lions' place in the quarter-finals of the competition.” Sports Mole, 13 Nov: “On Thursday night, Rogers got on the scoresheet as the Three Lions recorded a 2-1 victory over Croatia at Wembley Stadium.”",
-   "developments": "Recent developments — Tactical Football Analysis, 16 Nov: “This Alysson scout report and player analysis looks at his performances so far this season and how Unai Emery tactics may be shaping the youngster into a Morgan Rogers replacement.” Sports Mole, 13 Nov: “Sports Mole has recently spoken to a Chelsea legend to discuss the subject, while Rogers was quizzed on the matter after Thursday's game.” Football365, 13 Nov: “People just see it as news and say the easy thing,” Rogers told BBC Radio 5 Live.”",
+   "developments": "Recent developments — Sports Illustrated FPL, 23 Nov: “Kennedi Rogers delivered the best match of her Tennessee career with the Lady Vols one set away from elimination.” Sports Illustrated FPL, 23 Nov: “Tennessee extended the match with a 25–21 win in the third, pulled even with a 25–22 win in the fourth, and closed out the comeback 15–12 win in the fifth. Rogers hit .381 and added nine digs, giving Tennessee an efficient offense to go with her match-high kill total.” Tactical Football Analysis, 16 Nov: “This Alysson scout report and player analysis looks at his performances so far this season and how Unai Emery tactics may be shaping the youngster into a Morgan Rogers replacement.”",
    "outlook": "On the coming weeks — FourFourTwo FPL, 11 Nov: “Each of them offers something a little different to Bellingham: Eze and Palmer, for example, have the deftness of pass, while Foden and Rogers are capable of arriving at the edge of the box for a finesse finish into the bottom corner.” Fantasy Football Scout, 29 Oct: “So we were a little bit forced with substitutions.” – Xabi Alonso on why he didn’t bring Estevao on In the absence of Palmer and Pedro, Rogers stepped up from the spot to convert Chelsea’s first-half penalty.”",
    "confidence": "high",
-   "evidence_count": 50,
+   "evidence_count": 51,
    "evidence_used": [
     "https://www.fourfourtwo.com/competition/watch-spain-vs-england-nations-league-2026-27-free",
     "https://www.fourfourtwo.com/competition/watch-england-vs-croatia-nations-league-2026-27-free",
@@ -2155,9 +2128,9 @@
     "https://www.fourfourtwo.com/transfer/chelsea-want-to-continue-transfer-spree-with-blockbuster-move-for-serie-a-superstar-report",
     "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
     "https://fplcaptain.com/news/fpl-gw4-transfer-targets-alexander-isak-and-morgan-rogers-analysis",
+    "https://www.si.com/college/tennessee/volleyball/kennedi-rogers-30-kills-send-tennessee-volleyball-to-sec-tournament-semifinals-01m830hc3wy9?utm_source=RSS",
     "https://www.safc.com/news/2026/november/19/preview--sunderland-back-at-it-against-villa/",
-    "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
-    "https://tacticalfootballanalysis.com/alysson-scout-report-aston-villa-2026-2027-tactics-analysis/"
+    "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/"
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
@@ -2180,6 +2153,22 @@
     "Tactical Football Analysis"
    ],
    "quotes": [
+    {
+     "text": "Kennedi Rogers delivered the best match of her Tennessee career with the Lady Vols one set away from elimination.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/college/tennessee/volleyball/kennedi-rogers-30-kills-send-tennessee-volleyball-to-sec-tournament-semifinals-01m830hc3wy9?utm_source=RSS",
+     "published": "2026-11-23T03:04:58+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
+    {
+     "text": "Tennessee extended the match with a 25–21 win in the third, pulled even with a 25–22 win in the fourth, and closed out the comeback 15–12 win in the fifth. Rogers hit .381 and added nine digs, giving Tennessee an efficient offense to go with her match-high kill total.",
+     "source": "Sports Illustrated FPL",
+     "url": "https://www.si.com/college/tennessee/volleyball/kennedi-rogers-30-kills-send-tennessee-volleyball-to-sec-tournament-semifinals-01m830hc3wy9?utm_source=RSS",
+     "published": "2026-11-23T03:04:58+00:00",
+     "tone": "neutral",
+     "topics": []
+    },
     {
      "text": "Rogers has 52 points and five goals from chances worth about three goals.",
      "source": "FISO",
@@ -2795,14 +2784,14 @@
    "player": "Tavernier",
    "club": "BOU",
    "status": "Latest on Tavernier — Fantasy Football Scout, 09 Nov: “That is why we have eight wins in a row.” – Marco Rose SILVA + TAVERNIER NEAR BANS Booked on Sunday, Antonio Silva (£5.1m) and Tavernier are now on four bookings for the season, so one more in Bournemouth’s next nine league matches will earn them a one-match ban.”",
-   "why_here": "Tavernier is in the starting eleven this week at £6.7m as a MID. The selection rests on 16 retrieved item(s) from 7 source(s), the most recent dated 21 Nov.",
-   "case_for": "What supports keeping him: FourFourTwo FPL, 26 Oct: “United lost 3-0 thanks to goals from Rayan, Marcus Tavernier and Evanilson, with defensive errors making life easy for the Cherries at Old Trafford.” FourFourTwo FPL, 26 Oct: “Goals from Rayan, Marcus Tavernier and Evanilson concluded a miserable week for United after a dismal Champions League loss at Como and the subsequent comments of captain Bruno Fernandes .” Fantasy Football Scout, 25 Oct: “GOAL FOR TAVERNIER The team hasn’t won in eight matches (all competitions) and are still without a Premier League clean sheet.”",
+   "why_here": "Tavernier is in the starting eleven this week at £6.7m as a MID. The selection rests on 11 retrieved item(s) from 6 source(s), the most recent dated 21 Nov.",
+   "case_for": "What supports keeping him: FourFourTwo FPL, 26 Oct: “United lost 3-0 thanks to goals from Rayan, Marcus Tavernier and Evanilson, with defensive errors making life easy for the Cherries at Old Trafford.” FourFourTwo FPL, 26 Oct: “Goals from Rayan, Marcus Tavernier and Evanilson concluded a miserable week for United after a dismal Champions League loss at Como and the subsequent comments of captain Bruno Fernandes .”",
    "case_against": "Nothing retrieved this cycle argues against him. That is the absence of a negative report, which is weaker than a positive clearance — no source was found stating he is fit and starting, only that nobody said otherwise.",
    "expected_minutes": "On minutes — AFC Bournemouth, 31 Oct: “Rose makes eight changes from the team which beat Aston Villa in the Carabao Cup on Wednesday, with Christie, António Silva and Marcus Tavernier the three survivors.”",
    "developments": "Recent developments — AFC Bournemouth, 21 Nov: “And Kluivert added a second on the stroke of half-time, the Netherlands international timing his run to perfection to meet Marcus Tavernier’s low cross.” Nottingham Forest, 21 Nov: “Sels was called into action again on 13 minutes, this time turning Marcus Tavernier’s effort from distance around the post before denying Evanilson soon after, quickly closing down the space for the Brazilian.” Fantasy Football Scout, 09 Nov: “Prior to that, Walton blocked a scuffed attempt by Marcus Tavernier (£6.7m) from only a few yards out, before a brilliant strike from Justin Kluivert (£5.9m) was tipped over the bar.”",
    "outlook": "On the coming weeks — Tactical Football Analysis, 29 Oct: “Bournemouth: Tavernier, Evanilson And Favourable Fixtures Three weeks ago, Marco Rose was under pressure after a 5-1 hammering at Stamford Bridge.” Tactical Football Analysis, 29 Oct: “Most Shots, GW1 to GW8 (Source: FF Hub If you want to go against him, Tavernier at home to Leeds is the best alternative.”",
    "confidence": "high",
-   "evidence_count": 16,
+   "evidence_count": 11,
    "evidence_used": [
     "https://www.afcb.co.uk/news/2026/november/21/match-report-v-forest/",
     "https://www.fantasyfootballscout.co.uk/2026/11/09/fpl-notes-silva-tavernier-near-bans-evanilson-scores-again",
@@ -2811,14 +2800,12 @@
     "https://www.fantasyfootballscout.co.uk/2026/10/29/tavernier-kroupi-scott-bournemouth-injury-latest-for-fpl-gameweek-9",
     "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
     "https://www.fourfourtwo.com/team/gary-neville-accuses-manchester-united-of-absolute-negligence-in-the-transfer-window",
-    "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-tavernier-goal-more-silva-defcon-why-bruno-wasnt-used",
-    "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
     "https://www.football365.com/news/man-utd-now-want-hijack-destroy-arsenal-double-deal-two-priority-january-signings",
     "https://www.nottinghamforest.co.uk/news/2026/november/21/afc-bournemouth-report/",
-    "https://www.afcb.co.uk/news/2026/october/30/fpl-gameweek-9-tips-bournemouth-picks/"
+    "https://www.afcb.co.uk/news/2026/october/30/fpl-gameweek-9-tips-bournemouth-picks/",
+    "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink"
    ],
    "sources_used": [
-    "101 Great Goals — Fantasy",
     "AFC Bournemouth",
     "Fantasy Football Scout",
     "Football365",
@@ -2936,72 +2923,6 @@
       "fpl advice",
       "rotation"
      ]
-    },
-    {
-     "text": "It failed spectacularly, as Marcus Tavernier (£6.3m) helped Bournemouth secure an easy 3-0 win.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-tavernier-goal-more-silva-defcon-why-bruno-wasnt-used",
-     "published": "2026-10-25T21:00:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "GOAL FOR TAVERNIER The team hasn’t won in eight matches (all competitions) and are still without a Premier League clean sheet.",
-     "source": "Fantasy Football Scout",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-tavernier-goal-more-silva-defcon-why-bruno-wasnt-used",
-     "published": "2026-10-25T21:00:00+00:00",
-     "tone": "positive",
-     "topics": [
-      "fixtures"
-     ]
-    },
-    {
-     "text": "Goals from Rayan, Marcus Tavernier and Evanilson helped AFC Bournemouth celebrate their 350th Premier League game in some style, winning 3-0 against Manchester United.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/match-gallery--pictures-from-win-at-old-trafford/",
-     "published": "2026-10-25T16:30:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries celebrate their 350th Premier League game in style at Old Trafford.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/hill-hails-really-special-performance-at-old-trafford/",
-     "published": "2026-10-25T16:30:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries repeat the scoreline at Old Trafford from visits in 2023/24 and 2024/25.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
-     "published": "2026-10-25T15:55:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Rayan opened the scoring with a fine finish in the 38th minute before Tavernier doubled their lead on the stroke of half-time.",
-     "source": "AFC Bournemouth",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
-     "published": "2026-10-25T15:55:00+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "Rayan side-footed Bournemouth ahead at Old Trafford before Marcus Tavernier doubled the lead soon after.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/man-utd-0-2-bournemouth-rayan-and-tavernier-put-cherries-ahead-at-old-trafford/",
-     "published": "2026-10-25T14:45:36+00:00",
-     "tone": "neutral",
-     "topics": []
-    },
-    {
-     "text": "And Tavernier had time to tap in a second before the break.",
-     "source": "101 Great Goals — Fantasy",
-     "url": "https://www.101greatgoals.com/football/man-utd-0-2-bournemouth-rayan-and-tavernier-put-cherries-ahead-at-old-trafford/",
-     "published": "2026-10-25T14:45:36+00:00",
-     "tone": "neutral",
-     "topics": []
     }
    ]
   },
@@ -3009,14 +2930,14 @@
    "player": "N.Jackson",
    "club": "AVL",
    "status": "Latest on N.Jackson — NBC Sports Rotoworld PL, 07 Nov: “Mitchell is an intriguing FLEX option in a difficult matchup against a stingy Kansas City secondary that returns to health for Week 9. 🏈 AFC North ◆ Baltimore Ravens Lamar Jackson - QB (thumb) Jackson returned from an ankle injury in Week 8 and made it all of one offensive snap before suffering a thumb injury that is likely to sideline him for the remainder of the regular season.” NBC Sports Rotoworld PL, 02 Nov: “Jackson signed to the practice squad after being released from the Commanders’ injured reserve list in September.”",
-   "why_here": "N.Jackson is in the starting eleven this week at £7.2m as a FWD. The selection rests on 100 retrieved item(s) from 21 source(s), the most recent dated 22 Nov.",
+   "why_here": "N.Jackson is in the starting eleven this week at £7.3m as a FWD. The selection rests on 99 retrieved item(s) from 21 source(s), the most recent dated 22 Nov.",
    "case_for": "What supports keeping him: Flashscore, 22 Nov: “Jackson recorded 20 interceptions, returning three of them for touchdowns, in 191 career games (177 starts).” NBC Sports Rotoworld PL, 21 Nov: “Jackson had six tackles while starting the first three games of the season for Carolina.” Aston Villa, 20 Nov: “It makes it an October awards treble for Jackson, who was named the top flight's standout performer for the month last week as well as the PFA Select Car Leasing Premier League Fans’ Player of the Month The Senegalese bagged braces against Fenerbahçe and Manchester City, while also netting versus Fulham and Brentford.”",
    "case_against": "What argues against him: NBC Sports Rotoworld PL, 21 Nov: “Jackson has been activated off of injured reserve after missing six games due to core muscle surgery.” 101 Great Goals — Fantasy, 13 Nov: “Having returned from a sprained ankle, Jackson injured his thumb on the first play of the game against the Buffalo Bills on November 1.” Aston Villa, 10 Nov: “Manchester City were the visitors to Villa Park that weekend, and the table toppers dropped points for the first time in the Premier League season in B6, as Jackson’s well-taken double either side of Erling Haaland’s equaliser made it three wins in a row for the Villans.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — NBC Sports Rotoworld PL, 19 Nov: “On Wednesday, Jackson proclaimed himself ready for a return to the lineup as the Panthers try to improve to 5-5 on the season.” Aston Villa, 13 Nov: “Jackson was on target at home to Brentford in a 2-2 draw before putting in a strong performance in the 1-0 success at St James' Park against Newcastle United.”",
    "developments": "Recent developments — Flashscore, 22 Nov: “Jackson played 14 seasons with the Broncos after being selected in the fourth round of the 1973 NFL Draft out of Louisville.” Aston Villa, 20 Nov: “Furthermore, his total of six attacking returns in 2026/27 is superior to every other Villa player except Jackson.” NBC Sports Rotoworld PL, 19 Nov: ““I’m game ready, so I’ll be out there on Sunday,” Jackson said, via Mike Kaye of ESPN.com.”",
    "outlook": "On the coming weeks — Soccerway, 13 Nov: “Jackson continued his impressive scoring form in the qualifiers, finding the back of the net to give Senegal a deserved 1-0 lead.” Sports Mole, 08 Nov: “Slumber. https://t.co/76iMwVLhTK — OptaJoe (@OptaJoe) November 8, 2026 Boos rang out around an already febrile Old Trafford following Jackson's goal, the ground already awash with a sea of green and yellow in protest against the Glazer family's ownership of the club.”",
    "confidence": "high",
-   "evidence_count": 100,
+   "evidence_count": 99,
    "evidence_used": [
     "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cb-mike-jackson-says-hes-ready-to-return-to-panthers-lineup",
     "https://avfc.co.uk/news/2026/november/16/internationals-jackson-and-madjo-on-target/",
@@ -3771,14 +3692,14 @@
    "player": "Haaland",
    "club": "MCI",
    "status": "Latest on Haaland — Football365, 18 Nov: “Manchester City Phil Foden Lewis Oldham 15 Sep 2026 Howard Webb reveals reason for decision on Haaland goal vs Man Utd, gives verdict on Foden red card Pro Ref chief Howard Webb has revealed why Erling Haaland’s winning goal in Manchester City’s 1-0 win against Manchester United wrongly stood.” Soccerway, 17 Nov: “Denmark - Norway - Momentum Flashscore Moments later, Haaland had the ball in the back of the net, yet his goal was retrospectively ruled out by VAR for a handball.”",
-   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 78 retrieved item(s) from 19 source(s), the most recent dated 22 Nov.",
+   "why_here": "Haaland is captained this week at £15.8m as a FWD. The selection rests on 77 retrieved item(s) from 18 source(s), the most recent dated 22 Nov.",
    "case_for": "What supports keeping him: Football365, 21 Nov: “But it was a refereeing decision that caused plenty of uproar among the City camp following the final whistle; Erling Haaland’s goal just after the midway point in the first half was chalked off for a foul on the goalkeeper, but many think the incorrect decision was made.” Football365, 21 Nov: “A ball in via the right flank from Iliman Ndiaye was bundled goalwards by the steaming run of Haaland, but Leno was originally able to keep it out before fumbling the save, allowing Haaland to push the ball home and level the game.” Football365, 21 Nov: “Anderson’s goal just before the hour mark proved to be the final contribution to the scoresheet at the Etihad, but plenty of talking points have come from the game despite the low scoreline, including Haaland’s disallowed goal in the first half and Man City’s subpar performance once again.”",
    "case_against": "What argues against him: Soccerway, 21 Nov: “Maresca's side trailed to Rodrigo Muniz 's early opener at the Etihad Stadium before Haaland's equaliser was contentiously ruled out.” Soccerway, 16 Nov: “Following Norway 's 3–1 win over Wales on Saturday, Haaland told tv2.no that he was struggling to find motivation for the trip to Copenhagen.” 101 Great Goals — Fantasy, 15 Nov: “However, Haaland has dismissed suggestions that the uncertainty could affect his future, pointing to the long-term contract he signed in 2024 as evidence of his commitment.”",
    "expected_minutes": "Sources disagree on his minutes, which is itself the finding — 101 Great Goals — Fantasy, 21 Nov: “Watch: Fulham lead Man City as Haaland has goal ruled out Skip to content Football News Premier League News Watch: Fulham lead Man City as Haaland has goal ruled out City are hoping to avoid a fourth-straight Premier League defeat.” Flashscore, 19 Nov: “On their way to the last eight, they famously beat Brazil 2-1, thanks to a late Haaland double.”",
    "developments": "Recent developments — Statz.ai FPL, 22 Nov: “The interest sits in the player markets, with shots on target for Haaland and Højlund and shots for McTominay the strongest recent runs.” Statz.ai FPL, 22 Nov: “A bet builder from the form data pairs Højlund and Haaland on target with McTominay and De Bruyne to have a shot, at a combined 3.44.” Soccerway, 21 Nov: “But Leno barely had two hands on the ball when Haaland made contact, giving City reason to feel aggrieved with the decision.”",
    "outlook": "On the coming weeks — 101 Great Goals — Fantasy, 20 Nov: “The draw was made on Friday morning and it pits Haaland against 2026 Ballon d’Or winner and England captain Harry Kane in a battle of arguably the two best number nines in world football.” Sunderland, 19 Nov: “Only Erling Haaland and Alexander Isak have scored more goals than the former Chelsea man so far this season.”",
    "confidence": "high",
-   "evidence_count": 78,
+   "evidence_count": 77,
    "evidence_used": [
     "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
     "https://statz.ai/news/19872613-man-city-vs-napoli-predictions-betting-tips",
@@ -3795,7 +3716,6 @@
    ],
    "sources_used": [
     "101 Great Goals — Fantasy",
-    "Aston Villa",
     "Everton",
     "FPL Captain",
     "FPL360",
@@ -4670,14 +4590,6 @@
      "source": "Sports Mole",
      "url": "https://www.sportsmole.co.uk/football/man-city/league-cup/news/explained-haaland-among-five-man-city-players-to-miss-brighton-efl-cup-tie_607802.html",
      "published": "2026-10-27T11:18:00+00:00",
-     "tone": "positive",
-     "topics": []
-    },
-    {
-     "text": "Nicolas Jackson’s brace, either side of Erling Haaland’s leveller, took his tally for the season to seven goals in all competitions.",
-     "source": "Aston Villa",
-     "url": "https://avfc.co.uk/news/2026/october/25/gallery-in-form-villa-clinch-fourth-successive-win/",
-     "published": "2026-10-25T15:30:00+00:00",
      "tone": "positive",
      "topics": []
     },

@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-22T22:29:36+00:00",
- "seconds": 159.6,
+ "ran_at": "2026-11-23T03:44:40+00:00",
+ "seconds": 113.6,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 655,
- "substantive_items": 297,
- "duplicates_removed": 29,
- "deeply_analysed": 84,
- "deep_read_failed": 6,
- "corpus_size": 18584,
+ "sources_readable": 55,
+ "candidates_discovered": 497,
+ "substantive_items": 152,
+ "duplicates_removed": 4,
+ "deeply_analysed": 60,
+ "deep_read_failed": 0,
+ "corpus_size": 18558,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 297 articles"
+    "55/78 sources returned 152 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -728,9 +729,9 @@
    "player": "Groß",
    "club": "BHA",
    "evidence_count": 6,
-   "source_count": 5,
-   "latest_evidence": "2026-11-22T14:06:01+00:00",
-   "official_source_found": false,
+   "source_count": 6,
+   "latest_evidence": "2026-11-22T18:45:57+00:00",
+   "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -743,7 +744,7 @@
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
+    "set pieces",
     "statistics",
     "tactics",
     "team news",
@@ -754,6 +755,33 @@
    "researched": true,
    "items": [
     {
+     "title": "Blues Beaten By Brighton Under Goodison Sun",
+     "url": "https://www.evertonfc.com/news/2026/november/22/blues-beaten-by-brighton-under-goodison-sun/",
+     "source": "Everton",
+     "published": "2026-11-22T18:45:57+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Everton saw only their second loss at Goodison Park this season in a narrow 1-0 defeat to Brighton in the WSL on Sunday afternoon. Coming off the back of a three-game unbeaten streak against a trio of top teams of the division, the Blues struggled to take the edge in Sunday’s showdown with the Seagulls. In the first ten minutes, Brighton’s aggressive pressing pushed the Blues’ backline and forced "
+    },
+    {
+     "title": "Hull City 2-0 Brighton & Hove Albion",
+     "url": "https://www.wearehullcity.co.uk/news/2026/november/22/hull-city-2-0-brighton-hove-albion/",
+     "source": "Hull City",
+     "published": "2026-11-22T16:10:25+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Hull City Vs. Brighton and Hove Albion - Sun, Nov 22 2026, 14:00 Hull City scored twice in added time to secure a first win since August as they beat second-place Brighton & Hove Albion 2-0 at the MKM Stadium. The Tigers had looked to be heading for another useful home point as they frustrated their visitors, largely thanks to a stunning display from goalkeeper Konstantinos Tzolakis, befo"
+    },
+    {
+     "title": "Everton Women 0 Albion Women 1: Own goal earns Seagulls deserved win",
+     "url": "https://www.brightonandhovealbion.com/media-article/wft-match-report-everton-bha-wsl-november-2026",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-11-22T15:50:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Albion climb to seventh after deserved victory at Goodison Park."
+    },
+    {
      "title": "Hull vs Brighton: Confirmed teams, full line ups in Premier League",
      "url": "https://www.101greatgoals.com/football/premier-league/hull-vs-brighton-live-team-news-starting-line-ups-tv-channel-online-stream-where-to-watch/",
      "source": "101 Great Goals — Fantasy",
@@ -763,40 +791,13 @@
      "excerpt": "Team news as Hull host Brighton in the Premier League"
     },
     {
-     "title": "Hull City vs. Brighton & Hove Albion injury, suspension list, predicted XIs",
-     "url": "https://www.sportsmole.co.uk/football/hull-city/injury-news/team-news/hull-vs-brighton-injury-suspension-list-predicted-xis_609499.html",
-     "source": "Sports Mole",
-     "published": "2026-11-21T14:00:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole rounds up all of the latest injury and suspension news ahead of Saturday’s Premier League match between Hull City and Brighton & Hove Albion."
-    },
-    {
-     "title": "Hull vs Brighton prediction: Gross to play key role as team news confirmed",
-     "url": "https://www.football365.com/match-preview/hull-vs-brighton-prediction-preview",
-     "source": "Football365",
-     "published": "2026-11-20T14:27:27+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "All the team news and predictions ahead of the Premier League clash between Hull and Brighton."
-    },
-    {
-     "title": "Mitoma, Minteh, Yohanna: Brighton injury latest for FPL Gameweek 11",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/20/mitoma-minteh-yohanna-brighton-injury-latest-for-fpl-gameweek-11",
+     "title": "Hull v Brighton team news: Kostoulas benched, Belloumi starts",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/22/hull-v-brighton-team-news-kostoulas-benched-belloumi-starts",
      "source": "Fantasy Football Scout",
-     "published": "2026-11-20T13:06:29+00:00",
+     "published": "2026-11-22T13:25:00+00:00",
      "matched_on": "BHA team news",
      "kind": "club team news",
-     "excerpt": "Fabian Hurzeler spoke on Friday morning The post Mitoma, Minteh, Yohanna: Brighton injury latest for FPL Gameweek 11 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Hull City vs. Brighton & Hove Albion - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/hull-city/preview/hull-city-vs-brighton-prediction-team-news-lineups_609478.html",
-     "source": "Sports Mole",
-     "published": "2026-11-20T12:49:38+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Sunday's Premier League clash between Hull City and Brighton & Hove Albion, including predictions, team news and possible lineups."
+     "excerpt": "Two changes for Hull, one for Albion The post Hull v Brighton team news: Kostoulas benched, Belloumi starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
@@ -812,7 +813,7 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 54,
+   "evidence_count": 52,
    "source_count": 14,
    "latest_evidence": "2026-11-22T17:23:00+00:00",
    "official_source_found": true,
@@ -952,9 +953,9 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 51,
    "source_count": 18,
-   "latest_evidence": "2026-11-19T15:10:00+00:00",
+   "latest_evidence": "2026-11-23T03:04:58+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1061,6 +1062,15 @@
      "excerpt": ""
     },
     {
+     "title": "Kennedi Rogers’ 30 Kills Send Tennessee Volleyball to SEC Tournament Semifinals",
+     "url": "https://www.si.com/college/tennessee/volleyball/kennedi-rogers-30-kills-send-tennessee-volleyball-to-sec-tournament-semifinals-01m830hc3wy9?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-11-23T03:04:58+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "The Lady Vols rallied from two sets down to beat No. 15 Texas, adding a top-15 win to their NCAA tournament resume."
+    },
+    {
      "title": "Preview: Sunderland back at it against Villa",
      "url": "https://www.safc.com/news/2026/november/19/preview--sunderland-back-at-it-against-villa/",
      "source": "Sunderland",
@@ -1077,23 +1087,14 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "I set the 15 most-owned players that fit in £100m against the best squad the same money buys. The gap is in midfield and defence, and three transfers win back half of it. By Noel Morgan Rogers is owned by 54.0% of FPL managers. Pascal Groß, Riccardo Calafiori and Maxim De Cuyper are each close … Continue reading FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks "
-    },
-    {
-     "title": "Alysson Scout Report At Aston Villa 2026/2027: Unai Emery's Next Morgan Rogers? - Player Analysis",
-     "url": "https://tacticalfootballanalysis.com/alysson-scout-report-aston-villa-2026-2027-tactics-analysis/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-11-16T08:10:06+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Alysson is emerging as an exciting option for Aston Villa. This scout report analyses the Brazilian winger’s pace, movement, goalscoring threat, unusual dribbling style and defensive work under Unai Emery."
     }
    ]
   },
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 16,
-   "source_count": 7,
+   "evidence_count": 11,
+   "source_count": 6,
    "latest_evidence": "2026-11-21T16:53:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1183,24 +1184,6 @@
      "excerpt": "Former Manchester United captain Gary Neville has criticised the club's recruitment over a number of years in a brutal assessment of the line-up beaten by Bournemouth in the Premier League on Sunday. United lost 3-0 thanks to goals from Rayan, Marcus Tavernier and Evanilson, with defensive errors making life easy for the Cherries at Old Trafford. The Red Devils have won two of their 12 matches in "
     },
     {
-     "title": "FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/25/fpl-notes-tavernier-goal-more-silva-defcon-why-bruno-wasnt-used",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-25T21:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Fantasy takeaways from Man United 0-3 Bournemouth. The post FPL notes: Tavernier goal, Silva DefCon + why Bruno wasn’t used appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "History repeats itself as Cherries bring up hat-trick of Old Trafford wins",
-     "url": "https://www.afcb.co.uk/news/2026/october/25/match-report-v-man-utd/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-25T15:55:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "AFC Bournemouth marked their 350th Premier League game with a mightily impressive 3-0 win over 20-time top-flight champions Manchester United. Goals from Rayan, Marcus Tavernier and Evanilson saw the Cherries repeat the scoreline at Old Trafford from visits in 2023/24 and 2024/25. Rayan opened the scoring with a fine finish in the 38th minute before Tavernier doubled their lead on the stroke of ha"
-    },
-    {
      "title": "Man Utd now want hijack to destroy Arsenal double deal as INEOS choose two ‘priority’ January signings",
      "url": "https://www.football365.com/news/man-utd-now-want-hijack-destroy-arsenal-double-deal-two-priority-january-signings",
      "source": "Football365",
@@ -1226,13 +1209,22 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "AFC Bournemouth have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Best of the Cherries Gameweek 8 was a particularly strong one for the Cherries both on the pitch and in FPL"
+    },
+    {
+     "title": "'The Manchester United players have conned Michael Carrick' Gary Neville's extraordinary rant against Bruno Fernandes and co",
+     "url": "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink",
+     "source": "FourFourTwo FPL",
+     "published": "2026-10-26T11:00:00+00:00",
+     "matched_on": "tavernier",
+     "kind": "general",
+     "excerpt": "Manchester United legend Gary Neville has spoken out in support of Red Devils head coach and former teammate Michael Carrick in the aftermath of Sunday's 3-0 loss against Bournemouth. Neville expects Man United to sack Carrick , who was appointed as head coach after a positive second interim spell last season, but places the blame for the club's difficulties on decisions behind the scenes and the "
     }
    ]
   },
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 100,
+   "evidence_count": 99,
    "source_count": 21,
    "latest_evidence": "2026-11-22T17:59:42+01:00",
    "official_source_found": true,
@@ -1372,8 +1364,8 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 78,
-   "source_count": 19,
+   "evidence_count": 77,
+   "source_count": 18,
    "latest_evidence": "2026-11-22T20:30:59+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
