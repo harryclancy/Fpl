@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-23T16:03:54+00:00",
- "seconds": 121.5,
+ "ran_at": "2026-11-24T03:21:17+00:00",
+ "seconds": 139.5,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 670,
- "substantive_items": 305,
- "duplicates_removed": 21,
- "deeply_analysed": 82,
- "deep_read_failed": 8,
- "corpus_size": 18556,
+ "sources_readable": 55,
+ "candidates_discovered": 627,
+ "substantive_items": 245,
+ "duplicates_removed": 16,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18518,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 305 articles"
+    "55/78 sources returned 245 articles"
    ]
   },
   "blackout": {
@@ -51,6 +51,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -64,9 +65,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 22,
-   "source_count": 10,
-   "latest_evidence": "2026-11-23T15:49:29+01:00",
+   "evidence_count": 23,
+   "source_count": 11,
+   "latest_evidence": "2026-11-23T16:15:51+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -813,8 +814,8 @@
    "player": "Palmer",
    "club": "CHE",
    "evidence_count": 53,
-   "source_count": 15,
-   "latest_evidence": "2026-11-23T12:45:00+00:00",
+   "source_count": 16,
+   "latest_evidence": "2026-11-23T21:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -839,6 +840,15 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Wirtz, Cherki, Haaland, Palmer: Buy, keep or sell in Gameweek 12?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/wirtz-cherki-haaland-palmer-buy-keep-or-sell-in-gameweek-12",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-23T16:30:00+00:00",
+     "matched_on": "palmer",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Wirtz, Cherki, Haaland, Palmer: Buy, keep or sell in Gameweek 12? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "FPL notes: Chelsea collapse, Palmer poor + why no DCL bonus?",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/fpl-notes-chelsea-collapse-palmer-anonymous-no-dcl-bonus",
@@ -867,15 +877,6 @@
      "excerpt": "England play twice this month as they round up their UEFA Nations League campaign with fixtures against Croatia and Spain. The Three Lions will first entertain Croatia at Wembley Stadium on Thursday, 12 November, before taking on Spain at the home of Atletico Madrid, the Metropolitano. There is no place for Bukayo Saka or Phil Foden in Tuchel's latest selection. England squad for Nations League ma"
     },
     {
-     "title": "Chelsea injury, suspension list and return dates for Liverpool: Joao Pedro, Cole Palmer latest",
-     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/update-on-joao-pedro-and-palmer-chelsea-injury-suspension-list-vs-liverpool_607709.html",
-     "source": "Sports Mole",
-     "published": "2026-10-26T05:55:03+00:00",
-     "matched_on": "palmer",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Chelsea's latest injury and suspension news ahead of Wednesday's EFL Cup clash with Liverpool."
-    },
-    {
      "title": "Man Utd fully-costed plan to sign entire USA squad plus Palmer, Kane and 11 defenders emerges",
      "url": "https://www.football365.com/news/man-utd-usa-palmer-kane-transfer-plan-pochettino-mediawatch",
      "source": "Football365",
@@ -901,6 +902,15 @@
      "matched_on": "palmer",
      "kind": "transfer",
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
+    },
+    {
+     "title": "Albion U21s 2 West Ham U21s 1: Palmer and Ibrahim on target",
+     "url": "https://www.brightonandhovealbion.com/media-article/albion-u21s-2-west-ham-u21s-1-palmer-and-ibrahim-on-target",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-11-23T21:00:00+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Shannon Ruth's side earn another deserved win in the Premier League Cup."
     },
     {
      "title": "TOWN 1 SOUTHAMPTON 0",
@@ -937,22 +947,13 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "England are given just a 10% chance of beating Spain in Sunday's UEFA Nations League clash as a new Ben White/Cole Palmer claim is made."
-    },
-    {
-     "title": "Manchester United under Pochettino will be ‘slow and painful’ – but Palmer can vouch for the results",
-     "url": "https://www.football365.com/news/manchester-united-pochettino-slow-painful-palmer-results",
-     "source": "Football365",
-     "published": "2026-11-14T06:42:41+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Manchester United must give Mauricio Pochettino time to properly embed his proven modern tactics on this embarrassing group of players."
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 51,
+   "evidence_count": 50,
    "source_count": 18,
    "latest_evidence": "2026-11-23T03:04:58+00:00",
    "official_source_found": true,
@@ -1034,15 +1035,6 @@
      "excerpt": "Aston Villa manager Unai Emery has rebuilt the Midlands outfit, and has his team looking steady on all fronts after a crazy summer. After winning the Europa League, the Basque boss saw the spine of his side ripped out, with Emiliano Martinez, Ezri Konsa, Lucas Digne, Youri Tielemans, Morgan Rogers and Ollie Watkins all sold – and Aston Villa started the season understandably poorly as a result. Em"
     },
     {
-     "title": "Chelsea to continue transfer spree with £100m move for new forward: report",
-     "url": "https://www.fourfourtwo.com/transfer/chelsea-want-to-continue-transfer-spree-with-blockbuster-move-for-serie-a-superstar-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-26T15:00:00+00:00",
-     "matched_on": "rogers",
-     "kind": "transfer",
-     "excerpt": "Chelsea are eyeing up a battle with Spanish capital giants Real Madrid for their next headline-grabbing transfer, according to reporting in Italy. The Blues invested heavily in new players during the summer transfer window, equipping new manager Xabi Alonso with a squad boasting the likes of Morgan Rogers, Emiliano Martinez, Maxence Lacrois and Valentin Barco, as well as the senior influence of Jo"
-    },
-    {
      "title": "Morgan rogers chelsea transfer fpl",
      "url": "https://onefpl.com/blog/morgan-rogers-chelsea-transfer-fpl",
      "source": "OneFPL",
@@ -1086,14 +1078,23 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "I set the 15 most-owned players that fit in £100m against the best squad the same money buys. The gap is in midfield and defence, and three transfers win back half of it. By Noel Morgan Rogers is owned by 54.0% of FPL managers. Pascal Groß, Riccardo Calafiori and Maxim De Cuyper are each close … Continue reading FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks "
+    },
+    {
+     "title": "Alysson Scout Report At Aston Villa 2026/2027: Unai Emery's Next Morgan Rogers? - Player Analysis",
+     "url": "https://tacticalfootballanalysis.com/alysson-scout-report-aston-villa-2026-2027-tactics-analysis/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-11-16T08:10:06+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Alysson is emerging as an exciting option for Aston Villa. This scout report analyses the Brazilian winger’s pace, movement, goalscoring threat, unusual dribbling style and defensive work under Unai Emery."
     }
    ]
   },
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 11,
-   "source_count": 6,
+   "evidence_count": 9,
+   "source_count": 5,
    "latest_evidence": "2026-11-21T16:53:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1174,15 +1175,6 @@
      "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
     },
     {
-     "title": "Gary Neville accuses Manchester United of 'absolute negligence' in the transfer window",
-     "url": "https://www.fourfourtwo.com/team/gary-neville-accuses-manchester-united-of-absolute-negligence-in-the-transfer-window",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-26T14:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Former Manchester United captain Gary Neville has criticised the club's recruitment over a number of years in a brutal assessment of the line-up beaten by Bournemouth in the Premier League on Sunday. United lost 3-0 thanks to goals from Rayan, Marcus Tavernier and Evanilson, with defensive errors making life easy for the Cherries at Old Trafford. The Red Devils have won two of their 12 matches in "
-    },
-    {
      "title": "Man Utd now want hijack to destroy Arsenal double deal as INEOS choose two ‘priority’ January signings",
      "url": "https://www.football365.com/news/man-utd-now-want-hijack-destroy-arsenal-double-deal-two-priority-january-signings",
      "source": "Football365",
@@ -1208,22 +1200,13 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "AFC Bournemouth have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Best of the Cherries Gameweek 8 was a particularly strong one for the Cherries both on the pitch and in FPL"
-    },
-    {
-     "title": "'The Manchester United players have conned Michael Carrick' Gary Neville's extraordinary rant against Bruno Fernandes and co",
-     "url": "https://www.fourfourtwo.com/team/theyve-conned-him-gary-neville-destroys-manchester-united-players-as-michael-carrick-stands-on-the-brink",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-26T11:00:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "Manchester United legend Gary Neville has spoken out in support of Red Devils head coach and former teammate Michael Carrick in the aftermath of Sunday's 3-0 loss against Bournemouth. Neville expects Man United to sack Carrick , who was appointed as head coach after a positive second interim spell last season, but places the blame for the club's difficulties on decisions behind the scenes and the "
     }
    ]
   },
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 100,
+   "evidence_count": 97,
    "source_count": 21,
    "latest_evidence": "2026-11-23T10:35:12-05:00",
    "official_source_found": true,
@@ -1363,9 +1346,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 78,
+   "evidence_count": 80,
    "source_count": 18,
-   "latest_evidence": "2026-11-23T10:35:00+00:00",
+   "latest_evidence": "2026-11-23T22:15:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1390,6 +1373,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "FPL Gameweek 12 early Scout Picks: Leeds triple-up, no Haaland",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/fpl-gameweek-12-early-scout-picks-leeds-triple-up-no-haaland",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-23T22:15:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Our ‘bus team’ for the upcoming Gameweek The post FPL Gameweek 12 early Scout Picks: Leeds triple-up, no Haaland appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Wirtz, Cherki, Haaland, Palmer: Buy, keep or sell in Gameweek 12?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/wirtz-cherki-haaland-palmer-buy-keep-or-sell-in-gameweek-12",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-23T16:30:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman recommends who to buy, keep and sell The post Wirtz, Cherki, Haaland, Palmer: Buy, keep or sell in Gameweek 12? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Who is the top scorer of 2026? Harry Kane lead down to eight before year-ending injury",
      "url": "https://www.football365.com/news/top-scorers-2026-mbappe-haaland-kane",
@@ -1479,24 +1480,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
-    },
-    {
-     "title": "Pedro, Haaland, Mitoma: Latest team news ahead of FPL Gameweek 9",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/27/pedro-haaland-szoboszlai-latest-team-news-ahead-of-fpl-gameweek-9",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-27T13:55:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Premier League managers are facing the media ahead of midweek EFL Cup ties The post Pedro, Haaland, Mitoma: Latest team news ahead of FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Man City vs. Brighton team news: Erling Haaland among five players to miss EFL Cup tie as Enzo Maresca issues update",
-     "url": "https://www.sportsmole.co.uk/football/man-city/league-cup/news/explained-haaland-among-five-man-city-players-to-miss-brighton-efl-cup-tie_607802.html",
-     "source": "Sports Mole",
-     "published": "2026-10-27T11:18:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Enzo Maresca explains why Erling Haaland is one of five Manchester City players who will miss Wednesday’s EFL Cup fourth-round tie against Brighton & Hove Albion."
     }
    ]
   },
@@ -1589,8 +1572,8 @@
   "Muharemović": {
    "player": "Muharemović",
    "club": "LEE",
-   "evidence_count": 21,
-   "source_count": 5,
+   "evidence_count": 20,
+   "source_count": 4,
    "latest_evidence": "2026-11-17T14:46:33+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1624,15 +1607,6 @@
      "matched_on": "muharemovic",
      "kind": "team news",
      "excerpt": "Head coach Marco Rose makes one change to the AFC Bournemouth starting line-up from the win over Manchester United for today’s game against Leeds United (3pm). Ryan Christie, who came off the bench during the 3-0 victory at Old Trafford, comes in for Lewis Cook, who assisted for Evanilson’s third goal against the Red Devils. Rose makes eight changes from the team which beat Aston Villa in the Cara"
-    },
-    {
-     "title": "FPL notes: More Muharemovic + Trafford joy, but DCL quiet",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-more-muharemovic-trafford-joy-but-dcl-quiet",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-26T14:15:00+00:00",
-     "matched_on": "muharemovic",
-     "kind": "team news",
-     "excerpt": "Key Fantasy talking points from Sunderland 0-0 Leeds The post FPL notes: More Muharemovic + Trafford joy, but DCL quiet appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Muharemovic captains bosnia and herzegovina to comeback victory over romania",
@@ -1723,14 +1697,23 @@
      "matched_on": "muharemovic",
      "kind": "general",
      "excerpt": ""
+    },
+    {
+     "title": "Muharemovic scores as bosnia and herzegovina claim first nations league win",
+     "url": "https://www.leedsunited.com/en/news/muharemovic-scores-as-bosnia-and-herzegovina-claim-first-nations-league-win",
+     "source": "Leeds United",
+     "published": "",
+     "matched_on": "muharemovic",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
   "Wissa": {
    "player": "Wissa",
    "club": "NEW",
-   "evidence_count": 7,
-   "source_count": 6,
+   "evidence_count": 6,
+   "source_count": 5,
    "latest_evidence": "2026-11-12T16:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1742,7 +1725,6 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "statistics",
     "tactics",
@@ -1761,15 +1743,6 @@
      "matched_on": "wissa",
      "kind": "team news",
      "excerpt": "Sports Mole takes an in-depth look at how Newcastle United could line up for Monday's Premier League clash with Everton."
-    },
-    {
-     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-26T10:25:00+00:00",
-     "matched_on": "wissa",
-     "kind": "team news",
-     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Newcastle United desperately lack the cut-and-thrust in attack that’ll keep them out of relegation trouble",
@@ -1821,8 +1794,8 @@
   "Barnes": {
    "player": "Barnes",
    "club": "NEW",
-   "evidence_count": 10,
-   "source_count": 6,
+   "evidence_count": 9,
+   "source_count": 5,
    "latest_evidence": "2026-11-15T04:55:52+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1834,7 +1807,6 @@
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
     "press conference",
@@ -1874,15 +1846,6 @@
      "matched_on": "barnes",
      "kind": "team news",
      "excerpt": "Los Angeles Lakers vs Toronto Raptors prediction, player props and injury report, with Doncic and Barnes in focus and Leonard out for Toronto."
-    },
-    {
-     "title": "FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/26/fpl-notes-time-to-sell-wissa-thiaw-barnes-goal-palace-woes",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-26T10:25:00+00:00",
-     "matched_on": "barnes",
-     "kind": "team news",
-     "excerpt": "Time to sell Wissa and Thiaw? Plus Barnes' goal and Palace's struggles. The post FPL notes: Time to sell Wissa + Thiaw, Barnes goal, Palace woes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "Royal Caribbean Legend of the Match Result: Newcastle",
