@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-24T03:21:17+00:00",
- "seconds": 139.5,
+ "ran_at": "2026-11-24T15:56:24+00:00",
+ "seconds": 192.6,
  "sources_attempted": 78,
  "sources_readable": 55,
- "candidates_discovered": 627,
- "substantive_items": 245,
- "duplicates_removed": 16,
- "deeply_analysed": 83,
- "deep_read_failed": 7,
- "corpus_size": 18518,
+ "candidates_discovered": 660,
+ "substantive_items": 295,
+ "duplicates_removed": 27,
+ "deeply_analysed": 85,
+ "deep_read_failed": 5,
+ "corpus_size": 18487,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 245 articles"
+    "55/78 sources returned 295 articles"
    ]
   },
   "blackout": {
@@ -42,7 +42,6 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -51,7 +50,8 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
+  "FourFourTwo FPL: HTTP 404 for https://fourfourtwo.com/rss",
+  "Arsenal: timed out after 12s for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -475,9 +475,9 @@
   "Van Hecke": {
    "player": "Van Hecke",
    "club": "TOT",
-   "evidence_count": 9,
-   "source_count": 7,
-   "latest_evidence": "2026-11-21T13:44:57+00:00",
+   "evidence_count": 10,
+   "source_count": 8,
+   "latest_evidence": "2026-11-24T15:41:22+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -548,6 +548,15 @@
      "excerpt": "After the international break, this is a transfer-heavy gameweek with players being bought and sold in bulk. Whether you're planning on wildcarding or making wholesale changes and taking the hit, this is essential reading for all FPL managers getting back into the fantasy football groove. Here is my verdict on the most popular names. Buy, Hold or Sell? - Defenders England and Newcastle's Lewis Hal"
     },
     {
+     "title": "Premier League signings of the season: Van Hecke one of seven centre-backs in top 10",
+     "url": "https://www.football365.com/news/ranking-top-10-premier-league-signings-of-the-season",
+     "source": "Football365",
+     "published": "2026-11-24T15:41:22+00:00",
+     "matched_on": "van hecke",
+     "kind": "general",
+     "excerpt": "Jan Paul van Hecke is among the top 10 Premier League signings of the season, with two Liverpool players in ahead of Elliot Anderson."
+    },
+    {
      "title": "Van Hecke ‘ashamed’ as Netherlands ‘fold like a pack of cards’ on memorable night for Wirtz and Germany",
      "url": "https://www.101greatgoals.com/football/internationals/jan-paul-van-hecke-ashamed-netherlands-fold-like-pack-of-cards-florian-wirtz-germany/",
      "source": "101 Great Goals — Fantasy",
@@ -588,9 +597,9 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 38,
+   "evidence_count": 39,
    "source_count": 12,
-   "latest_evidence": "2026-11-23T11:19:35+00:00",
+   "latest_evidence": "2026-11-24T11:58:42+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -813,9 +822,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 53,
+   "evidence_count": 54,
    "source_count": 16,
-   "latest_evidence": "2026-11-23T21:00:00+00:00",
+   "latest_evidence": "2026-11-24T12:23:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -877,6 +886,15 @@
      "excerpt": "England play twice this month as they round up their UEFA Nations League campaign with fixtures against Croatia and Spain. The Three Lions will first entertain Croatia at Wembley Stadium on Thursday, 12 November, before taking on Spain at the home of Atletico Madrid, the Metropolitano. There is no place for Bukayo Saka or Phil Foden in Tuchel's latest selection. England squad for Nations League ma"
     },
     {
+     "title": "Man Utd ‘enter’ Cole Palmer transfer talks after ‘massive d***head’ clashes with Chelsea team-mate",
+     "url": "https://www.football365.com/news/man-utd-cole-palmer-transfer-talks-morgan-pedro-reaction",
+     "source": "Football365",
+     "published": "2026-11-24T12:23:00+00:00",
+     "matched_on": "palmer",
+     "kind": "transfer",
+     "excerpt": "Man Utd has once again ‘entered the conversation’ as talk of a Chelsea exit for Cole Palmer surfaces after being called a “massive d***head”."
+    },
+    {
      "title": "Man Utd fully-costed plan to sign entire USA squad plus Palmer, Kane and 11 defenders emerges",
      "url": "https://www.football365.com/news/man-utd-usa-palmer-kane-transfer-plan-pochettino-mediawatch",
      "source": "Football365",
@@ -904,6 +922,15 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "Flashscore sources: Cole Palmer's Chelsea relationship faces fresh scrutiny",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-cole-palmer-s-chelsea-relationship-faces-fresh-scrutiny/YTfzdbKM/",
+     "source": "Soccerway",
+     "published": "2026-11-24T08:52:57+01:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": ""
+    },
+    {
      "title": "Albion U21s 2 West Ham U21s 1: Palmer and Ibrahim on target",
      "url": "https://www.brightonandhovealbion.com/media-article/albion-u21s-2-west-ham-u21s-1-palmer-and-ibrahim-on-target",
      "source": "Brighton & Hove Albion",
@@ -929,33 +956,15 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Gerrard says Cole Palmer’s ‘ego’ has cost him England place under Tuchel",
-     "url": "https://www.football365.com/news/gerrard-cole-palmer-ego-cost-him-england-place-tuchel",
-     "source": "Football365",
-     "published": "2026-11-16T20:37:07+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Gerrard reckons Cole Palmer’s “ego” has cost him his England place under Tuchel but “Cole needs Thomas, and Thomas needs Cole”."
-    },
-    {
-     "title": "England given 10% chance of Spain Nations League win as Ben White/Cole Palmer claim made",
-     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/why-england-only-have-a-10-percent-chance-of-beating-spain_609142.html",
-     "source": "Sports Mole",
-     "published": "2026-11-15T10:43:36+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "England are given just a 10% chance of beating Spain in Sunday's UEFA Nations League clash as a new Ben White/Cole Palmer claim is made."
     }
    ]
   },
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 50,
+   "evidence_count": 49,
    "source_count": 18,
-   "latest_evidence": "2026-11-23T03:04:58+00:00",
+   "latest_evidence": "2026-11-24T15:33:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1015,6 +1024,15 @@
      "matched_on": "rogers",
      "kind": "team news",
      "excerpt": "Aston Villa are not a normal football club. After what felt like an eternity of matches against teams that somehow seemed to be playing a more advanced sport altogether, Villa have become competitive by doing things differently. Manager Unai Emery maintained his poker face throughout pre-season. It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martin"
+    },
+    {
+     "title": "How Brewers Can Counter After Cubs Sign Teruaki Sato, Trevor Rogers",
+     "url": "https://www.si.com/mlb/brewers/onsi/how-brewers-can-counter-after-cubs-sign-teruaki-sato-trevor-rogers-pat3?utm_source=RSS",
+     "source": "Sports Illustrated FPL",
+     "published": "2026-11-24T15:33:20+00:00",
+     "matched_on": "rogers",
+     "kind": "transfer",
+     "excerpt": "The Milwaukee Brewers are in a good spot, even with the Chicago Cubs adding."
     },
     {
      "title": "Aston Villa rocked by Real Madrid interest in new signing: report",
@@ -1078,15 +1096,6 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "I set the 15 most-owned players that fit in £100m against the best squad the same money buys. The gap is in midfield and defence, and three transfers win back half of it. By Noel Morgan Rogers is owned by 54.0% of FPL managers. Pascal Groß, Riccardo Calafiori and Maxim De Cuyper are each close … Continue reading FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks "
-    },
-    {
-     "title": "Alysson Scout Report At Aston Villa 2026/2027: Unai Emery's Next Morgan Rogers? - Player Analysis",
-     "url": "https://tacticalfootballanalysis.com/alysson-scout-report-aston-villa-2026-2027-tactics-analysis/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-11-16T08:10:06+00:00",
-     "matched_on": "rogers",
-     "kind": "general",
-     "excerpt": "Alysson is emerging as an exciting option for Aston Villa. This scout report analyses the Brazilian winger’s pace, movement, goalscoring threat, unusual dribbling style and defensive work under Unai Emery."
     }
    ]
   },
@@ -1206,7 +1215,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 97,
+   "evidence_count": 95,
    "source_count": 21,
    "latest_evidence": "2026-11-23T10:35:12-05:00",
    "official_source_found": true,
@@ -1346,9 +1355,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 80,
+   "evidence_count": 79,
    "source_count": 18,
-   "latest_evidence": "2026-11-23T22:15:00+00:00",
+   "latest_evidence": "2026-11-24T15:15:41+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
