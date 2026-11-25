@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-25T01:26:48+00:00",
- "seconds": 117.1,
+ "ran_at": "2026-11-25T15:41:43+00:00",
+ "seconds": 151.1,
  "sources_attempted": 78,
- "sources_readable": 57,
- "candidates_discovered": 652,
- "substantive_items": 261,
- "duplicates_removed": 19,
- "deeply_analysed": 87,
- "deep_read_failed": 3,
- "corpus_size": 18454,
+ "sources_readable": 56,
+ "candidates_discovered": 704,
+ "substantive_items": 320,
+ "duplicates_removed": 28,
+ "deeply_analysed": 83,
+ "deep_read_failed": 7,
+ "corpus_size": 18505,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "57/78 sources returned 261 articles"
+    "56/78 sources returned 320 articles"
    ]
   },
   "blackout": {
@@ -51,6 +51,7 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
+  "Everton: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -63,9 +64,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 23,
-   "source_count": 11,
-   "latest_evidence": "2026-11-23T16:15:51+00:00",
+   "evidence_count": 26,
+   "source_count": 12,
+   "latest_evidence": "2026-11-25T10:40:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -90,6 +91,24 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "FPL notes: Raya latest, Calafiori rest + still no Saliba minutes",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/25/fpl-notes-raya-latest-calafiori-rest-still-no-saliba-minutes",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-25T10:40:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "How Arsenal got on in their match with Dortmund on Tuesday The post FPL notes: Raya latest, Calafiori rest + still no Saliba minutes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal injury news: Mikel Arteta drops update on whether David Raya will be fit to face Man City",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/mikel-arteta-drops-fresh-david-raya-injury-update-ahead-of-arsenal-vs-man-city-clash_609800.html",
+     "source": "Sports Mole",
+     "published": "2026-11-25T07:29:08+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Mikel Arteta has refused to confirm whether David Raya will face Manchester City after the Arsenal goalkeeper suffered a shoulder injury."
+    },
     {
      "title": "David Raya Injury Update Offers Fresh Concern for Arsenal",
      "url": "https://www.si.com/soccer/david-raya-injury-update-fresh-concern-arsenal?utm_source=RSS",
@@ -179,24 +198,6 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": ""
-    },
-    {
-     "title": "David Raya injury: Mikel Arteta's \"not good news\" update leaves Arsenal facing anxious wait",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/not-good-news-arteta-issues-raya-update-after-injury-scare_609593.html",
-     "source": "Sports Mole",
-     "published": "2026-11-22T02:59:25+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Mikel Arteta admits it is \"not good news\" as Arsenal face an anxious wait over David Raya ahead of a defining week at the Emirates."
-    },
-    {
-     "title": "FPL notes: Raya + Hall injury latest, Saliba unused again",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/21/fpl-notes-raya-hall-injury-latest-saliba-unused-again",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-21T22:35:00+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Newcastle show spirit to fight back against Arsenal The post FPL notes: Raya + Hall injury latest, Saliba unused again appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
@@ -333,9 +334,9 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 16,
+   "evidence_count": 18,
    "source_count": 8,
-   "latest_evidence": "2026-11-19T07:21:53+00:00",
+   "latest_evidence": "2026-11-25T10:54:44+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -360,6 +361,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "'Unhappy' Arsenal star in talks to leave - despite starting against Dortmund: report",
+     "url": "https://www.fourfourtwo.com/transfer/unhappy-arsenal-star-in-talks-to-leave-despite-starting-against-dortmund-report",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-25T10:54:44+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "One Arsenal star is in talks to leave the club, despite getting the nod last night to start against Borussia Dortmund. The Gunners were held to a 1-1 draw by the Bundesliga leaders last night, despite creating a plethora of chances, finding themselves needing two wins from their next three Champions League fixtures to finish in the top eight of the league phase. But despite Arsenal manager Mikel A"
+    },
+    {
+     "title": "FPL notes: Raya latest, Calafiori rest + still no Saliba minutes",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/25/fpl-notes-raya-latest-calafiori-rest-still-no-saliba-minutes",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-25T10:40:00+00:00",
+     "matched_on": "calafiori",
+     "kind": "team news",
+     "excerpt": "How Arsenal got on in their match with Dortmund on Tuesday The post FPL notes: Raya latest, Calafiori rest + still no Saliba minutes appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "How to watch Belgium vs Italy: Free Live Stream & TV Channels for crucial Nations League clash",
      "url": "https://www.fourfourtwo.com/competition/watch-belgium-vs-italy-nations-league-2026-27-free",
@@ -449,33 +468,15 @@
      "matched_on": "calafiori",
      "kind": "team news",
      "excerpt": "Arsenal have been handed fresh injury concerns ahead of Liverpool, with Mikel Arteta providing updates on Declan Rice, Noni Madueke and Riccardo Calafiori."
-    },
-    {
-     "title": "Arsenal star Riccardo Calafiori linked with bombshell exit following enquiry: report",
-     "url": "https://www.fourfourtwo.com/transfer/arsenal-star-riccardo-calafiori-linked-with-bombshell-exit-following-enquiry-report",
-     "source": "FourFourTwo FPL",
-     "published": "2026-11-02T13:04:10+00:00",
-     "matched_on": "calafiori",
-     "kind": "transfer",
-     "excerpt": "Arsenal full-back Riccardo Calafiori could leave the club in a shock move. That's according to a new report, which claims that the champions have to be wary that their superstar Italian could be about to depart North London after three years. Calafiori has been excellent for Arsenal this season – but with the star's contract reaching the two-year mark next summer, the Gunners might have to conside"
-    },
-    {
-     "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
-     "url": "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
-     "source": "FISO",
-     "published": "2026-11-19T07:21:53+00:00",
-     "matched_on": "calafiori",
-     "kind": "general",
-     "excerpt": "I set the 15 most-owned players that fit in £100m against the best squad the same money buys. The gap is in midfield and defence, and three transfers win back half of it. By Noel Morgan Rogers is owned by 54.0% of FPL managers. Pascal Groß, Riccardo Calafiori and Maxim De Cuyper are each close … Continue reading FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks "
     }
    ]
   },
   "Van Hecke": {
    "player": "Van Hecke",
    "club": "TOT",
-   "evidence_count": 10,
+   "evidence_count": 11,
    "source_count": 8,
-   "latest_evidence": "2026-11-24T15:41:22+00:00",
+   "latest_evidence": "2026-11-25T11:11:26+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -535,6 +536,15 @@
      "matched_on": "van hecke",
      "kind": "team news",
      "excerpt": "Plus, Mateta set to miss the next three Gameweeks The post FPL notes: van Hecke haul + De Zerbi on Porro’s fitness appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Tottenham star's agent publicly pushes for January exit to Saudi Arabia",
+     "url": "https://www.fourfourtwo.com/transfer/tottenham-stars-agent-publicly-pushes-for-january-exit-to-saudi-arabia",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-25T11:11:26+00:00",
+     "matched_on": "van hecke",
+     "kind": "transfer",
+     "excerpt": "Tottenham Hotspur are resurgent in the Premier League – but that hasn't stopped one player's agent from linking his client with a move out of N17. FourFourTwo understands that Spurs don't expect to do very much business in the winter window, with the likes of Jan Paul van Hecke, Sandro Tonali, Mateus Fernandes, Savio and Omar Marmoush signed over the summer in a £400 million spree that saw Tottenh"
     },
     {
      "title": "Buy, Hold or Sell: FPL expert reveals GW11 transfers cheat sheet amid controversial Chelsea verdict",
@@ -737,7 +747,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 6,
-   "latest_evidence": "2026-11-22T18:45:57+00:00",
+   "latest_evidence": "2026-11-24T19:45:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -761,6 +771,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Brighton & Hove Albion vs Universitatea Craiova - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/europa-conference-league/preview/brighton-vs-u-craiova-prediction-team-news-lineups_609737.html",
+     "source": "Sports Mole",
+     "published": "2026-11-24T19:45:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Thursday's Conference League clash between Brighton & Hove Albion and Universitatea Craiova, including predictions, team news and possible lineups."
+    },
     {
      "title": "Blues Beaten By Brighton Under Goodison Sun",
      "url": "https://www.evertonfc.com/news/2026/november/22/blues-beaten-by-brighton-under-goodison-sun/",
@@ -796,15 +815,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Team news as Hull host Brighton in the Premier League"
-    },
-    {
-     "title": "Hull v Brighton team news: Kostoulas benched, Belloumi starts",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/22/hull-v-brighton-team-news-kostoulas-benched-belloumi-starts",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-22T13:25:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Two changes for Hull, one for Albion The post Hull v Brighton team news: Kostoulas benched, Belloumi starts appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
@@ -1213,9 +1223,9 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 94,
+   "evidence_count": 91,
    "source_count": 21,
-   "latest_evidence": "2026-11-24T16:30:00+00:00",
+   "latest_evidence": "2026-11-25T07:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1353,7 +1363,7 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 77,
+   "evidence_count": 76,
    "source_count": 18,
    "latest_evidence": "2026-11-24T15:15:41+00:00",
    "official_source_found": true,
