@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-26T15:23:22+00:00",
- "seconds": 144.7,
+ "ran_at": "2026-11-27T01:01:52+00:00",
+ "seconds": 155.9,
  "sources_attempted": 78,
  "sources_readable": 56,
- "candidates_discovered": 691,
- "substantive_items": 320,
- "duplicates_removed": 22,
- "deeply_analysed": 80,
- "deep_read_failed": 10,
- "corpus_size": 18509,
+ "candidates_discovered": 633,
+ "substantive_items": 285,
+ "duplicates_removed": 28,
+ "deeply_analysed": 78,
+ "deep_read_failed": 12,
+ "corpus_size": 18450,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 320 articles"
+    "56/78 sources returned 285 articles"
    ]
   },
   "blackout": {
@@ -43,6 +43,7 @@
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
   "Premier Fantasy Tools: nothing published in the last 10 days",
+  "Onside Arena: timed out after 12s for https://onsidearena.com/sitemaps/predictions.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,7 +52,6 @@
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
-  "Everton: nothing published in the last 10 days",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
   "Opta Analyst: HTTP 403 for https://theanalyst.com/feed/",
@@ -64,9 +64,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 28,
+   "evidence_count": 31,
    "source_count": 13,
-   "latest_evidence": "2026-11-26T10:21:09+00:00",
+   "latest_evidence": "2026-11-26T19:45:00+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -91,6 +91,24 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Raya’s injury: What to do in each FPL scenario",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/26/raya-injury-what-to-do-in-each-fpl-scenario",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-26T19:45:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Serial top 10k finisher Milanista looks at all the options available to FPL managers The post Raya’s injury: What to do in each FPL scenario appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Buy Bruno? Sell Raya? Bench Haaland? Best Free Hit XI? FPL Q&A",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/26/buy-bruno-sell-raya-bench-haaland-best-free-hit-xi-fpl-qa",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-26T16:55:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Buy Bruno? Sell Raya? Bench Haaland? Best Free Hit XI? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Arsenal defender linked with exit following talks, as minutes dry up: report",
      "url": "https://www.fourfourtwo.com/transfer/arsenal-defender-linked-with-exit-following-talks-as-minutes-dry-up-report",
@@ -180,33 +198,15 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Arsenal manager Mikel Arteta issues an injury update on David Raya after a worrying photo emerges of the Gunners' number one."
-    },
-    {
-     "title": "Raya injury latest: Latest FPL team news pre-Gameweek 12",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/raya-injury-latest-latest-fpl-team-news-pre-gameweek-12",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-23T13:40:00+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Mikel Arteta, Enzo Maresca and Unai Emery face the media today The post Raya injury latest: Latest FPL team news pre-Gameweek 12 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "What to do with injured Raya in FPL?",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/11/23/what-to-do-with-injured-raya-in-fpl",
-     "source": "Fantasy Football Scout",
-     "published": "2026-11-23T13:30:00+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "FPL's top-scoring and most-owned 'keeper picked up a shoulder injury on Saturday The post What to do with injured Raya in FPL? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     }
    ]
   },
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "source_count": 8,
-   "latest_evidence": "2026-11-22T20:19:08+00:00",
+   "latest_evidence": "2026-11-26T20:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -276,6 +276,15 @@
      "excerpt": "After the international break, this is a transfer-heavy gameweek with players being bought and sold in bulk. Whether you're planning on wildcarding or making wholesale changes and taking the hit, this is essential reading for all FPL managers getting back into the fantasy football groove. Here is my verdict on the most popular names. Buy, Hold or Sell? - Defenders England and Newcastle's Lewis Hal"
     },
     {
+     "title": "Gallery: Albion score four against Craiova",
+     "url": "https://www.brightonandhovealbion.com/media-gallery/mft-galleries-albion-score-four-against-craiova",
+     "source": "Brighton & Hove Albion",
+     "published": "2026-11-26T20:35:00+00:00",
+     "matched_on": "de cuyper",
+     "kind": "general",
+     "excerpt": "Dominant Albion swept aside Craiova in the UEFA Conference League tie at the Amex on Thursday evening. Ibrahim Osman scored a brace, Maxim De Cuyper and Babis Kostoulas also found the net as Albion scored four without reply."
+    },
+    {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
      "url": "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
      "source": "FISO",
@@ -334,8 +343,8 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 17,
-   "source_count": 8,
+   "evidence_count": 15,
+   "source_count": 6,
    "latest_evidence": "2026-11-26T11:11:23+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -443,24 +452,6 @@
      "excerpt": "Arsenal left-back Riccardo Calafiori was struggling at the end of the Gunners' Premier League game against Everton last weekend after coming on as a substitute. Calafiori had played in the previous Champions League fixture but started on the bench for the visit of Everton and was subsequently left out of the squad for Arsenal 's Carabao Cup exit at the hands of Fleetwood Town. The Gunners will pla"
     },
     {
-     "title": "FPL Gameweek 9 Guide 2026/27: Injury News, Players To Target And Captaincy Picks Ahead Of FPL GW9",
-     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-10-29T11:58:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
-    },
-    {
-     "title": "Arsenal injury, suspension list and return dates vs. Liverpool: Declan Rice, Noni Madueke, Riccardo Calafiori latest",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/rice-madueke-calafiori-latest-arsenal-injury-suspension-list-vs-liverpool_607944.html",
-     "source": "Sports Mole",
-     "published": "2026-10-29T10:32:22+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Sports Mole rounds up all of Arsenal's latest injury and suspension news ahead of Sunday's Premier League clash with Liverpool."
-    },
-    {
      "title": "Arsenal star Riccardo Calafiori linked with bombshell exit following enquiry: report",
      "url": "https://www.fourfourtwo.com/transfer/arsenal-star-riccardo-calafiori-linked-with-bombshell-exit-following-enquiry-report",
      "source": "FourFourTwo FPL",
@@ -468,15 +459,33 @@
      "matched_on": "calafiori",
      "kind": "transfer",
      "excerpt": "Arsenal full-back Riccardo Calafiori could leave the club in a shock move. That's according to a new report, which claims that the champions have to be wary that their superstar Italian could be about to depart North London after three years. Calafiori has been excellent for Arsenal this season – but with the star's contract reaching the two-year mark next summer, the Gunners might have to conside"
+    },
+    {
+     "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
+     "url": "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
+     "source": "FISO",
+     "published": "2026-11-19T07:21:53+00:00",
+     "matched_on": "calafiori",
+     "kind": "general",
+     "excerpt": "I set the 15 most-owned players that fit in £100m against the best squad the same money buys. The gap is in midfield and defence, and three transfers win back half of it. By Noel Morgan Rogers is owned by 54.0% of FPL managers. Pascal Groß, Riccardo Calafiori and Maxim De Cuyper are each close … Continue reading FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks "
+    },
+    {
+     "title": "Arsenal star slammed for ‘nightmare’ display vs Belgium star who ‘does what he wants’ against him",
+     "url": "https://www.football365.com/news/arsenal-star-nightmare-display-belgium",
+     "source": "Football365",
+     "published": "2026-11-16T19:10:53+00:00",
+     "matched_on": "calafiori",
+     "kind": "general",
+     "excerpt": "Riccardo Calafiori had a game to forget for Italy vs Belgium as his opposite number ‘does what he wants’ against him in the 4-1 defeat."
     }
    ]
   },
   "Van Hecke": {
    "player": "Van Hecke",
    "club": "TOT",
-   "evidence_count": 11,
+   "evidence_count": 12,
    "source_count": 8,
-   "latest_evidence": "2026-11-25T11:11:26+00:00",
+   "latest_evidence": "2026-11-26T15:32:15+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -536,6 +545,15 @@
      "matched_on": "van hecke",
      "kind": "team news",
      "excerpt": "Plus, Mateta set to miss the next three Gameweeks The post FPL notes: van Hecke haul + De Zerbi on Porro’s fitness appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Tottenham Hotspur NEED to sign under-the-radar LaLiga forward hitting his stride this season",
+     "url": "https://www.fourfourtwo.com/transfer/tottenham-hotspur-need-to-sign-under-the-radar-laliga-forward-hitting-his-stride-this-season",
+     "source": "FourFourTwo FPL",
+     "published": "2026-11-26T15:32:15+00:00",
+     "matched_on": "van hecke",
+     "kind": "transfer",
+     "excerpt": "Tottenham Hotspur’s resurgence under Roberto De Zerbi has breathed fresh life into the club after back-to-back 17th-placed finishes. There is one clear deficiency in their current make-up that threatens to limit what they can achieve in 2026/27, though - they can't finish. Despite sitting comfortably in the top half after 12 games, Spurs ’ underlying attacking numbers tell the story of a side crea"
     },
     {
      "title": "Tottenham star's agent publicly pushes for January exit to Saudi Arabia",
@@ -605,7 +623,7 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 40,
+   "evidence_count": 39,
    "source_count": 12,
    "latest_evidence": "2026-11-26T10:21:09+00:00",
    "official_source_found": true,
@@ -970,8 +988,8 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 48,
-   "source_count": 18,
+   "evidence_count": 46,
+   "source_count": 17,
    "latest_evidence": "2026-11-24T15:33:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1014,24 +1032,6 @@
      "matched_on": "rogers",
      "kind": "team news",
      "excerpt": "Watch England vs Croatia in the Nations League for FREE from anywhere as Harry Kane prepares to break the Three Lions' appearance record. FourFourTwo has all the live stream details and TV channels, wherever you are in the world. It is less than six weeks since Thomas Tuchel's men subjected Croatia to a humiliating 7-0 thrashing in Rijeka, but a point is all they need to seal their place in the qu"
-    },
-    {
-     "title": "FPL notes: Pedro latest, Lacroix injury, Rogers pen + Isak rested",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/29/fpl-notes-pedro-latest-lacroix-injury-rogers-pen-isak-rested",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-29T12:15:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "It was all about the penalties as Liverpool edged past Chelsea on Wednesday The post FPL notes: Pedro latest, Lacroix injury, Rogers pen + Isak rested appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
-     "title": "Victor Lindelof is thriving and it says everything about Aston Villa and Manchester United",
-     "url": "https://www.fourfourtwo.com/person/player/victor-lindelof-is-thriving-and-it-says-everything-about-aston-villa-and-manchester-united",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-29T11:00:00+00:00",
-     "matched_on": "rogers",
-     "kind": "team news",
-     "excerpt": "Aston Villa are not a normal football club. After what felt like an eternity of matches against teams that somehow seemed to be playing a more advanced sport altogether, Villa have become competitive by doing things differently. Manager Unai Emery maintained his poker face throughout pre-season. It's too simplistic to say that Villa lost Youri Tielemans, Morgan Rogers, Lucas Digne, Emiliano Martin"
     },
     {
      "title": "How Brewers Can Counter After Cubs Sign Teruaki Sato, Trevor Rogers",
@@ -1104,14 +1104,32 @@
      "matched_on": "rogers",
      "kind": "general",
      "excerpt": "I set the 15 most-owned players that fit in £100m against the best squad the same money buys. The gap is in midfield and defence, and three transfers win back half of it. By Noel Morgan Rogers is owned by 54.0% of FPL managers. Pascal Groß, Riccardo Calafiori and Maxim De Cuyper are each close … Continue reading FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks "
+    },
+    {
+     "title": "Alysson Scout Report At Aston Villa 2026/2027: Unai Emery's Next Morgan Rogers? - Player Analysis",
+     "url": "https://tacticalfootballanalysis.com/alysson-scout-report-aston-villa-2026-2027-tactics-analysis/",
+     "source": "Tactical Football Analysis",
+     "published": "2026-11-16T08:10:06+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Alysson is emerging as an exciting option for Aston Villa. This scout report analyses the Brazilian winger’s pace, movement, goalscoring threat, unusual dribbling style and defensive work under Unai Emery."
+    },
+    {
+     "title": "Thomas Tuchel responds to Morgan Rogers' Cole Palmer defence",
+     "url": "https://www.sportsmole.co.uk/football/england/news/thomas-tuchel-responds-as-morgan-rogers-brands-cole-palmer-england-claims-a-lie_609074.html",
+     "source": "Sports Mole",
+     "published": "2026-11-13T19:44:43+00:00",
+     "matched_on": "rogers",
+     "kind": "general",
+     "excerpt": "Thomas Tuchel responds after Morgan Rogers calls claims about Cole Palmer's England commitment \"a lie\" following the Croatia victory."
     }
    ]
   },
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 9,
-   "source_count": 5,
+   "evidence_count": 8,
+   "source_count": 4,
    "latest_evidence": "2026-11-21T16:53:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1183,15 +1201,6 @@
      "excerpt": "Marco Rose gave updates on Thursday The post Tavernier, Kroupi, Scott: Bournemouth injury latest for FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "FPL Gameweek 9 Guide 2026/27: Injury News, Players To Target And Captaincy Picks Ahead Of FPL GW9",
-     "url": "https://tacticalfootballanalysis.com/fpl-gameweek-9-guide-2026-27-injury-news-players-to-target-and-captaincy-picks-ahead-of-fpl-gw9/",
-     "source": "Tactical Football Analysis",
-     "published": "2026-10-29T11:58:00+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Our FPL Gameweek 9 guide covers João Pedro and Calafiori injury news, Bournemouth and Aston Villa transfer targets, Chelsea assets, fixture swings, clean-sheet odds and the captaincy battle between Haaland and Tavernier."
-    },
-    {
      "title": "Man Utd now want hijack to destroy Arsenal double deal as INEOS choose two ‘priority’ January signings",
      "url": "https://www.football365.com/news/man-utd-now-want-hijack-destroy-arsenal-double-deal-two-priority-january-signings",
      "source": "Football365",
@@ -1223,7 +1232,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 87,
+   "evidence_count": 86,
    "source_count": 21,
    "latest_evidence": "2026-11-25T20:00:00+00:00",
    "official_source_found": true,
@@ -1363,9 +1372,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 81,
+   "evidence_count": 83,
    "source_count": 18,
-   "latest_evidence": "2026-11-26T14:58:42+00:00",
+   "latest_evidence": "2026-11-27T00:05:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1390,6 +1399,24 @@
    "priority": "low",
    "researched": true,
    "items": [
+    {
+     "title": "Buy Bruno? Sell Raya? Bench Haaland? Best Free Hit XI? FPL Q&A",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/26/buy-bruno-sell-raya-bench-haaland-best-free-hit-xi-fpl-qa",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-26T16:55:00+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Five-time top 1k finisher Tom Freeman answers your questions The post Buy Bruno? Sell Raya? Bench Haaland? Best Free Hit XI? FPL Q&A appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal vs Manchester City prediction: Havertz and Haaland to hit net",
+     "url": "https://www.football365.com/match-preview/arsenal-manchester-city-prediction",
+     "source": "Football365",
+     "published": "2026-11-26T16:10:25+00:00",
+     "matched_on": "haaland",
+     "kind": "team news",
+     "excerpt": "Team news, stats and predictions as Arsenal face Manchester City at the Emirates."
+    },
     {
      "title": "FPL Gameweek 12 Guide 2026/27: In Form Teams, Injury News And Captaincy",
      "url": "https://tacticalfootballanalysis.com/fpl-gameweek-12-guide-2026-27-in-form-teams-injury-news-and-captaincy/",
@@ -1479,24 +1506,6 @@
      "matched_on": "haaland",
      "kind": "team news",
      "excerpt": "Watch Denmark vs Norway for free from anywhere, as two Scandinavian countries meet in Copenhagen with a Nations League quarter-final place up for grabs. FourFourTwo has all the live stream details and TV channels, wherever you are in the world. Denmark's eye-catching 4-1 win away to Portugal on Saturday put them in pole position for the second quarter-final place in Group A4, with the hosts needin"
-    },
-    {
-     "title": "Everton Trio In Nations League Action As Forward Earns Milestone Cap",
-     "url": "https://www.evertonfc.com/news/2026/november/14/everton-trio-in-nations-league-action-as-forward-earns-milestone-cap/",
-     "source": "Everton",
-     "published": "2026-11-14T22:07:08+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "Brennan Johnson, Vitalii Mykolenko and Jake O’Brien all featured for their international sides in the UEFA Nations League on Saturday evening. Johnson and Mykolenko both earned starts, with Johnson’s appearance against Norway marking his 50 th senior international cap for Wales. Facing a tough test in Oslo, they fell to a 3-1 defeat after Antonio Nusa, Andreas Schjelderup and Erling Haaland all st"
-    },
-    {
-     "title": "RB Leipzig vs. Man City lineups confirmed: Captain Haaland as Cherki, Foden, Guehi decisions made for Champions League game",
-     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/leipzig-vs-man-city-confirmed-xis-captain-haaland-as-cherki-foden-guehi-decisions-made_608404.html",
-     "source": "Sports Mole",
-     "published": "2026-11-04T18:52:00+00:00",
-     "matched_on": "haaland",
-     "kind": "team news",
-     "excerpt": "RB Leipzig and Manchester City confirm their starting lineups for tonight’s Champions League clash at the Red Bull Arena."
     }
    ]
   },
