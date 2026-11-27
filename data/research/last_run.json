@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 12,
- "ran_at": "2026-11-27T01:01:52+00:00",
- "seconds": 155.9,
+ "ran_at": "2026-11-27T15:11:04+00:00",
+ "seconds": 131.0,
  "sources_attempted": 78,
- "sources_readable": 56,
- "candidates_discovered": 633,
- "substantive_items": 285,
- "duplicates_removed": 28,
- "deeply_analysed": 78,
- "deep_read_failed": 12,
- "corpus_size": 18450,
+ "sources_readable": 55,
+ "candidates_discovered": 701,
+ "substantive_items": 331,
+ "duplicates_removed": 33,
+ "deeply_analysed": 69,
+ "deep_read_failed": 21,
+ "corpus_size": 18498,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "56/78 sources returned 285 articles"
+    "55/78 sources returned 331 articles"
    ]
   },
   "blackout": {
@@ -42,8 +42,8 @@
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
+  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
-  "Onside Arena: timed out after 12s for https://onsidearena.com/sitemaps/predictions.xml",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
   "Draft FC: nothing published in the last 10 days",
@@ -51,6 +51,7 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
+  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -64,9 +65,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 31,
+   "evidence_count": 35,
    "source_count": 13,
-   "latest_evidence": "2026-11-26T19:45:00+00:00",
+   "latest_evidence": "2026-11-27T14:49:36+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -91,6 +92,42 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Raya injury: Arteta’s Friday update ahead of FPL Gameweek 12",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/27/raya-injury-artetas-friday-update-ahead-of-fpl-gameweek-12",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-27T14:49:36+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Millions of FPL maagers waited for the words of Mikel Arteta The post Raya injury: Arteta’s Friday update ahead of FPL Gameweek 12 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "FPL Gameweek 12 team news: Friday’s live injury updates + Raya latest",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/27/fpl-gameweek-12-team-news-fridays-live-injury-updates-raya-latest",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-27T13:35:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "We're hoping to hear from 15 Premier League managers today The post FPL Gameweek 12 team news: Friday’s live injury updates + Raya latest appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
+    {
+     "title": "Arsenal predicted lineup vs. Man City: David Raya decision made as Viktor Gyokeres dropped",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/raya-decision-gyokeres-dropped-how-arsenal-could-line-up-against-man-city_610003.html",
+     "source": "Sports Mole",
+     "published": "2026-11-27T11:33:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Arsenal could line up for Sunday's Premier League clash with Manchester City."
+    },
+    {
+     "title": "Raya injury: What time is Arteta’s press conference?",
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/27/raya-injury-what-time-is-artetas-press-conference",
+     "source": "Fantasy Football Scout",
+     "published": "2026-11-27T10:15:00+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "Fantasy managers will be hoping for an update on the injured 'keeper The post Raya injury: What time is Arteta’s press conference? appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
+    },
     {
      "title": "Raya’s injury: What to do in each FPL scenario",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/26/raya-injury-what-to-do-in-each-fpl-scenario",
@@ -162,42 +199,6 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": ""
-    },
-    {
-     "title": "Relief for Arteta and Arsenal as Raya avoids surgery on injured arm",
-     "url": "https://www.101greatgoals.com/football/champions-league/relief-for-mikel-arteta-arsenal-david-raya-avoids-surgery-on-injured-arm/",
-     "source": "101 Great Goals — Fantasy",
-     "published": "2026-11-23T14:40:07+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "David Raya will not undergo surgery on the arm injury he sustained at Newcastle on Saturday, Arsenal boss Mikel Arteta said today"
-    },
-    {
-     "title": "Arsenal vs Borussia Dortmund preview: Gunners vulnerable with David Raya set to miss out",
-     "url": "https://www.football365.com/match-preview/arsenal-vs-borussia-dortmund-preview-gunners-vulnerable-with-david-raya-set-to-miss-out",
-     "source": "Football365",
-     "published": "2026-11-23T14:28:55+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Arsenal vs Dortmund without David Raya leaves us fancying Felix Nmecha to score at the Emirates. Team news and predictions here."
-    },
-    {
-     "title": "Arsenal: Arteta gives shock Raya injury update as the goalkeeper is ruled out of Dortmund clash",
-     "url": "https://www.football365.com/news/arsenal-arteta-raya-injury-update-dortmund",
-     "source": "Football365",
-     "published": "2026-11-23T14:22:50+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Arsenal boss Mikel Arteta has revealed that David Raya won’t be fit to face Borussia Dortmund but his injury “doesn’t look too serious”."
-    },
-    {
-     "title": "Arsenal: Mikel Arteta issues David Raya injury update after worrying photo emerges",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/champions-league/news/could-not-handle-the-pain-arteta-issues-raya-update-after-worrying-photo_609696.html",
-     "source": "Sports Mole",
-     "published": "2026-11-23T14:15:11+00:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": "Arsenal manager Mikel Arteta issues an injury update on David Raya after a worrying photo emerges of the Gunners' number one."
     }
    ]
   },
@@ -765,9 +766,9 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 6,
-   "latest_evidence": "2026-11-25T15:08:16+00:00",
+   "latest_evidence": "2026-11-26T19:50:10+00:00",
    "official_source_found": true,
-   "fpl_source_found": false,
+   "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
@@ -789,6 +790,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Brighton 4-0 Universitatea Craiova: Osman scores twice as Seagulls cruise past ten-man visitors",
+     "url": "https://www.101greatgoals.com/match-reports/brighton-4-0-universitatea-craiova-report-result-goals/",
+     "source": "101 Great Goals — Fantasy",
+     "published": "2026-11-26T19:50:10+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Catch up with all the action from Brighton vs Universitatea Craiova in the Europa Conference League."
+    },
     {
      "title": "Brighton vs Newcastle prediction: Gomez to score in routine Seagulls win",
      "url": "https://www.football365.com/match-preview/brighton-vs-newcastle-prediction-gomez-to-score-in-routine-seagulls-win",
@@ -826,15 +836,6 @@
      "excerpt": "Fixtures Hull City Vs. Brighton and Hove Albion - Sun, Nov 22 2026, 14:00 Hull City scored twice in added time to secure a first win since August as they beat second-place Brighton & Hove Albion 2-0 at the MKM Stadium. The Tigers had looked to be heading for another useful home point as they frustrated their visitors, largely thanks to a stunning display from goalkeeper Konstantinos Tzolakis, befo"
     },
     {
-     "title": "Everton Women 0 Albion Women 1: Own goal earns Seagulls deserved win",
-     "url": "https://www.brightonandhovealbion.com/media-article/wft-match-report-everton-bha-wsl-november-2026",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-11-22T15:50:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Albion climb to seventh after deserved victory at Goodison Park."
-    },
-    {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
      "url": "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
      "source": "FISO",
@@ -848,9 +849,9 @@
   "Palmer": {
    "player": "Palmer",
    "club": "CHE",
-   "evidence_count": 55,
+   "evidence_count": 56,
    "source_count": 17,
-   "latest_evidence": "2026-11-26T09:34:04+00:00",
+   "latest_evidence": "2026-11-27T13:11:52+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -957,6 +958,15 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "Cole Palmer told he ‘will never play for England again’ with EIGHT players ahead of Chelsea star",
+     "url": "https://www.football365.com/news/cole-palmer-never-play-england-again-chelsea",
+     "source": "Football365",
+     "published": "2026-11-27T13:11:52+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Chelsea superstar Cole Palmer “will never play for England again” after being left out of the last squad by Thomas Tuchel."
+    },
+    {
      "title": "‘Fragile’ Chelsea ‘can’t handle setbacks’ as legend defends Cole Palmer",
      "url": "https://www.football365.com/news/fragile-chelsea-cole-palmer-jimmy-floyd-hasselbaink",
      "source": "Football365",
@@ -973,15 +983,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": ""
-    },
-    {
-     "title": "Albion U21s 2 West Ham U21s 1: Palmer and Ibrahim on target",
-     "url": "https://www.brightonandhovealbion.com/media-article/albion-u21s-2-west-ham-u21s-1-palmer-and-ibrahim-on-target",
-     "source": "Brighton & Hove Albion",
-     "published": "2026-11-23T21:00:00+00:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": "Shannon Ruth's side earn another deserved win in the Premier League Cup."
     }
    ]
   },
@@ -1128,7 +1129,7 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 8,
+   "evidence_count": 7,
    "source_count": 4,
    "latest_evidence": "2026-11-21T16:53:00+00:00",
    "official_source_found": true,
@@ -1151,8 +1152,8 @@
     "team news",
     "transfer"
    ],
-   "strength": "strong",
-   "priority": "low",
+   "strength": "good",
+   "priority": "normal",
    "researched": true,
    "items": [
     {
@@ -1192,15 +1193,6 @@
      "excerpt": "Head coach Marco Rose makes one change to the AFC Bournemouth starting line-up from the win over Manchester United for today’s game against Leeds United (3pm). Ryan Christie, who came off the bench during the 3-0 victory at Old Trafford, comes in for Lewis Cook, who assisted for Evanilson’s third goal against the Red Devils. Rose makes eight changes from the team which beat Aston Villa in the Cara"
     },
     {
-     "title": "Tavernier, Kroupi, Scott: Bournemouth injury latest for FPL Gameweek 9",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/29/tavernier-kroupi-scott-bournemouth-injury-latest-for-fpl-gameweek-9",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-29T16:47:52+00:00",
-     "matched_on": "tavernier",
-     "kind": "team news",
-     "excerpt": "Marco Rose gave updates on Thursday The post Tavernier, Kroupi, Scott: Bournemouth injury latest for FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "Man Utd now want hijack to destroy Arsenal double deal as INEOS choose two ‘priority’ January signings",
      "url": "https://www.football365.com/news/man-utd-now-want-hijack-destroy-arsenal-double-deal-two-priority-january-signings",
      "source": "Football365",
@@ -1232,7 +1224,7 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 86,
+   "evidence_count": 83,
    "source_count": 21,
    "latest_evidence": "2026-11-25T20:00:00+00:00",
    "official_source_found": true,
@@ -1372,9 +1364,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 83,
+   "evidence_count": 87,
    "source_count": 18,
-   "latest_evidence": "2026-11-27T00:05:00+00:00",
+   "latest_evidence": "2026-11-27T14:56:18+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1514,7 +1506,7 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 3,
-   "latest_evidence": "2026-11-24T12:48:20+00:00",
+   "latest_evidence": "2026-11-26T15:40:28+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
@@ -1549,6 +1541,15 @@
      "excerpt": "Team news has been confirmed for Town's Premier League clash away to Tottenham Hotspur. Gary O'Neil has made three changes to the side which faced AFC Bournemouth before the international break, with Zian Flemming, Darnell Furlong and Saša Lukić all coming into the starting XI in North London. Christian Walton starts in goal for the Blues and the defensive unit consists of Abdoul Ouattara, Furlong"
     },
     {
+     "title": "Sunderland vs Tottenham preview: Roefs ready to be busy in a binary game",
+     "url": "https://www.football365.com/match-preview/sunderland-tottenham",
+     "source": "Football365",
+     "published": "2026-11-26T15:40:28+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "All the team news, predictions and line-ups from Sunderland vs Tottenham, which could be a low-scoring affair."
+    },
+    {
      "title": "Tottenham handed new James Maddison concern before Sunderland as training video emerges",
      "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/more-madders-misery-spurs-playmaker-misses-training-before-sunderland_609753.html",
      "source": "Sports Mole",
@@ -1574,15 +1575,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham Hotspur manager Roberto De Zerbi reveals why Sandro Tonali is missing from Saturday's Premier League clash with Ipswich Town."
-    },
-    {
-     "title": "How to watch Tottenham Hotspur vs Ipswich Town live: Stream, TV, team news, prediction",
-     "url": "https://www.nbcsports.com/soccer/news/how-to-watch-tottenham-hotspur-vs-ipswich-town-live-stream-tv-team-news-prediction",
-     "source": "NBC Sports Rotoworld PL",
-     "published": "2026-11-21T05:49:00-05:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": ""
     },
     {
      "title": "New Orleans Pelicans vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
