@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
- "gameweek": 12,
- "ran_at": "2026-11-27T15:11:04+00:00",
- "seconds": 131.0,
+ "gameweek": 13,
+ "ran_at": "2026-11-28T00:34:06+00:00",
+ "seconds": 153.5,
  "sources_attempted": 78,
  "sources_readable": 55,
- "candidates_discovered": 701,
- "substantive_items": 331,
- "duplicates_removed": 33,
- "deeply_analysed": 69,
- "deep_read_failed": 21,
- "corpus_size": 18498,
+ "candidates_discovered": 620,
+ "substantive_items": 279,
+ "duplicates_removed": 17,
+ "deeply_analysed": 79,
+ "deep_read_failed": 11,
+ "corpus_size": 18493,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 331 articles"
+    "55/78 sources returned 279 articles"
    ]
   },
   "blackout": {
@@ -37,6 +37,7 @@
   }
  },
  "failures": [
+  "Premier League Official Fantasy: HTTP 403 for https://www.premierleague.com/en/sitemap/global.xml",
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
@@ -51,7 +52,6 @@
   "FPL Rotation Planner: nothing published in the last 10 days",
   "FPL Stats: nothing published in the last 10 days",
   "Fantasy Football Reports: nothing published in the last 10 days",
-  "Arsenal: HTTP 503 for https://www.arsenal.com/sitemaps/pages/sitemap.xml",
   "Brentford: HTTP 404 for https://www.brentfordfc.com/en/sitemap.xml",
   "Liverpool: sitemap at https://www.liverpoolfc.com/sitemap.xml?page=1 listed no pages",
   "Tottenham Hotspur: nothing published in the last 10 days",
@@ -65,9 +65,9 @@
   "Raya": {
    "player": "Raya",
    "club": "ARS",
-   "evidence_count": 35,
+   "evidence_count": 36,
    "source_count": 13,
-   "latest_evidence": "2026-11-27T14:49:36+00:00",
+   "latest_evidence": "2026-11-27T23:32:41+00:00",
    "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -92,6 +92,15 @@
    "priority": "high",
    "researched": true,
    "items": [
+    {
+     "title": "Arsenal vs. Man City: Major David Raya injury update as Mikel Arteta sweats on goalkeeper before Premier League showdown",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/fit-or-injured-major-raya-update-ahead-of-gunners-crucial-city-clash_610049.html",
+     "source": "Sports Mole",
+     "published": "2026-11-27T23:32:41+00:00",
+     "matched_on": "raya",
+     "kind": "team news",
+     "excerpt": "A major injury update on David Raya is reportedly revealed, with Arsenal desperate to have the goalkeeper back for their clash with Manchester City on Sunday."
+    },
     {
      "title": "Raya injury: Arteta’s Friday update ahead of FPL Gameweek 12",
      "url": "https://www.fantasyfootballscout.co.uk/2026/11/27/raya-injury-artetas-friday-update-ahead-of-fpl-gameweek-12",
@@ -190,23 +199,14 @@
      "matched_on": "raya",
      "kind": "team news",
      "excerpt": "Arsenal’s shot stopper went down with what looked like a shoulder injury against Newcastle United."
-    },
-    {
-     "title": "Arteta says Raya injury 'doesn't look too serious' despite initial concerns",
-     "url": "https://www.flashscore.com/news/soccer-premier-league-arteta-says-raya-s-injury-doesn-t-look-too-serious-despite-initial-concerns/v7orXc7K/",
-     "source": "Flashscore",
-     "published": "2026-11-23T15:49:29+01:00",
-     "matched_on": "raya",
-     "kind": "team news",
-     "excerpt": ""
     }
    ]
   },
   "De Cuyper": {
    "player": "De Cuyper",
    "club": "BHA",
-   "evidence_count": 12,
-   "source_count": 8,
+   "evidence_count": 11,
+   "source_count": 7,
    "latest_evidence": "2026-11-26T20:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -322,15 +322,6 @@
      "excerpt": "Maxim De Cuyper started the season like a house on fire. He had two goal involvements in 18 minutes and a hand in a third in the opening 4-0 win against Aston Villa. Matty Cash spent the whole first half caught between two jobs: following De Cuyper inside or"
     },
     {
-     "title": "Fulham FPL preview",
-     "url": "https://avfc.co.uk/news/2026/october/30/prematch-fulham-fpl-preview/",
-     "source": "Aston Villa",
-     "published": "2026-10-30T08:00:00+00:00",
-     "matched_on": "de cuyper",
-     "kind": "general",
-     "excerpt": "Fixtures Aston Villa Vs. Fulham - Sat, Oct 31 2026, 20:00 Aston Villa have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Could Aston Villa's Matty Cash (£4.3m) be a solid option fo"
-    },
-    {
      "title": "Maxim de cuyper fpl 2026 27",
      "url": "https://onefpl.com/blog/maxim-de-cuyper-fpl-2026-27",
      "source": "OneFPL",
@@ -344,10 +335,10 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 15,
-   "source_count": 6,
+   "evidence_count": 13,
+   "source_count": 5,
    "latest_evidence": "2026-11-26T11:11:23+00:00",
-   "official_source_found": true,
+   "official_source_found": false,
    "fpl_source_found": true,
    "team_news_found": true,
    "starting_status_assessed": true,
@@ -444,15 +435,6 @@
      "excerpt": "An update on the Italian left-back's availability The post Calafiori, Rice, Madueke: Arsenal injury latest for FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Is Riccardo Calafiori injured? Fitness update on Arsenal left-back before trip to Liverpool",
-     "url": "https://www.fourfourtwo.com/person/player/is-riccardo-calafiori-injured-fitness-update-on-arsenal-left-back-before-trip-to-liverpool",
-     "source": "FourFourTwo FPL",
-     "published": "2026-10-30T12:00:00+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "Arsenal left-back Riccardo Calafiori was struggling at the end of the Gunners' Premier League game against Everton last weekend after coming on as a substitute. Calafiori had played in the previous Champions League fixture but started on the bench for the visit of Everton and was subsequently left out of the squad for Arsenal 's Carabao Cup exit at the hands of Fleetwood Town. The Gunners will pla"
-    },
-    {
      "title": "Arsenal star Riccardo Calafiori linked with bombshell exit following enquiry: report",
      "url": "https://www.fourfourtwo.com/transfer/arsenal-star-riccardo-calafiori-linked-with-bombshell-exit-following-enquiry-report",
      "source": "FourFourTwo FPL",
@@ -478,6 +460,15 @@
      "matched_on": "calafiori",
      "kind": "general",
      "excerpt": "Riccardo Calafiori had a game to forget for Italy vs Belgium as his opposite number ‘does what he wants’ against him in the 4-1 defeat."
+    },
+    {
+     "title": "Arsenal react to Real Madrid choosing ‘outstanding’ Gunners star as ‘dream’ signing for Jose Mourinho",
+     "url": "https://www.football365.com/news/arsenal-react-real-madrid-choosing-gunners-star-dream-signing-jose-mourinho",
+     "source": "Football365",
+     "published": "2026-11-02T12:35:57+00:00",
+     "matched_on": "calafiori",
+     "kind": "general",
+     "excerpt": "According to reports, Arsenal have responded to Riccardo Calafiori being made Real Madrid’s ‘dream’ signing for Jose Mourinho."
     }
    ]
   },
@@ -624,8 +615,8 @@
   "Konsa": {
    "player": "Konsa",
    "club": "ARS",
-   "evidence_count": 39,
-   "source_count": 12,
+   "evidence_count": 37,
+   "source_count": 10,
    "latest_evidence": "2026-11-26T10:21:09+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -766,7 +757,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 6,
-   "latest_evidence": "2026-11-26T19:50:10+00:00",
+   "latest_evidence": "2026-11-27T14:35:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -780,6 +771,7 @@
     "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "set pieces",
     "statistics",
     "tactics",
@@ -790,6 +782,24 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Matthias Jaissle's team news update: Livramento \"on his way back\" ahead of Brighton battle",
+     "url": "https://www.newcastleunited.com/en/news/matthias-jaissles-team-news-update-livramento-on-his-way-back-ahead-of-brighton-battle",
+     "source": "Newcastle United",
+     "published": "2026-11-27T14:35:00+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": ""
+    },
+    {
+     "title": "Brighton vs Newcastle Predictions, Team News and Betting Tips",
+     "url": "https://statz.ai/news/19722092-brighton-vs-newcastle-predictions-betting-tips",
+     "source": "Statz.ai FPL",
+     "published": "2026-11-27T07:03:17+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Second-placed Brighton & Hove Albion host 13th-placed Newcastle United at the Amex on Sunday 29 November. We predict a 2-1 home win, with the interest in the player markets."
+    },
     {
      "title": "Brighton 4-0 Universitatea Craiova: Osman scores twice as Seagulls cruise past ten-man visitors",
      "url": "https://www.101greatgoals.com/match-reports/brighton-4-0-universitatea-craiova-report-result-goals/",
@@ -816,24 +826,6 @@
      "matched_on": "BHA team news",
      "kind": "club team news",
      "excerpt": "Sports Mole previews Thursday's Conference League clash between Brighton & Hove Albion and Universitatea Craiova, including predictions, team news and possible lineups."
-    },
-    {
-     "title": "Blues Beaten By Brighton Under Goodison Sun",
-     "url": "https://www.evertonfc.com/news/2026/november/22/blues-beaten-by-brighton-under-goodison-sun/",
-     "source": "Everton",
-     "published": "2026-11-22T18:45:57+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Everton saw only their second loss at Goodison Park this season in a narrow 1-0 defeat to Brighton in the WSL on Sunday afternoon. Coming off the back of a three-game unbeaten streak against a trio of top teams of the division, the Blues struggled to take the edge in Sunday’s showdown with the Seagulls. In the first ten minutes, Brighton’s aggressive pressing pushed the Blues’ backline and forced "
-    },
-    {
-     "title": "Hull City 2-0 Brighton & Hove Albion",
-     "url": "https://www.wearehullcity.co.uk/news/2026/november/22/hull-city-2-0-brighton-hove-albion/",
-     "source": "Hull City",
-     "published": "2026-11-22T16:10:25+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Fixtures Hull City Vs. Brighton and Hove Albion - Sun, Nov 22 2026, 14:00 Hull City scored twice in added time to secure a first win since August as they beat second-place Brighton & Hove Albion 2-0 at the MKM Stadium. The Tigers had looked to be heading for another useful home point as they frustrated their visitors, largely thanks to a stunning display from goalkeeper Konstantinos Tzolakis, befo"
     },
     {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
@@ -989,8 +981,8 @@
   "Rogers": {
    "player": "Rogers",
    "club": "CHE",
-   "evidence_count": 46,
-   "source_count": 17,
+   "evidence_count": 45,
+   "source_count": 16,
    "latest_evidence": "2026-11-24T15:33:20+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1224,8 +1216,8 @@
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 83,
-   "source_count": 21,
+   "evidence_count": 80,
+   "source_count": 20,
    "latest_evidence": "2026-11-25T20:00:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
@@ -1364,9 +1356,9 @@
   "Haaland": {
    "player": "Haaland",
    "club": "MCI",
-   "evidence_count": 87,
-   "source_count": 18,
-   "latest_evidence": "2026-11-27T14:56:18+00:00",
+   "evidence_count": 89,
+   "source_count": 17,
+   "latest_evidence": "2026-11-28T00:05:00+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1505,25 +1497,22 @@
    "player": "Dubravka",
    "club": "TOT",
    "evidence_count": 6,
-   "source_count": 3,
-   "latest_evidence": "2026-11-26T15:40:28+00:00",
+   "source_count": 4,
+   "latest_evidence": "2026-11-27T13:37:44+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
-   "role_assessed": true,
+   "role_assessed": false,
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
     "fpl advice",
     "injury",
     "match report",
-    "press conference",
-    "set pieces",
     "statistics",
-    "tactics",
     "team news",
     "transfer"
    ],
@@ -1539,6 +1528,33 @@
      "matched_on": "dubravka",
      "kind": "team news",
      "excerpt": "Team news has been confirmed for Town's Premier League clash away to Tottenham Hotspur. Gary O'Neil has made three changes to the side which faced AFC Bournemouth before the international break, with Zian Flemming, Darnell Furlong and Saša Lukić all coming into the starting XI in North London. Christian Walton starts in goal for the Blues and the defensive unit consists of Abdoul Ouattara, Furlong"
+    },
+    {
+     "title": "Le Bris gives full injury update ahead of Spurs",
+     "url": "https://www.safc.com/news/2026/november/27/le-bris-gives-full-injury-update-ahead-of-spurs/",
+     "source": "Sunderland",
+     "published": "2026-11-27T13:37:44+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Fixtures Sunderland Vs. Tottenham Hotspur - Sun, Nov 29 2026, 14:05 Sunderland boss Régis Le Bris has given an update on the fitness of a number of players ahead of Sunday's Premier League clash against Tottenham. The Black Cats are looking to build on their recent turnaround of form in the competition, picking up four points from the last two games against Chelsea and Aston Villa. The plethora of"
+    },
+    {
+     "title": "Sunderland vs. Tottenham Hotspur - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/sunderland/preview/sunderland-vs-spurs-prediction-team-news-lineups_609983.html",
+     "source": "Sports Mole",
+     "published": "2026-11-27T12:19:00+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Sunday's Premier League clash between Sunderland and Tottenham Hotspur, including predictions, team news and possible lineups."
+    },
+    {
+     "title": "When is Régis Le Bris' Spurs press conference?",
+     "url": "https://www.safc.com/news/2026/november/27/when-is-r-gis-le-bris--spurs-press-conference-/",
+     "source": "Sunderland",
+     "published": "2026-11-27T10:21:35+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Régis Le Bris will speak to the media ahead of Sunderland's Premier League fixture against Tottenham Hotspur on Sunday. The pre-match press conference will begin at 1.30pm GMT on Friday, with the Head Coach set to preview the clash at the Stadium of Light. Supporters can watch the press conference live on the Club's official YouTube channel. Make sure you subscribe to our channel and turn on notif"
     },
     {
      "title": "Sunderland vs Tottenham preview: Roefs ready to be busy in a binary game",
@@ -1557,33 +1573,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Tottenham are handed a potential new James Maddison concern ahead of Sunday's trip to Sunderland as a new training video emerges."
-    },
-    {
-     "title": "San Antonio Spurs vs. Sacramento Kings: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-sacramento-kings-player-props-injury-report-and-prediction--nba_609601.html",
-     "source": "Sports Mole",
-     "published": "2026-11-22T08:52:38+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "San Antonio Spurs vs. Sacramento Kings preview with player props, injury report, Wembanyama and Acuff matchups and our NBA prediction."
-    },
-    {
-     "title": "Why Sandro Tonali is out for Tottenham against Ipswich as Roberto De Zerbi offers explanation",
-     "url": "https://www.sportsmole.co.uk/football/spurs/news/why-is-tonali-missing-for-tottenham-against-ipswich_609577.html",
-     "source": "Sports Mole",
-     "published": "2026-11-21T14:40:00+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham Hotspur manager Roberto De Zerbi reveals why Sandro Tonali is missing from Saturday's Premier League clash with Ipswich Town."
-    },
-    {
-     "title": "New Orleans Pelicans vs. San Antonio Spurs: Player props, injury report and prediction | NBA",
-     "url": "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/new-orleans-pelicans-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_609550.html",
-     "source": "Sports Mole",
-     "published": "2026-11-21T09:07:26+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Spurs vs Pelicans prediction, player props and injury report for Sunday's NBA game, with Wembanyama and Zion Williamson in focus."
     }
    ]
   },
