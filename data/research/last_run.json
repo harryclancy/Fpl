@@ -1,16 +1,16 @@
 {
  "mode": "incremental",
  "gameweek": 13,
- "ran_at": "2026-11-28T00:34:06+00:00",
- "seconds": 153.5,
+ "ran_at": "2026-11-28T14:16:20+00:00",
+ "seconds": 158.9,
  "sources_attempted": 78,
- "sources_readable": 55,
- "candidates_discovered": 620,
- "substantive_items": 279,
- "duplicates_removed": 17,
- "deeply_analysed": 79,
- "deep_read_failed": 11,
- "corpus_size": 18493,
+ "sources_readable": 57,
+ "candidates_discovered": 618,
+ "substantive_items": 233,
+ "duplicates_removed": 14,
+ "deeply_analysed": 84,
+ "deep_read_failed": 6,
+ "corpus_size": 18466,
  "players_researched": 15,
  "players_total": 15,
  "verdicts": {
@@ -18,7 +18,7 @@
    "ok": true,
    "headline": "",
    "reasons": [
-    "55/78 sources returned 279 articles"
+    "57/78 sources returned 233 articles"
    ]
   },
   "blackout": {
@@ -37,13 +37,11 @@
   }
  },
  "failures": [
-  "Premier League Official Fantasy: HTTP 403 for https://www.premierleague.com/en/sitemap/global.xml",
   "Fantasy Football Hub: HTTP 404 for https://fantasyfootballhub.co.uk/feed.xml",
   "FPL360: nothing published in the last 10 days",
   "OneFPL: sitemap at https://onefpl.com/sitemap.xml listed no pages",
   "FPL Captain: nothing published in the last 10 days",
   "FPL Central: nothing published in the last 10 days",
-  "Full90 FPL: HTTP 202 for https://full90fpl.com/feed/",
   "Premier Fantasy Tools: nothing published in the last 10 days",
   "Fantasy Football Pundit: HTTP 404 for https://fantasyfootballpundit.com/feed/",
   "FPL Strat: nothing published in the last 10 days",
@@ -335,7 +333,7 @@
   "Calafiori": {
    "player": "Calafiori",
    "club": "ARS",
-   "evidence_count": 13,
+   "evidence_count": 12,
    "source_count": 5,
    "latest_evidence": "2026-11-26T11:11:23+00:00",
    "official_source_found": false,
@@ -426,15 +424,6 @@
      "excerpt": "Dominik Szoboszlai is back on the bench for Liverpool The post Liverpool v Arsenal team news: Calafiori + Tzolis start appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
     },
     {
-     "title": "Calafiori, Rice, Madueke: Arsenal injury latest for FPL Gameweek 9",
-     "url": "https://www.fantasyfootballscout.co.uk/2026/10/30/calafiori-rice-madueke-arsenal-injury-latest-for-fpl-gameweek-9",
-     "source": "Fantasy Football Scout",
-     "published": "2026-10-30T16:10:53+00:00",
-     "matched_on": "calafiori",
-     "kind": "team news",
-     "excerpt": "An update on the Italian left-back's availability The post Calafiori, Rice, Madueke: Arsenal injury latest for FPL Gameweek 9 appeared first on Best FPL Tips, Advice, Team News, Picks, and Statistics from Fantasy Football Scout ."
-    },
-    {
      "title": "Arsenal star Riccardo Calafiori linked with bombshell exit following enquiry: report",
      "url": "https://www.fourfourtwo.com/transfer/arsenal-star-riccardo-calafiori-linked-with-bombshell-exit-following-enquiry-report",
      "source": "FourFourTwo FPL",
@@ -469,6 +458,15 @@
      "matched_on": "calafiori",
      "kind": "general",
      "excerpt": "According to reports, Arsenal have responded to Riccardo Calafiori being made Real Madrid’s ‘dream’ signing for Jose Mourinho."
+    },
+    {
+     "title": "Fpl gw1 elite manager drafts calafiori gamble top differentials",
+     "url": "https://fplcaptain.com/news/fpl-gw1-elite-manager-drafts-calafiori-gamble-top-differentials",
+     "source": "FPL Captain",
+     "published": "",
+     "matched_on": "calafiori",
+     "kind": "general",
+     "excerpt": ""
     }
    ]
   },
@@ -757,7 +755,7 @@
    "club": "BHA",
    "evidence_count": 6,
    "source_count": 6,
-   "latest_evidence": "2026-11-27T14:35:00+00:00",
+   "latest_evidence": "2026-11-27T22:17:45+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -782,6 +780,15 @@
    "priority": "normal",
    "researched": true,
    "items": [
+    {
+     "title": "Brighton & Hove Albion vs Newcastle United - prediction, team news, lineups",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/preview/brighton-vs-newcastle-prediction-team-news-lineups_610048.html",
+     "source": "Sports Mole",
+     "published": "2026-11-27T22:17:45+00:00",
+     "matched_on": "BHA team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole previews Sunday's Premier League clash between Brighton & Hove Albion and Newcastle United, including predictions, team news and possible lineups."
+    },
     {
      "title": "Matthias Jaissle's team news update: Livramento \"on his way back\" ahead of Brighton battle",
      "url": "https://www.newcastleunited.com/en/news/matthias-jaissles-team-news-update-livramento-on-his-way-back-ahead-of-brighton-battle",
@@ -819,15 +826,6 @@
      "excerpt": "Brighton face Newcastle and we have all the team news, how to watch and predictions for a game the Seagulls usually win."
     },
     {
-     "title": "Brighton & Hove Albion vs Universitatea Craiova - prediction, team news, lineups",
-     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/europa-conference-league/preview/brighton-vs-u-craiova-prediction-team-news-lineups_609737.html",
-     "source": "Sports Mole",
-     "published": "2026-11-24T19:45:00+00:00",
-     "matched_on": "BHA team news",
-     "kind": "club team news",
-     "excerpt": "Sports Mole previews Thursday's Conference League clash between Brighton & Hove Albion and Universitatea Craiova, including predictions, team news and possible lineups."
-    },
-    {
      "title": "FPL’s template is 32 points short over the next five Gameweeks. Here’s where it leaks",
      "url": "https://www.fiso.co.uk/fpls-template-is-32-points-short-over-the-next-five-gameweeks-heres-where-it-leaks/",
      "source": "FISO",
@@ -843,7 +841,7 @@
    "club": "CHE",
    "evidence_count": 56,
    "source_count": 17,
-   "latest_evidence": "2026-11-27T13:11:52+00:00",
+   "latest_evidence": "2026-11-28T07:44:21+00:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -950,6 +948,15 @@
      "excerpt": "The billions spent on young players and the constant churn for accountancy tricks, the erratic form and the bottom-half finishes: Chelsea are engulfed in an identity crisis of their own making and everybody knows Xabi Alonso needs a transitional year to sort this mess out. What’s needed is stability, order, calm; qualities Chelsea’s owners carelessly abandoned across the first four years of their "
     },
     {
+     "title": "Chelsea: Cole Palmer a bystander as Blues pair condemned along with Alonso decision",
+     "url": "https://www.football365.com/news/chelsea-cole-palmer-bystander-blues-pair-condemned-alonso-decision",
+     "source": "Football365",
+     "published": "2026-11-28T07:44:21+00:00",
+     "matched_on": "palmer",
+     "kind": "general",
+     "excerpt": "Jamie Redknapp insists Cole Palmer and a Chelsea teammate have to do “more” after their 3-2 defeat to Nottingham Forest as Xabi Alonso “got one wrong” on Friday night."
+    },
+    {
      "title": "Cole Palmer told he ‘will never play for England again’ with EIGHT players ahead of Chelsea star",
      "url": "https://www.football365.com/news/cole-palmer-never-play-england-again-chelsea",
      "source": "Football365",
@@ -966,15 +973,6 @@
      "matched_on": "palmer",
      "kind": "general",
      "excerpt": "Chelsea legend Jimmy Floyd Hasselbaink has stated the side “can’t handle little setbacks” and he does not think Cole Palmer is the problem after feuding with Joao Pedro."
-    },
-    {
-     "title": "Flashscore sources: Cole Palmer's Chelsea relationship faces fresh scrutiny",
-     "url": "https://www.soccerway.com/news/soccer-premier-league-flashscore-sources-cole-palmer-s-chelsea-relationship-faces-fresh-scrutiny/YTfzdbKM/",
-     "source": "Soccerway",
-     "published": "2026-11-24T08:52:57+01:00",
-     "matched_on": "palmer",
-     "kind": "general",
-     "excerpt": ""
     }
    ]
   },
@@ -1121,7 +1119,7 @@
   "Tavernier": {
    "player": "Tavernier",
    "club": "BOU",
-   "evidence_count": 7,
+   "evidence_count": 6,
    "source_count": 4,
    "latest_evidence": "2026-11-21T16:53:00+00:00",
    "official_source_found": true,
@@ -1201,22 +1199,13 @@
      "matched_on": "tavernier",
      "kind": "general",
      "excerpt": "Nottingham Forest slipped to defeat on the road against AFC Bournemouth in the return of Premier League football. The Cherries took a two-goal lead going into the break, and while Oliver Glasner’s side searched for a way back into the contest, they were met with a resilient Bournemouth defence at every turn. Evanilson opened the scoring before Justin Kluivert added a second just moments before the"
-    },
-    {
-     "title": "FPL Gameweek 9: Why James Hill could be the perfect differential",
-     "url": "https://www.afcb.co.uk/news/2026/october/30/fpl-gameweek-9-tips-bournemouth-picks/",
-     "source": "AFC Bournemouth",
-     "published": "2026-10-30T15:55:54+00:00",
-     "matched_on": "tavernier",
-     "kind": "general",
-     "excerpt": "AFC Bournemouth have teamed up with Fantasy Football Scout to help bring you hints, tips and advice during the 2026/27 Fantasy Premier League (FPL) season. Scout will be using their expertise to provide advice and gameweek tips which should prove useful in ensuring you win your mini-leagues. Best of the Cherries Gameweek 8 was a particularly strong one for the Cherries both on the pitch and in FPL"
     }
    ]
   },
   "N.Jackson": {
    "player": "N.Jackson",
    "club": "AVL",
-   "evidence_count": 80,
+   "evidence_count": 78,
    "source_count": 20,
    "latest_evidence": "2026-11-25T20:00:00+00:00",
    "official_source_found": true,
@@ -1358,7 +1347,7 @@
    "club": "MCI",
    "evidence_count": 89,
    "source_count": 17,
-   "latest_evidence": "2026-11-28T00:05:00+00:00",
+   "latest_evidence": "2026-11-28T13:00:22+01:00",
    "official_source_found": true,
    "fpl_source_found": true,
    "team_news_found": true,
@@ -1498,21 +1487,22 @@
    "club": "TOT",
    "evidence_count": 6,
    "source_count": 4,
-   "latest_evidence": "2026-11-27T13:37:44+00:00",
+   "latest_evidence": "2026-11-27T21:09:16+00:00",
    "official_source_found": true,
    "fpl_source_found": false,
    "team_news_found": true,
    "starting_status_assessed": true,
    "injury_status_assessed": true,
    "transfer_status_assessed": true,
-   "role_assessed": false,
+   "role_assessed": true,
    "fixtures_assessed": true,
    "dimensions_covered": [
     "fixtures",
-    "fpl advice",
     "injury",
     "match report",
+    "press conference",
     "statistics",
+    "tactics",
     "team news",
     "transfer"
    ],
@@ -1528,6 +1518,24 @@
      "matched_on": "dubravka",
      "kind": "team news",
      "excerpt": "Team news has been confirmed for Town's Premier League clash away to Tottenham Hotspur. Gary O'Neil has made three changes to the side which faced AFC Bournemouth before the international break, with Zian Flemming, Darnell Furlong and Saša Lukić all coming into the starting XI in North London. Christian Walton starts in goal for the Blues and the defensive unit consists of Abdoul Ouattara, Furlong"
+    },
+    {
+     "title": "Tottenham predicted lineup vs. Sunderland: Roberto De Zerbi makes Luca Williams-Barnett decision",
+     "url": "https://www.sportsmole.co.uk/football/spurs/predicted-lineups/will-williams-barnett-start-how-spurs-could-line-up-against-sunderland_609991.html",
+     "source": "Sports Mole",
+     "published": "2026-11-27T21:09:16+00:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": "Sports Mole takes an in-depth look at how Tottenham Hotspur could line up for Sunday's Premier League game against Sunderland."
+    },
+    {
+     "title": "Spurs boss De Zerbi reveals Savio set to miss festive period with injury",
+     "url": "https://www.soccerway.com/news/soccer-premier-league-spurs-boss-de-zerbi-reveals-savio-set-to-miss-festive-period-with-injury/OY51KsAr/",
+     "source": "Soccerway",
+     "published": "2026-11-27T17:51:02+01:00",
+     "matched_on": "TOT team news",
+     "kind": "club team news",
+     "excerpt": ""
     },
     {
      "title": "Le Bris gives full injury update ahead of Spurs",
@@ -1555,24 +1563,6 @@
      "matched_on": "TOT team news",
      "kind": "club team news",
      "excerpt": "Régis Le Bris will speak to the media ahead of Sunderland's Premier League fixture against Tottenham Hotspur on Sunday. The pre-match press conference will begin at 1.30pm GMT on Friday, with the Head Coach set to preview the clash at the Stadium of Light. Supporters can watch the press conference live on the Club's official YouTube channel. Make sure you subscribe to our channel and turn on notif"
-    },
-    {
-     "title": "Sunderland vs Tottenham preview: Roefs ready to be busy in a binary game",
-     "url": "https://www.football365.com/match-preview/sunderland-tottenham",
-     "source": "Football365",
-     "published": "2026-11-26T15:40:28+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "All the team news, predictions and line-ups from Sunderland vs Tottenham, which could be a low-scoring affair."
-    },
-    {
-     "title": "Tottenham handed new James Maddison concern before Sunderland as training video emerges",
-     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/news/more-madders-misery-spurs-playmaker-misses-training-before-sunderland_609753.html",
-     "source": "Sports Mole",
-     "published": "2026-11-24T12:48:20+00:00",
-     "matched_on": "TOT team news",
-     "kind": "club team news",
-     "excerpt": "Tottenham are handed a potential new James Maddison concern ahead of Sunday's trip to Sunderland as a new training video emerges."
     }
    ]
   },
